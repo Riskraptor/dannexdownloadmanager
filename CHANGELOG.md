@@ -5,6 +5,8 @@ Each release's notes on GitHub come from its section here (`## [X.Y.Z]`, see
 
 ## [Unreleased]
 
+## [1.1.0] - 2026-11-23
+
 - Fixed dark-mode access-key cues so mnemonic letters are underlined only after the keyboard
   is used, instead of being always underlined.
 - Completed the website translations for Arabic, Persian, Portuguese (Portugal), Polish,
