@@ -3444,7 +3444,7 @@
   },
   "369983e69928fc01": {
    "source": "<g1>{v1}</g1> <g2>20.9 MB</g2>",
-   "text": "<g1>{v1}</g1> <g2>20.9 مگابایت</g2>"
+   "text": "<g1>{v1}</g1> <g2>20.9 MB</g2>"
   },
   "36a1df60e5ee30b9": {
    "source": "<g1><x2/></g1> — what <g3>View → Theme</g3> lists; the file's name when there is none.",
@@ -13636,7 +13636,7 @@
   },
   "db94ba5f97a1f9e2": {
    "source": "The extension shows almost nothing of its own, as users of other download managers expect: a click on its toolbar button turns taking downloads off and on, its right-click menu has \"Don't take downloads from this site\" and Help (<x1/>, the status page: installed, or what is wrong and the one thing to do), and its options page (<x2/>) has only that switch, the browser's proxy (#42) and another DDM (#157). It never asks the app for its downloads (extensions up to {v1} did, for a window of their own: the host refuses that question now, and the app answers the automation API's <x3/> and actions only while the API is on).",
-   "text": "افزونه تقریبا چیزی از خودش نشان نمی‌دهد، همان‌طور که کاربران مدیرهای بارگیری دیگر انتظار دارند: کلیک روی دکمه نوار ابزارش گرفتن بارگیری‌ها را خاموش و روشن می‌کند، منوی راست‌کلیکش «نگرفتن بارگیری‌ها از این سایت» و راهنما را دارد (<x1/>، صفحه وضعیت: نصب‌شده، یا اینکه چه مشکلی هست و تنها کاری که باید کرد)، و صفحه گزینه‌هایش (<x2/>) فقط همان کلید، پروکسی مرورگر (#42) و DDM دیگر (#157) را دارد. هرگز از برنامه بارگیری‌هایش را نمی‌پرسد (افزونه‌ها تا {v1} می‌پرسیدند، برای پنجره‌ای از خودشان: میزبان اکنون آن پرسش را رد می‌کند و برنامه فقط تا وقتی API خودکارسازی روشن است به <x3/> و کنش‌های آن پاسخ می‌دهد)."
+   "text": "افزونه تقریبا هیچ چیز از خودش نشان نمی‌دهد، همان‌طور که کاربران مدیرهای بارگیری دیگر انتظار دارند: یک کلیک روی دکمه نوار ابزارش، گرفتن بارگیری‌ها را خاموش و روشن می‌کند؛ منوی کلیک راست آن «نگرفتن بارگیری‌ها از این سایت» و راهنما (<x1/>، صفحه وضعیت: نصب شده، یا چه مشکلی هست و تنها کاری که باید کرد) را دارد؛ و صفحه گزینه‌هایش (<x2/>) فقط همین کلید، پروکسی مرورگر (#42) و یک DDM دیگر (#157) را دارد. افزونه هرگز بارگیری‌های خود را از برنامه نمی‌پرسد (افزونه‌های تا نسخه {v1} برای داشتن پنجره مخصوص خود این کار را می‌کردند؛ اکنون میزبان این پرسش را رد می‌کند و برنامه فقط زمانی که API خودکارسازی روشن باشد به <x3/> و کنش‌های آن پاسخ می‌دهد)."
   },
   "dba089f6ed3c76a8": {
    "source": "Black and white, a bright accent, every edge drawn, text at 7:1 or more.",
@@ -14593,6 +14593,10 @@
   "eb54002890a30cf8": {
    "source": "<g1>Ctrl+M</g1> or <g2>F2</g2>",
    "text": "<g1>Ctrl+M</g1> یا <g2>F2</g2>"
+  },
+  "eb60a779982bcd66": {
+   "source": "Chrome, Edge and Brave run an extension in private (incognito) windows only when you allow it, and Firefox asks too. Until then, downloads from private windows stay with the browser. To allow it: on the browser's extensions page, open <g1>Details</g1> and turn on <g2>Allow in Incognito</g2>; in Firefox, <g3>Add-ons and themes</g3> → the extension → <g4>Allow</g4> beside <g5>Run in Private Windows</g5>. Downloads from a private window use that window's cookies, and DDM doesn't keep them in its list once they're done.",
+   "text": "Chrome، Edge و Brave فقط وقتی اجازه بدهید افزونه را در پنجره‌های خصوصی (ناشناس) اجرا می‌کنند و Firefox هم می‌پرسد. تا آن زمان، بارگیری‌های پنجره‌های خصوصی در اختیار مرورگر می‌ماند. برای اجازه دادن: در صفحه افزونه‌های مرورگر، <g1>Details</g1> را باز کنید و <g2>Allow in Incognito</g2> را روشن کنید؛ در Firefox، <g3>Add-ons and themes</g3> → افزونه → <g4>Allow</g4> کنار <g5>Run in Private Windows</g5>. بارگیری‌های پنجره خصوصی از کوکی‌های همان پنجره استفاده می‌کنند و DDM پس از پایان آن‌ها را در فهرست خود نگه نمی‌دارد."
   },
   "eb712f80554a3646": {
    "source": "A window in DDM may be waiting for you (a question, <g1>Add torrent</g1>); answer it and ask again.",
@@ -15805,6 +15809,26 @@
   "ffffe7806eaeae3d": {
    "source": "The option is off until you tick it. On Linux and macOS DDM starts with your session the same way. A <g1>portable copy</g1> can't start with Windows, since that needs the registry, so the option is greyed there.",
    "text": "این گزینه تا زمانی که آن را انتخاب نکنید، غیرفعال است. در Linux و macOS، DDM به همین ترتیب با جلسه شما شروع به کار می‌کند. <g1>نسخه قابل حمل</g1> نمی‌تواند با Windows شروع به کار کند، زیرا این کار به رجیستری نیاز دارد، بنابراین این گزینه در آنجا خاکستری است."
+  },
+  "6e355ba39f5dc912": {
+   "source": "Sponsor Dannex Download Manager",
+   "text": "حمایت مالی از Dannex Download Manager"
+  },
+  "fc7fe0579b9363e9": {
+   "source": "One egui window painted to fixed pixel coordinates, plus one immediate viewport per dialog. <x1/> holds the state (downloads, queues, settings, the list's selection) and turns menu, toolbar, key and IPC commands into actions. Each dialog is its own module and returns an <x2/> (open, closed, done with a value). A window that comes up by itself (Download complete, a message DDM tells, a question while DDM isn't the program in front) shows above the others without taking the keyboard from the program being typed in (<x3/>, <x4/>); those the person asked for take it. Windows handed over one after another (Download File Info, Add torrent, Download video) and Download complete boxes show one at a time, in one place, the next when one closes. Windows-only calls are confined to <x5/> and their Linux and macOS counterparts to <x6/> (starting with the session, the browsers' host, sounds, show in folder, the crash handler); every other file is safe, portable Rust. Fonts come from the system: Windows' Fonts folder, macOS's system fonts, fontconfig on Linux (<x7/>). On Windows, Latin, Greek and Cyrillic text is drawn by DirectWrite (<x8/>, through egui's glyph rasterizer hook): View → Text → Smooth in its natural mode, anti-aliased at the size asked for and placed at quarter pixels with the font's own advances; Classic (the default) in GDI-classic mode, so each letter's hinted shape and whole-pixel width come together. Other scripts are shaped and drawn by egui.",
+   "text": "یک پنجرهٔ egui که در مختصات ثابت پیکسلی رسم می‌شود، به‌اضافهٔ یک viewport فوری برای هر پنجرهٔ گفتگو. <x1/> وضعیت برنامه (بارگیری‌ها، صف‌ها، تنظیمات، انتخاب فهرست) را نگه می‌دارد و فرمان‌های منو، نوار ابزار، صفحه‌کلید و IPC را به کنش تبدیل می‌کند. هر پنجرهٔ گفتگو ماژول جداگانه‌ای دارد و یک <x2/> برمی‌گرداند (باز، بسته، انجام‌شده همراه با مقدار). پنجره‌ای که خودش باز می‌شود (بارگیری کامل شد، پیامی که DDM می‌دهد، پرسشی در زمانی که DDM برنامهٔ جلوی صفحه نیست) بالای بقیه نمایش داده می‌شود، بدون آنکه صفحه‌کلید را از برنامه‌ای که در آن تایپ می‌شود بگیرد (<x3/>، <x4/>)؛ پنجره‌هایی که کاربر خودش درخواست کرده صفحه‌کلید را می‌گیرند. پنجره‌هایی که پشت سر هم می‌آیند (اطلاعات فایل بارگیری، افزودن تورنت، بارگیری ویدیو) و کادرهای بارگیری کامل شد، یکی‌یکی و در یک مکان نمایش داده می‌شوند و با بسته شدن هر کدام، نوبت بعدی می‌رسد. فراخوانی‌های ویژهٔ Windows در <x5/> و معادل‌های Linux و macOS آن‌ها در <x6/> محدود شده‌اند (از جمله نشست، میزبان مرورگرها، صداها، نمایش در پوشه و مدیریت خرابی)؛ هر فایل دیگر Rust امن و قابل‌حمل است. قلم‌ها از سیستم می‌آیند: پوشهٔ Fonts در Windows، قلم‌های سیستمی macOS و fontconfig در Linux (<x7/>). در Windows، متن لاتین، یونانی و سیریلیک را DirectWrite رسم می‌کند (<x8/>، از طریق قلاب رسترساز گلیف egui): نمایش ← متن ← Smooth در حالت طبیعی، با هموارسازی در اندازهٔ درخواستی و جای‌گذاری در ربع پیکسل با فاصله‌گذاری خود قلم؛ Classic (پیش‌فرض) در حالت GDI کلاسیک، تا شکل هینت‌شدهٔ هر حرف و عرض پیکسل کامل آن با هم بیایند. سایر خط‌ها را egui شکل‌دهی و رسم می‌کند."
+  },
+  "800407e32d4bc4d6": {
+   "source": "The extension shows almost nothing of its own, as users of other download managers expect: a click on its toolbar button turns taking downloads off and on, its right-click menu has \"Don't take downloads from this site\" and Help (<x1/>, the status page: installed, or what is wrong and the one thing to do), and its options page (<x2/>) has only that switch, the browser's proxy (#42) and another DDM (#157). It never asks the app for its downloads (extensions up to 0.6.5 did, for a window of their own: the host refuses that question now, and the app answers the automation API's <x3/> and actions only while the API is on).",
+   "text": "افزونه تقریباً هیچ رابط خاصی از خود نشان نمی‌دهد، همان‌طور که کاربران سایر مدیران بارگیری انتظار دارند: با کلیک روی دکمهٔ آن در نوار ابزار، دریافت بارگیری‌ها خاموش و روشن می‌شود؛ منوی راست‌کلیک آن «از این سایت بارگیری نگیر» و راهنما را دارد (<x1/>، صفحهٔ وضعیت: نصب شده است، یا چه مشکلی هست و تنها کاری که باید کرد)؛ و صفحهٔ گزینه‌های آن (<x2/>) فقط همین کلید، پروکسی مرورگر (#42) و DDM دیگر (#157) را دارد. افزونه هرگز بارگیری‌های برنامه را از آن نمی‌پرسد (افزونه‌های تا نسخهٔ 0.6.5 برای پنجرهٔ مخصوص خودشان این کار را می‌کردند: اکنون میزبان این پرسش را رد می‌کند و برنامه فقط وقتی API روشن باشد به <x3/> و کنش‌های API خودکارسازی پاسخ می‌دهد)."
+  },
+  "dcedde395f1f0789": {
+   "source": "<g1>1.0.0</g1> <g2>20.9 MB</g2>",
+   "text": "<g1>1.0.0</g1> <g2>20.9 MB</g2>"
+  },
+  "410849c6c11c33d7": {
+   "source": "DDM is free and always will be. If it saves you time, you can support it.",
+   "text": "DDM رایگان است و همیشه رایگان می‌ماند. اگر در وقت شما صرفه‌جویی می‌کند، می‌توانید از آن حمایت کنید."
   }
  }
 }

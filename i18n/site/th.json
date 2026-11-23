@@ -470,6 +470,10 @@
    "source": "<g1>Timing.</g1> End to end: from issuing the command to the finished file under its final name, polled every millisecond on a monotonic clock. DDM renames its finished file into place; IDM creates the final file early and fills it, so for IDM the moment it reaches full size counts. Transfer: the server's first request to its last byte, read on the same clock through a calibration request before each run.",
    "text": "<g1>การจับเวลา</g1> ตั้งแต่ต้นจนจบ: ตั้งแต่การออกคำสั่งจนถึงไฟล์ที่เสร็จสมบูรณ์ภายใต้ชื่อสุดท้าย ตรวจสอบทุกมิลลิวินาทีบนนาฬิกาแบบโมโนโทนิก DDM เปลี่ยนชื่อไฟล์ที่เสร็จสมบูรณ์ไปยังตำแหน่งที่ถูกต้อง; IDM สร้างไฟล์สุดท้ายตั้งแต่ต้นและเติมข้อมูลลงไป ดังนั้นสำหรับ IDM ช่วงเวลาที่ไฟล์มีขนาดเต็มจึงนับรวม การถ่ายโอน: ตั้งแต่คำขอแรกของเซิร์ฟเวอร์จนถึงไบต์สุดท้าย อ่านบนนาฬิกาเดียวกันผ่านคำขอสอบเทียบก่อนการรันแต่ละครั้ง"
   },
+  "06e245ea1e3d8bbb": {
+   "source": "Its permissions, and why: <g1>downloads</g1> to see and hand over downloads; <g2>cookies</g2> so signed-in downloads work in DDM; <g3>nativeMessaging</g3> to talk to DDM; <g4>contextMenus</g4> for the right-click items; <g5>storage</g5> for its settings; <g6>webRequest</g6> to see forms submitted and video streams loaded (it changes nothing); <g7>declarativeNetRequestWithHostAccess</g7> (Chrome, Edge and other Chromium browsers) to have the files the browser would open (a PDF) downloaded instead, for the types DDM takes; in Firefox, <g8>webRequestBlocking</g8> does that; <g9>scripting</g9> to read a page's links when you ask, and to add the video button to pages already open when the extension is installed; <g10>proxy</g10> to read which proxy the browser uses, so downloads taken from a browser behind a VPN or proxy extension go through it too, only while you have that switched on in its options page (it never changes the browser's proxy; in Firefox it is optional, asked for when you switch it on; Chrome and the other Chromium browsers can't make it optional, and count it under the access to all sites); access to all sites because downloads and videos can come from any site.",
+   "text": "สิทธิ์ที่ส่วนขยายขอใช้และเหตุผล: <g1>downloads</g1> เพื่อดูและส่งต่อรายการดาวน์โหลด; <g2>cookies</g2> เพื่อให้ดาวน์โหลดที่ต้องเข้าสู่ระบบทำงานได้ใน DDM; <g3>nativeMessaging</g3> เพื่อสื่อสารกับ DDM; <g4>contextMenus</g4> สำหรับรายการในเมนูคลิกขวา; <g5>storage</g5> เพื่อเก็บการตั้งค่า; <g6>webRequest</g6> เพื่อดูแบบฟอร์มที่ส่งและสตรีมวิดีโอที่โหลด (ไม่เปลี่ยนแปลงสิ่งใด); <g7>declarativeNetRequestWithHostAccess</g7> (Chrome, Edge และเบราว์เซอร์ Chromium อื่น ๆ) เพื่อให้ดาวน์โหลดไฟล์ที่เบราว์เซอร์จะเปิดเอง (เช่น PDF) แทน สำหรับประเภทไฟล์ที่ DDM รับดาวน์โหลด; ใน Firefox สิทธิ์ <g8>webRequestBlocking</g8> ทำหน้าที่นี้; <g9>scripting</g9> เพื่ออ่านลิงก์ในหน้าเว็บเมื่อสั่ง และเพิ่มปุ่มวิดีโอในหน้าที่เปิดอยู่แล้วเมื่อติดตั้งส่วนขยาย; <g10>proxy</g10> เพื่ออ่านว่าเบราว์เซอร์ใช้พร็อกซีใด เพื่อให้การดาวน์โหลดที่รับจากเบราว์เซอร์ซึ่งอยู่หลังส่วนขยาย VPN หรือพร็อกซีผ่านทางนั้นด้วย เฉพาะเมื่อเปิดใช้ในหน้าตัวเลือกของส่วนขยาย (ไม่เปลี่ยนพร็อกซีของเบราว์เซอร์; ใน Firefox เป็นสิทธิ์เสริมที่จะถามเมื่อเปิดใช้; Chrome และเบราว์เซอร์ Chromium อื่น ๆ ทำให้เป็นสิทธิ์เสริมไม่ได้ และนับรวมอยู่ในสิทธิ์เข้าถึงทุกไซต์); สิทธิ์เข้าถึงทุกไซต์ เพราะการดาวน์โหลดและวิดีโออาจมาจากไซต์ใดก็ได้"
+  },
   "06f1e7a5c9a5fcfc": {
    "source": "Help → About: the version you have.",
    "text": "วิธีใช้ → เกี่ยวกับ: เวอร์ชันที่คุณมี"
@@ -481,6 +485,10 @@
   "070c8fa6ee24507e": {
    "source": "Download <g1>setup.exe</g1> above and run it. Windows may ask whether to allow it: the installer isn't code-signed yet, so choose <g2>More info → Run anyway</g2>.",
    "text": "ดาวน์โหลด <g1>setup.exe</g1> ด้านบนแล้วเรียกใช้ Windows อาจถามว่าจะอนุญาตหรือไม่ เนื่องจากตัวติดตั้งยังไม่ได้ลงชื่อด้วยรหัส ดังนั้นให้เลือก <g2>ข้อมูลเพิ่มเติม → เรียกใช้ต่อไป</g2>"
+  },
+  "074a8c8239dbb3b8": {
+   "source": "<g1>Picked before DDM is done.</g1> A quality picked from the page's list stays marked until DDM's list comes, then downloads by itself. If DDM doesn't offer that quality after all, the menu says so and shows what it does offer.",
+   "text": "<g1>เลือกก่อนที่ DDM จะค้นหาเสร็จ</g1> คุณภาพที่เลือกจากรายการของหน้าเว็บจะมีเครื่องหมายอยู่จนกว่ารายการของ DDM จะมา แล้วจะดาวน์โหลดเอง หากสุดท้าย DDM ไม่มีคุณภาพนั้น เมนูจะแจ้งไว้และแสดงคุณภาพที่มีให้เลือก"
   },
   "074e15c2678ecadd": {
    "source": "Sounds: a sound for each event.",
@@ -754,6 +762,10 @@
    "source": "<g1>On Linux</g1>, Chrome-family browsers keep the key to their cookies in the system's keyring (GNOME Keyring, KWallet); yt-dlp asks it, so it must be unlocked.",
    "text": "<g1>บน Linux</g1> เบราว์เซอร์ตระกูล Chrome จะเก็บคีย์สำหรับคุกกี้ไว้ใน keyring ของระบบ (GNOME Keyring, KWallet); yt-dlp จะร้องขอคีย์นั้น ดังนั้น keyring จะต้องปลดล็อกอยู่"
   },
+  "0b1b52c201337090": {
+   "source": "Dannex Download Manager (\"DDM\") is free, open-source software made by its contributors. Because its whole source code is public at <g1>github.com/Riskraptor/dannexdownloadmanager</g1>, you don't have to take this page's word for it: every network connection described here can be checked in the code.",
+   "text": "Dannex Download Manager (“DDM”) เป็นซอฟต์แวร์โอเพนซอร์สที่ไม่มีค่าใช้จ่าย สร้างโดยผู้ร่วมพัฒนา ซอร์สโค้ดทั้งหมดเปิดเผยที่ <g1>github.com/Riskraptor/dannexdownloadmanager</g1> จึงไม่จำเป็นต้องเชื่อตามหน้านี้เพียงอย่างเดียว เพราะการเชื่อมต่อเครือข่ายทุกอย่างที่อธิบายไว้ในที่นี้ตรวจสอบได้จากโค้ด"
+  },
   "0b2740fc08d56719": {
    "source": "A <x1/> from an issue:",
    "text": "<x1/> จากปัญหา:"
@@ -842,6 +854,10 @@
    "source": "Drag on blank space",
    "text": "ลากบนพื้นที่ว่าง"
   },
+  "0c80ff02c1d12fdc": {
+   "source": "Check <g1>Options → Connection</g1>. A low <g2>Each download uses up to</g2>, or an exception for the server, means fewer connections. Rows marked <g3>(auto)</g3> are servers that refused more connections; DDM can't do more there.",
+   "text": "ตรวจสอบ <g1>ตัวเลือก → การเชื่อมต่อ</g1> ถ้า <g2>แต่ละการดาวน์โหลดใช้ได้สูงสุด</g2> ต่ำ หรือมีข้อยกเว้นสำหรับเซิร์ฟเวอร์ จะมีการเชื่อมต่อน้อยลง แถวที่มีเครื่องหมาย <g3>(auto)</g3> คือเซิร์ฟเวอร์ที่ปฏิเสธการเชื่อมต่อเพิ่ม DDM ทำเพิ่มไม่ได้"
+  },
   "0c9992217989480e": {
    "source": "For a Mac with Apple Silicon (M1 or later: <g1>Apple menu → About This Mac</g1> shows a <g2>Chip</g2>). Open it and drag Dannex Download Manager to Applications. macOS asks before its first start, because the app isn't notarized by Apple: right-click it and choose <g3>Open</g3> (on macOS 15 and later: <g4>System Settings → Privacy &amp; Security → Open Anyway</g4>).",
    "text": "สำหรับ Mac ที่ใช้ Apple Silicon (M1 หรือใหม่กว่า: <g1>เมนู Apple → เกี่ยวกับ Mac เครื่องนี้</g1> จะแสดง <g2>ชิป</g2>) เปิดไฟล์แล้วลาก Dannex Download Manager ไปยัง Applications macOS จะถามก่อนเปิดครั้งแรก เนื่องจาก Apple ยังไม่ได้รับรองแอปนี้ ให้คลิกขวาที่แอปแล้วเลือก <g3>เปิด</g3> (บน macOS 15 ขึ้นไป: <g4>การตั้งค่าระบบ → ความเป็นส่วนตัวและความปลอดภัย → เปิดต่อไป</g4>)"
@@ -905,6 +921,10 @@
   "0d54c9b5da3174db": {
    "source": "Download image galleries with gallery-dl",
    "text": "ดาวน์โหลดแกลเลอรีรูปภาพด้วย gallery-dl"
+  },
+  "0d6d6fd7630a14c1": {
+   "source": "<g1>A new icon, Comet</g1>, everywhere: the app, the tray, the extension, the setup and the website.",
+   "text": "<g1>ไอคอนใหม่ Comet</g1> ทุกจุด ทั้งแอป ถาดระบบ ส่วนขยาย ตัวติดตั้ง และเว็บไซต์"
   },
   "0d7f42041638ea02": {
    "source": "Portable: the <x1/> folder next to <x2/>.",
@@ -1054,6 +1074,10 @@
    "source": "<g1><g2></g2></g1> <g3>Options where you expect them</g3> <g4>Every setting where an IDM user looks first: connections, proxies, folders, sounds.</g4>",
    "text": "<g1><g2></g2></g1> <g3>ตัวเลือกอยู่ในตำแหน่งที่คุณคาดไว้</g3> <g4>การตั้งค่าทุกอย่างอยู่ในตำแหน่งที่ผู้ใช้ IDM คุ้นเคย: การเชื่อมต่อ, พร็อกซี, โฟลเดอร์, เสียง</g4>"
   },
+  "100b36c152480e17": {
+   "source": "It has <g1>no remote code, no analytics and no ads</g1>, and sends nothing to us or anyone else. Its status page links to DDM's download page, and its pages' <g2>Support DDM</g2> to the maintainer's GitHub Sponsors page; the browser opens them only when you click.",
+   "text": "ส่วนขยาย<g1>ไม่มีโค้ดระยะไกล ไม่มีการวิเคราะห์ข้อมูล และไม่มีโฆษณา</g1> และไม่ส่งสิ่งใดถึงเราหรือผู้อื่น หน้าสถานะมีลิงก์ไปยังหน้าดาวน์โหลดของ DDM และ <g2>สนับสนุน DDM</g2> ในหน้าต่าง ๆ ของส่วนขยายลิงก์ไปยังหน้า GitHub Sponsors ของผู้ดูแล เบราว์เซอร์จะเปิดลิงก์เหล่านี้เมื่อคลิกเท่านั้น"
+  },
   "104663281393fdc8": {
    "source": "Can I move my downloads from IDM to Dannex Download Manager?",
    "text": "ฉันสามารถย้ายรายการดาวน์โหลดจาก IDM ไปยัง Dannex Download Manager ได้หรือไม่?"
@@ -1109,6 +1133,10 @@
   "110ed064f2b04424": {
    "source": "Time left",
    "text": "เวลาที่เหลือ"
+  },
+  "110f6923f841ef40": {
+   "source": "<g1>Fast:</g1> every download is fetched in several parts at once, re-balanced until the last byte, and resumes after a crash, a restart or a dropped connection without starting over.",
+   "text": "<g1>เร็ว:</g1> ทุกการดาวน์โหลดจะถูกดึงเป็นหลายส่วนพร้อมกัน ปรับสมดุลจนถึงไบต์สุดท้าย และดำเนินการต่อได้หลังโปรแกรมขัดข้อง รีสตาร์ต หรือการเชื่อมต่อหลุด โดยไม่ต้องเริ่มใหม่"
   },
   "1118f34ca5d1ce1f": {
    "source": "<g1>Put them into the video</g1> puts them inside the file instead, as tracks you switch on in the player. It needs ffmpeg, and an MP4 or MKV video.",
@@ -1286,6 +1314,10 @@
    "source": "Two copies in one Chrome, Edge or Brave",
    "text": "สองสำเนาใน Chrome, Edge หรือ Brave เดียวกัน"
   },
+  "13f3c6d7d49d7439": {
+   "source": "Videos protected with DRM (most paid streaming services) can't be downloaded, and DDM doesn't try. The browser extension's button over such a video says it can't be saved, and sends nothing.",
+   "text": "ไม่สามารถดาวน์โหลดวิดีโอที่ป้องกันด้วย DRM (บริการสตรีมมิงแบบเสียเงินส่วนใหญ่) ได้ และ DDM จะไม่พยายามดาวน์โหลด ปุ่มของส่วนขยายเบราว์เซอร์บนวิดีโอลักษณะนี้จะแจ้งว่าบันทึกไม่ได้ และไม่ส่งสิ่งใดไป"
+  },
   "13f638ddac98e283": {
    "source": "Download Later",
    "text": "ดาวน์โหลดภายหลัง"
@@ -1353,6 +1385,10 @@
   "14ad4fa7929ae82f": {
    "source": "DOWNitUP",
    "text": "DOWNitUP"
+  },
+  "14df40dbe96d0a7c": {
+   "source": "Whichever list you pick from, DDM downloads the quality from its own look-up of the video, with yt-dlp, exactly as from the <g1>Download video from a page</g1> window.",
+   "text": "ไม่ว่าจะเลือกจากรายการใด DDM จะดาวน์โหลดคุณภาพนั้นจากการค้นหาข้อมูลวิดีโอของ DDM เองด้วย yt-dlp เหมือนกับจากหน้าต่าง <g1>ดาวน์โหลดวิดีโอจากหน้า</g1> ทุกประการ"
   },
   "14f32a5e9d5c1528": {
    "source": "<g1>Crash reports</g1><g2>Dannex Download Manager</g2>",
@@ -1614,6 +1650,10 @@
    "source": "<g1>Double-click</g1> a download, or press <g2>Enter</g2>, to see its <g3>Properties</g3>, finished or not, as in IDM.",
    "text": "<g1>ดับเบิลคลิก</g1> การดาวน์โหลด หรือกด <g2>Enter</g2> เพื่อดู <g3>คุณสมบัติ</g3> ไม่ว่าเสร็จหรือไม่ เช่นเดียวกับใน IDM"
   },
+  "1947edde30d714ae": {
+   "source": "<g1>Repeat on</g1> starts only on the ticked days. <g2>Once on</g2> starts only on that date.",
+   "text": "<g1>ทำซ้ำในวัน</g1> จะเริ่มเฉพาะในวันที่ทำเครื่องหมายไว้ <g2>ครั้งเดียวในวันที่</g2> จะเริ่มเฉพาะในวันที่นั้น"
+  },
   "1962902ce083389d": {
    "source": "If they match, it is the file we published. Every release is built on GitHub from the <g1>public source code</g1>, so anyone can read what went into it.",
    "text": "หากตรงกัน แสดงว่าเป็นไฟล์ที่เราเผยแพร่ ทุกรุ่นสร้างขึ้นบน GitHub จาก <g1>ซอร์สโค้ดสาธารณะ</g1> ดังนั้นทุกคนสามารถอ่านสิ่งที่อยู่ในนั้นได้"
@@ -1701,6 +1741,10 @@
   "1a75969a8e571dd7": {
    "source": "GitHub",
    "text": "GitHub"
+  },
+  "1a7ab1671a64da4c": {
+   "source": "<g1>At once from the page.</g1> On YouTube the player itself lists the video's formats, and on other sites the HLS or DASH stream the player loaded lists its qualities. The menu shows them straight away, the way DDM will list them: each resolution with its size, then the sound. A thin line moving along the menu's top edge means DDM is still checking. When DDM's own look-up comes, its list takes the place of the page's, row for row: sizes are corrected and any quality the page didn't name is added, while the row under the pointer stays where it is. If the page says nothing DDM can use (a live stream, a protected video, a site that names no qualities), the menu says <g2>Looking up the qualities...</g2> and shows DDM's list when it comes, as before.",
+   "text": "<g1>ทันทีจากหน้าเว็บ</g1> บน YouTube ตัวเล่นเองแสดงรายการรูปแบบของวิดีโอ และบนเว็บไซต์อื่น สตรีม HLS หรือ DASH ที่ตัวเล่นโหลดไว้จะแสดงรายการคุณภาพ เมนูจะแสดงรายการเหล่านี้ทันทีในแบบเดียวกับที่ DDM จะแสดง คือแต่ละความละเอียดพร้อมขนาด แล้วตามด้วยเสียง เส้นบางที่เลื่อนไปตามขอบบนของเมนูหมายความว่า DDM ยังตรวจสอบอยู่ เมื่อ DDM ค้นหาข้อมูลเสร็จ รายการของ DDM จะมาแทนรายการของหน้าเว็บทีละแถว โดยแก้ไขขนาดและเพิ่มคุณภาพที่หน้าเว็บไม่ได้ระบุ ส่วนแถวที่เมาส์ชี้อยู่จะอยู่ที่เดิม หากหน้าเว็บไม่มีข้อมูลที่ DDM ใช้ได้ (ไลฟ์สตรีม วิดีโอที่มีการป้องกัน หรือเว็บไซต์ที่ไม่ระบุคุณภาพ) เมนูจะแสดงข้อความ <g2>กำลังค้นหาคุณภาพ...</g2> และแสดงรายการของ DDM เมื่อค้นหาเสร็จ เหมือนเดิม"
   },
   "1a9157b9737ecefc": {
    "source": "Link grabber and archives",
@@ -2450,6 +2494,10 @@
    "source": "The server, <x1/>, sits next to the app on Windows, macOS and Linux (on Linux use the <x2/>, <x3/> or <x4/>: the AppImage doesn't expose it). You turn on the automation API once with <x5/>, then tell your assistant where the server is. The assistant starts it by itself from then on. The <g6>set-up guide</g6> has the path for each kind of install and the exact entry for Claude Desktop, Claude Code, Cursor and VS Code.",
    "text": "เซิร์ฟเวอร์ <x1/> อยู่ข้างแอปบน Windows, macOS และ Linux (บน Linux ใช้ <x2/>, <x3/> หรือ <x4/>: AppImage ไม่เปิดเผย) คุณเปิดใช้งาน API อัตโนมัติเพียงครั้งเดียวด้วย <x5/> จากนั้นบอกผู้ช่วยของคุณว่าเซิร์ฟเวอร์อยู่ที่ไหน ผู้ช่วยจะเริ่มเซิร์ฟเวอร์ด้วยตัวเองตั้งแต่นั้นเป็นต้นไป <g6>คู่มือการตั้งค่า</g6> มีเส้นทางสำหรับการติดตั้งแต่ละประเภทและรายการที่แน่นอนสำหรับ Claude Desktop, Claude Code, Cursor และ VS Code"
   },
+  "26a8a80c5fad9f57": {
+   "source": "<g1>Calm when many arrive at once:</g1> a queue's downloads run without opening windows, and downloads that finish together share one <g2>Download complete</g2> window (\"3 more downloads complete\").",
+   "text": "<g1>ไม่วุ่นวายเมื่อมีหลายไฟล์เสร็จพร้อมกัน:</g1> การดาวน์โหลดในคิวทำงานโดยไม่เปิดหน้าต่าง และการดาวน์โหลดที่เสร็จพร้อมกันจะใช้หน้าต่าง <g2>ดาวน์โหลดเสร็จสมบูรณ์</g2> ร่วมกัน (“ดาวน์โหลดเสร็จอีก 3 รายการ”)"
+  },
   "26ba7b194ff67f19": {
    "source": "Some sites' bot checks (Cloudflare's challenge, Akamai's edge) let only a browser through, even after DDM asked once more the way your browser connects. DDM then says <g1>this site lets only browsers through</g1> and offers <g2>Download with the browser</g2>: a button in the download's progress window, and an item in its right-click menu in the list. It's still there after DDM restarts.",
    "text": "การตรวจสอบบอตของบางไซต์ (ด่านตรวจของ Cloudflare, edge ของ Akamai) ยอมให้เฉพาะเบราว์เซอร์ผ่าน แม้ DDM จะขออีกครั้งด้วยวิธีเชื่อมต่อแบบเบราว์เซอร์ของคุณแล้ว DDM จะแจ้งว่า <g1>ไซต์นี้ยอมให้เฉพาะเบราว์เซอร์ผ่าน</g1> และมี <g2>ดาวน์โหลดด้วยเบราว์เซอร์</g2> ให้: เป็นปุ่มในหน้าต่างความคืบหน้าของการดาวน์โหลด และเป็นรายการในเมนูคลิกขวาในรายการ ตัวเลือกนี้ยังอยู่แม้ DDM รีสตาร์ต"
@@ -2706,6 +2754,10 @@
    "source": "The setup asks for its language first, with Windows' own already selected, and DDM starts in the one you pick. A zip copy shows the list on its first start instead: each language with its flag, its own name and its English name. The setup speaks the same languages, and the browser extension speaks your browser's.",
    "text": "โปรแกรมติดตั้งจะถามภาษาเป็นอันดับแรก โดยเลือกภาษาของ Windows ไว้แล้ว และ DDM จะเริ่มทำงานในภาษาที่คุณเลือก หากเป็นไฟล์ zip จะแสดงรายการภาษาเมื่อเริ่มใช้งานครั้งแรก โดยแต่ละภาษาจะมีธง ชื่อภาษา และชื่อภาษาอังกฤษ โปรแกรมติดตั้งรองรับภาษาเดียวกัน และส่วนขยายเบราว์เซอร์จะใช้ภาษาของเบราว์เซอร์ของคุณ"
   },
+  "2a88270c5adb5b5c": {
+   "source": "When none of this helps, the browser keeps the download, so nothing is lost. The extension's toolbar button turns grey with a red <g1>!</g1>, and a click on it opens its status page, which says why it couldn't reach DDM and what to do; see <g2>The browser and DDM aren't connected</g2>.",
+   "text": "หากทั้งหมดนี้ไม่ช่วย เบราว์เซอร์จะเก็บการดาวน์โหลดไว้ จึงไม่มีอะไรสูญหาย ปุ่มบนแถบเครื่องมือของส่วนขยายจะเป็นสีเทาและมีเครื่องหมาย <g1>!</g1> สีแดง เมื่อคลิกจะเปิดหน้าสถานะที่บอกว่าเหตุใดจึงติดต่อ DDM ไม่ได้และควรทำอย่างไร ดูที่ <g2>เบราว์เซอร์และ DDM ไม่ได้เชื่อมต่อกัน</g2>"
+  },
   "2aac6abf17fb1aa8": {
    "source": "Feature by feature",
    "text": "คุณสมบัติทีละอย่าง"
@@ -2893,6 +2945,10 @@
   "2d91701284b91b0a": {
    "source": "Source code",
    "text": "ซอร์สโค้ด"
+  },
+  "2d995f162e7cf2ed": {
+   "source": "In your browser",
+   "text": "ในเบราว์เซอร์"
   },
   "2d9d101be2d0f3be": {
    "source": "FTP and FTPS (<x1/>) go through the same planner, workers and state: a segment is <x2/> + <x3/> on a control session instead of a ranged <x4/>, <x5/> and <x6/> stand in for the headers, and sessions are pooled per download and reused between segments.",
@@ -3314,6 +3370,10 @@
    "source": "Drawing",
    "text": "การวาด"
   },
+  "3545af38d7005869": {
+   "source": "A page whose video the window can't find: play the video in your browser, then use the extension's button over it, or right-click the video → <g1>Download with DDM</g1>: either sends the stream the page loaded (<g2>Videos a page plays</g2>).",
+   "text": "หน้าที่หน้าต่างหาวิดีโอไม่พบ: เล่นวิดีโอในเบราว์เซอร์ แล้วใช้ปุ่มของส่วนขยายบนวิดีโอ หรือคลิกขวาที่วิดีโอ → <g1>ดาวน์โหลดด้วย DDM</g1> ทั้งสองวิธีจะส่งสตรีมที่หน้านั้นโหลดไป (<g2>Videos a page plays</g2>)"
+  },
   "35694583fe0f1379": {
    "source": "In the same window, tick <g1>Limit all downloads together to</g1> and set the speed. This caps DDM as a whole, however many files are downloading, torrents included. When torrents and other downloads run at the same time, each side gets at least half of the speed, and more when the other side needs less: a torrent going slowly leaves the rest to the other downloads, and the other way round. It applies whenever it is ticked, whether the per-file limiter is on or off.",
    "text": "ในหน้าต่างเดียวกัน ให้เลือก <g1>จำกัดการดาวน์โหลดทั้งหมดรวมกันที่</g1> แล้วตั้งค่าความเร็ว การตั้งค่านี้จะจำกัดความเร็วโดยรวมของ DDM ไม่ว่าจะกำลังดาวน์โหลดกี่ไฟล์ รวมถึงทอร์เรนต์ด้วย เมื่อทอร์เรนต์และการดาวน์โหลดอื่นทำงานพร้อมกัน แต่ละฝ่ายจะได้ความเร็วอย่างน้อยครึ่งหนึ่ง และจะได้มากขึ้นเมื่ออีกฝ่ายต้องการน้อยลง: หากทอร์เรนต์ดาวน์โหลดช้า ความเร็วส่วนที่เหลือจะไปยังการดาวน์โหลดอื่น และในทางกลับกัน การตั้งค่านี้จะมีผลเมื่อเลือกไว้ ไม่ว่าตัวจำกัดความเร็วต่อไฟล์จะเปิดหรือปิดอยู่ก็ตาม"
@@ -3382,6 +3442,10 @@
    "source": "Right-click the list's blank space for <g1>Add new download</g1>, <g2>Select all</g2>, <g3>Arrange files</g3>, <g4>Clear all filters</g4> and <g5>Delete All Completed</g5>.",
    "text": "คลิกขวาที่พื้นที่ว่างของรายการเพื่อเลือก <g1>เพิ่มการดาวน์โหลดใหม่</g1>, <g2>เลือกทั้งหมด</g2>, <g3>จัดเรียงไฟล์</g3>, <g4>ล้างตัวกรองทั้งหมด</g4> หรือ <g5>ลบที่เสร็จสมบูรณ์ทั้งหมด</g5>"
   },
+  "369983e69928fc01": {
+   "source": "<g1>{v1}</g1> <g2>20.9 MB</g2>",
+   "text": "<g1>{v1}</g1> <g2>20.9 MB</g2>"
+  },
   "36a1df60e5ee30b9": {
    "source": "<g1><x2/></g1> — what <g3>View → Theme</g3> lists; the file's name when there is none.",
    "text": "<g1><x2/></g1> — สิ่งที่ <g3>มุมมอง → ชุดรูปแบบ</g3> แสดงรายการ; ชื่อไฟล์เมื่อไม่มี"
@@ -3409,6 +3473,10 @@
   "3724a83fa3a38087": {
    "source": "<g1>Download Later</g1> — add it to a queue without starting. See below.",
    "text": "<g1>ดาวน์โหลดภายหลัง</g1> — เพิ่มลงในคิวโดยไม่เริ่มดาวน์โหลด ดูด้านล่าง"
+  },
+  "3727118233cdf55d": {
+   "source": "Right-click <g1>Download with DDM</g1>, for any link, magnet links included, and <g2>Download all links, images or videos and audio</g2> of a page.",
+   "text": "คลิกขวา <g1>ดาวน์โหลดด้วย DDM</g1> ได้กับทุกลิงก์ รวมถึงแม็กเน็ตลิงก์ และ<g2>ดาวน์โหลดลิงก์ รูปภาพ หรือวิดีโอและเสียงทั้งหมด</g2>ของหน้าเว็บ"
   },
   "3731ebb25637b8d0": {
    "source": "The page then says <g1>On</g1> and shows the address to open, such as <x2/>.",
@@ -4206,6 +4274,10 @@
    "source": "gallery-dl itself",
    "text": "gallery-dl เอง"
   },
+  "42c7eeed9c7e6c6b": {
+   "source": "It stores its own settings (paused or not, DDM's file types and excluded sites, its connection status, the name and site of the last download it left to the browser so its status page can say why, where you dragged the video button on each of the last 200 sites; nothing from private windows) in the browser's extension storage, on your computer.",
+   "text": "ส่วนขยายเก็บการตั้งค่าของตัวเอง (หยุดชั่วคราวหรือไม่ ประเภทไฟล์และไซต์ที่ยกเว้นของ DDM สถานะการเชื่อมต่อ ชื่อและไซต์ของการดาวน์โหลดล่าสุดที่ปล่อยให้เบราว์เซอร์จัดการ เพื่อให้หน้าสถานะบอกเหตุผลได้ และตำแหน่งที่ลากปุ่มวิดีโอไว้ในแต่ละไซต์จาก 200 ไซต์ล่าสุด ไม่เก็บสิ่งใดจากหน้าต่างส่วนตัว) ไว้ในพื้นที่เก็บข้อมูลส่วนขยายของเบราว์เซอร์ บนคอมพิวเตอร์ของผู้ใช้"
+  },
   "42c9af850b22a734": {
    "source": "The other way works too: <g1>Tasks → Export → As a text file</g1> writes one address per line, and <g2>As an IDM list (.ef2)</g2> writes an <x3/> list.",
    "text": "ทำในทางกลับกันก็ได้: <g1>งาน → ส่งออก → เป็นไฟล์ข้อความ</g1> จะเขียนที่อยู่หนึ่งรายการต่อบรรทัด และ <g2>เป็นรายการ IDM (.ef2)</g2> จะเขียนรายการ <x3/>"
@@ -4594,6 +4666,10 @@
    "source": "The download list in detail →",
    "text": "รายการดาวน์โหลดโดยละเอียด →"
   },
+  "4a1f47f373ef1ef5": {
+   "source": "When the video has subtitles, the <g1>Subtitles</g1> list offers them: the uploader's own languages first (and <g2>All the uploader's</g2> when there are several), then the site's automatic captions, marked <g3>automatic</g3>. Of those, only the ones in the language spoken and their translations into English and your interface language are listed (marked <g4>automatic translation</g4>); sites like YouTube offer a machine translation into every language they know.",
+   "text": "เมื่อวิดีโอมีคำบรรยาย รายการ <g1>คำบรรยาย</g1> จะแสดงคำบรรยายเหล่านั้น โดยเริ่มจากภาษาของผู้ที่อัปโหลดเอง (และ <g2>ทั้งหมดของผู้ที่อัปโหลด</g2> เมื่อมีหลายภาษา) ตามด้วยคำบรรยายอัตโนมัติของเว็บไซต์ ซึ่งมีเครื่องหมาย <g3>อัตโนมัติ</g3> ในกลุ่มนี้จะแสดงเฉพาะภาษาที่พูดในวิดีโอและคำแปลเป็นภาษาอังกฤษและภาษาของอินเทอร์เฟซของคุณ (มีเครื่องหมาย <g4>แปลอัตโนมัติ</g4>) เว็บไซต์อย่าง YouTube เสนอคำแปลด้วยเครื่องเป็นทุกภาษาที่รองรับ"
+  },
   "4a377fa87f903006": {
    "source": "DDM downloads the pictures of a gallery (a Wikimedia Commons category, a Flickr album, a DeviantArt gallery, an Imgur album and many more) with the help of…",
    "text": "DDM ดาวน์โหลดรูปภาพของแกลเลอรี (หมวดหมู่ของ Wikimedia Commons, อัลบั้ม Flickr, แกลเลอรี DeviantArt, อัลบั้ม Imgur และอื่น ๆ อีกมาก) ด้วยความช่วยเหลือของ…"
@@ -4733,6 +4809,10 @@
   "4c7ed07ca86321d9": {
    "source": "A bar in Statistics: a day, a site's or a kind of file's share",
    "text": "แถบในสถิติ: หนึ่งวัน สัดส่วนของไซต์หรือชนิดไฟล์"
+  },
+  "4c8652ab742797b6": {
+   "source": "Some servers report a new date for the same file every time. Tick <g1>Options → Downloads → Resume even if the file's date on the server changed</g1>.",
+   "text": "บางเซิร์ฟเวอร์รายงานวันที่ใหม่ของไฟล์เดิมทุกครั้ง ให้ทำเครื่องหมายที่ <g1>ตัวเลือก → การดาวน์โหลด → ดำเนินการต่อแม้วันที่ของไฟล์บนเซิร์ฟเวอร์เปลี่ยนไป</g1>"
   },
   "4c9e560c0ba0c3aa": {
    "source": "Options on its Connection page: connections per download, the network adapter and per-server exceptions",
@@ -5246,6 +5326,10 @@
    "source": "The free alternative to Internet Download Manager",
    "text": "ทางเลือกฟรีแทน Internet Download Manager"
   },
+  "5457bd7f6e3e53c1": {
+   "source": "Once you switch on <g1>Download through this browser's VPN or proxy</g1> in its options page (under <g2>More</g2>; Firefox asks you first), when the browser uses a proxy for a download (set by a VPN or proxy extension, or in its settings), the extension passes <g3>the proxy's address</g3>, or its <g4>proxy auto-config script</g4>, so DDM downloads through the same proxy. It never reads or passes the proxy's login. It notes only that a proxy asked for one, so DDM can tell you it can't use that proxy. Switched off (as installed), it reads nothing of the browser's proxy.",
+   "text": "เมื่อเปิด <g1>ดาวน์โหลดผ่าน VPN หรือพร็อกซีของเบราว์เซอร์นี้</g1> ในหน้าตัวเลือกของส่วนขยาย (ใต้ <g2>เพิ่มเติม</g2>; Firefox จะถามก่อน) และเบราว์เซอร์ใช้พร็อกซีสำหรับการดาวน์โหลด (ตั้งโดยส่วนขยาย VPN หรือพร็อกซี หรือในการตั้งค่าของเบราว์เซอร์) ส่วนขยายจะส่ง<g3>ที่อยู่ของพร็อกซี</g3> หรือ<g4>สคริปต์ตั้งค่าพร็อกซีอัตโนมัติ</g4> เพื่อให้ DDM ดาวน์โหลดผ่านพร็อกซีเดียวกัน ส่วนขยายไม่อ่านหรือส่งข้อมูลเข้าสู่ระบบของพร็อกซี เพียงบันทึกว่าพร็อกซีขอข้อมูลดังกล่าว เพื่อให้ DDM แจ้งได้ว่าใช้พร็อกซีนั้นไม่ได้ เมื่อปิดไว้ (ค่าเริ่มต้นหลังติดตั้ง) จะไม่อ่านข้อมูลพร็อกซีของเบราว์เซอร์เลย"
+  },
   "546b1ddab6eff2bf": {
    "source": "Catch downloads from your browser — Dannex Download Manager help",
    "text": "ดักจับการดาวน์โหลดจากเบราว์เซอร์ของคุณ — วิธีใช้ Dannex Download Manager"
@@ -5406,6 +5490,10 @@
    "source": "If your antivirus quarantined DDM, restore it and add an exception for its folder. If it flags something other than the setup or DDM's own programs, or a copy from anywhere else, don't run it, and please <g1>tell us</g1>.",
    "text": "หากโปรแกรมแอนติไวรัสของคุณกักกัน DDM ให้กู้คืนและเพิ่มข้อยกเว้นสำหรับโฟลเดอร์ หากแจ้งเตือนสิ่งอื่นที่ไม่ใช่โปรแกรมติดตั้งหรือโปรแกรมของ DDM เอง หรือสำเนาจากที่อื่น ห้ามรัน และโปรด<g1>แจ้งให้เราทราบ</g1>"
   },
+  "569ad7719d07f2f2": {
+   "source": "The first official release of Dannex Download Manager: a free, open-source download manager for Windows (with Linux and an experimental macOS version), laid out the way Internet Download Manager users expect, and faster.",
+   "text": "รุ่นทางการรุ่นแรกของ Dannex Download Manager ตัวจัดการดาวน์โหลดโอเพนซอร์สที่ใช้งานได้ฟรี สำหรับ Windows (มีรุ่น Linux และรุ่น macOS ที่ยังอยู่ในขั้นทดลอง) จัดหน้าตาตามที่ผู้ใช้ Internet Download Manager คุ้นเคย และเร็วกว่า"
+  },
   "569b5b4f390246d8": {
    "source": "Command line and automation",
    "text": "บรรทัดคำสั่งและการทำงานอัตโนมัติ"
@@ -5421,6 +5509,10 @@
   "56cc0ee76be4673e": {
    "source": "You can add your own queues in the Scheduler, or with <g1>Create new queue</g1> in a download's right-click menu.",
    "text": "คุณสามารถเพิ่มคิวของคุณเองได้ในตัวจัดกำหนดการ หรือใช้ <g1>สร้างคิวใหม่</g1> ในเมนูคลิกขวาของการดาวน์โหลด"
+  },
+  "56d8787819039809": {
+   "source": "<g1>Ready before you click.</g1> When the pointer reaches the button, or rests for a moment over the video on that video's own page (a YouTube watch page, for example, never a feed or YouTube Shorts), DDM starts looking the video up already, so its list is often ready when the menu opens. One look-up at a time. It starts only while DDM isn't looking up another video, and stops when you leave the page. In a private window nothing is looked up before you click.",
+   "text": "<g1>พร้อมก่อนที่จะคลิก</g1> เมื่อเมาส์ไปถึงปุ่ม หรือวางอยู่เหนือวิดีโอครู่หนึ่งบนหน้าของวิดีโอนั้นเอง (เช่นหน้าดูวิดีโอของ YouTube ไม่ใช่ฟีดหรือ YouTube Shorts) DDM จะเริ่มค้นหาข้อมูลวิดีโอไว้ก่อน รายการจึงมักพร้อมเมื่อเมนูเปิด ค้นหาได้ครั้งละหนึ่งวิดีโอ จะเริ่มเมื่อ DDM ไม่ได้ค้นหาวิดีโออื่นอยู่ และหยุดเมื่อออกจากหน้า ในหน้าต่างส่วนตัวจะไม่ค้นหาอะไรก่อนที่จะคลิก"
   },
   "56e24f6222e629f5": {
    "source": "is the theme yours starts from: <x1/> (the default), <x2/>, <x3/>, <x4/>, <x5/>, <x6/>, <x7/>, <x8/>, <x9/>, or another theme file in the same folder.",
@@ -6014,6 +6106,10 @@
    "source": "Image viewer",
    "text": "โปรแกรมดูรูปภาพ"
   },
+  "6009e19453a98f85": {
+   "source": "YouTube refuses its automatic translations to download programs: an <g1>automatic translation</g1> comes with the captions it's made from, and when YouTube refuses the translation, those are saved instead (beside the video or inside it, as you chose), and the <g2>Download complete</g2> window says so.",
+   "text": "YouTube ไม่อนุญาตให้โปรแกรมดาวน์โหลดใช้คำแปลอัตโนมัติ <g1>แปลอัตโนมัติ</g1> จะมาพร้อมกับคำบรรยายต้นฉบับที่ใช้แปล และเมื่อ YouTube ปฏิเสธคำแปล ระบบจะบันทึกคำบรรยายต้นฉบับแทน (ไว้ข้างวิดีโอหรือในวิดีโอตามที่เลือก) และหน้าต่าง <g2>ดาวน์โหลดเสร็จสมบูรณ์</g2> จะแจ้งไว้"
+  },
   "600e43cedd597d06": {
    "source": "A list of links from a file",
    "text": "รายการลิงก์จากไฟล์"
@@ -6194,6 +6290,10 @@
    "source": "<g1>Categories</g1><g2>Dannex Download Manager</g2>",
    "text": "<g1>หมวดหมู่</g1><g2>Dannex Download Manager</g2>"
   },
+  "62b2e43b5e031e17": {
+   "source": "<g1>Download File Info, the way you know it:</g1> the file starts arriving while you choose where it goes, and it joins the list only once you click <g2>Start Download</g2> or <g3>Download Later</g3>; <g4>Cancel</g4> leaves nothing behind.",
+   "text": "<g1>ข้อมูลไฟล์ดาวน์โหลดแบบที่คุ้นเคย:</g1> ไฟล์เริ่มถูกดาวน์โหลดขณะที่เลือกตำแหน่งจัดเก็บ และจะเข้าสู่รายการเมื่อคลิก <g2>เริ่มการดาวน์โหลด</g2> หรือ <g3>ดาวน์โหลดภายหลัง</g3> เท่านั้น ส่วน<g4>ยกเลิก</g4>จะไม่เหลืออะไรไว้"
+  },
   "62b391cabe3b0674": {
    "source": "Drag a link from your browser onto it: it lights up with an amber frame while something it can take is over it. Let go, and DDM adds the link as if you had used <g1>Add URL</g1>.",
    "text": "ลากลิงก์จากเบราว์เซอร์มาวางบนสี่เหลี่ยมนั้น: เมื่อมีสิ่งที่รับได้อยู่เหนือสี่เหลี่ยม สี่เหลี่ยมจะสว่างขึ้นพร้อมกรอบสีอำพัน ปล่อยเมาส์ แล้ว DDM จะเพิ่มลิงก์เหมือนใช้ <g1>เพิ่ม URL</g1>"
@@ -6221,6 +6321,10 @@
   "631b9914f6507aef": {
    "source": "<g1>Testing it.</g1> <x2/> runs a real freeze, panic and crash (<x3/>) and checks each report's signature. To try it in the app, start DDM with <x4/>, then run <x5/> (a deadlock; or <x6/>, 12 s of a busy window thread, <x7/>, <x8/>, <x9/>). <x10/> does that in a copy of the app off the screens, its window visible and minimized.",
    "text": "<g1>การทดสอบ</g1> <x2/> จำลองการค้าง การหยุดทำงานแบบ panic และการขัดข้องจริง (<x3/>) แล้วตรวจสอบลายเซ็นของแต่ละรายงาน หากต้องการลองในแอป ให้เริ่ม DDM ด้วย <x4/> แล้วเรียกใช้ <x5/> (deadlock; หรือ <x6/> ซึ่งทำให้เธรดหน้าต่างทำงานเต็มที่เป็นเวลา 12 วินาที, <x7/>, <x8/>, <x9/>) <x10/> ทำเช่นนั้นกับสำเนาของแอปที่อยู่นอกหน้าจอ โดยแสดงหน้าต่างไว้และย่อหน้าต่างลง"
+  },
+  "6340aeee835f4991": {
+   "source": "<g1>Videos</g1> from thousands of sites with yt-dlp, with playlists, subtitles (embedded or beside the file) and the sound alone; <g2>image galleries</g2> with gallery-dl, through DDM's own downloader.",
+   "text": "<g1>วิดีโอ</g1>จากเว็บไซต์นับพันแห่งด้วย yt-dlp รองรับเพลย์ลิสต์ คำบรรยาย (ฝังในไฟล์หรืออยู่แยกข้างไฟล์) และดาวน์โหลดเฉพาะเสียง ส่วน<g2>แกลเลอรีรูปภาพ</g2>ใช้ gallery-dl ผ่านตัวดาวน์โหลดของ DDM เอง"
   },
   "635f40f1db7e086a": {
    "source": "Pause running downloads, or start (resume) stopped, queued or failed ones, in the running app.",
@@ -6257,6 +6361,10 @@
   "63f1d2c78982729f": {
    "source": "downloads a gallery into a folder named after it, <x1/> files at once (8 by default). See <g2>Command line and automation</g2>.",
    "text": "ดาวน์โหลดแกลเลอรีลงในโฟลเดอร์ที่ตั้งชื่อตามแกลเลอรี ครั้งละ <x1/> ไฟล์ (ค่าเริ่มต้น 8) ดู<g2>บรรทัดคำสั่งและระบบอัตโนมัติ</g2>"
+  },
+  "64030dbd10fb6a9a": {
+   "source": "Only if you choose them:",
+   "text": "เฉพาะเมื่อเลือกใช้:"
   },
   "640f7ad89c389c38": {
    "source": "<g1>Take downloads from web browsers</g1> — let the browser extension hand downloads to DDM. Turn it off to keep every download in the browser.",
@@ -6381,6 +6489,10 @@
   "664a43a53c16830a": {
    "source": "License",
    "text": "ใบอนุญาต"
+  },
+  "66591b000ca37436": {
+   "source": "Is the site in <g1>Leave downloads from these sites to the browser</g1>?",
+   "text": "ไซต์นี้อยู่ใน <g1>ปล่อยให้เบราว์เซอร์จัดการดาวน์โหลดจากไซต์เหล่านี้</g1> หรือไม่"
   },
   "6685cbbaa02eceef": {
    "source": "The progress window shows it coming in.",
@@ -6990,6 +7102,10 @@
    "source": "A server at a medium round trip (60 to 150 ms)",
    "text": "เซิร์ฟเวอร์ที่มีเวลาไปกลับปานกลาง (60 ถึง 150 มิลลิวินาที)"
   },
+  "70be5377fd1f31fb": {
+   "source": "<g1>Site Grabber:</g1> a whole site or part of one, to read offline, in projects you can always come back to under <g2>Grabber projects</g2>.",
+   "text": "<g1>ตัวดึงเว็บไซต์:</g1> ดึงทั้งเว็บไซต์หรือบางส่วนไว้อ่านแบบออฟไลน์ เก็บเป็นโครงการที่กลับมาเปิดได้เสมอใน<g2>โครงการตัวดึง</g2>"
+  },
   "70d42911cc360e5b": {
    "source": "On Linux",
    "text": "บน Linux"
@@ -7137,6 +7253,10 @@
   "72f3284ff6dd83fc": {
    "source": "<g1>Up</g1> / <g2>Down</g2>, <g3>Left</g3> / <g4>Right</g4>",
    "text": "<g1>ขึ้น</g1> / <g2>ลง</g2>, <g3>ซ้าย</g3> / <g4>ขวา</g4>"
+  },
+  "72fcb0d3a8812fe4": {
+   "source": "<g1>Help → Support DDM</g1> opens Dannex's page on GitHub Sponsors.",
+   "text": "<g1>วิธีใช้ → สนับสนุน DDM</g1> เปิดหน้า GitHub Sponsors ของ Dannex"
   },
   "72ff8f6b37364fc1": {
    "source": "is where files land: each category has its folder inside (<x1/>, <x2/>, <x3/>…). Mount a network share there to download straight onto it.",
@@ -7445,6 +7565,10 @@
   "789d3fd4219dc768": {
    "source": "DDM refused the request",
    "text": "DDM ปฏิเสธคำขอ"
+  },
+  "78b941511ecd4414": {
+   "source": "The browser extension's <g1>Download video</g1> button over a video opens the same qualities in a menu over the page (<g2>Browser integration</g2>). yt-dlp takes a few seconds to look a video up, so the menu doesn't wait for it when the page already says what it holds:",
+   "text": "ปุ่ม <g1>ดาวน์โหลดวิดีโอ</g1> ของส่วนขยายเบราว์เซอร์ที่อยู่เหนือวิดีโอจะเปิดคุณภาพชุดเดียวกันในเมนูเหนือหน้า (<g2>การเชื่อมต่อกับเบราว์เซอร์</g2>) yt-dlp ใช้เวลาไม่กี่วินาทีในการค้นหาข้อมูลวิดีโอ เมนูจึงไม่รอ หากหน้าเว็บระบุอยู่แล้วว่ามีอะไรบ้าง:"
   },
   "78c318b1f146d438": {
    "source": "<g1>Derived palettes.</g1> <x2/> makes a whole palette from a few seeds (background, surface, text, accent…), mixing every other role in OKLab and keeping WCAG contrast (4.5:1 for text, 3:1 for edges); High contrast strengthens every edge on top. <x3/> seeds the Native theme from the system's accent and contrast (Windows' settings, the freedesktop portal on Linux, macOS's accent).",
@@ -8258,6 +8382,10 @@
    "source": "Height of the download list's column headers",
    "text": "ความสูงของส่วนหัวคอลัมน์ในรายการดาวน์โหลด"
   },
+  "84680134f55802c8": {
+   "source": "<g1>yt-dlp</g1> (about 24 MB) looks the page up and finds where the video and its sound come from; DDM downloads them (<g2>How a video comes down</g2>). The first time, click <g3>Install yt-dlp</g3>. DDM checks the download against the signature yt-dlp's developers publish before it uses it. On Windows and macOS DDM takes yt-dlp's folder build and unpacks it once, so yt-dlp starts in about half the time at each look-up and download (the single-program build unpacks itself every time it starts). A copy installed by an earlier DDM keeps working, and the next update of yt-dlp replaces it with the folder build.",
+   "text": "<g1>yt-dlp</g1> (ประมาณ 24 MB) ค้นหาข้อมูลของหน้าและหาว่าวิดีโอกับเสียงมาจากที่ใด แล้ว DDM จะดาวน์โหลดสิ่งเหล่านั้น (<g2>วิดีโอถูกดาวน์โหลดอย่างไร</g2>) ครั้งแรกให้คลิก <g3>ติดตั้ง yt-dlp</g3> DDM จะตรวจสอบไฟล์ที่ดาวน์โหลดกับลายเซ็นที่ผู้พัฒนา yt-dlp เผยแพร่ก่อนใช้งาน บน Windows และ macOS DDM ใช้ yt-dlp แบบโฟลเดอร์และแตกไฟล์ไว้ครั้งเดียว ทำให้ yt-dlp เริ่มทำงานเร็วขึ้นราวครึ่งหนึ่งในการค้นหาและการดาวน์โหลดแต่ละครั้ง (แบบโปรแกรมเดียวต้องแตกไฟล์ตัวเองทุกครั้งที่เริ่ม) สำเนาที่ติดตั้งโดย DDM รุ่นก่อนยังใช้งานได้ และการอัปเดต yt-dlp ครั้งถัดไปจะเปลี่ยนเป็นแบบโฟลเดอร์"
+  },
   "847835563c342573": {
    "source": "Torrents and your security",
    "text": "ทอร์เรนต์และความปลอดภัยของคุณ"
@@ -8521,6 +8649,10 @@
   "88773f681a06d531": {
    "source": "A greyed arrow",
    "text": "ลูกศรสีเทา"
+  },
+  "8877fd41005c6e50": {
+   "source": "Dannex Download Manager (\"DDM\", \"the software\") and the website dannex.kavangi.co.ke (\"the site\") are made by the Dannex Download Manager contributors (\"we\"). By using the software or the site you accept these terms. If you don't, please don't use them.",
+   "text": "Dannex Download Manager (“DDM”, “ซอฟต์แวร์”) และเว็บไซต์ dannex.kavangi.co.ke (“เว็บไซต์”) จัดทำโดยผู้ร่วมพัฒนา Dannex Download Manager (“เรา”) การใช้ซอฟต์แวร์หรือเว็บไซต์ถือว่ายอมรับข้อกำหนดนี้ หากไม่ยอมรับ โปรดอย่าใช้"
   },
   "88797b59ad63a6d7": {
    "source": "<g1>DDM as an IDM alternative</g1><g2>Spot something wrong? Tell us</g2>",
@@ -9346,6 +9478,10 @@
    "source": "Select the downloads in the box",
    "text": "เลือกการดาวน์โหลดในกล่อง"
   },
+  "97eba27f9800113f": {
+   "source": "<g1>Queues and the Scheduler</g1> start and stop on their own, can wake the computer, and turn it off when done. <g2>Speed Limiter</g2>, categories with their own folders, and duplicate handling.",
+   "text": "<g1>คิวและตัวจัดกำหนดการ</g1> เริ่มและหยุดเองได้ ปลุกคอมพิวเตอร์ได้ และปิดเครื่องเมื่อเสร็จ มี<g2>ตัวจำกัดความเร็ว</g2> หมวดหมู่ที่มีโฟลเดอร์ของตัวเอง และการจัดการไฟล์ซ้ำ"
+  },
   "97ec4888f860947d": {
    "source": "What other people can see",
    "text": "สิ่งที่ผู้อื่นมองเห็นได้"
@@ -9394,6 +9530,10 @@
    "source": "The website's <g1>Themes page</g1> has a prompt you can give an AI assistant, with the format, every key and the rules, to write a theme for you from a description.",
    "text": "<g1>หน้าชุดรูปแบบ</g1> ของเว็บไซต์มีข้อความแจ้งที่คุณสามารถให้ผู้ช่วย AI พร้อมรูปแบบ คีย์ทั้งหมด และกฎ เพื่อเขียนชุดรูปแบบให้คุณจากคำอธิบาย"
   },
+  "98b77f378859b820": {
+   "source": "It notes the addresses of video streams (HLS and DASH playlists) and of video and sound files a page's players load, in memory for that tab, so the <g1>Download video</g1> button and the right-click menu can pass them on. Its button reads the page only to find video and sound players and place itself, and, for its menu, the qualities the player or its stream lists (on YouTube, what the player says it plays and its formats). Clicking it passes the page's address, the video's address, the page's title, the site's cookies, the page that embeds the player and your browser's User-Agent to DDM. So that the qualities are ready when you click, it passes the same when the pointer reaches the button, or rests over the video on that video's own page; never from a private window.",
+   "text": "ส่วนขยายจดที่อยู่ของสตรีมวิดีโอ (เพลย์ลิสต์ HLS และ DASH) และของไฟล์วิดีโอและเสียงที่ตัวเล่นในหน้าเว็บโหลด ไว้ในหน่วยความจำของแท็บนั้น เพื่อให้ปุ่ม <g1>ดาวน์โหลดวิดีโอ</g1> และเมนูคลิกขวาส่งต่อได้ ปุ่มของส่วนขยายอ่านหน้าเว็บเพียงเพื่อหาตัวเล่นวิดีโอและเสียงและวางตัวเอง และสำหรับเมนู เพื่อดูคุณภาพที่ตัวเล่นหรือสตรีมระบุไว้ (บน YouTube คือสิ่งที่ตัวเล่นบอกว่าเล่นได้และรูปแบบของไฟล์) เมื่อคลิก ส่วนขยายจะส่งที่อยู่ของหน้า ที่อยู่ของวิดีโอ ชื่อหน้า คุกกี้ของไซต์ หน้าที่ฝังตัวเล่น และ User-Agent ของเบราว์เซอร์ไปให้ DDM เพื่อให้ตัวเลือกคุณภาพพร้อมเมื่อคลิก ส่วนขยายจะส่งข้อมูลชุดเดียวกันนี้เมื่อเมาส์ไปถึงปุ่ม หรืออยู่เหนือวิดีโอในหน้าของวิดีโอนั้นเอง และจะไม่ส่งจากหน้าต่างส่วนตัว"
+  },
   "98ba5822f64ea0d2": {
    "source": "Mac OS X's feel: gel buttons round at the ends, a blue focus ring and a blue gel progress bar.",
    "text": "ความรู้สึกของ Mac OS X: ปุ่มเจลโค้งมนที่ปลาย, วงแหวนโฟกัสสีน้ำเงิน และแถบความคืบหน้าเจลสีน้ำเงิน"
@@ -9441,6 +9581,10 @@
   "99605902518653e2": {
    "source": "The same programs without an installer. It keeps its data in <x1/>, like an installed copy.",
    "text": "โปรแกรมเดียวกันที่ไม่มีตัวติดตั้ง โดยเก็บข้อมูลไว้ใน <x1/> เหมือนกับโปรแกรมที่ติดตั้งแล้ว"
+  },
+  "9970aef0a32e17f8": {
+   "source": "<g1>The DDM Integration Module</g1> for Chrome, Edge, Brave, Opera, Vivaldi and Firefox hands your downloads to DDM with their sign-in. One click on its toolbar button turns it off or on; when DDM isn't installed, its page says so and turns green by itself once it is.",
+   "text": "<g1>DDM Integration Module</g1> สำหรับ Chrome, Edge, Brave, Opera, Vivaldi และ Firefox ส่งการดาวน์โหลดให้ DDM พร้อมข้อมูลการลงชื่อเข้าใช้ของเบราว์เซอร์ คลิกปุ่มบนแถบเครื่องมือหนึ่งครั้งเพื่อปิดหรือเปิดใช้งาน หากยังไม่ได้ติดตั้ง DDM หน้าของโมดูลจะแจ้งให้ทราบ และจะเปลี่ยนเป็นสีเขียวเองเมื่อติดตั้งแล้ว"
   },
   "997cc2f8f3474ae1": {
    "source": "Windows<g1><g2>3</g2></g1>",
@@ -9690,6 +9834,10 @@
    "source": "Latest",
    "text": "ล่าสุด"
   },
+  "9d84f106d2cfbe3e": {
+   "source": "Is the extension loaded and turned on? Look for <g1>Dannex Download Manager</g1> on the browser's extensions page. In Firefox, a temporary add-on is gone after a restart: <g2>Browser integration</g2> says how to keep it. See <g3>Browser integration</g3>.",
+   "text": "โหลดส่วนขยายและเปิดใช้งานแล้วหรือยัง ดูที่ <g1>Dannex Download Manager</g1> ในหน้าส่วนขยายของเบราว์เซอร์ ใน Firefox ส่วนเสริมชั่วคราวจะหายไปหลังรีสตาร์ต <g2>การทำงานร่วมกับเบราว์เซอร์</g2> บอกวิธีเก็บไว้ ดู <g3>การทำงานร่วมกับเบราว์เซอร์</g3>"
+  },
   "9d98aff073986aca": {
    "source": "Options → Archives",
    "text": "ตัวเลือก → ไฟล์เก็บถาวร"
@@ -9790,6 +9938,10 @@
    "source": "Yes. It's open source under the GNU GPL, version 3. No trial, no paid edition, no registration key, no nag screen, no ads. <g1>More</g1>",
    "text": "ใช่ เป็นโอเพนซอร์สภายใต้ GNU GPL, เวอร์ชัน 3 ไม่มีรุ่นทดลอง, ไม่มีรุ่นที่ต้องจ่ายเงิน, ไม่มีคีย์ลงทะเบียน, ไม่มีหน้าจอแจ้งเตือน, ไม่มีโฆษณา <g1>เพิ่มเติม</g1>"
   },
+  "9eec233a8d803458": {
+   "source": "Day and dark mode and themes, 86 languages including right to left, keyboard and screen-reader access, a portable version, a phone remote and a server mode.",
+   "text": "โหมดกลางวันและโหมดมืด พร้อมธีม รองรับ 86 ภาษารวมถึงภาษาที่เขียนจากขวาไปซ้าย ใช้งานผ่านคีย์บอร์ดและโปรแกรมอ่านหน้าจอได้ มีเวอร์ชันพกพา รีโมตผ่านโทรศัพท์ และโหมดเซิร์ฟเวอร์"
+  },
   "9efdcb6a62e4c3f8": {
    "source": "File Properties with the download's address",
    "text": "คุณสมบัติของไฟล์พร้อมที่อยู่สำหรับดาวน์โหลด"
@@ -9862,9 +10014,17 @@
    "source": "Tooltips' background",
    "text": "พื้นหลังคำแนะนำเครื่องมือ"
   },
+  "9ff6e4c8afc7a630": {
+   "source": "With <g1>Send downloads to → Dannex Download Manager on another computer</g1> in its options page (under <g2>More</g2>; off until you pair one with the code that DDM shows), the extension sends the address of each download it takes to that DDM of yours, over HTTPS, with the pairing's token; nothing else, and never to anyone else.",
+   "text": "เมื่อเลือก <g1>ส่งการดาวน์โหลดไปยัง → Dannex Download Manager บนคอมพิวเตอร์เครื่องอื่น</g1> ในหน้าตัวเลือกของส่วนขยาย (ใต้ <g2>เพิ่มเติม</g2>; ปิดอยู่จนกว่าจะจับคู่ด้วยรหัสที่ DDM แสดง) ส่วนขยายจะส่งที่อยู่ของแต่ละการดาวน์โหลดที่รับไว้ไปยัง DDM ของผู้ใช้เครื่องนั้นผ่าน HTTPS พร้อมโทเคนของการจับคู่ ไม่ส่งสิ่งอื่น และไม่ส่งให้ผู้อื่น"
+  },
   "a005349660165dea": {
    "source": "<g1>Palette roles.</g1> <x2/> declares each role with a stable key (<x3/>, <x4/>, <x5/>…), a description and the classic look's light and dark values, written out (the classic look isn't derived). The shared painters (<x6/>, <x7/>, <x8/>, <x9/>) read them through <x10/> and <x11/> and decide each control's states from them; no painting code holds a colour of its own.",
    "text": "<g1>บทบาทของชุดสี</g1> <x2/> ประกาศแต่ละบทบาทด้วยคีย์ที่เสถียร (<x3/>, <x4/>, <x5/>…) คำอธิบาย และค่าสีอ่อนและเข้มของรูปลักษณ์คลาสสิกที่เขียนไว้ (รูปลักษณ์คลาสสิกไม่ได้ถูกสร้างขึ้น) ตัววาดที่ใช้ร่วมกัน (<x6/>, <x7/>, <x8/>, <x9/>) อ่านค่าเหล่านี้ผ่าน <x10/> และ <x11/> และตัดสินสถานะของแต่ละส่วนควบคุมจากค่าเหล่านั้น โดยไม่มีโค้ดการวาดใด ๆ ที่เก็บสีของตัวเอง"
+  },
+  "a00eb12a0c517c21": {
+   "source": "<g1>Download Now</g1> adds each video as its own download and starts the main queue, which runs as many at once as you set in the <g2>Scheduler</g2> (<g3>Run N downloads at once</g3>). <g4>Later</g4> adds them without starting. Adding more than 500 at once asks first.",
+   "text": "<g1>ดาวน์โหลดเดี๋ยวนี้</g1> จะเพิ่มวิดีโอแต่ละรายการเป็นการดาวน์โหลดแยกกันและเริ่มคิวหลัก ซึ่งจะทำงานพร้อมกันตามจำนวนที่ตั้งไว้ใน<g2>ตัวจัดกำหนดการ</g2> (<g3>Run N downloads at once</g3>) ส่วน<g4>ภายหลัง</g4>จะเพิ่มรายการโดยไม่เริ่มดาวน์โหลด หากเพิ่มมากกว่า 500 รายการพร้อมกัน จะมีการถามยืนยันก่อน"
   },
   "a04886db62535b92": {
    "source": "A translation longer than the English ends in <g1>...</g1> where it doesn't fit; point at it to read it whole.",
@@ -10266,6 +10426,10 @@
    "source": "Apple Silicon: Macs with an M1 chip or later",
    "text": "Apple Silicon: Mac ที่ใช้ชิป M1 หรือใหม่กว่า"
   },
+  "a6c548e5567b0826": {
+   "source": "<g1>File Properties</g1> on double-click, with the page each download came from; <g2>Show progress</g2> brings back a hidden progress window; <g3>Columns...</g3> shows, hides and orders the list's columns.",
+   "text": "<g1>คุณสมบัติของไฟล์</g1>เมื่อดับเบิลคลิก พร้อมหน้าเว็บที่แต่ละไฟล์ดาวน์โหลดมา <g2>แสดงความคืบหน้า</g2>นำหน้าต่างความคืบหน้าที่ซ่อนอยู่กลับมา <g3>คอลัมน์...</g3> แสดง ซ่อน และจัดลำดับคอลัมน์ของรายการ"
+  },
   "a6ce09b9c1c7e4cf": {
    "source": "Internet Download Manager 6.42",
    "text": "Internet Download Manager 6.42"
@@ -10273,6 +10437,10 @@
   "a6d086a0326cc3b7": {
    "source": "\"Dannex Download Manager\", \"DDM\" and the DDM logo identify this project. You may use them to refer to the project, and to name unmodified copies you distribute. If you distribute a changed version, please give it a different name and logo so people aren't confused about who made it; the GPL still applies to the code.",
    "text": "\"Dannex Download Manager\", \"DDM\" และโลโก้ DDM ระบุโครงการนี้ คุณสามารถใช้เพื่ออ้างถึงโครงการ และเพื่อตั้งชื่อสำเนาที่ไม่ได้แก้ไขที่คุณแจกจ่าย หากคุณแจกจ่ายเวอร์ชันที่เปลี่ยนแปลง โปรดตั้งชื่อและโลโก้ที่แตกต่างกัน เพื่อไม่ให้ผู้คนสับสนว่าใครเป็นผู้สร้าง; GPL ยังคงใช้กับโค้ด"
+  },
+  "a6f23421ac35c205": {
+   "source": "Look at <g1>Can resume</g1> in the progress window. <g2>No</g2> means the server can't send a file in parts, so DDM can't continue it later.",
+   "text": "ดู <g1>ดำเนินการต่อได้</g1> ในหน้าต่างความคืบหน้า <g2>ไม่</g2> หมายถึงเซิร์ฟเวอร์ส่งไฟล์เป็นส่วน ๆ ไม่ได้ DDM จึงดำเนินการต่อภายหลังไม่ได้"
   },
   "a716131dd46b73f4": {
    "source": "Real-Debrid, AllDebrid and Premiumize accounts — Dannex Download Manager",
@@ -11081,6 +11249,10 @@
   "b4a89666234d0e64": {
    "source": "Deleting downloads",
    "text": "การลบรายการดาวน์โหลด"
+  },
+  "b4ac60c82f87352c": {
+   "source": "DDM reads the torrent and shows its files as a folder tree. A <x1/> file is read at once. A magnet link first has to get the file list from other peers, usually within seconds. While it waits, <g2>Add torrent</g2> shows how many peers it found, from the trackers, the DHT or your local network, and how many answered. After 30 seconds without the file list, it says what may be in the way: a link with no trackers while the DHT is off, a firewall, a VPN or a network that blocks BitTorrent, or peers that answer but don't have the file list themselves. After 3 minutes it stops and keeps showing what it found, with what to try; <g3>Look up</g3> asks again.",
+   "text": "DDM อ่านทอร์เรนต์และแสดงไฟล์เป็นแผนผังโฟลเดอร์ ไฟล์ <x1/> จะอ่านได้ทันที ส่วนลิงก์แม็กเนตต้องดึงรายชื่อไฟล์จากเพียร์อื่นก่อน ซึ่งปกติใช้เวลาไม่กี่วินาที ระหว่างรอ <g2>เพิ่มทอร์เรนต์</g2> จะแสดงจำนวนเพียร์ที่พบจากแทร็กเกอร์ DHT หรือเครือข่ายในพื้นที่ของผู้ใช้ และจำนวนที่ตอบกลับ ถ้าผ่านไป 30 วินาทีแล้วยังไม่ได้รายชื่อไฟล์ จะแจ้งสิ่งที่อาจเป็นอุปสรรค เช่น ลิงก์ที่ไม่มีแทร็กเกอร์ขณะที่ DHT ปิดอยู่ ไฟร์วอลล์ VPN หรือเครือข่ายที่บล็อก BitTorrent หรือเพียร์ที่ตอบกลับแต่ไม่มีรายชื่อไฟล์ ผ่านไป 3 นาทีจะหยุด และยังแสดงสิ่งที่พบพร้อมสิ่งที่ลองได้ ส่วน <g3>ค้นหา</g3> จะถามอีกครั้ง"
   },
   "b4b8dfaf3531b2c6": {
    "source": "Download overnight — Dannex Download Manager help",
@@ -11970,6 +12142,10 @@
    "source": "If Dannex Download Manager closes unexpectedly or stops responding, a <g1>crash report</g1> window opens. It shows what happened, lets you read the whole report, and can send it to the developers on GitHub. Each report helps fix the problem for everyone.",
    "text": "หาก Dannex Download Manager ปิดโดยไม่คาดคิดหรือหยุดตอบสนอง หน้าต่าง <g1>รายงานข้อขัดข้อง</g1> จะเปิดขึ้นมา ซึ่งจะแสดงสิ่งที่เกิดขึ้น ให้คุณอ่านรายงานฉบับเต็ม และสามารถส่งไปยังนักพัฒนาบน GitHub ได้ รายงานแต่ละฉบับช่วยแก้ไขปัญหาสำหรับทุกคน"
   },
+  "c467885946dc6e66": {
+   "source": "Your download list, settings, logins you save in <g1>Sites Logins</g1>, the history of each download and the files you download are stored only on your computer: in <x2/> on Windows (or the <x3/> folder of the portable copy), and in the usual application-data folder on macOS and Linux. Nothing is uploaded anywhere. Uninstalling offers to delete them. The passwords of Sites Logins, the proxy and debrid accounts go into the system's keychain instead (Windows Credential Manager, the keyring on Linux, the macOS keychain), still on your computer, when one is there and unlocked.",
+   "text": "รายการดาวน์โหลด การตั้งค่า การเข้าสู่ระบบที่บันทึกไว้ใน <g1>การเข้าสู่ระบบไซต์</g1> ประวัติของแต่ละการดาวน์โหลด และไฟล์ที่ดาวน์โหลดจะเก็บไว้ในคอมพิวเตอร์ของผู้ใช้เท่านั้น ได้แก่ใน <x2/> บน Windows (หรือโฟลเดอร์ <x3/> ของเวอร์ชันพกพา) และในโฟลเดอร์ข้อมูลแอปพลิเคชันตามปกติบน macOS และ Linux ไม่มีการอัปโหลดไปที่ใด ตอนถอนการติดตั้งจะมีตัวเลือกให้ลบข้อมูลเหล่านี้ ส่วนรหัสผ่านของการเข้าสู่ระบบไซต์ พร็อกซี และบัญชี debrid จะเก็บไว้ในพวงกุญแจของระบบแทน (Windows Credential Manager, keyring บน Linux, พวงกุญแจของ macOS) ซึ่งยังอยู่ในคอมพิวเตอร์ของผู้ใช้ หากมีและปลดล็อกอยู่"
+  },
   "c48962c07ea187bc": {
    "source": "The video helpers window: yt-dlp and ffmpeg, each with its version and Use another program...",
    "text": "หน้าต่างเครื่องมือวิดีโอ: yt-dlp และ ffmpeg พร้อมเวอร์ชันและตัวเลือกใช้โปรแกรมอื่น..."
@@ -12085,6 +12261,10 @@
   "c6177a4c8ce509be": {
    "source": "Was DDM installed with the setup, with <g1>Set up browser integration</g1> ticked? A portable copy can't take browser downloads. Run the setup again to add it.",
    "text": "ติดตั้ง DDM ด้วยโปรแกรมติดตั้งและทำเครื่องหมายที่ <g1>ตั้งค่าการรวมเบราว์เซอร์</g1> หรือไม่? DDM รุ่นพกพาไม่สามารถรับการดาวน์โหลดจากเบราว์เซอร์ได้ เรียกใช้โปรแกรมติดตั้งอีกครั้งเพื่อติดตั้งส่วนนี้"
+  },
+  "c619dd0d87a7bf20": {
+   "source": "<g1>Virus checking</g1> after each download with the antivirus you choose (one click for Microsoft Defender), and a <g2>temporary folder</g2> of your choice for files still downloading.",
+   "text": "<g1>การตรวจสอบไวรัส</g1>หลังดาวน์โหลดแต่ละครั้งด้วยโปรแกรมป้องกันไวรัสที่เลือก (คลิกเดียวสำหรับ Microsoft Defender) และ<g2>โฟลเดอร์ชั่วคราว</g2>ที่กำหนดเองสำหรับไฟล์ที่ยังดาวน์โหลดอยู่"
   },
   "c62198270f0107d2": {
    "source": "What it sets",
@@ -13046,6 +13226,10 @@
    "source": "A whole gallery at once. Only new pictures next time.",
    "text": "ทั้งแกลเลอรีในครั้งเดียว ครั้งหน้าเอาเฉพาะรูปใหม่"
   },
+  "d57ac3e78ac78d1e": {
+   "source": "<g1>Download selected links</g1>, <g2>Download all links</g2>, <g3>Download all images</g3> and <g4>Download all videos and audio</g4> read the page (its links, pictures or players, or your selection) when you choose them, and pass the addresses to DDM with the page's address and its site's cookies; the last one adds the video and sound files the tab's players played.",
+   "text": "<g1>ดาวน์โหลดลิงก์ที่เลือก</g1> <g2>ดาวน์โหลดลิงก์ทั้งหมด</g2> <g3>ดาวน์โหลดรูปภาพทั้งหมด</g3> และ <g4>ดาวน์โหลดวิดีโอและเสียงทั้งหมด</g4> จะอ่านหน้าเว็บ (ลิงก์ รูปภาพ หรือตัวเล่น หรือส่วนที่เลือก) เมื่อเลือกคำสั่งเหล่านี้ แล้วส่งที่อยู่ไปให้ DDM พร้อมที่อยู่ของหน้าและคุกกี้ของไซต์ คำสั่งสุดท้ายจะเพิ่มไฟล์วิดีโอและเสียงที่ตัวเล่นในแท็บนั้นเล่นไปแล้วด้วย"
+  },
   "d5a1b43af84e44bd": {
    "source": "Open your browser's extensions page: type <x1/>, <x2/> or <x3/> in the address bar.",
    "text": "เปิดหน้าส่วนขยายของเบราว์เซอร์ของคุณ: พิมพ์ <x1/>, <x2/> หรือ <x3/> ในแถบที่อยู่"
@@ -13394,6 +13578,10 @@
    "source": "The <g1>user guide</g1> covers every window, with step-by-step tutorials. Something broken? <g2>Open an issue on GitHub</g2>, or use Help → Report a problem in the app.",
    "text": "<g1>คู่มือผู้ใช้</g1> ครอบคลุมทุกหน้าต่าง พร้อมบทเรียนทีละขั้นตอน มีอะไรเสียหรือเปล่า? <g2>เปิดประเด็นบน GitHub</g2> หรือใช้ วิธีใช้ → รายงานปัญหา ในแอป"
   },
+  "daa2aa4f40324179": {
+   "source": "From the Download video button in your browser",
+   "text": "จากปุ่มดาวน์โหลดวิดีโอในเบราว์เซอร์"
+  },
   "dabaf2be6d185ffc": {
    "source": "Questions about these terms: open an <g1>issue on GitHub</g1>.",
    "text": "หากมีคำถามเกี่ยวกับข้อกำหนดเหล่านี้: <g1>เปิดประเด็นบน GitHub</g1>"
@@ -13448,7 +13636,7 @@
   },
   "db94ba5f97a1f9e2": {
    "source": "The extension shows almost nothing of its own, as users of other download managers expect: a click on its toolbar button turns taking downloads off and on, its right-click menu has \"Don't take downloads from this site\" and Help (<x1/>, the status page: installed, or what is wrong and the one thing to do), and its options page (<x2/>) has only that switch, the browser's proxy (#42) and another DDM (#157). It never asks the app for its downloads (extensions up to {v1} did, for a window of their own: the host refuses that question now, and the app answers the automation API's <x3/> and actions only while the API is on).",
-   "text": "ส่วนขยายแทบไม่แสดงอะไรด้วยตัวเอง ตามที่ผู้ใช้ตัวจัดการดาวน์โหลดอื่นคาดหวัง: การคลิกปุ่มบนแถบเครื่องมือจะปิดและเปิดการรับการดาวน์โหลด เมนูคลิกขวามี \"ไม่รับการดาวน์โหลดจากไซต์นี้\" และวิธีใช้ (<x1/> หน้าสถานะ: ติดตั้งแล้ว หรือสิ่งที่ผิดปกติและสิ่งเดียวที่ต้องทำ) และหน้าตัวเลือก (<x2/>) มีเพียงสวิตช์นั้น พร็อกซีของเบราว์เซอร์ (#42) และ DDM อีกเครื่อง (#157) ส่วนขยายไม่เคยขอการดาวน์โหลดจากแอป (ส่วนขยายถึง {v1} เคยขอเพื่อหน้าต่างของตนเอง: ตอนนี้โฮสต์ปฏิเสธคำถามนั้น และแอปตอบ <x3/> ของ API อัตโนมัติและการกระทำเฉพาะขณะที่ API เปิดอยู่)"
+   "text": "ส่วนขยายแสดงอะไรด้วยตัวเองน้อยมาก ตามที่ผู้ใช้โปรแกรมดาวน์โหลดอื่นคุ้นเคย คือคลิกปุ่มบนแถบเครื่องมือเพื่อปิดหรือเปิดการรับการดาวน์โหลด เมนูคลิกขวามี “ไม่รับการดาวน์โหลดจากไซต์นี้” และวิธีใช้ (<x1/>, หน้าสถานะ: ติดตั้งแล้ว หรือมีปัญหาอะไรและต้องทำอย่างไร) ส่วนหน้าตัวเลือก (<x2/>) มีเพียงสวิตช์นั้น พร็อกซีของเบราว์เซอร์ (#42) และ DDM อีกตัว (#157) ส่วนขยายไม่เคยขอรายการดาวน์โหลดจากแอป (ส่วนขยายถึงเวอร์ชัน {v1} เคยทำเพื่อหน้าต่างของตัวเอง ตอนนี้โฮสต์ปฏิเสธคำถามนั้น และแอปจะตอบ <x3/> และการกระทำของ API อัตโนมัติเฉพาะเมื่อเปิด API อยู่)"
   },
   "dba089f6ed3c76a8": {
    "source": "Black and white, a bright accent, every edge drawn, text at 7:1 or more.",
@@ -13610,6 +13798,10 @@
    "source": "About Dannex Download Manager: its version, licence and links",
    "text": "เกี่ยวกับ Dannex Download Manager: เวอร์ชัน, ใบอนุญาต และลิงก์"
   },
+  "ded6b8d1bb0da886": {
+   "source": "A site may also refuse subtitles when it's asked too often. The video is saved all the same. DDM asks for the subtitles once more after 20 seconds, and if they still don't come, the <g1>Download complete</g1> window and the download's log say which ones are missing and why. Try them again later. When subtitles meant to go inside the video only come on that second try, they're saved beside it instead.",
+   "text": "ไซต์บางแห่งอาจปฏิเสธคำบรรยายเมื่อมีการขอบ่อยเกินไป แต่ระบบยังบันทึกวิดีโอไว้ตามปกติ DDM จะขอคำบรรยายอีกครั้งหลังจาก 20 วินาที และหากยังไม่ได้ หน้าต่าง <g1>ดาวน์โหลดเสร็จสมบูรณ์</g1> และบันทึกของการดาวน์โหลดจะแจ้งว่าขาดคำบรรยายใดและเพราะอะไร ลองขอใหม่ภายหลัง หากคำบรรยายที่ตั้งใจจะฝังในวิดีโอได้มาในการลองครั้งที่สองเท่านั้น คำบรรยายจะถูกบันทึกเป็นไฟล์แยกไว้ข้างวิดีโอแทน"
+  },
   "dee4ab42b514acda": {
    "source": "The language list on first start: every language with its flag, its own name and its English name",
    "text": "รายการภาษาเมื่อเริ่มใช้งานครั้งแรก: ทุกภาษาพร้อมธง ชื่อภาษานั้น และชื่อภาษาอังกฤษ"
@@ -13661,6 +13853,10 @@
   "df8c6c4ea9f4286f": {
    "source": "A click",
    "text": "การคลิก"
+  },
+  "df93e7b103c9e8b7": {
+   "source": "Under the hood",
+   "text": "เบื้องหลังการทำงาน"
   },
   "dfa6fbc5cd413bbb": {
    "source": "Menus and windows",
@@ -13729,6 +13925,10 @@
   "e069363b1b77d1db": {
    "source": "Chrome, Firefox, Edge and more",
    "text": "Chrome, Firefox, Edge และอื่น ๆ"
+  },
+  "e06cb012b324e259": {
+   "source": "Video, galleries, torrents and sites",
+   "text": "วิดีโอ แกลเลอรี ทอร์เรนต์ และเว็บไซต์"
   },
   "e0ad26c06dcee181": {
    "source": "1 the start time, 2 once or on some days, 3 a stop time if you want one.",
@@ -13865,6 +14065,10 @@
   "e2b96614efaa036c": {
    "source": "The drop target's edge at rest",
    "text": "ขอบของเป้าหมายการลากเมื่อไม่ได้ใช้งาน"
+  },
+  "e2c3ea2afe1c4e19": {
+   "source": "Minimize keeps DDM on the taskbar; closing it keeps it running in the notification area.",
+   "text": "ย่อเล็กสุดแล้ว DDM ยังอยู่บนแถบงาน ส่วนการปิดหน้าต่างจะให้ DDM ทำงานต่อในพื้นที่แจ้งเตือน"
   },
   "e2d3a15847aa0c81": {
    "source": "Point at the button: its tooltip says which of these it is, and what a click does.",
@@ -14209,6 +14413,10 @@
   "e8482108fc49e0e0": {
    "source": "Can it download overnight or on a schedule?",
    "text": "สามารถดาวน์โหลดข้ามคืนหรือตามกำหนดเวลาได้หรือไม่?"
+  },
+  "e84e5973bc796065": {
+   "source": "Is <g1>Options → General → Take downloads from web browsers</g1> on, and your browser ticked under <g2>Take downloads from these browsers</g2>?",
+   "text": "เปิด <g1>ตัวเลือก → ทั่วไป → รับการดาวน์โหลดจากเว็บเบราว์เซอร์</g1> อยู่หรือไม่ และทำเครื่องหมายเบราว์เซอร์ของผู้ใช้ไว้ใต้ <g2>รับการดาวน์โหลดจากเบราว์เซอร์เหล่านี้</g2> แล้วหรือยัง"
   },
   "e8517559a88ac7ad": {
    "source": "<g1>Repeat on</g1> the days you tick.",
@@ -14738,6 +14946,10 @@
    "source": "<g1>Through a proxy</g1>, DDM only sees the proxy, so it says <g2>through a proxy</g2> (with the proxy's country when it knows it) instead of guessing the server's. A VPN that works at the system level can't be seen: the country is then the server's, but the time includes the VPN's detour.",
    "text": "<g1>เมื่อใช้พร็อกซี</g1> DDM จะเห็นเฉพาะพร็อกซี จึงระบุว่า <g2>ผ่านพร็อกซี</g2> (พร้อมชื่อประเทศของพร็อกซีหากทราบ) แทนการคาดเดาตำแหน่งของเซิร์ฟเวอร์ ส่วน VPN ที่ทำงานในระดับระบบจะตรวจไม่พบ ประเทศที่แสดงจึงเป็นประเทศของเซิร์ฟเวอร์ แต่เวลาจะรวมระยะทางอ้อมผ่าน VPN ด้วย"
   },
+  "f10c89a15a8e65ac": {
+   "source": "When the Chrome Web Store's copy and the copy from DDM's folder are both in one Chromium browser, they ask each other (by their IDs, inside the browser) whether the other is there, so only one takes downloads. Nothing leaves the browser for that.",
+   "text": "เมื่อมีทั้งส่วนขยายจาก Chrome Web Store และส่วนขยายจากโฟลเดอร์ของ DDM อยู่ในเบราว์เซอร์ Chromium ตัวเดียวกัน ทั้งสองจะถามกันเอง (ผ่าน ID ภายในเบราว์เซอร์) ว่าอีกตัวอยู่หรือไม่ เพื่อให้มีเพียงตัวเดียวที่รับการดาวน์โหลด ไม่มีข้อมูลออกจากเบราว์เซอร์เพราะเรื่องนี้"
+  },
   "f1198b0bddc112e0": {
    "source": "<g1>Save to</g1>: the folder its files go to. When a package holds several kinds of files, the box says <g2>Each file's category folder</g2>: each file goes to its category's folder (<g3>Options → Save to</g3>), as Import always did.",
    "text": "<g1>บันทึกไปที่</g1>: โฟลเดอร์ที่ไฟล์จะถูกบันทึก เมื่อแพ็กเกจมีไฟล์หลายประเภท กล่องจะแสดง <g2>โฟลเดอร์หมวดหมู่ของแต่ละไฟล์</g2>: ไฟล์แต่ละไฟล์จะไปที่โฟลเดอร์หมวดหมู่ของมัน (<g3>ตัวเลือก → บันทึกไปที่</g3>) เช่นเดียวกับการนำเข้าเสมอมา"
@@ -14753,6 +14965,10 @@
   "f154ebe2d1cfad18": {
    "source": "Scheduler and queues",
    "text": "ตัวจัดกำหนดการและคิว"
+  },
+  "f168ba524a2dbb62": {
+   "source": "DDM installs an update only when the release's list of checksums is signed by DDM's release key and the file matches it; anything else is refused, and <g1>Download</g1> opens the <g2>Releases</g2> page instead.",
+   "text": "DDM จะติดตั้งอัปเดตก็ต่อเมื่อรายการค่าตรวจสอบของรุ่นนั้นลงลายเซ็นด้วยคีย์ของ DDM และไฟล์ตรงกับรายการนั้น หากไม่เป็นเช่นนั้นจะปฏิเสธ และ <g1>ดาวน์โหลด</g1> จะเปิดหน้า <g2>Releases</g2> แทน"
   },
   "f1693c50a75a5859": {
    "source": "What happens to a link",
@@ -15033,6 +15249,10 @@
   "f738ab641ccdc98d": {
    "source": "Dannex Download Manager: <g1>its source code</g1> and <g2>our benchmark</g2> against IDM 6.42. We haven't benchmarked the others yet; until we do, this page makes no speed claim about them.",
    "text": "Dannex Download Manager: <g1>ซอร์สโค้ด</g1> และ <g2>ผลการทดสอบของเรา</g2> เทียบกับ IDM 6.42 เรายังไม่ได้ทดสอบโปรแกรมอื่น ๆ จนกว่าจะถึงตอนนั้น หน้านี้จะไม่มีการกล่าวอ้างเรื่องความเร็วของโปรแกรมเหล่านั้น"
+  },
+  "f7591c001d6f9531": {
+   "source": "<g1>Torrents and magnet links</g1>, with sequential order, RSS feeds and sharing limits; the Add torrent window says what it is waiting for.",
+   "text": "<g1>ทอร์เรนต์และแม็กเน็ตลิงก์</g1> รองรับการดาวน์โหลดตามลำดับ ฟีด RSS และการจำกัดการแชร์ หน้าต่างเพิ่มทอร์เรนต์จะบอกว่ากำลังรออะไรอยู่"
   },
   "f7656bbc30b4c552": {
    "source": "<g1>Network adapter</g1><g2>Every connection DDM opens goes out through the adapter you pick, and stops when it disconnects.</g2>",
@@ -15342,6 +15562,10 @@
    "source": "<g1>Limits.</g1> A loopback link has no real distance or packet loss; the faults stand in for them. Results are from one machine. Run it yourself: <x2/>, then <x3/>.",
    "text": "<g1>ข้อจำกัด</g1> ลิงก์ลูปแบ็คไม่มีระยะทางจริงหรือการสูญหายของแพ็กเก็ต ข้อผิดพลาดเป็นตัวแทนของสิ่งเหล่านั้น ผลลัพธ์มาจากเครื่องเดียว รันด้วยตัวคุณเอง: <x2/> จากนั้น <x3/>"
   },
+  "fc27eae7fbac2219": {
+   "source": "<g1>A Download video button</g1> over videos, whose qualities show at once on YouTube.",
+   "text": "<g1>ปุ่มดาวน์โหลดวิดีโอ</g1>ที่แสดงบนวิดีโอ และบน YouTube จะแสดงคุณภาพของวิดีโอให้เลือกทันที"
+  },
   "fc2924c84dfb0d12": {
    "source": "The extension and DDM tell each other their versions at each connection, and every pair keeps working:",
    "text": "ส่วนขยายและ DDM แจ้งเวอร์ชันของกันและกันทุกครั้งที่เชื่อมต่อ และทุกคู่ยังทำงานได้:"
@@ -15425,6 +15649,10 @@
   "fd7ed4b8ce3c98ef": {
    "source": "The video helpers",
    "text": "ตัวช่วยวิดีโอ"
+  },
+  "fd876f9ac58a00f5": {
+   "source": "You can also paste a magnet link into <g1>Add URL</g1>, or drop a magnet link or a <x2/> file on the drop target (<g3>Tasks → Show drop target</g3>). With <g4>Options → General → Offer to download links copied to the clipboard</g4> on, copying a magnet link opens <g5>Add torrent</g5> with it, as copying a <x6/> file's address does, while <x7/> is in <g8>Options → File types</g8>. In the browser, right-click a magnet link and choose <g9>Download with DDM</g9>: <g10>Add torrent</g10> opens with it (the extension hands over only the magnet links you choose this way). If a torrent is already in the list, DDM says so instead of adding it twice.",
+   "text": "ยังวางลิงก์แม็กเนตใน <g1>เพิ่ม URL</g1> หรือลากลิงก์แม็กเนตหรือไฟล์ <x2/> ไปวางที่เป้าหมายการวางได้ (<g3>งาน → แสดงเป้าหมายการวาง</g3>) เมื่อเปิด <g4>ตัวเลือก → ทั่วไป → เสนอให้ดาวน์โหลดลิงก์ที่คัดลอกไปยังคลิปบอร์ด</g4> การคัดลอกลิงก์แม็กเนตจะเปิด <g5>เพิ่มทอร์เรนต์</g5> พร้อมลิงก์นั้น เช่นเดียวกับการคัดลอกที่อยู่ของไฟล์ <x6/> ตราบที่มี <x7/> อยู่ใน <g8>ตัวเลือก → ชนิดไฟล์</g8> ในเบราว์เซอร์ ให้คลิกขวาที่ลิงก์แม็กเนตแล้วเลือก <g9>ดาวน์โหลดด้วย DDM</g9> จะเปิด <g10>เพิ่มทอร์เรนต์</g10> พร้อมลิงก์นั้น (ส่วนขยายส่งต่อเฉพาะลิงก์แม็กเนตที่เลือกด้วยวิธีนี้) ถ้ามีทอร์เรนต์นี้ในรายการแล้ว DDM จะแจ้งแทนการเพิ่มซ้ำ"
   },
   "fd9436eee4e48316": {
    "source": "To set a time, click a part of it (hours, minutes, seconds) and use the arrows, the mouse wheel, <g1>Up</g1> / <g2>Down</g2> or the number keys. <g3>Left</g3> and <g4>Right</g4> move between the parts.",
@@ -15577,6 +15805,30 @@
   "ffffe7806eaeae3d": {
    "source": "The option is off until you tick it. On Linux and macOS DDM starts with your session the same way. A <g1>portable copy</g1> can't start with Windows, since that needs the registry, so the option is greyed there.",
    "text": "ตัวเลือกนี้จะปิดอยู่จนกว่าคุณจะทำเครื่องหมายไว้ บน Linux และ macOS DDM จะเริ่มพร้อมเซสชันของคุณในลักษณะเดียวกัน <g1>สำเนาแบบพกพา</g1> ไม่สามารถเริ่มพร้อม Windows ได้ เนื่องจากต้องใช้รีจิสทรี ดังนั้นตัวเลือกนี้จึงเป็นสีเทา"
+  },
+  "6e355ba39f5dc912": {
+   "source": "Sponsor Dannex Download Manager",
+   "text": "สนับสนุน Dannex Download Manager"
+  },
+  "fc7fe0579b9363e9": {
+   "source": "One egui window painted to fixed pixel coordinates, plus one immediate viewport per dialog. <x1/> holds the state (downloads, queues, settings, the list's selection) and turns menu, toolbar, key and IPC commands into actions. Each dialog is its own module and returns an <x2/> (open, closed, done with a value). A window that comes up by itself (Download complete, a message DDM tells, a question while DDM isn't the program in front) shows above the others without taking the keyboard from the program being typed in (<x3/>, <x4/>); those the person asked for take it. Windows handed over one after another (Download File Info, Add torrent, Download video) and Download complete boxes show one at a time, in one place, the next when one closes. Windows-only calls are confined to <x5/> and their Linux and macOS counterparts to <x6/> (starting with the session, the browsers' host, sounds, show in folder, the crash handler); every other file is safe, portable Rust. Fonts come from the system: Windows' Fonts folder, macOS's system fonts, fontconfig on Linux (<x7/>). On Windows, Latin, Greek and Cyrillic text is drawn by DirectWrite (<x8/>, through egui's glyph rasterizer hook): View → Text → Smooth in its natural mode, anti-aliased at the size asked for and placed at quarter pixels with the font's own advances; Classic (the default) in GDI-classic mode, so each letter's hinted shape and whole-pixel width come together. Other scripts are shaped and drawn by egui.",
+   "text": "หน้าต่าง egui หนึ่งหน้าต่างที่วาดตามพิกัดพิกเซลคงที่ และมี immediate viewport หนึ่งรายการต่อหนึ่งกล่องโต้ตอบ <x1/> เก็บสถานะ (รายการดาวน์โหลด คิว การตั้งค่า และรายการที่เลือกในรายการ) และแปลงคำสั่งจากเมนู แถบเครื่องมือ แป้นพิมพ์ และ IPC เป็นการกระทำ กล่องโต้ตอบแต่ละกล่องเป็นโมดูลของตัวเอง และส่งคืน <x2/> (เปิด ปิด หรือเสร็จสิ้นพร้อมค่า) หน้าต่างที่ขึ้นมาเอง (ดาวน์โหลดเสร็จแล้ว ข้อความที่ DDM แจ้ง หรือคำถามขณะที่ DDM ไม่ใช่โปรแกรมที่อยู่ด้านหน้า) จะแสดงเหนือหน้าต่างอื่นโดยไม่แย่งแป้นพิมพ์จากโปรแกรมที่กำลังพิมพ์อยู่ (<x3/>, <x4/>) ส่วนหน้าต่างที่ผู้ใช้เปิดเองจะรับแป้นพิมพ์ หน้าต่างที่ส่งต่อกันทีละหน้าต่าง (ข้อมูลไฟล์ดาวน์โหลด เพิ่มทอร์เรนต์ ดาวน์โหลดวิดีโอ) และกล่องดาวน์โหลดเสร็จแล้วจะแสดงทีละกล่องในตำแหน่งเดียว และกล่องถัดไปจะขึ้นเมื่อกล่องก่อนหน้าปิด การเรียกที่ใช้ได้เฉพาะ Windows อยู่ใน <x5/> และส่วนที่เทียบเท่าสำหรับ Linux และ macOS อยู่ใน <x6/> (เริ่มจากเซสชัน โฮสต์ของเบราว์เซอร์ เสียง แสดงในโฟลเดอร์ และตัวจัดการเมื่อโปรแกรมขัดข้อง) ไฟล์อื่นทั้งหมดเป็น Rust ที่ปลอดภัยและพกพาได้ ฟอนต์มาจากระบบ ได้แก่โฟลเดอร์ Fonts ของ Windows ฟอนต์ระบบของ macOS และ fontconfig บน Linux (<x7/>) บน Windows ข้อความละติน กรีก และซีริลลิกวาดด้วย DirectWrite (<x8/>, ผ่านตัวเชื่อมตัวแรสเตอร์ไรซ์กลิฟของ egui): มุมมอง → ข้อความ → เรียบ ใช้โหมดธรรมชาติ ลบรอยหยักตามขนาดที่ขอ และวางที่ระดับหนึ่งในสี่พิกเซลตามระยะเดินของฟอนต์เอง ส่วนคลาสสิก (ค่าเริ่มต้น) ใช้โหมด GDI-classic จึงได้รูปร่างตัวอักษรที่ผ่านการปรับ hinting และความกว้างเต็มพิกเซลไปพร้อมกัน อักษรระบบอื่นจัดรูปและวาดโดย egui"
+  },
+  "800407e32d4bc4d6": {
+   "source": "The extension shows almost nothing of its own, as users of other download managers expect: a click on its toolbar button turns taking downloads off and on, its right-click menu has \"Don't take downloads from this site\" and Help (<x1/>, the status page: installed, or what is wrong and the one thing to do), and its options page (<x2/>) has only that switch, the browser's proxy (#42) and another DDM (#157). It never asks the app for its downloads (extensions up to 0.6.5 did, for a window of their own: the host refuses that question now, and the app answers the automation API's <x3/> and actions only while the API is on).",
+   "text": "ส่วนขยายแสดงอะไรเองน้อยมาก ตามที่ผู้ใช้โปรแกรมดาวน์โหลดอื่นคุ้นเคย คลิกปุ่มบนแถบเครื่องมือเพื่อปิดและเปิดการรับดาวน์โหลด เมนูคลิกขวามี “ไม่รับดาวน์โหลดจากเว็บไซต์นี้” และวิธีใช้ (<x1/>, หน้าสถานะ: ติดตั้งแล้ว หรือมีอะไรผิดปกติและสิ่งเดียวที่ต้องทำ) ส่วนหน้าตัวเลือก (<x2/>) มีเพียงสวิตช์นั้น พร็อกซีของเบราว์เซอร์ (#42) และ DDM ตัวอื่น (#157) ส่วนขยายไม่เคยขอรายการดาวน์โหลดจากแอป (ส่วนขยายถึงเวอร์ชัน 0.6.5 เคยขอ เพื่อใช้ในหน้าต่างของตัวเอง ตอนนี้โฮสต์ปฏิเสธคำถามนั้นแล้ว และแอปจะตอบ <x3/> และการกระทำของ automation API เฉพาะเมื่อเปิด API อยู่)"
+  },
+  "dcedde395f1f0789": {
+   "source": "<g1>1.0.0</g1> <g2>20.9 MB</g2>",
+   "text": "<g1>1.0.0</g1> <g2>20.9 MB</g2>"
+  },
+  "410849c6c11c33d7": {
+   "source": "DDM is free and always will be. If it saves you time, you can support it.",
+   "text": "DDM ใช้ฟรีและจะเป็นเช่นนี้ตลอดไป หาก DDM ช่วยประหยัดเวลาให้คุณ คุณสามารถสนับสนุนได้"
+  },
+  "eb60a779982bcd66": {
+   "source": "Chrome, Edge and Brave run an extension in private (incognito) windows only when you allow it, and Firefox asks too. Until then, downloads from private windows stay with the browser. To allow it: on the browser's extensions page, open <g1>Details</g1> and turn on <g2>Allow in Incognito</g2>; in Firefox, <g3>Add-ons and themes</g3> → the extension → <g4>Allow</g4> beside <g5>Run in Private Windows</g5>. Downloads from a private window use that window's cookies, and DDM doesn't keep them in its list once they're done.",
+   "text": "Chrome, Edge และ Brave จะเปิดใช้ส่วนขยายในหน้าต่างส่วนตัว (incognito) ก็ต่อเมื่อผู้ใช้อนุญาตเท่านั้น และ Firefox ก็ถามเช่นกัน หากยังไม่อนุญาต การดาวน์โหลดจากหน้าต่างส่วนตัวจะยังอยู่กับเบราว์เซอร์ วิธีอนุญาต: ในหน้าส่วนขยายของเบราว์เซอร์ ให้เปิด <g1>รายละเอียด</g1> แล้วเปิด <g2>อนุญาตในโหมดไม่ระบุตัวตน</g2>; ใน Firefox ให้ไปที่ <g3>ส่วนเสริมและชุดรูปแบบ</g3> → ส่วนขยายนั้น → <g4>อนุญาต</g4> ที่ <g5>เรียกใช้ในหน้าต่างส่วนตัว</g5> การดาวน์โหลดจากหน้าต่างส่วนตัวจะใช้คุกกี้ของหน้าต่างนั้น และเมื่อดาวน์โหลดเสร็จแล้ว DDM จะไม่เก็บรายการไว้ในรายการดาวน์โหลด (Windows)"
   }
  }
 }

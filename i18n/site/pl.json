@@ -470,6 +470,10 @@
    "source": "<g1>Timing.</g1> End to end: from issuing the command to the finished file under its final name, polled every millisecond on a monotonic clock. DDM renames its finished file into place; IDM creates the final file early and fills it, so for IDM the moment it reaches full size counts. Transfer: the server's first request to its last byte, read on the same clock through a calibration request before each run.",
    "text": "<g1>Pomiar czasu.</g1> Od początku do końca: od wydania polecenia do gotowego pliku pod jego ostateczną nazwą, sprawdzane co milisekundę na zegarze monotonicznym. DDM zmienia nazwę gotowego pliku na właściwe miejsce; IDM tworzy plik końcowy wcześniej i wypełnia go, więc dla IDM liczy się moment osiągnięcia pełnego rozmiaru. Transfer: od pierwszego żądania serwera do ostatniego bajtu, odczytywane na tym samym zegarze poprzez żądanie kalibracji przed każdym uruchomieniem."
   },
+  "06e245ea1e3d8bbb": {
+   "source": "Its permissions, and why: <g1>downloads</g1> to see and hand over downloads; <g2>cookies</g2> so signed-in downloads work in DDM; <g3>nativeMessaging</g3> to talk to DDM; <g4>contextMenus</g4> for the right-click items; <g5>storage</g5> for its settings; <g6>webRequest</g6> to see forms submitted and video streams loaded (it changes nothing); <g7>declarativeNetRequestWithHostAccess</g7> (Chrome, Edge and other Chromium browsers) to have the files the browser would open (a PDF) downloaded instead, for the types DDM takes; in Firefox, <g8>webRequestBlocking</g8> does that; <g9>scripting</g9> to read a page's links when you ask, and to add the video button to pages already open when the extension is installed; <g10>proxy</g10> to read which proxy the browser uses, so downloads taken from a browser behind a VPN or proxy extension go through it too, only while you have that switched on in its options page (it never changes the browser's proxy; in Firefox it is optional, asked for when you switch it on; Chrome and the other Chromium browsers can't make it optional, and count it under the access to all sites); access to all sites because downloads and videos can come from any site.",
+   "text": "Uprawnienia i powody ich użycia: <g1>downloads</g1> – aby widzieć pobierania i przekazywać je dalej; <g2>cookies</g2> – aby pobierania po zalogowaniu działały w DDM; <g3>nativeMessaging</g3> – do komunikacji z DDM; <g4>contextMenus</g4> – dla pozycji menu po kliknięciu prawym przyciskiem myszy; <g5>storage</g5> – na ustawienia; <g6>webRequest</g6> – aby widzieć wysyłane formularze i ładowane strumienie wideo (niczego nie zmienia); <g7>declarativeNetRequestWithHostAccess</g7> (Chrome, Edge i inne przeglądarki oparte na Chromium) – aby pliki, które przeglądarka otworzyłaby sama (np. PDF), były pobierane, dla typów obsługiwanych przez DDM; w Firefox robi to <g8>webRequestBlocking</g8>; <g9>scripting</g9> – aby odczytać linki ze strony na Twoje polecenie oraz dodać przycisk wideo do stron otwartych już w chwili instalacji rozszerzenia; <g10>proxy</g10> – aby odczytać, jakiego serwera proxy używa przeglądarka, tak aby pobierania przejmowane z przeglądarki działającej za rozszerzeniem VPN lub proxy też przechodziły przez ten serwer; dzieje się tak tylko wtedy, gdy włączysz to na stronie opcji rozszerzenia (rozszerzenie nigdy nie zmienia proxy przeglądarki; w Firefox to uprawnienie jest opcjonalne i pojawia się prośba o nie przy włączaniu; w Chrome i innych przeglądarkach opartych na Chromium nie można go uczynić opcjonalnym i jest wliczane do dostępu do wszystkich witryn); dostęp do wszystkich witryn – ponieważ pobierania i wideo mogą pochodzić z dowolnej witryny."
+  },
   "06f1e7a5c9a5fcfc": {
    "source": "Help → About: the version you have.",
    "text": "Pomoc → Informacje o Dannex Download Manager: Twoja wersja."
@@ -758,6 +762,10 @@
    "source": "<g1>On Linux</g1>, Chrome-family browsers keep the key to their cookies in the system's keyring (GNOME Keyring, KWallet); yt-dlp asks it, so it must be unlocked.",
    "text": "<g1>W systemie Linux</g1> przeglądarki z rodziny Chrome przechowują klucz do swoich plików cookie w systemowym pęku kluczy (GNOME Keyring, KWallet); yt-dlp prosi o niego, więc musi być odblokowany."
   },
+  "0b1b52c201337090": {
+   "source": "Dannex Download Manager (\"DDM\") is free, open-source software made by its contributors. Because its whole source code is public at <g1>github.com/Riskraptor/dannexdownloadmanager</g1>, you don't have to take this page's word for it: every network connection described here can be checked in the code.",
+   "text": "Dannex Download Manager („DDM”) to darmowe oprogramowanie o otwartym kodzie, tworzone przez jego współautorów. Cały kod źródłowy jest publiczny pod adresem <g1>github.com/Riskraptor/dannexdownloadmanager</g1>, więc nie musisz wierzyć tej stronie na słowo: każde opisane tu połączenie sieciowe można sprawdzić w kodzie."
+  },
   "0b2740fc08d56719": {
    "source": "A <x1/> from an issue:",
    "text": "<x1/> z problemu:"
@@ -914,6 +922,10 @@
    "source": "Download image galleries with gallery-dl",
    "text": "Pobieraj galerie zdjęć z gallery-dl"
   },
+  "0d6d6fd7630a14c1": {
+   "source": "<g1>A new icon, Comet</g1>, everywhere: the app, the tray, the extension, the setup and the website.",
+   "text": "<g1>Nowa ikona, Kometa</g1>, wszędzie: w programie, w zasobniku, w rozszerzeniu, w instalatorze i na stronie."
+  },
   "0d7f42041638ea02": {
    "source": "Portable: the <x1/> folder next to <x2/>.",
    "text": "Przenośny: folder <x1/> obok <x2/>."
@@ -1062,6 +1074,10 @@
    "source": "<g1><g2></g2></g1> <g3>Options where you expect them</g3> <g4>Every setting where an IDM user looks first: connections, proxies, folders, sounds.</g4>",
    "text": "<g1><g2></g2></g1> <g3>Opcje tam, gdzie ich oczekujesz</g3> <g4>Każde ustawienie tam, gdzie użytkownik IDM szuka najpierw: połączenia, proxy, foldery, dźwięki.</g4>"
   },
+  "100b36c152480e17": {
+   "source": "It has <g1>no remote code, no analytics and no ads</g1>, and sends nothing to us or anyone else. Its status page links to DDM's download page, and its pages' <g2>Support DDM</g2> to the maintainer's GitHub Sponsors page; the browser opens them only when you click.",
+   "text": "Rozszerzenie ma <g1>brak zdalnego kodu, analityki i reklam</g1> i nie wysyła nic do nas ani do nikogo innego. Jego strona stanu zawiera link do strony pobierania DDM, a przycisk <g2>Wesprzyj DDM</g2> na jego stronach prowadzi do strony GitHub Sponsors opiekuna projektu. Przeglądarka otwiera je dopiero po kliknięciu."
+  },
   "104663281393fdc8": {
    "source": "Can I move my downloads from IDM to Dannex Download Manager?",
    "text": "Czy mogę przenieść pobrane pliki z IDM do Dannex Download Manager?"
@@ -1117,6 +1133,10 @@
   "110ed064f2b04424": {
    "source": "Time left",
    "text": "Pozostały czas"
+  },
+  "110f6923f841ef40": {
+   "source": "<g1>Fast:</g1> every download is fetched in several parts at once, re-balanced until the last byte, and resumes after a crash, a restart or a dropped connection without starting over.",
+   "text": "<g1>Szybkość:</g1> każdy plik jest pobierany jednocześnie w kilku częściach, które są na bieżąco równoważone aż do ostatniego bajtu. Pobieranie wznawia się po awarii, ponownym uruchomieniu lub utracie połączenia bez zaczynania od nowa."
   },
   "1118f34ca5d1ce1f": {
    "source": "<g1>Put them into the video</g1> puts them inside the file instead, as tracks you switch on in the player. It needs ffmpeg, and an MP4 or MKV video.",
@@ -2474,6 +2494,10 @@
    "source": "The server, <x1/>, sits next to the app on Windows, macOS and Linux (on Linux use the <x2/>, <x3/> or <x4/>: the AppImage doesn't expose it). You turn on the automation API once with <x5/>, then tell your assistant where the server is. The assistant starts it by itself from then on. The <g6>set-up guide</g6> has the path for each kind of install and the exact entry for Claude Desktop, Claude Code, Cursor and VS Code.",
    "text": "Serwer, <x1/>, znajduje się obok aplikacji w systemach Windows, macOS i Linux (w systemie Linux użyj <x2/>, <x3/> lub <x4/>: AppImage go nie udostępnia). Włączasz API automatyzacji raz za pomocą <x5/>, a następnie informujesz asystenta, gdzie znajduje się serwer. Asystent uruchamia go samodzielnie od tego momentu. <g6>Przewodnik konfiguracji</g6> zawiera ścieżkę dla każdego rodzaju instalacji i dokładny wpis dla Claude Desktop, Claude Code, Cursor i VS Code."
   },
+  "26a8a80c5fad9f57": {
+   "source": "<g1>Calm when many arrive at once:</g1> a queue's downloads run without opening windows, and downloads that finish together share one <g2>Download complete</g2> window (\"3 more downloads complete\").",
+   "text": "<g1>Spokój przy wielu pobraniach naraz:</g1> pobieranie z kolejki odbywa się bez otwierania okien, a pliki, które kończą się pobierać w tym samym czasie, mają wspólne okno <g2>Pobieranie zakończone</g2> („Zakończono jeszcze 3 pobrania”)."
+  },
   "26ba7b194ff67f19": {
    "source": "Some sites' bot checks (Cloudflare's challenge, Akamai's edge) let only a browser through, even after DDM asked once more the way your browser connects. DDM then says <g1>this site lets only browsers through</g1> and offers <g2>Download with the browser</g2>: a button in the download's progress window, and an item in its right-click menu in the list. It's still there after DDM restarts.",
    "text": "Kontrola botów niektórych witryn (wyzwanie Cloudflare, brzeg sieci Akamai) przepuszcza tylko przeglądarkę, nawet gdy DDM zapytał jeszcze raz, łącząc się tak jak Twoja przeglądarka. DDM wyświetla wtedy komunikat <g1>ta witryna przepuszcza tylko przeglądarki</g1> i oferuje <g2>Pobierz w przeglądarce</g2>: przycisk w oknie postępu pobierania oraz pozycję w jego menu prawego przycisku na liście. Pozostaje tam po ponownym uruchomieniu DDM."
@@ -2922,6 +2946,10 @@
    "source": "Source code",
    "text": "Kod źródłowy"
   },
+  "2d995f162e7cf2ed": {
+   "source": "In your browser",
+   "text": "W przeglądarce"
+  },
   "2d9d101be2d0f3be": {
    "source": "FTP and FTPS (<x1/>) go through the same planner, workers and state: a segment is <x2/> + <x3/> on a control session instead of a ranged <x4/>, <x5/> and <x6/> stand in for the headers, and sessions are pooled per download and reused between segments.",
    "text": "FTP i FTPS (<x1/>) korzystają z tego samego modułu planowania, obsługi połączeń i stanu: segment jest pobierany przez <x2/> + <x3/> w sesji kontrolnej zamiast przez zakresowe <x4/>, nagłówki zastępują <x5/> i <x6/>, a sesje są grupowane w ramach pobierania i ponownie wykorzystywane między segmentami."
@@ -3290,6 +3318,10 @@
    "source": "Starting…",
    "text": "Uruchamianie…"
   },
+  "34ae5dce5829db86": {
+   "source": "With <g1>Use the browser's proxy for the downloads it hands over</g1> (on by default), a download DDM takes from the browser goes through the proxy the browser used for it: a VPN or proxy extension's, the browser's own manual proxy, or its auto-config script. Content limited to the VPN's country keeps working. In Firefox, switch on <g2>Send downloads through this browser's proxy or VPN extension</g2> in the extension's options page. Chrome, Edge, Brave, Opera and Vivaldi can't hand the proxy over yet: set the same proxy in DDM there. A proxy that needs the VPN extension's own login can't be shared, and the download says so rather than going without it.",
+   "text": "Gdy włączona jest opcja <g1>Używaj serwera proxy przeglądarki dla przekazywanych pobrań</g1> (domyślnie jest włączona), pobieranie przejęte przez DDM z przeglądarki idzie przez ten sam serwer proxy, którego użyła przeglądarka: serwer z rozszerzenia VPN lub proxy, ręcznie ustawiony serwer proxy przeglądarki albo jej skrypt automatycznej konfiguracji. Treści ograniczone do kraju VPN nadal działają. W przeglądarce Firefox włącz <g2>Wysyłaj pobierania przez serwer proxy lub rozszerzenie VPN tej przeglądarki</g2> na stronie opcji rozszerzenia. Chrome, Edge, Brave, Opera i Vivaldi nie mogą jeszcze przekazać serwera proxy: ustaw w nich ten sam serwer proxy w DDM. Serwera proxy, który wymaga własnego logowania rozszerzenia VPN, nie można udostępnić. Pobieranie zgłosi to, zamiast działać bez niego."
+  },
   "34b13dc91c758e03": {
    "source": "DDM doesn't need to be running first: the browser starts it. If DDM can't be reached at all, the download stays with the browser, so nothing is lost.",
    "text": "DDM nie musi być uruchomiony wcześniej: przeglądarka go uruchamia. Jeśli DDM jest niedostępny, pobieranie pozostaje w przeglądarce, więc nic nie zostanie utracone."
@@ -3410,6 +3442,10 @@
    "source": "Right-click the list's blank space for <g1>Add new download</g1>, <g2>Select all</g2>, <g3>Arrange files</g3>, <g4>Clear all filters</g4> and <g5>Delete All Completed</g5>.",
    "text": "Kliknij prawym przyciskiem myszy puste miejsce na liście, aby wyświetlić polecenia <g1>Dodaj nowe pobieranie</g1>, <g2>Zaznacz wszystko</g2>, <g3>Uporządkuj pliki</g3>, <g4>Wyczyść wszystkie filtry</g4> i <g5>Usuń wszystkie ukończone</g5>."
   },
+  "369983e69928fc01": {
+   "source": "<g1>{v1}</g1> <g2>20.9 MB</g2>",
+   "text": "<g1>{v1}</g1> <g2>20.9 MB</g2>"
+  },
   "36a1df60e5ee30b9": {
    "source": "<g1><x2/></g1> — what <g3>View → Theme</g3> lists; the file's name when there is none.",
    "text": "<g1><x2/></g1> — to, co wyświetla <g3>Widok → Motyw</g3>; nazwa pliku, jeśli nie ma innej."
@@ -3437,6 +3473,10 @@
   "3724a83fa3a38087": {
    "source": "<g1>Download Later</g1> — add it to a queue without starting. See below.",
    "text": "<g1>Pobierz później</g1> — dodaj do kolejki bez rozpoczynania. Zobacz poniżej."
+  },
+  "3727118233cdf55d": {
+   "source": "Right-click <g1>Download with DDM</g1>, for any link, magnet links included, and <g2>Download all links, images or videos and audio</g2> of a page.",
+   "text": "Kliknij prawym przyciskiem myszy i wybierz <g1>Pobierz za pomocą DDM</g1> dla dowolnego linku, także magnet. Możesz też wybrać <g2>Pobierz wszystkie linki, obrazy lub wideo i dźwięk</g2> ze strony."
   },
   "3731ebb25637b8d0": {
    "source": "The page then says <g1>On</g1> and shows the address to open, such as <x2/>.",
@@ -4234,6 +4274,10 @@
    "source": "gallery-dl itself",
    "text": "Sam gallery-dl"
   },
+  "42c7eeed9c7e6c6b": {
+   "source": "It stores its own settings (paused or not, DDM's file types and excluded sites, its connection status, the name and site of the last download it left to the browser so its status page can say why, where you dragged the video button on each of the last 200 sites; nothing from private windows) in the browser's extension storage, on your computer.",
+   "text": "Rozszerzenie zapisuje własne ustawienia w magazynie rozszerzeń przeglądarki, na Twoim komputerze. Są to: wstrzymanie lub jego brak, typy plików i wykluczone witryny DDM, stan połączenia, nazwa i witryna ostatniego pobierania pozostawionego przeglądarce (aby strona stanu mogła podać powód) oraz miejsce, do którego przeciągnięto przycisk wideo na każdej z ostatnich 200 witryn. Nic z okien prywatnych nie jest zapisywane."
+  },
   "42c9af850b22a734": {
    "source": "The other way works too: <g1>Tasks → Export → As a text file</g1> writes one address per line, and <g2>As an IDM list (.ef2)</g2> writes an <x3/> list.",
    "text": "Działa to także w drugą stronę: <g1>Zadania → Eksportuj → Jako plik tekstowy</g1> zapisuje jeden adres w wierszu, a <g2>Jako listę IDM (.ef2)</g2> zapisuje listę <x3/>."
@@ -4317,6 +4361,10 @@
   "446b7f64f35263c2": {
    "source": "The people who made Dannex Download Manager possible: everyone who sent a pull request, opened an issue or joined a conversation on GitHub.",
    "text": "Osoby, które umożliwiły powstanie Dannex Download Manager: wszyscy, którzy wysłali pull request, zgłosili problem lub dołączyli do rozmowy na GitHubie."
+  },
+  "44726c1758ab10cf": {
+   "source": "Chrome, Edge, Brave, Opera and Vivaldi add their own <g1>Options</g1> item to that menu; in Firefox it's <g2>Manage Extension</g2> → <g3>Options</g3>. The extension's options page holds only <g4>Send downloads to Dannex Download Manager</g4> (the same switch as the click) and, under <g5>More</g5>, the two things only the extension can do: <g6>Download through this browser's VPN or proxy</g6> (see below) and <g7>Send downloads to</g7>: this computer, or Dannex Download Manager on another computer. When DDM can't be reached, it says so there, with <g8>See what to do</g8> for the status page.",
+   "text": "Chrome, Edge, Brave, Opera i Vivaldi dodają do tego menu własną pozycję <g1>Opcje</g1>. W przeglądarce Firefox to <g2>Zarządzaj rozszerzeniem</g2> → <g3>Opcje</g3>. Strona opcji rozszerzenia zawiera tylko <g4>Wyślij pobrane pliki do programu Dannex Download Manager</g4> (ten sam przełącznik co kliknięcie) oraz w sekcji <g5>Więcej</g5> dwie rzeczy, które może zrobić tylko rozszerzenie: <g6>Pobieraj przez VPN lub serwer proxy tej przeglądarki</g6> (patrz niżej) i <g7>Wyślij pobrane pliki do</g7>: ten komputer albo program Dannex Download Manager na innym komputerze. Gdy nie można połączyć się z DDM, strona to pokazuje, z przyciskiem <g8>Zobacz, co zrobić</g8> prowadzącym do strony stanu."
   },
   "44733691a19bafa4": {
    "source": "F3",
@@ -5278,6 +5326,10 @@
    "source": "The free alternative to Internet Download Manager",
    "text": "Darmowa alternatywa dla Internet Download Manager"
   },
+  "5457bd7f6e3e53c1": {
+   "source": "Once you switch on <g1>Download through this browser's VPN or proxy</g1> in its options page (under <g2>More</g2>; Firefox asks you first), when the browser uses a proxy for a download (set by a VPN or proxy extension, or in its settings), the extension passes <g3>the proxy's address</g3>, or its <g4>proxy auto-config script</g4>, so DDM downloads through the same proxy. It never reads or passes the proxy's login. It notes only that a proxy asked for one, so DDM can tell you it can't use that proxy. Switched off (as installed), it reads nothing of the browser's proxy.",
+   "text": "Po włączeniu opcji <g1>Pobieraj przez VPN lub serwer proxy tej przeglądarki</g1> na stronie opcji rozszerzenia (w sekcji <g2>Więcej</g2>; Firefox najpierw pyta o zgodę), gdy przeglądarka używa serwera proxy do pobierania (ustawionego przez rozszerzenie VPN lub proxy albo w ustawieniach), rozszerzenie przekazuje <g3>adres serwera proxy</g3> lub jego <g4>skrypt automatycznej konfiguracji proxy</g4>, aby DDM pobierał przez ten sam serwer. Nigdy nie odczytuje ani nie przekazuje loginu do proxy. Zapisuje tylko, że proxy o niego poprosiło, aby DDM mógł poinformować, że nie może użyć tego serwera. Gdy opcja jest wyłączona (tak jest po instalacji), rozszerzenie nie odczytuje niczego z ustawień proxy przeglądarki."
+  },
   "546b1ddab6eff2bf": {
    "source": "Catch downloads from your browser — Dannex Download Manager help",
    "text": "Przechwytywanie pobierania z przeglądarki — pomoc Dannex Download Manager"
@@ -5438,6 +5490,10 @@
    "source": "If your antivirus quarantined DDM, restore it and add an exception for its folder. If it flags something other than the setup or DDM's own programs, or a copy from anywhere else, don't run it, and please <g1>tell us</g1>.",
    "text": "Jeśli Twój antywirus poddał DDM kwarantannie, przywróć go i dodaj wyjątek dla jego folderu. Jeśli oznacza coś innego niż instalator lub własne programy DDM, albo kopię z innego źródła, nie uruchamiaj tego i <g1>poinformuj nas</g1>."
   },
+  "569ad7719d07f2f2": {
+   "source": "The first official release of Dannex Download Manager: a free, open-source download manager for Windows (with Linux and an experimental macOS version), laid out the way Internet Download Manager users expect, and faster.",
+   "text": "Pierwsze oficjalne wydanie Dannex Download Manager: darmowego menedżera pobierania o otwartym kodzie źródłowym dla systemu Windows (z wersją dla systemu Linux i eksperymentalną wersją dla systemu macOS). Ma układ znany użytkownikom programu Internet Download Manager i działa szybciej."
+  },
   "569b5b4f390246d8": {
    "source": "Command line and automation",
    "text": "Wiersz poleceń i automatyzacja"
@@ -5593,6 +5649,10 @@
   "592f898c79b39c3a": {
    "source": "A download falls into a category by its file type: <g1>General</g1>, <g2>Compressed</g2>, <g3>Documents</g3>, <g4>Music</g4>, <g5>Programs</g5> or <g6>Video</g6>, and torrents into <g7>Torrents</g7>. Each category has its own folder inside your Downloads folder, so a ZIP file lands in <x8/> and a film in <x9/> without you choosing.",
    "text": "Pobrany plik trafia do kategorii według swojego typu: <g1>Ogólne</g1>, <g2>Skompresowane</g2>, <g3>Dokumenty</g3>, <g4>Muzyka</g4>, <g5>Programy</g5> lub <g6>Wideo</g6>, a torrenty do <g7>Torrenty</g7>. Każda kategoria ma swój własny folder w folderze Pobrane pliki, więc plik ZIP trafia do <x8/>, a film do <x9/> bez konieczności wybierania."
+  },
+  "5931ce0e4ef63e2e": {
+   "source": "In Chrome, Edge and Brave you can limit an extension to some sites (right-click its toolbar button → <g1>This can read and change site data</g1>), and in Firefox take its access away in <g2>Add-ons and themes</g2> → the extension → <g3>Permissions</g3>. On a site it may not read, the extension can't pass your sign-in on, so it leaves the download to the browser. Choose <g4>On all sites</g4> to let DDM take downloads everywhere, or click <g5>Allow on all sites</g5> on the extension's status page (right-click its toolbar button → <g6>Help</g6>), which asks the browser for it.",
+   "text": "W Chrome, Edge i Brave możesz ograniczyć rozszerzenie do wybranych witryn (kliknij prawym przyciskiem jego przycisk na pasku narzędzi → <g1>Może odczytywać i zmieniać dane witryn</g1>), a w przeglądarce Firefox odebrać mu dostęp w <g2>Dodatki i motywy</g2> → rozszerzenie → <g3>Uprawnienia</g3>. Na witrynie, której rozszerzenie nie może odczytać, nie przekaże Twojego logowania, więc zostawia pobieranie przeglądarce. Wybierz <g4>Na wszystkich witrynach</g4>, aby DDM mógł przejmować pobierania wszędzie, albo kliknij <g5>Zezwól na wszystkich witrynach</g5> na stronie stanu rozszerzenia (kliknij prawym przyciskiem jego przycisk na pasku narzędzi → <g6>Pomoc</g6>), która poprosi o to przeglądarkę."
   },
   "5934223575270924": {
    "source": "In <g1>Download File Info</g1>: <g2>Start Download</g2>",
@@ -6230,6 +6290,10 @@
    "source": "<g1>Categories</g1><g2>Dannex Download Manager</g2>",
    "text": "<g1>Kategorie</g1><g2>Dannex Download Manager</g2>"
   },
+  "62b2e43b5e031e17": {
+   "source": "<g1>Download File Info, the way you know it:</g1> the file starts arriving while you choose where it goes, and it joins the list only once you click <g2>Start Download</g2> or <g3>Download Later</g3>; <g4>Cancel</g4> leaves nothing behind.",
+   "text": "<g1>Okno Informacje o pliku do pobrania, tak jak je znasz:</g1> plik zaczyna się pobierać, gdy wybierasz miejsce zapisu, i trafia na listę dopiero po kliknięciu <g2>Rozpocznij pobieranie</g2> lub <g3>Pobierz później</g3>. Przycisk <g4>Anuluj</g4> nie pozostawia po sobie żadnych śladów."
+  },
   "62b391cabe3b0674": {
    "source": "Drag a link from your browser onto it: it lights up with an amber frame while something it can take is over it. Let go, and DDM adds the link as if you had used <g1>Add URL</g1>.",
    "text": "Przeciągnij na niego link z przeglądarki: zaświeci się bursztynową ramką, gdy znajdzie się nad nim coś, co może przyjąć. Puść, a DDM doda link tak, jakby użyto <g1>Dodaj URL</g1>."
@@ -6257,6 +6321,10 @@
   "631b9914f6507aef": {
    "source": "<g1>Testing it.</g1> <x2/> runs a real freeze, panic and crash (<x3/>) and checks each report's signature. To try it in the app, start DDM with <x4/>, then run <x5/> (a deadlock; or <x6/>, 12 s of a busy window thread, <x7/>, <x8/>, <x9/>). <x10/> does that in a copy of the app off the screens, its window visible and minimized.",
    "text": "<g1>Testowanie.</g1> <x2/> wywołuje prawdziwe zawieszenie, panikę i awarię (<x3/>) oraz sprawdza sygnaturę każdego raportu. Aby przetestować to w aplikacji, uruchom DDM z <x4/>, a następnie uruchom <x5/> (zakleszczenie; lub <x6/>, 12 s pracy wątku okna, <x7/>, <x8/>, <x9/>). <x10/> robi to w kopii aplikacji poza ekranem, z widocznym, zminimalizowanym oknem."
+  },
+  "6340aeee835f4991": {
+   "source": "<g1>Videos</g1> from thousands of sites with yt-dlp, with playlists, subtitles (embedded or beside the file) and the sound alone; <g2>image galleries</g2> with gallery-dl, through DDM's own downloader.",
+   "text": "<g1>Filmy</g1> z tysięcy witryn dzięki yt-dlp, z listami odtwarzania, napisami (osadzonymi lub w osobnym pliku) i samym dźwiękiem. <g2>Galerie obrazów</g2> dzięki gallery-dl, za pomocą własnego mechanizmu pobierania DDM."
   },
   "635f40f1db7e086a": {
    "source": "Pause running downloads, or start (resume) stopped, queued or failed ones, in the running app.",
@@ -6293,6 +6361,10 @@
   "63f1d2c78982729f": {
    "source": "downloads a gallery into a folder named after it, <x1/> files at once (8 by default). See <g2>Command line and automation</g2>.",
    "text": "pobiera galerię do folderu nazwanego jak ona, <x1/> plików naraz (domyślnie 8). Zobacz <g2>Wiersz poleceń i automatyzacja</g2>."
+  },
+  "64030dbd10fb6a9a": {
+   "source": "Only if you choose them:",
+   "text": "Tylko jeśli je wybierzesz:"
   },
   "640f7ad89c389c38": {
    "source": "<g1>Take downloads from web browsers</g1> — let the browser extension hand downloads to DDM. Turn it off to keep every download in the browser.",
@@ -7030,6 +7102,10 @@
    "source": "A server at a medium round trip (60 to 150 ms)",
    "text": "Serwer ze średnim czasem podróży w obie strony (60 do 150 ms)"
   },
+  "70be5377fd1f31fb": {
+   "source": "<g1>Site Grabber:</g1> a whole site or part of one, to read offline, in projects you can always come back to under <g2>Grabber projects</g2>.",
+   "text": "<g1>Chwytak witryn:</g1> cała witryna lub jej część do czytania offline, w projektach, do których zawsze możesz wrócić w sekcji <g2>Projekty chwytaka</g2>."
+  },
   "70d42911cc360e5b": {
    "source": "On Linux",
    "text": "W systemie Linux"
@@ -7177,6 +7253,10 @@
   "72f3284ff6dd83fc": {
    "source": "<g1>Up</g1> / <g2>Down</g2>, <g3>Left</g3> / <g4>Right</g4>",
    "text": "<g1>Góra</g1> / <g2>Dół</g2>, <g3>Lewo</g3> / <g4>Prawo</g4>"
+  },
+  "72fcb0d3a8812fe4": {
+   "source": "<g1>Help → Support DDM</g1> opens Dannex's page on GitHub Sponsors.",
+   "text": "<g1>Pomoc → Wesprzyj DDM</g1> otwiera stronę Dannex w GitHub Sponsors."
   },
   "72ff8f6b37364fc1": {
    "source": "is where files land: each category has its folder inside (<x1/>, <x2/>, <x3/>…). Mount a network share there to download straight onto it.",
@@ -8570,6 +8650,10 @@
    "source": "A greyed arrow",
    "text": "Wyszarała strzałka"
   },
+  "8877fd41005c6e50": {
+   "source": "Dannex Download Manager (\"DDM\", \"the software\") and the website dannex.kavangi.co.ke (\"the site\") are made by the Dannex Download Manager contributors (\"we\"). By using the software or the site you accept these terms. If you don't, please don't use them.",
+   "text": "Dannex Download Manager („DDM”, „oprogramowanie”) oraz witryna dannex.kavangi.co.ke („witryna”) są tworzone przez współtwórców Dannex Download Manager („my”). Korzystając z oprogramowania lub witryny, akceptujesz te warunki. Jeśli ich nie akceptujesz, nie korzystaj z nich."
+  },
   "88797b59ad63a6d7": {
    "source": "<g1>DDM as an IDM alternative</g1><g2>Spot something wrong? Tell us</g2>",
    "text": "<g1>DDM jako alternatywa dla IDM</g1><g2>Zauważyłeś błąd? Powiedz nam</g2>"
@@ -9394,6 +9478,10 @@
    "source": "Select the downloads in the box",
    "text": "Zaznacz pobierania w polu"
   },
+  "97eba27f9800113f": {
+   "source": "<g1>Queues and the Scheduler</g1> start and stop on their own, can wake the computer, and turn it off when done. <g2>Speed Limiter</g2>, categories with their own folders, and duplicate handling.",
+   "text": "<g1>Kolejki i Harmonogram</g1> same się uruchamiają i zatrzymują, mogą wybudzić komputer i wyłączyć go po zakończeniu. Dostępne są też <g2>Ogranicznik prędkości</g2>, kategorie z własnymi folderami i obsługa duplikatów."
+  },
   "97ec4888f860947d": {
    "source": "What other people can see",
    "text": "Co inni mogą zobaczyć"
@@ -9442,6 +9530,10 @@
    "source": "The website's <g1>Themes page</g1> has a prompt you can give an AI assistant, with the format, every key and the rules, to write a theme for you from a description.",
    "text": "Na <g1>stronie Motywy</g1> witryny znajduje się podpowiedź, którą możesz przekazać asystentowi AI, wraz z formatem, każdym kluczem i zasadami, aby napisać motyw na podstawie opisu."
   },
+  "98b77f378859b820": {
+   "source": "It notes the addresses of video streams (HLS and DASH playlists) and of video and sound files a page's players load, in memory for that tab, so the <g1>Download video</g1> button and the right-click menu can pass them on. Its button reads the page only to find video and sound players and place itself, and, for its menu, the qualities the player or its stream lists (on YouTube, what the player says it plays and its formats). Clicking it passes the page's address, the video's address, the page's title, the site's cookies, the page that embeds the player and your browser's User-Agent to DDM. So that the qualities are ready when you click, it passes the same when the pointer reaches the button, or rests over the video on that video's own page; never from a private window.",
+   "text": "Zapisuje w pamięci, dla danej karty, adresy strumieni wideo (playlisty HLS i DASH) oraz plików wideo i audio, które wczytują odtwarzacze na stronie, aby przycisk <g1>Pobierz wideo</g1> i menu prawego przycisku myszy mogły je przekazać dalej. Jego przycisk czyta stronę tylko po to, by znaleźć odtwarzacze wideo i audio i się przy nich umieścić, a dla swojego menu także jakości, które wymienia odtwarzacz lub jego strumień (w serwisie YouTube to, co według odtwarzacza można odtworzyć, oraz jego formaty). Kliknięcie przekazuje do DDM adres strony, adres wideo, tytuł strony, pliki cookie witryny, stronę osadzającą odtwarzacz i User-Agent przeglądarki. Aby jakości były gotowe w chwili kliknięcia, rozszerzenie przekazuje te same dane, gdy wskaźnik myszy dotrze do przycisku lub zatrzyma się nad wideo na jego własnej stronie; nigdy z okna prywatnego."
+  },
   "98ba5822f64ea0d2": {
    "source": "Mac OS X's feel: gel buttons round at the ends, a blue focus ring and a blue gel progress bar.",
    "text": "Styl Mac OS X: żelowe przyciski zaokrąglone na końcach, niebieska ramka fokusu i niebieski żelowy pasek postępu."
@@ -9489,6 +9581,10 @@
   "99605902518653e2": {
    "source": "The same programs without an installer. It keeps its data in <x1/>, like an installed copy.",
    "text": "Te same programy bez instalatora. Przechowuje swoje dane w <x1/>, tak jak zainstalowana kopia."
+  },
+  "9970aef0a32e17f8": {
+   "source": "<g1>The DDM Integration Module</g1> for Chrome, Edge, Brave, Opera, Vivaldi and Firefox hands your downloads to DDM with their sign-in. One click on its toolbar button turns it off or on; when DDM isn't installed, its page says so and turns green by itself once it is.",
+   "text": "<g1>DDM Integration Module</g1> dla przeglądarek Chrome, Edge, Brave, Opera, Vivaldi i Firefox przekazuje pobierane pliki do DDM wraz z danymi logowania. Jedno kliknięcie przycisku na pasku narzędzi wyłącza lub włącza dodatek. Gdy DDM nie jest zainstalowany, strona dodatku o tym informuje i sama zmienia kolor na zielony, gdy program się pojawi."
   },
   "997cc2f8f3474ae1": {
    "source": "Windows<g1><g2>3</g2></g1>",
@@ -9738,6 +9834,10 @@
    "source": "Latest",
    "text": "Najnowsze"
   },
+  "9d84f106d2cfbe3e": {
+   "source": "Is the extension loaded and turned on? Look for <g1>Dannex Download Manager</g1> on the browser's extensions page. In Firefox, a temporary add-on is gone after a restart: <g2>Browser integration</g2> says how to keep it. See <g3>Browser integration</g3>.",
+   "text": "Czy rozszerzenie jest załadowane i włączone? Poszukaj <g1>Dannex Download Manager</g1> na stronie rozszerzeń przeglądarki. W przeglądarce Firefox dodatek tymczasowy znika po ponownym uruchomieniu: <g2>Integracja z przeglądarką</g2> podpowiada, jak go zachować. Zobacz <g3>Integracja z przeglądarką</g3>."
+  },
   "9d98aff073986aca": {
    "source": "Options → Archives",
    "text": "Opcje → Archiwa"
@@ -9838,6 +9938,10 @@
    "source": "Yes. It's open source under the GNU GPL, version 3. No trial, no paid edition, no registration key, no nag screen, no ads. <g1>More</g1>",
    "text": "Tak. Jest to oprogramowanie open source na licencji GNU GPL, wersja 3. Bez wersji próbnej, bez płatnej edycji, bez klucza rejestracyjnego, bez ekranów nag, bez reklam. <g1>Więcej</g1>"
   },
+  "9eec233a8d803458": {
+   "source": "Day and dark mode and themes, 86 languages including right to left, keyboard and screen-reader access, a portable version, a phone remote and a server mode.",
+   "text": "Tryb jasny i ciemny oraz motywy, 86 języków, w tym pisanych od prawej do lewej, obsługa z klawiatury i czytnikiem ekranu, wersja przenośna, pilot na telefon i tryb serwera."
+  },
   "9efdcb6a62e4c3f8": {
    "source": "File Properties with the download's address",
    "text": "Właściwości pliku z adresem pobierania"
@@ -9909,6 +10013,10 @@
   "9fed4ee943ba5a3f": {
    "source": "Tooltips' background",
    "text": "Tło etykiet narzędzi"
+  },
+  "9ff6e4c8afc7a630": {
+   "source": "With <g1>Send downloads to → Dannex Download Manager on another computer</g1> in its options page (under <g2>More</g2>; off until you pair one with the code that DDM shows), the extension sends the address of each download it takes to that DDM of yours, over HTTPS, with the pairing's token; nothing else, and never to anyone else.",
+   "text": "Gdy na stronie opcji rozszerzenia włączysz <g1>Wyślij pobrane pliki do → Program Dannex Download Manager na innym komputerze</g1> (w sekcji <g2>Więcej</g2>; opcja jest wyłączona, dopóki nie sparujesz komputera kodem pokazanym przez DDM), rozszerzenie wysyła adres każdego przejętego pobierania do Twojego DDM przez HTTPS, razem z tokenem parowania. Nic więcej i nigdy do nikogo innego."
   },
   "a005349660165dea": {
    "source": "<g1>Palette roles.</g1> <x2/> declares each role with a stable key (<x3/>, <x4/>, <x5/>…), a description and the classic look's light and dark values, written out (the classic look isn't derived). The shared painters (<x6/>, <x7/>, <x8/>, <x9/>) read them through <x10/> and <x11/> and decide each control's states from them; no painting code holds a colour of its own.",
@@ -10317,6 +10425,10 @@
   "a6c4a4cee356235a": {
    "source": "Apple Silicon: Macs with an M1 chip or later",
    "text": "Apple Silicon: komputery Mac z czipem M1 lub nowszym"
+  },
+  "a6c548e5567b0826": {
+   "source": "<g1>File Properties</g1> on double-click, with the page each download came from; <g2>Show progress</g2> brings back a hidden progress window; <g3>Columns...</g3> shows, hides and orders the list's columns.",
+   "text": "<g1>Właściwości pliku</g1> po dwukrotnym kliknięciu, ze stroną, z której pochodzi każde pobieranie; <g2>Pokaż postęp</g2> przywraca ukryte okno postępu; <g3>Kolumny...</g3> pokazuje, ukrywa i porządkuje kolumny listy."
   },
   "a6ce09b9c1c7e4cf": {
    "source": "Internet Download Manager 6.42",
@@ -11826,6 +11938,10 @@
    "source": "The download button over videos",
    "text": "Przycisk pobierania nad filmami"
   },
+  "c189ef9e90d38d62": {
+   "source": "Chrome, Edge, Brave, Opera and Vivaldi can have the extension twice: the one from the Chrome Web Store and the one loaded from DDM's folder (<g1>Load unpacked</g1>). Both would take each download, so they ask each other: the Chrome Web Store's acts (it updates itself), and the other stands aside. It takes nothing, shows no right-click items and no <g2>Download video</g2> button, and its toolbar button is grey with an amber <g3>!</g3>: click it and <g4>Remove this copy</g4> removes it (the browser asks first). Or remove it on the browser's extensions page.",
+   "text": "Chrome, Edge, Brave, Opera i Vivaldi mogą mieć to rozszerzenie podwójnie: to ze sklepu Chrome Web Store i to załadowane z folderu DDM (<g1>Załaduj rozpakowane</g1>). Oba przejmowałyby każde pobieranie, więc pytają się nawzajem: działa to ze sklepu Chrome Web Store (aktualizuje się samo), a drugie ustępuje. Niczego nie przejmuje, nie pokazuje pozycji w menu kontekstowym ani przycisku <g2>Pobierz wideo</g2>, a jego przycisk na pasku narzędzi jest szary z bursztynowym <g3>!</g3>. Kliknij go, a <g4>Usuń tę kopię</g4> usunie je (przeglądarka najpierw zapyta). Możesz też usunąć je na stronie rozszerzeń przeglądarki."
+  },
   "c19775344147036b": {
    "source": "<g1>Open</g1> — open the file.",
    "text": "<g1>Otwórz</g1> — otwórz plik."
@@ -12026,6 +12142,10 @@
    "source": "If Dannex Download Manager closes unexpectedly or stops responding, a <g1>crash report</g1> window opens. It shows what happened, lets you read the whole report, and can send it to the developers on GitHub. Each report helps fix the problem for everyone.",
    "text": "Jeśli Dannex Download Manager zostanie nieoczekiwanie zamknięty lub przestanie odpowiadać, otworzy się okno <g1>raportu o błędach</g1>. Pokazuje ono, co się stało, pozwala przeczytać cały raport i może wysłać go programistom na GitHub. Każdy raport pomaga rozwiązać problem dla wszystkich."
   },
+  "c467885946dc6e66": {
+   "source": "Your download list, settings, logins you save in <g1>Sites Logins</g1>, the history of each download and the files you download are stored only on your computer: in <x2/> on Windows (or the <x3/> folder of the portable copy), and in the usual application-data folder on macOS and Linux. Nothing is uploaded anywhere. Uninstalling offers to delete them. The passwords of Sites Logins, the proxy and debrid accounts go into the system's keychain instead (Windows Credential Manager, the keyring on Linux, the macOS keychain), still on your computer, when one is there and unlocked.",
+   "text": "Lista pobierania, ustawienia, loginy zapisane w <g1>Loginach do witryn</g1>, historia każdego pobierania i pobrane pliki są przechowywane tylko na Twoim komputerze: w <x2/> w systemie Windows (lub w folderze <x3/> kopii przenośnej) oraz w zwykłym folderze danych aplikacji w systemach macOS i Linux. Nic nie jest nigdzie wysyłane. Przy odinstalowaniu możesz je usunąć. Hasła do Loginów do witryn, serwera proxy i kont debrid trafiają natomiast do systemowego magazynu haseł (Menedżer poświadczeń w systemie Windows, klucznik w systemie Linux, pęk kluczy w systemie macOS), również na Twoim komputerze, jeśli jest dostępny i odblokowany."
+  },
   "c48962c07ea187bc": {
    "source": "The video helpers window: yt-dlp and ffmpeg, each with its version and Use another program...",
    "text": "Okno narzędzi wideo: yt-dlp i ffmpeg, każde z numerem wersji i opcją Użyj innego programu..."
@@ -12141,6 +12261,10 @@
   "c6177a4c8ce509be": {
    "source": "Was DDM installed with the setup, with <g1>Set up browser integration</g1> ticked? A portable copy can't take browser downloads. Run the setup again to add it.",
    "text": "Czy DDM został zainstalowany z instalatorem, z zaznaczoną opcją <g1>Skonfiguruj integrację z przeglądarką</g1>? Przenośna kopia nie może przejmować pobieranych plików z przeglądarki. Uruchom instalator ponownie, aby ją dodać."
+  },
+  "c619dd0d87a7bf20": {
+   "source": "<g1>Virus checking</g1> after each download with the antivirus you choose (one click for Microsoft Defender), and a <g2>temporary folder</g2> of your choice for files still downloading.",
+   "text": "<g1>Sprawdzanie wirusów</g1> po każdym pobraniu za pomocą wybranego programu antywirusowego (Microsoft Defender włączysz jednym kliknięciem) oraz wybrany przez Ciebie <g2>folder tymczasowy</g2> na pliki, które są jeszcze pobierane."
   },
   "c62198270f0107d2": {
    "source": "What it sets",
@@ -13102,6 +13226,10 @@
    "source": "A whole gallery at once. Only new pictures next time.",
    "text": "Cała galeria za jednym razem. Następnym razem tylko nowe zdjęcia."
   },
+  "d57ac3e78ac78d1e": {
+   "source": "<g1>Download selected links</g1>, <g2>Download all links</g2>, <g3>Download all images</g3> and <g4>Download all videos and audio</g4> read the page (its links, pictures or players, or your selection) when you choose them, and pass the addresses to DDM with the page's address and its site's cookies; the last one adds the video and sound files the tab's players played.",
+   "text": "<g1>Pobierz zaznaczone linki</g1>, <g2>Pobierz wszystkie linki</g2>, <g3>Pobierz wszystkie obrazy</g3> i <g4>Pobierz wszystkie wideo i audio</g4> odczytują stronę (jej linki, obrazy lub odtwarzacze albo Twoje zaznaczenie) w chwili wyboru i przekazują adresy do DDM razem z adresem strony oraz plikami cookie jej witryny. Ostatnia opcja dodaje też pliki wideo i audio odtworzone w odtwarzaczach karty."
+  },
   "d5a1b43af84e44bd": {
    "source": "Open your browser's extensions page: type <x1/>, <x2/> or <x3/> in the address bar.",
    "text": "Otwórz stronę rozszerzeń przeglądarki: wpisz <x1/>, <x2/> lub <x3/> w pasku adresu."
@@ -13508,7 +13636,7 @@
   },
   "db94ba5f97a1f9e2": {
    "source": "The extension shows almost nothing of its own, as users of other download managers expect: a click on its toolbar button turns taking downloads off and on, its right-click menu has \"Don't take downloads from this site\" and Help (<x1/>, the status page: installed, or what is wrong and the one thing to do), and its options page (<x2/>) has only that switch, the browser's proxy (#42) and another DDM (#157). It never asks the app for its downloads (extensions up to {v1} did, for a window of their own: the host refuses that question now, and the app answers the automation API's <x3/> and actions only while the API is on).",
-   "text": "Rozszerzenie samo prawie nic nie pokazuje, tak jak oczekują użytkownicy innych menedżerów pobierania: kliknięcie jego przycisku na pasku narzędzi wyłącza i włącza przejmowanie pobierań, jego menu prawego przycisku ma „Nie przejmuj pobierań z tej witryny” i Pomoc (<x1/>, strona stanu: zainstalowano albo co jest nie tak i jedna rzecz do zrobienia), a jego strona opcji (<x2/>) ma tylko ten przełącznik, proxy przeglądarki (#42) i inny DDM (#157). Nigdy nie pyta aplikacji o jej pobierania (rozszerzenia do wersji {v1} to robiły, dla własnego okna: host odrzuca teraz to pytanie, a aplikacja odpowiada na <x3/> i akcje interfejsu automatyzacji tylko wtedy, gdy ten interfejs jest włączony)."
+   "text": "Rozszerzenie samo pokazuje prawie nic, tak jak oczekują użytkownicy innych menedżerów pobierania: kliknięcie jego przycisku na pasku narzędzi włącza i wyłącza przejmowanie pobierań, jego menu prawego przycisku zawiera „Nie przejmuj pobierań z tej witryny” oraz Pomoc (<x1/>, strona stanu: zainstalowane albo co jest nie tak i jedna rzecz do zrobienia), a jego strona opcji (<x2/>) ma tylko ten przełącznik, serwer proxy przeglądarki (#42) i drugi program DDM (#157). Nigdy nie pyta aplikacji o jej pobierania (rozszerzenia do wersji {v1} to robiły, na potrzeby własnego okna: host odrzuca teraz to pytanie, a aplikacja odpowiada na <x3/> i akcje interfejsu API automatyzacji tylko wtedy, gdy ten interfejs jest włączony)."
   },
   "dba089f6ed3c76a8": {
    "source": "Black and white, a bright accent, every edge drawn, text at 7:1 or more.",
@@ -13798,6 +13926,10 @@
    "source": "Chrome, Firefox, Edge and more",
    "text": "Chrome, Firefox, Edge i inne"
   },
+  "e06cb012b324e259": {
+   "source": "Video, galleries, torrents and sites",
+   "text": "Wideo, galerie, torrenty i witryny"
+  },
   "e0ad26c06dcee181": {
    "source": "1 the start time, 2 once or on some days, 3 a stop time if you want one.",
    "text": "1 godzina uruchomienia, 2 jednorazowo lub w wybrane dni, 3 godzina zatrzymania, jeśli chcesz."
@@ -13933,6 +14065,10 @@
   "e2b96614efaa036c": {
    "source": "The drop target's edge at rest",
    "text": "Krawędź obszaru docelowego w spoczynku"
+  },
+  "e2c3ea2afe1c4e19": {
+   "source": "Minimize keeps DDM on the taskbar; closing it keeps it running in the notification area.",
+   "text": "Minimalizacja zostawia DDM na pasku zadań; zamknięcie zostawia go uruchomionego w obszarze powiadomień."
   },
   "e2d3a15847aa0c81": {
    "source": "Point at the button: its tooltip says which of these it is, and what a click does.",
@@ -14237,6 +14373,10 @@
   "e7ad13d5df709d38": {
    "source": "<g1>The portable copy</g1> (<x2/>), which runs from any folder.",
    "text": "<g1>Wersja przenośna</g1> (<x2/>), która działa z dowolnego folderu."
+  },
+  "e7c1cc7c638999e2": {
+   "source": "An add-on loaded with <g1>Load Temporary Add-on</g1> (from <x2/>) is removed when Firefox closes; its status page says so. Until Dannex's add-on is on addons.mozilla.org (on its way), Firefox Developer Edition, Nightly and ESR can keep it: set <x3/> to <x4/> in <x5/> and install <x6/> with <g7>Install Add-on From File…</g7> in <x8/> (<g9>Browser integration</g9>). Once it is listed there, install it from its page instead: Firefox keeps that one, and updates it.",
+   "text": "Dodatek załadowany przez <g1>Załaduj tymczasowy dodatek</g1> (z <x2/>) jest usuwany po zamknięciu przeglądarki Firefox. Mówi o tym jego strona stanu. Dopóki dodatek Dannex nie trafi na addons.mozilla.org (jest w drodze), Firefox Developer Edition, Nightly i ESR mogą go zachować: ustaw <x3/> na <x4/> w <x5/> i zainstaluj <x6/> za pomocą <g7>Zainstaluj dodatek z pliku…</g7> w <x8/> (<g9>Integracja z przeglądarką</g9>). Gdy dodatek pojawi się na tej liście, zainstaluj go raczej z jego strony: Firefox go zachowa i będzie aktualizował."
   },
   "e7c1fe00134f85f4": {
    "source": "<g1>Download rules</g1> tab: a rule adds the torrents of new articles whose titles it matches, without asking.",
@@ -14806,6 +14946,10 @@
    "source": "<g1>Through a proxy</g1>, DDM only sees the proxy, so it says <g2>through a proxy</g2> (with the proxy's country when it knows it) instead of guessing the server's. A VPN that works at the system level can't be seen: the country is then the server's, but the time includes the VPN's detour.",
    "text": "<g1>Przez proxy</g1>, DDM widzi tylko proxy, więc mówi <g2>przez proxy</g2> (z krajem proxy, jeśli go zna) zamiast zgadywać serwer. VPN działający na poziomie systemu nie może być widziany: kraj jest wtedy krajem serwera, ale czas obejmuje objazd VPN."
   },
+  "f10c89a15a8e65ac": {
+   "source": "When the Chrome Web Store's copy and the copy from DDM's folder are both in one Chromium browser, they ask each other (by their IDs, inside the browser) whether the other is there, so only one takes downloads. Nothing leaves the browser for that.",
+   "text": "Gdy w jednej przeglądarce opartej na Chromium są jednocześnie wersja z Chrome Web Store i wersja z folderu DDM, pytają się nawzajem (po identyfikatorach, wewnątrz przeglądarki), czy ta druga jest obecna. Dzięki temu pobierania przejmuje tylko jedna z nich. Nic w tym celu nie opuszcza przeglądarki."
+  },
   "f1198b0bddc112e0": {
    "source": "<g1>Save to</g1>: the folder its files go to. When a package holds several kinds of files, the box says <g2>Each file's category folder</g2>: each file goes to its category's folder (<g3>Options → Save to</g3>), as Import always did.",
    "text": "<g1>Zapisz w</g1>: folder, do którego trafiają pliki z pakietu. Gdy pakiet zawiera pliki różnych typów, w polu pojawia się <g2>Folder kategorii każdego pliku</g2>: każdy plik trafia do folderu przypisanego do jego kategorii (<g3>Opcje → Zapisz w</g3>), tak jak dotąd działała funkcja Importuj."
@@ -15105,6 +15249,10 @@
   "f738ab641ccdc98d": {
    "source": "Dannex Download Manager: <g1>its source code</g1> and <g2>our benchmark</g2> against IDM 6.42. We haven't benchmarked the others yet; until we do, this page makes no speed claim about them.",
    "text": "Dannex Download Manager: <g1>jego kod źródłowy</g1> i <g2>nasz test porównawczy</g2> z IDM 6.42. Nie testowaliśmy jeszcze innych; dopóki tego nie zrobimy, ta strona nie rości sobie żadnych praw do ich szybkości."
+  },
+  "f7591c001d6f9531": {
+   "source": "<g1>Torrents and magnet links</g1>, with sequential order, RSS feeds and sharing limits; the Add torrent window says what it is waiting for.",
+   "text": "<g1>Torrenty i linki magnet</g1> z pobieraniem po kolei, kanałami RSS i limitami udostępniania; okno Dodaj torrent pokazuje, na co czeka."
   },
   "f7656bbc30b4c552": {
    "source": "<g1>Network adapter</g1><g2>Every connection DDM opens goes out through the adapter you pick, and stops when it disconnects.</g2>",
@@ -15414,6 +15562,10 @@
    "source": "<g1>Limits.</g1> A loopback link has no real distance or packet loss; the faults stand in for them. Results are from one machine. Run it yourself: <x2/>, then <x3/>.",
    "text": "<g1>Ograniczenia.</g1> Łącze zwrotne nie ma rzeczywistej odległości ani utraty pakietów; błędy zastępują je. Wyniki pochodzą z jednej maszyny. Uruchom to sam: <x2/>, a następnie <x3/>."
   },
+  "fc27eae7fbac2219": {
+   "source": "<g1>A Download video button</g1> over videos, whose qualities show at once on YouTube.",
+   "text": "<g1>Przycisk Pobierz wideo</g1> nad filmami. W serwisie YouTube od razu pokazuje dostępne jakości."
+  },
   "fc2924c84dfb0d12": {
    "source": "The extension and DDM tell each other their versions at each connection, and every pair keeps working:",
    "text": "Rozszerzenie i DDM przekazują sobie swoje wersje przy każdym połączeniu, a każda para nadal działa:"
@@ -15653,6 +15805,30 @@
   "ffffe7806eaeae3d": {
    "source": "The option is off until you tick it. On Linux and macOS DDM starts with your session the same way. A <g1>portable copy</g1> can't start with Windows, since that needs the registry, so the option is greyed there.",
    "text": "Ta opcja jest wyłączona, dopóki jej nie zaznaczysz. W systemach Linux i macOS DDM uruchamia się z sesją w ten sam sposób. <g1>Przenośna kopia</g1> nie może uruchamiać się z systemem Windows, ponieważ wymaga to rejestru, więc opcja jest tam wyszarzona."
+  },
+  "6e355ba39f5dc912": {
+   "source": "Sponsor Dannex Download Manager",
+   "text": "Wesprzyj Dannex Download Manager"
+  },
+  "fc7fe0579b9363e9": {
+   "source": "One egui window painted to fixed pixel coordinates, plus one immediate viewport per dialog. <x1/> holds the state (downloads, queues, settings, the list's selection) and turns menu, toolbar, key and IPC commands into actions. Each dialog is its own module and returns an <x2/> (open, closed, done with a value). A window that comes up by itself (Download complete, a message DDM tells, a question while DDM isn't the program in front) shows above the others without taking the keyboard from the program being typed in (<x3/>, <x4/>); those the person asked for take it. Windows handed over one after another (Download File Info, Add torrent, Download video) and Download complete boxes show one at a time, in one place, the next when one closes. Windows-only calls are confined to <x5/> and their Linux and macOS counterparts to <x6/> (starting with the session, the browsers' host, sounds, show in folder, the crash handler); every other file is safe, portable Rust. Fonts come from the system: Windows' Fonts folder, macOS's system fonts, fontconfig on Linux (<x7/>). On Windows, Latin, Greek and Cyrillic text is drawn by DirectWrite (<x8/>, through egui's glyph rasterizer hook): View → Text → Smooth in its natural mode, anti-aliased at the size asked for and placed at quarter pixels with the font's own advances; Classic (the default) in GDI-classic mode, so each letter's hinted shape and whole-pixel width come together. Other scripts are shaped and drawn by egui.",
+   "text": "Jedno okno egui rysowane we stałych współrzędnych pikseli oraz jeden natychmiastowy viewport na każde okno dialogowe. <x1/> przechowuje stan (pobrania, kolejki, ustawienia, zaznaczenie na liście) i zamienia polecenia z menu, paska narzędzi, klawiszy oraz IPC na akcje. Każde okno dialogowe to osobny moduł i zwraca <x2/> (otwarte, zamknięte, zakończone z wartością). Okno, które pojawia się samo (Pobieranie zakończone, komunikat od DDM, pytanie, gdy DDM nie jest programem na pierwszym planie), wyświetla się nad pozostałymi i nie odbiera klawiatury programowi, w którym piszesz (<x3/>, <x4/>); okna, o które poprosił użytkownik, ją przejmują. Okna przekazywane jedno po drugim (Informacje o pobieranym pliku, Dodaj torrent, Pobierz wideo) oraz okna Pobieranie zakończone pokazują się pojedynczo, w jednym miejscu; następne pojawia się po zamknięciu poprzedniego. Wywołania tylko dla Windows ograniczono do <x5/>, a ich odpowiedniki dla Linux i macOS do <x6/> (na początek sesja, host przeglądarek, dźwięki, pokazywanie w folderze, obsługa awarii); każdy inny plik to bezpieczny, przenośny kod w Rust. Czcionki pochodzą z systemu: folder Fonts w Windows, czcionki systemowe w macOS, fontconfig w Linux (<x7/>). W Windows tekst łaciński, grecki i cyrylicki rysuje DirectWrite (<x8/>, przez hak rasteryzera glifów egui): Widok → Tekst → Gładki w trybie naturalnym, z antyaliasingiem w żądanym rozmiarze, ustawiany co ćwierć piksela, z własnymi szerokościami znaków czcionki; Klasyczny (domyślny) w trybie GDI-classic, dzięki czemu kształt każdej litery po hintingu i jej szerokość w pełnych pikselach idą w parze. Inne pisma kształtuje i rysuje egui."
+  },
+  "800407e32d4bc4d6": {
+   "source": "The extension shows almost nothing of its own, as users of other download managers expect: a click on its toolbar button turns taking downloads off and on, its right-click menu has \"Don't take downloads from this site\" and Help (<x1/>, the status page: installed, or what is wrong and the one thing to do), and its options page (<x2/>) has only that switch, the browser's proxy (#42) and another DDM (#157). It never asks the app for its downloads (extensions up to 0.6.5 did, for a window of their own: the host refuses that question now, and the app answers the automation API's <x3/> and actions only while the API is on).",
+   "text": "Samo rozszerzenie pokazuje prawie nic, tak jak oczekują użytkownicy innych menedżerów pobierania: kliknięcie jego przycisku na pasku narzędzi włącza i wyłącza przejmowanie pobrań, menu prawego przycisku zawiera „Nie przejmuj pobrań z tej witryny” oraz Pomoc (<x1/>, strona stanu: zainstalowane albo co jest nie tak i jedna rzecz do zrobienia), a jego strona opcji (<x2/>) ma tylko ten przełącznik, serwer proxy przeglądarki (#42) i inny DDM (#157). Rozszerzenie nigdy nie pyta aplikacji o jej pobrania (rozszerzenia do wersji 0.6.5 pytały, żeby pokazać własne okno: host odrzuca teraz to pytanie, a aplikacja odpowiada na <x3/> i akcje API automatyzacji tylko wtedy, gdy API jest włączone)."
+  },
+  "dcedde395f1f0789": {
+   "source": "<g1>1.0.0</g1> <g2>20.9 MB</g2>",
+   "text": "<g1>1.0.0</g1> <g2>20.9 MB</g2>"
+  },
+  "410849c6c11c33d7": {
+   "source": "DDM is free and always will be. If it saves you time, you can support it.",
+   "text": "DDM jest darmowy i zawsze taki będzie. Jeśli oszczędza Twój czas, możesz go wesprzeć."
+  },
+  "eb60a779982bcd66": {
+   "source": "Chrome, Edge and Brave run an extension in private (incognito) windows only when you allow it, and Firefox asks too. Until then, downloads from private windows stay with the browser. To allow it: on the browser's extensions page, open <g1>Details</g1> and turn on <g2>Allow in Incognito</g2>; in Firefox, <g3>Add-ons and themes</g3> → the extension → <g4>Allow</g4> beside <g5>Run in Private Windows</g5>. Downloads from a private window use that window's cookies, and DDM doesn't keep them in its list once they're done.",
+   "text": "Chrome, Edge i Brave uruchamiają rozszerzenie w oknach prywatnych (incognito) tylko wtedy, gdy na to zezwolisz. Firefox również o to pyta. Do tego czasu pobierania z okien prywatnych obsługuje przeglądarka. Aby zezwolić: na stronie rozszerzeń przeglądarki otwórz <g1>Szczegóły</g1> i włącz <g2>Zezwalaj w trybie incognito</g2>; w Firefoksie wybierz <g3>Dodatki i motywy</g3> → rozszerzenie → <g4>Zezwalaj</g4> obok opcji <g5>Uruchamiaj w oknach prywatnych</g5>. Pobierania z okna prywatnego używają plików cookie tego okna. Po zakończeniu DDM nie zachowuje ich na swojej liście. (Windows)"
   }
  }
 }
