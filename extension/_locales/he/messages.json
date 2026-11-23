@@ -1,0 +1,443 @@
+{
+  "name": {
+    "message": "DDM Integration Module"
+  },
+  "description": {
+    "message": "מעביר הורדות מהדפדפן אל Dannex Download Manager."
+  },
+  "menu": {
+    "message": "הורד באמצעות DDM"
+  },
+  "video_download": {
+    "message": "הורד סרטון"
+  },
+  "video_more": {
+    "message": "אפשרויות נוספות"
+  },
+  "video_hide_here": {
+    "message": "הסתר בסרטון זה"
+  },
+  "video_never_site": {
+    "message": "לעולם לא ב-$site$",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "video_settings": {
+    "message": "הגדרות לחצן..."
+  },
+  "video_sent": {
+    "message": "נשלח אל DDM"
+  },
+  "video_failed": {
+    "message": "Dannex Download Manager אינו מותקן או לא הופעל"
+  },
+  "video_drag": {
+    "message": "גרור כדי להזיז אותו לאורך קצה הסרטון"
+  },
+  "menu_selected": {
+    "message": "הורד את הקישורים שנבחרו באמצעות DDM"
+  },
+  "menu_all": {
+    "message": "הורד את כל הקישורים באמצעות DDM"
+  },
+  "menu_images": {
+    "message": "הורד את כל התמונות באמצעות DDM"
+  },
+  "menu_media": {
+    "message": "הורד את כל הסרטונים והשמע באמצעות DDM"
+  },
+  "status_not_installed": {
+    "message": "Dannex Download Manager לא מותקן"
+  },
+  "status_installed": {
+    "message": "Dannex Download Manager מותקן"
+  },
+  "status_forbidden": {
+    "message": "עדכון Dannex Download Manager"
+  },
+  "status_not_running": {
+    "message": "Dannex Download Manager לא הופעל"
+  },
+  "status_host_failed": {
+    "message": "משהו חוסם את Dannex Download Manager"
+  },
+  "status_too_large": {
+    "message": "לא ניתן היה להעביר את ההורדה האחרונה אל Dannex Download Manager"
+  },
+  "status_update_app": {
+    "message": "עדכן את Dannex Download Manager כדי לקבל את כל מה שהתוסף הזה יכול לעשות."
+  },
+  "popup_take": {
+    "message": "שלח הורדות אל Dannex Download Manager"
+  },
+  "popup_proxy": {
+    "message": "הורד דרך ה-VPN או ה-proxy של דפדפן זה"
+  },
+  "popup_proxy_title": {
+    "message": "הפעל זאת אם אתה משתמש בתוסף VPN או proxy בדפדפן זה. הדפדפן יבקש ממך פעם אחת לאשר זאת."
+  },
+  "popup_proxy_title_chromium": {
+    "message": "הפעל זאת אם אתה משתמש בתוסף VPN או proxy בדפדפן זה. כשהאפשרות כבויה, התוסף אינו בודק את ה-proxy של הדפדפן."
+  },
+  "popup_help": {
+    "message": "עזרה"
+  },
+  "page_support": {
+    "message": "תמוך ב-DDM"
+  },
+  "popup_declined": {
+    "message": "ההורדה האחרונה שלך נשארה בדפדפן: $name$",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "setup.png"
+      }
+    }
+  },
+  "popup_declined_unnamed": {
+    "message": "ההורדה האחרונה שלך נשארה בדפדפן."
+  },
+  "declined_file_type": {
+    "message": "סוג הקובץ שלו אינו ברשימה של Dannex Download Manager (אפשרויות ← סוגי קבצים)."
+  },
+  "declined_site": {
+    "message": "האתר שלו נמצא ברשימת האתרים ש-Dannex Download Manager משאיר לדפדפן (אפשרויות ← סוגי קבצים)."
+  },
+  "declined_address": {
+    "message": "הכתובת שלו נמצאת ברשימת הכתובות ש-Dannex Download Manager משאיר לדפדפן (אפשרויות ← סוגי קבצים)."
+  },
+  "declined_small": {
+    "message": "הוא קטן מהקובץ הקטן ביותר ש-Dannex Download Manager מקבל (אפשרויות ← סוגי קבצים)."
+  },
+  "declined_browser": {
+    "message": "דפדפן זה אינו מסומן ב״אפשרויות ← כללי״ של Dannex Download Manager."
+  },
+  "declined_integration_off": {
+    "message": "שילוב הדפדפן כבוי ב״אפשרויות ← כללי״ של Dannex Download Manager."
+  },
+  "declined_site_access": {
+    "message": "התוסף הזה אינו מורשה באתר זה."
+  },
+  "declined_handed_back": {
+    "message": "בחרת ב״הורד באמצעות הדפדפן״ עבור הורדה זו ב-Dannex Download Manager."
+  },
+  "video_off": {
+    "message": "לחצן ההורדה כבוי באתר זה"
+  },
+  "video_drm": {
+    "message": "סרטון מוגן: לא ניתן לשמור אותו"
+  },
+  "video_unnamed": {
+    "message": "לא ניתן לדעת איזה סרטון זה: פתחו את הדף שלו ונסו שם"
+  },
+  "video_looking": {
+    "message": "מחפש את האיכויות…"
+  },
+  "video_open_mdm": {
+    "message": "פתח ב-DDM…"
+  },
+  "video_no_choices": {
+    "message": "אין כאן סרטון להורדה"
+  },
+  "video_playlist": {
+    "message": "רשימת סרטונים: בחר אותם ב-Dannex Download Manager"
+  },
+  "video_no_ytdlp": {
+    "message": "Dannex Download Manager זקוק ל-yt-dlp עבור סרטון זה. פתח ב-DDM… כדי להתקין אותו."
+  },
+  "video_too_long": {
+    "message": "החיפוש ארך זמן רב מדי"
+  },
+  "video_busy": {
+    "message": "Dannex Download Manager עסוק בסרטונים אחרים"
+  },
+  "video_queued": {
+    "message": "נוסף לתור"
+  },
+  "video_failed_lookup": {
+    "message": "החיפוש נכשל"
+  },
+  "video_tab_video": {
+    "message": "וידאו"
+  },
+  "video_tab_audio": {
+    "message": "שמע"
+  },
+  "video_open_post": {
+    "message": "פתח את הפוסט, ואז השתמש בלחצן שם"
+  },
+  "video_audio_original": {
+    "message": "אודיו בלבד, מקורי $type$",
+    "placeholders": {
+      "type": {
+        "content": "$1",
+        "example": "M4A"
+      }
+    }
+  },
+  "video_audio_only": {
+    "message": "אודיו בלבד $type$",
+    "placeholders": {
+      "type": {
+        "content": "$1",
+        "example": "MP3 320 kbps"
+      }
+    }
+  },
+  "video_pick_waiting": {
+    "message": "מתחיל ברגע ש-DDM מוכן…"
+  },
+  "video_pick_gone": {
+    "message": "האיכות הזו אינה זמינה: בחר אחרת"
+  },
+  "popup_send_to": {
+    "message": "שלח הורדות אל"
+  },
+  "popup_send_here": {
+    "message": "מחשב זה"
+  },
+  "popup_send_remote": {
+    "message": "Dannex Download Manager במחשב אחר"
+  },
+  "popup_remote_code": {
+    "message": "קוד צימוד"
+  },
+  "popup_remote_open": {
+    "message": "פתח אותו"
+  },
+  "popup_remote_pair": {
+    "message": "צמד"
+  },
+  "popup_remote_help": {
+    "message": "פתח קודם את הכתובת שלו בדפדפן זה והמשך אחרי אזהרת האבטחה. לאחר מכן הזן את הקוד מ״אפשרויות ← מרחוק ← צימוד מכשיר״ שלו."
+  },
+  "status_remote": {
+    "message": "ההורדות עוברות אל $address$",
+    "placeholders": {
+      "address": {
+        "content": "$1",
+        "example": "https://192.168.1.10:8463/"
+      }
+    }
+  },
+  "remote_address": {
+    "message": "הזן את כתובת ה-https:// שלו."
+  },
+  "remote_unreachable": {
+    "message": "לא ניתן היה להגיע אליו. פתח את הכתובת שלו בדפדפן זה, המשך אחרי אזהרת האבטחה, ונסה שוב."
+  },
+  "remote_wrong_code": {
+    "message": "קוד שגוי."
+  },
+  "remote_no_code": {
+    "message": "עדיין אין קוד להזנה: לחץ שם קודם על ״צימוד מכשיר״."
+  },
+  "remote_too_soon": {
+    "message": "המתן רגע, ואז נסה שוב."
+  },
+  "remote_failed": {
+    "message": "זה לא עבד. נסה שוב."
+  },
+  "remote_device_name": {
+    "message": "הרחבת דפדפן"
+  },
+  "badge_off": {
+    "message": "כבוי"
+  },
+  "tip_on": {
+    "message": "Dannex Download Manager פועל. לחץ כדי לכבות."
+  },
+  "tip_off": {
+    "message": "Dannex Download Manager כבוי. לחץ כדי להפעיל."
+  },
+  "tip_remote": {
+    "message": "ההורדות עוברות ל-Dannex Download Manager בכתובת $address$. לחץ כדי לכבות.",
+    "placeholders": {
+      "address": {
+        "content": "$1",
+        "example": "https://192.168.1.10:8463/"
+      }
+    }
+  },
+  "status_off_in_app": {
+    "message": "כבוי ב-Dannex Download Manager"
+  },
+  "status_duplicate": {
+    "message": "עותק אחר של התוסף הזה מותקן"
+  },
+  "click_fix": {
+    "message": "לחץ כדי לראות מה לעשות."
+  },
+  "click_details": {
+    "message": "לחץ לפרטים."
+  },
+  "toolbar_exclude": {
+    "message": "אל תקבל הורדות מאתר זה"
+  },
+  "toolbar_help": {
+    "message": "עזרה"
+  },
+  "toolbar_store": {
+    "message": "קבלת עדכונים אוטומטיים מחנות Chrome המקוונת..."
+  },
+  "options_take_note": {
+    "message": "כשהוא כבוי, ההורדות נשארות בדפדפן. לחיצה על לחצן התוסף עושה אותו דבר."
+  },
+  "options_what_to_do": {
+    "message": "ראה מה לעשות"
+  },
+  "options_more": {
+    "message": "עוד"
+  },
+  "page_checking": {
+    "message": "מחפש את Dannex Download Manager…"
+  },
+  "page_on_lead": {
+    "message": "הורדות שאתה מתחיל בדפדפן זה עוברות ל-Dannex Download Manager."
+  },
+  "page_off_lead": {
+    "message": "הוא כבוי, ולכן ההורדות נשארות בדפדפן זה."
+  },
+  "page_remote_title": {
+    "message": "ההורדות עוברות ל-Dannex Download Manager אחר"
+  },
+  "page_remote_lead": {
+    "message": "הורדות שאתה מתחיל בדפדפן זה עוברות ל-Dannex Download Manager בכתובת $address$.",
+    "placeholders": {
+      "address": {
+        "content": "$1",
+        "example": "https://192.168.1.10:8463/"
+      }
+    }
+  },
+  "page_lead_not_installed": {
+    "message": "התוסף הזה עובד עם Dannex Download Manager, מנהל הורדות חינמי למחשב שלך. התקן אותו, והדף הזה מתעדכן מעצמו."
+  },
+  "page_lead_not_running": {
+    "message": "הדפדפן ניסה להפעיל אותו, אך זה לקח זמן רב מדי. הפעל את Dannex Download Manager בעצמך ונסה שוב."
+  },
+  "page_lead_host_failed": {
+    "message": "תוכנת אבטחה היא הגורם הנפוץ. אשר את Dannex Download Manager בתוכנת האנטי-וירוס שלך, או התקן אותו שוב."
+  },
+  "page_lead_forbidden": {
+    "message": "הגרסה הזו של Dannex Download Manager ישנה מדי עבור התוסף הזה. התקן את הגרסה האחרונה."
+  },
+  "page_lead_too_large": {
+    "message": "האתר שלח יותר נתוני כניסה ממה ש-Dannex Download Manager מקבל, ולכן הדפדפן שמר את ההורדה. בדרך כלל ניתן לפתור זאת על ידי יציאה מהאתר וכניסה מחדש."
+  },
+  "page_download": {
+    "message": "הורדת Dannex Download Manager"
+  },
+  "page_files_windows": {
+    "message": "עבור Windows 10 ו-11."
+  },
+  "page_files_macos": {
+    "message": "עבור Mac (תמונת דיסק .dmg)."
+  },
+  "page_files_linux": {
+    "message": "עבור Linux (AppImage, .deb או .rpm)."
+  },
+  "page_files_other": {
+    "message": "עבור מחשבי Windows, Mac ו-Linux."
+  },
+  "page_all_downloads": {
+    "message": "כל ההורדות"
+  },
+  "page_step_windows": {
+    "message": "הפעל את תוכנית ההתקנה שהורדת."
+  },
+  "page_step_macos": {
+    "message": "פתח את קובץ ה-.dmg, גרור את Dannex Download Manager אל Applications, והפעל אותו פעם אחת."
+  },
+  "page_step_linux": {
+    "message": "התקן את קובץ ה-.deb או ה-.rpm (או הפעל את ה-AppImage), ואז הפעל את Dannex Download Manager פעם אחת."
+  },
+  "page_step_other": {
+    "message": "Dannex Download Manager פועל במחשבי Windows, Mac ו-Linux. התקן אותו באחד מהם, והוסף שם את התוסף הזה לדפדפן."
+  },
+  "page_step_wait": {
+    "message": "השאר דף זה פתוח. הוא משתנה מעצמו כש-Dannex Download Manager מוכן."
+  },
+  "page_step_restart": {
+    "message": "אין שינוי אחרי דקה? הפעל מחדש את הדפדפן."
+  },
+  "page_step_installed": {
+    "message": "כבר מותקן? ב-Dannex Download Manager, פתח אפשרויות ← כללי ← בדיקת שילוב הדפדפן."
+  },
+  "page_try_again": {
+    "message": "נסה שוב"
+  },
+  "page_app_options": {
+    "message": "פתח את האפשרויות של Dannex Download Manager"
+  },
+  "page_duplicate_title": {
+    "message": "הסר עותק זה"
+  },
+  "page_duplicate_lead": {
+    "message": "העותק מחנות Chrome המקוונת מותקן גם בדפדפן זה, והוא מתעדכן בעצמו. אין צורך בעותק זה."
+  },
+  "page_remove": {
+    "message": "הסר עותק זה"
+  },
+  "page_extensions": {
+    "message": "פתח את דף התוספים"
+  },
+  "page_update_app_how": {
+    "message": "ב-Dannex Download Manager, בחר עזרה ← בדוק אם קיימים עדכונים..."
+  },
+  "page_behind": {
+    "message": "גרסה חדשה יותר של התוסף הזה הגיעה עם Dannex Download Manager $version$.",
+    "placeholders": {
+      "version": {
+        "content": "$1",
+        "example": "0.7.0"
+      }
+    }
+  },
+  "page_behind_store": {
+    "message": "הדפדפן מעדכן אותו מעצמו תוך כמה שעות, או עכשיו באמצעות ״בדוק אם קיימים עדכונים״."
+  },
+  "page_behind_unpacked": {
+    "message": "טען מחדש את התוסף כדי להשתמש בו."
+  },
+  "page_behind_other": {
+    "message": "הוסף את החדשה מתיקיית Dannex Download Manager, כפי שהוספת את זו."
+  },
+  "page_check_updates": {
+    "message": "בדוק אם קיימים עדכונים"
+  },
+  "page_up_to_date": {
+    "message": "עדיין אין גרסה חדשה יותר. הדפדפן בודק שוב מעצמו."
+  },
+  "page_reload": {
+    "message": "טען מחדש את התוסף"
+  },
+  "page_store": {
+    "message": "לקבלת עדכונים אוטומטיים: הוסף את התוסף הזה מחנות Chrome המקוונת, ואז הסר את העותק הזה."
+  },
+  "page_open_store": {
+    "message": "פתח את חנות Chrome המקוונת"
+  },
+  "page_temporary": {
+    "message": "Firefox יסיר את התוסף הזה בעת סגירתו, כי הוא נוסף כתוסף זמני."
+  },
+  "page_site_access": {
+    "message": "התוסף הזה מורשה רק באתרים מסוימים, ולכן הורדות מאתרים אחרים נשארות בדפדפן."
+  },
+  "page_allow_sites": {
+    "message": "אפשר בכל האתרים"
+  },
+  "page_private": {
+    "message": "הורדות מחלונות פרטיים נשארות בדפדפן, כי התוסף הזה אינו מורשה שם."
+  },
+  "page_private_chromium": {
+    "message": "כדי לשנות זאת, הפעל את ״אפשר במצב גלישה בסתר״ בדף הפרטים שלו."
+  },
+  "page_learn_more": {
+    "message": "מידע נוסף"
+  }
+}

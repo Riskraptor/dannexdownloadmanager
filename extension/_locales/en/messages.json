@@ -1,0 +1,578 @@
+{
+  "name": {
+    "message": "DDM Integration Module",
+    "description": "the extension's name in the browser's list of extensions and on its toolbar button; keep DDM Integration Module as it is (DDM is the short name of Dannex Download Manager)"
+  },
+  "description": {
+    "message": "Hands downloads from the browser to Dannex Download Manager.",
+    "description": "the extension's description in the browser's list of extensions; keep the name Dannex Download Manager as it is"
+  },
+  "menu": {
+    "message": "Download with DDM",
+    "description": "command in the browser's right-click menu on a link, picture, video or sound; keep the name Dannex Download Manager as it is"
+  },
+  "video_download": {
+    "message": "Download video",
+    "description": "the button over a video on a web page that downloads it; verb; short (it sits on the video)"
+  },
+  "video_more": {
+    "message": "More options",
+    "description": "the small arrow next to the Download video button that opens its menu (read aloud by screen readers)"
+  },
+  "video_hide_here": {
+    "message": "Hide on this video",
+    "description": "menu command of the download button over a video: hide the button on this video only"
+  },
+  "video_never_site": {
+    "message": "Never on $site$",
+    "description": "menu command of the download button over a video: never show the button on this web site again",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "video_settings": {
+    "message": "Button settings...",
+    "description": "menu command of the download button over a video: opens its settings in Dannex Download Manager"
+  },
+  "video_sent": {
+    "message": "Sent to DDM",
+    "description": "shown briefly on the download button after it was clicked; keep the name Dannex Download Manager as it is"
+  },
+  "video_failed": {
+    "message": "Dannex Download Manager isn't installed or didn't start",
+    "description": "shown briefly on the download button when the app could not be reached; keep the name Dannex Download Manager as it is"
+  },
+  "video_drag": {
+    "message": "Drag to move it along the video's edge",
+    "description": "tooltip of the download button over a video: it can be dragged to another place on the video's edge"
+  },
+  "menu_selected": {
+    "message": "Download selected links with DDM",
+    "description": "command in the browser's right-click menu on selected text: download the links in the selection; keep the name Dannex Download Manager as it is"
+  },
+  "menu_all": {
+    "message": "Download all links with DDM",
+    "description": "command in the browser's right-click menu on a page: download the links of the whole page; keep the name Dannex Download Manager as it is"
+  },
+  "menu_images": {
+    "message": "Download all images with DDM",
+    "description": "command in the browser's right-click menu on a page: download the pictures of the whole page (they open in the app's list to tick); keep the name Dannex Download Manager as it is"
+  },
+  "menu_media": {
+    "message": "Download all videos and audio with DDM",
+    "description": "command in the browser's right-click menu on a page: download the video and sound files of the whole page (they open in the app's list to tick); keep the name Dannex Download Manager as it is"
+  },
+  "status_not_installed": {
+    "message": "Dannex Download Manager isn't installed",
+    "description": "headline of the extension's status page, and the first line of its toolbar button's tooltip: the browser can't find the app on this computer; keep the name Dannex Download Manager as it is"
+  },
+  "status_installed": {
+    "message": "Dannex Download Manager is installed",
+    "description": "headline of the extension's status page when everything works; keep the name Dannex Download Manager as it is"
+  },
+  "status_forbidden": {
+    "message": "Update Dannex Download Manager",
+    "description": "headline of the extension's status page, and the first line of its toolbar button's tooltip: the app on this computer is too old for this extension; keep the name Dannex Download Manager as it is"
+  },
+  "status_not_running": {
+    "message": "Dannex Download Manager didn't start",
+    "description": "headline of the extension's status page, and the first line of its toolbar button's tooltip: the browser tried to start the app for a download and gave up waiting; keep the name Dannex Download Manager as it is"
+  },
+  "status_host_failed": {
+    "message": "Something is blocking Dannex Download Manager",
+    "description": "headline of the extension's status page, and the first line of its toolbar button's tooltip: the browser started the app's small helper, but it stopped at once (usually security software); keep the name Dannex Download Manager as it is"
+  },
+  "status_too_large": {
+    "message": "The last download couldn't go to Dannex Download Manager",
+    "description": "headline of the extension's status page, and the first line of its toolbar button's tooltip: a download carried too much sign-in data (cookies) to hand over, so the browser kept it; keep the name Dannex Download Manager as it is"
+  },
+  "status_update_app": {
+    "message": "Update Dannex Download Manager to get everything this extension can do.",
+    "description": "on the extension's status and options pages and in its toolbar button's tooltip: the app is older than the extension; downloads still work; keep the name Dannex Download Manager as it is"
+  },
+  "popup_take": {
+    "message": "Send downloads to Dannex Download Manager",
+    "description": "label of the on/off switch on the extension's status and options pages (the same as a click on its toolbar button): when on, downloads started in this browser go to the app; keep the name Dannex Download Manager as it is"
+  },
+  "popup_proxy": {
+    "message": "Download through this browser's VPN or proxy",
+    "description": "label of a switch on the extension's options page, under More: the app downloads through the same proxy as this browser (one a VPN or proxy extension set)"
+  },
+  "popup_proxy_title": {
+    "message": "Turn this on if you use a VPN or proxy extension in this browser. The browser asks you once to allow it.",
+    "description": "note under the VPN or proxy switch on the extension's options page (Firefox, which asks for a permission)"
+  },
+  "popup_proxy_title_chromium": {
+    "message": "Turn this on if you use a VPN or proxy extension in this browser. While it's off, the extension doesn't look at the browser's proxy.",
+    "description": "note under the VPN or proxy switch on the extension's options page (Chrome, Edge and other Chromium browsers)"
+  },
+  "popup_help": {
+    "message": "Help",
+    "description": "link at the bottom of the extension's status and options pages: opens the help page"
+  },
+  "page_support": {
+    "message": "Support DDM",
+    "description": "link at the bottom of the extension's status and options pages, beside Help: opens the maintainer's page for donations (GitHub Sponsors) in a new tab; keep DDM as it is (the short name of Dannex Download Manager)"
+  },
+  "popup_declined": {
+    "message": "Your last download stayed in the browser: $name$",
+    "description": "on the extension's status page: the last download the browser kept instead of handing it to Dannex Download Manager, with its file name; a sentence saying why follows",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "setup.png"
+      }
+    }
+  },
+  "popup_declined_unnamed": {
+    "message": "Your last download stayed in the browser.",
+    "description": "on the extension's status page: the last download the browser kept (its name isn't known, e.g. from a private window); a sentence saying why follows"
+  },
+  "declined_file_type": {
+    "message": "Its file type isn't on Dannex Download Manager's list (Options → File types).",
+    "description": "why a download stayed with the browser: its file type isn't on the app's list; Options and File types are the app's window and its page, as the app names them"
+  },
+  "declined_site": {
+    "message": "Its site is on Dannex Download Manager's list of sites to leave alone (Options → File types).",
+    "description": "why a download stayed with the browser: its web site is on the app's list of sites not to take downloads from"
+  },
+  "declined_address": {
+    "message": "Its address is on Dannex Download Manager's list of addresses to leave alone (Options → File types).",
+    "description": "why a download stayed with the browser: its address matches the app's list of addresses not to take"
+  },
+  "declined_small": {
+    "message": "It's smaller than the smallest file Dannex Download Manager takes (Options → File types).",
+    "description": "why a download stayed with the browser: the file is smaller than the app's minimum size setting"
+  },
+  "declined_browser": {
+    "message": "This browser isn't ticked in Dannex Download Manager's Options → General.",
+    "description": "why a download stayed with the browser: the app's Options don't capture downloads from this browser (its box is unticked in the list of browsers)"
+  },
+  "declined_integration_off": {
+    "message": "Browser integration is turned off in Dannex Download Manager's Options → General.",
+    "description": "why a download stayed with the browser: the app's setting 'Use advanced browser integration' is off; keep the setting's name as the app shows it"
+  },
+  "declined_site_access": {
+    "message": "This extension isn't allowed on that site.",
+    "description": "why a download stayed with the browser: the user limited the extension's access to web sites in the browser, so it can't pass the sign-in on"
+  },
+  "declined_handed_back": {
+    "message": "You chose Download with the browser for it in Dannex Download Manager.",
+    "description": "why a download stayed with the browser: in the app, the user chose 'Download with the browser' for this download a moment ago, because the site's bot check lets only browsers through; translate 'Download with the browser' as the app's button and right-click item of that name; keep the name Dannex Download Manager as it is"
+  },
+  "video_off": {
+    "message": "The download button is off on this site",
+    "description": "shown briefly on the download button over a video when the app's settings keep the button off on this web site"
+  },
+  "video_drm": {
+    "message": "Protected video: it can't be saved",
+    "description": "shown briefly on the download button when the video is copy-protected (DRM) and no tool can download it"
+  },
+  "video_unnamed": {
+    "message": "Can't tell which video this is: open its own page and try there",
+    "description": "shown briefly on the download button when nothing on the page says which video the player is playing, so nothing was sent"
+  },
+  "video_looking": {
+    "message": "Looking up the qualities…",
+    "description": "in the menu that opens from the download button over a video, while the app finds which qualities (resolutions, formats) the video can be downloaded in"
+  },
+  "video_open_mdm": {
+    "message": "Open in DDM…",
+    "description": "last command of the menu of qualities under the download button over a video: opens the app's Download video window for this video instead; keep the name Dannex Download Manager as it is"
+  },
+  "video_no_choices": {
+    "message": "No video to download here",
+    "description": "in the menu under the download button over a video: the app found no quality of the video it could download"
+  },
+  "video_playlist": {
+    "message": "A list of videos: choose them in Dannex Download Manager",
+    "description": "in the menu under the download button over a video: the page is a list of videos (a playlist), whose videos are chosen in the app's window; keep the name Dannex Download Manager as it is"
+  },
+  "video_no_ytdlp": {
+    "message": "Dannex Download Manager needs yt-dlp for this video. Open in DDM… to install it.",
+    "description": "in the menu of the download button over a video: the app has no yt-dlp (the program that finds videos), which its Download video window offers to install; keep yt-dlp as it is, and Open in DDM… as the menu's own item says it"
+  },
+  "video_too_long": {
+    "message": "Looking up took too long",
+    "description": "in the menu under the download button over a video: the app took more than a minute to find the video's qualities, so the menu stopped waiting"
+  },
+  "video_busy": {
+    "message": "Dannex Download Manager is busy with other videos",
+    "description": "in the menu under the download button over a video: the app is already looking up other videos and can't look this one up now; keep the name Dannex Download Manager as it is"
+  },
+  "video_queued": {
+    "message": "Added to the queue",
+    "description": "shown briefly on the download button over a video after a quality was picked: the download was added to the app's download queue, to start later"
+  },
+  "video_failed_lookup": {
+    "message": "Could not look it up",
+    "description": "in the menu under the download button over a video: finding the video's qualities failed; the app's own explanation follows on the next line"
+  },
+  "video_tab_video": {
+    "message": "Video",
+    "description": "tab above the list of qualities in the menu under the download button over a video: the choices that include picture (video with sound); short, one word"
+  },
+  "video_tab_audio": {
+    "message": "Audio",
+    "description": "tab above the list of qualities in the menu under the download button over a video: the choices that are sound only (MP3, Opus and the like); short, one word"
+  },
+  "video_open_post": {
+    "message": "Open the post, then use the button there",
+    "description": "shown briefly on the download button over a video in a feed (a social site's home page, a timeline) when nothing in the feed gives that video's own address, so nothing was sent: the user should open the post the video belongs to and click the button on that page; short"
+  },
+  "video_audio_original": {
+    "message": "Audio only, original $type$",
+    "description": "a row in the menu of qualities under the download button over a video, shown at once from what the page itself says, before the app's own list: only the sound, the site's own file as it is (not converted); the same words as the app's \"Audio only, original {type}\"",
+    "placeholders": {
+      "type": {
+        "content": "$1",
+        "example": "M4A"
+      }
+    }
+  },
+  "video_audio_only": {
+    "message": "Audio only $type$",
+    "description": "a row in the menu of qualities under the download button over a video, shown at once from what the page itself says, before the app's own list: only the sound, converted to that type; the same words as the app's \"Audio only {type}\"",
+    "placeholders": {
+      "type": {
+        "content": "$1",
+        "example": "MP3 320 kbps"
+      }
+    }
+  },
+  "video_pick_waiting": {
+    "message": "Starting as soon as DDM is ready…",
+    "description": "read out by screen readers in the menu of qualities under the download button over a video, after the user picked a quality while the app is still looking the video up: the download starts by itself once the app has finished; keep the short name DDM as it is"
+  },
+  "video_pick_gone": {
+    "message": "That quality isn't available: choose another",
+    "description": "in the menu of qualities under the download button over a video: the user picked a quality from the list the page gave, and the app's own look-up of the video doesn't offer it, so nothing was downloaded; the app's list is shown under it"
+  },
+  "popup_send_to": {
+    "message": "Send downloads to",
+    "description": "heading on the extension's options page, under More: where downloads go (this computer, or another computer's Dannex Download Manager)"
+  },
+  "popup_send_here": {
+    "message": "This computer",
+    "description": "choice on the extension's options page, under Send downloads to: this computer's Dannex Download Manager"
+  },
+  "popup_send_remote": {
+    "message": "Dannex Download Manager on another computer",
+    "description": "choice on the extension's options page, under Send downloads to: a Dannex Download Manager on another computer (a home server); keep the name Dannex Download Manager as it is"
+  },
+  "popup_remote_code": {
+    "message": "Pairing code",
+    "description": "placeholder of the box for the 8-digit code the other DDM shows"
+  },
+  "popup_remote_open": {
+    "message": "Open it",
+    "description": "button: open the other DDM's address in a tab (to accept its certificate once)"
+  },
+  "popup_remote_pair": {
+    "message": "Pair",
+    "description": "button: pair this browser with the other DDM using the code"
+  },
+  "popup_remote_help": {
+    "message": "First open its address in this browser and continue past the security warning. Then enter the code from its Options → Remote → Pair a device.",
+    "description": "note on the extension's options page, for sending downloads to another computer's Dannex Download Manager: the browser warns about its own certificate once; Options, Remote and Pair a device are names in that app"
+  },
+  "status_remote": {
+    "message": "Downloads go to $address$",
+    "description": "the toolbar button's status while downloads go to another DDM",
+    "placeholders": {
+      "address": {
+        "content": "$1",
+        "example": "https://192.168.1.10:8463/"
+      }
+    }
+  },
+  "remote_address": {
+    "message": "Enter its https:// address.",
+    "description": "the address typed isn't an https:// address"
+  },
+  "remote_unreachable": {
+    "message": "Couldn't reach it. Open its address in this browser, continue past the security warning, then try again.",
+    "description": "pairing failed: the other DDM didn't answer"
+  },
+  "remote_wrong_code": {
+    "message": "Wrong code.",
+    "description": "pairing failed: the code was wrong"
+  },
+  "remote_no_code": {
+    "message": "There's no code to enter yet: click Pair a device there first.",
+    "description": "pairing failed: the other DDM shows no pairing code; Pair a device is its button"
+  },
+  "remote_too_soon": {
+    "message": "Wait a moment, then try again.",
+    "description": "pairing failed: codes tried too fast"
+  },
+  "remote_failed": {
+    "message": "It didn't work. Try again.",
+    "description": "pairing failed for another reason"
+  },
+  "remote_device_name": {
+    "message": "Browser extension",
+    "description": "the name this browser gets in the other DDM's list of paired devices"
+  },
+  "badge_off": {
+    "message": "OFF",
+    "description": "the badge on the extension's toolbar button while it takes no downloads (turned off); at most 4 characters, capitals if the language has them"
+  },
+  "tip_on": {
+    "message": "Dannex Download Manager is on. Click to turn it off.",
+    "description": "tooltip of the extension's toolbar button while it sends downloads to the app; keep the name Dannex Download Manager as it is"
+  },
+  "tip_off": {
+    "message": "Dannex Download Manager is off. Click to turn it on.",
+    "description": "tooltip of the extension's toolbar button while it is turned off (downloads stay in the browser); keep the name Dannex Download Manager as it is"
+  },
+  "tip_remote": {
+    "message": "Downloads go to the Dannex Download Manager at $address$. Click to turn it off.",
+    "description": "tooltip of the extension's toolbar button while downloads go to another computer's Dannex Download Manager; $address$ is its web address; keep the name Dannex Download Manager as it is",
+    "placeholders": {
+      "address": {
+        "content": "$1",
+        "example": "https://192.168.1.10:8463/"
+      }
+    }
+  },
+  "status_off_in_app": {
+    "message": "Turned off in Dannex Download Manager",
+    "description": "headline of the extension's status page, and a line of its toolbar button's tooltip: the app's own Options take no downloads from this browser; keep the name Dannex Download Manager as it is"
+  },
+  "status_duplicate": {
+    "message": "Another copy of this extension is installed",
+    "description": "first line of the toolbar button's tooltip, and a line on the options page: the browser has this extension twice (the Chrome Web Store's and one loaded by hand); this copy does nothing"
+  },
+  "click_fix": {
+    "message": "Click to see what to do.",
+    "description": "second line of the toolbar button's tooltip while something is wrong: a click opens the extension's status page"
+  },
+  "click_details": {
+    "message": "Click for details.",
+    "description": "last line of the toolbar button's tooltip when a click opens the status page"
+  },
+  "toolbar_exclude": {
+    "message": "Don't take downloads from this site",
+    "description": "item in the right-click menu of the extension's toolbar button: leave this site's downloads to the browser from now on"
+  },
+  "toolbar_help": {
+    "message": "Help",
+    "description": "item in the right-click menu of the extension's toolbar button: opens its status page (how things stand, what to do, the help page)"
+  },
+  "toolbar_store": {
+    "message": "Get automatic updates from the Chrome Web Store...",
+    "description": "item of the right-click menu of the extension's toolbar button, only in the copy loaded by hand from the app's folder: opens the extension's page in the Chrome Web Store; keep Chrome Web Store as Google names it in this language"
+  },
+  "options_take_note": {
+    "message": "When it's off, downloads stay in the browser. Clicking the extension's button does the same.",
+    "description": "note under the on/off switch on the extension's options page: a click on the extension's toolbar button turns it off and on too"
+  },
+  "options_what_to_do": {
+    "message": "See what to do",
+    "description": "link on the extension's options page, after a line saying what is wrong: opens the extension's status page"
+  },
+  "options_more": {
+    "message": "More",
+    "description": "the extension's options page: a section that opens on a click, holding the less used settings"
+  },
+  "page_checking": {
+    "message": "Looking for Dannex Download Manager…",
+    "description": "title of the status page (an extension page that says whether the browser reaches Dannex Download Manager and how to fix it) while it asks for the first time; keep the name Dannex Download Manager as it is"
+  },
+  "page_on_lead": {
+    "message": "Downloads you start in this browser go to Dannex Download Manager.",
+    "description": "the status page (an extension page that says whether the browser reaches Dannex Download Manager and how to fix it): connected and on; keep the name Dannex Download Manager as it is"
+  },
+  "page_off_lead": {
+    "message": "It's turned off, so downloads stay in this browser.",
+    "description": "on the extension's status page while its switch is off: every download stays with the browser"
+  },
+  "page_remote_title": {
+    "message": "Downloads go to another Dannex Download Manager",
+    "description": "headline of the extension's status page while downloads go to a Dannex Download Manager on another computer (a home server); keep the name Dannex Download Manager as it is"
+  },
+  "page_remote_lead": {
+    "message": "Downloads you start in this browser go to the Dannex Download Manager at $address$.",
+    "description": "on the extension's status page under its headline: $address$ is the other computer's web address; keep the name Dannex Download Manager as it is",
+    "placeholders": {
+      "address": {
+        "content": "$1",
+        "example": "https://192.168.1.10:8463/"
+      }
+    }
+  },
+  "page_lead_not_installed": {
+    "message": "This extension works with Dannex Download Manager, a free download manager for your computer. Install it, and this page updates by itself.",
+    "description": "the status page (an extension page that says whether the browser reaches Dannex Download Manager and how to fix it): the app isn't installed or its browser integration isn't set up; keep the name Dannex Download Manager as it is"
+  },
+  "page_lead_not_running": {
+    "message": "The browser tried to start it, but it took too long. Start Dannex Download Manager yourself, then try again.",
+    "description": "the status page (an extension page that says whether the browser reaches Dannex Download Manager and how to fix it): the app didn't start in time; keep the name Dannex Download Manager as it is"
+  },
+  "page_lead_host_failed": {
+    "message": "Security software is the usual cause. Allow Dannex Download Manager in your antivirus program, or install it again.",
+    "description": "the status page (an extension page that says whether the browser reaches Dannex Download Manager and how to fix it): the connection to the app failed; keep the name Dannex Download Manager as it is"
+  },
+  "page_lead_forbidden": {
+    "message": "This version of Dannex Download Manager is too old for this extension. Install the latest one.",
+    "description": "the status page (an extension page that says whether the browser reaches Dannex Download Manager and how to fix it): the app refuses this copy of the extension; keep the name Dannex Download Manager as it is"
+  },
+  "page_lead_too_large": {
+    "message": "The site sent more sign-in data than Dannex Download Manager accepts, so the browser kept the download. Signing out of the site and back in usually fixes it.",
+    "description": "on the extension's status page under its headline: a download carried too many cookies to hand over; keep the name Dannex Download Manager as it is"
+  },
+  "page_download": {
+    "message": "Download Dannex Download Manager",
+    "description": "button on the status page (an extension page that says whether the browser reaches Dannex Download Manager and how to fix it): opens the app's download page for this computer's system; keep the name Dannex Download Manager as it is"
+  },
+  "page_files_windows": {
+    "message": "For Windows 10 and 11.",
+    "description": "beside the download button on the status page (an extension page that says whether the browser reaches Dannex Download Manager and how to fix it), on Windows"
+  },
+  "page_files_macos": {
+    "message": "For Mac (a .dmg disk image).",
+    "description": "beside the download button on the status page (an extension page that says whether the browser reaches Dannex Download Manager and how to fix it), on a Mac"
+  },
+  "page_files_linux": {
+    "message": "For Linux (AppImage, .deb or .rpm).",
+    "description": "beside the download button on the status page (an extension page that says whether the browser reaches Dannex Download Manager and how to fix it), on Linux"
+  },
+  "page_files_other": {
+    "message": "For Windows, Mac and Linux computers.",
+    "description": "beside the download button on the status page (an extension page that says whether the browser reaches Dannex Download Manager and how to fix it), on a system the app doesn't run on (a phone, a Chromebook)"
+  },
+  "page_all_downloads": {
+    "message": "All downloads",
+    "description": "link on the extension's status page, under the download button: every file of the latest release, on GitHub"
+  },
+  "page_step_windows": {
+    "message": "Run the setup you downloaded.",
+    "description": "a step on the status page (an extension page that says whether the browser reaches Dannex Download Manager and how to fix it), on Windows; Set up browser integration is the setup's own option"
+  },
+  "page_step_macos": {
+    "message": "Open the .dmg, drag Dannex Download Manager to Applications, and start it once.",
+    "description": "a step on the status page (an extension page that says whether the browser reaches Dannex Download Manager and how to fix it), on a Mac; keep the name Dannex Download Manager as it is"
+  },
+  "page_step_linux": {
+    "message": "Install the .deb or .rpm (or run the AppImage), then start Dannex Download Manager once.",
+    "description": "a step on the status page (an extension page that says whether the browser reaches Dannex Download Manager and how to fix it), on Linux; keep the name Dannex Download Manager as it is"
+  },
+  "page_step_other": {
+    "message": "Dannex Download Manager runs on Windows, Mac and Linux computers. Install it on one, and add this extension to a browser there.",
+    "description": "a step on the status page (an extension page that says whether the browser reaches Dannex Download Manager and how to fix it) on a system the app doesn't run on; keep the name Dannex Download Manager as it is"
+  },
+  "page_step_wait": {
+    "message": "Keep this page open. It changes by itself when Dannex Download Manager is ready.",
+    "description": "a step on the status page (an extension page that says whether the browser reaches Dannex Download Manager and how to fix it); keep the name Dannex Download Manager as it is"
+  },
+  "page_step_restart": {
+    "message": "Nothing after a minute? Restart the browser.",
+    "description": "a step on the status page (an extension page that says whether the browser reaches Dannex Download Manager and how to fix it)"
+  },
+  "page_step_installed": {
+    "message": "Already installed? In Dannex Download Manager, open Options → General → Test browser integration.",
+    "description": "a small line under the steps on the extension's status page; Options, General and Test browser integration are names in the app"
+  },
+  "page_try_again": {
+    "message": "Try again",
+    "description": "button on the status page (an extension page that says whether the browser reaches Dannex Download Manager and how to fix it): asks the app again now"
+  },
+  "page_app_options": {
+    "message": "Open Dannex Download Manager's Options",
+    "description": "button on the extension's status page when the app's own Options take no downloads from this browser: opens them in the app; keep the name Dannex Download Manager as it is"
+  },
+  "page_duplicate_title": {
+    "message": "Remove this copy",
+    "description": "title of the status page (an extension page that says whether the browser reaches Dannex Download Manager and how to fix it) when the extension is installed twice in one browser and this copy stands aside"
+  },
+  "page_duplicate_lead": {
+    "message": "The copy from the Chrome Web Store is installed in this browser too, and it keeps itself up to date. This copy isn't needed.",
+    "description": "the status page (an extension page that says whether the browser reaches Dannex Download Manager and how to fix it): two copies of the extension in one browser; keep DDM Integration Module as it is"
+  },
+  "page_remove": {
+    "message": "Remove this copy",
+    "description": "button: removes this copy of the extension from the browser (the browser asks first)"
+  },
+  "page_extensions": {
+    "message": "Open the extensions page",
+    "description": "button: opens the browser's own page for this extension (its details: site access, private windows, Remove)"
+  },
+  "page_update_app_how": {
+    "message": "In Dannex Download Manager, choose Help → Check for updates...",
+    "description": "on the status page (an extension page that says whether the browser reaches Dannex Download Manager and how to fix it) after: Update Dannex Download Manager to use everything this extension offers; keep the name Dannex Download Manager as it is"
+  },
+  "page_behind": {
+    "message": "A newer version of this extension came with Dannex Download Manager $version$.",
+    "description": "the status page (an extension page that says whether the browser reaches Dannex Download Manager and how to fix it): the app is newer than this extension; keep the name Dannex Download Manager as it is",
+    "placeholders": {
+      "version": {
+        "content": "$1",
+        "example": "0.7.0"
+      }
+    }
+  },
+  "page_behind_store": {
+    "message": "The browser updates it by itself within a few hours, or now with Check for updates.",
+    "description": "the status page (an extension page that says whether the browser reaches Dannex Download Manager and how to fix it): after the app is newer than this extension, for the copy from the Chrome Web Store; Check for updates is the button's name"
+  },
+  "page_behind_unpacked": {
+    "message": "Reload the extension to use it.",
+    "description": "the status page (an extension page that says whether the browser reaches Dannex Download Manager and how to fix it): after the app is newer than this extension, for the copy loaded by hand; keep the name Dannex Download Manager as it is"
+  },
+  "page_behind_other": {
+    "message": "Add the new one from Dannex Download Manager's folder, as you added this one.",
+    "description": "the status page (an extension page that says whether the browser reaches Dannex Download Manager and how to fix it): after the app is newer than this extension, in Firefox; keep the name Dannex Download Manager as it is"
+  },
+  "page_check_updates": {
+    "message": "Check for updates",
+    "description": "button on the status page (an extension page that says whether the browser reaches Dannex Download Manager and how to fix it): asks the store for a newer version of the extension now"
+  },
+  "page_up_to_date": {
+    "message": "No newer version yet. The browser checks again by itself.",
+    "description": "the status page (an extension page that says whether the browser reaches Dannex Download Manager and how to fix it): after Check for updates found nothing new"
+  },
+  "page_reload": {
+    "message": "Reload the extension",
+    "description": "button on the status page (an extension page that says whether the browser reaches Dannex Download Manager and how to fix it): loads the extension again from its folder"
+  },
+  "page_store": {
+    "message": "Get automatic updates: add this extension from the Chrome Web Store, then remove this copy.",
+    "description": "shown once on the status and options pages of the copy loaded by hand from the app's folder, when the extension is in the Chrome Web Store; keep DDM Integration Module as it is"
+  },
+  "page_open_store": {
+    "message": "Open the Chrome Web Store",
+    "description": "button: opens the extension's page in the Chrome Web Store; keep Chrome Web Store as Google names it in this language"
+  },
+  "page_temporary": {
+    "message": "Firefox will remove this add-on when it closes, because it was added as a temporary add-on.",
+    "description": "the status page (an extension page that says whether the browser reaches Dannex Download Manager and how to fix it) in Firefox, for an add-on loaded with Load Temporary Add-on"
+  },
+  "page_site_access": {
+    "message": "This extension is allowed on some sites only, so downloads from other sites stay in the browser.",
+    "description": "the status page (an extension page that says whether the browser reaches Dannex Download Manager and how to fix it): the user limited the extension's site access in the browser"
+  },
+  "page_allow_sites": {
+    "message": "Allow on all sites",
+    "description": "button on the status page (an extension page that says whether the browser reaches Dannex Download Manager and how to fix it): asks the browser to let the extension read every site again"
+  },
+  "page_private": {
+    "message": "Downloads from private windows stay in the browser, because this extension isn't allowed there.",
+    "description": "the status page (an extension page that says whether the browser reaches Dannex Download Manager and how to fix it): the browser doesn't run the extension in private (incognito) windows"
+  },
+  "page_private_chromium": {
+    "message": "To change that, turn on Allow in Incognito on its details page.",
+    "description": "the status page (an extension page that says whether the browser reaches Dannex Download Manager and how to fix it), in Chrome, Edge and the like, after the text on private windows; Allow in Incognito is Chrome's own switch: use the name Chrome shows in this language"
+  },
+  "page_private_firefox": {
+    "message": "To change that, choose Allow beside Run in Private Windows on its page in Add-ons and themes.",
+    "description": "the status page (an extension page that says whether the browser reaches Dannex Download Manager and how to fix it), in Firefox, after the text on private windows; Allow, Run in Private Windows and Add-ons and themes are Firefox's own names: use those Firefox shows in this language"
+  },
+  "page_learn_more": {
+    "message": "Learn more",
+    "description": "link on the extension's status page under a note: opens the help page's section about it"
+  }
+}

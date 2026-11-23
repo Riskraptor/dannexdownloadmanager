@@ -1,0 +1,443 @@
+{
+  "name": {
+    "message": "DDM Integration Module"
+  },
+  "description": {
+    "message": "ブラウザーから Dannex Download Manager にダウンロードを渡します。"
+  },
+  "menu": {
+    "message": "DDM でダウンロード"
+  },
+  "video_download": {
+    "message": "動画をダウンロード"
+  },
+  "video_more": {
+    "message": "その他のオプション"
+  },
+  "video_hide_here": {
+    "message": "この動画では非表示"
+  },
+  "video_never_site": {
+    "message": "$site$ では常に非表示",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "video_settings": {
+    "message": "ボタンの設定..."
+  },
+  "video_sent": {
+    "message": "DDM に送信済み"
+  },
+  "video_failed": {
+    "message": "Dannex Download Manager がインストールされていないか、起動していません"
+  },
+  "video_drag": {
+    "message": "ドラッグして動画の端に沿って移動"
+  },
+  "menu_selected": {
+    "message": "DDM で選択したリンクをダウンロード"
+  },
+  "menu_all": {
+    "message": "DDM で全リンクをダウンロード"
+  },
+  "menu_images": {
+    "message": "DDM ですべての画像をダウンロード"
+  },
+  "menu_media": {
+    "message": "DDM ですべての動画とオーディオをダウンロード"
+  },
+  "status_not_installed": {
+    "message": "Dannex Download Manager がインストールされていません"
+  },
+  "status_installed": {
+    "message": "Dannex Download Manager はインストールされています"
+  },
+  "status_forbidden": {
+    "message": "Dannex Download Manager の更新"
+  },
+  "status_not_running": {
+    "message": "Dannex Download Manager が起動しませんでした"
+  },
+  "status_host_failed": {
+    "message": "Dannex Download Manager がブロックされています"
+  },
+  "status_too_large": {
+    "message": "直前のダウンロードを Dannex Download Manager に送れませんでした"
+  },
+  "status_update_app": {
+    "message": "この拡張機能のすべての機能を使うには、Dannex Download Manager を更新してください。"
+  },
+  "popup_take": {
+    "message": "ダウンロードを Dannex Download Manager に送る"
+  },
+  "popup_proxy": {
+    "message": "このブラウザーの VPN またはプロキシを経由してダウンロードする"
+  },
+  "popup_proxy_title": {
+    "message": "このブラウザーで VPN またはプロキシ拡張機能を使う場合は、オンにしてください。許可を求めるメッセージが 1 回表示されます。"
+  },
+  "popup_proxy_title_chromium": {
+    "message": "このブラウザーで VPN またはプロキシ拡張機能を使う場合は、オンにしてください。オフの間、拡張機能はブラウザーのプロキシを参照しません。"
+  },
+  "popup_help": {
+    "message": "ヘルプ"
+  },
+  "page_support": {
+    "message": "DDM を支援する"
+  },
+  "popup_declined": {
+    "message": "直前のダウンロードはブラウザーに残りました: $name$",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "setup.png"
+      }
+    }
+  },
+  "popup_declined_unnamed": {
+    "message": "直前のダウンロードはブラウザーに残りました。"
+  },
+  "declined_file_type": {
+    "message": "そのファイルの種類は Dannex Download Manager のリストにありません (［オプション］>［ファイルの種類］)。"
+  },
+  "declined_site": {
+    "message": "そのサイトは Dannex Download Manager の除外サイトのリストにあります (［オプション］>［ファイルの種類］)。"
+  },
+  "declined_address": {
+    "message": "そのアドレスは Dannex Download Manager の除外アドレスのリストにあります (［オプション］>［ファイルの種類］)。"
+  },
+  "declined_small": {
+    "message": "Dannex Download Manager が引き継ぐ最小のファイル サイズより小さいため (［オプション］>［ファイルの種類］)。"
+  },
+  "declined_browser": {
+    "message": "このブラウザーは Dannex Download Manager の［オプション］>［一般］でオンになっていません。"
+  },
+  "declined_integration_off": {
+    "message": "ブラウザー統合は Dannex Download Manager の［オプション］>［一般］でオフになっています。"
+  },
+  "declined_site_access": {
+    "message": "この拡張機能はそのサイトで許可されていません。"
+  },
+  "declined_handed_back": {
+    "message": "Dannex Download Manager で、このダウンロードに「ブラウザーでダウンロード」を選択しました。"
+  },
+  "video_off": {
+    "message": "このサイトではダウンロード ボタンがオフになっています"
+  },
+  "video_drm": {
+    "message": "保護されたビデオ: 保存できません"
+  },
+  "video_unnamed": {
+    "message": "どの動画か判別できません。動画自体のページを開いて、そこでお試しください"
+  },
+  "video_looking": {
+    "message": "画質を検索しています…"
+  },
+  "video_open_mdm": {
+    "message": "DDM で開く…"
+  },
+  "video_no_choices": {
+    "message": "ここにはダウンロードできる動画がありません"
+  },
+  "video_playlist": {
+    "message": "動画の一覧: Dannex Download Manager で選択してください"
+  },
+  "video_no_ytdlp": {
+    "message": "この動画には Dannex Download Manager に yt-dlp が必要です。DDM で開く… を選んでインストールしてください。"
+  },
+  "video_too_long": {
+    "message": "検索に時間がかかりすぎました"
+  },
+  "video_busy": {
+    "message": "Dannex Download Manager は他の動画の処理中です"
+  },
+  "video_queued": {
+    "message": "キューに追加しました"
+  },
+  "video_failed_lookup": {
+    "message": "検索できませんでした"
+  },
+  "video_tab_video": {
+    "message": "ビデオ"
+  },
+  "video_tab_audio": {
+    "message": "オーディオ"
+  },
+  "video_open_post": {
+    "message": "投稿を開いて、そこにあるボタンを使用してください"
+  },
+  "video_audio_original": {
+    "message": "音声のみ、元の $type$",
+    "placeholders": {
+      "type": {
+        "content": "$1",
+        "example": "M4A"
+      }
+    }
+  },
+  "video_audio_only": {
+    "message": "音声のみ $type$",
+    "placeholders": {
+      "type": {
+        "content": "$1",
+        "example": "MP3 320 kbps"
+      }
+    }
+  },
+  "video_pick_waiting": {
+    "message": "DDM の準備ができ次第、開始します…"
+  },
+  "video_pick_gone": {
+    "message": "その画質は利用できません: 別の画質を選んでください"
+  },
+  "popup_send_to": {
+    "message": "ダウンロードの送信先"
+  },
+  "popup_send_here": {
+    "message": "このコンピューター"
+  },
+  "popup_send_remote": {
+    "message": "別のコンピューターの Dannex Download Manager"
+  },
+  "popup_remote_code": {
+    "message": "ペアリング コード"
+  },
+  "popup_remote_open": {
+    "message": "開く"
+  },
+  "popup_remote_pair": {
+    "message": "ペアリング"
+  },
+  "popup_remote_help": {
+    "message": "まず、このブラウザーでそのアドレスを開き、セキュリティの警告を無視して先へ進みます。次に、［オプション］>［リモート］>［デバイスをペアリング］のコードを入力してください。"
+  },
+  "status_remote": {
+    "message": "ダウンロードは $address$ に送信されます",
+    "placeholders": {
+      "address": {
+        "content": "$1",
+        "example": "https://192.168.1.10:8463/"
+      }
+    }
+  },
+  "remote_address": {
+    "message": "https:// アドレスを入力してください。"
+  },
+  "remote_unreachable": {
+    "message": "接続できませんでした。このブラウザーでそのアドレスを開き、セキュリティの警告を無視して先へ進んでから、もう一度お試しください。"
+  },
+  "remote_wrong_code": {
+    "message": "コードが間違っています。"
+  },
+  "remote_no_code": {
+    "message": "入力するコードがまだありません。先にそちらで［デバイスをペアリング］をクリックしてください。"
+  },
+  "remote_too_soon": {
+    "message": "しばらく待ってから、もう一度お試しください。"
+  },
+  "remote_failed": {
+    "message": "動作しませんでした。もう一度お試しください。"
+  },
+  "remote_device_name": {
+    "message": "ブラウザー拡張機能"
+  },
+  "badge_off": {
+    "message": "オフ"
+  },
+  "tip_on": {
+    "message": "Dannex Download Manager が動作しています。クリックするとオフになります。"
+  },
+  "tip_off": {
+    "message": "Dannex Download Manager はオフです。クリックするとオンになります。"
+  },
+  "tip_remote": {
+    "message": "ダウンロードは $address$ の Dannex Download Manager に送られます。クリックするとオフになります。",
+    "placeholders": {
+      "address": {
+        "content": "$1",
+        "example": "https://192.168.1.10:8463/"
+      }
+    }
+  },
+  "status_off_in_app": {
+    "message": "Dannex Download Manager でオフになっています"
+  },
+  "status_duplicate": {
+    "message": "この拡張機能の別のコピーがインストールされています"
+  },
+  "click_fix": {
+    "message": "クリックすると対処方法が表示されます。"
+  },
+  "click_details": {
+    "message": "クリックすると詳細が表示されます。"
+  },
+  "toolbar_exclude": {
+    "message": "このサイトのダウンロードを引き継がない"
+  },
+  "toolbar_help": {
+    "message": "ヘルプ"
+  },
+  "toolbar_store": {
+    "message": "Chrome ウェブストアから自動更新を取得..."
+  },
+  "options_take_note": {
+    "message": "オフにすると、ダウンロードはブラウザーに残ります。拡張機能のボタンをクリックしても同じ操作になります。"
+  },
+  "options_what_to_do": {
+    "message": "対処方法を見る"
+  },
+  "options_more": {
+    "message": "その他"
+  },
+  "page_checking": {
+    "message": "Dannex Download Manager を検索しています…"
+  },
+  "page_on_lead": {
+    "message": "このブラウザーで開始したダウンロードは Dannex Download Manager に送られます。"
+  },
+  "page_off_lead": {
+    "message": "オフになっているため、ダウンロードはこのブラウザーに残ります。"
+  },
+  "page_remote_title": {
+    "message": "ダウンロードは別の Dannex Download Manager に送られます"
+  },
+  "page_remote_lead": {
+    "message": "このブラウザーで開始したダウンロードは、$address$ の Dannex Download Manager に送られます。",
+    "placeholders": {
+      "address": {
+        "content": "$1",
+        "example": "https://192.168.1.10:8463/"
+      }
+    }
+  },
+  "page_lead_not_installed": {
+    "message": "この拡張機能は、コンピューター用の無料ダウンロード マネージャー Dannex Download Manager と連携して動作します。インストールすると、このページは自動的に更新されます。"
+  },
+  "page_lead_not_running": {
+    "message": "ブラウザーが起動を試みましたが、時間がかかりすぎました。Dannex Download Manager を自分で起動してから、もう一度お試しください。"
+  },
+  "page_lead_host_failed": {
+    "message": "多くの場合、原因はセキュリティ ソフトです。ウイルス対策プログラムで Dannex Download Manager を許可するか、もう一度インストールしてください。"
+  },
+  "page_lead_forbidden": {
+    "message": "このバージョンの Dannex Download Manager は、この拡張機能には古すぎます。最新版をインストールしてください。"
+  },
+  "page_lead_too_large": {
+    "message": "サイトが Dannex Download Manager の受け付ける量を超えるサインイン データを送信したため、ブラウザーがダウンロードを保持しました。サイトからサインアウトして、もう一度サインインすると解決することが多いです。"
+  },
+  "page_download": {
+    "message": "Dannex Download Manager をダウンロード"
+  },
+  "page_files_windows": {
+    "message": "Windows 10 および 11 用。"
+  },
+  "page_files_macos": {
+    "message": "Mac 用 (.dmg ディスク イメージ)。"
+  },
+  "page_files_linux": {
+    "message": "Linux 用 (AppImage、.deb、.rpm)。"
+  },
+  "page_files_other": {
+    "message": "Windows、Mac、Linux のコンピューター用。"
+  },
+  "page_all_downloads": {
+    "message": "すべてのダウンロード"
+  },
+  "page_step_windows": {
+    "message": "ダウンロードしたセットアップを実行します。"
+  },
+  "page_step_macos": {
+    "message": ".dmg を開き、Dannex Download Manager を［アプリケーション］にドラッグして、一度起動します。"
+  },
+  "page_step_linux": {
+    "message": ".deb または .rpm をインストールする (または AppImage を実行する) と、Dannex Download Manager を一度起動します。"
+  },
+  "page_step_other": {
+    "message": "Dannex Download Manager は Windows、Mac、Linux のコンピューターで動作します。いずれかにインストールし、そこのブラウザーにこの拡張機能を追加してください。"
+  },
+  "page_step_wait": {
+    "message": "このページを開いたままにしてください。Dannex Download Manager の準備ができると自動的に切り替わります。"
+  },
+  "page_step_restart": {
+    "message": "1 分たっても変化がない場合は、ブラウザーを再起動してください。"
+  },
+  "page_step_installed": {
+    "message": "インストール済みですか? Dannex Download Manager で［オプション］>［一般］>［ブラウザー統合のテスト］を開いてください。"
+  },
+  "page_try_again": {
+    "message": "再試行"
+  },
+  "page_app_options": {
+    "message": "Dannex Download Manager の［オプション］を開く"
+  },
+  "page_duplicate_title": {
+    "message": "このコピーを削除"
+  },
+  "page_duplicate_lead": {
+    "message": "Chrome ウェブストアのコピーもこのブラウザーにインストールされており、自動で最新の状態に保たれます。このコピーは不要です。"
+  },
+  "page_remove": {
+    "message": "このコピーを削除"
+  },
+  "page_extensions": {
+    "message": "拡張機能のページを開く"
+  },
+  "page_update_app_how": {
+    "message": "Dannex Download Manager で［ヘルプ］>［更新プログラムの確認］を選びます..."
+  },
+  "page_behind": {
+    "message": "この拡張機能の新しいバージョンが Dannex Download Manager $version$ に付属しています。",
+    "placeholders": {
+      "version": {
+        "content": "$1",
+        "example": "0.7.0"
+      }
+    }
+  },
+  "page_behind_store": {
+    "message": "ブラウザーが数時間以内に自動更新します。すぐに更新するには［更新プログラムの確認］を使います。"
+  },
+  "page_behind_unpacked": {
+    "message": "拡張機能を再読み込みして使用してください。"
+  },
+  "page_behind_other": {
+    "message": "この拡張機能を追加したときと同じように、Dannex Download Manager のフォルダーから新しいものを追加してください。"
+  },
+  "page_check_updates": {
+    "message": "更新プログラムの確認"
+  },
+  "page_up_to_date": {
+    "message": "新しいバージョンはまだありません。ブラウザーが自動的に再確認します。"
+  },
+  "page_reload": {
+    "message": "拡張機能を再読み込み"
+  },
+  "page_store": {
+    "message": "自動更新を取得するには、この拡張機能を Chrome ウェブストアから追加し、このコピーを削除してください。"
+  },
+  "page_open_store": {
+    "message": "Chrome ウェブストアを開く"
+  },
+  "page_temporary": {
+    "message": "Firefox は、一時的なアドオンとして追加されたため、終了時にこのアドオンを削除します。"
+  },
+  "page_site_access": {
+    "message": "この拡張機能は一部のサイトでのみ許可されているため、ほかのサイトからのダウンロードはブラウザーに残ります。"
+  },
+  "page_allow_sites": {
+    "message": "すべてのサイトで許可"
+  },
+  "page_private": {
+    "message": "この拡張機能はプライベート ウィンドウで許可されていないため、プライベート ウィンドウからのダウンロードはブラウザーに残ります。"
+  },
+  "page_private_chromium": {
+    "message": "変更するには、詳細ページで「シークレット モードでの実行を許可する」をオンにします。"
+  },
+  "page_learn_more": {
+    "message": "詳細"
+  }
+}

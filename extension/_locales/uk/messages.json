@@ -1,0 +1,443 @@
+{
+  "name": {
+    "message": "DDM Integration Module"
+  },
+  "description": {
+    "message": "Передає завантаження з браузера до Dannex Download Manager."
+  },
+  "menu": {
+    "message": "Завантажити за допомогою DDM"
+  },
+  "video_download": {
+    "message": "Завантажити відео"
+  },
+  "video_more": {
+    "message": "Інші параметри"
+  },
+  "video_hide_here": {
+    "message": "Приховати для цього відео"
+  },
+  "video_never_site": {
+    "message": "Ніколи не показувати на сайті $site$",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "video_settings": {
+    "message": "Налаштування кнопки..."
+  },
+  "video_sent": {
+    "message": "Надіслано до DDM"
+  },
+  "video_failed": {
+    "message": "Dannex Download Manager не встановлено або не запущено"
+  },
+  "video_drag": {
+    "message": "Перетягніть, щоб перемістити вздовж краю відео"
+  },
+  "menu_selected": {
+    "message": "Завантажити вибрані посилання за допомогою DDM"
+  },
+  "menu_all": {
+    "message": "Завантажити всі посилання за допомогою DDM"
+  },
+  "menu_images": {
+    "message": "Завантажити всі зображення за допомогою DDM"
+  },
+  "menu_media": {
+    "message": "Завантажити всі відео та аудіо за допомогою DDM"
+  },
+  "status_not_installed": {
+    "message": "Dannex Download Manager не встановлено"
+  },
+  "status_installed": {
+    "message": "Dannex Download Manager установлено"
+  },
+  "status_forbidden": {
+    "message": "Оновіть Dannex Download Manager"
+  },
+  "status_not_running": {
+    "message": "Не вдалося запустити Dannex Download Manager"
+  },
+  "status_host_failed": {
+    "message": "Щось блокує Dannex Download Manager"
+  },
+  "status_too_large": {
+    "message": "Останнє завантаження не вдалося передати до Dannex Download Manager"
+  },
+  "status_update_app": {
+    "message": "Оновіть Dannex Download Manager, щоб отримати всі можливості цього розширення."
+  },
+  "popup_take": {
+    "message": "Передавати завантаження до Dannex Download Manager"
+  },
+  "popup_proxy": {
+    "message": "Завантажувати через VPN або проксі цього браузера"
+  },
+  "popup_proxy_title": {
+    "message": "Увімкніть, якщо в цьому браузері використовується розширення VPN або проксі. Браузер один раз запросить дозвіл."
+  },
+  "popup_proxy_title_chromium": {
+    "message": "Увімкніть, якщо в цьому браузері використовується розширення VPN або проксі. Поки параметр вимкнено, розширення не враховує проксі браузера."
+  },
+  "popup_help": {
+    "message": "Довідка"
+  },
+  "page_support": {
+    "message": "Підтримати DDM"
+  },
+  "popup_declined": {
+    "message": "Останнє завантаження залишилося в браузері: $name$",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "setup.png"
+      }
+    }
+  },
+  "popup_declined_unnamed": {
+    "message": "Ваше останнє завантаження залишилося в браузері."
+  },
+  "declined_file_type": {
+    "message": "Його типу файлу немає в списку Dannex Download Manager (Параметри → Типи файлів)."
+  },
+  "declined_site": {
+    "message": "Його сайт є в списку сайтів, які Dannex Download Manager не перехоплює (Параметри → Типи файлів)."
+  },
+  "declined_address": {
+    "message": "Його адреса є в списку адрес, які Dannex Download Manager не перехоплює (Параметри → Типи файлів)."
+  },
+  "declined_small": {
+    "message": "Він менший за мінімальний розмір файлу, який перехоплює Dannex Download Manager (Параметри → Типи файлів)."
+  },
+  "declined_browser": {
+    "message": "Цей браузер не позначено в розділі Параметри → Загальні в Dannex Download Manager."
+  },
+  "declined_integration_off": {
+    "message": "Інтеграцію з браузером вимкнено в розділі Параметри → Загальні в Dannex Download Manager."
+  },
+  "declined_site_access": {
+    "message": "Розширенню не дозволено доступ до цього сайту."
+  },
+  "declined_handed_back": {
+    "message": "Для цього завантаження ви вибрали команду Завантажити через браузер у Dannex Download Manager."
+  },
+  "video_off": {
+    "message": "Кнопка завантаження вимкнена на цьому сайті"
+  },
+  "video_drm": {
+    "message": "Захищене відео: його неможливо зберегти"
+  },
+  "video_unnamed": {
+    "message": "Не вдалося визначити, що це за відео: відкрийте його власну сторінку і спробуйте там"
+  },
+  "video_looking": {
+    "message": "Пошук доступних якостей…"
+  },
+  "video_open_mdm": {
+    "message": "Відкрити в DDM…"
+  },
+  "video_no_choices": {
+    "message": "Тут немає відео для завантаження"
+  },
+  "video_playlist": {
+    "message": "Список відео: виберіть їх у Dannex Download Manager"
+  },
+  "video_no_ytdlp": {
+    "message": "Для цього відео Dannex Download Manager потрібен yt-dlp. Виберіть «Відкрити в DDM…», щоб установити його."
+  },
+  "video_too_long": {
+    "message": "Пошук тривав надто довго"
+  },
+  "video_busy": {
+    "message": "Dannex Download Manager зайнятий іншими відео"
+  },
+  "video_queued": {
+    "message": "Додано до черги"
+  },
+  "video_failed_lookup": {
+    "message": "Не вдалося виконати пошук"
+  },
+  "video_tab_video": {
+    "message": "Відео"
+  },
+  "video_tab_audio": {
+    "message": "Аудіо"
+  },
+  "video_open_post": {
+    "message": "Відкрийте допис, потім скористайтеся кнопкою там"
+  },
+  "video_audio_original": {
+    "message": "Лише звук, оригінал $type$",
+    "placeholders": {
+      "type": {
+        "content": "$1",
+        "example": "M4A"
+      }
+    }
+  },
+  "video_audio_only": {
+    "message": "Лише звук, $type$",
+    "placeholders": {
+      "type": {
+        "content": "$1",
+        "example": "MP3 320 kbps"
+      }
+    }
+  },
+  "video_pick_waiting": {
+    "message": "Завантаження розпочнеться, щойно DDM буде готовий…"
+  },
+  "video_pick_gone": {
+    "message": "Ця якість недоступна: виберіть іншу"
+  },
+  "popup_send_to": {
+    "message": "Надсилати завантаження до"
+  },
+  "popup_send_here": {
+    "message": "Цей комп’ютер"
+  },
+  "popup_send_remote": {
+    "message": "Dannex Download Manager на іншому комп’ютері"
+  },
+  "popup_remote_code": {
+    "message": "Код з’єднання"
+  },
+  "popup_remote_open": {
+    "message": "Відкрити"
+  },
+  "popup_remote_pair": {
+    "message": "З’єднати"
+  },
+  "popup_remote_help": {
+    "message": "Спершу відкрийте його адресу в цьому браузері та продовжте попри попередження безпеки. Потім введіть код із розділу Параметри → Віддалений доступ → Пов’язати пристрій."
+  },
+  "status_remote": {
+    "message": "Завантаження надсилаються на $address$",
+    "placeholders": {
+      "address": {
+        "content": "$1",
+        "example": "https://192.168.1.10:8463/"
+      }
+    }
+  },
+  "remote_address": {
+    "message": "Введіть його https:// адресу."
+  },
+  "remote_unreachable": {
+    "message": "Не вдалося підключитися. Відкрийте його адресу в цьому браузері, продовжте попри попередження безпеки й повторіть спробу."
+  },
+  "remote_wrong_code": {
+    "message": "Неправильний код."
+  },
+  "remote_no_code": {
+    "message": "Коду для введення поки немає: спершу натисніть там «Пов’язати пристрій»."
+  },
+  "remote_too_soon": {
+    "message": "Зачекайте трохи, потім спробуйте ще раз."
+  },
+  "remote_failed": {
+    "message": "Не спрацювало. Спробуйте ще раз."
+  },
+  "remote_device_name": {
+    "message": "Розширення браузера"
+  },
+  "badge_off": {
+    "message": "ВИМК"
+  },
+  "tip_on": {
+    "message": "Dannex Download Manager увімкнено. Натисніть, щоб вимкнути."
+  },
+  "tip_off": {
+    "message": "Dannex Download Manager вимкнено. Натисніть, щоб увімкнути."
+  },
+  "tip_remote": {
+    "message": "Завантаження надходять до Dannex Download Manager за адресою $address$. Натисніть, щоб вимкнути.",
+    "placeholders": {
+      "address": {
+        "content": "$1",
+        "example": "https://192.168.1.10:8463/"
+      }
+    }
+  },
+  "status_off_in_app": {
+    "message": "Вимкнено в Dannex Download Manager"
+  },
+  "status_duplicate": {
+    "message": "Установлено ще одну копію цього розширення"
+  },
+  "click_fix": {
+    "message": "Натисніть, щоб дізнатися, що робити."
+  },
+  "click_details": {
+    "message": "Натисніть, щоб дізнатися більше."
+  },
+  "toolbar_exclude": {
+    "message": "Не перехоплювати завантаження з цього сайту"
+  },
+  "toolbar_help": {
+    "message": "Довідка"
+  },
+  "toolbar_store": {
+    "message": "Отримувати автоматичні оновлення з Веб-магазину Chrome..."
+  },
+  "options_take_note": {
+    "message": "Коли розширення вимкнено, завантаження залишаються в браузері. Те саме робить натискання кнопки розширення."
+  },
+  "options_what_to_do": {
+    "message": "Що робити"
+  },
+  "options_more": {
+    "message": "Додатково"
+  },
+  "page_checking": {
+    "message": "Пошук Dannex Download Manager…"
+  },
+  "page_on_lead": {
+    "message": "Завантаження, розпочаті в цьому браузері, передаються до Dannex Download Manager."
+  },
+  "page_off_lead": {
+    "message": "Розширення вимкнено, тому завантаження залишаються в цьому браузері."
+  },
+  "page_remote_title": {
+    "message": "Завантаження надходять до іншого Dannex Download Manager"
+  },
+  "page_remote_lead": {
+    "message": "Завантаження, розпочаті в цьому браузері, передаються до Dannex Download Manager за адресою $address$.",
+    "placeholders": {
+      "address": {
+        "content": "$1",
+        "example": "https://192.168.1.10:8463/"
+      }
+    }
+  },
+  "page_lead_not_installed": {
+    "message": "Це розширення працює з Dannex Download Manager — безкоштовним менеджером завантажень для комп’ютера. Установіть його, і ця сторінка оновиться сама."
+  },
+  "page_lead_not_running": {
+    "message": "Браузер спробував запустити його, але це забрало надто багато часу. Запустіть Dannex Download Manager самостійно й повторіть спробу."
+  },
+  "page_lead_host_failed": {
+    "message": "Зазвичай причина в захисному програмному забезпеченні. Дозвольте Dannex Download Manager в антивірусі або встановіть його заново."
+  },
+  "page_lead_forbidden": {
+    "message": "Ця версія Dannex Download Manager надто стара для цього розширення. Установіть найновішу версію."
+  },
+  "page_lead_too_large": {
+    "message": "Сайт надіслав більше даних для входу, ніж приймає Dannex Download Manager, тому завантаження залишилося в браузері. Зазвичай допомагає вихід із сайту та повторний вхід."
+  },
+  "page_download": {
+    "message": "Завантажити Dannex Download Manager"
+  },
+  "page_files_windows": {
+    "message": "Для Windows 10 і 11."
+  },
+  "page_files_macos": {
+    "message": "Для Mac (образ диска .dmg)."
+  },
+  "page_files_linux": {
+    "message": "Для Linux (AppImage, .deb або .rpm)."
+  },
+  "page_files_other": {
+    "message": "Для комп’ютерів із Windows, Mac і Linux."
+  },
+  "page_all_downloads": {
+    "message": "Усі завантаження"
+  },
+  "page_step_windows": {
+    "message": "Запустіть завантажену програму встановлення."
+  },
+  "page_step_macos": {
+    "message": "Відкрийте .dmg, перетягніть Dannex Download Manager до папки «Програми» та один раз запустіть його."
+  },
+  "page_step_linux": {
+    "message": "Установіть .deb або .rpm (або запустіть AppImage), потім один раз запустіть Dannex Download Manager."
+  },
+  "page_step_other": {
+    "message": "Dannex Download Manager працює на комп’ютерах із Windows, Mac і Linux. Установіть його на одному з них і додайте це розширення до браузера там."
+  },
+  "page_step_wait": {
+    "message": "Не закривайте цю сторінку. Вона оновиться сама, коли Dannex Download Manager буде готовий."
+  },
+  "page_step_restart": {
+    "message": "Нічого не відбувається за хвилину? Перезапустіть браузер."
+  },
+  "page_step_installed": {
+    "message": "Уже встановлено? У Dannex Download Manager відкрийте Параметри → Загальні → Перевірка інтеграції з браузером."
+  },
+  "page_try_again": {
+    "message": "Повторити"
+  },
+  "page_app_options": {
+    "message": "Відкрити параметри Dannex Download Manager"
+  },
+  "page_duplicate_title": {
+    "message": "Видаліть цю копію"
+  },
+  "page_duplicate_lead": {
+    "message": "Копію з Веб-магазину Chrome також установлено в цьому браузері, і вона оновлюється сама. Ця копія не потрібна."
+  },
+  "page_remove": {
+    "message": "Видаліть цю копію"
+  },
+  "page_extensions": {
+    "message": "Відкрити сторінку розширень"
+  },
+  "page_update_app_how": {
+    "message": "У Dannex Download Manager виберіть Довідка → Перевірити наявність оновлень..."
+  },
+  "page_behind": {
+    "message": "Новіша версія цього розширення постачається з Dannex Download Manager $version$.",
+    "placeholders": {
+      "version": {
+        "content": "$1",
+        "example": "0.7.0"
+      }
+    }
+  },
+  "page_behind_store": {
+    "message": "Браузер оновить його сам протягом кількох годин або одразу після натискання «Перевірити наявність оновлень»."
+  },
+  "page_behind_unpacked": {
+    "message": "Перезавантажте розширення, щоб користуватися ним."
+  },
+  "page_behind_other": {
+    "message": "Додайте нову версію з папки Dannex Download Manager, як ви додали цю."
+  },
+  "page_check_updates": {
+    "message": "Перевірити наявність оновлень"
+  },
+  "page_up_to_date": {
+    "message": "Новішої версії поки немає. Браузер перевірить ще раз сам."
+  },
+  "page_reload": {
+    "message": "Перезавантажити розширення"
+  },
+  "page_store": {
+    "message": "Автоматичні оновлення: додайте це розширення з Веб-магазину Chrome, а потім видаліть цю копію."
+  },
+  "page_open_store": {
+    "message": "Відкрити Веб-магазин Chrome"
+  },
+  "page_temporary": {
+    "message": "Firefox вилучить цей додаток під час закриття, бо його додано як тимчасовий."
+  },
+  "page_site_access": {
+    "message": "Розширенню дозволено доступ лише до деяких сайтів, тому завантаження з інших сайтів залишаються в браузері."
+  },
+  "page_allow_sites": {
+    "message": "Дозволити на всіх сайтах"
+  },
+  "page_private": {
+    "message": "Завантаження з приватних вікон залишаються в браузері, бо цьому розширенню там не дозволено працювати."
+  },
+  "page_private_chromium": {
+    "message": "Щоб змінити це, увімкніть «Дозволити в режимі анонімного перегляду» на сторінці відомостей."
+  },
+  "page_learn_more": {
+    "message": "Докладніше"
+  }
+}

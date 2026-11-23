@@ -1,0 +1,443 @@
+{
+  "name": {
+    "message": "DDM Integration Module"
+  },
+  "description": {
+    "message": "Prenose iz brskalnika preda programu Dannex Download Manager."
+  },
+  "menu": {
+    "message": "Prenesi z DDM"
+  },
+  "video_download": {
+    "message": "Prenesi video"
+  },
+  "video_more": {
+    "message": "Več možnosti"
+  },
+  "video_hide_here": {
+    "message": "Skrij samo pri tem videoposnetku"
+  },
+  "video_never_site": {
+    "message": "Nikoli na $site$",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "video_settings": {
+    "message": "Nastavitve gumba..."
+  },
+  "video_sent": {
+    "message": "Poslano v DDM"
+  },
+  "video_failed": {
+    "message": "Dannex Download Manager ni nameščen ali se ni zagnal"
+  },
+  "video_drag": {
+    "message": "Povlecite za premikanje ob robu videoposnetka"
+  },
+  "menu_selected": {
+    "message": "Prenesi izbrane povezave z DDM"
+  },
+  "menu_all": {
+    "message": "Prenesi vse povezave z DDM"
+  },
+  "menu_images": {
+    "message": "Prenesi vse slike z DDM"
+  },
+  "menu_media": {
+    "message": "Prenesi vse videoposnetke in zvok z DDM"
+  },
+  "status_not_installed": {
+    "message": "Dannex Download Manager ni nameščen"
+  },
+  "status_installed": {
+    "message": "Dannex Download Manager je nameščen"
+  },
+  "status_forbidden": {
+    "message": "Posodobite Dannex Download Manager"
+  },
+  "status_not_running": {
+    "message": "Dannex Download Manager se ni zagnal"
+  },
+  "status_host_failed": {
+    "message": "Nekaj blokira Dannex Download Manager"
+  },
+  "status_too_large": {
+    "message": "Zadnjega prenosa ni bilo mogoče poslati v Dannex Download Manager"
+  },
+  "status_update_app": {
+    "message": "Posodobite Dannex Download Manager, da boste dobili vse, kar zmore ta razširitev."
+  },
+  "popup_take": {
+    "message": "Pošiljaj prenose v Dannex Download Manager"
+  },
+  "popup_proxy": {
+    "message": "Prenos prek VPN ali posrednika tega brskalnika"
+  },
+  "popup_proxy_title": {
+    "message": "Vklopite to, če v tem brskalniku uporabljate razširitev za VPN ali posrednika. Brskalnik bo enkrat zahteval vaše dovoljenje."
+  },
+  "popup_proxy_title_chromium": {
+    "message": "Vklopite to, če v tem brskalniku uporabljate razširitev za VPN ali posrednika. Ko je izklopljeno, razširitev ne upošteva posrednika brskalnika."
+  },
+  "popup_help": {
+    "message": "Pomoč"
+  },
+  "page_support": {
+    "message": "Podprite DDM"
+  },
+  "popup_declined": {
+    "message": "Vaš zadnji prenos je ostal v brskalniku: $name$",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "setup.png"
+      }
+    }
+  },
+  "popup_declined_unnamed": {
+    "message": "Vaš zadnji prenos je ostal v brskalniku."
+  },
+  "declined_file_type": {
+    "message": "Njena vrsta datoteke ni na seznamu programa Dannex Download Manager (Možnosti → Vrste datotek)."
+  },
+  "declined_site": {
+    "message": "Njeno spletno mesto je na seznamu spletnih mest, ki jih Dannex Download Manager preskoči (Možnosti → Vrste datotek)."
+  },
+  "declined_address": {
+    "message": "Njen naslov je na seznamu naslovov, ki jih Dannex Download Manager preskoči (Možnosti → Vrste datotek)."
+  },
+  "declined_small": {
+    "message": "Manjša je od najmanjše datoteke, ki jo Dannex Download Manager prevzame (Možnosti → Vrste datotek)."
+  },
+  "declined_browser": {
+    "message": "Ta brskalnik ni označen v Možnosti → Splošno programa Dannex Download Manager."
+  },
+  "declined_integration_off": {
+    "message": "Povezava z brskalnikom je izklopljena v Možnosti → Splošno programa Dannex Download Manager."
+  },
+  "declined_site_access": {
+    "message": "Ta razširitev na tem spletnem mestu ni dovoljena."
+  },
+  "declined_handed_back": {
+    "message": "Za ta prenos ste v programu Dannex Download Manager izbrali Prenesi z brskalnikom."
+  },
+  "video_off": {
+    "message": "Gumb za prenos je na tem spletnem mestu izklopljen"
+  },
+  "video_drm": {
+    "message": "Zaščiten videoposnetek: ni ga mogoče shraniti"
+  },
+  "video_unnamed": {
+    "message": "Ni mogoče ugotoviti, kateri videoposnetek je to: odprite njegovo stran in poskusite tam"
+  },
+  "video_looking": {
+    "message": "Iskanje kakovosti…"
+  },
+  "video_open_mdm": {
+    "message": "Odpri v programu DDM…"
+  },
+  "video_no_choices": {
+    "message": "Tu ni videa za prenos"
+  },
+  "video_playlist": {
+    "message": "Seznam videoposnetkov: izberite jih v programu Dannex Download Manager"
+  },
+  "video_no_ytdlp": {
+    "message": "Dannex Download Manager potrebuje yt-dlp za ta videoposnetek. Odprite v DDM…, da ga namestite."
+  },
+  "video_too_long": {
+    "message": "Iskanje je trajalo predolgo"
+  },
+  "video_busy": {
+    "message": "Dannex Download Manager je zaseden z drugimi videoposnetki"
+  },
+  "video_queued": {
+    "message": "Dodano v čakalno vrsto"
+  },
+  "video_failed_lookup": {
+    "message": "Iskanje ni uspelo"
+  },
+  "video_tab_video": {
+    "message": "Video"
+  },
+  "video_tab_audio": {
+    "message": "Zvok"
+  },
+  "video_open_post": {
+    "message": "Odprite objavo, nato uporabite gumb tam"
+  },
+  "video_audio_original": {
+    "message": "Samo zvok, izvirnik $type$",
+    "placeholders": {
+      "type": {
+        "content": "$1",
+        "example": "M4A"
+      }
+    }
+  },
+  "video_audio_only": {
+    "message": "Samo zvok $type$",
+    "placeholders": {
+      "type": {
+        "content": "$1",
+        "example": "MP3 320 kbps"
+      }
+    }
+  },
+  "video_pick_waiting": {
+    "message": "Začne se takoj, ko bo DDM pripravljen…"
+  },
+  "video_pick_gone": {
+    "message": "Ta kakovost ni na voljo: izberite drugo"
+  },
+  "popup_send_to": {
+    "message": "Pošlji prenose v"
+  },
+  "popup_send_here": {
+    "message": "Ta računalnik"
+  },
+  "popup_send_remote": {
+    "message": "Dannex Download Manager v drugem računalniku"
+  },
+  "popup_remote_code": {
+    "message": "Koda za seznanjanje"
+  },
+  "popup_remote_open": {
+    "message": "Odpri"
+  },
+  "popup_remote_pair": {
+    "message": "Seznani"
+  },
+  "popup_remote_help": {
+    "message": "Najprej odprite njegov naslov v tem brskalniku in nadaljujte mimo varnostnega opozorila. Nato vnesite kodo iz Možnosti → Oddaljeno → Seznani napravo."
+  },
+  "status_remote": {
+    "message": "Prenosi gredo na $address$",
+    "placeholders": {
+      "address": {
+        "content": "$1",
+        "example": "https://192.168.1.10:8463/"
+      }
+    }
+  },
+  "remote_address": {
+    "message": "Vnesite naslov https://."
+  },
+  "remote_unreachable": {
+    "message": "Ni bilo mogoče vzpostaviti stika. Odprite njegov naslov v tem brskalniku, nadaljujte mimo varnostnega opozorila in poskusite znova."
+  },
+  "remote_wrong_code": {
+    "message": "Napačna koda."
+  },
+  "remote_no_code": {
+    "message": "Kode za vnos še ni: najprej tam kliknite »Seznani napravo«."
+  },
+  "remote_too_soon": {
+    "message": "Počakajte trenutek, nato poskusite znova."
+  },
+  "remote_failed": {
+    "message": "Ni delovalo. Poskusite znova."
+  },
+  "remote_device_name": {
+    "message": "Razširitev brskalnika"
+  },
+  "badge_off": {
+    "message": "IZK"
+  },
+  "tip_on": {
+    "message": "Dannex Download Manager je vklopljen. Kliknite, da ga izklopite."
+  },
+  "tip_off": {
+    "message": "Dannex Download Manager je izklopljen. Kliknite, da ga vklopite."
+  },
+  "tip_remote": {
+    "message": "Prenosi gredo v Dannex Download Manager na naslovu $address$. Kliknite, da ga izklopite.",
+    "placeholders": {
+      "address": {
+        "content": "$1",
+        "example": "https://192.168.1.10:8463/"
+      }
+    }
+  },
+  "status_off_in_app": {
+    "message": "Izklopljeno v programu Dannex Download Manager"
+  },
+  "status_duplicate": {
+    "message": "Nameščen je še en izvod te razširitve"
+  },
+  "click_fix": {
+    "message": "Kliknite, da vidite, kaj storiti."
+  },
+  "click_details": {
+    "message": "Kliknite za podrobnosti."
+  },
+  "toolbar_exclude": {
+    "message": "Ne prevzemaj prenosov s tega spletnega mesta"
+  },
+  "toolbar_help": {
+    "message": "Pomoč"
+  },
+  "toolbar_store": {
+    "message": "Prejemaj samodejne posodobitve iz Spletne trgovine Chrome..."
+  },
+  "options_take_note": {
+    "message": "Ko je izklopljeno, prenosi ostanejo v brskalniku. Enako naredi klik na gumb razširitve."
+  },
+  "options_what_to_do": {
+    "message": "Poglej, kaj storiti"
+  },
+  "options_more": {
+    "message": "Več"
+  },
+  "page_checking": {
+    "message": "Iskanje programa Dannex Download Manager…"
+  },
+  "page_on_lead": {
+    "message": "Prenosi, ki jih začnete v tem brskalniku, gredo v Dannex Download Manager."
+  },
+  "page_off_lead": {
+    "message": "Izklopljeno je, zato prenosi ostanejo v tem brskalniku."
+  },
+  "page_remote_title": {
+    "message": "Prenosi gredo v drug Dannex Download Manager"
+  },
+  "page_remote_lead": {
+    "message": "Prenosi, ki jih začnete v tem brskalniku, gredo v Dannex Download Manager na naslovu $address$.",
+    "placeholders": {
+      "address": {
+        "content": "$1",
+        "example": "https://192.168.1.10:8463/"
+      }
+    }
+  },
+  "page_lead_not_installed": {
+    "message": "Ta razširitev deluje s programom Dannex Download Manager, brezplačnim upraviteljem prenosov za vaš računalnik. Namestite ga in ta stran se posodobi sama."
+  },
+  "page_lead_not_running": {
+    "message": "Brskalnik ga je poskusil zagnati, vendar je trajalo predolgo. Zaženite Dannex Download Manager sami in poskusite znova."
+  },
+  "page_lead_host_failed": {
+    "message": "Običajni vzrok je varnostna programska oprema. Dovolite Dannex Download Manager v svojem protivirusnem programu ali ga namestite znova."
+  },
+  "page_lead_forbidden": {
+    "message": "Ta različica programa Dannex Download Manager je za to razširitev prestara. Namestite najnovejšo."
+  },
+  "page_lead_too_large": {
+    "message": "Spletno mesto je poslalo več podatkov za prijavo, kot jih Dannex Download Manager sprejme, zato je brskalnik obdržal prenos. Odjava s spletnega mesta in ponovna prijava običajno to odpravita."
+  },
+  "page_download": {
+    "message": "Prenesi Dannex Download Manager"
+  },
+  "page_files_windows": {
+    "message": "Za Windows 10 in 11."
+  },
+  "page_files_macos": {
+    "message": "Za Mac (slika diska .dmg)."
+  },
+  "page_files_linux": {
+    "message": "Za Linux (AppImage, .deb ali .rpm)."
+  },
+  "page_files_other": {
+    "message": "Za računalnike z Windows, Mac in Linux."
+  },
+  "page_all_downloads": {
+    "message": "Vsi prenosi"
+  },
+  "page_step_windows": {
+    "message": "Zaženite preneseno namestitev."
+  },
+  "page_step_macos": {
+    "message": "Odprite .dmg, povlecite Dannex Download Manager v Applications in ga enkrat zaženite."
+  },
+  "page_step_linux": {
+    "message": "Namestite .deb ali .rpm (ali zaženite AppImage), nato enkrat zaženite Dannex Download Manager."
+  },
+  "page_step_other": {
+    "message": "Dannex Download Manager deluje v računalnikih z Windows, Mac in Linux. Namestite ga v enega in tam dodajte to razširitev v brskalnik."
+  },
+  "page_step_wait": {
+    "message": "Pustite to stran odprto. Spremeni se sama, ko bo Dannex Download Manager pripravljen."
+  },
+  "page_step_restart": {
+    "message": "Po minuti še nič? Znova zaženite brskalnik."
+  },
+  "page_step_installed": {
+    "message": "Že nameščeno? V Dannex Download Manager odprite Možnosti → Splošno → Preizkus povezave z brskalnikom."
+  },
+  "page_try_again": {
+    "message": "Poskusi znova"
+  },
+  "page_app_options": {
+    "message": "Odpri Možnosti programa Dannex Download Manager"
+  },
+  "page_duplicate_title": {
+    "message": "Odstrani ta izvod"
+  },
+  "page_duplicate_lead": {
+    "message": "Izvod iz Spletne trgovine Chrome je nameščen tudi v tem brskalniku in se posodablja sam. Ta izvod ni potreben."
+  },
+  "page_remove": {
+    "message": "Odstrani ta izvod"
+  },
+  "page_extensions": {
+    "message": "Odpri stran razširitev"
+  },
+  "page_update_app_how": {
+    "message": "V Dannex Download Manager izberite Pomoč → Preveri posodobitve..."
+  },
+  "page_behind": {
+    "message": "Novejša različica te razširitve je prišla z Dannex Download Manager $version$.",
+    "placeholders": {
+      "version": {
+        "content": "$1",
+        "example": "0.7.0"
+      }
+    }
+  },
+  "page_behind_store": {
+    "message": "Brskalnik ga posodobi sam v nekaj urah ali takoj z »Preveri posodobitve«."
+  },
+  "page_behind_unpacked": {
+    "message": "Znova naložite razširitev, da jo boste lahko uporabljali."
+  },
+  "page_behind_other": {
+    "message": "Dodajte novo iz mape Dannex Download Manager, tako kot ste dodali to."
+  },
+  "page_check_updates": {
+    "message": "Preveri posodobitve"
+  },
+  "page_up_to_date": {
+    "message": "Novejše različice še ni. Brskalnik znova preveri sam."
+  },
+  "page_reload": {
+    "message": "Znova naloži razširitev"
+  },
+  "page_store": {
+    "message": "Prejemajte samodejne posodobitve: dodajte to razširitev iz Spletne trgovine Chrome, nato odstranite ta izvod."
+  },
+  "page_open_store": {
+    "message": "Odpri Spletno trgovino Chrome"
+  },
+  "page_temporary": {
+    "message": "Firefox bo ta dodatek odstranil ob zaprtju, ker je bil dodan kot začasni dodatek."
+  },
+  "page_site_access": {
+    "message": "Ta razširitev je dovoljena samo na nekaterih spletnih mestih, zato prenosi z drugih spletnih mest ostanejo v brskalniku."
+  },
+  "page_allow_sites": {
+    "message": "Dovoli na vseh spletnih mestih"
+  },
+  "page_private": {
+    "message": "Prenosi iz zasebnih oken ostanejo v brskalniku, ker ta razširitev tam ni dovoljena."
+  },
+  "page_private_chromium": {
+    "message": "Če to želite spremeniti, vklopite »Dovoli v anonimnem načinu« na njegovi strani s podrobnostmi."
+  },
+  "page_learn_more": {
+    "message": "Več o tem"
+  }
+}

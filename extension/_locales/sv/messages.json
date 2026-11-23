@@ -1,0 +1,443 @@
+{
+  "name": {
+    "message": "DDM Integration Module"
+  },
+  "description": {
+    "message": "Överför nedladdningar från webbläsaren till Dannex Download Manager."
+  },
+  "menu": {
+    "message": "Ladda ned med DDM"
+  },
+  "video_download": {
+    "message": "Hämta video"
+  },
+  "video_more": {
+    "message": "Fler alternativ"
+  },
+  "video_hide_here": {
+    "message": "Dölj bara för den här videon"
+  },
+  "video_never_site": {
+    "message": "Aldrig på $site$",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "video_settings": {
+    "message": "Knappinställningar..."
+  },
+  "video_sent": {
+    "message": "Skickades till DDM"
+  },
+  "video_failed": {
+    "message": "Dannex Download Manager är inte installerad eller startade inte"
+  },
+  "video_drag": {
+    "message": "Dra för att flytta den längs videons kant"
+  },
+  "menu_selected": {
+    "message": "Ladda ner valda länkar med DDM"
+  },
+  "menu_all": {
+    "message": "Ladda ner alla länkar med DDM"
+  },
+  "menu_images": {
+    "message": "Ladda ned alla bilder med DDM"
+  },
+  "menu_media": {
+    "message": "Ladda ned alla videor och allt ljud med DDM"
+  },
+  "status_not_installed": {
+    "message": "Dannex Download Manager är inte installerat"
+  },
+  "status_installed": {
+    "message": "Dannex Download Manager är installerat"
+  },
+  "status_forbidden": {
+    "message": "Uppdatera Dannex Download Manager"
+  },
+  "status_not_running": {
+    "message": "Dannex Download Manager startade inte"
+  },
+  "status_host_failed": {
+    "message": "Något blockerar Dannex Download Manager"
+  },
+  "status_too_large": {
+    "message": "Den senaste hämtningen kunde inte skickas till Dannex Download Manager"
+  },
+  "status_update_app": {
+    "message": "Uppdatera Dannex Download Manager för att få allt det här tillägget kan."
+  },
+  "popup_take": {
+    "message": "Skicka hämtningar till Dannex Download Manager"
+  },
+  "popup_proxy": {
+    "message": "Ladda ned via den här webbläsarens VPN eller proxy"
+  },
+  "popup_proxy_title": {
+    "message": "Slå på det här om du använder ett VPN- eller proxytillägg i den här webbläsaren. Webbläsaren ber dig om tillåtelse en gång."
+  },
+  "popup_proxy_title_chromium": {
+    "message": "Slå på det här om du använder ett VPN- eller proxytillägg i den här webbläsaren. När det är av tittar tillägget inte på webbläsarens proxy."
+  },
+  "popup_help": {
+    "message": "Hjälp"
+  },
+  "page_support": {
+    "message": "Stöd DDM"
+  },
+  "popup_declined": {
+    "message": "Din senaste hämtning stannade i webbläsaren: $name$",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "setup.png"
+      }
+    }
+  },
+  "popup_declined_unnamed": {
+    "message": "Din senaste hämtning stannade i webbläsaren."
+  },
+  "declined_file_type": {
+    "message": "Dess filtyp finns inte i Dannex Download Managers lista (Alternativ → Filtyper)."
+  },
+  "declined_site": {
+    "message": "Dess webbplats finns i Dannex Download Managers lista över webbplatser som ska lämnas ifred (Alternativ → Filtyper)."
+  },
+  "declined_address": {
+    "message": "Dess adress finns i Dannex Download Managers lista över adresser som ska lämnas ifred (Alternativ → Filtyper)."
+  },
+  "declined_small": {
+    "message": "Den är mindre än den minsta fil som Dannex Download Manager tar över (Alternativ → Filtyper)."
+  },
+  "declined_browser": {
+    "message": "Den här webbläsaren är inte markerad i Alternativ → Allmänt i Dannex Download Manager."
+  },
+  "declined_integration_off": {
+    "message": "Webbläsarintegrering är avstängd i Alternativ → Allmänt i Dannex Download Manager."
+  },
+  "declined_site_access": {
+    "message": "Det här tillägget är inte tillåtet på den webbplatsen."
+  },
+  "declined_handed_back": {
+    "message": "Du valde Ladda ned med webbläsaren för den i Dannex Download Manager."
+  },
+  "video_off": {
+    "message": "Nedladdningsknappen är inaktiverad på den här webbplatsen"
+  },
+  "video_drm": {
+    "message": "Skyddad video: den kan inte sparas"
+  },
+  "video_unnamed": {
+    "message": "Det går inte att avgöra vilken video det här är: öppna videons egen sida och försök där"
+  },
+  "video_looking": {
+    "message": "Söker efter kvaliteter…"
+  },
+  "video_open_mdm": {
+    "message": "Öppna i DDM…"
+  },
+  "video_no_choices": {
+    "message": "Ingen video att hämta här"
+  },
+  "video_playlist": {
+    "message": "En lista med videor: välj dem i Dannex Download Manager"
+  },
+  "video_no_ytdlp": {
+    "message": "Dannex Download Manager behöver yt-dlp för den här videon. Öppna i DDM… för att installera det."
+  },
+  "video_too_long": {
+    "message": "Sökningen tog för lång tid"
+  },
+  "video_busy": {
+    "message": "Dannex Download Manager är upptaget med andra videor"
+  },
+  "video_queued": {
+    "message": "Tillagd i kön"
+  },
+  "video_failed_lookup": {
+    "message": "Det gick inte att söka"
+  },
+  "video_tab_video": {
+    "message": "Video"
+  },
+  "video_tab_audio": {
+    "message": "Ljud"
+  },
+  "video_open_post": {
+    "message": "Öppna inlägget och använd sedan knappen där"
+  },
+  "video_audio_original": {
+    "message": "Endast ljud, original $type$",
+    "placeholders": {
+      "type": {
+        "content": "$1",
+        "example": "M4A"
+      }
+    }
+  },
+  "video_audio_only": {
+    "message": "Endast ljud $type$",
+    "placeholders": {
+      "type": {
+        "content": "$1",
+        "example": "MP3 320 kbps"
+      }
+    }
+  },
+  "video_pick_waiting": {
+    "message": "Startar så snart DDM är klart…"
+  },
+  "video_pick_gone": {
+    "message": "Den kvaliteten är inte tillgänglig: Välj en annan"
+  },
+  "popup_send_to": {
+    "message": "Skicka nedladdningar till"
+  },
+  "popup_send_here": {
+    "message": "Den här datorn"
+  },
+  "popup_send_remote": {
+    "message": "Dannex Download Manager på en annan dator"
+  },
+  "popup_remote_code": {
+    "message": "Kopplingskod"
+  },
+  "popup_remote_open": {
+    "message": "Öppna den"
+  },
+  "popup_remote_pair": {
+    "message": "Koppla"
+  },
+  "popup_remote_help": {
+    "message": "Öppna först dess adress i den här webbläsaren och fortsätt förbi säkerhetsvarningen. Ange sedan koden från dess Alternativ → Fjärr → Parkoppla en enhet."
+  },
+  "status_remote": {
+    "message": "Nedladdningar går till $address$",
+    "placeholders": {
+      "address": {
+        "content": "$1",
+        "example": "https://192.168.1.10:8463/"
+      }
+    }
+  },
+  "remote_address": {
+    "message": "Ange dess https://-adress."
+  },
+  "remote_unreachable": {
+    "message": "Det gick inte att nå den. Öppna dess adress i den här webbläsaren, fortsätt förbi säkerhetsvarningen och försök igen."
+  },
+  "remote_wrong_code": {
+    "message": "Fel kod."
+  },
+  "remote_no_code": {
+    "message": "Det finns ingen kod att ange än: Klicka först på Parkoppla en enhet där."
+  },
+  "remote_too_soon": {
+    "message": "Vänta ett ögonblick och försök sedan igen."
+  },
+  "remote_failed": {
+    "message": "Det fungerade inte. Försök igen."
+  },
+  "remote_device_name": {
+    "message": "Webbläsartillägg"
+  },
+  "badge_off": {
+    "message": "AV"
+  },
+  "tip_on": {
+    "message": "Dannex Download Manager är på. Klicka för att stänga av det."
+  },
+  "tip_off": {
+    "message": "Dannex Download Manager är av. Klicka för att slå på det."
+  },
+  "tip_remote": {
+    "message": "Hämtningar går till Dannex Download Manager på $address$. Klicka för att stänga av det.",
+    "placeholders": {
+      "address": {
+        "content": "$1",
+        "example": "https://192.168.1.10:8463/"
+      }
+    }
+  },
+  "status_off_in_app": {
+    "message": "Avstängt i Dannex Download Manager"
+  },
+  "status_duplicate": {
+    "message": "En annan kopia av det här tillägget är installerad"
+  },
+  "click_fix": {
+    "message": "Klicka för att se vad du kan göra."
+  },
+  "click_details": {
+    "message": "Klicka för mer information."
+  },
+  "toolbar_exclude": {
+    "message": "Ta inte över hämtningar från den här webbplatsen"
+  },
+  "toolbar_help": {
+    "message": "Hjälp"
+  },
+  "toolbar_store": {
+    "message": "Få automatiska uppdateringar från Chrome Web Store..."
+  },
+  "options_take_note": {
+    "message": "När det är av stannar hämtningar i webbläsaren. Ett klick på tilläggets knapp gör samma sak."
+  },
+  "options_what_to_do": {
+    "message": "Se vad du kan göra"
+  },
+  "options_more": {
+    "message": "Mer"
+  },
+  "page_checking": {
+    "message": "Söker efter Dannex Download Manager…"
+  },
+  "page_on_lead": {
+    "message": "Hämtningar som du startar i den här webbläsaren går till Dannex Download Manager."
+  },
+  "page_off_lead": {
+    "message": "Det är avstängt, så hämtningar stannar i den här webbläsaren."
+  },
+  "page_remote_title": {
+    "message": "Hämtningar går till en annan Dannex Download Manager"
+  },
+  "page_remote_lead": {
+    "message": "Hämtningar som du startar i den här webbläsaren går till Dannex Download Manager på $address$.",
+    "placeholders": {
+      "address": {
+        "content": "$1",
+        "example": "https://192.168.1.10:8463/"
+      }
+    }
+  },
+  "page_lead_not_installed": {
+    "message": "Det här tillägget fungerar tillsammans med Dannex Download Manager, en gratis hämtningshanterare för datorn. Installera det, så uppdateras den här sidan av sig själv."
+  },
+  "page_lead_not_running": {
+    "message": "Webbläsaren försökte starta det, men det tog för lång tid. Starta Dannex Download Manager själv och försök igen."
+  },
+  "page_lead_host_failed": {
+    "message": "Säkerhetsprogram är den vanliga orsaken. Tillåt Dannex Download Manager i antivirusprogrammet eller installera det igen."
+  },
+  "page_lead_forbidden": {
+    "message": "Den här versionen av Dannex Download Manager är för gammal för det här tillägget. Installera den senaste."
+  },
+  "page_lead_too_large": {
+    "message": "Webbplatsen skickade mer inloggningsdata än Dannex Download Manager godtar, så webbläsaren behöll hämtningen. Det brukar hjälpa att logga ut från webbplatsen och in igen."
+  },
+  "page_download": {
+    "message": "Ladda ned Dannex Download Manager"
+  },
+  "page_files_windows": {
+    "message": "För Windows 10 och 11."
+  },
+  "page_files_macos": {
+    "message": "För Mac (en .dmg-diskavbildning)."
+  },
+  "page_files_linux": {
+    "message": "För Linux (AppImage, .deb eller .rpm)."
+  },
+  "page_files_other": {
+    "message": "För Windows-, Mac- och Linux-datorer."
+  },
+  "page_all_downloads": {
+    "message": "Alla hämtningar"
+  },
+  "page_step_windows": {
+    "message": "Kör installationsprogrammet som du hämtade."
+  },
+  "page_step_macos": {
+    "message": "Öppna .dmg-filen, dra Dannex Download Manager till Program och starta det en gång."
+  },
+  "page_step_linux": {
+    "message": "Installera .deb- eller .rpm-filen (eller kör AppImage) och starta sedan Dannex Download Manager en gång."
+  },
+  "page_step_other": {
+    "message": "Dannex Download Manager körs på Windows-, Mac- och Linux-datorer. Installera det på en av dem och lägg till det här tillägget i en webbläsare där."
+  },
+  "page_step_wait": {
+    "message": "Lämna den här sidan öppen. Den ändras av sig själv när Dannex Download Manager är klart."
+  },
+  "page_step_restart": {
+    "message": "Händer inget efter en minut? Starta om webbläsaren."
+  },
+  "page_step_installed": {
+    "message": "Redan installerat? Öppna Alternativ → Allmänt → Testa webbläsarintegrering i Dannex Download Manager."
+  },
+  "page_try_again": {
+    "message": "Försök igen"
+  },
+  "page_app_options": {
+    "message": "Öppna Alternativ i Dannex Download Manager"
+  },
+  "page_duplicate_title": {
+    "message": "Ta bort den här kopian"
+  },
+  "page_duplicate_lead": {
+    "message": "Kopian från Chrome Web Store är också installerad i den här webbläsaren och håller sig själv uppdaterad. Den här kopian behövs inte."
+  },
+  "page_remove": {
+    "message": "Ta bort den här kopian"
+  },
+  "page_extensions": {
+    "message": "Öppna tilläggssidan"
+  },
+  "page_update_app_how": {
+    "message": "I Dannex Download Manager: Välj Hjälp → Sök efter uppdateringar..."
+  },
+  "page_behind": {
+    "message": "En nyare version av det här tillägget följde med Dannex Download Manager $version$.",
+    "placeholders": {
+      "version": {
+        "content": "$1",
+        "example": "0.7.0"
+      }
+    }
+  },
+  "page_behind_store": {
+    "message": "Webbläsaren uppdaterar det av sig själv inom några timmar, eller nu med Sök efter uppdateringar."
+  },
+  "page_behind_unpacked": {
+    "message": "Läs in tillägget igen för att använda det."
+  },
+  "page_behind_other": {
+    "message": "Lägg till det nya från Dannex Download Managers mapp, på samma sätt som du lade till det här."
+  },
+  "page_check_updates": {
+    "message": "Sök efter uppdateringar"
+  },
+  "page_up_to_date": {
+    "message": "Ingen nyare version än. Webbläsaren kontrollerar igen av sig själv."
+  },
+  "page_reload": {
+    "message": "Läs in tillägget igen"
+  },
+  "page_store": {
+    "message": "Få automatiska uppdateringar: Lägg till det här tillägget från Chrome Web Store och ta sedan bort den här kopian."
+  },
+  "page_open_store": {
+    "message": "Öppna Chrome Web Store"
+  },
+  "page_temporary": {
+    "message": "Firefox tar bort det här tillägget när det stängs, eftersom det lades till som ett tillfälligt tillägg."
+  },
+  "page_site_access": {
+    "message": "Det här tillägget är bara tillåtet på vissa webbplatser, så hämtningar från andra webbplatser stannar i webbläsaren."
+  },
+  "page_allow_sites": {
+    "message": "Tillåt på alla webbplatser"
+  },
+  "page_private": {
+    "message": "Hämtningar från privata fönster stannar i webbläsaren, eftersom det här tillägget inte är tillåtet där."
+  },
+  "page_private_chromium": {
+    "message": "Om du vill ändra det slår du på Tillåt i inkognitoläge på dess informationssida."
+  },
+  "page_learn_more": {
+    "message": "Läs mer"
+  }
+}

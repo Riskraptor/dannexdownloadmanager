@@ -1,0 +1,443 @@
+{
+  "name": {
+    "message": "DDM Integration Module"
+  },
+  "description": {
+    "message": "ब्राउझरवरून Dannex Download Manager ला डाउनलोड्स देतो."
+  },
+  "menu": {
+    "message": "DDM सह डाउनलोड करा"
+  },
+  "video_download": {
+    "message": "व्हिडिओ डाउनलोड करा"
+  },
+  "video_more": {
+    "message": "अधिक पर्याय"
+  },
+  "video_hide_here": {
+    "message": "फक्त या व्हिडिओवर लपवा"
+  },
+  "video_never_site": {
+    "message": "$site$ वर कधीही दाखवू नका",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "video_settings": {
+    "message": "बटण सेटिंग्ज..."
+  },
+  "video_sent": {
+    "message": "DDM ला पाठवले"
+  },
+  "video_failed": {
+    "message": "Dannex Download Manager स्थापित केलेले नाही किंवा सुरू झाले नाही"
+  },
+  "video_drag": {
+    "message": "व्हिडिओच्या काठावर हलवण्यासाठी ड्रॅग करा"
+  },
+  "menu_selected": {
+    "message": "DDM सह निवडलेल्या लिंक्स डाउनलोड करा"
+  },
+  "menu_all": {
+    "message": "DDM सह सर्व लिंक्स डाउनलोड करा"
+  },
+  "menu_images": {
+    "message": "DDM सह सर्व प्रतिमा डाउनलोड करा"
+  },
+  "menu_media": {
+    "message": "DDM सह सर्व व्हिडिओ आणि ऑडिओ डाउनलोड करा"
+  },
+  "status_not_installed": {
+    "message": "Dannex Download Manager इन्स्टॉल केलेले नाही"
+  },
+  "status_installed": {
+    "message": "Dannex Download Manager इन्स्टॉल केले आहे"
+  },
+  "status_forbidden": {
+    "message": "Dannex Download Manager अद्यतनित करा"
+  },
+  "status_not_running": {
+    "message": "Dannex Download Manager सुरू झाले नाही"
+  },
+  "status_host_failed": {
+    "message": "काहीतरी Dannex Download Manager ला अडवत आहे"
+  },
+  "status_too_large": {
+    "message": "शेवटचे डाउनलोड Dannex Download Manager कडे जाऊ शकले नाही"
+  },
+  "status_update_app": {
+    "message": "हे एक्स्टेंशन जे काही करू शकते ते मिळवण्यासाठी Dannex Download Manager अद्यतनित करा."
+  },
+  "popup_take": {
+    "message": "डाउनलोड Dannex Download Manager कडे पाठवा"
+  },
+  "popup_proxy": {
+    "message": "या ब्राउझरच्या VPN किंवा प्रॉक्सीद्वारे डाउनलोड करा"
+  },
+  "popup_proxy_title": {
+    "message": "तुम्ही या ब्राउझरमध्ये VPN किंवा प्रॉक्सी एक्स्टेंशन वापरत असल्यास हे चालू करा. ब्राउझर एकदा परवानगी विचारतो."
+  },
+  "popup_proxy_title_chromium": {
+    "message": "तुम्ही या ब्राउझरमध्ये VPN किंवा प्रॉक्सी एक्स्टेंशन वापरत असल्यास हे चालू करा. ते बंद असताना, एक्स्टेंशन ब्राउझरची प्रॉक्सी पाहत नाही."
+  },
+  "popup_help": {
+    "message": "मदत"
+  },
+  "page_support": {
+    "message": "DDM ला पाठिंबा द्या"
+  },
+  "popup_declined": {
+    "message": "तुमचे शेवटचे डाउनलोड ब्राउझरमध्येच राहिले: $name$",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "setup.png"
+      }
+    }
+  },
+  "popup_declined_unnamed": {
+    "message": "तुमचे शेवटचे डाउनलोड ब्राउझरमध्येच राहिले."
+  },
+  "declined_file_type": {
+    "message": "त्याचा फाइल प्रकार Dannex Download Manager च्या सूचीत नाही (पर्याय → फाइल प्रकार)."
+  },
+  "declined_site": {
+    "message": "त्याची साइट Dannex Download Manager च्या सोडायच्या साइटच्या सूचीत आहे (पर्याय → फाइल प्रकार)."
+  },
+  "declined_address": {
+    "message": "त्याचा पत्ता Dannex Download Manager च्या सोडायच्या पत्त्यांच्या सूचीत आहे (पर्याय → फाइल प्रकार)."
+  },
+  "declined_small": {
+    "message": "ही Dannex Download Manager घेत असलेल्या सर्वात लहान फाइलपेक्षा लहान आहे (पर्याय → फाइल प्रकार)."
+  },
+  "declined_browser": {
+    "message": "हा ब्राउझर Dannex Download Manager च्या पर्याय → सामान्य मध्ये निवडलेला नाही."
+  },
+  "declined_integration_off": {
+    "message": "ब्राउझर एकत्रीकरण Dannex Download Manager च्या पर्याय → सामान्य मध्ये बंद आहे."
+  },
+  "declined_site_access": {
+    "message": "या एक्स्टेंशनला त्या साइटवर परवानगी नाही."
+  },
+  "declined_handed_back": {
+    "message": "Dannex Download Manager मध्ये तुम्ही या डाउनलोडसाठी “ब्राउझरद्वारे डाउनलोड करा” निवडले।"
+  },
+  "video_off": {
+    "message": "या साइटवर डाउनलोड बटण बंद आहे"
+  },
+  "video_drm": {
+    "message": "संरक्षित व्हिडिओ: जतन करता येत नाही"
+  },
+  "video_unnamed": {
+    "message": "हा कोणता व्हिडिओ आहे ते कळत नाही: त्याचे स्वतःचे पृष्ठ उघडून तिथे प्रयत्न करा"
+  },
+  "video_looking": {
+    "message": "गुणवत्ता शोधत आहे…"
+  },
+  "video_open_mdm": {
+    "message": "DDM मध्ये उघडा…"
+  },
+  "video_no_choices": {
+    "message": "येथे डाउनलोड करण्यासाठी व्हिडिओ नाही"
+  },
+  "video_playlist": {
+    "message": "व्हिडिओंची सूची: ते Dannex Download Manager मध्ये निवडा"
+  },
+  "video_no_ytdlp": {
+    "message": "या व्हिडिओसाठी Dannex Download Manager ला yt-dlp हवे आहे. ते इन्स्टॉल करण्यासाठी DDM मध्ये उघडा… निवडा."
+  },
+  "video_too_long": {
+    "message": "शोधण्यास खूप वेळ लागला"
+  },
+  "video_busy": {
+    "message": "Dannex Download Manager इतर व्हिडिओंमध्ये व्यस्त आहे"
+  },
+  "video_queued": {
+    "message": "रांगेत जोडले"
+  },
+  "video_failed_lookup": {
+    "message": "शोधता आले नाही"
+  },
+  "video_tab_video": {
+    "message": "व्हिडिओ"
+  },
+  "video_tab_audio": {
+    "message": "ऑडिओ"
+  },
+  "video_open_post": {
+    "message": "पोस्ट उघडा, नंतर तेथील बटण वापरा"
+  },
+  "video_audio_original": {
+    "message": "फक्त ऑडिओ, मूळ $type$",
+    "placeholders": {
+      "type": {
+        "content": "$1",
+        "example": "M4A"
+      }
+    }
+  },
+  "video_audio_only": {
+    "message": "फक्त ऑडिओ $type$",
+    "placeholders": {
+      "type": {
+        "content": "$1",
+        "example": "MP3 320 kbps"
+      }
+    }
+  },
+  "video_pick_waiting": {
+    "message": "DDM तयार होताच सुरू होते…"
+  },
+  "video_pick_gone": {
+    "message": "ती गुणवत्ता उपलब्ध नाही: दुसरी निवडा"
+  },
+  "popup_send_to": {
+    "message": "डाउनलोड्स येथे पाठवा"
+  },
+  "popup_send_here": {
+    "message": "हे संगणक"
+  },
+  "popup_send_remote": {
+    "message": "दुसऱ्या संगणकावरील Dannex Download Manager"
+  },
+  "popup_remote_code": {
+    "message": "पेअरिंग कोड"
+  },
+  "popup_remote_open": {
+    "message": "ते उघडा"
+  },
+  "popup_remote_pair": {
+    "message": "पेअर करा"
+  },
+  "popup_remote_help": {
+    "message": "आधी या ब्राउझरमध्ये त्याचा पत्ता उघडा आणि सुरक्षा चेतावणी ओलांडून पुढे जा. मग त्याच्या पर्याय → रिमोट → डिव्हाइस जोडा मधील कोड टाका."
+  },
+  "status_remote": {
+    "message": "डाउनलोड्स $address$ वर जातात",
+    "placeholders": {
+      "address": {
+        "content": "$1",
+        "example": "https://192.168.1.10:8463/"
+      }
+    }
+  },
+  "remote_address": {
+    "message": "त्याचा https:// पत्ता एंटर करा."
+  },
+  "remote_unreachable": {
+    "message": "त्यापर्यंत पोहोचता आले नाही. या ब्राउझरमध्ये त्याचा पत्ता उघडा, सुरक्षा चेतावणी ओलांडून पुढे जा, मग पुन्हा प्रयत्न करा."
+  },
+  "remote_wrong_code": {
+    "message": "चुकीचा कोड."
+  },
+  "remote_no_code": {
+    "message": "अजून टाकण्यासाठी कोड नाही: आधी तिथे डिव्हाइस जोडा क्लिक करा."
+  },
+  "remote_too_soon": {
+    "message": "एक क्षण थांबा, नंतर पुन्हा प्रयत्न करा."
+  },
+  "remote_failed": {
+    "message": "ते काम केले नाही. पुन्हा प्रयत्न करा."
+  },
+  "remote_device_name": {
+    "message": "ब्राउझर एक्स्टेंशन"
+  },
+  "badge_off": {
+    "message": "बंद"
+  },
+  "tip_on": {
+    "message": "Dannex Download Manager चालू आहे. बंद करण्यासाठी क्लिक करा."
+  },
+  "tip_off": {
+    "message": "Dannex Download Manager बंद आहे. चालू करण्यासाठी क्लिक करा."
+  },
+  "tip_remote": {
+    "message": "डाउनलोड $address$ वरील Dannex Download Manager कडे जातात. बंद करण्यासाठी क्लिक करा.",
+    "placeholders": {
+      "address": {
+        "content": "$1",
+        "example": "https://192.168.1.10:8463/"
+      }
+    }
+  },
+  "status_off_in_app": {
+    "message": "Dannex Download Manager मध्ये बंद केले"
+  },
+  "status_duplicate": {
+    "message": "या एक्स्टेंशनची दुसरी प्रत इन्स्टॉल आहे"
+  },
+  "click_fix": {
+    "message": "काय करायचे ते पाहण्यासाठी क्लिक करा."
+  },
+  "click_details": {
+    "message": "तपशीलांसाठी क्लिक करा."
+  },
+  "toolbar_exclude": {
+    "message": "या साइटवरून डाउनलोड घेऊ नका"
+  },
+  "toolbar_help": {
+    "message": "मदत"
+  },
+  "toolbar_store": {
+    "message": "Chrome Web Store कडून स्वयंचलित अद्यतने मिळवा..."
+  },
+  "options_take_note": {
+    "message": "ते बंद असताना, डाउनलोड ब्राउझरमध्येच राहतात. एक्स्टेंशनच्या बटणावर क्लिक केल्यानेही तेच होते."
+  },
+  "options_what_to_do": {
+    "message": "काय करायचे ते पहा"
+  },
+  "options_more": {
+    "message": "अधिक"
+  },
+  "page_checking": {
+    "message": "Dannex Download Manager शोधत आहे…"
+  },
+  "page_on_lead": {
+    "message": "या ब्राउझरमध्ये तुम्ही सुरू केलेले डाउनलोड Dannex Download Manager कडे जातात."
+  },
+  "page_off_lead": {
+    "message": "ते बंद आहे, म्हणून डाउनलोड या ब्राउझरमध्येच राहतात."
+  },
+  "page_remote_title": {
+    "message": "डाउनलोड दुसऱ्या Dannex Download Manager कडे जातात"
+  },
+  "page_remote_lead": {
+    "message": "या ब्राउझरमध्ये तुम्ही सुरू केलेले डाउनलोड $address$ वरील Dannex Download Manager कडे जातात.",
+    "placeholders": {
+      "address": {
+        "content": "$1",
+        "example": "https://192.168.1.10:8463/"
+      }
+    }
+  },
+  "page_lead_not_installed": {
+    "message": "हे एक्स्टेंशन Dannex Download Manager सोबत काम करते, जे तुमच्या संगणकासाठी मोफत डाउनलोड मॅनेजर आहे. ते इन्स्टॉल करा, आणि हे पृष्ठ आपोआप अद्यतनित होईल."
+  },
+  "page_lead_not_running": {
+    "message": "ब्राउझरने ते सुरू करण्याचा प्रयत्न केला, पण खूप वेळ लागला. Dannex Download Manager स्वतः सुरू करा, मग पुन्हा प्रयत्न करा."
+  },
+  "page_lead_host_failed": {
+    "message": "सहसा सुरक्षा सॉफ्टवेअर हे कारण असते. तुमच्या अँटिव्हायरस प्रोग्राममध्ये Dannex Download Manager ला परवानगी द्या, किंवा ते पुन्हा इन्स्टॉल करा."
+  },
+  "page_lead_forbidden": {
+    "message": "Dannex Download Manager ची ही आवृत्ती या एक्स्टेंशनसाठी खूप जुनी आहे. नवीनतम इन्स्टॉल करा."
+  },
+  "page_lead_too_large": {
+    "message": "साइटने Dannex Download Manager स्वीकारते त्यापेक्षा जास्त साइन-इन डेटा पाठवला, म्हणून ब्राउझरने डाउनलोड स्वतःकडे ठेवले. साइटवरून साइन आउट करून पुन्हा साइन इन केल्यास सहसा निराकरण होते."
+  },
+  "page_download": {
+    "message": "Dannex Download Manager डाउनलोड करा"
+  },
+  "page_files_windows": {
+    "message": "Windows 10 आणि 11 साठी."
+  },
+  "page_files_macos": {
+    "message": "Mac साठी (.dmg डिस्क इमेज)."
+  },
+  "page_files_linux": {
+    "message": "Linux साठी (AppImage, .deb किंवा .rpm)."
+  },
+  "page_files_other": {
+    "message": "Windows, Mac आणि Linux संगणकांसाठी."
+  },
+  "page_all_downloads": {
+    "message": "सर्व डाउनलोड"
+  },
+  "page_step_windows": {
+    "message": "तुम्ही डाउनलोड केलेले सेटअप चालवा."
+  },
+  "page_step_macos": {
+    "message": ".dmg उघडा, Dannex Download Manager ला Applications मध्ये ओढा, आणि एकदा सुरू करा."
+  },
+  "page_step_linux": {
+    "message": ".deb किंवा .rpm इन्स्टॉल करा (किंवा AppImage चालवा), मग Dannex Download Manager एकदा सुरू करा."
+  },
+  "page_step_other": {
+    "message": "Dannex Download Manager Windows, Mac आणि Linux संगणकांवर चालते. त्यापैकी एकावर ते इन्स्टॉल करा, आणि तिथल्या ब्राउझरमध्ये हे एक्स्टेंशन जोडा."
+  },
+  "page_step_wait": {
+    "message": "हे पृष्ठ उघडे ठेवा. Dannex Download Manager तयार झाल्यावर ते आपोआप बदलते."
+  },
+  "page_step_restart": {
+    "message": "एका मिनिटानंतरही काही नाही? ब्राउझर पुन्हा सुरू करा."
+  },
+  "page_step_installed": {
+    "message": "आधीच इन्स्टॉल केले आहे? Dannex Download Manager मध्ये पर्याय → सामान्य → ब्राउझर एकत्रीकरण तपासा उघडा."
+  },
+  "page_try_again": {
+    "message": "पुन्हा प्रयत्न करा"
+  },
+  "page_app_options": {
+    "message": "Dannex Download Manager चे पर्याय उघडा"
+  },
+  "page_duplicate_title": {
+    "message": "ही प्रत काढा"
+  },
+  "page_duplicate_lead": {
+    "message": "Chrome Web Store मधील प्रत या ब्राउझरमध्येही इन्स्टॉल आहे, आणि ती स्वतःला अद्ययावत ठेवते. या प्रतीची गरज नाही."
+  },
+  "page_remove": {
+    "message": "ही प्रत काढा"
+  },
+  "page_extensions": {
+    "message": "एक्स्टेंशन पृष्ठ उघडा"
+  },
+  "page_update_app_how": {
+    "message": "Dannex Download Manager मध्ये हे निवडा: मदत → अद्यतने तपासा..."
+  },
+  "page_behind": {
+    "message": "या एक्स्टेंशनची नवीन आवृत्ती Dannex Download Manager $version$ सोबत आली.",
+    "placeholders": {
+      "version": {
+        "content": "$1",
+        "example": "0.7.0"
+      }
+    }
+  },
+  "page_behind_store": {
+    "message": "ब्राउझर काही तासांत आपोआप अद्यतनित करतो, किंवा आता अद्यतने तपासा वापरून."
+  },
+  "page_behind_unpacked": {
+    "message": "वापरण्यासाठी एक्स्टेंशन पुन्हा लोड करा."
+  },
+  "page_behind_other": {
+    "message": "तुम्ही हे जोडले तसे, Dannex Download Manager च्या फोल्डरमधून नवे जोडा."
+  },
+  "page_check_updates": {
+    "message": "अद्यतने तपासा"
+  },
+  "page_up_to_date": {
+    "message": "अजून नवीन आवृत्ती नाही. ब्राउझर आपोआप पुन्हा तपासतो."
+  },
+  "page_reload": {
+    "message": "एक्स्टेंशन पुन्हा लोड करा"
+  },
+  "page_store": {
+    "message": "स्वयंचलित अद्यतने मिळवा: हे एक्स्टेंशन Chrome Web Store मधून जोडा, मग ही प्रत काढा."
+  },
+  "page_open_store": {
+    "message": "Chrome Web Store उघडा"
+  },
+  "page_temporary": {
+    "message": "हे तात्पुरते ॲड-ऑन म्हणून जोडले असल्याने Firefox बंद होताना हे ॲड-ऑन काढून टाकेल."
+  },
+  "page_site_access": {
+    "message": "या एक्स्टेंशनला फक्त काही साइटवर परवानगी आहे, म्हणून इतर साइटचे डाउनलोड ब्राउझरमध्येच राहतात."
+  },
+  "page_allow_sites": {
+    "message": "सर्व साइटवर परवानगी द्या"
+  },
+  "page_private": {
+    "message": "खाजगी विंडोमधील डाउनलोड ब्राउझरमध्येच राहतात, कारण या एक्स्टेंशनला तिथे परवानगी नाही."
+  },
+  "page_private_chromium": {
+    "message": "ते बदलण्यासाठी, त्याच्या तपशील पृष्ठावर गुप्त मोडमध्ये परवानगी द्या चालू करा."
+  },
+  "page_learn_more": {
+    "message": "अधिक जाणून घ्या"
+  }
+}

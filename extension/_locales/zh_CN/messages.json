@@ -1,0 +1,443 @@
+{
+  "name": {
+    "message": "DDM Integration Module"
+  },
+  "description": {
+    "message": "将下载从浏览器交给 Dannex Download Manager。"
+  },
+  "menu": {
+    "message": "使用 DDM 下载"
+  },
+  "video_download": {
+    "message": "下载视频"
+  },
+  "video_more": {
+    "message": "更多选项"
+  },
+  "video_hide_here": {
+    "message": "仅在此视频上隐藏"
+  },
+  "video_never_site": {
+    "message": "从不在 $site$ 显示",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "video_settings": {
+    "message": "按钮设置..."
+  },
+  "video_sent": {
+    "message": "已发送到 DDM"
+  },
+  "video_failed": {
+    "message": "Dannex Download Manager 未安装或未启动"
+  },
+  "video_drag": {
+    "message": "拖动以沿视频边缘移动"
+  },
+  "menu_selected": {
+    "message": "使用 DDM 下载选定链接"
+  },
+  "menu_all": {
+    "message": "使用 DDM 下载所有链接"
+  },
+  "menu_images": {
+    "message": "使用 DDM 下载所有图像"
+  },
+  "menu_media": {
+    "message": "使用 DDM 下载所有视频和音频"
+  },
+  "status_not_installed": {
+    "message": "Dannex Download Manager 未安装"
+  },
+  "status_installed": {
+    "message": "Dannex Download Manager 已安装"
+  },
+  "status_forbidden": {
+    "message": "更新 Dannex Download Manager"
+  },
+  "status_not_running": {
+    "message": "Dannex Download Manager 未启动"
+  },
+  "status_host_failed": {
+    "message": "有程序正在阻止 Dannex Download Manager"
+  },
+  "status_too_large": {
+    "message": "上次的下载无法发送到 Dannex Download Manager"
+  },
+  "status_update_app": {
+    "message": "更新 Dannex Download Manager 以获得此扩展的全部功能。"
+  },
+  "popup_take": {
+    "message": "将下载发送到 Dannex Download Manager"
+  },
+  "popup_proxy": {
+    "message": "通过此浏览器的 VPN 或代理下载"
+  },
+  "popup_proxy_title": {
+    "message": "如果您在此浏览器中使用 VPN 或代理扩展，请开启此项。浏览器会请求您允许一次。"
+  },
+  "popup_proxy_title_chromium": {
+    "message": "如果您在此浏览器中使用 VPN 或代理扩展，请开启此项。关闭时，扩展不会查看浏览器的代理。"
+  },
+  "popup_help": {
+    "message": "帮助"
+  },
+  "page_support": {
+    "message": "支持 DDM"
+  },
+  "popup_declined": {
+    "message": "您的上一个下载保留在了浏览器中：$name$",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "setup.png"
+      }
+    }
+  },
+  "popup_declined_unnamed": {
+    "message": "您的上一个下载保留在了浏览器中。"
+  },
+  "declined_file_type": {
+    "message": "其文件类型不在 Dannex Download Manager 的列表中（“选项”→“文件类型”）。"
+  },
+  "declined_site": {
+    "message": "其站点在 Dannex Download Manager 的忽略站点列表中（“选项”→“文件类型”）。"
+  },
+  "declined_address": {
+    "message": "其地址在 Dannex Download Manager 的忽略地址列表中（“选项”→“文件类型”）。"
+  },
+  "declined_small": {
+    "message": "它小于 Dannex Download Manager 接管的最小文件（“选项”→“文件类型”）。"
+  },
+  "declined_browser": {
+    "message": "此浏览器未在 Dannex Download Manager 的“选项”→“常规”中勾选。"
+  },
+  "declined_integration_off": {
+    "message": "浏览器集成已在 Dannex Download Manager 的“选项”→“常规”中关闭。"
+  },
+  "declined_site_access": {
+    "message": "此扩展不允许在该站点上使用。"
+  },
+  "declined_handed_back": {
+    "message": "您已在 Dannex Download Manager 中为此项选择了使用浏览器下载。"
+  },
+  "video_off": {
+    "message": "此站点上的下载按钮已关闭"
+  },
+  "video_drm": {
+    "message": "受保护视频: 无法保存"
+  },
+  "video_unnamed": {
+    "message": "无法判断这是哪个视频：请打开该视频自己的页面再试"
+  },
+  "video_looking": {
+    "message": "正在查找画质…"
+  },
+  "video_open_mdm": {
+    "message": "在 DDM 中打开…"
+  },
+  "video_no_choices": {
+    "message": "此处没有可下载的视频"
+  },
+  "video_playlist": {
+    "message": "视频列表：请在 Dannex Download Manager 中选择"
+  },
+  "video_no_ytdlp": {
+    "message": "Dannex Download Manager 需要 yt-dlp 才能下载此视频。请选择“在 DDM 中打开…”进行安装。"
+  },
+  "video_too_long": {
+    "message": "查找耗时过长"
+  },
+  "video_busy": {
+    "message": "Dannex Download Manager 正忙于处理其他视频"
+  },
+  "video_queued": {
+    "message": "已添加到队列"
+  },
+  "video_failed_lookup": {
+    "message": "无法查找"
+  },
+  "video_tab_video": {
+    "message": "视频"
+  },
+  "video_tab_audio": {
+    "message": "音频"
+  },
+  "video_open_post": {
+    "message": "打开帖子，然后使用那里的按钮"
+  },
+  "video_audio_original": {
+    "message": "仅音频，原始 $type$",
+    "placeholders": {
+      "type": {
+        "content": "$1",
+        "example": "M4A"
+      }
+    }
+  },
+  "video_audio_only": {
+    "message": "仅音频 $type$",
+    "placeholders": {
+      "type": {
+        "content": "$1",
+        "example": "MP3 320 kbps"
+      }
+    }
+  },
+  "video_pick_waiting": {
+    "message": "DDM 就绪后立即开始…"
+  },
+  "video_pick_gone": {
+    "message": "该画质不可用：请选择其他画质"
+  },
+  "popup_send_to": {
+    "message": "将下载发送到"
+  },
+  "popup_send_here": {
+    "message": "此电脑"
+  },
+  "popup_send_remote": {
+    "message": "另一台计算机上的 Dannex Download Manager"
+  },
+  "popup_remote_code": {
+    "message": "配对代码"
+  },
+  "popup_remote_open": {
+    "message": "打开它"
+  },
+  "popup_remote_pair": {
+    "message": "配对"
+  },
+  "popup_remote_help": {
+    "message": "请先在此浏览器中打开其地址，并忽略安全警告继续访问。然后输入其“选项”→“远程”→“配对设备”中的代码。"
+  },
+  "status_remote": {
+    "message": "下载发送到 $address$",
+    "placeholders": {
+      "address": {
+        "content": "$1",
+        "example": "https://192.168.1.10:8463/"
+      }
+    }
+  },
+  "remote_address": {
+    "message": "输入其 https:// 地址。"
+  },
+  "remote_unreachable": {
+    "message": "无法连接。请在此浏览器中打开其地址，忽略安全警告继续访问，然后重试。"
+  },
+  "remote_wrong_code": {
+    "message": "代码错误。"
+  },
+  "remote_no_code": {
+    "message": "尚无可输入的代码：请先在那里点击“配对设备”。"
+  },
+  "remote_too_soon": {
+    "message": "请稍候片刻，然后重试。"
+  },
+  "remote_failed": {
+    "message": "操作失败。请重试。"
+  },
+  "remote_device_name": {
+    "message": "浏览器扩展"
+  },
+  "badge_off": {
+    "message": "关"
+  },
+  "tip_on": {
+    "message": "Dannex Download Manager 已开启。点击以关闭。"
+  },
+  "tip_off": {
+    "message": "Dannex Download Manager 已关闭。点击以开启。"
+  },
+  "tip_remote": {
+    "message": "下载将发送到 $address$ 上的 Dannex Download Manager。点击以关闭。",
+    "placeholders": {
+      "address": {
+        "content": "$1",
+        "example": "https://192.168.1.10:8463/"
+      }
+    }
+  },
+  "status_off_in_app": {
+    "message": "已在 Dannex Download Manager 中关闭"
+  },
+  "status_duplicate": {
+    "message": "已安装此扩展的另一个副本"
+  },
+  "click_fix": {
+    "message": "点击查看处理方法。"
+  },
+  "click_details": {
+    "message": "点击查看详情。"
+  },
+  "toolbar_exclude": {
+    "message": "不接管此站点的下载"
+  },
+  "toolbar_help": {
+    "message": "帮助"
+  },
+  "toolbar_store": {
+    "message": "从 Chrome 应用商店获取自动更新..."
+  },
+  "options_take_note": {
+    "message": "关闭后，下载将保留在浏览器中。点击扩展按钮也有同样效果。"
+  },
+  "options_what_to_do": {
+    "message": "查看处理方法"
+  },
+  "options_more": {
+    "message": "更多"
+  },
+  "page_checking": {
+    "message": "正在查找 Dannex Download Manager…"
+  },
+  "page_on_lead": {
+    "message": "您在此浏览器中开始的下载将交给 Dannex Download Manager。"
+  },
+  "page_off_lead": {
+    "message": "已关闭，因此下载将保留在此浏览器中。"
+  },
+  "page_remote_title": {
+    "message": "下载将发送到另一个 Dannex Download Manager"
+  },
+  "page_remote_lead": {
+    "message": "您在此浏览器中开始的下载将交给 $address$ 上的 Dannex Download Manager。",
+    "placeholders": {
+      "address": {
+        "content": "$1",
+        "example": "https://192.168.1.10:8463/"
+      }
+    }
+  },
+  "page_lead_not_installed": {
+    "message": "此扩展配合 Dannex Download Manager 使用，这是一款适用于电脑的免费下载管理器。安装后，此页面会自动更新。"
+  },
+  "page_lead_not_running": {
+    "message": "浏览器尝试启动它，但耗时过长。请自行启动 Dannex Download Manager，然后重试。"
+  },
+  "page_lead_host_failed": {
+    "message": "通常是安全软件所致。请在杀毒程序中允许 Dannex Download Manager，或重新安装。"
+  },
+  "page_lead_forbidden": {
+    "message": "此版本的 Dannex Download Manager 对此扩展而言太旧。请安装最新版本。"
+  },
+  "page_lead_too_large": {
+    "message": "站点发送的登录数据超出了 Dannex Download Manager 的接受范围，因此浏览器保留了该下载。退出站点并重新登录通常可以解决。"
+  },
+  "page_download": {
+    "message": "下载 Dannex Download Manager"
+  },
+  "page_files_windows": {
+    "message": "适用于 Windows 10 和 11。"
+  },
+  "page_files_macos": {
+    "message": "适用于 Mac（.dmg 磁盘映像）。"
+  },
+  "page_files_linux": {
+    "message": "适用于 Linux（AppImage、.deb 或 .rpm）。"
+  },
+  "page_files_other": {
+    "message": "适用于 Windows、Mac 和 Linux 计算机。"
+  },
+  "page_all_downloads": {
+    "message": "所有下载"
+  },
+  "page_step_windows": {
+    "message": "运行您下载的安装程序。"
+  },
+  "page_step_macos": {
+    "message": "打开 .dmg，将 Dannex Download Manager 拖到“应用程序”，然后启动一次。"
+  },
+  "page_step_linux": {
+    "message": "安装 .deb 或 .rpm（或运行 AppImage），然后启动一次 Dannex Download Manager。"
+  },
+  "page_step_other": {
+    "message": "Dannex Download Manager 可在 Windows、Mac 和 Linux 计算机上运行。请在其中一台上安装，并在该计算机的浏览器中添加此扩展。"
+  },
+  "page_step_wait": {
+    "message": "请保持此页面打开。Dannex Download Manager 就绪后，它会自动更新。"
+  },
+  "page_step_restart": {
+    "message": "一分钟后仍无反应？请重启浏览器。"
+  },
+  "page_step_installed": {
+    "message": "已安装？在 Dannex Download Manager 中，打开“选项”→“常规”→“测试浏览器集成”。"
+  },
+  "page_try_again": {
+    "message": "重试"
+  },
+  "page_app_options": {
+    "message": "打开 Dannex Download Manager 的选项"
+  },
+  "page_duplicate_title": {
+    "message": "移除此副本"
+  },
+  "page_duplicate_lead": {
+    "message": "此浏览器中也安装了来自 Chrome 应用商店的副本，且会自动保持最新。无需此副本。"
+  },
+  "page_remove": {
+    "message": "移除此副本"
+  },
+  "page_extensions": {
+    "message": "打开扩展页面"
+  },
+  "page_update_app_how": {
+    "message": "在 Dannex Download Manager 中，依次选择：帮助 → 检查更新..."
+  },
+  "page_behind": {
+    "message": "Dannex Download Manager $version$ 附带了此扩展的更新版本。",
+    "placeholders": {
+      "version": {
+        "content": "$1",
+        "example": "0.7.0"
+      }
+    }
+  },
+  "page_behind_store": {
+    "message": "浏览器会在几小时内自动更新它，或立即点击“检查更新”。"
+  },
+  "page_behind_unpacked": {
+    "message": "请重新加载扩展以使用它。"
+  },
+  "page_behind_other": {
+    "message": "请像添加此扩展一样，从 Dannex Download Manager 的文件夹添加新版本。"
+  },
+  "page_check_updates": {
+    "message": "检查更新"
+  },
+  "page_up_to_date": {
+    "message": "暂无更新版本。浏览器会自动再次检查。"
+  },
+  "page_reload": {
+    "message": "重新加载扩展"
+  },
+  "page_store": {
+    "message": "获取自动更新：请从 Chrome 应用商店添加此扩展，然后移除此副本。"
+  },
+  "page_open_store": {
+    "message": "打开 Chrome 应用商店"
+  },
+  "page_temporary": {
+    "message": "Firefox 将在关闭时移除此附加组件，因为它是作为临时附加组件添加的。"
+  },
+  "page_site_access": {
+    "message": "此扩展仅允许在部分站点上使用，因此其他站点的下载会保留在浏览器中。"
+  },
+  "page_allow_sites": {
+    "message": "允许访问所有站点"
+  },
+  "page_private": {
+    "message": "来自隐私窗口的下载会留在浏览器中，因为此扩展在其中不被允许。"
+  },
+  "page_private_chromium": {
+    "message": "要更改此设置，请在其详细信息页面中开启“在无痕模式下启用”。"
+  },
+  "page_learn_more": {
+    "message": "了解详情"
+  }
+}

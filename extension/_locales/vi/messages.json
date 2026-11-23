@@ -1,0 +1,443 @@
+{
+  "name": {
+    "message": "DDM Integration Module"
+  },
+  "description": {
+    "message": "Chuyển các bản tải xuống từ trình duyệt sang Dannex Download Manager."
+  },
+  "menu": {
+    "message": "Tải xuống bằng DDM"
+  },
+  "video_download": {
+    "message": "Tải xuống video"
+  },
+  "video_more": {
+    "message": "Tùy chọn khác"
+  },
+  "video_hide_here": {
+    "message": "Ẩn trên video này"
+  },
+  "video_never_site": {
+    "message": "Không hiển thị trên $site$ nữa",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "video_settings": {
+    "message": "Cài đặt nút..."
+  },
+  "video_sent": {
+    "message": "Đã gửi đến DDM"
+  },
+  "video_failed": {
+    "message": "Dannex Download Manager chưa được cài đặt hoặc chưa khởi động"
+  },
+  "video_drag": {
+    "message": "Kéo để di chuyển dọc theo cạnh video"
+  },
+  "menu_selected": {
+    "message": "Tải xuống các liên kết đã chọn bằng DDM"
+  },
+  "menu_all": {
+    "message": "Tải xuống tất cả liên kết bằng DDM"
+  },
+  "menu_images": {
+    "message": "Tải xuống tất cả hình ảnh bằng DDM"
+  },
+  "menu_media": {
+    "message": "Tải xuống tất cả video và âm thanh bằng DDM"
+  },
+  "status_not_installed": {
+    "message": "Dannex Download Manager chưa được cài đặt"
+  },
+  "status_installed": {
+    "message": "Dannex Download Manager đã được cài đặt"
+  },
+  "status_forbidden": {
+    "message": "Cập nhật Dannex Download Manager"
+  },
+  "status_not_running": {
+    "message": "Dannex Download Manager không khởi động được"
+  },
+  "status_host_failed": {
+    "message": "Có thứ đang chặn Dannex Download Manager"
+  },
+  "status_too_large": {
+    "message": "Bản tải xuống gần nhất không thể chuyển đến Dannex Download Manager"
+  },
+  "status_update_app": {
+    "message": "Cập nhật Dannex Download Manager để dùng mọi tính năng của tiện ích mở rộng này."
+  },
+  "popup_take": {
+    "message": "Gửi tải xuống đến Dannex Download Manager"
+  },
+  "popup_proxy": {
+    "message": "Tải xuống qua VPN hoặc proxy của trình duyệt này"
+  },
+  "popup_proxy_title": {
+    "message": "Hãy bật mục này nếu bạn dùng tiện ích VPN hoặc proxy trong trình duyệt này. Trình duyệt sẽ hỏi bạn cho phép một lần."
+  },
+  "popup_proxy_title_chromium": {
+    "message": "Hãy bật mục này nếu bạn dùng tiện ích VPN hoặc proxy trong trình duyệt này. Khi tắt, tiện ích không xem proxy của trình duyệt."
+  },
+  "popup_help": {
+    "message": "Trợ giúp"
+  },
+  "page_support": {
+    "message": "Ủng hộ DDM"
+  },
+  "popup_declined": {
+    "message": "Bản tải xuống gần nhất của bạn đã ở lại trình duyệt: $name$",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "setup.png"
+      }
+    }
+  },
+  "popup_declined_unnamed": {
+    "message": "Bản tải xuống gần nhất của bạn đã ở lại trình duyệt."
+  },
+  "declined_file_type": {
+    "message": "Loại tệp của nó không có trong danh sách của Dannex Download Manager (Tùy chọn → Loại tệp)."
+  },
+  "declined_site": {
+    "message": "Trang web của nó nằm trong danh sách trang web để yên của Dannex Download Manager (Tùy chọn → Loại tệp)."
+  },
+  "declined_address": {
+    "message": "Địa chỉ của nó nằm trong danh sách địa chỉ để yên của Dannex Download Manager (Tùy chọn → Loại tệp)."
+  },
+  "declined_small": {
+    "message": "Tệp nhỏ hơn tệp nhỏ nhất mà Dannex Download Manager tiếp nhận (Tùy chọn → Loại tệp)."
+  },
+  "declined_browser": {
+    "message": "Trình duyệt này chưa được chọn trong Tùy chọn → Chung của Dannex Download Manager."
+  },
+  "declined_integration_off": {
+    "message": "Tích hợp trình duyệt đã tắt trong Tùy chọn → Chung của Dannex Download Manager."
+  },
+  "declined_site_access": {
+    "message": "Tiện ích mở rộng này không được phép trên trang web đó."
+  },
+  "declined_handed_back": {
+    "message": "Bạn đã chọn Tải xuống bằng trình duyệt cho mục này trong Dannex Download Manager."
+  },
+  "video_off": {
+    "message": "Nút tải xuống bị tắt trên trang web này"
+  },
+  "video_drm": {
+    "message": "Video được bảo vệ: không thể lưu"
+  },
+  "video_unnamed": {
+    "message": "Không xác định được đây là video nào: hãy mở trang riêng của video và thử ở đó"
+  },
+  "video_looking": {
+    "message": "Đang tìm các chất lượng…"
+  },
+  "video_open_mdm": {
+    "message": "Mở trong DDM…"
+  },
+  "video_no_choices": {
+    "message": "Không có video nào để tải xuống ở đây"
+  },
+  "video_playlist": {
+    "message": "Danh sách video: hãy chọn chúng trong Dannex Download Manager"
+  },
+  "video_no_ytdlp": {
+    "message": "Dannex Download Manager cần yt-dlp cho video này. Chọn Mở trong DDM… để cài đặt."
+  },
+  "video_too_long": {
+    "message": "Việc tìm kiếm mất quá nhiều thời gian"
+  },
+  "video_busy": {
+    "message": "Dannex Download Manager đang bận với các video khác"
+  },
+  "video_queued": {
+    "message": "Đã thêm vào hàng đợi"
+  },
+  "video_failed_lookup": {
+    "message": "Không thể tìm kiếm"
+  },
+  "video_tab_video": {
+    "message": "Video"
+  },
+  "video_tab_audio": {
+    "message": "Âm thanh"
+  },
+  "video_open_post": {
+    "message": "Mở bài đăng, sau đó dùng nút ở đó"
+  },
+  "video_audio_original": {
+    "message": "Chỉ âm thanh, gốc $type$",
+    "placeholders": {
+      "type": {
+        "content": "$1",
+        "example": "M4A"
+      }
+    }
+  },
+  "video_audio_only": {
+    "message": "Chỉ âm thanh $type$",
+    "placeholders": {
+      "type": {
+        "content": "$1",
+        "example": "MP3 320 kbps"
+      }
+    }
+  },
+  "video_pick_waiting": {
+    "message": "Sẽ bắt đầu ngay khi DDM sẵn sàng…"
+  },
+  "video_pick_gone": {
+    "message": "Chất lượng đó không có sẵn: hãy chọn chất lượng khác"
+  },
+  "popup_send_to": {
+    "message": "Gửi tải xuống đến"
+  },
+  "popup_send_here": {
+    "message": "Máy tính này"
+  },
+  "popup_send_remote": {
+    "message": "Dannex Download Manager trên máy tính khác"
+  },
+  "popup_remote_code": {
+    "message": "Mã ghép nối"
+  },
+  "popup_remote_open": {
+    "message": "Mở"
+  },
+  "popup_remote_pair": {
+    "message": "Ghép nối"
+  },
+  "popup_remote_help": {
+    "message": "Trước tiên hãy mở địa chỉ của nó trong trình duyệt này và tiếp tục qua cảnh báo bảo mật. Sau đó nhập mã trong Tùy chọn → Điều khiển từ xa → Ghép nối thiết bị của nó."
+  },
+  "status_remote": {
+    "message": "Tải xuống chuyển đến $address$",
+    "placeholders": {
+      "address": {
+        "content": "$1",
+        "example": "https://192.168.1.10:8463/"
+      }
+    }
+  },
+  "remote_address": {
+    "message": "Nhập địa chỉ https:// của nó."
+  },
+  "remote_unreachable": {
+    "message": "Không thể kết nối. Hãy mở địa chỉ của nó trong trình duyệt này, tiếp tục qua cảnh báo bảo mật, rồi thử lại."
+  },
+  "remote_wrong_code": {
+    "message": "Sai mã."
+  },
+  "remote_no_code": {
+    "message": "Chưa có mã để nhập: hãy nhấp Ghép nối thiết bị ở đó trước."
+  },
+  "remote_too_soon": {
+    "message": "Đợi một lát, sau đó thử lại."
+  },
+  "remote_failed": {
+    "message": "Không thành công. Thử lại."
+  },
+  "remote_device_name": {
+    "message": "Tiện ích mở rộng trình duyệt"
+  },
+  "badge_off": {
+    "message": "TẮT"
+  },
+  "tip_on": {
+    "message": "Dannex Download Manager đang bật. Nhấp để tắt."
+  },
+  "tip_off": {
+    "message": "Dannex Download Manager đang tắt. Nhấp để bật."
+  },
+  "tip_remote": {
+    "message": "Bản tải xuống chuyển đến Dannex Download Manager tại $address$. Nhấp để tắt.",
+    "placeholders": {
+      "address": {
+        "content": "$1",
+        "example": "https://192.168.1.10:8463/"
+      }
+    }
+  },
+  "status_off_in_app": {
+    "message": "Đã tắt trong Dannex Download Manager"
+  },
+  "status_duplicate": {
+    "message": "Đã cài đặt một bản sao khác của tiện ích mở rộng này"
+  },
+  "click_fix": {
+    "message": "Nhấp để xem cách xử lý."
+  },
+  "click_details": {
+    "message": "Nhấp để xem chi tiết."
+  },
+  "toolbar_exclude": {
+    "message": "Không tiếp nhận bản tải xuống từ trang web này"
+  },
+  "toolbar_help": {
+    "message": "Trợ giúp"
+  },
+  "toolbar_store": {
+    "message": "Nhận bản cập nhật tự động từ Chrome Web Store..."
+  },
+  "options_take_note": {
+    "message": "Khi tắt, các bản tải xuống ở lại trình duyệt. Nhấp nút của tiện ích mở rộng cũng có tác dụng tương tự."
+  },
+  "options_what_to_do": {
+    "message": "Xem cách xử lý"
+  },
+  "options_more": {
+    "message": "Thêm"
+  },
+  "page_checking": {
+    "message": "Đang tìm Dannex Download Manager…"
+  },
+  "page_on_lead": {
+    "message": "Các bản tải xuống bạn bắt đầu trong trình duyệt này sẽ chuyển đến Dannex Download Manager."
+  },
+  "page_off_lead": {
+    "message": "Tiện ích đang tắt nên các bản tải xuống ở lại trình duyệt này."
+  },
+  "page_remote_title": {
+    "message": "Bản tải xuống chuyển đến Dannex Download Manager khác"
+  },
+  "page_remote_lead": {
+    "message": "Các bản tải xuống bạn bắt đầu trong trình duyệt này sẽ chuyển đến Dannex Download Manager tại $address$.",
+    "placeholders": {
+      "address": {
+        "content": "$1",
+        "example": "https://192.168.1.10:8463/"
+      }
+    }
+  },
+  "page_lead_not_installed": {
+    "message": "Tiện ích mở rộng này hoạt động với Dannex Download Manager, một trình quản lý tải xuống miễn phí cho máy tính của bạn. Hãy cài đặt, và trang này sẽ tự cập nhật."
+  },
+  "page_lead_not_running": {
+    "message": "Trình duyệt đã thử khởi động nhưng mất quá nhiều thời gian. Hãy tự khởi động Dannex Download Manager, rồi thử lại."
+  },
+  "page_lead_host_failed": {
+    "message": "Thường là do phần mềm bảo mật. Hãy cho phép Dannex Download Manager trong chương trình diệt vi-rút của bạn, hoặc cài đặt lại."
+  },
+  "page_lead_forbidden": {
+    "message": "Phiên bản Dannex Download Manager này quá cũ so với tiện ích mở rộng. Hãy cài đặt bản mới nhất."
+  },
+  "page_lead_too_large": {
+    "message": "Trang web gửi nhiều dữ liệu đăng nhập hơn mức Dannex Download Manager chấp nhận, nên trình duyệt giữ lại bản tải xuống. Đăng xuất khỏi trang web rồi đăng nhập lại thường khắc phục được."
+  },
+  "page_download": {
+    "message": "Tải xuống Dannex Download Manager"
+  },
+  "page_files_windows": {
+    "message": "Dành cho Windows 10 và 11."
+  },
+  "page_files_macos": {
+    "message": "Dành cho Mac (ảnh đĩa .dmg)."
+  },
+  "page_files_linux": {
+    "message": "Dành cho Linux (AppImage, .deb hoặc .rpm)."
+  },
+  "page_files_other": {
+    "message": "Dành cho máy tính Windows, Mac và Linux."
+  },
+  "page_all_downloads": {
+    "message": "Tất cả bản tải xuống"
+  },
+  "page_step_windows": {
+    "message": "Chạy trình cài đặt bạn đã tải xuống."
+  },
+  "page_step_macos": {
+    "message": "Mở tệp .dmg, kéo Dannex Download Manager vào Applications, rồi khởi động một lần."
+  },
+  "page_step_linux": {
+    "message": "Cài đặt tệp .deb hoặc .rpm (hoặc chạy AppImage), rồi khởi động Dannex Download Manager một lần."
+  },
+  "page_step_other": {
+    "message": "Dannex Download Manager chạy trên máy tính Windows, Mac và Linux. Hãy cài đặt trên một máy, rồi thêm tiện ích mở rộng này vào trình duyệt ở đó."
+  },
+  "page_step_wait": {
+    "message": "Hãy giữ trang này mở. Trang tự thay đổi khi Dannex Download Manager sẵn sàng."
+  },
+  "page_step_restart": {
+    "message": "Một phút rồi vẫn chưa có gì? Hãy khởi động lại trình duyệt."
+  },
+  "page_step_installed": {
+    "message": "Đã cài đặt? Trong Dannex Download Manager, mở Tùy chọn → Chung → Kiểm tra tích hợp trình duyệt."
+  },
+  "page_try_again": {
+    "message": "Thử lại"
+  },
+  "page_app_options": {
+    "message": "Mở Tùy chọn của Dannex Download Manager"
+  },
+  "page_duplicate_title": {
+    "message": "Xóa bản sao này"
+  },
+  "page_duplicate_lead": {
+    "message": "Bản sao từ Chrome Web Store cũng đã được cài trong trình duyệt này và tự cập nhật. Không cần bản sao này."
+  },
+  "page_remove": {
+    "message": "Xóa bản sao này"
+  },
+  "page_extensions": {
+    "message": "Mở trang tiện ích mở rộng"
+  },
+  "page_update_app_how": {
+    "message": "Trong Dannex Download Manager, chọn Trợ giúp → Kiểm tra bản cập nhật..."
+  },
+  "page_behind": {
+    "message": "Bản mới hơn của tiện ích mở rộng này có kèm theo Dannex Download Manager $version$.",
+    "placeholders": {
+      "version": {
+        "content": "$1",
+        "example": "0.7.0"
+      }
+    }
+  },
+  "page_behind_store": {
+    "message": "Trình duyệt tự cập nhật trong vài giờ, hoặc ngay bây giờ bằng Kiểm tra bản cập nhật."
+  },
+  "page_behind_unpacked": {
+    "message": "Hãy tải lại tiện ích mở rộng để dùng."
+  },
+  "page_behind_other": {
+    "message": "Hãy thêm bản mới từ thư mục của Dannex Download Manager, như bạn đã thêm bản này."
+  },
+  "page_check_updates": {
+    "message": "Kiểm tra bản cập nhật"
+  },
+  "page_up_to_date": {
+    "message": "Chưa có phiên bản mới hơn. Trình duyệt sẽ tự kiểm tra lại."
+  },
+  "page_reload": {
+    "message": "Tải lại tiện ích mở rộng"
+  },
+  "page_store": {
+    "message": "Nhận bản cập nhật tự động: hãy thêm tiện ích mở rộng này từ Chrome Web Store, rồi xóa bản sao này."
+  },
+  "page_open_store": {
+    "message": "Mở Chrome Web Store"
+  },
+  "page_temporary": {
+    "message": "Firefox sẽ gỡ tiện ích bổ sung này khi đóng, vì nó được thêm dưới dạng tiện ích bổ sung tạm thời."
+  },
+  "page_site_access": {
+    "message": "Tiện ích mở rộng này chỉ được phép trên một số trang web, nên các bản tải xuống từ trang web khác ở lại trình duyệt."
+  },
+  "page_allow_sites": {
+    "message": "Cho phép trên mọi trang web"
+  },
+  "page_private": {
+    "message": "Các bản tải xuống từ cửa sổ riêng tư vẫn ở lại trình duyệt, vì tiện ích mở rộng này không được phép chạy ở đó."
+  },
+  "page_private_chromium": {
+    "message": "Để thay đổi, hãy bật Cho phép ở chế độ ẩn danh trên trang chi tiết của nó."
+  },
+  "page_learn_more": {
+    "message": "Tìm hiểu thêm"
+  }
+}

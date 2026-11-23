@@ -1,0 +1,443 @@
+{
+  "name": {
+    "message": "DDM Integration Module"
+  },
+  "description": {
+    "message": "브라우저에서 Dannex Download Manager으로 다운로드를 전달합니다."
+  },
+  "menu": {
+    "message": "DDM으로 다운로드"
+  },
+  "video_download": {
+    "message": "비디오 다운로드"
+  },
+  "video_more": {
+    "message": "추가 옵션"
+  },
+  "video_hide_here": {
+    "message": "이 비디오에서 숨기기"
+  },
+  "video_never_site": {
+    "message": "$site$에서는 다시 표시 안 함",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "video_settings": {
+    "message": "단추 설정..."
+  },
+  "video_sent": {
+    "message": "DDM으로 보냄"
+  },
+  "video_failed": {
+    "message": "Dannex Download Manager이(가) 설치되지 않았거나 시작되지 않았습니다."
+  },
+  "video_drag": {
+    "message": "비디오 가장자리를 따라 이동하려면 드래그하세요."
+  },
+  "menu_selected": {
+    "message": "DDM으로 선택한 링크 다운로드"
+  },
+  "menu_all": {
+    "message": "DDM으로 모든 링크 다운로드"
+  },
+  "menu_images": {
+    "message": "DDM으로 모든 이미지 다운로드"
+  },
+  "menu_media": {
+    "message": "DDM으로 모든 비디오 및 오디오 다운로드"
+  },
+  "status_not_installed": {
+    "message": "Dannex Download Manager 설치되지 않음"
+  },
+  "status_installed": {
+    "message": "Dannex Download Manager 설치됨"
+  },
+  "status_forbidden": {
+    "message": "Dannex Download Manager 업데이트"
+  },
+  "status_not_running": {
+    "message": "Dannex Download Manager 시작 실패"
+  },
+  "status_host_failed": {
+    "message": "Dannex Download Manager 차단됨"
+  },
+  "status_too_large": {
+    "message": "마지막 다운로드를 Dannex Download Manager(으)로 보내지 못했습니다"
+  },
+  "status_update_app": {
+    "message": "이 확장 프로그램의 모든 기능을 사용하려면 Dannex Download Manager을(를) 업데이트하세요."
+  },
+  "popup_take": {
+    "message": "Dannex Download Manager(으)로 다운로드 보내기"
+  },
+  "popup_proxy": {
+    "message": "이 브라우저의 VPN 또는 프록시를 통해 다운로드"
+  },
+  "popup_proxy_title": {
+    "message": "이 브라우저에서 VPN 또는 프록시 확장 프로그램을 사용하는 경우 켜세요. 브라우저가 한 번 허용 여부를 묻습니다."
+  },
+  "popup_proxy_title_chromium": {
+    "message": "이 브라우저에서 VPN 또는 프록시 확장 프로그램을 사용하는 경우 켜세요. 꺼져 있는 동안에는 확장 프로그램이 브라우저의 프록시를 확인하지 않습니다."
+  },
+  "popup_help": {
+    "message": "도움말"
+  },
+  "page_support": {
+    "message": "DDM 후원"
+  },
+  "popup_declined": {
+    "message": "마지막 다운로드가 브라우저에 남았습니다: $name$",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "setup.png"
+      }
+    }
+  },
+  "popup_declined_unnamed": {
+    "message": "마지막 다운로드가 브라우저에 남았습니다."
+  },
+  "declined_file_type": {
+    "message": "해당 파일 형식이 Dannex Download Manager의 목록에 없습니다(옵션 > 파일 형식)."
+  },
+  "declined_site": {
+    "message": "해당 사이트가 Dannex Download Manager의 제외할 사이트 목록에 있습니다(옵션 > 파일 형식)."
+  },
+  "declined_address": {
+    "message": "해당 주소가 Dannex Download Manager의 제외할 주소 목록에 있습니다(옵션 > 파일 형식)."
+  },
+  "declined_small": {
+    "message": "Dannex Download Manager에서 가져오는 가장 작은 파일보다 작습니다(옵션 > 파일 형식)."
+  },
+  "declined_browser": {
+    "message": "이 브라우저가 Dannex Download Manager의 옵션 > 일반에서 선택되어 있지 않습니다."
+  },
+  "declined_integration_off": {
+    "message": "브라우저 통합이 Dannex Download Manager의 옵션 > 일반에서 꺼져 있습니다."
+  },
+  "declined_site_access": {
+    "message": "이 확장 프로그램은 해당 사이트에서 허용되지 않습니다."
+  },
+  "declined_handed_back": {
+    "message": "Dannex Download Manager에서 이 다운로드에 대해 “브라우저로 다운로드”를 선택했습니다."
+  },
+  "video_off": {
+    "message": "이 사이트에서는 다운로드 단추가 꺼져 있습니다."
+  },
+  "video_drm": {
+    "message": "보호된 비디오: 저장할 수 없습니다."
+  },
+  "video_unnamed": {
+    "message": "어떤 비디오인지 알 수 없습니다. 비디오 자체 페이지를 열어 다시 시도하세요"
+  },
+  "video_looking": {
+    "message": "화질을 찾는 중…"
+  },
+  "video_open_mdm": {
+    "message": "DDM에서 열기…"
+  },
+  "video_no_choices": {
+    "message": "여기에는 다운로드할 비디오가 없습니다"
+  },
+  "video_playlist": {
+    "message": "비디오 목록: Dannex Download Manager에서 선택하세요"
+  },
+  "video_no_ytdlp": {
+    "message": "이 동영상에는 Dannex Download Manager에 yt-dlp가 필요합니다. DDM에서 열기… 를 선택하여 설치하세요."
+  },
+  "video_too_long": {
+    "message": "찾는 데 시간이 너무 오래 걸렸습니다"
+  },
+  "video_busy": {
+    "message": "Dannex Download Manager가 다른 비디오를 처리하는 중입니다"
+  },
+  "video_queued": {
+    "message": "대기열에 추가되었습니다"
+  },
+  "video_failed_lookup": {
+    "message": "찾지 못했습니다"
+  },
+  "video_tab_video": {
+    "message": "비디오"
+  },
+  "video_tab_audio": {
+    "message": "오디오"
+  },
+  "video_open_post": {
+    "message": "게시물을 열고 버튼을 사용하세요"
+  },
+  "video_audio_original": {
+    "message": "오디오만, 원본 $type$",
+    "placeholders": {
+      "type": {
+        "content": "$1",
+        "example": "M4A"
+      }
+    }
+  },
+  "video_audio_only": {
+    "message": "오디오만 $type$",
+    "placeholders": {
+      "type": {
+        "content": "$1",
+        "example": "MP3 320 kbps"
+      }
+    }
+  },
+  "video_pick_waiting": {
+    "message": "DDM이 준비되는 대로 시작합니다…"
+  },
+  "video_pick_gone": {
+    "message": "해당 화질을 사용할 수 없습니다. 다른 화질을 선택하세요"
+  },
+  "popup_send_to": {
+    "message": "다운로드 보낼 위치"
+  },
+  "popup_send_here": {
+    "message": "이 컴퓨터"
+  },
+  "popup_send_remote": {
+    "message": "다른 컴퓨터의 Dannex Download Manager"
+  },
+  "popup_remote_code": {
+    "message": "페어링 코드"
+  },
+  "popup_remote_open": {
+    "message": "열기"
+  },
+  "popup_remote_pair": {
+    "message": "페어링"
+  },
+  "popup_remote_help": {
+    "message": "먼저 이 브라우저에서 해당 주소를 열고 보안 경고를 넘어 계속하세요. 그런 다음 옵션 > 원격 > 장치 페어링의 코드를 입력하세요."
+  },
+  "status_remote": {
+    "message": "$address$으로 다운로드",
+    "placeholders": {
+      "address": {
+        "content": "$1",
+        "example": "https://192.168.1.10:8463/"
+      }
+    }
+  },
+  "remote_address": {
+    "message": "https:// 주소를 입력하세요."
+  },
+  "remote_unreachable": {
+    "message": "연결할 수 없습니다. 이 브라우저에서 해당 주소를 열고 보안 경고를 넘어 계속한 다음 다시 시도하세요."
+  },
+  "remote_wrong_code": {
+    "message": "잘못된 코드입니다."
+  },
+  "remote_no_code": {
+    "message": "입력할 코드가 아직 없습니다. 먼저 그쪽에서 장치 페어링을 클릭하세요."
+  },
+  "remote_too_soon": {
+    "message": "잠시 기다린 다음 다시 시도하세요."
+  },
+  "remote_failed": {
+    "message": "작동하지 않았습니다. 다시 시도하세요."
+  },
+  "remote_device_name": {
+    "message": "브라우저 확장"
+  },
+  "badge_off": {
+    "message": "꺼짐"
+  },
+  "tip_on": {
+    "message": "Dannex Download Manager 켜짐. 클릭하여 끄세요."
+  },
+  "tip_off": {
+    "message": "Dannex Download Manager 꺼짐. 클릭하여 켜세요."
+  },
+  "tip_remote": {
+    "message": "다운로드가 $address$의 Dannex Download Manager(으)로 전달됩니다. 끄려면 클릭하세요.",
+    "placeholders": {
+      "address": {
+        "content": "$1",
+        "example": "https://192.168.1.10:8463/"
+      }
+    }
+  },
+  "status_off_in_app": {
+    "message": "Dannex Download Manager에서 꺼짐"
+  },
+  "status_duplicate": {
+    "message": "이 확장 프로그램의 다른 복사본이 설치되어 있음"
+  },
+  "click_fix": {
+    "message": "해결 방법을 보려면 클릭하세요."
+  },
+  "click_details": {
+    "message": "자세한 내용을 보려면 클릭하세요."
+  },
+  "toolbar_exclude": {
+    "message": "이 사이트의 다운로드 가져오지 않음"
+  },
+  "toolbar_help": {
+    "message": "도움말"
+  },
+  "toolbar_store": {
+    "message": "Chrome 웹 스토어에서 자동 업데이트 받기..."
+  },
+  "options_take_note": {
+    "message": "꺼져 있으면 다운로드가 브라우저에 남습니다. 확장 프로그램의 단추를 클릭해도 같은 동작을 합니다."
+  },
+  "options_what_to_do": {
+    "message": "해결 방법 보기"
+  },
+  "options_more": {
+    "message": "더 보기"
+  },
+  "page_checking": {
+    "message": "Dannex Download Manager 찾는 중…"
+  },
+  "page_on_lead": {
+    "message": "이 브라우저에서 시작한 다운로드는 Dannex Download Manager(으)로 전달됩니다."
+  },
+  "page_off_lead": {
+    "message": "꺼져 있으므로 다운로드가 이 브라우저에 남습니다."
+  },
+  "page_remote_title": {
+    "message": "다운로드가 다른 Dannex Download Manager(으)로 전달됨"
+  },
+  "page_remote_lead": {
+    "message": "이 브라우저에서 시작한 다운로드는 $address$의 Dannex Download Manager(으)로 전달됩니다.",
+    "placeholders": {
+      "address": {
+        "content": "$1",
+        "example": "https://192.168.1.10:8463/"
+      }
+    }
+  },
+  "page_lead_not_installed": {
+    "message": "이 확장 프로그램은 컴퓨터용 무료 다운로드 관리자인 Dannex Download Manager과(와) 함께 작동합니다. 설치하면 이 페이지가 저절로 업데이트됩니다."
+  },
+  "page_lead_not_running": {
+    "message": "브라우저가 시작을 시도했지만 시간이 너무 오래 걸렸습니다. Dannex Download Manager을(를) 직접 시작한 다음 다시 시도하세요."
+  },
+  "page_lead_host_failed": {
+    "message": "보안 소프트웨어가 주된 원인입니다. 바이러스 백신 프로그램에서 Dannex Download Manager을(를) 허용하거나 다시 설치하세요."
+  },
+  "page_lead_forbidden": {
+    "message": "이 Dannex Download Manager 버전은 이 확장 프로그램에 비해 너무 오래되었습니다. 최신 버전을 설치하세요."
+  },
+  "page_lead_too_large": {
+    "message": "사이트가 Dannex Download Manager에서 허용하는 것보다 많은 로그인 데이터를 보내서 브라우저가 다운로드를 그대로 두었습니다. 사이트에서 로그아웃했다가 다시 로그인하면 대개 해결됩니다."
+  },
+  "page_download": {
+    "message": "Dannex Download Manager 다운로드"
+  },
+  "page_files_windows": {
+    "message": "Windows 10 및 11용입니다."
+  },
+  "page_files_macos": {
+    "message": "Mac용(.dmg 디스크 이미지)입니다."
+  },
+  "page_files_linux": {
+    "message": "Linux용(AppImage, .deb 또는 .rpm)입니다."
+  },
+  "page_files_other": {
+    "message": "Windows, Mac, Linux 컴퓨터용입니다."
+  },
+  "page_all_downloads": {
+    "message": "모든 다운로드"
+  },
+  "page_step_windows": {
+    "message": "다운로드한 설치 프로그램을 실행하세요."
+  },
+  "page_step_macos": {
+    "message": ".dmg를 열고 Dannex Download Manager을(를) 응용 프로그램으로 끌어다 놓은 다음 한 번 시작하세요."
+  },
+  "page_step_linux": {
+    "message": ".deb 또는 .rpm을 설치(또는 AppImage 실행)한 다음 Dannex Download Manager을(를) 한 번 시작하세요."
+  },
+  "page_step_other": {
+    "message": "Dannex Download Manager 앱은 Windows, Mac, Linux 컴퓨터에서 실행됩니다. 그중 한 곳에 설치하고, 그 컴퓨터의 브라우저에 이 확장 프로그램을 추가하세요."
+  },
+  "page_step_wait": {
+    "message": "이 페이지를 열어 두세요. Dannex Download Manager 준비가 끝나면 페이지가 저절로 바뀝니다."
+  },
+  "page_step_restart": {
+    "message": "1분이 지나도 변화가 없나요? 브라우저를 다시 시작하세요."
+  },
+  "page_step_installed": {
+    "message": "이미 설치했나요? Dannex Download Manager에서 옵션 > 일반 > 브라우저 통합 테스트를 여세요."
+  },
+  "page_try_again": {
+    "message": "다시 시도"
+  },
+  "page_app_options": {
+    "message": "Dannex Download Manager 옵션 열기"
+  },
+  "page_duplicate_title": {
+    "message": "이 복사본 제거"
+  },
+  "page_duplicate_lead": {
+    "message": "Chrome 웹 스토어의 복사본도 이 브라우저에 설치되어 있으며 자동으로 최신 상태를 유지합니다. 이 복사본은 필요하지 않습니다."
+  },
+  "page_remove": {
+    "message": "이 복사본 제거"
+  },
+  "page_extensions": {
+    "message": "확장 프로그램 페이지 열기"
+  },
+  "page_update_app_how": {
+    "message": "Dannex Download Manager에서 도움말 > 업데이트 확인..."
+  },
+  "page_behind": {
+    "message": "이 확장 프로그램의 새 버전이 Dannex Download Manager $version$에 포함되어 있습니다.",
+    "placeholders": {
+      "version": {
+        "content": "$1",
+        "example": "0.7.0"
+      }
+    }
+  },
+  "page_behind_store": {
+    "message": "브라우저가 몇 시간 안에 저절로 업데이트하며, 업데이트 확인으로 바로 할 수도 있습니다."
+  },
+  "page_behind_unpacked": {
+    "message": "확장 프로그램을 다시 로드해야 사용할 수 있습니다."
+  },
+  "page_behind_other": {
+    "message": "이 확장 프로그램을 추가했던 것처럼 Dannex Download Manager 폴더에서 새 버전을 추가하세요."
+  },
+  "page_check_updates": {
+    "message": "업데이트 확인"
+  },
+  "page_up_to_date": {
+    "message": "아직 새 버전이 없습니다. 브라우저가 알아서 다시 확인합니다."
+  },
+  "page_reload": {
+    "message": "확장 프로그램 다시 로드"
+  },
+  "page_store": {
+    "message": "자동 업데이트를 받으려면 Chrome 웹 스토어에서 이 확장 프로그램을 추가한 다음 이 복사본을 제거하세요."
+  },
+  "page_open_store": {
+    "message": "Chrome 웹 스토어 열기"
+  },
+  "page_temporary": {
+    "message": "임시 추가 기능으로 추가했기 때문에 Firefox를 닫으면 이 추가 기능이 제거됩니다."
+  },
+  "page_site_access": {
+    "message": "이 확장 프로그램은 일부 사이트에서만 허용되므로 다른 사이트의 다운로드는 브라우저에 남습니다."
+  },
+  "page_allow_sites": {
+    "message": "모든 사이트에서 허용"
+  },
+  "page_private": {
+    "message": "이 확장 프로그램은 비공개 창에서 허용되지 않으므로 해당 창의 다운로드는 브라우저에 남습니다."
+  },
+  "page_private_chromium": {
+    "message": "변경하려면 세부 정보 페이지에서 \"시크릿 모드에서 허용\"을 켜세요."
+  },
+  "page_learn_more": {
+    "message": "자세히 알아보기"
+  }
+}

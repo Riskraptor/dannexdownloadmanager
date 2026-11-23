@@ -1,0 +1,443 @@
+{
+  "name": {
+    "message": "DDM Integration Module"
+  },
+  "description": {
+    "message": "Geeft downloads van de browser door aan Dannex Download Manager."
+  },
+  "menu": {
+    "message": "Downloaden met DDM"
+  },
+  "video_download": {
+    "message": "Video downloaden"
+  },
+  "video_more": {
+    "message": "Meer opties"
+  },
+  "video_hide_here": {
+    "message": "Verbergen op deze video"
+  },
+  "video_never_site": {
+    "message": "Nooit op $site$",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "video_settings": {
+    "message": "Knopinstellingen..."
+  },
+  "video_sent": {
+    "message": "Verzonden naar DDM"
+  },
+  "video_failed": {
+    "message": "Dannex Download Manager is niet geïnstalleerd of is niet gestart"
+  },
+  "video_drag": {
+    "message": "Sleep om de knop langs de rand van de video te verplaatsen"
+  },
+  "menu_selected": {
+    "message": "Geselecteerde koppelingen downloaden met DDM"
+  },
+  "menu_all": {
+    "message": "Alle koppelingen downloaden met DDM"
+  },
+  "menu_images": {
+    "message": "Alle afbeeldingen downloaden met DDM"
+  },
+  "menu_media": {
+    "message": "Alle video's en audio downloaden met DDM"
+  },
+  "status_not_installed": {
+    "message": "Dannex Download Manager is niet geïnstalleerd"
+  },
+  "status_installed": {
+    "message": "Dannex Download Manager is geïnstalleerd"
+  },
+  "status_forbidden": {
+    "message": "Dannex Download Manager bijwerken"
+  },
+  "status_not_running": {
+    "message": "Dannex Download Manager is niet gestart"
+  },
+  "status_host_failed": {
+    "message": "Iets blokkeert Dannex Download Manager"
+  },
+  "status_too_large": {
+    "message": "De laatste download kon niet naar Dannex Download Manager worden gestuurd"
+  },
+  "status_update_app": {
+    "message": "Werk Dannex Download Manager bij om alles te kunnen gebruiken wat deze extensie kan."
+  },
+  "popup_take": {
+    "message": "Downloads naar Dannex Download Manager sturen"
+  },
+  "popup_proxy": {
+    "message": "Downloaden via de vpn of proxy van deze browser"
+  },
+  "popup_proxy_title": {
+    "message": "Schakel dit in als u in deze browser een vpn- of proxyextensie gebruikt. De browser vraagt u eenmalig om toestemming."
+  },
+  "popup_proxy_title_chromium": {
+    "message": "Schakel dit in als u in deze browser een vpn- of proxyextensie gebruikt. Zolang het is uitgeschakeld, kijkt de extensie niet naar de proxy van de browser."
+  },
+  "popup_help": {
+    "message": "Help"
+  },
+  "page_support": {
+    "message": "DDM steunen"
+  },
+  "popup_declined": {
+    "message": "Uw laatste download is in de browser gebleven: $name$",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "setup.png"
+      }
+    }
+  },
+  "popup_declined_unnamed": {
+    "message": "Uw laatste download is in de browser gebleven."
+  },
+  "declined_file_type": {
+    "message": "Het bestandstype staat niet op de lijst van Dannex Download Manager (Opties → Bestandstypen)."
+  },
+  "declined_site": {
+    "message": "De site staat op de lijst van sites die Dannex Download Manager met rust laat (Opties → Bestandstypen)."
+  },
+  "declined_address": {
+    "message": "Het adres staat op de lijst van adressen die Dannex Download Manager met rust laat (Opties → Bestandstypen)."
+  },
+  "declined_small": {
+    "message": "Het is kleiner dan het kleinste bestand dat Dannex Download Manager overneemt (Opties → Bestandstypen)."
+  },
+  "declined_browser": {
+    "message": "Deze browser is niet aangevinkt in Opties → Algemeen van Dannex Download Manager."
+  },
+  "declined_integration_off": {
+    "message": "Browserintegratie is uitgeschakeld in Opties → Algemeen van Dannex Download Manager."
+  },
+  "declined_site_access": {
+    "message": "Deze extensie is op die site niet toegestaan."
+  },
+  "declined_handed_back": {
+    "message": "U hebt hiervoor Downloaden met de browser gekozen in Dannex Download Manager."
+  },
+  "video_off": {
+    "message": "De downloadknop is uitgeschakeld op deze site"
+  },
+  "video_drm": {
+    "message": "Beveiligde video: kan niet worden opgeslagen"
+  },
+  "video_unnamed": {
+    "message": "Niet duidelijk welke video dit is: open de eigen pagina van de video en probeer het daar"
+  },
+  "video_looking": {
+    "message": "Kwaliteiten opzoeken…"
+  },
+  "video_open_mdm": {
+    "message": "Openen in DDM…"
+  },
+  "video_no_choices": {
+    "message": "Geen video om hier te downloaden"
+  },
+  "video_playlist": {
+    "message": "Een lijst met video's: kies ze in Dannex Download Manager"
+  },
+  "video_no_ytdlp": {
+    "message": "Dannex Download Manager heeft yt-dlp nodig voor deze video. Kies In DDM openen… om het te installeren."
+  },
+  "video_too_long": {
+    "message": "Opzoeken duurde te lang"
+  },
+  "video_busy": {
+    "message": "Dannex Download Manager is bezig met andere video's"
+  },
+  "video_queued": {
+    "message": "Toegevoegd aan de wachtrij"
+  },
+  "video_failed_lookup": {
+    "message": "Kon het niet opzoeken"
+  },
+  "video_tab_video": {
+    "message": "Video"
+  },
+  "video_tab_audio": {
+    "message": "Audio"
+  },
+  "video_open_post": {
+    "message": "Open het bericht en gebruik dan de knop daar"
+  },
+  "video_audio_original": {
+    "message": "Alleen audio, origineel $type$",
+    "placeholders": {
+      "type": {
+        "content": "$1",
+        "example": "M4A"
+      }
+    }
+  },
+  "video_audio_only": {
+    "message": "Alleen audio $type$",
+    "placeholders": {
+      "type": {
+        "content": "$1",
+        "example": "MP3 320 kbps"
+      }
+    }
+  },
+  "video_pick_waiting": {
+    "message": "Start zodra DDM klaar is…"
+  },
+  "video_pick_gone": {
+    "message": "Die kwaliteit is niet beschikbaar: kies een andere"
+  },
+  "popup_send_to": {
+    "message": "Downloads verzenden naar"
+  },
+  "popup_send_here": {
+    "message": "Deze computer"
+  },
+  "popup_send_remote": {
+    "message": "Dannex Download Manager op een andere computer"
+  },
+  "popup_remote_code": {
+    "message": "Koppelingscode"
+  },
+  "popup_remote_open": {
+    "message": "Openen"
+  },
+  "popup_remote_pair": {
+    "message": "Koppelen"
+  },
+  "popup_remote_help": {
+    "message": "Open eerst het adres in deze browser en ga verder voorbij de beveiligingswaarschuwing. Voer dan de code in uit Opties → Op afstand → Apparaat koppelen."
+  },
+  "status_remote": {
+    "message": "Downloads gaan naar $address$",
+    "placeholders": {
+      "address": {
+        "content": "$1",
+        "example": "https://192.168.1.10:8463/"
+      }
+    }
+  },
+  "remote_address": {
+    "message": "Voer het https://-adres in."
+  },
+  "remote_unreachable": {
+    "message": "Kon het niet bereiken. Open het adres in deze browser, ga verder voorbij de beveiligingswaarschuwing en probeer het opnieuw."
+  },
+  "remote_wrong_code": {
+    "message": "Onjuiste code."
+  },
+  "remote_no_code": {
+    "message": "Er is nog geen code om in te voeren: klik daar eerst op Apparaat koppelen."
+  },
+  "remote_too_soon": {
+    "message": "Wacht even en probeer het daarna opnieuw."
+  },
+  "remote_failed": {
+    "message": "Het is niet gelukt. Probeer het opnieuw."
+  },
+  "remote_device_name": {
+    "message": "Browserextensie"
+  },
+  "badge_off": {
+    "message": "UIT"
+  },
+  "tip_on": {
+    "message": "Dannex Download Manager is aan. Klik om het uit te schakelen."
+  },
+  "tip_off": {
+    "message": "Dannex Download Manager is uit. Klik om het in te schakelen."
+  },
+  "tip_remote": {
+    "message": "Downloads gaan naar de Dannex Download Manager op $address$. Klik om het uit te schakelen.",
+    "placeholders": {
+      "address": {
+        "content": "$1",
+        "example": "https://192.168.1.10:8463/"
+      }
+    }
+  },
+  "status_off_in_app": {
+    "message": "Uitgeschakeld in Dannex Download Manager"
+  },
+  "status_duplicate": {
+    "message": "Er is nog een kopie van deze extensie geïnstalleerd"
+  },
+  "click_fix": {
+    "message": "Klik om te zien wat u moet doen."
+  },
+  "click_details": {
+    "message": "Klik voor details."
+  },
+  "toolbar_exclude": {
+    "message": "Geen downloads van deze site overnemen"
+  },
+  "toolbar_help": {
+    "message": "Help"
+  },
+  "toolbar_store": {
+    "message": "Automatische updates ophalen via de Chrome Web Store..."
+  },
+  "options_take_note": {
+    "message": "Als het is uitgeschakeld, blijven downloads in de browser. Klikken op de knop van de extensie doet hetzelfde."
+  },
+  "options_what_to_do": {
+    "message": "Bekijk wat u moet doen"
+  },
+  "options_more": {
+    "message": "Meer"
+  },
+  "page_checking": {
+    "message": "Zoeken naar Dannex Download Manager…"
+  },
+  "page_on_lead": {
+    "message": "Downloads die u in deze browser start, gaan naar Dannex Download Manager."
+  },
+  "page_off_lead": {
+    "message": "Het is uitgeschakeld, dus downloads blijven in deze browser."
+  },
+  "page_remote_title": {
+    "message": "Downloads gaan naar een andere Dannex Download Manager"
+  },
+  "page_remote_lead": {
+    "message": "Downloads die u in deze browser start, gaan naar de Dannex Download Manager op $address$.",
+    "placeholders": {
+      "address": {
+        "content": "$1",
+        "example": "https://192.168.1.10:8463/"
+      }
+    }
+  },
+  "page_lead_not_installed": {
+    "message": "Deze extensie werkt met Dannex Download Manager, een gratis downloadmanager voor uw computer. Installeer het en deze pagina wordt vanzelf bijgewerkt."
+  },
+  "page_lead_not_running": {
+    "message": "De browser probeerde het te starten, maar het duurde te lang. Start Dannex Download Manager zelf en probeer het dan opnieuw."
+  },
+  "page_lead_host_failed": {
+    "message": "Beveiligingssoftware is meestal de oorzaak. Sta Dannex Download Manager toe in uw antivirusprogramma of installeer het opnieuw."
+  },
+  "page_lead_forbidden": {
+    "message": "Deze versie van Dannex Download Manager is te oud voor deze extensie. Installeer de nieuwste."
+  },
+  "page_lead_too_large": {
+    "message": "De site stuurde meer aanmeldgegevens dan Dannex Download Manager accepteert, dus de browser hield de download. Afmelden bij de site en opnieuw aanmelden lost het meestal op."
+  },
+  "page_download": {
+    "message": "Dannex Download Manager downloaden"
+  },
+  "page_files_windows": {
+    "message": "Voor Windows 10 en 11."
+  },
+  "page_files_macos": {
+    "message": "Voor Mac (een .dmg-schijfkopie)."
+  },
+  "page_files_linux": {
+    "message": "Voor Linux (AppImage, .deb of .rpm)."
+  },
+  "page_files_other": {
+    "message": "Voor Windows-, Mac- en Linux-computers."
+  },
+  "page_all_downloads": {
+    "message": "Alle downloads"
+  },
+  "page_step_windows": {
+    "message": "Voer de gedownloade setup uit."
+  },
+  "page_step_macos": {
+    "message": "Open de .dmg, sleep Dannex Download Manager naar Programma's en start het één keer."
+  },
+  "page_step_linux": {
+    "message": "Installeer de .deb of .rpm (of voer de AppImage uit) en start Dannex Download Manager daarna één keer."
+  },
+  "page_step_other": {
+    "message": "Dannex Download Manager draait op Windows-, Mac- en Linux-computers. Installeer het op een daarvan en voeg deze extensie daar toe aan een browser."
+  },
+  "page_step_wait": {
+    "message": "Laat deze pagina open. Ze verandert vanzelf zodra Dannex Download Manager klaar is."
+  },
+  "page_step_restart": {
+    "message": "Na een minuut nog niets? Start de browser opnieuw."
+  },
+  "page_step_installed": {
+    "message": "Al geïnstalleerd? Open in Dannex Download Manager Opties → Algemeen → Browserintegratie testen."
+  },
+  "page_try_again": {
+    "message": "Opnieuw proberen"
+  },
+  "page_app_options": {
+    "message": "Opties van Dannex Download Manager openen"
+  },
+  "page_duplicate_title": {
+    "message": "Deze kopie verwijderen"
+  },
+  "page_duplicate_lead": {
+    "message": "De kopie uit de Chrome Web Store is ook in deze browser geïnstalleerd en houdt zichzelf up-to-date. Deze kopie is niet nodig."
+  },
+  "page_remove": {
+    "message": "Deze kopie verwijderen"
+  },
+  "page_extensions": {
+    "message": "De extensiepagina openen"
+  },
+  "page_update_app_how": {
+    "message": "Kies in Dannex Download Manager Help → Controleren op updates..."
+  },
+  "page_behind": {
+    "message": "Met Dannex Download Manager $version$ kwam een nieuwere versie van deze extensie mee.",
+    "placeholders": {
+      "version": {
+        "content": "$1",
+        "example": "0.7.0"
+      }
+    }
+  },
+  "page_behind_store": {
+    "message": "De browser werkt hem binnen enkele uren vanzelf bij, of nu met Controleren op updates."
+  },
+  "page_behind_unpacked": {
+    "message": "Laad de extensie opnieuw om hem te gebruiken."
+  },
+  "page_behind_other": {
+    "message": "Voeg de nieuwe toe uit de map van Dannex Download Manager, zoals u deze hebt toegevoegd."
+  },
+  "page_check_updates": {
+    "message": "Controleren op updates"
+  },
+  "page_up_to_date": {
+    "message": "Nog geen nieuwere versie. De browser controleert vanzelf opnieuw."
+  },
+  "page_reload": {
+    "message": "De extensie opnieuw laden"
+  },
+  "page_store": {
+    "message": "Automatische updates ophalen: voeg deze extensie toe vanuit de Chrome Web Store en verwijder dan deze kopie."
+  },
+  "page_open_store": {
+    "message": "De Chrome Web Store openen"
+  },
+  "page_temporary": {
+    "message": "Firefox verwijdert deze add-on wanneer het wordt gesloten, omdat deze als tijdelijke add-on is toegevoegd."
+  },
+  "page_site_access": {
+    "message": "Deze extensie is alleen op sommige sites toegestaan, dus downloads van andere sites blijven in de browser."
+  },
+  "page_allow_sites": {
+    "message": "Op alle sites toestaan"
+  },
+  "page_private": {
+    "message": "Downloads uit privévensters blijven in de browser, omdat deze extensie daar niet is toegestaan."
+  },
+  "page_private_chromium": {
+    "message": "Om dat te wijzigen, schakelt u op de detailpagina Toestaan in incognito in."
+  },
+  "page_learn_more": {
+    "message": "Meer informatie"
+  }
+}

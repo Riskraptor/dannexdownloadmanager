@@ -1,0 +1,443 @@
+{
+  "name": {
+    "message": "DDM Integration Module"
+  },
+  "description": {
+    "message": "Annab allalaadimised brauserist rakendusele Dannex Download Manager."
+  },
+  "menu": {
+    "message": "Laadi alla rakendusega DDM"
+  },
+  "video_download": {
+    "message": "Laadi video alla"
+  },
+  "video_more": {
+    "message": "Rohkem valikuid"
+  },
+  "video_hide_here": {
+    "message": "Peida ainult selle video puhul"
+  },
+  "video_never_site": {
+    "message": "Mitte kunagi saidil $site$",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "video_settings": {
+    "message": "Nupu sätted..."
+  },
+  "video_sent": {
+    "message": "Saadetud rakendusse DDM"
+  },
+  "video_failed": {
+    "message": "Dannex Download Manager pole installitud või ei käivitunud"
+  },
+  "video_drag": {
+    "message": "Lohista video serva mööda, et seda liigutada"
+  },
+  "menu_selected": {
+    "message": "Laadi valitud lingid alla rakendusega DDM"
+  },
+  "menu_all": {
+    "message": "Laadi kõik lingid alla rakendusega DDM"
+  },
+  "menu_images": {
+    "message": "Laadi kõik pildid alla rakendusega DDM"
+  },
+  "menu_media": {
+    "message": "Laadi kõik videod ja heli alla rakendusega DDM"
+  },
+  "status_not_installed": {
+    "message": "Dannex Download Manager pole installitud"
+  },
+  "status_installed": {
+    "message": "Dannex Download Manager on installitud"
+  },
+  "status_forbidden": {
+    "message": "Värskenda Dannex Download Manager"
+  },
+  "status_not_running": {
+    "message": "Dannex Download Manager ei käivitunud"
+  },
+  "status_host_failed": {
+    "message": "Miski blokeerib rakendust Dannex Download Manager"
+  },
+  "status_too_large": {
+    "message": "Viimast allalaadimist ei saanud rakendusse Dannex Download Manager saata"
+  },
+  "status_update_app": {
+    "message": "Värskenda Dannex Download Manager, et saada kõik, mida see laiend oskab."
+  },
+  "popup_take": {
+    "message": "Saada allalaadimised rakendusse Dannex Download Manager"
+  },
+  "popup_proxy": {
+    "message": "Laadi alla selle brauseri VPN-i või puhverserveri kaudu"
+  },
+  "popup_proxy_title": {
+    "message": "Lülita see sisse, kui kasutad selles brauseris VPN-i või puhverserveri laiendit. Brauser küsib selleks üks kord luba."
+  },
+  "popup_proxy_title_chromium": {
+    "message": "Lülita see sisse, kui kasutad selles brauseris VPN-i või puhverserveri laiendit. Kui see on väljas, ei vaata laiend brauseri puhverserverit."
+  },
+  "popup_help": {
+    "message": "Abi"
+  },
+  "page_support": {
+    "message": "Toeta DDM-i"
+  },
+  "popup_declined": {
+    "message": "Sinu viimane allalaadimine jäi brauserisse: $name$",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "setup.png"
+      }
+    }
+  },
+  "popup_declined_unnamed": {
+    "message": "Sinu viimane allalaadimine jäi brauserisse."
+  },
+  "declined_file_type": {
+    "message": "Selle failitüüp pole rakenduse Dannex Download Manager loendis (Suvandid → Failitüübid)."
+  },
+  "declined_site": {
+    "message": "Selle sait on rakenduse Dannex Download Manager loendis saitidest, mida ei puututa (Suvandid → Failitüübid)."
+  },
+  "declined_address": {
+    "message": "Selle aadress on rakenduse Dannex Download Manager loendis aadressidest, mida ei puututa (Suvandid → Failitüübid)."
+  },
+  "declined_small": {
+    "message": "See on väiksem kui väikseim fail, mille Dannex Download Manager üle võtab (Suvandid → Failitüübid)."
+  },
+  "declined_browser": {
+    "message": "Seda brauserit pole rakenduses Dannex Download Manager valikus Suvandid → Üldine märgitud."
+  },
+  "declined_integration_off": {
+    "message": "Brauseri integreerimine on rakenduses Dannex Download Manager valikus Suvandid → Üldine välja lülitatud."
+  },
+  "declined_site_access": {
+    "message": "See laiend pole sellel saidil lubatud."
+  },
+  "declined_handed_back": {
+    "message": "Valisite selle allalaadimise jaoks rakenduses Dannex Download Manager käsu „Laadi alla brauseriga”."
+  },
+  "video_off": {
+    "message": "Sellel saidil on allalaadimisnupp välja lülitatud"
+  },
+  "video_drm": {
+    "message": "Kaitstud videot ei saa salvestada"
+  },
+  "video_unnamed": {
+    "message": "Ei saa aru, mis video see on: ava video enda leht ja proovi seal"
+  },
+  "video_looking": {
+    "message": "Kvaliteetide otsimine…"
+  },
+  "video_open_mdm": {
+    "message": "Ava rakenduses DDM…"
+  },
+  "video_no_choices": {
+    "message": "Siin pole allalaaditavat videot"
+  },
+  "video_playlist": {
+    "message": "Videode loend: valige need rakenduses Dannex Download Manager"
+  },
+  "video_no_ytdlp": {
+    "message": "Dannex Download Manager vajab selle video jaoks yt-dlp-d. Selle installimiseks vali Ava rakenduses DDM…."
+  },
+  "video_too_long": {
+    "message": "Otsimine võttis liiga kaua aega"
+  },
+  "video_busy": {
+    "message": "Dannex Download Manager on teiste videotega hõivatud"
+  },
+  "video_queued": {
+    "message": "Lisatud järjekorda"
+  },
+  "video_failed_lookup": {
+    "message": "Otsimine ebaõnnestus"
+  },
+  "video_tab_video": {
+    "message": "Video"
+  },
+  "video_tab_audio": {
+    "message": "Heli"
+  },
+  "video_open_post": {
+    "message": "Ava postitus, siis kasuta sealset nuppu"
+  },
+  "video_audio_original": {
+    "message": "Ainult heli, algne $type$",
+    "placeholders": {
+      "type": {
+        "content": "$1",
+        "example": "M4A"
+      }
+    }
+  },
+  "video_audio_only": {
+    "message": "Ainult heli $type$",
+    "placeholders": {
+      "type": {
+        "content": "$1",
+        "example": "MP3 320 kbps"
+      }
+    }
+  },
+  "video_pick_waiting": {
+    "message": "Alustan niipea, kui DDM on valmis…"
+  },
+  "video_pick_gone": {
+    "message": "See kvaliteet pole saadaval: vali mõni muu"
+  },
+  "popup_send_to": {
+    "message": "Saada allalaadimised asukohta"
+  },
+  "popup_send_here": {
+    "message": "See arvuti"
+  },
+  "popup_send_remote": {
+    "message": "Dannex Download Manager teises arvutis"
+  },
+  "popup_remote_code": {
+    "message": "Sidumiskood"
+  },
+  "popup_remote_open": {
+    "message": "Ava see"
+  },
+  "popup_remote_pair": {
+    "message": "Seo"
+  },
+  "popup_remote_help": {
+    "message": "Ava esmalt selle aadress selles brauseris ja jätka turvahoiatusest mööda. Seejärel sisesta kood jaotisest Suvandid → Kaugjuhtimine → Paarita seade."
+  },
+  "status_remote": {
+    "message": "Allalaadimised lähevad asukohta $address$",
+    "placeholders": {
+      "address": {
+        "content": "$1",
+        "example": "https://192.168.1.10:8463/"
+      }
+    }
+  },
+  "remote_address": {
+    "message": "Sisestage selle https:// aadress."
+  },
+  "remote_unreachable": {
+    "message": "Ühendust ei saanud. Ava selle aadress selles brauseris, jätka turvahoiatusest mööda ja proovi uuesti."
+  },
+  "remote_wrong_code": {
+    "message": "Vale kood."
+  },
+  "remote_no_code": {
+    "message": "Sisestatavat koodi veel pole: klõpsa esmalt seal nuppu Paarita seade."
+  },
+  "remote_too_soon": {
+    "message": "Oodake hetk, seejärel proovige uuesti."
+  },
+  "remote_failed": {
+    "message": "See ei töötanud. Proovige uuesti."
+  },
+  "remote_device_name": {
+    "message": "Brauserilaiend"
+  },
+  "badge_off": {
+    "message": "VÄL"
+  },
+  "tip_on": {
+    "message": "Dannex Download Manager on sisse lülitatud. Klõpsa, et see välja lülitada."
+  },
+  "tip_off": {
+    "message": "Dannex Download Manager on välja lülitatud. Klõpsa, et see sisse lülitada."
+  },
+  "tip_remote": {
+    "message": "Allalaadimised lähevad rakendusse Dannex Download Manager aadressil $address$. Klõpsa, et see välja lülitada.",
+    "placeholders": {
+      "address": {
+        "content": "$1",
+        "example": "https://192.168.1.10:8463/"
+      }
+    }
+  },
+  "status_off_in_app": {
+    "message": "Rakenduses Dannex Download Manager välja lülitatud"
+  },
+  "status_duplicate": {
+    "message": "Selle laiendi teine koopia on installitud"
+  },
+  "click_fix": {
+    "message": "Klõpsa, et näha, mida teha."
+  },
+  "click_details": {
+    "message": "Üksikasjade nägemiseks klõpsa."
+  },
+  "toolbar_exclude": {
+    "message": "Ära võta allalaadimisi sellelt saidilt"
+  },
+  "toolbar_help": {
+    "message": "Abi"
+  },
+  "toolbar_store": {
+    "message": "Hangi automaatsed värskendused Chrome'i veebipoest..."
+  },
+  "options_take_note": {
+    "message": "Kui see on väljas, jäävad allalaadimised brauserisse. Laiendi nupul klõpsamine teeb sama."
+  },
+  "options_what_to_do": {
+    "message": "Vaata, mida teha"
+  },
+  "options_more": {
+    "message": "Veel"
+  },
+  "page_checking": {
+    "message": "Rakenduse Dannex Download Manager otsimine…"
+  },
+  "page_on_lead": {
+    "message": "Selles brauseris alustatud allalaadimised lähevad rakendusse Dannex Download Manager."
+  },
+  "page_off_lead": {
+    "message": "See on välja lülitatud, seega allalaadimised jäävad sellesse brauserisse."
+  },
+  "page_remote_title": {
+    "message": "Allalaadimised lähevad teise rakendusse Dannex Download Manager"
+  },
+  "page_remote_lead": {
+    "message": "Selles brauseris alustatud allalaadimised lähevad rakendusse Dannex Download Manager aadressil $address$.",
+    "placeholders": {
+      "address": {
+        "content": "$1",
+        "example": "https://192.168.1.10:8463/"
+      }
+    }
+  },
+  "page_lead_not_installed": {
+    "message": "See laiend töötab koos rakendusega Dannex Download Manager, mis on tasuta allalaadimishaldur sinu arvutile. Installi see ja see leht uueneb ise."
+  },
+  "page_lead_not_running": {
+    "message": "Brauser proovis seda käivitada, kuid see võttis liiga kaua aega. Käivita Dannex Download Manager ise ja proovi uuesti."
+  },
+  "page_lead_host_failed": {
+    "message": "Tavaliselt on põhjus turvatarkvara. Luba Dannex Download Manager oma viirusetõrjeprogrammis või installi see uuesti."
+  },
+  "page_lead_forbidden": {
+    "message": "See rakenduse Dannex Download Manager versioon on selle laiendi jaoks liiga vana. Installi uusim."
+  },
+  "page_lead_too_large": {
+    "message": "Sait saatis rohkem sisselogimisandmeid, kui Dannex Download Manager vastu võtab, seega jättis brauser allalaadimise endale. Tavaliselt aitab saidilt välja ja uuesti sisse logimine."
+  },
+  "page_download": {
+    "message": "Laadi alla Dannex Download Manager"
+  },
+  "page_files_windows": {
+    "message": "Windows 10 ja 11 jaoks."
+  },
+  "page_files_macos": {
+    "message": "Macile (.dmg-kettakujutis)."
+  },
+  "page_files_linux": {
+    "message": "Linuxile (AppImage, .deb või .rpm)."
+  },
+  "page_files_other": {
+    "message": "Windowsi, Maci ja Linuxi arvutitele."
+  },
+  "page_all_downloads": {
+    "message": "Kõik allalaadimised"
+  },
+  "page_step_windows": {
+    "message": "Käivita allalaaditud häälestusprogramm."
+  },
+  "page_step_macos": {
+    "message": "Ava .dmg-fail, lohista Dannex Download Manager kausta Rakendused ja käivita see üks kord."
+  },
+  "page_step_linux": {
+    "message": "Installi .deb- või .rpm-fail (või käivita AppImage) ja käivita seejärel Dannex Download Manager üks kord."
+  },
+  "page_step_other": {
+    "message": "Dannex Download Manager töötab Windowsi, Maci ja Linuxi arvutites. Installi see ühte neist ja lisa seal see laiend brauserisse."
+  },
+  "page_step_wait": {
+    "message": "Hoia see leht avatuna. See muutub ise, kui Dannex Download Manager on valmis."
+  },
+  "page_step_restart": {
+    "message": "Mitte midagi pärast minutit? Taaskäivita brauser."
+  },
+  "page_step_installed": {
+    "message": "Juba installitud? Ava rakenduses Dannex Download Manager Suvandid → Üldine → Testi brauseri integreerimist."
+  },
+  "page_try_again": {
+    "message": "Proovi uuesti"
+  },
+  "page_app_options": {
+    "message": "Ava rakenduse Dannex Download Manager suvandid"
+  },
+  "page_duplicate_title": {
+    "message": "Eemalda see koopia"
+  },
+  "page_duplicate_lead": {
+    "message": "Chrome'i veebipoest pärit koopia on samuti selles brauseris installitud ja uuendab end ise. Seda koopiat pole vaja."
+  },
+  "page_remove": {
+    "message": "Eemalda see koopia"
+  },
+  "page_extensions": {
+    "message": "Ava laiendite leht"
+  },
+  "page_update_app_how": {
+    "message": "Vali rakenduses Dannex Download Manager Spikker → Otsi värskendusi..."
+  },
+  "page_behind": {
+    "message": "Selle laiendi uuem versioon tuli kaasa rakendusega Dannex Download Manager $version$.",
+    "placeholders": {
+      "version": {
+        "content": "$1",
+        "example": "0.7.0"
+      }
+    }
+  },
+  "page_behind_store": {
+    "message": "Brauser värskendab seda ise mõne tunni jooksul või kohe käsuga Otsi värskendusi."
+  },
+  "page_behind_unpacked": {
+    "message": "Laadi laiend kasutamiseks uuesti."
+  },
+  "page_behind_other": {
+    "message": "Lisa uus rakenduse Dannex Download Manager kaustast samamoodi, nagu selle lisasid."
+  },
+  "page_check_updates": {
+    "message": "Otsi värskendusi"
+  },
+  "page_up_to_date": {
+    "message": "Uuemat versiooni veel pole. Brauser kontrollib ise uuesti."
+  },
+  "page_reload": {
+    "message": "Laadi laiend uuesti"
+  },
+  "page_store": {
+    "message": "Hangi automaatsed värskendused: lisa see laiend Chrome'i veebipoest ja eemalda siis see koopia."
+  },
+  "page_open_store": {
+    "message": "Ava Chrome'i veebipood"
+  },
+  "page_temporary": {
+    "message": "Firefox eemaldab selle lisandmooduli sulgemisel, sest see lisati ajutise lisandmoodulina."
+  },
+  "page_site_access": {
+    "message": "See laiend on lubatud ainult mõnel saidil, seega jäävad teiste saitide allalaadimised brauserisse."
+  },
+  "page_allow_sites": {
+    "message": "Luba kõigil saitidel"
+  },
+  "page_private": {
+    "message": "Privaatsete akende allalaadimised jäävad brauserisse, sest see laiend pole seal lubatud."
+  },
+  "page_private_chromium": {
+    "message": "Selle muutmiseks lülita selle üksikasjade lehel sisse Luba inkognito režiimis."
+  },
+  "page_learn_more": {
+    "message": "Loe lähemalt"
+  }
+}

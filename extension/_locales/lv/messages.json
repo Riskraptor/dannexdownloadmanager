@@ -1,0 +1,443 @@
+{
+  "name": {
+    "message": "DDM Integration Module"
+  },
+  "description": {
+    "message": "Nodod lejupielādes no pārlūkprogrammas uz Dannex Download Manager."
+  },
+  "menu": {
+    "message": "Lejupielādēt ar DDM"
+  },
+  "video_download": {
+    "message": "Lejupielādēt video"
+  },
+  "video_more": {
+    "message": "Citas opcijas"
+  },
+  "video_hide_here": {
+    "message": "Paslēpt šajā video"
+  },
+  "video_never_site": {
+    "message": "Nekad vietnē $site$",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "video_settings": {
+    "message": "Pogas iestatījumi..."
+  },
+  "video_sent": {
+    "message": "Nosūtīts uz DDM"
+  },
+  "video_failed": {
+    "message": "Dannex Download Manager nav instalēts vai nav palaists"
+  },
+  "video_drag": {
+    "message": "Velciet, lai pārvietotu to gar video malu"
+  },
+  "menu_selected": {
+    "message": "Lejupielādēt atlasītās saites ar DDM"
+  },
+  "menu_all": {
+    "message": "Lejupielādēt visas saites ar DDM"
+  },
+  "menu_images": {
+    "message": "Lejupielādēt visus attēlus ar DDM"
+  },
+  "menu_media": {
+    "message": "Lejupielādēt visus video un audio ar DDM"
+  },
+  "status_not_installed": {
+    "message": "Dannex Download Manager nav instalēta"
+  },
+  "status_installed": {
+    "message": "Dannex Download Manager ir instalēta"
+  },
+  "status_forbidden": {
+    "message": "Atjaunināt Dannex Download Manager"
+  },
+  "status_not_running": {
+    "message": "Dannex Download Manager netika startēta"
+  },
+  "status_host_failed": {
+    "message": "Kaut kas bloķē Dannex Download Manager"
+  },
+  "status_too_large": {
+    "message": "Pēdējo lejupielādi nevarēja nosūtīt uz Dannex Download Manager"
+  },
+  "status_update_app": {
+    "message": "Atjauniniet Dannex Download Manager, lai iegūtu visu, ko var šis paplašinājums."
+  },
+  "popup_take": {
+    "message": "Sūtīt lejupielādes uz Dannex Download Manager"
+  },
+  "popup_proxy": {
+    "message": "Lejupielādēt, izmantojot šīs pārlūkprogrammas VPN vai starpniekserveri"
+  },
+  "popup_proxy_title": {
+    "message": "Ieslēdziet to, ja šajā pārlūkprogrammā izmantojat VPN vai starpniekservera paplašinājumu. Pārlūkprogramma vienreiz lūgs jūsu atļauju."
+  },
+  "popup_proxy_title_chromium": {
+    "message": "Ieslēdziet to, ja šajā pārlūkprogrammā izmantojat VPN vai starpniekservera paplašinājumu. Kamēr tas ir izslēgts, paplašinājums neskatās pārlūkprogrammas starpniekserveri."
+  },
+  "popup_help": {
+    "message": "Palīdzība"
+  },
+  "page_support": {
+    "message": "Atbalstīt DDM"
+  },
+  "popup_declined": {
+    "message": "Jūsu pēdējā lejupielāde palika pārlūkprogrammā: $name$",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "setup.png"
+      }
+    }
+  },
+  "popup_declined_unnamed": {
+    "message": "Jūsu pēdējā lejupielāde palika pārlūkprogrammā."
+  },
+  "declined_file_type": {
+    "message": "Tās faila tips nav Dannex Download Manager sarakstā (Opcijas → Failu tipi)."
+  },
+  "declined_site": {
+    "message": "Tās vietne ir Dannex Download Manager sarakstā ar vietnēm, kuras jāatstāj mierā (Opcijas → Failu tipi)."
+  },
+  "declined_address": {
+    "message": "Tās adrese ir Dannex Download Manager sarakstā ar adresēm, kuras jāatstāj mierā (Opcijas → Failu tipi)."
+  },
+  "declined_small": {
+    "message": "Tā ir mazāka par mazāko failu, ko Dannex Download Manager pārņem (Opcijas → Failu tipi)."
+  },
+  "declined_browser": {
+    "message": "Šī pārlūkprogramma nav atzīmēta programmas Dannex Download Manager sadaļā Opcijas → Vispārīgi."
+  },
+  "declined_integration_off": {
+    "message": "Pārlūkprogrammas integrācija ir izslēgta programmas Dannex Download Manager sadaļā Opcijas → Vispārīgi."
+  },
+  "declined_site_access": {
+    "message": "Šis paplašinājums nav atļauts šajā vietnē."
+  },
+  "declined_handed_back": {
+    "message": "Programmā Dannex Download Manager šai lejupielādei izvēlējāties Lejupielādēt ar pārlūkprogrammu."
+  },
+  "video_off": {
+    "message": "Lejupielādes poga šajā vietnē ir izslēgta"
+  },
+  "video_drm": {
+    "message": "Aizsargāts video: to nevar saglabāt"
+  },
+  "video_unnamed": {
+    "message": "Nevar noteikt, kurš video tas ir: atveriet tā lapu un mēģiniet tur"
+  },
+  "video_looking": {
+    "message": "Meklē kvalitātes…"
+  },
+  "video_open_mdm": {
+    "message": "Atvērt programmā DDM…"
+  },
+  "video_no_choices": {
+    "message": "Šeit nav lejupielādējama video"
+  },
+  "video_playlist": {
+    "message": "Video saraksts: izvēlieties tos programmā Dannex Download Manager"
+  },
+  "video_no_ytdlp": {
+    "message": "Dannex Download Manager šim video ir nepieciešams yt-dlp. Lai to instalētu, izvēlieties Atvērt programmā DDM…."
+  },
+  "video_too_long": {
+    "message": "Meklēšana ilga pārāk ilgi"
+  },
+  "video_busy": {
+    "message": "Dannex Download Manager ir aizņemts ar citiem video"
+  },
+  "video_queued": {
+    "message": "Pievienots rindai"
+  },
+  "video_failed_lookup": {
+    "message": "Meklēšana neizdevās"
+  },
+  "video_tab_video": {
+    "message": "Video"
+  },
+  "video_tab_audio": {
+    "message": "Audio"
+  },
+  "video_open_post": {
+    "message": "Atveriet ierakstu, tad izmantojiet pogu tur"
+  },
+  "video_audio_original": {
+    "message": "Tikai audio, oriģināls $type$",
+    "placeholders": {
+      "type": {
+        "content": "$1",
+        "example": "M4A"
+      }
+    }
+  },
+  "video_audio_only": {
+    "message": "Tikai audio $type$",
+    "placeholders": {
+      "type": {
+        "content": "$1",
+        "example": "MP3 320 kbps"
+      }
+    }
+  },
+  "video_pick_waiting": {
+    "message": "Sāksies, tiklīdz DDM būs gatavs…"
+  },
+  "video_pick_gone": {
+    "message": "Šī kvalitāte nav pieejama: izvēlieties citu"
+  },
+  "popup_send_to": {
+    "message": "Sūtīt lejupielādes uz"
+  },
+  "popup_send_here": {
+    "message": "Šis dators"
+  },
+  "popup_send_remote": {
+    "message": "Dannex Download Manager citā datorā"
+  },
+  "popup_remote_code": {
+    "message": "Savienošanas kods"
+  },
+  "popup_remote_open": {
+    "message": "Atvērt"
+  },
+  "popup_remote_pair": {
+    "message": "Savienot"
+  },
+  "popup_remote_help": {
+    "message": "Vispirms atveriet tās adresi šajā pārlūkprogrammā un turpiniet, neņemot vērā drošības brīdinājumu. Pēc tam ievadiet kodu no sadaļas Opcijas → Attālināti → Pārī savienot ierīci."
+  },
+  "status_remote": {
+    "message": "Lejupielādes tiek sūtītas uz $address$",
+    "placeholders": {
+      "address": {
+        "content": "$1",
+        "example": "https://192.168.1.10:8463/"
+      }
+    }
+  },
+  "remote_address": {
+    "message": "Ievadiet tā https:// adresi."
+  },
+  "remote_unreachable": {
+    "message": "Nevarēja sazināties. Atveriet tās adresi šajā pārlūkprogrammā, turpiniet, neņemot vērā drošības brīdinājumu, un mēģiniet vēlreiz."
+  },
+  "remote_wrong_code": {
+    "message": "Nepareizs kods."
+  },
+  "remote_no_code": {
+    "message": "Vēl nav ievadāmā koda: vispirms noklikšķiniet tur uz Pārī savienot ierīci."
+  },
+  "remote_too_soon": {
+    "message": "Pagaidiet brīdi, tad mēģiniet vēlreiz."
+  },
+  "remote_failed": {
+    "message": "Tas nedarbojās. Mēģiniet vēlreiz."
+  },
+  "remote_device_name": {
+    "message": "Pārlūkprogrammas paplašinājums"
+  },
+  "badge_off": {
+    "message": "IZSL"
+  },
+  "tip_on": {
+    "message": "Dannex Download Manager ir ieslēgta. Noklikšķiniet, lai to izslēgtu."
+  },
+  "tip_off": {
+    "message": "Dannex Download Manager ir izslēgta. Noklikšķiniet, lai to ieslēgtu."
+  },
+  "tip_remote": {
+    "message": "Lejupielādes nonāk programmā Dannex Download Manager adresē $address$. Noklikšķiniet, lai to izslēgtu.",
+    "placeholders": {
+      "address": {
+        "content": "$1",
+        "example": "https://192.168.1.10:8463/"
+      }
+    }
+  },
+  "status_off_in_app": {
+    "message": "Izslēgts programmā Dannex Download Manager"
+  },
+  "status_duplicate": {
+    "message": "Instalēta cita šī paplašinājuma kopija"
+  },
+  "click_fix": {
+    "message": "Noklikšķiniet, lai redzētu, kas jādara."
+  },
+  "click_details": {
+    "message": "Noklikšķiniet, lai skatītu detalizētu informāciju."
+  },
+  "toolbar_exclude": {
+    "message": "Nepārņemt lejupielādes no šīs vietnes"
+  },
+  "toolbar_help": {
+    "message": "Palīdzība"
+  },
+  "toolbar_store": {
+    "message": "Saņemt automātiskos atjauninājumus no Chrome interneta veikala..."
+  },
+  "options_take_note": {
+    "message": "Kad tas ir izslēgts, lejupielādes paliek pārlūkprogrammā. Klikšķis uz paplašinājuma pogas dara to pašu."
+  },
+  "options_what_to_do": {
+    "message": "Skatīt, kas jādara"
+  },
+  "options_more": {
+    "message": "Vairāk"
+  },
+  "page_checking": {
+    "message": "Notiek Dannex Download Manager meklēšana…"
+  },
+  "page_on_lead": {
+    "message": "Lejupielādes, ko sākat šajā pārlūkprogrammā, nonāk programmā Dannex Download Manager."
+  },
+  "page_off_lead": {
+    "message": "Tas ir izslēgts, tāpēc lejupielādes paliek šajā pārlūkprogrammā."
+  },
+  "page_remote_title": {
+    "message": "Lejupielādes nonāk citā Dannex Download Manager"
+  },
+  "page_remote_lead": {
+    "message": "Lejupielādes, ko sākat šajā pārlūkprogrammā, nonāk programmā Dannex Download Manager adresē $address$.",
+    "placeholders": {
+      "address": {
+        "content": "$1",
+        "example": "https://192.168.1.10:8463/"
+      }
+    }
+  },
+  "page_lead_not_installed": {
+    "message": "Šis paplašinājums darbojas kopā ar Dannex Download Manager — bezmaksas lejupielāžu pārvaldnieku jūsu datoram. Instalējiet to, un šī lapa atjaunināsies pati."
+  },
+  "page_lead_not_running": {
+    "message": "Pārlūkprogramma mēģināja to startēt, taču tas aizņēma pārāk ilgu laiku. Startējiet Dannex Download Manager pats un mēģiniet vēlreiz."
+  },
+  "page_lead_host_failed": {
+    "message": "Parasti iemesls ir drošības programmatūra. Atļaujiet Dannex Download Manager savā pretvīrusu programmā vai instalējiet to vēlreiz."
+  },
+  "page_lead_forbidden": {
+    "message": "Šī Dannex Download Manager versija ir pārāk veca šim paplašinājumam. Instalējiet jaunāko."
+  },
+  "page_lead_too_large": {
+    "message": "Vietne nosūtīja vairāk pieteikšanās datu, nekā Dannex Download Manager pieņem, tāpēc pārlūkprogramma paturēja lejupielādi. Parasti palīdz izrakstīšanās no vietnes un atkārtota pieteikšanās."
+  },
+  "page_download": {
+    "message": "Lejupielādēt Dannex Download Manager"
+  },
+  "page_files_windows": {
+    "message": "Windows 10 un 11 sistēmai."
+  },
+  "page_files_macos": {
+    "message": "Mac datoram (.dmg diska attēls)."
+  },
+  "page_files_linux": {
+    "message": "Linux sistēmai (AppImage, .deb vai .rpm)."
+  },
+  "page_files_other": {
+    "message": "Windows, Mac un Linux datoriem."
+  },
+  "page_all_downloads": {
+    "message": "Visas lejupielādes"
+  },
+  "page_step_windows": {
+    "message": "Palaidiet lejupielādēto instalēšanas programmu."
+  },
+  "page_step_macos": {
+    "message": "Atveriet .dmg failu, velciet Dannex Download Manager uz mapi Programmas un vienreiz startējiet to."
+  },
+  "page_step_linux": {
+    "message": "Instalējiet .deb vai .rpm failu (vai palaidiet AppImage) un pēc tam vienreiz startējiet Dannex Download Manager."
+  },
+  "page_step_other": {
+    "message": "Dannex Download Manager darbojas Windows, Mac un Linux datoros. Instalējiet to vienā no tiem un pievienojiet šo paplašinājumu tur esošai pārlūkprogrammai."
+  },
+  "page_step_wait": {
+    "message": "Atstājiet šo lapu atvērtu. Tā mainās pati, kad Dannex Download Manager ir gatava."
+  },
+  "page_step_restart": {
+    "message": "Pēc minūtes nekas nenotiek? Restartējiet pārlūkprogrammu."
+  },
+  "page_step_installed": {
+    "message": "Jau instalēta? Programmā Dannex Download Manager atveriet Opcijas → Vispārīgi → Pārbaudīt pārlūkprogrammas integrāciju."
+  },
+  "page_try_again": {
+    "message": "Mēģināt vēlreiz"
+  },
+  "page_app_options": {
+    "message": "Atvērt Dannex Download Manager opcijas"
+  },
+  "page_duplicate_title": {
+    "message": "Noņemt šo kopiju"
+  },
+  "page_duplicate_lead": {
+    "message": "Kopija no Chrome interneta veikala ir instalēta arī šajā pārlūkprogrammā un atjaunina sevi pati. Šī kopija nav vajadzīga."
+  },
+  "page_remove": {
+    "message": "Noņemt šo kopiju"
+  },
+  "page_extensions": {
+    "message": "Atvērt paplašinājumu lapu"
+  },
+  "page_update_app_how": {
+    "message": "Programmā Dannex Download Manager izvēlieties Palīdzība → Pārbaudīt atjauninājumus..."
+  },
+  "page_behind": {
+    "message": "Jaunāka šī paplašinājuma versija tika piegādāta kopā ar Dannex Download Manager $version$.",
+    "placeholders": {
+      "version": {
+        "content": "$1",
+        "example": "0.7.0"
+      }
+    }
+  },
+  "page_behind_store": {
+    "message": "Pārlūkprogramma to atjaunina pati dažu stundu laikā vai tūlīt ar Pārbaudīt atjauninājumus."
+  },
+  "page_behind_unpacked": {
+    "message": "Pārlādējiet paplašinājumu, lai to izmantotu."
+  },
+  "page_behind_other": {
+    "message": "Pievienojiet jauno no Dannex Download Manager mapes tāpat, kā pievienojāt šo."
+  },
+  "page_check_updates": {
+    "message": "Pārbaudīt atjauninājumus"
+  },
+  "page_up_to_date": {
+    "message": "Jaunākas versijas vēl nav. Pārlūkprogramma pati pārbaudīs vēlreiz."
+  },
+  "page_reload": {
+    "message": "Pārlādēt paplašinājumu"
+  },
+  "page_store": {
+    "message": "Saņemt automātiskos atjauninājumus: pievienojiet šo paplašinājumu no Chrome interneta veikala un pēc tam noņemiet šo kopiju."
+  },
+  "page_open_store": {
+    "message": "Atvērt Chrome interneta veikalu"
+  },
+  "page_temporary": {
+    "message": "Firefox noņems šo papildinājumu, kad tiks aizvērts, jo tas tika pievienots kā pagaidu papildinājums."
+  },
+  "page_site_access": {
+    "message": "Šis paplašinājums ir atļauts tikai dažās vietnēs, tāpēc lejupielādes no citām vietnēm paliek pārlūkprogrammā."
+  },
+  "page_allow_sites": {
+    "message": "Atļaut visās vietnēs"
+  },
+  "page_private": {
+    "message": "Lejupielādes no privātajiem logiem paliek pārlūkprogrammā, jo šis paplašinājums tur nav atļauts."
+  },
+  "page_private_chromium": {
+    "message": "Lai to mainītu, tā informācijas lapā ieslēdziet Atļaut inkognito režīmā."
+  },
+  "page_learn_more": {
+    "message": "Uzzināt vairāk"
+  }
+}

@@ -1,0 +1,443 @@
+{
+  "name": {
+    "message": "DDM Integration Module"
+  },
+  "description": {
+    "message": "Předává stahování z prohlížeče do Dannex Download Manager."
+  },
+  "menu": {
+    "message": "Stáhnout pomocí DDM"
+  },
+  "video_download": {
+    "message": "Stáhnout video"
+  },
+  "video_more": {
+    "message": "Další možnosti"
+  },
+  "video_hide_here": {
+    "message": "Skrýt u tohoto videa"
+  },
+  "video_never_site": {
+    "message": "Nikdy na webu $site$",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "video_settings": {
+    "message": "Nastavení tlačítka..."
+  },
+  "video_sent": {
+    "message": "Odesláno do DDM"
+  },
+  "video_failed": {
+    "message": "Aplikace Dannex Download Manager není nainstalovaná nebo se nespustila"
+  },
+  "video_drag": {
+    "message": "Přetažením přesunete podél okraje videa"
+  },
+  "menu_selected": {
+    "message": "Stáhnout vybrané odkazy pomocí DDM"
+  },
+  "menu_all": {
+    "message": "Stáhnout všechny odkazy pomocí DDM"
+  },
+  "menu_images": {
+    "message": "Stáhnout všechny obrázky pomocí DDM"
+  },
+  "menu_media": {
+    "message": "Stáhnout všechna videa a zvuk pomocí DDM"
+  },
+  "status_not_installed": {
+    "message": "Dannex Download Manager není nainstalován"
+  },
+  "status_installed": {
+    "message": "Dannex Download Manager je nainstalován"
+  },
+  "status_forbidden": {
+    "message": "Aktualizujte Dannex Download Manager"
+  },
+  "status_not_running": {
+    "message": "Dannex Download Manager se nespustil"
+  },
+  "status_host_failed": {
+    "message": "Něco blokuje Dannex Download Manager"
+  },
+  "status_too_large": {
+    "message": "Poslední stahování se nepodařilo odeslat do Dannex Download Manager"
+  },
+  "status_update_app": {
+    "message": "Aktualizujte Dannex Download Manager, abyste získali vše, co toto rozšíření umí."
+  },
+  "popup_take": {
+    "message": "Odesílat stahování do Dannex Download Manager"
+  },
+  "popup_proxy": {
+    "message": "Stahovat přes VPN nebo proxy tohoto prohlížeče"
+  },
+  "popup_proxy_title": {
+    "message": "Zapněte to, pokud v tomto prohlížeči používáte rozšíření VPN nebo proxy. Prohlížeč se jednou zeptá, zda to povolíte."
+  },
+  "popup_proxy_title_chromium": {
+    "message": "Zapněte to, pokud v tomto prohlížeči používáte rozšíření VPN nebo proxy. Když je vypnuté, rozšíření proxy prohlížeče nesleduje."
+  },
+  "popup_help": {
+    "message": "Nápověda"
+  },
+  "page_support": {
+    "message": "Podpořit DDM"
+  },
+  "popup_declined": {
+    "message": "Vaše poslední stahování zůstalo v prohlížeči: $name$",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "setup.png"
+      }
+    }
+  },
+  "popup_declined_unnamed": {
+    "message": "Vaše poslední stahování zůstalo v prohlížeči."
+  },
+  "declined_file_type": {
+    "message": "Jeho typ souboru není na seznamu aplikace Dannex Download Manager (Možnosti → Typy souborů)."
+  },
+  "declined_site": {
+    "message": "Jeho web je na seznamu webů, které Dannex Download Manager vynechává (Možnosti → Typy souborů)."
+  },
+  "declined_address": {
+    "message": "Jeho adresa je na seznamu adres, které Dannex Download Manager vynechává (Možnosti → Typy souborů)."
+  },
+  "declined_small": {
+    "message": "Je menší než nejmenší soubor, který Dannex Download Manager přebírá (Možnosti → Typy souborů)."
+  },
+  "declined_browser": {
+    "message": "Tento prohlížeč není zaškrtnutý v Možnosti → Obecné aplikace Dannex Download Manager."
+  },
+  "declined_integration_off": {
+    "message": "Integrace prohlížeče je vypnutá v Možnosti → Obecné aplikace Dannex Download Manager."
+  },
+  "declined_site_access": {
+    "message": "Toto rozšíření není na tom webu povoleno."
+  },
+  "declined_handed_back": {
+    "message": "Pro toto stahování jste v Dannex Download Manager zvolili „Stáhnout v prohlížeči“."
+  },
+  "video_off": {
+    "message": "Tlačítko pro stahování je na tomto webu vypnuto"
+  },
+  "video_drm": {
+    "message": "Chráněné video: nelze uložit"
+  },
+  "video_unnamed": {
+    "message": "Nelze zjistit, o které video jde: otevřete jeho vlastní stránku a zkuste to tam"
+  },
+  "video_looking": {
+    "message": "Vyhledávání kvalit…"
+  },
+  "video_open_mdm": {
+    "message": "Otevřít v DDM…"
+  },
+  "video_no_choices": {
+    "message": "Tady není žádné video ke stažení"
+  },
+  "video_playlist": {
+    "message": "Seznam videí: vyberte je v Dannex Download Manager"
+  },
+  "video_no_ytdlp": {
+    "message": "Dannex Download Manager potřebuje pro toto video yt-dlp. Otevřete v DDM… a nainstalujte ho."
+  },
+  "video_too_long": {
+    "message": "Vyhledávání trvalo příliš dlouho"
+  },
+  "video_busy": {
+    "message": "Dannex Download Manager je zaneprázdněn jinými videi"
+  },
+  "video_queued": {
+    "message": "Přidáno do fronty"
+  },
+  "video_failed_lookup": {
+    "message": "Vyhledání se nezdařilo"
+  },
+  "video_tab_video": {
+    "message": "Video"
+  },
+  "video_tab_audio": {
+    "message": "Zvuk"
+  },
+  "video_open_post": {
+    "message": "Otevřete příspěvek a použijte tlačítko tam"
+  },
+  "video_audio_original": {
+    "message": "Jen zvuk, originál $type$",
+    "placeholders": {
+      "type": {
+        "content": "$1",
+        "example": "M4A"
+      }
+    }
+  },
+  "video_audio_only": {
+    "message": "Jen zvuk $type$",
+    "placeholders": {
+      "type": {
+        "content": "$1",
+        "example": "MP3 320 kbps"
+      }
+    }
+  },
+  "video_pick_waiting": {
+    "message": "Spustí se, jakmile bude DDM připraven…"
+  },
+  "video_pick_gone": {
+    "message": "Tato kvalita není k dispozici: vyberte jinou"
+  },
+  "popup_send_to": {
+    "message": "Odeslat stahování do"
+  },
+  "popup_send_here": {
+    "message": "Tento počítač"
+  },
+  "popup_send_remote": {
+    "message": "Dannex Download Manager v jiném počítači"
+  },
+  "popup_remote_code": {
+    "message": "Párovací kód"
+  },
+  "popup_remote_open": {
+    "message": "Otevřít"
+  },
+  "popup_remote_pair": {
+    "message": "Spárovat"
+  },
+  "popup_remote_help": {
+    "message": "Nejprve otevřete jeho adresu v tomto prohlížeči a pokračujte přes bezpečnostní upozornění. Pak zadejte kód z Možnosti → Vzdálené → Spárovat zařízení."
+  },
+  "status_remote": {
+    "message": "Stahování jde na $address$",
+    "placeholders": {
+      "address": {
+        "content": "$1",
+        "example": "https://192.168.1.10:8463/"
+      }
+    }
+  },
+  "remote_address": {
+    "message": "Zadejte jeho adresu https://."
+  },
+  "remote_unreachable": {
+    "message": "Nepodařilo se ho kontaktovat. Otevřete jeho adresu v tomto prohlížeči, pokračujte přes bezpečnostní upozornění a zkuste to znovu."
+  },
+  "remote_wrong_code": {
+    "message": "Špatný kód."
+  },
+  "remote_no_code": {
+    "message": "Zatím není žádný kód k zadání: nejprve tam klikněte na „Spárovat zařízení“."
+  },
+  "remote_too_soon": {
+    "message": "Počkejte chvíli a zkuste to znovu."
+  },
+  "remote_failed": {
+    "message": "Nepodařilo se. Zkuste to znovu."
+  },
+  "remote_device_name": {
+    "message": "Rozšíření prohlížeče"
+  },
+  "badge_off": {
+    "message": "VYP"
+  },
+  "tip_on": {
+    "message": "Dannex Download Manager je zapnutý. Kliknutím ho vypnete."
+  },
+  "tip_off": {
+    "message": "Dannex Download Manager je vypnutý. Kliknutím ho zapnete."
+  },
+  "tip_remote": {
+    "message": "Stahování jdou do aplikace Dannex Download Manager na adrese $address$. Kliknutím ji vypnete.",
+    "placeholders": {
+      "address": {
+        "content": "$1",
+        "example": "https://192.168.1.10:8463/"
+      }
+    }
+  },
+  "status_off_in_app": {
+    "message": "Vypnuto v aplikaci Dannex Download Manager"
+  },
+  "status_duplicate": {
+    "message": "Je nainstalována další kopie tohoto rozšíření"
+  },
+  "click_fix": {
+    "message": "Kliknutím zobrazíte, co dělat."
+  },
+  "click_details": {
+    "message": "Kliknutím zobrazíte podrobnosti."
+  },
+  "toolbar_exclude": {
+    "message": "Nepřebírat stahování z tohoto webu"
+  },
+  "toolbar_help": {
+    "message": "Nápověda"
+  },
+  "toolbar_store": {
+    "message": "Získávat automatické aktualizace z Internetového obchodu Chrome..."
+  },
+  "options_take_note": {
+    "message": "Když je vypnuté, stahování zůstávají v prohlížeči. Totéž udělá kliknutí na tlačítko rozšíření."
+  },
+  "options_what_to_do": {
+    "message": "Zobrazit, co dělat"
+  },
+  "options_more": {
+    "message": "Více"
+  },
+  "page_checking": {
+    "message": "Hledání aplikace Dannex Download Manager…"
+  },
+  "page_on_lead": {
+    "message": "Stahování, která spustíte v tomto prohlížeči, jdou do aplikace Dannex Download Manager."
+  },
+  "page_off_lead": {
+    "message": "Je vypnuté, proto stahování zůstávají v tomto prohlížeči."
+  },
+  "page_remote_title": {
+    "message": "Stahování jdou do jiné aplikace Dannex Download Manager"
+  },
+  "page_remote_lead": {
+    "message": "Stahování, která spustíte v tomto prohlížeči, jdou do aplikace Dannex Download Manager na adrese $address$.",
+    "placeholders": {
+      "address": {
+        "content": "$1",
+        "example": "https://192.168.1.10:8463/"
+      }
+    }
+  },
+  "page_lead_not_installed": {
+    "message": "Toto rozšíření funguje s aplikací Dannex Download Manager, bezplatným správcem stahování pro váš počítač. Nainstalujte ji a tato stránka se aktualizuje sama."
+  },
+  "page_lead_not_running": {
+    "message": "Prohlížeč se ho pokusil spustit, ale trvalo to příliš dlouho. Spusťte Dannex Download Manager sami a zkuste to znovu."
+  },
+  "page_lead_host_failed": {
+    "message": "Běžnou příčinou je bezpečnostní software. Povolte Dannex Download Manager ve svém antivirovém programu nebo ho nainstalujte znovu."
+  },
+  "page_lead_forbidden": {
+    "message": "Tato verze aplikace Dannex Download Manager je pro toto rozšíření příliš stará. Nainstalujte nejnovější."
+  },
+  "page_lead_too_large": {
+    "message": "Web poslal více přihlašovacích údajů, než Dannex Download Manager přijímá, proto prohlížeč stahování ponechal. Obvykle to vyřeší odhlášení z webu a opětovné přihlášení."
+  },
+  "page_download": {
+    "message": "Stáhnout Dannex Download Manager"
+  },
+  "page_files_windows": {
+    "message": "Pro Windows 10 a 11."
+  },
+  "page_files_macos": {
+    "message": "Pro Mac (obraz disku .dmg)."
+  },
+  "page_files_linux": {
+    "message": "Pro Linux (AppImage, .deb nebo .rpm)."
+  },
+  "page_files_other": {
+    "message": "Pro počítače se systémem Windows, Mac a Linux."
+  },
+  "page_all_downloads": {
+    "message": "Všechna stahování"
+  },
+  "page_step_windows": {
+    "message": "Spusťte stažený instalátor."
+  },
+  "page_step_macos": {
+    "message": "Otevřete soubor .dmg, přetáhněte Dannex Download Manager do složky Applications a jednou ho spusťte."
+  },
+  "page_step_linux": {
+    "message": "Nainstalujte soubor .deb nebo .rpm (nebo spusťte AppImage) a pak jednou spusťte Dannex Download Manager."
+  },
+  "page_step_other": {
+    "message": "Dannex Download Manager funguje v počítačích se systémem Windows, Mac a Linux. Nainstalujte ho do jednoho z nich a tam přidejte toto rozšíření do prohlížeče."
+  },
+  "page_step_wait": {
+    "message": "Nechte tuto stránku otevřenou. Změní se sama, až bude Dannex Download Manager připraven."
+  },
+  "page_step_restart": {
+    "message": "Po minutě nic? Restartujte prohlížeč."
+  },
+  "page_step_installed": {
+    "message": "Už je nainstalováno? V aplikaci Dannex Download Manager otevřete Možnosti → Obecné → Test integrace prohlížeče."
+  },
+  "page_try_again": {
+    "message": "Zkusit znovu"
+  },
+  "page_app_options": {
+    "message": "Otevřít Možnosti aplikace Dannex Download Manager"
+  },
+  "page_duplicate_title": {
+    "message": "Odebrat tuto kopii"
+  },
+  "page_duplicate_lead": {
+    "message": "Kopie z Internetového obchodu Chrome je nainstalována i v tomto prohlížeči a aktualizuje se sama. Tato kopie není potřeba."
+  },
+  "page_remove": {
+    "message": "Odebrat tuto kopii"
+  },
+  "page_extensions": {
+    "message": "Otevřít stránku rozšíření"
+  },
+  "page_update_app_how": {
+    "message": "V aplikaci Dannex Download Manager vyberte Nápověda → Zkontrolovat aktualizace..."
+  },
+  "page_behind": {
+    "message": "Novější verze tohoto rozšíření přišla s aplikací Dannex Download Manager $version$.",
+    "placeholders": {
+      "version": {
+        "content": "$1",
+        "example": "0.7.0"
+      }
+    }
+  },
+  "page_behind_store": {
+    "message": "Prohlížeč ho aktualizuje sám během několika hodin nebo hned pomocí „Zkontrolovat aktualizace“."
+  },
+  "page_behind_unpacked": {
+    "message": "Rozšíření znovu načtěte, abyste ho mohli používat."
+  },
+  "page_behind_other": {
+    "message": "Přidejte nové ze složky aplikace Dannex Download Manager, stejně jako jste přidali toto."
+  },
+  "page_check_updates": {
+    "message": "Zkontrolovat aktualizace"
+  },
+  "page_up_to_date": {
+    "message": "Zatím není novější verze. Prohlížeč znovu zkontroluje sám."
+  },
+  "page_reload": {
+    "message": "Znovu načíst rozšíření"
+  },
+  "page_store": {
+    "message": "Získávejte automatické aktualizace: přidejte toto rozšíření z Internetového obchodu Chrome a pak tuto kopii odeberte."
+  },
+  "page_open_store": {
+    "message": "Otevřít Internetový obchod Chrome"
+  },
+  "page_temporary": {
+    "message": "Firefox tento doplněk po zavření odebere, protože byl přidán jako dočasný doplněk."
+  },
+  "page_site_access": {
+    "message": "Toto rozšíření je povoleno jen na některých webech, proto stahování z jiných webů zůstávají v prohlížeči."
+  },
+  "page_allow_sites": {
+    "message": "Povolit na všech webech"
+  },
+  "page_private": {
+    "message": "Stahování ze soukromých oken zůstávají v prohlížeči, protože toto rozšíření tam není povoleno."
+  },
+  "page_private_chromium": {
+    "message": "Chcete-li to změnit, zapněte „Povolit v anonymním režimu“ na jeho stránce s podrobnostmi."
+  },
+  "page_learn_more": {
+    "message": "Další informace"
+  }
+}

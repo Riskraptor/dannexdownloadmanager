@@ -1,0 +1,443 @@
+{
+  "name": {
+    "message": "DDM Integration Module"
+  },
+  "description": {
+    "message": "İndirmeleri tarayıcıdan Dannex Download Manager uygulamasına aktarır."
+  },
+  "menu": {
+    "message": "DDM ile İndir"
+  },
+  "video_download": {
+    "message": "Videoyu indir"
+  },
+  "video_more": {
+    "message": "Diğer seçenekler"
+  },
+  "video_hide_here": {
+    "message": "Yalnızca bu videoda gizle"
+  },
+  "video_never_site": {
+    "message": "$site$ sitesinde bir daha gösterme",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "video_settings": {
+    "message": "Düğme ayarları..."
+  },
+  "video_sent": {
+    "message": "DDM uygulamasına gönderildi"
+  },
+  "video_failed": {
+    "message": "Dannex Download Manager yüklü değil veya başlatılamadı"
+  },
+  "video_drag": {
+    "message": "Videonun kenarı boyunca taşımak için sürükleyin"
+  },
+  "menu_selected": {
+    "message": "Seçili bağlantıları DDM ile indir"
+  },
+  "menu_all": {
+    "message": "Tüm bağlantıları DDM ile indir"
+  },
+  "menu_images": {
+    "message": "Tüm resimleri DDM ile indir"
+  },
+  "menu_media": {
+    "message": "Tüm videoları ve sesleri DDM ile indir"
+  },
+  "status_not_installed": {
+    "message": "Dannex Download Manager yüklü değil"
+  },
+  "status_installed": {
+    "message": "Dannex Download Manager yüklü"
+  },
+  "status_forbidden": {
+    "message": "Dannex Download Manager uygulamasını güncelleştir"
+  },
+  "status_not_running": {
+    "message": "Dannex Download Manager başlamadı"
+  },
+  "status_host_failed": {
+    "message": "Bir şey Dannex Download Manager uygulamasını engelliyor"
+  },
+  "status_too_large": {
+    "message": "Son indirme Dannex Download Manager uygulamasına gönderilemedi"
+  },
+  "status_update_app": {
+    "message": "Bu uzantının sunduğu her şeyi kullanmak için Dannex Download Manager uygulamasını güncelleştirin."
+  },
+  "popup_take": {
+    "message": "İndirmeleri Dannex Download Manager uygulamasına gönder"
+  },
+  "popup_proxy": {
+    "message": "Bu tarayıcının VPN veya proxy'si üzerinden indir"
+  },
+  "popup_proxy_title": {
+    "message": "Bu tarayıcıda VPN veya proxy uzantısı kullanıyorsanız bunu açın. Tarayıcı izin vermenizi bir kez ister."
+  },
+  "popup_proxy_title_chromium": {
+    "message": "Bu tarayıcıda VPN veya proxy uzantısı kullanıyorsanız bunu açın. Kapalıyken uzantı tarayıcının proxy'sine bakmaz."
+  },
+  "popup_help": {
+    "message": "Yardım"
+  },
+  "page_support": {
+    "message": "DDM'ı destekle"
+  },
+  "popup_declined": {
+    "message": "Son indirme tarayıcıda kaldı: $name$",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "setup.png"
+      }
+    }
+  },
+  "popup_declined_unnamed": {
+    "message": "Son indirme tarayıcıda kaldı."
+  },
+  "declined_file_type": {
+    "message": "Dosya türü, Dannex Download Manager uygulamasının listesinde yok (Seçenekler → Dosya türleri)."
+  },
+  "declined_site": {
+    "message": "Sitesi, Dannex Download Manager uygulamasının dokunmayacağı siteler listesinde (Seçenekler → Dosya türleri)."
+  },
+  "declined_address": {
+    "message": "Adresi, Dannex Download Manager uygulamasının dokunmayacağı adresler listesinde (Seçenekler → Dosya türleri)."
+  },
+  "declined_small": {
+    "message": "Dosya, Dannex Download Manager uygulamasının aldığı en küçük dosyadan daha küçük (Seçenekler → Dosya türleri)."
+  },
+  "declined_browser": {
+    "message": "Bu tarayıcı, Dannex Download Manager uygulamasının Seçenekler → Genel bölümünde işaretli değil."
+  },
+  "declined_integration_off": {
+    "message": "Tarayıcı entegrasyonu, Dannex Download Manager uygulamasının Seçenekler → Genel bölümünde kapalı."
+  },
+  "declined_site_access": {
+    "message": "Bu uzantıya bu sitede izin verilmiyor."
+  },
+  "declined_handed_back": {
+    "message": "Bu indirme için Dannex Download Manager uygulamasında Tarayıcıyla indir seçeneğini seçtiniz."
+  },
+  "video_off": {
+    "message": "Bu sitede indirme düğmesi kapalı"
+  },
+  "video_drm": {
+    "message": "Korumalı video: kaydedilemez"
+  },
+  "video_unnamed": {
+    "message": "Bunun hangi video olduğu anlaşılamıyor: videonun kendi sayfasını açıp orada deneyin"
+  },
+  "video_looking": {
+    "message": "Kaliteler aranıyor…"
+  },
+  "video_open_mdm": {
+    "message": "DDM uygulamasında aç…"
+  },
+  "video_no_choices": {
+    "message": "Burada indirilecek video yok"
+  },
+  "video_playlist": {
+    "message": "Bir video listesi: videoları Dannex Download Manager uygulamasında seçin"
+  },
+  "video_no_ytdlp": {
+    "message": "Dannex Download Manager, bu video için yt-dlp gerektiriyor. Yüklemek için DDM uygulamasında aç… seçeneğini kullanın."
+  },
+  "video_too_long": {
+    "message": "Arama çok uzun sürdü"
+  },
+  "video_busy": {
+    "message": "Dannex Download Manager diğer videolarla meşgul"
+  },
+  "video_queued": {
+    "message": "Sıraya eklendi"
+  },
+  "video_failed_lookup": {
+    "message": "Aranamadı"
+  },
+  "video_tab_video": {
+    "message": "Video"
+  },
+  "video_tab_audio": {
+    "message": "Ses"
+  },
+  "video_open_post": {
+    "message": "Gönderiyi açın, sonra oradaki düğmeyi kullanın"
+  },
+  "video_audio_original": {
+    "message": "Yalnızca ses, orijinal $type$",
+    "placeholders": {
+      "type": {
+        "content": "$1",
+        "example": "M4A"
+      }
+    }
+  },
+  "video_audio_only": {
+    "message": "Yalnızca ses $type$",
+    "placeholders": {
+      "type": {
+        "content": "$1",
+        "example": "MP3 320 kbps"
+      }
+    }
+  },
+  "video_pick_waiting": {
+    "message": "DDM hazır olur olmaz başlıyor…"
+  },
+  "video_pick_gone": {
+    "message": "Bu kalite kullanılamıyor: başka birini seçin"
+  },
+  "popup_send_to": {
+    "message": "İndirmeleri şuraya gönder"
+  },
+  "popup_send_here": {
+    "message": "Bu bilgisayar"
+  },
+  "popup_send_remote": {
+    "message": "Başka bir bilgisayardaki Dannex Download Manager"
+  },
+  "popup_remote_code": {
+    "message": "Eşleme kodu"
+  },
+  "popup_remote_open": {
+    "message": "Aç"
+  },
+  "popup_remote_pair": {
+    "message": "Eşle"
+  },
+  "popup_remote_help": {
+    "message": "Önce adresini bu tarayıcıda açın ve güvenlik uyarısını geçin. Ardından Seçenekler → Uzaktan → Bir cihazı eşleştir bölümündeki kodu girin."
+  },
+  "status_remote": {
+    "message": "İndirmeler $address$ adresine gidiyor",
+    "placeholders": {
+      "address": {
+        "content": "$1",
+        "example": "https://192.168.1.10:8463/"
+      }
+    }
+  },
+  "remote_address": {
+    "message": "https:// adresini girin."
+  },
+  "remote_unreachable": {
+    "message": "Ulaşılamadı. Adresini bu tarayıcıda açın, güvenlik uyarısını geçin ve yeniden deneyin."
+  },
+  "remote_wrong_code": {
+    "message": "Yanlış kod."
+  },
+  "remote_no_code": {
+    "message": "Girilecek kod henüz yok: önce orada Bir cihazı eşleştir'e tıklayın."
+  },
+  "remote_too_soon": {
+    "message": "Biraz bekleyin, sonra tekrar deneyin."
+  },
+  "remote_failed": {
+    "message": "İşe yaramadı. Tekrar deneyin."
+  },
+  "remote_device_name": {
+    "message": "Tarayıcı uzantısı"
+  },
+  "badge_off": {
+    "message": "OFF"
+  },
+  "tip_on": {
+    "message": "Dannex Download Manager açık. Kapatmak için tıklayın."
+  },
+  "tip_off": {
+    "message": "Dannex Download Manager kapalı. Açmak için tıklayın."
+  },
+  "tip_remote": {
+    "message": "İndirmeler $address$ adresindeki Dannex Download Manager uygulamasına gidiyor. Kapatmak için tıklayın.",
+    "placeholders": {
+      "address": {
+        "content": "$1",
+        "example": "https://192.168.1.10:8463/"
+      }
+    }
+  },
+  "status_off_in_app": {
+    "message": "Dannex Download Manager uygulamasında kapatıldı"
+  },
+  "status_duplicate": {
+    "message": "Bu uzantının başka bir kopyası yüklü"
+  },
+  "click_fix": {
+    "message": "Ne yapılacağını görmek için tıklayın."
+  },
+  "click_details": {
+    "message": "Ayrıntılar için tıklayın."
+  },
+  "toolbar_exclude": {
+    "message": "Bu sitedeki indirmeleri alma"
+  },
+  "toolbar_help": {
+    "message": "Yardım"
+  },
+  "toolbar_store": {
+    "message": "Chrome Web Mağazası'ndan otomatik güncelleştirmeleri al..."
+  },
+  "options_take_note": {
+    "message": "Kapalıyken indirmeler tarayıcıda kalır. Uzantının düğmesine tıklamak da aynı işi görür."
+  },
+  "options_what_to_do": {
+    "message": "Ne yapılacağını gör"
+  },
+  "options_more": {
+    "message": "Daha fazla"
+  },
+  "page_checking": {
+    "message": "Dannex Download Manager aranıyor…"
+  },
+  "page_on_lead": {
+    "message": "Bu tarayıcıda başlattığınız indirmeler Dannex Download Manager uygulamasına gider."
+  },
+  "page_off_lead": {
+    "message": "Kapalı olduğu için indirmeler bu tarayıcıda kalıyor."
+  },
+  "page_remote_title": {
+    "message": "İndirmeler başka bir Dannex Download Manager uygulamasına gidiyor"
+  },
+  "page_remote_lead": {
+    "message": "Bu tarayıcıda başlattığınız indirmeler $address$ adresindeki Dannex Download Manager uygulamasına gider.",
+    "placeholders": {
+      "address": {
+        "content": "$1",
+        "example": "https://192.168.1.10:8463/"
+      }
+    }
+  },
+  "page_lead_not_installed": {
+    "message": "Bu uzantı, bilgisayarınız için ücretsiz bir indirme yöneticisi olan Dannex Download Manager ile çalışır. Yükleyin, bu sayfa kendiliğinden güncellenir."
+  },
+  "page_lead_not_running": {
+    "message": "Tarayıcı başlatmayı denedi ancak çok uzun sürdü. Dannex Download Manager uygulamasını kendiniz başlatın, ardından yeniden deneyin."
+  },
+  "page_lead_host_failed": {
+    "message": "Genellikle nedeni güvenlik yazılımıdır. Virüsten koruma programınızda Dannex Download Manager uygulamasına izin verin veya yeniden yükleyin."
+  },
+  "page_lead_forbidden": {
+    "message": "Dannex Download Manager uygulamasının bu sürümü bu uzantı için çok eski. En son sürümü yükleyin."
+  },
+  "page_lead_too_large": {
+    "message": "Site, Dannex Download Manager uygulamasının kabul ettiğinden fazla oturum verisi gönderdi, bu nedenle tarayıcı indirmeyi kendisinde tuttu. Siteden çıkış yapıp yeniden giriş yapmak genellikle sorunu çözer."
+  },
+  "page_download": {
+    "message": "Dannex Download Manager uygulamasını indir"
+  },
+  "page_files_windows": {
+    "message": "Windows 10 ve 11 için."
+  },
+  "page_files_macos": {
+    "message": "Mac için (.dmg disk görüntüsü)."
+  },
+  "page_files_linux": {
+    "message": "Linux için (AppImage, .deb veya .rpm)."
+  },
+  "page_files_other": {
+    "message": "Windows, Mac ve Linux bilgisayarlar için."
+  },
+  "page_all_downloads": {
+    "message": "Tüm indirmeler"
+  },
+  "page_step_windows": {
+    "message": "İndirdiğiniz kurulum programını çalıştırın."
+  },
+  "page_step_macos": {
+    "message": ".dmg dosyasını açın, Dannex Download Manager uygulamasını Uygulamalar'a sürükleyin ve bir kez başlatın."
+  },
+  "page_step_linux": {
+    "message": ".deb veya .rpm dosyasını yükleyin (ya da AppImage'ı çalıştırın), ardından Dannex Download Manager uygulamasını bir kez başlatın."
+  },
+  "page_step_other": {
+    "message": "Dannex Download Manager; Windows, Mac ve Linux bilgisayarlarda çalışır. Bunlardan birine yükleyin ve bu uzantıyı oradaki bir tarayıcıya ekleyin."
+  },
+  "page_step_wait": {
+    "message": "Bu sayfayı açık tutun. Dannex Download Manager hazır olduğunda kendiliğinden değişir."
+  },
+  "page_step_restart": {
+    "message": "Bir dakika sonra hâlâ bir şey olmadı mı? Tarayıcıyı yeniden başlatın."
+  },
+  "page_step_installed": {
+    "message": "Zaten yüklü mü? Dannex Download Manager uygulamasında Seçenekler → Genel → Tarayıcı entegrasyonunu test et bölümünü açın."
+  },
+  "page_try_again": {
+    "message": "Yeniden dene"
+  },
+  "page_app_options": {
+    "message": "Dannex Download Manager uygulamasının Seçenekleri'ni aç"
+  },
+  "page_duplicate_title": {
+    "message": "Bu kopyayı kaldır"
+  },
+  "page_duplicate_lead": {
+    "message": "Chrome Web Mağazası'ndaki kopya bu tarayıcıda da yüklü ve kendini güncel tutuyor. Bu kopyaya gerek yok."
+  },
+  "page_remove": {
+    "message": "Bu kopyayı kaldır"
+  },
+  "page_extensions": {
+    "message": "Uzantılar sayfasını aç"
+  },
+  "page_update_app_how": {
+    "message": "Dannex Download Manager uygulamasında şunu seçin: Yardım → Güncelleştirmeleri denetle..."
+  },
+  "page_behind": {
+    "message": "Bu uzantının daha yeni bir sürümü Dannex Download Manager $version$ ile geldi.",
+    "placeholders": {
+      "version": {
+        "content": "$1",
+        "example": "0.7.0"
+      }
+    }
+  },
+  "page_behind_store": {
+    "message": "Tarayıcı bunu birkaç saat içinde kendiliğinden günceller veya Güncelleştirmeleri denetle ile hemen günceller."
+  },
+  "page_behind_unpacked": {
+    "message": "Kullanmak için uzantıyı yeniden yükleyin."
+  },
+  "page_behind_other": {
+    "message": "Yenisini, bunu eklediğiniz gibi Dannex Download Manager klasöründen ekleyin."
+  },
+  "page_check_updates": {
+    "message": "Güncelleştirmeleri denetle"
+  },
+  "page_up_to_date": {
+    "message": "Henüz daha yeni bir sürüm yok. Tarayıcı kendiliğinden yeniden denetler."
+  },
+  "page_reload": {
+    "message": "Uzantıyı yeniden yükle"
+  },
+  "page_store": {
+    "message": "Otomatik güncelleştirmeleri alın: bu uzantıyı Chrome Web Mağazası'ndan ekleyin, ardından bu kopyayı kaldırın."
+  },
+  "page_open_store": {
+    "message": "Chrome Web Mağazası'nı aç"
+  },
+  "page_temporary": {
+    "message": "Geçici eklenti olarak eklendiği için Firefox bu eklentiyi kapandığında kaldıracak."
+  },
+  "page_site_access": {
+    "message": "Bu uzantıya yalnızca bazı sitelerde izin verildi, bu nedenle diğer sitelerdeki indirmeler tarayıcıda kalıyor."
+  },
+  "page_allow_sites": {
+    "message": "Tüm sitelerde izin ver"
+  },
+  "page_private": {
+    "message": "Bu uzantıya özel pencerelerde izin verilmediğinden özel pencerelerdeki indirmeler tarayıcıda kalır."
+  },
+  "page_private_chromium": {
+    "message": "Bunu değiştirmek için ayrıntılar sayfasında Gizli modda izin ver'i açın."
+  },
+  "page_learn_more": {
+    "message": "Daha fazla bilgi"
+  }
+}

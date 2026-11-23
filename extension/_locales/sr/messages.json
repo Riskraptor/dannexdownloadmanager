@@ -1,0 +1,443 @@
+{
+  "name": {
+    "message": "DDM Integration Module"
+  },
+  "description": {
+    "message": "Предаје преузимања из прегледача програму Dannex Download Manager."
+  },
+  "menu": {
+    "message": "Преузми помоћу DDM"
+  },
+  "video_download": {
+    "message": "Преузми видео"
+  },
+  "video_more": {
+    "message": "Више опција"
+  },
+  "video_hide_here": {
+    "message": "Сакриј на овом видео снимку"
+  },
+  "video_never_site": {
+    "message": "Никада на $site$",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "video_settings": {
+    "message": "Подешавања дугмета..."
+  },
+  "video_sent": {
+    "message": "Послато апликацији DDM"
+  },
+  "video_failed": {
+    "message": "Dannex Download Manager није инсталиран или није покренут"
+  },
+  "video_drag": {
+    "message": "Превуците да бисте га померили дуж ивице видео снимка"
+  },
+  "menu_selected": {
+    "message": "Преузми изабране везе помоћу DDM"
+  },
+  "menu_all": {
+    "message": "Преузми све везе помоћу DDM"
+  },
+  "menu_images": {
+    "message": "Преузми све слике помоћу DDM"
+  },
+  "menu_media": {
+    "message": "Преузми све видео и аудио записе помоћу DDM"
+  },
+  "status_not_installed": {
+    "message": "Dannex Download Manager није инсталиран"
+  },
+  "status_installed": {
+    "message": "Dannex Download Manager је инсталиран"
+  },
+  "status_forbidden": {
+    "message": "Ажурирајте Dannex Download Manager"
+  },
+  "status_not_running": {
+    "message": "Dannex Download Manager није покренут"
+  },
+  "status_host_failed": {
+    "message": "Нешто блокира Dannex Download Manager"
+  },
+  "status_too_large": {
+    "message": "Последње преузимање није могло да иде у Dannex Download Manager"
+  },
+  "status_update_app": {
+    "message": "Ажурирајте Dannex Download Manager да добијете све што ово проширење може."
+  },
+  "popup_take": {
+    "message": "Шаљи преузимања у Dannex Download Manager"
+  },
+  "popup_proxy": {
+    "message": "Преузимање преко VPN-а или проксија овог прегледача"
+  },
+  "popup_proxy_title": {
+    "message": "Укључите ово ако у овом прегледачу користите проширење за VPN или прокси. Прегледач ће једном затражити да то дозволите."
+  },
+  "popup_proxy_title_chromium": {
+    "message": "Укључите ово ако у овом прегледачу користите проширење за VPN или прокси. Док је искључено, проширење не гледа прокси прегледача."
+  },
+  "popup_help": {
+    "message": "Помоћ"
+  },
+  "page_support": {
+    "message": "Подржите DDM"
+  },
+  "popup_declined": {
+    "message": "Ваше последње преузимање остало је у прегледачу: $name$",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "setup.png"
+      }
+    }
+  },
+  "popup_declined_unnamed": {
+    "message": "Ваше последње преузимање остало је у прегледачу."
+  },
+  "declined_file_type": {
+    "message": "Његова врста датотеке није на листи програма Dannex Download Manager (Опције → Врсте датотека)."
+  },
+  "declined_site": {
+    "message": "Његов сајт је на листи сајтова које Dannex Download Manager изоставља (Опције → Врсте датотека)."
+  },
+  "declined_address": {
+    "message": "Његова адреса је на листи адреса које Dannex Download Manager изоставља (Опције → Врсте датотека)."
+  },
+  "declined_small": {
+    "message": "Мањи је од најмање датотеке коју Dannex Download Manager преузима (Опције → Врсте датотека)."
+  },
+  "declined_browser": {
+    "message": "Овај прегледач није означен у Опције → Опште програма Dannex Download Manager."
+  },
+  "declined_integration_off": {
+    "message": "Интеграција прегледача је искључена у Опције → Опште програма Dannex Download Manager."
+  },
+  "declined_site_access": {
+    "message": "Ово проширење није дозвољено на том сајту."
+  },
+  "declined_handed_back": {
+    "message": "За ово преузимање сте у апликацији Dannex Download Manager изабрали Преузми помоћу прегледача."
+  },
+  "video_off": {
+    "message": "Дугме за преузимање је искључено на овом сајту"
+  },
+  "video_drm": {
+    "message": "Заштићен видео: не може се сачувати"
+  },
+  "video_unnamed": {
+    "message": "Не може да се утврди који је ово видео: отворите његову страницу и покушајте тамо"
+  },
+  "video_looking": {
+    "message": "Тражење квалитета…"
+  },
+  "video_open_mdm": {
+    "message": "Отвори у DDM…"
+  },
+  "video_no_choices": {
+    "message": "Овде нема видео снимка за преузимање"
+  },
+  "video_playlist": {
+    "message": "Листа видео снимака: изаберите их у Dannex Download Manager"
+  },
+  "video_no_ytdlp": {
+    "message": "Dannex Download Manager треба yt-dlp за овај видео. Отворите у DDM… да га инсталирате."
+  },
+  "video_too_long": {
+    "message": "Тражење је трајало предуго"
+  },
+  "video_busy": {
+    "message": "Dannex Download Manager је заузет другим видео снимцима"
+  },
+  "video_queued": {
+    "message": "Додато у ред"
+  },
+  "video_failed_lookup": {
+    "message": "Тражење није успело"
+  },
+  "video_tab_video": {
+    "message": "Видео"
+  },
+  "video_tab_audio": {
+    "message": "Аудио"
+  },
+  "video_open_post": {
+    "message": "Отворите објаву, па користите дугме тамо"
+  },
+  "video_audio_original": {
+    "message": "Само звук, оригинал $type$",
+    "placeholders": {
+      "type": {
+        "content": "$1",
+        "example": "M4A"
+      }
+    }
+  },
+  "video_audio_only": {
+    "message": "Само звук $type$",
+    "placeholders": {
+      "type": {
+        "content": "$1",
+        "example": "MP3 320 kbps"
+      }
+    }
+  },
+  "video_pick_waiting": {
+    "message": "Почиње чим DDM буде спреман…"
+  },
+  "video_pick_gone": {
+    "message": "Тај квалитет није доступан: изаберите други"
+  },
+  "popup_send_to": {
+    "message": "Шаљи преузимања на"
+  },
+  "popup_send_here": {
+    "message": "Овај рачунар"
+  },
+  "popup_send_remote": {
+    "message": "Dannex Download Manager на другом рачунару"
+  },
+  "popup_remote_code": {
+    "message": "Кôд за упаривање"
+  },
+  "popup_remote_open": {
+    "message": "Отвори"
+  },
+  "popup_remote_pair": {
+    "message": "Упари"
+  },
+  "popup_remote_help": {
+    "message": "Прво отворите његову адресу у овом прегледачу и наставите после безбедносног упозорења. Затим унесите код из Опције → Даљински → Упари уређај."
+  },
+  "status_remote": {
+    "message": "Преузимања иду на $address$",
+    "placeholders": {
+      "address": {
+        "content": "$1",
+        "example": "https://192.168.1.10:8463/"
+      }
+    }
+  },
+  "remote_address": {
+    "message": "Унесите његову https:// адресу."
+  },
+  "remote_unreachable": {
+    "message": "Није било могуће досегнути га. Отворите његову адресу у овом прегледачу, наставите после безбедносног упозорења и покушајте поново."
+  },
+  "remote_wrong_code": {
+    "message": "Погрешан кôд."
+  },
+  "remote_no_code": {
+    "message": "Још нема кода за унос: прво тамо кликните „Упари уређај“."
+  },
+  "remote_too_soon": {
+    "message": "Сачекајте тренутак, па покушајте поново."
+  },
+  "remote_failed": {
+    "message": "Није успело. Покушајте поново."
+  },
+  "remote_device_name": {
+    "message": "Проширење прегледача"
+  },
+  "badge_off": {
+    "message": "ИСК"
+  },
+  "tip_on": {
+    "message": "Dannex Download Manager је укључен. Кликните да га искључите."
+  },
+  "tip_off": {
+    "message": "Dannex Download Manager је искључен. Кликните да га укључите."
+  },
+  "tip_remote": {
+    "message": "Преузимања иду у Dannex Download Manager на адреси $address$. Кликните да га искључите.",
+    "placeholders": {
+      "address": {
+        "content": "$1",
+        "example": "https://192.168.1.10:8463/"
+      }
+    }
+  },
+  "status_off_in_app": {
+    "message": "Искључено у програму Dannex Download Manager"
+  },
+  "status_duplicate": {
+    "message": "Друга копија овог проширења је инсталирана"
+  },
+  "click_fix": {
+    "message": "Кликните да видите шта да урадите."
+  },
+  "click_details": {
+    "message": "Кликните за детаље."
+  },
+  "toolbar_exclude": {
+    "message": "Не преузимај преузимања са овог сајта"
+  },
+  "toolbar_help": {
+    "message": "Помоћ"
+  },
+  "toolbar_store": {
+    "message": "Преузми аутоматска ажурирања из Chrome веб-продавнице..."
+  },
+  "options_take_note": {
+    "message": "Када је искључено, преузимања остају у прегледачу. Клик на дугме проширења ради исто."
+  },
+  "options_what_to_do": {
+    "message": "Погледај шта да урадите"
+  },
+  "options_more": {
+    "message": "Више"
+  },
+  "page_checking": {
+    "message": "Тражи се Dannex Download Manager…"
+  },
+  "page_on_lead": {
+    "message": "Преузимања која покренете у овом прегледачу иду у Dannex Download Manager."
+  },
+  "page_off_lead": {
+    "message": "Искључено је, па преузимања остају у овом прегледачу."
+  },
+  "page_remote_title": {
+    "message": "Преузимања иду у други Dannex Download Manager"
+  },
+  "page_remote_lead": {
+    "message": "Преузимања која покренете у овом прегледачу иду у Dannex Download Manager на адреси $address$.",
+    "placeholders": {
+      "address": {
+        "content": "$1",
+        "example": "https://192.168.1.10:8463/"
+      }
+    }
+  },
+  "page_lead_not_installed": {
+    "message": "Ово проширење ради са програмом Dannex Download Manager, бесплатним менаџером преузимања за ваш рачунар. Инсталирајте га и ова страница се ажурира сама."
+  },
+  "page_lead_not_running": {
+    "message": "Прегледач је покушао да га покрене, али је трајало предуго. Покрените Dannex Download Manager сами, па покушајте поново."
+  },
+  "page_lead_host_failed": {
+    "message": "Безбедносни софтвер је уобичајен узрок. Дозволите Dannex Download Manager у свом антивирусном програму или га поново инсталирајте."
+  },
+  "page_lead_forbidden": {
+    "message": "Ова верзија програма Dannex Download Manager је сувише стара за ово проширење. Инсталирајте најновију."
+  },
+  "page_lead_too_large": {
+    "message": "Сајт је послао више података за пријаву него што Dannex Download Manager прихвата, па је прегледач задржао преузимање. Одјава са сајта и поновна пријава обично то решавају."
+  },
+  "page_download": {
+    "message": "Преузми Dannex Download Manager"
+  },
+  "page_files_windows": {
+    "message": "За Windows 10 и 11."
+  },
+  "page_files_macos": {
+    "message": "За Mac (.dmg слика диска)."
+  },
+  "page_files_linux": {
+    "message": "За Linux (AppImage, .deb или .rpm)."
+  },
+  "page_files_other": {
+    "message": "За рачунаре са системима Windows, Mac и Linux."
+  },
+  "page_all_downloads": {
+    "message": "Сва преузимања"
+  },
+  "page_step_windows": {
+    "message": "Покрените преузету инсталацију."
+  },
+  "page_step_macos": {
+    "message": "Отворите .dmg, превуците Dannex Download Manager у Applications и једном га покрените."
+  },
+  "page_step_linux": {
+    "message": "Инсталирајте .deb или .rpm (или покрените AppImage), па једном покрените Dannex Download Manager."
+  },
+  "page_step_other": {
+    "message": "Dannex Download Manager ради на рачунарима са системима Windows, Mac и Linux. Инсталирајте га на једном и додајте ово проширење у прегледач тамо."
+  },
+  "page_step_wait": {
+    "message": "Оставите ову страницу отворену. Мења се сама када Dannex Download Manager буде спреман."
+  },
+  "page_step_restart": {
+    "message": "Ништа после минута? Поново покрените прегледач."
+  },
+  "page_step_installed": {
+    "message": "Већ је инсталирано? У програму Dannex Download Manager отворите Опције → Опште → Тест интеграције прегледача."
+  },
+  "page_try_again": {
+    "message": "Покушај поново"
+  },
+  "page_app_options": {
+    "message": "Отвори Опције програма Dannex Download Manager"
+  },
+  "page_duplicate_title": {
+    "message": "Уклони ову копију"
+  },
+  "page_duplicate_lead": {
+    "message": "Копија из Chrome веб-продавнице је инсталирана и у овом прегледачу и сама се одржава ажурном. Ова копија није потребна."
+  },
+  "page_remove": {
+    "message": "Уклони ову копију"
+  },
+  "page_extensions": {
+    "message": "Отвори страницу проширења"
+  },
+  "page_update_app_how": {
+    "message": "У програму Dannex Download Manager изаберите Помоћ → Провера ажурирања..."
+  },
+  "page_behind": {
+    "message": "Новија верзија овог проширења стигла је са програмом Dannex Download Manager $version$.",
+    "placeholders": {
+      "version": {
+        "content": "$1",
+        "example": "0.7.0"
+      }
+    }
+  },
+  "page_behind_store": {
+    "message": "Прегледач га ажурира сам у року од неколико сати, или одмах помоћу „Провера ажурирања“."
+  },
+  "page_behind_unpacked": {
+    "message": "Поново учитајте проширење да бисте га користили."
+  },
+  "page_behind_other": {
+    "message": "Додајте ново из фасцикле програма Dannex Download Manager, као што сте додали ово."
+  },
+  "page_check_updates": {
+    "message": "Провера ажурирања"
+  },
+  "page_up_to_date": {
+    "message": "Још нема новије верзије. Прегледач поново проверава сам."
+  },
+  "page_reload": {
+    "message": "Поново учитај проширење"
+  },
+  "page_store": {
+    "message": "Добијајте аутоматска ажурирања: додајте ово проширење из Chrome веб-продавнице, па уклоните ову копију."
+  },
+  "page_open_store": {
+    "message": "Отвори Chrome веб-продавницу"
+  },
+  "page_temporary": {
+    "message": "Firefox ће уклонити овај додатак када се затвори, јер је додат као привремени додатак."
+  },
+  "page_site_access": {
+    "message": "Ово проширење је дозвољено само на неким сајтовима, па преузимања са других сајтова остају у прегледачу."
+  },
+  "page_allow_sites": {
+    "message": "Дозволи на свим сајтовима"
+  },
+  "page_private": {
+    "message": "Преузимања из приватних прозора остају у прегледачу, јер ово проширење тамо није дозвољено."
+  },
+  "page_private_chromium": {
+    "message": "Да бисте то променили, укључите „Дозволи у анонимном режиму“ на његовој страници са детаљима."
+  },
+  "page_learn_more": {
+    "message": "Сазнајте више"
+  }
+}

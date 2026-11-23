@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title data-i18n="name"></title>
+<link rel="stylesheet" href="pages.css">
+</head>
+<body class="page">
+  <header class="page-head">
+    <img src="icons/icon-48.png" width="24" height="24" alt="">
+    <h1 data-i18n="name"></h1>
+  </header>
+  <main>
+    <section class="card">
+      <label class="switch-row">
+        <span class="switch-text">
+          <span data-i18n="popup_take"></span>
+          <span class="note" data-i18n="options_take_note"></span>
+        </span>
+        <input id="take" type="checkbox" role="switch">
+      </label>
+      <p id="status" class="status-line" role="status" hidden>
+        <span id="status-text"></span>
+        <a id="status-page" class="link" data-i18n="options_what_to_do" href="install.html"></a>
+      </p>
+    </section>
+
+    <section id="store" class="card notice" hidden>
+      <p data-i18n="page_store"></p>
+      <div class="actions">
+        <button id="store-open" class="primary" data-i18n="page_open_store"></button>
+        <button id="store-remove" data-i18n="page_remove"></button>
+      </div>
+    </section>
+
+    <details id="more" class="card more">
+      <summary data-i18n="options_more"></summary>
+      <div class="more-body">
+        <label class="switch-row" id="proxy-row" hidden>
+          <span class="switch-text">
+            <span data-i18n="popup_proxy"></span>
+            <span id="proxy-note" class="note"></span>
+          </span>
+          <input id="proxy" type="checkbox" role="switch">
+        </label>
+        <div id="send" class="send" role="radiogroup" aria-labelledby="send-title">
+          <p id="send-title" class="send-title" data-i18n="popup_send_to"></p>
+          <label class="choice"><input type="radio" name="to" id="to-here"> <span data-i18n="popup_send_here"></span></label>
+          <label class="choice"><input type="radio" name="to" id="to-remote"> <span data-i18n="popup_send_remote"></span></label>
+          <div id="remote-form" hidden>
+            <input id="remote-url" type="url" dir="ltr" placeholder="https://192.168.1.10:8463/" aria-labelledby="to-remote">
+            <input id="remote-code" inputmode="numeric" maxlength="9" dir="ltr" data-i18n-placeholder="popup_remote_code">
+            <div class="actions">
+              <button id="remote-pair" class="primary" data-i18n="popup_remote_pair"></button>
+              <button id="remote-open" data-i18n="popup_remote_open"></button>
+            </div>
+            <p class="note" data-i18n="popup_remote_help"></p>
+            <p id="remote-said" class="note bad" role="status" hidden></p>
+          </div>
+        </div>
+      </div>
+    </details>
+  </main>
+
+  <footer>
+    <span class="footer-links">
+      <a id="help" class="link" data-i18n="popup_help" target="_blank" rel="noopener"></a>
+      <a id="support" class="link" data-i18n="page_support" target="_blank" rel="noopener"></a>
+    </span>
+    <span id="version"></span>
+  </footer>
+  <script src="pages.js"></script>
+  <script src="options.js"></script>
+</body>
+</html>

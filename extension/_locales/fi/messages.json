@@ -1,0 +1,443 @@
+{
+  "name": {
+    "message": "DDM Integration Module"
+  },
+  "description": {
+    "message": "Siirtää lataukset selaimesta Dannex Download Manageriin."
+  },
+  "menu": {
+    "message": "Lataa DDMilla"
+  },
+  "video_download": {
+    "message": "Lataa video"
+  },
+  "video_more": {
+    "message": "Lisää vaihtoehtoja"
+  },
+  "video_hide_here": {
+    "message": "Piilota tässä videossa"
+  },
+  "video_never_site": {
+    "message": "Ei koskaan sivustolla $site$",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "video_settings": {
+    "message": "Painikkeen asetukset..."
+  },
+  "video_sent": {
+    "message": "Lähetetty DDM:lle"
+  },
+  "video_failed": {
+    "message": "Dannex Download Manager ei ole asennettu tai sitä ei käynnistetty"
+  },
+  "video_drag": {
+    "message": "Vedä siirtääksesi sitä videon reunaa pitkin"
+  },
+  "menu_selected": {
+    "message": "Lataa valitut linkit sovelluksella DDM"
+  },
+  "menu_all": {
+    "message": "Lataa kaikki linkit sovelluksella DDM"
+  },
+  "menu_images": {
+    "message": "Lataa kaikki kuvat sovelluksella DDM"
+  },
+  "menu_media": {
+    "message": "Lataa kaikki videot ja äänet sovelluksella DDM"
+  },
+  "status_not_installed": {
+    "message": "Dannex Download Manager ei ole asennettu"
+  },
+  "status_installed": {
+    "message": "Dannex Download Manager on asennettu"
+  },
+  "status_forbidden": {
+    "message": "Päivitä Dannex Download Manager"
+  },
+  "status_not_running": {
+    "message": "Dannex Download Manager ei käynnistynyt"
+  },
+  "status_host_failed": {
+    "message": "Jokin estää ohjelmaa Dannex Download Manager"
+  },
+  "status_too_large": {
+    "message": "Viimeistä latausta ei voitu lähettää ohjelmaan Dannex Download Manager"
+  },
+  "status_update_app": {
+    "message": "Päivitä Dannex Download Manager, niin saat kaiken, mitä tämä laajennus osaa."
+  },
+  "popup_take": {
+    "message": "Lähetä lataukset ohjelmaan Dannex Download Manager"
+  },
+  "popup_proxy": {
+    "message": "Lataa tämän selaimen VPN:n tai välityspalvelimen kautta"
+  },
+  "popup_proxy_title": {
+    "message": "Ota tämä käyttöön, jos käytät tässä selaimessa VPN- tai välityspalvelinlaajennusta. Selain pyytää sinua sallimaan sen kerran."
+  },
+  "popup_proxy_title_chromium": {
+    "message": "Ota tämä käyttöön, jos käytät tässä selaimessa VPN- tai välityspalvelinlaajennusta. Kun se on pois päältä, laajennus ei tarkastele selaimen välityspalvelinta."
+  },
+  "popup_help": {
+    "message": "Ohje"
+  },
+  "page_support": {
+    "message": "Tue DDM:ää"
+  },
+  "popup_declined": {
+    "message": "Viimeisin latauksesi jäi selaimeen: $name$",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "setup.png"
+      }
+    }
+  },
+  "popup_declined_unnamed": {
+    "message": "Viimeisin latauksesi jäi selaimeen."
+  },
+  "declined_file_type": {
+    "message": "Sen tiedostotyyppi ei ole ohjelman Dannex Download Manager luettelossa (Asetukset → Tiedostotyypit)."
+  },
+  "declined_site": {
+    "message": "Sen sivusto on ohjelman Dannex Download Manager luettelossa sivustoista, jotka jätetään rauhaan (Asetukset → Tiedostotyypit)."
+  },
+  "declined_address": {
+    "message": "Sen osoite on ohjelman Dannex Download Manager luettelossa osoitteista, jotka jätetään rauhaan (Asetukset → Tiedostotyypit)."
+  },
+  "declined_small": {
+    "message": "Se on pienempi kuin pienin tiedosto, jonka Dannex Download Manager ottaa (Asetukset → Tiedostotyypit)."
+  },
+  "declined_browser": {
+    "message": "Tätä selainta ei ole valittu ohjelman Dannex Download Manager kohdassa Asetukset → Yleiset."
+  },
+  "declined_integration_off": {
+    "message": "Selainintegrointi on pois päältä ohjelman Dannex Download Manager kohdassa Asetukset → Yleiset."
+  },
+  "declined_site_access": {
+    "message": "Tämä laajennus ei ole sallittu kyseisellä sivustolla."
+  },
+  "declined_handed_back": {
+    "message": "Valitsit sovelluksessa Dannex Download Manager tälle lataukselle toiminnon Lataa selaimella."
+  },
+  "video_off": {
+    "message": "Latauspainike ei ole käytössä tällä sivustolla"
+  },
+  "video_drm": {
+    "message": "Suojattua videota ei voi tallentaa"
+  },
+  "video_unnamed": {
+    "message": "Ei selviä, mikä video tämä on: avaa videon oma sivu ja yritä siellä"
+  },
+  "video_looking": {
+    "message": "Haetaan laatuvaihtoehtoja…"
+  },
+  "video_open_mdm": {
+    "message": "Avaa sovelluksessa DDM…"
+  },
+  "video_no_choices": {
+    "message": "Täällä ei ole ladattavaa videota"
+  },
+  "video_playlist": {
+    "message": "Videoluettelo: valitse videot sovelluksessa Dannex Download Manager"
+  },
+  "video_no_ytdlp": {
+    "message": "Dannex Download Manager tarvitsee yt-dlp:n tätä videota varten. Asenna se valitsemalla Avaa sovelluksessa DDM…."
+  },
+  "video_too_long": {
+    "message": "Haku kesti liian kauan"
+  },
+  "video_busy": {
+    "message": "Dannex Download Manager on varattu muiden videoiden takia"
+  },
+  "video_queued": {
+    "message": "Lisätty jonoon"
+  },
+  "video_failed_lookup": {
+    "message": "Hakeminen epäonnistui"
+  },
+  "video_tab_video": {
+    "message": "Video"
+  },
+  "video_tab_audio": {
+    "message": "Ääni"
+  },
+  "video_open_post": {
+    "message": "Avaa julkaisu ja käytä sitten painiketta siinä"
+  },
+  "video_audio_original": {
+    "message": "Vain ääni, alkuperäinen $type$",
+    "placeholders": {
+      "type": {
+        "content": "$1",
+        "example": "M4A"
+      }
+    }
+  },
+  "video_audio_only": {
+    "message": "Vain ääni $type$",
+    "placeholders": {
+      "type": {
+        "content": "$1",
+        "example": "MP3 320 kbps"
+      }
+    }
+  },
+  "video_pick_waiting": {
+    "message": "Aloitetaan heti, kun DDM on valmis…"
+  },
+  "video_pick_gone": {
+    "message": "Tämä laatu ei ole saatavilla: valitse toinen"
+  },
+  "popup_send_to": {
+    "message": "Lähetä lataukset kohteeseen"
+  },
+  "popup_send_here": {
+    "message": "Tämä tietokone"
+  },
+  "popup_send_remote": {
+    "message": "Dannex Download Manager toisella tietokoneella"
+  },
+  "popup_remote_code": {
+    "message": "Pariliitoskoodi"
+  },
+  "popup_remote_open": {
+    "message": "Avaa se"
+  },
+  "popup_remote_pair": {
+    "message": "Laita pariksi"
+  },
+  "popup_remote_help": {
+    "message": "Avaa ensin sen osoite tässä selaimessa ja jatka suojausvaroituksen ohi. Kirjoita sitten koodi kohdasta Asetukset → Etäkäyttö → Parita laite."
+  },
+  "status_remote": {
+    "message": "Lataukset menevät osoitteeseen $address$",
+    "placeholders": {
+      "address": {
+        "content": "$1",
+        "example": "https://192.168.1.10:8463/"
+      }
+    }
+  },
+  "remote_address": {
+    "message": "Anna sen https://-osoite."
+  },
+  "remote_unreachable": {
+    "message": "Yhteyttä ei saatu. Avaa sen osoite tässä selaimessa, jatka suojausvaroituksen ohi ja yritä uudelleen."
+  },
+  "remote_wrong_code": {
+    "message": "Väärä koodi."
+  },
+  "remote_no_code": {
+    "message": "Syötettävää koodia ei vielä ole: napsauta ensin siellä kohtaa Parita laite."
+  },
+  "remote_too_soon": {
+    "message": "Odota hetki ja yritä sitten uudelleen."
+  },
+  "remote_failed": {
+    "message": "Se ei toiminut. Yritä uudelleen."
+  },
+  "remote_device_name": {
+    "message": "Selaimen laajennus"
+  },
+  "badge_off": {
+    "message": "POIS"
+  },
+  "tip_on": {
+    "message": "Dannex Download Manager on päällä. Napsauta poistaaksesi sen käytöstä."
+  },
+  "tip_off": {
+    "message": "Dannex Download Manager on pois päältä. Napsauta ottaaksesi sen käyttöön."
+  },
+  "tip_remote": {
+    "message": "Lataukset menevät ohjelmaan Dannex Download Manager osoitteessa $address$. Napsauta poistaaksesi sen käytöstä.",
+    "placeholders": {
+      "address": {
+        "content": "$1",
+        "example": "https://192.168.1.10:8463/"
+      }
+    }
+  },
+  "status_off_in_app": {
+    "message": "Pois päältä ohjelmassa Dannex Download Manager"
+  },
+  "status_duplicate": {
+    "message": "Tämän laajennuksen toinen kopio on asennettu"
+  },
+  "click_fix": {
+    "message": "Katso, mitä tehdä, napsauttamalla."
+  },
+  "click_details": {
+    "message": "Katso lisätiedot napsauttamalla."
+  },
+  "toolbar_exclude": {
+    "message": "Älä ota latauksia tältä sivustolta"
+  },
+  "toolbar_help": {
+    "message": "Ohje"
+  },
+  "toolbar_store": {
+    "message": "Hanki automaattiset päivitykset Chrome Web Storesta..."
+  },
+  "options_take_note": {
+    "message": "Kun se on pois päältä, lataukset jäävät selaimeen. Laajennuksen painikkeen napsautus tekee saman."
+  },
+  "options_what_to_do": {
+    "message": "Katso, mitä tehdä"
+  },
+  "options_more": {
+    "message": "Lisää"
+  },
+  "page_checking": {
+    "message": "Etsitään ohjelmaa Dannex Download Manager…"
+  },
+  "page_on_lead": {
+    "message": "Tässä selaimessa aloittamasi lataukset menevät ohjelmaan Dannex Download Manager."
+  },
+  "page_off_lead": {
+    "message": "Se on pois päältä, joten lataukset jäävät tähän selaimeen."
+  },
+  "page_remote_title": {
+    "message": "Lataukset menevät toiseen ohjelmaan Dannex Download Manager"
+  },
+  "page_remote_lead": {
+    "message": "Tässä selaimessa aloittamasi lataukset menevät ohjelmaan Dannex Download Manager osoitteessa $address$.",
+    "placeholders": {
+      "address": {
+        "content": "$1",
+        "example": "https://192.168.1.10:8463/"
+      }
+    }
+  },
+  "page_lead_not_installed": {
+    "message": "Tämä laajennus toimii ohjelman Dannex Download Manager kanssa. Se on ilmainen latausten hallinta tietokoneellesi. Asenna se, niin tämä sivu päivittyy itsestään."
+  },
+  "page_lead_not_running": {
+    "message": "Selain yritti käynnistää sen, mutta se kesti liian kauan. Käynnistä Dannex Download Manager itse ja yritä uudelleen."
+  },
+  "page_lead_host_failed": {
+    "message": "Tavallisin syy on tietoturvaohjelmisto. Salli Dannex Download Manager virustentorjuntaohjelmassasi tai asenna se uudelleen."
+  },
+  "page_lead_forbidden": {
+    "message": "Tämä ohjelman Dannex Download Manager versio on liian vanha tälle laajennukselle. Asenna uusin."
+  },
+  "page_lead_too_large": {
+    "message": "Sivusto lähetti enemmän kirjautumistietoja kuin Dannex Download Manager hyväksyy, joten selain piti latauksen itsellään. Yleensä auttaa, kun kirjautuu sivustolta ulos ja takaisin sisään."
+  },
+  "page_download": {
+    "message": "Lataa Dannex Download Manager"
+  },
+  "page_files_windows": {
+    "message": "Windows 10:lle ja 11:lle."
+  },
+  "page_files_macos": {
+    "message": "Macille (.dmg-levykuva)."
+  },
+  "page_files_linux": {
+    "message": "Linuxille (AppImage, .deb tai .rpm)."
+  },
+  "page_files_other": {
+    "message": "Windows-, Mac- ja Linux-tietokoneille."
+  },
+  "page_all_downloads": {
+    "message": "Kaikki lataukset"
+  },
+  "page_step_windows": {
+    "message": "Suorita lataamasi asennusohjelma."
+  },
+  "page_step_macos": {
+    "message": "Avaa .dmg-tiedosto, vedä Dannex Download Manager Ohjelmat-kansioon ja käynnistä se kerran."
+  },
+  "page_step_linux": {
+    "message": "Asenna .deb- tai .rpm-paketti (tai suorita AppImage) ja käynnistä sitten Dannex Download Manager kerran."
+  },
+  "page_step_other": {
+    "message": "Dannex Download Manager toimii Windows-, Mac- ja Linux-tietokoneissa. Asenna se yhteen niistä ja lisää tämä laajennus siellä selaimeen."
+  },
+  "page_step_wait": {
+    "message": "Pidä tämä sivu auki. Se muuttuu itsestään, kun Dannex Download Manager on valmis."
+  },
+  "page_step_restart": {
+    "message": "Eikö mitään tapahdu minuutin jälkeen? Käynnistä selain uudelleen."
+  },
+  "page_step_installed": {
+    "message": "Onko se jo asennettu? Avaa ohjelmassa Dannex Download Manager Asetukset → Yleiset → Testaa selainintegrointia."
+  },
+  "page_try_again": {
+    "message": "Yritä uudelleen"
+  },
+  "page_app_options": {
+    "message": "Avaa ohjelman Dannex Download Manager asetukset"
+  },
+  "page_duplicate_title": {
+    "message": "Poista tämä kopio"
+  },
+  "page_duplicate_lead": {
+    "message": "Chrome Web Storesta asennettu kopio on myös asennettu tähän selaimeen, ja se päivittää itsensä. Tätä kopiota ei tarvita."
+  },
+  "page_remove": {
+    "message": "Poista tämä kopio"
+  },
+  "page_extensions": {
+    "message": "Avaa laajennussivu"
+  },
+  "page_update_app_how": {
+    "message": "Valitse ohjelmassa Dannex Download Manager Ohje → Tarkista päivitykset..."
+  },
+  "page_behind": {
+    "message": "Tämän laajennuksen uudempi versio tuli ohjelman Dannex Download Manager $version$ mukana.",
+    "placeholders": {
+      "version": {
+        "content": "$1",
+        "example": "0.7.0"
+      }
+    }
+  },
+  "page_behind_store": {
+    "message": "Selain päivittää sen itsestään muutaman tunnin kuluessa tai heti painikkeella Tarkista päivitykset."
+  },
+  "page_behind_unpacked": {
+    "message": "Lataa laajennus uudelleen, jotta voit käyttää sitä."
+  },
+  "page_behind_other": {
+    "message": "Lisää uusi ohjelman Dannex Download Manager kansiosta samalla tavalla kuin lisäsit tämän."
+  },
+  "page_check_updates": {
+    "message": "Tarkista päivitykset"
+  },
+  "page_up_to_date": {
+    "message": "Ei uudempaa versiota vielä. Selain tarkistaa uudelleen itsestään."
+  },
+  "page_reload": {
+    "message": "Lataa laajennus uudelleen"
+  },
+  "page_store": {
+    "message": "Hanki automaattiset päivitykset: lisää tämä laajennus Chrome Web Storesta ja poista sitten tämä kopio."
+  },
+  "page_open_store": {
+    "message": "Avaa Chrome Web Store"
+  },
+  "page_temporary": {
+    "message": "Firefox poistaa tämän lisäosan sulkeutuessaan, koska se lisättiin väliaikaisena lisäosana."
+  },
+  "page_site_access": {
+    "message": "Tämä laajennus on sallittu vain joillakin sivustoilla, joten muiden sivustojen lataukset jäävät selaimeen."
+  },
+  "page_allow_sites": {
+    "message": "Salli kaikilla sivustoilla"
+  },
+  "page_private": {
+    "message": "Yksityisten ikkunoiden lataukset jäävät selaimeen, koska tämä laajennus ei ole sallittu niissä."
+  },
+  "page_private_chromium": {
+    "message": "Voit muuttaa tämän ottamalla Salli incognito-tilassa -asetuksen käyttöön sen tietosivulla."
+  },
+  "page_learn_more": {
+    "message": "Lisätietoja"
+  }
+}

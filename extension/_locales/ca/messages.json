@@ -1,0 +1,443 @@
+{
+  "name": {
+    "message": "DDM Integration Module"
+  },
+  "description": {
+    "message": "Transfereix les baixades del navegador a Dannex Download Manager."
+  },
+  "menu": {
+    "message": "Baixa amb DDM"
+  },
+  "video_download": {
+    "message": "Baixa el vídeo"
+  },
+  "video_more": {
+    "message": "Més opcions"
+  },
+  "video_hide_here": {
+    "message": "Amaga només en aquest vídeo"
+  },
+  "video_never_site": {
+    "message": "No ho tornis a mostrar a $site$",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "video_settings": {
+    "message": "Configuració del botó..."
+  },
+  "video_sent": {
+    "message": "Enviat a DDM"
+  },
+  "video_failed": {
+    "message": "Dannex Download Manager no està instal·lat o no s'ha iniciat"
+  },
+  "video_drag": {
+    "message": "Arrossegueu per moure'l per la vora del vídeo"
+  },
+  "menu_selected": {
+    "message": "Baixa els enllaços seleccionats amb DDM"
+  },
+  "menu_all": {
+    "message": "Baixa tots els enllaços amb DDM"
+  },
+  "menu_images": {
+    "message": "Baixa totes les imatges amb DDM"
+  },
+  "menu_media": {
+    "message": "Baixa tots els vídeos i àudios amb DDM"
+  },
+  "status_not_installed": {
+    "message": "Dannex Download Manager no està instal·lat"
+  },
+  "status_installed": {
+    "message": "Dannex Download Manager està instal·lat"
+  },
+  "status_forbidden": {
+    "message": "Actualitza Dannex Download Manager"
+  },
+  "status_not_running": {
+    "message": "Dannex Download Manager no s’ha iniciat"
+  },
+  "status_host_failed": {
+    "message": "Alguna cosa està bloquejant Dannex Download Manager"
+  },
+  "status_too_large": {
+    "message": "L’última baixada no ha pogut anar a Dannex Download Manager"
+  },
+  "status_update_app": {
+    "message": "Actualitza Dannex Download Manager per aprofitar tot el que pot fer aquesta extensió."
+  },
+  "popup_take": {
+    "message": "Envia les baixades a Dannex Download Manager"
+  },
+  "popup_proxy": {
+    "message": "Baixa mitjançant la VPN o el servidor intermediari d’aquest navegador"
+  },
+  "popup_proxy_title": {
+    "message": "Activa-ho si fas servir una extensió de VPN o de servidor intermediari en aquest navegador. El navegador et demana permís una sola vegada."
+  },
+  "popup_proxy_title_chromium": {
+    "message": "Activa-ho si fas servir una extensió de VPN o de servidor intermediari en aquest navegador. Mentre estigui desactivat, l’extensió no consulta el servidor intermediari del navegador."
+  },
+  "popup_help": {
+    "message": "Ajuda"
+  },
+  "page_support": {
+    "message": "Dona suport a DDM"
+  },
+  "popup_declined": {
+    "message": "L’última baixada s’ha quedat al navegador: $name$",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "setup.png"
+      }
+    }
+  },
+  "popup_declined_unnamed": {
+    "message": "L’última baixada s’ha quedat al navegador."
+  },
+  "declined_file_type": {
+    "message": "El seu tipus de fitxer no és a la llista de Dannex Download Manager (Opcions → Tipus de fitxer)."
+  },
+  "declined_site": {
+    "message": "El seu lloc és a la llista de llocs que Dannex Download Manager deixa passar (Opcions → Tipus de fitxer)."
+  },
+  "declined_address": {
+    "message": "La seva adreça és a la llista d’adreces que Dannex Download Manager deixa passar (Opcions → Tipus de fitxer)."
+  },
+  "declined_small": {
+    "message": "És més petit que el fitxer mínim que pren Dannex Download Manager (Opcions → Tipus de fitxer)."
+  },
+  "declined_browser": {
+    "message": "Aquest navegador no està marcat a Opcions → General de Dannex Download Manager."
+  },
+  "declined_integration_off": {
+    "message": "La integració amb el navegador està desactivada a Opcions → General de Dannex Download Manager."
+  },
+  "declined_site_access": {
+    "message": "Aquesta extensió no té permís en aquest lloc."
+  },
+  "declined_handed_back": {
+    "message": "Has triat «Baixa amb el navegador» per a aquesta baixada a Dannex Download Manager."
+  },
+  "video_off": {
+    "message": "El botó de baixada està desactivat en aquest lloc"
+  },
+  "video_drm": {
+    "message": "Vídeo protegit: no es pot desar"
+  },
+  "video_unnamed": {
+    "message": "No es pot saber quin vídeo és: obriu la seva pàgina i torneu-ho a provar allà"
+  },
+  "video_looking": {
+    "message": "Cercant les qualitats…"
+  },
+  "video_open_mdm": {
+    "message": "Obre a DDM…"
+  },
+  "video_no_choices": {
+    "message": "No hi ha cap vídeo per baixar aquí"
+  },
+  "video_playlist": {
+    "message": "Una llista de vídeos: trieu-los a Dannex Download Manager"
+  },
+  "video_no_ytdlp": {
+    "message": "Dannex Download Manager necessita yt-dlp per a aquest vídeo. Obre a DDM… per instal·lar-lo."
+  },
+  "video_too_long": {
+    "message": "La cerca ha trigat massa"
+  },
+  "video_busy": {
+    "message": "Dannex Download Manager està ocupat amb altres vídeos"
+  },
+  "video_queued": {
+    "message": "S'ha afegit a la cua"
+  },
+  "video_failed_lookup": {
+    "message": "No s'ha pogut consultar"
+  },
+  "video_tab_video": {
+    "message": "Vídeo"
+  },
+  "video_tab_audio": {
+    "message": "Àudio"
+  },
+  "video_open_post": {
+    "message": "Obre la publicació i fes servir el botó que hi ha"
+  },
+  "video_audio_original": {
+    "message": "Només àudio, original $type$",
+    "placeholders": {
+      "type": {
+        "content": "$1",
+        "example": "M4A"
+      }
+    }
+  },
+  "video_audio_only": {
+    "message": "Només àudio $type$",
+    "placeholders": {
+      "type": {
+        "content": "$1",
+        "example": "MP3 320 kbps"
+      }
+    }
+  },
+  "video_pick_waiting": {
+    "message": "S’iniciarà tan bon punt DDM estigui a punt…"
+  },
+  "video_pick_gone": {
+    "message": "Aquesta qualitat no està disponible: tria’n una altra"
+  },
+  "popup_send_to": {
+    "message": "Enviar baixades a"
+  },
+  "popup_send_here": {
+    "message": "Aquest ordinador"
+  },
+  "popup_send_remote": {
+    "message": "Dannex Download Manager en un altre ordinador"
+  },
+  "popup_remote_code": {
+    "message": "Codi d'empllaçament"
+  },
+  "popup_remote_open": {
+    "message": "Obrir-lo"
+  },
+  "popup_remote_pair": {
+    "message": "Empllaçar"
+  },
+  "popup_remote_help": {
+    "message": "Primer obre’n l’adreça en aquest navegador i continua més enllà de l’advertència de seguretat. Després introdueix el codi d’Opcions → Remot → Vincula un dispositiu."
+  },
+  "status_remote": {
+    "message": "Les baixades van a $address$",
+    "placeholders": {
+      "address": {
+        "content": "$1",
+        "example": "https://192.168.1.10:8463/"
+      }
+    }
+  },
+  "remote_address": {
+    "message": "Introduïu la seva adreça https://."
+  },
+  "remote_unreachable": {
+    "message": "No s’hi ha pogut connectar. Obre’n l’adreça en aquest navegador, continua més enllà de l’advertència de seguretat i torna-ho a provar."
+  },
+  "remote_wrong_code": {
+    "message": "Codi incorrecte."
+  },
+  "remote_no_code": {
+    "message": "Encara no hi ha cap codi per introduir: fes clic primer a Vincula un dispositiu allà."
+  },
+  "remote_too_soon": {
+    "message": "Espereu un moment i torneu-ho a provar."
+  },
+  "remote_failed": {
+    "message": "No ha funcionat. Torneu-ho a provar."
+  },
+  "remote_device_name": {
+    "message": "Extensió del navegador"
+  },
+  "badge_off": {
+    "message": "OFF"
+  },
+  "tip_on": {
+    "message": "Dannex Download Manager està activat. Fes clic per desactivar-lo."
+  },
+  "tip_off": {
+    "message": "Dannex Download Manager està desactivat. Fes clic per activar-lo."
+  },
+  "tip_remote": {
+    "message": "Les baixades van a Dannex Download Manager a $address$. Fes clic per desactivar-lo.",
+    "placeholders": {
+      "address": {
+        "content": "$1",
+        "example": "https://192.168.1.10:8463/"
+      }
+    }
+  },
+  "status_off_in_app": {
+    "message": "Desactivat a Dannex Download Manager"
+  },
+  "status_duplicate": {
+    "message": "Hi ha una altra còpia d’aquesta extensió instal·lada"
+  },
+  "click_fix": {
+    "message": "Fes clic per veure què has de fer."
+  },
+  "click_details": {
+    "message": "Fes clic per veure’n els detalls."
+  },
+  "toolbar_exclude": {
+    "message": "No prenguis baixades d’aquest lloc"
+  },
+  "toolbar_help": {
+    "message": "Ajuda"
+  },
+  "toolbar_store": {
+    "message": "Obtén actualitzacions automàtiques de Chrome Web Store..."
+  },
+  "options_take_note": {
+    "message": "Quan està desactivada, les baixades es queden al navegador. Fer clic al botó de l’extensió fa el mateix."
+  },
+  "options_what_to_do": {
+    "message": "Veure què cal fer"
+  },
+  "options_more": {
+    "message": "Més"
+  },
+  "page_checking": {
+    "message": "Cercant Dannex Download Manager…"
+  },
+  "page_on_lead": {
+    "message": "Les baixades que iniciïs en aquest navegador van a Dannex Download Manager."
+  },
+  "page_off_lead": {
+    "message": "Està desactivada, de manera que les baixades es queden en aquest navegador."
+  },
+  "page_remote_title": {
+    "message": "Les baixades van a un altre Dannex Download Manager"
+  },
+  "page_remote_lead": {
+    "message": "Les baixades que iniciïs en aquest navegador van a Dannex Download Manager a $address$.",
+    "placeholders": {
+      "address": {
+        "content": "$1",
+        "example": "https://192.168.1.10:8463/"
+      }
+    }
+  },
+  "page_lead_not_installed": {
+    "message": "Aquesta extensió funciona amb Dannex Download Manager, un gestor de baixades gratuït per a l’ordinador. Instal·la’l i aquesta pàgina s’actualitzarà sola."
+  },
+  "page_lead_not_running": {
+    "message": "El navegador ha intentat iniciar-lo, però ha trigat massa. Inicia Dannex Download Manager tu mateix i torna-ho a provar."
+  },
+  "page_lead_host_failed": {
+    "message": "Normalment la causa és el programari de seguretat. Permet Dannex Download Manager al programa antivirus o torna’l a instal·lar."
+  },
+  "page_lead_forbidden": {
+    "message": "Aquesta versió de Dannex Download Manager és massa antiga per a aquesta extensió. Instal·la l’última."
+  },
+  "page_lead_too_large": {
+    "message": "El lloc ha enviat més dades d’inici de sessió de les que accepta Dannex Download Manager, de manera que el navegador s’ha quedat la baixada. Tancar la sessió al lloc i tornar-la a iniciar sol solucionar-ho."
+  },
+  "page_download": {
+    "message": "Baixa Dannex Download Manager"
+  },
+  "page_files_windows": {
+    "message": "Per a Windows 10 i 11."
+  },
+  "page_files_macos": {
+    "message": "Per a Mac (una imatge de disc .dmg)."
+  },
+  "page_files_linux": {
+    "message": "Per a Linux (AppImage, .deb o .rpm)."
+  },
+  "page_files_other": {
+    "message": "Per a ordinadors amb Windows, Mac i Linux."
+  },
+  "page_all_downloads": {
+    "message": "Totes les baixades"
+  },
+  "page_step_windows": {
+    "message": "Executa el programa d’instal·lació que has baixat."
+  },
+  "page_step_macos": {
+    "message": "Obre el .dmg, arrossega Dannex Download Manager a Aplicacions i inicia’l una vegada."
+  },
+  "page_step_linux": {
+    "message": "Instal·la el .deb o el .rpm (o executa l’AppImage) i després inicia Dannex Download Manager una vegada."
+  },
+  "page_step_other": {
+    "message": "Dannex Download Manager funciona en ordinadors amb Windows, Mac i Linux. Instal·la’l en un i afegeix aquesta extensió a un navegador d’aquest ordinador."
+  },
+  "page_step_wait": {
+    "message": "Deixa aquesta pàgina oberta. Canvia sola quan Dannex Download Manager estigui a punt."
+  },
+  "page_step_restart": {
+    "message": "No passa res al cap d’un minut? Reinicia el navegador."
+  },
+  "page_step_installed": {
+    "message": "Ja està instal·lat? A Dannex Download Manager, obre Opcions → General → Prova la integració amb el navegador."
+  },
+  "page_try_again": {
+    "message": "Torna-ho a provar"
+  },
+  "page_app_options": {
+    "message": "Obre les Opcions de Dannex Download Manager"
+  },
+  "page_duplicate_title": {
+    "message": "Elimina aquesta còpia"
+  },
+  "page_duplicate_lead": {
+    "message": "La còpia de Chrome Web Store també està instal·lada en aquest navegador i s’actualitza sola. Aquesta còpia no cal."
+  },
+  "page_remove": {
+    "message": "Elimina aquesta còpia"
+  },
+  "page_extensions": {
+    "message": "Obre la pàgina d’extensions"
+  },
+  "page_update_app_how": {
+    "message": "A Dannex Download Manager, tria Ajuda → Cerca actualitzacions..."
+  },
+  "page_behind": {
+    "message": "Dannex Download Manager $version$ ha inclòs una versió més recent d’aquesta extensió.",
+    "placeholders": {
+      "version": {
+        "content": "$1",
+        "example": "0.7.0"
+      }
+    }
+  },
+  "page_behind_store": {
+    "message": "El navegador l’actualitza sol en unes hores, o ara mateix amb Cerca actualitzacions."
+  },
+  "page_behind_unpacked": {
+    "message": "Torna a carregar l’extensió per fer-la servir."
+  },
+  "page_behind_other": {
+    "message": "Afegeix la nova des de la carpeta de Dannex Download Manager, com vas afegir aquesta."
+  },
+  "page_check_updates": {
+    "message": "Cerca actualitzacions"
+  },
+  "page_up_to_date": {
+    "message": "Encara no hi ha cap versió més recent. El navegador ho torna a comprovar sol."
+  },
+  "page_reload": {
+    "message": "Torna a carregar l’extensió"
+  },
+  "page_store": {
+    "message": "Obtén actualitzacions automàtiques: afegeix aquesta extensió des de Chrome Web Store i després elimina aquesta còpia."
+  },
+  "page_open_store": {
+    "message": "Obre Chrome Web Store"
+  },
+  "page_temporary": {
+    "message": "Firefox eliminarà aquest complement en tancar-se, perquè s’ha afegit com a complement temporal."
+  },
+  "page_site_access": {
+    "message": "Aquesta extensió només té permís en alguns llocs, de manera que les baixades d’altres llocs es queden al navegador."
+  },
+  "page_allow_sites": {
+    "message": "Permet a tots els llocs"
+  },
+  "page_private": {
+    "message": "Les baixades des de finestres privades es queden al navegador, perquè aquesta extensió no hi té permís."
+  },
+  "page_private_chromium": {
+    "message": "Per canviar-ho, activa Permet en mode d’incògnit a la seva pàgina de detalls."
+  },
+  "page_learn_more": {
+    "message": "Més informació"
+  }
+}

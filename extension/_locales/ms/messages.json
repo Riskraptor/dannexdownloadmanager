@@ -1,0 +1,443 @@
+{
+  "name": {
+    "message": "DDM Integration Module"
+  },
+  "description": {
+    "message": "Menyerahkan muat turun daripada pelayar kepada Dannex Download Manager."
+  },
+  "menu": {
+    "message": "Muat turun dengan DDM"
+  },
+  "video_download": {
+    "message": "Muat turun video"
+  },
+  "video_more": {
+    "message": "Lagi pilihan"
+  },
+  "video_hide_here": {
+    "message": "Sembunyikan pada video ini"
+  },
+  "video_never_site": {
+    "message": "Jangan sekali-kali pada $site$",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "video_settings": {
+    "message": "Tetapan butang..."
+  },
+  "video_sent": {
+    "message": "Dihantar ke DDM"
+  },
+  "video_failed": {
+    "message": "Dannex Download Manager tidak dipasang atau tidak bermula"
+  },
+  "video_drag": {
+    "message": "Seret untuk mengalihkannya di sepanjang tepi video"
+  },
+  "menu_selected": {
+    "message": "Muat turun pautan terpilih dengan DDM"
+  },
+  "menu_all": {
+    "message": "Muat turun semua pautan dengan DDM"
+  },
+  "menu_images": {
+    "message": "Muat turun semua imej dengan DDM"
+  },
+  "menu_media": {
+    "message": "Muat turun semua video dan audio dengan DDM"
+  },
+  "status_not_installed": {
+    "message": "Dannex Download Manager tidak dipasang"
+  },
+  "status_installed": {
+    "message": "Dannex Download Manager telah dipasang"
+  },
+  "status_forbidden": {
+    "message": "Kemas kini Dannex Download Manager"
+  },
+  "status_not_running": {
+    "message": "Dannex Download Manager tidak bermula"
+  },
+  "status_host_failed": {
+    "message": "Sesuatu menyekat Dannex Download Manager"
+  },
+  "status_too_large": {
+    "message": "Muat turun terakhir tidak dapat dihantar ke Dannex Download Manager"
+  },
+  "status_update_app": {
+    "message": "Kemas kini Dannex Download Manager untuk mendapatkan semua yang boleh dilakukan sambungan ini."
+  },
+  "popup_take": {
+    "message": "Hantar muat turun ke Dannex Download Manager"
+  },
+  "popup_proxy": {
+    "message": "Muat turun melalui VPN atau proksi pelayar ini"
+  },
+  "popup_proxy_title": {
+    "message": "Hidupkan ini jika anda menggunakan sambungan VPN atau proksi dalam pelayar ini. Pelayar meminta anda membenarkannya sekali."
+  },
+  "popup_proxy_title_chromium": {
+    "message": "Hidupkan ini jika anda menggunakan sambungan VPN atau proksi dalam pelayar ini. Semasa dimatikan, sambungan tidak melihat proksi pelayar."
+  },
+  "popup_help": {
+    "message": "Bantuan"
+  },
+  "page_support": {
+    "message": "Sokong DDM"
+  },
+  "popup_declined": {
+    "message": "Muat turun terakhir anda kekal dalam pelayar: $name$",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "setup.png"
+      }
+    }
+  },
+  "popup_declined_unnamed": {
+    "message": "Muat turun terakhir anda kekal dalam pelayar."
+  },
+  "declined_file_type": {
+    "message": "Jenis failnya tiada dalam senarai Dannex Download Manager (Pilihan → Jenis fail)."
+  },
+  "declined_site": {
+    "message": "Tapaknya ada dalam senarai tapak yang dibiarkan oleh Dannex Download Manager (Pilihan → Jenis fail)."
+  },
+  "declined_address": {
+    "message": "Alamatnya ada dalam senarai alamat yang dibiarkan oleh Dannex Download Manager (Pilihan → Jenis fail)."
+  },
+  "declined_small": {
+    "message": "Ia lebih kecil daripada fail terkecil yang diambil Dannex Download Manager (Pilihan → Jenis fail)."
+  },
+  "declined_browser": {
+    "message": "Pelayar ini tidak ditandakan dalam Pilihan → Umum Dannex Download Manager."
+  },
+  "declined_integration_off": {
+    "message": "Penyepaduan pelayar dimatikan dalam Pilihan → Umum Dannex Download Manager."
+  },
+  "declined_site_access": {
+    "message": "Sambungan ini tidak dibenarkan pada tapak itu."
+  },
+  "declined_handed_back": {
+    "message": "Anda telah memilih “Muat turun dengan pelayar” untuk muat turun ini dalam Dannex Download Manager."
+  },
+  "video_off": {
+    "message": "Butang muat turun dimatikan pada tapak ini"
+  },
+  "video_drm": {
+    "message": "Video dilindungi: tidak boleh disimpan"
+  },
+  "video_unnamed": {
+    "message": "Tidak dapat dipastikan video yang mana ini: buka halamannya sendiri dan cuba di sana"
+  },
+  "video_looking": {
+    "message": "Mencari kualiti…"
+  },
+  "video_open_mdm": {
+    "message": "Buka dalam DDM…"
+  },
+  "video_no_choices": {
+    "message": "Tiada video untuk dimuat turun di sini"
+  },
+  "video_playlist": {
+    "message": "Senarai video: pilih video dalam Dannex Download Manager"
+  },
+  "video_no_ytdlp": {
+    "message": "Dannex Download Manager memerlukan yt-dlp untuk video ini. Buka dalam DDM… untuk memasangnya."
+  },
+  "video_too_long": {
+    "message": "Pencarian mengambil masa terlalu lama"
+  },
+  "video_busy": {
+    "message": "Dannex Download Manager sedang sibuk dengan video lain"
+  },
+  "video_queued": {
+    "message": "Ditambah pada giliran"
+  },
+  "video_failed_lookup": {
+    "message": "Tidak dapat mencarinya"
+  },
+  "video_tab_video": {
+    "message": "Video"
+  },
+  "video_tab_audio": {
+    "message": "Audio"
+  },
+  "video_open_post": {
+    "message": "Buka siaran, kemudian gunakan butang di sana"
+  },
+  "video_audio_original": {
+    "message": "Audio sahaja, asal $type$",
+    "placeholders": {
+      "type": {
+        "content": "$1",
+        "example": "M4A"
+      }
+    }
+  },
+  "video_audio_only": {
+    "message": "Audio sahaja $type$",
+    "placeholders": {
+      "type": {
+        "content": "$1",
+        "example": "MP3 320 kbps"
+      }
+    }
+  },
+  "video_pick_waiting": {
+    "message": "Bermula sebaik sahaja DDM sedia…"
+  },
+  "video_pick_gone": {
+    "message": "Kualiti itu tidak tersedia: pilih yang lain"
+  },
+  "popup_send_to": {
+    "message": "Hantar muat turun ke"
+  },
+  "popup_send_here": {
+    "message": "Komputer ini"
+  },
+  "popup_send_remote": {
+    "message": "Dannex Download Manager pada komputer lain"
+  },
+  "popup_remote_code": {
+    "message": "Kod pasangan"
+  },
+  "popup_remote_open": {
+    "message": "Buka"
+  },
+  "popup_remote_pair": {
+    "message": "Pasangkan"
+  },
+  "popup_remote_help": {
+    "message": "Mula-mula buka alamatnya dalam pelayar ini dan teruskan melepasi amaran keselamatan. Kemudian masukkan kod daripada Pilihan → Jauh → Pasangkan peranti."
+  },
+  "status_remote": {
+    "message": "Muat turun pergi ke $address$",
+    "placeholders": {
+      "address": {
+        "content": "$1",
+        "example": "https://192.168.1.10:8463/"
+      }
+    }
+  },
+  "remote_address": {
+    "message": "Masukkan alamat https://nya."
+  },
+  "remote_unreachable": {
+    "message": "Tidak dapat dicapai. Buka alamatnya dalam pelayar ini, teruskan melepasi amaran keselamatan, kemudian cuba lagi."
+  },
+  "remote_wrong_code": {
+    "message": "Kod salah."
+  },
+  "remote_no_code": {
+    "message": "Belum ada kod untuk dimasukkan: klik Pasangkan peranti di sana dahulu."
+  },
+  "remote_too_soon": {
+    "message": "Tunggu sebentar, kemudian cuba lagi."
+  },
+  "remote_failed": {
+    "message": "Ia tidak berfungsi. Cuba lagi."
+  },
+  "remote_device_name": {
+    "message": "Sambungan pelayar"
+  },
+  "badge_off": {
+    "message": "MATI"
+  },
+  "tip_on": {
+    "message": "Dannex Download Manager dihidupkan. Klik untuk mematikannya."
+  },
+  "tip_off": {
+    "message": "Dannex Download Manager dimatikan. Klik untuk menghidupkannya."
+  },
+  "tip_remote": {
+    "message": "Muat turun pergi ke Dannex Download Manager di $address$. Klik untuk mematikannya.",
+    "placeholders": {
+      "address": {
+        "content": "$1",
+        "example": "https://192.168.1.10:8463/"
+      }
+    }
+  },
+  "status_off_in_app": {
+    "message": "Dimatikan dalam Dannex Download Manager"
+  },
+  "status_duplicate": {
+    "message": "Salinan lain sambungan ini telah dipasang"
+  },
+  "click_fix": {
+    "message": "Klik untuk melihat apa yang perlu dilakukan."
+  },
+  "click_details": {
+    "message": "Klik untuk butiran."
+  },
+  "toolbar_exclude": {
+    "message": "Jangan ambil muat turun daripada tapak ini"
+  },
+  "toolbar_help": {
+    "message": "Bantuan"
+  },
+  "toolbar_store": {
+    "message": "Dapatkan kemas kini automatik daripada Chrome Web Store..."
+  },
+  "options_take_note": {
+    "message": "Apabila dimatikan, muat turun kekal dalam pelayar. Mengklik butang sambungan melakukan perkara yang sama."
+  },
+  "options_what_to_do": {
+    "message": "Lihat apa yang perlu dilakukan"
+  },
+  "options_more": {
+    "message": "Lagi"
+  },
+  "page_checking": {
+    "message": "Mencari Dannex Download Manager…"
+  },
+  "page_on_lead": {
+    "message": "Muat turun yang anda mulakan dalam pelayar ini pergi ke Dannex Download Manager."
+  },
+  "page_off_lead": {
+    "message": "Ia dimatikan, jadi muat turun kekal dalam pelayar ini."
+  },
+  "page_remote_title": {
+    "message": "Muat turun pergi ke Dannex Download Manager lain"
+  },
+  "page_remote_lead": {
+    "message": "Muat turun yang anda mulakan dalam pelayar ini pergi ke Dannex Download Manager di $address$.",
+    "placeholders": {
+      "address": {
+        "content": "$1",
+        "example": "https://192.168.1.10:8463/"
+      }
+    }
+  },
+  "page_lead_not_installed": {
+    "message": "Sambungan ini berfungsi dengan Dannex Download Manager, pengurus muat turun percuma untuk komputer anda. Pasangkannya, dan halaman ini dikemas kini sendiri."
+  },
+  "page_lead_not_running": {
+    "message": "Pelayar cuba memulakannya, tetapi mengambil masa terlalu lama. Mulakan Dannex Download Manager sendiri, kemudian cuba lagi."
+  },
+  "page_lead_host_failed": {
+    "message": "Perisian keselamatan ialah punca biasa. Benarkan Dannex Download Manager dalam program antivirus anda, atau pasang semula."
+  },
+  "page_lead_forbidden": {
+    "message": "Versi Dannex Download Manager ini terlalu lama untuk sambungan ini. Pasang yang terkini."
+  },
+  "page_lead_too_large": {
+    "message": "Tapak menghantar lebih banyak data log masuk daripada yang diterima Dannex Download Manager, jadi pelayar menyimpan muat turun itu. Log keluar daripada tapak dan log masuk semula biasanya menyelesaikannya."
+  },
+  "page_download": {
+    "message": "Muat turun Dannex Download Manager"
+  },
+  "page_files_windows": {
+    "message": "Untuk Windows 10 dan 11."
+  },
+  "page_files_macos": {
+    "message": "Untuk Mac (imej cakera .dmg)."
+  },
+  "page_files_linux": {
+    "message": "Untuk Linux (AppImage, .deb atau .rpm)."
+  },
+  "page_files_other": {
+    "message": "Untuk komputer Windows, Mac dan Linux."
+  },
+  "page_all_downloads": {
+    "message": "Semua muat turun"
+  },
+  "page_step_windows": {
+    "message": "Jalankan persediaan yang anda muat turun."
+  },
+  "page_step_macos": {
+    "message": "Buka .dmg, seret Dannex Download Manager ke Aplikasi, dan mulakan sekali."
+  },
+  "page_step_linux": {
+    "message": "Pasang .deb atau .rpm (atau jalankan AppImage), kemudian mulakan Dannex Download Manager sekali."
+  },
+  "page_step_other": {
+    "message": "Dannex Download Manager berjalan pada komputer Windows, Mac dan Linux. Pasangkannya pada salah satu, dan tambah sambungan ini pada pelayar di sana."
+  },
+  "page_step_wait": {
+    "message": "Biarkan halaman ini terbuka. Ia berubah dengan sendirinya apabila Dannex Download Manager sudah sedia."
+  },
+  "page_step_restart": {
+    "message": "Tiada apa-apa selepas seminit? Mulakan semula pelayar."
+  },
+  "page_step_installed": {
+    "message": "Sudah dipasang? Dalam Dannex Download Manager, buka Pilihan → Umum → Uji penyepaduan pelayar."
+  },
+  "page_try_again": {
+    "message": "Cuba lagi"
+  },
+  "page_app_options": {
+    "message": "Buka Pilihan Dannex Download Manager"
+  },
+  "page_duplicate_title": {
+    "message": "Alih keluar salinan ini"
+  },
+  "page_duplicate_lead": {
+    "message": "Salinan daripada Chrome Web Store turut dipasang dalam pelayar ini, dan ia sentiasa dikemas kini. Salinan ini tidak diperlukan."
+  },
+  "page_remove": {
+    "message": "Alih keluar salinan ini"
+  },
+  "page_extensions": {
+    "message": "Buka halaman sambungan"
+  },
+  "page_update_app_how": {
+    "message": "Dalam Dannex Download Manager, pilih Bantuan → Semak kemas kini..."
+  },
+  "page_behind": {
+    "message": "Versi sambungan ini yang lebih baharu disertakan bersama Dannex Download Manager $version$.",
+    "placeholders": {
+      "version": {
+        "content": "$1",
+        "example": "0.7.0"
+      }
+    }
+  },
+  "page_behind_store": {
+    "message": "Pelayar mengemas kininya sendiri dalam masa beberapa jam, atau sekarang dengan Semak kemas kini."
+  },
+  "page_behind_unpacked": {
+    "message": "Muat semula sambungan untuk menggunakannya."
+  },
+  "page_behind_other": {
+    "message": "Tambah yang baharu daripada folder Dannex Download Manager, seperti anda menambah yang ini."
+  },
+  "page_check_updates": {
+    "message": "Semak kemas kini"
+  },
+  "page_up_to_date": {
+    "message": "Belum ada versi yang lebih baharu. Pelayar menyemak semula dengan sendirinya."
+  },
+  "page_reload": {
+    "message": "Muat semula sambungan"
+  },
+  "page_store": {
+    "message": "Dapatkan kemas kini automatik: tambah sambungan ini daripada Chrome Web Store, kemudian alih keluar salinan ini."
+  },
+  "page_open_store": {
+    "message": "Buka Chrome Web Store"
+  },
+  "page_temporary": {
+    "message": "Firefox akan membuang alat tambah ini apabila ditutup, kerana ia ditambah sebagai alat tambah sementara."
+  },
+  "page_site_access": {
+    "message": "Sambungan ini hanya dibenarkan pada sesetengah tapak, jadi muat turun daripada tapak lain kekal dalam pelayar."
+  },
+  "page_allow_sites": {
+    "message": "Benarkan pada semua tapak"
+  },
+  "page_private": {
+    "message": "Muat turun daripada tetingkap peribadi kekal dalam pelayar, kerana sambungan ini tidak dibenarkan di sana."
+  },
+  "page_private_chromium": {
+    "message": "Untuk mengubahnya, hidupkan Benarkan dalam Incognito pada halaman butirannya."
+  },
+  "page_learn_more": {
+    "message": "Ketahui lebih lanjut"
+  }
+}
