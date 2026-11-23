@@ -17,6 +17,9 @@
   "video_hide_here": {
     "message": "ಈ ವೀಡಿಯೊದಲ್ಲಿ ಮರೆಮಾಡಿ"
   },
+  "video_close": {
+    "message": "ಮುಚ್ಚಿ"
+  },
   "video_never_site": {
     "message": "$site$ ನಲ್ಲಿ ಎಂದಿಗೂ ಬೇಡ",
     "placeholders": {

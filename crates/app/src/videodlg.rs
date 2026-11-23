@@ -8,7 +8,7 @@ use std::sync::{Arc, Mutex};
 
 use egui::{Pos2, Ui, pos2};
 use mdm_tools::resolve::{Choice, Looked, SubChoice, Video};
-use mdm_tools::video::{ALL_UPLOADERS, Subs};
+use mdm_tools::video::{ALL_UPLOADERS, Preloaded, Subs};
 
 use crate::dialogs::{Outcome, window};
 use crate::model::Category;
@@ -44,7 +44,7 @@ pub struct VideoAdd {
     pub remember: Option<Subs>,
     /// The browser's quality menu's look-up the choice was made from, for the download's first
     /// run (videolookup.rs); none from this window, whose download looks the page up itself.
-    pub preloaded: Option<mdm_tools::video::Preloaded>,
+    pub preloaded: Option<Preloaded>,
 }
 
 /// Which helper is being installed.
@@ -109,6 +109,8 @@ pub struct VideoDialog {
     pref: Subs,
     /// The clipboard's page address, read off the window's thread (#661).
     clip: crate::clipboard::Prefill,
+    /// The browser's quality menu's look-up, opened for its choice ([`Self::for_pick`]).
+    preloaded: Option<Preloaded>,
 }
 
 /// What is installed in the tools folder: (folder, yt-dlp, ffmpeg).
@@ -243,6 +245,7 @@ impl VideoDialog {
             embed: false,
             pref: Subs::default(),
             clip: Default::default(),
+            preloaded: None,
         }
     }
 
@@ -279,6 +282,39 @@ impl VideoDialog {
         }
     }
 
+    /// Opened for the browser's quality menu's choice `p`: the video as the menu's look-up found
+    /// it, that quality chosen, nothing looked up again; Download Now adds it with the look-up
+    /// (its first run, `VideoAdd::preloaded`), as long as the page and the quality stay.
+    /// Called on a window opened for its page ([`Self::for_page`]), subtitles and Music's folder
+    /// set, which the choice follows.
+    pub fn picked(self, p: crate::videolookup::Picked) -> Self {
+        let mut d = self;
+        d.auto_look = false;
+        d.looked_up = d.page.clone();
+        let found = found_tools(None);
+        d.tools_seen = found.clone();
+        d.tools = found;
+        d.set_video_with(p.video, p.merge);
+        let at = d.video.as_ref().and_then(|(_, choices)| {
+            choices
+                .iter()
+                .position(|c| c.selector == p.choice.selector)
+                .or_else(|| choices.iter().position(|c| c.label == p.choice.label))
+        });
+        if let Some(i) = at {
+            d.chosen = i;
+            d.rows.show_row(i, 8);
+            d.name_from_choice();
+        }
+        d.preloaded = Some(Preloaded {
+            slot: p.info,
+            selector: p.choice.selector,
+            label: p.choice.label,
+            merge: p.merge,
+        });
+        d
+    }
+
     /// The browser's context, while the address is still the one it came with.
     fn context(&self) -> mdm_ipc::Command {
         if self.page.trim() == self.from_browser {
@@ -290,14 +326,20 @@ impl VideoDialog {
 
     /// The choices for a looked-up video: merged qualities when ffmpeg is there (as last found:
     /// they follow when that changes, `take_tools`).
-    fn set_video(&mut self, mut v: Video) {
+    fn set_video(&mut self, v: Video) {
+        let merge = self.tools.as_ref().is_some_and(|t| t.2.is_some());
+        self.set_video_with(v, merge);
+    }
+
+    /// [`Self::set_video`], merged qualities offered or not (`merge`): as the browser's quality
+    /// menu offered them, for its choice to be there.
+    fn set_video_with(&mut self, mut v: Video, merge: bool) {
         // No page reader for this site: the page's own title rather than a hash (#345).
         if self.page.trim() == self.from_browser
             && let Some(title) = page_title(&self.context, &v, &self.page)
         {
             v.title = title.to_owned();
         }
-        let merge = self.tools.as_ref().is_some_and(|t| t.2.is_some());
         let choices = mdm_tools::resolve::choices(&v, merge);
         self.chosen = 0;
         self.rows = Default::default();
@@ -505,7 +547,7 @@ impl VideoDialog {
 
     /// What Download Now or Later adds: a playlist's videos, each its own download, or the
     /// video looked up (none when there is nothing to add).
-    fn added(&self) -> Option<VideoOut> {
+    pub(crate) fn added(&self) -> Option<VideoOut> {
         let folder = self.save_folder();
         let start_now = self.start_now.unwrap_or(true);
         if let Some(list) = &self.list {
@@ -535,8 +577,25 @@ impl VideoDialog {
             context: self.context(),
             subs: subs_for_choice(c, &chosen),
             remember: (!self.subs.is_empty()).then_some(chosen),
-            preloaded: None,
+            // The menu's look-up, for the page and quality it was made for.
+            preloaded: self
+                .preloaded
+                .as_ref()
+                .filter(|p| p.selector == c.selector && self.page.trim() == self.looked_up)
+                .map(|p| Preloaded {
+                    slot: p.slot.clone(),
+                    selector: p.selector.clone(),
+                    label: p.label.clone(),
+                    merge: p.merge,
+                }),
         }))
+    }
+
+    /// Chooses the quality on row `row`, as a click on it does.
+    #[cfg(test)]
+    pub(crate) fn choose_row(&mut self, row: usize) {
+        self.chosen = row;
+        self.name_from_choice();
     }
 
     /// The choice (or the playlist's quality) saves only the sound; None while there is none.
@@ -1289,14 +1348,6 @@ pub(crate) fn subs_for_choice(c: &Choice, chosen: &Subs) -> Subs {
     }
 }
 
-/// The subtitles the window would save with choice `c` of video `v` as it opens, untouched:
-/// the last video's choice (`pref`, settings.video_subs) where this video has that language
-/// ([`pick_for`]), else none. The browser's quality menu adds its choice with these.
-pub(crate) fn default_subs(v: &Video, c: &Choice, pref: &Subs) -> Subs {
-    let subs = mdm_tools::resolve::sub_choices(v, crate::i18n::code());
-    subs_for_choice(c, &subs_at(&subs, pick_for(&subs, pref), pref.embed))
-}
-
 /// The title of the page the browser played video `v` on (`mdm_ipc::Command::video_title`,
 /// trimmed), when yt-dlp knows `v` only by the address it looked up, `page`: it has no page
 /// reader for the site, and on some servers that part is a long hash (#345). None otherwise:
@@ -1522,8 +1573,17 @@ pub(crate) fn choice_label(label: &str) -> String {
 mod tests {
     use super::*;
 
+    /// The subtitles the window would save with choice `c` of video `v` as it opens, untouched:
+    /// the last video's choice (`pref`, settings.video_subs) where this video has that language
+    /// ([`pick_for`]), else none.
+    fn default_subs(v: &Video, c: &Choice, pref: &Subs) -> Subs {
+        let subs = mdm_tools::resolve::sub_choices(v, crate::i18n::code());
+        subs_for_choice(c, &subs_at(&subs, pick_for(&subs, pref), pref.embed))
+    }
+
     /// #359: a Dailymotion player embedded in another site is looked up at the video's own page,
     /// without that site as its Referer (Dailymotion answers 403); any other page keeps it.
+
     #[test]
     fn an_embedded_player_taken_to_its_page_drops_the_embedding_sites_referer() {
         let from = |page: &str| {

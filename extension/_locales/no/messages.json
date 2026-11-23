@@ -17,6 +17,9 @@
   "video_hide_here": {
     "message": "Skjul for denne videoen"
   },
+  "video_close": {
+    "message": "Lukk"
+  },
   "video_never_site": {
     "message": "Aldri på $site$",
     "placeholders": {

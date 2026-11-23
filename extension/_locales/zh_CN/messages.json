@@ -17,6 +17,9 @@
   "video_hide_here": {
     "message": "仅在此视频上隐藏"
   },
+  "video_close": {
+    "message": "关闭"
+  },
   "video_never_site": {
     "message": "从不在 $site$ 显示",
     "placeholders": {

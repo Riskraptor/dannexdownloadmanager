@@ -17,6 +17,9 @@
   "video_hide_here": {
     "message": "Itago sa video na ito"
   },
+  "video_close": {
+    "message": "Isara"
+  },
   "video_never_site": {
     "message": "Huwag kailanman sa $site$",
     "placeholders": {

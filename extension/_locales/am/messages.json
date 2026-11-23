@@ -17,6 +17,9 @@
   "video_hide_here": {
     "message": "በዚህ ቪዲዮ ላይ ደብቁ"
   },
+  "video_close": {
+    "message": "ዝጋ"
+  },
   "video_never_site": {
     "message": "በ$site$ ላይ ዳግም አታሳዩ",
     "placeholders": {

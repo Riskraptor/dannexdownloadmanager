@@ -17,6 +17,9 @@
   "video_hide_here": {
     "message": "Ascundeți pe acest videoclip"
   },
+  "video_close": {
+    "message": "Închide"
+  },
   "video_never_site": {
     "message": "Niciodată pe $site$",
     "placeholders": {

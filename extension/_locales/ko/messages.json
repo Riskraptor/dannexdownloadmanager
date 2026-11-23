@@ -17,6 +17,9 @@
   "video_hide_here": {
     "message": "이 비디오에서 숨기기"
   },
+  "video_close": {
+    "message": "닫기"
+  },
   "video_never_site": {
     "message": "$site$에서는 다시 표시 안 함",
     "placeholders": {

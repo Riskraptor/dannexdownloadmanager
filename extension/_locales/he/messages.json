@@ -17,6 +17,9 @@
   "video_hide_here": {
     "message": "הסתר בסרטון זה"
   },
+  "video_close": {
+    "message": "סגירה"
+  },
   "video_never_site": {
     "message": "לעולם לא ב-$site$",
     "placeholders": {

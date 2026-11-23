@@ -17,6 +17,9 @@
   "video_hide_here": {
     "message": "Ocultar neste vídeo"
   },
+  "video_close": {
+    "message": "Fechar"
+  },
   "video_never_site": {
     "message": "Nunca em $site$",
     "placeholders": {

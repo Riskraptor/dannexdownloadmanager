@@ -17,6 +17,9 @@
   "video_hide_here": {
     "message": "Slėpti šiame vaizdo įraše"
   },
+  "video_close": {
+    "message": "Uždaryti"
+  },
   "video_never_site": {
     "message": "Niekada $site$",
     "placeholders": {

@@ -17,6 +17,9 @@
   "video_hide_here": {
     "message": "केवल इस वीडियो पर छिपाएँ"
   },
+  "video_close": {
+    "message": "बंद करें"
+  },
   "video_never_site": {
     "message": "$site$ पर फिर कभी नहीं",
     "placeholders": {

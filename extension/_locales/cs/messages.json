@@ -17,6 +17,9 @@
   "video_hide_here": {
     "message": "Skrýt u tohoto videa"
   },
+  "video_close": {
+    "message": "Zavřít"
+  },
   "video_never_site": {
     "message": "Nikdy na webu $site$",
     "placeholders": {

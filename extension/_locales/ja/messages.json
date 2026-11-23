@@ -17,6 +17,9 @@
   "video_hide_here": {
     "message": "この動画では非表示"
   },
+  "video_close": {
+    "message": "閉じる"
+  },
   "video_never_site": {
     "message": "$site$ では常に非表示",
     "placeholders": {

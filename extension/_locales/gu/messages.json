@@ -17,6 +17,9 @@
   "video_hide_here": {
     "message": "આ વિડિયો માટે છુપાવો"
   },
+  "video_close": {
+    "message": "બંધ કરો"
+  },
   "video_never_site": {
     "message": "$site$ પર ક્યારેય બતાવશો નહીં",
     "placeholders": {

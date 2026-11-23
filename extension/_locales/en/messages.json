@@ -23,6 +23,10 @@
     "message": "Hide on this video",
     "description": "menu command of the download button over a video: hide the button on this video only"
   },
+  "video_close": {
+    "message": "Close",
+    "description": "tooltip of the X button on the download button over a video: hide the button on this video"
+  },
   "video_never_site": {
     "message": "Never on $site$",
     "description": "menu command of the download button over a video: never show the button on this web site again",

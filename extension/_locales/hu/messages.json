@@ -17,6 +17,9 @@
   "video_hide_here": {
     "message": "Elrejtés ennél a videónál"
   },
+  "video_close": {
+    "message": "Bezárás"
+  },
   "video_never_site": {
     "message": "Soha ne jelenjen meg ezen a webhelyen: $site$",
     "placeholders": {

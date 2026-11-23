@@ -17,6 +17,9 @@
   "video_hide_here": {
     "message": "ఈ వీడియోలో దాచు"
   },
+  "video_close": {
+    "message": "మూసివేయి"
+  },
   "video_never_site": {
     "message": "$site$లో మళ్లీ ఎప్పుడూ వద్దు",
     "placeholders": {

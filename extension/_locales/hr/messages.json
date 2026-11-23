@@ -17,6 +17,9 @@
   "video_hide_here": {
     "message": "Sakrij na ovom videozapisu"
   },
+  "video_close": {
+    "message": "Zatvori"
+  },
   "video_never_site": {
     "message": "Nikad na $site$",
     "placeholders": {

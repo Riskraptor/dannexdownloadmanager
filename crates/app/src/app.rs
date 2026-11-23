@@ -50,9 +50,10 @@ enum Pending {
     Command(Box<ipc::Command>),
     /// From Add URL.
     Url(dialogs::NewUrl),
-    /// A video from Download video from a page, or the browser's quality menu (`true`), with
-    /// the menu's look-up: it goes with the new download only, never to the one already there.
-    Video(Box<crate::videodlg::VideoAdd>, bool),
+    /// A video from Download video from a page, with the browser's quality menu's look-up when
+    /// it was opened for its choice: it goes with the new download only, never to the one
+    /// already there.
+    Video(Box<crate::videodlg::VideoAdd>),
 }
 
 /// What Options → Downloads → "If a duplicate download link is added" (0 ask, 1 numbered name,
@@ -136,11 +137,11 @@ enum VideoRoute {
     Dropped,
 }
 
-fn video_route(step: DupStep, add: crate::videodlg::VideoAdd, from_menu: bool) -> VideoRoute {
+fn video_route(step: DupStep, add: crate::videodlg::VideoAdd) -> VideoRoute {
     match step {
         DupStep::Add => VideoRoute::Add(Box::new(add)),
         DupStep::Ask(_) | DupStep::Look(_) | DupStep::Replace(..) => {
-            VideoRoute::Wait(Pending::Video(Box::new(add), from_menu))
+            VideoRoute::Wait(Pending::Video(Box::new(add)))
         }
         DupStep::Existing(_) => VideoRoute::Dropped,
     }
@@ -575,21 +576,6 @@ fn replacement(items: &[Item], id: u64, yt_dlp: bool) -> Option<Removal> {
     })
 }
 
-/// The quality menu's answer for its choice after the duplicate check: a new download started or
-/// queued (with Overwrite, once the one it replaces is removed beside the window, #743); else
-/// `sent`: the one already there was opened or resumed, DDM asks what to do in its Duplicate
-/// window, or the one there is finished and its file is being looked for beside the window
-/// (#743, #342: what becomes of the choice is decided then). The extension shows it as sent to
-/// DDM.
-fn menu_answer(step: DupStep, start_now: bool) -> &'static str {
-    use ipc::api::lookup;
-    match step {
-        DupStep::Add | DupStep::Replace(..) if start_now => lookup::STARTED,
-        DupStep::Add | DupStep::Replace(..) => lookup::QUEUED,
-        DupStep::Existing(_) | DupStep::Ask(_) | DupStep::Look(_) => lookup::SENT,
-    }
-}
-
 /// What the browser's quality menu looks a video up with, as DDM's tools folder was last found
 /// beside the window (`videodlg::found_tools`, #743): yt-dlp's program and whether ffmpeg is
 /// there (the qualities that need merging offered); else its answer: yt-dlp isn't installed
@@ -623,12 +609,10 @@ enum DupOn {
     Removal(std::sync::mpsc::Receiver<()>),
 }
 
-/// A video being added (#743): its folder read beside the window (and made, for the browser's
-/// quality menu's choice), its name picked once the names there are known
-/// (`App::poll_video_adds`).
+/// A video being added (#743): its folder read beside the window, its name picked once the
+/// names there are known (`App::poll_video_adds`).
 struct VideoAdding {
     add: crate::videodlg::VideoAdd,
-    from_menu: bool,
     folder: PathBuf,
     name: String,
     names: std::sync::mpsc::Receiver<Vec<String>>,
@@ -1110,14 +1094,9 @@ fn numbered_after(
     numbered(places)
 }
 
-/// A video's folder as it is added (`App::add_video`): made first when `make` (the browser's
-/// quality menu's choice: its category's folder, when it isn't there yet), then read: the names
-/// there, lowercase (`naming::names_in`). Looks at and changes the disk: for a thread other
-/// than the window's (#743).
-fn video_folder(dir: &std::path::Path, make: bool) -> Vec<String> {
-    if make {
-        let _ = std::fs::create_dir_all(dir);
-    }
+/// A video's folder as it is added (`App::add_video`), read: the names there, lowercase
+/// (`naming::names_in`). Looks at the disk: for a thread other than the window's (#743).
+fn video_folder(dir: &std::path::Path) -> Vec<String> {
     mdm_engine::naming::names_in(dir)
 }
 
@@ -2292,14 +2271,12 @@ enum VideoGoes {
 }
 
 /// Where a video added goes: Download Now (`start_now`) starts it; Later asks which queue when
-/// Options say so (`queue_panel`). A choice made in the browser's quality menu (`from_menu`,
-/// with Options' "only add to the queue") asks nothing in DDM's window, which the browser's
-/// choice doesn't open: it goes into the main queue, as the browser's own downloads do then
-/// (`open_url`'s silent path). Never in no queue at all, which a cancelled panel would leave it.
-fn video_goes(start_now: bool, from_menu: bool, queue_panel: bool) -> VideoGoes {
+/// Options say so (`queue_panel`), else it goes into the main queue. Never in no queue at all,
+/// which a cancelled panel would leave it.
+fn video_goes(start_now: bool, queue_panel: bool) -> VideoGoes {
     if start_now {
         VideoGoes::Start
-    } else if queue_panel && !from_menu {
+    } else if queue_panel {
         VideoGoes::AskQueue
     } else {
         VideoGoes::MainQueue
@@ -6295,13 +6272,10 @@ impl App {
         .with_music_folder(music)
     }
 
-    /// Download video from a page → Download Now / Later; or the browser's quality menu's
-    /// choice (`from_menu`), which never asks for a queue ([`video_goes`]). Through the
+    /// Download video from a page → Download Now / Later ([`video_goes`]), through the
     /// duplicate check first ([`Self::add_video_checked`]). Its folder is read beside the
-    /// window (#743), and made there for the quality menu's choice (the window asks first; the
-    /// choice was made in the browser): it is added once the names there are known
-    /// (`poll_video_adds`).
-    fn add_video(&mut self, add: crate::videodlg::VideoAdd, from_menu: bool) {
+    /// window (#743): it is added once the names there are known (`poll_video_adds`).
+    fn add_video(&mut self, add: crate::videodlg::VideoAdd) {
         let folder = add
             .dest
             .parent()
@@ -6320,12 +6294,11 @@ impl App {
             for w in waits {
                 let _ = w.recv();
             }
-            let _ = tx.send(video_folder(&dir, from_menu));
+            let _ = tx.send(video_folder(&dir));
             ctx.request_repaint();
         });
         self.video_adds.push(VideoAdding {
             add,
-            from_menu,
             folder,
             name,
             names,
@@ -6356,11 +6329,7 @@ impl App {
     /// Video `adding` added, its folder holding `names` (lowercase, read beside the window).
     fn video_added(&mut self, adding: VideoAdding, names: &[String]) {
         let VideoAdding {
-            add,
-            from_menu,
-            folder,
-            name,
-            ..
+            add, folder, name, ..
         } = adding;
         // yt-dlp takes any `<stem>.*` there as its own: a stem no file and no other download
         // in the folder has, whatever the extension (#32). The rows as they are now: one added
@@ -6376,7 +6345,7 @@ impl App {
             add.context,
             crate::i18n::mark("from a page (yt-dlp)"),
         );
-        let goes = video_goes(add.start_now, from_menu, self.settings.queue_panel_later);
+        let goes = video_goes(add.start_now, self.settings.queue_panel_later);
         if let Some(item) = self.item(id) {
             item.video = Some(model::VideoSpec {
                 selector: add.selector,
@@ -6401,9 +6370,8 @@ impl App {
 
     /// The browser's quality menu over a video (crates/nmhost, videolookup.rs): a look-up
     /// started (answered at once, yt-dlp on a thread of its own), a question about one, or the
-    /// choice made there, added as Download video's Download Now adds it: DDM's window stays
-    /// where it is, the download's progress window opens (Options' "only add to the queue":
-    /// into the main queue instead, with no queue panel either).
+    /// choice made there, which opens Download video with that quality chosen
+    /// ([`Self::open_video_pick`]).
     fn quality_menu(&mut self, cmd: &ipc::Command) -> ipc::api::VideoLookupAnswer {
         use ipc::api::{VideoLookupAnswer, lookup};
         let now = Instant::now();
@@ -6434,28 +6402,32 @@ impl App {
         let Some(pick) = &cmd.video_pick else {
             return VideoLookupAnswer::of(lookup::USE_WINDOW);
         };
-        let folder = self.settings.category_dir(Category::Video, &self.downloads);
-        // A sound-only choice saves in Music, as in the Download video window (#611).
-        let music = (!Category::Music.deleted())
-            .then(|| self.settings.category_dir(Category::Music, &self.downloads));
-        let start_now = !self.settings.only_add_to_queue;
-        let add = self.lookups.pick(pick, cmd.private, now).and_then(|p| {
-            crate::videolookup::video_add(
-                p,
-                &folder,
-                music.as_deref(),
-                start_now,
-                &self.settings.video_subs,
-            )
-        });
-        let Some(add) = add else {
+        let Some(p) = self.lookups.pick(pick, cmd.private, now) else {
             return VideoLookupAnswer::of(lookup::USE_WINDOW);
         };
-        // Already in the list in this quality: Options' "If a duplicate download link is added".
-        // Its category's folder is made, when it isn't there yet, beside the window as it is
-        // added (`add_video`, #743).
-        let step = self.add_video_checked(add, true);
-        VideoLookupAnswer::of(menu_answer(step, start_now))
+        self.open_video_pick(p);
+        VideoLookupAnswer::of(lookup::SENT)
+    }
+
+    /// The quality menu's choice `p` in Download video, that quality chosen and its look-up kept
+    /// (nothing looked up again): Save to, the name and the subtitles are there to check, and
+    /// Download Now / Later add it, as for any video. Open for this page already, the window
+    /// takes the quality chosen now and comes up; open for another page, it keeps its place and
+    /// this one waits its turn (looked up again then), as a page clicked does. A new window comes
+    /// in front of the browser by itself (`dialogs::window`, #208).
+    fn open_video_pick(&mut self, p: crate::videolookup::Picked) {
+        match &self.video_dlg {
+            Some(open) if !open.opened_for(&p.address) => {
+                self.open_video_page(p.address, p.context);
+                return;
+            }
+            Some(_) => dialogs::raise(&self.ui_ctx, dialogs::dialog_viewport("video-page")),
+            None => {}
+        }
+        let dlg = self
+            .video_dialog(Some((&p.address, p.context.clone())))
+            .picked(p);
+        self.video_dlg = Some(dlg);
     }
 
     /// A playlist's videos (#69), one download each, into its folder: the folder is read once,
@@ -11222,15 +11194,10 @@ impl App {
         self.after_duplicate(step, pending)
     }
 
-    /// Download video's Download Now / Later, or the browser's quality menu's choice
-    /// (`from_menu`), through the same check as any other download: the same page in the same
-    /// quality is a duplicate, another quality is not. A question opens its own window (DDM's
-    /// stays where it is). What became of it.
-    fn add_video_checked(
-        &mut self,
-        mut add: crate::videodlg::VideoAdd,
-        from_menu: bool,
-    ) -> DupStep {
+    /// Download video's Download Now / Later, through the same check as any other download:
+    /// the same page in the same quality is a duplicate, another quality is not. A question
+    /// opens its own window (DDM's stays where it is). What became of it.
+    fn add_video_checked(&mut self, mut add: crate::videodlg::VideoAdd) -> DupStep {
         // The Subtitles choice is offered again for the next video (#68), whatever comes of
         // this one.
         if let Some(subs) = add.remember.take() {
@@ -11239,8 +11206,8 @@ impl App {
         }
         let (page, selector) = (add.page.clone(), add.selector.clone());
         let step = self.duplicate_of(|i| same_video(i, &page, &selector));
-        match video_route(step, add, from_menu) {
-            VideoRoute::Add(add) => self.add_video(*add, from_menu),
+        match video_route(step, add) {
+            VideoRoute::Add(add) => self.add_video(*add),
             VideoRoute::Wait(pending) => {
                 self.after_duplicate(step, || pending);
             }
@@ -11277,7 +11244,7 @@ impl App {
                 self.duplicate_cleared = false;
             }
             Pending::Url(new) => self.open_file_info(new, Default::default(), ctx),
-            Pending::Video(add, from_menu) => self.add_video(*add, from_menu),
+            Pending::Video(add) => self.add_video(*add),
         }
     }
 
@@ -11296,8 +11263,8 @@ impl App {
                     self.open_file_info(new, Default::default(), ctx);
                 }
             }
-            Pending::Video(add, from_menu) => {
-                self.add_video_checked(*add, from_menu);
+            Pending::Video(add) => {
+                self.add_video_checked(*add);
             }
         }
     }
@@ -12790,7 +12757,7 @@ impl App {
                     self.video_dlg = None;
                     match out {
                         crate::videodlg::VideoOut::One(add) => {
-                            self.add_video_checked(add, false);
+                            self.add_video_checked(add);
                         }
                         crate::videodlg::VideoOut::Many(add) => self.add_playlist(add),
                     }
@@ -14279,26 +14246,6 @@ mod referrer_tests {
 }
 
 #[cfg(test)]
-mod video_goes_tests {
-    use super::{VideoGoes, video_goes};
-
-    /// The browser's quality menu queues a choice (Options: only add to the queue) in the main
-    /// queue, never through the queue panel, which would open in DDM's window and, cancelled,
-    /// leave it in no queue; the Download video window's Later still asks when Options say so.
-    #[test]
-    fn a_choice_from_the_browser_is_queued_without_asking() {
-        // The quality menu.
-        assert_eq!(video_goes(false, true, true), VideoGoes::MainQueue);
-        assert_eq!(video_goes(false, true, false), VideoGoes::MainQueue);
-        assert_eq!(video_goes(true, true, true), VideoGoes::Start);
-        // The Download video window, as before.
-        assert_eq!(video_goes(false, false, true), VideoGoes::AskQueue);
-        assert_eq!(video_goes(false, false, false), VideoGoes::MainQueue);
-        assert_eq!(video_goes(true, false, true), VideoGoes::Start);
-    }
-}
-
-#[cfg(test)]
 mod duplicate_tests {
     use super::*;
     use mdm_tools::video::{InfoSlot, Preloaded};
@@ -14369,55 +14316,33 @@ mod duplicate_tests {
         assert!(!same_video(&item, &other, SELECTOR));
     }
 
-    /// Each Options answer on both video paths (the quality menu, the Download video window):
-    /// where the choice goes, what the browser is told, and the menu's look-up, which goes with
-    /// the new download only: dropped when the one already there is opened or resumed. Asked
-    /// about, or over the one it overwrites (added once that one's files are removed beside the
-    /// window, #743), it waits, look-up and all.
+    /// Each Options answer for a video (the quality menu's look-up with it), where it goes:
+    /// the look-up goes with the new download only, dropped when the one already there is
+    /// opened or resumed. Asked about, or over the one it overwrites (added once that one's
+    /// files are removed beside the window, #743), it waits, look-up and all.
     #[test]
-    fn each_answer_on_both_video_paths() {
-        use ipc::api::lookup;
+    fn each_answer_for_a_video() {
         let slot = InfoSlot::new(Instant::now());
-        for from_menu in [true, false] {
-            for action in 0..=3u8 {
-                let step = duplicate_step(action, Some((7, false)));
-                let route = video_route(step, choice(&slot), from_menu);
-                match (action, &route) {
-                    (1, VideoRoute::Add(add)) => {
-                        assert!(add.preloaded.is_some());
-                        assert_eq!(slot.holders(), 2, "kept for the new download");
-                    }
-                    (0 | 2, VideoRoute::Wait(Pending::Video(add, menu))) => {
-                        assert_eq!(*menu, from_menu);
-                        assert!(add.preloaded.is_some());
-                        assert_eq!(slot.holders(), 2, "kept for the answer");
-                    }
-                    (3, VideoRoute::Dropped) => {
-                        assert_eq!(slot.holders(), 1, "the look-up went with the choice");
-                    }
-                    _ => panic!("action {action}: unexpected route"),
+        for action in 0..=3u8 {
+            let step = duplicate_step(action, Some((7, false)));
+            let route = video_route(step, choice(&slot));
+            match (action, &route) {
+                (1, VideoRoute::Add(add)) => {
+                    assert!(add.preloaded.is_some());
+                    assert_eq!(slot.holders(), 2, "kept for the new download");
                 }
-                drop(route);
-                assert_eq!(slot.holders(), 1);
-                // The browser hears of a new download, or `sent` (asked, or the one there).
-                let told = menu_answer(step, true);
-                assert_eq!(
-                    told,
-                    match action {
-                        1 | 2 => lookup::STARTED,
-                        _ => lookup::SENT,
-                    }
-                );
+                (0 | 2, VideoRoute::Wait(Pending::Video(add))) => {
+                    assert!(add.preloaded.is_some());
+                    assert_eq!(slot.holders(), 2, "kept for the answer");
+                }
+                (3, VideoRoute::Dropped) => {
+                    assert_eq!(slot.holders(), 1, "the look-up went with the choice");
+                }
+                _ => panic!("action {action}: unexpected route"),
             }
+            drop(route);
+            assert_eq!(slot.holders(), 1);
         }
-        // Options' "only add to the queue": a new one is queued.
-        assert_eq!(menu_answer(DupStep::Add, false), lookup::QUEUED);
-        assert_eq!(
-            menu_answer(DupStep::Replace(7, true), false),
-            lookup::QUEUED
-        );
-        assert_eq!(menu_answer(DupStep::Existing(7), false), lookup::SENT);
-        assert_eq!(menu_answer(DupStep::Ask(7), false), lookup::SENT);
     }
 
     /// The question's answer: opening or resuming the one already there (3) drops the new
@@ -14427,28 +14352,24 @@ mod duplicate_tests {
     #[test]
     fn the_answer_open_or_resume_drops_the_new_choices_look_up() {
         let slot = InfoSlot::new(Instant::now());
-        for from_menu in [true, false] {
-            for answer in 1..=3 {
-                let pending = Pending::Video(Box::new(choice(&slot)), from_menu);
-                match (answer, answered(7, true, answer, pending)) {
-                    (3, Answer::Existing(7)) => assert_eq!(slot.holders(), 1),
-                    (1, Answer::Add(None, Pending::Video(add, menu)))
-                    | (2, Answer::Add(Some(7), Pending::Video(add, menu))) => {
-                        assert_eq!(menu, from_menu);
-                        assert!(add.preloaded.is_some());
-                        assert_eq!(slot.holders(), 2);
-                    }
-                    _ => panic!("answer {answer}: unexpected"),
+        for answer in 1..=3 {
+            let pending = Pending::Video(Box::new(choice(&slot)));
+            match (answer, answered(7, true, answer, pending)) {
+                (3, Answer::Existing(7)) => assert_eq!(slot.holders(), 1),
+                (1, Answer::Add(None, Pending::Video(add)))
+                | (2, Answer::Add(Some(7), Pending::Video(add))) => {
+                    assert!(add.preloaded.is_some());
+                    assert_eq!(slot.holders(), 2);
                 }
-                assert_eq!(slot.holders(), 1);
-                let pending = Pending::Video(Box::new(choice(&slot)), from_menu);
-                match answered(7, false, answer, pending) {
-                    Answer::Again(Pending::Video(add, menu)) => {
-                        assert_eq!(menu, from_menu);
-                        assert!(add.preloaded.is_some(), "checked afresh, look-up and all");
-                    }
-                    _ => panic!("answer {answer} about a row gone: not checked afresh"),
+                _ => panic!("answer {answer}: unexpected"),
+            }
+            assert_eq!(slot.holders(), 1);
+            let pending = Pending::Video(Box::new(choice(&slot)));
+            match answered(7, false, answer, pending) {
+                Answer::Again(Pending::Video(add)) => {
+                    assert!(add.preloaded.is_some(), "checked afresh, look-up and all");
                 }
+                _ => panic!("answer {answer} about a row gone: not checked afresh"),
             }
         }
     }
@@ -14681,27 +14602,19 @@ mod duplicate_tests {
         );
     }
 
-    /// #743: while a finished duplicate's file is looked for, the quality menu hears `sent` (DDM
-    /// took the choice; what becomes of it is decided once the answer comes), and the choice
-    /// waits with its look-up, which goes with the new download if it is added then.
+    /// #743: while a finished duplicate's file is looked for, the choice waits with its
+    /// look-up, which goes with the new download if it is added then.
     #[test]
     fn a_choice_waits_with_its_look_up_while_its_duplicate_is_looked_for() {
-        use ipc::api::lookup;
         let slot = InfoSlot::new(Instant::now());
-        for start_now in [true, false] {
-            assert_eq!(menu_answer(DupStep::Look(7), start_now), lookup::SENT);
-        }
-        for from_menu in [true, false] {
-            match video_route(DupStep::Look(7), choice(&slot), from_menu) {
-                VideoRoute::Wait(Pending::Video(add, menu)) => {
-                    assert_eq!(menu, from_menu);
-                    assert!(add.preloaded.is_some());
-                    assert_eq!(slot.holders(), 2, "kept for the answer");
-                }
-                _ => panic!("waits for the look"),
+        match video_route(DupStep::Look(7), choice(&slot)) {
+            VideoRoute::Wait(Pending::Video(add)) => {
+                assert!(add.preloaded.is_some());
+                assert_eq!(slot.holders(), 2, "kept for the answer");
             }
-            assert_eq!(slot.holders(), 1);
+            _ => panic!("waits for the look"),
         }
+        assert_eq!(slot.holders(), 1);
     }
 
     /// #743: what Overwrite takes is found on the window's thread without the disk
@@ -14782,8 +14695,7 @@ mod duplicate_tests {
         );
     }
 
-    /// #743: a video's folder is made (the quality menu's choice; the window asked first for
-    /// its own) and read beside the window (`video_folder`); its name is then picked on the
+    /// #743: a video's folder is read beside the window (`video_folder`); its name is then picked on the
     /// window's thread from what was read and the rows as they are by then (`video_place`): a
     /// file of its stem there, or another row's, numbers it on, as `stem_destination` did on
     /// the window's thread.
@@ -14791,12 +14703,11 @@ mod duplicate_tests {
     fn a_videos_name_is_picked_from_its_folder_read_beside_the_window() {
         let dir = tempfile::tempdir().unwrap();
         let folder = dir.path().join("Video");
-        assert!(video_folder(&folder, false).is_empty());
-        assert!(!folder.exists(), "the window's choice: not made here");
-        assert!(video_folder(&folder, true).is_empty());
-        assert!(folder.is_dir(), "the quality menu's: made where it wasn't");
+        assert!(video_folder(&folder).is_empty());
+        assert!(!folder.exists(), "not made here");
+        std::fs::create_dir_all(&folder).unwrap();
         std::fs::write(folder.join("clip.webm"), b"x").unwrap();
-        let names = video_folder(&folder, true);
+        let names = video_folder(&folder);
         assert_eq!(names, ["clip.webm"]);
         assert_eq!(
             video_place(&folder, "Clip.mp4", &names, &[]),

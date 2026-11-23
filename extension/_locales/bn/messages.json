@@ -17,6 +17,9 @@
   "video_hide_here": {
     "message": "শুধু এই ভিডিওতে লুকান"
   },
+  "video_close": {
+    "message": "বন্ধ করুন"
+  },
   "video_never_site": {
     "message": "$site$-এ আর কখনও নয়",
     "placeholders": {

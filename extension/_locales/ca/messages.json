@@ -17,6 +17,9 @@
   "video_hide_here": {
     "message": "Amaga només en aquest vídeo"
   },
+  "video_close": {
+    "message": "Tanca"
+  },
   "video_never_site": {
     "message": "No ho tornis a mostrar a $site$",
     "placeholders": {

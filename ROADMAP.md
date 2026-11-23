@@ -12,6 +12,9 @@ The first official release.
 
 ### Done
 
+- ✅ The button over a video: a quality opens DDM's Download video window at once with it chosen;
+  an × to close it; it stays near the video and in pop-up windows; its menu fits small windows
+
 - ✅ Downloads in several parts at once, re-balanced to the last byte, resumed after a crash, a
   restart or a dropped connection; FTP too
 - ✅ Download File Info as IDM users know it: the file starts arriving while you choose, the row

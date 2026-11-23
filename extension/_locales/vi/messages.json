@@ -17,6 +17,9 @@
   "video_hide_here": {
     "message": "Ẩn trên video này"
   },
+  "video_close": {
+    "message": "Đóng"
+  },
   "video_never_site": {
     "message": "Không hiển thị trên $site$ nữa",
     "placeholders": {

@@ -17,6 +17,9 @@
   "video_hide_here": {
     "message": "Skryť pri tomto videu"
   },
+  "video_close": {
+    "message": "Zavrieť"
+  },
   "video_never_site": {
     "message": "Nikdy na $site$",
     "placeholders": {

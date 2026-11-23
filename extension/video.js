@@ -27,6 +27,11 @@
   const CLIP_S = 15;
   // Shown this long after the pointer last moved over the video, kept while it is on the button.
   const IDLE_MS = 2600;
+  // The pointer this near the video still counts as over it, and just gone from it the button
+  // stays a moment: a player whose controls or a page whose layout leave the pointer a little
+  // outside the frame (YouTube's) on its way to the button shouldn't lose it.
+  const NEAR_PX = 48;
+  const LINGER_MS = 1600;
   const INSET = 10;
   const DRAG_PX = 4;
   // Our app icon (extension/icons/icon-48.png, as data: no extension file is exposed to pages).
@@ -37,6 +42,7 @@
     video_download: "Download video",
     video_more: "More options",
     video_hide_here: "Hide on this video",
+    video_close: "Close",
     video_settings: "Button settings...",
     video_sent: "Sent to DDM",
     video_failed: "Dannex Download Manager isn't installed or didn't start",
@@ -792,6 +798,8 @@
   let lastRect = null; // the video's rectangle when the button was last placed over it
   let entered = null; // what download would send, taken as the pointer reached the button: { v, d, t }
   let lastMove = 0;
+  // When the pointer was last near the shown video (NEAR_PX, LINGER_MS).
+  let nearAt = 0;
   let pointer = { x: -1, y: -1 };
   let menuOpen = false;
   let dragging = null;
@@ -861,9 +869,13 @@ button {
   color: inherit; cursor: pointer; font: inherit;
 }
 .go { padding-block: 0; padding-inline: 8px 12px; border-start-start-radius: 8px; border-end-start-radius: 8px; cursor: grab; }
-.more { padding: 0 9px; border-inline-start: 1px solid rgba(23, 50, 77, .18); border-start-end-radius: 8px; border-end-end-radius: 8px; }
+.more { padding: 0 9px; border-inline-start: 1px solid rgba(23, 50, 77, .18); }
+.close { padding: 0 8px; border-inline-start: 1px solid rgba(23, 50, 77, .18); border-start-end-radius: 8px; border-end-end-radius: 8px; }
 .go:hover, .more:hover { background: linear-gradient(rgba(214, 232, 255, .9), rgba(182, 212, 250, .9)); }
+.close:hover { background: linear-gradient(rgba(255, 226, 226, .95), rgba(246, 196, 196, .95)); color: #9b1c1c; }
 .go:active, .more:active { background: rgba(160, 196, 242, .9); }
+.close:active { background: rgba(240, 170, 170, .95); }
+.close svg { width: 10px; height: 10px; color: inherit; }
 button:focus-visible { outline: 2px solid #2a78d6; outline-offset: -2px; }
 .go img { width: 22px; height: 22px; flex: none; filter: drop-shadow(0 1px 1px rgba(0, 0, 0, .25)); }
 .more svg { width: 12px; height: 12px; color: #3b5876; }
@@ -927,6 +939,10 @@ button:focus-visible { outline: 2px solid #2a78d6; outline-offset: -2px; }
     <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.6"
       stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4.5 6 7.5l3-3"/></svg>
   </button>
+  <button class="close" type="button">
+    <svg viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.6"
+      stroke-linecap="round" aria-hidden="true"><path d="M2 2l6 6M8 2 2 8"/></svg>
+  </button>
 </div>
 <div class="menu" role="menu">
   <button role="menuitem" data-act="download"></button>
@@ -954,6 +970,7 @@ button:focus-visible { outline: 2px solid #2a78d6; outline-offset: -2px; }
   const go = shadow.querySelector(".go");
   const label = shadow.querySelector(".label");
   const more = shadow.querySelector(".more");
+  const closeBtn = shadow.querySelector(".close");
   const menu = shadow.querySelector(".menu");
   const item = (act) => menu.querySelector(`[data-act="${act}"]`);
   // The qualities' menu: its message, its rows, "Open in…".
@@ -977,6 +994,8 @@ button:focus-visible { outline: 2px solid #2a78d6; outline-offset: -2px; }
   go.setAttribute("aria-label", idleLabel);
   more.title = t("video_more");
   more.setAttribute("aria-label", t("video_more"));
+  closeBtn.title = `${t("video_close")} — ${t("video_hide_here")}`;
+  closeBtn.setAttribute("aria-label", t("video_close"));
   item("download").textContent = idleLabel;
   item("hide").textContent = t("video_hide_here");
   // The site without its www.: the app's list takes a name's subdomains too (background.js
@@ -1130,7 +1149,11 @@ button:focus-visible { outline: 2px solid #2a78d6; outline-offset: -2px; }
     // Held for a video gone (#503): where it was, not a corner found anew over what the page
     // shows there now.
     const at = dragging ? dragging.at : held && !chosen ? held.at : spot(r, w, pill.offsetHeight || 32, roomX, roomY);
-    const left = r.left + INSET + at.x * roomX;
+    // In the window, however narrow (a popup player) or far the video runs past its side.
+    const left = Math.min(
+      Math.max(r.left + INSET + at.x * roomX, Math.max(r.left, 0) + 2),
+      Math.max(2, Math.min(r.right, innerWidth) - w - 2),
+    );
     // In the part of the video on screen: one scrolled half out keeps its button in view.
     const h = pill.offsetHeight || 32;
     const visTop = Math.max(r.top, 0) + INSET;
@@ -1143,14 +1166,35 @@ button:focus-visible { outline: 2px solid #2a78d6; outline-offset: -2px; }
 
   // The open menu opens below the button, or above it near the bottom of the window; aligned
   // with whichever of its sides is nearer the video's middle.
+  // In a small window (a popup player) it fits on the side with more room, scrolling when even
+  // that is short, and never runs past the window's left or right edge.
+  const EDGE = 6;
   function placeMenu(top, left, w) {
-    const h = panel.offsetHeight;
-    const below = top + 36 + h < innerHeight;
+    panel.style.maxHeight = "";
+    let h = panel.offsetHeight;
+    const roomBelow = innerHeight - (top + 36) - EDGE;
+    const roomAbove = top - 4 - EDGE;
+    const below = h <= roomBelow || roomBelow >= roomAbove;
+    const room = Math.max(80, below ? roomBelow : roomAbove);
+    if (h > room) {
+      panel.style.maxHeight = `${room}px`;
+      panel.style.overflowY = "auto";
+      h = room;
+    } else if (panel === menu) {
+      panel.style.overflowY = "";
+    }
     panel.style.top = below ? "36px" : `${-h - 4}px`;
     const { r } = rects();
     const rightHalf = left + w / 2 > r.left + r.width / 2;
     panel.style.left = rightHalf ? "" : "0";
     panel.style.right = rightHalf ? "0" : "";
+    const pw = panel.offsetWidth;
+    const start = rightHalf ? left + w - pw : left;
+    const fixed = Math.min(Math.max(start, EDGE), Math.max(EDGE, innerWidth - EDGE - pw));
+    if (fixed !== start) {
+      panel.style.left = `${Math.round(fixed - left)}px`;
+      panel.style.right = "";
+    }
   }
 
   // Snap a free spot (fractions, after a drag) to the nearest edge.
@@ -1266,7 +1310,13 @@ button:focus-visible { outline: 2px solid #2a78d6; outline-offset: -2px; }
       dwell.done = true;
       askAhead(video, "rest");
     }
-    if (!onButton && !menuOpen && !dragging && !keyboardOn() && (!over || Date.now() - lastMove > IDLE_MS)) {
+    const near =
+      pointer.x >= r.left - NEAR_PX && pointer.x <= r.right + NEAR_PX &&
+      pointer.y >= r.top - NEAR_PX && pointer.y <= r.bottom + NEAR_PX;
+    const now = Date.now();
+    if (near || onButton) nearAt = now;
+    const stays = near || now - nearAt < LINGER_MS;
+    if (!onButton && !menuOpen && !dragging && !keyboardOn() && (!stays || now - lastMove > IDLE_MS)) {
       return hide();
     }
     position();
@@ -1890,6 +1940,10 @@ button:focus-visible { outline: 2px solid #2a78d6; outline-offset: -2px; }
   }
 
   more.addEventListener("click", () => (menuOpen && panel === menu ? closeMenu() : openMenu()));
+  // X: gone from this video (as the menu's "Hide on this video"); the next video gets it again.
+  closeBtn.addEventListener("click", (e) => {
+    if (e.isTrusted && video) run("hide");
+  });
 
   // The qualities' rows: only the user's own clicks.
   picks.addEventListener("click", (e) => {
@@ -2101,7 +2155,14 @@ button:focus-visible { outline: 2px solid #2a78d6; outline-offset: -2px; }
     }
   });
   document.addEventListener("fullscreenchange", () => video && show(video));
-  addEventListener("blur", () => hide());
+  // Not on the window's blur: a page in a window without the focus (a popup player beside
+  // another window, another browser's window in front) still gets the pointer, and the button
+  // with it. A hidden page (another tab, minimised) has it go.
+  document.addEventListener("visibilitychange", () => document.hidden && video && hide(true));
+  // The pointer out of the window: no longer over any video (the button lingers, then fades).
+  document.addEventListener("pointerout", (e) => {
+    if (!e.relatedTarget && e.isTrusted) pointer = { x: -1e6, y: -1e6 };
+  }, { passive: true });
   // The page left: what was asked ahead for it is called off (the background does it too, with
   // the tab's next page).
   addEventListener("pagehide", () => dropAhead());

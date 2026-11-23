@@ -17,6 +17,9 @@
   "video_hide_here": {
     "message": "Απόκρυψη μόνο σε αυτό το βίντεο"
   },
+  "video_close": {
+    "message": "Κλείσιμο"
+  },
   "video_never_site": {
     "message": "Ποτέ στο $site$",
     "placeholders": {

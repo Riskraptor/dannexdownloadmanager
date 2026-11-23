@@ -17,6 +17,9 @@
   "video_hide_here": {
     "message": "Sembunyikan pada video ini"
   },
+  "video_close": {
+    "message": "Tutup"
+  },
   "video_never_site": {
     "message": "Jangan sekali-kali pada $site$",
     "placeholders": {

@@ -5135,6 +5135,9 @@ extension	Click for details.	Click for details.
 #. second line of the toolbar button's tooltip while something is wrong: a click opens the extension's status page
 extension	Click to see what to do.	Click to see what to do.
 #. text in the browser extension
+#. tooltip of the X button on the download button over a video: hide the button on this video
+extension	Close	Close
+#. text in the browser extension
 #. in the menu under the download button over a video: finding the video's qualities failed; the app's own explanation follows on the next line
 extension	Could not look it up	Could not look it up
 #. text in the browser extension

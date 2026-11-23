@@ -407,7 +407,7 @@ async function chromium(bin, profile, dl, page, ready) {
     const inShadowNow = async (fn) => {
       const { root: doc } = await cdp.send("DOM.getDocument", { depth: -1, pierce: true }, sessionId);
       const find = (n) => {
-        if (n.nodeName === "MDM-VIDEO-BUTTON") return n;
+        if (n.nodeName === "DDM-VIDEO-BUTTON") return n;
         for (const c of [...(n.children || []), ...(n.shadowRoots || []), ...(n.contentDocument ? [n.contentDocument] : [])]) {
           const f = find(c);
           if (f) return f;
@@ -1222,6 +1222,16 @@ const mainPart = async (session, b) => {
   const go = session.pill ? await session.pill(GO_AT).catch(() => null) : null;
   return go && go.w ? go.x : b.l + 14;
 };
+// The middle of its ⋯ (the menu), left of its ✕.
+const MORE_AT = `function () {
+  const m = this.querySelector(".more");
+  const r = m && m.getBoundingClientRect();
+  return JSON.stringify(r ? { x: r.left + r.width / 2, w: r.width } : null);
+}`;
+const morePart = async (session, b) => {
+  const more = session.pill ? await session.pill(MORE_AT).catch(() => null) : null;
+  return more && more.w ? more.x : b.r - 12;
+};
 
 // Click the button's main part, then "Open in…" in its menu (openInMdm): the app's Download
 // video window opens; the address it shows.
@@ -1281,7 +1291,7 @@ async function videoButton(session, never) {
   near(b.b, v.b - 10, "after a reload: bottom");
   if (!never) return "shown, clicked (the video's file), dragged, kept";
   // Its menu by keyboard: open, down to "Never on 127.0.0.1", Enter.
-  await session.mouse(b.r - 12, (b.t + b.b) / 2, "click");
+  await session.mouse(await morePart(session, b), (b.t + b.b) / 2, "click");
   await sleep(200);
   await session.key("ArrowDown");
   await session.key("ArrowDown");

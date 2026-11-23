@@ -17,6 +17,9 @@
   "video_hide_here": {
     "message": "Приховати для цього відео"
   },
+  "video_close": {
+    "message": "Закрити"
+  },
   "video_never_site": {
     "message": "Ніколи не показувати на сайті $site$",
     "placeholders": {

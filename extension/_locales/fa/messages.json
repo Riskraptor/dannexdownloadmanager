@@ -17,6 +17,9 @@
   "video_hide_here": {
     "message": "پنهان کردن در این ویدیو"
   },
+  "video_close": {
+    "message": "بستن"
+  },
   "video_never_site": {
     "message": "هرگز در $site$",
     "placeholders": {

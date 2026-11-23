@@ -5,6 +5,15 @@ Each release's notes on GitHub come from its section here (`## [X.Y.Z]`, see
 
 ## [Unreleased]
 
+- Picking a quality on the button over a video (1080p, say) opens DDM's Download video window at
+  once with that quality chosen: press **Download Now**, as before for the main button.
+- The button over a video stays while the pointer is close to the video (48 px around it, or for
+  1.6 s after it leaves), no longer vanishes when another window takes the focus (a YouTube
+  pop-up window, the browser's own pop-ups), and hides when the tab is put away.
+- The button has an **×** to close it on this video. Its qualities menu fits small windows: it
+  opens on the side with more room, scrolls when it's taller, and stays inside the window, as the
+  button stays over the visible part of the video.
+
 ## [1.1.0] - 2026-11-23
 
 - Fixed dark-mode access-key cues so mnemonic letters are underlined only after the keyboard

@@ -17,6 +17,9 @@
   "video_hide_here": {
     "message": "Skrij samo pri tem videoposnetku"
   },
+  "video_close": {
+    "message": "Zapri"
+  },
   "video_never_site": {
     "message": "Nikoli na $site$",
     "placeholders": {
