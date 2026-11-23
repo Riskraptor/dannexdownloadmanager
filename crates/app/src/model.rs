@@ -484,6 +484,14 @@ pub struct Item {
     /// restarts so a requeued or resumed folder rename still checks for untracked files.
     #[serde(default, skip_serializing_if = "Option::is_none")]
     pub(crate) written_files: Option<Vec<PathBuf>>,
+    /// The topmost folder DDM made for this download when it started (none were there), removed
+    /// with it once empty when it is deleted or cancelled; never one it found.
+    #[serde(default, skip_serializing_if = "Option::is_none")]
+    pub made_dir: Option<PathBuf>,
+    /// A finished download whose file is no longer on disk ("File missing"), as the last look
+    /// off the window's thread found it; memory only.
+    #[serde(skip)]
+    pub missing: bool,
     /// Bytes that came over the network since the app last took them (its statistics and speed
     /// graphs, beyond IDM: `stats::take_reads`); memory only.
     #[serde(skip)]
@@ -889,6 +897,7 @@ impl Item {
         c.remote.clone_from(&self.remote);
         c.preexisting_folder = self.preexisting_folder;
         c.written_files.clone_from(&self.written_files);
+        c.made_dir.clone_from(&self.made_dir);
         c
     }
 
@@ -937,6 +946,8 @@ impl Item {
             preloaded: None,
             pending_mark: None,
             written_files: None,
+            made_dir: None,
+            missing: false,
             arrived: 0,
         }
     }
@@ -1270,6 +1281,8 @@ impl Item {
             return crate::i18n::t("Verifying...").into();
         }
         match self.status {
+            // i18n: a download's status: it finished, but its file is no longer on the disk (deleted or moved by another program); right-click → Redownload gets it again
+            Status::Complete if self.missing => crate::i18n::t("File missing").into(),
             // i18n: a download's status (state it is in, not a command): finished
             Status::Complete => crate::i18n::t("Complete").into(),
             // i18n: a download's status (state it is in, not a command): it failed

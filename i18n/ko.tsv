@@ -1187,6 +1187,10 @@
 #. a country's name (where a download's server is)
 #, machine
 	Christmas Island	크리스마스섬
+#. message or event log entry in the main window
+#. The title of Clean Up Temporary Files' answer.
+#, machine
+	Clean Up Temporary Files	임시 파일 정리
 #. button in the download list
 #. verb: clears this filter
 #, machine
@@ -1907,7 +1911,7 @@
 #. text in the Options window
 #. \\n starts a new line: break lines where they fit the translation
 #, machine
-	Empty: each download writes straight into a part file next to its file,\nso nothing is copied at the end. A folder here holds the part files\nuntil their downloads complete.	비어 있으면 각 다운로드가 파일 옆의 부분 파일에 바로 기록되므로\n마지막에 복사하지 않습니다. 여기에 폴더를 지정하면\n다운로드가 완료될 때까지 부분 파일을 그 폴더에 보관합니다.
+	Empty: each download writes into a part file next to its file, which\nbecomes the file when done. A folder here holds the part files instead.\nDDM removes leftover part files by itself (see the Downloads menu).	비어 있음: 각 다운로드는 파일 옆의 부분 파일에 기록되며,\n완료되면 이 부분 파일이 최종 파일이 됩니다. 여기에 폴더를 지정하면 부분 파일이 대신 그 폴더에 저장됩니다.\nDDM이 남은 부분 파일을 자동으로 제거합니다(다운로드 메뉴 참조).
 #. text in crashui.rs
 #. crash report window button: end the frozen DDM and start it again
 #, machine
@@ -2069,6 +2073,9 @@
 #. a country's name (where a download's server is)
 #, machine
 	Faroe Islands	페로 제도
+#. text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
+#, machine
+	Fast downloads with powerful control, automatic resume and browser integration. Free and open source under the GNU GPL, version 3 or later.	강력한 제어, 자동 이어받기, 브라우저 통합을 갖춘 빠른 다운로드. GNU GPL 버전 3 이상에 따른 무료 오픈 소스입니다.
 #. text in the dates and times (the Scheduler window, the download list, Statistics)
 #, machine
 	February	2월
@@ -2100,6 +2107,10 @@
 #. noun: a file of no known type
 #, machine
 	File	파일
+#. text in the download list (sizes, speeds, status); text in a download's progress window
+#. a download's status: it finished, but its file is no longer on the disk (deleted or moved by another program); right-click → Redownload gets it again
+#, machine
+	File missing	파일 없음
 #. text in the Scheduler window
 #, machine
 	File Name	파일 이름
@@ -2556,7 +2567,7 @@
 	Hungary	헝가리
 #. text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
 #, machine
-	I download with Dannex Download Manager: fast, free, and it looks like the download manager you already know. {link}	저는 Dannex Download Manager로 다운로드합니다. 빠르고 무료이며 이미 알고 있는 다운로드 관리자와 비슷합니다. {link}
+	I download with Dannex Download Manager: fast, free and built for powerful control. {link}	Dannex Download Manager(으)로 다운로드합니다: 빠르고 무료이며 강력한 제어가 가능합니다. {link}
 #. text in countries.rs
 #. a country's name (where a download's server is)
 #, machine
@@ -3463,6 +3474,10 @@
 #. text in langpick.rs
 #, machine
 	No language matches.	일치하는 언어가 없습니다.
+#. message or event log entry in the main window
+#. Downloads → Clean Up Temporary Files found nothing to remove.
+#, machine
+	No leftover temporary files were found.	남은 임시 파일이 없습니다.
 #. text in the Options window
 #. Options → Remote → Status: on, but the computer has no local network address now
 #, machine
@@ -3891,7 +3906,7 @@
 #. text in the Options window
 #. \\n starts a new line: break lines where they fit the translation
 #, machine
-	Part files stay here until their downloads complete. On another drive\nthan a download's folder, its file is then copied over. Empty it to\nwrite next to each file again.	부분 파일은 다운로드가 완료될 때까지 여기에 보관됩니다. 다운로드 폴더와\n다른 드라이브이면 완료 후 파일이 복사됩니다. 비워 두면\n다시 각 파일 옆에 기록합니다.
+	Part files stay here until their downloads complete. On another drive\nthan a download's folder, its file is then copied over. DDM removes\nleftovers by itself. Empty it to write next to each file again.	부분 파일은 다운로드가 완료될 때까지 여기에 보관됩니다. 다운로드 폴더와 다른 드라이브에 있으면\n파일이 완료 후 그 폴더로 복사됩니다. DDM이 남은 파일을\n자동으로 제거합니다. 비우면 다시 각 파일 옆에 기록합니다.
 #. text in the Batch download window; text in a dialog box; label in the Options window; text in the Options window
 #, machine
 	Password	암호
@@ -4188,6 +4203,11 @@
 #. {name} = a file name (keep the braces as they are)
 #, machine
 	Remove {name} from the list?	목록에서 {name}을(를) 제거하시겠습니까?
+#. message or event log entry in the main window
+#. Downloads → Clean Up Temporary Files' answer: {count} files, {size} like "1.2 GB".
+#. {count} = a number; {size} = a file size such as "4.2 MB" (keep the braces as they are)
+#, machine
+	Removed {count} leftover temporary files ({size} freed).	남은 임시 파일 {count}개를 제거했습니다({size} 확보).
 #. text in a download's progress window
 #. noun: label before the deferred new file or folder name in the progress window
 #, machine
@@ -5175,9 +5195,6 @@
 #. {error} = an error message (keep the braces as they are)
 #, machine
 	The download list could not be saved: {error}. Changes are kept while DDM runs.	다운로드 목록을 저장할 수 없습니다. {error}. DDM이 실행되는 동안 변경 사항이 유지됩니다.
-#. text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
-#, machine
-	The download manager you already know, rebuilt to be faster. Free and open source under the GNU GPL, version 3 or later.	이미 익숙한 다운로드 관리자를 더 빠르게 다시 만들었습니다. GNU GPL 버전 3 이상에 따라 무료로 제공되는 오픈 소스입니다.
 #. text in a dialog box
 #, machine
 	The download queue is done.	다운로드 큐가 완료되었습니다.
@@ -5272,10 +5289,22 @@
 #. reason shown on the Rename box when the entered name exceeds the length limit
 #, machine
 	The name is too long	이름이 너무 깁니다
+#. text in netwatch.rs
+#. the network as a whole (no adapter has an address); shown as {adapter} in "Stopped: {adapter} is not connected; it goes on when it is back"
+#, machine
+	the network	네트워크
 #. text in errors.rs; text in torrent downloads
 #. an error: the network adapter chosen in Options (a VPN's, usually) is off or gone; {adapter} its name
 #, machine
 	the network adapter {adapter} is not connected	네트워크 어댑터 {adapter}가 연결되지 않았습니다.
+#. message or event log entry in the main window
+#. event log entry: the download kept failing on the network for about an hour and is no longer started again by itself
+#, machine
+	The network failed too long; no longer trying by itself	네트워크 오류가 너무 오래 지속되어 더 이상 자동으로 다시 시도하지 않습니다
+#. message or event log entry in the main window
+#. event log entry: the download failed because the network did (no connection, one gone quiet); it starts again by itself after {seconds} seconds
+#, machine
+	The network failed; trying again in {seconds} s	네트워크 오류. {seconds}초 후에 다시 시도합니다
 #. text in the Site grabber window (Tasks → Run site grabber)
 #. Site grabber: what the Whole site template collects
 #, machine
@@ -6451,6 +6480,11 @@
 #, machine
 	{column} contains	{column}에 포함
 #. message or event log entry in the main window
+#. Clean Up Temporary Files: some files are open in another program.
+#. {count} = a number (keep the braces as they are)
+#, machine
+	{count} could not be removed (in use by another program).	{count}개를 제거할 수 없습니다(다른 프로그램에서 사용 중).
+#. message or event log entry in the main window
 #. {count} = "2 downloading"; {speed} = all of them together, like "1.25 MB/sec"
 #. {count} = a number (keep the braces as they are)
 #, machine
@@ -6862,11 +6896,11 @@ extension	Dannex Download Manager is installed	Dannex Download Manager 설치됨
 #. text in the browser extension
 #. tooltip of the extension's toolbar button while it is turned off (downloads stay in the browser); keep the name Dannex Download Manager as it is
 #, machine
-extension	Dannex Download Manager is off. Click to turn it on.	Dannex Download Manager 꺼짐. 클릭하여 켜세요.
+extension	Dannex Download Manager is off.	Dannex Download Manager이(가) 꺼져 있습니다.
 #. text in the browser extension
 #. tooltip of the extension's toolbar button while it sends downloads to the app; keep the name Dannex Download Manager as it is
 #, machine
-extension	Dannex Download Manager is on. Click to turn it off.	Dannex Download Manager 켜짐. 클릭하여 끄세요.
+extension	Dannex Download Manager is on.	Dannex Download Manager이(가) 켜져 있습니다.
 #. text in the browser extension
 #. headline of the extension's status page, and the first line of its toolbar button's tooltip: the browser can't find the app on this computer; keep the name Dannex Download Manager as it is
 #, machine
@@ -6900,6 +6934,10 @@ extension	Don't take downloads from this site	이 사이트의 다운로드 가�
 #, machine
 extension	Download all images with DDM	DDM으로 모든 이미지 다운로드
 #. text in the browser extension
+#. a button in the extension's toolbar panel: sends every link in the current tab to Dannex Download Manager's link grabber
+#, machine
+extension	Download all links from this page	이 페이지의 모든 링크 다운로드
+#. text in the browser extension
 #. command in the browser's right-click menu on a page: download the links of the whole page; keep the name Dannex Download Manager as it is
 #, machine
 extension	Download all links with DDM	DDM으로 모든 링크 다운로드
@@ -6924,6 +6962,10 @@ extension	Download through this browser's VPN or proxy	이 브라우저의 VPN �
 #, machine
 extension	Download video	비디오 다운로드
 #. text in the browser extension
+#. a button in the panel the extension's toolbar button opens: sends the video the current tab plays to Dannex Download Manager's Download video window
+#, machine
+extension	Download video from this page	이 페이지의 동영상 다운로드
+#. text in the browser extension
 #. command in the browser's right-click menu on a link, picture, video or sound; keep the name Dannex Download Manager as it is
 #, machine
 extension	Download with DDM	DDM으로 다운로드
@@ -6938,7 +6980,7 @@ extension	Downloads go to another Dannex Download Manager	다운로드가 다른
 #. text in the browser extension
 #. tooltip of the extension's toolbar button while downloads go to another computer's Dannex Download Manager; $address$ is its web address; keep the name Dannex Download Manager as it is
 #, machine
-extension	Downloads go to the Dannex Download Manager at {address}. Click to turn it off.	다운로드가 {address}의 Dannex Download Manager(으)로 전달됩니다. 끄려면 클릭하세요.
+extension	Downloads go to the Dannex Download Manager at {address}.	다운로드는 {address}의 Dannex Download Manager(으)로 전송됩니다.
 #. text in the browser extension
 #. the toolbar button's status while downloads go to another DDM
 #, machine
@@ -6959,6 +7001,10 @@ extension	Drag to move it along the video's edge	비디오 가장자리를 따�
 #. the address typed isn't an https:// address
 #, machine
 extension	Enter its https:// address.	https:// 주소를 입력하세요.
+#. text in the browser extension
+#. a button in the extension's toolbar panel: opens the extension's own options page
+#, machine
+extension	Extension options	확장 프로그램 옵션
 #. text in the browser extension
 #. the status page (an extension page that says whether the browser reaches Dannex Download Manager and how to fix it) in Firefox, for an add-on loaded with Load Temporary Add-on
 #, machine
@@ -7150,6 +7196,7 @@ extension	Run the setup you downloaded.	다운로드한 설치 프로그램을 �
 extension	Security software is the usual cause. Allow Dannex Download Manager in your antivirus program, or install it again.	보안 소프트웨어가 주된 원인입니다. 바이러스 백신 프로그램에서 Dannex Download Manager을(를) 허용하거나 다시 설치하세요.
 #. text in the browser extension
 #. link on the extension's options page, after a line saying what is wrong: opens the extension's status page
+#. a button in the extension's toolbar panel while Dannex Download Manager can't be reached: opens the status page that explains what to do
 #, machine
 extension	See what to do	해결 방법 보기
 #. text in the browser extension
@@ -7157,7 +7204,7 @@ extension	See what to do	해결 방법 보기
 #, machine
 extension	Send downloads to	다운로드 보낼 위치
 #. text in the browser extension
-#. label of the on/off switch on the extension's status and options pages (the same as a click on its toolbar button): when on, downloads started in this browser go to the app; keep the name Dannex Download Manager as it is
+#. label of the on/off switch on the extension's status and options pages and in the panel its toolbar button opens: when on, downloads started in this browser go to the app; keep the name Dannex Download Manager as it is
 #, machine
 extension	Send downloads to Dannex Download Manager	Dannex Download Manager(으)로 다운로드 보내기
 #. text in the browser extension
@@ -7172,6 +7219,10 @@ extension	Something is blocking Dannex Download Manager	Dannex Download Manager 
 #. read out by screen readers in the menu of qualities under the download button over a video, after the user picked a quality while the app is still looking the video up: the download starts by itself once the app has finished; keep the short name DDM as it is
 #, machine
 extension	Starting as soon as DDM is ready…	DDM이 준비되는 대로 시작합니다…
+#. text in the browser extension
+#. a button in the extension's toolbar panel: opens the extension's status page
+#, machine
+extension	Status and help	상태 및 도움말
 #. text in the browser extension
 #. link at the bottom of the extension's status and options pages, beside Help: opens the maintainer's page for donations (GitHub Sponsors) in a new tab; keep DDM as it is (the short name of Dannex Download Manager)
 #, machine
@@ -7229,6 +7280,10 @@ extension	This extension isn't allowed on that site.	이 확장 프로그램은 
 #, machine
 extension	This extension works with Dannex Download Manager, a free download manager for your computer. Install it, and this page updates by itself.	이 확장 프로그램은 컴퓨터용 무료 다운로드 관리자인 Dannex Download Manager과(와) 함께 작동합니다. 설치하면 이 페이지가 저절로 업데이트됩니다.
 #. text in the browser extension
+#. shown in the extension's toolbar panel when the current tab has no links
+#, machine
+extension	This page has no links to download.	이 페이지에는 다운로드할 링크가 없습니다.
+#. text in the browser extension
 #. the status page (an extension page that says whether the browser reaches Dannex Download Manager and how to fix it): the app refuses this copy of the extension; keep the name Dannex Download Manager as it is
 #, machine
 extension	This version of Dannex Download Manager is too old for this extension. Install the latest one.	이 Dannex Download Manager 버전은 이 확장 프로그램에 비해 너무 오래되었습니다. 최신 버전을 설치하세요.
@@ -7271,7 +7326,7 @@ extension	Wait a moment, then try again.	잠시 기다린 다음 다시 시도�
 #. text in the browser extension
 #. note under the on/off switch on the extension's options page: a click on the extension's toolbar button turns it off and on too
 #, machine
-extension	When it's off, downloads stay in the browser. Clicking the extension's button does the same.	꺼져 있으면 다운로드가 브라우저에 남습니다. 확장 프로그램의 단추를 클릭해도 같은 동작을 합니다.
+extension	When it's off, downloads stay in the browser. The extension's button has the same switch.	꺼져 있으면 다운로드가 브라우저에 남습니다. 확장 프로그램 버튼에도 같은 스위치가 있습니다.
 #. text in the browser extension
 #. pairing failed: the code was wrong
 #, machine
@@ -7700,6 +7755,11 @@ menu	Choose c&olumns...	열 선택(&O)...
 #. View → Theme: DDM's own look, the default (the classic download manager's layout, Windows 11's controls)
 #, machine
 menu	Classic	클래식
+#. menu command in the main window
+#. Downloads menu: removes the part files of downloads no longer in the list (left by a crash, a power cut, a removed download)
+#. & marks the keyboard shortcut letter: keep one & before a letter of the translation
+#, machine
+menu	Clean &Up Temporary Files	임시 파일 정리(&U)
 #. menu command in the main window
 #. & marks the keyboard shortcut letter: keep one & before a letter of the translation
 #, machine

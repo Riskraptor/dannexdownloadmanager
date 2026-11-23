@@ -83,6 +83,7 @@ fn count_log(data: &Path, line: &str) -> usize {
 }
 
 /// The app's settings as last saved.
+#[cfg(windows)]
 fn saved(data: &Path) -> serde_json::Value {
     std::fs::read_to_string(data.join("downloads.json"))
         .ok()

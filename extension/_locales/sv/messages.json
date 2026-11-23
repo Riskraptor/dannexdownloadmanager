@@ -248,21 +248,6 @@
   "badge_off": {
     "message": "AV"
   },
-  "tip_on": {
-    "message": "Dannex Download Manager är på. Klicka för att stänga av det."
-  },
-  "tip_off": {
-    "message": "Dannex Download Manager är av. Klicka för att slå på det."
-  },
-  "tip_remote": {
-    "message": "Hämtningar går till Dannex Download Manager på $address$. Klicka för att stänga av det.",
-    "placeholders": {
-      "address": {
-        "content": "$1",
-        "example": "https://192.168.1.10:8463/"
-      }
-    }
-  },
   "status_off_in_app": {
     "message": "Avstängt i Dannex Download Manager"
   },
@@ -283,9 +268,6 @@
   },
   "toolbar_store": {
     "message": "Få automatiska uppdateringar från Chrome Web Store..."
-  },
-  "options_take_note": {
-    "message": "När det är av stannar hämtningar i webbläsaren. Ett klick på tilläggets knapp gör samma sak."
   },
   "options_what_to_do": {
     "message": "Se vad du kan göra"
@@ -439,5 +421,8 @@
   },
   "page_learn_more": {
     "message": "Läs mer"
+  },
+  "popup_fix": {
+    "message": "Se vad du kan göra"
   }
 }

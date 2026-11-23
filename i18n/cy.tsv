@@ -1908,10 +1908,6 @@
 #. in Download a gallery, after the "Files at most" box
 #, machine
 	Empty: all of them. On most sites the newest come first.	Gadewch yn wag: pob un ohonynt. Ar y rhan fwyaf o safleoedd, y rhai mwyaf newydd sy'n dod gyntaf.
-#. text in the Options window
-#. \\n starts a new line: break lines where they fit the translation
-#, machine
-	Empty: each download writes straight into a part file next to its file,\nso nothing is copied at the end. A folder here holds the part files\nuntil their downloads complete.	Gwag: mae pob lawrlwythiad yn ysgrifennu'n syth i ffeil rannol wrth ymyl ei ffeil,\nfelly ni chopïir dim ar y diwedd. Mae ffolder yma yn cadw'r ffeiliau rhannol\ntan fydd eu lawrlwythiadau wedi'u cwblhau.
 #. text in crashui.rs
 #. crash report window button: end the frozen DDM and start it again
 #, machine
@@ -2558,9 +2554,6 @@
 #. a country's name (where a download's server is)
 #, machine
 	Hungary	Hwngari
-#. text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
-#, machine
-	I download with Dannex Download Manager: fast, free, and it looks like the download manager you already know. {link}	Rwy'n lawrlwytho gyda Dannex Download Manager: yn gyflym, yn rhad ac am ddim, ac mae'n edrych fel y rheolwr lawrlwytho rydych chi eisoes yn ei adnabod. {link}
 #. text in countries.rs
 #. a country's name (where a download's server is)
 #, machine
@@ -3892,10 +3885,6 @@
 #. a country's name (where a download's server is)
 #, machine
 	Paraguay	Paraguay
-#. text in the Options window
-#. \\n starts a new line: break lines where they fit the translation
-#, machine
-	Part files stay here until their downloads complete. On another drive\nthan a download's folder, its file is then copied over. Empty it to\nwrite next to each file again.	Mae ffeiliau rhannol yn aros yma tan fydd eu lawrlwythiadau wedi'u cwblhau. Ar yriant\narall i ffolder lawrlwythiad, caiff ei ffeil ei chopïo drosodd wedyn. Gwagiwch hyn\ni ysgrifennu wrth ymyl pob ffeil eto.
 #. text in the Batch download window; text in a dialog box; label in the Options window; text in the Options window
 #, machine
 	Password	Cyfrinair
@@ -5179,9 +5168,6 @@
 #. {error} = an error message (keep the braces as they are)
 #, machine
 	The download list could not be saved: {error}. Changes are kept while DDM runs.	Ni ellid cadw'r rhestr lawrlwytho: {error}. Cedwir newidiadau tra bod DDM yn rhedeg.
-#. text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
-#, machine
-	The download manager you already know, rebuilt to be faster. Free and open source under the GNU GPL, version 3 or later.	Y rheolwr lawrlwytho rydych chi'n ei adnabod eisoes, wedi'i ailadeiladu i fod yn gyflymach. Am ddim ac yn ffynhonnell agored o dan y GNU GPL, fersiwn 3 neu ddiweddarach.
 #. text in a dialog box
 #, machine
 	The download queue is done.	Mae'r ciw lawrlwytho wedi'i orffen.

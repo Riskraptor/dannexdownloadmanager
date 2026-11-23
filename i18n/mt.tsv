@@ -1908,10 +1908,6 @@
 #. in Download a gallery, after the "Files at most" box
 #, machine
 	Empty: all of them. On most sites the newest come first.	Voja: kollha. Fuq il-biċċa l-kbira tas-siti l-aktar ġodda jiġu l-ewwel.
-#. text in the Options window
-#. \\n starts a new line: break lines where they fit the translation
-#, machine
-	Empty: each download writes straight into a part file next to its file,\nso nothing is copied at the end. A folder here holds the part files\nuntil their downloads complete.	Vojt: kull tniżżil jikteb direttament f’fajl parzjali ħdejn il-fajl tiegħu,\nb’hekk ma jiġi kkupjat xejn fl-aħħar. Folder hawnhekk iżomm il-fajls parzjali\nsakemm jitlestew it-tniżżil.
 #. text in crashui.rs
 #. crash report window button: end the frozen DDM and start it again
 #, machine
@@ -2558,9 +2554,6 @@
 #. a country's name (where a download's server is)
 #, machine
 	Hungary	Ungerija
-#. text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
-#, machine
-	I download with Dannex Download Manager: fast, free, and it looks like the download manager you already know. {link}	Niżżel b'Dannex Download Manager: veloċi, b'xejn, u jidher bħall-maniġer tat-tniżżil li diġà taf. {link}
 #. text in countries.rs
 #. a country's name (where a download's server is)
 #, machine
@@ -3892,10 +3885,6 @@
 #. a country's name (where a download's server is)
 #, machine
 	Paraguay	Paragwaj
-#. text in the Options window
-#. \\n starts a new line: break lines where they fit the translation
-#, machine
-	Part files stay here until their downloads complete. On another drive\nthan a download's folder, its file is then copied over. Empty it to\nwrite next to each file again.	Il-fajls parzjali jibqgħu hawn sakemm jitlestew it-tniżżil. Fuq drive differenti mill-folder\ntat-tniżżil, il-fajl jiġi kkupjat wara. Ħalliha vojta biex terġa’ tikteb\nħdejn kull fajl.
 #. text in the Batch download window; text in a dialog box; label in the Options window; text in the Options window
 #, machine
 	Password	Password
@@ -5179,9 +5168,6 @@
 #. {error} = an error message (keep the braces as they are)
 #, machine
 	The download list could not be saved: {error}. Changes are kept while DDM runs.	Il-lista tat-tniżżil ma setgħetx tiġi ssejvjata: {error}. Il-bidliet jinżammu waqt li DDM ikun qed jaħdem.
-#. text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
-#, machine
-	The download manager you already know, rebuilt to be faster. Free and open source under the GNU GPL, version 3 or later.	Il-maniġer tat-tniżżil li diġà tafu, mibni mill-ġdid biex ikun aktar mgħaġġel. B’xejn u open source taħt il-GNU GPL, verżjoni 3 jew aktar tard.
 #. text in a dialog box
 #, machine
 	The download queue is done.	Il-kju tat-tniżżil lest.

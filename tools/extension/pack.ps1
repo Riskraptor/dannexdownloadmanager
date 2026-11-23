@@ -24,9 +24,10 @@ foreach ($kind in "chromium", "firefox", "safari") {
   if (Test-Path $dir) { Remove-Item -LiteralPath $dir -Recurse -Force }
   New-Item -ItemType Directory -Force $dir | Out-Null
   # The background part; the download button over videos and the Alt-click watcher (content
-  # scripts in every page); the extension's two pages: the options page and the status page (what
-  # the toolbar button opens while DDM can't be reached, and its menu's Help), and what they share.
-  $pages = "pages.js", "pages.css", "options.html", "options.js", "install.html", "install.js"
+  # scripts in every page); the extension's pages: the toolbar button's panel, the options page and
+  # the status page (what the panel opens while DDM can't be reached, and its menu's Help), and what
+  # they share.
+  $pages = "pages.js", "pages.css", "popup.html", "popup.js", "options.html", "options.js", "install.html", "install.js"
   foreach ($f in @("background.js", "video.js", "page.js") + $pages) {
     Copy-Item (Join-Path $src $f) $dir
   }

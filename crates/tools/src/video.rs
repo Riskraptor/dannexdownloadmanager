@@ -657,6 +657,36 @@ pub fn own_files(dir: &Path, stem: &str, outputs: bool) -> Vec<PathBuf> {
         .collect()
 }
 
+/// The pieces folders DDM's engine left in `dir` for a video saved as `<stem>.%(ext)s` (#769):
+/// `<stem>.<ext>.ddm.pieces` or, for one stream of a merged choice, `<stem>.f<id>.<ext>.ddm.pieces`
+/// (also under the former `.mdm.pieces`), letter case aside. Any other folder is left alone.
+pub fn own_folders(dir: &Path, stem: &str) -> Vec<PathBuf> {
+    let prefix = format!("{}.", stem.to_lowercase());
+    let Ok(rd) = std::fs::read_dir(dir) else {
+        return Vec::new();
+    };
+    rd.filter_map(Result::ok)
+        .filter(|e| e.file_type().is_ok_and(|t| t.is_dir()))
+        .filter(|e| {
+            let name = e.file_name().to_string_lossy().to_lowercase();
+            name.strip_prefix(&prefix)
+                .and_then(|rest| {
+                    rest.strip_suffix(".ddm.pieces")
+                        .or_else(|| rest.strip_suffix(".mdm.pieces"))
+                })
+                .is_some_and(|stream| {
+                    let parts: Vec<&str> = stream.split('.').collect();
+                    match parts.as_slice() {
+                        [ext] => MEDIA.contains(ext),
+                        [f, _] => yt_dlp_leftover(stream, false) && f.starts_with('f'),
+                        _ => false,
+                    }
+                })
+        })
+        .map(|e| e.path())
+        .collect()
+}
+
 pub struct VideoJob {
     /// yt-dlp once the page is looked up (`None` before).
     child: Arc<Mutex<Option<proc::Spawned>>>,
@@ -2219,6 +2249,40 @@ mod tests {
         want.sort();
         assert_eq!(names(true), want);
         assert!(own_files(&d.join("missing"), "Clip", true).is_empty());
+    }
+
+    /// A video's pieces folders go with it when it is deleted with its files: its streams' only,
+    /// never another stem's, a file of that name or a folder merely named alike.
+    #[test]
+    fn a_videos_own_pieces_folders() {
+        let dir = tempfile::tempdir().unwrap();
+        let d = dir.path();
+        let own = [
+            "Clip.mp4.ddm.pieces",
+            "Clip.f137.mp4.ddm.pieces",
+            "clip.fhls-720p.mp4.DDM.pieces",
+            "Clip.f251.webm.mdm.pieces",
+        ];
+        let others = [
+            "Clip.pdf.ddm.pieces",
+            "Clip.temp.mp4.ddm.pieces",
+            "Clip.final.mp4.ddm.pieces",
+            "Clip (1).f137.mp4.ddm.pieces",
+            "Clip.mp4.pieces",
+            "Clip.mp4",
+        ];
+        for f in own.iter().chain(&others) {
+            std::fs::create_dir(d.join(f)).unwrap();
+        }
+        std::fs::write(d.join("Clip.webm.ddm.pieces"), b"x").unwrap();
+        let mut got: Vec<String> = own_folders(d, "Clip")
+            .iter()
+            .map(|p| p.file_name().unwrap().to_string_lossy().into_owned())
+            .collect();
+        got.sort();
+        let mut want: Vec<String> = own.iter().map(|s| s.to_string()).collect();
+        want.sort();
+        assert_eq!(got, want);
     }
     /// #569: what a file joined from HLS pieces holds, from its first bytes. YouTube's sound:
     /// pieces each led by an ID3 tag (Apple's timestamp), then ADTS frames.

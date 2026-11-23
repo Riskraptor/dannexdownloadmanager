@@ -1908,10 +1908,6 @@
 #. in Download a gallery, after the "Files at most" box
 #, machine
 	Empty: all of them. On most sites the newest come first.	ទទេ៖ ទាំងអស់។ នៅលើគេហទំព័រភាគច្រើន ឯកសារថ្មីបំផុតមកមុនគេ។
-#. text in the Options window
-#. \\n starts a new line: break lines where they fit the translation
-#, machine
-	Empty: each download writes straight into a part file next to its file,\nso nothing is copied at the end. A folder here holds the part files\nuntil their downloads complete.	ទទេ៖ ការទាញយកនីមួយៗសរសេរដោយផ្ទាល់ទៅឯកសារផ្នែកក្បែរឯកសាររបស់វា\nដូច្នេះមិនមានអ្វីត្រូវចម្លងនៅចុងបញ្ចប់ទេ។ ថតនៅទីនេះរក្សាឯកសារផ្នែក\nរហូតដល់ការទាញយករបស់ពួកវាបានបញ្ចប់។
 #. text in crashui.rs
 #. crash report window button: end the frozen DDM and start it again
 #, machine
@@ -2558,9 +2554,6 @@
 #. a country's name (where a download's server is)
 #, machine
 	Hungary	ហុងគ្រី
-#. text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
-#, machine
-	I download with Dannex Download Manager: fast, free, and it looks like the download manager you already know. {link}	ខ្ញុំទាញយកជាមួយ Dannex Download Manager៖ លឿន ឥតគិតថ្លៃ ហើយវាដូចជាកម្មវិធីគ្រប់គ្រងការទាញយកដែលអ្នកស្គាល់រួចហើយ។ {link}
 #. text in countries.rs
 #. a country's name (where a download's server is)
 #, machine
@@ -3892,10 +3885,6 @@
 #. a country's name (where a download's server is)
 #, machine
 	Paraguay	ប៉ារ៉ាហ្គាយ
-#. text in the Options window
-#. \\n starts a new line: break lines where they fit the translation
-#, machine
-	Part files stay here until their downloads complete. On another drive\nthan a download's folder, its file is then copied over. Empty it to\nwrite next to each file again.	ឯកសារផ្នែកស្ថិតនៅទីនេះរហូតដល់ការទាញយករបស់ពួកវាបានបញ្ចប់។ នៅលើដ្រាយ\nផ្សេងពីថតរបស់ការទាញយក ឯកសារនោះនឹងត្រូវបានចម្លងទៅ។ ទុកទទេ\nដើម្បីសរសេរក្បែរឯកសារនីមួយៗម្តងទៀត។
 #. text in the Batch download window; text in a dialog box; label in the Options window; text in the Options window
 #, machine
 	Password	ពាក្យសម្ងាត់
@@ -5179,9 +5168,6 @@
 #. {error} = an error message (keep the braces as they are)
 #, machine
 	The download list could not be saved: {error}. Changes are kept while DDM runs.	មិនអាចរក្សាទុកបញ្ជីទាញយកបានទេ៖ {error}។ ការផ្លាស់ប្តូរនឹងត្រូវបានរក្សាទុកខណៈពេល DDM កំពុងដំណើរការ។
-#. text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
-#, machine
-	The download manager you already know, rebuilt to be faster. Free and open source under the GNU GPL, version 3 or later.	កម្មវិធីគ្រប់គ្រងការទាញយកដែលអ្នកស្គាល់ស្រាប់ ត្រូវបានសាងសង់ឡើងវិញឱ្យលឿនជាងមុន។ ឥតគិតថ្លៃ និងប្រភពបើកចំហក្រោម GNU GPL កំណែ 3 ឬថ្មីជាងនេះ។
 #. text in a dialog box
 #, machine
 	The download queue is done.	ជួរទាញយកបានបញ្ចប់។

@@ -286,10 +286,6 @@
    "source": "Full guide",
    "text": "คู่มือฉบับเต็ม"
   },
-  "047d41a834df5979": {
-   "source": "Free and open source. The interface you already know, a faster engine underneath, torrents and video built in.",
-   "text": "ฟรีและโอเพนซอร์ส อินเทอร์เฟซที่คุณคุ้นเคย แต่มีเอนจินที่เร็วกว่าอยู่เบื้องหลัง พร้อมรองรับทอร์เรนต์และวิดีโอในตัว"
-  },
   "0483013fd35a5fd8": {
    "source": "<g1>Options → General → Take downloads from web browsers</g1> is on, and your browser is ticked under <g2>Take downloads from these browsers</g2>.",
    "text": "<g1>ตัวเลือก → ทั่วไป → รับการดาวน์โหลดจากเว็บเบราว์เซอร์</g1> เปิดอยู่ และเลือกเบราว์เซอร์ของคุณแล้วใต้ <g2>รับการดาวน์โหลดจากเบราว์เซอร์เหล่านี้</g2>"
@@ -1394,6 +1390,10 @@
    "source": "<g1>Crash reports</g1><g2>Dannex Download Manager</g2>",
    "text": "<g1>รายงานข้อขัดข้อง</g1><g2>Dannex Download Manager</g2>"
   },
+  "14fa22b906ffd970": {
+   "source": "A fast, open-source download manager with parallel connections, crash-safe resume, browser capture, torrents and video in one clean list.",
+   "text": "โปรแกรมจัดการดาวน์โหลดโอเพนซอร์สที่รวดเร็ว พร้อมการเชื่อมต่อแบบขนาน การดาวน์โหลดต่อที่ปลอดภัยแม้โปรแกรมล่ม การรับดาวน์โหลดจากเบราว์เซอร์ ทอร์เรนต์ และวิดีโอ ในรายการเดียวที่เรียบร้อย"
+  },
   "150f2a29232af59e": {
    "source": "The main window in the Adwaita theme",
    "text": "หน้าต่างหลักในธีม Adwaita"
@@ -2222,6 +2222,10 @@
    "source": "<g1>Your IP address.</g1> Everyone sharing the same torrent sees it, as do its trackers and the DHT (the network peers use to find each other). That's how BitTorrent works, and no setting in DDM changes it. To hide your address, use a VPN on your whole computer.",
    "text": "<g1>ที่อยู่ IP ของคุณ</g1> ทุกคนที่แชร์ทอร์เรนต์เดียวกันจะเห็นที่อยู่ IP ของคุณ เช่นเดียวกับตัวติดตามและ DHT (เครือข่ายที่เพียร์ใช้เพื่อค้นหากัน) นี่คือวิธีการทำงานของ BitTorrent และไม่มีการตั้งค่าใดใน DDM ที่จะเปลี่ยนแปลงได้ หากต้องการซ่อนที่อยู่ของคุณ ให้ใช้ VPN บนคอมพิวเตอร์ทั้งเครื่องของคุณ"
   },
+  "227b1f953bdd694f": {
+   "source": "Fast downloads, powerful control. Free, open source and written from scratch in Rust.",
+   "text": "ดาวน์โหลดเร็ว ควบคุมได้เต็มที่ ฟรี โอเพนซอร์ส และเขียนขึ้นใหม่ทั้งหมดด้วย Rust"
+  },
   "22954adcadefc7ba": {
    "source": "Click a download link in the browser: Download File Info opens in DDM.",
    "text": "คลิกลิงก์ดาวน์โหลดในเบราว์เซอร์: ข้อมูลไฟล์ดาวน์โหลดจะเปิดขึ้นใน DDM"
@@ -2902,6 +2906,10 @@
    "source": "<g1>The other links of one page</g1> form a package named after the page.",
    "text": "<g1>ลิงก์อื่น ๆ ของหน้าเว็บหนึ่งหน้า</g1> จะรวมกันเป็นแพ็กเกจที่ตั้งชื่อตามหน้าเว็บ"
   },
+  "2cd663e3c54ab10a": {
+   "source": "Fast, free and open-source download manager for Windows, macOS and Linux. Parallel connections, crash-safe resume, torrents, video from web pages, browser integration and 86 languages.",
+   "text": "โปรแกรมจัดการดาวน์โหลดที่รวดเร็ว ฟรี และเป็นโอเพนซอร์ส สำหรับ Windows, macOS และ Linux มีการเชื่อมต่อแบบขนาน การดาวน์โหลดต่อที่ปลอดภัยแม้โปรแกรมล่ม ทอร์เรนต์ วิดีโอจากหน้าเว็บ การทำงานร่วมกับเบราว์เซอร์ และ 86 ภาษา"
+  },
   "2ce984608b61ca9b": {
    "source": "<g1>Browse</g1> — open its folder in Explorer.",
    "text": "<g1>เรียกดู</g1> — เปิดโฟลเดอร์ใน Explorer"
@@ -3349,10 +3357,6 @@
   "34ee8ac31c366dc9": {
    "source": "Some file hosts count a look-up as a download: turn the look-ups off in <g1>Options → Archives</g1>.",
    "text": "โฮสต์ไฟล์บางแห่งนับการค้นหาเป็นการดาวน์โหลด: ปิดการค้นหาใน <g1>ตัวเลือก → ไฟล์เก็บถาวร</g1>"
-  },
-  "3508dab985cc0335": {
-   "source": "Free, open-source download manager for Windows, with macOS and Linux to try. The IDM layout you know, 5× faster in our benchmark: every connection at once, crash-safe resume, torrents, video from web pages, browser integration, 86 languages.",
-   "text": "โปรแกรมช่วยดาวน์โหลดฟรีและโอเพนซอร์สสำหรับ Windows พร้อมเวอร์ชัน macOS และ Linux ให้ทดลองใช้ รูปแบบ IDM ที่คุณคุ้นเคย เร็วกว่า 5 เท่าในการทดสอบของเรา: ทุกการเชื่อมต่อพร้อมกัน, กู้คืนได้แม้โปรแกรมขัดข้อง, รองรับทอร์เรนต์, ดาวน์โหลดวิดีโอจากหน้าเว็บ, ผสานรวมกับเบราว์เซอร์, รองรับ 86 ภาษา"
   },
   "35092e177f7efaa5": {
    "source": "Download complete with Open and Open folder",
@@ -3845,10 +3849,6 @@
   "3d4a4f2d1b19754e": {
    "source": "Can I move my downloads over from IDM?",
    "text": "สามารถย้ายไฟล์ดาวน์โหลดจาก IDM มาได้หรือไม่?"
-  },
-  "3d67b0a7f32fc0e5": {
-   "source": "The free, open-source IDM alternative. Every connection at once, crash-safe resume, torrents and video in one list.",
-   "text": "โปรแกรมช่วยดาวน์โหลดฟรีและโอเพนซอร์ส ทางเลือกใหม่แทน IDM ดาวน์โหลดพร้อมกันหลายส่วน, กู้คืนไฟล์ที่ดาวน์โหลดค้างไว้ได้อย่างปลอดภัย, จัดการทอร์เรนต์และวิดีโอได้ในรายการเดียว"
   },
   "3d686921b4a51711": {
    "source": "One window for any video page",
@@ -5622,10 +5622,6 @@
    "source": "Installed; <g1>It's turned off, so downloads stay in this browser.</g1>",
    "text": "ติดตั้งแล้ว; <g1>ปิดอยู่ การดาวน์โหลดจึงอยู่ในเบราว์เซอร์นี้</g1>"
   },
-  "58bc1f5f43802ddb": {
-   "source": "Dannex Download Manager — the download manager you already know, rebuilt to be faster",
-   "text": "Dannex Download Manager — โปรแกรมช่วยดาวน์โหลดที่คุณคุ้นเคย สร้างใหม่ให้เร็วขึ้น"
-  },
   "58bec232807ab18d": {
    "source": "The progress window in detail →",
    "text": "หน้าต่างความคืบหน้าโดยละเอียด →"
@@ -6085,6 +6081,10 @@
   "5fa6b314450ea41d": {
    "source": "HTTPS downloads fail with \"no certificates\" (Linux)",
    "text": "การดาวน์โหลด HTTPS ล้มเหลวด้วยข้อความ “ไม่มีใบรับรอง” (Linux)"
+  },
+  "5faf94f57d338d2e": {
+   "source": "Dannex Download Manager: a fast, free download manager",
+   "text": "Dannex Download Manager: โปรแกรมจัดการดาวน์โหลดที่รวดเร็วและฟรี"
   },
   "5fcf0291ca3b8d9c": {
    "source": "Counts, sizes, speeds and percentages will be written the way the chosen language writes them (German <x1/> and <x2/>, French <x3/>), whatever the Windows region; a region in the same language keeps its own way. English stays as it is. Buttons will grow to fit their translated text in every window, so a longer German or Russian label is no longer cut short. Dates keep following your region, or your own choice in <g4>Options → Regional</g4>.",
@@ -7618,6 +7618,10 @@
    "source": "Add Dannex Download Manager to your browser: each browser found, with a button to add the extension to it",
    "text": "เพิ่ม Dannex Download Manager ไปยังเบราว์เซอร์ของคุณ: เบราว์เซอร์ที่พบแต่ละตัว พร้อมปุ่มเพิ่มส่วนขยายให้เบราว์เซอร์นั้น"
   },
+  "7935eef577c848b4": {
+   "source": "Dannex Download Manager — fast, free download manager",
+   "text": "Dannex Download Manager — โปรแกรมจัดการดาวน์โหลดที่รวดเร็วและฟรี"
+  },
   "793dc38942ce9ab9": {
    "source": "A control is greyed only while it can't apply: a box under a choice that is off, a button with nothing selected.",
    "text": "ตัวควบคุมจะเป็นสีเทาเฉพาะเมื่อใช้ไม่ได้: ช่องใต้ตัวเลือกที่ปิดอยู่ หรือปุ่มที่ไม่มีรายการที่เลือก"
@@ -7809,6 +7813,10 @@
   "7bda8095d8381906": {
    "source": "Other programs can ask the running app for its downloads, as JSON, and pause, start, remove or delete them. They connect to a port on this computer only, with a secret token that changes at every start and that only your own programs can read. The API is off until you turn it on with <x1/>, and <x2/>, <x3/>, <x4/>, <x5/> and <x6/> use it from the command line.",
    "text": "โปรแกรมอื่น ๆ สามารถขอข้อมูลการดาวน์โหลดจากแอปที่กำลังทำงานอยู่ได้ในรูปแบบ JSON และสามารถหยุดชั่วคราว เริ่ม ลบ หรือลบการดาวน์โหลดได้ โปรแกรมเหล่านี้เชื่อมต่อกับพอร์ตบนคอมพิวเตอร์เครื่องนี้เท่านั้น ด้วยโทเค็นลับที่เปลี่ยนไปทุกครั้งที่เริ่มทำงาน และมีเพียงโปรแกรมของคุณเองเท่านั้นที่อ่านได้ API จะปิดอยู่จนกว่าคุณจะเปิดใช้งานด้วย <x1/> และ <x2/>, <x3/>, <x4/>, <x5/> และ <x6/> ใช้ API นี้จากบรรทัดคำสั่ง"
+  },
+  "7be69af9eb37f63f": {
+   "source": "Fast downloads. Powerful control. Free forever.",
+   "text": "ดาวน์โหลดเร็ว ควบคุมได้เต็มที่ ฟรีตลอดไป"
   },
   "7beb76c0e99ab62c": {
    "source": "<g1>Videos that need you signed in</g1>: <g2>Options → Sites Logins → Cookies for video sites</g2> lets yt-dlp read a browser's cookies, for pasted links. Chrome, Edge and Brave lock theirs on Windows, and the window says so; Firefox works, and so does the button over the video.",
@@ -8097,6 +8105,10 @@
   "8000c69387905255": {
    "source": "If someone already reported the same problem, the window says so and <g1>Open the reported issue</g1> takes you there, with your report on the clipboard to add as a comment.",
    "text": "หากมีคนรายงานปัญหาเดียวกันแล้ว หน้าต่างจะแจ้งให้ทราบและ <g1>เปิดปัญหาที่รายงาน</g1> จะพาคุณไปยังหน้านั้น พร้อมรายงานของคุณในคลิปบอร์ดเพื่อเพิ่มเป็นความคิดเห็น"
+  },
+  "800407e32d4bc4d6": {
+   "source": "The extension shows almost nothing of its own, as users of other download managers expect: a click on its toolbar button turns taking downloads off and on, its right-click menu has \"Don't take downloads from this site\" and Help (<x1/>, the status page: installed, or what is wrong and the one thing to do), and its options page (<x2/>) has only that switch, the browser's proxy (#42) and another DDM (#157). It never asks the app for its downloads (extensions up to 0.6.5 did, for a window of their own: the host refuses that question now, and the app answers the automation API's <x3/> and actions only while the API is on).",
+   "text": "ส่วนขยายแสดงอะไรเองน้อยมาก ตามที่ผู้ใช้โปรแกรมดาวน์โหลดอื่นคุ้นเคย คลิกปุ่มบนแถบเครื่องมือเพื่อปิดและเปิดการรับดาวน์โหลด เมนูคลิกขวามี “ไม่รับดาวน์โหลดจากเว็บไซต์นี้” และวิธีใช้ (<x1/>, หน้าสถานะ: ติดตั้งแล้ว หรือมีอะไรผิดปกติและสิ่งเดียวที่ต้องทำ) ส่วนหน้าตัวเลือก (<x2/>) มีเพียงสวิตช์นั้น พร็อกซีของเบราว์เซอร์ (#42) และ DDM ตัวอื่น (#157) ส่วนขยายไม่เคยขอรายการดาวน์โหลดจากแอป (ส่วนขยายถึงเวอร์ชัน 0.6.5 เคยขอ เพื่อใช้ในหน้าต่างของตัวเอง ตอนนี้โฮสต์ปฏิเสธคำถามนั้นแล้ว และแอปจะตอบ <x3/> และการกระทำของ automation API เฉพาะเมื่อเปิด API อยู่)"
   },
   "8004bfee90ddaa59": {
    "source": "Starts (or with <x1/>, stops) the queue of that name (a name from the list's <x2/>). Answers <x3/>, or <x4/>. Only while the API is on.",
@@ -10753,10 +10765,6 @@
   "ac828ac836f8fc57": {
    "source": "<g1>Listen on</g1>: <g2>Every local network address</g2> (the default) listens on each private address of the computer (<x3/>, <x4/>, <x5/>, and IPv6's <x6/>), one by one, and follows them when you join another network. <g7>This computer only</g7> listens on <x8/>. Or pick one address of one adapter.",
    "text": "<g1>รับฟังบน</g1>: <g2>ทุกที่อยู่เครือข่ายภายใน</g2> (ค่าเริ่มต้น) รับฟังบนแต่ละที่อยู่ส่วนตัวของคอมพิวเตอร์ (<x3/>, <x4/>, <x5/> และ <x6/> ของ IPv6) ทีละรายการ และติดตามเมื่อคุณเข้าร่วมเครือข่ายอื่น <g7>คอมพิวเตอร์เครื่องนี้เท่านั้น</g7> รับฟังบน <x8/> หรือเลือกที่อยู่หนึ่งของอะแดปเตอร์หนึ่ง"
-  },
-  "ac85d17c17b64879": {
-   "source": "The download manager you already know. Rebuilt to be faster.",
-   "text": "โปรแกรมช่วยดาวน์โหลดที่คุณคุ้นเคย สร้างใหม่ให้เร็วขึ้น"
   },
   "ac912aa4f847fd5b": {
    "source": "<g1>The system:</g1> DDM's version and how you installed it, your operating system and its version, the processor, the language and theme, and how many downloads and queues you have. These are counts only.",
@@ -13702,6 +13710,10 @@
    "source": "An import opens <g1>Link grabber</g1>, which sorts the links into packages: the volumes of one archive together, the links of one page together, the rest in <g2>Various files</g2>. Each link is looked up for its real name, its size and whether the server still has it, and the ones that are gone come unticked. A link already in your list goes under <g3>Already in the list</g3>, unticked.",
    "text": "การนำเข้าจะเปิด <g1>ตัวดึงลิงก์</g1> ซึ่งจะจัดเรียงลิงก์เป็นแพ็กเกจ: วอลุ่มของไฟล์เก็บถาวรเดียวกันอยู่ด้วยกัน, ลิงก์ของหน้าเดียวกันอยู่ด้วยกัน, ส่วนที่เหลืออยู่ใน <g2>ไฟล์เบ็ดเตล็ด</g2> ลิงก์แต่ละรายการจะถูกค้นหาชื่อจริง, ขนาด และตรวจสอบว่าเซิร์ฟเวอร์ยังมีอยู่หรือไม่ และรายการที่หายไปจะถูกยกเลิกการเลือก ลิงก์ที่มีอยู่ในรายการของคุณแล้วจะอยู่ภายใต้ <g3>มีอยู่ในรายการแล้ว</g3> โดยถูกยกเลิกการเลือก"
   },
+  "dcedde395f1f0789": {
+   "source": "<g1>1.0.0</g1> <g2>20.9 MB</g2>",
+   "text": "<g1>1.0.0</g1> <g2>20.9 MB</g2>"
+  },
   "dcf7c57bec3d49ba": {
    "source": "A debrid service, such as Real-Debrid, AllDebrid, Premiumize or TorBox, is a paid account that downloads files from file hosts on its own servers. It hands back a plain direct link, without the host's waits, speed caps and captchas. With your account in DDM, a link from a host your service supports is unlocked through the service, then downloaded by DDM like any file: all its connections, pause and resume.",
    "text": "บริการ Debrid เช่น Real-Debrid, AllDebrid, Premiumize หรือ TorBox คือบัญชีแบบชำระเงินที่ดาวน์โหลดไฟล์จากโฮสต์ไฟล์ไปยังเซิร์ฟเวอร์ของตนเอง โดยจะส่งลิงก์ตรงธรรมดาคืนมาให้ โดยไม่มีการรอ, การจำกัดความเร็ว และแคปต์ชาของโฮสต์ เมื่อใช้บัญชีของคุณใน DDM ลิงก์จากโฮสต์ที่บริการของคุณรองรับจะถูกปลดล็อกผ่านบริการ จากนั้น DDM จะดาวน์โหลดเหมือนไฟล์ทั่วไป: ทั้งหมดเป็นการเชื่อมต่อ, หยุดชั่วคราว และดำเนินการต่อ"
@@ -14594,6 +14606,10 @@
    "source": "<g1>Ctrl+M</g1> or <g2>F2</g2>",
    "text": "<g1>Ctrl+M</g1> หรือ <g2>F2</g2>"
   },
+  "eb60a779982bcd66": {
+   "source": "Chrome, Edge and Brave run an extension in private (incognito) windows only when you allow it, and Firefox asks too. Until then, downloads from private windows stay with the browser. To allow it: on the browser's extensions page, open <g1>Details</g1> and turn on <g2>Allow in Incognito</g2>; in Firefox, <g3>Add-ons and themes</g3> → the extension → <g4>Allow</g4> beside <g5>Run in Private Windows</g5>. Downloads from a private window use that window's cookies, and DDM doesn't keep them in its list once they're done.",
+   "text": "Chrome, Edge และ Brave จะเปิดใช้ส่วนขยายในหน้าต่างส่วนตัว (incognito) ก็ต่อเมื่อผู้ใช้อนุญาตเท่านั้น และ Firefox ก็ถามเช่นกัน หากยังไม่อนุญาต การดาวน์โหลดจากหน้าต่างส่วนตัวจะยังอยู่กับเบราว์เซอร์ วิธีอนุญาต: ในหน้าส่วนขยายของเบราว์เซอร์ ให้เปิด <g1>รายละเอียด</g1> แล้วเปิด <g2>อนุญาตในโหมดไม่ระบุตัวตน</g2>; ใน Firefox ให้ไปที่ <g3>ส่วนเสริมและชุดรูปแบบ</g3> → ส่วนขยายนั้น → <g4>อนุญาต</g4> ที่ <g5>เรียกใช้ในหน้าต่างส่วนตัว</g5> การดาวน์โหลดจากหน้าต่างส่วนตัวจะใช้คุกกี้ของหน้าต่างนั้น และเมื่อดาวน์โหลดเสร็จแล้ว DDM จะไม่เก็บรายการไว้ในรายการดาวน์โหลด (Windows)"
+  },
   "eb712f80554a3646": {
    "source": "A window in DDM may be waiting for you (a question, <g1>Add torrent</g1>); answer it and ask again.",
    "text": "หน้าต่างใน DDM อาจกำลังรอคุณอยู่ (คำถาม, <g1>เพิ่มทอร์เรนต์</g1>); ตอบคำถามนั้นแล้วลองอีกครั้ง"
@@ -14790,10 +14806,6 @@
    "source": "The window's close box (<g1>×</g1>) does the same as <g2>Cancel</g2> while the download runs, as in IDM; for a finished or stopped download it just closes the window.",
    "text": "ปุ่มปิด (<g1>×</g1>) ของหน้าต่างทำเหมือน <g2>ยกเลิก</g2> ขณะที่การดาวน์โหลดทำงาน เช่นเดียวกับใน IDM ส่วนการดาวน์โหลดที่เสร็จหรือหยุดแล้วจะเพียงปิดหน้าต่าง"
   },
-  "ee38c21b58df59db": {
-   "source": "Dannex Download Manager — free download manager and IDM alternative",
-   "text": "Dannex Download Manager — โปรแกรมจัดการการดาวน์โหลดฟรีและทางเลือกแทน IDM"
-  },
   "ee4329d38e737b6a": {
    "source": "Pick a quality.",
    "text": "เลือกคุณภาพ"
@@ -14957,6 +14969,10 @@
   "f135b1b9671dc439": {
    "source": "Make everything larger / smaller, in every window (<g1>View → Interface size</g1>, 100 % to 200 %)",
    "text": "ทำให้ทุกอย่างใหญ่ขึ้น / เล็กลง ในทุกหน้าต่าง (<g1>มุมมอง → ขนาดส่วนติดต่อ</g1>, 100 % ถึง 200 %)"
+  },
+  "f14a2209d8262597": {
+   "source": "Dannex Download Manager — fast, free and open source",
+   "text": "Dannex Download Manager — รวดเร็ว ฟรี และเป็นโอเพนซอร์ส"
   },
   "f15210a203cd6290": {
    "source": "<g1>DDM can't be reached</g1>: the button is grey with a red <g2>!</g2>. A click opens the extension's status page instead of switching anything: in a sentence or two it says what is wrong and the one thing to do, offers DDM's download for your system when DDM isn't installed, and turns into <g3>Dannex Download Manager is installed</g3> by itself once DDM answers. See <g4>The browser and DDM aren't connected</g4> for every case.",
@@ -15522,6 +15538,10 @@
    "source": "Delivery",
    "text": "การจัดส่ง"
   },
+  "fba54406a7ebc6eb": {
+   "source": "Parallel downloads, crash-safe resume, torrents and video from millions of sites, browser integration and more.",
+   "text": "ดาวน์โหลดแบบขนาน ดาวน์โหลดต่อได้อย่างปลอดภัยแม้โปรแกรมล่ม ทอร์เรนต์และวิดีโอจากเว็บไซต์นับล้าน การทำงานร่วมกับเบราว์เซอร์ และอื่น ๆ"
+  },
   "fbb161a5ca59215d": {
    "source": "Click <g1>Load unpacked</g1> and choose the <x2/> folder.",
    "text": "คลิก <g1>โหลดส่วนขยายที่ไม่ได้แพ็ค</g1> และเลือกโฟลเดอร์ <x2/>"
@@ -15589,6 +15609,10 @@
   "fc67345a4f529039": {
    "source": "Choose whether to install for you only or for everyone on the computer. For you only needs no administrator rights and goes to <x1/>. For everyone goes to <x2/>.",
    "text": "เลือกว่าจะติดตั้งสำหรับผู้ใช้คนเดียวหรือทุกคนในคอมพิวเตอร์ การติดตั้งสำหรับผู้ใช้คนเดียวไม่ต้องใช้สิทธิ์ผู้ดูแลระบบ และจะติดตั้งใน <x1/> ส่วนการติดตั้งสำหรับทุกคนจะติดตั้งใน <x2/>"
+  },
+  "fc7fe0579b9363e9": {
+   "source": "One egui window painted to fixed pixel coordinates, plus one immediate viewport per dialog. <x1/> holds the state (downloads, queues, settings, the list's selection) and turns menu, toolbar, key and IPC commands into actions. Each dialog is its own module and returns an <x2/> (open, closed, done with a value). A window that comes up by itself (Download complete, a message DDM tells, a question while DDM isn't the program in front) shows above the others without taking the keyboard from the program being typed in (<x3/>, <x4/>); those the person asked for take it. Windows handed over one after another (Download File Info, Add torrent, Download video) and Download complete boxes show one at a time, in one place, the next when one closes. Windows-only calls are confined to <x5/> and their Linux and macOS counterparts to <x6/> (starting with the session, the browsers' host, sounds, show in folder, the crash handler); every other file is safe, portable Rust. Fonts come from the system: Windows' Fonts folder, macOS's system fonts, fontconfig on Linux (<x7/>). On Windows, Latin, Greek and Cyrillic text is drawn by DirectWrite (<x8/>, through egui's glyph rasterizer hook): View → Text → Smooth in its natural mode, anti-aliased at the size asked for and placed at quarter pixels with the font's own advances; Classic (the default) in GDI-classic mode, so each letter's hinted shape and whole-pixel width come together. Other scripts are shaped and drawn by egui.",
+   "text": "หน้าต่าง egui หนึ่งหน้าต่างที่วาดตามพิกัดพิกเซลคงที่ และมี immediate viewport หนึ่งรายการต่อหนึ่งกล่องโต้ตอบ <x1/> เก็บสถานะ (รายการดาวน์โหลด คิว การตั้งค่า และรายการที่เลือกในรายการ) และแปลงคำสั่งจากเมนู แถบเครื่องมือ แป้นพิมพ์ และ IPC เป็นการกระทำ กล่องโต้ตอบแต่ละกล่องเป็นโมดูลของตัวเอง และส่งคืน <x2/> (เปิด ปิด หรือเสร็จสิ้นพร้อมค่า) หน้าต่างที่ขึ้นมาเอง (ดาวน์โหลดเสร็จแล้ว ข้อความที่ DDM แจ้ง หรือคำถามขณะที่ DDM ไม่ใช่โปรแกรมที่อยู่ด้านหน้า) จะแสดงเหนือหน้าต่างอื่นโดยไม่แย่งแป้นพิมพ์จากโปรแกรมที่กำลังพิมพ์อยู่ (<x3/>, <x4/>) ส่วนหน้าต่างที่ผู้ใช้เปิดเองจะรับแป้นพิมพ์ หน้าต่างที่ส่งต่อกันทีละหน้าต่าง (ข้อมูลไฟล์ดาวน์โหลด เพิ่มทอร์เรนต์ ดาวน์โหลดวิดีโอ) และกล่องดาวน์โหลดเสร็จแล้วจะแสดงทีละกล่องในตำแหน่งเดียว และกล่องถัดไปจะขึ้นเมื่อกล่องก่อนหน้าปิด การเรียกที่ใช้ได้เฉพาะ Windows อยู่ใน <x5/> และส่วนที่เทียบเท่าสำหรับ Linux และ macOS อยู่ใน <x6/> (เริ่มจากเซสชัน โฮสต์ของเบราว์เซอร์ เสียง แสดงในโฟลเดอร์ และตัวจัดการเมื่อโปรแกรมขัดข้อง) ไฟล์อื่นทั้งหมดเป็น Rust ที่ปลอดภัยและพกพาได้ ฟอนต์มาจากระบบ ได้แก่โฟลเดอร์ Fonts ของ Windows ฟอนต์ระบบของ macOS และ fontconfig บน Linux (<x7/>) บน Windows ข้อความละติน กรีก และซีริลลิกวาดด้วย DirectWrite (<x8/>, ผ่านตัวเชื่อมตัวแรสเตอร์ไรซ์กลิฟของ egui): มุมมอง → ข้อความ → เรียบ ใช้โหมดธรรมชาติ ลบรอยหยักตามขนาดที่ขอ และวางที่ระดับหนึ่งในสี่พิกเซลตามระยะเดินของฟอนต์เอง ส่วนคลาสสิก (ค่าเริ่มต้น) ใช้โหมด GDI-classic จึงได้รูปร่างตัวอักษรที่ผ่านการปรับ hinting และความกว้างเต็มพิกเซลไปพร้อมกัน อักษรระบบอื่นจัดรูปและวาดโดย egui"
   },
   "fc80e6d7a3cc65b1": {
    "source": "Link grabber",
@@ -15805,30 +15829,6 @@
   "ffffe7806eaeae3d": {
    "source": "The option is off until you tick it. On Linux and macOS DDM starts with your session the same way. A <g1>portable copy</g1> can't start with Windows, since that needs the registry, so the option is greyed there.",
    "text": "ตัวเลือกนี้จะปิดอยู่จนกว่าคุณจะทำเครื่องหมายไว้ บน Linux และ macOS DDM จะเริ่มพร้อมเซสชันของคุณในลักษณะเดียวกัน <g1>สำเนาแบบพกพา</g1> ไม่สามารถเริ่มพร้อม Windows ได้ เนื่องจากต้องใช้รีจิสทรี ดังนั้นตัวเลือกนี้จึงเป็นสีเทา"
-  },
-  "6e355ba39f5dc912": {
-   "source": "Sponsor Dannex Download Manager",
-   "text": "สนับสนุน Dannex Download Manager"
-  },
-  "fc7fe0579b9363e9": {
-   "source": "One egui window painted to fixed pixel coordinates, plus one immediate viewport per dialog. <x1/> holds the state (downloads, queues, settings, the list's selection) and turns menu, toolbar, key and IPC commands into actions. Each dialog is its own module and returns an <x2/> (open, closed, done with a value). A window that comes up by itself (Download complete, a message DDM tells, a question while DDM isn't the program in front) shows above the others without taking the keyboard from the program being typed in (<x3/>, <x4/>); those the person asked for take it. Windows handed over one after another (Download File Info, Add torrent, Download video) and Download complete boxes show one at a time, in one place, the next when one closes. Windows-only calls are confined to <x5/> and their Linux and macOS counterparts to <x6/> (starting with the session, the browsers' host, sounds, show in folder, the crash handler); every other file is safe, portable Rust. Fonts come from the system: Windows' Fonts folder, macOS's system fonts, fontconfig on Linux (<x7/>). On Windows, Latin, Greek and Cyrillic text is drawn by DirectWrite (<x8/>, through egui's glyph rasterizer hook): View → Text → Smooth in its natural mode, anti-aliased at the size asked for and placed at quarter pixels with the font's own advances; Classic (the default) in GDI-classic mode, so each letter's hinted shape and whole-pixel width come together. Other scripts are shaped and drawn by egui.",
-   "text": "หน้าต่าง egui หนึ่งหน้าต่างที่วาดตามพิกัดพิกเซลคงที่ และมี immediate viewport หนึ่งรายการต่อหนึ่งกล่องโต้ตอบ <x1/> เก็บสถานะ (รายการดาวน์โหลด คิว การตั้งค่า และรายการที่เลือกในรายการ) และแปลงคำสั่งจากเมนู แถบเครื่องมือ แป้นพิมพ์ และ IPC เป็นการกระทำ กล่องโต้ตอบแต่ละกล่องเป็นโมดูลของตัวเอง และส่งคืน <x2/> (เปิด ปิด หรือเสร็จสิ้นพร้อมค่า) หน้าต่างที่ขึ้นมาเอง (ดาวน์โหลดเสร็จแล้ว ข้อความที่ DDM แจ้ง หรือคำถามขณะที่ DDM ไม่ใช่โปรแกรมที่อยู่ด้านหน้า) จะแสดงเหนือหน้าต่างอื่นโดยไม่แย่งแป้นพิมพ์จากโปรแกรมที่กำลังพิมพ์อยู่ (<x3/>, <x4/>) ส่วนหน้าต่างที่ผู้ใช้เปิดเองจะรับแป้นพิมพ์ หน้าต่างที่ส่งต่อกันทีละหน้าต่าง (ข้อมูลไฟล์ดาวน์โหลด เพิ่มทอร์เรนต์ ดาวน์โหลดวิดีโอ) และกล่องดาวน์โหลดเสร็จแล้วจะแสดงทีละกล่องในตำแหน่งเดียว และกล่องถัดไปจะขึ้นเมื่อกล่องก่อนหน้าปิด การเรียกที่ใช้ได้เฉพาะ Windows อยู่ใน <x5/> และส่วนที่เทียบเท่าสำหรับ Linux และ macOS อยู่ใน <x6/> (เริ่มจากเซสชัน โฮสต์ของเบราว์เซอร์ เสียง แสดงในโฟลเดอร์ และตัวจัดการเมื่อโปรแกรมขัดข้อง) ไฟล์อื่นทั้งหมดเป็น Rust ที่ปลอดภัยและพกพาได้ ฟอนต์มาจากระบบ ได้แก่โฟลเดอร์ Fonts ของ Windows ฟอนต์ระบบของ macOS และ fontconfig บน Linux (<x7/>) บน Windows ข้อความละติน กรีก และซีริลลิกวาดด้วย DirectWrite (<x8/>, ผ่านตัวเชื่อมตัวแรสเตอร์ไรซ์กลิฟของ egui): มุมมอง → ข้อความ → เรียบ ใช้โหมดธรรมชาติ ลบรอยหยักตามขนาดที่ขอ และวางที่ระดับหนึ่งในสี่พิกเซลตามระยะเดินของฟอนต์เอง ส่วนคลาสสิก (ค่าเริ่มต้น) ใช้โหมด GDI-classic จึงได้รูปร่างตัวอักษรที่ผ่านการปรับ hinting และความกว้างเต็มพิกเซลไปพร้อมกัน อักษรระบบอื่นจัดรูปและวาดโดย egui"
-  },
-  "800407e32d4bc4d6": {
-   "source": "The extension shows almost nothing of its own, as users of other download managers expect: a click on its toolbar button turns taking downloads off and on, its right-click menu has \"Don't take downloads from this site\" and Help (<x1/>, the status page: installed, or what is wrong and the one thing to do), and its options page (<x2/>) has only that switch, the browser's proxy (#42) and another DDM (#157). It never asks the app for its downloads (extensions up to 0.6.5 did, for a window of their own: the host refuses that question now, and the app answers the automation API's <x3/> and actions only while the API is on).",
-   "text": "ส่วนขยายแสดงอะไรเองน้อยมาก ตามที่ผู้ใช้โปรแกรมดาวน์โหลดอื่นคุ้นเคย คลิกปุ่มบนแถบเครื่องมือเพื่อปิดและเปิดการรับดาวน์โหลด เมนูคลิกขวามี “ไม่รับดาวน์โหลดจากเว็บไซต์นี้” และวิธีใช้ (<x1/>, หน้าสถานะ: ติดตั้งแล้ว หรือมีอะไรผิดปกติและสิ่งเดียวที่ต้องทำ) ส่วนหน้าตัวเลือก (<x2/>) มีเพียงสวิตช์นั้น พร็อกซีของเบราว์เซอร์ (#42) และ DDM ตัวอื่น (#157) ส่วนขยายไม่เคยขอรายการดาวน์โหลดจากแอป (ส่วนขยายถึงเวอร์ชัน 0.6.5 เคยขอ เพื่อใช้ในหน้าต่างของตัวเอง ตอนนี้โฮสต์ปฏิเสธคำถามนั้นแล้ว และแอปจะตอบ <x3/> และการกระทำของ automation API เฉพาะเมื่อเปิด API อยู่)"
-  },
-  "dcedde395f1f0789": {
-   "source": "<g1>1.0.0</g1> <g2>20.9 MB</g2>",
-   "text": "<g1>1.0.0</g1> <g2>20.9 MB</g2>"
-  },
-  "410849c6c11c33d7": {
-   "source": "DDM is free and always will be. If it saves you time, you can support it.",
-   "text": "DDM ใช้ฟรีและจะเป็นเช่นนี้ตลอดไป หาก DDM ช่วยประหยัดเวลาให้คุณ คุณสามารถสนับสนุนได้"
-  },
-  "eb60a779982bcd66": {
-   "source": "Chrome, Edge and Brave run an extension in private (incognito) windows only when you allow it, and Firefox asks too. Until then, downloads from private windows stay with the browser. To allow it: on the browser's extensions page, open <g1>Details</g1> and turn on <g2>Allow in Incognito</g2>; in Firefox, <g3>Add-ons and themes</g3> → the extension → <g4>Allow</g4> beside <g5>Run in Private Windows</g5>. Downloads from a private window use that window's cookies, and DDM doesn't keep them in its list once they're done.",
-   "text": "Chrome, Edge และ Brave จะเปิดใช้ส่วนขยายในหน้าต่างส่วนตัว (incognito) ก็ต่อเมื่อผู้ใช้อนุญาตเท่านั้น และ Firefox ก็ถามเช่นกัน หากยังไม่อนุญาต การดาวน์โหลดจากหน้าต่างส่วนตัวจะยังอยู่กับเบราว์เซอร์ วิธีอนุญาต: ในหน้าส่วนขยายของเบราว์เซอร์ ให้เปิด <g1>รายละเอียด</g1> แล้วเปิด <g2>อนุญาตในโหมดไม่ระบุตัวตน</g2>; ใน Firefox ให้ไปที่ <g3>ส่วนเสริมและชุดรูปแบบ</g3> → ส่วนขยายนั้น → <g4>อนุญาต</g4> ที่ <g5>เรียกใช้ในหน้าต่างส่วนตัว</g5> การดาวน์โหลดจากหน้าต่างส่วนตัวจะใช้คุกกี้ของหน้าต่างนั้น และเมื่อดาวน์โหลดเสร็จแล้ว DDM จะไม่เก็บรายการไว้ในรายการดาวน์โหลด (Windows)"
   }
  }
 }

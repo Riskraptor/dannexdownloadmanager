@@ -249,13 +249,13 @@
     "message": "معطل"
   },
   "tip_on": {
-    "message": "Dannex Download Manager يعمل. انقر لإيقافه."
+    "message": "Dannex Download Manager قيد التشغيل."
   },
   "tip_off": {
-    "message": "Dannex Download Manager متوقف. انقر لتشغيله."
+    "message": "Dannex Download Manager متوقف عن التشغيل."
   },
   "tip_remote": {
-    "message": "تذهب التنزيلات إلى Dannex Download Manager على $address$. انقر لإيقافها.",
+    "message": "تذهب التنزيلات إلى Dannex Download Manager على $address$.",
     "placeholders": {
       "address": {
         "content": "$1",
@@ -285,7 +285,7 @@
     "message": "الحصول على تحديثات تلقائية من سوق Chrome الإلكتروني..."
   },
   "options_take_note": {
-    "message": "عندما يكون متوقفا، تبقى التنزيلات في المستعرض. وينفذ النقر على زر الملحق الأمر نفسه."
+    "message": "عند إيقاف تشغيله، تبقى التنزيلات في المستعرض. يحتوي زر الملحق على المفتاح نفسه."
   },
   "options_what_to_do": {
     "message": "اعرف ما يجب فعله"
@@ -439,5 +439,23 @@
   },
   "page_learn_more": {
     "message": "اعرف المزيد"
+  },
+  "popup_video": {
+    "message": "تنزيل الفيديو من هذه الصفحة"
+  },
+  "popup_all": {
+    "message": "تنزيل كل الارتباطات من هذه الصفحة"
+  },
+  "popup_no_links": {
+    "message": "لا تحتوي هذه الصفحة على ارتباطات للتنزيل."
+  },
+  "popup_status": {
+    "message": "الحالة والتعليمات"
+  },
+  "popup_options": {
+    "message": "خيارات الملحق"
+  },
+  "popup_fix": {
+    "message": "اعرف ما يجب فعله"
   }
 }

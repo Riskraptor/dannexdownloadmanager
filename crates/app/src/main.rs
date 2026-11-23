@@ -1,6 +1,7 @@
 #![windows_subsystem = "windows"]
 
 mod app;
+mod autoresume;
 mod batch;
 mod categories;
 mod checksum;
@@ -35,6 +36,7 @@ mod i18n;
 mod icons;
 mod langpick;
 mod launch;
+mod leftovers;
 mod list;
 mod logo;
 mod model;

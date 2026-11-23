@@ -825,8 +825,8 @@ const SOUND_MIN = 64 << 10;
 const MANIFEST = /\.(m3u8|mpd)(?:[?#]|$)/i;
 const SEGMENT_TYPE = /^(video\/mp2t|video\/iso\.segment|audio\/iso\.segment)$/;
 const SEGMENT_EXT = /\.(ts|m4s|m4f|cmfv|cmfa|cmft)$/;
-const MEDIA_EXT = /\.(mp4|m4v|webm|mkv|mov|avi|wmv|flv|3gp|ogv|mp3|m4a|aac|ogg|oga|opus|flac|wav|wma)$/;
-const AUDIO_EXT = /^(mp3|m4a|aac|oga|ogg|opus|flac|wav|wma)$/;
+const MEDIA_EXT = /\.(mp4|m4v|webm|mkv|mov|avi|wmv|flv|f4v|3gp|3g2|ogv|mpg|mpeg|mp3|m4a|m4b|aac|ogg|oga|opus|flac|wav|wma|weba|mka|aif|aiff|amr|alac)$/;
+const AUDIO_EXT = /^(mp3|m4a|m4b|aac|oga|ogg|opus|flac|wav|wma|weba|mka|aif|aiff|amr|alac)$/;
 // The types a manifest is sometimes served as, besides its own (#171): plain text, no type, a
 // file's, XML. Such an answer is only noted (`maybe`, MAYBE_MAX a tab), never listed unread.
 const MAYBE_TYPE = /^(text\/plain|(application|binary)\/octet-stream|(application|text)\/xml|)$/;
@@ -2881,6 +2881,69 @@ async function ownPageMessage(m) {
   if (m.type === "remote-off") return remoteOff();
   // Turned off in DDM's Options: the status page's one button opens them there.
   if (m.type === "open-options") return { ok: Boolean((await native({ openOptions: true, page: "general" })).ok) };
+  if (/^popup(-\w+)?$/.test(m.type)) return popupMessage(m);
+  return { ok: false };
+}
+
+// ---- the toolbar button's panel (popup.html) -------------------------------------------------
+
+// The tab the panel was opened over (it names it: a panel has no tab of its own), a web page's.
+async function popupTab(id) {
+  if (!Number.isInteger(id) || id < 0) return null;
+  const tab = await Promise.resolve(ext.tabs.get(id)).catch(() => null);
+  return tab && /^https?:/i.test(String(tab.url || "")) ? tab : null;
+}
+
+// The panel: how things stand (as the button's tooltip says it), the switch, and what can be
+// taken from the tab under it (a video it plays, its links). Never reached yet: asked first.
+async function popupMessage(m) {
+  if (m.type === "popup") {
+    let look = await toolbarLook();
+    if (look.click === "check") {
+      await refreshRules();
+      look = await toolbarLook();
+    }
+    const tab = await popupTab(m.tab);
+    let videos = 0;
+    if (tab) {
+      await mediaBack;
+      videos = ((media.get(tab.id) || { items: [] }).items || []).filter((it) => it.kind !== "image").length;
+    }
+    const { paused } = await ext.storage.local.get({ paused: false });
+    return { ok: true, state: look.state, title: look.title, toggle: look.click !== "status", paused, web: Boolean(tab), site: tab ? tabSite(tab) : "", videos };
+  }
+  if (m.type === "popup-status") {
+    await openStatusPage();
+    return { ok: true };
+  }
+  const tab = await popupTab(m.tab);
+  if (!tab) return { ok: false };
+  const incognito = Boolean(tab.incognito);
+  const storeId = tab.cookieStoreId;
+  // The tab's video: the Download video window, as the button over a player sends it (the stream
+  // the tab loaded, when one is known; else the page, for yt-dlp to read).
+  if (m.type === "popup-video") {
+    await mediaBack;
+    const src = await streamFor({ tab, frameId: 0 });
+    const title = String(tab.title || "").slice(0, 300);
+    const reply = await native({ video: true, explicit: true, url: tab.url, ...(src ? { src } : {}), ...(title ? { title } : {}), ...(await videoCookies(src || tab.url, { incognito, storeId })), private: incognito });
+    if (!reply.ok && reply.why !== "options") explain(reply.why);
+    return { ok: Boolean(reply.ok) };
+  }
+  // The tab's links: DDM's Link grabber, as the page's right-click menu's Download all links.
+  if (m.type === "popup-all") {
+    let links = [];
+    try {
+      const [res] = await ext.scripting.executeScript({ target: { tabId: tab.id, frameIds: [0] }, func: pageLinks, args: [false] });
+      links = (res && Array.isArray(res.result) && res.result) || [];
+    } catch {
+      // A page extensions may not read.
+    }
+    if (!links.length) return { ok: false, why: "no-links" };
+    const reply = await native({ links, referrer: tab.url, cookies: await cookieHeader(tab.url, { incognito, storeId }), private: incognito });
+    if (!reply.ok) explain(reply.why);
+    return { ok: Boolean(reply.ok) };
+  }
   return { ok: false };
 }
 

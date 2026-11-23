@@ -1908,10 +1908,6 @@
 #. in Download a gallery, after the "Files at most" box
 #, machine
 	Empty: all of them. On most sites the newest come first.	ว่างเปล่า: ทั้งหมด ในเว็บไซต์ส่วนใหญ่ รายการใหม่ล่าสุดจะมาก่อน
-#. text in the Options window
-#. \\n starts a new line: break lines where they fit the translation
-#, machine
-	Empty: each download writes straight into a part file next to its file,\nso nothing is copied at the end. A folder here holds the part files\nuntil their downloads complete.	ว่างไว้: แต่ละการดาวน์โหลดจะเขียนลงในไฟล์ส่วนข้างไฟล์ปลายทางโดยตรง\nจึงไม่ต้องคัดลอกตอนท้าย หากระบุโฟลเดอร์ที่นี่ ไฟล์ส่วนจะ\nอยู่ในโฟลเดอร์นั้นจนกว่าการดาวน์โหลดจะเสร็จสมบูรณ์
 #. text in crashui.rs
 #. crash report window button: end the frozen DDM and start it again
 #, machine
@@ -2558,9 +2554,6 @@
 #. a country's name (where a download's server is)
 #, machine
 	Hungary	ฮังการี
-#. text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
-#, machine
-	I download with Dannex Download Manager: fast, free, and it looks like the download manager you already know. {link}	ดาวน์โหลดด้วย Dannex Download Manager: รวดเร็ว ฟรี และหน้าตาเหมือนตัวจัดการดาวน์โหลดที่คุ้นเคยอยู่แล้ว {link}
 #. text in countries.rs
 #. a country's name (where a download's server is)
 #, machine
@@ -3892,10 +3885,6 @@
 #. a country's name (where a download's server is)
 #, machine
 	Paraguay	ปารากวัย
-#. text in the Options window
-#. \\n starts a new line: break lines where they fit the translation
-#, machine
-	Part files stay here until their downloads complete. On another drive\nthan a download's folder, its file is then copied over. Empty it to\nwrite next to each file again.	ไฟล์ส่วนจะอยู่ที่นี่จนกว่าการดาวน์โหลดจะเสร็จสมบูรณ์ หากอยู่คนละ\nไดรฟ์กับโฟลเดอร์ของการดาวน์โหลด ไฟล์จะถูกคัดลอกไปที่นั้น ปล่อยว่างไว้\nเพื่อเขียนไว้ข้างไฟล์แต่ละไฟล์อีกครั้ง
 #. text in the Batch download window; text in a dialog box; label in the Options window; text in the Options window
 #, machine
 	Password	รหัสผ่าน
@@ -5179,9 +5168,6 @@
 #. {error} = an error message (keep the braces as they are)
 #, machine
 	The download list could not be saved: {error}. Changes are kept while DDM runs.	ไม่สามารถบันทึกรายการดาวน์โหลดได้: {error} การเปลี่ยนแปลงจะถูกเก็บไว้ในขณะที่ DDM ทำงาน
-#. text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
-#, machine
-	The download manager you already know, rebuilt to be faster. Free and open source under the GNU GPL, version 3 or later.	ตัวจัดการดาวน์โหลดที่คุ้นเคย สร้างใหม่ให้เร็วขึ้น ฟรีและโอเพนซอร์สภายใต้ GNU GPL เวอร์ชัน 3 หรือใหม่กว่า
 #. text in a dialog box
 #, machine
 	The download queue is done.	คิวการดาวน์โหลดเสร็จสิ้นแล้ว

@@ -1904,10 +1904,6 @@
 #. in Download a gallery, after the "Files at most" box
 #, machine
 	Empty: all of them. On most sites the newest come first.	ખાલી: તે બધા. મોટાભાગની સાઇટ્સ પર સૌથી નવા પહેલા આવે છે.
-#. text in the Options window
-#. \\n starts a new line: break lines where they fit the translation
-#, machine
-	Empty: each download writes straight into a part file next to its file,\nso nothing is copied at the end. A folder here holds the part files\nuntil their downloads complete.	ખાલી: દરેક ડાઉનલોડ તેની ફાઇલની બાજુમાં સીધું પાર્ટ ફાઇલમાં લખે છે,\nએટલે અંતે કંઈ કૉપિ થતું નથી. અહીંનું ફોલ્ડર ડાઉનલોડ પૂર્ણ થાય\nત્યાં સુધી પાર્ટ ફાઇલો રાખે છે.
 #. text in crashui.rs
 #. crash report window button: end the frozen DDM and start it again
 #, machine
@@ -2554,9 +2550,6 @@
 #. a country's name (where a download's server is)
 #, machine
 	Hungary	હંગેરી
-#. text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
-#, machine
-	I download with Dannex Download Manager: fast, free, and it looks like the download manager you already know. {link}	હું Dannex Download Managerથી ડાઉનલોડ કરું છું: ઝડપી, મફત અને તમે પહેલેથી જાણો છો તે ડાઉનલોડ મેનેજર જેવું. {link}
 #. text in countries.rs
 #. a country's name (where a download's server is)
 #, machine
@@ -3888,10 +3881,6 @@
 #. a country's name (where a download's server is)
 #, machine
 	Paraguay	પેરાગ્વે
-#. text in the Options window
-#. \\n starts a new line: break lines where they fit the translation
-#, machine
-	Part files stay here until their downloads complete. On another drive\nthan a download's folder, its file is then copied over. Empty it to\nwrite next to each file again.	પાર્ટ ફાઇલો ડાઉનલોડ પૂર્ણ થાય ત્યાં સુધી અહીં રહે છે. ડાઉનલોડના ફોલ્ડરથી\nઅલગ ડ્રાઇવ પર હોય તો ફાઇલ પછી ત્યાં કૉપિ થાય છે. દરેક ફાઇલની બાજુમાં\nફરી લખવા માટે તેને ખાલી કરો.
 #. text in the Batch download window; text in a dialog box; label in the Options window; text in the Options window
 #, machine
 	Password	પાસવર્ડ
@@ -5175,9 +5164,6 @@
 #. {error} = an error message (keep the braces as they are)
 #, machine
 	The download list could not be saved: {error}. Changes are kept while DDM runs.	ડાઉનલોડ સૂચિ સાચવી શકાઈ નથી: {error}. DDM ચાલતું હોય ત્યારે ફેરફારો રાખવામાં આવે છે.
-#. text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
-#, machine
-	The download manager you already know, rebuilt to be faster. Free and open source under the GNU GPL, version 3 or later.	તમે જાણો છો તે ડાઉનલોડ મેનેજર, વધુ ઝડપી બનાવવા ફરી બનાવેલું. GNU GPL, સંસ્કરણ 3 કે પછીના હેઠળ મફત અને ઓપન સોર્સ.
 #. text in a dialog box
 #, machine
 	The download queue is done.	ડાઉનલોડ કતાર પૂર્ણ થઈ ગઈ છે.

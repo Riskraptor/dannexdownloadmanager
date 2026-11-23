@@ -1908,10 +1908,6 @@
 #. in Download a gallery, after the "Files at most" box
 #, machine
 	Empty: all of them. On most sites the newest come first.	Gol: toate. Pe majoritatea site-urilor, cele mai noi apar primele.
-#. text in the Options window
-#. \\n starts a new line: break lines where they fit the translation
-#, machine
-	Empty: each download writes straight into a part file next to its file,\nso nothing is copied at the end. A folder here holds the part files\nuntil their downloads complete.	Gol: fiecare descărcare scrie direct într-un fișier parțial lângă fișierul său,\ndeci nu se copiază nimic la final. Un folder indicat aici păstrează fișierele parțiale\npână se termină descărcările.
 #. text in crashui.rs
 #. crash report window button: end the frozen DDM and start it again
 #, machine
@@ -2558,9 +2554,6 @@
 #. a country's name (where a download's server is)
 #, machine
 	Hungary	Ungaria
-#. text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
-#, machine
-	I download with Dannex Download Manager: fast, free, and it looks like the download manager you already know. {link}	Descarc cu Dannex Download Manager: rapid, gratuit și arată ca managerul de descărcări pe care îl cunoașteți deja. {link}
 #. text in countries.rs
 #. a country's name (where a download's server is)
 #, machine
@@ -3891,10 +3884,6 @@
 #. a country's name (where a download's server is)
 #, machine
 	Paraguay	Paraguay
-#. text in the Options window
-#. \\n starts a new line: break lines where they fit the translation
-#, machine
-	Part files stay here until their downloads complete. On another drive\nthan a download's folder, its file is then copied over. Empty it to\nwrite next to each file again.	Fișierele parțiale rămân aici până se termină descărcările. Pe o altă unitate decât\nfolderul unei descărcări, fișierul este copiat apoi. Lăsați gol pentru a scrie\ndin nou lângă fiecare fișier.
 #. text in the Batch download window; text in a dialog box; label in the Options window; text in the Options window
 #, machine
 	Password	Parolă
@@ -5178,9 +5167,6 @@
 #. {error} = an error message (keep the braces as they are)
 #, machine
 	The download list could not be saved: {error}. Changes are kept while DDM runs.	Lista de descărcări nu a putut fi salvată: {error}. Modificările sunt păstrate în timp ce DDM rulează.
-#. text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
-#, machine
-	The download manager you already know, rebuilt to be faster. Free and open source under the GNU GPL, version 3 or later.	Managerul de descărcări pe care îl cunoașteți deja, reconstruit pentru a fi mai rapid. Gratuit și open source sub GNU GPL, versiunea 3 sau ulterioară.
 #. text in a dialog box
 #, machine
 	The download queue is done.	Coada de descărcare s-a încheiat.

@@ -249,13 +249,13 @@
     "message": "关"
   },
   "tip_on": {
-    "message": "Dannex Download Manager 已开启。点击以关闭。"
+    "message": "Dannex Download Manager 已开启。"
   },
   "tip_off": {
-    "message": "Dannex Download Manager 已关闭。点击以开启。"
+    "message": "Dannex Download Manager 已关闭。"
   },
   "tip_remote": {
-    "message": "下载将发送到 $address$ 上的 Dannex Download Manager。点击以关闭。",
+    "message": "下载将发送到位于 $address$ 的 Dannex Download Manager。",
     "placeholders": {
       "address": {
         "content": "$1",
@@ -285,7 +285,7 @@
     "message": "从 Chrome 应用商店获取自动更新..."
   },
   "options_take_note": {
-    "message": "关闭后，下载将保留在浏览器中。点击扩展按钮也有同样效果。"
+    "message": "关闭后，下载将保留在浏览器中。扩展的按钮具有相同的开关。"
   },
   "options_what_to_do": {
     "message": "查看处理方法"
@@ -439,5 +439,23 @@
   },
   "page_learn_more": {
     "message": "了解详情"
+  },
+  "popup_video": {
+    "message": "下载此页面上的视频"
+  },
+  "popup_all": {
+    "message": "下载此页面上的所有链接"
+  },
+  "popup_no_links": {
+    "message": "此页面没有可下载的链接。"
+  },
+  "popup_status": {
+    "message": "状态和帮助"
+  },
+  "popup_options": {
+    "message": "扩展选项"
+  },
+  "popup_fix": {
+    "message": "查看处理方法"
   }
 }

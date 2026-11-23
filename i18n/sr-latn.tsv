@@ -1908,10 +1908,6 @@
 #. in Download a gallery, after the "Files at most" box
 #, machine
 	Empty: all of them. On most sites the newest come first.	Prazno: svi. Na većini sajtova najnoviji dolaze prvi.
-#. text in the Options window
-#. \\n starts a new line: break lines where they fit the translation
-#, machine
-	Empty: each download writes straight into a part file next to its file,\nso nothing is copied at the end. A folder here holds the part files\nuntil their downloads complete.	Prazno: svako preuzimanje piše direktno u delimičnu datoteku pored svoje datoteke,\ntako da se na kraju ništa ne kopira. Fascikla ovde čuva delimične datoteke\ndok se njihova preuzimanja ne završe.
 #. text in crashui.rs
 #. crash report window button: end the frozen DDM and start it again
 #, machine
@@ -2558,9 +2554,6 @@
 #. a country's name (where a download's server is)
 #, machine
 	Hungary	Mađarska
-#. text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
-#, machine
-	I download with Dannex Download Manager: fast, free, and it looks like the download manager you already know. {link}	Preuzimam pomoću Dannex Download Manager-a: brzo, besplatno i izgleda kao menadžer preuzimanja koji već znate. {link}
 #. text in countries.rs
 #. a country's name (where a download's server is)
 #, machine
@@ -3892,10 +3885,6 @@
 #. a country's name (where a download's server is)
 #, machine
 	Paraguay	Paragvaj
-#. text in the Options window
-#. \\n starts a new line: break lines where they fit the translation
-#, machine
-	Part files stay here until their downloads complete. On another drive\nthan a download's folder, its file is then copied over. Empty it to\nwrite next to each file again.	Delimične datoteke ostaju ovde dok se njihova preuzimanja ne završe. Na drugom disku\nod fascikle preuzimanja, datoteka se zatim kopira. Ispraznite polje da\nbiste ponovo pisali pored svake datoteke.
 #. text in the Batch download window; text in a dialog box; label in the Options window; text in the Options window
 #, machine
 	Password	Lozinka
@@ -5179,9 +5168,6 @@
 #. {error} = an error message (keep the braces as they are)
 #, machine
 	The download list could not be saved: {error}. Changes are kept while DDM runs.	Lista preuzimanja nije mogla da se sačuva: {error}. Promene se čuvaju dok DDM radi.
-#. text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
-#, machine
-	The download manager you already know, rebuilt to be faster. Free and open source under the GNU GPL, version 3 or later.	Menadžer preuzimanja koji već poznajete, izgrađen iznova da bi bio brži. Besplatan i otvorenog koda pod GNU GPL, verzija 3 ili novija.
 #. text in a dialog box
 #, machine
 	The download queue is done.	Red za preuzimanje je završen.

@@ -248,21 +248,6 @@
   "badge_off": {
     "message": "POIS"
   },
-  "tip_on": {
-    "message": "Dannex Download Manager on päällä. Napsauta poistaaksesi sen käytöstä."
-  },
-  "tip_off": {
-    "message": "Dannex Download Manager on pois päältä. Napsauta ottaaksesi sen käyttöön."
-  },
-  "tip_remote": {
-    "message": "Lataukset menevät ohjelmaan Dannex Download Manager osoitteessa $address$. Napsauta poistaaksesi sen käytöstä.",
-    "placeholders": {
-      "address": {
-        "content": "$1",
-        "example": "https://192.168.1.10:8463/"
-      }
-    }
-  },
   "status_off_in_app": {
     "message": "Pois päältä ohjelmassa Dannex Download Manager"
   },
@@ -283,9 +268,6 @@
   },
   "toolbar_store": {
     "message": "Hanki automaattiset päivitykset Chrome Web Storesta..."
-  },
-  "options_take_note": {
-    "message": "Kun se on pois päältä, lataukset jäävät selaimeen. Laajennuksen painikkeen napsautus tekee saman."
   },
   "options_what_to_do": {
     "message": "Katso, mitä tehdä"
@@ -439,5 +421,8 @@
   },
   "page_learn_more": {
     "message": "Lisätietoja"
+  },
+  "popup_fix": {
+    "message": "Katso, mitä tehdä"
   }
 }

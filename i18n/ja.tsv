@@ -1187,6 +1187,10 @@
 #. a country's name (where a download's server is)
 #, machine
 	Christmas Island	クリスマス島
+#. message or event log entry in the main window
+#. The title of Clean Up Temporary Files' answer.
+#, machine
+	Clean Up Temporary Files	一時ファイルのクリーンアップ
 #. button in the download list
 #. verb: clears this filter
 #, machine
@@ -1903,7 +1907,7 @@
 #. text in the Options window
 #. \\n starts a new line: break lines where they fit the translation
 #, machine
-	Empty: each download writes straight into a part file next to its file,\nso nothing is copied at the end. A folder here holds the part files\nuntil their downloads complete.	空の場合: 各ダウンロードはファイルの隣にあるパート ファイルに\n直接書き込まれるため、最後にコピーされることはありません。\nここにフォルダーを指定すると、ダウンロードが完了するまでパート ファイルがそこに保存されます。
+	Empty: each download writes into a part file next to its file, which\nbecomes the file when done. A folder here holds the part files instead.\nDDM removes leftover part files by itself (see the Downloads menu).	空欄: 各ダウンロードはファイルの横にある部分ファイルに書き込まれ、\n完了するとその部分ファイルが最終的なファイルになります。ここにフォルダーを指定すると、部分ファイルはそこに保存されます。\nDDM は残った部分ファイルを自動的に削除します ([ダウンロード] メニューを参照)。
 #. text in crashui.rs
 #. crash report window button: end the frozen DDM and start it again
 #, machine
@@ -2065,6 +2069,9 @@
 #. a country's name (where a download's server is)
 #, machine
 	Faroe Islands	フェロー諸島
+#. text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
+#, machine
+	Fast downloads with powerful control, automatic resume and browser integration. Free and open source under the GNU GPL, version 3 or later.	強力な制御、自動再開、ブラウザー統合を備えた高速ダウンロード。GNU GPL バージョン 3 以降のもとで無料のオープンソースです。
 #. text in the dates and times (the Scheduler window, the download list, Statistics)
 #, machine
 	February	2 月
@@ -2096,6 +2103,10 @@
 #. noun: a file of no known type
 #, machine
 	File	ファイル
+#. text in the download list (sizes, speeds, status); text in a download's progress window
+#. a download's status: it finished, but its file is no longer on the disk (deleted or moved by another program); right-click → Redownload gets it again
+#, machine
+	File missing	ファイルが見つかりません
 #. text in the Scheduler window
 #, machine
 	File Name	ファイル名
@@ -2552,7 +2563,7 @@
 	Hungary	ハンガリー
 #. text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
 #, machine
-	I download with Dannex Download Manager: fast, free, and it looks like the download manager you already know. {link}	Dannex Download Manager を使ってダウンロードしています。高速で無料で、使い慣れたダウンロードマネージャーのように見えます。{link}
+	I download with Dannex Download Manager: fast, free and built for powerful control. {link}	Dannex Download Manager でダウンロードしています: 高速、無料で、強力な制御が可能です。{link}
 #. text in countries.rs
 #. a country's name (where a download's server is)
 #, machine
@@ -3459,6 +3470,10 @@
 #. text in langpick.rs
 #, machine
 	No language matches.	一致する言語はありません。
+#. message or event log entry in the main window
+#. Downloads → Clean Up Temporary Files found nothing to remove.
+#, machine
+	No leftover temporary files were found.	残った一時ファイルは見つかりませんでした。
 #. text in the Options window
 #. Options → Remote → Status: on, but the computer has no local network address now
 #, machine
@@ -3887,7 +3902,7 @@
 #. text in the Options window
 #. \\n starts a new line: break lines where they fit the translation
 #, machine
-	Part files stay here until their downloads complete. On another drive\nthan a download's folder, its file is then copied over. Empty it to\nwrite next to each file again.	パート ファイルは、ダウンロードが完了するまでここに保存されます。ダウンロードのフォルダーとは\n別のドライブの場合、完了時にファイルがコピーされます。空にすると、\n再び各ファイルの隣に書き込まれます。
+	Part files stay here until their downloads complete. On another drive\nthan a download's folder, its file is then copied over. DDM removes\nleftovers by itself. Empty it to write next to each file again.	部分ファイルはダウンロードが完了するまでここに保存されます。ダウンロードのフォルダーと別のドライブにある場合、\nファイルはその後そこにコピーされます。DDM は残ったファイルを\n自動的に削除します。空にすると、再び各ファイルの横に書き込みます。
 #. text in the Batch download window; text in a dialog box; label in the Options window; text in the Options window
 #, machine
 	Password	パスワード
@@ -4184,6 +4199,11 @@
 #. {name} = a file name (keep the braces as they are)
 #, machine
 	Remove {name} from the list?	リストから {name} を削除しますか?
+#. message or event log entry in the main window
+#. Downloads → Clean Up Temporary Files' answer: {count} files, {size} like "1.2 GB".
+#. {count} = a number; {size} = a file size such as "4.2 MB" (keep the braces as they are)
+#, machine
+	Removed {count} leftover temporary files ({size} freed).	残った一時ファイルを {count} 個削除しました ({size} 解放)。
 #. text in a download's progress window
 #. noun: label before the deferred new file or folder name in the progress window
 #, machine
@@ -5171,9 +5191,6 @@
 #. {error} = an error message (keep the braces as they are)
 #, machine
 	The download list could not be saved: {error}. Changes are kept while DDM runs.	ダウンロード リストを保存できませんでした: {error}。変更は DDM の実行中に保持されます。
-#. text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
-#, machine
-	The download manager you already know, rebuilt to be faster. Free and open source under the GNU GPL, version 3 or later.	お馴染みのダウンロード マネージャーを、より高速になるよう作り直しました。GNU GPL バージョン 3 以降に基づく無料のオープン ソースです。
 #. text in a dialog box
 #, machine
 	The download queue is done.	ダウンロード キューが完了しました。
@@ -5268,10 +5285,22 @@
 #. reason shown on the Rename box when the entered name exceeds the length limit
 #, machine
 	The name is too long	名前が長すぎます
+#. text in netwatch.rs
+#. the network as a whole (no adapter has an address); shown as {adapter} in "Stopped: {adapter} is not connected; it goes on when it is back"
+#, machine
+	the network	ネットワーク
 #. text in errors.rs; text in torrent downloads
 #. an error: the network adapter chosen in Options (a VPN's, usually) is off or gone; {adapter} its name
 #, machine
 	the network adapter {adapter} is not connected	ネットワーク アダプター {adapter} は接続されていません
+#. message or event log entry in the main window
+#. event log entry: the download kept failing on the network for about an hour and is no longer started again by itself
+#, machine
+	The network failed too long; no longer trying by itself	ネットワークの障害が長く続いたため、自動的な再試行を停止しました
+#. message or event log entry in the main window
+#. event log entry: the download failed because the network did (no connection, one gone quiet); it starts again by itself after {seconds} seconds
+#, machine
+	The network failed; trying again in {seconds} s	ネットワークに障害が発生しました。{seconds} 秒後に再試行します
 #. text in the Site grabber window (Tasks → Run site grabber)
 #. Site grabber: what the Whole site template collects
 #, machine
@@ -6447,6 +6476,11 @@
 #, machine
 	{column} contains	{column} に含まれる
 #. message or event log entry in the main window
+#. Clean Up Temporary Files: some files are open in another program.
+#. {count} = a number (keep the braces as they are)
+#, machine
+	{count} could not be removed (in use by another program).	{count} 個を削除できませんでした (別のプログラムで使用中)。
+#. message or event log entry in the main window
 #. {count} = "2 downloading"; {speed} = all of them together, like "1.25 MB/sec"
 #. {count} = a number (keep the braces as they are)
 #, machine
@@ -6858,11 +6892,11 @@ extension	Dannex Download Manager is installed	Dannex Download Manager はイン
 #. text in the browser extension
 #. tooltip of the extension's toolbar button while it is turned off (downloads stay in the browser); keep the name Dannex Download Manager as it is
 #, machine
-extension	Dannex Download Manager is off. Click to turn it on.	Dannex Download Manager はオフです。クリックするとオンになります。
+extension	Dannex Download Manager is off.	Dannex Download Manager はオフです。
 #. text in the browser extension
 #. tooltip of the extension's toolbar button while it sends downloads to the app; keep the name Dannex Download Manager as it is
 #, machine
-extension	Dannex Download Manager is on. Click to turn it off.	Dannex Download Manager が動作しています。クリックするとオフになります。
+extension	Dannex Download Manager is on.	Dannex Download Manager はオンです。
 #. text in the browser extension
 #. headline of the extension's status page, and the first line of its toolbar button's tooltip: the browser can't find the app on this computer; keep the name Dannex Download Manager as it is
 #, machine
@@ -6896,6 +6930,10 @@ extension	Don't take downloads from this site	このサイトのダウンロー�
 #, machine
 extension	Download all images with DDM	DDM ですべての画像をダウンロード
 #. text in the browser extension
+#. a button in the extension's toolbar panel: sends every link in the current tab to Dannex Download Manager's link grabber
+#, machine
+extension	Download all links from this page	このページのすべてのリンクをダウンロード
+#. text in the browser extension
 #. command in the browser's right-click menu on a page: download the links of the whole page; keep the name Dannex Download Manager as it is
 #, machine
 extension	Download all links with DDM	DDM で全リンクをダウンロード
@@ -6920,6 +6958,10 @@ extension	Download through this browser's VPN or proxy	このブラウザーの 
 #, machine
 extension	Download video	動画をダウンロード
 #. text in the browser extension
+#. a button in the panel the extension's toolbar button opens: sends the video the current tab plays to Dannex Download Manager's Download video window
+#, machine
+extension	Download video from this page	このページの動画をダウンロード
+#. text in the browser extension
 #. command in the browser's right-click menu on a link, picture, video or sound; keep the name Dannex Download Manager as it is
 #, machine
 extension	Download with DDM	DDM でダウンロード
@@ -6934,7 +6976,7 @@ extension	Downloads go to another Dannex Download Manager	ダウンロードは�
 #. text in the browser extension
 #. tooltip of the extension's toolbar button while downloads go to another computer's Dannex Download Manager; $address$ is its web address; keep the name Dannex Download Manager as it is
 #, machine
-extension	Downloads go to the Dannex Download Manager at {address}. Click to turn it off.	ダウンロードは {address} の Dannex Download Manager に送られます。クリックするとオフになります。
+extension	Downloads go to the Dannex Download Manager at {address}.	ダウンロードは {address} の Dannex Download Manager に送られます。
 #. text in the browser extension
 #. the toolbar button's status while downloads go to another DDM
 #, machine
@@ -6955,6 +6997,10 @@ extension	Drag to move it along the video's edge	ドラッグして動画の端�
 #. the address typed isn't an https:// address
 #, machine
 extension	Enter its https:// address.	https:// アドレスを入力してください。
+#. text in the browser extension
+#. a button in the extension's toolbar panel: opens the extension's own options page
+#, machine
+extension	Extension options	拡張機能のオプション
 #. text in the browser extension
 #. the status page (an extension page that says whether the browser reaches Dannex Download Manager and how to fix it) in Firefox, for an add-on loaded with Load Temporary Add-on
 #, machine
@@ -7146,6 +7192,7 @@ extension	Run the setup you downloaded.	ダウンロードしたセットアッ�
 extension	Security software is the usual cause. Allow Dannex Download Manager in your antivirus program, or install it again.	多くの場合、原因はセキュリティ ソフトです。ウイルス対策プログラムで Dannex Download Manager を許可するか、もう一度インストールしてください。
 #. text in the browser extension
 #. link on the extension's options page, after a line saying what is wrong: opens the extension's status page
+#. a button in the extension's toolbar panel while Dannex Download Manager can't be reached: opens the status page that explains what to do
 #, machine
 extension	See what to do	対処方法を見る
 #. text in the browser extension
@@ -7153,7 +7200,7 @@ extension	See what to do	対処方法を見る
 #, machine
 extension	Send downloads to	ダウンロードの送信先
 #. text in the browser extension
-#. label of the on/off switch on the extension's status and options pages (the same as a click on its toolbar button): when on, downloads started in this browser go to the app; keep the name Dannex Download Manager as it is
+#. label of the on/off switch on the extension's status and options pages and in the panel its toolbar button opens: when on, downloads started in this browser go to the app; keep the name Dannex Download Manager as it is
 #, machine
 extension	Send downloads to Dannex Download Manager	ダウンロードを Dannex Download Manager に送る
 #. text in the browser extension
@@ -7168,6 +7215,10 @@ extension	Something is blocking Dannex Download Manager	Dannex Download Manager 
 #. read out by screen readers in the menu of qualities under the download button over a video, after the user picked a quality while the app is still looking the video up: the download starts by itself once the app has finished; keep the short name DDM as it is
 #, machine
 extension	Starting as soon as DDM is ready…	DDM の準備ができ次第、開始します…
+#. text in the browser extension
+#. a button in the extension's toolbar panel: opens the extension's status page
+#, machine
+extension	Status and help	状態とヘルプ
 #. text in the browser extension
 #. link at the bottom of the extension's status and options pages, beside Help: opens the maintainer's page for donations (GitHub Sponsors) in a new tab; keep DDM as it is (the short name of Dannex Download Manager)
 #, machine
@@ -7225,6 +7276,10 @@ extension	This extension isn't allowed on that site.	この拡張機能はその
 #, machine
 extension	This extension works with Dannex Download Manager, a free download manager for your computer. Install it, and this page updates by itself.	この拡張機能は、コンピューター用の無料ダウンロード マネージャー Dannex Download Manager と連携して動作します。インストールすると、このページは自動的に更新されます。
 #. text in the browser extension
+#. shown in the extension's toolbar panel when the current tab has no links
+#, machine
+extension	This page has no links to download.	このページにはダウンロードできるリンクがありません。
+#. text in the browser extension
 #. the status page (an extension page that says whether the browser reaches Dannex Download Manager and how to fix it): the app refuses this copy of the extension; keep the name Dannex Download Manager as it is
 #, machine
 extension	This version of Dannex Download Manager is too old for this extension. Install the latest one.	このバージョンの Dannex Download Manager は、この拡張機能には古すぎます。最新版をインストールしてください。
@@ -7267,7 +7322,7 @@ extension	Wait a moment, then try again.	しばらく待ってから、もう一
 #. text in the browser extension
 #. note under the on/off switch on the extension's options page: a click on the extension's toolbar button turns it off and on too
 #, machine
-extension	When it's off, downloads stay in the browser. Clicking the extension's button does the same.	オフにすると、ダウンロードはブラウザーに残ります。拡張機能のボタンをクリックしても同じ操作になります。
+extension	When it's off, downloads stay in the browser. The extension's button has the same switch.	オフのとき、ダウンロードはブラウザーに残ります。拡張機能のボタンにも同じスイッチがあります。
 #. text in the browser extension
 #. pairing failed: the code was wrong
 #, machine
@@ -7696,6 +7751,11 @@ menu	Choose c&olumns...	列の選択(&O)...
 #. View → Theme: DDM's own look, the default (the classic download manager's layout, Windows 11's controls)
 #, machine
 menu	Classic	クラシック
+#. menu command in the main window
+#. Downloads menu: removes the part files of downloads no longer in the list (left by a crash, a power cut, a removed download)
+#. & marks the keyboard shortcut letter: keep one & before a letter of the translation
+#, machine
+menu	Clean &Up Temporary Files	一時ファイルのクリーンアップ(&U)
 #. menu command in the main window
 #. & marks the keyboard shortcut letter: keep one & before a letter of the translation
 #, machine

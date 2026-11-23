@@ -36,12 +36,36 @@ The first official release.
 - ✅ 86 languages, right to left, keyboard and screen readers, themes, day and dark mode, a portable
   version, a phone remote and a server mode
 
-## Being worked on
+## Dannex 1.1.0
 
-These ship in a later version, when they're ready.
+### Done
+
+- ✅ Dark mode now shows menu and button access-key underlines only while keyboard cues are active.
 
 - ✅ Website translations are complete for Arabic, Persian, Portuguese (Portugal), Polish,
   Bengali, Turkish and Thai.
+
+- ✅ Downloads that stopped because the network went away go on by themselves once it is back,
+  trying again for about an hour; a lost connection is noticed sooner (12 s without data)
+
+- ✅ Sound pages handed to yt-dlp: YouTube Music playlists, SoundCloud sets, Bandcamp, Mixcloud,
+  Audiomack and Boomplay; more sound and video file types noticed in pages; a site that refuses
+  yt-dlp is asked again as a browser would. Spotify and other copy-protected (DRM) music stay out
+
+- ✅ A plainer tagline on the website, the README and About
+
+- ✅ The extension's toolbar button opens a panel at once: how things stand, the on/off switch,
+  Download video and Download all links from the page, the status page and the options
+
+- ✅ Unfinished downloads' pieces kept beside the file (or in Options' temporary folder) and always
+  cleaned up; the folder DDM made for a download removed with it when empty; leftovers older than a
+  day swept at start, and Downloads → Clean Up Temporary Files says what it freed
+
+- ✅ A finished download whose file was moved or deleted shows File missing and offers Redownload
+
+## Being worked on
+
+These ship in a later version, when they're ready.
 
 ### Planned
 

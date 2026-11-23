@@ -249,13 +249,13 @@
     "message": "WYŁ."
   },
   "tip_on": {
-    "message": "Program Dannex Download Manager jest włączony. Kliknij, aby wyłączyć."
+    "message": "Dannex Download Manager jest włączony."
   },
   "tip_off": {
-    "message": "Program Dannex Download Manager jest wyłączony. Kliknij, aby włączyć."
+    "message": "Dannex Download Manager jest wyłączony."
   },
   "tip_remote": {
-    "message": "Pobierania trafiają do programu Dannex Download Manager pod adresem $address$. Kliknij, aby wyłączyć.",
+    "message": "Pobrania trafiają do Dannex Download Manager pod adresem $address$.",
     "placeholders": {
       "address": {
         "content": "$1",
@@ -285,7 +285,7 @@
     "message": "Włącz automatyczne aktualizacje ze sklepu Chrome Web Store..."
   },
   "options_take_note": {
-    "message": "Gdy jest wyłączone, pobierania pozostają w przeglądarce. To samo robi kliknięcie przycisku rozszerzenia."
+    "message": "Gdy jest wyłączone, pobrania pozostają w przeglądarce. Przycisk rozszerzenia ma ten sam przełącznik."
   },
   "options_what_to_do": {
     "message": "Zobacz, co zrobić"
@@ -439,5 +439,23 @@
   },
   "page_learn_more": {
     "message": "Dowiedz się więcej"
+  },
+  "popup_video": {
+    "message": "Pobierz wideo z tej strony"
+  },
+  "popup_all": {
+    "message": "Pobierz wszystkie linki z tej strony"
+  },
+  "popup_no_links": {
+    "message": "Ta strona nie zawiera linków do pobrania."
+  },
+  "popup_status": {
+    "message": "Stan i pomoc"
+  },
+  "popup_options": {
+    "message": "Opcje rozszerzenia"
+  },
+  "popup_fix": {
+    "message": "Zobacz, co zrobić"
   }
 }

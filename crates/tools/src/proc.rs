@@ -221,10 +221,56 @@ pub fn look_up_until(
                     json,
                     without_cookies: true,
                 }),
-                Err(_) => Err(first),
+                Err(_) => refusal_fallback(run, ours, first),
             }
         }
-        Err(e) => Err(e),
+        Err(first) => refusal_fallback(run, ours, first),
+    }
+}
+
+fn browser_impersonation(ours: &[String]) -> Vec<String> {
+    let mut args = ours.to_vec();
+    if !args.iter().any(|a| a == "--impersonate") {
+        args.extend(["--impersonate".into(), "chrome".into()]);
+    }
+    args
+}
+
+fn generic_impersonation(ours: &[String]) -> Vec<String> {
+    let mut args = ours.to_vec();
+    if !args.iter().any(|a| a == "--extractor-args") {
+        args.extend(["--extractor-args".into(), "generic:impersonate".into()]);
+    }
+    args
+}
+
+fn refusal_fallback(
+    run: impl Fn(&[String]) -> Result<Vec<u8>, ProcError>,
+    ours: &[String],
+    first: ProcError,
+) -> Result<LookedUp, ProcError> {
+    let text = first.to_string().to_ascii_lowercase();
+    if !(text.contains("403")
+        || text.contains("forbidden")
+        || text.contains("anti-bot")
+        || text.contains("cloudflare")
+        || text.contains("akamai"))
+    {
+        return Err(first);
+    }
+    if let Ok(json) = run(&browser_impersonation(ours)) {
+        return Ok(LookedUp {
+            json,
+            without_cookies: false,
+        });
+    }
+    let generic = generic_impersonation(&browser_impersonation(ours));
+    match run(&generic) {
+        Ok(json) => Ok(LookedUp {
+            json,
+            without_cookies: false,
+        }),
+        Err(_) => Err(first),
     }
 }
 
@@ -1374,6 +1420,22 @@ mod tests {
         set_proxy(Proxy::None);
         let none = args_of(&ytdlp(exe, &[], &["-J".into()], url).unwrap());
         assert!(!none.iter().any(|a| a == "--proxy"));
+    }
+
+    #[test]
+    fn a_403_look_up_tries_browser_and_generic_impersonation() {
+        let ours = vec![
+            "-J".to_owned(),
+            "--referer".to_owned(),
+            "https://example.test/".to_owned(),
+        ];
+        let browser = browser_impersonation(&ours);
+        assert!(browser.contains(&"--impersonate".to_owned()));
+        assert!(browser.contains(&"chrome".to_owned()));
+        let generic = generic_impersonation(&browser);
+        assert!(generic.contains(&"--extractor-args".to_owned()));
+        assert!(generic.contains(&"generic:impersonate".to_owned()));
+        assert_eq!(&browser[..ours.len()], ours.as_slice());
     }
 
     fn yt(chosen: Option<&BrowserCookies>, ours: &[&str]) -> Vec<String> {

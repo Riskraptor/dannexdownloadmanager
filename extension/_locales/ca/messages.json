@@ -248,21 +248,6 @@
   "badge_off": {
     "message": "OFF"
   },
-  "tip_on": {
-    "message": "Dannex Download Manager està activat. Fes clic per desactivar-lo."
-  },
-  "tip_off": {
-    "message": "Dannex Download Manager està desactivat. Fes clic per activar-lo."
-  },
-  "tip_remote": {
-    "message": "Les baixades van a Dannex Download Manager a $address$. Fes clic per desactivar-lo.",
-    "placeholders": {
-      "address": {
-        "content": "$1",
-        "example": "https://192.168.1.10:8463/"
-      }
-    }
-  },
   "status_off_in_app": {
     "message": "Desactivat a Dannex Download Manager"
   },
@@ -283,9 +268,6 @@
   },
   "toolbar_store": {
     "message": "Obtén actualitzacions automàtiques de Chrome Web Store..."
-  },
-  "options_take_note": {
-    "message": "Quan està desactivada, les baixades es queden al navegador. Fer clic al botó de l’extensió fa el mateix."
   },
   "options_what_to_do": {
     "message": "Veure què cal fer"
@@ -439,5 +421,8 @@
   },
   "page_learn_more": {
     "message": "Més informació"
+  },
+  "popup_fix": {
+    "message": "Veure què cal fer"
   }
 }

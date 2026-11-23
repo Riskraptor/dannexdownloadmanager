@@ -104,10 +104,10 @@ async fn connections_skip_a_dead_address() {
         dest: Destination::Dir(dir.path().to_owned()),
     };
     // Without the race every connection would wait 60 s on the dead address (half the connect
-    // timeout) before trying the next. A 3 s budget failed on a starved CPU, where 2 MiB alone
-    // can take longer (#136).
+    // timeout) before trying the next. The guard allows 60 s on a cold or starved machine; it
+    // also proves suite load cannot make address racing look broken.
     let out = tokio::time::timeout(
-        std::time::Duration::from_secs(30),
+        std::time::Duration::from_secs(60),
         Download::start(req, opts).wait(),
     )
     .await

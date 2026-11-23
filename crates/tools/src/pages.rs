@@ -6,7 +6,9 @@
 use reqwest::Url;
 
 /// Whether `url` is a video's page on a site yt-dlp reads (YouTube, Vimeo, Dailymotion, Twitch,
-/// TikTok, X, Instagram, Facebook, Reddit, SoundCloud, Bilibili, Rumble).
+/// TikTok, X, Instagram, Facebook, Reddit, Bilibili, Rumble; for sound: YouTube Music, SoundCloud,
+/// Bandcamp, Mixcloud, Audiomack, Boomplay). Spotify, Apple Music, Deezer and Tidal are not here:
+/// their music is copy-protected (DRM), which no tool may save.
 pub fn is_video_page(url: &Url) -> bool {
     if !matches!(url.scheme(), "http" | "https") {
         return false;
@@ -47,7 +49,22 @@ pub fn is_video_page(url: &Url) -> bool {
         "fb.watch" => segs.len() == 1,
         "reddit.com" | "old.reddit.com" => matches!(segs.as_slice(), ["r", _, "comments", _, ..]),
         "v.redd.it" => segs.len() == 1,
-        "soundcloud.com" => segs.len() == 2,
+        // A track, or a set (an album or a playlist): /<artist>/<track>, /<artist>/sets/<set>.
+        "soundcloud.com" => {
+            segs.len() == 2 && !matches!(segs[0], "discover" | "search" | "you" | "stream")
+                || matches!(segs.as_slice(), [_, "sets", _])
+        }
+        "mixcloud.com" => segs.len() == 2 && !matches!(segs[0], "discover" | "search"),
+        "audiomack.com" => matches!(segs.as_slice(), [_, "song" | "album" | "playlist", _]),
+        "boomplay.com" => matches!(
+            segs.as_slice(),
+            [
+                "songs" | "albums" | "playlists" | "episode" | "podcasts" | "video",
+                _,
+                ..
+            ]
+        ),
+        h if h.ends_with(".bandcamp.com") => matches!(segs.as_slice(), ["track" | "album", _]),
         "bilibili.com" => matches!(segs.as_slice(), ["video", _, ..]),
         "rumble.com" => segs
             .first()
@@ -199,6 +216,14 @@ mod tests {
             "https://www.reddit.com/r/videos/comments/abc123/title/"
         ));
         assert!(page("https://soundcloud.com/artist/track"));
+        assert!(page("https://soundcloud.com/artist/sets/album"));
+        assert!(page("https://music.youtube.com/playlist?list=OLAK5uy_abc"));
+        assert!(page("https://artist.bandcamp.com/track/song"));
+        assert!(page("https://artist.bandcamp.com/album/record"));
+        assert!(page("https://www.mixcloud.com/someone/a-show/"));
+        assert!(page("https://audiomack.com/artist/song/title"));
+        assert!(page("https://www.boomplay.com/songs/123456"));
+        assert!(page("https://www.boomplay.com/albums/123456?from=home"));
     }
 
     #[test]
@@ -231,6 +256,12 @@ mod tests {
         assert!(!page("https://vimeo.com/channels/staffpicks"));
         assert!(!page("https://example.com/video.mp4"));
         assert!(!page("https://x.com/someone"));
+        assert!(!page("https://soundcloud.com/discover/sets"));
+        assert!(!page("https://artist.bandcamp.com/"));
+        assert!(!page("https://www.boomplay.com/"));
+        assert!(!page(
+            "https://open.spotify.com/track/4uLU6hMCjMI75M1A2tKUQC"
+        ));
         assert!(!page("ftp://youtube.com/watch?v=x"));
     }
 }

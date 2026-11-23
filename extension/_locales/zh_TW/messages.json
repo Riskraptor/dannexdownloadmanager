@@ -249,13 +249,13 @@
     "message": "關閉"
   },
   "tip_on": {
-    "message": "Dannex Download Manager 已開啟。按一下即可關閉。"
+    "message": "Dannex Download Manager 已開啟。"
   },
   "tip_off": {
-    "message": "Dannex Download Manager 已關閉。按一下即可開啟。"
+    "message": "Dannex Download Manager 已關閉。"
   },
   "tip_remote": {
-    "message": "下載會交給位於 $address$ 的 Dannex Download Manager。按一下即可關閉。",
+    "message": "下載會傳送到位於 $address$ 的 Dannex Download Manager。",
     "placeholders": {
       "address": {
         "content": "$1",
@@ -285,7 +285,7 @@
     "message": "從 Chrome 線上應用程式商店取得自動更新..."
   },
   "options_take_note": {
-    "message": "關閉時，下載會留在瀏覽器中。按一下擴充功能的按鈕也有相同效果。"
+    "message": "關閉時，下載會保留在瀏覽器中。擴充功能的按鈕有相同的開關。"
   },
   "options_what_to_do": {
     "message": "查看處理方式"
@@ -439,5 +439,23 @@
   },
   "page_learn_more": {
     "message": "深入了解"
+  },
+  "popup_video": {
+    "message": "下載此頁面上的影片"
+  },
+  "popup_all": {
+    "message": "下載此頁面上的所有連結"
+  },
+  "popup_no_links": {
+    "message": "此頁面沒有可下載的連結。"
+  },
+  "popup_status": {
+    "message": "狀態與說明"
+  },
+  "popup_options": {
+    "message": "擴充功能選項"
+  },
+  "popup_fix": {
+    "message": "查看處理方式"
   }
 }

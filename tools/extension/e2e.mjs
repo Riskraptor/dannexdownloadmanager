@@ -36,8 +36,8 @@
 // inplace), panelOptions (the button follows Options in an open tab: off, on, the site listed;
 // #532), panelLook (Download panels: over videos off, the first corner, the least length),
 // videoFocus (mouse idle/fullscreen and keyboard focus, #480), start (DDM not running: the
-// host starts it), toolbar (the toolbar button: no popup, off and on, its badge and title, the
-// status page saying Dannex Download Manager is installed, its switch),
+// host starts it), toolbar (the toolbar button: its panel, off and on, its badge and title, the
+// status page saying Dannex Download Manager is installed, the panel's switch),
 // remote (Send downloads to → Another DDM, #157: paired from the options page, a link downloaded by a
 // headless DDM; E2E_REMOTE_URL for one running elsewhere, such as the Docker image: remoteServer).
 //
@@ -1720,7 +1720,7 @@ async function proxyInChromium(t) {
     return seen;
   };
   const fixed = { mode: "fixed_servers", rules: { singleProxy: { scheme: "http", host: "127.0.0.1", port: PROXY_PORT } } };
-  // The switch is on the options page (the toolbar button has no popup).
+  // The switch is on the options page (and in the toolbar button's panel).
   const popup = await s.tab(`${s.base}options.html`);
   try {
     await setProxy(fixed);
@@ -1825,7 +1825,7 @@ const CASES = {
     await pref("network.proxy.http", "127.0.0.1");
     await pref("network.proxy.http_port", PROXY_PORT);
     await pref("network.proxy.type", 1);
-    // The switch is on the options page (the toolbar button has no popup).
+    // The switch is on the options page (and in the toolbar button's panel).
     const popupUrl = `${s.base}options.html`;
     const granted = async (popup) => popup.evaluate("browser.permissions.contains({ permissions: ['proxy'] })");
     // One file through the lab's host: how many of its requests went through the proxy (the
@@ -2705,10 +2705,9 @@ const CASES = {
   // server (its address and a code); a link clicked then downloads there, into the server's
   // folders, the browser's cookies not sent: neither the browser nor this computer's DDM keeps it.
   // The options page goes back to This computer at the end.
-  // The toolbar button: no popup; a click turns taking downloads from this browser off and on.
-  // A click on the button can't be made from here: the status page's switch, the same switch
-  // (background.js setPaused), stands for it, and the button's badge and title are read from the
-  // browser. The status page says "Dannex Download Manager is installed" first (no version in it);
+  // The toolbar button: its panel (popup.html), whose switch turns taking downloads from this
+  // browser off and on. The button can't be clicked from here: the panel opens as a page of its
+  // own, and the button's badge and title are read from the browser. The status page says "Dannex Download Manager is installed" first (no version in it);
   // off, a .zip link stays with the browser (DDM untouched); on again, DDM takes the next one.
   async toolbar(t) {
     const s = t.session;
@@ -2725,9 +2724,19 @@ const CASES = {
       if (titleOn !== tipOn) throw new Error(`the button's tooltip, on: "${titleOn}", not "${tipOn}"`);
       if ((await page.evaluate(`${ext}.action.getBadgeText({})`)) !== "") throw new Error("a badge while on");
       const popup = await page.evaluate(`${ext}.action.getPopup({})`);
-      if (popup) throw new Error(`the toolbar button has a popup: ${popup}`);
+      if (!String(popup).endsWith("/popup.html")) throw new Error(`the toolbar button's panel: ${popup}`);
+      const panel = await s.tab(`${s.base}popup.html`);
+      try {
+        const drawn = await until("the panel, on", 10000, () =>
+          panel.evaluate(`document.getElementById("hero").classList.contains("ok") && !document.getElementById("toggle-row").hidden && document.getElementById("toggle").checked && document.getElementById("headline").textContent`).catch(() => ""),
+        );
+        if (drawn !== tipOn) throw new Error(`the panel says "${drawn}", not "${tipOn}"`);
+        await panel.evaluate(`(document.getElementById("toggle").click(), true)`);
+        await until("the panel, off", 5000, () => panel.evaluate(`document.getElementById("hero").classList.contains("off")`).catch(() => false));
+      } finally {
+        await panel.close();
+      }
       const off = await page.evaluate(`${ext}.i18n.getMessage("badge_off")`);
-      await page.evaluate(`(document.getElementById("toggle").click(), true)`);
       await until("OFF on the toolbar button", 5000, async () => (await page.evaluate(`${ext}.action.getBadgeText({})`)) === off);
       const title = await page.evaluate(`${ext}.action.getTitle({})`);
       const kept = `e2e-toolbar-${t.name}-off.zip`;
@@ -2743,7 +2752,7 @@ const CASES = {
       await clickLink(t, `/gen/1M/${taken}`);
       await arrived(taken, 1 << 20);
       await keptNothing(t.dl);
-      return `${head}; no popup; on: no badge, title ${JSON.stringify(titleOn)}; off: badge ${JSON.stringify(off)}, title ${JSON.stringify(title)}, a link kept by the browser; on again: DDM took the next`;
+      return `${head}; its panel, its switch off; on: no badge, title ${JSON.stringify(titleOn)}; off: badge ${JSON.stringify(off)}, title ${JSON.stringify(title)}, a link kept by the browser; on again: DDM took the next`;
     } finally {
       await page.evaluate(`${ext}.storage.local.set({ paused: false })`).catch(() => {});
       await page.close();

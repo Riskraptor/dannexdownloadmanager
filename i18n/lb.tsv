@@ -1908,10 +1908,6 @@
 #. in Download a gallery, after the "Files at most" box
 #, machine
 	Empty: all of them. On most sites the newest come first.	Eidel: all. Op de meeschte Säite kommen déi neist fir d'éischt.
-#. text in the Options window
-#. \\n starts a new line: break lines where they fit the translation
-#, machine
-	Empty: each download writes straight into a part file next to its file,\nso nothing is copied at the end. A folder here holds the part files\nuntil their downloads complete.	Eidel: all Download schreift direkt an eng Deeldatei niewent senger Datei,\nsou datt um Enn näischt kopéiert gëtt. E Dossier hei hält d'Deeldateie fest,\nbis hir Downloade fäerdeg sinn.
 #. text in crashui.rs
 #. crash report window button: end the frozen DDM and start it again
 #, machine
@@ -2558,9 +2554,6 @@
 #. a country's name (where a download's server is)
 #, machine
 	Hungary	Ungarn
-#. text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
-#, machine
-	I download with Dannex Download Manager: fast, free, and it looks like the download manager you already know. {link}	Ech downloade mat Dannex Download Manager: séier, gratis, an et gesäit aus wéi de Download Manager, deen Dir scho kennt. {link}
 #. text in countries.rs
 #. a country's name (where a download's server is)
 #, machine
@@ -3892,10 +3885,6 @@
 #. a country's name (where a download's server is)
 #, machine
 	Paraguay	Paraguay
-#. text in the Options window
-#. \\n starts a new line: break lines where they fit the translation
-#, machine
-	Part files stay here until their downloads complete. On another drive\nthan a download's folder, its file is then copied over. Empty it to\nwrite next to each file again.	Deeldateie bleiwen hei, bis hir Downloade fäerdeg sinn. Op engem anere Laufwierk\nwéi dem Dossier vun engem Download gëtt seng Datei dann dohin kopéiert. Leescht et aus,\nfir erëm niewent all Datei ze schreiwen.
 #. text in the Batch download window; text in a dialog box; label in the Options window; text in the Options window
 #, machine
 	Password	Passwuert
@@ -5179,9 +5168,6 @@
 #. {error} = an error message (keep the braces as they are)
 #, machine
 	The download list could not be saved: {error}. Changes are kept while DDM runs.	D'Downloadlëscht konnt net gespäichert ginn: {error}. Ännerunge bleiwe gespäichert, soulaang DDM leeft.
-#. text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
-#, machine
-	The download manager you already know, rebuilt to be faster. Free and open source under the GNU GPL, version 3 or later.	Den Download-Manager, dee Dir scho kennt, nei opgebaut fir méi séier ze sinn. Gratis an Open Source ënner der GNU GPL, Versioun 3 oder méi spéit.
 #. text in a dialog box
 #, machine
 	The download queue is done.	D'Downloadschlaang ass fäerdeg.

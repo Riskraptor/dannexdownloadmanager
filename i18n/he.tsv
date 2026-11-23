@@ -1904,10 +1904,6 @@
 #. in Download a gallery, after the "Files at most" box
 #, machine
 	Empty: all of them. On most sites the newest come first.	ריק: כולם. ברוב האתרים החדשים ביותר מופיעים ראשונים.
-#. text in the Options window
-#. \\n starts a new line: break lines where they fit the translation
-#, machine
-	Empty: each download writes straight into a part file next to its file,\nso nothing is copied at the end. A folder here holds the part files\nuntil their downloads complete.	ריק: כל הורדה נכתבת ישירות לקובץ חלקי לצד הקובץ שלה,\nולכן לא מועתק דבר בסוף. תיקייה כאן שומרת את הקבצים החלקיים\nעד להשלמת ההורדות שלהם.
 #. text in crashui.rs
 #. crash report window button: end the frozen DDM and start it again
 #, machine
@@ -2554,9 +2550,6 @@
 #. a country's name (where a download's server is)
 #, machine
 	Hungary	הונגריה
-#. text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
-#, machine
-	I download with Dannex Download Manager: fast, free, and it looks like the download manager you already know. {link}	אני מוריד עם Dannex Download Manager: מהיר, חינם, והוא נראה כמו מנהל ההורדות שאתה כבר מכיר. {link}
 #. text in countries.rs
 #. a country's name (where a download's server is)
 #, machine
@@ -3888,10 +3881,6 @@
 #. a country's name (where a download's server is)
 #, machine
 	Paraguay	פרגוואי
-#. text in the Options window
-#. \\n starts a new line: break lines where they fit the translation
-#, machine
-	Part files stay here until their downloads complete. On another drive\nthan a download's folder, its file is then copied over. Empty it to\nwrite next to each file again.	הקבצים החלקיים נשארים כאן עד להשלמת ההורדות שלהם. בכונן אחר\nמתיקיית ההורדה, הקובץ מועתק אליה אז. השאר ריק\nכדי לכתוב שוב לצד כל קובץ.
 #. text in the Batch download window; text in a dialog box; label in the Options window; text in the Options window
 #, machine
 	Password	סיסמה
@@ -5175,9 +5164,6 @@
 #. {error} = an error message (keep the braces as they are)
 #, machine
 	The download list could not be saved: {error}. Changes are kept while DDM runs.	לא ניתן לשמור את רשימת ההורדות: {error}. השינויים נשמרים כל עוד DDM פועל.
-#. text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
-#, machine
-	The download manager you already know, rebuilt to be faster. Free and open source under the GNU GPL, version 3 or later.	מנהל ההורדות שאתה כבר מכיר, שנבנה מחדש כדי להיות מהיר יותר. חינמי ובקוד פתוח תחת GNU GPL, גרסה 3 ואילך.
 #. text in a dialog box
 #, machine
 	The download queue is done.	תור ההורדות הסתיים.

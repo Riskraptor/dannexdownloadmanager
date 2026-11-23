@@ -1908,10 +1908,6 @@
 #. in Download a gallery, after the "Files at most" box
 #, machine
 	Empty: all of them. On most sites the newest come first.	खाली: सभी। अधिकांश साइटों पर सबसे नए पहले आते हैं।
-#. text in the Options window
-#. \\n starts a new line: break lines where they fit the translation
-#, machine
-	Empty: each download writes straight into a part file next to its file,\nso nothing is copied at the end. A folder here holds the part files\nuntil their downloads complete.	खाली होने पर: हर डाउनलोड सीधे अपनी फ़ाइल के पास एक पार्ट फ़ाइल में लिखता है,\nइसलिए अंत में कुछ कॉपी नहीं होता। यहाँ दिया गया फ़ोल्डर पार्ट फ़ाइलें\nतब तक रखता है जब तक उनके डाउनलोड पूरे नहीं हो जाते।
 #. text in crashui.rs
 #. crash report window button: end the frozen DDM and start it again
 #, machine
@@ -2558,9 +2554,6 @@
 #. a country's name (where a download's server is)
 #, machine
 	Hungary	हंगरी
-#. text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
-#, machine
-	I download with Dannex Download Manager: fast, free, and it looks like the download manager you already know. {link}	मैं Dannex Download Manager से डाउनलोड करता हूँ: तेज़, मुफ़्त, और यह उस डाउनलोड मैनेजर जैसा दिखता है जिसे आप पहले से जानते हैं। {link}
 #. text in countries.rs
 #. a country's name (where a download's server is)
 #, machine
@@ -3892,10 +3885,6 @@
 #. a country's name (where a download's server is)
 #, machine
 	Paraguay	पैराग्वे
-#. text in the Options window
-#. \\n starts a new line: break lines where they fit the translation
-#, machine
-	Part files stay here until their downloads complete. On another drive\nthan a download's folder, its file is then copied over. Empty it to\nwrite next to each file again.	पार्ट फ़ाइलें यहाँ तब तक रहती हैं जब तक उनके डाउनलोड पूरे नहीं होते। डाउनलोड के फ़ोल्डर से\nअलग ड्राइव पर होने पर, फ़ाइल फिर वहाँ कॉपी की जाती है। हर फ़ाइल के पास\nफिर से लिखने के लिए इसे खाली करें।
 #. text in the Batch download window; text in a dialog box; label in the Options window; text in the Options window
 #, machine
 	Password	पासवर्ड
@@ -5179,9 +5168,6 @@
 #. {error} = an error message (keep the braces as they are)
 #, machine
 	The download list could not be saved: {error}. Changes are kept while DDM runs.	डाउनलोड सूची सहेजी नहीं जा सकी: {error}। DDM चलने के दौरान परिवर्तन रखे जाते हैं।
-#. text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
-#, machine
-	The download manager you already know, rebuilt to be faster. Free and open source under the GNU GPL, version 3 or later.	वही डाउनलोड मैनेजर जिसे आप पहले से जानते हैं, अब और तेज़ बनाया गया। GNU GPL के संस्करण 3 या बाद के अंतर्गत निःशुल्क और ओपन सोर्स।
 #. text in a dialog box
 #, machine
 	The download queue is done.	डाउनलोड कतार पूरी हो गई है।

@@ -1904,10 +1904,6 @@
 #. in Download a gallery, after the "Files at most" box
 #, machine
 	Empty: all of them. On most sites the newest come first.	Пусто: усі. На більшості сайтів новіші файли йдуть першими.
-#. text in the Options window
-#. \\n starts a new line: break lines where they fit the translation
-#, machine
-	Empty: each download writes straight into a part file next to its file,\nso nothing is copied at the end. A folder here holds the part files\nuntil their downloads complete.	Порожньо: кожне завантаження записується прямо у файл частини поруч із файлом,\nтому наприкінці нічого не копіюється. Папка тут зберігає файли частин\nдо завершення завантажень.
 #. text in crashui.rs
 #. crash report window button: end the frozen DDM and start it again
 #, machine
@@ -2554,9 +2550,6 @@
 #. a country's name (where a download's server is)
 #, machine
 	Hungary	Угорщина
-#. text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
-#, machine
-	I download with Dannex Download Manager: fast, free, and it looks like the download manager you already know. {link}	Я завантажую за допомогою Dannex Download Manager: швидко, безкоштовно, і він виглядає як менеджер завантажень, який ви вже знаєте. {link}
 #. text in countries.rs
 #. a country's name (where a download's server is)
 #, machine
@@ -3888,10 +3881,6 @@
 #. a country's name (where a download's server is)
 #, machine
 	Paraguay	Парагвай
-#. text in the Options window
-#. \\n starts a new line: break lines where they fit the translation
-#, machine
-	Part files stay here until their downloads complete. On another drive\nthan a download's folder, its file is then copied over. Empty it to\nwrite next to each file again.	Файли частин зберігаються тут до завершення завантажень. Якщо це інший диск,\nніж папка завантаження, файл потім копіюється. Очистьте поле,\nщоб знову записувати поруч із кожним файлом.
 #. text in the Batch download window; text in a dialog box; label in the Options window; text in the Options window
 #, machine
 	Password	Пароль
@@ -5175,9 +5164,6 @@
 #. {error} = an error message (keep the braces as they are)
 #, machine
 	The download list could not be saved: {error}. Changes are kept while DDM runs.	Не вдалося зберегти список завантажень: {error}. Зміни зберігаються, поки працює DDM.
-#. text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
-#, machine
-	The download manager you already know, rebuilt to be faster. Free and open source under the GNU GPL, version 3 or later.	Знайомий менеджер завантажень, перебудований для більшої швидкості. Безкоштовний, із відкритим кодом, за ліцензією GNU GPL версії 3 або новішої.
 #. text in a dialog box
 #, machine
 	The download queue is done.	Чергу завантажень завершено.
