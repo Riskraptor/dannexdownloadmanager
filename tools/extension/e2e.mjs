@@ -1813,12 +1813,18 @@ async function proxyInChromium(t) {
     await vpn(`chrome.proxy.settings.clear({ scope: "regular" }).then(() => "cleared")`).catch(() => {});
     await vpnPage.close();
   }
-  // An ordinary download goes as before, with no proxy set.
+  // An ordinary download goes as before, with no proxy set. The console is replayed from the
+  // worker's start: a download another extension started (`folders`, #578) is answered with the
+  // name the browser refuses, which it logs as "Invalid filename"; a page's download adds none.
+  const invalid = (list) => list.filter((e) => /Invalid filename/.test(e)).length;
+  const before = invalid(await s.workerErrors());
   const file = `e2e-noproxy-${t.name}.zip`;
   await clickLink(t, `/gen/1M/${file}`);
   await arrived(file, 1 << 20);
   await keptNothing(t.dl);
-  const errors = await s.workerErrors();
+  const all = await s.workerErrors();
+  const errors = all.filter((e) => !/Invalid filename/.test(e));
+  if (invalid(all) > before) errors.push("log: Unchecked runtime.lastError: Invalid filename (for a page's download)");
   if (errors.length) throw new Error(`the service worker's console: ${errors.join(" | ")}`);
   done.push("no proxy: a download as before; no error in the service worker's console");
   return done.join("; ");
