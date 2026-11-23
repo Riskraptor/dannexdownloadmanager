@@ -5,6 +5,8 @@ Each release's notes on GitHub come from its section here (`## [X.Y.Z]`, see
 
 ## [Unreleased]
 
+## [1.1.1] - 2026-11-24
+
 - Picking a quality on the button over a video (1080p, say) opens DDM's **Download File Info**
   window for that one file at once (address, quality, category, folder, file name): press
   **Start Download**, or **Download Later**. The batch-style Download video window is no longer
