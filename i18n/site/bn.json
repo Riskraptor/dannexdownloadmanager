@@ -286,10 +286,6 @@
    "source": "Full guide",
    "text": "সম্পূর্ণ নির্দেশিকা"
   },
-  "047d41a834df5979": {
-   "source": "Free and open source. The interface you already know, a faster engine underneath, torrents and video built in.",
-   "text": "বিনামূল্যে এবং উন্মুক্ত উৎস। আপনি ইতিমধ্যেই পরিচিত ইন্টারফেস, ভিতরে একটি দ্রুততর ইঞ্জিন, টরেন্ট এবং ভিডিও বিল্ট ইন।"
-  },
   "0483013fd35a5fd8": {
    "source": "<g1>Options → General → Take downloads from web browsers</g1> is on, and your browser is ticked under <g2>Take downloads from these browsers</g2>.",
    "text": "<g1>সেটিংস → সাধারণ → ওয়েব ব্রাউজার থেকে ডাউনলোড নিন</g1> চালু আছে, এবং <g2>এই ব্রাউজারগুলো থেকে ডাউনলোড নিন</g2>-এর অধীনে আপনার ব্রাউজারে টিক দেওয়া।"
@@ -3350,10 +3346,6 @@
    "source": "Some file hosts count a look-up as a download: turn the look-ups off in <g1>Options → Archives</g1>.",
    "text": "কিছু ফাইল হোস্ট একটি লুক-আপকে ডাউনলোড হিসাবে গণনা করে: <g1>সেটিংস → আর্কাইভ</g1> এ লুক-আপগুলি বন্ধ করুন।"
   },
-  "3508dab985cc0335": {
-   "source": "Free, open-source download manager for Windows, with macOS and Linux to try. The IDM layout you know, 5× faster in our benchmark: every connection at once, crash-safe resume, torrents, video from web pages, browser integration, 86 languages.",
-   "text": "Windows-এর জন্য একটি বিনামূল্যের, ওপেন-সোর্স ডাউনলোড ম্যানেজার, macOS এবং Linux-এর পরীক্ষামূলক সংস্করণও আছে। এটি IDM-এর পরিচিত বিন্যাস অনুসরণ করে, আমাদের বেঞ্চমার্কে 5 গুণ দ্রুত: একবারে সব সংযোগ, ক্র্যাশ-সেফ রিজুম, টরেন্ট, ওয়েবপেজ থেকে ভিডিও ডাউনলোড, ব্রাউজার ইন্টিগ্রেশন এবং 86টি ভাষা সমর্থন করে।"
-  },
   "35092e177f7efaa5": {
    "source": "Download complete with Open and Open folder",
    "text": "খুলুন এবং ফোল্ডার খুলুন সহ ডাউনলোড সম্পূর্ণ"
@@ -3845,10 +3837,6 @@
   "3d4a4f2d1b19754e": {
    "source": "Can I move my downloads over from IDM?",
    "text": "আমি কি IDM থেকে আমার ডাউনলোডগুলি সরাতে পারব?"
-  },
-  "3d67b0a7f32fc0e5": {
-   "source": "The free, open-source IDM alternative. Every connection at once, crash-safe resume, torrents and video in one list.",
-   "text": "বিনামূল্যে, ওপেন সোর্স IDM বিকল্প। প্রতিটি সংযোগ একবারে, ক্র্যাশ-সেফ রেজিউম, টরেন্ট এবং ভিডিও একটি তালিকায়।"
   },
   "3d686921b4a51711": {
    "source": "One window for any video page",
@@ -5621,10 +5609,6 @@
   "589ba88a30d884f3": {
    "source": "Installed; <g1>It's turned off, so downloads stay in this browser.</g1>",
    "text": "ইনস্টল করা আছে; <g1>এটি বন্ধ আছে, তাই ডাউনলোড এই ব্রাউজারেই থাকে।</g1>"
-  },
-  "58bc1f5f43802ddb": {
-   "source": "Dannex Download Manager — the download manager you already know, rebuilt to be faster",
-   "text": "Dannex Download Manager — আপনি ইতিমধ্যেই পরিচিত ডাউনলোড ম্যানেজার, দ্রুততর করার জন্য নতুন করে তৈরি করা হয়েছে"
   },
   "58bec232807ab18d": {
    "source": "The progress window in detail →",
@@ -8097,6 +8081,10 @@
   "8000c69387905255": {
    "source": "If someone already reported the same problem, the window says so and <g1>Open the reported issue</g1> takes you there, with your report on the clipboard to add as a comment.",
    "text": "যদি কেউ ইতিমধ্যেই একই সমস্যা রিপোর্ট করে থাকে, তাহলে উইন্ডোটি তা বলে এবং <g1>রিপোর্ট করা সমস্যাটি খুলুন</g1> আপনাকে সেখানে নিয়ে যায়, আপনার রিপোর্ট ক্লিপবোর্ডে থাকে মন্তব্য হিসেবে যোগ করার জন্য।"
+  },
+  "800407e32d4bc4d6": {
+   "source": "The extension shows almost nothing of its own, as users of other download managers expect: a click on its toolbar button turns taking downloads off and on, its right-click menu has \"Don't take downloads from this site\" and Help (<x1/>, the status page: installed, or what is wrong and the one thing to do), and its options page (<x2/>) has only that switch, the browser's proxy (#42) and another DDM (#157). It never asks the app for its downloads (extensions up to 0.6.5 did, for a window of their own: the host refuses that question now, and the app answers the automation API's <x3/> and actions only while the API is on).",
+   "text": "অন্যান্য ডাউনলোড ম্যানেজারের ব্যবহারকারীরা যেমন আশা করেন, এক্সটেনশনটি নিজে প্রায় কিছুই দেখায় না: এর টুলবার বোতামে ক্লিক করলে ডাউনলোড নেওয়া বন্ধ বা চালু হয়, ডান-ক্লিক মেনুতে আছে “Don't take downloads from this site” ও সাহায্য (<x1/>, অবস্থার পৃষ্ঠা: ইনস্টল করা আছে, অথবা কী সমস্যা এবং একমাত্র কী করতে হবে), আর এর বিকল্পের পৃষ্ঠায় (<x2/>) আছে শুধু সেই সুইচ, ব্রাউজারের প্রক্সি (#42) এবং অন্য একটি DDM (#157)। এটি অ্যাপের কাছে এর ডাউনলোডের তালিকা কখনো চায় না (0.6.5 পর্যন্ত এক্সটেনশন নিজস্ব উইন্ডোর জন্য চাইত: এখন হোস্ট সেই প্রশ্ন প্রত্যাখ্যান করে, আর অটোমেশন API চালু থাকলেই শুধু অ্যাপ API-এর <x3/> ও অ্যাকশনের উত্তর দেয়)।"
   },
   "8004bfee90ddaa59": {
    "source": "Starts (or with <x1/>, stops) the queue of that name (a name from the list's <x2/>). Answers <x3/>, or <x4/>. Only while the API is on.",
@@ -10753,10 +10741,6 @@
   "ac828ac836f8fc57": {
    "source": "<g1>Listen on</g1>: <g2>Every local network address</g2> (the default) listens on each private address of the computer (<x3/>, <x4/>, <x5/>, and IPv6's <x6/>), one by one, and follows them when you join another network. <g7>This computer only</g7> listens on <x8/>. Or pick one address of one adapter.",
    "text": "<g1>শুনুন</g1>: <g2>প্রতিটি স্থানীয় নেটওয়ার্ক ঠিকানা</g2> (ডিফল্ট) কম্পিউটারের প্রতিটি ব্যক্তিগত ঠিকানায় (<x3/>, <x4/>, <x5/>, এবং IPv6 এর <x6/>) এক এক করে শোনে, এবং আপনি অন্য নেটওয়ার্কে যোগ দিলে সেগুলিকে অনুসরণ করে। <g7>শুধুমাত্র এই কম্পিউটার</g7> <x8/> এ শোনে। অথবা একটি অ্যাডাপ্টারের একটি ঠিকানা বেছে নিন।"
-  },
-  "ac85d17c17b64879": {
-   "source": "The download manager you already know. Rebuilt to be faster.",
-   "text": "ডাউনলোড ম্যানেজার যা আপনি ইতিমধ্যেই জানেন। আরও দ্রুত হওয়ার জন্য নতুন করে তৈরি করা হয়েছে।"
   },
   "ac912aa4f847fd5b": {
    "source": "<g1>The system:</g1> DDM's version and how you installed it, your operating system and its version, the processor, the language and theme, and how many downloads and queues you have. These are counts only.",
@@ -13702,6 +13686,10 @@
    "source": "An import opens <g1>Link grabber</g1>, which sorts the links into packages: the volumes of one archive together, the links of one page together, the rest in <g2>Various files</g2>. Each link is looked up for its real name, its size and whether the server still has it, and the ones that are gone come unticked. A link already in your list goes under <g3>Already in the list</g3>, unticked.",
    "text": "একটি আমদানি <g1>লিঙ্ক গ্র্যাবার</g1> খোলে, যা লিঙ্কগুলিকে প্যাকেজে সাজায়: একটি আর্কাইভের ভলিউম একসাথে, একটি পৃষ্ঠার লিঙ্কগুলি একসাথে, বাকিগুলি <g2>বিভিন্ন ফাইল</g2>-এ। প্রতিটি লিঙ্কের আসল নাম, আকার এবং সার্ভারে এখনও আছে কিনা তা দেখা হয়, এবং যেগুলি চলে গেছে সেগুলি আনটিক করা হয়। আপনার তালিকায় ইতিমধ্যেই থাকা একটি লিঙ্ক <g3>ইতিমধ্যেই তালিকায় আছে</g3>-এর অধীনে যায়, আনটিক করা অবস্থায়।"
   },
+  "dcedde395f1f0789": {
+   "source": "<g1>1.0.0</g1> <g2>20.9 MB</g2>",
+   "text": "<g1>1.0.0</g1> <g2>20.9 MB</g2>"
+  },
   "dcf7c57bec3d49ba": {
    "source": "A debrid service, such as Real-Debrid, AllDebrid, Premiumize or TorBox, is a paid account that downloads files from file hosts on its own servers. It hands back a plain direct link, without the host's waits, speed caps and captchas. With your account in DDM, a link from a host your service supports is unlocked through the service, then downloaded by DDM like any file: all its connections, pause and resume.",
    "text": "রিয়েল-ডেব্রিড, অলডেব্রিড, প্রিমিয়ামাইজ বা টরবক্সের মতো একটি ডেব্রিড পরিষেবা হলো একটি পেইড অ্যাকাউন্ট যা ফাইল হোস্ট থেকে ফাইলগুলিকে তার নিজস্ব সার্ভারে ডাউনলোড করে। এটি হোস্টের অপেক্ষা, গতির সীমাবদ্ধতা এবং ক্যাপচা ছাড়াই একটি সাধারণ সরাসরি লিঙ্ক ফিরিয়ে দেয়। DDM-এ আপনার অ্যাকাউন্ট থাকলে, আপনার পরিষেবা সমর্থন করে এমন একটি হোস্টের লিঙ্ক পরিষেবার মাধ্যমে আনলক করা হয়, তারপর DDM এটিকে যেকোনো ফাইলের মতো ডাউনলোড করে: এর সমস্ত সংযোগ, বিরতি এবং পুনরায় শুরু করা যায়।"
@@ -14794,10 +14782,6 @@
    "source": "The window's close box (<g1>×</g1>) does the same as <g2>Cancel</g2> while the download runs, as in IDM; for a finished or stopped download it just closes the window.",
    "text": "উইন্ডোর বন্ধ করার বাক্স (<g1>×</g1>) ডাউনলোড চলার সময় ঠিক তা-ই করে যা <g2>বাতিল করুন</g2> করে, যেমন IDM-এ; শেষ হওয়া বা থামানো ডাউনলোডের জন্য এটি শুধু উইন্ডো বন্ধ করে।"
   },
-  "ee38c21b58df59db": {
-   "source": "Dannex Download Manager — free download manager and IDM alternative",
-   "text": "Dannex Download Manager — বিনামূল্যে ডাউনলোড ম্যানেজার এবং IDM এর বিকল্প"
-  },
   "ee4329d38e737b6a": {
    "source": "Pick a quality.",
    "text": "একটি গুণমান বেছে নিন।"
@@ -15594,6 +15578,10 @@
    "source": "Choose whether to install for you only or for everyone on the computer. For you only needs no administrator rights and goes to <x1/>. For everyone goes to <x2/>.",
    "text": "শুধু আপনার জন্য, নাকি কম্পিউটারের সবার জন্য ইনস্টল করবেন তা বেছে নিন। শুধু আপনার জন্য ইনস্টল করতে প্রশাসকের অধিকার লাগে না এবং এটি <x1/>-তে ইনস্টল হয়। সবার জন্য ইনস্টল করলে এটি <x2/>-তে ইনস্টল হয়।"
   },
+  "fc7fe0579b9363e9": {
+   "source": "One egui window painted to fixed pixel coordinates, plus one immediate viewport per dialog. <x1/> holds the state (downloads, queues, settings, the list's selection) and turns menu, toolbar, key and IPC commands into actions. Each dialog is its own module and returns an <x2/> (open, closed, done with a value). A window that comes up by itself (Download complete, a message DDM tells, a question while DDM isn't the program in front) shows above the others without taking the keyboard from the program being typed in (<x3/>, <x4/>); those the person asked for take it. Windows handed over one after another (Download File Info, Add torrent, Download video) and Download complete boxes show one at a time, in one place, the next when one closes. Windows-only calls are confined to <x5/> and their Linux and macOS counterparts to <x6/> (starting with the session, the browsers' host, sounds, show in folder, the crash handler); every other file is safe, portable Rust. Fonts come from the system: Windows' Fonts folder, macOS's system fonts, fontconfig on Linux (<x7/>). On Windows, Latin, Greek and Cyrillic text is drawn by DirectWrite (<x8/>, through egui's glyph rasterizer hook): View → Text → Smooth in its natural mode, anti-aliased at the size asked for and placed at quarter pixels with the font's own advances; Classic (the default) in GDI-classic mode, so each letter's hinted shape and whole-pixel width come together. Other scripts are shaped and drawn by egui.",
+   "text": "একটি egui উইন্ডো নির্দিষ্ট পিক্সেল স্থানাঙ্কে আঁকা হয়, এবং প্রতিটি ডায়ালগের জন্য একটি করে ইমিডিয়েট ভিউপোর্ট থাকে। <x1/> অবস্থা ধরে রাখে (ডাউনলোড, সারি, সেটিংস, তালিকার নির্বাচন) এবং মেনু, টুলবার, কী ও IPC কমান্ডকে কাজে রূপ দেয়। প্রতিটি ডায়ালগ আলাদা মডিউল এবং একটি <x2/> ফেরত দেয় (খোলা, বন্ধ, মানসহ সম্পন্ন)। যে উইন্ডো নিজে থেকে আসে (ডাউনলোড সম্পূর্ণ, DDM-এর দেওয়া বার্তা, DDM সামনের প্রোগ্রাম না থাকা অবস্থায় প্রশ্ন) তা অন্য উইন্ডোর উপরে দেখা যায়, কিন্তু যে প্রোগ্রামে টাইপ করা হচ্ছে তার কাছ থেকে কিবোর্ড নিয়ে নেয় না (<x3/>, <x4/>); ব্যবহারকারী যেগুলো চেয়েছেন সেগুলো কিবোর্ড নেয়। একটির পর একটি আসা উইন্ডো (Download File Info, Add torrent, Download video) এবং ডাউনলোড সম্পূর্ণ বক্স একবারে একটি করে, একই জায়গায় দেখানো হয়; একটি বন্ধ হলে পরেরটি আসে। শুধু Windows-এর কল <x5/>-এ সীমাবদ্ধ, আর Linux ও macOS-এর সমতুল্য কল <x6/>-এ (সেশন শুরু, ব্রাউজারের হোস্ট, শব্দ, ফোল্ডারে দেখান, ক্র্যাশ হ্যান্ডলার দিয়ে শুরু); বাকি প্রতিটি ফাইল নিরাপদ, পোর্টেবল Rust। ফন্ট আসে সিস্টেম থেকে: Windows-এর Fonts ফোল্ডার, macOS-এর সিস্টেম ফন্ট, Linux-এ fontconfig (<x7/>)। Windows-এ ল্যাটিন, গ্রিক ও সিরিলিক লেখা DirectWrite আঁকে (<x8/>, egui-এর গ্লিফ র‍্যাস্টারাইজার হুকের মাধ্যমে): দেখুন → লেখা → মসৃণ স্বাভাবিক মোডে, চাওয়া আকারে অ্যান্টি-অ্যালিয়াসড এবং ফন্টের নিজস্ব অ্যাডভান্স অনুযায়ী কোয়ার্টার পিক্সেলে বসানো; ক্লাসিক (ডিফল্ট) GDI-ক্লাসিক মোডে, যাতে প্রতিটি অক্ষরের হিন্টেড আকার ও পূর্ণ পিক্সেলের প্রস্থ একসঙ্গে মেলে। অন্যান্য লিপি egui আকার দেয় ও আঁকে।"
+  },
   "fc80e6d7a3cc65b1": {
    "source": "Link grabber",
    "text": "লিঙ্ক গ্র্যাবার"
@@ -15809,26 +15797,6 @@
   "ffffe7806eaeae3d": {
    "source": "The option is off until you tick it. On Linux and macOS DDM starts with your session the same way. A <g1>portable copy</g1> can't start with Windows, since that needs the registry, so the option is greyed there.",
    "text": "আপনি টিক না দেওয়া পর্যন্ত এই বিকল্পটি বন্ধ থাকে। Linux এবং macOS-এ DDM আপনার সেশনের সাথে একইভাবে শুরু হয়। একটি <g1>পোর্টেবল কপি</g1> Windows-এর সাথে শুরু হতে পারে না, কারণ এর জন্য রেজিস্ট্রি প্রয়োজন, তাই সেখানে বিকল্পটি ধূসর করা থাকে।"
-  },
-  "6e355ba39f5dc912": {
-   "source": "Sponsor Dannex Download Manager",
-   "text": "Dannex Download Manager-কে সমর্থন করুন"
-  },
-  "fc7fe0579b9363e9": {
-   "source": "One egui window painted to fixed pixel coordinates, plus one immediate viewport per dialog. <x1/> holds the state (downloads, queues, settings, the list's selection) and turns menu, toolbar, key and IPC commands into actions. Each dialog is its own module and returns an <x2/> (open, closed, done with a value). A window that comes up by itself (Download complete, a message DDM tells, a question while DDM isn't the program in front) shows above the others without taking the keyboard from the program being typed in (<x3/>, <x4/>); those the person asked for take it. Windows handed over one after another (Download File Info, Add torrent, Download video) and Download complete boxes show one at a time, in one place, the next when one closes. Windows-only calls are confined to <x5/> and their Linux and macOS counterparts to <x6/> (starting with the session, the browsers' host, sounds, show in folder, the crash handler); every other file is safe, portable Rust. Fonts come from the system: Windows' Fonts folder, macOS's system fonts, fontconfig on Linux (<x7/>). On Windows, Latin, Greek and Cyrillic text is drawn by DirectWrite (<x8/>, through egui's glyph rasterizer hook): View → Text → Smooth in its natural mode, anti-aliased at the size asked for and placed at quarter pixels with the font's own advances; Classic (the default) in GDI-classic mode, so each letter's hinted shape and whole-pixel width come together. Other scripts are shaped and drawn by egui.",
-   "text": "একটি egui উইন্ডো নির্দিষ্ট পিক্সেল স্থানাঙ্কে আঁকা হয়, এবং প্রতিটি ডায়ালগের জন্য একটি করে ইমিডিয়েট ভিউপোর্ট থাকে। <x1/> অবস্থা ধরে রাখে (ডাউনলোড, সারি, সেটিংস, তালিকার নির্বাচন) এবং মেনু, টুলবার, কী ও IPC কমান্ডকে কাজে রূপ দেয়। প্রতিটি ডায়ালগ আলাদা মডিউল এবং একটি <x2/> ফেরত দেয় (খোলা, বন্ধ, মানসহ সম্পন্ন)। যে উইন্ডো নিজে থেকে আসে (ডাউনলোড সম্পূর্ণ, DDM-এর দেওয়া বার্তা, DDM সামনের প্রোগ্রাম না থাকা অবস্থায় প্রশ্ন) তা অন্য উইন্ডোর উপরে দেখা যায়, কিন্তু যে প্রোগ্রামে টাইপ করা হচ্ছে তার কাছ থেকে কিবোর্ড নিয়ে নেয় না (<x3/>, <x4/>); ব্যবহারকারী যেগুলো চেয়েছেন সেগুলো কিবোর্ড নেয়। একটির পর একটি আসা উইন্ডো (Download File Info, Add torrent, Download video) এবং ডাউনলোড সম্পূর্ণ বক্স একবারে একটি করে, একই জায়গায় দেখানো হয়; একটি বন্ধ হলে পরেরটি আসে। শুধু Windows-এর কল <x5/>-এ সীমাবদ্ধ, আর Linux ও macOS-এর সমতুল্য কল <x6/>-এ (সেশন শুরু, ব্রাউজারের হোস্ট, শব্দ, ফোল্ডারে দেখান, ক্র্যাশ হ্যান্ডলার দিয়ে শুরু); বাকি প্রতিটি ফাইল নিরাপদ, পোর্টেবল Rust। ফন্ট আসে সিস্টেম থেকে: Windows-এর Fonts ফোল্ডার, macOS-এর সিস্টেম ফন্ট, Linux-এ fontconfig (<x7/>)। Windows-এ ল্যাটিন, গ্রিক ও সিরিলিক লেখা DirectWrite আঁকে (<x8/>, egui-এর গ্লিফ র‍্যাস্টারাইজার হুকের মাধ্যমে): দেখুন → লেখা → মসৃণ স্বাভাবিক মোডে, চাওয়া আকারে অ্যান্টি-অ্যালিয়াসড এবং ফন্টের নিজস্ব অ্যাডভান্স অনুযায়ী কোয়ার্টার পিক্সেলে বসানো; ক্লাসিক (ডিফল্ট) GDI-ক্লাসিক মোডে, যাতে প্রতিটি অক্ষরের হিন্টেড আকার ও পূর্ণ পিক্সেলের প্রস্থ একসঙ্গে মেলে। অন্যান্য লিপি egui আকার দেয় ও আঁকে।"
-  },
-  "800407e32d4bc4d6": {
-   "source": "The extension shows almost nothing of its own, as users of other download managers expect: a click on its toolbar button turns taking downloads off and on, its right-click menu has \"Don't take downloads from this site\" and Help (<x1/>, the status page: installed, or what is wrong and the one thing to do), and its options page (<x2/>) has only that switch, the browser's proxy (#42) and another DDM (#157). It never asks the app for its downloads (extensions up to 0.6.5 did, for a window of their own: the host refuses that question now, and the app answers the automation API's <x3/> and actions only while the API is on).",
-   "text": "অন্যান্য ডাউনলোড ম্যানেজারের ব্যবহারকারীরা যেমন আশা করেন, এক্সটেনশনটি নিজে প্রায় কিছুই দেখায় না: এর টুলবার বোতামে ক্লিক করলে ডাউনলোড নেওয়া বন্ধ বা চালু হয়, ডান-ক্লিক মেনুতে আছে “Don't take downloads from this site” ও সাহায্য (<x1/>, অবস্থার পৃষ্ঠা: ইনস্টল করা আছে, অথবা কী সমস্যা এবং একমাত্র কী করতে হবে), আর এর বিকল্পের পৃষ্ঠায় (<x2/>) আছে শুধু সেই সুইচ, ব্রাউজারের প্রক্সি (#42) এবং অন্য একটি DDM (#157)। এটি অ্যাপের কাছে এর ডাউনলোডের তালিকা কখনো চায় না (0.6.5 পর্যন্ত এক্সটেনশন নিজস্ব উইন্ডোর জন্য চাইত: এখন হোস্ট সেই প্রশ্ন প্রত্যাখ্যান করে, আর অটোমেশন API চালু থাকলেই শুধু অ্যাপ API-এর <x3/> ও অ্যাকশনের উত্তর দেয়)।"
-  },
-  "dcedde395f1f0789": {
-   "source": "<g1>1.0.0</g1> <g2>20.9 MB</g2>",
-   "text": "<g1>1.0.0</g1> <g2>20.9 MB</g2>"
-  },
-  "410849c6c11c33d7": {
-   "source": "DDM is free and always will be. If it saves you time, you can support it.",
-   "text": "DDM বিনামূল্যে এবং সবসময় বিনামূল্যেই থাকবে। এটি আপনার সময় বাঁচালে আপনি একে সমর্থন করতে পারেন।"
   }
  }
 }

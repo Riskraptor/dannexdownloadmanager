@@ -233,7 +233,7 @@ impl Default for Options {
             max_connections: 8,
             min_split: 12 * 1024,
             connect_timeout: Duration::from_secs(30),
-            read_timeout: Duration::from_secs(30),
+            read_timeout: Duration::from_secs(12),
             max_retries: 5,
             retry_delay: Duration::from_secs(1),
             user_agent: crate::agent::automatic(),
@@ -441,6 +441,17 @@ pub enum NetKind {
 }
 
 impl Error {
+    /// The network failed, not the server or the file: no connection, one gone quiet or broken
+    /// off. A download that ended on it can go on by itself once the network is back.
+    pub fn network_lost(&self) -> bool {
+        match self {
+            Error::Http(h) => h.is_connect() || h.is_timeout() || h.is_request() || h.is_body(),
+            Error::ShortBody => true,
+            Error::Net { kind, .. } => *kind != NetKind::Tls,
+            _ => false,
+        }
+    }
+
     /// The address no longer serves this file (or refuses us): retrying won't help.
     fn link_dead(&self) -> bool {
         matches!(self, Error::Status(s) if matches!(s.as_u16(), 401 | 403 | 404 | 410 | 416))
@@ -4430,6 +4441,14 @@ mod tests {
         assert_eq!(sync_bytes(24 << 20), 3 << 19);
         assert_eq!(sync_bytes(100 << 10), 1 << 20);
         assert_eq!(sync_bytes(10 << 30), 64 << 20);
+    }
+
+    #[test]
+    fn a_silent_connection_is_detected_in_twelve_seconds() {
+        assert_eq!(
+            Options::default().read_timeout,
+            std::time::Duration::from_secs(12)
+        );
     }
 
     #[test]

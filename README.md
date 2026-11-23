@@ -58,7 +58,7 @@
 
 ## Why switch from IDM?
 
-**Same window you know. Your downloads finish sooner. And it costs nothing.**
+**Fast downloads. Powerful control. Free and open source.**
 
 <p align="center">
   <picture>

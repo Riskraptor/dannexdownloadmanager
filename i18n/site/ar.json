@@ -286,10 +286,6 @@
    "source": "Full guide",
    "text": "الدليل الكامل"
   },
-  "047d41a834df5979": {
-   "source": "Free and open source. The interface you already know, a faster engine underneath, torrents and video built in.",
-   "text": "مجاني ومفتوح المصدر. واجهة مألوفة، ومحرك أسرع، ودعم مدمج للتورنت والفيديو."
-  },
   "0483013fd35a5fd8": {
    "source": "<g1>Options → General → Take downloads from web browsers</g1> is on, and your browser is ticked under <g2>Take downloads from these browsers</g2>.",
    "text": "أن <g1>الخيارات → عام → أخذ التنزيلات من مستعرضات الويب</g1> مفعل، وأن مستعرضك محدد ضمن <g2>أخذ التنزيلات من هذه المستعرضات</g2>."
@@ -3350,10 +3346,6 @@
    "source": "Some file hosts count a look-up as a download: turn the look-ups off in <g1>Options → Archives</g1>.",
    "text": "تحسب بعض مواقع الاستضافة عملية البحث كتنزيل: أوقف عمليات البحث في <g1>الخيارات ← الأرشيفات</g1>."
   },
-  "3508dab985cc0335": {
-   "source": "Free, open-source download manager for Windows, with macOS and Linux to try. The IDM layout you know, 5× faster in our benchmark: every connection at once, crash-safe resume, torrents, video from web pages, browser integration, 86 languages.",
-   "text": "مدير تنزيلات مجاني ومفتوح المصدر لنظام Windows، مع إصدارات تجريبية لنظامي macOS وLinux. تصميم IDM المألوف، وسرعة أكبر بـ5 مرات في اختبارنا: استخدام جميع الاتصالات في الوقت نفسه، ومتابعة آمنة بعد التعطل، ودعم التورنت، وتنزيل الفيديو من صفحات الويب، والربط بالمستعرض، و86 لغة."
-  },
   "35092e177f7efaa5": {
    "source": "Download complete with Open and Open folder",
    "text": "اكتمل التنزيل مع فتح وفتح المجلد"
@@ -3845,10 +3837,6 @@
   "3d4a4f2d1b19754e": {
    "source": "Can I move my downloads over from IDM?",
    "text": "هل يمكنني نقل تنزيلاتي من IDM؟"
-  },
-  "3d67b0a7f32fc0e5": {
-   "source": "The free, open-source IDM alternative. Every connection at once, crash-safe resume, torrents and video in one list.",
-   "text": "بديل IDM المجاني ومفتوح المصدر. كل الاتصالات في آن واحد، ومتابعة آمنة من الأعطال، والتورنت والفيديو في قائمة واحدة."
   },
   "3d686921b4a51711": {
    "source": "One window for any video page",
@@ -5621,10 +5609,6 @@
   "589ba88a30d884f3": {
    "source": "Installed; <g1>It's turned off, so downloads stay in this browser.</g1>",
    "text": "مثبت؛ <g1>متوقف، لذا تبقى التنزيلات في هذا المستعرض.</g1>"
-  },
-  "58bc1f5f43802ddb": {
-   "source": "Dannex Download Manager — the download manager you already know, rebuilt to be faster",
-   "text": "Dannex Download Manager — مدير التنزيلات الذي تعرفه بالفعل، أعيد بناؤه ليكون أسرع"
   },
   "58bec232807ab18d": {
    "source": "The progress window in detail →",
@@ -8097,6 +8081,10 @@
   "8000c69387905255": {
    "source": "If someone already reported the same problem, the window says so and <g1>Open the reported issue</g1> takes you there, with your report on the clipboard to add as a comment.",
    "text": "إذا كان شخص ما قد أبلغ بالفعل عن نفس المشكلة، فإن النافذة تخبرك بذلك ويأخذك <g1>فتح المشكلة المبلغ عنها</g1> إلى هناك، مع تقريرك في الحافظة لإضافته كتعليق."
+  },
+  "800407e32d4bc4d6": {
+   "source": "The extension shows almost nothing of its own, as users of other download managers expect: a click on its toolbar button turns taking downloads off and on, its right-click menu has \"Don't take downloads from this site\" and Help (<x1/>, the status page: installed, or what is wrong and the one thing to do), and its options page (<x2/>) has only that switch, the browser's proxy (#42) and another DDM (#157). It never asks the app for its downloads (extensions up to 0.6.5 did, for a window of their own: the host refuses that question now, and the app answers the automation API's <x3/> and actions only while the API is on).",
+   "text": "لا تعرض الإضافة تقريبا شيئا من واجهتها الخاصة، كما يتوقع مستخدمو مديري التنزيل الأخرى: النقر على زرها في شريط الأدوات يوقف أخذ التنزيلات أو يشغله، وتحتوي قائمتها بالزر الأيمن على «عدم أخذ التنزيلات من هذا الموقع» و«المساعدة» (<x1/>، وهي صفحة الحالة: مثبتة، أو ما المشكلة والشيء الوحيد الذي يجب فعله)، وصفحة خياراتها (<x2/>) فيها هذا المفتاح فقط، ووكيل المتصفح (#42) وDDM آخر (#157). لا تسأل الإضافة التطبيق أبدا عن تنزيلاته (كانت الإضافات حتى 0.6.5 تفعل ذلك لنافذة خاصة بها، أما الآن فيرفض المضيف هذا السؤال، ولا يجيب التطبيق عن <x3/> وإجراءات واجهة الأتمتة إلا أثناء تشغيل الواجهة)."
   },
   "8004bfee90ddaa59": {
    "source": "Starts (or with <x1/>, stops) the queue of that name (a name from the list's <x2/>). Answers <x3/>, or <x4/>. Only while the API is on.",
@@ -10753,10 +10741,6 @@
   "ac828ac836f8fc57": {
    "source": "<g1>Listen on</g1>: <g2>Every local network address</g2> (the default) listens on each private address of the computer (<x3/>, <x4/>, <x5/>, and IPv6's <x6/>), one by one, and follows them when you join another network. <g7>This computer only</g7> listens on <x8/>. Or pick one address of one adapter.",
    "text": "<g1>الاستماع على</g1>: <g2>كل عناوين الشبكة المحلية</g2> (الافتراضي) يستمع على كل عنوان خاص للكمبيوتر (<x3/>، <x4/>، <x5/>، و IPv6's <x6/>)، واحدا تلو الآخر، ويتبعها عندما تنضم إلى شبكة أخرى. <g7>هذا الكمبيوتر فقط</g7> يستمع على <x8/>. أو اختر عنوانا واحدا لمحول واحد."
-  },
-  "ac85d17c17b64879": {
-   "source": "The download manager you already know. Rebuilt to be faster.",
-   "text": "مدير التنزيلات الذي تعرفه بالفعل. أعيد بناؤه ليكون أسرع."
   },
   "ac912aa4f847fd5b": {
    "source": "<g1>The system:</g1> DDM's version and how you installed it, your operating system and its version, the processor, the language and theme, and how many downloads and queues you have. These are counts only.",
@@ -13702,6 +13686,10 @@
    "source": "An import opens <g1>Link grabber</g1>, which sorts the links into packages: the volumes of one archive together, the links of one page together, the rest in <g2>Various files</g2>. Each link is looked up for its real name, its size and whether the server still has it, and the ones that are gone come unticked. A link already in your list goes under <g3>Already in the list</g3>, unticked.",
    "text": "يفتح الاستيراد <g1>ملتقط الروابط</g1>، الذي يفرز الروابط إلى حزم: مجلدات أرشيف واحد معا، وروابط صفحة واحدة معا، والباقي في <g2>ملفات متنوعة</g2>. يتم البحث عن كل رابط لمعرفة اسمه الحقيقي، وحجمه، وما إذا كان الخادم لا يزال يحتفظ به، ويتم إلغاء تحديد الروابط التي لم تعد موجودة. يظهر الرابط الموجود بالفعل في قائمتك ضمن <g3>موجود بالفعل في القائمة</g3>، وغير محدد."
   },
+  "dcedde395f1f0789": {
+   "source": "<g1>1.0.0</g1> <g2>20.9 MB</g2>",
+   "text": "<g1>1.0.0</g1> <g2>20.9 MB</g2>"
+  },
   "dcf7c57bec3d49ba": {
    "source": "A debrid service, such as Real-Debrid, AllDebrid, Premiumize or TorBox, is a paid account that downloads files from file hosts on its own servers. It hands back a plain direct link, without the host's waits, speed caps and captchas. With your account in DDM, a link from a host your service supports is unlocked through the service, then downloaded by DDM like any file: all its connections, pause and resume.",
    "text": "خدمة الديبريد، مثل Real-Debrid أو AllDebrid أو Premiumize أو TorBox، هي حساب مدفوع يقوم بتنزيل الملفات من مواقع الاستضافة إلى خوادمه الخاصة. توفر الخدمة رابطا مباشرا عاديا، دون انتظار مواقع الاستضافة أو قيود السرعة أو الكابتشا. باستخدام حسابك في DDM، يتم فتح الرابط من موقع استضافة تدعمه خدمتك عبر الخدمة، ثم يقوم DDM بتنزيله كأي ملف آخر: بجميع اتصالاته، وإيقافه، ومتابعته."
@@ -14594,6 +14582,10 @@
    "source": "<g1>Ctrl+M</g1> or <g2>F2</g2>",
    "text": "<g1>Ctrl+M</g1> أو <g2>F2</g2>"
   },
+  "eb60a779982bcd66": {
+   "source": "Chrome, Edge and Brave run an extension in private (incognito) windows only when you allow it, and Firefox asks too. Until then, downloads from private windows stay with the browser. To allow it: on the browser's extensions page, open <g1>Details</g1> and turn on <g2>Allow in Incognito</g2>; in Firefox, <g3>Add-ons and themes</g3> → the extension → <g4>Allow</g4> beside <g5>Run in Private Windows</g5>. Downloads from a private window use that window's cookies, and DDM doesn't keep them in its list once they're done.",
+   "text": "يشغّل Chrome وEdge وBrave الملحق في النوافذ الخاصة (التصفح المتخفي) فقط عندما تسمح بذلك، ويسأل Firefox أيضا. وإلى أن تسمح، تبقى التنزيلات من النوافذ الخاصة مع المستعرض. للسماح: في صفحة الملحقات في المستعرض، افتح <g1>التفاصيل</g1> وفعّل <g2>السماح في وضع التصفح المتخفي</g2>. أما في Firefox، فافتح <g3>الإضافات والسمات</g3> → الملحق → <g4>السماح</g4> بجانب <g5>التشغيل في النوافذ الخاصة</g5>. تستخدم التنزيلات من النافذة الخاصة ملفات تعريف الارتباط (الكوكيز) الخاصة بتلك النافذة، ولا يحتفظ DDM بها في قائمته بعد اكتمالها. (Windows)"
+  },
   "eb712f80554a3646": {
    "source": "A window in DDM may be waiting for you (a question, <g1>Add torrent</g1>); answer it and ask again.",
    "text": "قد تكون هناك نافذة في DDM تنتظر تفاعلك (سؤال أو <g1>إضافة تورنت</g1>)؛ أجب عنها ثم أعد المحاولة."
@@ -14789,10 +14781,6 @@
   "ee37e54eb8ede1fa": {
    "source": "The window's close box (<g1>×</g1>) does the same as <g2>Cancel</g2> while the download runs, as in IDM; for a finished or stopped download it just closes the window.",
    "text": "يفعل مربع إغلاق النافذة (<g1>×</g1>) ما يفعله <g2>إلغاء</g2> أثناء تشغيل التنزيل، كما في IDM؛ أما في التنزيل المكتمل أو المتوقف فيغلق النافذة فقط."
-  },
-  "ee38c21b58df59db": {
-   "source": "Dannex Download Manager — free download manager and IDM alternative",
-   "text": "Dannex Download Manager — مدير تنزيل مجاني وبديل لـ IDM"
   },
   "ee4329d38e737b6a": {
    "source": "Pick a quality.",
@@ -15590,6 +15578,10 @@
    "source": "Choose whether to install for you only or for everyone on the computer. For you only needs no administrator rights and goes to <x1/>. For everyone goes to <x2/>.",
    "text": "اختر ما إذا كنت تريد التثبيت لك فقط أو للجميع على الكمبيوتر. لك فقط لا يتطلب حقوق المسؤول ويذهب إلى <x1/>. للجميع يذهب إلى <x2/>."
   },
+  "fc7fe0579b9363e9": {
+   "source": "One egui window painted to fixed pixel coordinates, plus one immediate viewport per dialog. <x1/> holds the state (downloads, queues, settings, the list's selection) and turns menu, toolbar, key and IPC commands into actions. Each dialog is its own module and returns an <x2/> (open, closed, done with a value). A window that comes up by itself (Download complete, a message DDM tells, a question while DDM isn't the program in front) shows above the others without taking the keyboard from the program being typed in (<x3/>, <x4/>); those the person asked for take it. Windows handed over one after another (Download File Info, Add torrent, Download video) and Download complete boxes show one at a time, in one place, the next when one closes. Windows-only calls are confined to <x5/> and their Linux and macOS counterparts to <x6/> (starting with the session, the browsers' host, sounds, show in folder, the crash handler); every other file is safe, portable Rust. Fonts come from the system: Windows' Fonts folder, macOS's system fonts, fontconfig on Linux (<x7/>). On Windows, Latin, Greek and Cyrillic text is drawn by DirectWrite (<x8/>, through egui's glyph rasterizer hook): View → Text → Smooth in its natural mode, anti-aliased at the size asked for and placed at quarter pixels with the font's own advances; Classic (the default) in GDI-classic mode, so each letter's hinted shape and whole-pixel width come together. Other scripts are shaped and drawn by egui.",
+   "text": "نافذة egui واحدة ترسم على إحداثيات بكسل ثابتة، مع نافذة عرض فورية واحدة لكل مربع حوار. يحتفظ <x1/> بالحالة (التنزيلات وقوائم الانتظار والإعدادات وتحديد القائمة)، ويحول أوامر القوائم وشريط الأدوات والمفاتيح وIPC إلى إجراءات. كل مربع حوار وحدة مستقلة، ويعيد <x2/> (مفتوح أو مغلق أو منتهٍ بقيمة). النافذة التي تظهر من تلقاء نفسها («اكتمل التنزيل»، أو رسالة يعرضها DDM، أو سؤال بينما DDM ليس البرنامج الأمامي) تظهر فوق النوافذ الأخرى دون أن تأخذ لوحة المفاتيح من البرنامج الذي يكتب فيه المستخدم (<x3/> و<x4/>). أما النوافذ التي طلبها المستخدم فتأخذها. النوافذ التي تأتي واحدة بعد أخرى («معلومات ملف التنزيل» و«إضافة تورنت» و«تنزيل فيديو») ومربعات «اكتمل التنزيل» تظهر واحدا واحدا في مكان واحد، وتظهر التالية عند إغلاق السابقة. استدعاءات Windows فقط محصورة في <x5/>، ونظيراتها في Linux وmacOS في <x6/> (بدءا بالجلسة، ومضيف المتصفحات، والأصوات، والإظهار في المجلد، ومعالج الأعطال). كل ملف آخر هو كود Rust آمن وقابل للنقل. تأتي الخطوط من النظام: مجلد Fonts في Windows، وخطوط النظام في macOS، وfontconfig في Linux (<x7/>). في Windows يرسم DirectWrite النص اللاتيني واليوناني والسيريلي (<x8/>، عبر خطاف مُرسِّم الحروف في egui): عرض → نص → «ناعم» بنمطه الطبيعي، بنعومة عند الحجم المطلوب ويوضع عند أرباع البكسل بعروض الخط نفسه، و«كلاسيكي» (الافتراضي) بنمط GDI الكلاسيكي، فيجتمع شكل كل حرف المضبوط وعرضه بعدد صحيح من البكسلات. أما الكتابات الأخرى فيشكلها egui ويرسمها."
+  },
   "fc80e6d7a3cc65b1": {
    "source": "Link grabber",
    "text": "أداة التقاط الروابط"
@@ -15805,30 +15797,6 @@
   "ffffe7806eaeae3d": {
    "source": "The option is off until you tick it. On Linux and macOS DDM starts with your session the same way. A <g1>portable copy</g1> can't start with Windows, since that needs the registry, so the option is greyed there.",
    "text": "الخيار متوقف حتى تضع علامة عليه. في Linux و macOS، يبدأ DDM مع جلستك بنفس الطريقة. لا يمكن لـ <g1>نسخة محمولة</g1> أن تبدأ مع Windows، لأن ذلك يتطلب السجل، لذا يكون الخيار معطلا هناك."
-  },
-  "6e355ba39f5dc912": {
-   "source": "Sponsor Dannex Download Manager",
-   "text": "رعاية Dannex Download Manager"
-  },
-  "fc7fe0579b9363e9": {
-   "source": "One egui window painted to fixed pixel coordinates, plus one immediate viewport per dialog. <x1/> holds the state (downloads, queues, settings, the list's selection) and turns menu, toolbar, key and IPC commands into actions. Each dialog is its own module and returns an <x2/> (open, closed, done with a value). A window that comes up by itself (Download complete, a message DDM tells, a question while DDM isn't the program in front) shows above the others without taking the keyboard from the program being typed in (<x3/>, <x4/>); those the person asked for take it. Windows handed over one after another (Download File Info, Add torrent, Download video) and Download complete boxes show one at a time, in one place, the next when one closes. Windows-only calls are confined to <x5/> and their Linux and macOS counterparts to <x6/> (starting with the session, the browsers' host, sounds, show in folder, the crash handler); every other file is safe, portable Rust. Fonts come from the system: Windows' Fonts folder, macOS's system fonts, fontconfig on Linux (<x7/>). On Windows, Latin, Greek and Cyrillic text is drawn by DirectWrite (<x8/>, through egui's glyph rasterizer hook): View → Text → Smooth in its natural mode, anti-aliased at the size asked for and placed at quarter pixels with the font's own advances; Classic (the default) in GDI-classic mode, so each letter's hinted shape and whole-pixel width come together. Other scripts are shaped and drawn by egui.",
-   "text": "نافذة egui واحدة ترسم على إحداثيات بكسل ثابتة، مع نافذة عرض فورية واحدة لكل مربع حوار. يحتفظ <x1/> بالحالة (التنزيلات وقوائم الانتظار والإعدادات وتحديد القائمة)، ويحول أوامر القوائم وشريط الأدوات والمفاتيح وIPC إلى إجراءات. كل مربع حوار وحدة مستقلة، ويعيد <x2/> (مفتوح أو مغلق أو منتهٍ بقيمة). النافذة التي تظهر من تلقاء نفسها («اكتمل التنزيل»، أو رسالة يعرضها DDM، أو سؤال بينما DDM ليس البرنامج الأمامي) تظهر فوق النوافذ الأخرى دون أن تأخذ لوحة المفاتيح من البرنامج الذي يكتب فيه المستخدم (<x3/> و<x4/>). أما النوافذ التي طلبها المستخدم فتأخذها. النوافذ التي تأتي واحدة بعد أخرى («معلومات ملف التنزيل» و«إضافة تورنت» و«تنزيل فيديو») ومربعات «اكتمل التنزيل» تظهر واحدا واحدا في مكان واحد، وتظهر التالية عند إغلاق السابقة. استدعاءات Windows فقط محصورة في <x5/>، ونظيراتها في Linux وmacOS في <x6/> (بدءا بالجلسة، ومضيف المتصفحات، والأصوات، والإظهار في المجلد، ومعالج الأعطال). كل ملف آخر هو كود Rust آمن وقابل للنقل. تأتي الخطوط من النظام: مجلد Fonts في Windows، وخطوط النظام في macOS، وfontconfig في Linux (<x7/>). في Windows يرسم DirectWrite النص اللاتيني واليوناني والسيريلي (<x8/>، عبر خطاف مُرسِّم الحروف في egui): عرض → نص → «ناعم» بنمطه الطبيعي، بنعومة عند الحجم المطلوب ويوضع عند أرباع البكسل بعروض الخط نفسه، و«كلاسيكي» (الافتراضي) بنمط GDI الكلاسيكي، فيجتمع شكل كل حرف المضبوط وعرضه بعدد صحيح من البكسلات. أما الكتابات الأخرى فيشكلها egui ويرسمها."
-  },
-  "800407e32d4bc4d6": {
-   "source": "The extension shows almost nothing of its own, as users of other download managers expect: a click on its toolbar button turns taking downloads off and on, its right-click menu has \"Don't take downloads from this site\" and Help (<x1/>, the status page: installed, or what is wrong and the one thing to do), and its options page (<x2/>) has only that switch, the browser's proxy (#42) and another DDM (#157). It never asks the app for its downloads (extensions up to 0.6.5 did, for a window of their own: the host refuses that question now, and the app answers the automation API's <x3/> and actions only while the API is on).",
-   "text": "لا تعرض الإضافة تقريبا شيئا من واجهتها الخاصة، كما يتوقع مستخدمو مديري التنزيل الأخرى: النقر على زرها في شريط الأدوات يوقف أخذ التنزيلات أو يشغله، وتحتوي قائمتها بالزر الأيمن على «عدم أخذ التنزيلات من هذا الموقع» و«المساعدة» (<x1/>، وهي صفحة الحالة: مثبتة، أو ما المشكلة والشيء الوحيد الذي يجب فعله)، وصفحة خياراتها (<x2/>) فيها هذا المفتاح فقط، ووكيل المتصفح (#42) وDDM آخر (#157). لا تسأل الإضافة التطبيق أبدا عن تنزيلاته (كانت الإضافات حتى 0.6.5 تفعل ذلك لنافذة خاصة بها، أما الآن فيرفض المضيف هذا السؤال، ولا يجيب التطبيق عن <x3/> وإجراءات واجهة الأتمتة إلا أثناء تشغيل الواجهة)."
-  },
-  "dcedde395f1f0789": {
-   "source": "<g1>1.0.0</g1> <g2>20.9 MB</g2>",
-   "text": "<g1>1.0.0</g1> <g2>20.9 MB</g2>"
-  },
-  "410849c6c11c33d7": {
-   "source": "DDM is free and always will be. If it saves you time, you can support it.",
-   "text": "DDM مجاني وسيبقى كذلك دائما. إذا وفّر عليك وقتك، يمكنك دعمه."
-  },
-  "eb60a779982bcd66": {
-   "source": "Chrome, Edge and Brave run an extension in private (incognito) windows only when you allow it, and Firefox asks too. Until then, downloads from private windows stay with the browser. To allow it: on the browser's extensions page, open <g1>Details</g1> and turn on <g2>Allow in Incognito</g2>; in Firefox, <g3>Add-ons and themes</g3> → the extension → <g4>Allow</g4> beside <g5>Run in Private Windows</g5>. Downloads from a private window use that window's cookies, and DDM doesn't keep them in its list once they're done.",
-   "text": "يشغّل Chrome وEdge وBrave الملحق في النوافذ الخاصة (التصفح المتخفي) فقط عندما تسمح بذلك، ويسأل Firefox أيضا. وإلى أن تسمح، تبقى التنزيلات من النوافذ الخاصة مع المستعرض. للسماح: في صفحة الملحقات في المستعرض، افتح <g1>التفاصيل</g1> وفعّل <g2>السماح في وضع التصفح المتخفي</g2>. أما في Firefox، فافتح <g3>الإضافات والسمات</g3> → الملحق → <g4>السماح</g4> بجانب <g5>التشغيل في النوافذ الخاصة</g5>. تستخدم التنزيلات من النافذة الخاصة ملفات تعريف الارتباط (الكوكيز) الخاصة بتلك النافذة، ولا يحتفظ DDM بها في قائمته بعد اكتمالها. (Windows)"
   }
  }
 }

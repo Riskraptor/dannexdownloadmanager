@@ -286,10 +286,6 @@
    "source": "Full guide",
    "text": "راهنمای کامل"
   },
-  "047d41a834df5979": {
-   "source": "Free and open source. The interface you already know, a faster engine underneath, torrents and video built in.",
-   "text": "رایگان و متن‌باز. رابط کاربری که از قبل می‌شناسید، یک موتور سریع‌تر در زیر، تورنت‌ها و ویدئو به صورت داخلی."
-  },
   "0483013fd35a5fd8": {
    "source": "<g1>Options → General → Take downloads from web browsers</g1> is on, and your browser is ticked under <g2>Take downloads from these browsers</g2>.",
    "text": "<g1>گزینه‌ها → عمومی → گرفتن بارگیری‌ها از مرورگرهای وب</g1> روشن باشد و مرورگر شما زیر <g2>گرفتن بارگیری‌ها از این مرورگرها</g2> علامت خورده باشد."
@@ -3350,10 +3346,6 @@
    "source": "Some file hosts count a look-up as a download: turn the look-ups off in <g1>Options → Archives</g1>.",
    "text": "برخی از میزبان‌های فایل، هر جستجو را به عنوان یک بارگیری حساب می‌کنند: جستجوها را در <g1>گزینه‌ها → بایگانی‌ها</g1> خاموش کنید."
   },
-  "3508dab985cc0335": {
-   "source": "Free, open-source download manager for Windows, with macOS and Linux to try. The IDM layout you know, 5× faster in our benchmark: every connection at once, crash-safe resume, torrents, video from web pages, browser integration, 86 languages.",
-   "text": "مدیر دانلود رایگان و متن‌باز برای Windows، با نسخه‌های آزمایشی برای macOS و Linux. با ظاهر IDM که می‌شناسید، 5 برابر سریع‌تر در بنچمارک ما: همه اتصالات همزمان، ادامه دانلود پس از قطعی، تورنت، ویدئو از صفحات وب، یکپارچه‌سازی با مرورگر، 86 زبان."
-  },
   "35092e177f7efaa5": {
    "source": "Download complete with Open and Open folder",
    "text": "بارگیری کامل شد با باز کردن و باز کردن پوشه"
@@ -3845,10 +3837,6 @@
   "3d4a4f2d1b19754e": {
    "source": "Can I move my downloads over from IDM?",
    "text": "آیا می‌توانم دانلودهایم را از IDM منتقل کنم؟"
-  },
-  "3d67b0a7f32fc0e5": {
-   "source": "The free, open-source IDM alternative. Every connection at once, crash-safe resume, torrents and video in one list.",
-   "text": "جایگزین رایگان و متن‌باز IDM. هر اتصال به صورت همزمان، ازسرگیری ایمن در برابر خرابی، تورنت‌ها و ویدئو در یک لیست."
   },
   "3d686921b4a51711": {
    "source": "One window for any video page",
@@ -5621,10 +5609,6 @@
   "589ba88a30d884f3": {
    "source": "Installed; <g1>It's turned off, so downloads stay in this browser.</g1>",
    "text": "نصب‌شده؛ <g1>خاموش است، پس بارگیری‌ها در این مرورگر می‌مانند.</g1>"
-  },
-  "58bc1f5f43802ddb": {
-   "source": "Dannex Download Manager — the download manager you already know, rebuilt to be faster",
-   "text": "Dannex Download Manager — مدیر دانلودی که از قبل می‌شناسید، بازسازی شده تا سریع‌تر باشد"
   },
   "58bec232807ab18d": {
    "source": "The progress window in detail →",
@@ -8097,6 +8081,10 @@
   "8000c69387905255": {
    "source": "If someone already reported the same problem, the window says so and <g1>Open the reported issue</g1> takes you there, with your report on the clipboard to add as a comment.",
    "text": "اگر کسی قبلا همین مشکل را گزارش کرده باشد، پنجره این را اعلام می‌کند و <g1>باز کردن مشکل گزارش‌شده</g1> شما را به آنجا می‌برد، با گزارش شما در کلیپ‌بورد برای اضافه کردن به عنوان یک نظر."
+  },
+  "800407e32d4bc4d6": {
+   "source": "The extension shows almost nothing of its own, as users of other download managers expect: a click on its toolbar button turns taking downloads off and on, its right-click menu has \"Don't take downloads from this site\" and Help (<x1/>, the status page: installed, or what is wrong and the one thing to do), and its options page (<x2/>) has only that switch, the browser's proxy (#42) and another DDM (#157). It never asks the app for its downloads (extensions up to 0.6.5 did, for a window of their own: the host refuses that question now, and the app answers the automation API's <x3/> and actions only while the API is on).",
+   "text": "افزونه تقریباً هیچ رابط خاصی از خود نشان نمی‌دهد، همان‌طور که کاربران سایر مدیران بارگیری انتظار دارند: با کلیک روی دکمهٔ آن در نوار ابزار، دریافت بارگیری‌ها خاموش و روشن می‌شود؛ منوی راست‌کلیک آن «از این سایت بارگیری نگیر» و راهنما را دارد (<x1/>، صفحهٔ وضعیت: نصب شده است، یا چه مشکلی هست و تنها کاری که باید کرد)؛ و صفحهٔ گزینه‌های آن (<x2/>) فقط همین کلید، پروکسی مرورگر (#42) و DDM دیگر (#157) را دارد. افزونه هرگز بارگیری‌های برنامه را از آن نمی‌پرسد (افزونه‌های تا نسخهٔ 0.6.5 برای پنجرهٔ مخصوص خودشان این کار را می‌کردند: اکنون میزبان این پرسش را رد می‌کند و برنامه فقط وقتی API روشن باشد به <x3/> و کنش‌های API خودکارسازی پاسخ می‌دهد)."
   },
   "8004bfee90ddaa59": {
    "source": "Starts (or with <x1/>, stops) the queue of that name (a name from the list's <x2/>). Answers <x3/>, or <x4/>. Only while the API is on.",
@@ -10753,10 +10741,6 @@
   "ac828ac836f8fc57": {
    "source": "<g1>Listen on</g1>: <g2>Every local network address</g2> (the default) listens on each private address of the computer (<x3/>, <x4/>, <x5/>, and IPv6's <x6/>), one by one, and follows them when you join another network. <g7>This computer only</g7> listens on <x8/>. Or pick one address of one adapter.",
    "text": "<g1>گوش دادن به</g1>: <g2>هر آدرس شبکه محلی</g2> (پیش‌فرض) به هر آدرس خصوصی رایانه (<x3/>، <x4/>، <x5/> و <x6/> IPv6) یکی یکی گوش می‌دهد و هنگام پیوستن به شبکه دیگر آنها را دنبال می‌کند. <g7>فقط این رایانه</g7> به <x8/> گوش می‌دهد. یا یک آدرس از یک آداپتور را انتخاب کنید."
-  },
-  "ac85d17c17b64879": {
-   "source": "The download manager you already know. Rebuilt to be faster.",
-   "text": "مدیر بارگیری که از قبل می‌شناسید. بازسازی شده تا سریع‌تر باشد."
   },
   "ac912aa4f847fd5b": {
    "source": "<g1>The system:</g1> DDM's version and how you installed it, your operating system and its version, the processor, the language and theme, and how many downloads and queues you have. These are counts only.",
@@ -13702,6 +13686,10 @@
    "source": "An import opens <g1>Link grabber</g1>, which sorts the links into packages: the volumes of one archive together, the links of one page together, the rest in <g2>Various files</g2>. Each link is looked up for its real name, its size and whether the server still has it, and the ones that are gone come unticked. A link already in your list goes under <g3>Already in the list</g3>, unticked.",
    "text": "یک وارد کردن، <g1>رباینده پیوند</g1> را باز می‌کند که پیوندها را به بسته‌ها دسته‌بندی می‌کند: حجم‌های یک آرشیو با هم، پیوندهای یک صفحه با هم، و بقیه در <g2>فایل‌های مختلف</g2>. هر پیوند برای نام واقعی، اندازه و اینکه آیا سرور هنوز آن را دارد، بررسی می‌شود و آنهایی که حذف شده‌اند، از حالت انتخاب خارج می‌شوند. پیوندی که از قبل در فهرست شماست، تحت <g3>از قبل در لیست است</g3> قرار می‌گیرد و از حالت انتخاب خارج می‌شود."
   },
+  "dcedde395f1f0789": {
+   "source": "<g1>1.0.0</g1> <g2>20.9 MB</g2>",
+   "text": "<g1>1.0.0</g1> <g2>20.9 MB</g2>"
+  },
   "dcf7c57bec3d49ba": {
    "source": "A debrid service, such as Real-Debrid, AllDebrid, Premiumize or TorBox, is a paid account that downloads files from file hosts on its own servers. It hands back a plain direct link, without the host's waits, speed caps and captchas. With your account in DDM, a link from a host your service supports is unlocked through the service, then downloaded by DDM like any file: all its connections, pause and resume.",
    "text": "سرویس دبریدر، مانند Real-Debrid، AllDebrid، Premiumize یا TorBox، یک حساب پولی است که فایل‌ها را از میزبان‌های فایل روی سرورهای خودش بارگیری می‌کند. این سرویس یک پیوند مستقیم و ساده، بدون انتظار، محدودیت سرعت و کپچای میزبان، ارائه می‌دهد. با حساب شما در DDM، پیوندی از میزبانی که سرویس شما پشتیبانی می‌کند، از طریق سرویس باز می‌شود، سپس DDM آن را مانند هر فایل دیگری بارگیری می‌کند: با تمام اتصالات، قابلیت توقف و ازسرگیری."
@@ -14794,10 +14782,6 @@
    "source": "The window's close box (<g1>×</g1>) does the same as <g2>Cancel</g2> while the download runs, as in IDM; for a finished or stopped download it just closes the window.",
    "text": "دکمه بستن پنجره (<g1>×</g1>) تا وقتی بارگیری در حال اجراست همان کار <g2>لغو</g2> را می‌کند، مثل IDM؛ برای بارگیری تمام‌شده یا متوقف فقط پنجره را می‌بندد."
   },
-  "ee38c21b58df59db": {
-   "source": "Dannex Download Manager — free download manager and IDM alternative",
-   "text": "Dannex Download Manager — مدیریت بارگیری رایگان و جایگزین IDM"
-  },
   "ee4329d38e737b6a": {
    "source": "Pick a quality.",
    "text": "کیفیت دلخواه را انتخاب کنید."
@@ -15594,6 +15578,10 @@
    "source": "Choose whether to install for you only or for everyone on the computer. For you only needs no administrator rights and goes to <x1/>. For everyone goes to <x2/>.",
    "text": "انتخاب کنید که برنامه فقط برای شما نصب شود یا برای همه کاربران رایانه. نصب فقط برای شما به دسترسی مدیر نیاز ندارد و در <x1/> انجام می‌شود. نصب برای همه در <x2/> انجام می‌شود."
   },
+  "fc7fe0579b9363e9": {
+   "source": "One egui window painted to fixed pixel coordinates, plus one immediate viewport per dialog. <x1/> holds the state (downloads, queues, settings, the list's selection) and turns menu, toolbar, key and IPC commands into actions. Each dialog is its own module and returns an <x2/> (open, closed, done with a value). A window that comes up by itself (Download complete, a message DDM tells, a question while DDM isn't the program in front) shows above the others without taking the keyboard from the program being typed in (<x3/>, <x4/>); those the person asked for take it. Windows handed over one after another (Download File Info, Add torrent, Download video) and Download complete boxes show one at a time, in one place, the next when one closes. Windows-only calls are confined to <x5/> and their Linux and macOS counterparts to <x6/> (starting with the session, the browsers' host, sounds, show in folder, the crash handler); every other file is safe, portable Rust. Fonts come from the system: Windows' Fonts folder, macOS's system fonts, fontconfig on Linux (<x7/>). On Windows, Latin, Greek and Cyrillic text is drawn by DirectWrite (<x8/>, through egui's glyph rasterizer hook): View → Text → Smooth in its natural mode, anti-aliased at the size asked for and placed at quarter pixels with the font's own advances; Classic (the default) in GDI-classic mode, so each letter's hinted shape and whole-pixel width come together. Other scripts are shaped and drawn by egui.",
+   "text": "یک پنجرهٔ egui که در مختصات ثابت پیکسلی رسم می‌شود، به‌اضافهٔ یک viewport فوری برای هر پنجرهٔ گفتگو. <x1/> وضعیت برنامه (بارگیری‌ها، صف‌ها، تنظیمات، انتخاب فهرست) را نگه می‌دارد و فرمان‌های منو، نوار ابزار، صفحه‌کلید و IPC را به کنش تبدیل می‌کند. هر پنجرهٔ گفتگو ماژول جداگانه‌ای دارد و یک <x2/> برمی‌گرداند (باز، بسته، انجام‌شده همراه با مقدار). پنجره‌ای که خودش باز می‌شود (بارگیری کامل شد، پیامی که DDM می‌دهد، پرسشی در زمانی که DDM برنامهٔ جلوی صفحه نیست) بالای بقیه نمایش داده می‌شود، بدون آنکه صفحه‌کلید را از برنامه‌ای که در آن تایپ می‌شود بگیرد (<x3/>، <x4/>)؛ پنجره‌هایی که کاربر خودش درخواست کرده صفحه‌کلید را می‌گیرند. پنجره‌هایی که پشت سر هم می‌آیند (اطلاعات فایل بارگیری، افزودن تورنت، بارگیری ویدیو) و کادرهای بارگیری کامل شد، یکی‌یکی و در یک مکان نمایش داده می‌شوند و با بسته شدن هر کدام، نوبت بعدی می‌رسد. فراخوانی‌های ویژهٔ Windows در <x5/> و معادل‌های Linux و macOS آن‌ها در <x6/> محدود شده‌اند (از جمله نشست، میزبان مرورگرها، صداها، نمایش در پوشه و مدیریت خرابی)؛ هر فایل دیگر Rust امن و قابل‌حمل است. قلم‌ها از سیستم می‌آیند: پوشهٔ Fonts در Windows، قلم‌های سیستمی macOS و fontconfig در Linux (<x7/>). در Windows، متن لاتین، یونانی و سیریلیک را DirectWrite رسم می‌کند (<x8/>، از طریق قلاب رسترساز گلیف egui): نمایش ← متن ← Smooth در حالت طبیعی، با هموارسازی در اندازهٔ درخواستی و جای‌گذاری در ربع پیکسل با فاصله‌گذاری خود قلم؛ Classic (پیش‌فرض) در حالت GDI کلاسیک، تا شکل هینت‌شدهٔ هر حرف و عرض پیکسل کامل آن با هم بیایند. سایر خط‌ها را egui شکل‌دهی و رسم می‌کند."
+  },
   "fc80e6d7a3cc65b1": {
    "source": "Link grabber",
    "text": "دریافت‌کننده پیوند"
@@ -15809,26 +15797,6 @@
   "ffffe7806eaeae3d": {
    "source": "The option is off until you tick it. On Linux and macOS DDM starts with your session the same way. A <g1>portable copy</g1> can't start with Windows, since that needs the registry, so the option is greyed there.",
    "text": "این گزینه تا زمانی که آن را انتخاب نکنید، غیرفعال است. در Linux و macOS، DDM به همین ترتیب با جلسه شما شروع به کار می‌کند. <g1>نسخه قابل حمل</g1> نمی‌تواند با Windows شروع به کار کند، زیرا این کار به رجیستری نیاز دارد، بنابراین این گزینه در آنجا خاکستری است."
-  },
-  "6e355ba39f5dc912": {
-   "source": "Sponsor Dannex Download Manager",
-   "text": "حمایت مالی از Dannex Download Manager"
-  },
-  "fc7fe0579b9363e9": {
-   "source": "One egui window painted to fixed pixel coordinates, plus one immediate viewport per dialog. <x1/> holds the state (downloads, queues, settings, the list's selection) and turns menu, toolbar, key and IPC commands into actions. Each dialog is its own module and returns an <x2/> (open, closed, done with a value). A window that comes up by itself (Download complete, a message DDM tells, a question while DDM isn't the program in front) shows above the others without taking the keyboard from the program being typed in (<x3/>, <x4/>); those the person asked for take it. Windows handed over one after another (Download File Info, Add torrent, Download video) and Download complete boxes show one at a time, in one place, the next when one closes. Windows-only calls are confined to <x5/> and their Linux and macOS counterparts to <x6/> (starting with the session, the browsers' host, sounds, show in folder, the crash handler); every other file is safe, portable Rust. Fonts come from the system: Windows' Fonts folder, macOS's system fonts, fontconfig on Linux (<x7/>). On Windows, Latin, Greek and Cyrillic text is drawn by DirectWrite (<x8/>, through egui's glyph rasterizer hook): View → Text → Smooth in its natural mode, anti-aliased at the size asked for and placed at quarter pixels with the font's own advances; Classic (the default) in GDI-classic mode, so each letter's hinted shape and whole-pixel width come together. Other scripts are shaped and drawn by egui.",
-   "text": "یک پنجرهٔ egui که در مختصات ثابت پیکسلی رسم می‌شود، به‌اضافهٔ یک viewport فوری برای هر پنجرهٔ گفتگو. <x1/> وضعیت برنامه (بارگیری‌ها، صف‌ها، تنظیمات، انتخاب فهرست) را نگه می‌دارد و فرمان‌های منو، نوار ابزار، صفحه‌کلید و IPC را به کنش تبدیل می‌کند. هر پنجرهٔ گفتگو ماژول جداگانه‌ای دارد و یک <x2/> برمی‌گرداند (باز، بسته، انجام‌شده همراه با مقدار). پنجره‌ای که خودش باز می‌شود (بارگیری کامل شد، پیامی که DDM می‌دهد، پرسشی در زمانی که DDM برنامهٔ جلوی صفحه نیست) بالای بقیه نمایش داده می‌شود، بدون آنکه صفحه‌کلید را از برنامه‌ای که در آن تایپ می‌شود بگیرد (<x3/>، <x4/>)؛ پنجره‌هایی که کاربر خودش درخواست کرده صفحه‌کلید را می‌گیرند. پنجره‌هایی که پشت سر هم می‌آیند (اطلاعات فایل بارگیری، افزودن تورنت، بارگیری ویدیو) و کادرهای بارگیری کامل شد، یکی‌یکی و در یک مکان نمایش داده می‌شوند و با بسته شدن هر کدام، نوبت بعدی می‌رسد. فراخوانی‌های ویژهٔ Windows در <x5/> و معادل‌های Linux و macOS آن‌ها در <x6/> محدود شده‌اند (از جمله نشست، میزبان مرورگرها، صداها، نمایش در پوشه و مدیریت خرابی)؛ هر فایل دیگر Rust امن و قابل‌حمل است. قلم‌ها از سیستم می‌آیند: پوشهٔ Fonts در Windows، قلم‌های سیستمی macOS و fontconfig در Linux (<x7/>). در Windows، متن لاتین، یونانی و سیریلیک را DirectWrite رسم می‌کند (<x8/>، از طریق قلاب رسترساز گلیف egui): نمایش ← متن ← Smooth در حالت طبیعی، با هموارسازی در اندازهٔ درخواستی و جای‌گذاری در ربع پیکسل با فاصله‌گذاری خود قلم؛ Classic (پیش‌فرض) در حالت GDI کلاسیک، تا شکل هینت‌شدهٔ هر حرف و عرض پیکسل کامل آن با هم بیایند. سایر خط‌ها را egui شکل‌دهی و رسم می‌کند."
-  },
-  "800407e32d4bc4d6": {
-   "source": "The extension shows almost nothing of its own, as users of other download managers expect: a click on its toolbar button turns taking downloads off and on, its right-click menu has \"Don't take downloads from this site\" and Help (<x1/>, the status page: installed, or what is wrong and the one thing to do), and its options page (<x2/>) has only that switch, the browser's proxy (#42) and another DDM (#157). It never asks the app for its downloads (extensions up to 0.6.5 did, for a window of their own: the host refuses that question now, and the app answers the automation API's <x3/> and actions only while the API is on).",
-   "text": "افزونه تقریباً هیچ رابط خاصی از خود نشان نمی‌دهد، همان‌طور که کاربران سایر مدیران بارگیری انتظار دارند: با کلیک روی دکمهٔ آن در نوار ابزار، دریافت بارگیری‌ها خاموش و روشن می‌شود؛ منوی راست‌کلیک آن «از این سایت بارگیری نگیر» و راهنما را دارد (<x1/>، صفحهٔ وضعیت: نصب شده است، یا چه مشکلی هست و تنها کاری که باید کرد)؛ و صفحهٔ گزینه‌های آن (<x2/>) فقط همین کلید، پروکسی مرورگر (#42) و DDM دیگر (#157) را دارد. افزونه هرگز بارگیری‌های برنامه را از آن نمی‌پرسد (افزونه‌های تا نسخهٔ 0.6.5 برای پنجرهٔ مخصوص خودشان این کار را می‌کردند: اکنون میزبان این پرسش را رد می‌کند و برنامه فقط وقتی API روشن باشد به <x3/> و کنش‌های API خودکارسازی پاسخ می‌دهد)."
-  },
-  "dcedde395f1f0789": {
-   "source": "<g1>1.0.0</g1> <g2>20.9 MB</g2>",
-   "text": "<g1>1.0.0</g1> <g2>20.9 MB</g2>"
-  },
-  "410849c6c11c33d7": {
-   "source": "DDM is free and always will be. If it saves you time, you can support it.",
-   "text": "DDM رایگان است و همیشه رایگان می‌ماند. اگر در وقت شما صرفه‌جویی می‌کند، می‌توانید از آن حمایت کنید."
   }
  }
 }

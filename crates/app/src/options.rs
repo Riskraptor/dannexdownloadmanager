@@ -3159,7 +3159,7 @@ impl OptionsDialog {
         let shown: Vec<&str> = labels.iter().map(String::as_str).collect();
         if let Some(i) = winui::combo_light(
             ui,
-            r(o, 130.0, 118.0, 278.0, 21.0),
+            r(o, 130.0, 118.0, 250.0, 21.0),
             &shown,
             at,
             on,

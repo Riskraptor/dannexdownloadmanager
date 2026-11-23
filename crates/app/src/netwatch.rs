@@ -53,6 +53,14 @@ impl NetWatch {
 
 fn compute(wanted: &str) -> Route {
     if wanted.trim().is_empty() {
+        // No adapter chosen: every download stops while no adapter has an address (the cable
+        // pulled, Wi-Fi gone) and goes on by itself when one has again.
+        if !internet_available(&adapters()) {
+            return Route::Down {
+                // i18n: the network as a whole (no adapter has an address); shown as {adapter} in "Stopped: {adapter} is not connected; it goes on when it is back"
+                label: crate::i18n::t("the network").to_owned(),
+            };
+        }
         return Route::Any;
     }
     #[allow(unused_mut)]
@@ -67,6 +75,12 @@ fn compute(wanted: &str) -> Route {
         std::sync::Arc::make_mut(b).loopback_too = true;
     }
     route
+}
+
+/// Does any adapter have an address that reaches other computers? An empty list is the system
+/// not answering, not a network that is gone: downloads are not stopped for it.
+fn internet_available(all: &[mdm_engine::net::Adapter]) -> bool {
+    all.is_empty() || all.iter().any(|a| !a.v4.is_empty() || !a.v6.is_empty())
 }
 
 /// Debug builds: the test adapter `MDM_TEST_ADAPTER` names (see [`adapters`]), as (name, address).
@@ -130,5 +144,31 @@ fn watch(shared: Arc<Mutex<Shared>>) {
                 ctx.request_repaint();
             }
         }
+    }
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    fn adapter(v4: &[&str], v6: &[&str]) -> mdm_engine::net::Adapter {
+        mdm_engine::net::Adapter {
+            name: "test".into(),
+            index: 1,
+            v4: v4.iter().map(|v| v.parse().unwrap()).collect(),
+            v6: v6.iter().map(|v| v.parse().unwrap()).collect(),
+            local_only: Vec::new(),
+        }
+    }
+
+    #[test]
+    fn general_network_loss_is_detected_and_recovery_is_allowed() {
+        assert!(!internet_available(&[adapter(&[], &[])]));
+        assert!(internet_available(&[]), "an unreadable list stops nothing");
+        assert!(internet_available(&[adapter(&["192.168.1.10"], &[])]));
+        assert!(internet_available(&[adapter(
+            &[],
+            &["2001:4860:4860::8888"]
+        )]));
     }
 }

@@ -2009,6 +2009,8 @@ pub struct App {
     queues: Vec<Queue>,
     /// Failure time and count per download, for queue retries.
     failures: HashMap<u64, (Instant, u32)>,
+    /// Downloads that failed on the network, to start again by themselves.
+    auto_resume: crate::autoresume::AutoResume,
     /// Stopped by hand while they could have run: a running queue leaves them alone until
     /// they are started again or the queue is started anew (#341).
     stopped_by_hand: std::collections::HashSet<u64>,
@@ -2669,6 +2671,7 @@ impl App {
             last_layout: None,
             queues,
             failures: HashMap::new(),
+            auto_resume: Default::default(),
             stopped_by_hand: Default::default(),
             clock: None,
             wake: Default::default(),
@@ -3453,6 +3456,62 @@ impl App {
         self.adapter_paused
             .retain(|id| self.items.iter().any(|i| i.id == *id) && !ready.contains(id));
         for id in ready {
+            self.start(id, false);
+        }
+    }
+
+    /// A download that failed because the network did starts again by itself (beyond IDM, which
+    /// leaves it failed): one a running queue holds is the queue's to retry.
+    fn schedule_auto_resume(&mut self, id: u64, now: Instant) {
+        let in_queue = self
+            .queues
+            .iter()
+            .any(|q| q.running && q.items.contains(&id));
+        let Some(item) = self.items.iter_mut().find(|i| i.id == id) else {
+            return;
+        };
+        let network = item
+            .snap
+            .as_ref()
+            .and_then(|s| s.failure.as_ref())
+            .is_some_and(mdm_engine::Error::network_lost);
+        if !network || in_queue || self.stopped_by_hand.contains(&id) {
+            self.auto_resume.forget(id);
+            return;
+        }
+        match self.auto_resume.failed(id, item.downloaded, now) {
+            Some(wait) => item.note(crate::i18n::fmt(
+                // i18n: event log entry: the download failed because the network did (no connection, one gone quiet); it starts again by itself after {seconds} seconds
+                crate::i18n::t("The network failed; trying again in {seconds} s"),
+                &[("seconds", &wait.as_secs().to_string())],
+            )),
+            None => item.note(
+                // i18n: event log entry: the download kept failing on the network for about an hour and is no longer started again by itself
+                crate::i18n::t("The network failed too long; no longer trying by itself"),
+            ),
+        }
+        self.dirty = true;
+    }
+
+    /// Starts the downloads [`Self::schedule_auto_resume`] waits for, once their time comes and
+    /// the network is there.
+    fn auto_resume_tick(&mut self, now: Instant, ctx: &egui::Context) {
+        if !self.auto_resume.is_waiting() {
+            return;
+        }
+        ctx.request_repaint_after(Duration::from_secs(1));
+        if matches!(self.route, mdm_engine::Route::Down { .. }) {
+            return;
+        }
+        for id in self.auto_resume.due(now) {
+            let waiting = self
+                .items
+                .iter()
+                .any(|i| i.id == id && i.status == Status::Error && i.live.is_none());
+            if !waiting || self.stopped_by_hand.contains(&id) {
+                self.auto_resume.forget(id);
+                continue;
+            }
             self.start(id, false);
         }
     }
@@ -8795,10 +8854,13 @@ impl App {
             for q in &mut self.queues {
                 queue::requeue_failed(q, id);
             }
+            self.schedule_auto_resume(id, now);
         }
+        self.auto_resume_tick(now, ctx);
         for id in &finished {
             self.release_link(*id);
             self.failures.remove(id);
+            self.auto_resume.forget(*id);
             // A deferred rename runs beside the window (#743): its answer does these then.
             let renaming = self.apply_deferred_rename(*id);
             if !renaming {

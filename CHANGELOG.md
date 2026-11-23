@@ -10,6 +10,15 @@ Each release's notes on GitHub come from its section here (`## [X.Y.Z]`, see
 - Completed the website translations for Arabic, Persian, Portuguese (Portugal), Polish,
   Bengali, Turkish and Thai. Claude Sonnet 5.5 filled the remaining texts and the catalog
   validator and strict kept-name checks passed.
+- Downloads that failed because the network went away now start again by themselves when it is
+  back (after 5 s, then up to every minute, for about an hour); a connection that stops sending is
+  noticed after 12 s instead of 30 s.
+- Add URL and the browser now hand more sound pages to the video window: YouTube Music playlists,
+  SoundCloud sets, Bandcamp, Mixcloud, Audiomack and Boomplay. More audio and video file types
+  (WEBA, MKA, M4B, AIFF, AMR, F4V, MPEG) are noticed in pages. Copy-protected music (Spotify,
+  Apple Music, Deezer, Tidal) can't be saved.
+- A site that refuses yt-dlp's look-up is asked again as a browser would.
+- A plainer tagline on the website, in the README and in About.
 
 ## [1.0.0] - 2026-11-23
 

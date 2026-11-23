@@ -825,8 +825,8 @@ const SOUND_MIN = 64 << 10;
 const MANIFEST = /\.(m3u8|mpd)(?:[?#]|$)/i;
 const SEGMENT_TYPE = /^(video\/mp2t|video\/iso\.segment|audio\/iso\.segment)$/;
 const SEGMENT_EXT = /\.(ts|m4s|m4f|cmfv|cmfa|cmft)$/;
-const MEDIA_EXT = /\.(mp4|m4v|webm|mkv|mov|avi|wmv|flv|3gp|ogv|mp3|m4a|aac|ogg|oga|opus|flac|wav|wma)$/;
-const AUDIO_EXT = /^(mp3|m4a|aac|oga|ogg|opus|flac|wav|wma)$/;
+const MEDIA_EXT = /\.(mp4|m4v|webm|mkv|mov|avi|wmv|flv|f4v|3gp|3g2|ogv|mpg|mpeg|mp3|m4a|m4b|aac|ogg|oga|opus|flac|wav|wma|weba|mka|aif|aiff|amr|alac)$/;
+const AUDIO_EXT = /^(mp3|m4a|m4b|aac|oga|ogg|opus|flac|wav|wma|weba|mka|aif|aiff|amr|alac)$/;
 // The types a manifest is sometimes served as, besides its own (#171): plain text, no type, a
 // file's, XML. Such an answer is only noted (`maybe`, MAYBE_MAX a tab), never listed unread.
 const MAYBE_TYPE = /^(text\/plain|(application|binary)\/octet-stream|(application|text)\/xml|)$/;

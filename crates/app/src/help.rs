@@ -776,7 +776,7 @@ impl About {
                     o.x + 80.0,
                     o.y + 72.0,
                     crate::i18n::t(
-                        "The download manager you already know, rebuilt to be faster. Free and open source under the GNU GPL, version 3 or later.",
+                        "Fast downloads with powerful control, automatic resume and browser integration. Free and open source under the GNU GPL, version 3 or later.",
                     ),
                     ink,
                     o.x + 404.0,
@@ -1002,7 +1002,7 @@ impl TellFriend {
     fn message() -> String {
         crate::i18n::fmt(
             crate::i18n::t(
-                "I download with Dannex Download Manager: fast, free, and it looks like the download manager you already know. {link}",
+                "I download with Dannex Download Manager: fast, free and built for powerful control. {link}",
             ),
             &[("link", home())],
         )

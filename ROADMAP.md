@@ -45,6 +45,15 @@ These ship in a later version, when they're ready.
 - ✅ Website translations are complete for Arabic, Persian, Portuguese (Portugal), Polish,
   Bengali, Turkish and Thai.
 
+- ✅ Downloads that stopped because the network went away go on by themselves once it is back,
+  trying again for about an hour; a lost connection is noticed sooner (12 s without data)
+
+- ✅ Sound pages handed to yt-dlp: YouTube Music playlists, SoundCloud sets, Bandcamp, Mixcloud,
+  Audiomack and Boomplay; more sound and video file types noticed in pages; a site that refuses
+  yt-dlp is asked again as a browser would. Spotify and other copy-protected (DRM) music stay out
+
+- ✅ A plainer tagline on the website, the README and About
+
 ### Planned
 
 - 📋 Helium: DDM offering it the extension on Linux and macOS, through Helium's own services: built,

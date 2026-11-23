@@ -1557,6 +1557,8 @@
 #. text in countries.rs
 #. a country's name (where a download's server is)
 	Faroe Islands	Faroe Islands
+#. text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
+	Fast downloads with powerful control, automatic resume and browser integration. Free and open source under the GNU GPL, version 3 or later.	Fast downloads with powerful control, automatic resume and browser integration. Free and open source under the GNU GPL, version 3 or later.
 #. text in the dates and times (the Scheduler window, the download list, Statistics)
 	February	February
 #. text in rssdlg.rs
@@ -1917,7 +1919,7 @@
 #. a country's name (where a download's server is)
 	Hungary	Hungary
 #. text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
-	I download with Dannex Download Manager: fast, free, and it looks like the download manager you already know. {link}	I download with Dannex Download Manager: fast, free, and it looks like the download manager you already know. {link}
+	I download with Dannex Download Manager: fast, free and built for powerful control. {link}	I download with Dannex Download Manager: fast, free and built for powerful control. {link}
 #. text in countries.rs
 #. a country's name (where a download's server is)
 	Iceland	Iceland
@@ -3866,8 +3868,6 @@
 #. message or event log entry in the main window
 #. {error} = an error message (keep the braces as they are)
 	The download list could not be saved: {error}. Changes are kept while DDM runs.	The download list could not be saved: {error}. Changes are kept while DDM runs.
-#. text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
-	The download manager you already know, rebuilt to be faster. Free and open source under the GNU GPL, version 3 or later.	The download manager you already know, rebuilt to be faster. Free and open source under the GNU GPL, version 3 or later.
 #. text in a dialog box
 	The download queue is done.	The download queue is done.
 #. text in errors.rs
@@ -3936,9 +3936,18 @@
 #. text in a download's progress window
 #. reason shown on the Rename box when the entered name exceeds the length limit
 	The name is too long	The name is too long
+#. text in netwatch.rs
+#. the network as a whole (no adapter has an address); shown as {adapter} in "Stopped: {adapter} is not connected; it goes on when it is back"
+	the network	the network
 #. text in errors.rs; text in torrent downloads
 #. an error: the network adapter chosen in Options (a VPN's, usually) is off or gone; {adapter} its name
 	the network adapter {adapter} is not connected	the network adapter {adapter} is not connected
+#. message or event log entry in the main window
+#. event log entry: the download kept failing on the network for about an hour and is no longer started again by itself
+	The network failed too long; no longer trying by itself	The network failed too long; no longer trying by itself
+#. message or event log entry in the main window
+#. event log entry: the download failed because the network did (no connection, one gone quiet); it starts again by itself after {seconds} seconds
+	The network failed; trying again in {seconds} s	The network failed; trying again in {seconds} s
 #. text in the Site grabber window (Tasks → Run site grabber)
 #. Site grabber: what the Whole site template collects
 	The pages, three links deep, with their pictures, styles, scripts and media, saved in the site's folders with their links changed to open the saved copies: the site reads offline.	The pages, three links deep, with their pictures, styles, scripts and media, saved in the site's folders with their links changed to open the saved copies: the site reads offline.

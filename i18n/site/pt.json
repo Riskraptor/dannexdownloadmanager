@@ -286,10 +286,6 @@
    "source": "Full guide",
    "text": "Guia completo"
   },
-  "047d41a834df5979": {
-   "source": "Free and open source. The interface you already know, a faster engine underneath, torrents and video built in.",
-   "text": "Gratuito e de código aberto. A interface que já conhece, um motor mais rápido por baixo, torrents e vídeo incorporados."
-  },
   "0483013fd35a5fd8": {
    "source": "<g1>Options → General → Take downloads from web browsers</g1> is on, and your browser is ticked under <g2>Take downloads from these browsers</g2>.",
    "text": "<g1>Opções → Geral → Assumir as transferências dos navegadores web</g1> está ativada, e o seu navegador está marcado em <g2>Assumir as transferências destes navegadores</g2>."
@@ -3350,10 +3346,6 @@
    "source": "Some file hosts count a look-up as a download: turn the look-ups off in <g1>Options → Archives</g1>.",
    "text": "Alguns anfitriões de ficheiros contam uma pesquisa como uma transferência: desative as pesquisas em <g1>Opções → Arquivos</g1>."
   },
-  "3508dab985cc0335": {
-   "source": "Free, open-source download manager for Windows, with macOS and Linux to try. The IDM layout you know, 5× faster in our benchmark: every connection at once, crash-safe resume, torrents, video from web pages, browser integration, 86 languages.",
-   "text": "Gestor de transferências gratuito e de código aberto para Windows, com versões experimentais para macOS e Linux. O layout do IDM que já conhece, 5× mais rápido no nosso benchmark: todas as ligações de uma vez, retomar seguro contra falhas, torrents, vídeo de páginas web, integração com o navegador, 86 idiomas."
-  },
   "35092e177f7efaa5": {
    "source": "Download complete with Open and Open folder",
    "text": "Transferência concluída com Abrir e Abrir pasta"
@@ -3845,10 +3837,6 @@
   "3d4a4f2d1b19754e": {
    "source": "Can I move my downloads over from IDM?",
    "text": "Posso transferir os meus downloads do IDM?"
-  },
-  "3d67b0a7f32fc0e5": {
-   "source": "The free, open-source IDM alternative. Every connection at once, crash-safe resume, torrents and video in one list.",
-   "text": "A alternativa gratuita e de código aberto ao IDM. Todas as ligações de uma só vez, retoma segura após falhas, torrents e vídeo numa só lista."
   },
   "3d686921b4a51711": {
    "source": "One window for any video page",
@@ -5621,10 +5609,6 @@
   "589ba88a30d884f3": {
    "source": "Installed; <g1>It's turned off, so downloads stay in this browser.</g1>",
    "text": "Instalado; <g1>Está desativada, pelo que as transferências ficam neste navegador.</g1>"
-  },
-  "58bc1f5f43802ddb": {
-   "source": "Dannex Download Manager — the download manager you already know, rebuilt to be faster",
-   "text": "Dannex Download Manager — o gestor de transferências que já conhece, reconstruído para ser mais rápido"
   },
   "58bec232807ab18d": {
    "source": "The progress window in detail →",
@@ -8097,6 +8081,10 @@
   "8000c69387905255": {
    "source": "If someone already reported the same problem, the window says so and <g1>Open the reported issue</g1> takes you there, with your report on the clipboard to add as a comment.",
    "text": "Se alguém já reportou o mesmo problema, a janela indica-o e <g1>Abrir o problema reportado</g1> leva-o até lá, com o seu relatório na área de transferência para adicionar como comentário."
+  },
+  "800407e32d4bc4d6": {
+   "source": "The extension shows almost nothing of its own, as users of other download managers expect: a click on its toolbar button turns taking downloads off and on, its right-click menu has \"Don't take downloads from this site\" and Help (<x1/>, the status page: installed, or what is wrong and the one thing to do), and its options page (<x2/>) has only that switch, the browser's proxy (#42) and another DDM (#157). It never asks the app for its downloads (extensions up to 0.6.5 did, for a window of their own: the host refuses that question now, and the app answers the automation API's <x3/> and actions only while the API is on).",
+   "text": "A extensão mostra quase nada por si própria, como os utilizadores de outros gestores de transferências esperam: um clique no botão da barra de ferramentas ativa ou desativa a captura de transferências, o menu de contexto tem «Não capturar transferências deste site» e Ajuda (<x1/>, a página de estado: instalada, ou o que está errado e a única coisa a fazer), e a página de opções (<x2/>) tem apenas esse interruptor, o proxy do navegador (#42) e outro DDM (#157). Nunca pede à aplicação as suas transferências (as extensões até à 0.6.5 pediam, para uma janela própria: agora o anfitrião recusa essa pergunta, e a aplicação só responde ao <x3/> e às ações da API de automatização enquanto a API estiver ativada)."
   },
   "8004bfee90ddaa59": {
    "source": "Starts (or with <x1/>, stops) the queue of that name (a name from the list's <x2/>). Answers <x3/>, or <x4/>. Only while the API is on.",
@@ -10753,10 +10741,6 @@
   "ac828ac836f8fc57": {
    "source": "<g1>Listen on</g1>: <g2>Every local network address</g2> (the default) listens on each private address of the computer (<x3/>, <x4/>, <x5/>, and IPv6's <x6/>), one by one, and follows them when you join another network. <g7>This computer only</g7> listens on <x8/>. Or pick one address of one adapter.",
    "text": "<g1>Escutar em</g1>: <g2>Todos os endereços de rede local</g2> (o padrão) escuta em cada endereço privado do computador (<x3/>, <x4/>, <x5/> e <x6/> do IPv6), um por um, e segue-os quando se junta a outra rede. <g7>Apenas este computador</g7> escuta em <x8/>. Ou escolha um endereço de um adaptador."
-  },
-  "ac85d17c17b64879": {
-   "source": "The download manager you already know. Rebuilt to be faster.",
-   "text": "O gestor de transferências que já conhece. Reconstruído para ser mais rápido."
   },
   "ac912aa4f847fd5b": {
    "source": "<g1>The system:</g1> DDM's version and how you installed it, your operating system and its version, the processor, the language and theme, and how many downloads and queues you have. These are counts only.",
@@ -13702,6 +13686,10 @@
    "source": "An import opens <g1>Link grabber</g1>, which sorts the links into packages: the volumes of one archive together, the links of one page together, the rest in <g2>Various files</g2>. Each link is looked up for its real name, its size and whether the server still has it, and the ones that are gone come unticked. A link already in your list goes under <g3>Already in the list</g3>, unticked.",
    "text": "Uma importação abre o <g1>Link grabber</g1>, que organiza as ligações em pacotes: os volumes de um arquivo juntos, as ligações de uma página juntas, o resto em <g2>Vários ficheiros</g2>. Cada ligação é verificada quanto ao seu nome real, tamanho e se o servidor ainda a tem, e as que já não existem ficam desmarcadas. Uma ligação que já esteja na sua lista aparece em <g3>Já na lista</g3>, desmarcada."
   },
+  "dcedde395f1f0789": {
+   "source": "<g1>1.0.0</g1> <g2>20.9 MB</g2>",
+   "text": "<g1>1.0.0</g1> <g2>20,9 MB</g2>"
+  },
   "dcf7c57bec3d49ba": {
    "source": "A debrid service, such as Real-Debrid, AllDebrid, Premiumize or TorBox, is a paid account that downloads files from file hosts on its own servers. It hands back a plain direct link, without the host's waits, speed caps and captchas. With your account in DDM, a link from a host your service supports is unlocked through the service, then downloaded by DDM like any file: all its connections, pause and resume.",
    "text": "Um serviço de desbridamento, como o Real-Debrid, AllDebrid, Premiumize ou TorBox, é uma conta paga que transfere ficheiros de anfitriões de ficheiros para os seus próprios servidores. Devolve uma ligação direta simples, sem as esperas, limites de velocidade e captchas do anfitrião. Com a sua conta no DDM, uma ligação de um anfitrião que o seu serviço suporta é desbloqueada através do serviço e, em seguida, transferida pelo DDM como qualquer ficheiro: com todas as suas ligações, pausa e retoma."
@@ -14594,6 +14582,10 @@
    "source": "<g1>Ctrl+M</g1> or <g2>F2</g2>",
    "text": "<g1>Ctrl+M</g1> ou <g2>F2</g2>"
   },
+  "eb60a779982bcd66": {
+   "source": "Chrome, Edge and Brave run an extension in private (incognito) windows only when you allow it, and Firefox asks too. Until then, downloads from private windows stay with the browser. To allow it: on the browser's extensions page, open <g1>Details</g1> and turn on <g2>Allow in Incognito</g2>; in Firefox, <g3>Add-ons and themes</g3> → the extension → <g4>Allow</g4> beside <g5>Run in Private Windows</g5>. Downloads from a private window use that window's cookies, and DDM doesn't keep them in its list once they're done.",
+   "text": "O Chrome, o Edge e o Brave só executam uma extensão em janelas privadas (incógnito) se o permitir, e o Firefox também pergunta. Até lá, as transferências das janelas privadas ficam com o navegador. Para o permitir: na página de extensões do navegador, abra <g1>Detalhes</g1> e ative <g2>Permitir em Incógnito</g2>; no Firefox, aceda a <g3>Extras e temas</g3> → a extensão → <g4>Permitir</g4> junto a <g5>Executar em janelas privadas</g5>. As transferências de uma janela privada usam os cookies dessa janela e o DDM não as mantém na sua lista depois de concluídas. (Windows)"
+  },
   "eb712f80554a3646": {
    "source": "A window in DDM may be waiting for you (a question, <g1>Add torrent</g1>); answer it and ask again.",
    "text": "Uma janela no DDM pode estar à sua espera (uma pergunta, <g1>Adicionar torrent</g1>); responda e pergunte novamente."
@@ -14789,10 +14781,6 @@
   "ee37e54eb8ede1fa": {
    "source": "The window's close box (<g1>×</g1>) does the same as <g2>Cancel</g2> while the download runs, as in IDM; for a finished or stopped download it just closes the window.",
    "text": "A caixa de fecho da janela (<g1>×</g1>) faz o mesmo que <g2>Cancelar</g2> enquanto a transferência decorre, como no IDM; para uma transferência concluída ou parada, apenas fecha a janela."
-  },
-  "ee38c21b58df59db": {
-   "source": "Dannex Download Manager — free download manager and IDM alternative",
-   "text": "Dannex Download Manager — gestor de transferências gratuito e alternativa ao IDM"
   },
   "ee4329d38e737b6a": {
    "source": "Pick a quality.",
@@ -15590,6 +15578,10 @@
    "source": "Choose whether to install for you only or for everyone on the computer. For you only needs no administrator rights and goes to <x1/>. For everyone goes to <x2/>.",
    "text": "Escolha se pretende instalar apenas para si ou para todos no computador. A opção apenas para si não requer direitos de administrador e vai para <x1/>. A opção para todos vai para <x2/>."
   },
+  "fc7fe0579b9363e9": {
+   "source": "One egui window painted to fixed pixel coordinates, plus one immediate viewport per dialog. <x1/> holds the state (downloads, queues, settings, the list's selection) and turns menu, toolbar, key and IPC commands into actions. Each dialog is its own module and returns an <x2/> (open, closed, done with a value). A window that comes up by itself (Download complete, a message DDM tells, a question while DDM isn't the program in front) shows above the others without taking the keyboard from the program being typed in (<x3/>, <x4/>); those the person asked for take it. Windows handed over one after another (Download File Info, Add torrent, Download video) and Download complete boxes show one at a time, in one place, the next when one closes. Windows-only calls are confined to <x5/> and their Linux and macOS counterparts to <x6/> (starting with the session, the browsers' host, sounds, show in folder, the crash handler); every other file is safe, portable Rust. Fonts come from the system: Windows' Fonts folder, macOS's system fonts, fontconfig on Linux (<x7/>). On Windows, Latin, Greek and Cyrillic text is drawn by DirectWrite (<x8/>, through egui's glyph rasterizer hook): View → Text → Smooth in its natural mode, anti-aliased at the size asked for and placed at quarter pixels with the font's own advances; Classic (the default) in GDI-classic mode, so each letter's hinted shape and whole-pixel width come together. Other scripts are shaped and drawn by egui.",
+   "text": "Uma janela egui desenhada em coordenadas de píxeis fixas, mais uma viewport imediata por cada caixa de diálogo. <x1/> guarda o estado (transferências, filas, definições, a seleção da lista) e transforma os comandos do menu, da barra de ferramentas, do teclado e do IPC em ações. Cada caixa de diálogo é um módulo próprio e devolve um <x2/> (aberta, fechada, concluída com um valor). Uma janela que surge por si só (Transferência concluída, uma mensagem que o DDM transmite, uma pergunta quando o DDM não é o programa em primeiro plano) aparece por cima das outras, sem tirar o teclado ao programa em que se está a escrever (<x3/>, <x4/>); as que o utilizador pediu tiram-no. As janelas entregues umas a seguir às outras (Informações do ficheiro a transferir, Adicionar torrent, Transferir vídeo) e as caixas de Transferência concluída aparecem uma de cada vez, no mesmo local, e a seguinte surge quando uma fecha. As chamadas exclusivas do Windows ficam confinadas a <x5/> e as equivalentes para Linux e macOS a <x6/> (a começar pela sessão, pelo anfitrião dos navegadores, pelos sons, por mostrar na pasta e pelo tratamento de falhas); todos os outros ficheiros são Rust seguro e portátil. Os tipos de letra vêm do sistema: a pasta Fonts do Windows, os tipos de letra do sistema do macOS, o fontconfig no Linux (<x7/>). No Windows, o texto latino, grego e cirílico é desenhado pelo DirectWrite (<x8/>, através do gancho do rasterizador de glifos do egui): Ver → Texto → Suave no modo natural, com suavização ao tamanho pedido e posicionado em quartos de píxel, com os avanços do próprio tipo de letra; Clássico (o predefinido) no modo GDI clássico, de modo que a forma ajustada de cada letra e a sua largura em píxeis inteiros ficam juntas. Os outros alfabetos são compostos e desenhados pelo egui."
+  },
   "fc80e6d7a3cc65b1": {
    "source": "Link grabber",
    "text": "Link grabber"
@@ -15805,30 +15797,6 @@
   "ffffe7806eaeae3d": {
    "source": "The option is off until you tick it. On Linux and macOS DDM starts with your session the same way. A <g1>portable copy</g1> can't start with Windows, since that needs the registry, so the option is greyed there.",
    "text": "A opção está desativada até que a assinale. No Linux e no macOS, o DDM inicia com a sua sessão da mesma forma. Uma <g1>cópia portátil</g1> não pode iniciar com o Windows, uma vez que isso requer o registo, pelo que a opção fica desativada."
-  },
-  "6e355ba39f5dc912": {
-   "source": "Sponsor Dannex Download Manager",
-   "text": "Apoiar o Dannex Download Manager"
-  },
-  "fc7fe0579b9363e9": {
-   "source": "One egui window painted to fixed pixel coordinates, plus one immediate viewport per dialog. <x1/> holds the state (downloads, queues, settings, the list's selection) and turns menu, toolbar, key and IPC commands into actions. Each dialog is its own module and returns an <x2/> (open, closed, done with a value). A window that comes up by itself (Download complete, a message DDM tells, a question while DDM isn't the program in front) shows above the others without taking the keyboard from the program being typed in (<x3/>, <x4/>); those the person asked for take it. Windows handed over one after another (Download File Info, Add torrent, Download video) and Download complete boxes show one at a time, in one place, the next when one closes. Windows-only calls are confined to <x5/> and their Linux and macOS counterparts to <x6/> (starting with the session, the browsers' host, sounds, show in folder, the crash handler); every other file is safe, portable Rust. Fonts come from the system: Windows' Fonts folder, macOS's system fonts, fontconfig on Linux (<x7/>). On Windows, Latin, Greek and Cyrillic text is drawn by DirectWrite (<x8/>, through egui's glyph rasterizer hook): View → Text → Smooth in its natural mode, anti-aliased at the size asked for and placed at quarter pixels with the font's own advances; Classic (the default) in GDI-classic mode, so each letter's hinted shape and whole-pixel width come together. Other scripts are shaped and drawn by egui.",
-   "text": "Uma janela egui desenhada em coordenadas de píxeis fixas, mais uma viewport imediata por cada caixa de diálogo. <x1/> guarda o estado (transferências, filas, definições, a seleção da lista) e transforma os comandos do menu, da barra de ferramentas, do teclado e do IPC em ações. Cada caixa de diálogo é um módulo próprio e devolve um <x2/> (aberta, fechada, concluída com um valor). Uma janela que surge por si só (Transferência concluída, uma mensagem que o DDM transmite, uma pergunta quando o DDM não é o programa em primeiro plano) aparece por cima das outras, sem tirar o teclado ao programa em que se está a escrever (<x3/>, <x4/>); as que o utilizador pediu tiram-no. As janelas entregues umas a seguir às outras (Informações do ficheiro a transferir, Adicionar torrent, Transferir vídeo) e as caixas de Transferência concluída aparecem uma de cada vez, no mesmo local, e a seguinte surge quando uma fecha. As chamadas exclusivas do Windows ficam confinadas a <x5/> e as equivalentes para Linux e macOS a <x6/> (a começar pela sessão, pelo anfitrião dos navegadores, pelos sons, por mostrar na pasta e pelo tratamento de falhas); todos os outros ficheiros são Rust seguro e portátil. Os tipos de letra vêm do sistema: a pasta Fonts do Windows, os tipos de letra do sistema do macOS, o fontconfig no Linux (<x7/>). No Windows, o texto latino, grego e cirílico é desenhado pelo DirectWrite (<x8/>, através do gancho do rasterizador de glifos do egui): Ver → Texto → Suave no modo natural, com suavização ao tamanho pedido e posicionado em quartos de píxel, com os avanços do próprio tipo de letra; Clássico (o predefinido) no modo GDI clássico, de modo que a forma ajustada de cada letra e a sua largura em píxeis inteiros ficam juntas. Os outros alfabetos são compostos e desenhados pelo egui."
-  },
-  "800407e32d4bc4d6": {
-   "source": "The extension shows almost nothing of its own, as users of other download managers expect: a click on its toolbar button turns taking downloads off and on, its right-click menu has \"Don't take downloads from this site\" and Help (<x1/>, the status page: installed, or what is wrong and the one thing to do), and its options page (<x2/>) has only that switch, the browser's proxy (#42) and another DDM (#157). It never asks the app for its downloads (extensions up to 0.6.5 did, for a window of their own: the host refuses that question now, and the app answers the automation API's <x3/> and actions only while the API is on).",
-   "text": "A extensão mostra quase nada por si própria, como os utilizadores de outros gestores de transferências esperam: um clique no botão da barra de ferramentas ativa ou desativa a captura de transferências, o menu de contexto tem «Não capturar transferências deste site» e Ajuda (<x1/>, a página de estado: instalada, ou o que está errado e a única coisa a fazer), e a página de opções (<x2/>) tem apenas esse interruptor, o proxy do navegador (#42) e outro DDM (#157). Nunca pede à aplicação as suas transferências (as extensões até à 0.6.5 pediam, para uma janela própria: agora o anfitrião recusa essa pergunta, e a aplicação só responde ao <x3/> e às ações da API de automatização enquanto a API estiver ativada)."
-  },
-  "dcedde395f1f0789": {
-   "source": "<g1>1.0.0</g1> <g2>20.9 MB</g2>",
-   "text": "<g1>1.0.0</g1> <g2>20,9 MB</g2>"
-  },
-  "410849c6c11c33d7": {
-   "source": "DDM is free and always will be. If it saves you time, you can support it.",
-   "text": "O DDM é gratuito e será sempre. Se lhe poupa tempo, pode apoiá-lo."
-  },
-  "eb60a779982bcd66": {
-   "source": "Chrome, Edge and Brave run an extension in private (incognito) windows only when you allow it, and Firefox asks too. Until then, downloads from private windows stay with the browser. To allow it: on the browser's extensions page, open <g1>Details</g1> and turn on <g2>Allow in Incognito</g2>; in Firefox, <g3>Add-ons and themes</g3> → the extension → <g4>Allow</g4> beside <g5>Run in Private Windows</g5>. Downloads from a private window use that window's cookies, and DDM doesn't keep them in its list once they're done.",
-   "text": "O Chrome, o Edge e o Brave só executam uma extensão em janelas privadas (incógnito) se o permitir, e o Firefox também pergunta. Até lá, as transferências das janelas privadas ficam com o navegador. Para o permitir: na página de extensões do navegador, abra <g1>Detalhes</g1> e ative <g2>Permitir em Incógnito</g2>; no Firefox, aceda a <g3>Extras e temas</g3> → a extensão → <g4>Permitir</g4> junto a <g5>Executar em janelas privadas</g5>. As transferências de uma janela privada usam os cookies dessa janela e o DDM não as mantém na sua lista depois de concluídas. (Windows)"
   }
  }
 }
