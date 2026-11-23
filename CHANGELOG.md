@@ -5,8 +5,16 @@ Each release's notes on GitHub come from its section here (`## [X.Y.Z]`, see
 
 ## [Unreleased]
 
-- Picking a quality on the button over a video (1080p, say) opens DDM's Download video window at
-  once with that quality chosen: press **Download Now**, as before for the main button.
+- Picking a quality on the button over a video (1080p, say) opens DDM's **Download File Info**
+  window for that one file at once (address, quality, category, folder, file name): press
+  **Start Download**, or **Download Later**. The batch-style Download video window is no longer
+  shown for a pick.
+- The button's Audio tab names each sound by what it is ("Original M4A", "MP3 320 kbps", "OPUS")
+  instead of repeating "Audio only, original" on every row.
+- The extension no longer logs "Unchecked runtime.lastError: Invalid filename" for downloads the
+  browser keeps; downloads started by another extension still keep their own names and folders.
+- The button's **×** closes it on that video only (YouTube's next video shows it again), and a
+  video's qualities are looked up as soon as it plays, so the menu has them at the click.
 - The button over a video stays while the pointer is close to the video (48 px around it, or for
   1.6 s after it leaves), no longer vanishes when another window takes the focus (a YouTube
   pop-up window, the browser's own pop-ups), and hides when the tab is put away.

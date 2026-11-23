@@ -1841,7 +1841,13 @@ pub struct App {
     /// Video pages handed over by the browser's button while Download video was open, oldest
     /// first: each opens in it when the one before it closes (one window at a time, as Download
     /// File Info and Add torrent: never one replacing another).
-    video_waiting: std::collections::VecDeque<(String, ipc::Command)>,
+    /// A quality chosen in the browser's menu waits with its look-up (it opens as that choice,
+    /// nothing looked up again).
+    video_waiting: std::collections::VecDeque<(
+        String,
+        ipc::Command,
+        Option<Box<crate::videolookup::Picked>>,
+    )>,
     /// Download video closed this frame: the next waiting page opens after a frame without it.
     video_closed: bool,
     /// Downloads a running queue started (until the person starts one again): no progress window
@@ -6247,12 +6253,12 @@ impl App {
         if let Some(open) = &self.video_dlg {
             if open.opened_for(&page) {
                 dialogs::raise(&self.ui_ctx, dialogs::dialog_viewport("video-page"));
-            } else if !self.video_waiting.iter().any(|(p, _)| *p == page) {
+            } else if !self.video_waiting.iter().any(|(p, _, _)| *p == page) {
                 tracing::info!(
                     "Download video is open: a page waits ({} waiting)",
                     self.video_waiting.len() + 1
                 );
-                self.video_waiting.push_back((page, cmd));
+                self.video_waiting.push_back((page, cmd, None));
             }
             return;
         }
@@ -6412,13 +6418,24 @@ impl App {
     /// The quality menu's choice `p` in Download video, that quality chosen and its look-up kept
     /// (nothing looked up again): Save to, the name and the subtitles are there to check, and
     /// Download Now / Later add it, as for any video. Open for this page already, the window
-    /// takes the quality chosen now and comes up; open for another page, it keeps its place and
-    /// this one waits its turn (looked up again then), as a page clicked does. A new window comes
-    /// in front of the browser by itself (`dialogs::window`, #208).
+    /// takes the quality chosen now and comes up; open for another page, it comes up and keeps
+    /// its place, and this choice waits its turn as it is (never looked up again, so never a
+    /// playlist's list): the latest choice for a page replaces one waiting for it. A new window
+    /// comes in front of the browser by itself (`dialogs::window`, #208).
     fn open_video_pick(&mut self, p: crate::videolookup::Picked) {
         match &self.video_dlg {
             Some(open) if !open.opened_for(&p.address) => {
-                self.open_video_page(p.address, p.context);
+                dialogs::raise(&self.ui_ctx, dialogs::dialog_viewport("video-page"));
+                let (page, cmd) = (p.address.clone(), p.context.clone());
+                if let Some(w) = self.video_waiting.iter_mut().find(|(w, _, _)| *w == page) {
+                    *w = (page, cmd, Some(Box::new(p)));
+                } else {
+                    tracing::info!(
+                        "Download video is open: a choice waits ({} waiting)",
+                        self.video_waiting.len() + 1
+                    );
+                    self.video_waiting.push_back((page, cmd, Some(Box::new(p))));
+                }
                 return;
             }
             Some(_) => dialogs::raise(&self.ui_ctx, dialogs::dialog_viewport("video-page")),
@@ -12727,8 +12744,12 @@ impl App {
         if self.video_dlg.is_none() && !self.video_waiting.is_empty() {
             if std::mem::take(&mut self.video_closed) {
                 ctx.request_repaint();
-            } else if let Some((page, cmd)) = self.video_waiting.pop_front() {
-                self.video_dlg = Some(self.video_dialog(Some((&page, cmd))));
+            } else if let Some((page, cmd, pick)) = self.video_waiting.pop_front() {
+                let dlg = self.video_dialog(Some((&page, cmd)));
+                self.video_dlg = Some(match pick {
+                    Some(p) => dlg.picked(*p),
+                    None => dlg,
+                });
             }
         }
         if let Some(v) = &mut self.video_dlg {

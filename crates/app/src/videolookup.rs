@@ -1412,6 +1412,12 @@ mod tests {
         let p = l.pick(&pick(&job.token, 0, None), false, now).unwrap();
         drop(job);
         let mut dlg = open(p, &de);
+        // The one file, as Download File Info: not the page's list of qualities.
+        assert!(dlg.is_single());
+        assert!(
+            !VideoDialog::for_page(folder.clone(), SRC, Default::default()).is_single(),
+            "a page clicked shows its qualities"
+        );
         let Some(VideoOut::One(add)) = dlg.added() else {
             panic!("one video");
         };

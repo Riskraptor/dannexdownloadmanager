@@ -247,6 +247,16 @@
       }
     }
   },
+  "video_audio_original_short": {
+    "message": "Original $type$",
+    "description": "a row in the Audio tab of the menu of qualities under the download button over a video (the tab already says it is sound only): the site's own sound file as it is (not converted)",
+    "placeholders": {
+      "type": {
+        "content": "$1",
+        "example": "M4A"
+      }
+    }
+  },
   "video_pick_waiting": {
     "message": "Starting as soon as DDM is ready…",
     "description": "read out by screen readers in the menu of qualities under the download button over a video, after the user picked a quality while the app is still looking the video up: the download starts by itself once the app has finished; keep the short name DDM as it is"

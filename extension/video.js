@@ -64,6 +64,7 @@
     video_tab_audio: "Audio",
     video_audio_original: "Audio only, original $1",
     video_audio_only: "Audio only $1",
+    video_audio_original_short: "Original $1",
     video_pick_waiting: "Starting as soon as DDM is ready…",
     video_pick_gone: "That quality isn't available: choose another",
   };
@@ -196,6 +197,24 @@
   function rowText(choice, lang) {
     const c = choice && typeof choice === "object" ? choice : {};
     return { name: String(c.label ?? "").slice(0, 200), size: sizeText(c.size, lang) };
+  }
+
+  // A sound row's name in the Audio tab, which already says "audio": what it is, by the app's key
+  // for it (`Choice::key`), as "Original M4A", "MP3 320 kbps", "OPUS". `original(type)` words the
+  // site's own file. Null for a row the key doesn't name (the row keeps the app's own words).
+  function audioName(row, original) {
+    const r = row && typeof row === "object" ? row : {};
+    const key = typeof r.key === "string" ? r.key : "";
+    const ltr = (text) => `\u2066${text}\u2069`;
+    if (key === "audio") {
+      const ext = typeof r.ext === "string" ? r.ext.replace(/\W/g, "").slice(0, 12).toUpperCase() : "";
+      return ext ? original(ltr(ext)) : null;
+    }
+    if (key === "mp3-0") return ltr("MP3 VBR");
+    const kbps = /^mp3-(\d{2,4})$/.exec(key);
+    if (kbps) return ltr(`MP3 ${kbps[1]} kbps`);
+    if (key === "opus" || key === "flac") return ltr(key.toUpperCase());
+    return null;
   }
 
   // Which of the app's qualities go in which tab: `choice.audio === true` is sound only, anything
@@ -1644,7 +1663,10 @@ button:focus-visible { outline: 2px solid #2a78d6; outline-offset: -2px; }
     const old = new Map([...rows.children].map((b) => [b.dataset.key, b]));
     const els = numbers.map((i) => {
       const row = j.rows[i];
-      const { name, size } = rowText(row, lang);
+      const text = rowText(row, lang);
+      const size = text.size;
+      // Under the Audio tab, its rows don't each say "Audio only" again.
+      const name = (j.tab === "audio" && audioName(row, (type) => tWith("video_audio_original_short", type))) || text.name;
       let b = old.get(row.key);
       if (b) {
         old.delete(row.key);

@@ -111,6 +111,10 @@ pub struct VideoDialog {
     clip: crate::clipboard::Prefill,
     /// The browser's quality menu's look-up, opened for its choice ([`Self::for_pick`]).
     preloaded: Option<Preloaded>,
+    /// Opened for the browser's quality menu's choice ([`Self::picked`]): the one file, as
+    /// Download File Info shows a download (its quality, Save to, its name, Start Download),
+    /// not the page's list of qualities.
+    single: bool,
 }
 
 /// What is installed in the tools folder: (folder, yt-dlp, ffmpeg).
@@ -246,6 +250,7 @@ impl VideoDialog {
             pref: Subs::default(),
             clip: Default::default(),
             preloaded: None,
+            single: false,
         }
     }
 
@@ -289,6 +294,7 @@ impl VideoDialog {
     /// set, which the choice follows.
     pub fn picked(self, p: crate::videolookup::Picked) -> Self {
         let mut d = self;
+        d.single = true;
         d.auto_look = false;
         d.looked_up = d.page.clone();
         let found = found_tools(None);
@@ -493,15 +499,27 @@ impl VideoDialog {
             self.confirmed = Some(now);
             ctx.request_repaint();
         }
-        let out = window(
-            ctx,
-            "video-page",
-            "Download video from a page",
-            [500.0, 391.0],
-            false,
-            winui::BG(),
-            |ui, o| self.body(ui, o, rt),
-        );
+        let out = if self.is_single() {
+            window(
+                ctx,
+                "video-page",
+                "Download File Info",
+                [500.0, SINGLE_HEIGHT],
+                false,
+                winui::BG(),
+                |ui, o| self.single_body(ui, o),
+            )
+        } else {
+            window(
+                ctx,
+                "video-page",
+                "Download video from a page",
+                [500.0, 391.0],
+                false,
+                winui::BG(),
+                |ui, o| self.body(ui, o, rt),
+            )
+        };
         // A playlist's quality chosen, a list or a video looked up: Save to follows (#611).
         self.follow_sound();
         // Helpers... open: on Close, the helpers are read again (another program, or DDM's own),
@@ -1176,6 +1194,203 @@ impl VideoDialog {
             && ready
         {
             self.start_now = Some(now);
+            return Outcome::Done(());
+        }
+        Outcome::Open
+    }
+}
+
+/// The client height of the window for one quality chosen in the browser ([`VideoDialog::picked`]).
+const SINGLE_HEIGHT: f32 = 199.0;
+
+impl VideoDialog {
+    /// Shown as Download File Info: the browser's choice, its video known, no playlist.
+    pub(crate) fn is_single(&self) -> bool {
+        self.single && self.list.is_none() && self.video.is_some()
+    }
+
+    /// The window for the browser's quality menu's choice, as Download File Info shows a
+    /// download: the page, the quality (another can be chosen), the category, Save to, the file
+    /// name, and Download Later, Start Download and Cancel. Enter starts it.
+    fn single_body(&mut self, ui: &mut Ui, o: Pos2) -> Outcome<()> {
+        let p = ui.painter().clone();
+        let labels = [
+            crate::i18n::t("URL"),
+            crate::i18n::t("Quality"),
+            crate::i18n::t("Category"),
+            crate::i18n::t("Save to"),
+            crate::i18n::t("File name"),
+        ];
+        let widest = labels
+            .iter()
+            .map(|l| winui::text_width(&p, l))
+            .fold(0.0, f32::max);
+        let bx = (11.0 + widest + 8.0).clamp(70.0, 150.0);
+        let label = |ui: &Ui, y: f32, s: &str| {
+            winui::fit(
+                ui,
+                &p,
+                o.x + 11.0,
+                o.y + y,
+                s,
+                winui::TEXT(),
+                o.x + bx - 5.0,
+                ("video-single-label", y as i32),
+            );
+        };
+        label(ui, 22.0, labels[0]);
+        winui::fit(
+            ui,
+            &p,
+            o.x + bx,
+            o.y + 22.0,
+            self.page.trim(),
+            winui::TEXT(),
+            o.x + 489.0,
+            "video-single-url",
+        );
+
+        // The quality: as chosen in the browser, another of the video's in the list.
+        label(ui, 46.0, labels[1]);
+        let items: Vec<String> = self
+            .video
+            .as_ref()
+            .map(|(_, choices)| {
+                choices
+                    .iter()
+                    .map(|c| match c.size {
+                        Some(s) => format!("{}  ({})", c.label, crate::dialogs::dialog_size(s)),
+                        None => c.label.clone(),
+                    })
+                    .collect()
+            })
+            .unwrap_or_default();
+        let shown: Vec<&str> = items.iter().map(String::as_str).collect();
+        if let Some(i) = winui::combo_light(
+            ui,
+            r(o, bx, 33.0, 489.0 - bx, 21.0),
+            &shown,
+            self.chosen.min(shown.len().saturating_sub(1)),
+            !shown.is_empty(),
+            "video-single-quality",
+        ) && i != self.chosen
+        {
+            self.chosen = i;
+            self.name_from_choice();
+        }
+
+        label(ui, 74.0, labels[2]);
+        text(
+            &p,
+            o.x + bx,
+            o.y + 74.0,
+            &self.category().shown(),
+            winui::TEXT(),
+        );
+
+        label(ui, 101.0, labels[3]);
+        winui::edit(
+            ui,
+            r(o, bx, 88.0, 459.0 - bx, 21.0),
+            &mut self.folder,
+            true,
+            false,
+        );
+        if winui::button(
+            ui,
+            r(o, 467.0, 88.0, 22.0, 21.0),
+            "...",
+            ButtonKind::Normal,
+            false,
+            None,
+        )
+        .clicked()
+        {
+            let from = self.folder.clone();
+            winui::start_pick(ui.ctx(), "video-folder", move || {
+                rfd::FileDialog::new().set_directory(from).pick_folder()
+            });
+        }
+        if let Some(d) = winui::picked(ui.ctx(), "video-folder") {
+            self.folder = d.display().to_string();
+        }
+
+        label(ui, 132.0, labels[4]);
+        winui::edit(
+            ui,
+            r(o, bx, 119.0, 489.0 - bx, 21.0),
+            &mut self.name,
+            true,
+            false,
+        );
+
+        if let Some(e) = &self.error {
+            winui::fit(
+                ui,
+                &p,
+                o.x + 11.0,
+                o.y + 160.0,
+                e,
+                winui::ERROR(),
+                o.x + 489.0,
+                "video-single-error",
+            );
+        }
+
+        let ready =
+            self.video.as_ref().is_some_and(|(_, c)| !c.is_empty()) && !self.name.trim().is_empty();
+        let kind = |default: bool| match (ready, default) {
+            (false, _) => ButtonKind::Disabled,
+            (true, true) => ButtonKind::Default,
+            (true, false) => ButtonKind::Normal,
+        };
+        let [later_at, start_at, cancel_at] = winui::buttons_to_right(
+            &p,
+            489.0,
+            8.0,
+            &[
+                ("Download Later", 109.0),
+                ("Start Download", 109.0),
+                ("Cancel", 73.0),
+            ],
+            200.0,
+        )[..] else {
+            unreachable!("three buttons")
+        };
+        let y = SINGLE_HEIGHT - 32.0;
+        let later = winui::button(
+            ui,
+            r(o, later_at.0, y, later_at.1, 21.0),
+            "Download Later",
+            kind(false),
+            false,
+            None,
+        )
+        .clicked();
+        let start = winui::button(
+            ui,
+            r(o, start_at.0, y, start_at.1, 21.0),
+            "Start Download",
+            kind(true),
+            true,
+            None,
+        )
+        .clicked()
+            || (ready && winui::enter_pressed(ui));
+        let cancel = winui::button(
+            ui,
+            r(o, cancel_at.0, y, cancel_at.1, 21.0),
+            "Cancel",
+            ButtonKind::Normal,
+            false,
+            None,
+        )
+        .clicked();
+        if cancel || winui::escape_pressed(ui) {
+            return Outcome::Closed;
+        }
+        if ready && (start || later) {
+            self.start_now = Some(start);
             return Outcome::Done(());
         }
         Outcome::Open

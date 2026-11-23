@@ -191,6 +191,15 @@
       }
     }
   },
+  "video_audio_original_short": {
+    "message": "ኦሪጅናል $type$",
+    "placeholders": {
+      "type": {
+        "content": "$1",
+        "example": "M4A"
+      }
+    }
+  },
   "video_pick_waiting": {
     "message": "DDM ዝግጁ እንደሆነ ይጀምራል…"
   },
