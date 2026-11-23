@@ -5,6 +5,8 @@ Each release's notes on GitHub come from its section here (`## [X.Y.Z]`, see
 
 ## [Unreleased]
 
+- Fixed dark-mode access-key cues so mnemonic letters are underlined only after the keyboard
+  is used, instead of being always underlined.
 - Completed the website translations for Arabic, Persian, Portuguese (Portugal), Polish,
   Bengali, Turkish and Thai. Claude Sonnet 5.5 filled the remaining texts and the catalog
   validator and strict kept-name checks passed.

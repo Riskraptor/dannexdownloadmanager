@@ -133,7 +133,7 @@ macro_rules! palette {
                 Self {
                     dark,
                     focus_line_straight: dark,
-                    access_keys_always: dark,
+                    access_keys_always: false,
                     tree_chevrons: dark,
                     segments: classic_segments(dark),
                     $($field: if dark { $dark } else { $light },)*
@@ -726,6 +726,12 @@ mod tests {
         let c = parse_hex("#3399ff40").unwrap();
         assert_eq!(c, rgba(0x33, 0x99, 0xff, 0x40));
         assert_eq!(to_hex(rgb(0x00, 0x78, 0xd4)), "#0078d4");
+    }
+
+    #[test]
+    fn access_keys_follow_keyboard_cues_in_every_variant() {
+        assert!(!CLASSIC.light.access_keys_always);
+        assert!(!CLASSIC.dark.access_keys_always);
     }
 
     /// The classic look keeps the values the painters had before themes (#45): a few anchors

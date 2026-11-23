@@ -40,6 +40,8 @@ The first official release.
 
 These ship in a later version, when they're ready.
 
+- ✅ Dark mode now shows menu and button access-key underlines only while keyboard cues are active.
+
 - ✅ Website translations are complete for Arabic, Persian, Portuguese (Portugal), Polish,
   Bengali, Turkish and Thai.
 
