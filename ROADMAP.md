@@ -40,6 +40,10 @@ The first official release.
 
 These ship in a later version, when they're ready.
 
+- 🔄 Website translations for Arabic, Persian, Portuguese (Portugal), Polish, Bengali and Thai
+  are being completed from the approved draft sets; Turkish is waiting for a draft or fluent
+  translation service.
+
 ### Planned
 
 - 📋 Helium: DDM offering it the extension on Linux and macOS, through Helium's own services: built,

@@ -5,6 +5,10 @@ Each release's notes on GitHub come from its section here (`## [X.Y.Z]`, see
 
 ## [Unreleased]
 
+- Added and updated partial website translations for Arabic, Persian, Portuguese (Portugal),
+  Polish, Bengali and Thai. Remaining untranslated website texts stay marked for the next
+  translation pass; Turkish has no approved answer draft yet.
+
 ## [1.0.0] - 2026-11-23
 
 The first official release of Dannex Download Manager: a free, open-source download manager for
