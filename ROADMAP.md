@@ -14,6 +14,8 @@ The first official release.
 
 - ✅ The button over a video: a quality opens DDM's Download video window at once with it chosen;
   an × to close it; it stays near the video and in pop-up windows; its menu fits small windows
+- ✅ The video button's × closes it on that video only: YouTube's next video shows it again; a
+  video's qualities are looked up as soon as it plays, so the menu has them at the click
 
 - ✅ Downloads in several parts at once, re-balanced to the last byte, resumed after a crash, a
   restart or a dropped connection; FTP too

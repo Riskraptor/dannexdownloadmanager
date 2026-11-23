@@ -4072,6 +4072,40 @@ const ask = (listeners) => (m, sender) => new Promise((r) => listeners.message(m
   ok("video.js: Download panels' settings and the least length");
 }
 
+// video.js: ✕ hides the button on what the player plays now, not on the element: YouTube plays
+// every video in one element as the page moves in place, and its ad and video are two blob:s.
+{
+  const source = readFileSync(new URL("../../extension/video.js", import.meta.url), "utf8");
+  const start = source.indexOf("  const dismissed = new WeakMap();");
+  const end = source.indexOf("\n", source.indexOf("  const isDismissed = "));
+  assert.ok(start > 0 && end > start, "video.js has its dismissal");
+  const location = { href: "https://www.youtube.com/watch?v=one" };
+  const { dismissed, dismissedSrc, playing, isDismissed } = new Function(
+    "location",
+    `${source.slice(start, end)}\nreturn { dismissed, dismissedSrc, playing, isDismissed };`,
+  )(location);
+  const hide = (v) => {
+    dismissed.set(v, playing(v));
+    if (v.currentSrc && !v.currentSrc.startsWith("blob:")) dismissedSrc.add(v.currentSrc);
+  };
+  assert.ok(source.includes("dismissed.set(video, playing(video));"), "✕ remembers what plays");
+  const yt = { currentSrc: "blob:https://www.youtube.com/ad" };
+  hide(yt);
+  assert.equal(isDismissed(yt), true);
+  yt.currentSrc = "blob:https://www.youtube.com/video";
+  assert.equal(isDismissed(yt), true, "the ad over, the same video: still hidden");
+  location.href = "https://www.youtube.com/watch?v=two";
+  yt.currentSrc = "blob:https://www.youtube.com/next";
+  assert.equal(isDismissed(yt), false, "the next video in the same element: the button again");
+  const file = { currentSrc: "https://cdn.example/a.mp4" };
+  hide(file);
+  const again = { currentSrc: "https://cdn.example/a.mp4" };
+  assert.equal(isDismissed(again), true, "that file in another player: still hidden");
+  file.currentSrc = "https://cdn.example/b.mp4";
+  assert.equal(isDismissed(file), false, "another file in that player: the button");
+  ok("video.js: ✕ hides the button on this video only, the next one in the same player shows it");
+}
+
 // ---- the extension's pages, run against a fake page -------------------------------------------
 
 const pageEnglish = JSON.parse(readFileSync(new URL("../../extension/_locales/en/messages.json", import.meta.url), "utf8"));

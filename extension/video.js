@@ -759,11 +759,14 @@
   const landedAt = location.href;
   const reduced = matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-  // "Hide on this video": the video's address (players reuse one element for the next video),
-  // else the element.
-  const dismissed = new WeakSet();
-  const dismissedSrc = new Set();
-  const isDismissed = (v) => dismissed.has(v) || (v.currentSrc && dismissedSrc.has(v.currentSrc));
+  // "Hide on this video": what the element was playing, and on which page. Players reuse one
+  // element for the next video (YouTube's, as the page moves in place), so the element alone
+  // would hide the button on every video after it. A `blob:` source tells nothing (YouTube's ad
+  // and the video after it have two): the page's address does.
+  const dismissed = new WeakMap(); // element → what it played when hidden
+  const dismissedSrc = new Set(); // real addresses hidden, wherever they play again
+  const playing = (v) => `${location.href}\n${v.currentSrc && !v.currentSrc.startsWith("blob:") ? v.currentSrc : ""}`;
+  const isDismissed = (v) => dismissed.get(v) === playing(v) || (v.currentSrc && !v.currentSrc.startsWith("blob:") && dismissedSrc.has(v.currentSrc));
   // May it show here? The app's answer (Options: the button on, the site not listed), asked
   // again when older than ASK_MS, so a change in Options reaches a page already open (#532: one
   // that never reloads, as YouTube's, kept the button for good). `never`: this page's own
@@ -1406,7 +1409,10 @@ button:focus-visible { outline: 2px solid #2a78d6; outline-offset: -2px; }
   const askLookup = (asked, prefetch) => send({ type: "video-lookup", ...asked, ...(prefetch ? { prefetch: true } : {}) });
 
   // What a lookup asked ahead is for: the page, what the player plays, and what is asked about it.
-  const aheadKey = (v, asked) => JSON.stringify([location.href, v.currentSrc || "", asked.url, asked.src]);
+  // What the player plays counts only when the app is asked about it: one asked about its page
+  // alone (YouTube's) stays the same lookup when the player moves from an ad to the video.
+  const playedFor = (v, asked) => (asked.url && !asked.src ? "" : v.currentSrc || "");
+  const aheadKey = (v, asked) => JSON.stringify([location.href, playedFor(v, asked), asked.url, asked.src]);
 
   // The sound's rows' names in the page's own list, as the app names them.
   const audioLabel = (kind, type) => tWith(kind === "original" ? "video_audio_original" : "video_audio_only", type);
@@ -1425,7 +1431,8 @@ button:focus-visible { outline: 2px solid #2a78d6; outline-offset: -2px; }
       const d = held ? held.d : describe(video, video.getBoundingClientRect());
       // Encrypted (DRM): no tool can save it; say so rather than send it.
       if (d.drm) return flash("err", t("video_drm"));
-      const j = { video, src: video.currentSrc || "", href: location.href, asked: askedOf(d, video), started: Date.now(), token: "", count: 0 };
+      const asked = askedOf(d, video);
+      const j = { video, src: playedFor(video, asked), href: location.href, asked, started: Date.now(), token: "", count: 0 };
       job = j;
       clicked = { key: aheadKey(video, j.asked), at: j.started };
       // The menu opens at once, saying it is looking; an answer that needs none and comes first
@@ -1493,7 +1500,7 @@ button:focus-visible { outline: 2px solid #2a78d6; outline-offset: -2px; }
     // Clicked already: the app has it (a click shares it), nothing to ask ahead.
     if (clicked && clicked.key === key && Date.now() - clicked.at < AHEAD_KEEP_MS) return;
     dropAhead();
-    const a = { v, src: v.currentSrc || "", href: location.href, asked, key, at: Date.now(), reply: null, token: "", usable: false, taken: false };
+    const a = { v, src: playedFor(v, asked), href: location.href, asked, key, at: Date.now(), reply: null, token: "", usable: false, taken: false };
     a.promise = askLookup(asked, true).then((r) => {
       a.reply = r || {};
       // No lookups here: not asked ahead again on this page.
@@ -1538,7 +1545,7 @@ button:focus-visible { outline: 2px solid #2a78d6; outline-offset: -2px; }
   // qualities it came with either way ({page}). It is the click's from now on.
   async function takeAhead(j) {
     const a = aheadJob;
-    if (!a || a.v !== j.video || a.src !== j.src || a.href !== j.href || a.asked.url !== j.asked.url || a.asked.src !== j.asked.src || Date.now() - a.at > AHEAD_KEEP_MS) return {};
+    if (!a || a.v !== j.video || a.src !== playedFor(j.video, j.asked) || a.href !== j.href || a.asked.url !== j.asked.url || a.asked.src !== j.asked.src || Date.now() - a.at > AHEAD_KEEP_MS) return {};
     a.taken = true;
     aheadJob = null;
     clearTimeout(aheadTimer);
@@ -1551,7 +1558,7 @@ button:focus-visible { outline: 2px solid #2a78d6; outline-offset: -2px; }
   // Still the lookup the menu is for: the menu open on the same video (the same element playing
   // the same thing) on the same page. Whatever answers a lookup after that is dropped.
   const current = (j) =>
-    job === j && video === j.video && (!j.src || video.currentSrc === j.src) && location.href === j.href;
+    job === j && video === j.video && (!j.src || playedFor(video, j.asked) === j.src) && location.href === j.href;
 
   function openPicks(j) {
     if (!current(j) || (menuOpen && panel === picks)) return;
@@ -1788,10 +1795,12 @@ button:focus-visible { outline: 2px solid #2a78d6; outline-offset: -2px; }
     const s = await followLookup(first, {
       ask: (token, ms) => within(send({ type: "video-poll", token }), ms),
       alive: () => current(j),
+      // One asked ahead has likely found the video by the click: asked again at once.
       sleep: (ms) =>
         new Promise((wake) => {
           j.wake = wake;
-          j.timer = setTimeout(wake, ms);
+          j.timer = setTimeout(wake, j.ahead && !j.polled ? 0 : ms);
+          j.polled = true;
         }),
       now: Date.now,
       end: j.started + LOOKUP_MS,
@@ -1920,8 +1929,8 @@ button:focus-visible { outline: 2px solid #2a78d6; outline-offset: -2px; }
     closeMenu();
     if (act === "hide") {
       held = null;
-      dismissed.add(video);
-      if (video.currentSrc) dismissedSrc.add(video.currentSrc);
+      dismissed.set(video, playing(video));
+      if (video.currentSrc && !video.currentSrc.startsWith("blob:")) dismissedSrc.add(video.currentSrc);
       video = null;
       return hide(true);
     }
@@ -2166,6 +2175,18 @@ button:focus-visible { outline: 2px solid #2a78d6; outline-offset: -2px; }
   // The page left: what was asked ahead for it is called off (the background does it too, with
   // the tab's next page).
   addEventListener("pagehide", () => dropAhead());
+  // The page's own video (a watch page: askAhead's "rest" asks only there) asked about as soon as
+  // it loads or plays, the pointer anywhere: its qualities are ready by the time of the click. A
+  // page that moves in place (YouTube's next video) loads its next one in the same element.
+  const eager = (v) => {
+    if (never || !(v instanceof HTMLVideoElement)) return;
+    // Options' settings (eligible goes by them) as the app's answer says.
+    ask().then(() => allowed === true && eligible(v) && askAhead(v, "rest"));
+  };
+  for (const kind of ["loadedmetadata", "playing"]) {
+    addEventListener(kind, (e) => e.isTrusted && eager(e.target), { capture: true, passive: true });
+  }
+  for (const v of document.querySelectorAll("video")) if (v.readyState >= 1) eager(v);
   // The keyboard on the button: as the pointer reaching it.
   go.addEventListener("focus", () => {
     if (video && !held && go.matches(":focus-visible")) askAhead(video, "hover");
