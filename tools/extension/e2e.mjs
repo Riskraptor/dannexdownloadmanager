@@ -42,9 +42,11 @@
 // headless DDM; E2E_REMOTE_URL for one running elsewhere, such as the Docker image: remoteServer).
 //
 // Screenshots for a pull request (Chromium only): E2E_LANG=de (or ar, ...) starts the browser in that
-// language, so the extension shows its _locales text of it; with E2E_SHOTS=<folder> the `qualities`
-// case saves <lang>-looking.png, <lang>-video-tab.png and <lang>-audio-tab.png there (the player and
-// the menu), before the pick. Neither changes anything when unset.
+// language, so the extension shows its _locales text of it, and DDM in it too; E2E_DARK=1 makes DDM
+// always dark (with E2E_CHROMIUM_ARGS=--force-dark-mode for the browser), E2E_DARK=0 always light; with E2E_SHOTS=<folder> the
+// `qualities` case saves <lang>-looking.png, <lang>-video-tab.png and <lang>-audio-tab.png there (the
+// player and the menu), before the pick, and <lang>-picked.png (the Download video window it opens).
+// None changes anything when unset.
 //
 // Windows: the host is registered for the current user while it runs (nmhost --register, as the
 // installer does) and unregistered at the end. Every registry key that touches (the browsers'
@@ -1006,7 +1008,7 @@ $A = [System.Windows.Automation.AutomationElement]
 $pid_ = New-Object System.Windows.Automation.PropertyCondition($A::ProcessIdProperty, ${pid})
 $edit = New-Object System.Windows.Automation.AndCondition(
   (New-Object System.Windows.Automation.PropertyCondition($A::ControlTypeProperty, [System.Windows.Automation.ControlType]::Edit)),
-  (New-Object System.Windows.Automation.PropertyCondition($A::NameProperty, 'Page address')))
+  (New-Object System.Windows.Automation.PropertyCondition($A::NameProperty, '${psq(appText("Page address"))}')))
 foreach ($w in $A::RootElement.FindAll([System.Windows.Automation.TreeScope]::Children, $pid_)) {
   $e = $w.FindFirst([System.Windows.Automation.TreeScope]::Descendants, $edit)
   if ($e) { 'ADDRESS ' + $e.GetCurrentPattern([System.Windows.Automation.ValuePattern]::Pattern).Current.Value; break }
@@ -1016,11 +1018,32 @@ foreach ($w in $A::RootElement.FindAll([System.Windows.Automation.TreeScope]::Ch
   return m ? m[1].trim() : null;
 }
 
-const VIDEO_WINDOW = "Download video from a page";
+// DDM's text in the app's language (E2E_LANG): its catalog's row for the English, which window
+// titles and UI Automation names are made of; the English when the catalog lacks it.
+let appCatalog;
+function appText(en) {
+  if (!appCatalog) {
+    appCatalog = new Map();
+    const lang = (process.env.E2E_LANG || "en").toLowerCase();
+    const file = path.join(root, "i18n", `${lang}.tsv`);
+    if (lang !== "en" && fs.existsSync(file)) {
+      for (const line of fs.readFileSync(file, "utf8").split(/\r?\n/)) {
+        const [ctx, source, text] = line.split("\t");
+        if (!line.startsWith("#") && !ctx && source && text) appCatalog.set(source, text);
+      }
+    }
+  }
+  return appCatalog.get(en) || en;
+}
+const psq = (s) => s.replace(/'/g, "''");
+// A window's title: right to left, in an embedding (i18n::window_title).
+const appTitle = (en) => (/^(ar|he|fa|ur)\b/i.test(process.env.E2E_LANG || "") ? `\u202b${appText(en)}\u202c` : appText(en));
+const VIDEO_WINDOW = appTitle("Download video from a page");
 
 // Whether the Download video window's "Download Now" is enabled: yt-dlp looked the address up
-// and offered something to download (#155). null while the window isn't open.
-function videoReady(pid) {
+// and offered something to download (#155). null while the window isn't open. With `press`, it is
+// pressed once enabled: whether it was.
+function videoReady(pid, press = false) {
   if (!WIN) throw new Skip(NO_UIA);
   const script = `
 Add-Type -AssemblyName UIAutomationClient; Add-Type -AssemblyName UIAutomationTypes
@@ -1028,17 +1051,18 @@ $A = [System.Windows.Automation.AutomationElement]
 $pid_ = New-Object System.Windows.Automation.PropertyCondition($A::ProcessIdProperty, ${pid})
 $now = New-Object System.Windows.Automation.AndCondition(
   (New-Object System.Windows.Automation.PropertyCondition($A::ControlTypeProperty, [System.Windows.Automation.ControlType]::Button)),
-  (New-Object System.Windows.Automation.PropertyCondition($A::NameProperty, 'Download Now')))
+  (New-Object System.Windows.Automation.PropertyCondition($A::NameProperty, '${psq(appText("Download Now"))}')))
 $edit = New-Object System.Windows.Automation.AndCondition(
   (New-Object System.Windows.Automation.PropertyCondition($A::ControlTypeProperty, [System.Windows.Automation.ControlType]::Edit)),
-  (New-Object System.Windows.Automation.PropertyCondition($A::NameProperty, 'Page address')))
+  (New-Object System.Windows.Automation.PropertyCondition($A::NameProperty, '${psq(appText("Page address"))}')))
 # The window's accessible root is named after the app, not its title: the one with "Page address".
 foreach ($w in $A::RootElement.FindAll([System.Windows.Automation.TreeScope]::Children, $pid_)) {
   if (-not $w.FindFirst([System.Windows.Automation.TreeScope]::Descendants, $edit)) { continue }
   $b = $w.FindFirst([System.Windows.Automation.TreeScope]::Descendants, $now)
-  if ($b) { 'READY ' + $b.Current.IsEnabled; break }
+  if ($b) { 'READY ' + $b.Current.IsEnabled; ${press ? "if ($b.Current.IsEnabled) { $b.GetCurrentPattern([System.Windows.Automation.InvokePattern]::Pattern).Invoke(); 'PRESSED' }; " : ""}break }
 }`;
   const out = spawnSync("powershell", ["-NoProfile", "-Command", script], { encoding: "utf8" }).stdout;
+  if (press) return /^PRESSED$/m.test(out);
   const m = /^READY (\w+)$/m.exec(out);
   return m ? m[1] === "True" : null;
 }
@@ -1061,7 +1085,7 @@ async function streamLookedUp(trigger, manifest, page, cookie) {
   const address = await until("the Download video window's address", 20000, () => videoAddress(pid)).catch((e) => {
     // What the window showed, for the report (PrintWindow: off the screens too).
     const shot = path.join(work, `video-window-${Date.now()}.png`);
-    spawnSync("powershell", ["-NoProfile", "-File", path.join(root, "tools", "lab", "cap-own.ps1"), "-ProcessId", String(pid), "-Title", VIDEO_WINDOW, "-Out", shot]);
+    spawnSync("powershell", ["-NoProfile", "-ExecutionPolicy", "Bypass", "-File", path.join(root, "tools", "lab", "cap-own.ps1"), "-ProcessId", String(pid), "-Title", VIDEO_WINDOW, "-Out", shot]);
     e.message += fs.existsSync(shot) ? ` (the window: ${shot})` : " (no capture)";
     throw e;
   });
@@ -1246,7 +1270,7 @@ async function clickButton(session, b, shot = "") {
   const address = await until("the Download video window's address", 10000, () => videoAddress(pid));
   if (shot) {
     await sleep(1500);
-    spawnSync("powershell", ["-NoProfile", "-File", path.join(root, "tools", "lab", "cap-own.ps1"), "-ProcessId", String(pid), "-Title", VIDEO_WINDOW, "-Out", shot]);
+    spawnSync("powershell", ["-NoProfile", "-ExecutionPolicy", "Bypass", "-File", path.join(root, "tools", "lab", "cap-own.ps1"), "-ProcessId", String(pid), "-Title", VIDEO_WINDOW, "-Out", shot]);
   }
   appWindows(pid, VIDEO_WINDOW);
   return address;
@@ -2507,9 +2531,10 @@ const CASES = {
 
   // The button's qualities' menu on a stream's player: the click has DDM look the stream up
   // (yt-dlp), the menu lists its qualities with their sizes (estimated from the variants' bitrate
-  // and the stream's length), and the one picked downloads with only its progress window: DDM,
-  // started in the notification area (as with the session), keeps its main window hidden, and no
-  // Download video window opens. Needs a yt-dlp, as streams does, and an ffmpeg: the lab's stream
+  // and the stream's length), and the one picked opens the Download video window at once with that
+  // quality chosen, nothing downloaded before its Download Now, which then downloads it with its
+  // progress window: DDM, started in the notification area (as with the session), keeps its main
+  // window hidden. Needs a yt-dlp, as streams does, and an ffmpeg: the lab's stream
   // has its sound apart (EXT-X-MEDIA), and without ffmpeg to put them together only the sound is
   // offered, as the Download video window does.
   async qualities(t) {
@@ -2601,19 +2626,31 @@ const CASES = {
       if (!row) throw new Error(`no 720p in the Video tab: ${JSON.stringify(pictures.rows.map((r) => r.name))}`);
       const picked = Date.now();
       await t.session.mouse(row.x, row.y, "click");
-      // DDM downloads the stream's manifest, with only the download's progress window.
+      // The Download video window opens at once, the quality chosen and ready (nothing looked
+      // up again): nothing is downloaded before its Download Now.
+      await until("the Download video window", 15000, () => appWindows(pid).includes(VIDEO_WINDOW));
+      await until("its Download Now enabled", 5000, () => videoReady(pid) === true);
+      const windowMs = Date.now() - picked;
+      if (await t.session.picks()) throw new Error("the menu stayed open after the pick");
+      const early = (await mdmList()).filter((d) => !before.has(d.id));
+      if (early.length) throw new Error(`downloading before Download Now: ${early.map((d) => d.file).join(", ")}`);
+      if (shots) await sleep(400);
+      if (shots) {
+        const r = spawnSync("powershell", ["-NoProfile", "-ExecutionPolicy", "Bypass", "-File", path.join(root, "tools", "lab", "cap-own.ps1"), "-ProcessId", String(pid), "-Title", VIDEO_WINDOW, "-Out", path.join(shots, `${lang}-picked.png`)], { encoding: "utf8" });
+        if (r.status) console.error(`the Download video window's picture: ${r.stdout}${r.stderr}`);
+      }
+      // Video's folder there, as a person's is: else the window asks to make it first.
+      fs.mkdirSync(path.join(downloads, "Video"), { recursive: true });
+      if (!videoReady(pid, true)) throw new Error("Download Now couldn't be pressed");
+      // Its Download Now downloads the stream's manifest, in the quality picked, with only the
+      // download's progress window.
       const item = await until("the quality picked, in DDM's list", 15000, async () => (await mdmList()).find((d) => !before.has(d.id)));
       if (item.url !== `${LAB}/hls/master.m3u8`) throw new Error(`DDM downloads ${item.url}, not the stream's manifest`);
       const opened = await until("the download's progress window", 15000, () => progress(appWindows(pid)));
-      const startMs = Date.now() - picked;
-      if (await t.session.picks()) throw new Error("the menu stayed open after the pick");
-      // A moment more: nothing else comes up after it.
-      await sleep(1500);
       const after = appWindows(pid);
       if (main(after).length) throw new Error(`the main window showed (${after.join(", ")})`);
-      if (after.includes(VIDEO_WINDOW)) throw new Error("the Download video window opened too");
       const list = (rs) => rs.map((r) => `${r.name}${r.size ? ` ${r.size}` : ""}`).join(", ");
-      return `${looked ? "looking, then " : ""}Video tab ${pictures.rows.length} (${list(pictures.rows)}), Audio tab ${sounds.rows.length} (${list(sounds.rows)}); "${row.name}" picked: ${item.file} (${item.status}) with its progress window "${opened}" only, the main window hidden; click to first rows ${firstRowsMs} ms, to DDM's ${rowsMs} ms, pick to first progress ${startMs} ms`;
+      return `${looked ? "looking, then " : ""}Video tab ${pictures.rows.length} (${list(pictures.rows)}), Audio tab ${sounds.rows.length} (${list(sounds.rows)}); "${row.name}" picked: the Download video window ready in ${windowMs} ms, then ${item.file} (${item.status}) with its progress window "${opened}", the main window hidden; click to first rows ${firstRowsMs} ms, to DDM's ${rowsMs} ms`;
     } finally {
       // The next case starts DDM as usual.
       await stopApp();
@@ -3048,8 +3085,10 @@ async function run() {
       items: [],
       version: 2,
       settings: {
-        language: "en",
+        // The app in the browser's language for screenshots (E2E_LANG), dark with E2E_DARK=1.
+        language: (process.env.E2E_LANG || "en").toLowerCase(),
         language_asked: true,
+        ...(process.env.E2E_DARK === "1" ? { always_dark: true } : process.env.E2E_DARK === "0" ? { dark_mode_support: false } : {}),
         extension_never_ask: true,
         show_start_dialog: false,
         automation_api: true,
