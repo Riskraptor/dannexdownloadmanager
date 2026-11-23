@@ -6,8 +6,9 @@ Each release's notes on GitHub come from its section here (`## [X.Y.Z]`, see
 ## [Unreleased]
 
 - Added and updated partial website translations for Arabic, Persian, Portuguese (Portugal),
-  Polish, Bengali and Thai. Remaining untranslated website texts stay marked for the next
-  translation pass; Turkish has no approved answer draft yet.
+  Polish, Bengali and Thai with the native OpenRouter translation workflow. The remaining passes
+  leave 4 Arabic, 2 Persian, 101 Bengali, 34 Portuguese (Portugal), 40 Polish, 432 Turkish and
+  59 Thai texts for human review or an additional funded run.
 
 ## [1.0.0] - 2026-11-23
 

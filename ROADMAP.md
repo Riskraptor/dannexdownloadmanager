@@ -40,9 +40,9 @@ The first official release.
 
 These ship in a later version, when they're ready.
 
-- 🔄 Website translations for Arabic, Persian, Portuguese (Portugal), Polish, Bengali and Thai
-  are being completed from the approved draft sets; Turkish is waiting for a draft or fluent
-  translation service.
+- 🔄 Website translations are nearly complete for Arabic and Persian, and are in progress for
+  Portuguese (Portugal), Polish, Bengali, Turkish and Thai. Exact remaining counts are tracked
+  by `python tools/website/translate_site.py --status`.
 
 ### Planned
 
