@@ -249,13 +249,13 @@
     "message": "UIT"
   },
   "tip_on": {
-    "message": "Dannex Download Manager is aan. Klik om het uit te schakelen."
+    "message": "Dannex Download Manager is ingeschakeld."
   },
   "tip_off": {
-    "message": "Dannex Download Manager is uit. Klik om het in te schakelen."
+    "message": "Dannex Download Manager is uitgeschakeld."
   },
   "tip_remote": {
-    "message": "Downloads gaan naar de Dannex Download Manager op $address$. Klik om het uit te schakelen.",
+    "message": "Downloads gaan naar Dannex Download Manager op $address$.",
     "placeholders": {
       "address": {
         "content": "$1",
@@ -285,7 +285,7 @@
     "message": "Automatische updates ophalen via de Chrome Web Store..."
   },
   "options_take_note": {
-    "message": "Als het is uitgeschakeld, blijven downloads in de browser. Klikken op de knop van de extensie doet hetzelfde."
+    "message": "Als deze is uitgeschakeld, blijven downloads in de browser. De knop van de extensie heeft dezelfde schakelaar."
   },
   "options_what_to_do": {
     "message": "Bekijk wat u moet doen"
@@ -439,5 +439,23 @@
   },
   "page_learn_more": {
     "message": "Meer informatie"
+  },
+  "popup_video": {
+    "message": "Video van deze pagina downloaden"
+  },
+  "popup_all": {
+    "message": "Alle koppelingen van deze pagina downloaden"
+  },
+  "popup_no_links": {
+    "message": "Deze pagina heeft geen koppelingen om te downloaden."
+  },
+  "popup_status": {
+    "message": "Status en hulp"
+  },
+  "popup_options": {
+    "message": "Extensieopties"
+  },
+  "popup_fix": {
+    "message": "Bekijk wat u moet doen"
   }
 }

@@ -5151,10 +5151,10 @@ extension	Dannex Download Manager is busy with other videos	Dannex Download Mana
 extension	Dannex Download Manager is installed	Dannex Download Manager is installed
 #. text in the browser extension
 #. tooltip of the extension's toolbar button while it is turned off (downloads stay in the browser); keep the name Dannex Download Manager as it is
-extension	Dannex Download Manager is off. Click to turn it on.	Dannex Download Manager is off. Click to turn it on.
+extension	Dannex Download Manager is off.	Dannex Download Manager is off.
 #. text in the browser extension
 #. tooltip of the extension's toolbar button while it sends downloads to the app; keep the name Dannex Download Manager as it is
-extension	Dannex Download Manager is on. Click to turn it off.	Dannex Download Manager is on. Click to turn it off.
+extension	Dannex Download Manager is on.	Dannex Download Manager is on.
 #. text in the browser extension
 #. headline of the extension's status page, and the first line of its toolbar button's tooltip: the browser can't find the app on this computer; keep the name Dannex Download Manager as it is
 extension	Dannex Download Manager isn't installed	Dannex Download Manager isn't installed
@@ -5180,6 +5180,9 @@ extension	Don't take downloads from this site	Don't take downloads from this sit
 #. command in the browser's right-click menu on a page: download the pictures of the whole page (they open in the app's list to tick); keep the name Dannex Download Manager as it is
 extension	Download all images with DDM	Download all images with DDM
 #. text in the browser extension
+#. a button in the extension's toolbar panel: sends every link in the current tab to Dannex Download Manager's link grabber
+extension	Download all links from this page	Download all links from this page
+#. text in the browser extension
 #. command in the browser's right-click menu on a page: download the links of the whole page; keep the name Dannex Download Manager as it is
 extension	Download all links with DDM	Download all links with DDM
 #. text in the browser extension
@@ -5198,6 +5201,9 @@ extension	Download through this browser's VPN or proxy	Download through this bro
 #. the button over a video on a web page that downloads it; verb; short (it sits on the video)
 extension	Download video	Download video
 #. text in the browser extension
+#. a button in the panel the extension's toolbar button opens: sends the video the current tab plays to Dannex Download Manager's Download video window
+extension	Download video from this page	Download video from this page
+#. text in the browser extension
 #. command in the browser's right-click menu on a link, picture, video or sound; keep the name Dannex Download Manager as it is
 extension	Download with DDM	Download with DDM
 #. text in the browser extension
@@ -5208,7 +5214,7 @@ extension	Downloads from private windows stay in the browser, because this exten
 extension	Downloads go to another Dannex Download Manager	Downloads go to another Dannex Download Manager
 #. text in the browser extension
 #. tooltip of the extension's toolbar button while downloads go to another computer's Dannex Download Manager; $address$ is its web address; keep the name Dannex Download Manager as it is
-extension	Downloads go to the Dannex Download Manager at {address}. Click to turn it off.	Downloads go to the Dannex Download Manager at {address}. Click to turn it off.
+extension	Downloads go to the Dannex Download Manager at {address}.	Downloads go to the Dannex Download Manager at {address}.
 #. text in the browser extension
 #. the toolbar button's status while downloads go to another DDM
 extension	Downloads go to {address}	Downloads go to {address}
@@ -5224,6 +5230,9 @@ extension	Drag to move it along the video's edge	Drag to move it along the video
 #. text in the browser extension
 #. the address typed isn't an https:// address
 extension	Enter its https:// address.	Enter its https:// address.
+#. text in the browser extension
+#. a button in the extension's toolbar panel: opens the extension's own options page
+extension	Extension options	Extension options
 #. text in the browser extension
 #. the status page (an extension page that says whether the browser reaches Dannex Download Manager and how to fix it) in Firefox, for an add-on loaded with Load Temporary Add-on
 extension	Firefox will remove this add-on when it closes, because it was added as a temporary add-on.	Firefox will remove this add-on when it closes, because it was added as a temporary add-on.
@@ -5369,12 +5378,13 @@ extension	Run the setup you downloaded.	Run the setup you downloaded.
 extension	Security software is the usual cause. Allow Dannex Download Manager in your antivirus program, or install it again.	Security software is the usual cause. Allow Dannex Download Manager in your antivirus program, or install it again.
 #. text in the browser extension
 #. link on the extension's options page, after a line saying what is wrong: opens the extension's status page
+#. a button in the extension's toolbar panel while Dannex Download Manager can't be reached: opens the status page that explains what to do
 extension	See what to do	See what to do
 #. text in the browser extension
 #. heading on the extension's options page, under More: where downloads go (this computer, or another computer's Dannex Download Manager)
 extension	Send downloads to	Send downloads to
 #. text in the browser extension
-#. label of the on/off switch on the extension's status and options pages (the same as a click on its toolbar button): when on, downloads started in this browser go to the app; keep the name Dannex Download Manager as it is
+#. label of the on/off switch on the extension's status and options pages and in the panel its toolbar button opens: when on, downloads started in this browser go to the app; keep the name Dannex Download Manager as it is
 extension	Send downloads to Dannex Download Manager	Send downloads to Dannex Download Manager
 #. text in the browser extension
 #. shown briefly on the download button after it was clicked; keep the name Dannex Download Manager as it is
@@ -5385,6 +5395,9 @@ extension	Something is blocking Dannex Download Manager	Something is blocking Da
 #. text in the browser extension
 #. read out by screen readers in the menu of qualities under the download button over a video, after the user picked a quality while the app is still looking the video up: the download starts by itself once the app has finished; keep the short name DDM as it is
 extension	Starting as soon as DDM is ready…	Starting as soon as DDM is ready…
+#. text in the browser extension
+#. a button in the extension's toolbar panel: opens the extension's status page
+extension	Status and help	Status and help
 #. text in the browser extension
 #. link at the bottom of the extension's status and options pages, beside Help: opens the maintainer's page for donations (GitHub Sponsors) in a new tab; keep DDM as it is (the short name of Dannex Download Manager)
 extension	Support DDM	Support DDM
@@ -5428,6 +5441,9 @@ extension	This extension isn't allowed on that site.	This extension isn't allowe
 #. the status page (an extension page that says whether the browser reaches Dannex Download Manager and how to fix it): the app isn't installed or its browser integration isn't set up; keep the name Dannex Download Manager as it is
 extension	This extension works with Dannex Download Manager, a free download manager for your computer. Install it, and this page updates by itself.	This extension works with Dannex Download Manager, a free download manager for your computer. Install it, and this page updates by itself.
 #. text in the browser extension
+#. shown in the extension's toolbar panel when the current tab has no links
+extension	This page has no links to download.	This page has no links to download.
+#. text in the browser extension
 #. the status page (an extension page that says whether the browser reaches Dannex Download Manager and how to fix it): the app refuses this copy of the extension; keep the name Dannex Download Manager as it is
 extension	This version of Dannex Download Manager is too old for this extension. Install the latest one.	This version of Dannex Download Manager is too old for this extension. Install the latest one.
 #. text in the browser extension
@@ -5462,7 +5478,7 @@ extension	Video	Video
 extension	Wait a moment, then try again.	Wait a moment, then try again.
 #. text in the browser extension
 #. note under the on/off switch on the extension's options page: a click on the extension's toolbar button turns it off and on too
-extension	When it's off, downloads stay in the browser. Clicking the extension's button does the same.	When it's off, downloads stay in the browser. Clicking the extension's button does the same.
+extension	When it's off, downloads stay in the browser. The extension's button has the same switch.	When it's off, downloads stay in the browser. The extension's button has the same switch.
 #. text in the browser extension
 #. pairing failed: the code was wrong
 extension	Wrong code.	Wrong code.

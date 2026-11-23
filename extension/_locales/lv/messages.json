@@ -248,21 +248,6 @@
   "badge_off": {
     "message": "IZSL"
   },
-  "tip_on": {
-    "message": "Dannex Download Manager ir ieslēgta. Noklikšķiniet, lai to izslēgtu."
-  },
-  "tip_off": {
-    "message": "Dannex Download Manager ir izslēgta. Noklikšķiniet, lai to ieslēgtu."
-  },
-  "tip_remote": {
-    "message": "Lejupielādes nonāk programmā Dannex Download Manager adresē $address$. Noklikšķiniet, lai to izslēgtu.",
-    "placeholders": {
-      "address": {
-        "content": "$1",
-        "example": "https://192.168.1.10:8463/"
-      }
-    }
-  },
   "status_off_in_app": {
     "message": "Izslēgts programmā Dannex Download Manager"
   },
@@ -283,9 +268,6 @@
   },
   "toolbar_store": {
     "message": "Saņemt automātiskos atjauninājumus no Chrome interneta veikala..."
-  },
-  "options_take_note": {
-    "message": "Kad tas ir izslēgts, lejupielādes paliek pārlūkprogrammā. Klikšķis uz paplašinājuma pogas dara to pašu."
   },
   "options_what_to_do": {
     "message": "Skatīt, kas jādara"
@@ -439,5 +421,8 @@
   },
   "page_learn_more": {
     "message": "Uzzināt vairāk"
+  },
+  "popup_fix": {
+    "message": "Skatīt, kas jādara"
   }
 }

@@ -249,13 +249,13 @@
     "message": "ВЫКЛ"
   },
   "tip_on": {
-    "message": "Dannex Download Manager включён. Нажмите, чтобы выключить."
+    "message": "Dannex Download Manager включен."
   },
   "tip_off": {
-    "message": "Dannex Download Manager выключен. Нажмите, чтобы включить."
+    "message": "Dannex Download Manager выключен."
   },
   "tip_remote": {
-    "message": "Загрузки идут в Dannex Download Manager по адресу $address$. Нажмите, чтобы выключить.",
+    "message": "Загрузки отправляются в Dannex Download Manager по адресу $address$.",
     "placeholders": {
       "address": {
         "content": "$1",
@@ -285,7 +285,7 @@
     "message": "Получать автоматические обновления из Интернет-магазина Chrome..."
   },
   "options_take_note": {
-    "message": "Когда расширение выключено, загрузки остаются в браузере. То же делает нажатие кнопки расширения."
+    "message": "Когда оно выключено, загрузки остаются в браузере. На кнопке расширения тот же переключатель."
   },
   "options_what_to_do": {
     "message": "Что делать"
@@ -439,5 +439,23 @@
   },
   "page_learn_more": {
     "message": "Подробнее"
+  },
+  "popup_video": {
+    "message": "Скачать видео с этой страницы"
+  },
+  "popup_all": {
+    "message": "Скачать все ссылки с этой страницы"
+  },
+  "popup_no_links": {
+    "message": "На этой странице нет ссылок для скачивания."
+  },
+  "popup_status": {
+    "message": "Состояние и справка"
+  },
+  "popup_options": {
+    "message": "Параметры расширения"
+  },
+  "popup_fix": {
+    "message": "Что делать"
   }
 }

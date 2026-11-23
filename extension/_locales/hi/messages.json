@@ -248,21 +248,6 @@
   "badge_off": {
     "message": "बंद"
   },
-  "tip_on": {
-    "message": "Dannex Download Manager चालू है। बंद करने के लिए क्लिक करें।"
-  },
-  "tip_off": {
-    "message": "Dannex Download Manager बंद है। चालू करने के लिए क्लिक करें।"
-  },
-  "tip_remote": {
-    "message": "डाउनलोड $address$ पर Dannex Download Manager में जाते हैं। बंद करने के लिए क्लिक करें।",
-    "placeholders": {
-      "address": {
-        "content": "$1",
-        "example": "https://192.168.1.10:8463/"
-      }
-    }
-  },
   "status_off_in_app": {
     "message": "Dannex Download Manager में बंद किया गया"
   },
@@ -283,9 +268,6 @@
   },
   "toolbar_store": {
     "message": "Chrome वेब स्टोर से स्वचालित अपडेट पाएँ..."
-  },
-  "options_take_note": {
-    "message": "बंद होने पर डाउनलोड ब्राउज़र में रहते हैं। एक्सटेंशन के बटन पर क्लिक करने से भी यही होता है।"
   },
   "options_what_to_do": {
     "message": "क्या करना है, देखें"
@@ -439,5 +421,8 @@
   },
   "page_learn_more": {
     "message": "और जानें"
+  },
+  "popup_fix": {
+    "message": "क्या करना है, देखें"
   }
 }

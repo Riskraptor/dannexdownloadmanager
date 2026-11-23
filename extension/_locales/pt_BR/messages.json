@@ -249,13 +249,13 @@
     "message": "OFF"
   },
   "tip_on": {
-    "message": "O Dannex Download Manager está ativado. Clique para desativá-lo."
+    "message": "O Dannex Download Manager está ativado."
   },
   "tip_off": {
-    "message": "O Dannex Download Manager está desativado. Clique para ativá-lo."
+    "message": "O Dannex Download Manager está desativado."
   },
   "tip_remote": {
-    "message": "Os downloads vão para o Dannex Download Manager em $address$. Clique para desativar.",
+    "message": "Os downloads vão para o Dannex Download Manager em $address$.",
     "placeholders": {
       "address": {
         "content": "$1",
@@ -285,7 +285,7 @@
     "message": "Obter atualizações automáticas da Chrome Web Store..."
   },
   "options_take_note": {
-    "message": "Quando está desativada, os downloads ficam no navegador. Clicar no botão da extensão faz o mesmo."
+    "message": "Quando está desativada, os downloads ficam no navegador. O botão da extensão tem o mesmo interruptor."
   },
   "options_what_to_do": {
     "message": "Ver o que fazer"
@@ -439,5 +439,23 @@
   },
   "page_learn_more": {
     "message": "Saiba mais"
+  },
+  "popup_video": {
+    "message": "Baixar o vídeo desta página"
+  },
+  "popup_all": {
+    "message": "Baixar todos os links desta página"
+  },
+  "popup_no_links": {
+    "message": "Esta página não tem links para baixar."
+  },
+  "popup_status": {
+    "message": "Status e ajuda"
+  },
+  "popup_options": {
+    "message": "Opções da extensão"
+  },
+  "popup_fix": {
+    "message": "Ver o que fazer"
   }
 }

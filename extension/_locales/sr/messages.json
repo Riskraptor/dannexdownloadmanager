@@ -248,21 +248,6 @@
   "badge_off": {
     "message": "ИСК"
   },
-  "tip_on": {
-    "message": "Dannex Download Manager је укључен. Кликните да га искључите."
-  },
-  "tip_off": {
-    "message": "Dannex Download Manager је искључен. Кликните да га укључите."
-  },
-  "tip_remote": {
-    "message": "Преузимања иду у Dannex Download Manager на адреси $address$. Кликните да га искључите.",
-    "placeholders": {
-      "address": {
-        "content": "$1",
-        "example": "https://192.168.1.10:8463/"
-      }
-    }
-  },
   "status_off_in_app": {
     "message": "Искључено у програму Dannex Download Manager"
   },
@@ -283,9 +268,6 @@
   },
   "toolbar_store": {
     "message": "Преузми аутоматска ажурирања из Chrome веб-продавнице..."
-  },
-  "options_take_note": {
-    "message": "Када је искључено, преузимања остају у прегледачу. Клик на дугме проширења ради исто."
   },
   "options_what_to_do": {
     "message": "Погледај шта да урадите"
@@ -439,5 +421,8 @@
   },
   "page_learn_more": {
     "message": "Сазнајте више"
+  },
+  "popup_fix": {
+    "message": "Погледај шта да урадите"
   }
 }

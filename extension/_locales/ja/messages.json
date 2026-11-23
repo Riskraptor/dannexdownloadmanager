@@ -249,13 +249,13 @@
     "message": "オフ"
   },
   "tip_on": {
-    "message": "Dannex Download Manager が動作しています。クリックするとオフになります。"
+    "message": "Dannex Download Manager はオンです。"
   },
   "tip_off": {
-    "message": "Dannex Download Manager はオフです。クリックするとオンになります。"
+    "message": "Dannex Download Manager はオフです。"
   },
   "tip_remote": {
-    "message": "ダウンロードは $address$ の Dannex Download Manager に送られます。クリックするとオフになります。",
+    "message": "ダウンロードは $address$ の Dannex Download Manager に送られます。",
     "placeholders": {
       "address": {
         "content": "$1",
@@ -285,7 +285,7 @@
     "message": "Chrome ウェブストアから自動更新を取得..."
   },
   "options_take_note": {
-    "message": "オフにすると、ダウンロードはブラウザーに残ります。拡張機能のボタンをクリックしても同じ操作になります。"
+    "message": "オフのとき、ダウンロードはブラウザーに残ります。拡張機能のボタンにも同じスイッチがあります。"
   },
   "options_what_to_do": {
     "message": "対処方法を見る"
@@ -439,5 +439,23 @@
   },
   "page_learn_more": {
     "message": "詳細"
+  },
+  "popup_video": {
+    "message": "このページの動画をダウンロード"
+  },
+  "popup_all": {
+    "message": "このページのすべてのリンクをダウンロード"
+  },
+  "popup_no_links": {
+    "message": "このページにはダウンロードできるリンクがありません。"
+  },
+  "popup_status": {
+    "message": "状態とヘルプ"
+  },
+  "popup_options": {
+    "message": "拡張機能のオプション"
+  },
+  "popup_fix": {
+    "message": "対処方法を見る"
   }
 }

@@ -95,7 +95,7 @@
   },
   "popup_take": {
     "message": "Send downloads to Dannex Download Manager",
-    "description": "label of the on/off switch on the extension's status and options pages (the same as a click on its toolbar button): when on, downloads started in this browser go to the app; keep the name Dannex Download Manager as it is"
+    "description": "label of the on/off switch on the extension's status and options pages and in the panel its toolbar button opens: when on, downloads started in this browser go to the app; keep the name Dannex Download Manager as it is"
   },
   "popup_proxy": {
     "message": "Download through this browser's VPN or proxy",
@@ -322,15 +322,15 @@
     "description": "the badge on the extension's toolbar button while it takes no downloads (turned off); at most 4 characters, capitals if the language has them"
   },
   "tip_on": {
-    "message": "Dannex Download Manager is on. Click to turn it off.",
+    "message": "Dannex Download Manager is on.",
     "description": "tooltip of the extension's toolbar button while it sends downloads to the app; keep the name Dannex Download Manager as it is"
   },
   "tip_off": {
-    "message": "Dannex Download Manager is off. Click to turn it on.",
+    "message": "Dannex Download Manager is off.",
     "description": "tooltip of the extension's toolbar button while it is turned off (downloads stay in the browser); keep the name Dannex Download Manager as it is"
   },
   "tip_remote": {
-    "message": "Downloads go to the Dannex Download Manager at $address$. Click to turn it off.",
+    "message": "Downloads go to the Dannex Download Manager at $address$.",
     "description": "tooltip of the extension's toolbar button while downloads go to another computer's Dannex Download Manager; $address$ is its web address; keep the name Dannex Download Manager as it is",
     "placeholders": {
       "address": {
@@ -368,7 +368,7 @@
     "description": "item of the right-click menu of the extension's toolbar button, only in the copy loaded by hand from the app's folder: opens the extension's page in the Chrome Web Store; keep Chrome Web Store as Google names it in this language"
   },
   "options_take_note": {
-    "message": "When it's off, downloads stay in the browser. Clicking the extension's button does the same.",
+    "message": "When it's off, downloads stay in the browser. The extension's button has the same switch.",
     "description": "note under the on/off switch on the extension's options page: a click on the extension's toolbar button turns it off and on too"
   },
   "options_what_to_do": {
@@ -574,5 +574,29 @@
   "page_learn_more": {
     "message": "Learn more",
     "description": "link on the extension's status page under a note: opens the help page's section about it"
+  },
+  "popup_video": {
+    "message": "Download video from this page",
+    "description": "a button in the panel the extension's toolbar button opens: sends the video the current tab plays to Dannex Download Manager's Download video window"
+  },
+  "popup_all": {
+    "message": "Download all links from this page",
+    "description": "a button in the extension's toolbar panel: sends every link in the current tab to Dannex Download Manager's link grabber"
+  },
+  "popup_no_links": {
+    "message": "This page has no links to download.",
+    "description": "shown in the extension's toolbar panel when the current tab has no links"
+  },
+  "popup_status": {
+    "message": "Status and help",
+    "description": "a button in the extension's toolbar panel: opens the extension's status page"
+  },
+  "popup_options": {
+    "message": "Extension options",
+    "description": "a button in the extension's toolbar panel: opens the extension's own options page"
+  },
+  "popup_fix": {
+    "message": "See what to do",
+    "description": "a button in the extension's toolbar panel while Dannex Download Manager can't be reached: opens the status page that explains what to do"
   }
 }

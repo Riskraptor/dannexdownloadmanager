@@ -248,21 +248,6 @@
   "badge_off": {
     "message": "ΕΚΤ"
   },
-  "tip_on": {
-    "message": "Το Dannex Download Manager είναι ενεργό. Κάντε κλικ για απενεργοποίηση."
-  },
-  "tip_off": {
-    "message": "Το Dannex Download Manager είναι απενεργοποιημένο. Κάντε κλικ για ενεργοποίηση."
-  },
-  "tip_remote": {
-    "message": "Οι λήψεις πηγαίνουν στο Dannex Download Manager στη διεύθυνση $address$. Κάντε κλικ για απενεργοποίηση.",
-    "placeholders": {
-      "address": {
-        "content": "$1",
-        "example": "https://192.168.1.10:8463/"
-      }
-    }
-  },
   "status_off_in_app": {
     "message": "Απενεργοποιημένο στο Dannex Download Manager"
   },
@@ -283,9 +268,6 @@
   },
   "toolbar_store": {
     "message": "Λήψη αυτόματων ενημερώσεων από το Chrome Web Store..."
-  },
-  "options_take_note": {
-    "message": "Όταν είναι απενεργοποιημένο, οι λήψεις παραμένουν στο πρόγραμμα περιήγησης. Το ίδιο κάνει και το κλικ στο κουμπί της επέκτασης."
   },
   "options_what_to_do": {
     "message": "Δείτε τι να κάνετε"
@@ -439,5 +421,8 @@
   },
   "page_learn_more": {
     "message": "Μάθετε περισσότερα"
+  },
+  "popup_fix": {
+    "message": "Δείτε τι να κάνετε"
   }
 }

@@ -978,6 +978,10 @@
 #. text in countries.rs
 #. a country's name (where a download's server is)
 	Christmas Island	Isola di Natale
+#. message or event log entry in the main window
+#. The title of Clean Up Temporary Files' answer.
+#, machine
+	Clean Up Temporary Files	Pulisci file temporanei
 #. button in the download list
 #. verb: clears this filter
 	Clear	Cancella
@@ -1562,6 +1566,10 @@
 #. text in gallerydlg.rs
 #. in Download a gallery, after the "Files at most" box
 	Empty: all of them. On most sites the newest come first.	Vuoto: tutti. Sulla maggior parte dei siti i più recenti compaiono per primi.
+#. text in the Options window
+#. \\n starts a new line: break lines where they fit the translation
+#, machine
+	Empty: each download writes into a part file next to its file, which\nbecomes the file when done. A folder here holds the part files instead.\nDDM removes leftover part files by itself (see the Downloads menu).	Vuoto: ogni download scrive in un file parziale accanto al proprio file, che\ndiventa il file una volta completato. Una cartella qui contiene invece i file parziali.\nDDM rimuove da solo i file parziali rimasti (vedere il menu Download).
 #. text in crashui.rs
 #. crash report window button: end the frozen DDM and start it again
 	End and restart DDM	Termina e riavvia DDM
@@ -1691,6 +1699,9 @@
 #. text in countries.rs
 #. a country's name (where a download's server is)
 	Faroe Islands	Isole Fær Øer
+#. text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
+#, machine
+	Fast downloads with powerful control, automatic resume and browser integration. Free and open source under the GNU GPL, version 3 or later.	Download veloci con un controllo completo, ripresa automatica e integrazione con il browser. Gratuito e open source con licenza GNU GPL, versione 3 o successiva.
 #. text in the dates and times (the Scheduler window, the download list, Statistics)
 	February	febbraio
 #. text in rssdlg.rs
@@ -1714,6 +1725,10 @@
 #. text in a download's progress window; text in a download's Properties window
 #. noun: a file of no known type
 	File	File
+#. text in the download list (sizes, speeds, status); text in a download's progress window
+#. a download's status: it finished, but its file is no longer on the disk (deleted or moved by another program); right-click → Redownload gets it again
+#, machine
+	File missing	File mancante
 #. text in the Scheduler window
 	File Name	Nome file
 #. text in the Download video window
@@ -2071,6 +2086,9 @@
 #. text in countries.rs
 #. a country's name (where a download's server is)
 	Hungary	Ungheria
+#. text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
+#, machine
+	I download with Dannex Download Manager: fast, free and built for powerful control. {link}	Scarico con Dannex Download Manager: veloce, gratuito e pensato per un controllo completo. {link}
 #. text in countries.rs
 #. a country's name (where a download's server is)
 	Iceland	Islanda
@@ -2782,6 +2800,10 @@
 	No language matches the search	Nessuna lingua corrisponde alla ricerca
 #. text in langpick.rs
 	No language matches.	Nessuna lingua corrispondente.
+#. message or event log entry in the main window
+#. Downloads → Clean Up Temporary Files found nothing to remove.
+#, machine
+	No leftover temporary files were found.	Non sono stati trovati file temporanei rimasti.
 #. text in the Options window
 #. Options → Remote → Status: on, but the computer has no local network address now
 	No local network now: it starts when the computer joins one.	Nessuna rete locale al momento: si avvierà quando il computer si connetterà a una rete.
@@ -3124,6 +3146,10 @@
 #. text in countries.rs
 #. a country's name (where a download's server is)
 	Paraguay	Paraguay
+#. text in the Options window
+#. \\n starts a new line: break lines where they fit the translation
+#, machine
+	Part files stay here until their downloads complete. On another drive\nthan a download's folder, its file is then copied over. DDM removes\nleftovers by itself. Empty it to write next to each file again.	I file parziali restano qui finché i loro download non sono completati. Se si trova su un'altra unità\nrispetto alla cartella di un download, il file viene poi copiato lì. DDM rimuove da solo\ni residui. Svuotare il campo per scrivere di nuovo accanto a ogni file.
 #. text in the Batch download window; text in a dialog box; label in the Options window; text in the Options window
 	Password	Password
 #. text in the Link grabber window; text in the Options window; text in a download's Properties window; text in the Site grabber window (Tasks → Run site grabber)
@@ -3358,6 +3384,11 @@
 #. remote control page (on a phone): question before removing a download; {name} its file name
 #. {name} = a file name (keep the braces as they are)
 	Remove {name} from the list?	Rimuovere {name} dall'elenco?
+#. message or event log entry in the main window
+#. Downloads → Clean Up Temporary Files' answer: {count} files, {size} like "1.2 GB".
+#. {count} = a number; {size} = a file size such as "4.2 MB" (keep the braces as they are)
+#, machine
+	Removed {count} leftover temporary files ({size} freed).	Rimossi {count} file temporanei rimasti ({size} liberati).
 #. text in a download's progress window
 #. noun: label before the deferred new file or folder name in the progress window
 #, machine
@@ -4220,9 +4251,21 @@
 #. reason shown on the Rename box when the entered name exceeds the length limit
 #, machine
 	The name is too long	Il nome è troppo lungo
+#. text in netwatch.rs
+#. the network as a whole (no adapter has an address); shown as {adapter} in "Stopped: {adapter} is not connected; it goes on when it is back"
+#, machine
+	the network	la rete
 #. text in errors.rs; text in torrent downloads
 #. an error: the network adapter chosen in Options (a VPN's, usually) is off or gone; {adapter} its name
 	the network adapter {adapter} is not connected	la scheda di rete {adapter} non è connessa
+#. message or event log entry in the main window
+#. event log entry: the download kept failing on the network for about an hour and is no longer started again by itself
+#, machine
+	The network failed too long; no longer trying by itself	La rete non è disponibile da troppo tempo; nessun nuovo tentativo automatico
+#. message or event log entry in the main window
+#. event log entry: the download failed because the network did (no connection, one gone quiet); it starts again by itself after {seconds} seconds
+#, machine
+	The network failed; trying again in {seconds} s	Errore di rete; nuovo tentativo tra {seconds} s
 #. text in the Site grabber window (Tasks → Run site grabber)
 #. Site grabber: what the Whole site template collects
 #, machine
@@ -5180,6 +5223,11 @@
 #. {column} = a column title (keep the braces as they are)
 	{column} contains	{column} contiene
 #. message or event log entry in the main window
+#. Clean Up Temporary Files: some files are open in another program.
+#. {count} = a number (keep the braces as they are)
+#, machine
+	{count} could not be removed (in use by another program).	Impossibile rimuovere {count} (in uso da un altro programma).
+#. message or event log entry in the main window
 #. {count} = "2 downloading"; {speed} = all of them together, like "1.25 MB/sec"
 #. {count} = a number (keep the braces as they are)
 	{count}, {speed}	{count}, {speed}
@@ -5523,11 +5571,11 @@ extension	Dannex Download Manager is installed	Dannex Download Manager è instal
 #. text in the browser extension
 #. tooltip of the extension's toolbar button while it is turned off (downloads stay in the browser); keep the name Dannex Download Manager as it is
 #, machine
-extension	Dannex Download Manager is off. Click to turn it on.	Dannex Download Manager è disattivato. Fai clic per attivarlo.
+extension	Dannex Download Manager is off.	Dannex Download Manager è disattivato.
 #. text in the browser extension
 #. tooltip of the extension's toolbar button while it sends downloads to the app; keep the name Dannex Download Manager as it is
 #, machine
-extension	Dannex Download Manager is on. Click to turn it off.	Dannex Download Manager è attivo. Fai clic per disattivarlo.
+extension	Dannex Download Manager is on.	Dannex Download Manager è attivato.
 #. text in the browser extension
 #. headline of the extension's status page, and the first line of its toolbar button's tooltip: the browser can't find the app on this computer; keep the name Dannex Download Manager as it is
 #, machine
@@ -5559,6 +5607,10 @@ extension	Don't take downloads from this site	Non catturare i download da questo
 #, machine
 extension	Download all images with DDM	Scarica tutte le immagini con DDM
 #. text in the browser extension
+#. a button in the extension's toolbar panel: sends every link in the current tab to Dannex Download Manager's link grabber
+#, machine
+extension	Download all links from this page	Scarica tutti i collegamenti di questa pagina
+#. text in the browser extension
 #. command in the browser's right-click menu on a page: download the links of the whole page; keep the name Dannex Download Manager as it is
 extension	Download all links with DDM	Scarica tutti i collegamenti con DDM
 #. text in the browser extension
@@ -5580,6 +5632,10 @@ extension	Download through this browser's VPN or proxy	Scarica tramite la VPN o 
 #. the button over a video on a web page that downloads it; verb; short (it sits on the video)
 extension	Download video	Scarica video
 #. text in the browser extension
+#. a button in the panel the extension's toolbar button opens: sends the video the current tab plays to Dannex Download Manager's Download video window
+#, machine
+extension	Download video from this page	Scarica il video di questa pagina
+#. text in the browser extension
 #. command in the browser's right-click menu on a link, picture, video or sound; keep the name Dannex Download Manager as it is
 extension	Download with DDM	Scarica con DDM
 #. text in the browser extension
@@ -5593,7 +5649,7 @@ extension	Downloads go to another Dannex Download Manager	I download vanno a un 
 #. text in the browser extension
 #. tooltip of the extension's toolbar button while downloads go to another computer's Dannex Download Manager; $address$ is its web address; keep the name Dannex Download Manager as it is
 #, machine
-extension	Downloads go to the Dannex Download Manager at {address}. Click to turn it off.	I download vanno a Dannex Download Manager all'indirizzo {address}. Fai clic per disattivare.
+extension	Downloads go to the Dannex Download Manager at {address}.	I download vengono inviati a Dannex Download Manager all'indirizzo {address}.
 #. text in the browser extension
 #. the toolbar button's status while downloads go to another DDM
 extension	Downloads go to {address}	I download vanno a {address}
@@ -5611,6 +5667,10 @@ extension	Drag to move it along the video's edge	Trascina per spostarlo lungo il
 #. text in the browser extension
 #. the address typed isn't an https:// address
 extension	Enter its https:// address.	Inserisci il suo indirizzo https://.
+#. text in the browser extension
+#. a button in the extension's toolbar panel: opens the extension's own options page
+#, machine
+extension	Extension options	Opzioni dell'estensione
 #. text in the browser extension
 #. the status page (an extension page that says whether the browser reaches Dannex Download Manager and how to fix it) in Firefox, for an add-on loaded with Load Temporary Add-on
 #, machine
@@ -5792,13 +5852,14 @@ extension	Run the setup you downloaded.	Esegui il programma di installazione che
 extension	Security software is the usual cause. Allow Dannex Download Manager in your antivirus program, or install it again.	La causa più comune è il software di sicurezza. Consenti Dannex Download Manager nel programma antivirus, oppure reinstallalo.
 #. text in the browser extension
 #. link on the extension's options page, after a line saying what is wrong: opens the extension's status page
+#. a button in the extension's toolbar panel while Dannex Download Manager can't be reached: opens the status page that explains what to do
 #, machine
 extension	See what to do	Scopri cosa fare
 #. text in the browser extension
 #. heading on the extension's options page, under More: where downloads go (this computer, or another computer's Dannex Download Manager)
 extension	Send downloads to	Invia i download a
 #. text in the browser extension
-#. label of the on/off switch on the extension's status and options pages (the same as a click on its toolbar button): when on, downloads started in this browser go to the app; keep the name Dannex Download Manager as it is
+#. label of the on/off switch on the extension's status and options pages and in the panel its toolbar button opens: when on, downloads started in this browser go to the app; keep the name Dannex Download Manager as it is
 #, machine
 extension	Send downloads to Dannex Download Manager	Invia i download a Dannex Download Manager
 #. text in the browser extension
@@ -5812,6 +5873,10 @@ extension	Something is blocking Dannex Download Manager	Qualcosa blocca Dannex D
 #. read out by screen readers in the menu of qualities under the download button over a video, after the user picked a quality while the app is still looking the video up: the download starts by itself once the app has finished; keep the short name DDM as it is
 #, machine
 extension	Starting as soon as DDM is ready…	Avvio non appena DDM è pronto…
+#. text in the browser extension
+#. a button in the extension's toolbar panel: opens the extension's status page
+#, machine
+extension	Status and help	Stato e guida
 #. text in the browser extension
 #. link at the bottom of the extension's status and options pages, beside Help: opens the maintainer's page for donations (GitHub Sponsors) in a new tab; keep DDM as it is (the short name of Dannex Download Manager)
 #, machine
@@ -5867,6 +5932,10 @@ extension	This extension isn't allowed on that site.	Questa estensione non è co
 #, machine
 extension	This extension works with Dannex Download Manager, a free download manager for your computer. Install it, and this page updates by itself.	Questa estensione funziona con Dannex Download Manager, un download manager gratuito per il computer. Installalo e questa pagina si aggiorna da sola.
 #. text in the browser extension
+#. shown in the extension's toolbar panel when the current tab has no links
+#, machine
+extension	This page has no links to download.	Questa pagina non contiene collegamenti da scaricare.
+#. text in the browser extension
 #. the status page (an extension page that says whether the browser reaches Dannex Download Manager and how to fix it): the app refuses this copy of the extension; keep the name Dannex Download Manager as it is
 #, machine
 extension	This version of Dannex Download Manager is too old for this extension. Install the latest one.	Questa versione di Dannex Download Manager è troppo vecchia per questa estensione. Installa l'ultima.
@@ -5908,7 +5977,7 @@ extension	Wait a moment, then try again.	Attendi un momento, poi riprova.
 #. text in the browser extension
 #. note under the on/off switch on the extension's options page: a click on the extension's toolbar button turns it off and on too
 #, machine
-extension	When it's off, downloads stay in the browser. Clicking the extension's button does the same.	Quando è disattivata, i download restano nel browser. Lo stesso fa un clic sul pulsante dell'estensione.
+extension	When it's off, downloads stay in the browser. The extension's button has the same switch.	Quando è disattivata, i download restano nel browser. Il pulsante dell'estensione ha lo stesso interruttore.
 #. text in the browser extension
 #. pairing failed: the code was wrong
 extension	Wrong code.	Codice errato.
@@ -6259,6 +6328,11 @@ menu	Choose c&olumns...	Scegli le c&olonne...
 #. menu command in the main window
 #. View → Theme: DDM's own look, the default (the classic download manager's layout, Windows 11's controls)
 menu	Classic	Classico
+#. menu command in the main window
+#. Downloads menu: removes the part files of downloads no longer in the list (left by a crash, a power cut, a removed download)
+#. & marks the keyboard shortcut letter: keep one & before a letter of the translation
+#, machine
+menu	Clean &Up Temporary Files	Pulisci file &temporanei
 #. menu command in the main window
 #. & marks the keyboard shortcut letter: keep one & before a letter of the translation
 menu	Clear all &filters	Cancella tutti i &filtri

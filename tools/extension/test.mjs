@@ -601,6 +601,35 @@ const ownAsk = (listeners, m, page = "install.html", id = "ours") =>
   ok("the toolbar button: a click turns it off (grey, X, OFF) and on, for the whole browser");
 }
 
+// The toolbar button's panel (popup.html): how things stand, the switch, the tab's video and
+// links for DDM (only a web page's), the status page.
+{
+  const tabs = { 9: { id: 9, url: "https://x.test/p", title: "Page", incognito: false } };
+  const { api, calls, listeners } = fakeApi({ firefox: false, tabs });
+  load(api, false);
+  listeners.startup();
+  await settle();
+  const s = await ownAsk(listeners, { type: "popup", tab: 9 }, "popup.html");
+  assert.deepEqual([s.ok, s.state, s.title, s.toggle, s.paused, s.web, s.videos], [true, "on", "tip_on", true, false, true, 0]);
+  assert.equal((await ownAsk(listeners, { type: "popup", tab: 3 }, "popup.html")).web, false, "about:blank: no page to take from");
+  await ownAsk(listeners, { type: "pause", paused: true }, "popup.html");
+  const off = await ownAsk(listeners, { type: "popup", tab: 9 }, "popup.html");
+  assert.deepEqual([off.state, off.paused], ["off", true]);
+  await ownAsk(listeners, { type: "pause", paused: false }, "popup.html");
+  assert.deepEqual(await ownAsk(listeners, { type: "popup-all", tab: 9 }, "popup.html"), { ok: true });
+  const all = natives(calls).at(-1);
+  assert.deepEqual([all.links, all.referrer, all.private], [["https://x/1.zip", "https://x/2.zip"], "https://x.test/p", false]);
+  assert.deepEqual(await ownAsk(listeners, { type: "popup-video", tab: 9 }, "popup.html"), { ok: true });
+  const video = natives(calls).at(-1);
+  assert.deepEqual([video.video, video.explicit, video.url, video.title], [true, true, "https://x.test/p", "Page"]);
+  const sent = natives(calls).length;
+  assert.deepEqual(await ownAsk(listeners, { type: "popup-all", tab: 3 }, "popup.html"), { ok: false }, "not a web page");
+  assert.equal(natives(calls).length, sent);
+  await ownAsk(listeners, { type: "popup-status" }, "popup.html");
+  assert.ok(calls.some((c) => c[0] === "openTab" && /install\.html/.test(c[1])), "Status and help: the status page");
+  ok("the toolbar button's panel: the state, the switch, the tab's video and links, the status page");
+}
+
 // DDM not reached: grey with a red "!", the tooltip says why and that a click shows how to fix
 // it; the click opens the status page (never toggles). The status page's answer says why.
 for (const [why, options] of [
@@ -3718,13 +3747,21 @@ const ask = (listeners) => (m, sender) => new Promise((r) => listeners.message(m
 // links window, Open DDM, media names or the keys hint left.
 {
   const read = (f) => readFileSync(new URL(`../../extension/${f}`, import.meta.url), "utf8");
-  const scripts = ["pages.js", "options.js", "install.js"].map(read).join("\n");
+  const scripts = ["pages.js", "options.js", "install.js", "popup.js"].map(read).join("\n");
   const pages = ["options.html", "install.html"];
-  const html = pages.map(read).join("\n");
+  const html = [...pages, "popup.html"].map(read).join("\n");
   const css = read("pages.css");
   const en = JSON.parse(read("_locales/en/messages.json"));
-  for (const gone of ["popup.html", "popup.js", "popup.css"]) {
-    assert.throws(() => read(gone), /ENOENT/, `${gone} is gone`);
+  assert.throws(() => read("popup.css"), /ENOENT/, "popup.css is gone");
+  // The toolbar button's panel: drawn from its own page at once (no wait for the background), the
+  // pages' styles and helpers, its texts in _locales, no footer (Help is on the status page).
+  {
+    const popup = read("popup.html");
+    const srcs = [...popup.matchAll(/<script src="([^"]+)"/g)].map((m) => m[1]);
+    assert.deepEqual(srcs, ["pages.js", "popup.js"], "popup.html: pages.js, then its own script");
+    assert.ok(/<link rel="stylesheet" href="pages\.css">/.test(popup) && !/<footer>/.test(popup), "popup.html: the pages' styles, no footer");
+    for (const [, key] of popup.matchAll(/data-i18n="(\w+)"/g)) assert.ok(en[key], `popup.html: ${key} has English`);
+    assert.ok(/body\.popup\s*\{[^}]*width:\s*\d+px/.test(css), "the panel has its width");
   }
   for (const page of pages) {
     assert.ok(!/id="credit"|popup_credit/.test(read(page)), `${page}: no credit link`);

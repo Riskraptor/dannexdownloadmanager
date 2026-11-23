@@ -249,13 +249,13 @@
     "message": "AUS"
   },
   "tip_on": {
-    "message": "Dannex Download Manager ist an. Klicken Sie, um es auszuschalten."
+    "message": "Dannex Download Manager ist eingeschaltet."
   },
   "tip_off": {
-    "message": "Dannex Download Manager ist aus. Klicken Sie, um es einzuschalten."
+    "message": "Dannex Download Manager ist ausgeschaltet."
   },
   "tip_remote": {
-    "message": "Downloads gehen an das Dannex Download Manager unter $address$. Klicken Sie, um es auszuschalten.",
+    "message": "Downloads gehen an Dannex Download Manager unter $address$.",
     "placeholders": {
       "address": {
         "content": "$1",
@@ -285,7 +285,7 @@
     "message": "Automatische Updates über den Chrome Web Store erhalten..."
   },
   "options_take_note": {
-    "message": "Wenn sie ausgeschaltet ist, bleiben Downloads im Browser. Ein Klick auf die Schaltfläche der Erweiterung bewirkt dasselbe."
+    "message": "Wenn sie ausgeschaltet ist, bleiben Downloads im Browser. Die Schaltfläche der Erweiterung hat denselben Schalter."
   },
   "options_what_to_do": {
     "message": "Anleitung anzeigen"
@@ -439,5 +439,23 @@
   },
   "page_learn_more": {
     "message": "Mehr erfahren"
+  },
+  "popup_video": {
+    "message": "Video dieser Seite herunterladen"
+  },
+  "popup_all": {
+    "message": "Alle Links dieser Seite herunterladen"
+  },
+  "popup_no_links": {
+    "message": "Diese Seite enthält keine Links zum Herunterladen."
+  },
+  "popup_status": {
+    "message": "Status und Hilfe"
+  },
+  "popup_options": {
+    "message": "Erweiterungsoptionen"
+  },
+  "popup_fix": {
+    "message": "Anleitung anzeigen"
   }
 }

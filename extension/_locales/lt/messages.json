@@ -248,21 +248,6 @@
   "badge_off": {
     "message": "IŠJ"
   },
-  "tip_on": {
-    "message": "Dannex Download Manager įjungta. Spustelėkite, kad ją išjungtumėte."
-  },
-  "tip_off": {
-    "message": "Dannex Download Manager išjungta. Spustelėkite, kad ją įjungtumėte."
-  },
-  "tip_remote": {
-    "message": "Atsisiuntimai siunčiami į Dannex Download Manager adresu $address$. Spustelėkite, kad tai išjungtumėte.",
-    "placeholders": {
-      "address": {
-        "content": "$1",
-        "example": "https://192.168.1.10:8463/"
-      }
-    }
-  },
   "status_off_in_app": {
     "message": "Išjungta programoje Dannex Download Manager"
   },
@@ -283,9 +268,6 @@
   },
   "toolbar_store": {
     "message": "Gauti automatinius naujinimus iš Chrome internetinės parduotuvės..."
-  },
-  "options_take_note": {
-    "message": "Kai išjungta, atsisiuntimai lieka naršyklėje. Spustelėjus plėtinio mygtuką padaroma tas pats."
   },
   "options_what_to_do": {
     "message": "Žiūrėti, ką daryti"
@@ -439,5 +421,8 @@
   },
   "page_learn_more": {
     "message": "Sužinoti daugiau"
+  },
+  "popup_fix": {
+    "message": "Žiūrėti, ką daryti"
   }
 }

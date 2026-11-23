@@ -248,21 +248,6 @@
   "badge_off": {
     "message": "خاموش"
   },
-  "tip_on": {
-    "message": "Dannex Download Manager روشن است. برای خاموش کردن کلیک کنید."
-  },
-  "tip_off": {
-    "message": "Dannex Download Manager خاموش است. برای روشن کردن کلیک کنید."
-  },
-  "tip_remote": {
-    "message": "بارگیری‌ها به Dannex Download Manager در $address$ می‌روند. برای خاموش کردن کلیک کنید.",
-    "placeholders": {
-      "address": {
-        "content": "$1",
-        "example": "https://192.168.1.10:8463/"
-      }
-    }
-  },
   "status_off_in_app": {
     "message": "در Dannex Download Manager خاموش است"
   },
@@ -283,9 +268,6 @@
   },
   "toolbar_store": {
     "message": "دریافت به‌روزرسانی خودکار از فروشگاه وب Chrome..."
-  },
-  "options_take_note": {
-    "message": "وقتی خاموش است، بارگیری‌ها در مرورگر می‌مانند. کلیک روی دکمه افزونه هم همین کار را می‌کند."
   },
   "options_what_to_do": {
     "message": "ببینید چه کار باید کرد"
@@ -439,5 +421,8 @@
   },
   "page_learn_more": {
     "message": "اطلاعات بیشتر"
+  },
+  "popup_fix": {
+    "message": "ببینید چه کار باید کرد"
   }
 }

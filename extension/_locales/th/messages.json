@@ -248,21 +248,6 @@
   "badge_off": {
     "message": "ปิด"
   },
-  "tip_on": {
-    "message": "Dannex Download Manager เปิดอยู่ คลิกเพื่อปิด"
-  },
-  "tip_off": {
-    "message": "Dannex Download Manager ปิดอยู่ คลิกเพื่อเปิด"
-  },
-  "tip_remote": {
-    "message": "การดาวน์โหลดไปที่ Dannex Download Manager ที่ $address$ คลิกเพื่อปิด",
-    "placeholders": {
-      "address": {
-        "content": "$1",
-        "example": "https://192.168.1.10:8463/"
-      }
-    }
-  },
   "status_off_in_app": {
     "message": "ปิดใน Dannex Download Manager"
   },
@@ -283,9 +268,6 @@
   },
   "toolbar_store": {
     "message": "รับการอัปเดตอัตโนมัติจาก Chrome เว็บสโตร์..."
-  },
-  "options_take_note": {
-    "message": "เมื่อปิดอยู่ การดาวน์โหลดจะอยู่ในเบราว์เซอร์ การคลิกปุ่มของส่วนขยายก็ทำแบบเดียวกัน"
   },
   "options_what_to_do": {
     "message": "ดูวิธีแก้ไข"
@@ -439,5 +421,8 @@
   },
   "page_learn_more": {
     "message": "ดูเพิ่มเติม"
+  },
+  "popup_fix": {
+    "message": "ดูวิธีแก้ไข"
   }
 }

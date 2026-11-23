@@ -248,21 +248,6 @@
   "badge_off": {
     "message": "VÄL"
   },
-  "tip_on": {
-    "message": "Dannex Download Manager on sisse lülitatud. Klõpsa, et see välja lülitada."
-  },
-  "tip_off": {
-    "message": "Dannex Download Manager on välja lülitatud. Klõpsa, et see sisse lülitada."
-  },
-  "tip_remote": {
-    "message": "Allalaadimised lähevad rakendusse Dannex Download Manager aadressil $address$. Klõpsa, et see välja lülitada.",
-    "placeholders": {
-      "address": {
-        "content": "$1",
-        "example": "https://192.168.1.10:8463/"
-      }
-    }
-  },
   "status_off_in_app": {
     "message": "Rakenduses Dannex Download Manager välja lülitatud"
   },
@@ -283,9 +268,6 @@
   },
   "toolbar_store": {
     "message": "Hangi automaatsed värskendused Chrome'i veebipoest..."
-  },
-  "options_take_note": {
-    "message": "Kui see on väljas, jäävad allalaadimised brauserisse. Laiendi nupul klõpsamine teeb sama."
   },
   "options_what_to_do": {
     "message": "Vaata, mida teha"
@@ -439,5 +421,8 @@
   },
   "page_learn_more": {
     "message": "Loe lähemalt"
+  },
+  "popup_fix": {
+    "message": "Vaata, mida teha"
   }
 }

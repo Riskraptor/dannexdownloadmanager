@@ -54,6 +54,15 @@ These ship in a later version, when they're ready.
 
 - ✅ A plainer tagline on the website, the README and About
 
+- ✅ The extension's toolbar button opens a panel at once: how things stand, the on/off switch,
+  Download video and Download all links from the page, the status page and the options
+
+- ✅ Unfinished downloads' pieces kept beside the file (or in Options' temporary folder) and always
+  cleaned up; the folder DDM made for a download removed with it when empty; leftovers older than a
+  day swept at start, and Downloads → Clean Up Temporary Files says what it freed
+
+- ✅ A finished download whose file was moved or deleted shows File missing and offers Redownload
+
 ### Planned
 
 - 📋 Helium: DDM offering it the extension on Linux and macOS, through Helium's own services: built,

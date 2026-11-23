@@ -1187,6 +1187,10 @@
 #. a country's name (where a download's server is)
 #, machine
 	Christmas Island	圣诞岛
+#. message or event log entry in the main window
+#. The title of Clean Up Temporary Files' answer.
+#, machine
+	Clean Up Temporary Files	清理临时文件
 #. button in the download list
 #. verb: clears this filter
 #, machine
@@ -1904,6 +1908,10 @@
 #. in Download a gallery, after the "Files at most" box
 #, machine
 	Empty: all of them. On most sites the newest come first.	留空：全部。在大多数网站上，最新的文件排在最前面。
+#. text in the Options window
+#. \\n starts a new line: break lines where they fit the translation
+#, machine
+	Empty: each download writes into a part file next to its file, which\nbecomes the file when done. A folder here holds the part files instead.\nDDM removes leftover part files by itself (see the Downloads menu).	留空：每个下载会写入其文件旁边的部分文件，\n下载完成后该部分文件即成为最终文件。在此指定文件夹，则部分文件改为存放在该文件夹中。\nDDM 会自行删除残留的部分文件(请参阅“下载”菜单)。
 #. text in crashui.rs
 #. crash report window button: end the frozen DDM and start it again
 #, machine
@@ -2065,6 +2073,9 @@
 #. a country's name (where a download's server is)
 #, machine
 	Faroe Islands	法罗群岛
+#. text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
+#, machine
+	Fast downloads with powerful control, automatic resume and browser integration. Free and open source under the GNU GPL, version 3 or later.	快速下载，功能强大且可控，支持自动续传和浏览器集成。免费开源，遵循 GNU GPL 第 3 版或更高版本。
 #. text in the dates and times (the Scheduler window, the download list, Statistics)
 #, machine
 	February	二月
@@ -2096,6 +2107,10 @@
 #. noun: a file of no known type
 #, machine
 	File	文件
+#. text in the download list (sizes, speeds, status); text in a download's progress window
+#. a download's status: it finished, but its file is no longer on the disk (deleted or moved by another program); right-click → Redownload gets it again
+#, machine
+	File missing	文件丢失
 #. text in the Scheduler window
 #, machine
 	File Name	文件名
@@ -2550,6 +2565,9 @@
 #. a country's name (where a download's server is)
 #, machine
 	Hungary	匈牙利
+#. text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
+#, machine
+	I download with Dannex Download Manager: fast, free and built for powerful control. {link}	我用 Dannex Download Manager 下载：快速、免费，功能强大且可控。{link}
 #. text in countries.rs
 #. a country's name (where a download's server is)
 #, machine
@@ -3456,6 +3474,10 @@
 #. text in langpick.rs
 #, machine
 	No language matches.	无匹配语言。
+#. message or event log entry in the main window
+#. Downloads → Clean Up Temporary Files found nothing to remove.
+#, machine
+	No leftover temporary files were found.	未找到残留的临时文件。
 #. text in the Options window
 #. Options → Remote → Status: on, but the computer has no local network address now
 #, machine
@@ -3881,6 +3903,10 @@
 #. a country's name (where a download's server is)
 #, machine
 	Paraguay	巴拉圭
+#. text in the Options window
+#. \\n starts a new line: break lines where they fit the translation
+#, machine
+	Part files stay here until their downloads complete. On another drive\nthan a download's folder, its file is then copied over. DDM removes\nleftovers by itself. Empty it to write next to each file again.	部分文件会保留在此处，直到其下载完成。如果与下载的文件夹位于不同驱动器，\n文件随后会被复制到该文件夹。DDM 会自行删除\n残留文件。清空此项可再次写入到每个文件旁边。
 #. text in the Batch download window; text in a dialog box; label in the Options window; text in the Options window
 #, machine
 	Password	密码
@@ -4177,6 +4203,11 @@
 #. {name} = a file name (keep the braces as they are)
 #, machine
 	Remove {name} from the list?	从列表中删除 {name}？
+#. message or event log entry in the main window
+#. Downloads → Clean Up Temporary Files' answer: {count} files, {size} like "1.2 GB".
+#. {count} = a number; {size} = a file size such as "4.2 MB" (keep the braces as they are)
+#, machine
+	Removed {count} leftover temporary files ({size} freed).	已删除 {count} 个残留的临时文件(释放了 {size})。
 #. text in a download's progress window
 #. noun: label before the deferred new file or folder name in the progress window
 #, machine
@@ -5258,10 +5289,22 @@
 #. reason shown on the Rename box when the entered name exceeds the length limit
 #, machine
 	The name is too long	名称过长
+#. text in netwatch.rs
+#. the network as a whole (no adapter has an address); shown as {adapter} in "Stopped: {adapter} is not connected; it goes on when it is back"
+#, machine
+	the network	网络
 #. text in errors.rs; text in torrent downloads
 #. an error: the network adapter chosen in Options (a VPN's, usually) is off or gone; {adapter} its name
 #, machine
 	the network adapter {adapter} is not connected	网络适配器 {adapter} 未连接
+#. message or event log entry in the main window
+#. event log entry: the download kept failing on the network for about an hour and is no longer started again by itself
+#, machine
+	The network failed too long; no longer trying by itself	网络故障时间过长；不再自动重试
+#. message or event log entry in the main window
+#. event log entry: the download failed because the network did (no connection, one gone quiet); it starts again by itself after {seconds} seconds
+#, machine
+	The network failed; trying again in {seconds} s	网络故障；将在 {seconds} 秒后重试
 #. text in the Site grabber window (Tasks → Run site grabber)
 #. Site grabber: what the Whole site template collects
 #, machine
@@ -6437,6 +6480,11 @@
 #, machine
 	{column} contains	{column} 包含
 #. message or event log entry in the main window
+#. Clean Up Temporary Files: some files are open in another program.
+#. {count} = a number (keep the braces as they are)
+#, machine
+	{count} could not be removed (in use by another program).	有 {count} 个无法删除(正被其他程序使用)。
+#. message or event log entry in the main window
 #. {count} = "2 downloading"; {speed} = all of them together, like "1.25 MB/sec"
 #. {count} = a number (keep the braces as they are)
 #, machine
@@ -6848,11 +6896,11 @@ extension	Dannex Download Manager is installed	Dannex Download Manager 已安装
 #. text in the browser extension
 #. tooltip of the extension's toolbar button while it is turned off (downloads stay in the browser); keep the name Dannex Download Manager as it is
 #, machine
-extension	Dannex Download Manager is off. Click to turn it on.	Dannex Download Manager 已关闭。点击以开启。
+extension	Dannex Download Manager is off.	Dannex Download Manager 已关闭。
 #. text in the browser extension
 #. tooltip of the extension's toolbar button while it sends downloads to the app; keep the name Dannex Download Manager as it is
 #, machine
-extension	Dannex Download Manager is on. Click to turn it off.	Dannex Download Manager 已开启。点击以关闭。
+extension	Dannex Download Manager is on.	Dannex Download Manager 已开启。
 #. text in the browser extension
 #. headline of the extension's status page, and the first line of its toolbar button's tooltip: the browser can't find the app on this computer; keep the name Dannex Download Manager as it is
 #, machine
@@ -6886,6 +6934,10 @@ extension	Don't take downloads from this site	不接管此站点的下载
 #, machine
 extension	Download all images with DDM	使用 DDM 下载所有图像
 #. text in the browser extension
+#. a button in the extension's toolbar panel: sends every link in the current tab to Dannex Download Manager's link grabber
+#, machine
+extension	Download all links from this page	下载此页面上的所有链接
+#. text in the browser extension
 #. command in the browser's right-click menu on a page: download the links of the whole page; keep the name Dannex Download Manager as it is
 #, machine
 extension	Download all links with DDM	使用 DDM 下载所有链接
@@ -6910,6 +6962,10 @@ extension	Download through this browser's VPN or proxy	通过此浏览器的 VPN
 #, machine
 extension	Download video	下载视频
 #. text in the browser extension
+#. a button in the panel the extension's toolbar button opens: sends the video the current tab plays to Dannex Download Manager's Download video window
+#, machine
+extension	Download video from this page	下载此页面上的视频
+#. text in the browser extension
 #. command in the browser's right-click menu on a link, picture, video or sound; keep the name Dannex Download Manager as it is
 #, machine
 extension	Download with DDM	使用 DDM 下载
@@ -6924,7 +6980,7 @@ extension	Downloads go to another Dannex Download Manager	下载将发送到另�
 #. text in the browser extension
 #. tooltip of the extension's toolbar button while downloads go to another computer's Dannex Download Manager; $address$ is its web address; keep the name Dannex Download Manager as it is
 #, machine
-extension	Downloads go to the Dannex Download Manager at {address}. Click to turn it off.	下载将发送到 {address} 上的 Dannex Download Manager。点击以关闭。
+extension	Downloads go to the Dannex Download Manager at {address}.	下载将发送到位于 {address} 的 Dannex Download Manager。
 #. text in the browser extension
 #. the toolbar button's status while downloads go to another DDM
 #, machine
@@ -6945,6 +7001,10 @@ extension	Drag to move it along the video's edge	拖动以沿视频边缘移动
 #. the address typed isn't an https:// address
 #, machine
 extension	Enter its https:// address.	输入其 https:// 地址。
+#. text in the browser extension
+#. a button in the extension's toolbar panel: opens the extension's own options page
+#, machine
+extension	Extension options	扩展选项
 #. text in the browser extension
 #. the status page (an extension page that says whether the browser reaches Dannex Download Manager and how to fix it) in Firefox, for an add-on loaded with Load Temporary Add-on
 #, machine
@@ -7136,6 +7196,7 @@ extension	Run the setup you downloaded.	运行您下载的安装程序。
 extension	Security software is the usual cause. Allow Dannex Download Manager in your antivirus program, or install it again.	通常是安全软件所致。请在杀毒程序中允许 Dannex Download Manager，或重新安装。
 #. text in the browser extension
 #. link on the extension's options page, after a line saying what is wrong: opens the extension's status page
+#. a button in the extension's toolbar panel while Dannex Download Manager can't be reached: opens the status page that explains what to do
 #, machine
 extension	See what to do	查看处理方法
 #. text in the browser extension
@@ -7143,7 +7204,7 @@ extension	See what to do	查看处理方法
 #, machine
 extension	Send downloads to	将下载发送到
 #. text in the browser extension
-#. label of the on/off switch on the extension's status and options pages (the same as a click on its toolbar button): when on, downloads started in this browser go to the app; keep the name Dannex Download Manager as it is
+#. label of the on/off switch on the extension's status and options pages and in the panel its toolbar button opens: when on, downloads started in this browser go to the app; keep the name Dannex Download Manager as it is
 #, machine
 extension	Send downloads to Dannex Download Manager	将下载发送到 Dannex Download Manager
 #. text in the browser extension
@@ -7158,6 +7219,10 @@ extension	Something is blocking Dannex Download Manager	有程序正在阻止 Da
 #. read out by screen readers in the menu of qualities under the download button over a video, after the user picked a quality while the app is still looking the video up: the download starts by itself once the app has finished; keep the short name DDM as it is
 #, machine
 extension	Starting as soon as DDM is ready…	DDM 就绪后立即开始…
+#. text in the browser extension
+#. a button in the extension's toolbar panel: opens the extension's status page
+#, machine
+extension	Status and help	状态和帮助
 #. text in the browser extension
 #. link at the bottom of the extension's status and options pages, beside Help: opens the maintainer's page for donations (GitHub Sponsors) in a new tab; keep DDM as it is (the short name of Dannex Download Manager)
 #, machine
@@ -7215,6 +7280,10 @@ extension	This extension isn't allowed on that site.	此扩展不允许在该站
 #, machine
 extension	This extension works with Dannex Download Manager, a free download manager for your computer. Install it, and this page updates by itself.	此扩展配合 Dannex Download Manager 使用，这是一款适用于电脑的免费下载管理器。安装后，此页面会自动更新。
 #. text in the browser extension
+#. shown in the extension's toolbar panel when the current tab has no links
+#, machine
+extension	This page has no links to download.	此页面没有可下载的链接。
+#. text in the browser extension
 #. the status page (an extension page that says whether the browser reaches Dannex Download Manager and how to fix it): the app refuses this copy of the extension; keep the name Dannex Download Manager as it is
 #, machine
 extension	This version of Dannex Download Manager is too old for this extension. Install the latest one.	此版本的 Dannex Download Manager 对此扩展而言太旧。请安装最新版本。
@@ -7257,7 +7326,7 @@ extension	Wait a moment, then try again.	请稍候片刻，然后重试。
 #. text in the browser extension
 #. note under the on/off switch on the extension's options page: a click on the extension's toolbar button turns it off and on too
 #, machine
-extension	When it's off, downloads stay in the browser. Clicking the extension's button does the same.	关闭后，下载将保留在浏览器中。点击扩展按钮也有同样效果。
+extension	When it's off, downloads stay in the browser. The extension's button has the same switch.	关闭后，下载将保留在浏览器中。扩展的按钮具有相同的开关。
 #. text in the browser extension
 #. pairing failed: the code was wrong
 #, machine
@@ -7686,6 +7755,11 @@ menu	Choose c&olumns...	选择列(&O)...
 #. View → Theme: DDM's own look, the default (the classic download manager's layout, Windows 11's controls)
 #, machine
 menu	Classic	经典
+#. menu command in the main window
+#. Downloads menu: removes the part files of downloads no longer in the list (left by a crash, a power cut, a removed download)
+#. & marks the keyboard shortcut letter: keep one & before a letter of the translation
+#, machine
+menu	Clean &Up Temporary Files	清理临时文件(&U)
 #. menu command in the main window
 #. & marks the keyboard shortcut letter: keep one & before a letter of the translation
 #, machine

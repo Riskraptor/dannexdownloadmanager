@@ -26,8 +26,8 @@ for (const kind of ["chromium", "chrome-store", "firefox", "safari"]) {
   const dir = new URL(`${kind}/`, out);
   const m = JSON.parse(readFileSync(new URL("manifest.json", dir), "utf8"));
   assert.equal(m.version, version, `${kind}: the app's version`);
-  // A click on the toolbar button turns taking downloads off and on (background.js): no popup.
-  assert.ok(m.action && !m.action.default_popup, `${kind}: the toolbar button has no popup`);
+  // The toolbar button opens its panel (popup.html): the switch, the tab's video and links, the pages.
+  assert.equal(m.action && m.action.default_popup, "popup.html", `${kind}: the toolbar button opens its panel`);
   assert.ok(m.options_ui && m.options_ui.page, `${kind}: an options page`);
   const files = [
     m.background.service_worker,
@@ -37,18 +37,19 @@ for (const kind of ["chromium", "chrome-store", "firefox", "safari"]) {
     ...Object.values(m.action.default_icon),
     ...m.content_scripts.flatMap((c) => c.js),
     // Opened by background.js: the status page, the toolbar button's grey look.
+    m.action.default_popup,
     "install.html",
     "icons/icon-off-16.png",
     "icons/icon-off-24.png",
     "icons/icon-off-32.png",
   ].filter(Boolean);
   for (const f of files) assert.ok(existsSync(new URL(f, dir)), `${kind}: ${f} is there`);
-  // The Downloads and links window is gone: nothing of it ships.
-  for (const gone of ["popup.html", "popup.js", "popup.css"]) assert.ok(!existsSync(new URL(gone, dir)), `${kind}: no ${gone}`);
+  // The old Downloads and links window's stylesheet is gone: the panel uses the pages' own.
+  assert.ok(!existsSync(new URL("popup.css", dir)), `${kind}: no popup.css`);
   // Nothing asks for a permission it no longer uses (the toolbar button counts no downloads).
   assert.ok(!(m.permissions || []).includes("alarms"), `${kind}: no alarms permission`);
   // Every script and stylesheet the pages load is in the package.
-  for (const page of ["install.html", "options.html"]) {
+  for (const page of ["install.html", "options.html", "popup.html"]) {
     const html = readFileSync(new URL(page, dir), "utf8");
     for (const [, f] of html.matchAll(/(?:src|href)="([\w.-]+\.(?:js|css))"/g)) assert.ok(existsSync(new URL(f, dir)), `${kind}: ${page} loads ${f}, which is there`);
   }

@@ -249,13 +249,13 @@
     "message": "OFF"
   },
   "tip_on": {
-    "message": "Dannex Download Manager açık. Kapatmak için tıklayın."
+    "message": "Dannex Download Manager açık."
   },
   "tip_off": {
-    "message": "Dannex Download Manager kapalı. Açmak için tıklayın."
+    "message": "Dannex Download Manager kapalı."
   },
   "tip_remote": {
-    "message": "İndirmeler $address$ adresindeki Dannex Download Manager uygulamasına gidiyor. Kapatmak için tıklayın.",
+    "message": "İndirmeler $address$ adresindeki Dannex Download Manager uygulamasına gider.",
     "placeholders": {
       "address": {
         "content": "$1",
@@ -285,7 +285,7 @@
     "message": "Chrome Web Mağazası'ndan otomatik güncelleştirmeleri al..."
   },
   "options_take_note": {
-    "message": "Kapalıyken indirmeler tarayıcıda kalır. Uzantının düğmesine tıklamak da aynı işi görür."
+    "message": "Kapalıyken indirmeler tarayıcıda kalır. Uzantının düğmesinde de aynı anahtar vardır."
   },
   "options_what_to_do": {
     "message": "Ne yapılacağını gör"
@@ -439,5 +439,23 @@
   },
   "page_learn_more": {
     "message": "Daha fazla bilgi"
+  },
+  "popup_video": {
+    "message": "Bu sayfadaki videoyu indir"
+  },
+  "popup_all": {
+    "message": "Bu sayfadaki tüm bağlantıları indir"
+  },
+  "popup_no_links": {
+    "message": "Bu sayfada indirilecek bağlantı yok."
+  },
+  "popup_status": {
+    "message": "Durum ve yardım"
+  },
+  "popup_options": {
+    "message": "Uzantı seçenekleri"
+  },
+  "popup_fix": {
+    "message": "Ne yapılacağını gör"
   }
 }

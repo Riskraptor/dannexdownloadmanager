@@ -275,6 +275,29 @@ input[type="radio"] { flex: none; margin: 0; accent-color: var(--primary); }
 .choice { display: flex; align-items: center; gap: 8px; margin-block-start: 8px; cursor: pointer; }
 #remote-form { margin-block-start: 6px; padding-inline-start: 24px; }
 
+/* The toolbar button's panel (popup.html): the status page's mark and switch, small, then a
+   column of things to do. */
+body.popup {
+  width: 340px;
+  margin: 0;
+  padding: 14px;
+  background: var(--bg);
+  color: var(--text);
+  font: 14px/1.45 "Segoe UI Variable Text", "Segoe UI", system-ui, -apple-system, "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+.popup .page-head { margin-block-end: 12px; }
+.popup .hero { gap: 12px; padding: 14px; border-radius: 12px; }
+.popup .hero h1 { margin: 1px 0 2px; font-size: 15px; }
+.popup .hero .lead { font-size: 13px; }
+.popup .hero .lead:empty { display: none; }
+.popup .state-mark { width: 30px; height: 30px; font-size: 15px; }
+.popup .card { margin-block-start: 10px; padding: 12px 14px; }
+.popup .wide { width: 100%; margin-block-start: 10px; }
+.menu { display: flex; flex-direction: column; gap: 6px; margin-block-start: 10px; padding-block-start: 10px; border-block-start: 1px solid var(--line); }
+.menu button { justify-content: flex-start; width: 100%; text-align: start; }
+.menu .note:empty { display: none; }
+
 footer {
   display: flex;
   justify-content: space-between;

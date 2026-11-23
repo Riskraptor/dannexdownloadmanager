@@ -248,21 +248,6 @@
   "badge_off": {
     "message": "ВИМК"
   },
-  "tip_on": {
-    "message": "Dannex Download Manager увімкнено. Натисніть, щоб вимкнути."
-  },
-  "tip_off": {
-    "message": "Dannex Download Manager вимкнено. Натисніть, щоб увімкнути."
-  },
-  "tip_remote": {
-    "message": "Завантаження надходять до Dannex Download Manager за адресою $address$. Натисніть, щоб вимкнути.",
-    "placeholders": {
-      "address": {
-        "content": "$1",
-        "example": "https://192.168.1.10:8463/"
-      }
-    }
-  },
   "status_off_in_app": {
     "message": "Вимкнено в Dannex Download Manager"
   },
@@ -283,9 +268,6 @@
   },
   "toolbar_store": {
     "message": "Отримувати автоматичні оновлення з Веб-магазину Chrome..."
-  },
-  "options_take_note": {
-    "message": "Коли розширення вимкнено, завантаження залишаються в браузері. Те саме робить натискання кнопки розширення."
   },
   "options_what_to_do": {
     "message": "Що робити"
@@ -439,5 +421,8 @@
   },
   "page_learn_more": {
     "message": "Докладніше"
+  },
+  "popup_fix": {
+    "message": "Що робити"
   }
 }

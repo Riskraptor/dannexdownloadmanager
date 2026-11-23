@@ -248,21 +248,6 @@
   "badge_off": {
     "message": "OFF"
   },
-  "tip_on": {
-    "message": "Naka-on ang Dannex Download Manager. I-click para i-off."
-  },
-  "tip_off": {
-    "message": "Naka-off ang Dannex Download Manager. I-click para i-on."
-  },
-  "tip_remote": {
-    "message": "Napupunta ang mga download sa Dannex Download Manager sa $address$. I-click para i-off.",
-    "placeholders": {
-      "address": {
-        "content": "$1",
-        "example": "https://192.168.1.10:8463/"
-      }
-    }
-  },
   "status_off_in_app": {
     "message": "Naka-off sa Dannex Download Manager"
   },
@@ -283,9 +268,6 @@
   },
   "toolbar_store": {
     "message": "Kumuha ng mga awtomatikong update mula sa Chrome Web Store..."
-  },
-  "options_take_note": {
-    "message": "Kapag naka-off ito, nananatili sa browser ang mga download. Ganoon din ang epekto ng pag-click sa button ng extension."
   },
   "options_what_to_do": {
     "message": "Tingnan ang gagawin"
@@ -442,5 +424,8 @@
   },
   "page_learn_more": {
     "message": "Matuto pa"
+  },
+  "popup_fix": {
+    "message": "Tingnan ang gagawin"
   }
 }

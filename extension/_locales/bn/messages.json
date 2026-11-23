@@ -248,21 +248,6 @@
   "badge_off": {
     "message": "বন্ধ"
   },
-  "tip_on": {
-    "message": "Dannex Download Manager চালু আছে। বন্ধ করতে ক্লিক করুন।"
-  },
-  "tip_off": {
-    "message": "Dannex Download Manager বন্ধ আছে। চালু করতে ক্লিক করুন।"
-  },
-  "tip_remote": {
-    "message": "ডাউনলোড $address$-এ থাকা Dannex Download Manager-এ যায়। বন্ধ করতে ক্লিক করুন।",
-    "placeholders": {
-      "address": {
-        "content": "$1",
-        "example": "https://192.168.1.10:8463/"
-      }
-    }
-  },
   "status_off_in_app": {
     "message": "Dannex Download Manager-এ বন্ধ করা আছে"
   },
@@ -283,9 +268,6 @@
   },
   "toolbar_store": {
     "message": "Chrome ওয়েব স্টোর থেকে স্বয়ংক্রিয় আপডেট নিন..."
-  },
-  "options_take_note": {
-    "message": "বন্ধ থাকলে ডাউনলোড ব্রাউজারেই থাকে। এক্সটেনশনের বোতামে ক্লিক করলেও একই হয়।"
   },
   "options_what_to_do": {
     "message": "কী করতে হবে দেখুন"
@@ -439,5 +421,8 @@
   },
   "page_learn_more": {
     "message": "আরও জানুন"
+  },
+  "popup_fix": {
+    "message": "কী করতে হবে দেখুন"
   }
 }

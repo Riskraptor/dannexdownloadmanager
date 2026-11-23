@@ -249,13 +249,13 @@
     "message": "꺼짐"
   },
   "tip_on": {
-    "message": "Dannex Download Manager 켜짐. 클릭하여 끄세요."
+    "message": "Dannex Download Manager이(가) 켜져 있습니다."
   },
   "tip_off": {
-    "message": "Dannex Download Manager 꺼짐. 클릭하여 켜세요."
+    "message": "Dannex Download Manager이(가) 꺼져 있습니다."
   },
   "tip_remote": {
-    "message": "다운로드가 $address$의 Dannex Download Manager(으)로 전달됩니다. 끄려면 클릭하세요.",
+    "message": "다운로드는 $address$의 Dannex Download Manager(으)로 전송됩니다.",
     "placeholders": {
       "address": {
         "content": "$1",
@@ -285,7 +285,7 @@
     "message": "Chrome 웹 스토어에서 자동 업데이트 받기..."
   },
   "options_take_note": {
-    "message": "꺼져 있으면 다운로드가 브라우저에 남습니다. 확장 프로그램의 단추를 클릭해도 같은 동작을 합니다."
+    "message": "꺼져 있으면 다운로드가 브라우저에 남습니다. 확장 프로그램 버튼에도 같은 스위치가 있습니다."
   },
   "options_what_to_do": {
     "message": "해결 방법 보기"
@@ -439,5 +439,23 @@
   },
   "page_learn_more": {
     "message": "자세히 알아보기"
+  },
+  "popup_video": {
+    "message": "이 페이지의 동영상 다운로드"
+  },
+  "popup_all": {
+    "message": "이 페이지의 모든 링크 다운로드"
+  },
+  "popup_no_links": {
+    "message": "이 페이지에는 다운로드할 링크가 없습니다."
+  },
+  "popup_status": {
+    "message": "상태 및 도움말"
+  },
+  "popup_options": {
+    "message": "확장 프로그램 옵션"
+  },
+  "popup_fix": {
+    "message": "해결 방법 보기"
   }
 }
