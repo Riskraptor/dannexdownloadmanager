@@ -1908,10 +1908,6 @@
 #. in Download a gallery, after the "Files at most" box
 #, machine
 	Empty: all of them. On most sites the newest come first.	Boʻsh: ularning hammasi. Koʻpgina saytlarda eng yangilari birinchi keladi.
-#. text in the Options window
-#. \\n starts a new line: break lines where they fit the translation
-#, machine
-	Empty: each download writes straight into a part file next to its file,\nso nothing is copied at the end. A folder here holds the part files\nuntil their downloads complete.	Boʻsh: har bir yuklab olish oʻz faylining yonidagi qismlar fayliga toʻgʻridan-toʻgʻri yozadi,\nshuning uchun oxirida hech narsa nusxalanmaydi. Bu yerdagi jild qismlar fayllarini\nyuklab olishlar tugaguncha saqlaydi.
 #. text in crashui.rs
 #. crash report window button: end the frozen DDM and start it again
 #, machine
@@ -2558,9 +2554,6 @@
 #. a country's name (where a download's server is)
 #, machine
 	Hungary	Vengriya
-#. text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
-#, machine
-	I download with Dannex Download Manager: fast, free, and it looks like the download manager you already know. {link}	Men Dannex Download Manager orqali yuklab olaman: tez, bepul va u siz allaqachon bilgan yuklab olish menejeriga oʻxshaydi. {link}
 #. text in countries.rs
 #. a country's name (where a download's server is)
 #, machine
@@ -3892,10 +3885,6 @@
 #. a country's name (where a download's server is)
 #, machine
 	Paraguay	Paragvay
-#. text in the Options window
-#. \\n starts a new line: break lines where they fit the translation
-#, machine
-	Part files stay here until their downloads complete. On another drive\nthan a download's folder, its file is then copied over. Empty it to\nwrite next to each file again.	Qismlar fayllari yuklab olishlar tugaguncha shu yerda turadi. Yuklab olish jildidan boshqa\ndiskda boʻlsa, fayl keyin oʻsha yerga nusxalanadi. Har bir fayl yoniga qayta\nyozish uchun buni boʻsh qoldiring.
 #. text in the Batch download window; text in a dialog box; label in the Options window; text in the Options window
 #, machine
 	Password	Parol
@@ -5179,9 +5168,6 @@
 #. {error} = an error message (keep the braces as they are)
 #, machine
 	The download list could not be saved: {error}. Changes are kept while DDM runs.	Yuklab olish roʻyxatini saqlab boʻlmadi: {error}. Oʻzgarishlar DDM ishlayotgan vaqtda saqlanadi.
-#. text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
-#, machine
-	The download manager you already know, rebuilt to be faster. Free and open source under the GNU GPL, version 3 or later.	Siz allaqachon biladigan yuklab olish menejeri, tezroq ishlashi uchun qaytadan qurilgan. GNU GPL, 3-versiya yoki undan yangisi ostida bepul va ochiq manbali.
 #. text in a dialog box
 #, machine
 	The download queue is done.	Yuklab olish navbati tugadi.

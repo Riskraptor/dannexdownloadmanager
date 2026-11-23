@@ -1908,10 +1908,6 @@
 #. in Download a gallery, after the "Files at most" box
 #, machine
 	Empty: all of them. On most sites the newest come first.	Deixar baleiro: todos. Na maioría dos sitios, os máis recentes aparecen primeiro.
-#. text in the Options window
-#. \\n starts a new line: break lines where they fit the translation
-#, machine
-	Empty: each download writes straight into a part file next to its file,\nso nothing is copied at the end. A folder here holds the part files\nuntil their downloads complete.	Baleiro: cada descarga escribe directamente nun ficheiro parcial xunto ao seu ficheiro,\npolo que non se copia nada ao final. Un cartafol aquí garda os ficheiros parciais\naté que remate a descarga.
 #. text in crashui.rs
 #. crash report window button: end the frozen DDM and start it again
 #, machine
@@ -2558,9 +2554,6 @@
 #. a country's name (where a download's server is)
 #, machine
 	Hungary	Hungría
-#. text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
-#, machine
-	I download with Dannex Download Manager: fast, free, and it looks like the download manager you already know. {link}	Descargo con Dannex Download Manager: é rápido, gratuíto e semella o xestor de descargas que xa coñeces. {link}
 #. text in countries.rs
 #. a country's name (where a download's server is)
 #, machine
@@ -3892,10 +3885,6 @@
 #. a country's name (where a download's server is)
 #, machine
 	Paraguay	Paraguai
-#. text in the Options window
-#. \\n starts a new line: break lines where they fit the translation
-#, machine
-	Part files stay here until their downloads complete. On another drive\nthan a download's folder, its file is then copied over. Empty it to\nwrite next to each file again.	Os ficheiros parciais quedan aquí ata que rematan as súas descargas. Se está noutra\nunidade que o cartafol da descarga, o ficheiro cópiase despois. Déixao baleiro\npara volver escribir xunto a cada ficheiro.
 #. text in the Batch download window; text in a dialog box; label in the Options window; text in the Options window
 #, machine
 	Password	Contrasinal
@@ -5179,9 +5168,6 @@
 #. {error} = an error message (keep the braces as they are)
 #, machine
 	The download list could not be saved: {error}. Changes are kept while DDM runs.	Non se puido gardar a lista de descargas: {error}. Os cambios mantéñense mentres se executa DDM.
-#. text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
-#, machine
-	The download manager you already know, rebuilt to be faster. Free and open source under the GNU GPL, version 3 or later.	O xestor de descargas que xa coñeces, reconstruído para ser máis rápido. Gratuíto e de código aberto baixo a GNU GPL, versión 3 ou posterior.
 #. text in a dialog box
 #, machine
 	The download queue is done.	A cola de descargas rematou.

@@ -1904,10 +1904,6 @@
 #. in Download a gallery, after the "Files at most" box
 #, machine
 	Empty: all of them. On most sites the newest come first.	空白：全部。在大多數網站上，最新的檔案會先顯示。
-#. text in the Options window
-#. \\n starts a new line: break lines where they fit the translation
-#, machine
-	Empty: each download writes straight into a part file next to its file,\nso nothing is copied at the end. A folder here holds the part files\nuntil their downloads complete.	留空：每個下載會直接寫入其檔案旁的部分檔案，\n因此結束時不需複製。若在此指定資料夾，部分檔案\n會保留在其中，直到下載完成。
 #. text in crashui.rs
 #. crash report window button: end the frozen DDM and start it again
 #, machine
@@ -2546,9 +2542,6 @@
 #. a country's name (where a download's server is)
 #, machine
 	Hungary	匈牙利
-#. text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
-#, machine
-	I download with Dannex Download Manager: fast, free, and it looks like the download manager you already know. {link}	我使用 Dannex Download Manager 下載：快速、免費，而且它看起來就像您已經知道的下載管理員。{link}
 #. text in countries.rs
 #. a country's name (where a download's server is)
 #, machine
@@ -3880,10 +3873,6 @@
 #. a country's name (where a download's server is)
 #, machine
 	Paraguay	巴拉圭
-#. text in the Options window
-#. \\n starts a new line: break lines where they fit the translation
-#, machine
-	Part files stay here until their downloads complete. On another drive\nthan a download's folder, its file is then copied over. Empty it to\nwrite next to each file again.	部分檔案會保留在此，直到下載完成。若與下載資料夾位於\n不同磁碟機，檔案隨後會複製過去。清空此欄位\n即可再次寫入各檔案旁。
 #. text in the Batch download window; text in a dialog box; label in the Options window; text in the Options window
 #, machine
 	Password	密碼
@@ -5167,9 +5156,6 @@
 #. {error} = an error message (keep the braces as they are)
 #, machine
 	The download list could not be saved: {error}. Changes are kept while DDM runs.	下載清單無法儲存：{error}。DDM 執行期間會保留變更。
-#. text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
-#, machine
-	The download manager you already know, rebuilt to be faster. Free and open source under the GNU GPL, version 3 or later.	您早已熟悉的下載管理員，重新打造得更快速。依據 GNU GPL 第 3 版或更新版本，免費且開放原始碼。
 #. text in a dialog box
 #, machine
 	The download queue is done.	下載佇列已完成。

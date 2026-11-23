@@ -1908,10 +1908,6 @@
 #. in Download a gallery, after the "Files at most" box
 #, machine
 	Empty: all of them. On most sites the newest come first.	Puste: wszystkie. Na większości stron najnowsze są na początku.
-#. text in the Options window
-#. \\n starts a new line: break lines where they fit the translation
-#, machine
-	Empty: each download writes straight into a part file next to its file,\nso nothing is copied at the end. A folder here holds the part files\nuntil their downloads complete.	Puste: każde pobieranie zapisuje dane bezpośrednio do pliku częściowego obok swojego pliku,\ndzięki czemu na końcu nic nie jest kopiowane. Folder wpisany tutaj przechowuje pliki częściowe\ndo ukończenia pobierania.
 #. text in crashui.rs
 #. crash report window button: end the frozen DDM and start it again
 #, machine
@@ -2558,9 +2554,6 @@
 #. a country's name (where a download's server is)
 #, machine
 	Hungary	Węgry
-#. text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
-#, machine
-	I download with Dannex Download Manager: fast, free, and it looks like the download manager you already know. {link}	Pobieram z Dannex Download Manager: szybko, bezpłatnie i wygląda jak menedżer pobierania, który już znasz. {link}
 #. text in countries.rs
 #. a country's name (where a download's server is)
 #, machine
@@ -3892,10 +3885,6 @@
 #. a country's name (where a download's server is)
 #, machine
 	Paraguay	Paragwaj
-#. text in the Options window
-#. \\n starts a new line: break lines where they fit the translation
-#, machine
-	Part files stay here until their downloads complete. On another drive\nthan a download's folder, its file is then copied over. Empty it to\nwrite next to each file again.	Pliki częściowe pozostają tutaj do ukończenia pobierania. Jeśli folder pobierania\njest na innym dysku, plik jest potem kopiowany. Wyczyść pole, aby\nznów zapisywać obok każdego pliku.
 #. text in the Batch download window; text in a dialog box; label in the Options window; text in the Options window
 #, machine
 	Password	Hasło
@@ -5179,9 +5168,6 @@
 #. {error} = an error message (keep the braces as they are)
 #, machine
 	The download list could not be saved: {error}. Changes are kept while DDM runs.	Nie można zapisać listy pobierania: {error}. Zmiany są zachowywane podczas działania DDM.
-#. text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
-#, machine
-	The download manager you already know, rebuilt to be faster. Free and open source under the GNU GPL, version 3 or later.	Menedżer pobierania, który już znasz, zbudowany od nowa, by działać szybciej. Bezpłatny i otwartoźródłowy na licencji GNU GPL, wersja 3 lub nowsza.
 #. text in a dialog box
 #, machine
 	The download queue is done.	Kolejka pobierania została zakończona.

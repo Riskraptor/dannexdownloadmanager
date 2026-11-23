@@ -1402,11 +1402,11 @@ impl OptionsDialog {
         // Inside the group box (21..401): from its controls' left edge to their right one, Browse's.
         let note = if self.s.temp_dir.trim().is_empty() {
             crate::i18n::t(
-                "Empty: each download writes straight into a part file next to its file,\nso nothing is copied at the end. A folder here holds the part files\nuntil their downloads complete.",
+                "Empty: each download writes into a part file next to its file, which\nbecomes the file when done. A folder here holds the part files instead.\nDDM removes leftover part files by itself (see the Downloads menu).",
             )
         } else {
             crate::i18n::t(
-                "Part files stay here until their downloads complete. On another drive\nthan a download's folder, its file is then copied over. Empty it to\nwrite next to each file again.",
+                "Part files stay here until their downloads complete. On another drive\nthan a download's folder, its file is then copied over. DDM removes\nleftovers by itself. Empty it to write next to each file again.",
             )
         };
         winui::paragraph(

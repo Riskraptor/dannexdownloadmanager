@@ -1908,10 +1908,6 @@
 #. in Download a gallery, after the "Files at most" box
 #, machine
 	Empty: all of them. On most sites the newest come first.	Boş bırakılırsa tümü. Çoğu sitede en yeniler önce gelir.
-#. text in the Options window
-#. \\n starts a new line: break lines where they fit the translation
-#, machine
-	Empty: each download writes straight into a part file next to its file,\nso nothing is copied at the end. A folder here holds the part files\nuntil their downloads complete.	Boş: her indirme doğrudan dosyasının yanındaki bir parça dosyasına yazar,\nböylece sonunda hiçbir şey kopyalanmaz. Buraya yazılan klasör, indirmeler\ntamamlanana kadar parça dosyalarını tutar.
 #. text in crashui.rs
 #. crash report window button: end the frozen DDM and start it again
 #, machine
@@ -2558,9 +2554,6 @@
 #. a country's name (where a download's server is)
 #, machine
 	Hungary	Macaristan
-#. text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
-#, machine
-	I download with Dannex Download Manager: fast, free, and it looks like the download manager you already know. {link}	Dannex Download Manager ile indiriyorum: hızlı, ücretsiz ve zaten bildiğiniz indirme yöneticisine benziyor. {link}
 #. text in countries.rs
 #. a country's name (where a download's server is)
 #, machine
@@ -3892,10 +3885,6 @@
 #. a country's name (where a download's server is)
 #, machine
 	Paraguay	Paraguay
-#. text in the Options window
-#. \\n starts a new line: break lines where they fit the translation
-#, machine
-	Part files stay here until their downloads complete. On another drive\nthan a download's folder, its file is then copied over. Empty it to\nwrite next to each file again.	Parça dosyaları, indirmeler tamamlanana kadar burada kalır. Bir indirmenin\nklasöründen farklı bir sürücüdeyse dosya sonra kopyalanır. Her dosyanın\nyanına yeniden yazmak için boş bırakın.
 #. text in the Batch download window; text in a dialog box; label in the Options window; text in the Options window
 #, machine
 	Password	Parola
@@ -5179,9 +5168,6 @@
 #. {error} = an error message (keep the braces as they are)
 #, machine
 	The download list could not be saved: {error}. Changes are kept while DDM runs.	İndirme listesi kaydedilemedi: {error}. DDM çalışırken değişiklikler korunur.
-#. text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
-#, machine
-	The download manager you already know, rebuilt to be faster. Free and open source under the GNU GPL, version 3 or later.	Zaten bildiğiniz indirme yöneticisi, daha hızlı olması için yeniden yazıldı. GNU GPL sürüm 3 veya sonrası altında ücretsiz ve açık kaynaklı.
 #. text in a dialog box
 #, machine
 	The download queue is done.	İndirme kuyruğu tamamlandı.

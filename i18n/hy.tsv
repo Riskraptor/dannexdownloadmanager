@@ -1904,10 +1904,6 @@
 #. in Download a gallery, after the "Files at most" box
 #, machine
 	Empty: all of them. On most sites the newest come first.	Դատարկ՝ բոլորը։ Շատ կայքերում նորագույններն առաջինն են։
-#. text in the Options window
-#. \\n starts a new line: break lines where they fit the translation
-#, machine
-	Empty: each download writes straight into a part file next to its file,\nso nothing is copied at the end. A folder here holds the part files\nuntil their downloads complete.	Դատարկ՝ յուրաքանչյուր ներբեռնում գրում է անմիջապես իր ֆայլի կողքին գտնվող մասերի ֆայլում,\nուստի վերջում ոչինչ չի պատճենվում։ Այստեղ նշված թղթապանակը պահում է մասերի ֆայլերը,\nմինչև դրանց ներբեռնումները ավարտվեն։
 #. text in crashui.rs
 #. crash report window button: end the frozen DDM and start it again
 #, machine
@@ -2554,9 +2550,6 @@
 #. a country's name (where a download's server is)
 #, machine
 	Hungary	Հունգարիա
-#. text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
-#, machine
-	I download with Dannex Download Manager: fast, free, and it looks like the download manager you already know. {link}	Ես ներբեռնում եմ Dannex Download Manager-ով՝ արագ, անվճար, և այն նման է ձեզ արդեն ծանոթ ներբեռնման կառավարչին։ {link}
 #. text in countries.rs
 #. a country's name (where a download's server is)
 #, machine
@@ -3888,10 +3881,6 @@
 #. a country's name (where a download's server is)
 #, machine
 	Paraguay	Պարագվայ
-#. text in the Options window
-#. \\n starts a new line: break lines where they fit the translation
-#, machine
-	Part files stay here until their downloads complete. On another drive\nthan a download's folder, its file is then copied over. Empty it to\nwrite next to each file again.	Մասերի ֆայլերը մնում են այստեղ, մինչև դրանց ներբեռնումները ավարտվեն։ Եթե այլ սկավառակի վրա են,\nքան ներբեռնման թղթապանակը, ֆայլը դրանից հետո պատճենվում է։ Դատարկեք այս դաշտը՝\nկրկին յուրաքանչյուր ֆայլի կողքին գրելու համար։
 #. text in the Batch download window; text in a dialog box; label in the Options window; text in the Options window
 #, machine
 	Password	Գաղտնաբառ
@@ -5175,9 +5164,6 @@
 #. {error} = an error message (keep the braces as they are)
 #, machine
 	The download list could not be saved: {error}. Changes are kept while DDM runs.	Ներբեռնումների ցուցակը չհաջողվեց պահպանել՝ {error}։ Փոփոխությունները պահպանվում են, քանի դեռ DDM-ն աշխատում է։
-#. text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
-#, machine
-	The download manager you already know, rebuilt to be faster. Free and open source under the GNU GPL, version 3 or later.	Ներբեռնումների կառավարիչը, որը դուք արդեն ճանաչում եք՝ նորովի կառուցված ավելի արագ աշխատելու համար։ Անվճար է և բաց կոդով՝ GNU GPL լիցենզիայով, 3-րդ կամ ավելի նոր տարբերակ։
 #. text in a dialog box
 #, machine
 	The download queue is done.	Ներբեռնման հերթն ավարտված է։

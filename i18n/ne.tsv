@@ -1904,10 +1904,6 @@
 #. in Download a gallery, after the "Files at most" box
 #, machine
 	Empty: all of them. On most sites the newest come first.	खाली: ती सबै। धेरैजसो साइटहरूमा नयाँ पहिले आउँछन्।
-#. text in the Options window
-#. \\n starts a new line: break lines where they fit the translation
-#, machine
-	Empty: each download writes straight into a part file next to its file,\nso nothing is copied at the end. A folder here holds the part files\nuntil their downloads complete.	खाली: प्रत्येक डाउनलोडले आफ्नो फाइलको छेउको पार्ट फाइलमा सिधै लेख्छ,\nत्यसैले अन्त्यमा केही प्रतिलिपि हुँदैन। यहाँको फोल्डरले डाउनलोड\nसकिँदासम्म पार्ट फाइलहरू राख्छ।
 #. text in crashui.rs
 #. crash report window button: end the frozen DDM and start it again
 #, machine
@@ -2554,9 +2550,6 @@
 #. a country's name (where a download's server is)
 #, machine
 	Hungary	हंगेरी
-#. text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
-#, machine
-	I download with Dannex Download Manager: fast, free, and it looks like the download manager you already know. {link}	म Dannex Download Manager मार्फत डाउनलोड गर्छु: छिटो, नि:शुल्क, र यो तपाईंले पहिले नै थाहा पाएको डाउनलोड प्रबन्धक जस्तो देखिन्छ। {link}
 #. text in countries.rs
 #. a country's name (where a download's server is)
 #, machine
@@ -3888,10 +3881,6 @@
 #. a country's name (where a download's server is)
 #, machine
 	Paraguay	पराग्वे
-#. text in the Options window
-#. \\n starts a new line: break lines where they fit the translation
-#, machine
-	Part files stay here until their downloads complete. On another drive\nthan a download's folder, its file is then copied over. Empty it to\nwrite next to each file again.	पार्ट फाइलहरू डाउनलोड सकिँदासम्म यहाँ रहन्छन्। डाउनलोडको फोल्डरभन्दा\nअर्को ड्राइभमा भए, फाइल त्यसपछि त्यहाँ प्रतिलिपि गरिन्छ। प्रत्येक फाइलको छेउमा\nफेरि लेख्न यसलाई खाली गर्नुहोस्।
 #. text in the Batch download window; text in a dialog box; label in the Options window; text in the Options window
 #, machine
 	Password	पासवर्ड
@@ -5175,9 +5164,6 @@
 #. {error} = an error message (keep the braces as they are)
 #, machine
 	The download list could not be saved: {error}. Changes are kept while DDM runs.	डाउनलोड सूची बचत गर्न सकिएन: {error}। DDM चल्दा परिवर्तनहरू राखिन्छन्।
-#. text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
-#, machine
-	The download manager you already know, rebuilt to be faster. Free and open source under the GNU GPL, version 3 or later.	तपाईंले पहिल्यै चिनेको डाउनलोड म्यानेजर, छिटो बनाउन पुनःनिर्माण गरिएको। GNU GPL संस्करण 3 वा पछिको अन्तर्गत निःशुल्क र खुला स्रोत।
 #. text in a dialog box
 #, machine
 	The download queue is done.	डाउनलोड लाम सकियो।

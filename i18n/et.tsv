@@ -1908,10 +1908,6 @@
 #. in Download a gallery, after the "Files at most" box
 #, machine
 	Empty: all of them. On most sites the newest come first.	Tühi: kõik. Enamikel saitidel on uusimad esimesed.
-#. text in the Options window
-#. \\n starts a new line: break lines where they fit the translation
-#, machine
-	Empty: each download writes straight into a part file next to its file,\nso nothing is copied at the end. A folder here holds the part files\nuntil their downloads complete.	Tühi: iga allalaadimine kirjutab otse oma faili kõrval olevasse osafaili,\nnii et lõpus midagi ei kopeerita. Siia määratud kaust hoiab osafaile,\nkuni nende allalaadimised on lõpule jõudnud.
 #. text in crashui.rs
 #. crash report window button: end the frozen DDM and start it again
 #, machine
@@ -2558,9 +2554,6 @@
 #. a country's name (where a download's server is)
 #, machine
 	Hungary	Ungari
-#. text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
-#, machine
-	I download with Dannex Download Manager: fast, free, and it looks like the download manager you already know. {link}	Laadin alla Dannex Download Manager-iga: see on kiire, tasuta ja näeb välja nagu allalaadimishaldur, mida juba tunnete. {link}
 #. text in countries.rs
 #. a country's name (where a download's server is)
 #, machine
@@ -3892,10 +3885,6 @@
 #. a country's name (where a download's server is)
 #, machine
 	Paraguay	Paraguay
-#. text in the Options window
-#. \\n starts a new line: break lines where they fit the translation
-#, machine
-	Part files stay here until their downloads complete. On another drive\nthan a download's folder, its file is then copied over. Empty it to\nwrite next to each file again.	Osafailid jäävad siia, kuni nende allalaadimised on lõpule jõudnud. Kui draiv erineb\nallalaadimise kaustast, kopeeritakse fail pärast sinna. Tühjenda väli,\net kirjutada uuesti iga faili kõrvale.
 #. text in the Batch download window; text in a dialog box; label in the Options window; text in the Options window
 #, machine
 	Password	Parool
@@ -5179,9 +5168,6 @@
 #. {error} = an error message (keep the braces as they are)
 #, machine
 	The download list could not be saved: {error}. Changes are kept while DDM runs.	Allalaadimisloendit ei saanud salvestada: {error}. Muudatused säilivad DDM-i töötamise ajal.
-#. text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
-#, machine
-	The download manager you already know, rebuilt to be faster. Free and open source under the GNU GPL, version 3 or later.	Allalaadimishaldur, mida juba tead, ehitatud kiiremaks. Tasuta ja avatud lähtekoodiga GNU GPL-i versiooni 3 või uuema alusel.
 #. text in a dialog box
 #, machine
 	The download queue is done.	Allalaadimisjärjekord on valmis.

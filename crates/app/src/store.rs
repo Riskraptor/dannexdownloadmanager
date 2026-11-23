@@ -49,6 +49,9 @@ pub struct Loaded {
     pub queues: Vec<Queue>,
     /// Files of downloads whose Download File Info was still open when DDM ended: to remove.
     pub unanswered: Vec<PathBuf>,
+    /// The list was read whole from its own file (not empty, nor an older generation in its
+    /// place): what DDM's own files on disk can be told apart by (leftovers, `crate::leftovers`).
+    pub whole: bool,
 }
 
 /// The files of the downloads started early behind Download File Info, its answer not given yet
@@ -83,6 +86,7 @@ pub fn load() -> Loaded {
         settings: Settings::default(),
         queues: Vec::new(),
         unanswered: Vec::new(),
+        whole: false,
     };
     let Some(p) = path() else { return empty };
     load_from(&p, empty)
@@ -127,8 +131,9 @@ fn blocked() -> &'static Mutex<HashSet<PathBuf>> {
 
 fn load_from(p: &Path, empty: Loaded) -> Loaded {
     let p = p.to_owned();
+    let mut whole = false;
     let parsed = match std::fs::read(&p) {
-        Ok(bytes) => parse_bytes(&bytes).or_else(|| {
+        Ok(bytes) => parse_bytes(&bytes).inspect(|_| whole = true).or_else(|| {
             // Damaged: keep it aside (never overwrite an earlier one) and use a generation.
             let stamp = std::time::SystemTime::now()
                 .duration_since(std::time::UNIX_EPOCH)
@@ -196,6 +201,7 @@ fn load_from(p: &Path, empty: Loaded) -> Loaded {
                 settings,
                 queues: f.queues,
                 unanswered: f.unanswered,
+                whole,
             }
         }
         None => empty,
@@ -451,6 +457,7 @@ mod tests {
             settings: Settings::default(),
             queues: Vec::new(),
             unanswered: Vec::new(),
+            whole: false,
         }
     }
 

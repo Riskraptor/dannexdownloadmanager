@@ -1585,10 +1585,6 @@
 #. text in gallerydlg.rs
 #. in Download a gallery, after the "Files at most" box
 	Empty: all of them. On most sites the newest come first.	فارغ: جميعها. في معظم المواقع، الأحدث يأتي أولا.
-#. text in the Options window
-#. \\n starts a new line: break lines where they fit the translation
-#, machine
-	Empty: each download writes straight into a part file next to its file,\nso nothing is copied at the end. A folder here holds the part files\nuntil their downloads complete.	فارغ: يكتب كل تنزيل مباشرة في ملف جزئي بجوار ملفه،\nفلا ينسخ شيء في النهاية. أما المجلد هنا فتبقى فيه الملفات\nالجزئية حتى تكتمل تنزيلاتها.
 #. text in crashui.rs
 #. crash report window button: end the frozen DDM and start it again
 	End and restart DDM	إنهاء DDM وإعادة تشغيله
@@ -2103,8 +2099,6 @@
 #. text in countries.rs
 #. a country's name (where a download's server is)
 	Hungary	هنغاريا
-#. text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
-	I download with Dannex Download Manager: fast, free, and it looks like the download manager you already know. {link}	أستخدم Dannex Download Manager في التنزيل: سريع ومجاني ويبدو كمدير التنزيل الذي تعرفه بالفعل. {link}
 #. text in countries.rs
 #. a country's name (where a download's server is)
 	Iceland	آيسلندا
@@ -3180,10 +3174,6 @@
 #. text in countries.rs
 #. a country's name (where a download's server is)
 	Paraguay	باراغواي
-#. text in the Options window
-#. \\n starts a new line: break lines where they fit the translation
-#, machine
-	Part files stay here until their downloads complete. On another drive\nthan a download's folder, its file is then copied over. Empty it to\nwrite next to each file again.	تبقى الملفات الجزئية هنا حتى تكتمل تنزيلاتها. وإذا كان القرص\nغير قرص مجلد التنزيل، فينسخ الملف إليه بعد ذلك. أفرغه\nلتعود الكتابة بجوار كل ملف.
 #. text in the Batch download window; text in a dialog box; label in the Options window; text in the Options window
 	Password	كلمة المرور
 #. text in the Link grabber window; text in the Options window; text in a download's Properties window; text in the Site grabber window (Tasks → Run site grabber)
@@ -4215,9 +4205,6 @@
 #. message or event log entry in the main window
 #. {error} = an error message (keep the braces as they are)
 	The download list could not be saved: {error}. Changes are kept while DDM runs.	تعذر حفظ قائمة التنزيلات: {error}. تبقى التغييرات أثناء تشغيل DDM.
-#. text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
-#, machine
-	The download manager you already know, rebuilt to be faster. Free and open source under the GNU GPL, version 3 or later.	برنامج إدارة التنزيل الذي تعرفه، أعيد بناؤه ليكون أسرع. مجاني ومفتوح المصدر بموجب GNU GPL، الإصدار 3 أو أحدث.
 #. text in a dialog box
 	The download queue is done.	اكتملت قائمة انتظار التنزيل.
 #. text in errors.rs

@@ -1904,10 +1904,6 @@
 #. in Download a gallery, after the "Files at most" box
 #, machine
 	Empty: all of them. On most sites the newest come first.	ഒഴിഞ്ഞത്: എല്ലാം. മിക്ക സൈറ്റുകളിലും ഏറ്റവും പുതിയവ ആദ്യം വരുന്നു.
-#. text in the Options window
-#. \\n starts a new line: break lines where they fit the translation
-#, machine
-	Empty: each download writes straight into a part file next to its file,\nso nothing is copied at the end. A folder here holds the part files\nuntil their downloads complete.	ശൂന്യം: ഓരോ ഡൗൺലോഡും അതിന്റെ ഫയലിനടുത്തുള്ള പാർട്ട് ഫയലിലേക്ക് നേരിട്ട് എഴുതുന്നു,\nഅതിനാൽ അവസാനം ഒന്നും പകർത്തേണ്ടതില്ല. ഇവിടെയുള്ള ഫോൾഡർ ഡൗൺലോഡുകൾ\nപൂർത്തിയാകുന്നതുവരെ പാർട്ട് ഫയലുകൾ സൂക്ഷിക്കുന്നു.
 #. text in crashui.rs
 #. crash report window button: end the frozen DDM and start it again
 #, machine
@@ -2554,9 +2550,6 @@
 #. a country's name (where a download's server is)
 #, machine
 	Hungary	ഹംഗറി
-#. text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
-#, machine
-	I download with Dannex Download Manager: fast, free, and it looks like the download manager you already know. {link}	ഞാൻ Dannex Download Manager ഉപയോഗിച്ച് ഡൗൺലോഡ് ചെയ്യുന്നു: വേഗതയേറിയതും സൗജന്യവും, നിങ്ങൾക്കറിയാവുന്ന ഡൗൺലോഡ് മാനേജർ പോലെയാണിത്. {link}
 #. text in countries.rs
 #. a country's name (where a download's server is)
 #, machine
@@ -3888,10 +3881,6 @@
 #. a country's name (where a download's server is)
 #, machine
 	Paraguay	പരാഗ്വേ
-#. text in the Options window
-#. \\n starts a new line: break lines where they fit the translation
-#, machine
-	Part files stay here until their downloads complete. On another drive\nthan a download's folder, its file is then copied over. Empty it to\nwrite next to each file again.	ഡൗൺലോഡുകൾ പൂർത്തിയാകുന്നതുവരെ പാർട്ട് ഫയലുകൾ ഇവിടെ നിൽക്കും. ഡൗൺലോഡിന്റെ ഫോൾഡറിൽ നിന്ന്\nവ്യത്യസ്ത ഡ്രൈവിലാണെങ്കിൽ, ഫയൽ പിന്നീട് അങ്ങോട്ട് പകർത്തും. ഓരോ ഫയലിനും അടുത്ത്\nവീണ്ടും എഴുതാൻ ഇത് ശൂന്യമാക്കുക.
 #. text in the Batch download window; text in a dialog box; label in the Options window; text in the Options window
 #, machine
 	Password	പാസ്‌വേഡ്
@@ -5175,9 +5164,6 @@
 #. {error} = an error message (keep the braces as they are)
 #, machine
 	The download list could not be saved: {error}. Changes are kept while DDM runs.	ഡൗൺലോഡ് ലിസ്റ്റ് സേവ് ചെയ്യാൻ കഴിഞ്ഞില്ല: {error}. DDM പ്രവർത്തിക്കുമ്പോൾ മാറ്റങ്ങൾ നിലനിർത്തുന്നു.
-#. text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
-#, machine
-	The download manager you already know, rebuilt to be faster. Free and open source under the GNU GPL, version 3 or later.	നിങ്ങൾക്ക് ഇതിനകം അറിയാവുന്ന ഡൗൺലോഡ് മാനേജർ, വേഗത്തിലാക്കാൻ പുനർനിർമ്മിച്ചത്. GNU GPL പതിപ്പ് 3 അല്ലെങ്കിൽ അതിന് ശേഷമുള്ളതിന് കീഴിൽ സൗജന്യവും ഓപ്പൺ സോഴ്സും.
 #. text in a dialog box
 #, machine
 	The download queue is done.	ഡൗൺലോഡ് ക്യൂ പൂർത്തിയായി.

@@ -1904,10 +1904,6 @@
 #. in Download a gallery, after the "Files at most" box
 #, machine
 	Empty: all of them. On most sites the newest come first.	ಖಾಲಿ: ಅವೆಲ್ಲವೂ. ಹೆಚ್ಚಿನ ಸೈಟ್‌ಗಳಲ್ಲಿ ಹೊಸವುಗಳು ಮೊದಲು ಬರುತ್ತವೆ.
-#. text in the Options window
-#. \\n starts a new line: break lines where they fit the translation
-#, machine
-	Empty: each download writes straight into a part file next to its file,\nso nothing is copied at the end. A folder here holds the part files\nuntil their downloads complete.	ಖಾಲಿ: ಪ್ರತಿ ಡೌನ್ಲೋಡ್ ತನ್ನ ಫೈಲ್ ಪಕ್ಕದ ಭಾಗ ಫೈಲ್ಗೆ ನೇರವಾಗಿ ಬರೆಯುತ್ತದೆ,\nಆದ್ದರಿಂದ ಕೊನೆಯಲ್ಲಿ ಏನನ್ನೂ ನಕಲಿಸುವುದಿಲ್ಲ. ಇಲ್ಲಿನ ಫೋಲ್ಡರ್ ಡೌನ್ಲೋಡ್ಗಳು\nಪೂರ್ಣಗೊಳ್ಳುವವರೆಗೆ ಭಾಗ ಫೈಲ್ಗಳನ್ನು ಇಟ್ಟುಕೊಳ್ಳುತ್ತದೆ.
 #. text in crashui.rs
 #. crash report window button: end the frozen DDM and start it again
 #, machine
@@ -2554,9 +2550,6 @@
 #. a country's name (where a download's server is)
 #, machine
 	Hungary	ಹಂಗೇರಿ
-#. text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
-#, machine
-	I download with Dannex Download Manager: fast, free, and it looks like the download manager you already know. {link}	ನಾನು Dannex Download Manager ನೊಂದಿಗೆ ಡೌನ್‌ಲೋಡ್ ಮಾಡುತ್ತೇನೆ: ವೇಗವಾಗಿ, ಉಚಿತವಾಗಿ, ಮತ್ತು ಇದು ನಿಮಗೆ ಈಗಾಗಲೇ ತಿಳಿದಿರುವ ಡೌನ್‌ಲೋಡ್ ಮ್ಯಾನೇಜರ್‌ನಂತೆ ಕಾಣುತ್ತದೆ. {link}
 #. text in countries.rs
 #. a country's name (where a download's server is)
 #, machine
@@ -3888,10 +3881,6 @@
 #. a country's name (where a download's server is)
 #, machine
 	Paraguay	ಪರಾಗ್ವೆ
-#. text in the Options window
-#. \\n starts a new line: break lines where they fit the translation
-#, machine
-	Part files stay here until their downloads complete. On another drive\nthan a download's folder, its file is then copied over. Empty it to\nwrite next to each file again.	ಭಾಗ ಫೈಲ್ಗಳು ಡೌನ್ಲೋಡ್ಗಳು ಪೂರ್ಣಗೊಳ್ಳುವವರೆಗೆ ಇಲ್ಲಿ ಇರುತ್ತವೆ. ಡೌನ್ಲೋಡ್ನ ಫೋಲ್ಡರ್ಗಿಂತ\nಬೇರೆ ಡ್ರೈವ್ನಲ್ಲಿದ್ದರೆ, ಫೈಲ್ ಅನ್ನು ನಂತರ ಅಲ್ಲಿಗೆ ನಕಲಿಸಲಾಗುತ್ತದೆ. ಪ್ರತಿ ಫೈಲ್ ಪಕ್ಕ\nಮತ್ತೆ ಬರೆಯಲು ಇದನ್ನು ಖಾಲಿ ಮಾಡಿ.
 #. text in the Batch download window; text in a dialog box; label in the Options window; text in the Options window
 #, machine
 	Password	ಪಾಸ್‌ವರ್ಡ್
@@ -5175,9 +5164,6 @@
 #. {error} = an error message (keep the braces as they are)
 #, machine
 	The download list could not be saved: {error}. Changes are kept while DDM runs.	ಡೌನ್‌ಲೋಡ್ ಪಟ್ಟಿಯನ್ನು ಉಳಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ: {error}. DDM ಚಾಲನೆಯಲ್ಲಿರುವವರೆಗೆ ಬದಲಾವಣೆಗಳು ಉಳಿಯುತ್ತವೆ.
-#. text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
-#, machine
-	The download manager you already know, rebuilt to be faster. Free and open source under the GNU GPL, version 3 or later.	ನೀವು ಈಗಾಗಲೇ ತಿಳಿದಿರುವ ಡೌನ್ಲೋಡ್ ಮ್ಯಾನೇಜರ್, ವೇಗವಾಗಲು ಮರುನಿರ್ಮಿಸಲಾಗಿದೆ. GNU GPL ಆವೃತ್ತಿ 3 ಅಥವಾ ನಂತರದ ಅಡಿಯಲ್ಲಿ ಉಚಿತ ಮತ್ತು ಮುಕ್ತ ಮೂಲ.
 #. text in a dialog box
 #, machine
 	The download queue is done.	ಡೌನ್‌ಲೋಡ್ ಕ್ಯೂ ಪೂರ್ಣಗೊಂಡಿದೆ.

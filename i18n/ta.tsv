@@ -1904,10 +1904,6 @@
 #. in Download a gallery, after the "Files at most" box
 #, machine
 	Empty: all of them. On most sites the newest come first.	காலியாக இருந்தால்: அனைத்தும். பெரும்பாலான தளங்களில் புதியவை முதலில் வரும்.
-#. text in the Options window
-#. \\n starts a new line: break lines where they fit the translation
-#, machine
-	Empty: each download writes straight into a part file next to its file,\nso nothing is copied at the end. A folder here holds the part files\nuntil their downloads complete.	காலி: ஒவ்வொரு பதிவிறக்கமும் தன் கோப்பிற்கு அருகிலுள்ள பகுதிக் கோப்பில் நேரடியாக எழுதும்,\nஎனவே இறுதியில் எதுவும் நகலெடுக்கப்படாது. இங்குள்ள கோப்புறை பதிவிறக்கங்கள்\nமுடியும் வரை பகுதிக் கோப்புகளை வைத்திருக்கும்.
 #. text in crashui.rs
 #. crash report window button: end the frozen DDM and start it again
 #, machine
@@ -2554,9 +2550,6 @@
 #. a country's name (where a download's server is)
 #, machine
 	Hungary	ஹங்கேரி
-#. text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
-#, machine
-	I download with Dannex Download Manager: fast, free, and it looks like the download manager you already know. {link}	நான் Dannex Download Manager மூலம் பதிவிறக்குகிறேன்: வேகமானது, இலவசமானது, மேலும் உங்களுக்கு ஏற்கனவே தெரிந்த பதிவிறக்க மேலாளரைப் போலவே இதுவும் இருக்கும். {link}
 #. text in countries.rs
 #. a country's name (where a download's server is)
 #, machine
@@ -3888,10 +3881,6 @@
 #. a country's name (where a download's server is)
 #, machine
 	Paraguay	பரகுவே
-#. text in the Options window
-#. \\n starts a new line: break lines where they fit the translation
-#, machine
-	Part files stay here until their downloads complete. On another drive\nthan a download's folder, its file is then copied over. Empty it to\nwrite next to each file again.	பகுதிக் கோப்புகள் பதிவிறக்கங்கள் முடியும் வரை இங்கே இருக்கும். பதிவிறக்கத்தின் கோப்புறையிலிருந்து\nவேறு இயக்ககத்தில் இருந்தால், கோப்பு பிறகு அங்கே நகலெடுக்கப்படும். ஒவ்வொரு கோப்பிற்கும் அருகில்\nமீண்டும் எழுத இதைக் காலி செய்யவும்.
 #. text in the Batch download window; text in a dialog box; label in the Options window; text in the Options window
 #, machine
 	Password	கடவுச்சொல்
@@ -5175,9 +5164,6 @@
 #. {error} = an error message (keep the braces as they are)
 #, machine
 	The download list could not be saved: {error}. Changes are kept while DDM runs.	பதிவிறக்கப் பட்டியலைச் சேமிக்க முடியவில்லை: {error}. DDM இயங்கும் போது மாற்றங்கள் பாதுகாக்கப்படும்.
-#. text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
-#, machine
-	The download manager you already know, rebuilt to be faster. Free and open source under the GNU GPL, version 3 or later.	நீங்கள் ஏற்கனவே அறிந்த பதிவிறக்க மேலாளர், வேகமாக இருக்க மீண்டும் உருவாக்கப்பட்டது. GNU GPL பதிப்பு 3 அல்லது அதற்குப் பிந்தையதன் கீழ் இலவசம் மற்றும் திறந்த மூலம்.
 #. text in a dialog box
 #, machine
 	The download queue is done.	பதிவிறக்க வரிசை முடிந்தது.

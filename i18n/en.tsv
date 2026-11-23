@@ -897,6 +897,9 @@
 #. text in countries.rs
 #. a country's name (where a download's server is)
 	Christmas Island	Christmas Island
+#. message or event log entry in the main window
+#. The title of Clean Up Temporary Files' answer.
+	Clean Up Temporary Files	Clean Up Temporary Files
 #. button in the download list
 #. verb: clears this filter
 	Clear	Clear
@@ -1435,7 +1438,7 @@
 	Empty: all of them. On most sites the newest come first.	Empty: all of them. On most sites the newest come first.
 #. text in the Options window
 #. \\n starts a new line: break lines where they fit the translation
-	Empty: each download writes straight into a part file next to its file,\nso nothing is copied at the end. A folder here holds the part files\nuntil their downloads complete.	Empty: each download writes straight into a part file next to its file,\nso nothing is copied at the end. A folder here holds the part files\nuntil their downloads complete.
+	Empty: each download writes into a part file next to its file, which\nbecomes the file when done. A folder here holds the part files instead.\nDDM removes leftover part files by itself (see the Downloads menu).	Empty: each download writes into a part file next to its file, which\nbecomes the file when done. A folder here holds the part files instead.\nDDM removes leftover part files by itself (see the Downloads menu).
 #. text in crashui.rs
 #. crash report window button: end the frozen DDM and start it again
 	End and restart DDM	End and restart DDM
@@ -1582,6 +1585,9 @@
 #. text in a download's progress window; text in a download's Properties window
 #. noun: a file of no known type
 	File	File
+#. text in the download list (sizes, speeds, status); text in a download's progress window
+#. a download's status: it finished, but its file is no longer on the disk (deleted or moved by another program); right-click → Redownload gets it again
+	File missing	File missing
 #. text in the Scheduler window
 	File Name	File Name
 #. text in the Download video window
@@ -2593,6 +2599,9 @@
 	No language matches the search	No language matches the search
 #. text in langpick.rs
 	No language matches.	No language matches.
+#. message or event log entry in the main window
+#. Downloads → Clean Up Temporary Files found nothing to remove.
+	No leftover temporary files were found.	No leftover temporary files were found.
 #. text in the Options window
 #. Options → Remote → Status: on, but the computer has no local network address now
 	No local network now: it starts when the computer joins one.	No local network now: it starts when the computer joins one.
@@ -2909,7 +2918,7 @@
 	Paraguay	Paraguay
 #. text in the Options window
 #. \\n starts a new line: break lines where they fit the translation
-	Part files stay here until their downloads complete. On another drive\nthan a download's folder, its file is then copied over. Empty it to\nwrite next to each file again.	Part files stay here until their downloads complete. On another drive\nthan a download's folder, its file is then copied over. Empty it to\nwrite next to each file again.
+	Part files stay here until their downloads complete. On another drive\nthan a download's folder, its file is then copied over. DDM removes\nleftovers by itself. Empty it to write next to each file again.	Part files stay here until their downloads complete. On another drive\nthan a download's folder, its file is then copied over. DDM removes\nleftovers by itself. Empty it to write next to each file again.
 #. text in the Batch download window; text in a dialog box; label in the Options window; text in the Options window
 	Password	Password
 #. text in the Link grabber window; text in the Options window; text in a download's Properties window; text in the Site grabber window (Tasks → Run site grabber)
@@ -3133,6 +3142,10 @@
 #. remote control page (on a phone): question before removing a download; {name} its file name
 #. {name} = a file name (keep the braces as they are)
 	Remove {name} from the list?	Remove {name} from the list?
+#. message or event log entry in the main window
+#. Downloads → Clean Up Temporary Files' answer: {count} files, {size} like "1.2 GB".
+#. {count} = a number; {size} = a file size such as "4.2 MB" (keep the braces as they are)
+	Removed {count} leftover temporary files ({size} freed).	Removed {count} leftover temporary files ({size} freed).
 #. text in a download's progress window
 #. noun: label before the deferred new file or folder name in the progress window
 	Rename	Rename
@@ -4823,6 +4836,10 @@
 #. {column} = a column title (keep the braces as they are)
 	{column} contains	{column} contains
 #. message or event log entry in the main window
+#. Clean Up Temporary Files: some files are open in another program.
+#. {count} = a number (keep the braces as they are)
+	{count} could not be removed (in use by another program).	{count} could not be removed (in use by another program).
+#. message or event log entry in the main window
 #. {count} = "2 downloading"; {speed} = all of them together, like "1.25 MB/sec"
 #. {count} = a number (keep the braces as they are)
 	{count}, {speed}	{count}, {speed}
@@ -5775,6 +5792,10 @@ menu	Choose c&olumns...	Choose c&olumns...
 #. menu command in the main window
 #. View → Theme: DDM's own look, the default (the classic download manager's layout, Windows 11's controls)
 menu	Classic	Classic
+#. menu command in the main window
+#. Downloads menu: removes the part files of downloads no longer in the list (left by a crash, a power cut, a removed download)
+#. & marks the keyboard shortcut letter: keep one & before a letter of the translation
+menu	Clean &Up Temporary Files	Clean &Up Temporary Files
 #. menu command in the main window
 #. & marks the keyboard shortcut letter: keep one & before a letter of the translation
 menu	Clear all &filters	Clear all &filters

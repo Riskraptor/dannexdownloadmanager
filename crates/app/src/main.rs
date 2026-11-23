@@ -36,6 +36,7 @@ mod i18n;
 mod icons;
 mod langpick;
 mod launch;
+mod leftovers;
 mod list;
 mod logo;
 mod model;

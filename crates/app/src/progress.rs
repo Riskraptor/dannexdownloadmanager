@@ -1476,6 +1476,7 @@ impl Progress {
                 }
                 .to_owned()
             }
+            Status::Complete if item.missing => crate::i18n::t("File missing").to_owned(),
             // i18n: a download's status (state it is in, not a command): finished
             Status::Complete => crate::i18n::t("Complete").to_owned(),
             // i18n: a download's status (state it is in, not a command): stopped for now

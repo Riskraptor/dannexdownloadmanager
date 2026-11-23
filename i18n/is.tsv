@@ -1908,10 +1908,6 @@
 #. in Download a gallery, after the "Files at most" box
 #, machine
 	Empty: all of them. On most sites the newest come first.	Tómt: öll. Á flestum síðum koma þau nýjustu fyrst.
-#. text in the Options window
-#. \\n starts a new line: break lines where they fit the translation
-#, machine
-	Empty: each download writes straight into a part file next to its file,\nso nothing is copied at the end. A folder here holds the part files\nuntil their downloads complete.	Autt: Hvert niðurhal skrifar beint í hlutaskrá við hlið skrárinnar,\nsvo ekkert er afritað í lokin. Mappa hér geymir hlutaskrárnar\nþar til niðurhölum þeirra er lokið.
 #. text in crashui.rs
 #. crash report window button: end the frozen DDM and start it again
 #, machine
@@ -2558,9 +2554,6 @@
 #. a country's name (where a download's server is)
 #, machine
 	Hungary	Ungverjaland
-#. text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
-#, machine
-	I download with Dannex Download Manager: fast, free, and it looks like the download manager you already know. {link}	Ég sæki með Dannex Download Manager: það er hratt, ókeypis og lítur út eins og niðurhalsstjórinn sem þú þekkir nú þegar. {link}
 #. text in countries.rs
 #. a country's name (where a download's server is)
 #, machine
@@ -3892,10 +3885,6 @@
 #. a country's name (where a download's server is)
 #, machine
 	Paraguay	Paragvæ
-#. text in the Options window
-#. \\n starts a new line: break lines where they fit the translation
-#, machine
-	Part files stay here until their downloads complete. On another drive\nthan a download's folder, its file is then copied over. Empty it to\nwrite next to each file again.	Hlutaskrár haldast hér þar til niðurhölum þeirra er lokið. Á öðru drifi\nen mappa niðurhalsins er skráin þá afrituð yfir. Tæmdu reitinn\ntil að skrifa aftur við hlið hverrar skrár.
 #. text in the Batch download window; text in a dialog box; label in the Options window; text in the Options window
 #, machine
 	Password	Lykilorð
@@ -5179,9 +5168,6 @@
 #. {error} = an error message (keep the braces as they are)
 #, machine
 	The download list could not be saved: {error}. Changes are kept while DDM runs.	Ekki tókst að vista niðurhalslistann: {error}. Breytingar eru varðveittar á meðan DDM keyrir.
-#. text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
-#, machine
-	The download manager you already know, rebuilt to be faster. Free and open source under the GNU GPL, version 3 or later.	Niðurhalsstjórinn sem þú þekkir nú þegar, endursmíðaður til að vera hraðari. Ókeypis og með opnum frumkóða undir GNU GPL, útgáfa 3 eða nýrri.
 #. text in a dialog box
 #, machine
 	The download queue is done.	Niðurhalsröðinni er lokið.

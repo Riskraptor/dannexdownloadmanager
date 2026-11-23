@@ -1904,10 +1904,6 @@
 #. in Download a gallery, after the "Files at most" box
 #, machine
 	Empty: all of them. On most sites the newest come first.	비어 있으면 모두 다운로드합니다. 대부분의 사이트에서는 최신 파일이 먼저 표시됩니다.
-#. text in the Options window
-#. \\n starts a new line: break lines where they fit the translation
-#, machine
-	Empty: each download writes straight into a part file next to its file,\nso nothing is copied at the end. A folder here holds the part files\nuntil their downloads complete.	비어 있으면 각 다운로드가 파일 옆의 부분 파일에 바로 기록되므로\n마지막에 복사하지 않습니다. 여기에 폴더를 지정하면\n다운로드가 완료될 때까지 부분 파일을 그 폴더에 보관합니다.
 #. text in crashui.rs
 #. crash report window button: end the frozen DDM and start it again
 #, machine
@@ -2554,9 +2550,6 @@
 #. a country's name (where a download's server is)
 #, machine
 	Hungary	헝가리
-#. text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
-#, machine
-	I download with Dannex Download Manager: fast, free, and it looks like the download manager you already know. {link}	저는 Dannex Download Manager로 다운로드합니다. 빠르고 무료이며 이미 알고 있는 다운로드 관리자와 비슷합니다. {link}
 #. text in countries.rs
 #. a country's name (where a download's server is)
 #, machine
@@ -3888,10 +3881,6 @@
 #. a country's name (where a download's server is)
 #, machine
 	Paraguay	파라과이
-#. text in the Options window
-#. \\n starts a new line: break lines where they fit the translation
-#, machine
-	Part files stay here until their downloads complete. On another drive\nthan a download's folder, its file is then copied over. Empty it to\nwrite next to each file again.	부분 파일은 다운로드가 완료될 때까지 여기에 보관됩니다. 다운로드 폴더와\n다른 드라이브이면 완료 후 파일이 복사됩니다. 비워 두면\n다시 각 파일 옆에 기록합니다.
 #. text in the Batch download window; text in a dialog box; label in the Options window; text in the Options window
 #, machine
 	Password	암호
@@ -5175,9 +5164,6 @@
 #. {error} = an error message (keep the braces as they are)
 #, machine
 	The download list could not be saved: {error}. Changes are kept while DDM runs.	다운로드 목록을 저장할 수 없습니다. {error}. DDM이 실행되는 동안 변경 사항이 유지됩니다.
-#. text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
-#, machine
-	The download manager you already know, rebuilt to be faster. Free and open source under the GNU GPL, version 3 or later.	이미 익숙한 다운로드 관리자를 더 빠르게 다시 만들었습니다. GNU GPL 버전 3 이상에 따라 무료로 제공되는 오픈 소스입니다.
 #. text in a dialog box
 #, machine
 	The download queue is done.	다운로드 큐가 완료되었습니다.

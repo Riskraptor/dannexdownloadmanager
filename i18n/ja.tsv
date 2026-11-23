@@ -1900,10 +1900,6 @@
 #. in Download a gallery, after the "Files at most" box
 #, machine
 	Empty: all of them. On most sites the newest come first.	空欄の場合、すべてダウンロードします。ほとんどのサイトでは、新しいものが最初に表示されます。
-#. text in the Options window
-#. \\n starts a new line: break lines where they fit the translation
-#, machine
-	Empty: each download writes straight into a part file next to its file,\nso nothing is copied at the end. A folder here holds the part files\nuntil their downloads complete.	空の場合: 各ダウンロードはファイルの隣にあるパート ファイルに\n直接書き込まれるため、最後にコピーされることはありません。\nここにフォルダーを指定すると、ダウンロードが完了するまでパート ファイルがそこに保存されます。
 #. text in crashui.rs
 #. crash report window button: end the frozen DDM and start it again
 #, machine
@@ -2550,9 +2546,6 @@
 #. a country's name (where a download's server is)
 #, machine
 	Hungary	ハンガリー
-#. text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
-#, machine
-	I download with Dannex Download Manager: fast, free, and it looks like the download manager you already know. {link}	Dannex Download Manager を使ってダウンロードしています。高速で無料で、使い慣れたダウンロードマネージャーのように見えます。{link}
 #. text in countries.rs
 #. a country's name (where a download's server is)
 #, machine
@@ -3884,10 +3877,6 @@
 #. a country's name (where a download's server is)
 #, machine
 	Paraguay	パラグアイ
-#. text in the Options window
-#. \\n starts a new line: break lines where they fit the translation
-#, machine
-	Part files stay here until their downloads complete. On another drive\nthan a download's folder, its file is then copied over. Empty it to\nwrite next to each file again.	パート ファイルは、ダウンロードが完了するまでここに保存されます。ダウンロードのフォルダーとは\n別のドライブの場合、完了時にファイルがコピーされます。空にすると、\n再び各ファイルの隣に書き込まれます。
 #. text in the Batch download window; text in a dialog box; label in the Options window; text in the Options window
 #, machine
 	Password	パスワード
@@ -5171,9 +5160,6 @@
 #. {error} = an error message (keep the braces as they are)
 #, machine
 	The download list could not be saved: {error}. Changes are kept while DDM runs.	ダウンロード リストを保存できませんでした: {error}。変更は DDM の実行中に保持されます。
-#. text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
-#, machine
-	The download manager you already know, rebuilt to be faster. Free and open source under the GNU GPL, version 3 or later.	お馴染みのダウンロード マネージャーを、より高速になるよう作り直しました。GNU GPL バージョン 3 以降に基づく無料のオープン ソースです。
 #. text in a dialog box
 #, machine
 	The download queue is done.	ダウンロード キューが完了しました。

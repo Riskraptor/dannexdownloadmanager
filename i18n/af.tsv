@@ -1908,10 +1908,6 @@
 #. in Download a gallery, after the "Files at most" box
 #, machine
 	Empty: all of them. On most sites the newest come first.	Leeg: almal. Op die meeste werwe kom die nuutstes eerste.
-#. text in the Options window
-#. \\n starts a new line: break lines where they fit the translation
-#, machine
-	Empty: each download writes straight into a part file next to its file,\nso nothing is copied at the end. A folder here holds the part files\nuntil their downloads complete.	Leeg: elke aflaai skryf reguit na ’n gedeeltelike lêer langs sy lêer,\nsodat niks aan die einde gekopieer word nie. ’n Gids hier hou die gedeeltelike\nlêers totdat hul aflaaie voltooi is.
 #. text in crashui.rs
 #. crash report window button: end the frozen DDM and start it again
 #, machine
@@ -2558,9 +2554,6 @@
 #. a country's name (where a download's server is)
 #, machine
 	Hungary	Hongarye
-#. text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
-#, machine
-	I download with Dannex Download Manager: fast, free, and it looks like the download manager you already know. {link}	Ek laai af met Dannex Download Manager: vinnig, gratis, en dit lyk soos die aflaaibestuurder wat jy reeds ken. {link}
 #. text in countries.rs
 #. a country's name (where a download's server is)
 #, machine
@@ -3892,10 +3885,6 @@
 #. a country's name (where a download's server is)
 #, machine
 	Paraguay	Paraguay
-#. text in the Options window
-#. \\n starts a new line: break lines where they fit the translation
-#, machine
-	Part files stay here until their downloads complete. On another drive\nthan a download's folder, its file is then copied over. Empty it to\nwrite next to each file again.	Gedeeltelike lêers bly hier totdat hul aflaaie voltooi is. Op ’n ander skyf\nas ’n aflaai se gids word sy lêer dan oorgekopieer. Maak dit leeg\nom weer langs elke lêer te skryf.
 #. text in the Batch download window; text in a dialog box; label in the Options window; text in the Options window
 #, machine
 	Password	Wagwoord
@@ -5179,9 +5168,6 @@
 #. {error} = an error message (keep the braces as they are)
 #, machine
 	The download list could not be saved: {error}. Changes are kept while DDM runs.	Die aflaailys kon nie gestoor word nie: {error}. Veranderinge word behou terwyl DDM loop.
-#. text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
-#, machine
-	The download manager you already know, rebuilt to be faster. Free and open source under the GNU GPL, version 3 or later.	Die aflaaibestuurder wat jy reeds ken, herbou om vinniger te wees. Gratis en oopbron onder die GNU GPL, weergawe 3 of later.
 #. text in a dialog box
 #, machine
 	The download queue is done.	Die aflaaiwaglys is klaar.

@@ -1908,10 +1908,6 @@
 #. in Download a gallery, after the "Files at most" box
 #, machine
 	Empty: all of them. On most sites the newest come first.	Tomt: alla. På de flesta webbplatser kommer de nyaste först.
-#. text in the Options window
-#. \\n starts a new line: break lines where they fit the translation
-#, machine
-	Empty: each download writes straight into a part file next to its file,\nso nothing is copied at the end. A folder here holds the part files\nuntil their downloads complete.	Tomt: Varje hämtning skriver direkt till en delfil bredvid sin fil,\nså inget kopieras i slutet. En mapp här behåller delfilerna\ntills hämtningarna är klara.
 #. text in crashui.rs
 #. crash report window button: end the frozen DDM and start it again
 #, machine
@@ -2558,9 +2554,6 @@
 #. a country's name (where a download's server is)
 #, machine
 	Hungary	Ungern
-#. text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
-#, machine
-	I download with Dannex Download Manager: fast, free, and it looks like the download manager you already know. {link}	Jag laddar ner med Dannex Download Manager: snabbt, gratis och det ser ut som den nedladdningshanterare du redan känner till. {link}
 #. text in countries.rs
 #. a country's name (where a download's server is)
 #, machine
@@ -3892,10 +3885,6 @@
 #. a country's name (where a download's server is)
 #, machine
 	Paraguay	Paraguay
-#. text in the Options window
-#. \\n starts a new line: break lines where they fit the translation
-#, machine
-	Part files stay here until their downloads complete. On another drive\nthan a download's folder, its file is then copied over. Empty it to\nwrite next to each file again.	Delfiler ligger kvar här tills deras hämtningar är klara. På en annan enhet\nän en hämtnings mapp kopieras filen sedan över. Töm fältet\nför att skriva bredvid varje fil igen.
 #. text in the Batch download window; text in a dialog box; label in the Options window; text in the Options window
 #, machine
 	Password	Lösenord
@@ -5179,9 +5168,6 @@
 #. {error} = an error message (keep the braces as they are)
 #, machine
 	The download list could not be saved: {error}. Changes are kept while DDM runs.	Nedladdningslistan kunde inte sparas: {error}. Ändringarna finns kvar medan DDM körs.
-#. text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
-#, machine
-	The download manager you already know, rebuilt to be faster. Free and open source under the GNU GPL, version 3 or later.	Hämtningshanteraren du redan känner till, ombyggd för att vara snabbare. Gratis och öppen källkod under GNU GPL, version 3 eller senare.
 #. text in a dialog box
 #, machine
 	The download queue is done.	Nedladdningskön är klar.

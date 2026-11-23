@@ -1904,10 +1904,6 @@
 #. in Download a gallery, after the "Files at most" box
 #, machine
 	Empty: all of them. On most sites the newest come first.	ఖాళీగా ఉంటే: అన్నీ. చాలా సైట్‌లలో కొత్తవి ముందుగా వస్తాయి.
-#. text in the Options window
-#. \\n starts a new line: break lines where they fit the translation
-#, machine
-	Empty: each download writes straight into a part file next to its file,\nso nothing is copied at the end. A folder here holds the part files\nuntil their downloads complete.	ఖాళీ: ప్రతి డౌన్లోడ్ తన ఫైల్ పక్కనే ఉన్న భాగం ఫైల్లో నేరుగా వ్రాస్తుంది,\nకాబట్టి చివరన ఏదీ కాపీ చేయబడదు. ఇక్కడి ఫోల్డర్ డౌన్లోడ్లు\nపూర్తయ్యే వరకు భాగం ఫైళ్లను ఉంచుతుంది.
 #. text in crashui.rs
 #. crash report window button: end the frozen DDM and start it again
 #, machine
@@ -2554,9 +2550,6 @@
 #. a country's name (where a download's server is)
 #, machine
 	Hungary	హంగేరీ
-#. text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
-#, machine
-	I download with Dannex Download Manager: fast, free, and it looks like the download manager you already know. {link}	నేను Dannex Download Managerతో డౌన్‌లోడ్ చేస్తాను: వేగంగా, ఉచితంగా, మీకు ఇప్పటికే తెలిసిన డౌన్‌లోడ్ మేనేజర్‌లా ఉంటుంది. {link}
 #. text in countries.rs
 #. a country's name (where a download's server is)
 #, machine
@@ -3888,10 +3881,6 @@
 #. a country's name (where a download's server is)
 #, machine
 	Paraguay	పరాగ్వే
-#. text in the Options window
-#. \\n starts a new line: break lines where they fit the translation
-#, machine
-	Part files stay here until their downloads complete. On another drive\nthan a download's folder, its file is then copied over. Empty it to\nwrite next to each file again.	డౌన్లోడ్లు పూర్తయ్యే వరకు భాగం ఫైళ్లు ఇక్కడ ఉంటాయి. డౌన్లోడ్ ఫోల్డర్ కంటే\nవేరే డ్రైవ్లో ఉంటే, ఫైల్ తర్వాత అక్కడికి కాపీ చేయబడుతుంది. ప్రతి ఫైల్ పక్కన\nమళ్ళీ వ్రాయడానికి దీన్ని ఖాళీ చేయండి.
 #. text in the Batch download window; text in a dialog box; label in the Options window; text in the Options window
 #, machine
 	Password	పాస్‌వర్డ్
@@ -5175,9 +5164,6 @@
 #. {error} = an error message (keep the braces as they are)
 #, machine
 	The download list could not be saved: {error}. Changes are kept while DDM runs.	డౌన్‌లోడ్ జాబితాను సేవ్ చేయలేకపోయింది: {error}. DDM నడుస్తున్నప్పుడు మార్పులు అలాగే ఉంటాయి.
-#. text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
-#, machine
-	The download manager you already know, rebuilt to be faster. Free and open source under the GNU GPL, version 3 or later.	మీకు ఇప్పటికే తెలిసిన డౌన్లోడ్ మేనేజర్, వేగంగా ఉండేలా తిరిగి నిర్మించబడింది. GNU GPL వెర్షన్ 3 లేదా తర్వాతి కింద ఉచితం మరియు ఓపెన్ సోర్స్.
 #. text in a dialog box
 #, machine
 	The download queue is done.	డౌన్‌లోడ్ క్యూ పూర్తయింది.

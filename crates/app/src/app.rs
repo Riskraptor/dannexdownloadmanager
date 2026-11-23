@@ -17,6 +17,7 @@ use crate::chrome::{
 };
 use crate::dialogs::{self, AddUrl, Complete, FileInfo, Outcome, Start};
 use crate::icons::Icon;
+use crate::leftovers;
 use crate::list;
 use crate::model::{self, Category, Item, Live, Status};
 use crate::progress::{self, Progress};
@@ -210,6 +211,16 @@ impl Removal {
                     files.push(f);
                 }
             }
+            // The engine's pieces folders for its streams (#769), removed whole.
+            for f in mdm_tools::video::own_folders(dir, stem) {
+                let name = f
+                    .file_name()
+                    .map(|n| n.to_string_lossy().to_lowercase())
+                    .unwrap_or_default();
+                if !named.iter().any(|n| name.starts_with(n)) && !files.contains(&f) {
+                    files.push(f);
+                }
+            }
         }
         files.retain(|f| !self.others.contains(&low(f)));
         files
@@ -219,7 +230,7 @@ impl Removal {
     /// than the window's.
     fn run(self) {
         for f in self.files() {
-            let _ = std::fs::remove_file(&f);
+            let _ = remove_path(&f);
         }
     }
 
@@ -378,12 +389,95 @@ fn waits_for(
 }
 
 /// One download's Delete with its files, handed from the window's thread to beside it
-/// (`App::remove_download`, `App::delete_beside`, #743): its files ([`files_of`]), whether it
-/// was finished (its file then first), and its name for a failure's message.
+/// (`App::remove_download`, `App::delete_beside`, #743): its files ([`replacement`]: a video's
+/// yt-dlp leftovers and pieces folders too), its finished file when it was finished (a failure to
+/// remove that one is said), its name for that message, and the folder DDM made for it, removed
+/// once empty ([`Prune`]).
 struct Deleting {
-    files: Vec<PathBuf>,
-    complete: bool,
+    removal: Removal,
+    finished: Option<PathBuf>,
     name: String,
+    prune: Option<Prune>,
+}
+
+/// The folders DDM made for downloads as they started, beside the window (`StartLook`): which
+/// download, and the topmost folder that wasn't there. Taken into the rows by the window
+/// (`App::take_made`).
+static MADE_FOLDERS: std::sync::Mutex<Vec<(u64, PathBuf)>> = std::sync::Mutex::new(Vec::new());
+
+/// Download `id` is about to write in `folder`: the topmost of it and its parents that isn't
+/// there yet is DDM's to make, and to remove again once empty (`Item::made_dir`). Reads the disk:
+/// beside the window.
+fn note_made(id: u64, folder: Option<&std::path::Path>) {
+    let Some(mut dir) = folder else {
+        return;
+    };
+    let mut top = None;
+    while !dir.as_os_str().is_empty() && !dir.exists() {
+        top = Some(dir);
+        match dir.parent() {
+            Some(p) => dir = p,
+            None => break,
+        }
+    }
+    if let Some(top) = top.filter(|t| t.parent().is_some()) {
+        MADE_FOLDERS
+            .lock()
+            .unwrap_or_else(|e| e.into_inner())
+            .push((id, top.to_owned()));
+    }
+}
+
+/// A folder DDM made for a download (`made`) and the folder its files were in (`folder`, inside
+/// it): once they are gone, the empty ones from `folder` up to `made` go too ([`prune_made`]).
+/// Never one of `keep` (the downloads folder, the categories', the user's own).
+struct Prune {
+    folder: PathBuf,
+    made: PathBuf,
+    keep: Vec<PathBuf>,
+}
+
+impl Prune {
+    fn run(&self) {
+        prune_made(&self.folder, &self.made, &self.keep);
+    }
+}
+
+/// Remove `folder` and its parents up to `made` (a folder DDM made), each only while it is empty
+/// and isn't one of `keep`; nothing when `folder` isn't `made` or inside it. Beside the window.
+fn prune_made(folder: &std::path::Path, made: &std::path::Path, keep: &[PathBuf]) {
+    use crate::deferred_rename::{path_is_at_or_inside_dir, paths_refer_to_same_dir};
+    let mut dir = folder.to_path_buf();
+    loop {
+        if !path_is_at_or_inside_dir(&dir, made)
+            || keep.iter().any(|k| path_is_at_or_inside_dir(k, &dir))
+        {
+            return;
+        }
+        let last = paths_refer_to_same_dir(&dir, made);
+        // Only an empty folder goes: anything in it (the user's own) keeps it.
+        if std::fs::remove_dir(&dir).is_err() || last {
+            return;
+        }
+        match dir.parent() {
+            Some(p) => dir = p.to_owned(),
+            None => return,
+        }
+    }
+}
+
+/// Remove a file, or one of the engine's pieces folders (`<file>.ddm.pieces`, #769) with what is
+/// in it. Beside the window.
+fn remove_path(p: &std::path::Path) -> std::io::Result<()> {
+    let name = p
+        .file_name()
+        .map(|n| n.to_string_lossy().to_lowercase())
+        .unwrap_or_default();
+    if (name.ends_with(".ddm.pieces") || name.ends_with(".mdm.pieces")) && p.is_dir() {
+        std::fs::remove_dir_all(p)
+    } else {
+        std::fs::remove_file(p)
+    }
 }
 
 /// A download's files that Delete with its files removes (#743: beside the window,
@@ -401,11 +495,10 @@ fn files_of(dest: &std::path::Path, complete: bool) -> Vec<PathBuf> {
     files
 }
 
-/// Delete with its files, beside the window (#743): `files` removed ([`files_of`]); the finished
-/// one (the first, when `complete`) that can't go (open in a player) is said, not skipped
-/// silently (`file_name`, the row's name); one that isn't there, or a part file that can't go,
-/// is left as it is.
-fn delete_files(files: &[PathBuf], complete: bool, file_name: &str) {
+/// Delete with its files, beside the window (#743): `files` removed ([`Removal::files`]); the
+/// `finished` one that can't go (open in a player) is said, not skipped silently (`file_name`,
+/// the row's name); one that isn't there, or a part file that can't go, is left as it is.
+fn delete_files(files: &[PathBuf], finished: Option<&std::path::Path>, file_name: &str) {
     // A part file kept where an earlier temporary directory was (Options → Save to): its state
     // says where.
     for f in files
@@ -419,9 +512,9 @@ fn delete_files(files: &[PathBuf], complete: bool, file_name: &str) {
             let _ = std::fs::remove_file(part);
         }
     }
-    for (k, f) in files.iter().enumerate() {
-        match std::fs::remove_file(f) {
-            Err(e) if k == 0 && complete && e.kind() != std::io::ErrorKind::NotFound => {
+    for f in files {
+        match remove_path(f) {
+            Err(e) if finished == Some(f.as_path()) && e.kind() != std::io::ErrorKind::NotFound => {
                 dialogs::tell(
                     crate::i18n::mark("Delete"),
                     crate::i18n::fmt(
@@ -569,6 +662,8 @@ enum Cmd {
     Resume,
     StopAll,
     DeleteCompleted,
+    /// Downloads → Clean Up Temporary Files: leftover part files no download owns (`leftovers`).
+    CleanUpTemp,
     /// Start / stop a queue (index into `App::queues`).
     StartQueue(usize),
     StopQueue(usize),
@@ -1486,6 +1581,8 @@ impl StartLook {
         if !self.fresh && state.exists() {
             return Begin::Resume(state);
         }
+        // The folder the engine is about to make, DDM's to remove again once empty.
+        note_made(me.id, dest.parent());
         // A name nobody gave (the address's guess) is the server's to give: into the folder,
         // under its Content-Disposition name (#28); the row follows the file made. A name given
         // before its folder was looked at is numbered on there if it is taken (#743). A missing
@@ -1507,10 +1604,13 @@ impl StartLook {
             let _ = gone.recv();
         }
         let running = &self.running;
-        place_to_take_by(&self.me, &self.others, |o| {
+        let id = self.me.id;
+        let place = place_to_take_by(&self.me, &self.others, |o| {
             running.contains(&o.id) || o.holds_place()
         })
-        .unwrap_or(self.me.dest)
+        .unwrap_or(self.me.dest);
+        note_made(id, place.parent());
+        place
     }
 }
 
@@ -1879,6 +1979,16 @@ pub struct App {
     /// Folders of downloads added without Download File Info, looked at beside the window for
     /// the names taken there (`App::number_beside`, #743).
     numbering: Vec<std::sync::mpsc::Receiver<Vec<Numbered>>>,
+    /// Finished downloads' files looked for beside the window ("File missing", `poll_missing`):
+    /// the look under way (one at a time), and when the next one is due.
+    missing_look: Option<std::sync::mpsc::Receiver<Vec<(u64, PathBuf, bool)>>>,
+    missing_due: Instant,
+    /// Leftover temporary files looked for beside the window (`poll_leftovers`): at start, and
+    /// for Downloads → Clean Up Temporary Files (true: its answer is said).
+    leftovers: Option<(std::sync::mpsc::Receiver<leftovers::Swept>, bool)>,
+    /// The start's sweep is yet to run: only when the list was read whole (`store::Loaded`),
+    /// so a list lost or restored from an older copy never takes its downloads' files with it.
+    sweep_at_start: bool,
     /// Torrents' folders looked at beside the window (#743): a paired device's before it is
     /// added, one through the debrid account for files already there (`poll_torrent_checks`).
     torrent_checks: Vec<std::sync::mpsc::Receiver<TorrentChecked>>,
@@ -2211,7 +2321,7 @@ pub fn auth_headers(login: Option<&(String, String)>) -> HeaderMap {
 /// the window's (`App::remove_beside`).
 fn remove_files(files: &[PathBuf]) {
     for f in files {
-        let _ = std::fs::remove_file(f);
+        let _ = remove_path(f);
     }
 }
 /// A stopped download's files: its state and part files, and its finished file when it was
@@ -2348,6 +2458,7 @@ impl App {
         crate::theme::apply(ctx);
         // The zoom main.rs started at (View → Interface size, #262).
         let zoom = crate::scale::startup(loaded.settings.interface_size);
+        let sweep_at_start = loaded.whole && !loaded.items.is_empty();
         let mut settings = loaded.settings;
         if settings.limiter_on_startup {
             settings.speed_limit_on = true;
@@ -2607,6 +2718,10 @@ impl App {
             clearing: HashMap::new(),
             removing: Vec::new(),
             numbering: Vec::new(),
+            missing_look: None,
+            missing_due: Instant::now() + Duration::from_secs(2),
+            leftovers: None,
+            sweep_at_start,
             torrent_checks: Vec::new(),
             turn_off: None,
             exit_requested: false,
@@ -3179,15 +3294,27 @@ impl App {
                 self.after_stop.push((id, then));
                 continue;
             }
+            self.take_made();
             let Some(item) = self.item(id) else { continue };
             let old = item.dest.clone();
             match then {
                 None => {
-                    // Cancelled: a file that finished meanwhile goes too, with its windows. On
-                    // another thread: a slow or stuck disk took the window with it (#423).
+                    // Cancelled: a file that finished meanwhile goes too, with its windows, and
+                    // the folder DDM made for it once empty. On another thread: a slow or stuck
+                    // disk took the window with it (#423).
                     let complete = item.status == Status::Complete;
                     let files = files_of(&old, complete);
-                    self.remove_beside(Removing::of(&files, None), move || remove_files(&files));
+                    let prune = self
+                        .items
+                        .iter()
+                        .find(|i| i.id == id)
+                        .and_then(|i| self.prune_for(i));
+                    self.remove_beside(Removing::of(&files, None), move || {
+                        remove_files(&files);
+                        if let Some(prune) = &prune {
+                            prune.run();
+                        }
+                    });
                     self.complete.retain(|c| c.id != id);
                     self.delete(id);
                 }
@@ -3378,6 +3505,155 @@ impl App {
             item.dest = free;
             self.dirty = true;
         }
+    }
+
+    /// Finished downloads whose file is gone show "File missing" (with Download Again): looked
+    /// for beside the window every few seconds (#743), one look at a time. An answer counts only
+    /// while the row's file is still the one looked for (moved or renamed meanwhile: the next
+    /// look's).
+    fn poll_missing(&mut self) {
+        if let Some(rx) = &self.missing_look {
+            match rx.try_recv() {
+                Ok(found) => {
+                    self.missing_look = None;
+                    for (id, dest, gone) in found {
+                        if let Some(item) = self.item(id)
+                            && item.dest == dest
+                            && item.status == Status::Complete
+                        {
+                            item.missing = gone;
+                        }
+                    }
+                }
+                Err(std::sync::mpsc::TryRecvError::Empty) => return,
+                Err(_) => self.missing_look = None,
+            }
+        }
+        if Instant::now() < self.missing_due {
+            return;
+        }
+        self.missing_due = Instant::now() + Duration::from_secs(12);
+        let look: Vec<(u64, PathBuf)> = self
+            .items
+            .iter()
+            .filter(|i| {
+                i.status == Status::Complete
+                    && i.live.is_none()
+                    && i.gallery.is_none()
+                    && i.torrent.is_none()
+                    && i.remote.is_none()
+            })
+            .map(|i| (i.id, i.dest.clone()))
+            .collect();
+        if look.is_empty() {
+            return;
+        }
+        let (tx, rx) = std::sync::mpsc::channel();
+        let ctx = self.ui_ctx.clone();
+        self.rt.spawn_blocking(move || {
+            let found: Vec<_> = look
+                .into_iter()
+                .map(|(id, dest)| {
+                    let gone = model::finished_file_gone(Status::Complete, &dest);
+                    (id, dest, gone)
+                })
+                .collect();
+            let changed = !found.is_empty();
+            let _ = tx.send(found);
+            if changed {
+                ctx.request_repaint();
+            }
+        });
+        self.missing_look = Some(rx);
+    }
+
+    /// Look for leftover temporary files (`crate::leftovers`) beside the window and remove them:
+    /// at start those a day old (said only to the log), on Downloads → Clean Up Temporary Files
+    /// those a few minutes old (one being written now is no leftover), its answer said.
+    fn sweep_leftovers(&mut self, asked: bool) {
+        if self.leftovers.is_some() {
+            return;
+        }
+        let mut folders = self.kept_folders();
+        folders.extend(
+            self.items
+                .iter()
+                .filter_map(|i| i.dest.parent().map(PathBuf::from)),
+        );
+        let temp = Some(PathBuf::from(self.settings.temp_dir.trim())).filter(|d| d.is_absolute());
+        let owners = self
+            .items
+            .iter()
+            .map(|i| leftovers::Owner {
+                dest: i.dest.clone(),
+                video: i.video.is_some(),
+            })
+            .collect();
+        let plan = leftovers::Plan {
+            folders,
+            temp,
+            owners,
+            older_than: Duration::from_secs(if asked { 5 * 60 } else { 24 * 60 * 60 }),
+        };
+        let (tx, rx) = std::sync::mpsc::channel();
+        let ctx = self.ui_ctx.clone();
+        self.rt.spawn_blocking(move || {
+            let swept = leftovers::sweep(&plan);
+            let _ = tx.send(swept);
+            ctx.request_repaint();
+        });
+        self.leftovers = Some((rx, asked));
+    }
+
+    /// The start's sweep once the window is up, and a sweep's answer.
+    fn poll_leftovers(&mut self) {
+        if std::mem::take(&mut self.sweep_at_start) {
+            self.sweep_leftovers(false);
+        }
+        let Some((rx, asked)) = &self.leftovers else {
+            return;
+        };
+        let asked = *asked;
+        let swept = match rx.try_recv() {
+            Ok(swept) => swept,
+            Err(std::sync::mpsc::TryRecvError::Empty) => return,
+            Err(_) => leftovers::Swept::default(),
+        };
+        self.leftovers = None;
+        if swept.count > 0 || swept.failed > 0 {
+            tracing::info!(
+                "leftover temporary files: {} removed ({} bytes), {} in use",
+                swept.count,
+                swept.bytes,
+                swept.failed
+            );
+        }
+        if !asked {
+            return;
+        }
+        let mut text = if swept.count == 0 {
+            // i18n: Downloads → Clean Up Temporary Files found nothing to remove.
+            crate::i18n::t("No leftover temporary files were found.").to_owned()
+        } else {
+            crate::i18n::fmt(
+                // i18n: Downloads → Clean Up Temporary Files' answer: {count} files, {size} like "1.2 GB".
+                crate::i18n::t("Removed {count} leftover temporary files ({size} freed)."),
+                &[
+                    ("count", &swept.count.to_string()),
+                    ("size", &model::size(swept.bytes)),
+                ],
+            )
+        };
+        if swept.failed > 0 {
+            text.push('\n');
+            text.push_str(&crate::i18n::fmt(
+                // i18n: Clean Up Temporary Files: some files are open in another program.
+                crate::i18n::t("{count} could not be removed (in use by another program)."),
+                &[("count", &swept.failed.to_string())],
+            ));
+        }
+        // i18n: The title of Clean Up Temporary Files' answer.
+        dialogs::tell(crate::i18n::mark("Clean Up Temporary Files"), text);
     }
 
     /// Download `id`'s name is only its address's guess (`guessed`): the server names it when
@@ -4715,20 +4991,23 @@ impl App {
         let mut deleting = None;
         if self.item(id).is_some_and(|i| i.live.is_none()) {
             self.release_link(id);
+            self.take_made();
             if let Some(spec) = self.item(id).and_then(|i| i.torrent.clone()) {
                 self.torrent_host.forget(&self.rt, &spec.hash, files);
             } else if files
                 && let Some(i) = self.items.iter().find(|i| i.id == id)
                 // A gallery's folder stays (it may hold other files; #58).
                 && i.gallery.is_none()
+                && let Some(removal) = replacement(&self.items, id, true)
             {
                 // The file itself: one that can't go (open in a player) is said, not skipped
-                // silently (`delete_files`); the row still leaves the list.
-                let complete = i.status == Status::Complete;
+                // silently (`delete_files`); the row still leaves the list. A video's leftovers
+                // (yt-dlp's, the engine's pieces folders) go with it.
                 deleting = Some(Deleting {
-                    files: files_of(&i.dest, complete),
-                    complete,
+                    removal,
+                    finished: (i.status == Status::Complete).then(|| i.dest.clone()),
                     name: i.file_name.clone(),
+                    prune: self.prune_for(i),
                 });
             }
             self.items.retain(|i| i.id != id);
@@ -4754,14 +5033,18 @@ impl App {
         self.removing.retain(Removing::under_way);
         let mut done = Vec::with_capacity(deleting.len());
         for d in &deleting {
-            let removing = Removing::of(&d.files, None);
+            let removing = d.removal.removing();
             done.push(removing.done());
             self.removing.push(removing);
         }
         let ctx = self.ui_ctx.clone();
         self.rt.spawn_blocking(move || {
             for (d, done) in deleting.into_iter().zip(done) {
-                delete_files(&d.files, d.complete, &d.name);
+                let files = d.removal.files();
+                delete_files(&files, d.finished.as_deref(), &d.name);
+                if let Some(prune) = &d.prune {
+                    prune.run();
+                }
                 drop(done);
             }
             ctx.request_repaint();
@@ -4781,6 +5064,74 @@ impl App {
             drop(done);
             ctx.request_repaint();
         });
+    }
+
+    /// The folders downloads made as they started (`note_made`), into their rows: each keeps the
+    /// first it made (a later start finds it there).
+    fn take_made(&mut self) {
+        let made = std::mem::take(&mut *MADE_FOLDERS.lock().unwrap_or_else(|e| e.into_inner()));
+        for (id, dir) in made {
+            if let Some(item) = self.item(id)
+                && item.made_dir.is_none()
+            {
+                item.made_dir = Some(dir);
+                self.dirty = true;
+            }
+        }
+    }
+
+    /// The folders never removed with a download, though DDM may have made them: the downloads
+    /// folder, every category's, Options' temporary folder and the user's own (home, Desktop,
+    /// Downloads, Documents).
+    fn kept_folders(&self) -> Vec<PathBuf> {
+        let downloads = &self.downloads;
+        let mut keep = vec![downloads.clone()];
+        keep.push(
+            self.settings
+                .category_dir(model::Category::General, downloads),
+        );
+        for cat in model::Category::BUILT_IN {
+            keep.push(self.settings.category_dir(cat, downloads));
+        }
+        for c in &self.settings.custom_categories {
+            keep.push(
+                self.settings
+                    .category_dir(model::Category::Custom(c.id), downloads),
+            );
+        }
+        keep.extend(
+            self.settings
+                .category_dirs
+                .iter()
+                .filter(|(_, d)| !d.is_empty())
+                .map(|(_, d)| PathBuf::from(d)),
+        );
+        if !self.settings.temp_dir.is_empty() {
+            keep.push(PathBuf::from(&self.settings.temp_dir));
+        }
+        keep.extend(
+            [
+                dirs::home_dir(),
+                dirs::desktop_dir(),
+                dirs::download_dir(),
+                dirs::document_dir(),
+            ]
+            .into_iter()
+            .flatten(),
+        );
+        keep
+    }
+
+    /// What of `item`'s folder goes with it once its files are gone: the folder DDM made for it,
+    /// if it made one (`Item::made_dir`), only while empty.
+    fn prune_for(&self, item: &Item) -> Option<Prune> {
+        let made = item.made_dir.clone()?;
+        let folder = item.dest.parent()?.to_owned();
+        Some(Prune {
+            folder,
+            made,
+            keep: self.kept_folders(),
+        })
     }
 
     /// The waits for the removals under way that a look at `folder` for a new download's name
@@ -8276,6 +8627,7 @@ impl App {
             }
             Cmd::StopAll => self.stop_all(),
             Cmd::DeleteCompleted => self.delete_completed(),
+            Cmd::CleanUpTemp => self.sweep_leftovers(true),
             Cmd::StartQueue(q) => self.start_queue(q),
             Cmd::StopQueue(q) => self.stop_queue(q),
             Cmd::Browse(c) => {
@@ -8778,6 +9130,9 @@ impl App {
 
     /// Pull engine progress into the rows; open "Download complete" when one finishes.
     fn poll(&mut self, ctx: &egui::Context) {
+        self.take_made();
+        self.poll_missing();
+        self.poll_leftovers();
         self.poll_virus_checks();
         self.poll_moves();
         self.poll_numbering();
@@ -9119,6 +9474,13 @@ impl App {
                     self.items
                         .iter()
                         .any(|i| i.status == Status::Complete && i.listed()),
+                    false,
+                ),
+                // i18n: Downloads menu: removes the part files of downloads no longer in the list (left by a crash, a power cut, a removed download)
+                I(
+                    "Clean &Up Temporary Files",
+                    Cmd::CleanUpTemp,
+                    self.leftovers.is_none(),
                     false,
                 ),
                 Sep,
@@ -13295,6 +13657,56 @@ mod move_many_tests {
 }
 
 #[cfg(test)]
+mod made_folder_tests {
+    use super::{MADE_FOLDERS, note_made, prune_made};
+
+    /// A download writing in `a\b\c` where only the downloads folder is there: DDM made `a`.
+    #[test]
+    fn the_topmost_missing_folder_is_ddms() {
+        let dir = tempfile::tempdir().unwrap();
+        let id = u64::MAX - 7;
+        note_made(id, Some(&dir.path().join("a").join("b").join("c")));
+        note_made(id - 1, Some(dir.path()));
+        let made: Vec<_> = MADE_FOLDERS
+            .lock()
+            .unwrap()
+            .iter()
+            .filter(|(i, _)| *i >= id - 1)
+            .cloned()
+            .collect();
+        assert_eq!(made, [(id, dir.path().join("a"))]);
+    }
+
+    /// Only empty folders up to the one DDM made go; the user's file, a kept folder and the
+    /// folder above stay.
+    #[test]
+    fn only_empty_folders_ddm_made_go() {
+        let dir = tempfile::tempdir().unwrap();
+        let made = dir.path().join("made");
+        let deep = made.join("x").join("y");
+        std::fs::create_dir_all(&deep).unwrap();
+        prune_made(&deep, &made, &[]);
+        assert!(!made.exists());
+        assert!(dir.path().exists());
+
+        std::fs::create_dir_all(&deep).unwrap();
+        std::fs::write(made.join("mine.txt"), b"x").unwrap();
+        prune_made(&deep, &made, &[]);
+        assert!(!made.join("x").exists());
+        assert!(made.join("mine.txt").exists());
+
+        std::fs::create_dir_all(&deep).unwrap();
+        prune_made(&deep, &made, &[made.join("x")]);
+        assert!(!deep.exists() && made.join("x").exists());
+
+        let elsewhere = dir.path().join("other");
+        std::fs::create_dir_all(&elsewhere).unwrap();
+        prune_made(&elsewhere, &made, &[]);
+        assert!(elsewhere.exists());
+    }
+}
+
+#[cfg(test)]
 mod start_look_tests {
     use super::{StartLook, numbered};
     use crate::model::{Category, Item, Status};
@@ -14569,7 +14981,7 @@ mod beside_window_tests {
         let gone = files.clone();
         let remover = std::thread::spawn(move || {
             std::thread::sleep(Duration::from_millis(150));
-            delete_files(&gone, true, "file.zip");
+            delete_files(&gone, gone.first().map(|f| f.as_path()), "file.zip");
             drop(done);
         });
         match look(&again, waits).decide() {
@@ -14586,7 +14998,7 @@ mod beside_window_tests {
         // One that can't go (here a folder in its place) is said, its row gone all the same.
         std::fs::create_dir_all(at.join("inside")).unwrap();
         let _ = crate::dialogs::told();
-        delete_files(&files_of(&at, true), true, "file.zip");
+        delete_files(&files_of(&at, true), Some(&at), "file.zip");
         let told = crate::dialogs::told();
         assert!(
             told.iter()

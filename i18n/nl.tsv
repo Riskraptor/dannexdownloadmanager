@@ -1908,10 +1908,6 @@
 #. in Download a gallery, after the "Files at most" box
 #, machine
 	Empty: all of them. On most sites the newest come first.	Leeg: allemaal. Op de meeste sites komen de nieuwste eerst.
-#. text in the Options window
-#. \\n starts a new line: break lines where they fit the translation
-#, machine
-	Empty: each download writes straight into a part file next to its file,\nso nothing is copied at the end. A folder here holds the part files\nuntil their downloads complete.	Leeg: elke download schrijft rechtstreeks naar een deelbestand naast\nzijn bestand, zodat er aan het eind niets wordt gekopieerd. Een map hier\nbevat de deelbestanden totdat hun downloads voltooid zijn.
 #. text in crashui.rs
 #. crash report window button: end the frozen DDM and start it again
 #, machine
@@ -2558,9 +2554,6 @@
 #. a country's name (where a download's server is)
 #, machine
 	Hungary	Hongarije
-#. text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
-#, machine
-	I download with Dannex Download Manager: fast, free, and it looks like the download manager you already know. {link}	Ik download met Dannex Download Manager: snel, gratis en het lijkt op de downloadmanager die u al kent. {link}
 #. text in countries.rs
 #. a country's name (where a download's server is)
 #, machine
@@ -3892,10 +3885,6 @@
 #. a country's name (where a download's server is)
 #, machine
 	Paraguay	Paraguay
-#. text in the Options window
-#. \\n starts a new line: break lines where they fit the translation
-#, machine
-	Part files stay here until their downloads complete. On another drive\nthan a download's folder, its file is then copied over. Empty it to\nwrite next to each file again.	Deelbestanden blijven hier totdat hun downloads voltooid zijn. Staat het\nbestand op een andere schijf dan de map van de download, dan wordt het daarna\nnaar die schijf gekopieerd. Maak het veld leeg om weer naast elk bestand te schrijven.
 #. text in the Batch download window; text in a dialog box; label in the Options window; text in the Options window
 #, machine
 	Password	Wachtwoord
@@ -5179,9 +5168,6 @@
 #. {error} = an error message (keep the braces as they are)
 #, machine
 	The download list could not be saved: {error}. Changes are kept while DDM runs.	De downloadlijst kon niet worden opgeslagen: {error}. Wijzigingen worden bewaard zolang DDM actief is.
-#. text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
-#, machine
-	The download manager you already know, rebuilt to be faster. Free and open source under the GNU GPL, version 3 or later.	De downloadmanager die u al kent, opnieuw opgebouwd om sneller te zijn. Gratis en open source onder de GNU GPL, versie 3 of later.
 #. text in a dialog box
 #, machine
 	The download queue is done.	De downloadwachtrij is voltooid.

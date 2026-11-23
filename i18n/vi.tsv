@@ -1908,10 +1908,6 @@
 #. in Download a gallery, after the "Files at most" box
 #, machine
 	Empty: all of them. On most sites the newest come first.	Để trống: tất cả. Trên hầu hết các trang web, những mục mới nhất sẽ xuất hiện trước.
-#. text in the Options window
-#. \\n starts a new line: break lines where they fit the translation
-#, machine
-	Empty: each download writes straight into a part file next to its file,\nso nothing is copied at the end. A folder here holds the part files\nuntil their downloads complete.	Để trống: mỗi bản tải xuống ghi thẳng vào tệp phần ngay cạnh tệp của nó,\nnên không có gì phải sao chép ở cuối. Một thư mục ở đây sẽ giữ các tệp phần\ncho đến khi bản tải xuống hoàn tất.
 #. text in crashui.rs
 #. crash report window button: end the frozen DDM and start it again
 #, machine
@@ -2558,9 +2554,6 @@
 #. a country's name (where a download's server is)
 #, machine
 	Hungary	Hungary
-#. text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
-#, machine
-	I download with Dannex Download Manager: fast, free, and it looks like the download manager you already know. {link}	Tôi tải xuống bằng Dannex Download Manager: nhanh, miễn phí và trông giống như trình quản lý tải xuống mà bạn đã biết. {link}
 #. text in countries.rs
 #. a country's name (where a download's server is)
 #, machine
@@ -3892,10 +3885,6 @@
 #. a country's name (where a download's server is)
 #, machine
 	Paraguay	Paraguay
-#. text in the Options window
-#. \\n starts a new line: break lines where they fit the translation
-#, machine
-	Part files stay here until their downloads complete. On another drive\nthan a download's folder, its file is then copied over. Empty it to\nwrite next to each file again.	Các tệp phần được giữ ở đây cho đến khi bản tải xuống hoàn tất. Nếu ở ổ đĩa khác\nvới thư mục của bản tải xuống, tệp sẽ được sao chép sang. Để trống để\nlại ghi cạnh từng tệp.
 #. text in the Batch download window; text in a dialog box; label in the Options window; text in the Options window
 #, machine
 	Password	Mật khẩu
@@ -5179,9 +5168,6 @@
 #. {error} = an error message (keep the braces as they are)
 #, machine
 	The download list could not be saved: {error}. Changes are kept while DDM runs.	Không thể lưu danh sách tải xuống: {error}. Các thay đổi được giữ lại khi DDM chạy.
-#. text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
-#, machine
-	The download manager you already know, rebuilt to be faster. Free and open source under the GNU GPL, version 3 or later.	Trình quản lý tải xuống bạn đã quen, được xây dựng lại để nhanh hơn. Miễn phí và mã nguồn mở theo GNU GPL, phiên bản 3 trở lên.
 #. text in a dialog box
 #, machine
 	The download queue is done.	Hàng đợi tải xuống đã hoàn tất.
