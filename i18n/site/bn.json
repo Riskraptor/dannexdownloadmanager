@@ -782,6 +782,10 @@
    "source": "Extracted files are marked as coming from the internet, as the archive is, so Windows still warns before running a program from it.",
    "text": "এক্সট্র্যাক্ট করা ফাইলগুলোকে আর্কাইভের মতোই ইন্টারনেট থেকে আসা হিসেবে চিহ্নিত করা হয়। তাই সেগুলোর কোনো প্রোগ্রাম চালানোর আগে Windows এখনও সতর্ক করে।"
   },
+  "0b5a2fe5d385702d": {
+   "source": "<g1>Minimize to the notification area</g1> — Minimize hides the main window, and a download's progress window, in the notification area; downloads go on. Off by default, as in IDM: Minimize leaves the window in the taskbar and only the close box hides it in the tray (lists from before 1.0, where it was on by default, have it off once; tick it again if you want it). On, only the window's own Minimize hides it; a click on its taskbar button still minimizes it to the taskbar, as Windows does. Where the tray has no icon, the main window minimizes to the taskbar instead. The close setting above is separate; when it is on, closing hides there too (or minimizes to the taskbar if there is no icon at all). Greyed where no tray shows DDM's icon (some Linux desktops); in a Wayland session the main window stays minimized in the dock, since Wayland can't hide a window.",
+   "text": "<g1>বিজ্ঞপ্তি এলাকায় ছোট করুন</g1> — ছোট করুন বোতাম প্রধান উইন্ডো এবং ডাউনলোডের অগ্রগতি উইন্ডো বিজ্ঞপ্তি এলাকায় লুকিয়ে রাখে; ডাউনলোড চলতে থাকে। IDM-এর মতোই ডিফল্টে বন্ধ থাকে: তখন ছোট করুন উইন্ডোটিকে টাস্কবারে রাখে, আর শুধু বন্ধ করার বোতামই এটিকে ট্রেতে লুকায় (1.0-এর আগের যেসব তালিকায় এটি ডিফল্টে চালু ছিল, সেগুলিতে এটি একবার বন্ধ হয়ে গেছে; চাইলে আবার টিক দিন)। চালু থাকলে শুধু উইন্ডোর নিজের ছোট করুন বোতাম এটিকে লুকায়; টাস্কবার বোতামে ক্লিক করলে Windows-এর নিয়মে উইন্ডো টাস্কবারেই ছোট হয়। ট্রেতে কোনো আইকন না থাকলে প্রধান উইন্ডো বরং টাস্কবারে ছোট হয়। উপরের বন্ধ করার সেটিংটি আলাদা; সেটি চালু থাকলে বন্ধ করলেও উইন্ডো সেখানে লুকায় (বা কোনো আইকনই না থাকলে টাস্কবারে ছোট হয়)। যেখানে কোনো ট্রে DDM-এর আইকন দেখায় না (কিছু Linux ডেস্কটপে), সেখানে এটি ধূসর থাকে। Wayland সেশনে প্রধান উইন্ডো ডকে ছোট অবস্থায় থাকে, কারণ Wayland কোনো উইন্ডো লুকাতে পারে না।"
+  },
   "0b60549b3aaf5aea": {
    "source": "A portable copy. The download list and settings stay in a <x1/> folder next to the program, and nothing is written to the registry. Browser integration needs the installer. See <g2>Portable mode</g2>.",
    "text": "একটি পোর্টেবল কপি। ডাউনলোড তালিকা এবং সেটিংস প্রোগ্রামের পাশে একটি <x1/> ফোল্ডারে থাকে এবং রেজিস্ট্রি-তে কিছু লেখা হয় না। ব্রাউজার ইন্টিগ্রেশনের জন্য ইনস্টলার প্রয়োজন। <g2>পোর্টেবল মোড</g2> দেখুন।"
@@ -997,6 +1001,10 @@
   "0ee7cd7e753d52b4": {
    "source": "Packages that know their archives",
    "text": "প্যাকেজ যা তাদের আর্কাইভ চেনে"
+  },
+  "0f0d01c7bf52af00": {
+   "source": "<g1>Start Dannex Download Manager with the computer</g1> — start DDM when you sign in to Windows. It starts in the notification area, its window hidden, with its downloads, queues and Scheduler running; click its icon (or start DDM again) to show the window. On Linux and macOS it starts with your session the same way; where no notification area shows DDM's icon (some Linux desktops), it starts minimized, and the option's tooltip says so. DDM waits for the notification area up to 30 seconds after making its icon, its window hidden, as a desktop's can come up after DDM at sign-in. Off by default. Greyed in a <g2>portable copy</g2>, which writes nothing to the registry.",
+   "text": "<g1>কম্পিউটারের সঙ্গে Dannex Download Manager শুরু করুন</g1> — Windows-এ সাইন ইন করলে DDM শুরু হয়। এটি বিজ্ঞপ্তি এলাকায় শুরু হয়, এর উইন্ডো লুকানো থাকে, আর এর ডাউনলোড, সারি ও সময়সূচী চলতে থাকে। উইন্ডো দেখাতে এর আইকনে ক্লিক করুন (বা আবার DDM শুরু করুন)। Linux ও macOS-এ এটি একইভাবে আপনার সেশনের সঙ্গে শুরু হয়। যেখানে কোনো বিজ্ঞপ্তি এলাকা DDM-এর আইকন দেখায় না (কিছু Linux ডেস্কটপে), সেখানে এটি ছোট অবস্থায় শুরু হয়, আর বিকল্পটির টুলটিপে তা লেখা আছে। আইকন তৈরির পর DDM বিজ্ঞপ্তি এলাকার জন্য সর্বোচ্চ 30 সেকেন্ড অপেক্ষা করে, উইন্ডো লুকানো রেখে, কারণ সাইন-ইনের সময় ডেস্কটপের এলাকা DDM-এর পরে চালু হতে পারে। ডিফল্টে বন্ধ থাকে। <g2>পোর্টেবল কপিতে</g2> এটি ধূসর থাকে, কারণ সেটি রেজিস্ট্রিতে কিছু লেখে না।"
   },
   "0f215f8302a86388": {
    "source": "If neither can start, DDM draws with a software renderer (Microsoft's on Windows, Mesa's on Linux), so the window still opens (Remote Desktop, a virtual machine without a graphics driver). It works, but keeps the processor busier.",
@@ -1410,6 +1418,10 @@
    "source": "How a gallery comes down",
    "text": "একটি গ্যালারি যেভাবে ডাউনলোড হয়"
   },
+  "156fc779489a327d": {
+   "source": "Read a site offline",
+   "text": "অফলাইনে সাইট পড়ুন"
+  },
   "1571a1c0d457d601": {
    "source": "DDM's Options left the last download to the browser",
    "text": "DDM-এর সেটিংস শেষ ডাউনলোডটি ব্রাউজারের কাছে ছেড়ে দিয়েছে"
@@ -1634,6 +1646,10 @@
    "source": "Use Help → Report a problem in DDM: it opens the bug report form on GitHub with your version, system and language filled in. Or open the form yourself.…",
    "text": "DDM-এ সহায়তা → একটি সমস্যা রিপোর্ট করুন নির্বাচন করুন: এতে GitHub-এ বাগ রিপোর্ট ফর্মটি খুলবে, যেখানে আপনার সংস্করণ, সিস্টেম ও ভাষা আগে থেকেই পূরণ করা থাকবে। অথবা নিজেই ফর্মটি খুলুন।…"
   },
+  "192f6d08226bb79f": {
+   "source": "<g1>Double-click</g1> a download, or press <g2>Enter</g2>, to see its <g3>Properties</g3>, finished or not, as in IDM.",
+   "text": "IDM-এর মতো, কোনো ডাউনলোডে <g1>ডাবল-ক্লিক</g1> করুন বা <g2>Enter</g2> চাপুন। শেষ হোক বা না হোক, সেটির <g3>বৈশিষ্ট্য</g3> দেখা যাবে।"
+  },
   "1947edde30d714ae": {
    "source": "<g1>Repeat on</g1> starts only on the ticked days. <g2>Once on</g2> starts only on that date.",
    "text": "<g1>এই দিনগুলোতে পুনরাবৃত্তি করুন</g1> শুধুমাত্র টিক দেওয়া দিনগুলিতে শুরু হয়। <g2>এই তারিখে একবার</g2> শুধুমাত্র সেই তারিখে শুরু হয়।"
@@ -1697,6 +1713,10 @@
   "1a16e2e76218c968": {
    "source": "egui's small text",
    "text": "egui-এর ছোট লেখা"
+  },
+  "1a1b1c434e2a9e69": {
+   "source": "Each <g1>Don't show this again</g1> (or <g2>Don't ask again</g2>) can be undone:",
+   "text": "প্রতিটি <g1>এটি আর দেখাবেন না</g1> (বা <g2>আবার জিজ্ঞাসা করবেন না</g2>) ফিরিয়ে আনা যায়:"
   },
   "1a1c4d85605e18ae": {
    "source": "<g1>Alt+Enter</g1> always opens <g2>Properties</g2>.",
@@ -1805,6 +1825,10 @@
   "1bad738cb3cea90f": {
    "source": "Select or unselect the download with the dotted outline",
    "text": "ডটেড আউটলাইন সহ ডাউনলোডটি নির্বাচন বা অনির্বাচন করুন"
+  },
+  "1bc760bb0d073838": {
+   "source": "Click a column's title to sort by it; click it again for the other way.",
+   "text": "কোনো কলামের শিরোনামে ক্লিক করলে সেই অনুযায়ী সাজানো হয়; আবার ক্লিক করলে উল্টো ক্রমে সাজানো হয়।"
   },
   "1bc816518d6f87cb": {
    "source": "<g1>Save to</g1>: the folder its torrents go to; empty, the Torrents category's folder. <g2>Add them without starting them</g2> adds them as <g3>Download Later</g3> would.",
@@ -2538,6 +2562,10 @@
    "source": "What a report contains",
    "text": "একটি রিপোর্টে কী থাকে"
   },
+  "276fcec559dad0de": {
+   "source": "<g1>Use passive mode for FTP</g1> — on by default: for FTP downloads DDM opens the data connections itself (passive mode), which works through routers and firewalls. Turn it off only for a server that needs active mode (the server connects back to you). FTP never goes through the proxy above. See <g2>FTP and FTPS</g2>.",
+   "text": "<g1>FTP-র জন্য প্যাসিভ মোড ব্যবহার করুন</g1> — ডিফল্টভাবে চালু থাকে: FTP ডাউনলোডে DDM নিজেই ডেটা সংযোগ খোলে (প্যাসিভ মোড), যা রাউটার ও ফায়ারওয়ালের মধ্য দিয়েও কাজ করে। যে সার্ভারের অ্যাক্টিভ মোড দরকার (সার্ভার আপনার দিকে সংযোগ করে), শুধু তার জন্যই এটি বন্ধ করুন। FTP কখনোই উপরের প্রক্সির মাধ্যমে যায় না। দেখুন <g2>FTP ও FTPS</g2>।"
+  },
   "2778dbf88c3c0602": {
    "source": "Add torrent.",
    "text": "টরেন্ট যোগ করুন।"
@@ -2613,6 +2641,10 @@
   "286a2be607456e48": {
    "source": "Set <g1>Maximum download speed</g1> in KBytes/sec. The new limit applies at once.",
    "text": "কিলোবাইট/সেকেন্ডে <g1>সর্বোচ্চ ডাউনলোড গতি</g1> সেট করুন। নতুন সীমা অবিলম্বে প্রযোজ্য হয়।"
+  },
+  "286f78069efed389": {
+   "source": "<g1>Open with...</g1> (here and in <g2>Download complete</g2>) shows the system's own choice of apps: Windows' <g3>Open with</g3> window, whose <g4>Always</g4> (or <g5>Always use this app</g5>) makes that app the one <g6>Open</g6> uses from then on; on Linux the desktop's <g7>Open With</g7> chooser; on macOS the list of applications. <g8>Open folder</g8> opens the file's folder with the file selected.",
+   "text": "<g1>এর সাথে খুলুন...</g1> (এখানে এবং <g2>ডাউনলোড সম্পূর্ণ</g2>-এ) সিস্টেমের নিজস্ব অ্যাপ তালিকা দেখায়। Windows-এ এটি <g3>এর সাথে খুলুন</g3> উইন্ডো, যার <g4>Always</g4> (বা <g5>Always use this app</g5>) বেছে নিলে সেই অ্যাপই পরে থেকে <g6>Open</g6>-এর জন্য ব্যবহার হয়। Linux-এ এটি ডেস্কটপের <g7>Open With</g7> বাছাইকারী, আর macOS-এ অ্যাপ্লিকেশনের তালিকা। <g8>ফোল্ডার খুলুন</g8> ফাইলের ফোল্ডারটি খোলে এবং ফাইলটি নির্বাচিত অবস্থায় থাকে।"
   },
   "2879329fef4fb0e5": {
    "source": "Add a download, with the Address box, Log in to the server and OK",
@@ -2761,6 +2793,10 @@
   "2b3813b1923fc5e3": {
    "source": "The list covers every display language of Windows 11, including both Chinese scripts, Spanish for Spain and Mexico, French for France and Canada, Portuguese for Portugal and Brazil, and Serbian in Cyrillic and Latin. The <g1>languages page</g1> lists them all.",
    "text": "এই তালিকায় Windows 11-এর প্রতিটি ডিসপ্লে ভাষা অন্তর্ভুক্ত, যার মধ্যে চীনা ভাষার দুটি স্ক্রিপ্ট, স্পেন ও মেক্সিকোর জন্য স্প্যানিশ, ফ্রান্স ও কানাডার জন্য ফরাসি, পর্তুগাল ও ব্রাজিলের জন্য পর্তুগিজ এবং সিরিলিক ও ল্যাটিন উভয় হরফে সার্বিয়ান ভাষা রয়েছে। <g1>ভাষা পৃষ্ঠায়</g1> সেগুলোর সব তালিকা দেওয়া আছে।"
+  },
+  "2b4348ab9abbefc7": {
+   "source": "<g1>Take these file types from the browsers</g1> — the file types the browser hands over (and the clipboard picks up). Separate them by spaces; <x2/> matches any characters, as in <x3/>. <g4>Default</g4> puts the original list back. The list starts with the usual archives, programs and installers (Windows, macOS and Linux ones: DMG, PKG, DEB, RPM, APPIMAGE, MSIX), music and videos, PDF and Office files, AI models and datasets (GGUF, SAFETENSORS, CKPT, PT, ONNX, PARQUET), 3D and CAD files (GLB, FBX, OBJ, STL, BLEND, STEP), design and camera RAW files, ebooks, disk images and split archives. Pages, scripts, plain text and web images are left out on purpose, so saving a picture or a page stays with the browser; add any type you need, or put a single <x5/> in the box to take every file that has an extension. A list you never changed gains the types a new version adds; one you edited stays as it is.",
+   "text": "<g1>ব্রাউজার থেকে এই ফাইলের ধরনগুলি নিন</g1> — ব্রাউজার যেসব ফাইলের ধরন DDM-কে দেয় (এবং ক্লিপবোর্ড থেকে ধরা হয়)। স্পেস দিয়ে আলাদা করুন; <x2/> যেকোনো অক্ষরের সঙ্গে মেলে, যেমন <x3/>-এ। <g4>ডিফল্ট</g4> মূল তালিকা ফিরিয়ে আনে। তালিকাটি শুরু হয় সাধারণ আর্কাইভ, প্রোগ্রাম ও ইনস্টলার দিয়ে (Windows, macOS ও Linux-এর: DMG, PKG, DEB, RPM, APPIMAGE, MSIX), গান ও ভিডিও, PDF ও Office ফাইল, AI মডেল ও ডেটাসেট (GGUF, SAFETENSORS, CKPT, PT, ONNX, PARQUET), 3D ও CAD ফাইল (GLB, FBX, OBJ, STL, BLEND, STEP), ডিজাইন ও ক্যামেরার RAW ফাইল, ই-বুক, ডিস্ক ইমেজ এবং ভাগ করা আর্কাইভ দিয়ে। পাতা, স্ক্রিপ্ট, সাধারণ টেক্সট ও ওয়েব ছবি ইচ্ছাকৃতভাবে বাদ রাখা হয়েছে, যাতে ছবি বা পাতা সংরক্ষণ ব্রাউজারের হাতেই থাকে। প্রয়োজনীয় যেকোনো ধরন যোগ করুন, অথবা এক্সটেনশন আছে এমন প্রতিটি ফাইল নিতে বাক্সে শুধু একটি <x5/> দিন। যে তালিকা আপনি কখনও বদলাননি, নতুন সংস্করণ যে ধরন যোগ করে তা সেখানে যুক্ত হয়; আপনার সম্পাদনা করা তালিকা যেমন আছে তেমনই থাকে।"
   },
   "2b529a26cf5efd79": {
    "source": "<g1>Uninstalling</g1> on Windows with <g2>remove the download list and settings</g2> removes DDM's entries from Credential Manager too. Elsewhere, or to remove them yourself: <x3/> (only DDM's own entries).",
@@ -3046,6 +3082,10 @@
    "source": "Connections and speed →",
    "text": "সংযোগ এবং গতি →"
   },
+  "2fa99d76ec9b5ab2": {
+   "source": "<g1>Save … files to</g1> — the category's folder. Type a path or click <g2>Browse</g2>.",
+   "text": "<g1>… ফাইল সংরক্ষণের ফোল্ডার</g1> — বিভাগটির ফোল্ডার। একটি পাথ লিখুন অথবা <g2>ব্রাউজ</g2> ক্লিক করুন।"
+  },
   "2fb2e5e828b2fdf4": {
    "source": "Copied",
    "text": "কপি করা হয়েছে"
@@ -3170,6 +3210,10 @@
    "source": "Open it in <g1>Add torrent</g1> (what Windows passes when DDM opens torrents).",
    "text": "<g1>টরেন্ট যোগ করুন</g1>-এ এটি খুলুন (Windows যখন DDM টরেন্ট খোলে তখন এটি পাস করে)।"
   },
+  "327436289cb74667": {
+   "source": "<g1>Don't show this again</g1> — DDM stops asking and does what you answered this time. To be asked again, tick <g2>Options → General → Confirm before deleting downloads</g2>.",
+   "text": "<g1>এটি আর দেখাবেন না</g1> — DDM আর জিজ্ঞাসা করে না এবং এবার আপনি যে উত্তর দিয়েছেন সেটিই করে। আবার জিজ্ঞাসা করানোর জন্য <g2>Options → সাধারণ → ডাউনলোড মুছে ফেলার আগে নিশ্চিতকরণ চাই</g2> টিক দিন।"
+  },
   "3279a9051ce3fee9": {
    "source": "Download manager command line and automation API — Dannex Download Manager",
    "text": "ডাউনলোড ম্যানেজার কমান্ড লাইন এবং অটোমেশন এপিআই — Dannex Download Manager"
@@ -3249,6 +3293,10 @@
   "343c248df702cea5": {
    "source": "DDM can start with your computer and wait in the notification area, its window closed and its downloads running. A download's progress window can go there too, with one click.",
    "text": "DDM আপনার কম্পিউটার চালু হওয়ার সাথে সাথে শুরু হতে পারে এবং বিজ্ঞপ্তি এলাকায় অপেক্ষা করতে পারে, এর উইন্ডো বন্ধ থাকলেও ডাউনলোড চলতে থাকবে। একটি ডাউনলোডের অগ্রগতি উইন্ডোও এক ক্লিকে সেখানে যেতে পারে।"
+  },
+  "344900eeb785a84a": {
+   "source": "As each page and style sheet finishes downloading, DDM changes its links to lead to the saved copies: links to other pages, pictures (<x1/> and pictures loaded late too), style sheets, scripts, fonts and the addresses in CSS. A link to something that wasn't saved (a page beyond the depth, another site) is made a full address, so it still opens on the site. Nothing else in the page changes. Grabbing more of the site later and downloading the new files updates the pages already saved.",
+   "text": "প্রতিটি পৃষ্ঠা ও স্টাইল শিট ডাউনলোড শেষ হওয়ার সঙ্গে সঙ্গে DDM তার লিঙ্কগুলো বদলে সংরক্ষিত কপির দিকে নির্দেশ করে: অন্য পৃষ্ঠার লিঙ্ক, ছবি (<x1/> এবং দেরিতে লোড হওয়া ছবিও), স্টাইল শিট, স্ক্রিপ্ট, ফন্ট এবং CSS-এর ঠিকানা। যা সংরক্ষণ করা হয়নি (গভীরতার বাইরের পৃষ্ঠা, অন্য সাইট), তার লিঙ্ক পূর্ণ ঠিকানা করে দেওয়া হয়, ফলে সেটি সাইটেই খোলে। পৃষ্ঠার আর কিছু বদলায় না। পরে সাইটের আরও অংশ গ্র্যাব করে নতুন ফাইল ডাউনলোড করলে আগে সংরক্ষিত পৃষ্ঠাগুলো হালনাগাদ হয়।"
   },
   "345ec23a63092a3b": {
    "source": "Their border (transparent: none)",
@@ -3494,6 +3542,10 @@
    "source": "Schedule: when the queue is done",
    "text": "সময়সূচী: যখন সারি শেষ হয়"
   },
+  "380655a5943a3527": {
+   "source": "<g1>Open</g1>: its window, on its grab under way, else on the files it found (or its settings, when it hasn't run yet).",
+   "text": "<g1>খুলুন</g1>: প্রকল্পের উইন্ডো। গ্র্যাব চলমান থাকলে সেটি, না থাকলে খুঁজে পাওয়া ফাইলগুলো (অথবা এখনও না চললে এর সেটিংস) দেখায়।"
+  },
   "381ce7f7ef2df90d": {
    "source": "Version",
    "text": "সংস্করণ"
@@ -3549,6 +3601,10 @@
   "39495ae504c37d96": {
    "source": "The tick or dot on the checked accent",
    "text": "চেক করা অ্যাকসেন্টের টিক বা ডট"
+  },
+  "3963daf96fa144e5": {
+   "source": "<g1>Choose columns:</g1> right-click any column title and tick the ones you want, or choose <g2>Columns...</g2> for a window with every column, <g3>Move up</g3>, <g4>Move down</g4> and <g5>Reset</g5> (also <g6>View → Choose columns...</g6>). The others keep their widths and close up; File Name always shows.",
+   "text": "<g1>কলাম বেছে নেওয়া:</g1> যেকোনো কলামের শিরোনামে ডান-ক্লিক করে পছন্দের কলামে টিক দিন, অথবা <g2>কলাম...</g2> বেছে নিন; সেই উইন্ডোতে সব কলাম এবং <g3>উপরে সরান</g3>, <g4>নিচে সরান</g4> ও <g5>পুনরায় সেট করুন</g5> আছে (<g6>দেখুন → কলাম বেছে নিন...</g6> থেকেও খোলা যায়)। বাকি কলামগুলো নিজেদের প্রস্থ রাখে এবং কাছাকাছি চলে আসে; ফাইলের নাম সবসময় দেখায়।"
   },
   "3985471191b1778f": {
    "source": "<g1>macOS Apple Silicon</g1><g2>.dmg · M1 and later · experimental</g2>",
@@ -3630,6 +3686,10 @@
    "source": "Started and stopped by the clock",
    "text": "ঘড়ি দ্বারা শুরু ও বন্ধ করা হয়"
   },
+  "3aa4e1f7d67e8111": {
+   "source": "The question before removing downloads — tick <g1>Options → General → Confirm before deleting downloads</g1>. While it is off, <g2>Remove</g2> does what you last answered: with or without the files.",
+   "text": "ডাউনলোড সরানোর আগের প্রশ্ন — <g1>বিকল্প → সাধারণ → ডাউনলোড মুছে ফেলার আগে নিশ্চিতকরণ চাই</g1>-এ টিক দিন। এটি বন্ধ থাকলে <g2>সরান</g2> আপনার সর্বশেষ উত্তর অনুযায়ী কাজ করে: ফাইলসহ বা ফাইল ছাড়া।"
+  },
   "3aaf9872ed0f4888": {
    "source": "About 40, separate downloads",
    "text": "প্রায় 40টি, আলাদা ডাউনলোড"
@@ -3649,6 +3709,10 @@
   "3ae62309609ddf49": {
    "source": "The desktop app (<x1/>, egui): list, categories, queues, scheduler, dialogs, tray, settings",
    "text": "ডেস্কটপ অ্যাপ (<x1/>, egui): তালিকা, বিভাগ, সারি, সময়সূচী, ডায়ালগ, ট্রে, সেটিংস"
+  },
+  "3ae6cb6575c23b95": {
+   "source": "<g1>Show the Download complete window</g1> — show <g2>Download complete</g2> when a file finishes. A download's progress window has the same box for that file alone (<g3>When done</g3>): ticked or unticked there, it counts for that file whatever this one says. <g4>Don't show this again</g4> in <g5>Download complete</g5> unticks this one. Tick it here to have the box back.",
+   "text": "<g1>ডাউনলোড সম্পূর্ণ উইন্ডো দেখান</g1> — কোনো ফাইলের ডাউনলোড শেষ হলে <g2>ডাউনলোড সম্পূর্ণ</g2> দেখান। ডাউনলোডের অগ্রগতি উইন্ডোতে শুধু ওই ফাইলের জন্য একই বক্স আছে (<g3>শেষ হলে</g3>): সেখানে টিক দেওয়া থাকুক বা না থাকুক, এখানকার সেটিং যা-ই হোক, ওই ফাইলের জন্য সেটিই চলবে। <g5>ডাউনলোড সম্পূর্ণ</g5>-এর <g4>এটি আর দেখাবেন না</g4> এই বক্সের টিক তুলে দেয়। আবার চালু করতে এখানে টিক দিন।"
   },
   "3aeb6a6267d41e6e": {
    "source": "A checksum is a short code worked out from a file's contents, published so you can tell that the copy you downloaded is the right one. Right-click a download in the list, choose <g1>Verify checksum...</g1> and paste the code from the site. DDM answers <g2>The file matches</g2> or <g3>The file does NOT match</g3>. Nothing to install, and no command to type.",
@@ -3753,6 +3817,10 @@
   "3c9dd15fbbf36df8": {
    "source": "<g1>Server.</g1> The lab server from this repository, on 127.0.0.1, serving generated content. It throttles, delays, refuses or cuts connections per scenario, and logs every request with millisecond start and end times.",
    "text": "<g1>সার্ভার।</g1> এই রিপোজিটরির ল্যাব সার্ভারটি 127.0.0.1-এ তৈরি করা কনটেন্ট পরিবেশন করে। প্রতিটি পরিস্থিতি অনুযায়ী এটি সংযোগের গতি সীমিত করে, বিলম্ব ঘটায়, সংযোগ প্রত্যাখ্যান করে বা বিচ্ছিন্ন করে। প্রতিটি অনুরোধের শুরুর ও শেষের সময় মিলিসেকেন্ডে লগ করে।"
+  },
+  "3ca810bb301a2ac2": {
+   "source": "<g1>Don't take files smaller than (KB, 0 = any size)</g1> — smaller downloads stay with the browser (a receipt, an icon). 0, the default, takes any size.",
+   "text": "<g1>এর চেয়ে ছোট ফাইল নেবেন না (KB, 0 = যেকোনো আকার)</g1> — এর চেয়ে ছোট ডাউনলোড ব্রাউজারের কাছেই থাকে (যেমন রসিদ, আইকন)। 0, যা ডিফল্ট, যেকোনো আকারের ফাইল নেয়।"
   },
   "3cae9664f3f38338": {
    "source": "Straight to disk",
@@ -3890,6 +3958,10 @@
    "source": "Download Dannex Download Manager",
    "text": "Dannex Download Manager ডাউনলোড করুন"
   },
+  "3eb7699d711521ad": {
+   "source": "<g1>Continue</g1> (when the last run stopped early) explores further, from where it stopped.",
+   "text": "<g1>অন্বেষণ চালিয়ে যান</g1> (শেষবার আগেই থেমে গেলে) যেখানে থেমেছিল সেখান থেকে আরও অন্বেষণ করে।"
+  },
   "3eba7f086afb94a2": {
    "source": "Is it really free?",
    "text": "এটা কি সত্যিই বিনামূল্যে?"
@@ -3941,6 +4013,10 @@
   "3f8264069ba3f3e9": {
    "source": "The app",
    "text": "অ্যাপ"
+  },
+  "3f82daa5575a7af3": {
+   "source": "Type in <g1>Filter</g1> to show only the files whose name or address contains it, and choose a <g2>Type</g2> to show only the pictures, the documents, the pages and so on. <g3>Larger than</g3> and <g4>Smaller than</g4> (in KB) show only the files of those sizes, to leave out thumbnails say; a file whose size isn't known is always shown. <g5>Select all</g5> and <g6>Select none</g6> tick or untick the files shown.",
+   "text": "<g1>ফিল্টার</g1>-এ লিখলে শুধু সেই ফাইলগুলো দেখায়, যার নাম বা ঠিকানায় লেখাটি আছে। <g2>ধরন</g2> বেছে নিয়ে শুধু ছবি, নথি, পৃষ্ঠা ইত্যাদি দেখতে পারেন। <g3>এর চেয়ে বড়</g3> ও <g4>এর চেয়ে ছোট</g4> (KB-তে) দিয়ে নির্দিষ্ট আকারের ফাইল দেখানো যায়, যেমন থাম্বনেইল বাদ দিতে; যে ফাইলের আকার জানা নেই, সেটি সবসময় দেখানো হয়। <g5>সব নির্বাচন করুন</g5> ও <g6>কোনোটি নির্বাচন করবেন না</g6> দেখানো ফাইলগুলোতে টিক দেয় বা টিক তুলে নেয়।"
   },
   "3f86fde89f3656cf": {
    "source": "Not held to the adapter yet, so they don't start while one is chosen: <x1/> (implicit TLS; <x2/> with TLS is fine).",
@@ -4246,6 +4322,10 @@
    "source": "Sites Logins: a user name and password per site.",
    "text": "সাইটের লগইন তথ্য: প্রতিটি সাইটের জন্য ব্যবহারকারীর নাম ও পাসওয়ার্ড।"
   },
+  "43c49121239148be": {
+   "source": "<g1>List the downloads under All Downloads too</g1>: off by default, so that a grab of thousands of files doesn't bury your other downloads. The files show under the project in <g2>Grabber projects</g2>, and in the queue they join. Tick it to see them under All Downloads and its categories as well.",
+   "text": "<g1>ডাউনলোডগুলো সব ডাউনলোডের অধীনেও তালিকাভুক্ত করুন</g1>: ডিফল্টভাবে বন্ধ থাকে, যাতে হাজার হাজার ফাইলের গ্র্যাব আপনার অন্য ডাউনলোডগুলোকে ঢেকে না দেয়। ফাইলগুলো <g2>গ্র্যাবার প্রকল্প</g2>-এ প্রকল্পের অধীনে এবং যে সারিতে যোগ হয় সেখানে দেখা যায়। সব ডাউনলোড ও তার শ্রেণীগুলোর অধীনেও দেখতে এতে টিক দিন।"
+  },
   "43dc4b87cceb0568": {
    "source": "Links that come while the window is open join the ones already there. A link that is already in the window isn't added twice. A link that is already in your download list goes under <g1>Already in the list</g1>, unticked.",
    "text": "উইন্ডো খোলা থাকা অবস্থায় আসা লিঙ্কগুলো আগে থেকে থাকা লিঙ্কগুলোর সঙ্গে যুক্ত হয়। উইন্ডোতে আগে থেকেই থাকা কোনো লিঙ্ক দ্বিতীয়বার যোগ হয় না। ডাউনলোড তালিকায় আগে থেকেই থাকা লিঙ্ক <g1>ইতিমধ্যেই তালিকায় আছে</g1> বিভাগের অধীনে আনটিক করা অবস্থায় থাকে।"
@@ -4301,6 +4381,10 @@
   "44aa99ba0ee91e15": {
    "source": "It's a desktop app: open this page on your computer to download it.",
    "text": "এটি একটি ডেস্কটপ অ্যাপ: এটি ডাউনলোড করতে আপনার কম্পিউটারে এই পৃষ্ঠাটি খুলুন।"
+  },
+  "44ad450a0c786f11": {
+   "source": "<g1>Pause between requests</g1> and <g2>Requests at once</g2>: how gently it reads the site. The defaults (half a second, two at once) are polite to small sites. Each page is read once, however many pages link to it.",
+   "text": "<g1>অনুরোধের মধ্যে বিরতি</g1> ও <g2>একসঙ্গে অনুরোধ</g2>: সাইটটি কত ধীরে ধীরে পড়া হবে। ডিফল্ট মান (আধা সেকেন্ড, একসঙ্গে দুটি) ছোট সাইটের জন্য ভদ্রোচিত। যতগুলো পৃষ্ঠা থেকেই লিঙ্ক থাকুক, প্রতিটি পৃষ্ঠা একবারই পড়া হয়।"
   },
   "44be10554ef4d67f": {
    "source": "Preliminary results from {date}. A full re-run is under way; these numbers will be replaced when it finishes.",
@@ -4718,6 +4802,10 @@
    "source": "<g1>Torrent commands</g1> in the right-click menu: <g2>Recheck files</g2>, <g3>Reannounce</g3>, <g4>Add trackers...</g4> and <g5>Copy magnet link</g5>. Files can be ticked and unticked while it runs.",
    "text": "রাইট-ক্লিক মেনুতে <g1>টরেন্ট কমান্ড</g1>: <g2>ফাইলগুলি আবার যাচাই করুন</g2>, <g3>ট্র্যাকারকে আবার ঘোষণা করুন</g3>, <g4>ট্র্যাকার যোগ করুন...</g4> এবং <g5>ম্যাগনেট লিঙ্ক কপি করুন</g5>। এটি চলার সময় ফাইলগুলি টিক এবং আনটিক করা যেতে পারে।"
   },
+  "4c7ae50eb25cbd28": {
+   "source": "<g1>Keys that leave a link to the browser, or give it to DDM → Keys...</g1> — the keys that, held while clicking a link, leave it to the browser (Alt) or have DDM download it whatever its type (Ctrl+Alt; Command+Option on a Mac). Each can be None, one key, or two or three together; the two must differ. Also <g2>Also take files the browser would open</g2>. See <g3>Keys to force or prevent capture</g3>.",
+   "text": "<g1>যে কী লিঙ্ককে ব্রাউজারের কাছে রাখে বা DDM-কে দেয় → কী...</g1> — লিঙ্কে ক্লিকের সময় চেপে ধরা যে কী লিঙ্কটি ব্রাউজারের কাছে রাখে (Alt), অথবা ধরন যা-ই হোক DDM-কে দিয়ে ডাউনলোড করায় (Ctrl+Alt; Mac-এ Command+Option)। প্রতিটির জন্য কিছু না, একটি কী, বা দুটি বা তিনটি কী একসঙ্গে রাখা যায়; দুটি সেটিং আলাদা হতে হবে। এছাড়া <g2>ব্রাউজার যে ফাইল খুলত সেগুলিও নিন</g2> রয়েছে। দেখুন <g3>ডাউনলোড নেওয়া জোর করা বা আটকানোর কী</g3>।"
+  },
   "4c7ed07ca86321d9": {
    "source": "A bar in Statistics: a day, a site's or a kind of file's share",
    "text": "পরিসংখ্যানের একটি বার: একটি দিন, একটি সাইটের বা এক ধরনের ফাইলের অংশ"
@@ -4842,6 +4930,10 @@
    "source": "Scripts welcome. IDM's switches included.",
    "text": "স্ক্রিপ্ট স্বাগত। IDM-এর সুইচ অন্তর্ভুক্ত।"
   },
+  "4e98649f7f674c0e": {
+   "source": "<g1>User-Agent for downloads you add yourself</g1> — how DDM names itself to servers for downloads you add yourself. With <g2>Automatic</g2> ticked (the default), DDM introduces itself as your default browser: the User-Agent that browser sends, at the version you have installed (Chrome, Edge, Brave, Opera, Vivaldi, Firefox or Safari). The box shows it, and pointing at it names the browser. When DDM doesn't recognise your default browser, it sends a current Chrome's. Untick <g3>Automatic</g3> to type your own; tick it again to go back. Downloads from the browser use that browser's own User-Agent. If a site turns a browser's User-Agent away, DDM asks once more with its own.",
+   "text": "<g1>নিজে যোগ করা ডাউনলোডের জন্য User-Agent</g1> — আপনি নিজে যে ডাউনলোড যোগ করেন, তাতে DDM সার্ভারের কাছে নিজের পরিচয় কীভাবে দেবে। <g2>স্বয়ংক্রিয়</g2> টিক দেওয়া থাকলে (ডিফল্ট) DDM আপনার ডিফল্ট ব্রাউজার হিসেবে পরিচয় দেয়: ওই ব্রাউজার যে User-Agent পাঠায়, আপনার ইনস্টল করা সংস্করণ অনুযায়ী (Chrome, Edge, Brave, Opera, Vivaldi, Firefox বা Safari)। ঘরটিতে তা দেখা যায়, আর তার ওপর মাউস রাখলে ব্রাউজারের নাম দেখায়। DDM আপনার ডিফল্ট ব্রাউজার চিনতে না পারলে বর্তমান Chrome-এর User-Agent পাঠায়। নিজের User-Agent লিখতে <g3>স্বয়ংক্রিয়</g3> থেকে টিক তুলে দিন; আবার টিক দিলে আগের অবস্থায় ফেরা যায়। ব্রাউজার থেকে আসা ডাউনলোডে ওই ব্রাউজারের নিজের User-Agent ব্যবহার হয়। কোনো সাইট ব্রাউজারের User-Agent ফিরিয়ে দিলে DDM নিজের User-Agent দিয়ে আরও একবার অনুরোধ করে।"
+  },
   "4e9ff23471ef2f2a": {
    "source": "A <x1/> and a Compose file come with DDM's source. For now you build the image yourself; a published image comes later. The first build is long, up to an hour on a small server, and the image is small, about 175 MB, with no desktop libraries.",
    "text": "DDM-এর সোর্সের সাথে একটি <x1/> এবং একটি কম্পোজ ফাইল আসে। আপাতত আপনাকে নিজেই ইমেজ তৈরি করতে হবে; একটি প্রকাশিত ইমেজ পরে আসবে। প্রথম বিল্ডটি দীর্ঘ, একটি ছোট সার্ভারে এক ঘন্টা পর্যন্ত সময় লাগতে পারে এবং ইমেজটি ছোট, প্রায় 175 MB, কোনো ডেস্কটপ লাইব্রেরি ছাড়া।"
@@ -4918,6 +5010,10 @@
    "source": "The same answer carries Options → General's keys (<x1/>: what page.js holds a click by, to leave a link to the browser or force it to the app) and the right-click items to show (<x2/>: background.js makes its menu anew when they change); the answer to whether the video button may show carries Download panels' settings (<x3/>: over videos or sound players, the least length, the first corner). Their names and defaults are <x4/>'s, read from the settings the app saves. The extension asks again when the browser's window gets the focus back (a few seconds after it last asked), when a page starts (15 s), and at a download (a minute).",
    "text": "একই উত্তরে থাকে সেটিংস → সাধারণ-এর কী (<x1/>: page.js কিসের সঙ্গে ক্লিক ধরে, যাতে লিঙ্ক ব্রাউজারের জন্য ছেড়ে দেওয়া বা অ্যাপের জন্য বাধ্য করা যায়) এবং কোন রাইট-ক্লিক আইটেম দেখানো হবে (<x2/>: সেগুলো বদলালে background.js নতুন করে মেনু বানায়); ভিডিও বোতাম দেখানো যাবে কি না, সেই উত্তরে থাকে ডাউনলোড প্যানেলের সেটিংস (<x3/>: ভিডিও বা সাউন্ড প্লেয়ারের ওপরে, সবচেয়ে কম দৈর্ঘ্য, প্রথম কোণ)। এগুলোর নাম ও ডিফল্ট মান <x4/>-এর, অ্যাপ যে সেটিংস সংরক্ষণ করে সেখান থেকে পড়া। ব্রাউজারের উইন্ডো আবার ফোকাস পেলে (আগেরবার জিজ্ঞাসার কয়েক সেকেন্ড পরে), কোনো পৃষ্ঠা শুরু হলে (15 s) এবং ডাউনলোডের সময় (এক মিনিট) এক্সটেনশন আবার জিজ্ঞাসা করে।"
   },
+  "502a32945d3f28fd": {
+   "source": "Point at a column title and a funnel shows at its right: click it to filter the list by that column. From the keyboard, or on a narrow column, right-click the title and choose <g1>Filter \"…\"...</g1>.",
+   "text": "কোনো কলামের শিরোনামে পয়েন্টার নিলে তার ডানে একটি ফানেল দেখা যায়। সেটিতে ক্লিক করলে তালিকাটি ওই কলাম অনুসারে ফিল্টার হয়। কীবোর্ড থেকে, কিংবা সরু কলামে, শিরোনামে ডান-ক্লিক করে <g1>Filter \"…\"...</g1> বেছে নিন।"
+  },
   "50344e9c00abc1e4": {
    "source": "<g1>Add to queue</g1> adds the ticked links to the <g2>Main download queue</g2>, as the import always did, and <g3>Start</g3> starts the queue as well. An <x4/> file still brings each download's referrer and cookies. See <g5>Link grabber and archives</g5>.",
    "text": "<g1>কিউতে যোগ করুন</g1> টিক করা লিঙ্কগুলিকে <g2>প্রধান ডাউনলোড সারি</g2>-তে যোগ করে, যেমনটি আমদানি সবসময় করত, এবং <g3>শুরু করুন</g3> কিউটিও শুরু করে। একটি <x4/> ফাইল এখনও প্রতিটি ডাউনলোডের রেফারার এবং কুকিজ নিয়ে আসে। <g5>লিঙ্ক গ্র্যাবার এবং আর্কাইভ</g5> দেখুন।"
@@ -4953,6 +5049,10 @@
   "50d069e3a40beb75": {
    "source": "Download Dannex Download Manager {v1}, the free, open-source download manager: Windows installer and portable zip, macOS .dmg and Linux AppImage, .deb and .rpm, plus the browser extension. No ads, no bundled software.",
    "text": "Dannex Download Manager {v1} ডাউনলোড করুন, বিনামূল্যের ওপেন সোর্স ডাউনলোড ম্যানেজার: Windows ইনস্টলার ও পোর্টেবল zip, macOS .dmg এবং Linux AppImage, .deb ও .rpm, সঙ্গে ব্রাউজার এক্সটেনশন। কোনো বিজ্ঞাপন নেই, সঙ্গে কোনো সফটওয়্যার জুড়ে দেওয়া নেই।"
+  },
+  "50ddf68448e9275b": {
+   "source": "<g1>Only pages under the start address's folder</g1>: part of a site. From <x2/>, only the pages in <x3/> and below it are explored, not the rest of the site. The pictures and files those pages use are collected wherever they are.",
+   "text": "<g1>শুধু শুরুর ঠিকানার ফোল্ডারের অধীনের পৃষ্ঠা</g1>: সাইটের একটি অংশ। <x2/> থেকে শুরু করলে শুধু <x3/> ও তার নিচের পৃষ্ঠাগুলো ঘুরে দেখা হয়, সাইটের বাকি অংশ নয়। ওই পৃষ্ঠাগুলো যেসব ছবি ও ফাইল ব্যবহার করে, সেগুলো যেখানেই থাকুক সংগ্রহ করা হয়।"
   },
   "50e9066f0da554b8": {
    "source": "The Speed Limiter keeps DDM from using all of your connection.",
@@ -5073,6 +5173,10 @@
   "52274e5f879eb7bb": {
    "source": "<g1>AI assistants</g1><g2>Dannex Download Manager</g2>",
    "text": "<g1>এআই অ্যাসিস্ট্যান্ট</g1><g2>Dannex Download Manager</g2>"
+  },
+  "522cbce90def0bbb": {
+   "source": "<g1>File Properties</g1> shows a download's type, status, size and folder, its address, your description, the web page it came from, the <g2>Referer</g2> it is sent with, where it comes from (<g3>Server</g3>: its server's <g4>country and round trip</g4> as its last run saw them, a video's site and yt-dlp, or a torrent's peers; no line before it has run) and a login for the site. For an unfinished download, <g5>Last try</g5> and <g6>Result</g6> tell you how its last attempt went.",
+   "text": "<g1>ফাইলের বৈশিষ্ট্য</g1> ডাউনলোডের ধরন, অবস্থা, আকার ও ফোল্ডার, এর ঠিকানা, আপনার বর্ণনা, যে ওয়েব পৃষ্ঠা থেকে এসেছে সেটি, যে <g2>রেফারার</g2> সহ পাঠানো হয় সেটি, ডাউনলোডটি কোথা থেকে আসছে (<g3>Server</g3>: শেষবার চলার সময় দেখা সার্ভারের <g4>দেশ ও রাউন্ড ট্রিপ</g4>, ভিডিওর সাইট ও yt-dlp, অথবা টরেন্টের পিয়ার; চলার আগে এই লাইন থাকে না) এবং সাইটের লগইন দেখায়। শেষ না হওয়া ডাউনলোডে <g5>Last try</g5> ও <g6>Result</g6> জানায় শেষ চেষ্টা কেমন হয়েছিল।"
   },
   "522f96e0598b861e": {
    "source": "Select them (<g1>Ctrl+click</g1> for several).",
@@ -5262,6 +5366,10 @@
    "source": "Keep some speed for everything else — Dannex Download Manager help",
    "text": "অন্যান্য কাজের জন্য কিছু গতি রাখুন — Dannex Download Manager সাহায্য"
   },
+  "54b7807fabc2e199": {
+   "source": "<g1>Start fetching while Download File Info is open</g1> — on by default, so the download is already under way while you choose a folder.",
+   "text": "<g1>“ফাইল তথ্য ডাউনলোড করুন” খোলা থাকাকালেও ফাইল আনা শুরু করুন</g1> — ডিফল্টে চালু থাকে, তাই আপনি ফোল্ডার বেছে নেওয়ার সময়ই ডাউনলোড শুরু হয়ে যায়।"
+  },
   "54ccaa53103fedbb": {
    "source": "What it takes",
    "text": "যা লাগে"
@@ -5309,6 +5417,10 @@
   "557accf0aacea5ac": {
    "source": "Link grabber listing the links of a page in packages, with their names, sizes and whether they are online",
    "text": "লিঙ্ক গ্র্যাবার একটি পৃষ্ঠার লিঙ্কগুলো প্যাকেজ আকারে দেখায়, সঙ্গে তাদের নাম, আকার এবং সেগুলো অনলাইনে আছে কি না"
+  },
+  "55941e6d91b9a45c": {
+   "source": "What a copy can't do: run what needs the site (searches, forms, logins), or show what a page's scripts would have fetched. Some browsers refuse scripts written as modules (<x1/>) from the disk.",
+   "text": "কপি যা পারে না: যেসব কাজের জন্য সাইট দরকার (সার্চ, ফর্ম, লগইন), তা চালানো, কিংবা পৃষ্ঠার স্ক্রিপ্ট যা আনত তা দেখানো। কিছু ব্রাউজার ডিস্ক থেকে মডিউল হিসেবে লেখা স্ক্রিপ্ট (<x1/>) চালাতে দেয় না।"
   },
   "5598349daf0501da": {
    "source": "Accessibility",
@@ -6050,6 +6162,10 @@
    "source": "After a crash or a restart",
    "text": "ক্র্যাশ বা রিস্টার্টের পর"
   },
+  "60be3b8e1d1dbc4a": {
+   "source": "Downloads: which windows show, and what an address already in the list does.",
+   "text": "ডাউনলোড: কোন উইন্ডো দেখাবে, আর তালিকায় আগে থেকে থাকা ঠিকানার ক্ষেত্রে কী হবে।"
+  },
   "60d28e32899eb074": {
    "source": "<g1>GNU GPL 3.0</g1><g2>free software, for good</g2>",
    "text": "<g1>GNU GPL 3.0</g1><g2>বিনামূল্যে সফটওয়্যার, চিরতরে</g2>"
@@ -6190,6 +6306,10 @@
    "source": "Inside a container, the address DDM finds is the container's own: give it the one you open, the <g1>server's</g1> address with the port you published, as <x2/>, and the log and the QR code show that one. Then pair as <g3>Control DDM from your phone</g3> says. For another code, at any time:",
    "text": "একটি কন্টেইনারের ভিতরে, DDM যে ঠিকানা খুঁজে পায় তা কন্টেইনারের নিজস্ব: আপনি যে ঠিকানাটি খোলেন, সেটি দিন, <g1>সার্ভারের</g1> ঠিকানা আপনি যে পোর্টটি প্রকাশ করেছেন তার সাথে, <x2/> হিসাবে, এবং লগ ও QR কোড সেটি দেখায়। তারপর <g3>আপনার ফোন থেকে DDM নিয়ন্ত্রণ করুন</g3> যেমন বলে সেভাবে পেয়ার করুন। অন্য কোডের জন্য, যেকোনো সময়:"
   },
+  "62ed752cff5dacea": {
+   "source": "<g1>Ask for the queue on Download Later</g1> — ask which queue; off puts it in the <g2>Main download queue</g2>.",
+   "text": "<g1>পরে ডাউনলোডে সারি জিজ্ঞাসা করুন</g1> — কোন সারিতে যাবে তা জিজ্ঞাসা করে; বন্ধ থাকলে ডাউনলোড <g2>প্রধান ডাউনলোড সারি</g2>-তে যায়।"
+  },
   "62f5b5868e87336c": {
    "source": "Resume that survives a crash",
    "text": "ক্র্যাশ থেকে বেঁচে থাকা পুনরায় শুরু"
@@ -6245,6 +6365,10 @@
   "64030dbd10fb6a9a": {
    "source": "Only if you choose them:",
    "text": "শুধুমাত্র যদি আপনি সেগুলি নির্বাচন করেন:"
+  },
+  "640f7ad89c389c38": {
+   "source": "<g1>Take downloads from web browsers</g1> — let the browser extension hand downloads to DDM. Turn it off to keep every download in the browser.",
+   "text": "<g1>ওয়েব ব্রাউজার থেকে ডাউনলোড নিন</g1> — ব্রাউজার এক্সটেনশনকে ডাউনলোড DDM-এর হাতে দিতে দিন। সব ডাউনলোড ব্রাউজারেই রাখতে এটি বন্ধ করুন।"
   },
   "6418ff5742ef4770": {
    "source": "The free download managers people reach for instead of IDM, checked on their own websites and code in November 2026. Each is good at something. We make the first one, so judge the rest by their own links.",
@@ -6394,6 +6518,10 @@
    "source": "1 the category, 2 where the file goes, 3 start now, 4 or put it in a queue.",
    "text": "1 ক্যাটাগরি, 2 ফাইলটি কোথায় যাবে, 3 এখনই শুরু করুন, 4 অথবা এটি একটি কিউতে রাখুন।"
   },
+  "66c91a7104a192e0": {
+   "source": "Each grab is kept as a project, listed under <g1>Grabber projects</g1> in the Categories pane and, the latest first, under <g2>Tasks → Grabber projects</g2>. Click a project to see the downloads it added; while it has none, the list offers <g3>Open the project</g3>. Right-click it for:",
+   "text": "প্রতিটি গ্র্যাব একটি প্রকল্প হিসেবে রাখা হয়। এগুলো শ্রেণীসমূহ প্যানেলের <g1>গ্র্যাবার প্রকল্প</g1>-এর অধীনে এবং সবচেয়ে নতুনটি আগে রেখে <g2>কাজগুলি → গ্র্যাবার প্রকল্প</g2>-এ তালিকাভুক্ত থাকে। প্রকল্পে ক্লিক করলে এটি যে ডাউনলোডগুলো যোগ করেছে সেগুলো দেখা যায়। কোনো ডাউনলোড না থাকলে তালিকায় <g3>প্রকল্প খুলুন</g3> বিকল্পটি দেখা যায়। ডান-ক্লিক করলে পাওয়া যায়:"
+  },
   "66d5121e5c0e0523": {
    "source": "DDM downloads BitTorrent files from magnet links and <x1/> files. Torrents appear in the same list as other downloads, marked <g2>Torrent</g2> in the <g3>Source</g3> column, and can be queued and scheduled like them.",
    "text": "DDM ম্যাগনেট লিঙ্ক এবং <x1/> ফাইল থেকে BitTorrent ফাইল ডাউনলোড করে। টরেন্টগুলি অন্যান্য ডাউনলোডের মতোই একই তালিকায় প্রদর্শিত হয়, <g3>উৎস</g3> কলামে <g2>টরেন্ট</g2> হিসাবে চিহ্নিত থাকে এবং সেগুলিকে অন্যান্য ডাউনলোডের মতোই সারিবদ্ধ ও সময়সূচী করা যায়।"
@@ -6485,6 +6613,10 @@
   "68b88047fcca2939": {
    "source": "Queue downloads for later →",
    "text": "পরে ডাউনলোড করার জন্য সারিতে যোগ করুন →"
+  },
+  "68bcec09d82b79b7": {
+   "source": "The offer to add DDM to your browser — <g1>Options → General → Test browser integration... → Add to your browser...</g1> opens it again.",
+   "text": "আপনার ব্রাউজারে DDM যোগ করার প্রস্তাব — <g1>বিকল্প → সাধারণ → ব্রাউজার ইন্টিগ্রেশন পরীক্ষা করুন... → আপনার ব্রাউজারে যোগ করুন...</g1> এটি আবার খোলে।"
   },
   "6921b2fde6da9ef1": {
    "source": "Load the extension by hand (Dannex's listing in the Chrome Web Store is on its way; once it is there, DDM's <g1>Add Dannex Download Manager to your browser</g1> window opens its page in each browser, where <g2>Add to Chrome</g2> installs it and the browser keeps it updated; in Edge the button is <g3>Get</g3>, after <g4>Allow extensions from other stores</g4>). Its files are in the <x5/> folder where DDM is installed: <x6/> if you installed it for yourself, or <x7/> if you installed it for everyone. Every release also has them as their own download, <x8/> (unzip it first).",
@@ -6666,6 +6798,10 @@
    "source": "Options, Connection: connections per download and per-server exceptions.",
    "text": "বিকল্প, সংযোগ: প্রতি ডাউনলোডে সংযোগ এবং প্রতি-সার্ভার ব্যতিক্রম।"
   },
+  "6c06374f20810dff": {
+   "source": "Each file is saved where its address says, under the folder: <x1/>. A page always ends in <x2/> so a browser opens it (<x3/> becomes <x4/>, a folder's page <x5/>, <x6/> becomes <x7/>).",
+   "text": "প্রতিটি ফাইল তার ঠিকানা অনুযায়ী ফোল্ডারের ভেতরে সংরক্ষিত হয়: <x1/>। ব্রাউজার যাতে খুলতে পারে, সে জন্য পৃষ্ঠার নাম সবসময় <x2/> দিয়ে শেষ হয় (<x3/> হয় <x4/>, ফোল্ডারের পৃষ্ঠা হয় <x5/>, <x6/> হয় <x7/>)।"
+  },
   "6c0964752ce84389": {
    "source": "Secondary text on the selection",
    "text": "নির্বাচনের উপর দ্বিতীয় পর্যায়ের টেক্সট"
@@ -6673,6 +6809,10 @@
   "6c19e69fe202cf6e": {
    "source": "{v1}<g1>1 Nov 2026</g1>",
    "text": "{v1}<g1>1 নভেম্বর 2026</g1>"
+  },
+  "6c48c7a6103d6ccb": {
+   "source": "<g1>Sort:</g1> click a column title. Click again to reverse the order, and a third time to go back to the order of addition. <g2>View → Arrange files</g2> does the same from the menu, and also sorts by what has no column: <g3>By Save Path</g3> (the folder, then the name), <g4>By Referer</g4> (the address the download was asked from) and <g5>By Parent Web Page</g5> (the page it came from, as File Properties shows it). The order is kept for the next start.",
+   "text": "<g1>সাজানো:</g1> কলামের শিরোনামে ক্লিক করুন। আবার ক্লিক করলে ক্রম উল্টে যায়, তৃতীয়বার ক্লিক করলে যোগ করার ক্রমে ফিরে যায়। <g2>দেখুন → ফাইলগুলি সাজান</g2> মেনু থেকে একই কাজ করে, এবং যেগুলোর কোনো কলাম নেই সেগুলো অনুসারেও সাজায়: <g3>সংরক্ষণ পাথ অনুসারে</g3> (প্রথমে ফোল্ডার, তারপর নাম), <g4>রেফারার অনুসারে</g4> (যে ঠিকানা থেকে ডাউনলোড চাওয়া হয়েছিল) এবং <g5>প্যারেন্ট ওয়েব পৃষ্ঠা অনুসারে</g5> (যে পৃষ্ঠা থেকে এসেছে, যেভাবে ফাইলের বৈশিষ্ট্য দেখায়)। পরের বার চালু করলেও এই ক্রম মনে থাকে।"
   },
   "6c5432e7c23b854e": {
    "source": "egui's widgets at rest",
@@ -6685,6 +6825,10 @@
   "6c5ca65c1f816eb3": {
    "source": "A sign-in code to type at a service's page",
    "text": "একটি পরিষেবার পৃষ্ঠায় টাইপ করার জন্য একটি সাইন-ইন কোড"
+  },
+  "6c66862077669c1b": {
+   "source": "<g1>When an address is already in the list</g1> — ask, add it with a numbered name, overwrite the old one, or open the finished one / resume the unfinished one.",
+   "text": "<g1>তালিকায় ঠিকানাটি আগে থেকে থাকলে</g1> — জিজ্ঞাসা করা, সংখ্যাযুক্ত নামে যোগ করা, পুরনোটি ওভাররাইট করা, অথবা সম্পূর্ণ হয়ে থাকলে খোলা / অসম্পূর্ণ থাকলে পুনরায় শুরু করা।"
   },
   "6c75d83757eceb3d": {
    "source": "Type a feed's address into <g1>Feed address</g1> and click <g2>Add feed</g2>. DDM fetches it at once, then every 30 minutes; change that under <g3>Check feeds every ... minutes</g3>, 5 at the least.",
@@ -6717,6 +6861,10 @@
   "6d03cfd4d56383f1": {
    "source": "A text that hasn't been translated yet shows in English. Most translations were written by machine and are waiting for a native speaker to check them, so some wording may sound wrong.",
    "text": "যে লেখাটি এখনও অনুবাদ করা হয়নি, সেটি ইংরেজিতে দেখায়। বেশিরভাগ অনুবাদ মেশিন দ্বারা লেখা হয়েছে এবং একজন স্থানীয় ভাষাভাষীর দ্বারা যাচাই করার অপেক্ষায় রয়েছে, তাই কিছু শব্দ ভুল শোনাতে পারে।"
+  },
+  "6d0633525ce306bf": {
+   "source": "<g1>File types that go in …</g1> — the file types that go to this category.",
+   "text": "<g1>… -এ যাওয়া ফাইলের ধরন</g1> — যে ফাইলের ধরনগুলো এই বিভাগে যাবে।"
   },
   "6d0f7f45f8191505": {
    "source": "When it last ran.",
@@ -7130,6 +7278,10 @@
    "source": "1 GiB over a fast local link",
    "text": "দ্রুত স্থানীয় লিঙ্কে 1 GiB"
   },
+  "73586b1cefa6311e": {
+   "source": "To open instead, right-click any download and choose <g1>On Double click → Open</g1>: a double-click then opens a finished download's file, and an unfinished one's progress window.",
+   "text": "এর বদলে ফাইল খুলতে চাইলে যেকোনো ডাউনলোডে ডান-ক্লিক করে <g1>ডাবল-ক্লিকে → Open</g1> বেছে নিন। তখন ডাবল-ক্লিক করলে শেষ হওয়া ডাউনলোডের ফাইল খুলবে, আর শেষ না হওয়া ডাউনলোডের অগ্রগতি উইন্ডো খুলবে।"
+  },
   "735b6ed69d617454": {
    "source": "Save a video from YouTube, Vimeo, TikTok and many other sites, in the quality you choose.",
    "text": "YouTube, Vimeo, TikTok এবং আরও অনেক সাইট থেকে আপনার পছন্দের গুণমানের ভিডিও সংরক্ষণ করুন।"
@@ -7149,6 +7301,10 @@
   "739dce26c0eabfd0": {
    "source": "If DDM or this website ever needs to use a new service, this page will say so first, and the change will be listed in <g1>What's new</g1>. Past versions of this page are in the project's history on GitHub.",
    "text": "যদি DDM বা এই ওয়েবসাইটকে কখনও একটি নতুন পরিষেবা ব্যবহার করার প্রয়োজন হয়, তবে এই পৃষ্ঠাটি প্রথমে তা বলবে এবং পরিবর্তনটি <g1>নতুন কী আছে</g1>-এ তালিকাভুক্ত করা হবে। এই পৃষ্ঠার পূর্ববর্তী সংস্করণগুলি GitHub-এ প্রকল্পের ইতিহাসে রয়েছে।"
+  },
+  "73a4342344435d7d": {
+   "source": "<g1>A queue stops or is done</g1> — a queue stopped by hand, at its stop time, by <g2>Stop All</g2>, or because it has nothing left to download.",
+   "text": "<g1>সারি থামলে বা শেষ হলে</g1> — হাতে থামানো সারি, থামার সময়ে থামা সারি, <g2>সব থামান</g2>-এ থামা সারি, অথবা ডাউনলোড করার মতো আর কিছু না থাকায় শেষ হওয়া সারি।"
   },
   "73bbfe3db01da3ea": {
    "source": "Options, General with Test browser integration...",
@@ -7257,6 +7413,10 @@
   "75a8d67e8ef43ede": {
    "source": "End-to-end medians with interquartile ranges, the ratio with its 95% interval, and the Mann–Whitney test, as <x1/> writes them.",
    "text": "শুরু থেকে শেষ পর্যন্ত মধ্যমা, ইন্টারকোয়ার্টাইল রেঞ্জ সহ, এর 95% ব্যবধান সহ অনুপাত, এবং ম্যান-হুইটনি পরীক্ষা, যেমন <x1/> এগুলি লেখে।"
+  },
+  "75bf519c9d8327cd": {
+   "source": "The web page is the one your browser had open (or where a site grabber project found the link); for a video, its own page. A link you added by hand says <g1>Unknown</g1>. The page and the <g2>Referer</g2> are kept with the list, so they are still there after DDM restarts.",
+   "text": "ওয়েব পৃষ্ঠা বলতে আপনার ব্রাউজারে খোলা থাকা পৃষ্ঠা বোঝায় (অথবা সাইট গ্র্যাবার প্রকল্প যেখানে লিঙ্কটি পেয়েছে)। ভিডিওর ক্ষেত্রে সেটি ভিডিওর নিজস্ব পৃষ্ঠা। আপনি নিজে যে লিঙ্ক যোগ করেছেন, তার ক্ষেত্রে <g1>Unknown</g1> লেখা থাকে। পৃষ্ঠা ও <g2>রেফারার</g2> তালিকার সঙ্গে রাখা হয়, তাই DDM আবার চালু করার পরও সেগুলো থাকে।"
   },
   "75d11e79303ec689": {
    "source": "A network adapter",
@@ -7386,6 +7546,10 @@
    "source": "<g1>Magnet</g1><g2>links</g2>",
    "text": "<g1>Magnet</g1><g2>লিঙ্ক</g2>"
   },
+  "784cf3bd0d0adfdb": {
+   "source": "By default the list shows the columns IDM users know: <g1>File Name</g1>, <g2>Q</g2>, <g3>Size</g3>, <g4>Status</g4>, <g5>Time left</g5>, <g6>Transfer rate</g6>, <g7>Last Try Date</g7> and <g8>Description</g8>. The torrent columns (<g9>Upload speed</g9>, <g10>Peers</g10>, <g11>Share ratio</g11>) show in the <g12>Torrents</g12> category, where they mean something, until you show or hide one yourself. <g13>Source</g13> and <g14>Added</g14> are there to tick when you want them.",
+   "text": "ডিফল্টরূপে তালিকায় IDM-এর ব্যবহারকারীদের পরিচিত কলামগুলো দেখায়: <g1>ফাইলের নাম</g1>, <g2>Q</g2>, <g3>আকার</g3>, <g4>অবস্থা</g4>, <g5>বাকি সময়</g5>, <g6>স্থানান্তর হার</g6>, <g7>শেষ চেষ্টার তারিখ</g7> ও <g8>বর্ণনা</g8>। টরেন্ট কলামগুলো (<g9>আপলোড গতি</g9>, <g10>পিয়ার</g10>, <g11>শেয়ার অনুপাত</g11>) যেখানে অর্থবহ, সেই <g12>টরেন্ট</g12> বিভাগে দেখায়, যতক্ষণ না আপনি নিজে কোনোটি দেখান বা লুকান। <g13>উৎস</g13> ও <g14>যোগ করা হয়েছে</g14> কলাম দুটি আপনি চাইলে টিক দিয়ে দেখাতে পারেন।"
+  },
   "78735d70990230cd": {
    "source": "Videos keep to the <g1>Speed Limiter</g1>: the limit for one file, a video's own limit (the <g2>Speed Limiter</g2> tab of its progress window), and the limit for all downloads together, which they share with every other download. DDM's own downloader brings them in, so a change applies at once, as for a file.",
    "text": "ভিডিওগুলি <g1>স্পিড লিমিটার</g1> মেনে চলে: একটি ফাইলের জন্য সীমা, একটি ভিডিওর নিজস্ব সীমা (এর অগ্রগতি উইন্ডোর <g2>স্পিড লিমিটার</g2> ট্যাব), এবং সমস্ত ডাউনলোডের জন্য সম্মিলিত সীমা, যা তারা অন্য সব ডাউনলোডের সাথে ভাগ করে। DDM-এর নিজস্ব ডাউনলোডার সেগুলোকে নিয়ে আসে, তাই একটি পরিবর্তন অবিলম্বে কার্যকর হয়, যেমন একটি ফাইলের জন্য।"
@@ -7453,6 +7617,10 @@
   "7924d76a6c3632e9": {
    "source": "Add Dannex Download Manager to your browser: each browser found, with a button to add the extension to it",
    "text": "আপনার ব্রাউজারে Dannex Download Manager যোগ করুন: খুঁজে পাওয়া প্রতিটি ব্রাউজার, সেটিতে এক্সটেনশন যোগ করার বোতাম-সহ"
+  },
+  "793dc38942ce9ab9": {
+   "source": "A control is greyed only while it can't apply: a box under a choice that is off, a button with nothing selected.",
+   "text": "কোনো নিয়ন্ত্রণ শুধু তখনই ধূসর থাকে, যখন সেটি প্রযোজ্য নয়: যেমন বন্ধ থাকা বিকল্পের নিচের বক্স, বা কিছু নির্বাচন না থাকলে বোতাম।"
   },
   "79639c98d5418ae1": {
    "source": "Sign-in secrets (debrid accounts, Sites Logins' and the proxy's passwords) live in the system's keychain (<x1/>, #44): Windows Credential Manager (<x2/>), the Secret Service on Linux or the macOS keychain (<x3/>). The settings keep a <x4/> reference in their place, written only once the keychain has confirmed the secret; without a keychain (or with a locked one, never unlocked for DDM) the secret stays in the settings as before.",
@@ -7602,6 +7770,10 @@
    "source": "<g1>The AppImage on Linux:</g1> the AppImage's files are gone once it quits, so DDM keeps a copy of its helper program in its data folder (<x2/>) and points the browsers there. Start DDM once after moving or renaming the AppImage, or after an AppImage manager (Gear Lever, AppImageLauncher and the like) moved it, so the helper knows where to start it from.",
    "text": "<g1>Linux-এ AppImage:</g1> AppImage-এর ফাইলগুলো এটি বন্ধ হওয়ার পর চলে যায়, তাই DDM তার ডেটা ফোল্ডারে (<x2/>) তার সহায়ক প্রোগ্রামের একটি কপি রাখে এবং ব্রাউজারগুলোকে সেখানে নির্দেশ করে। AppImage সরানোর বা নাম পরিবর্তনের পর, অথবা একটি AppImage ম্যানেজার (গিয়ার লিভার, AppImageLauncher এবং এর মতো) এটি সরানোর পর DDM একবার চালু করুন, যাতে সহায়ক প্রোগ্রামটি জানে কোথা থেকে এটি শুরু করতে হবে।"
   },
+  "7b53412eaabdca4d": {
+   "source": "The right-click menu has everything you can do with a download: <g1>Open</g1>, <g2>Open with...</g2>, <g3>Open folder</g3>, <g4>Move/Rename</g4>, <g5>Redownload</g5>, <g6>Resume Download</g6>, <g7>Stop Download</g7>, <g8>Show progress</g8>, <g9>Refresh download address</g9>, <g10>Verify checksum...</g10>, <g11>Remove</g11>, <g12>Add to queue</g12> and <g13>Properties</g13>. A download a site's bot check turned away also has <g14>Download with the browser</g14> (<g15>Browser integration</g15>).",
+   "text": "ডান-ক্লিক মেনুতে ডাউনলোড নিয়ে আপনার করার মতো সবকিছু আছে: <g1>Open</g1>, <g2>এর সাথে খুলুন...</g2>, <g3>ফোল্ডার খুলুন</g3>, <g4>সরান/নাম পরিবর্তন করুন</g4>, <g5>আবার ডাউনলোড করুন</g5>, <g6>ডাউনলোড আবার শুরু করুন</g6>, <g7>ডাউনলোড বন্ধ করুন</g7>, <g8>অগ্রগতি দেখান</g8>, <g9>ডাউনলোডের ঠিকানা রিফ্রেশ করুন</g9>, <g10>চেকসাম যাচাই করুন...</g10>, <g11>Remove</g11>, <g12>কিউতে যোগ করুন</g12> এবং <g13>বৈশিষ্ট্য</g13>। কোনো সাইটের বট পরীক্ষায় আটকে যাওয়া ডাউনলোডে <g14>ব্রাউজার দিয়ে ডাউনলোড করুন</g14> (<g15>Browser integration</g15>) বিকল্পও থাকে।"
+  },
   "7b67b877992fe095": {
    "source": "Both are kept in a <x1/> folder in DDM's data folder.",
    "text": "দুটিই DDM-এর ডেটা ফোল্ডারের <x1/> ফোল্ডারে রাখা হয়।"
@@ -7690,6 +7862,10 @@
    "source": "A torrent names the trackers DDM asks for peers. DDM doesn't contact a tracker on your own computer or your local network (<x1/>, <x2/>, <x3/> and the like), so a torrent can't make DDM send requests into the network it sits in. <g4>Add trackers...</g4> follows the same rule: it refuses such an address and tells you why, rather than keeping one that would never be asked.",
    "text": "একটি টরেন্ট ট্র্যাকারদের নাম দেয় যাদের কাছে DDM পিয়ারদের জন্য অনুরোধ করে। DDM আপনার নিজের কম্পিউটার বা আপনার স্থানীয় নেটওয়ার্কে (<x1/>, <x2/>, <x3/> এবং এই ধরনের) কোনো ট্র্যাকারের সাথে যোগাযোগ করে না, তাই একটি টরেন্ট DDM-কে যে নেটওয়ার্কে এটি আছে সেখানে অনুরোধ পাঠাতে পারে না। <g4>ট্র্যাকার যোগ করুন...</g4> একই নিয়ম অনুসরণ করে: এটি এই ধরনের ঠিকানা প্রত্যাখ্যান করে এবং আপনাকে কারণ জানায়, এমন একটি ঠিকানা রাখে না যা কখনও চাওয়া হবে না।"
   },
+  "7c61c4f7eb5732af": {
+   "source": "A filtered column's title is tinted and keeps its funnel, in blue, and the strip under the list says <g1>(filtered)</g1>. To remove every filter, click <g2>Clear filters</g2> there, or right-click a column title and choose <g3>Clear all filters</g3>. Filters last until you close DDM.",
+   "text": "ফিল্টার করা কলামের শিরোনামে রঙের ছোঁয়া থাকে এবং নীল রঙের ফানেল থেকে যায়। তালিকার নিচের স্ট্রিপে <g1>(filtered)</g1> লেখা থাকে। সব ফিল্টার সরাতে সেখানে <g2>ফিল্টার সরান</g2>-এ ক্লিক করুন, অথবা কোনো কলামের শিরোনামে ডান-ক্লিক করে <g3>সমস্ত ফিল্টার সাফ করুন</g3> বেছে নিন। DDM বন্ধ না করা পর্যন্ত ফিল্টার থাকে।"
+  },
   "7c937c28782fee15": {
    "source": "The list keeps the host's link. The direct link is never shown or copied: the services forbid sharing it. It lives only in the download's resume data, and when it expires DDM asks the service for a new one.",
    "text": "তালিকায় হোস্টের লিঙ্কটি থাকে। সরাসরি লিঙ্ক কখনো দেখানো বা কপি করা হয় না, কারণ পরিষেবাগুলি এটি শেয়ার করতে দেয় না। এটি শুধু ডাউনলোডের পুনরায় শুরু করার ডেটায় থাকে। লিঙ্কটির মেয়াদ শেষ হলে DDM পরিষেবার কাছে নতুন লিঙ্ক চায়।"
@@ -7753,6 +7929,10 @@
   "7d46ee2b94d95be4": {
    "source": "Pick one",
    "text": "একটি থিম বেছে নিন"
+  },
+  "7d4f2b3dbb748727": {
+   "source": "<g1>Open offline copy</g1>: its saved start page, in your browser (a project whose pages work offline).",
+   "text": "<g1>অফলাইন অনুলিপি খুলুন</g1>: প্রকল্পের সংরক্ষিত শুরুর পৃষ্ঠা আপনার ব্রাউজারে খোলে (যে প্রকল্পের পৃষ্ঠাগুলো অফলাইনে কাজ করে)।"
   },
   "7d54df4ec1ae978b": {
    "source": "While it downloads.",
@@ -7841,6 +8021,10 @@
   "7ee9063b38514440": {
    "source": "Listed by",
    "text": "তালিকাভুক্ত করেছেন"
+  },
+  "7ef4bcd5b2cb6b88": {
+   "source": "<g1>DDM's commands in the browsers' right-click menu → Edit...</g1> — which of DDM's five commands the browser's right-click menu shows (Download with DDM, selected links, all links, all images, all videos and audio). A browser changes its menu when you next switch to it.",
+   "text": "<g1>ব্রাউজারের ডান-ক্লিক মেনুতে DDM-এর কমান্ড → সম্পাদনা করুন...</g1> — ব্রাউজারের ডান-ক্লিক মেনুতে DDM-এর পাঁচটি কমান্ডের মধ্যে কোনগুলি দেখাবে (DDM দিয়ে ডাউনলোড করুন, নির্বাচিত লিঙ্ক, সব লিঙ্ক, সব ছবি, সব ভিডিও ও অডিও)। আপনি পরের বার ব্রাউজারে ফিরে এলে সেটি তার মেনু বদলে নেয়।"
   },
   "7f0cbe382b22bf78": {
    "source": "Very likely: DDM speaks 86 languages, every display language Windows 11 offers, chosen on the first start or any time in View → Language. Arabic, Hebrew…",
@@ -8102,6 +8286,10 @@
    "source": "In <g1>Downloads → Speed Limiter → Settings...</g1>, tick <g2>Limit all downloads together to</g2> and type a speed in KBytes/sec. However many files are downloading, together they stay under it. It works on its own: there is nothing else to turn on. About two thirds of your connection's speed is a good start.",
    "text": "<g1>ডাউনলোডগুলি → স্পিড লিমিটার → সেটিংস...</g1>-এ, <g2>একসাথে সব ডাউনলোড সীমিত করুন</g2> টিক দিন এবং কিলোবাইট/সেকেন্ডে একটি গতি টাইপ করুন। যতগুলি ফাইল ডাউনলোড হচ্ছে, সেগুলি একসাথে এর নিচে থাকবে। এটি নিজে থেকেই কাজ করে: চালু করার জন্য আর কিছু নেই। আপনার সংযোগের গতির প্রায় দুই-তৃতীয়াংশ একটি ভালো শুরু।"
   },
+  "82fa4c3fbe9a206e": {
+   "source": "<g1>Continue exploring</g1>: go on from where its last run stopped (Stop, Most pages, Most files, DDM closed).",
+   "text": "<g1>অন্বেষণ চালিয়ে যান</g1>: শেষবার যেখানে থেমেছিল সেখান থেকে আবার শুরু করুন (বন্ধ করুন, সর্বাধিক পৃষ্ঠা, সর্বাধিক ফাইল, DDM বন্ধ)।"
+  },
   "83031e191bb2522b": {
    "source": "<g1>Linux, from the AppImage or the tar.gz:</g1> if the system lacks a library DDM's window needs (such as <x2/>), DDM names it on the terminal and in a message box, with the command that installs it (<x3/>, or your distribution's). The .deb and .rpm bring these libraries themselves. In a Wayland session DDM opens its window on Wayland instead.",
    "text": "<g1>Linux, AppImage বা tar.gz থেকে:</g1> যদি সিস্টেমে DDM এর উইন্ডোর জন্য প্রয়োজনীয় কোনো লাইব্রেরি না থাকে (যেমন <x2/>), DDM টার্মিনালে এবং একটি মেসেজ বক্সে এর নাম উল্লেখ করে, সাথে এটি ইনস্টল করার কমান্ডও (<x3/>, অথবা আপনার ডিস্ট্রিবিউশনের)। .deb এবং .rpm এই লাইব্রেরিগুলি নিজেরাই নিয়ে আসে। একটি Wayland সেশনে DDM তার উইন্ডো Wayland এ খোলে।"
@@ -8250,6 +8438,10 @@
    "source": "An accent button's face pressed",
    "text": "অ্যাকসেন্ট বোতামের মুখ চাপা হলে"
   },
+  "8535b76802c7fd0f": {
+   "source": "A column's title has the room first: the sort arrow and the filter's funnel show only where it leaves room, and a title that still doesn't fit ends in \"...\" and shows whole when you point at it.",
+   "text": "কলামের শিরোনাম আগে জায়গা পায়: সাজানোর তীর ও ফিল্টারের ফানেল শুধু সেখানেই দেখায় যেখানে জায়গা বাকি থাকে, আর যে শিরোনাম তবুও আঁটে না সেটি “...” দিয়ে শেষ হয় এবং তার উপর পয়েন্টার রাখলে পুরোটা দেখায়।"
+  },
   "853ac467ba7801e6": {
    "source": "Put downloads in a queue →",
    "text": "ডাউনলোডগুলি একটি কিউতে রাখুন →"
@@ -8309,6 +8501,10 @@
   "860f75d697039fd0": {
    "source": "To run DDM on a home server instead, see <g1>Server mode</g1>.",
    "text": "পরিবর্তে একটি হোম সার্ভারে DDM চালানোর জন্য, <g1>সার্ভার মোড</g1> দেখুন।"
+  },
+  "8618956745436bd6": {
+   "source": "<g1>DDM's download button over videos in browsers → Edit...</g1> — the download button over videos on web pages: turn it off; show it over videos, over sound players, or both; leave it off media shorter than so many seconds; choose the corner it shows in first; and list the sites it never shows on (separate them by spaces; a name covers its subdomains, <x2/> too). See <g3>Browser integration</g3>.",
+   "text": "<g1>ব্রাউজারে ভিডিওর উপরে DDM-এর ডাউনলোড বোতাম → সম্পাদনা করুন...</g1> — ওয়েব পাতার ভিডিওর উপরের ডাউনলোড বোতাম: এটি বন্ধ করুন; ভিডিওর উপরে, সাউন্ড প্লেয়ারের উপরে, বা দুটিতেই দেখান; নির্দিষ্ট সেকেন্ডের চেয়ে ছোট মিডিয়ায় বাদ দিন; প্রথমে কোন কোণে দেখাবে তা বেছে নিন; আর যেসব সাইটে এটি কখনও দেখাবে না সেগুলির তালিকা দিন (স্পেস দিয়ে আলাদা করুন; একটি নাম তার সাবডোমেনও ধরে, <x2/> ও)। দেখুন <g3>ব্রাউজার ইন্টিগ্রেশন</g3>।"
   },
   "86288a453f8f3876": {
    "source": "<g1>Retries for a file that fails</g1> — how often a failed download is tried again before the queue gives up on it. Without it, DDM keeps trying.",
@@ -8393,6 +8589,10 @@
   "878617cd3944420f": {
    "source": "When resuming isn't possible",
    "text": "যখন পুনরায় শুরু করা সম্ভব নয়"
+  },
+  "87c345548c074b2f": {
+   "source": "<g1>Look up each file's size</g1>: once exploring is done, DDM asks the server each file's size. Untick it for a faster list. <g2>Whole site for offline reading</g2> leaves it off: the downloads say each size anyway.",
+   "text": "<g1>প্রতিটি ফাইলের আকার জেনে নিন</g1>: ঘুরে দেখা শেষ হলে DDM সার্ভারের কাছে প্রতিটি ফাইলের আকার জানতে চায়। তালিকা দ্রুত পেতে এতে টিক তুলে দিন। <g2>অফলাইনে পড়ার জন্য পুরো সাইট</g2> এটি বন্ধ রাখে: ডাউনলোডগুলো তো নিজেরাই প্রতিটি আকার জানায়।"
   },
   "87c55712ad4306ba": {
    "source": "7z and RAR archives need 7-Zip, a free program. DDM uses it when it is installed, for split and encrypted archives too. <g1>Options → Archives</g1> says whether it was found; when it wasn't, the <g2>7-Zip needed</g2> window says so, with a <g3>Get 7-Zip</g3> button. RAR's own extraction code can't be part of a free program like DDM, which is why it asks 7-Zip.",
@@ -8510,6 +8710,10 @@
    "source": "The progress window's Status value",
    "text": "প্রোগ্রেস উইন্ডোর স্ট্যাটাস মান"
   },
+  "894b384eb0493d3c": {
+   "source": "<g1>Leave downloads from these sites to the browser</g1> — sites whose downloads stay in the browser, separated by spaces. <x2/> covers every part of a site. <g3>Default</g3> puts the original list back.",
+   "text": "<g1>এই সাইটগুলোর ডাউনলোড ব্রাউজারের কাছে রাখুন</g1> — যেসব সাইটের ডাউনলোড ব্রাউজারেই থাকবে, স্পেস দিয়ে আলাদা করে লিখুন। <x2/> সাইটের সব অংশ বোঝায়। <g3>ডিফল্ট</g3> মূল তালিকা ফিরিয়ে আনে।"
+  },
   "894f03d1d27bb035": {
    "source": "Your list comes over in one file",
    "text": "আপনার তালিকা একটি ফাইলে আসে"
@@ -8525,6 +8729,10 @@
   "8964c9e8c41b70ca": {
    "source": "On Linux only an administrator may set the computer's wake alarm, so the option is greyed until an administrator allows it. To let the users in a <x1/> group set it, an administrator runs, once:",
    "text": "Linux-এ শুধু প্রশাসকই কম্পিউটারের জাগার অ্যালার্ম সেট করতে পারেন, তাই প্রশাসক অনুমতি না দেওয়া পর্যন্ত বিকল্পটি নিষ্ক্রিয় থাকে। <x1/> গ্রুপের ব্যবহারকারীদের এটি সেট করার অনুমতি দিতে, প্রশাসক একবার এই কমান্ডটি চালান:"
+  },
+  "89a0f1db215895d0": {
+   "source": "User names and passwords for sites that ask for them. <g1>New</g1> adds a row: the site (with a path if the login is only for part of it), the user name and the password. <g2>Edit</g2> and <g3>Remove</g3> change or delete the selected row. DDM uses the login for every download from that site. A login typed in <g4>Add URL</g4> (<g5>Log in to the server</g5>) takes priority for that one download.",
+   "text": "যেসব সাইট ব্যবহারকারীর নাম ও পাসওয়ার্ড চায়, সেগুলোর জন্য। <g1>নতুন</g1> একটি সারি যোগ করে: সাইট (লগইন শুধু একটি অংশের জন্য হলে পাথসহ), ব্যবহারকারীর নাম ও পাসওয়ার্ড। <g2>সম্পাদনা</g2> ও <g3>সরান</g3> নির্বাচিত সারি বদলায় বা মুছে দেয়। ওই সাইট থেকে প্রতিটি ডাউনলোডে DDM এই লগইন ব্যবহার করে। <g4>URL যোগ করুন</g4>-এ (<g5>সার্ভারে লগ ইন করুন</g5>) লেখা লগইন সেই একটি ডাউনলোডের জন্য অগ্রাধিকার পায়।"
   },
   "89c2ac8b048f39e1": {
    "source": "The next choice of a drop-down list or radio group; a number up or down",
@@ -8749,6 +8957,10 @@
   "8f085588eab5dbf1": {
    "source": "<g1>RSS feeds</g1><g2>Follow torrent feeds, and let rules add the new episodes you want, each one only once.</g2>",
    "text": "<g1>RSS ফিডগুলি</g1><g2>টরেন্ট ফিডগুলি অনুসরণ করুন এবং নিয়মাবলী ব্যবহার করে আপনার পছন্দের নতুন পর্বগুলি যোগ করুন, প্রতিটি শুধুমাত্র একবার।</g2>"
+  },
+  "8f332d210170d0cf": {
+   "source": "<g1>Download selected</g1> adds the ticked files to the download list; <g2>Download all</g2> adds every file found. They are added as one batch: no window opens for any of them, as it is added or as it finishes. Each download carries the page it was found on as its referrer, as the browser would.",
+   "text": "<g1>নির্বাচিতগুলো ডাউনলোড করুন</g1> টিক দেওয়া ফাইলগুলো ডাউনলোড তালিকায় যোগ করে; <g2>সব ডাউনলোড করুন</g2> পাওয়া সব ফাইল যোগ করে। এগুলো একসঙ্গে একটি ব্যাচ হিসেবে যোগ হয়: যোগ হওয়ার সময় বা শেষ হওয়ার সময় কোনোটির জন্যই উইন্ডো খোলে না। ব্রাউজারের মতোই প্রতিটি ডাউনলোড যে পৃষ্ঠায় পাওয়া গিয়েছিল, সেটিকে রেফারার হিসেবে নিয়ে যায়।"
   },
   "8f5bc00256713559": {
    "source": "Nothing: the window says so, and your system's updates bring the new version.",
@@ -9069,6 +9281,10 @@
   "94d1813016d4945e": {
    "source": "Where there is no tray",
    "text": "যেখানে ট্রে নেই"
+  },
+  "94fc845655fe4463": {
+   "source": "<g1>No proxy</g1> — connect directly. This is the default.",
+   "text": "<g1>কোনো প্রক্সি নয়</g1> — সরাসরি সংযোগ করে। এটি ডিফল্ট।"
   },
   "950c43d71bd73d95": {
    "source": "You can change it at any time in <g1>View → Language</g1>. More in <g2>Languages</g2>.",
@@ -9598,6 +9814,10 @@
    "source": ": each report (<x1/>) and its crash data (<x2/>);",
    "text": ": প্রতিটি রিপোর্ট (<x1/>) এবং এর ক্র্যাশ ডেটা (<x2/>);"
   },
+  "9d218a03ea7f9cde": {
+   "source": "<g1>Resize a column:</g1> drag the line between two titles; double-click it to fit the column to its contents. A column can't be made narrower than its title's start and \"...\": it stops there.",
+   "text": "<g1>কলামের প্রস্থ বদলানো:</g1> দুই শিরোনামের মাঝের রেখা টেনে আনুন; কলামটি তার বিষয়বস্তুর মাপে আনতে রেখায় ডাবল-ক্লিক করুন। শিরোনামের শুরু ও “...” যতটুকু জায়গা নেয়, কলাম তার চেয়ে সরু করা যায় না: সেখানে এসে থেমে যায়।"
+  },
   "9d354175893ac831": {
    "source": "Add the extension to each browser you use, as below. Dannex's extension isn't in the browsers' stores yet (its listings are on their way), so it comes with DDM, in the <x1/> folder where DDM is installed, and as its own download with every release. Until a browser's extension has reached DDM, DDM's <g2>Add Dannex Download Manager to your browser</g2> window opens at each start: it lists the browsers it found, and <g3>Show me how</g3> opens these steps (once a store lists it, <g4>Add the extension</g4> opens its page there instead). <g5>Don't ask again</g5> stops the window.",
    "text": "আপনার ব্যবহার করা প্রতিটি ব্রাউজারে এক্সটেনশন যোগ করুন, নিচের মতো করে। Dannex-এর এক্সটেনশন এখনও ব্রাউজারগুলোর স্টোরে নেই (তালিকা আসছে), তাই এটি DDM-এর সঙ্গেই আসে, DDM যেখানে ইনস্টল করা সেখানকার <x1/> ফোল্ডারে, এবং প্রতিটি রিলিজের সঙ্গে আলাদা ডাউনলোড হিসেবেও। কোনো ব্রাউজারের এক্সটেনশন DDM-এ না পৌঁছানো পর্যন্ত প্রতিবার শুরুতে DDM-এর <g2>আপনার ব্রাউজারে Dannex Download Manager যোগ করুন</g2> উইন্ডো খোলে: এটি খুঁজে পাওয়া ব্রাউজারগুলো দেখায়, এবং <g3>আমাকে দেখান কিভাবে</g3> এই ধাপগুলো খোলে (স্টোরে তালিকাভুক্ত হলে <g4>এক্সটেনশন যোগ করুন</g4> সেখানকার পৃষ্ঠা খোলে)। <g5>আবার জিজ্ঞাসা করবেন না</g5> উইন্ডোটি আসা বন্ধ করে।"
@@ -9621,6 +9841,10 @@
   "9d98aff073986aca": {
    "source": "Options → Archives",
    "text": "সেটিংস → আর্কাইভ"
+  },
+  "9d9b6d291dfca165": {
+   "source": "<g1>Each download uses up to</g1> — how many connections each download may use, from 1 to 32 (8 by default). Type the number or use the arrows.",
+   "text": "<g1>প্রতিটি ডাউনলোড সর্বোচ্চ</g1> — প্রতিটি ডাউনলোড কয়টি সংযোগ ব্যবহার করতে পারবে, 1 থেকে 32 (ডিফল্ট 8)। সংখ্যা লিখুন বা তীর চিহ্ন ব্যবহার করুন।"
   },
   "9d9eb270f47daa62": {
    "source": "Check <g1>Download limits</g1> in the Scheduler. When the limit is reached, downloads wait with <g2>Waiting: the download limit is reached (Scheduler)</g2>.",
@@ -9649,6 +9873,10 @@
   "9dd7bf966ea23c37": {
    "source": "<g1>Options → Remote</g1>.",
    "text": "<g1>বিকল্প → রিমোট</g1>।"
+  },
+  "9dde0d9d0fb50ff4": {
+   "source": "<g1>Remember the last folder chosen for …</g1> — when you pick another folder in <g2>Download File Info</g2>, it becomes the category's folder from then on. On by default. (It sets the first state of <g3>Always save … files to this folder</g3> in that window.)",
+   "text": "<g1>… এর জন্য সর্বশেষ বেছে নেওয়া ফোল্ডার মনে রাখুন</g1> — <g2>ফাইল তথ্য ডাউনলোড করুন</g2>-এ অন্য ফোল্ডার বেছে নিলে, সেটিই এরপর থেকে বিভাগটির ফোল্ডার হয়ে যায়। ডিফল্টভাবে চালু থাকে। (এটি ওই উইন্ডোর <g3>… ফাইল সবসময় এই ফোল্ডারে সংরক্ষণ করুন</g3> বিকল্পের প্রথম অবস্থা ঠিক করে।)"
   },
   "9df4b353c5463d72": {
    "source": "Get your file's SHA-256. On Windows, run <x1/>; on Linux, <x2/> and the file's name.",
@@ -9733,6 +9961,14 @@
   "9f1b71a271364f5d": {
    "source": "Your paired devices",
    "text": "আপনার জোড়া করা ডিভাইসগুলি"
+  },
+  "9f1f249a3c584f84": {
+   "source": "Click a column title to sort; point at it for its filter.",
+   "text": "সাজাতে কলামের শিরোনামে ক্লিক করুন; ফিল্টারের জন্য সেটির উপর পয়েন্টার রাখুন।"
+  },
+  "9f3336a9d7c74216": {
+   "source": "The grabber finds links where a browser does: links, frames, pictures (<x1/>, <x2/> and pictures loaded late from <x3/> too), videos and their posters, sounds, style sheets and the pictures and fonts in them, scripts, icons. Relative addresses, addresses from the site's root, <x4/> addresses, a <x5/>, addresses with letters beyond ASCII and redirects are followed as a browser follows them. It doesn't run the pages' scripts, so files that only a script adds to a page aren't found. A link whose address doesn't show what it is (<x6/>) is asked once: a page is explored, a file is collected under the name the server gives it. A page that doesn't answer is counted under <g7>Could not be read</g7>; <g8>Continue</g8> asks it again. Cookies the site sets while it is explored (a session, a consent) are sent back to it for the rest of the grab, and with the downloads of its files.",
+   "text": "গ্র্যাবার ব্রাউজারের মতোই লিঙ্ক খুঁজে নেয়: লিঙ্ক, ফ্রেম, ছবি (<x1/>, <x2/> এবং <x3/> থেকে দেরিতে লোড হওয়া ছবিও), ভিডিও ও তার পোস্টার, অডিও, স্টাইল শিট এবং তার ভেতরের ছবি ও ফন্ট, স্ক্রিপ্ট, আইকন। আপেক্ষিক ঠিকানা, সাইটের মূল থেকে শুরু হওয়া ঠিকানা, <x4/> ঠিকানা, <x5/>, ASCII-র বাইরের অক্ষরযুক্ত ঠিকানা এবং রিডাইরেক্ট ব্রাউজারের মতোই অনুসরণ করা হয়। এটি পৃষ্ঠার স্ক্রিপ্ট চালায় না, তাই যে ফাইল শুধু স্ক্রিপ্ট পৃষ্ঠায় যোগ করে, সেগুলো পাওয়া যায় না। যে লিঙ্কের ঠিকানা দেখে বোঝা যায় না সেটি কী (<x6/>), তার সম্পর্কে একবার জিজ্ঞাসা করা হয়: পৃষ্ঠা হলে অন্বেষণ করা হয়, ফাইল হলে সার্ভারের দেওয়া নামে সংগ্রহ করা হয়। যে পৃষ্ঠা সাড়া দেয় না, সেটি <g7>পড়া যায়নি</g7>-এর অধীনে গণনা করা হয়; <g8>অন্বেষণ চালিয়ে যান</g8> সেটি আবার জিজ্ঞাসা করে। অন্বেষণের সময় সাইট যেসব কুকি সেট করে (সেশন, সম্মতি), সেগুলো বাকি গ্র্যাবের সময় এবং তার ফাইল ডাউনলোডের সঙ্গে সাইটে ফেরত পাঠানো হয়।"
   },
   "9f478902968ca400": {
    "source": "Install in three steps",
@@ -9861,6 +10097,10 @@
   "a13ad8d731b7cfae": {
    "source": "Link grabber and archive extraction — Dannex Download Manager",
    "text": "লিঙ্ক গ্র্যাবার এবং আর্কাইভ এক্সট্র্যাকশন — Dannex Download Manager"
+  },
+  "a14b39a94afb8f16": {
+   "source": "<g1>How the progress window opens → Edit...</g1> — how a download's progress window opens when you start or resume it: <g2>Normally</g2> (the default), <g3>Minimized</g3>, or <g4>Hidden in the notification area</g4> (minimized where there is no tray icon to bring it back from), and whether it shows its <g5>Speed Limiter</g5> and <g6>When done</g6> tabs. A queue's downloads always start with theirs hidden; <g7>Show progress</g7> in a download's right-click menu, or <g8>Downloads in progress</g8> in the tray icon's menu, opens one.",
+   "text": "<g1>অগ্রগতি উইন্ডো যেভাবে খোলে → সম্পাদনা...</g1> — ডাউনলোড শুরু বা আবার চালু করলে তার অগ্রগতি উইন্ডো কীভাবে খুলবে: <g2>স্বাভাবিক</g2> (ডিফল্ট), <g3>ছোট করা</g3>, অথবা <g4>বিজ্ঞপ্তি এলাকায় লুকানো</g4> (যেখানে ফিরিয়ে আনার মতো ট্রে আইকন নেই, সেখানে ছোট করা অবস্থায় থাকে), এবং এতে <g5>স্পিড লিমিটার</g5> ও <g6>শেষ হলে</g6> ট্যাব দেখাবে কি না। সারির ডাউনলোডগুলো সবসময় এগুলো লুকানো অবস্থায় শুরু হয়; একটি খুলতে ডাউনলোডের ডান-ক্লিক মেনুর <g7>অগ্রগতি দেখান</g7> বা ট্রে আইকনের মেনুর <g8>চলমান ডাউনলোডগুলি</g8> ব্যবহার করুন।"
   },
   "a14e3cd44e9d24fd": {
    "source": "Every feature of Dannex Download Manager: acceleration and resume, the browser extension, video, torrents, the scheduler, the link grabber, themes and more.",
@@ -10278,6 +10518,10 @@
    "source": "Downloading",
    "text": "ডাউনলোড হচ্ছে"
   },
+  "a82e6c5273111ce9": {
+   "source": "<g1>Download limits</g1> — at most a set amount in any few hours. The same setting is in the Scheduler; see <g2>Queues and the Scheduler</g2>.",
+   "text": "<g1>ডাউনলোড সীমা</g1> — কয়েক ঘণ্টার মধ্যে সর্বোচ্চ একটি নির্দিষ্ট পরিমাণ। একই সেটিং সময়সূচীতেও আছে; দেখুন <g2>সারি ও সময়সূচী</g2>।"
+  },
   "a83900c5aca20461": {
    "source": "Download File Info in DDM for a file clicked in the browser",
    "text": "ব্রাউজারে ক্লিক করা একটি ফাইলের জন্য DDM-এ ফাইল তথ্য ডাউনলোড করুন"
@@ -10586,6 +10830,10 @@
    "source": "Options on its Regional page: the system's way of writing dates and times, or your own",
    "text": "বিকল্প-এর আঞ্চলিক পৃষ্ঠা: তারিখ এবং সময় লেখার সিস্টেমের পদ্ধতি, অথবা আপনার নিজস্ব"
   },
+  "ae343d6617f9721e": {
+   "source": "The strip under the list says how many downloads it shows and how many are selected, and while downloads run, how many and how fast in all (the tray icon's tip says the same). While a column filter hides rows it says <g1>(filtered)</g1>, with <g2>Clear filters</g2>. When the list is empty it says why: nothing in this category or queue, or the column filters hide everything (with <g3>Clear all filters</g3>).",
+   "text": "তালিকার নিচের স্ট্রিপে দেখায় কতটি ডাউনলোড দেখানো হচ্ছে ও কতটি নির্বাচিত, আর ডাউনলোড চলার সময় মোট কতটি চলছে ও কত গতিতে (ট্রে আইকনের টিপেও একই কথা থাকে)। কোনো কলাম ফিল্টার সারি লুকিয়ে রাখলে এতে <g1>(ফিল্টার করা)</g1> দেখায়, সঙ্গে থাকে <g2>ফিল্টার সরান</g2>। তালিকা খালি থাকলে কারণ জানায়: এই বিভাগে বা কিউতে কিছু নেই, অথবা কলাম ফিল্টার সবকিছু লুকিয়ে রেখেছে (সঙ্গে <g3>সমস্ত ফিল্টার সাফ করুন</g3>)।"
+  },
   "ae4c4dc422f90e55": {
    "source": "This <g1>website</g1> has no visit counter, no cookies and no trackers; GitHub, which hosts it, sees your IP address as any web host does.",
    "text": "এই <g1>ওয়েবসাইটে</g1> কোনো ভিজিট কাউন্টার, কুকি বা ট্র্যাকার নেই; এটি যে GitHub-এ হোস্ট করা, সেটি যেকোনো ওয়েব হোস্টের মতোই আপনার IP ঠিকানা দেখতে পায়।"
@@ -10718,6 +10966,10 @@
    "source": "How DDM uses connections",
    "text": "DDM কীভাবে সংযোগ ব্যবহার করে"
   },
+  "b0312b0d92b43a05": {
+   "source": "<g1>Leave these addresses to the browser → Edit list...</g1> — addresses whose downloads stay in the browser, one per line; <x2/> stands for any text (<x3/>).",
+   "text": "<g1>এই ঠিকানাগুলো ব্রাউজারের কাছে রাখুন → তালিকা সম্পাদনা করুন...</g1> — যেসব ঠিকানার ডাউনলোড ব্রাউজারেই থাকবে, প্রতি লাইনে একটি করে; <x2/> যেকোনো লেখা বোঝায় (<x3/>)।"
+  },
   "b0442a90b7202b80": {
    "source": "Yes. Copy a link to a file and DDM offers to download it at once (Options → General → Offer to download links copied to the clipboard, on by default). You can also paste links into Add URL, drag them onto the drop target, add a whole batch, or use the command line. See Adding downloads.",
    "text": "হ্যাঁ। একটি ফাইলের লিঙ্ক কপি করুন এবং DDM সাথে সাথে এটি ডাউনলোড করার অফার করবে (বিকল্প → সাধারণ → ক্লিপবোর্ডে কপি করা লিঙ্কগুলি ডাউনলোড করার অফার করুন, এটি ডিফল্টরূপে চালু থাকে)। আপনি লিঙ্কগুলি URL যোগ করুন-এ পেস্ট করতে পারেন, সেগুলিকে ড্রপ টার্গেটে টেনে আনতে পারেন, একটি সম্পূর্ণ ব্যাচ যোগ করতে পারেন, অথবা কমান্ড লাইন ব্যবহার করতে পারেন। ডাউনলোড যোগ করা দেখুন।"
@@ -10729,6 +10981,10 @@
   "b05472801cf663cd": {
    "source": "<g1>Run [N] downloads at once</g1> — how many of the queue's downloads run together. The rest wait their turn.",
    "text": "<g1>একসাথে [N]টি ডাউনলোড চালান</g1> — কিউয়ের কতগুলি ডাউনলোড একসাথে চলে। বাকিগুলি তাদের পালা আসার জন্য অপেক্ষা করে।"
+  },
+  "b0661d044f93a1d2": {
+   "source": "<g1>Ask for the queue after a batch download</g1> — the same for batch downloads.",
+   "text": "<g1>ব্যাচ ডাউনলোডের পরে সারি জিজ্ঞাসা করুন</g1> — ব্যাচ ডাউনলোডের ক্ষেত্রেও একই নিয়ম।"
   },
   "b0c0ef4ee0008226": {
    "source": "— FTP secured with TLS from the start of the session (explicit FTPS, <x1/>, usually port 21). Use it when the server says it supports TLS.",
@@ -10818,6 +11074,10 @@
    "source": "<g1>Shift+Up / Shift+Down</g1> makes the selection longer or shorter.",
    "text": "<g1>Shift+Up / Shift+Down</g1> নির্বাচন বড় বা ছোট করে।"
   },
+  "b21d10b675161104": {
+   "source": "DDM makes the folder when the first file goes there; it never asks about it.",
+   "text": "প্রথম ফাইলটি যাওয়ার সময় DDM ফোল্ডারটি তৈরি করে; এ নিয়ে কখনও জিজ্ঞাসা করে না।"
+  },
   "b23baab9a4561a1d": {
    "source": "Pauses running downloads.",
    "text": "চলমান ডাউনলোডগুলোতে বিরতি দেয়।"
@@ -10833,6 +11093,10 @@
   "b252636433b25eae": {
    "source": "<g1>Numbers</g1> (counts, sizes, speeds, percentages and the list's columns) are written the way the interface language writes them, whatever the Windows region: German <x2/> and <x3/>, French <x4/>, Hindi <x5/>. When your system's region is in that same language, its own way wins (Swiss German <x6/>, or a separator you set in Windows). In English, DDM writes plain digits, as IDM does (<x7/>, <x8/>).",
    "text": "<g1>সংখ্যা</g1> (গণনা, আকার, গতি, শতাংশ এবং তালিকার কলাম) ইন্টারফেস ভাষা যেভাবে লেখে, Windows-এর অঞ্চল যাই হোক না কেন, সেভাবেই লেখা হয়: জার্মান <x2/> এবং <x3/>, ফরাসি <x4/>, হিন্দি <x5/>। যখন আপনার সিস্টেমের অঞ্চল সেই একই ভাষায় থাকে, তখন তার নিজস্ব পদ্ধতি কার্যকর হয় (সুইস জার্মান <x6/>, অথবা Windows-এ আপনি যে বিভাজক সেট করেছেন)। ইংরেজিতে, DDM সাধারণ সংখ্যা লেখে, যেমন IDM করে (<x7/>, <x8/>)।"
+  },
+  "b258d94cbafaa2d0": {
+   "source": "<g1>Use a configuration script</g1> — the proxy auto-config (PAC) script your network gives: type its address (<x2/>, or a file). DDM fetches it and asks it which proxy each download goes through (<x3/>, <x4/> or <x5/>), as browsers do. Until it has been fetched, or if it can't be, DDM uses the system's settings.",
+   "text": "<g1>একটি কনফিগারেশন স্ক্রিপ্ট ব্যবহার করুন</g1> — আপনার নেটওয়ার্ক যে প্রক্সি অটো-কনফিগ (PAC) স্ক্রিপ্ট দেয়: তার ঠিকানা লিখুন (<x2/>, বা একটি ফাইল)। DDM সেটি এনে ব্রাউজারের মতোই জিজ্ঞাসা করে, প্রতিটি ডাউনলোড কোন প্রক্সি দিয়ে যাবে (<x3/>, <x4/> বা <x5/>)। স্ক্রিপ্টটি আনা না হওয়া পর্যন্ত, বা আনা না গেলে, DDM সিস্টেমের সেটিংস ব্যবহার করে।"
   },
   "b27190934c8836f3": {
    "source": "<g1><g2>Torrents</g2></g1> — magnet links and .torrent files, choosing files, and sharing.",
@@ -10941,6 +11205,10 @@
   "b3b2d01c08877810": {
    "source": "Both are set in <g1>Options → General → Keys...</g1>: each can be <g2>None</g2>, Alt, Ctrl, Shift, or two or three of them together, and the two must differ. They count exactly as held: with Alt chosen, an Alt+Shift click is an ordinary one. Ctrl+Alt is the default for forcing because nobody makes that click for anything else: a browser opens a tab for Ctrl, a window for Shift and downloads for Alt, and on Windows Alt+Shift switches the keyboard layout. A key chosen to leave links to the browser keeps the browser's own meaning (Shift still opens a new window, which downloads the link); a key chosen to force a link replaces it. On a Mac, Ctrl in Options is the Command key (⌘), since a Control-click opens the right-click menu there: Command+Option forces a link. A change applies once the browser has asked DDM again, which it does when you switch back to it. The <g3>Keys...</g3> window also holds <g4>Also take files the browser would open</g4>.",
    "text": "দুটিই নির্ধারিত হয় <g1>সেটিংস → সাধারণ → কী...</g1>-এ: প্রতিটি হতে পারে <g2>কিছুই না</g2>, Alt, Ctrl, Shift, বা এদের দুটি-তিনটি একসঙ্গে, এবং দুটি আলাদা হতে হবে। এগুলো ঠিক যেভাবে চাপা হয় সেভাবেই গণ্য হয়: Alt বাছা থাকলে Alt+Shift ক্লিক একটি সাধারণ ক্লিক। জোর করার জন্য Ctrl+Alt ডিফল্ট, কারণ অন্য কিছুর জন্য কেউ এই ক্লিক করে না: ব্রাউজার Ctrl-এর জন্য ট্যাব খোলে, Shift-এর জন্য উইন্ডো ও Alt-এর জন্য ডাউনলোড, আর Windows-এ Alt+Shift কিবোর্ড লেআউট বদলায়। লিঙ্ক ব্রাউজারের কাছে ছেড়ে দিতে বাছা কী ব্রাউজারের নিজস্ব অর্থ রাখে (Shift তবুও নতুন উইন্ডো খোলে, যা লিঙ্কটি ডাউনলোড করে); লিঙ্ক জোর করে পাঠাতে বাছা কী সেটি প্রতিস্থাপন করে। Mac-এ সেটিংসের Ctrl মানে Command কী (⌘), কারণ সেখানে Control-ক্লিক ডান-ক্লিক মেনু খোলে: Command+Option লিঙ্ক জোর করে পাঠায়। ব্রাউজার DDM-কে আবার জিজ্ঞাসা করলে পরিবর্তন প্রযোজ্য হয়, যা সে করে আপনি তাতে ফিরে এলে। <g3>কী...</g3> উইন্ডোতে <g4>ব্রাউজার যেসব ফাইল খুলত সেগুলোও নিন</g4>-ও আছে।"
+  },
+  "b3bd71f6b7052f18": {
+   "source": "<g1>Most pages</g1> and <g2>Most files</g2>: the grabber stops when it has explored or collected that many, and says so. <g3>Continue</g3> then goes on from where it stopped, with as many again.",
+   "text": "<g1>সর্বোচ্চ পৃষ্ঠা</g1> ও <g2>সর্বোচ্চ ফাইল</g2>: এই সংখ্যক পৃষ্ঠা ঘুরে দেখা বা ফাইল সংগ্রহ করা হলে গ্র্যাবার থেমে যায় এবং তা জানায়। এরপর <g3>চালিয়ে যান</g3> চাপলে যেখানে থেমেছিল সেখান থেকে আবার সমান সংখ্যক পর্যন্ত চলে।"
   },
   "b3ca971adc7126d9": {
    "source": "View → Theme switches at once, keeping the layout.",
@@ -11058,6 +11326,10 @@
    "source": "Firefox",
    "text": "Firefox"
   },
+  "b5f9dfe1d7dbb05e": {
+   "source": "<g1>Resume even if the file's date on the server changed</g1> — for servers that report a new date for the same file each time. Without it, such a server makes every resume start over.",
+   "text": "<g1>সার্ভারে ফাইলের তারিখ বদলে গেলেও পুনরায় শুরু করুন</g1> — যেসব সার্ভার একই ফাইলের জন্য প্রতিবার নতুন তারিখ জানায়, তাদের জন্য। এটি চালু না থাকলে এমন সার্ভারে প্রতিবার পুনরায় শুরু করলে ডাউনলোড আবার প্রথম থেকে শুরু হয়।"
+  },
   "b5fd935b1b7f9d51": {
    "source": "What it doesn't hold yet",
    "text": "এটি এখনও যা ধরে রাখে না"
@@ -11081,6 +11353,10 @@
   "b66ef1366b1ed932": {
    "source": "Children",
    "text": "শিশু"
+  },
+  "b681d57dd9ea5863": {
+   "source": "<g1>Offer to download links copied to the clipboard</g1> — when you copy a link whose file type is on the <g2>File types</g2> page, <g3>Download File Info</g3> opens with it, ready to start (or the download starts at once, with <g4>Show Download File Info first</g4> off). It keeps to archives, programs, music, videos, PDF and any type you added yourself, so copying the address of a picture, a font or a 3D model to use somewhere else never starts a download. On by default.",
+   "text": "<g1>ক্লিপবোর্ডে কপি করা লিঙ্কগুলি ডাউনলোড করার অফার করুন</g1> — আপনি এমন কোনো লিঙ্ক কপি করলে, যার ফাইলের ধরন <g2>ফাইলের ধরন</g2> পাতায় আছে, <g3>ফাইল তথ্য ডাউনলোড করুন</g3> সেটি নিয়ে খোলে, শুরু করার জন্য তৈরি অবস্থায় (অথবা <g4>আগে “ফাইল তথ্য ডাউনলোড করুন” দেখান</g4> বন্ধ থাকলে ডাউনলোড সঙ্গে সঙ্গে শুরু হয়)। এটি শুধু আর্কাইভ, প্রোগ্রাম, গান, ভিডিও, PDF এবং আপনার নিজের যোগ করা ধরনগুলিতে সীমাবদ্ধ। তাই অন্য কোথাও ব্যবহারের জন্য কোনো ছবি, ফন্ট বা 3D মডেলের ঠিকানা কপি করলে কখনও ডাউনলোড শুরু হয় না। ডিফল্টে চালু থাকে।"
   },
   "b68fb1f513d1da2c": {
    "source": "9. Changes",
@@ -11245,6 +11521,10 @@
   "b941fb1eda0104d8": {
    "source": "86 languages, right to left too",
    "text": "86টি ভাষা, ডান থেকে বামেও"
+  },
+  "b95d5d717405e031": {
+   "source": "You can close the window while it explores: exploring goes on. The project shows under <g1>Grabber projects</g1> in the Categories pane, marked \"(exploring)\"; open it there, or with <g2>Tasks → Grabber projects</g2>, to see how far it is. When DDM closes, a grab under way stops and keeps what it found, to continue at the next start.",
+   "text": "ঘুরে দেখার সময় আপনি উইন্ডোটি বন্ধ করতে পারেন: ঘুরে দেখা চলতে থাকবে। প্রকল্পটি শ্রেণীসমূহ প্যানের <g1>গ্র্যাবার প্রকল্প</g1>-এর অধীনে “(exploring)” চিহ্নসহ দেখায়। কতদূর হয়েছে দেখতে সেখান থেকে বা <g2>কাজগুলি → গ্র্যাবার প্রকল্প</g2> দিয়ে এটি খুলুন। DDM বন্ধ হলে চলমান গ্র্যাব থেমে যায় এবং এ পর্যন্ত যা পেয়েছে তা রেখে দেয়, পরের বার শুরু হলে চালিয়ে যাওয়ার জন্য।"
   },
   "b96597d534e090d4": {
    "source": "100 MiB, 150 ms latency, 4 MB/s per connection",
@@ -11954,6 +12234,14 @@
    "source": "In Firefox, DDM sees the proxy the browser's own request for the file took, including the ones a VPN extension picks for each request. In Chrome and the other Chromium browsers, it sees the browser's proxy settings: the server for the download's scheme (honouring their bypass list) or their proxy auto-config script.",
    "text": "Firefox-এ, DDM ব্রাউজারের নিজস্ব ফাইল অনুরোধের জন্য ব্যবহৃত প্রক্সি দেখতে পায়, যার মধ্যে VPN এক্সটেনশন প্রতিটি অনুরোধের জন্য যে প্রক্সি নির্বাচন করে তাও অন্তর্ভুক্ত। Chrome এবং অন্যান্য Chromium ব্রাউজারগুলিতে, এটি ব্রাউজারের প্রক্সি সেটিংস দেখতে পায়: ডাউনলোডের স্কিমের জন্য সার্ভার (তাদের বাইপাস তালিকা সম্মান করে) অথবা তাদের প্রক্সি অটো-কনফিগ স্ক্রিপ্ট।"
   },
+  "c5b96ed698962eb1": {
+   "source": "<g1>Make the pages work offline</g1>: see <g2>Read a site offline</g2>.",
+   "text": "<g1>পৃষ্ঠাগুলো অফলাইনে চালু করুন</g1>: দেখুন <g2>অফলাইনে সাইট পড়া</g2>।"
+  },
+  "c5cc7f4bb704a45c": {
+   "source": "<g1>View → Follow the system's dark mode</g1>, <g2>Always dark</g2>, <g3>Theme</g3>, <g4>Draw with</g4>, <g5>Interface size</g5> and <g6>Language</g6>. See <g7>Getting started</g7> and <g8>Troubleshooting</g8>.",
+   "text": "<g1>দেখুন → সিস্টেমের ডার্ক মোড অনুসরণ করুন</g1>, <g2>সর্বদা ডার্ক</g2>, <g3>থিম</g3>, <g4>যেভাবে আঁকা হবে</g4>, <g5>ইন্টারফেসের আকার</g5> এবং <g6>ভাষা</g6>। দেখুন <g7>শুরু করা</g7> ও <g8>সমস্যা সমাধান</g8>।"
+  },
   "c5cd6785a2506461": {
    "source": "<g1>New queue</g1> asks for the new queue's name and adds it. <g2>Delete</g2> removes one of your own queues; the two built-in queues can't be deleted. A deleted queue's downloads stay in the list.",
    "text": "<g1>নতুন কিউ</g1> নতুন কিউয়ের নাম জানতে চায় এবং এটি যোগ করে। <g2>মুছুন</g2> আপনার তৈরি করা কিউগুলির একটি সরিয়ে দেয়; দুটি বিল্ট-ইন কিউ মোছা যায় না। মোছা কিউয়ের ডাউনলোডগুলি তালিকায় থেকে যায়।"
@@ -12054,6 +12342,10 @@
    "source": "Menu",
    "text": "মেনু"
   },
+  "c72ea8e2345d2338": {
+   "source": "<g1>Move</g1> — move a finished file to another folder. For a download that hasn't started, <g2>Browse...</g2> chooses another folder for it.",
+   "text": "<g1>Move</g1> — শেষ হওয়া ফাইল অন্য ফোল্ডারে সরান। যে ডাউনলোড এখনও শুরু হয়নি, তার জন্য <g2>Browse...</g2> অন্য ফোল্ডার বেছে নেয়।"
+  },
   "c7323e920e818434": {
    "source": "Every version is on the <g1>Releases</g1> page. For Windows there are three files:",
    "text": "প্রতিটি সংস্করণ <g1>রিলিজ</g1> পৃষ্ঠায় আছে। Windows-এর জন্য তিনটি ফাইল আছে:"
@@ -12105,6 +12397,10 @@
   "c7c2a61fcf5da6b1": {
    "source": "Use your own copies",
    "text": "আপনার নিজস্ব কপি ব্যবহার করুন"
+  },
+  "c7c38134cf9f7fef": {
+   "source": "<g1>Test browser integration...</g1> — checks, in order, what stands between a browser and DDM, and marks the first thing to fix. <g2>How to fix it</g2> opens that part of <g3>The browser and DDM aren't connected</g3>; <g4>Set it up</g4> registers DDM with the browsers when that is what's missing; when no browser's extension has connected yet, <g5>Add to your browser...</g5> opens the window that adds it (the one DDM offers at each start until you choose <g6>Don't ask again</g6> there).",
+   "text": "<g1>ব্রাউজার ইন্টিগ্রেশন পরীক্ষা করুন...</g1> — ব্রাউজার ও DDM-এর মাঝে কী বাধা আছে তা ক্রমানুসারে পরীক্ষা করে, আর যেটি প্রথমে ঠিক করতে হবে তা চিহ্নিত করে। <g2>কীভাবে ঠিক করবেন</g2> বেছে নিলে <g3>ব্রাউজার ও DDM সংযুক্ত নেই</g3> অংশের সেই জায়গাটি খোলে। যদি ব্রাউজারে DDM নিবন্ধিত না থাকে, তবে <g4>সেট আপ করুন</g4> ব্রাউজারগুলিতে DDM নিবন্ধন করে। যদি কোনো ব্রাউজারের এক্সটেনশন এখনও সংযুক্ত না হয়ে থাকে, তবে <g5>আপনার ব্রাউজারে যোগ করুন...</g5> সেটি যোগ করার উইন্ডোটি খোলে (DDM প্রতিবার শুরুর সময় যে উইন্ডোটি দেখায়, যতক্ষণ না আপনি সেখানে <g6>আবার জিজ্ঞাসা করবেন না</g6> বেছে নেন)।"
   },
   "c7d4aa502c38e5a6": {
    "source": "Is Dannex Download Manager really free? — Dannex Download Manager",
@@ -12197,6 +12493,10 @@
   "c9346e8a2bf2f13d": {
    "source": "No. It's an independent project with no connection to Tonec Inc. It's written from scratch in Rust and contains none of IDM's code or artwork. The layout follows the classic download manager because that's what many people know and like. <g1>More</g1>",
    "text": "না। এটি Tonec Inc. এর সাথে কোনো সম্পর্কবিহীন একটি স্বাধীন প্রকল্প। এটি Rust এ নতুন করে লেখা হয়েছে এবং এতে IDM এর কোনো কোড বা আর্টওয়ার্ক নেই। এর লেআউট ক্লাসিক ডাউনলোড ম্যানেজার অনুসরণ করে কারণ এটিই অনেকে জানেন এবং পছন্দ করেন। <g1>আরও</g1>"
+  },
+  "c935398b874dec32": {
+   "source": "When it ends, the window lists the files: their name, address, type and size. They are all ticked, except those already in your download list.",
+   "text": "শেষ হলে উইন্ডোতে ফাইলগুলোর তালিকা দেখায়: নাম, ঠিকানা, ধরন ও আকার। আপনার ডাউনলোড তালিকায় আগে থেকে থাকা ফাইল ছাড়া বাকি সবগুলোতে টিক দেওয়া থাকে।"
   },
   "c942b256735064e3": {
    "source": "The plain programs, for any distribution.",
@@ -12362,9 +12662,17 @@
    "source": "The site has no ads, no visit counter, no cookies and no trackers. Its fonts and scripts are served from the site itself. Your choice of light or dark mode is remembered in your browser's local storage and never sent anywhere.",
    "text": "সাইটটিতে কোনো বিজ্ঞাপন, ভিজিট কাউন্টার, কুকি বা ট্র্যাকার নেই। এর ফন্ট ও স্ক্রিপ্ট সাইট নিজেই সরবরাহ করে। আলো বা অন্ধকার মোডের আপনার পছন্দ আপনার ব্রাউজারের লোকাল স্টোরেজে মনে রাখা হয় এবং কোথাও পাঠানো হয় না।"
   },
+  "cbda08f9dc2c266f": {
+   "source": "The main window then shows the project's node, with its downloads.",
+   "text": "এরপর মূল উইন্ডোতে প্রকল্পের নোড এবং এর ডাউনলোডগুলো দেখা যায়।"
+  },
   "cbe7aa68ab6f81be": {
    "source": "<g1>Acceleration and resume</g1><g2>Dannex Download Manager</g2>",
    "text": "<g1>দ্রুতকরণ ও পুনরায় শুরু</g1><g2>Dannex Download Manager</g2>"
+  },
+  "cbe9d05a928e8b70": {
+   "source": "DDM remembers the columns, their widths and the sort order. Hiding a column takes its sort and its filter with it.",
+   "text": "DDM কলামগুলো, তাদের প্রস্থ ও সাজানোর ক্রম মনে রাখে। কোনো কলাম লুকালে তার সাজানো ও ফিল্টারও সরে যায়।"
   },
   "cbed9e6bff5df9ed": {
    "source": "Sorted into packages",
@@ -12582,6 +12890,10 @@
    "source": "Yes: HTTP and SOCKS proxies, and proxy auto-config (PAC) scripts, in <g1>Options → Proxy / Socks</g1>. See <g2>Options</g2>. To keep every download on a VPN, see <g3>Network adapter</g3>.",
    "text": "হ্যাঁ: HTTP এবং SOCKS প্রক্সি, এবং প্রক্সি অটো-কনফিগ (PAC) স্ক্রিপ্ট, <g1>সেটিংস → প্রক্সি / SOCKS</g1>-এ। <g2>সেটিংস</g2> দেখুন। প্রতিটি ডাউনলোড VPN-এ রাখতে, <g3>নেটওয়ার্ক অ্যাডাপ্টার</g3> দেখুন।"
   },
+  "cfeb75eb65328793": {
+   "source": "<g1>Download complete</g1> — tick <g2>Options → Downloads → Show the Download complete window</g2>.",
+   "text": "<g1>ডাউনলোড সম্পূর্ণ</g1> — <g2>বিকল্প → ডাউনলোডগুলি → ডাউনলোড সম্পূর্ণ উইন্ডো দেখান</g2>-এ টিক দিন।"
+  },
   "d00a5c53d386ce74": {
    "source": "<g1><g2>Run DDM on a server</g2></g1> — DDM without a window on a home server or NAS (Docker, Unraid), downloading into its folders; send it downloads from your phone or browser.",
    "text": "<g1><g2>একটি সার্ভারে DDM চালান</g2></g1> — একটি হোম সার্ভার বা NAS (Docker, Unraid)-এ উইন্ডো ছাড়া DDM চালান, এর ফোল্ডারগুলিতে ডাউনলোড করুন; আপনার ফোন বা ব্রাউজার থেকে এটিতে ডাউনলোড পাঠান।"
@@ -12665,6 +12977,10 @@
   "d1b623f4013f4673": {
    "source": "A split button's other part while one is under the pointer",
    "text": "একটি স্প্লিট বোতামের অন্য অংশ যখন একটি পয়েন্টারের নিচে থাকে"
+  },
+  "d1b89bb8832302e8": {
+   "source": "Projects are saved in the data folder (<x1/>), with the files their last run found and where it stopped. A project's password and cookies are saved as the other passwords in the settings are: sealed for your Windows account, and readable only by you on Linux and macOS.",
+   "text": "প্রকল্পগুলো ডেটা ফোল্ডারে (<x1/>) সংরক্ষিত থাকে। সঙ্গে থাকে সর্বশেষ চালানোর সময় পাওয়া ফাইল এবং কোথায় থেমেছিল সেই তথ্য। প্রকল্পের পাসওয়ার্ড ও কুকি সেটিংসের অন্যান্য পাসওয়ার্ডের মতোই সংরক্ষিত হয়: Windows-এ আপনার অ্যাকাউন্টের জন্য সিল করা থাকে, আর Linux ও macOS-এ শুধু আপনিই পড়তে পারেন।"
   },
   "d1da74fa51d7a4d1": {
    "source": "The rubber band's edge",
@@ -12925,6 +13241,10 @@
   "d5c678a3656a3811": {
    "source": "Move from Internet Download Manager to Dannex Download Manager: import an IDM list (.ef2) or a text list of links, with referrers and cookies.",
    "text": "Internet Download Manager থেকে Dannex Download Manager-এ আসুন: একটি IDM তালিকা (.ef2) বা লিঙ্কের টেক্সট তালিকা আমদানি করুন, রেফারার ও কুকিসহ।"
+  },
+  "d5c77a3c459cd4c3": {
+   "source": "When the browser used no proxy, and <g1>No proxy</g1> is chosen, DDM uses Windows' proxy settings, as browsers do.",
+   "text": "ব্রাউজার কোনো প্রক্সি ব্যবহার না করলে এবং <g1>প্রক্সি নয়</g1> বেছে নেওয়া থাকলে, ব্রাউজারের মতোই DDM Windows-এর প্রক্সি সেটিংস ব্যবহার করে।"
   },
   "d5cb6e0ab1da0a21": {
    "source": "A failed check's message in Options (connection, browser and helper tests)",
@@ -13294,6 +13614,10 @@
    "source": "For Ubuntu, Debian, Mint and Pop!_OS: <x1/>. It brings the libraries DDM needs.",
    "text": "উবুন্টু, ডেবিয়ান, মিন্ট এবং পপ!_ওএস-এর জন্য: <x1/>। এটি DDM-এর প্রয়োজনীয় লাইব্রেরিগুলি নিয়ে আসে।"
   },
+  "db45ba1da15b395c": {
+   "source": "<g1>Temporary folder</g1> — empty (the default), each download writes straight into a part file next to its file, so nothing is copied at the end. Type a folder or click <g2>Browse</g2> to keep the part files there until their downloads complete; on another drive than a download's folder, its file is then copied over. A download paused before you changed it moves its part file there when it goes on. Video pages, galleries and torrents keep their own files where they always do.",
+   "text": "<g1>অস্থায়ী ফোল্ডার</g1> — ফাঁকা থাকলে (ডিফল্ট), প্রতিটি ডাউনলোড ফাইলের পাশেই সরাসরি একটি আংশিক ফাইলে লেখে, তাই শেষে কিছু কপি করতে হয় না। একটি ফোল্ডার লিখুন অথবা <g2>ব্রাউজ</g2> ক্লিক করুন; তাহলে ডাউনলোড সম্পূর্ণ না হওয়া পর্যন্ত আংশিক ফাইলগুলো সেখানে থাকবে। ডাউনলোডের ফোল্ডার থেকে ড্রাইভ আলাদা হলে ফাইলটি পরে কপি করে সরানো হয়। এটি বদলানোর আগে বিরতি দেওয়া কোনো ডাউনলোড আবার চালু হলে তার আংশিক ফাইল সেখানে সরে যায়। ভিডিও পেজ, গ্যালারি ও টরেন্ট তাদের নিজস্ব ফাইল আগের জায়গাতেই রাখে।"
+  },
   "db4c2a14ffb844bb": {
    "source": "Its styles",
    "text": "এর শৈলী"
@@ -13312,7 +13636,7 @@
   },
   "db94ba5f97a1f9e2": {
    "source": "The extension shows almost nothing of its own, as users of other download managers expect: a click on its toolbar button turns taking downloads off and on, its right-click menu has \"Don't take downloads from this site\" and Help (<x1/>, the status page: installed, or what is wrong and the one thing to do), and its options page (<x2/>) has only that switch, the browser's proxy (#42) and another DDM (#157). It never asks the app for its downloads (extensions up to {v1} did, for a window of their own: the host refuses that question now, and the app answers the automation API's <x3/> and actions only while the API is on).",
-   "text": "এক্সটেনশন নিজে থেকে প্রায় কিছুই দেখায় না, যেমনটা অন্য ডাউনলোড ম্যানেজারের ব্যবহারকারীরা আশা করেন: এর টুলবার বোতামে ক্লিক ডাউনলোড নেওয়া বন্ধ ও চালু করে, এর ডান-ক্লিক মেনুতে আছে “এই সাইট থেকে ডাউনলোড নেবেন না” ও সহায়তা (<x1/>, স্ট্যাটাস পৃষ্ঠা: ইনস্টল করা আছে, অথবা কী ভুল এবং করার একটি কাজ), এবং এর সেটিংস পৃষ্ঠায় (<x2/>) আছে শুধু সেই সুইচ, ব্রাউজারের প্রক্সি (#42) ও অন্য একটি DDM (#157)। এটি কখনো অ্যাপের কাছে তার ডাউনলোড চায় না (এক্সটেনশন {v1} পর্যন্ত নিজস্ব উইন্ডোর জন্য চাইত: হোস্ট এখন সেই প্রশ্ন প্রত্যাখ্যান করে, এবং অ্যাপ অটোমেশন API-র <x3/> ও ক্রিয়ার উত্তর দেয় শুধু API চালু থাকলে)।"
+   "text": "অন্যান্য ডাউনলোড ম্যানেজারের ব্যবহারকারীরা যেমন আশা করেন, এক্সটেনশনটি নিজে থেকে প্রায় কিছুই দেখায় না: এর টুলবার বোতামে ক্লিক করলে ডাউনলোড নেওয়া বন্ধ ও চালু হয়, ডান-ক্লিক মেনুতে আছে “এই সাইট থেকে ডাউনলোড নেবেন না” ও সহায়তা (<x1/>, স্ট্যাটাস পাতা: ইনস্টল করা আছে, অথবা কী সমস্যা এবং করণীয় একটি কাজ), আর এর বিকল্প পাতায় (<x2/>) আছে শুধু ওই সুইচ, ব্রাউজারের প্রক্সি (#42) এবং আরেকটি DDM (#157)। এটি অ্যাপের কাছে এর ডাউনলোডের তালিকা কখনো চায় না ({v1} পর্যন্ত এক্সটেনশন চাইত, নিজেদের উইন্ডোর জন্য: হোস্ট এখন সেই প্রশ্ন প্রত্যাখ্যান করে, আর অ্যাপ অটোমেশন API-এর <x3/> ও অ্যাকশনের উত্তর দেয় শুধু API চালু থাকলে)।"
   },
   "dba089f6ed3c76a8": {
    "source": "Black and white, a bright accent, every edge drawn, text at 7:1 or more.",
@@ -13358,6 +13682,10 @@
    "source": "Open <g1>Downloads → Options</g1> and the <g2>Save to</g2> tab.",
    "text": "<g1>ডাউনলোডগুলি → বিকল্প</g1> এবং <g2>এতে সংরক্ষণ করুন</g2> ট্যাব খুলুন।"
   },
+  "dc8bb7ad3da606ac": {
+   "source": "A page named after the project, at the top of the folder (<x1/>), opens the copy's start page. You can also right-click the project and choose <g2>Open offline copy</g2> once its start page is downloaded.",
+   "text": "ফোল্ডারের একদম ওপরে প্রকল্পের নামে একটি পৃষ্ঠা (<x1/>) থাকে, যা কপির শুরুর পৃষ্ঠা খোলে। শুরুর পৃষ্ঠা ডাউনলোড হয়ে গেলে প্রকল্পে ডান-ক্লিক করে <g2>অফলাইন অনুলিপি খুলুন</g2> বেছে নিতেও পারেন।"
+  },
   "dc93b881572cb1c5": {
    "source": "Peers",
    "text": "পিয়ার"
@@ -13377,6 +13705,10 @@
   "dcf7c57bec3d49ba": {
    "source": "A debrid service, such as Real-Debrid, AllDebrid, Premiumize or TorBox, is a paid account that downloads files from file hosts on its own servers. It hands back a plain direct link, without the host's waits, speed caps and captchas. With your account in DDM, a link from a host your service supports is unlocked through the service, then downloaded by DDM like any file: all its connections, pause and resume.",
    "text": "রিয়েল-ডেব্রিড, অলডেব্রিড, প্রিমিয়ামাইজ বা টরবক্সের মতো একটি ডেব্রিড পরিষেবা হলো একটি পেইড অ্যাকাউন্ট যা ফাইল হোস্ট থেকে ফাইলগুলিকে তার নিজস্ব সার্ভারে ডাউনলোড করে। এটি হোস্টের অপেক্ষা, গতির সীমাবদ্ধতা এবং ক্যাপচা ছাড়াই একটি সাধারণ সরাসরি লিঙ্ক ফিরিয়ে দেয়। DDM-এ আপনার অ্যাকাউন্ট থাকলে, আপনার পরিষেবা সমর্থন করে এমন একটি হোস্টের লিঙ্ক পরিষেবার মাধ্যমে আনলক করা হয়, তারপর DDM এটিকে যেকোনো ফাইলের মতো ডাউনলোড করে: এর সমস্ত সংযোগ, বিরতি এবং পুনরায় শুরু করা যায়।"
+  },
+  "dcf9fbdd7aa08cb0": {
+   "source": "<g1>Add browser...</g1> — a browser the list doesn't name (Vivaldi, Thorium, Yandex, Arc…): choose its program (its <x2/> on Windows, its app on macOS), give it a name, and it joins the list with its own box. DDM knows it by the program that starts DDM's helper, whatever browser its User-Agent claims to be. Select one you added and the button becomes <g3>Remove browser</g3> (or press <g4>Delete</g4>).",
+   "text": "<g1>ব্রাউজার যোগ করুন...</g1> — তালিকায় নাম নেই এমন ব্রাউজার (Vivaldi, Thorium, Yandex, Arc…): এর প্রোগ্রামটি বেছে নিন (Windows-এ এর <x2/>, macOS-এ এর অ্যাপ), একটি নাম দিন, আর সেটি নিজের বাক্সসহ তালিকায় যুক্ত হবে। DDM ব্রাউজারটিকে চেনে সেই প্রোগ্রাম দিয়ে, যা DDM-এর হেল্পার চালু করে; ব্রাউজারের User-Agent নিজেকে যে ব্রাউজার বলুক না কেন। আপনার যোগ করা কোনো ব্রাউজার বেছে নিলে বোতামটি <g3>ব্রাউজার সরান</g3> হয়ে যায় (অথবা <g4>Delete</g4> চাপুন)।"
   },
   "dcfc39a9dd2666ad": {
    "source": "Releases",
@@ -13442,6 +13774,14 @@
    "source": "<g1>Delete archives after extracting</g1>: once extracted, the archives go to the Recycle Bin (the Trash on macOS and Linux).",
    "text": "<g1>এক্সট্র্যাক্ট করার পর আর্কাইভগুলো রিসাইকেল বিনে পাঠান</g1>: এক্সট্র্যাক্ট করা হলে আর্কাইভগুলো রিসাইকেল বিনে (macOS ও Linux-এ Trash-এ) পাঠানো হয়।"
   },
+  "de8b7a679086918a": {
+   "source": "<g1>Virus checking → Edit...</g1> — tick <g2>Check downloaded files for viruses</g2>, choose the antivirus program and its arguments (<x3/> stands for the downloaded file), and the <g4>File types</g4> to check (programs, installers, archives, disk images and documents that can carry macros by default). Each finished file of those types goes to the program; its answer is its exit code: 0 found nothing, anything else is a problem it reports. The result goes in the download's log, and a problem in its <g5>Download complete</g5> window (or in a message when that window is off). <g6>Use Microsoft Defender</g6> (Windows) fills in Defender's own scanner (<x7/>: it reports and leaves the file where it is); <g8>Use ClamAV</g8> does the same with <x9/> on Linux and macOS. Each shows only when it is installed.",
+   "text": "<g1>ভাইরাস পরীক্ষা → সম্পাদনা...</g1> — <g2>ডাউনলোড করা ফাইল ভাইরাসের জন্য পরীক্ষা করুন</g2> টিক দিন, অ্যান্টিভাইরাস প্রোগ্রাম ও তার আর্গুমেন্ট বেছে নিন (<x3/> মানে ডাউনলোড করা ফাইল), এবং পরীক্ষা করার <g4>ফাইলের ধরন</g4> বেছে নিন (ডিফল্টে প্রোগ্রাম, ইনস্টলার, আর্কাইভ, ডিস্ক ইমেজ এবং ম্যাক্রো থাকতে পারে এমন নথি)। ওই ধরনের প্রতিটি সম্পূর্ণ ফাইল প্রোগ্রামটির কাছে যায়; তার উত্তর হলো এক্সিট কোড: 0 মানে কিছু পাওয়া যায়নি, অন্য যেকোনো মান মানে প্রোগ্রামটি একটি সমস্যা জানাচ্ছে। ফলাফল ডাউনলোডের লগে থাকে, আর সমস্যা থাকলে তার <g5>ডাউনলোড সম্পূর্ণ</g5> উইন্ডোতে দেখানো হয় (উইন্ডোটি বন্ধ থাকলে একটি বার্তায়)। <g6>Microsoft Defender ব্যবহার করুন</g6> (Windows) Defender-এর নিজস্ব স্ক্যানার বসিয়ে দেয় (<x7/>: এটি ফলাফল জানায় এবং ফাইলটি যেখানে আছে সেখানেই রেখে দেয়); <g8>ClamAV ব্যবহার করুন</g8> Linux ও macOS-এ <x9/> দিয়ে একই কাজ করে। প্রতিটি শুধু ইনস্টল থাকলেই দেখা যায়।"
+  },
+  "dea26376a5dda6e5": {
+   "source": "Play a sound for <g1>Download complete</g1>, <g2>Download failed</g2>, <g3>A queue starts</g3> and <g4>A queue stops or is done</g4>. Tick an event, select it, click <g5>Browse...</g5> to choose a <x6/> file, and <g7>Play</g7> to hear it. The <g8>Delete</g8> key clears the selected event's sound.",
+   "text": "<g1>ডাউনলোড সম্পূর্ণ</g1>, <g2>ডাউনলোড ব্যর্থ হয়েছে</g2>, <g3>সারি শুরু হলে</g3> এবং <g4>সারি থামলে বা শেষ হলে</g4> শব্দ চালান। একটি ঘটনায় টিক দিন, সেটি নির্বাচন করুন, <x6/> ফাইল বেছে নিতে <g5>ব্রাউজ...</g5> ক্লিক করুন, আর শুনতে <g7>চালান</g7> ক্লিক করুন। <g8>Delete</g8> কী নির্বাচিত ঘটনার শব্দ মুছে দেয়।"
+  },
   "deaa05fe7c5acba8": {
    "source": "dannexdownloadmanager-cli",
    "text": "dannexdownloadmanager-cli"
@@ -13469,6 +13809,10 @@
   "def0430c0d444bdb": {
    "source": "Yes. In IDM, export your list as an .ef2 file (its Tasks → Export menu). In DDM, choose Tasks → Import → From an IDM list (.ef2) and pick that file: every…",
    "text": "হ্যাঁ। IDM-এ, আপনার তালিকাটি একটি .ef2 ফাইল হিসাবে রপ্তানি করুন (এর কাজগুলি → রপ্তানি মেনু)। DDM-এ, কাজগুলি → আমদানি → IDM তালিকা (.ef2) থেকে নির্বাচন করুন এবং সেই ফাইলটি বেছে নিন: প্রতিটি..."
+  },
+  "df08fbc15558c215": {
+   "source": "<g1>Show progress</g1> in the right-click menu always opens a download's progress window, or brings it back from the notification area.",
+   "text": "ডান-ক্লিক মেনুর <g1>অগ্রগতি দেখান</g1> সবসময় ডাউনলোডের অগ্রগতি উইন্ডো খোলে, অথবা বিজ্ঞপ্তি এলাকা থেকে সেটি ফিরিয়ে আনে।"
   },
   "df1f4287bd6b01b1": {
    "source": "The download's row stays in DDM's list as it was, and <g1>Resume</g1> tries again from DDM. Where DDM shows no such button (a link the Link grabber or <g2>Download File Info</g2> looked at before adding it), hold <g3>Alt</g3> as you click the link to leave that download to the browser (<g4>Keys to force or prevent capture</g4>).",
@@ -13594,6 +13938,14 @@
    "source": "A running queue starts its downloads in list order, a few at a time (four by default). When one fails, it moves to the end of the queue and is tried again 30 seconds later. The queue stops when nothing is left to download.",
    "text": "একটি চলমান সারি তার ডাউনলোডগুলি তালিকার ক্রমানুসারে শুরু করে, একবারে কয়েকটি (ডিফল্টরূপে চারটি)। যখন একটি ব্যর্থ হয়, এটি সারির শেষে চলে যায় এবং 30 সেকেন্ড পরে আবার চেষ্টা করা হয়। ডাউনলোড করার মতো কিছু না থাকলে সারিটি বন্ধ হয়ে যায়।"
   },
+  "e0fd074a942a4d50": {
+   "source": "<g1>Delete</g1>: forget the project. Its downloads stay in the list (under All Downloads again) and its files on the disk.",
+   "text": "<g1>মুছুন</g1>: প্রকল্পটি বাদ দিন। এর ডাউনলোডগুলো তালিকায় (আবার সমস্ত ডাউনলোডের অধীনে) এবং ফাইলগুলো ডিস্কে থেকে যায়।"
+  },
+  "e0fed74de34d9a29": {
+   "source": "<g1>Whole site for offline reading</g1> (or <g2>Make the pages work offline</g2> on any project) saves a site so that it opens and works from the disk, without a connection:",
+   "text": "<g1>অফলাইনে পড়ার জন্য পুরো সাইট</g1> (বা যেকোনো প্রকল্পে <g2>পৃষ্ঠাগুলো অফলাইনে কাজ করার উপযোগী করুন</g2>) সাইটটি এমনভাবে সংরক্ষণ করে, যাতে ইন্টারনেট সংযোগ ছাড়াই ডিস্ক থেকে সেটি খোলে ও কাজ করে:"
+  },
   "e0ff4397ed1204f3": {
    "source": "Resume a broken download",
    "text": "একটি ভাঙা ডাউনলোড পুনরায় শুরু করুন"
@@ -13637,6 +13989,10 @@
   "e15d599e6927add3": {
    "source": "Options on its Save to page: a category, its file types and its folder",
    "text": "বিকল্প-এর এতে সংরক্ষণ করুন পৃষ্ঠা: একটি ক্যাটাগরি, এর ফাইলের প্রকার এবং এর ফোল্ডার"
+  },
+  "e160eb1af05eac08": {
+   "source": "<g1>Use this proxy server</g1> — type the proxy's address, <g2>Port</g2>, and a <g3>User name</g3> and <g4>Password</g4> if it needs them, and keep ticked the protocols it is for (<g5>http</g5>, <g6>https</g6>). Choosing it ticks both when neither is: a proxy for neither would carry no download, and every download would go straight to its server. <g7>Advanced / Socks...</g7> chooses the proxy's kind: an <g8>HTTP proxy</g8> (the default), an <g9>HTTPS proxy</g9> (reached over TLS), <g10>SOCKS 4</g10> or <g11>SOCKS 5</g11>, and for SOCKS whether the proxy looks the servers' names up itself (<g12>DNS through the proxy</g12>, so your computer asks no DNS for them), with the address, port and login. The address then shows its kind (<x13/>); you can also type it that way.",
+   "text": "<g1>এই প্রক্সি সার্ভার ব্যবহার করুন</g1> — প্রক্সির ঠিকানা ও <g2>পোর্ট</g2> লিখুন, আর দরকার হলে <g3>ব্যবহারকারীর নাম</g3> ও <g4>পাসওয়ার্ড</g4> দিন, এবং প্রক্সিটি যে প্রোটোকলের জন্য (<g5>http</g5>, <g6>https</g6>) সেগুলো টিক দেওয়া রাখুন। এটি বেছে নিলে দুটোই টিক পড়ে, যদি কোনোটিই টিক দেওয়া না থাকে: কোনো প্রোটোকলের জন্য না হলে প্রক্সি কোনো ডাউনলোডই বহন করবে না, আর প্রতিটি ডাউনলোড সরাসরি তার সার্ভারে যাবে। <g7>উন্নত / Socks...</g7> দিয়ে প্রক্সির ধরন বেছে নেওয়া যায়: <g8>HTTP প্রক্সি</g8> (ডিফল্ট), <g9>HTTPS প্রক্সি</g9> (TLS-এর মাধ্যমে সংযোগ), <g10>SOCKS 4</g10> বা <g11>SOCKS 5</g11>। SOCKS-এর জন্য আরও ঠিক করা যায়, সার্ভারের নাম প্রক্সি নিজে খুঁজে নেবে কি না (<g12>প্রক্সির মাধ্যমে DNS</g12>, ফলে আপনার কম্পিউটার সেগুলোর জন্য কোনো DNS অনুরোধ করে না), সঙ্গে ঠিকানা, পোর্ট ও লগইন। তখন ঠিকানায় প্রক্সির ধরনও দেখা যায় (<x13/>); আপনি ঠিকানা ওইভাবেও লিখতে পারেন।"
   },
   "e1713d442d1eea6d": {
    "source": "Yes. Put downloads in a queue and let the Scheduler start it at a set time, stop it at another, and even shut down or put the computer to sleep when the…",
@@ -13841,6 +14197,10 @@
   "e51339e06df148a6": {
    "source": "DDM downloads the file itself, as it was uploaded (a video comes in its own format, not the player's copy), with its real name and size, over several connections, and it can resume. For a large file, Drive shows a page that says it <g1>can't scan this file for viruses</g1>; DDM goes past it as <g2>Download anyway</g2> does.",
    "text": "DDM ফাইলটি ঠিক যেভাবে আপলোড করা হয়েছিল, সেভাবেই ডাউনলোড করে—আসল নাম ও আকারসহ, একাধিক সংযোগে। ভিডিও হলে প্লেয়ারের কপি নয়, ভিডিওর নিজস্ব ফরম্যাটে ডাউনলোড হয়। ডাউনলোড আবার শুরু করা যায়। বড় ফাইলের ক্ষেত্রে Drive একটি পৃষ্ঠা দেখায়, যেখানে বলা হয় যে ফাইলটি <g1>ভাইরাসের জন্য স্ক্যান করা যায় না</g1>; DDM সেই পৃষ্ঠা এড়িয়ে যায়, যেমন <g2>যাই হোক ডাউনলোড করুন</g2> করলে হয়।"
+  },
+  "e519f7b9ebe9437b": {
+   "source": "If the site asks for a user name and password, type them under <g1>Login and cookies</g1>. A site that needs you signed in with its own page takes the <g2>Cookies</g2> your browser sends it, written as the browser sends them: <x3/>. The login and the cookies are sent to the start address's site only, never to another site its pages link to. A login saved in <g4>Options → Sites Logins</g4> for that site is used too.",
+   "text": "সাইটটি ব্যবহারকারীর নাম ও পাসওয়ার্ড চাইলে সেগুলো <g1>লগইন ও কুকি</g1>-র অধীনে লিখুন। যে সাইটে নিজস্ব পৃষ্ঠা দিয়ে সাইন ইন করতে হয়, সেখানে আপনার ব্রাউজার যে <g2>কুকি</g2> পাঠায় সেগুলো দিন, ব্রাউজার যেভাবে পাঠায় ঠিক সেভাবে লিখে: <x3/>। লগইন তথ্য ও কুকি শুধু শুরুর ঠিকানার সাইটে পাঠানো হয়, ওই সাইটের পৃষ্ঠা থেকে লিঙ্ক করা অন্য কোনো সাইটে কখনও নয়। সেই সাইটের জন্য <g4>সেটিংস → সাইটের লগইন তথ্য</g4>-এ সংরক্ষিত লগইনও ব্যবহার করা হয়।"
   },
   "e52b31d58add8742": {
    "source": "The list's order is the order accounts are asked: a link goes through the first account whose service supports its host. <g1>Up</g1> and <g2>Down</g2> change it.",
@@ -14105,6 +14465,10 @@
   "e90f73157a673f0e": {
    "source": "Right-click a download → Verify checksum...",
    "text": "একটি ডাউনলোডে রাইট-ক্লিক করুন → চেকসাম যাচাই করুন..."
+  },
+  "e910473cbdd4ef18": {
+   "source": "<g1>Site grabber</g1> explores a web site from a page you give it, follows its links a few levels deep, and lists the files it finds: every picture of a gallery, the PDFs of a documentation site, the recordings of a podcast's pages, or the whole site to read offline. You tick the ones you want and DDM downloads them like any other download, as one batch.",
+   "text": "<g1>সাইট গ্র্যাবার</g1> আপনার দেওয়া একটি পৃষ্ঠা থেকে ওয়েবসাইট ঘুরে দেখে, তার লিঙ্ক ধরে কয়েক স্তর গভীর পর্যন্ত যায় এবং যেসব ফাইল পায় তার তালিকা করে। যেমন গ্যালারির সব ছবি, ডকুমেন্টেশন সাইটের PDF, পডকাস্টের পৃষ্ঠার রেকর্ডিং, বা অফলাইনে পড়ার জন্য পুরো সাইট। আপনি যেগুলো চান সেগুলোতে টিক দেন, আর DDM সেগুলো অন্য যেকোনো ডাউনলোডের মতোই একটি ব্যাচ হিসেবে ডাউনলোড করে।"
   },
   "e931037e5c0b1a7d": {
    "source": "2. The software's licence",
@@ -14530,6 +14894,10 @@
    "source": "Server mode",
    "text": "সার্ভার মোড"
   },
+  "ef66ff61d7cc24b4": {
+   "source": "<g1>Give files the server's date</g1> — give finished files the date the server reports, not the date you downloaded them.",
+   "text": "<g1>ফাইলকে সার্ভারের তারিখ দিন</g1> — সম্পন্ন ফাইলকে ডাউনলোডের তারিখ না দিয়ে সার্ভার যে তারিখ জানায় সেটি দিন।"
+  },
   "ef8cedcbdccdaf85": {
    "source": "The code is filled in when you scanned the QR code; otherwise type it. Give the phone a name, and tap <g1>Pair</g1>. The window on the computer says so, and closes with <g2>Done</g2>.",
    "text": "আপনি QR কোড স্ক্যান করলে কোডটি পূরণ হয়ে যায়; অন্যথায় এটি টাইপ করুন। ফোনটিকে একটি নাম দিন, এবং <g1>জোড়া করুন</g1> ট্যাপ করুন। কম্পিউটারে উইন্ডোটি তাই বলে, এবং <g2>সম্পন্ন</g2> দিয়ে বন্ধ হয়।"
@@ -14674,6 +15042,10 @@
    "source": "Options → Remote: the address, the certificate's fingerprint and the paired devices.",
    "text": "সেটিংস → রিমোট: খোলার ঠিকানা, সার্টিফিকেটের ফিঙ্গারপ্রিন্ট এবং জোড়া করা ডিভাইসগুলি।"
   },
+  "f298b52b62482795": {
+   "source": "Options on its Downloads page: Download File Info, Download complete and addresses already in the list",
+   "text": "এর ডাউনলোডগুলি পৃষ্ঠার সেটিংস: ফাইল তথ্য ডাউনলোড করুন, ডাউনলোড সম্পূর্ণ এবং তালিকায় আগে থেকে থাকা ঠিকানা"
+  },
   "f2ae255e0c41c631": {
    "source": "When the connection drops, DDM retries on its own. In the progress window, the connection table shows <g1>Retrying</g1> and the reason. Usually the download goes on by itself once the connection is back.",
    "text": "সংযোগ বিচ্ছিন্ন হলে DDM নিজে থেকেই আবার চেষ্টা করে। অগ্রগতি উইন্ডোর সংযোগের সারণিতে <g1>আবার চেষ্টা করা হচ্ছে</g1> এবং কারণ দেখানো হয়। সাধারণত সংযোগ ফিরে এলে ডাউনলোড নিজে থেকেই চলতে থাকে।"
@@ -14702,9 +15074,17 @@
    "source": "Run <x1/> and pick your language.",
    "text": "<x1/> চালান এবং আপনার ভাষা নির্বাচন করুন।"
   },
+  "f35efcc64dbdeb9b": {
+   "source": "<g1>Confirm before deleting downloads</g1> — ask before taking downloads off the list. On by default; <g2>Don't show this again</g2> in that question turns it off, and ticking it here turns it back on.",
+   "text": "<g1>ডাউনলোড মুছে ফেলার আগে নিশ্চিতকরণ চাই</g1> — তালিকা থেকে ডাউনলোড সরানোর আগে জিজ্ঞাসা করে। ডিফল্টে চালু থাকে। ওই প্রশ্নে <g2>এটি আর দেখাবেন না</g2> বেছে নিলে এটি বন্ধ হয়, আর এখানে টিক দিলে আবার চালু হয়।"
+  },
   "f3664543700a7df7": {
    "source": "Download File Info",
    "text": "ফাইল তথ্য ডাউনলোড করুন"
+  },
+  "f37bb491e7425f66": {
+   "source": "<g1>A queue starts</g1> — a queue started by hand, at its time in the Scheduler, or as DDM starts (its <g2>Start when Dannex Download Manager starts</g2>).",
+   "text": "<g1>সারি শুরু হলে</g1> — হাতে শুরু করা সারি, সময়সূচীতে নির্ধারিত সময়ে শুরু হওয়া সারি, অথবা DDM শুরু হওয়ার সময় শুরু হওয়া সারি (এর <g2>Dannex Download Manager শুরু হলে শুরু করুন</g2>)।"
   },
   "f37caeaafc491b26": {
    "source": "How Dannex Download Manager speeds up downloads: up to 32 connections per file, dynamic re-splitting, per-server limits it learns, and crash-safe resume.",
@@ -14729,6 +15109,10 @@
   "f3db0a80eb6e5aa4": {
    "source": "<g1>Apply</g1> saves your changes. <g2>Close</g2> closes the window.",
    "text": "<g1>প্রয়োগ করুন</g1> আপনার পরিবর্তনগুলি সংরক্ষণ করে। <g2>বন্ধ করুন</g2> উইন্ডোটি বন্ধ করে।"
+  },
+  "f3e21327d9c7e8e0": {
+   "source": "<g1>Show Download File Info first</g1> — show <g2>Download File Info</g2> for each new download. With it off, downloads start at once, or only join the queue if you tick <g3>Otherwise, add them to the queue without starting</g3>.",
+   "text": "<g1>আগে “ফাইল তথ্য ডাউনলোড করুন” দেখান</g1> — প্রতিটি নতুন ডাউনলোডের জন্য <g2>ফাইল তথ্য ডাউনলোড করুন</g2> দেখান। এটি বন্ধ থাকলে ডাউনলোড সঙ্গে সঙ্গে শুরু হয়, অথবা <g3>তা না হলে, শুরু না করে সেগুলো সারিতে যোগ করুন</g3> বেছে নিলে শুধু সারিতে যোগ হয়।"
   },
   "f4146f23b743282f": {
    "source": "No. DDM needs Windows 10 or 11, 64-bit. The Rust toolchain it is built with no longer supports Windows 7 and 8, and neither does Microsoft.",
@@ -14813,6 +15197,10 @@
   "f5d1e8a8bc6e8e59": {
    "source": "Compare it with the same file's line in that release's <x1/>.",
    "text": "সেই রিলিজের <x1/>-এ একই ফাইলের লাইনের সাথে এটি তুলনা করুন।"
+  },
+  "f5de564aaf2112b5": {
+   "source": "<g1>Use the browser's proxy for the downloads it hands over…</g1> — on by default. A download DDM takes from the browser goes through the proxy the browser used for it. That's the one a VPN or proxy extension set, the browser's own manual proxy, or its proxy auto-config script. Without it, the download would leave from your own address, and content limited to the VPN's country, or to its address, would fail. The browser extension reads that proxy and hands it to DDM with each download, once you switch on <g2>Download through this browser's VPN or proxy</g2> in the extension's options page, under <g3>More</g3> (right-click its toolbar button → <g4>Options</g4>; Firefox asks you once; Chrome, Edge, Brave, Opera and Vivaldi ask nothing more: see <g5>A VPN or proxy extension</g5>).",
+   "text": "<g1>ব্রাউজারের হস্তান্তর করা ডাউনলোডের জন্য ব্রাউজারের প্রক্সি ব্যবহার করুন…</g1> — এটি ডিফল্টভাবে চালু থাকে। DDM ব্রাউজার থেকে যে ডাউনলোড নেয়, তা ব্রাউজার যে প্রক্সি ব্যবহার করেছিল সেটির মাধ্যমেই যায়। এটি হতে পারে ভিপিএন বা প্রক্সি এক্সটেনশনের সেট করা প্রক্সি, ব্রাউজারের নিজস্ব ম্যানুয়াল প্রক্সি, অথবা তার প্রক্সি অটো-কনফিগ স্ক্রিপ্ট। এটি না থাকলে ডাউনলোড আপনার নিজের ঠিকানা থেকে যেত, আর ভিপিএনের দেশ বা ঠিকানার মধ্যে সীমাবদ্ধ কনটেন্ট ডাউনলোড হতো না। এক্সটেনশনের বিকল্প পাতায় <g3>আরও</g3>-এর নিচে <g2>এই ব্রাউজারের ভিপিএন বা প্রক্সির মাধ্যমে ডাউনলোড করুন</g2> চালু করলে ব্রাউজার এক্সটেনশন সেই প্রক্সি পড়ে প্রতিটি ডাউনলোডের সাথে DDM-কে দেয় (এর টুলবার বোতামে ডান-ক্লিক করুন → <g4>বিকল্প</g4>; Firefox একবার জিজ্ঞাসা করে; Chrome, Edge, Brave, Opera ও Vivaldi আর কিছু জিজ্ঞাসা করে না: দেখুন <g5>ভিপিএন বা প্রক্সি এক্সটেনশন</g5>)।"
   },
   "f61a127a852f0426": {
    "source": "Schedule: starting and stopping on time",
@@ -14945,6 +15333,10 @@
   "f862a7b7f253fe5c": {
    "source": "when you right-click a finished archive and choose <g1>Extract</g1>.",
    "text": "যখন কোনো সম্পূর্ণ আর্কাইভে ডান-ক্লিক করে <g1>এক্সট্র্যাক্ট করুন</g1> নির্বাচন করেন।"
+  },
+  "f887b2594517ac2b": {
+   "source": "Questions you turned off",
+   "text": "যে প্রশ্নগুলো আপনি বন্ধ করেছেন"
   },
   "f8b52274ed125d5f": {
    "source": "Tick <g1>Wake the computer to run this queue</g1> and a sleeping computer is woken a minute before the start time, so the network is back when the queue begins. It stays awake while the queue runs; afterwards its own sleep settings apply again. The line under the option says when the next wake is, or why there can't be one.",
@@ -15246,6 +15638,10 @@
    "source": "The examples use Windows' paths; on macOS and Linux the programs have the same names without <x1/>.",
    "text": "উদাহরণগুলিতে Windows-এর পাথ ব্যবহার করা হয়েছে; macOS এবং Linux-এ প্রোগ্রামগুলির একই নাম রয়েছে <x1/> ছাড়া।"
   },
+  "fd48ccb610778e29": {
+   "source": "<g1>Fit columns to content</g1> in the same menu makes every column as wide as its title and cells need; <g2>Reset columns</g2> puts them back as they first were.",
+   "text": "একই মেনুর <g1>কলামগুলো বিষয়বস্তুর মাপে করুন</g1> প্রতিটি কলামকে তার শিরোনাম ও ঘরের জন্য যতটা দরকার ততটা চওড়া করে; <g2>কলাম পুনরায় সেট করুন</g2> সেগুলোকে প্রথম অবস্থায় ফিরিয়ে দেয়।"
+  },
   "fd557623911e01e1": {
    "source": "Adds an http, https, ftp or ftps address and starts it, or only queues it. It can say which folder and file name to use. A magnet link opens <g1>Add torrent</g1> in DDM, for you to choose the files.",
    "text": "একটি http, https, ftp বা ftps ঠিকানা যোগ করে ডাউনলোড শুরু করে, অথবা শুধু সারিতে রাখে। কোন ফোল্ডার ও ফাইলের নাম ব্যবহার করতে হবে, তা নির্দিষ্ট করা যায়। ম্যাগনেট লিঙ্ক খুললে DDM-এ <g1>টরেন্ট যোগ করুন</g1> উইন্ডো খোলে, যেখানে আপনি ফাইল বেছে নিতে পারেন।"
@@ -15313,6 +15709,10 @@
   "fe3ad5eb0f0ce650": {
    "source": "The software is provided <g1>\"as is\", without warranty of any kind</g1>, express or implied, including the implied warranties of merchantability and fitness for a particular purpose. The entire risk as to its quality and performance is with you. See sections 15 and 16 of the GPL. Keep backups of anything important.",
    "text": "সফটওয়্যারটি <g1>\"যেমন আছে\" ভিত্তিতে, কোনো ধরনের ওয়ারেন্টি ছাড়াই দেওয়া হয়</g1>। এর মধ্যে স্পষ্ট বা অন্তর্নিহিত কোনো ওয়ারেন্টিই অন্তর্ভুক্ত, যেমন বাজারজাতযোগ্যতা এবং নির্দিষ্ট উদ্দেশ্যে উপযুক্ততার অন্তর্নিহিত ওয়ারেন্টি। সফটওয়্যারটির গুণমান ও কার্যকারিতার সম্পূর্ণ ঝুঁকি আপনার। GPL-এর 15 ও 16 নম্বর ধারা দেখুন। গুরুত্বপূর্ণ সবকিছুর ব্যাকআপ রাখুন।"
+  },
+  "fe61a646d618ccfe": {
+   "source": "<g1>Take downloads from these browsers</g1> — untick a browser to leave its downloads alone.",
+   "text": "<g1>এই ব্রাউজারগুলি থেকে ডাউনলোড নিন</g1> — কোনো ব্রাউজারের ডাউনলোডে হাত না দিতে চাইলে তার টিক তুলে দিন।"
   },
   "fe63bdf14208dc05": {
    "source": "Queues and the Scheduler — Dannex Download Manager help",
@@ -15409,6 +15809,26 @@
   "ffffe7806eaeae3d": {
    "source": "The option is off until you tick it. On Linux and macOS DDM starts with your session the same way. A <g1>portable copy</g1> can't start with Windows, since that needs the registry, so the option is greyed there.",
    "text": "আপনি টিক না দেওয়া পর্যন্ত এই বিকল্পটি বন্ধ থাকে। Linux এবং macOS-এ DDM আপনার সেশনের সাথে একইভাবে শুরু হয়। একটি <g1>পোর্টেবল কপি</g1> Windows-এর সাথে শুরু হতে পারে না, কারণ এর জন্য রেজিস্ট্রি প্রয়োজন, তাই সেখানে বিকল্পটি ধূসর করা থাকে।"
+  },
+  "6e355ba39f5dc912": {
+   "source": "Sponsor Dannex Download Manager",
+   "text": "Dannex Download Manager-কে সমর্থন করুন"
+  },
+  "fc7fe0579b9363e9": {
+   "source": "One egui window painted to fixed pixel coordinates, plus one immediate viewport per dialog. <x1/> holds the state (downloads, queues, settings, the list's selection) and turns menu, toolbar, key and IPC commands into actions. Each dialog is its own module and returns an <x2/> (open, closed, done with a value). A window that comes up by itself (Download complete, a message DDM tells, a question while DDM isn't the program in front) shows above the others without taking the keyboard from the program being typed in (<x3/>, <x4/>); those the person asked for take it. Windows handed over one after another (Download File Info, Add torrent, Download video) and Download complete boxes show one at a time, in one place, the next when one closes. Windows-only calls are confined to <x5/> and their Linux and macOS counterparts to <x6/> (starting with the session, the browsers' host, sounds, show in folder, the crash handler); every other file is safe, portable Rust. Fonts come from the system: Windows' Fonts folder, macOS's system fonts, fontconfig on Linux (<x7/>). On Windows, Latin, Greek and Cyrillic text is drawn by DirectWrite (<x8/>, through egui's glyph rasterizer hook): View → Text → Smooth in its natural mode, anti-aliased at the size asked for and placed at quarter pixels with the font's own advances; Classic (the default) in GDI-classic mode, so each letter's hinted shape and whole-pixel width come together. Other scripts are shaped and drawn by egui.",
+   "text": "একটি egui উইন্ডো নির্দিষ্ট পিক্সেল স্থানাঙ্কে আঁকা হয়, এবং প্রতিটি ডায়ালগের জন্য একটি করে ইমিডিয়েট ভিউপোর্ট থাকে। <x1/> অবস্থা ধরে রাখে (ডাউনলোড, সারি, সেটিংস, তালিকার নির্বাচন) এবং মেনু, টুলবার, কী ও IPC কমান্ডকে কাজে রূপ দেয়। প্রতিটি ডায়ালগ আলাদা মডিউল এবং একটি <x2/> ফেরত দেয় (খোলা, বন্ধ, মানসহ সম্পন্ন)। যে উইন্ডো নিজে থেকে আসে (ডাউনলোড সম্পূর্ণ, DDM-এর দেওয়া বার্তা, DDM সামনের প্রোগ্রাম না থাকা অবস্থায় প্রশ্ন) তা অন্য উইন্ডোর উপরে দেখা যায়, কিন্তু যে প্রোগ্রামে টাইপ করা হচ্ছে তার কাছ থেকে কিবোর্ড নিয়ে নেয় না (<x3/>, <x4/>); ব্যবহারকারী যেগুলো চেয়েছেন সেগুলো কিবোর্ড নেয়। একটির পর একটি আসা উইন্ডো (Download File Info, Add torrent, Download video) এবং ডাউনলোড সম্পূর্ণ বক্স একবারে একটি করে, একই জায়গায় দেখানো হয়; একটি বন্ধ হলে পরেরটি আসে। শুধু Windows-এর কল <x5/>-এ সীমাবদ্ধ, আর Linux ও macOS-এর সমতুল্য কল <x6/>-এ (সেশন শুরু, ব্রাউজারের হোস্ট, শব্দ, ফোল্ডারে দেখান, ক্র্যাশ হ্যান্ডলার দিয়ে শুরু); বাকি প্রতিটি ফাইল নিরাপদ, পোর্টেবল Rust। ফন্ট আসে সিস্টেম থেকে: Windows-এর Fonts ফোল্ডার, macOS-এর সিস্টেম ফন্ট, Linux-এ fontconfig (<x7/>)। Windows-এ ল্যাটিন, গ্রিক ও সিরিলিক লেখা DirectWrite আঁকে (<x8/>, egui-এর গ্লিফ র‍্যাস্টারাইজার হুকের মাধ্যমে): দেখুন → লেখা → মসৃণ স্বাভাবিক মোডে, চাওয়া আকারে অ্যান্টি-অ্যালিয়াসড এবং ফন্টের নিজস্ব অ্যাডভান্স অনুযায়ী কোয়ার্টার পিক্সেলে বসানো; ক্লাসিক (ডিফল্ট) GDI-ক্লাসিক মোডে, যাতে প্রতিটি অক্ষরের হিন্টেড আকার ও পূর্ণ পিক্সেলের প্রস্থ একসঙ্গে মেলে। অন্যান্য লিপি egui আকার দেয় ও আঁকে।"
+  },
+  "800407e32d4bc4d6": {
+   "source": "The extension shows almost nothing of its own, as users of other download managers expect: a click on its toolbar button turns taking downloads off and on, its right-click menu has \"Don't take downloads from this site\" and Help (<x1/>, the status page: installed, or what is wrong and the one thing to do), and its options page (<x2/>) has only that switch, the browser's proxy (#42) and another DDM (#157). It never asks the app for its downloads (extensions up to 0.6.5 did, for a window of their own: the host refuses that question now, and the app answers the automation API's <x3/> and actions only while the API is on).",
+   "text": "অন্যান্য ডাউনলোড ম্যানেজারের ব্যবহারকারীরা যেমন আশা করেন, এক্সটেনশনটি নিজে প্রায় কিছুই দেখায় না: এর টুলবার বোতামে ক্লিক করলে ডাউনলোড নেওয়া বন্ধ বা চালু হয়, ডান-ক্লিক মেনুতে আছে “Don't take downloads from this site” ও সাহায্য (<x1/>, অবস্থার পৃষ্ঠা: ইনস্টল করা আছে, অথবা কী সমস্যা এবং একমাত্র কী করতে হবে), আর এর বিকল্পের পৃষ্ঠায় (<x2/>) আছে শুধু সেই সুইচ, ব্রাউজারের প্রক্সি (#42) এবং অন্য একটি DDM (#157)। এটি অ্যাপের কাছে এর ডাউনলোডের তালিকা কখনো চায় না (0.6.5 পর্যন্ত এক্সটেনশন নিজস্ব উইন্ডোর জন্য চাইত: এখন হোস্ট সেই প্রশ্ন প্রত্যাখ্যান করে, আর অটোমেশন API চালু থাকলেই শুধু অ্যাপ API-এর <x3/> ও অ্যাকশনের উত্তর দেয়)।"
+  },
+  "dcedde395f1f0789": {
+   "source": "<g1>1.0.0</g1> <g2>20.9 MB</g2>",
+   "text": "<g1>1.0.0</g1> <g2>20.9 MB</g2>"
+  },
+  "410849c6c11c33d7": {
+   "source": "DDM is free and always will be. If it saves you time, you can support it.",
+   "text": "DDM বিনামূল্যে এবং সবসময় বিনামূল্যেই থাকবে। এটি আপনার সময় বাঁচালে আপনি একে সমর্থন করতে পারেন।"
   }
  }
 }

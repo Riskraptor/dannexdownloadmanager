@@ -5,10 +5,9 @@ Each release's notes on GitHub come from its section here (`## [X.Y.Z]`, see
 
 ## [Unreleased]
 
-- Added and updated partial website translations for Arabic, Persian, Portuguese (Portugal),
-  Polish, Bengali and Thai with the native OpenRouter translation workflow. The remaining passes
-  leave 4 Arabic, 2 Persian, 101 Bengali, 34 Portuguese (Portugal), 40 Polish, 432 Turkish and
-  59 Thai texts for human review or an additional funded run.
+- Completed the website translations for Arabic, Persian, Portuguese (Portugal), Polish,
+  Bengali, Turkish and Thai. Claude Sonnet 5.5 filled the remaining texts and the catalog
+  validator and strict kept-name checks passed.
 
 ## [1.0.0] - 2026-11-23
 
