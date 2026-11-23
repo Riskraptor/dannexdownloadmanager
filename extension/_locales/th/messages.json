@@ -17,6 +17,9 @@
   "video_hide_here": {
     "message": "ซ่อนวิดีโอนี้"
   },
+  "video_close": {
+    "message": "ปิด"
+  },
   "video_never_site": {
     "message": "ไม่แสดงบน $site$",
     "placeholders": {
@@ -185,6 +188,15 @@
       "type": {
         "content": "$1",
         "example": "MP3 320 kbps"
+      }
+    }
+  },
+  "video_audio_original_short": {
+    "message": "$type$ ต้นฉบับ",
+    "placeholders": {
+      "type": {
+        "content": "$1",
+        "example": "M4A"
       }
     }
   },

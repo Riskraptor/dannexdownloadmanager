@@ -17,6 +17,9 @@
   "video_hide_here": {
     "message": "Paslēpt šajā video"
   },
+  "video_close": {
+    "message": "Aizvērt"
+  },
   "video_never_site": {
     "message": "Nekad vietnē $site$",
     "placeholders": {
@@ -185,6 +188,15 @@
       "type": {
         "content": "$1",
         "example": "MP3 320 kbps"
+      }
+    }
+  },
+  "video_audio_original_short": {
+    "message": "Oriģinālais $type$",
+    "placeholders": {
+      "type": {
+        "content": "$1",
+        "example": "M4A"
       }
     }
   },

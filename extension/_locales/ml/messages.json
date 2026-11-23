@@ -17,6 +17,9 @@
   "video_hide_here": {
     "message": "ഈ വീഡിയോയിൽ മാത്രം മറയ്ക്കുക"
   },
+  "video_close": {
+    "message": "അടയ്ക്കുക"
+  },
   "video_never_site": {
     "message": "$site$ എന്നതിൽ ഒരിക്കലും വേണ്ട",
     "placeholders": {
@@ -185,6 +188,15 @@
       "type": {
         "content": "$1",
         "example": "MP3 320 kbps"
+      }
+    }
+  },
+  "video_audio_original_short": {
+    "message": "യഥാർത്ഥ $type$",
+    "placeholders": {
+      "type": {
+        "content": "$1",
+        "example": "M4A"
       }
     }
   },

@@ -1575,9 +1575,13 @@ async function drop(item) {
 // the Downloads folder, and the browser may warn of a conflict). Only an answer with
 // "uniquify" and no name is no suggestion at all (downloads_api.cc, DeterminerCallback), and
 // the binding lets no empty name through: a name the browser refuses, which it empties after
-// counting the answer, is how a listener gives one ("Invalid filename" is logged once).
-function noName(suggest) {
-  suggest({ filename: "..", conflictAction: "uniquify" });
+// counting the answer, is how a listener gives one, but the browser logs it as an error
+// ("Unchecked runtime.lastError: Invalid filename") in the extension's Errors. So it is given
+// only for a download another extension started (its `downloads.download` name and folder, Save
+// In's); a page's download is answered with no suggestion, which leaves the browser's own name.
+function noName(suggest, item) {
+  if (item && item.byExtensionId) suggest({ filename: "..", conflictAction: "uniquify" });
+  else suggest();
 }
 
 if (SAFARI) {
@@ -1594,10 +1598,10 @@ if (SAFARI) {
         const taken = Boolean(c && c.name && !c.left) && (await offer(item, url, c.name));
         if (taken) return drop(item);
         // The browser goes on first; why is said after.
-        noName(suggest);
+        noName(suggest, item);
         leftAlone(c, item, url);
       })
-      .catch(() => noName(suggest));
+      .catch(() => noName(suggest, item));
     return true; // suggest() comes later
   });
 } else {

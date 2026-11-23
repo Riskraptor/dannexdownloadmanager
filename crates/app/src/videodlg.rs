@@ -8,7 +8,7 @@ use std::sync::{Arc, Mutex};
 
 use egui::{Pos2, Ui, pos2};
 use mdm_tools::resolve::{Choice, Looked, SubChoice, Video};
-use mdm_tools::video::{ALL_UPLOADERS, Subs};
+use mdm_tools::video::{ALL_UPLOADERS, Preloaded, Subs};
 
 use crate::dialogs::{Outcome, window};
 use crate::model::Category;
@@ -44,7 +44,7 @@ pub struct VideoAdd {
     pub remember: Option<Subs>,
     /// The browser's quality menu's look-up the choice was made from, for the download's first
     /// run (videolookup.rs); none from this window, whose download looks the page up itself.
-    pub preloaded: Option<mdm_tools::video::Preloaded>,
+    pub preloaded: Option<Preloaded>,
 }
 
 /// Which helper is being installed.
@@ -109,6 +109,12 @@ pub struct VideoDialog {
     pref: Subs,
     /// The clipboard's page address, read off the window's thread (#661).
     clip: crate::clipboard::Prefill,
+    /// The browser's quality menu's look-up, opened for its choice ([`Self::for_pick`]).
+    preloaded: Option<Preloaded>,
+    /// Opened for the browser's quality menu's choice ([`Self::picked`]): the one file, as
+    /// Download File Info shows a download (its quality, Save to, its name, Start Download),
+    /// not the page's list of qualities.
+    single: bool,
 }
 
 /// What is installed in the tools folder: (folder, yt-dlp, ffmpeg).
@@ -243,6 +249,8 @@ impl VideoDialog {
             embed: false,
             pref: Subs::default(),
             clip: Default::default(),
+            preloaded: None,
+            single: false,
         }
     }
 
@@ -279,6 +287,40 @@ impl VideoDialog {
         }
     }
 
+    /// Opened for the browser's quality menu's choice `p`: the video as the menu's look-up found
+    /// it, that quality chosen, nothing looked up again; Download Now adds it with the look-up
+    /// (its first run, `VideoAdd::preloaded`), as long as the page and the quality stay.
+    /// Called on a window opened for its page ([`Self::for_page`]), subtitles and Music's folder
+    /// set, which the choice follows.
+    pub fn picked(self, p: crate::videolookup::Picked) -> Self {
+        let mut d = self;
+        d.single = true;
+        d.auto_look = false;
+        d.looked_up = d.page.clone();
+        let found = found_tools(None);
+        d.tools_seen = found.clone();
+        d.tools = found;
+        d.set_video_with(p.video, p.merge);
+        let at = d.video.as_ref().and_then(|(_, choices)| {
+            choices
+                .iter()
+                .position(|c| c.selector == p.choice.selector)
+                .or_else(|| choices.iter().position(|c| c.label == p.choice.label))
+        });
+        if let Some(i) = at {
+            d.chosen = i;
+            d.rows.show_row(i, 8);
+            d.name_from_choice();
+        }
+        d.preloaded = Some(Preloaded {
+            slot: p.info,
+            selector: p.choice.selector,
+            label: p.choice.label,
+            merge: p.merge,
+        });
+        d
+    }
+
     /// The browser's context, while the address is still the one it came with.
     fn context(&self) -> mdm_ipc::Command {
         if self.page.trim() == self.from_browser {
@@ -290,14 +332,20 @@ impl VideoDialog {
 
     /// The choices for a looked-up video: merged qualities when ffmpeg is there (as last found:
     /// they follow when that changes, `take_tools`).
-    fn set_video(&mut self, mut v: Video) {
+    fn set_video(&mut self, v: Video) {
+        let merge = self.tools.as_ref().is_some_and(|t| t.2.is_some());
+        self.set_video_with(v, merge);
+    }
+
+    /// [`Self::set_video`], merged qualities offered or not (`merge`): as the browser's quality
+    /// menu offered them, for its choice to be there.
+    fn set_video_with(&mut self, mut v: Video, merge: bool) {
         // No page reader for this site: the page's own title rather than a hash (#345).
         if self.page.trim() == self.from_browser
             && let Some(title) = page_title(&self.context, &v, &self.page)
         {
             v.title = title.to_owned();
         }
-        let merge = self.tools.as_ref().is_some_and(|t| t.2.is_some());
         let choices = mdm_tools::resolve::choices(&v, merge);
         self.chosen = 0;
         self.rows = Default::default();
@@ -451,15 +499,27 @@ impl VideoDialog {
             self.confirmed = Some(now);
             ctx.request_repaint();
         }
-        let out = window(
-            ctx,
-            "video-page",
-            "Download video from a page",
-            [500.0, 391.0],
-            false,
-            winui::BG(),
-            |ui, o| self.body(ui, o, rt),
-        );
+        let out = if self.is_single() {
+            window(
+                ctx,
+                "video-page",
+                "Download File Info",
+                [500.0, SINGLE_HEIGHT],
+                false,
+                winui::BG(),
+                |ui, o| self.single_body(ui, o),
+            )
+        } else {
+            window(
+                ctx,
+                "video-page",
+                "Download video from a page",
+                [500.0, 391.0],
+                false,
+                winui::BG(),
+                |ui, o| self.body(ui, o, rt),
+            )
+        };
         // A playlist's quality chosen, a list or a video looked up: Save to follows (#611).
         self.follow_sound();
         // Helpers... open: on Close, the helpers are read again (another program, or DDM's own),
@@ -505,7 +565,7 @@ impl VideoDialog {
 
     /// What Download Now or Later adds: a playlist's videos, each its own download, or the
     /// video looked up (none when there is nothing to add).
-    fn added(&self) -> Option<VideoOut> {
+    pub(crate) fn added(&self) -> Option<VideoOut> {
         let folder = self.save_folder();
         let start_now = self.start_now.unwrap_or(true);
         if let Some(list) = &self.list {
@@ -535,8 +595,25 @@ impl VideoDialog {
             context: self.context(),
             subs: subs_for_choice(c, &chosen),
             remember: (!self.subs.is_empty()).then_some(chosen),
-            preloaded: None,
+            // The menu's look-up, for the page and quality it was made for.
+            preloaded: self
+                .preloaded
+                .as_ref()
+                .filter(|p| p.selector == c.selector && self.page.trim() == self.looked_up)
+                .map(|p| Preloaded {
+                    slot: p.slot.clone(),
+                    selector: p.selector.clone(),
+                    label: p.label.clone(),
+                    merge: p.merge,
+                }),
         }))
+    }
+
+    /// Chooses the quality on row `row`, as a click on it does.
+    #[cfg(test)]
+    pub(crate) fn choose_row(&mut self, row: usize) {
+        self.chosen = row;
+        self.name_from_choice();
     }
 
     /// The choice (or the playlist's quality) saves only the sound; None while there is none.
@@ -1123,6 +1200,203 @@ impl VideoDialog {
     }
 }
 
+/// The client height of the window for one quality chosen in the browser ([`VideoDialog::picked`]).
+const SINGLE_HEIGHT: f32 = 199.0;
+
+impl VideoDialog {
+    /// Shown as Download File Info: the browser's choice, its video known, no playlist.
+    pub(crate) fn is_single(&self) -> bool {
+        self.single && self.list.is_none() && self.video.is_some()
+    }
+
+    /// The window for the browser's quality menu's choice, as Download File Info shows a
+    /// download: the page, the quality (another can be chosen), the category, Save to, the file
+    /// name, and Download Later, Start Download and Cancel. Enter starts it.
+    fn single_body(&mut self, ui: &mut Ui, o: Pos2) -> Outcome<()> {
+        let p = ui.painter().clone();
+        let labels = [
+            crate::i18n::t("URL"),
+            crate::i18n::t("Quality"),
+            crate::i18n::t("Category"),
+            crate::i18n::t("Save to"),
+            crate::i18n::t("File name"),
+        ];
+        let widest = labels
+            .iter()
+            .map(|l| winui::text_width(&p, l))
+            .fold(0.0, f32::max);
+        let bx = (11.0 + widest + 8.0).clamp(70.0, 150.0);
+        let label = |ui: &Ui, y: f32, s: &str| {
+            winui::fit(
+                ui,
+                &p,
+                o.x + 11.0,
+                o.y + y,
+                s,
+                winui::TEXT(),
+                o.x + bx - 5.0,
+                ("video-single-label", y as i32),
+            );
+        };
+        label(ui, 22.0, labels[0]);
+        winui::fit(
+            ui,
+            &p,
+            o.x + bx,
+            o.y + 22.0,
+            self.page.trim(),
+            winui::TEXT(),
+            o.x + 489.0,
+            "video-single-url",
+        );
+
+        // The quality: as chosen in the browser, another of the video's in the list.
+        label(ui, 46.0, labels[1]);
+        let items: Vec<String> = self
+            .video
+            .as_ref()
+            .map(|(_, choices)| {
+                choices
+                    .iter()
+                    .map(|c| match c.size {
+                        Some(s) => format!("{}  ({})", c.label, crate::dialogs::dialog_size(s)),
+                        None => c.label.clone(),
+                    })
+                    .collect()
+            })
+            .unwrap_or_default();
+        let shown: Vec<&str> = items.iter().map(String::as_str).collect();
+        if let Some(i) = winui::combo_light(
+            ui,
+            r(o, bx, 33.0, 489.0 - bx, 21.0),
+            &shown,
+            self.chosen.min(shown.len().saturating_sub(1)),
+            !shown.is_empty(),
+            "video-single-quality",
+        ) && i != self.chosen
+        {
+            self.chosen = i;
+            self.name_from_choice();
+        }
+
+        label(ui, 74.0, labels[2]);
+        text(
+            &p,
+            o.x + bx,
+            o.y + 74.0,
+            &self.category().shown(),
+            winui::TEXT(),
+        );
+
+        label(ui, 101.0, labels[3]);
+        winui::edit(
+            ui,
+            r(o, bx, 88.0, 459.0 - bx, 21.0),
+            &mut self.folder,
+            true,
+            false,
+        );
+        if winui::button(
+            ui,
+            r(o, 467.0, 88.0, 22.0, 21.0),
+            "...",
+            ButtonKind::Normal,
+            false,
+            None,
+        )
+        .clicked()
+        {
+            let from = self.folder.clone();
+            winui::start_pick(ui.ctx(), "video-folder", move || {
+                rfd::FileDialog::new().set_directory(from).pick_folder()
+            });
+        }
+        if let Some(d) = winui::picked(ui.ctx(), "video-folder") {
+            self.folder = d.display().to_string();
+        }
+
+        label(ui, 132.0, labels[4]);
+        winui::edit(
+            ui,
+            r(o, bx, 119.0, 489.0 - bx, 21.0),
+            &mut self.name,
+            true,
+            false,
+        );
+
+        if let Some(e) = &self.error {
+            winui::fit(
+                ui,
+                &p,
+                o.x + 11.0,
+                o.y + 160.0,
+                e,
+                winui::ERROR(),
+                o.x + 489.0,
+                "video-single-error",
+            );
+        }
+
+        let ready =
+            self.video.as_ref().is_some_and(|(_, c)| !c.is_empty()) && !self.name.trim().is_empty();
+        let kind = |default: bool| match (ready, default) {
+            (false, _) => ButtonKind::Disabled,
+            (true, true) => ButtonKind::Default,
+            (true, false) => ButtonKind::Normal,
+        };
+        let [later_at, start_at, cancel_at] = winui::buttons_to_right(
+            &p,
+            489.0,
+            8.0,
+            &[
+                ("Download Later", 109.0),
+                ("Start Download", 109.0),
+                ("Cancel", 73.0),
+            ],
+            200.0,
+        )[..] else {
+            unreachable!("three buttons")
+        };
+        let y = SINGLE_HEIGHT - 32.0;
+        let later = winui::button(
+            ui,
+            r(o, later_at.0, y, later_at.1, 21.0),
+            "Download Later",
+            kind(false),
+            false,
+            None,
+        )
+        .clicked();
+        let start = winui::button(
+            ui,
+            r(o, start_at.0, y, start_at.1, 21.0),
+            "Start Download",
+            kind(true),
+            true,
+            None,
+        )
+        .clicked()
+            || (ready && winui::enter_pressed(ui));
+        let cancel = winui::button(
+            ui,
+            r(o, cancel_at.0, y, cancel_at.1, 21.0),
+            "Cancel",
+            ButtonKind::Normal,
+            false,
+            None,
+        )
+        .clicked();
+        if cancel || winui::escape_pressed(ui) {
+            return Outcome::Closed;
+        }
+        if ready && (start || later) {
+            self.start_now = Some(start);
+            return Outcome::Done(());
+        }
+        Outcome::Open
+    }
+}
+
 impl VideoDialog {
     /// Subtitles (#68): a language the video has, from the uploader or the site's automatic
     /// captions, saved beside the video (`<name>.<language>.srt`) or put into it (ffmpeg).
@@ -1287,14 +1561,6 @@ pub(crate) fn subs_for_choice(c: &Choice, chosen: &Subs) -> Subs {
             ..chosen.clone()
         }
     }
-}
-
-/// The subtitles the window would save with choice `c` of video `v` as it opens, untouched:
-/// the last video's choice (`pref`, settings.video_subs) where this video has that language
-/// ([`pick_for`]), else none. The browser's quality menu adds its choice with these.
-pub(crate) fn default_subs(v: &Video, c: &Choice, pref: &Subs) -> Subs {
-    let subs = mdm_tools::resolve::sub_choices(v, crate::i18n::code());
-    subs_for_choice(c, &subs_at(&subs, pick_for(&subs, pref), pref.embed))
 }
 
 /// The title of the page the browser played video `v` on (`mdm_ipc::Command::video_title`,
@@ -1522,8 +1788,17 @@ pub(crate) fn choice_label(label: &str) -> String {
 mod tests {
     use super::*;
 
+    /// The subtitles the window would save with choice `c` of video `v` as it opens, untouched:
+    /// the last video's choice (`pref`, settings.video_subs) where this video has that language
+    /// ([`pick_for`]), else none.
+    fn default_subs(v: &Video, c: &Choice, pref: &Subs) -> Subs {
+        let subs = mdm_tools::resolve::sub_choices(v, crate::i18n::code());
+        subs_for_choice(c, &subs_at(&subs, pick_for(&subs, pref), pref.embed))
+    }
+
     /// #359: a Dailymotion player embedded in another site is looked up at the video's own page,
     /// without that site as its Referer (Dailymotion answers 403); any other page keeps it.
+
     #[test]
     fn an_embedded_player_taken_to_its_page_drops_the_embedding_sites_referer() {
         let from = |page: &str| {

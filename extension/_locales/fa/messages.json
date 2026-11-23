@@ -17,6 +17,9 @@
   "video_hide_here": {
     "message": "پنهان کردن در این ویدیو"
   },
+  "video_close": {
+    "message": "بستن"
+  },
   "video_never_site": {
     "message": "هرگز در $site$",
     "placeholders": {
@@ -185,6 +188,15 @@
       "type": {
         "content": "$1",
         "example": "MP3 320 kbps"
+      }
+    }
+  },
+  "video_audio_original_short": {
+    "message": "اصلی $type$",
+    "placeholders": {
+      "type": {
+        "content": "$1",
+        "example": "M4A"
       }
     }
   },

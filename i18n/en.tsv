@@ -768,7 +768,7 @@
 	Categories	Categories
 #. page title in the Options window
 	Categories, file types, folders	Categories, file types, folders
-#. text in a dialog box; text in the Options window; text in remote.rs
+#. text in a dialog box; text in the Options window; text in remote.rs; text in the Download video window
 #. remote control page (on a phone): label of the category choice for a new download
 	Category	Category
 #. text in categories.rs
@@ -1270,12 +1270,12 @@
 	Download complete	Download complete
 #. text in the Options window
 	Download failed	Download failed
-#. window title in a dialog box
+#. window title in a dialog box; window title in the Download video window
 	Download File Info	Download File Info
 #. text in the Add torrent window
 #. Add torrent, a checkbox: download the files from their start, to watch a video while it downloads
 	Download in order	Download in order
-#. button in a dialog box
+#. button in a dialog box; button in the Download video window
 	Download Later	Download Later
 #. window title in a dialog box
 	Download later	Download later
@@ -3591,7 +3591,7 @@
 #. text in the Options window
 #. Options → General: checkbox; DDM starts when the computer starts (the user signs in)
 	Start Dannex Download Manager with the computer	Start Dannex Download Manager with the computer
-#. button in a dialog box
+#. button in a dialog box; button in the Download video window
 	Start Download	Start Download
 #. checkbox in the Options window
 #. Options → Downloads: checkbox; the file starts coming in while Download File Info waits for an answer
@@ -4447,7 +4447,7 @@
 #. text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
 #. {error} = an error message (keep the braces as they are)
 	Updates could not be checked: {error}	Updates could not be checked: {error}
-#. text in a dialog box
+#. text in a dialog box; text in the Download video window
 	URL	URL
 #. text in countries.rs
 #. a country's name (where a download's server is)
@@ -5135,6 +5135,9 @@ extension	Click for details.	Click for details.
 #. second line of the toolbar button's tooltip while something is wrong: a click opens the extension's status page
 extension	Click to see what to do.	Click to see what to do.
 #. text in the browser extension
+#. tooltip of the X button on the download button over a video: hide the button on this video
+extension	Close	Close
+#. text in the browser extension
 #. in the menu under the download button over a video: finding the video's qualities failed; the app's own explanation follows on the next line
 extension	Could not look it up	Could not look it up
 #. text in the browser extension
@@ -5351,6 +5354,9 @@ extension	Open the extensions page	Open the extensions page
 #. text in the browser extension
 #. shown briefly on the download button over a video in a feed (a social site's home page, a timeline) when nothing in the feed gives that video's own address, so nothing was sent: the user should open the post the video belongs to and click the button on that page; short
 extension	Open the post, then use the button there	Open the post, then use the button there
+#. text in the browser extension
+#. a row in the Audio tab of the menu of qualities under the download button over a video (the tab already says it is sound only): the site's own sound file as it is (not converted)
+extension	Original {type}	Original {type}
 #. text in the browser extension
 #. button: pair this browser with the other DDM using the code
 extension	Pair	Pair

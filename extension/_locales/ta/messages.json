@@ -17,6 +17,9 @@
   "video_hide_here": {
     "message": "இந்த வீடியோவில் மட்டும் மறைக்கவும்"
   },
+  "video_close": {
+    "message": "மூடு"
+  },
   "video_never_site": {
     "message": "$site$ தளத்தில் மீண்டும் காட்ட வேண்டாம்",
     "placeholders": {
@@ -185,6 +188,15 @@
       "type": {
         "content": "$1",
         "example": "MP3 320 kbps"
+      }
+    }
+  },
+  "video_audio_original_short": {
+    "message": "அசல் $type$",
+    "placeholders": {
+      "type": {
+        "content": "$1",
+        "example": "M4A"
       }
     }
   },

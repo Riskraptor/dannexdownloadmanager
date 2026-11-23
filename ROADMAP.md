@@ -63,6 +63,17 @@ The first official release.
 
 - ✅ A finished download whose file was moved or deleted shows File missing and offers Redownload
 
+## Dannex 1.1.1
+
+### Done
+
+- ✅ The button over a video: a quality opens DDM's Download File Info window for that file at once;
+  an × to close it; it stays near the video and in pop-up windows; its menu fits small windows
+- ✅ The video button's × closes it on that video only: YouTube's next video shows it again; a
+  video's qualities are looked up as soon as it plays, so the menu has them at the click
+- ✅ The video button's Audio tab names sounds by kind ("Original M4A", "MP3 320 kbps"); no more
+  "Invalid filename" errors in the extension's log
+
 ## Being worked on
 
 These ship in a later version, when they're ready.

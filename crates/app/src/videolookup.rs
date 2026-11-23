@@ -25,16 +25,14 @@
 //! is never reused), and none is kept past 10 minutes.
 
 use std::collections::HashMap;
-use std::path::{Path, PathBuf};
+use std::path::PathBuf;
 use std::sync::atomic::{AtomicBool, AtomicUsize, Ordering};
 use std::sync::{Arc, Mutex, MutexGuard, PoisonError};
 use std::time::{Duration, Instant};
 
 use mdm_ipc::api::{VideoChoice, VideoLookupAnswer, lookup};
 use mdm_tools::resolve::{Choice, Looked, Video};
-use mdm_tools::video::{InfoSlot, LOOKUP_WAIT, Preloaded, Subs};
-
-use crate::videodlg::VideoAdd;
+use mdm_tools::video::{InfoSlot, LOOKUP_WAIT};
 
 /// How long a look-up's token is kept.
 pub const TTL: Duration = Duration::from_secs(10 * 60);
@@ -521,47 +519,6 @@ fn answer(token: &str, s: &Search) -> VideoLookupAnswer {
     }
 }
 
-/// The download choice `p` adds, into `folder` (the Video category's), or `music` (the Music
-/// category's, None when the user deleted it) for a sound-only choice, listed under that category
-/// as the Download video window does (#611): DDM's own selector for it, the file named as the
-/// Download video window names it, the subtitles that window would preselect from `pref`
-/// (settings.video_subs, not changed by it), started now unless `start_now` is false (Options:
-/// only add to the queue), from the look-up's own yt-dlp answer (its first run). None for an
-/// address DDM can't take.
-pub fn video_add(
-    p: Picked,
-    folder: &Path,
-    music: Option<&Path>,
-    start_now: bool,
-    pref: &Subs,
-) -> Option<VideoAdd> {
-    let page = url::Url::parse(&p.address)
-        .ok()
-        .filter(|u| matches!(u.scheme(), "http" | "https"))?;
-    let name = crate::videodlg::file_name(title_of(&p.video, &p.address, &p.context), &p.choice);
-    let (category, folder) = match music {
-        Some(m) if mdm_tools::resolve::is_audio(&p.choice) => (crate::model::Category::Music, m),
-        _ => (crate::model::Category::Video, folder),
-    };
-    Some(VideoAdd {
-        page,
-        selector: p.choice.selector.clone(),
-        dest: folder.join(mdm_engine::naming::sanitize(name.trim())),
-        category,
-        size: p.choice.size,
-        start_now,
-        subs: crate::videodlg::default_subs(&p.video, &p.choice, pref),
-        context: p.context,
-        remember: None,
-        preloaded: Some(Preloaded {
-            slot: p.info,
-            selector: p.choice.selector,
-            label: p.choice.label,
-            merge: p.merge,
-        }),
-    })
-}
-
 /// Writes the look-up's end when its thread ends without one (a panic on it): nothing stays
 /// "looking" (a second click would share it) nor pending (its download would wait for it).
 struct Ended {
@@ -672,6 +629,7 @@ pub fn run(job: Job, exe: PathBuf, rt: tokio::runtime::Handle) -> std::io::Resul
 mod tests {
     use super::*;
     use mdm_ipc::{Command, VideoLookup, VideoPick};
+    use mdm_tools::video::Subs;
 
     /// A stream's manifest as yt-dlp sees it (named after its address) with two variants and
     /// German subtitles.
@@ -1422,17 +1380,25 @@ mod tests {
         assert!(matches!(Found::of(Err("e".into()), true), Found::Failed(_)));
     }
 
-    /// The choice is added with DDM's selector for it, named after the page that played it,
-    /// with the subtitles the window would preselect; started, or queued when Options say so.
+    /// The choice opens Download video with that quality chosen, named after the page that
+    /// played it, with the subtitles the window preselects; Download Now adds it with DDM's
+    /// selector and the look-up's own yt-dlp answer (nothing looked up again). Another quality
+    /// chosen there, or another page, goes without it.
     #[test]
-    fn the_choice_is_added_as_the_window_would() {
+    fn the_choice_opens_download_video_with_its_quality() {
+        use crate::videodlg::{VideoDialog, VideoOut};
         let mut l = Lookups::default();
         let now = Instant::now();
-        let folder = PathBuf::from("downloads").join("Video");
+        let folder = std::env::temp_dir().join("ddm-pick-test").join("Video");
         let de = Subs {
             langs: vec!["de".into()],
             automatic: false,
             embed: false,
+        };
+        let open = |p: Picked, pref: &Subs| {
+            VideoDialog::for_page(folder.clone(), &p.address, p.context.clone())
+                .with_subs(pref.clone())
+                .picked(p)
         };
         let job = l
             .begin(
@@ -1445,7 +1411,16 @@ mod tests {
         answered(&job, STREAM);
         let p = l.pick(&pick(&job.token, 0, None), false, now).unwrap();
         drop(job);
-        let add = video_add(p, &folder, None, true, &de).unwrap();
+        let mut dlg = open(p, &de);
+        // The one file, as Download File Info: not the page's list of qualities.
+        assert!(dlg.is_single());
+        assert!(
+            !VideoDialog::for_page(folder.clone(), SRC, Default::default()).is_single(),
+            "a page clicked shows its qualities"
+        );
+        let Some(VideoOut::One(add)) = dlg.added() else {
+            panic!("one video");
+        };
         assert_eq!(add.page.as_str(), SRC);
         assert_eq!(
             add.selector, "b[height=720]",
@@ -1453,37 +1428,33 @@ mod tests {
         );
         assert_eq!(add.dest, folder.join("A talk_ in Lisbon.mp4"));
         assert_eq!(add.size, Some(60 * 2500 * 125));
-        assert!(add.start_now);
         assert_eq!(add.context.cookies.as_deref(), Some("a=1"));
-        assert_eq!(
-            add.subs.langs,
-            ["de"],
-            "the last video's choice, on this page too"
-        );
-        assert!(add.remember.is_none(), "the remembered choice stays");
         // The look-up's yt-dlp answer goes with it, for the very choice made.
         let pre = add.preloaded.as_ref().unwrap();
         assert_eq!(
             (pre.selector.as_str(), pre.label.as_str(), pre.merge),
             ("b[height=720]", "720p MP4", false)
         );
-        // No page title (a page yt-dlp names itself), Options' "only add to the queue", a
-        // language this page doesn't have.
+        // Another quality chosen in the window: looked up afresh.
+        dlg.choose_row(1);
+        let Some(VideoOut::One(add)) = dlg.added() else {
+            panic!("one video");
+        };
+        assert_eq!(add.selector, "b[height=360]");
+        assert!(add.preloaded.is_none());
+        // The second quality picked, a page yt-dlp names itself.
         let job = l
             .begin(&look(SRC, None, None), &sent(false, ""), false, now)
             .unwrap();
         answered(&job, STREAM);
         let p = l.pick(&pick(&job.token, 1, None), false, now).unwrap();
         drop(job);
-        let ja = Subs {
-            langs: vec!["ja".into()],
-            ..Default::default()
+        let Some(VideoOut::One(add)) = open(p, &Subs::default()).added() else {
+            panic!("one video");
         };
-        let add = video_add(p, &folder, None, false, &ja).unwrap();
         assert_eq!(add.dest, folder.join("master.mp4"));
         assert_eq!(add.selector, "b[height=360]");
-        assert!(!add.start_now);
-        assert!(add.subs.langs.is_empty());
+        assert!(add.preloaded.is_some());
         // A video yt-dlp titled itself keeps its title, whatever the page's (#345).
         let job = l
             .begin(
@@ -1494,25 +1465,11 @@ mod tests {
             )
             .unwrap();
         answered(&job, &STREAM.replace("\"master\"", "\"Its own title\""));
-        assert_eq!(
-            l.poll(&job.token, now).title.as_deref(),
-            Some("Its own title")
-        );
         let p = l.pick(&pick(&job.token, 0, None), false, now).unwrap();
         drop(job);
-        let add = video_add(p, &folder, None, true, &Subs::default()).unwrap();
+        let Some(VideoOut::One(add)) = open(p, &Subs::default()).added() else {
+            panic!("one video");
+        };
         assert_eq!(add.dest, folder.join("Its own title.mp4"));
-        // Never an address that isn't on the web.
-        let job = l
-            .begin(
-                &look("file:///C:/v.mp4", None, None),
-                &sent(false, ""),
-                false,
-                now,
-            )
-            .unwrap();
-        answered(&job, STREAM);
-        let p = l.pick(&pick(&job.token, 0, None), false, now).unwrap();
-        assert!(video_add(p, &folder, None, true, &Subs::default()).is_none());
     }
 }

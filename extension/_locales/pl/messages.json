@@ -17,6 +17,9 @@
   "video_hide_here": {
     "message": "Ukryj na tym wideo"
   },
+  "video_close": {
+    "message": "Zamknij"
+  },
   "video_never_site": {
     "message": "Nigdy na $site$",
     "placeholders": {
@@ -185,6 +188,15 @@
       "type": {
         "content": "$1",
         "example": "MP3 320 kbps"
+      }
+    }
+  },
+  "video_audio_original_short": {
+    "message": "Oryginalny $type$",
+    "placeholders": {
+      "type": {
+        "content": "$1",
+        "example": "M4A"
       }
     }
   },

@@ -17,6 +17,9 @@
   "video_hide_here": {
     "message": "この動画では非表示"
   },
+  "video_close": {
+    "message": "閉じる"
+  },
   "video_never_site": {
     "message": "$site$ では常に非表示",
     "placeholders": {
@@ -185,6 +188,15 @@
       "type": {
         "content": "$1",
         "example": "MP3 320 kbps"
+      }
+    }
+  },
+  "video_audio_original_short": {
+    "message": "元の $type$",
+    "placeholders": {
+      "type": {
+        "content": "$1",
+        "example": "M4A"
       }
     }
   },

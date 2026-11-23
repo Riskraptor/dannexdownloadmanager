@@ -17,6 +17,9 @@
   "video_hide_here": {
     "message": "Сакриј на овом видео снимку"
   },
+  "video_close": {
+    "message": "Затвори"
+  },
   "video_never_site": {
     "message": "Никада на $site$",
     "placeholders": {
@@ -185,6 +188,15 @@
       "type": {
         "content": "$1",
         "example": "MP3 320 kbps"
+      }
+    }
+  },
+  "video_audio_original_short": {
+    "message": "Оригинални $type$",
+    "placeholders": {
+      "type": {
+        "content": "$1",
+        "example": "M4A"
       }
     }
   },

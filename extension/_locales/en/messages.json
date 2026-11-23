@@ -23,6 +23,10 @@
     "message": "Hide on this video",
     "description": "menu command of the download button over a video: hide the button on this video only"
   },
+  "video_close": {
+    "message": "Close",
+    "description": "tooltip of the X button on the download button over a video: hide the button on this video"
+  },
   "video_never_site": {
     "message": "Never on $site$",
     "description": "menu command of the download button over a video: never show the button on this web site again",
@@ -240,6 +244,16 @@
       "type": {
         "content": "$1",
         "example": "MP3 320 kbps"
+      }
+    }
+  },
+  "video_audio_original_short": {
+    "message": "Original $type$",
+    "description": "a row in the Audio tab of the menu of qualities under the download button over a video (the tab already says it is sound only): the site's own sound file as it is (not converted)",
+    "placeholders": {
+      "type": {
+        "content": "$1",
+        "example": "M4A"
       }
     }
   },

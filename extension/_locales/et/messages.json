@@ -17,6 +17,9 @@
   "video_hide_here": {
     "message": "Peida ainult selle video puhul"
   },
+  "video_close": {
+    "message": "Sulge"
+  },
   "video_never_site": {
     "message": "Mitte kunagi saidil $site$",
     "placeholders": {
@@ -185,6 +188,15 @@
       "type": {
         "content": "$1",
         "example": "MP3 320 kbps"
+      }
+    }
+  },
+  "video_audio_original_short": {
+    "message": "Algne $type$",
+    "placeholders": {
+      "type": {
+        "content": "$1",
+        "example": "M4A"
       }
     }
   },

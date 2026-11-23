@@ -469,6 +469,9 @@ const ok = (what) => {
     assert.notEqual(mdm, "none", `${what}: answered, the download doesn't wait`);
     const want = other ? other.filename : creator;
     assert.equal(determined(creator, other ? [other, mdm] : [mdm]), want, `${what}: DDM's answer gives no name of its own`);
+    // A name the browser refuses is logged as an error: only for another extension's download.
+    const refused = Boolean(mdm && typeof mdm === "object" && mdm.filename);
+    assert.equal(refused, Boolean(item.byExtensionId), `${what}: an invalid name only when another extension started it`);
   }
   // The model, checked: Chromium's own cases.
   assert.equal(determined("Pic/a.jpg", [undefined]), "", "suggest() empties the creator's name");
@@ -2389,6 +2392,22 @@ function samplePage(html) {
   assert.equal(sizeText(undefined, "en"), "");
   assert.deepEqual({ ...rowText({ label: "<img src=x onerror=alert(1)> 720p", ext: "mp4", size: null }, "en") }, { name: "<img src=x onerror=alert(1)> 720p", size: "" });
   assert.deepEqual({ ...rowText(null, "en") }, { name: "", size: "" });
+  // Under the Audio tab, a sound row says what it is without "Audio only" again on every row.
+  const audioName = make(["audioName"], "audioName");
+  const original = (type) => `Original ${type}`;
+  const bare = (s) => s && s.replace(/[\u2066\u2069]/g, "");
+  assert.equal(bare(audioName({ key: "audio", ext: "m4a" }, original)), "Original M4A");
+  assert.equal(bare(audioName({ key: "audio", ext: "<b>webm" }, original)), "Original BWEBM");
+  assert.equal(audioName({ key: "audio" }, original), null, "no type: the app's own words");
+  assert.equal(bare(audioName({ key: "mp3-0" }, original)), "MP3 VBR");
+  assert.equal(bare(audioName({ key: "mp3-320" }, original)), "MP3 320 kbps");
+  assert.equal(bare(audioName({ key: "opus" }, original)), "OPUS");
+  assert.equal(bare(audioName({ key: "flac" }, original)), "FLAC");
+  assert.equal(audioName({ key: "v1080" }, original), null);
+  assert.equal(audioName({ key: "mp3-x" }, original), null);
+  assert.equal(audioName(null, original), null);
+  const names = ["audio", "mp3-0", "mp3-320", "mp3-128", "opus", "flac"].map((key) => audioName({ key, ext: "m4a" }, original));
+  assert.equal(new Set(names).size, names.length, "every row its own name");
   // Following a lookup: the next question only after the last answer, on a clock of its own here.
   const followLookup = make(["pollDelay", "followLookup"], "followLookup");
   const follow = async (first, answers, { alive = () => true, took = 0 } = {}) => {
@@ -3382,10 +3401,10 @@ const ask = (listeners) => (m, sender) => new Promise((r) => listeners.message(m
       totalBytes: 1024,
       mime: "application/zip",
     },
-    (value) => (suggested = value),
+    (...args) => (suggested = args),
   );
   await settle();
-  assert.ok(suggested, "the browser keeps the authenticated runtime-proxy download");
+  assert.deepEqual(suggested, [], "the browser keeps the authenticated runtime-proxy download");
   assert.equal(natives(calls).length, 0);
   ok("#603 Chromium: tokenized Colab runtime-proxy download stays in the browser");
 }
@@ -4070,6 +4089,40 @@ const ask = (listeners) => (m, sender) => new Promise((r) => listeners.message(m
   assert.ok(fn("spot").includes("const order = [place, ...CORNERS.filter((c) => c !== place)];"));
   assert.ok(source.includes('ext.i18n.getMessage("video_never_site", [site])'), "Never on the site without www.");
   ok("video.js: Download panels' settings and the least length");
+}
+
+// video.js: ✕ hides the button on what the player plays now, not on the element: YouTube plays
+// every video in one element as the page moves in place, and its ad and video are two blob:s.
+{
+  const source = readFileSync(new URL("../../extension/video.js", import.meta.url), "utf8");
+  const start = source.indexOf("  const dismissed = new WeakMap();");
+  const end = source.indexOf("\n", source.indexOf("  const isDismissed = "));
+  assert.ok(start > 0 && end > start, "video.js has its dismissal");
+  const location = { href: "https://www.youtube.com/watch?v=one" };
+  const { dismissed, dismissedSrc, playing, isDismissed } = new Function(
+    "location",
+    `${source.slice(start, end)}\nreturn { dismissed, dismissedSrc, playing, isDismissed };`,
+  )(location);
+  const hide = (v) => {
+    dismissed.set(v, playing(v));
+    if (v.currentSrc && !v.currentSrc.startsWith("blob:")) dismissedSrc.add(v.currentSrc);
+  };
+  assert.ok(source.includes("dismissed.set(video, playing(video));"), "✕ remembers what plays");
+  const yt = { currentSrc: "blob:https://www.youtube.com/ad" };
+  hide(yt);
+  assert.equal(isDismissed(yt), true);
+  yt.currentSrc = "blob:https://www.youtube.com/video";
+  assert.equal(isDismissed(yt), true, "the ad over, the same video: still hidden");
+  location.href = "https://www.youtube.com/watch?v=two";
+  yt.currentSrc = "blob:https://www.youtube.com/next";
+  assert.equal(isDismissed(yt), false, "the next video in the same element: the button again");
+  const file = { currentSrc: "https://cdn.example/a.mp4" };
+  hide(file);
+  const again = { currentSrc: "https://cdn.example/a.mp4" };
+  assert.equal(isDismissed(again), true, "that file in another player: still hidden");
+  file.currentSrc = "https://cdn.example/b.mp4";
+  assert.equal(isDismissed(file), false, "another file in that player: the button");
+  ok("video.js: ✕ hides the button on this video only, the next one in the same player shows it");
 }
 
 // ---- the extension's pages, run against a fake page -------------------------------------------

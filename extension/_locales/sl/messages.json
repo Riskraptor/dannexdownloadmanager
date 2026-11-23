@@ -17,6 +17,9 @@
   "video_hide_here": {
     "message": "Skrij samo pri tem videoposnetku"
   },
+  "video_close": {
+    "message": "Zapri"
+  },
   "video_never_site": {
     "message": "Nikoli na $site$",
     "placeholders": {
@@ -185,6 +188,15 @@
       "type": {
         "content": "$1",
         "example": "MP3 320 kbps"
+      }
+    }
+  },
+  "video_audio_original_short": {
+    "message": "Izvirni $type$",
+    "placeholders": {
+      "type": {
+        "content": "$1",
+        "example": "M4A"
       }
     }
   },
