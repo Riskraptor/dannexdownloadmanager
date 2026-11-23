@@ -116,6 +116,16 @@
 #. {n} = a number (keep the braces as they are)
 #, machine
 @plural	{n} peer|{n} peers	{n} ᎾᎿᎢ ᏚᎾᏓᎬᏩᏍᏗ|{n} ᎾᎿᎢ ᏚᎾᏓᎬᏩᏍᏗ
+#. count in the Add torrent window
+#. a magnet link's lookup ran out of time; {n} = peers that answered
+#. {n} = a number (keep the braces as they are)
+#, machine
+@plural	{n} peer answered, but it didn't send the file list.|{n} peers answered, but none sent the file list.	{n} ᏈᎳ ᎤᏁᏤ, ᎠᏎᏃ ᎥᏝ ᏗᎪᏪᎵ ᎵᏍᏘ ᏳᏅᏒ.|{n} ᏈᎳ ᎤᏂᏁᏤ, ᎠᏎᏃ ᎥᏝ ᎩᎶ ᏗᎪᏪᎵ ᎵᏍᏘ ᏳᏅᏒ.
+#. count in the Add torrent window
+#. a magnet link's lookup ran out of time; {n} = peers found
+#. {n} = a number (keep the braces as they are)
+#, machine
+@plural	{n} peer was found, but it didn't answer.|{n} peers were found, but none answered.	{n} ᏈᎳ ᎤᏩᏛᎮ, ᎠᏎᏃ ᎥᏝ ᏳᏁᏤ.|{n} ᏈᎳ ᎤᏩᏛᎮ, ᎠᏎᏃ ᎥᏝ ᎩᎶ ᏳᏁᏤ.
 #. count in the main window
 #. {n} = a number (keep the braces as they are)
 #, machine
@@ -190,9 +200,14 @@
 #. & marks the keyboard shortcut letter: keep one & before a letter of the translation
 #, machine
 	&Start now	&ᎠᎴᏅᏗ ᎪᎯ ᎢᏳᎢ
-#. text in the Options window
+#. message or event log entry in the main window
+#. status strip: the list shows only the downloads that pass a column's filter
 #, machine
-	(separate names by spaces)	(ᏗᏟᎶᏍᏔᏅᎯ ᎦᎸᎠᏗ ᏗᏟᎶᏍᏔᏅᎯ ᎦᎸᎠᏗ ᏗᏟᎶᏍᏔᏅᎯ ᎦᎸᎠᏗ ᏗᏟᎶᏍᏔᏅᎯ ᎦᎸᎠᏗ)
+	(filtered)	(ᏈᎵᏓ ᎬᏗ)
+#. text in the Options window
+#. Options: a note under a list of names (sites, file types): how to write several
+#, machine
+	(names separated by spaces)	(ᏚᏙᎥ, ᏍᏇᏏ ᎠᏰᎵ)
 #. text in rssdlg.rs
 #. RSS feeds window, Download rules: shown in the empty Save to box
 #, machine
@@ -259,6 +274,10 @@
 #. {name} = a file name (keep the braces as they are)
 #, machine
 	A file of this torrent can't be saved safely: {name}	ᎠᎴᏅᏗᏍᎩ ᎯᎠ ᎢᎬᏁᏗ ᎥᏝ ᎤᏙᎯᏳᏒ ᏱᏗᎧᏃᏗ: {name}
+#. text in the Add torrent window
+#. a magnet link's lookup ran out of time: peers were found, but none answered
+#, machine
+	A firewall, a VPN or the network may be blocking the connections to peers. Look up again later: other peers may answer then.	ᏆᏯᏩᎵ, VPN ᎠᎴ ᏁᏘᏬᎩ ᏯᏍᏚᏗᏍᎪ ᏈᎳ ᎧᏁᏏᏂ. ᎣᏂ ᏔᎵᏁ ᎠᏲᎮᏍᏗ: ᎾᎯᏳ ᏅᏩᏓᎴ ᏈᎳ ᏱᎬᏩᏁᏤ.
 #. text in the settings
 #. Options → DNS: the NextDNS configuration ID typed isn't one
 #, machine
@@ -271,6 +290,22 @@
 #. the tooltip of where a download's server is, when a proxy carries the download
 #, machine
 	A proxy carries this download: the place and the time are the proxy's, not the server's.	ᎯᎠ downloads ᎾᎿ proxy ᎤᎾᏕᎳᎰᎯᏍᏗ: ᎾᎿ ᎠᎴ ᎢᏳᏩᎪᏗ ᎾᎿ proxy ᎤᏤᎵᎦ, ᎥᏝ server ᎤᏤᎵᎦ.
+#. text in the Options window
+#. Options → Sounds: an event a sound can be played for: a queue starts
+#, machine
+	A queue starts	ᏇᏳ ᎤᎴᏅᎲ
+#. text in the Options window
+#. Options → Sounds: an event a sound can be played for: a queue is stopped, or has nothing left to download
+#, machine
+	A queue stops or is done	ᏇᏳ ᎠᏲᎯᏒ ᎠᎴ ᎤᏍᏆᏛ
+#. text in the Options window
+#. Options → Downloads: a note under the checkboxes for Download File Info and Download complete: a queue's downloads never show those windows
+#, machine
+	A queue's downloads show neither window.	ᏇᏳ ᏓᎤᏂᎶᏗ ᎥᏝ ᏱᎾᏄᎪᏫᏍᎪ ᎯᎠ ᏔᎵ ᏫᏂᏙ.
+#. text in the Options window
+#. Options → Downloads → Customize "Download progress" dialog: a note under the choices
+#, machine
+	A queue's downloads start with theirs hidden. Show progress in a download's right-click menu, or the tray icon's Downloads in progress, opens one.	ᏇᏳ ᏓᎤᏂᎶᏗ ᎤᏂᎴᏅᎲ, ᎢᎦᎢ ᎤᏍᏆᏛ ᏫᏂᏙ ᎤᏍᎦᎳᏛ. “ᎢᎦᎢ ᎤᏍᏆᏛ ᎠᎾᏄᎪᏫᏍᏗ” ᏓᎤᏂᎶᏗ ᎠᎦᏘᏏ ᎧᎵᎩ ᎺᏄ ᎭᏫᏂ, ᎠᎴ “ᏓᎤᏂᎶᏗ ᎦᎸᏫᏍᏓᏁᎲ” ᏃᏘᏈᎨᏏᏂ ᎨᏒ ᎭᏫᏂ, ᏌᏉ ᎠᏍᏚᎢᏍᎪ.
 #. text in crashui.rs
 #. crash report window: what the report is and what Send does
 #, machine
@@ -291,6 +326,10 @@
 #. Add trackers: DDM never contacts a tracker on this computer or the local network
 #, machine
 	A tracker on this computer or the local network is never contacted: {line}	ᏗᎦᏙᎯ ᎯᎠ ᎢᏗᏓᏟᏌᏅᎢ ᎠᎴ ᎾᎥᎢ ᏚᎾᏓᏟᏌᏅᎢ ᎥᏝ ᎢᎸᎯᏳ ᏱᏚᎾᏓᏟᏌᏅ: {line}
+#. text in a dialog box
+#. Speed Limiter settings: a note under the limit (wrapped to the window's width)
+#, machine
+	A very low limit can make some servers drop the connection. From a server that can't resume downloads, the file may then have to start over.	ᎤᏣᏘ ᎤᏍᏗ ᎵᎻᏘ ᎢᎸᏍᎩ ᏌᏩ ᏯᏍᏆᏗᏍᎪ ᎧᏁᏏᏂ. ᎢᏳᏃ ᏌᏩ ᎥᏝ ᏰᎵ ᏓᎤᏂᎶᏗ ᏔᎵᏁ ᏱᎴᏅᏗ, ᎪᏪᎵ ᏔᎵᏁ ᎢᎬᏱᏗᏢ ᏓᎴᏂ.
 #. text in extracting archives (a download's log, the Archive password window)
 #. why an archive wasn't extracted (after "Couldn't extract {name}: ")
 #, machine
@@ -318,9 +357,17 @@
 #. remote control page (on a phone): button: add the download
 #, machine
 	Add	ᏃᎮᏗ
+#. window title in a dialog box
+#. title of the window Add URL opens: one address to download
+#, machine
+	Add a download	ᏓᎤᏂᎶᏗ ᎠᏁᏉᏤᏗ
 #. what a keyboard shortcut does in the Help menu's windows (About, updates, shortcuts, Tell a friend)
 #, machine
 	Add a download (Add URL)	ᏗᏟᎶᏍᏔᏅᎯ ᎦᎸᎠᏗ ᏗᏟᎶᏍᏔᏅᎯ ᎦᎸᎠᏗ (ᏗᏟᎶᏍᏔᏅᎯ ᎦᎸᎠᏗ URL)
+#. text in the Batch download window
+#. Batch download: the explanation at the top (wrapped to the window's width); keep the * and the file names as they are
+#, machine
+	Add a numbered series of files at once, such as img001.jpg, img002.jpg … img100.jpg: type their address with a * where the number or the letter changes.	ᏗᏎᏍᏗ ᎬᏗ ᏗᎪᏪᎵ ᏌᏉ ᎢᏳᏩᎫᏗ ᎠᏁᏉᏤᏗ, img001.jpg, img002.jpg … img100.jpg ᏥᏄᏍᏗ: ᎠᏗᎵᏏ ᎪᏪᎶᏗ, * ᎬᏗ ᏗᏎᏍᏗ ᎠᎴ ᏗᎪᏪᎶᏙᏗ ᏣᏁᏟᏴᏍᎪ.
 #. message or event log entry in the main window
 #. title of the file dialog of View → Theme → Add a theme file
 #. title of the message when View → Theme → Add a theme file fails
@@ -333,7 +380,12 @@
 #. text in the tray icon's menu
 #, machine
 	Add batch download	ᏗᏟᎶᏍᏔᏅᎯ ᎦᎸᎠᏗ ᏗᏟᎶᏍᏔᏅᎯ ᎦᎸᎠᏗ
+#. window title in the Options window
+#. window title: Options → General → Add browser... (its name, after its program was chosen)
+#, machine
+	Add browser	ᏇᎶᏌ ᎠᏁᏉᏤᏗ
 #. text in the Options window
+#. Options → General: button that adds a browser (its program) to the browsers DDM takes downloads from
 #. the trailing ... means it is still going on: keep it
 #, machine
 	Add browser...	ᏗᏟᎶᏍᏔᏅᎯ ᎦᎸᎠᏗ...
@@ -348,6 +400,14 @@
 #. RSS feeds window: button that subscribes to the feed whose address is typed
 #, machine
 	Add feed	ᎤᎾᎵᏍᏓᏴᏗ ᏓᏓᏁᏟᏴᏏ
+#. text in the Options window
+#. Options → Downloads: an address already in the list added again: added as a new download that replaces the file
+#, machine
+	Add it again, replacing the file	ᏔᎵᏁ ᎠᏁᏉᏤᏗ, ᎪᏪᎵ ᎠᏁᏟᏴᏍᏗ
+#. text in the Options window
+#. Options → Downloads: an address already in the list added again: added as a new download whose file gets a number ("file (1).zip")
+#, machine
+	Add it again, with a numbered file name	ᏔᎵᏁ ᎠᏁᏉᏤᏗ, ᏗᏎᏍᏗ ᎬᏗ ᎪᏪᎵ ᏚᏙᎥ
 #. text in playlistdlg.rs
 #. title of the question asked before a playlist adds many downloads
 #, machine
@@ -356,12 +416,6 @@
 #. link in the empty download list: opens Add URL
 #, machine
 	Add new download	ᏗᏟᎶᏍᏔᏅᎯ ᎦᎸᎠᏗ ᏗᏟᎶᏍᏔᏅᎯ ᎦᎸᎠᏗ
-#. text in the Options window
-#, machine
-	Add the duplicate and overwrite the existing file	ᏗᏟᎶᏍᏔᏅᎯ ᎦᎸᎠᏗ ᏗᏟᎶᏍᏔᏅᎯ ᎦᎸᎠᏗ ᏗᏟᎶᏍᏔᏅᎯ ᎦᎸᎠᏗ ᏗᏟᎶᏍᏔᏅᎯ ᎦᎸᎠᏗ
-#. text in the Options window
-#, machine
-	Add the duplicate with a numbered file name	ᏗᏟᎶᏍᏔᏅᎯ ᎦᎸᎠᏗ ᏗᏟᎶᏍᏔᏅᎯ ᎦᎸᎠᏗ ᏗᏟᎶᏍᏔᏅᎯ ᎦᎸᎠᏗ ᏗᏟᎶᏍᏔᏅᎯ ᎦᎸᎠᏗ
 #. text in extension.rs
 #. button in the browser extension's window: open the extension's page in that browser
 #, machine
@@ -378,13 +432,18 @@
 #, machine
 	Add them without starting them	ᏗᏂᏙᏢᏍᎬᎾ ᏗᏓᏁᏟᏴᏏ
 #. message or event log entry in the main window; text in the Link grabber window
-#. Link grabber button: add the ticked links to the download queue without starting them (IDM's OK)
+#. Link grabber button: add the ticked links to the download queue without starting them
 #, machine
 	Add to queue	ᏗᏟᎶᏍᏔᏅᎯ ᎦᎸᎠᏗ ᏗᏟᎶᏍᏔᏅᎯ ᎦᎸᎠᏗ
 #. text in a dialog box; text in the Site grabber window (Tasks → Run site grabber)
 #. Site grabber: label of the queue the files are added to
 #, machine
 	Add to queue:	ᏗᏟᎶᏍᏔᏅᎯ ᎦᎸᎠᏗ ᏗᏟᎶᏍᏔᏅᎯ ᎦᎸᎠᏗ:
+#. button in the Options window
+#. button in Test browser integration when no browser's extension has connected: opens the window that adds DDM's extension to the browsers installed
+#. the trailing ... means it opens a window: keep it
+#, machine
+	Add to your browser...	ᏣᏤᎵ ᏇᎶᏌ ᎠᏁᏉᏤᏗ...
 #. message or event log entry in the main window; window title in the Add torrent window
 #, machine
 	Add torrent	ᏗᏟᎶᏍᏔᏅᎯ ᎦᎸᎠᏗ
@@ -417,9 +476,10 @@
 #. remote control page (on a phone): a magnet link or .torrent file was added; DDM reads the torrent's files first
 #, machine
 	Added. DDM is reading the torrent: it joins the list in a moment.	ᏃᎮᏛ. DDM ᏓᎪᎵᏰᎠ ᎤᏃᎴᎢ: ᏂᎪᎯᎸᎾ ᏓᎪᏢᏂ.
-#. text in the Batch download window; text in a dialog box; label in the Options window; text in a download's progress window
+#. text in the Batch download window; text in a dialog box; label in the Options window; text in a download's progress window; text in the Site grabber window (Tasks → Run site grabber)
 #. noun: the web address (URL)
 #. column title: the web address (URL)
+#. column title: Site grabber: the web address a file was found at
 #, machine
 	Address	ᏗᏟᎶᏍᏔᏅᎯ ᎦᎸᎠᏗ
 #. message or event log entry in the main window
@@ -442,14 +502,14 @@
 #. window title: the addresses whose downloads stay with the browser
 #, machine
 	Addresses left to the browser	ᎤᎾᏙᏢᏒᎢ ᏗᏓᏂᏴᏗ ᏗᏕᎬᏔᏅᎢ
+#. window title in the Options window
+#. window title: Options → Proxy / Socks → Advanced / Socks...
+#, machine
+	Advanced / Socks	ᎦᎸᎳᏗᏢ / Socks
 #. button in the Options window
 #. the trailing ... means it opens a window: keep it
 #, machine
 	Advanced / Socks...	ᎦᎸᎳᏗᏢ / SOCKS...
-#. text in extension.rs
-#. a check of Test browser integration (Options → General)
-#, machine
-	Advanced browser integration is on	ᎦᎸᎳᏗᏢ ᏗᏓᏂᏴᏗ ᏗᏕᎬᏔᏅᎢ ᏚᎾᏙᏢᏒᎢ
 #. text in countries.rs
 #. a country's name (where a download's server is)
 #, machine
@@ -505,6 +565,10 @@
 #, machine
 	All time	ᎤᎴᏅᎲ ᏅᏓᎬᏩᏓᎴᏅᏛ
 #. text in the Site grabber window (Tasks → Run site grabber)
+#. Site grabber: the Type drop-down's choice that shows every file found
+#, machine
+	All types	ᏂᎦᏛ ᏄᏍᏛ
+#. text in the Site grabber window (Tasks → Run site grabber)
 #. Site grabber template: every video file of the site
 #, machine
 	All video	ᏂᎦᏛ ᎠᏁᏙᎲ ᏚᏟᎶᏍᏔᏅ
@@ -550,9 +614,11 @@
 #. Options → Archives: where extracted files go
 #, machine
 	Always into a folder named after it	ᏂᎪᎯᎸᎢ ᎢᏗᎦᎴᏴᏔᏅᎯ ᏚᏙᎥ ᎢᏗᎦᎴᏴᏔᏅᎯ
-#. checkbox in a dialog box
+#. text in a dialog box
+#. Download File Info: checkbox; the folder in Save As becomes this category's folder from now on; {category} = the category's name (Video, Music...)
+#. {category} = a category name such as "Music" (keep the braces as they are)
 #, machine
-	Always turn on Speed Limiter on Dannex Download Manager startup	ᏂᎪᎯᎸ ᏗᏟᎶᏍᏔᏅᎯ ᎦᎸᎠᏗ ᏗᏟᎶᏍᏔᏅᎯ ᎦᎸᎠᏗ Dannex Download Manager ᏗᏟᎶᏍᏔᏅᎯ ᎦᎸᎠᏗ
+	Always save {category} files to this folder	{category} ᏗᎪᏪᎵ ᏂᎪᎯᎸ ᎯᎠ ᏬᎵᏓ ᎭᏫᏂ ᎠᏍᏆᏂᎪᏗ
 #. text in the dates and times (the Scheduler window, the download list, Statistics)
 #. before noon, after a time of day (12-hour clock). Its pair is "PM": write both the same way (this language's own short marks, or both kept as AM and PM)
 #, machine
@@ -582,6 +648,10 @@
 #. the Scheduler, under "Wake the computer to run this queue" (Linux): the computer's one wake alarm is already set by something else
 #, machine
 	Another program has set the computer's wake alarm	ᏅᏩᏓᎴ ᎢᏗᏓᏛᏁᎯ ᏚᏓᏱᏓᏁᎸ ᎤᎾᎴᏗᏱ ᎤᏓᎾᏅᏓᏗᏍᏗ
+#. text in the Site grabber window (Tasks → Run site grabber)
+#. Site grabber: Start or Continue while another project explores its site
+#, machine
+	Another project is exploring a site. Wait for it to end, or stop it first.	ᏅᏩᏓᎴ ᏆᏤᎩ ᏌᏱᏘ ᎠᏲᎮᏍᎦ. ᎠᎦᏘᏗᏍᏗ ᎬᏂ ᎤᏍᏆᏛ, ᎠᎴ ᎢᎬᏱ ᎠᏲᎯᏍᏗ.
 #. text in the Options window
 #. Options → DNS settings: the test's answer; {ms} milliseconds, {ip} the address found
 #, machine
@@ -594,6 +664,10 @@
 #. a country's name (where a download's server is)
 #, machine
 	Antigua and Barbuda	ᎠᏂᏘᏆ ᎠᎴ ᏆᏊᏓ
+#. text in the Options window
+#. Options → Virus checking: label before the antivirus program's path
+#, machine
+	Antivirus program:	ᏩᏱᎳᏏ ᏆᎪᎳᎻ:
 #. text in the Options window
 #. Options → Network adapter: the first choice: no adapter is chosen, the system picks one for each connection
 #, machine
@@ -628,6 +702,10 @@
 #. a country's name (where a download's server is)
 #, machine
 	Argentina	ᎠᏥᏂᏘᏂᎠ
+#. text in the Options window
+#. Options → Virus checking: label before the antivirus program's arguments; [FILE] is written as is (it stands for the downloaded file)
+#, machine
+	Arguments ([FILE] is the downloaded file):	ᎠᎩᏳᎻᏂ ([FILE] ᎾᏍᎩ ᏓᎤᏂᎶᏗ ᎪᏪᎵ):
 #. text in countries.rs
 #. a country's name (where a download's server is)
 #, machine
@@ -639,13 +717,29 @@
 #. a country's name (where a download's server is)
 #, machine
 	Aruba	ᎠᎷᏆ
+#. text in the Site grabber window (Tasks → Run site grabber)
+#. Site grabber: under the Cookies box: how cookies are written
+#, machine
+	As the browser sends them: name=value; name2=value2	ᏇᎶᏌ ᏥᏅᏍᎪ ᎾᏍᎩᏯ: name=value; name2=value2
 #. option (radio button) in the Options window
 #. Options → Regional: dates and times written the way of DDM's language (the system's region's own way when that is in the same language)
 #, machine
 	As the language and the system's region write them	ᎦᏬᏂᎯᏍᏗ ᎠᎴ ᎠᏰᎵ ᎤᏤᎵ ᎢᎬᏁᎸᎯ ᎾᏍᎩᏯᎢ
 #. text in the Options window
+#. Options → Downloads: checkbox; after Batch download (and lists of links), DDM asks which queue they go to
+#, machine
+	Ask for the queue after a batch download	ᎤᏂᏣᏘ ᏓᎤᏂᎶᏗ ᎣᏂ, ᏇᏳ ᎠᏛᏛᏗ
+#. checkbox in the Options window
+#. Options → Downloads: checkbox; Download Later asks which queue the download goes to
+#, machine
+	Ask for the queue on Download Later	“ᎣᏂ ᏓᎤᏂᎶᏗ” ᎢᏳᏃ, ᏇᏳ ᎠᏛᏛᏗ
+#. text in the Options window
 #, machine
 	Ask it with:	ᎯᎠ ᎢᎬᏁᏗ ᎤᏛᏛᏅ:
+#. text in the Options window
+#. Options → Downloads: what DDM does when an address already in the list is added again: ask each time
+#, machine
+	Ask what to do	ᎦᏙ ᎢᏯᏛᏁᏗ ᎠᏛᏛᏗ
 #. message or event log entry in the main window
 #. event log entry: the torrent's trackers were asked for peers again (Reannounce)
 #, machine
@@ -660,6 +754,11 @@
 #. the trailing ... means it is still going on: keep it
 #, machine
 	Asking...	ᎠᏛᏛᎲᏍᎦ...
+#. text in the Scheduler's download limits
+#. {mb} and {hours} are input boxes, drawn where they stand in the translation; keep the one line break: the second line sits under the first box
+#. {mb} = a number of megabytes; {hours} = a number of hours (keep the braces as they are)
+#, machine
+	At most {mb} MBytes\nin any {hours} hours	ᎥᏝ ᎤᏟ {mb} MBytes\nᏂᎦᎥ {hours} ᎢᏳᏟᎶᏛ ᎭᏫᏂ
 #. text in the Site grabber window (Tasks → Run site grabber)
 #. Site grabber: a file type to collect
 #, machine
@@ -695,13 +794,6 @@
 #. remote control page (on a phone): category choice: the category follows the file's type
 #, machine
 	Automatic (by file type)	ᎤᏩᏒ (ᎢᏗᏢ ᎢᏳᏍᏗ)
-#. text in the Options window
-#. {category} = a category name such as "Music" (keep the braces as they are)
-#, machine
-	Automatically put in "{category}" category the following file types:	ᏗᏟᎶᏍᏔᏅᎯ ᎦᎸᎠᏗ ᏗᏟᎶᏍᏔᏅᎯ ᎦᎸᎠᏗ "{category}" ᏗᏟᎶᏍᏔᏅᎯ ᎦᎸᎠᏗ ᏗᏟᎶᏍᏔᏅᎯ ᎦᎸᎠᏗ ᏗᏟᎶᏍᏔᏅᎯ ᎦᎸᎠᏗ:
-#. text in the Options window
-#, machine
-	Automatically start downloading the following file types:	ᏗᏟᎶᏍᏔᏅᎯ ᎦᎸᎠᏗ ᏗᏟᎶᏍᏔᏅᎯ ᎦᎸᎠᏗ ᏗᏟᎶᏍᏔᏅᎯ ᎦᎸᎠᏗ ᏗᏟᎶᏍᏔᏅᎯ ᎦᎸᎠᏗ:
 #. text in the speed graphs (a download's progress window, the main window's status bar)
 #. progress window, under the speed graph: label before its average speed while it ran
 #, machine
@@ -761,6 +853,10 @@
 #. a country's name (where a download's server is)
 #, machine
 	Bhutan	ᏊᏔᏂ
+#. text in a download's Properties window
+#. File Properties → Server, for a torrent: it comes from the people sharing it, not from one server
+#, machine
+	BitTorrent peers	BitTorrent ᏈᎳ
 #. text in the Add torrent window
 #. Torrent settings: the address of an IP blocklist (empty: none)
 #, machine
@@ -811,7 +907,8 @@
 #. verb: choose a folder
 #, machine
 	Browse	ᏗᏯᏛᎯᏍᏗ
-#. button in categories.rs; button in the Options window; button in the Site grabber window (Tasks → Run site grabber)
+#. button in categories.rs; button in the Options window; text in a download's Properties window; button in the Site grabber window (Tasks → Run site grabber)
+#. File Properties of a download not finished: choose another folder for it
 #. the trailing ... means it opens a window: keep it
 #, machine
 	Browse...	ᏗᏯᏛᎯᏍᏗ...
@@ -823,16 +920,13 @@
 #, machine
 	Browser menu items	ᎠᎦᏙᎥᎯᏍᏗ ᎢᎬᎾᏗ ᏗᏁᏤᎸ
 #. page title in the Options window
+#. Options → General: the page's title
 #, machine
-	Browser/System Integration	ᏗᏃᏔᏍᎩ/ᎠᏍᏆᏗᏍᏗ ᏗᏙᏯᏅᎯᏍᏗ
+	Browsers and the system	ᏇᎶᏌ ᎠᎴ ᏏᏍᏖᎻ
 #. text in countries.rs
 #. a country's name (where a download's server is)
 #, machine
 	Brunei	ᏊᏂᎢ
-#. link (opens a web page) in the Help menu's windows (About, updates, shortcuts, Tell a friend)
-#. About: credit link to the open-source project Dannex is built on
-#, machine
-	Built on Mister Download Manager by Ahmed Nefzaoui	Mister Download Manager ᎦᏚᎢ ᎤᏬᏢᏅ, Ahmed Nefzaoui ᎤᏬᏢᏅᎯ
 #. text in countries.rs
 #. a country's name (where a download's server is)
 #, machine
@@ -880,6 +974,10 @@
 #. a country's name (where a download's server is)
 #, machine
 	Cameroon	ᎧᎺᎷᏂ
+#. text in a download's progress window
+#. label: whether the server lets a stopped download continue (Yes / No)
+#, machine
+	Can resume	ᏔᎵᏁ ᏰᎵ ᎠᎴᏅᏗ
 #. text in countries.rs
 #. a country's name (where a download's server is)
 #, machine
@@ -905,15 +1003,13 @@
 #. text in errors.rs
 #, machine
 	cannot resume: {detail}	ᎥᏝ ᏰᎵ ᏔᎵᏁ ᎢᎬᎾᏕᏏᏗ: {detail}
-#. group box title in the Options window; text in the Options window
-#, machine
-	Capture downloads from the following browsers:	ᏗᎦᏃᏍᏓᏅᎢ ᎯᎠ ᏗᏃᏔᏍᎩ ᏗᏓᏂᎸᎩ:
 #. text in extension.rs
 #. the headline of the window that offers the browser extension
 #, machine
 	Catch downloads from your browser	ᏗᏟᎶᏍᏔᏅᎯ ᏗᎪᏪᎵ ᎢᏣᎳᎩᏍᎩ ᏗᏟᎶᏍᏔᏅᎯ ᏗᎪᏪᎵ ᏗᎬᏔᏅᎯ ᏗᎦᎴᏴᏔᏅᎯ
-#. text in the main window (menus, toolbar, Categories pane)
+#. text in the main window (menus, toolbar, Categories pane); group box title in the Options window
 #. title of the side pane that lists the categories
+#. Options → Save to: group box: the categories, their file types and folders
 #, machine
 	Categories	ᏗᏓᏟᏌᏅᎢ
 #. page title in the Options window
@@ -958,14 +1054,10 @@
 #. link after "Windows' power options don't allow wake timers": opens Power Options' advanced settings, where it can be changed
 #, machine
 	Change	ᏓᏓᏁᏟᏴᏍᏗ
-#. text in the Options window
-#. {category} = a category name such as "Music" (keep the braces as they are)
+#. checkbox in the Options window
+#. Options → Virus checking: check box: run the antivirus program on each finished download of the types listed
 #, machine
-	Change folder for "{category}" category on last selected	ᏓᏓᏁᏟᏴᏏ ᏗᏓᏍᏆᏂᎪᏗᏍᏗ "{category}" ᏗᏓᏟᏌᏅᎢ ᎤᎵᏍᏆᎸᏗ ᎢᏯᏓᏑᏰᏛ ᏂᎦᎵᏍᏔᏅᎢ
-#. text in the Link grabber window
-#. Link grabber button (IDM's): tick every link
-#, machine
-	Check all	ᏂᎦᏛ ᎢᏗᎦᎴᏴᏔᏅᎯ
+	Check downloaded files for viruses	ᏓᎤᏂᎶᏗ ᏗᎪᏪᎵ ᏩᏱᎳᏏ ᎠᏲᎮᏍᏗ
 #. text in rssdlg.rs
 #. RSS feeds window, at the bottom: "Check feeds every [30] minutes"
 #, machine
@@ -1048,6 +1140,10 @@
 #. Site grabber: no file type ticked and none typed
 #, machine
 	Choose at least one type of file to collect.	ᏌᏉ ᎪᏪᎵ ᎢᏳᏍᏗ ᎯᏑᏯ ᎠᏟᏌᏗ.
+#. text in the Choose columns window (View → Choose columns)
+#. window title (View → Choose columns): which columns the download list shows, and in what order
+#, machine
+	Choose columns	ᎧᎳᎻ ᎠᏑᏰᏍᏗ
 #. text in the Options window
 #. Options → General → Keys...: the same keys were chosen for both lists
 #, machine
@@ -1056,6 +1152,14 @@
 #. Site grabber, third page's explanation
 #, machine
 	Choose how far to follow links and which files to collect.	ᎯᏑᏯ ᎢᏴᏛ ᏗᏍᏓᏱᏛ ᎠᏍᏓᏩᏗᏍᏗ ᎠᎴ ᎦᏙ ᏗᎪᏪᎵ ᎠᏟᏌᏗ.
+#. text in the Options window
+#. title of the file dialog of Options → General → Add browser...
+#, machine
+	Choose the browser's program	ᏇᎶᏌ ᏆᎪᎳᎻ ᎠᏑᏰᏍᏗ
+#. text in the Scheduler window
+#. title of the file dialog picking the file the Scheduler opens when the queue is done
+#, machine
+	Choose the file to open when the queue is done	ᏇᏳ ᎤᏍᏆᏛ ᎢᏳᏃ ᎠᏍᏚᎢᏍᏗ ᎪᏪᎵ ᎠᏑᏰᏍᏗ
 #. text in the Site grabber window (Tasks → Run site grabber)
 #. Site grabber, second page's explanation
 #, machine
@@ -1067,6 +1171,14 @@
 #. Options → Sites Logins → Cookies for video sites: the title of the window, and the tooltip of the button, that pick a browser profile's folder
 #, machine
 	Choose the profile's folder	ᎢᏯᏍᎦᏅᏅ ᎤᏙᏢᏒ ᎤᏤᎵᎦ ᏗᏟᎶᏍᏔᏅ
+#. text in the main window (menus, toolbar, Categories pane)
+#. tooltip of the arrow beside the toolbar's Start Queue button: a menu of the queues to start
+#, machine
+	Choose the queue to start	ᎠᎴᏅᏗ ᏇᏳ ᎠᏑᏰᏍᏗ
+#. text in the main window (menus, toolbar, Categories pane)
+#. tooltip of the arrow beside the toolbar's Stop Queue button: a menu of the queues to stop
+#, machine
+	Choose the queue to stop	ᎠᏲᎯᏍᏗ ᏇᏳ ᎠᏑᏰᏍᏗ
 #. text in helpers.rs
 #. {name} = a file name (keep the braces as they are)
 #, machine
@@ -1079,6 +1191,10 @@
 #. verb: clears this filter
 #, machine
 	Clear	ᎠᏍᏓᏅᏗ
+#. message or event log entry in the main window
+#. status strip: a link that turns every column filter off (the list shows all its downloads again)
+#, machine
+	Clear filters	ᏈᎵᏓ ᎠᏄᎪᏫᏍᏗ
 #. text in a download's progress window
 #. column title: the peer's torrent program
 #, machine
@@ -1098,6 +1214,14 @@
 #. what a keyboard shortcut does in the Help menu's windows (About, updates, shortcuts, Tell a friend)
 #, machine
 	Close a menu or dialog	ᎠᏍᏚᎢᏍᏗ ᏗᏓᏁᏟᏴᏍᏗ ᎠᎴ ᏗᏓᏃᎮᏗ
+#. text in a dialog box
+#. link in Download complete while other downloads' boxes wait behind it: closes them all
+#, machine
+	Close all	ᏂᎦᏛ ᎠᏍᏚᏗ
+#. text in a download's progress window
+#. checkbox (progress window's When done tab, the Scheduler): quit the program once the download or the queue is done
+#, machine
+	Close Dannex Download Manager when done	ᎤᏍᏆᏛ ᎢᏳᏃ Dannex Download Manager ᎠᏍᏚᏗ
 #. text in countries.rs
 #. a country's name (where a download's server is)
 #, machine
@@ -1118,8 +1242,8 @@
 #. a country's name (where a download's server is)
 #, machine
 	Colombia	ᎪᎸᎻᏈᎠ
-#. text in the Customize URL List window (View → Customize URL List)
-#. Customize URL List: what a screen reader calls its list of the download list's columns
+#. text in the Choose columns window (View → Choose columns)
+#. Choose columns: what a screen reader calls its list of the download list's columns
 #, machine
 	Columns	ᏗᏓᏍᏆᎶᏍᏗ
 #. text in countries.rs
@@ -1153,13 +1277,6 @@
 #. a country's name (where a download's server is)
 #, machine
 	Congo	ᎪᏂᎪ
-#. text in extension.rs
-#. in the browser extension's window, beside a browser whose extension reached DDM
-#, machine
-	Connected	ᏚᎾᏙᏢᏒᎢ
-#. text in extension.rs
-#, machine
-	Connected: downloads from your browser now come here.	ᏗᏟᎶᏍᏔᏅᎯ ᏗᎪᏪᎵ ᏗᎬᏔᏅᎯ: ᏗᏟᎶᏍᏔᏅᎯ ᏗᎪᏪᎵ ᎢᏣᎳᎩᏍᎩ ᏗᏟᎶᏍᏔᏅᎯ ᏗᎪᏪᎵ ᏗᎬᏔᏅᎯ ᏗᎦᎴᏴᏔᏅᎯ ᎾᎿᏂ ᏓᎾᎵᏍᏔᏂ.
 #. text in a download's progress window
 #. the trailing ... means it is still going on: keep it
 #, machine
@@ -1169,8 +1286,13 @@
 #, machine
 	Connection	ᏗᏙᏯᏅᎯᏍᏗ
 #. page title in the Options window
+#. Options → Connection: the page's title
 #, machine
-	Connections and Limits	ᏗᏙᏯᏅᎯᏍᏗ ᎠᎴ ᏗᎦᏟᎶᏍᏗ
+	Connections and limits	ᎧᏁᏏᏂ ᎠᎴ ᎵᎻᏘ
+#. group box title in the Options window
+#. Options → Connection: group box: how many connections a download opens to its server
+#, machine
+	Connections per download	ᏌᏉ ᏓᎤᏂᎶᏗ ᎤᏤᎵ ᎧᏁᏏᏂ
 #. text in the Options window
 #, machine
 	Connections:	ᏗᏙᏯᏅᎯᏍᏗ:
@@ -1182,6 +1304,10 @@
 #. Options → Sites Logins: group box title: yt-dlp signs in to video sites with a browser's cookies
 #, machine
 	Cookies for video sites	ᏗᏟᎶᏍᏔᏅ ᏗᏟᎶᏍᏔᏅ ᏗᏟᎶᏍᏔᏅ
+#. text in the Site grabber window (Tasks → Run site grabber)
+#. Site grabber: label of the cookies sent to the site (as a browser sends them: name=value; name2=value2)
+#, machine
+	Cookies:	ᎫᎩ:
 #. text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
 #, machine
 	Copied to the clipboard.	ᎤᏓᏁᏟᏴᏒᎯ ᏗᎦᏃᏍᏓᏅᎢ.
@@ -1257,26 +1383,10 @@
 #. Site grabber template: the user's own settings
 #, machine
 	Custom	ᏨᏒ ᏄᏍᏛ
-#. text in the Options window
-#, machine
-	Customize "Download progress" dialog	ᏗᎪᏢᏍᏗ "ᏗᎦᏃᏍᏓᏅᎢ ᎤᎾᏓᏟᏌᏅᎢ" ᏗᏓᏃᎮᏗ
-#. text in the Options window
-#, machine
-	Customize DDM Download panels in browsers	ᏗᎪᏢᏍᏗ DDM ᏗᎦᏃᏍᏓᏅᎢ ᏗᏓᏁᏟᏴᏍᏗ ᏗᏃᏔᏍᎩ ᎾᎿ
-#. text in the Options window
-#, machine
-	Customize DDM menu items in context menu of browsers	ᏗᎪᏢᏍᏗ DDM ᏗᏓᏁᏟᏴᏍᏗ ᏗᏓᏁᏟᏴᏍᏗ ᏗᏃᏔᏍᎩ ᎾᎿ
-#. text in the Options window
-#, machine
-	Customize keys to prevent or force downloading with DDM	ᏗᎪᏢᏍᏗ ᏗᏍᏚᎢᏍᏗ ᏗᎦᏘᎴᏍᏗ ᎠᎴ ᏗᎦᏃᏍᏓᏅᎢ ᎤᎾᏓᏟᏌᏅᎢ DDM ᎢᎬᏗ
 #. window title in the toolbar and its Customize toolbar window (View → Toolbar)
 #. title of the window that chooses the toolbar's buttons and their order (View → Toolbar → Customize...)
 #, machine
 	Customize toolbar	ᏗᎦᏃᏗ ᎤᏁᏟᏴᏍᏗ
-#. text in the Customize URL List window (View → Customize URL List)
-#. window title (View → Customize URL List): which columns the download list shows, and in what order
-#, machine
-	Customize URL List	URL ᏗᎪᏪᎶᏙᏗ ᎤᏁᏟᏴᏍᏗ
 #. text in countries.rs
 #. a country's name (where a download's server is)
 #, machine
@@ -1289,10 +1399,6 @@
 #. a country's name (where a download's server is)
 #, machine
 	Côte d'Ivoire	ᎪᏗ Ꮧ'ᎢᏬᎵ
-#. text in the Scheduler window; option (radio button) in the Scheduler window
-#. adverb: every day (the other choice is once, on a date)
-#, machine
-	Daily	ᏂᎦᏓ ᎢᎦ
 #. message or event log entry in the main window; window title in a dialog box; text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
 #, machine
 	Dannex Download Manager	Dannex Download Manager
@@ -1304,9 +1410,6 @@
 #. crash report window heading: DDM crashed and is gone
 #, machine
 	Dannex Download Manager closed unexpectedly	Dannex Download Manager ᎤᎾᏕᏯᏔᏛᎢ
-#. window title in the Options window
-#, machine
-	Dannex Download Manager Configuration	Dannex Download Manager ᏗᏓᏟᎶᏍᏗ
 #. text in crashui.rs
 #, machine
 	Dannex Download Manager crash report	Dannex Download Manager ᎤᎾᏕᏯᏔᏛᎢ ᏗᏟᎶᏍᏔᏅᎯ
@@ -1326,10 +1429,6 @@
 #. text in crashui.rs
 #, machine
 	Dannex Download Manager stopped responding for a while	Dannex Download Manager ᎤᎾᏕᏯᏔᏛᎢ ᎾᎿᎢ ᎤᎾᏕᏯᏔᏛᎢ
-#. text in the Options window
-#. \\n starts a new line: break lines where they fit the translation
-#, machine
-	Dannex Download Manager writes every connection straight into the final\nfile (a sparse part file next to it), so no temporary directory and no\nassembling step are needed.	Dannex Download Manager ᏂᎦᏛ ᏗᏓᏟᎶᏍᏗ ᎢᏗᏴᏍᏗ ᎢᏗᏴᏍᏗ\nᏗᏓᏟᎶᏍᏗ ᎢᏗᏴᏍᏗ ᎢᏗᏴᏍᏗ.
 #. text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
 #. {version} = a version number (keep the braces as they are)
 #, machine
@@ -1382,6 +1481,18 @@
 #. remote control page (on a phone): no pairing code is shown in DDM; "Pair a device" is DDM's button
 #, machine
 	DDM shows no code now. Click Pair a device there first.	DDM ᎥᏝ ᎢᏗᏢ ᎢᏗᏢ ᎢᏗᏢ. ᎢᏗᏢ ᎢᏗᏢ ᎢᏗᏢ ᎢᏗᏢ ᎢᏗᏢ ᎢᏗᏢ.
+#. text in extension.rs
+#. a check of Test browser integration: Options → General → Take downloads from web browsers is ticked
+#, machine
+	DDM takes downloads from web browsers	DDM ᎠᏓᏂᎸᎢᏍᎦ ᏇᎶᏌ ᏅᏓᏳᏓᎴᏅᎯ ᏓᎤᏂᎶᏗ
+#. text in the Options window
+#. Options → General: label before Edit...: which of DDM's commands the browsers' right-click menu shows
+#, machine
+	DDM's commands in the browsers' right-click menu	DDM ᎤᏤᎵ ᎧᎹᏂ ᏇᎶᏌ ᎠᎦᏘᏏ ᎧᎵᎩ ᎺᏄ ᎭᏫᏂ
+#. text in the Options window
+#. Options → General: label before Edit...: DDM's download button over videos and sound players in web pages
+#, machine
+	DDM's download button over videos in browsers	DDM ᎤᏤᎵ ᏓᎤᏂᎶᏗ ᏆᏗᏂ, ᏇᎶᏌ ᏈᏗᏲ ᎦᎸᎳᏗ
 #. page title in the Options window
 #, machine
 	Debrid service accounts	Debrid ᏗᏂᏍᏕᎵᏍᎩ ᎠᏎᏍᏙᏗ
@@ -1396,16 +1507,6 @@
 #. button: put back the default list
 #, machine
 	Default	ᏣᎳᎩ ᎢᏗᎬᏁᏗ
-#. text in the Options window
-#. {category} = a category name such as "Music" (keep the braces as they are)
-#, machine
-	Default download directory for "{category}" category	ᏣᎳᎩ ᎢᏗᎬᏁᏗ ᏗᏗᏍᎪᏗᏱ "{category}" ᏗᏓᏟᎶᏍᏗ
-#. page title in the Options window
-#, machine
-	Default download settings	ᏣᎳᎩ ᎢᏗᎬᏁᏗ ᏗᏗᏍᎪᏗᏱ ᏗᏟᎶᏍᏔᏅᎢ
-#. text in the Options window
-#, machine
-	Default max. conn. number	ᏣᎳᎩ ᎢᏗᎬᏁᏗ ᎤᏟᎯᏳ ᎢᏗᎬᏁᏗ ᏗᏓᏟᎶᏍᏔᏅᎢ
 #. message or event log entry in the main window; button in a dialog box; button in the Options window; button in rssdlg.rs
 #. button: deletes the category
 #. verb: delete the item
@@ -1474,13 +1575,14 @@
 #. the DHT (finding peers without trackers) is turned off in Torrent settings
 #, machine
 	DHT off	DHT ᎤᏙᏢᏒᎢ
+#. text in the Batch download window
+#. Batch download: label before a number box: how many digits each number has, with zeros in front (3: 001, 002...)
+#, machine
+	Digits	ᏗᏎᏍᏗ
 #. text in errors.rs
 #. {error} = an error message (keep the braces as they are)
 #, machine
 	disk error: {error}	ዲስᎩ ᎤᎵᏓᏍᏔᏅ: {error}
-#. text in the Scheduler window
-#, machine
-	displayed in the list of queues	ᏗᏓᏟᎶᏍᏔᏅᎢ ᏗᏓᏟᎶᏍᏔᏅᎢ ᏗᏓᏟᎶᏍᏔᏅᎢ
 #. text in countries.rs
 #. a country's name (where a download's server is)
 #, machine
@@ -1500,9 +1602,6 @@
 #. text in the Options window
 #, machine
 	DNS:	DNS:
-#. checkbox in the Options window
-#, machine
-	Do not start downloading, only add files to the queue	ᎠᏗᏍᎪᏗᏱ ᏂᏓᎴᏅᎲᎾ, ᏗᏓᏟᎶᏍᏗ ᏗᏓᏟᎶᏍᏔᏅᎢ ᎤᏅᏒ ᏗᏓᏟᎶᏍᏔᏅᎢ
 #. text in a dialog box
 #, machine
 	Do you want to create it?	ᎠᏗᏍᎪᏗᏱ ᏂᏓᎴᏅᎲᎾ, ᏗᏓᏟᎶᏍᏗ ᏗᏓᏟᎶᏍᏔᏅᎢ ᎤᏅᏒ ᏗᏓᏟᎶᏍᏔᏅᎢ?
@@ -1529,16 +1628,14 @@
 	Don't ask again	ᎢᎬᏱᏗᏢ ᎢᎦᏓᏛᏍᏗ
 #. checkbox in a dialog box
 #, machine
-	Don't show this dialog again	ᎠᏗᏍᎪᏗᏱ ᏂᏓᎴᏅᎲᎾ ᎯᎠ ᏗᏓᏟᎶᏍᏔᏅᎢ ᎢᎬᏱ
-#. text in the Options window
-#, machine
-	Don't start downloading automatically from the following addresses:	ᎠᏗᏍᎪᏗᏱ ᏂᏓᎴᏅᎲᎾ ᏗᏗᏍᎪᏗᏱ ᎾᏍᎩᏯ ᏗᏓᏟᎶᏍᏔᏅᎢ:
-#. text in the Options window
-#, machine
-	Don't start downloading automatically from the following sites:	ᎠᏗᏍᎪᏗᏱ ᏂᏓᎴᏅᎲᎾ ᏗᏗᏍᎪᏗᏱ ᎾᏍᎩᏯ ᏗᏓᏟᎶᏍᏔᏅᎢ:
+	Don't show this again	ᏔᎵᏁ ᎥᏝ ᎠᎾᏄᎪᏫᏍᏗ
 #. text in the Options window
 #, machine
 	Don't take files smaller than (KB, 0 = any size):	ᎥᏝ ᏗᏓᏂᏴᏗ ᏗᏕᎬᏔᏅᎢ ᏗᏓᏂᏴᏗ ᏗᏕᎬᏔᏅᎢ (KB, 0 = ᏂᎦᎥ ᏗᏓᏂᏴᏗ ᏗᏕᎬᏔᏅᎢ):
+#. text in a download's progress window
+#. checkbox under "When done, turn off the computer": programs that would hold the shutdown up (asking to save) are closed anyway
+#, machine
+	Don't wait for programs that hold it up	ᏆᎪᎳᎻ ᎥᏝ ᎠᎦᏘᏗᏍᏗ
 #. text in the Options window; text in a download's progress window
 #. button: close the window (the device is paired)
 #, machine
@@ -1601,14 +1698,13 @@
 #. the Scheduler's page (and checkbox) that caps how much is downloaded in a time
 #, machine
 	Download limits	ᏗᏗᏍᎪᏗᏱ ᏗᏓᏟᎶᏍᏔᏅᎢ
-#. text in the Scheduler's download limits
-#. {mb} and {hours} are input boxes, drawn where they stand in the translation; keep the one line break: the second line sits under the first box
-#. {mb} = a number of megabytes; {hours} = a number of hours (keep the braces as they are)
-#, machine
-	Download no more than {mb} MBytes\nevery {hours} hours	ᏗᏗᏍᎪᏗᏱ ᏂᏓᎴᏅᎲᎾ {mb} ᎷᏴᎢ\n{hours} ᎢᏳᏩᎪᏗ
 #. button in gallerydlg.rs; button in the Add torrent window; button in the Download video window
 #, machine
 	Download Now	ᏗᏗᏍᎪᏗᏱ ᎪᎯ
+#. option (radio button) in the Scheduler window
+#. Scheduler: the kind of queue (read-only choice): each download leaves the queue once it is finished
+#, machine
+	Download once	ᏌᏉ ᎢᏳᏩᎫᏗ ᏓᎤᏂᎶᏗ
 #. window title in the Options window
 #. window title: the download button the extension shows over videos
 #, machine
@@ -1652,10 +1748,6 @@
 #. button of a download the site's bot check (Cloudflare) refused: open its address in the web browser, which downloads the file itself (and keeps it); the same words as the right-click item
 #, machine
 	Download with the browser	ᏗᏓᏂᏴᏗ ᎬᏗ ᎠᏯᏙᎯᏍᏗ
-#. text in the Scheduler window
-#. {files} is a number box (with up/down arrows), drawn where it stands in the translation
-#, machine
-	Download {files} files at the same time	ᏗᏗᏍᎪᏗᏱ {files} ᏗᏓᏟᎶᏍᏗ ᎾᏍᎩᏯ ᎢᏳᏩᎪᏗ
 #. button in rssdlg.rs
 #. RSS feeds window: add the selected article's torrent (opens Add torrent)
 #. the trailing ... means it opens a window: keep it
@@ -1671,9 +1763,6 @@
 #. Statistics, group box title: a bar chart of the bytes downloaded each day
 #, machine
 	Downloaded each day, the last 30 days	ᏂᎦᏓ ᎢᎦ ᎠᏯᏙᎯᏍᏗ, ᎤᎵᏍᏆᏛ 30 ᏧᏒᎯᏛ
-#. page title in the Options window
-#, machine
-	Downloaded file types	ᏗᏗᏍᎪᏗᏱ ᏗᏓᏟᎶᏍᏗ ᏗᏓᏟᎶᏍᏔᏅᎢ
 #. text in a dialog box
 #. {size} = a file size such as "4.2 MB"; {bytes} = a number of bytes (keep the braces as they are)
 #, machine
@@ -1715,6 +1804,10 @@
 #. tab title: download settings
 #, machine
 	Downloads	ᎠᎾᏛᏗ
+#. page title in the Options window
+#. Options → File types: the page's title: which downloads DDM takes from the browsers
+#, machine
+	Downloads DDM takes	DDM ᎠᏓᏂᎸᎢᏍᎬ ᏓᎤᏂᎶᏗ
 #. text in the tray icon's menu
 #. tray menu: a submenu of the downloads now running; choosing one shows its progress window
 #, machine
@@ -1753,6 +1846,18 @@
 #. Options → Network adapter: what "Any" means
 #, machine
 	Each connection takes the system's route.	ᏌᏊᏊ ᎠᏓමුᏍᏙᏗ ᎤᎾᏙᏢᏒ ᎤᏑᏰᏒ ᎦᏅᏅ ᎠᏅᏗ.
+#. text in a download's progress window
+#. progress window: caption over the bar showing where each connection started in the file and how far it has got
+#, machine
+	Each connection's part of the file	ᏂᎦᏛ ᎧᏁᏏᏂ ᎤᏤᎵ ᎪᏪᎵ ᎢᎦᏛ
+#. text in the Options window
+#. Options → Connection: label before a number box: the connections each download opens (unless an exception below says otherwise)
+#, machine
+	Each download uses up to	ᏌᏉ ᏓᎤᏂᎶᏗ ᎬᏙᏗ ᎬᏂ
+#. text in the Site grabber window (Tasks → Run site grabber)
+#. Site grabber: under "Make the pages work offline"
+#, machine
+	Each file is saved where its address says, and each page and style sheet is changed once downloaded. Right-click the project, then Open offline copy.	ᏂᎦᏛ ᎪᏪᎵ ᎠᏍᏆᏂᎪᏗ ᎠᏗᎵᏏ ᏂᎦᏪᏍᎬ ᎾᎿ, ᎠᎴ ᏂᎦᏛ ᏇᏥ ᎠᎴ ᏍᏓᏱᎵ ᏏᏘ ᎤᏁᏟᏴᏒ ᏓᎤᏂᎶᏗ ᎣᏂ. ᏆᏤᎩ ᎠᎦᏘᏏ ᎧᎵᎩ, ᎿᏉ “ᎣᏩᎳᏱᏂ ᎧᏈ ᎠᏍᏚᎢᏍᏗ”.
 #. text in the Link grabber window
 #. Link grabber, in the empty "Save to" box: each file goes to its category's folder (Options → Save to)
 #, machine
@@ -1771,7 +1876,7 @@
 #. button in the Options window
 #. the trailing ... means it opens a window: keep it
 #, machine
-	Edit list ...	ᎭᎦᎾᏍᏓᏴᏗ ᎤᎾᏓᏟᏌᏅ ...
+	Edit list...	ᎵᏍᏘ ᎠᏁᏟᏴᏍᏗ...
 #. text in the Options window
 #, machine
 	Edit login	ᎠᎪᏪᎶᏗ ᏫᎬᏗ
@@ -1788,6 +1893,10 @@
 #. a country's name (where a download's server is)
 #, machine
 	El Salvador	ᎡᎵ ᏌᎵᏩᏙᎵ
+#. text in the Site grabber window (Tasks → Run site grabber)
+#. Site grabber: under "List the downloads under All Downloads too"
+#, machine
+	Else they show under the project, in Grabber projects, and in their queue.	ᎥᏝ ᎢᏳᏃ, ᏆᏤᎩ ᎭᏫᏂ, “ᎦᎳᏆ ᏆᏤᎩ” ᎭᏫᏂ, ᎠᎴ ᎤᏂᏤᎵ ᏇᏳ ᎭᏫᏂ ᎾᏄᎪᎪ.
 #. button in the Help menu's windows (About, updates, shortcuts, Tell a friend)
 #, machine
 	Email	ᎦᎴᏴᏔᏅ
@@ -1795,26 +1904,25 @@
 #. in Download a gallery, after the "Files at most" box
 #, machine
 	Empty: all of them. On most sites the newest come first.	ᎤᏃᏒᎯ: ᏂᎦᏛ. ᎤᏟ ᎢᏤᎢᏍᏗ ᎢᎬᏱ ᎨᏐᎢ.
+#. text in the Options window
+#. \\n starts a new line: break lines where they fit the translation
+#, machine
+	Empty: each download writes straight into a part file next to its file,\nso nothing is copied at the end. A folder here holds the part files\nuntil their downloads complete.	ᎪᎱᏍᏗ ᏂᎨᏒᎾ: ᏂᎦᏛ ᏓᎤᏂᎶᏗ ᎢᎦᏛ ᎪᏪᎵ ᎭᏫᏂ ᎪᏪᎳᏁ, ᎤᏤᎵ ᎪᏪᎵ ᎾᎥ,\nᎾᏍᎩ ᎢᏳᏍᏗ ᎥᏝ ᎪᎱᏍᏗ ᎧᏈ ᎣᏂ. ᎠᏂ ᏬᎵᏓ ᎢᏳᏃ, ᎾᏍᎩ ᎢᎦᏛ ᏗᎪᏪᎵ\nᎠᏍᏆᏂᎪᏗ ᎬᏂ ᏓᎤᏂᎶᏗ ᎤᏍᏆᏛ.
 #. text in crashui.rs
 #. crash report window button: end the frozen DDM and start it again
 #, machine
 	End and restart DDM	ᎠᎴᏅᏗ ᎠᎴ ᏔᎵᏁ ᎤᎴᏅᏗ DDM
+#. text in a download's progress window
+#. checkbox (progress window's When done tab, the Scheduler): end the dial-up connection once the download or the queue is done
+#, machine
+	End the dial-up connection when done	ᎤᏍᏆᏛ ᎢᏳᏃ, ᏓᏯᎵ-ᎠᏈ ᎧᏁᏏᏂ ᎠᏍᏆᏗᏍᏗ
 #. text in the Add torrent window
 #, machine
 	Enter a magnet link or choose a .torrent file	ᎪᏪᎶᏗ magnet link ᎾᏍᎩᎾᏃ ᎦᏑᏰᏍᏗ .torrent ᎢᏗᏢ
-#. text in the Scheduler window
-#, machine
-	Enter a name for the new queue that will be	ᎪᏪᎶᏗ ᏚᏙᎥ ᎢᏤ ᏓᏟᏍᏛ ᎾᏍᎩ ᎢᎨᎵᏍᏗ
 #. text in the Add torrent window
 #. Add trackers: OK with an empty box
 #, machine
 	Enter a tracker's address, one a line	ᏗᎦᏙᎯ ᎤᏤᎵᏛ ᏗᎦᏛᏗ, ᏌᏉ ᎦᏅᎯᏓ
-#. window title in a dialog box
-#, machine
-	Enter new address to download	ᎪᏪᎶᏗ ᎢᏤ ᏗᏍᏓᏴᏗ ᏗᏍᏓᏴᏗ
-#. window title in the Scheduler window
-#, machine
-	Enter queue name	ᎪᏪᎶᏗ ᏓᏟᏍᏛ ᏚᏙᎥ
 #. text in rssdlg.rs
 #. RSS feeds window, Download rules: which episodes to take (season x episode)
 #, machine
@@ -1879,9 +1987,6 @@
 #. verb: quit the app
 #, machine
 	Exit	ᎠᏯᏙᎯᏍᏗ
-#. checkbox in a download's progress window; checkbox in the Scheduler window
-#, machine
-	Exit Dannex Download Manager when done	ᎤᏓᏅᏍᏗ Dannex Download Manager ᎿᏉ ᎤᏍᏆᏛᎯ
 #. text in the Checksum window
 #, machine
 	Expected checksum (MD5, SHA-1, SHA-256, SHA-512 or CRC32):	ᎤᏚᎩ ᎢᎬᏒᎯ checksum (MD5, SHA-1, SHA-256, SHA-512 ᎾᏍᎩᎾᏃ CRC32):
@@ -1903,15 +2008,20 @@
 #, machine
 	Exploring the site	ᎦᏙᎯ ᎠᏲᎮᏍᎬ
 #. message or event log entry in the main window; text in the Options window
+#. title of a message box and of a file dialog: Tasks → Export, the list written to a file (the command's name, not a past tense such as "exported")
 #, machine
 	Export	ᎦᎴᏴᏔᏅ
 #. button in the Options window
 #. the trailing ... means it opens a window: keep it
 #, machine
 	Export...	ᎦᎴᏴᏔᏅᎢ...
-#. text in the Options window
+#. text in extension.rs
+#. in the browser extension's window, beside a browser where the extension is added and working
 #, machine
-	Extend the availability of Manifest 2 Chrome extensions	ᎠᏤᎵᏛ ᎢᏗᏢ Manifest 2 Chrome extensions
+	Extension added	ᎡᏍᏕᏂᏌᏂ ᎤᏁᏉᏨ
+#. text in extension.rs
+#, machine
+	Extension added: downloads from your browser now come here.	ᎡᏍᏕᏂᏌᏂ ᎤᏁᏉᏨ: ᏣᏤᎵ ᏇᎶᏌ ᏓᎤᏂᎶᏗ ᎪᎯ ᎠᏂ ᏓᎦᎷᎪ.
 #. text in categories.rs
 #, machine
 	Extensions separated by spaces, for example MP4 MKV R0*	Extensions ᏗᎦᎴᏅᏔᏅᎯ ᏗᎦᎴᏅᏔᏅᎯ, ᎢᏳᎾᏓᎴᎩ MP4 MKV R0*
@@ -1940,6 +2050,13 @@
 #. the trailing ... means it is still going on: keep it
 #, machine
 	Extracting...	ᎠᏍᎪᎸᏗᏍᎬ...
+#. message or event log entry in the main window
+#. list header's right-click menu: opens the filter box of the column right-clicked; {column} its title ("Status")
+#. {column} = a column title (keep the braces as they are)
+#. & marks the keyboard shortcut letter: keep one & before a letter of the translation
+#. the trailing ... means it is still going on: keep it
+#, machine
+	F&ilter "{column}"...	“{column}” &ᏈᎵᏓ ᎬᏙᏗ...
 #. text in countries.rs
 #. a country's name (where a download's server is)
 #, machine
@@ -2003,7 +2120,12 @@
 #. Statistics, group box title: the kinds of files downloaded (Video, Music…), by their share
 #, machine
 	File types	ᎢᏗᏢ ᎢᏗᏢ
-#. text in categories.rs; text in the Site grabber window (Tasks → Run site grabber)
+#. text in the Options window
+#. Options → Save to: over the file types of the chosen category; {category} is its name
+#. {category} = a category name such as "Music" (keep the braces as they are)
+#, machine
+	File types that go in {category}:	ᎪᏪᎵ ᏄᏍᏛ {category} ᏫᎦᎷᎪ:
+#. text in categories.rs; text in the Options window; text in the Site grabber window (Tasks → Run site grabber)
 #. Site grabber: before the file types to collect
 #, machine
 	File types:	ᎠᏰᎵ ᎢᏳᏍᏗ ᏗᎪᏪᎵ:
@@ -2045,6 +2167,10 @@
 #. the trailing ... means it opens a window: keep it
 #, machine
 	Files...	ᎠᏰᎵ ᏗᎪᏪᎵ...
+#. text in the Batch download window
+#. Batch download: group box title: what the * in the address is replaced with (numbers or letters); keep the *
+#, machine
+	Fill the * with	* ᎠᏁᏟᏴᏍᏗ ᎬᏗ
 #. text in the Site grabber window (Tasks → Run site grabber)
 #. Site grabber: label of the box that filters the files found by name or address
 #, machine
@@ -2114,9 +2240,6 @@
 #. text in the Add torrent window
 #, machine
 	For your Windows account only. Another app chosen in "Open with" stays first.	ᏣᏁᎳᏛ Windows ᎢᏦᎢ ᎤᏩᏒ. ᏅᏩᏓᎴ ᎢᏗᏢᏗ "Open with" ᎨᏒ ᎾᏍᎩ ᎢᎬᏱᏱ ᎨᏎᏍᏗ.
-#. checkbox in a download's progress window; checkbox in the Scheduler window
-#, machine
-	Force processes to terminate	ᏗᏓᎴᏂᏍᏗ ᏗᏓᎴᏂᏍᏗ ᏗᏓᎴᏂᏍᏗ
 #. text in the Statistics window (Downloads → Statistics)
 #. Statistics → Reset...: the question asked first (the downloads stay in the list)
 #, machine
@@ -2198,9 +2321,6 @@
 #. text in the Batch download window
 #, machine
 	From:	ᏗᏓᎴᏂᏍᏗ:
-#. checkbox in the Options window
-#, machine
-	ftp	ftp
 #. text in countries.rs
 #. a country's name (where a download's server is)
 #, machine
@@ -2270,6 +2390,10 @@
 #. a country's name (where a download's server is)
 #, machine
 	Gibraltar	ᏥᏆᎵᏓ
+#. checkbox in the Options window
+#. Options → Save to: checkbox; a finished file gets the date the server gives for it
+#, machine
+	Give files the server's date	ᏗᎪᏪᎵ ᏌᏩ ᎤᏤᎵ ᎢᎦ ᎠᏓᏁᏗ
 #. text in a download's progress window
 #. a torrent's sharing, when Torrent settings keep it on
 #, machine
@@ -2326,9 +2450,6 @@
 #. a country's name (where a download's server is)
 #, machine
 	Haiti	ᎮᎢᏘ
-#. checkbox in a download's progress window; checkbox in the Scheduler window
-#, machine
-	Hang up modem when done	ᏗᏓᎴᏂᏍᏗ ᏗᏓᎴᏂᏍᏗ ᏗᏓᎴᏂᏍᏗ
 #. text in a download's progress window
 #. legend: pieces downloaded
 #, machine
@@ -2354,6 +2475,9 @@
 #. what the computer does when the queue is done (verb: hibernate it)
 #, machine
 	Hibernate	ᏗᏓᎴᏂᏍᏗ
+#. text in the Options window
+#, machine
+	Hidden in the notification area	ᏃᏘᏈᎨᏏᏂ ᎨᏒ ᎭᏫᏂ ᎤᏍᎦᎳᏛ
 #. message or event log entry in the main window
 #. & marks the keyboard shortcut letter: keep one & before a letter of the translation
 #, machine
@@ -2365,8 +2489,12 @@
 #. tooltip of a button in a download's progress window: hides the window to the notification area (system tray); the download goes on
 #, machine
 	Hide to the notification area	ᎭᏫᎾᏗᏢ ᏫᎦᏅᏁᎸ notification area
+#. text in a download's progress window; text in standard windows
+#. tooltip of the title-bar button of a download's progress window that hides it to the notification area (system tray); the download goes on
+#, machine
+	Hide to the notification area (the download goes on)	ᏃᏘᏈᎨᏏᏂ ᎨᏒ ᎭᏫᏂ ᎠᏍᎦᎳᏗᏍᏗ (ᏓᎤᏂᎶᏗ ᎠᏏ ᎦᎸᏫᏍᏓᏁᎭ)
 #. checkbox in the Link grabber window; text in the Link grabber window; checkbox in the Options window
-#. Link grabber check box (IDM's "Hide HTML files"): links to web pages are not shown
+#. Link grabber check box: links to web pages (HTML files) are not shown
 #, machine
 	Hide web pages	ᎠᏍᏚᎢᏍᏔᏅᎯ ᎢᏗᎦᎴᏴᏔᏅᎯ
 #. text in the Options window
@@ -2388,6 +2516,14 @@
 #. a country's name (where a download's server is)
 #, machine
 	Hong Kong	ᎰᏂᎩᏂ
+#. page title in the Options window
+#. Options → Downloads: the page's title
+#, machine
+	How downloads are added	ᎢᏳᎵᏍᏙᏗ ᏓᎤᏂᎶᏗ ᎠᏁᏉᏤᏗ
+#. text in the Options window
+#. Options → Downloads: label before Edit...: how a download's progress window opens, and its tabs
+#, machine
+	How the progress window opens	ᎢᏳᎵᏍᏙᏗ ᎢᎦᎢ ᎤᏍᏆᏛ ᏫᏂᏙ ᎠᏍᏚᎢᏍᏗ
 #. text in extension.rs
 #. button in the browser extension's window, on Safari's row: open the steps that turn the extension on
 #, machine
@@ -2403,9 +2539,17 @@
 #. checkbox in the Options window
 #, machine
 	http	http
+#. text in the Options window
+#. Options → Proxy / Socks → Advanced / Socks...: a kind of proxy (a web proxy, plain)
+#, machine
+	HTTP proxy	HTTP ᏉᎩᏏ
 #. checkbox in the Options window
 #, machine
 	https	https
+#. text in the Options window
+#. Options → Proxy / Socks → Advanced / Socks...: a kind of proxy (a web proxy reached over TLS)
+#, machine
+	HTTPS proxy	HTTPS ᏉᎩᏏ
 #. text in countries.rs
 #. a country's name (where a download's server is)
 #, machine
@@ -2418,23 +2562,15 @@
 #, machine
 	Iceland	ᎠᎢᏍᎳᏂᏗ
 #. text in the Options window
-#, machine
-	If a duplicate download link is added:	ᏗᏓᎴᏂᏍᏗ ᏗᏓᎴᏂᏍᏗ ᏗᏓᎴᏂᏍᏗ:
-#. text in the Options window
-#, machine
-	If existing file is complete, show download complete dialog; otherwise resume it.	ᏗᏓᎴᏂᏍᏗ ᏗᏓᎴᏂᏍᏗ ᏗᏓᎴᏂᏍᏗ ᏗᏓᎴᏂᏍᏗ ᏗᏓᎴᏂᏍᏗ.
-#. text in the Options window
 #. Options → DNS settings: checkbox: when the chosen DNS can't be reached, use the system's instead
 #, machine
 	If it can't be reached, use the system's DNS	ᎢᏳᏃ ᎾᏍᎩ ᏂᎨᏒᎾ ᎨᏒ, system ᎤᏤᎵ DNS ᎯᏴᏓ.
-#. checkbox in the Options window
-#, machine
-	Ignore file modification time changes when resuming a download	ᏗᏓᎴᏂᏍᏗ ᏗᏓᎴᏂᏍᏗ ᏗᏓᎴᏂᏍᏗ ᏗᏓᎴᏂᏍᏗ ᏗᏓᎴᏂᏍᏗ
 #. text in the Site grabber window (Tasks → Run site grabber)
 #. Site grabber: a file type to collect
 #, machine
 	Images	ᏚᏟᎶᏍᏔᏅ
 #. message or event log entry in the main window; text in the Options window
+#. title of a file dialog and of a message box: Tasks → Import, a list of addresses read from a file (the command's name, not a past tense such as "imported")
 #, machine
 	Import	ᏗᏓᎴᏂᏍᏗ
 #. button in the Options window
@@ -2526,6 +2662,10 @@
 #. a country's name (where a download's server is)
 #, machine
 	Ireland	ᎠᎢᎴᏂᏗ
+#. text in a download's progress window
+#. progress window's Speed Limiter tab: second line of the caption that starts "Keep this limit when the download"
+#, machine
+	is stopped and resumed	ᎠᏲᎯᏒ ᎠᎴ ᏔᎵᏁ ᎤᎴᏅᎲ
 #. text in countries.rs
 #. a country's name (where a download's server is)
 #, machine
@@ -2547,6 +2687,10 @@
 #. why an archive wasn't extracted (after "Couldn't extract {name}: ")
 #, machine
 	it is damaged, or not the archive its name says	ᎢᏗᎦᎴᏴᏔᏅᎯ, ᎠᎴ ᎥᏝ ᎢᏗᎦᎴᏴᏔᏅᎯ ᎢᏗᎦᎴᏴᏔᏅᎯ
+#. text in the Site grabber window (Tasks → Run site grabber)
+#. in the empty download list of a grabber project's node, while it explores its site
+#, machine
+	It is exploring its site now. Open it to see how far it is.	ᎪᎯ ᎤᏤᎵ ᏌᏱᏘ ᎠᏲᎮᏍᎦ. ᎠᏍᏚᎢᏍᏗ, ᎢᎦᎢ ᎤᏍᏆᏛ ᎠᎪᏩᏛᏗ.
 #. text in extracting archives (a download's log, the Archive password window)
 #. why an archive wasn't extracted (after "Couldn't extract {name}: ")
 #, machine
@@ -2568,10 +2712,6 @@
 #. {size} = a file size such as "4.2 MB" (keep the braces as they are)
 #, machine
 	it would write {size}, more than the {limit} there is room or reason for	ᎢᏗᎦᎴᏴᏔᏅᎯ {size}, ᎢᏗᎦᎴᏴᏔᏅᎯ {limit} ᎢᏗᎦᎴᏴᏔᏅᎯ
-#. text in the Batch download window
-#. \\n starts a new line: break lines where they fit the translation
-#, machine
-	It's possible to add a group of sequential file names like img001.jpg, img002.jpg, etc.,\nimg100.jpg to DDM download queue. Use the asterisk wildcard for the file name pattern.	ᎢᎦᎢ ᏗᏓᏟᎶᏍᏗ ᏚᏙᎥ ᎢᏳᏍᏗ img001.jpg, img002.jpg, ᎢᏳᏍᏗ,\nimg100.jpg DDM ᎦᏴᏍᏗ ᏗᏓᏟᎶᏍᏗ ᏗᏙᎳᎩ ᎨᏒᎢ. ផ្ᏈᏍᏗ ᎤᏍᏓᎦᎶᏗ ᏗᏓᏟᎶᏍᏗ ᏚᏙᎥ ᎢᏳᏍᏗ ᎢᏗᏴᏍᏗ.
 #. text in countries.rs
 #. a country's name (where a download's server is)
 #, machine
@@ -2618,6 +2758,10 @@
 #. text in a dialog box; text in a download's progress window; text in the Add torrent window
 #, machine
 	KBytes/sec	KB/ᎠᏏᎬᏅ
+#. option (radio button) in the Scheduler window
+#. Scheduler: the kind of queue (read-only choice): finished downloads stay in the queue (the Synchronization queue)
+#, machine
+	Keep finished files	ᎤᏍᏆᏛ ᏗᎪᏪᎵ ᎠᏍᏆᏂᎪᏗ
 #. text in the Options window
 #. checkbox: closing keeps DDM running, in the notification area when available or else the taskbar, instead of quitting
 #, machine
@@ -2629,6 +2773,10 @@
 #. Site grabber: a choice of where files go: under folders named after the site and the address's folders
 #, machine
 	Keep the site's folders (its name, then each folder of the address)	ᎦᏙᎯ ᏗᎪᏪᎵ ᎦᏁᎸ ᎠᏍᏆᏂᎪᏗ (ᏚᏙᎥ, ᎿᏉ ᏂᎦᏛ ᏅᏃᎯ ᏗᎪᏪᎵ ᎦᏁᎸ)
+#. text in a download's progress window
+#. progress window's Speed Limiter tab: first line of a checkbox's caption (the second: "is stopped and resumed"): this limit stays with the file
+#, machine
+	Keep this limit when the download	ᎯᎠ ᎵᎻᏘ ᎠᏍᏆᏂᎪᏗ, ᏓᎤᏂᎶᏗ
 #. text in countries.rs
 #. a country's name (where a download's server is)
 #, machine
@@ -2644,6 +2792,10 @@
 #. window title: the keys that force or prevent downloading with DDM
 #, machine
 	Keys	ᏗᏓᏂᏴᏗ ᏗᏕᎬᏔᏅᎢ
+#. text in the Options window
+#. Options → General: label before Keys...: the keys held while clicking a link to leave it to the browser, or to have DDM download it
+#, machine
+	Keys that leave a link to the browser, or give it to DDM	ᎩᏏ: ᎵᏂᎩ ᏇᎶᏌ ᎤᏍᏆᏂᎪᏙᏗ, ᎠᎴ DDM ᎠᏓᏁᏗ
 #. button in the Options window
 #. the trailing ... means it opens a window: keep it
 #, machine
@@ -2652,10 +2804,6 @@
 #. a country's name (where a download's server is)
 #, machine
 	Kiribati	ᎩᎵᏆᏘ
-#. text in a download's Properties window
-#. Properties, where a download's server is: not seen yet (it hasn't run)
-#, machine
-	known once it has run	ᎠᎦᏔᎯ ᎨᏎᏍᏗ ᎿᏉ ᎤᎾᎴᏅᎲ
 #. text in countries.rs
 #. a country's name (where a download's server is)
 #, machine
@@ -2681,6 +2829,10 @@
 #. a country's name (where a download's server is)
 #, machine
 	Laos	ᎳᎣᏍ
+#. text in the Site grabber window (Tasks → Run site grabber)
+#. Site grabber: label of the box that shows only the files found bigger than this many kilobytes
+#, machine
+	Larger than (KB):	ᎤᏟ ᎡᏆ (KB):
 #. message or event log entry in the main window
 #. RSS: a feed bigger than DDM reads (5 MB)
 #, machine
@@ -2706,12 +2858,17 @@
 #, machine
 	Latvia	ᎳᏘᏫᏯ
 #. text in the Options window
+#. Options → File types: over the list of sites whose downloads stay with the browser
 #, machine
-	Launch Dannex Download Manager on startup	Dannex Download Manager ᎢᎬᏱᏱ ᎢᏗᏴᏍᏗ
+	Leave downloads from these sites to the browser:	ᎯᎠ ᏌᏱᏘ ᏅᏓᏳᏓᎴᏅᎯ ᏓᎤᏂᎶᏗ, ᏇᎶᏌ ᎤᏍᏆᏂᎪᏙᏗ:
 #. text in the Site grabber window (Tasks → Run site grabber)
 #. Site grabber: label of the patterns of addresses neither explored nor collected
 #, machine
 	Leave out addresses like:	ᎯᎠ ᏄᏍᏛ ᏅᏃᎯ ᎠᏂᏐᏗ:
+#. text in the Options window
+#. Options → File types: over Edit list...: addresses (with * patterns) whose downloads stay with the browser
+#, machine
+	Leave these addresses to the browser:	ᎯᎠ ᎠᏗᎵᏏ, ᏇᎶᏌ ᎤᏍᏆᏂᎪᏙᏗ:
 #. text in countries.rs
 #. a country's name (where a download's server is)
 #, machine
@@ -2720,6 +2877,10 @@
 #. Site grabber: under Save to
 #, machine
 	Left empty, each file goes to its category's folder (Options → Save to).	ᎤᏁᎳᏅᎯ ᏂᎨᏒᎾ ᏱᎩ, ᏂᎦᏛ ᎪᏪᎵ ᏗᏓᏟᏌᏅᎢ ᏗᎪᏪᎵ ᎦᏁᎸ ᏩᏂᎦ (ᎦᏁᏍᏗ → ᏕᏣᏍᏆᏂᎪᏙᏗ).
+#. text in the Site grabber window (Tasks → Run site grabber)
+#. Site grabber: under Save to, when the pages are made to work offline
+#, machine
+	Left empty, the site goes to the General category's folder.	ᎪᎱᏍᏗ ᏂᎨᏒᎾ ᎢᏳᏃ, ᏌᏱᏘ ᏤᏁᎳ ᎧᏖᎪᎵ ᎤᏤᎵ ᏬᎵᏓ ᏫᎦᎷᎪ.
 #. text in the Site grabber window (Tasks → Run site grabber)
 #. {n} = a number (keep the braces as they are)
 #, machine
@@ -2732,6 +2893,10 @@
 #. Options → Remote check box (off by default)
 #, machine
 	Let phones and computers on the local network control DDM	ᎤᎾᏕᏗ ᏗᏓᏚᎪᏗ ᎠᎴ ᏗᏓᏚᎪᏗ ᎢᏗᏢ ᎤᏃᎴᎢ ᎢᏗᏢ DDM
+#. checkbox in the Options window
+#. Options → Advanced / Socks: a SOCKS proxy looks the servers' names up itself (DNS through the proxy: SOCKS 4a, SOCKS 5 with remote names)
+#, machine
+	Let the proxy look up the servers' names (DNS through the proxy)	ᏉᎩᏏ ᏌᏩ ᏚᏙᎥ ᎤᏲᎮᏍᏗ ᎠᏁᎳᏗᏍᏗ (DNS ᏉᎩᏏ ᎬᏗ)
 #. option (radio button) in the Batch download window
 #. the * in the address runs through letters
 #, machine
@@ -2751,9 +2916,17 @@
 #. a country's name (where a download's server is)
 #, machine
 	Liechtenstein	ᎵᎦᏖᏂᏍᏔᏂ
-#. checkbox in a dialog box
+#. text in a dialog box; checkbox in a dialog box
 #, machine
 	Limit all downloads together to	ᎦᏴᏍᏗ ᏂᎦᏛ ᎢᏗᏴᏍᏗ
+#. text in a dialog box
+#. Speed Limiter settings: the limit each download is held to while the limiter is on; {kb} is an input box (kilobytes per second), drawn where it stands in the translation
+#, machine
+	Limit each download to {kb} KBytes/sec	ᏂᎦᏛ ᏓᎤᏂᎶᏗ ᎵᎻᏘ {kb} KBytes/sec
+#. checkbox in a download's progress window
+#. progress window's Speed Limiter tab: checkbox; this download's own speed limit
+#, machine
+	Limit this download's speed	ᎯᎠ ᏓᎤᏂᎶᏗ ᏍᏈᏗ ᎵᎻᏘ
 #. text in a download's progress window
 #. a torrent's progress window, Speed Limiter tab: a limit for what this torrent sends to others
 #, machine
@@ -2779,6 +2952,10 @@
 #. Site grabber: after the Depth box: how many links away from the start page pages are explored
 #, machine
 	links from the start page	ᏗᏍᏓᏱᏛ ᎤᎴᏅᏗ ᎪᏪᎸᎢ ᏅᏓᏳᏓᎴᏅᎯ
+#. checkbox in the Site grabber window (Tasks → Run site grabber)
+#. Site grabber: check box: the downloads are listed under All Downloads as well as under the project
+#, machine
+	List the downloads under All Downloads too	ᏓᎤᏂᎶᏗ “ᏂᎦᏛ ᏓᎤᏂᎶᏗ” ᎭᏫᏂ ᎾᏍᏉ ᎠᎾᏄᎪᏫᏍᏗ
 #. text in playlistdlg.rs
 #. button in Download video: go on listing a playlist from where it stopped
 #, machine
@@ -2818,17 +2995,21 @@
 #. where a magnet's peers came from: computers on your own network; {peers} = "3 peers"
 #, machine
 	Local network: {peers}	ᎾᎿᎢ ᏚᎾᏓᎬᏩᏍᏗ: {peers}
-#. text in the Batch download window; text in a dialog box; text in a download's Properties window
+#. text in a dialog box
+#. checkbox (Add URL, Batch download) over the user name and password boxes: the server asks for a login
+#, machine
+	Log in to the server	ᏌᏩ ᎶᎩᏂ
+#. text in the Batch download window; text in a dialog box
 #. noun: the user name for the server (an input box follows)
 #. noun: the user name and password section
 #, machine
 	Login	ᏗᏓᏟᎶᏍᏗ
-#. group box title in the Site grabber window (Tasks → Run site grabber)
-#. Site grabber: the box of the site's user name and password
+#. text in the Site grabber window (Tasks → Run site grabber)
+#. Site grabber: the box of the site's user name, password and cookies
 #, machine
-	Login, if the site asks for one	ᎠᏴᎯᏍᏗ, ᎦᏙᎯ ᎤᏔᏲᎭ ᏱᎩ
+	Login and cookies, if the site asks for them	ᎶᎩᏂ ᎠᎴ ᎫᎩ, ᏌᏱᏘ ᎤᏛᏛᎲ ᎢᏳᏃ
 #. checkbox in the Options window
-#. Options → Archives → Link grabber check box (IDM's Download all links looks every link up)
+#. Options → Archives → Link grabber check box (as the browser's Download all links hands them over: each is looked up)
 #, machine
 	Look links up when they arrive (name, size, online)	ᎢᏗᎦᎴᏴᏔᏅᎯ ᎢᏗᎦᎴᏴᏔᏅᎯ ᎢᏳᏃ ᎢᏗᎦᎴᏴᏔᏅᎯ (ᏚᏙᎥ, ᎢᏗᎦᎴᏴᏔᏅᎯ, ᎢᏗᎦᎴᏴᏔᏅᎯ)
 #. text in the Add torrent window; button in the Download video window
@@ -2881,6 +3062,10 @@
 #. what a keyboard shortcut does in the Help menu's windows (About, updates, shortcuts, Tell a friend)
 #, machine
 	Make everything larger / smaller (View → Interface size)	ᏂᎦᎥᎢ ᎤᏟ ᎢᏴᏓ / ᎤᏟ Ꭴ diminutive (View → Interface size)
+#. text in the Site grabber window (Tasks → Run site grabber)
+#. Site grabber: check box: the downloaded pages' links are changed to open the saved copies, to read the site without a connection
+#, machine
+	Make the pages work offline: their links open the saved copies	ᏇᏥ ᎣᏩᎳᏱᏂ ᏚᎸᏫᏍᏓᏁᏗ: ᎤᏂᏤᎵ ᎵᏂᎩ ᎧᏈ ᎤᏍᏆᏂᎪᏛ ᎠᏍᏚᎢᏍᎪ
 #. what a keyboard shortcut does in the Help menu's windows (About, updates, shortcuts, Tell a friend)
 #, machine
 	Make the selection longer or shorter	ᎦᏴᏍᏗ ᎢᏗᏴᏍᏗ
@@ -2908,9 +3093,6 @@
 #. a country's name (where a download's server is)
 #, machine
 	Malta	ᎹᎵᏔ
-#. text in the Options window
-#, machine
-	Manual proxy/socks configuration	ᎪᏪᎵ Proxy/SOCKS ᏚᏙᏢᎢ
 #. checkbox in the Add torrent window
 #. Torrent settings: ask the router (UPnP) to forward the port
 #, machine
@@ -2940,17 +3122,10 @@
 #. a country's name (where a download's server is)
 #, machine
 	Mauritius	ᎹᎵᏘᏯᏍ
-#. group box title in the Options window
-#, machine
-	Max. connections number	ᎦᏴᏍᏗ ᏗᏓᏟᎶᏍᏗ
 #. text in standard windows
 #. a window's title-bar button: makes the window fill the screen
 #, machine
 	Maximize	ᎤᏟ ᎢᏴᏓ
-#. text in a dialog box
-#. {kb} is an input box (kilobytes per second), drawn where it stands in the translation
-#, machine
-	Maximum download speed for one file {kb} KBytes/sec	ᎦᏴᏍᏗ ᏗᏓᏟᎶᏍᏗ {kb} KBytes/sec
 #. text in a download's progress window
 #, machine
 	Maximum download speed:	ᎦᏴᏍᏗ ᏗᏓᏟᎶᏍᏗ:
@@ -2986,6 +3161,10 @@
 #. checkbox: the Minimize button hides DDM's windows to the notification area (system tray) instead of the taskbar
 #, machine
 	Minimize to the notification area	Minimize ᏫᎦᏅᏁᎸ notification area
+#. text in the Options window
+#. how a download's progress window opens: minimized to the taskbar
+#, machine
+	Minimized	ᎤᏍᏗ ᏄᏩᏁᎸ
 #. text in rssdlg.rs; text in the Add torrent window
 #. RSS feeds window: the unit after the minutes box
 #. Torrent settings: the unit after the minutes box
@@ -3030,6 +3209,10 @@
 #. remote control page (on a phone): its menu's button
 #, machine
 	More	ᎢᏗᏢ
+#. text in the main window (menus, toolbar, Categories pane)
+#. tooltip of the arrow beside the toolbar's Add Torrent button: it opens a menu of the torrent commands
+#, machine
+	More: open a torrent file, add a magnet link, RSS feeds, torrent settings	ᎤᏟ: ᏙᎴᏂᏘ ᎪᏪᎵ ᎠᏍᏚᎢᏍᏗ, ᎹᎩᏁᏘ ᎵᏂᎩ ᎠᏁᏉᏤᏗ, RSS ᏈᏗ, ᏙᎴᏂᏘ ᎣᏆᏏᏂ
 #. text in countries.rs
 #. a country's name (where a download's server is)
 #, machine
@@ -3042,7 +3225,7 @@
 #. Site grabber: label of the most pages it explores
 #, machine
 	Most pages:	ᎤᏟ ᎢᎦᎢ ᏗᎪᏪᎸᎢ:
-#. button in a download's Properties window
+#. text in a download's Properties window
 #. verb: move the file to another folder
 #, machine
 	Move	ᎢᏗᏴᏍᏗ
@@ -3052,7 +3235,7 @@
 #. what a keyboard shortcut does in the Help menu's windows (About, updates, shortcuts, Tell a friend)
 #, machine
 	Move between the categories and the download list	ᏗᎦᏃᏍᏓᏗᏍᏗ ᎢᎬᎾᏗ ᎠᎴ ᏗᏟᎶᏍᏔᏅᎯ ᎢᎬᎾᏗ ᏕᎭᏢᏍᎬᎢ
-#. button in the Customize URL List window (View → Customize URL List); text in the Scheduler window; button in the toolbar and its Customize toolbar window (View → Toolbar)
+#. button in the Choose columns window (View → Choose columns); text in the Scheduler window; button in the toolbar and its Customize toolbar window (View → Toolbar)
 #. button: moves the selected column one place down the list (towards the list's end)
 #. button in Customize toolbar: the selected button one place later on the toolbar
 #, machine
@@ -3070,7 +3253,7 @@
 #. message or event log entry in the main window
 #, machine
 	Move to queue	ᎦᎴᏴᏔᏅ ᎤᎾᏓᏟᏌᏅᎢ
-#. button in the Customize URL List window (View → Customize URL List); text in the Scheduler window; button in the toolbar and its Customize toolbar window (View → Toolbar)
+#. button in the Choose columns window (View → Choose columns); text in the Scheduler window; button in the toolbar and its Customize toolbar window (View → Toolbar)
 #. button: moves the selected column one place up the list (towards the list's start)
 #. button in Customize toolbar: the selected button one place earlier on the toolbar
 #, machine
@@ -3119,7 +3302,11 @@
 #. column title: file name
 #, machine
 	Name	ᎠᏓᏁᎢᏍᏗ
-#. text in categories.rs; text in the Link grabber window; text in rssdlg.rs
+#. text in the Scheduler window
+#. Scheduler → New queue: the line over the name box
+#, machine
+	Name of the new queue:	ᎢᏤ ᏇᏳ ᏚᏙᎥ:
+#. text in categories.rs; text in the Link grabber window; text in the Options window; text in rssdlg.rs
 #. Link grabber: the package's name (a label before its box)
 #. RSS feeds window, Download rules: the rule's name
 #, machine
@@ -3179,6 +3366,10 @@
 #. text in the Options window
 #, machine
 	New login	ᎢᏤ ᎤᎾᏙᎴᎰᎯᏍᏗ
+#. window title in the Scheduler window
+#. Scheduler → New queue: the window asking for the new queue's name
+#, machine
+	New queue	ᎢᏤ ᏇᏳ
 #. text in rssdlg.rs
 #. RSS feeds window: the name a new download rule starts with
 #. RSS feeds window, Download rules: make a new rule
@@ -3234,8 +3425,9 @@
 #. tooltip on the Scheduler's weekdays when none is ticked
 #, machine
 	No day is ticked: the queue will not start	ᎢᎸᎯᏢ ᎢᎦ ᎥᏝ ᏱᏚᎾᏙᏢᏒ: ᎤᎾᏓᏟᏌᏅᎯ ᎥᏝ ᏱᎦᎴᏅᏔᏂ
-#. message or event log entry in the main window
+#. message or event log entry in the main window; text in the Site grabber window (Tasks → Run site grabber)
 #. title in the empty download list (this category or queue has no downloads)
+#. title in the empty download list (All Downloads or a category) while Site grabber projects keep their downloads apart
 #, machine
 	No downloads here	ᎥᏝ ᎪᏪᎸ ᏱᏚᎾᎦᏔᏃᏍᏔᏅ ᎠᏂ
 #. text in remote.rs
@@ -3286,12 +3478,16 @@
 #, machine
 	no peer sent the torrent's file list in time	ᎥᏝ ᎩᎶ ᎢᏗᏟᏴᏔᏅᎯ ᎤᎾᎵᎪᏅᎯ ᏱᏭᏅᏒ ᎢᏗᏟᏴᏔᏅᎯ ᎤᎾᏤᎵ ᎢᏗᏟᏴᏔᏅᎯ ᎤᎾᏓᏎᏍᏗ ᎨᏒ ᎢᏳᎵᏍᏔᏅᎯ
 #. text in the Add torrent window
+#. a magnet link's lookup ran out of time without finding any peer
+#, machine
+	No peers were found.	ᎥᏝ ᏈᎳ ᏳᏩᏛᎮ.
+#. text in the Add torrent window
 #. a magnet link's lookup, after 30 seconds without a peer
 #, machine
 	No peers yet. Few people may share this torrent, or a firewall, a VPN or the network may be blocking BitTorrent.	ᎥᏝ ᏚᎾᏓᎬᏩᏍᏗ ᏱᎾᎿᎢ. ᎤᏍᏗᎩᏛ ᏴᏫ ᎯᎠ torrent ᎤᎾᏓᏟᏌᏅᎯ ᏱᎩ, ᎠᎴ ᎤᎦᎾᏍᏓ ᎤᏅᏔᏅᎯ, VPN ᎠᎴ ᎤᎾᏓᏟᏌᏅᎯ BitTorrent ᎤᎾᏓᏟᏌᏅᎯ ᏱᎩ.
 #. text in the Options window
 #, machine
-	No proxy/socks	ᎥᏝ proxy/socks
+	No proxy	ᎥᏝ ᏉᎩᏏ
 #. text in the speed graphs (a download's progress window, the main window's status bar)
 #. progress window: inside the empty speed graph, before the download has sent anything in this session
 #, machine
@@ -3338,6 +3534,10 @@
 #. a country's name (where a download's server is)
 #, machine
 	Norfolk Island	ᏃᎵᏬᎵᎩ ᎠᎹᏰᏟ
+#. text in the Options window
+#. how a download's progress window opens: on the screen, as usual (the default)
+#, machine
+	Normally	ᏂᎪᎯᎸ ᏥᏄᏍᏗ
 #. text in countries.rs
 #. a country's name (where a download's server is)
 #, machine
@@ -3390,27 +3590,22 @@
 #. Options → General → Download panels: before a number of seconds: the button doesn't show over a video or sound shorter than that (0: any length)
 #, machine
 	Not on media shorter than (seconds):	ᎥᏝ ᎠᏁᏙᎲ ᎤᏟᎶᏍᏔᏅ ᎤᏟ ᎤᏍᏗ ᏱᎩ (ᏗᏎᏍᏗ):
-#. text in a download's Properties window
+#. text in a dialog box
+#. tooltip of the greyed "Only while I'm using the computer" (Speed Limiter settings) on Linux and macOS
 #, machine
-	not one server (peers, or a helper's)	ᎢᎸᎯᏢ ᎾᏍᎩᎾ ᎾᎥᎢ (ᎤᎾᎵᎪᎯ, ᎠᎴ ᎤᏍᏕᎵᏍᎩ)
+	Not on this system yet: DDM can't tell here whether you are using the computer, so the limit applies all the time	ᎠᏏ ᎥᏝ ᎯᎠ ᏏᏍᏖᎻ ᎭᏫᏂ: DDM ᎥᏝ ᏰᎵ ᏳᎦᏙᎥᎯ ᏂᎯ ᎧᎻᏳᏓ ᏣᎬᏙᏗᏍᎬ, ᎾᏍᎩ ᎢᏳᏍᏗ ᎵᎻᏘ ᏂᎪᎯᎸ ᎦᎸᏫᏍᏓᏁᎭ
 #. text in debrid.rs
 #. Options → Accounts: the service doesn't take this file host (shouldn't happen when signing in)
 #, machine
 	not supported by this service	ᎯᎠ ᏗᏂᏍᏕᎵᏍᎩ ᎥᏝ ᎯᎠ ᏗᎪᏪᎶᏗ ᏗᏂᏍᏕᎵᏍᎩ ᏱᏓᏂᏍᏕᎵᏍᎪᎢ
-#. text in the Options window
-#, machine
-	Not used: file parts are written next to the file	ᎥᏝ ᏗᎪᏪᎵ ᏗᏟᏍᏔᏅᎢ: ᏗᎪᏪᎵ ᏗᏟᏍᏔᏅᎢ ᎯᎠ ᏗᎪᏪᎵ ᏗᏟᏍᏔᏅᎢ
-#. text in a dialog box
-#. \\n starts a new line: break lines where they fit the translation
-#, machine
-	Note: Internet servers may break connection when the speed is too limited! Thus it's not\nrecommended to use Speed Limiter to download from servers that do not support\n"resume" feature.	ᎤᎾᏙᎴᎰᎯᏍᏗ: ᏗᎪᏪᎵ ᏗᏟᏍᏔᏅᎢ ᎯᎠ ᏗᎪᏪᎵ ᏗᏟᏍᏔᏅᎢ ᏗᎪᏪᎵ ᏗᏟᏍᏔᏅᎢ ᏗᎪᏪᎵ ᏗᏟᏍᏔᏅᎢ! ᎾᏍᎩ ᎢᏳᏍᏗ ᎥᏝ ᏗᎪᏪᎵ ᏗᏟᏍᏔᏅᎢ ᎯᎠ ᏗᎪᏪᎵ ᏗᏟᏍᏔᏅᎢ ᏗᎪᏪᎵ ᏗᏟᏍᏔᏅᎢ ᏗᎪᏪᎵ ᏗᏟᏍᏔᏅᎢ ᏗᎪᏪᎵ ᏗᏟᏍᏔᏅᎢ ᏗᎪᏪᎵ ᏗᏟᏍᏔᏅᎢ.
-#. text in the Options window
-#, machine
-	Note: These settings don't relate to queue processing	ᎧᏁᎢᏍᏗ: ᎯᎠ ᎢᏗᏢᏅᎢ ᎥᏝ ᎤᎾᏓᏚᏓᎴᏅᎢ ᏗᎦᏅᏅᎢ ᏚᏂᎸᏫᏍᏓᏁᎲᎢ.
 #. text in the Statistics window (Downloads → Statistics)
 #. Statistics, at the bottom: nothing has been counted yet
 #, machine
 	Nothing counted yet	ᎠᏏ ᎪᎱᏍᏗ ᎥᏝ ᎠᏎᎸᎯ
+#. text in the Site grabber window (Tasks → Run site grabber)
+#. title in the empty download list of a grabber project's node
+#, machine
+	Nothing downloaded from this project yet	ᎠᏏ ᎥᏝ ᎪᎱᏍᏗ ᏓᎤᏂᎶᏗ ᎯᎠ ᏆᏤᎩ ᏅᏓᏳᏓᎴᏅᎯ
 #. text in the Statistics window (Downloads → Statistics)
 #. Statistics: inside the empty bar chart
 #, machine
@@ -3432,9 +3627,6 @@
 #. text in the Options window
 #, machine
 	Number	ᎠᎦᏎᏍᏗ
-#. checkbox in the Scheduler window
-#, machine
-	Number of retries for each file if downloading failed :	ᎢᏯᎦᏴᎵ ᎢᏗᏢᏅᎢ ᎢᏳᏃ ᏗᏗᏍᎪᎸᏔᏅᎢ ᎾᎾᏛᏁᎲᎾ ᏱᎩ:
 #. option (radio button) in the Batch download window
 #. the * in the address runs through numbers
 #, machine
@@ -3470,9 +3662,6 @@
 #. the Scheduler, under "Wake the computer to run this queue" (Windows): its power option "Allow wake timers" is off, on battery
 #, machine
 	On battery, Windows' power options don't allow wake timers	ᎦᏁᏍᏓᏴᎲᏍᎬᎢ, Windows ᎤᎾᏓᏅᏖᏗ ᎨᏒᎢ ᎥᏝ ᎤᎾᎴᏗᏱ ᎤᎾᏓᎾᏅᏓᏗᏍᏗ ᏱᏚᎵᏍᎪ
-#. text in a download's progress window
-#, machine
-	on download stop/resume	ᎠᎴᏅᏗ/ᎤᎵᏍᏆᏗ
 #. text in the Scheduler window
 #. the Scheduler, under "Wake the computer to run this queue" (macOS): scheduling a wake needs an administrator's password
 #, machine
@@ -3493,18 +3682,16 @@
 #. Options → Remote → Status: on; the address follows in a box below
 #, machine
 	On. On the phone, open this address:	ᎢᏗᏢ. ᎢᏗᏢ ᎢᏗᏢ, ᎢᏗᏢ ᎯᎠ ᎤᏃᎴᎢ:
-#. text in the Scheduler window; option (radio button) in the Scheduler window
-#, machine
-	Once at	ᎢᎸᎯᏳ
 #. text in extension.rs
 #, machine
 	Once it is added, this window says so. Chrome may also ask by itself at its next start.	ᎢᏳᏃ ᎢᏣᎳᎩᏍᎩ ᎨᏒᎢ, ᎯᎠ ᏗᏟᎶᏍᏔᏅᎯ ᏗᎪᏪᎵ ᎾᏍᎩ ᎢᏳᏍᏗ ᏓᏟᎶᏍᏔᏅᎯ. Chrome ᎾᏍᏉ ᎤᏩᏒ ᏓᏓᏛᏍᏔᏅᎯ ᎢᎬᏱᏗᏢ ᎢᎦᏓᏛᏍᏗ.
+#. text in the Scheduler window; option (radio button) in the Scheduler window
+#. Scheduler: start only one time, on the date that follows (a date box)
+#, machine
+	Once on	ᏌᏉ ᎢᏳᏩᎫᏗ, ᎯᎠ ᎢᎦ
 #. text in the Options window
 #, machine
 	One address per line; * stands for any text: example.com/private/*	Ꮜ ஒவ்வொரு መስመር ஒரு முகவரி; * எந்த உரைக்கும் நிற்கிறது: example.com/private/*
-#. option (radio button) in the Scheduler window
-#, machine
-	One-time downloading	ᎢᎸᎯᏳ ᏗᎦᏃᏍᏓᏅᎢ
 #. text in the Link grabber window
 #. Link grabber, a link's status: the server has the file
 #, machine
@@ -3528,6 +3715,10 @@
 #. why "Put them into the video" is greyed: the chosen file type can't hold subtitles
 #, machine
 	Only MP4 and MKV videos can hold subtitles	MP4 ᎠᎴ MKV ᏗᏟᎶᏍᏔᏅᎯ ᎤᏩᏒ ᏗᎪᏪᎵ ᏗᎬᏔᏅᎯ
+#. text in the Site grabber window (Tasks → Run site grabber)
+#. Site grabber: explore only the pages in the start address's folder and below it (part of a site), not those above it
+#, machine
+	Only pages under the start address's folder	ᏇᏥ ᎤᏩᏒ, ᎢᎬᏱᏱ ᎠᏗᎵᏏ ᏬᎵᏓ ᎭᏫᏂ
 #. text in the Options window
 #. Options → Remote, at the bottom of the page
 #, machine
@@ -3565,16 +3756,18 @@
 #. step 1 of turning on the Safari extension
 #, machine
 	Open Safari.	Safari ᎠᏍᏚᎢᏍᏗ.
-#. text in the Scheduler window
-#, machine
-	Open the following file when done	ᎤᏍᏚᎢᏓ ᎯᎠ ᏗᎪᏪᎵ ᎿᏉ ᎤᎵᏍᏆᏗ
-#. checkbox in the Scheduler window
-#, machine
-	Open the following file when done:	ᎣᏍᏛ ᎠᏓᏁᏟᏴᏗ ᎿᏉ ᎠᏍᏆᏛᎯᏍᏗ:
 #. button in the Options window
 #. button: open the service's page where the code is typed
 #, machine
 	Open the page	ᎤᏟ ᎢᎦᎢ ᏗᏓᏚᎪᏗ
+#. text in the Site grabber window (Tasks → Run site grabber)
+#. link in the empty download list of a grabber project's node: opens the project's window
+#, machine
+	Open the project	ᏆᏤᎩ ᎠᏍᏚᎢᏍᏗ
+#. text in the Site grabber window (Tasks → Run site grabber)
+#. in the empty download list of a grabber project's node
+#, machine
+	Open the project to see the files it found and download them.	ᏆᏤᎩ ᎠᏍᏚᎢᏍᏗ, ᏗᎪᏪᎵ ᎤᏩᏛᎲ ᎠᎪᏩᏛᏗ ᎠᎴ ᏓᎤᏂᎶᏗ.
 #. text in crashui.rs
 #. crash report window button: open the GitHub issue already filed (and copy the report to add it there)
 #, machine
@@ -3596,22 +3789,27 @@
 #. event log entry, past tense: "Download with the browser" opened the download's address in the web browser, which downloads the file itself (the site lets only browsers through)
 #, machine
 	Opened in the browser, which downloads it itself	ᏗᏓᏂᏴᏗ ᎾᎿ ᎤᏍᏚᎢᏒ, ᎤᏩᏒ ᎠᏯᏙᎯᏍᏗ
-#. text in the tray icon's menu
+#. window title in the Options window; text in the tray icon's menu
+#. the Options window's title
 #. plural noun: opens the Options window (settings)
 #, machine
 	Options	ᏗᏟᎶᏍᏔᏅ
-#. text in a download's progress window
-#. tab title: what happens when the download finishes
-#, machine
-	Options on completion	ᏗᏟᎶᏍᏔᏅ ᎿᏉ ᎠᏍᏆᏛᎯᏍᏗ
 #. text in the Options window
 #. Options → Add an account: label before the field for the service's API token (the other way to sign in)
 #, machine
 	Or paste your API token:	ᎠᎴ ᎯᏴᏔᏅᎭ ᎯᎠ ᎯᎠ ᏗᎪᏪᎶᏗ ᏗᎪᏪᎶᏗ:
 #. text in the Site grabber window (Tasks → Run site grabber)
+#. Site grabber: the Type drop-down's choice for the files of no type listed
+#, machine
+	Other files	ᏅᏩᏓᎴ ᏗᎪᏪᎵ
+#. text in the Site grabber window (Tasks → Run site grabber)
 #. Site grabber: label of the user's own file extensions to collect
 #, machine
 	Other types:	ᏅᏩᏓᎴ ᎢᏳᏍᏗ:
+#. text in the Options window
+#. Options → Downloads: checkbox under "Show Download File Info first", while that is off: new downloads go to the queue without starting
+#, machine
+	Otherwise, add them to the queue without starting	ᎥᏝ ᎢᏳᏃ, ᏇᏳ ᎠᏁᏉᏤᏗ, ᎥᏝ ᎠᎴᏅᏗ
 #. checkbox in the Options window
 #. Options → General → Download panels: the button shows over a page's sound players (with controls)
 #, machine
@@ -3690,10 +3888,14 @@
 #. a country's name (where a download's server is)
 #, machine
 	Paraguay	ᏆᎳᏇ
-#. text in the Batch download window; text in a dialog box; label in the Options window; text in the Options window; text in a download's Properties window
+#. text in the Options window
+#. \\n starts a new line: break lines where they fit the translation
+#, machine
+	Part files stay here until their downloads complete. On another drive\nthan a download's folder, its file is then copied over. Empty it to\nwrite next to each file again.	ᎢᎦᏛ ᏗᎪᏪᎵ ᎠᏂ ᎠᏍᏆᏂᎪᏗ ᎬᏂ ᏓᎤᏂᎶᏗ ᎤᏍᏆᏛ. ᎢᏳᏃ ᏅᏩᏓᎴ ᏗᎳᏫ ᎭᏫᏂ,\nᏓᎤᏂᎶᏗ ᏬᎵᏓ ᎤᏓᎴᏅ, ᎪᏪᎵ ᎣᏂ ᎾᎿ ᎧᏈ ᎢᎬᏁᏗ. ᎪᎱᏍᏗ ᏂᎨᏒᎾ ᎢᏯᏛᏁᏗ,\nᏔᎵᏁ ᏂᎦᏛ ᎪᏪᎵ ᎾᎥ ᎪᏪᎶᏗ.
+#. text in the Batch download window; text in a dialog box; label in the Options window; text in the Options window
 #, machine
 	Password	ᎤᏕᎵᏛ ᏗᎧᏃᎩᏍᏗ
-#. text in the Link grabber window; text in the Options window; text in the Site grabber window (Tasks → Run site grabber)
+#. text in the Link grabber window; text in the Options window; text in a download's Properties window; text in the Site grabber window (Tasks → Run site grabber)
 #. Link grabber: the package's archives' password (a label before its box)
 #. Site grabber: label of the site's password
 #, machine
@@ -3745,9 +3947,6 @@
 #. a magnet link's lookup, after 30 seconds: peers are known but none answered
 #, machine
 	Peers were found, but none answered yet. A firewall or a VPN may be blocking the connections.	ᏚᎾᏓᎬᏩᏍᏗ ᎤᎾᏓᏟᏌᏅᎯ, ᎠᏎᏃ ᎥᏝ ᎩᎶ ᏱᏚᎾᏓᎬᏩᏍᏗ. ᎤᎦᎾᏍᏓ ᎤᏅᏔᏅᎯ ᎠᎴ VPN ᎤᎾᏓᏟᏌᏅᎯ ᏱᎩ.
-#. option (radio button) in the Scheduler window
-#, machine
-	Periodic synchronization	ᎠᏓᏁᏟᏴᏗ ᎾᏍᎩᏯ ᏗᏓᏙᎳᏤᏗ
 #. text in countries.rs
 #. a country's name (where a download's server is)
 #, machine
@@ -3808,23 +4007,23 @@
 #. Options → Accounts: a debrid account's state; {days} the days of premium left
 #, machine
 	premium, {days} days left	ᎤᏟ ᎢᎦᎢ, {days} ᎢᎦ ᎤᎷᎯᏍᏗ
-#. button in a dialog box
-#. verb: open the part already downloaded
-#, machine
-	Preview	ᎦᏁᏟᏴᏛ
-#. text in a dialog box
-#. tooltip of the greyed Preview button in Download File Info
-#, machine
-	Preview isn't available yet	ᎢᎬᏱᏱ ᏗᎪᏩᏛᏗ ᏂᎨᏒᎾ
 #. text in the Options window
 #. Options → Sites Logins → Cookies for video sites: label before the browser profile's name or folder (may stay empty)
 #, machine
 	Profile (optional):	ᎤᏙᏢᏒ (ᎢᏯᏍᎦᏅᏅ):
-#. text in the download list (sizes, speeds, status); text in the Site grabber window (Tasks → Run site grabber)
+#. text in the Options window
+#. Options → General → Add browser: label before the browser's program (its file)
+#, machine
+	Program:	ᏆᎪᎳᎻ:
+#. text in the download list (sizes, speeds, status); text in the Options window; text in the Site grabber window (Tasks → Run site grabber)
 #. category name: programs and installers (exe, msi)
 #. Site grabber: a file type to collect (exe, msi, dmg…)
 #, machine
 	Programs	ᏗᏓᏁᏟᏴᏗ
+#. window title in the Options window
+#. window title: how a download's progress window opens (Options → Downloads → The progress window → Edit...)
+#, machine
+	Progress window	ᎢᎦᎢ ᎤᏍᏆᏛ ᏫᏂᏙ
 #. text in the Site grabber window (Tasks → Run site grabber)
 #. Site grabber: label of the project's name (shown under Grabber projects)
 #, machine
@@ -3840,8 +4039,9 @@
 #, machine
 	Proxy / Socks	ᏗᏟᎶᏍᏔᏅᎢ / Socks
 #. page title in the Options window
+#. Options → Proxy / Socks: the page's title
 #, machine
-	Proxy / socks configuration	Proxy / SOCKS ᎤᏓᏅᏅᎢ
+	Proxy server	ᏉᎩᏏ ᏌᏩ
 #. text in the settings
 #. the proxy's password in the system's keychain (Credential Manager, the keyring): its name there, followed by the proxy's address
 #, machine
@@ -3879,18 +4079,13 @@
 #. {n} = a number (keep the braces as they are)
 #, machine
 	Queue # {n}	ᏗᏓᏁᏟᏴᏗ # {n}
-#. text in the Options window
-#, machine
-	Queue processing started	ᏗᏓᏁᏟᏴᏗ ᏗᏓᏁᏟᏴᏗ ᎤᎾᎴᏅᎲ
-#. text in the Options window
-#, machine
-	Queue processing stopped/finished	ᏗᏓᏁᏟᏴᏗ ᏗᏓᏁᏟᏴᏗ ᎠᏍᏆᏛᎯᏍᏗ/ᎠᏍᏆᏛᎯᏍᏗ
 #. text in remote.rs
 #. remote control page (on a phone): a download's state: added, waiting to start
 #, machine
 	Queued	ᎤᎾᏓᏟᏍᏔᏅ
 #. item in the Categories tree in the main window; text in the Scheduler window
 #. plural noun: the download queues
+#. plural noun: label above the list of queues
 #, machine
 	Queues	ᏗᏓᏁᏟᏴᏗ
 #. text in the Options window
@@ -3958,13 +4153,11 @@
 #. RSS feeds window, Download rules: the two boxes above hold regular expressions
 #, machine
 	Regular expressions	ᎢᏯᏛᏁᏗ ᏗᎦᎴᏴᏔᏅ
-#. text in a download's progress window
-#, machine
-	Remember Speed Limiter settings for this file	ᏗᏓᏁᏟᏴᏗ ᏗᏓᏁᏟᏴᏗ ᏗᏓᏁᏟᏴᏗ ᎾᏍᎩᏯ ᏗᏔᎴᏍᏗ
-#. text in a dialog box
+#. text in the Options window
+#. Options → Save to: checkbox; a folder chosen in Download File Info becomes this category's folder; {category} is its name
 #. {category} = a category name such as "Music" (keep the braces as they are)
 #, machine
-	Remember this path for "{category}" category	ᏗᏓᏁᏟᏴᏗ ᎾᏍᎩᏯ ᏗᏓᏁᏟᏴᏗ "{category}" ᏗᏓᏁᏟᏴᏗ
+	Remember the last folder chosen for {category}	{category} ᎣᏂᏱ ᎤᏑᏰᏛ ᏬᎵᏓ ᎠᏅᏓᏗᏍᏗ
 #. text in the Options window
 #. tab title: control DDM from a phone or another computer on the local network
 #, machine
@@ -3979,6 +4172,10 @@
 #. RSS feeds window: unsubscribe from the selected feed
 #, machine
 	Remove	ᏗᏓᏁᏟᏴᏗ
+#. text in the Options window
+#. Options → General: button that takes the selected browser the user added off the list
+#, machine
+	Remove browser	ᏇᎶᏌ ᎠᏄᎪᏫᏍᏗ
 #. text in the Scheduler window
 #, machine
 	Remove from the queue	ᏗᏓᏟᎶᏍᏗ ᏗᏓᏟᎶᏍᏗ
@@ -3995,14 +4192,14 @@
 #. noun: label before the deferred new file or folder name in the progress window
 #, machine
 	Rename	ᎦᎴᏴᏔᏅ
-#. text in the Batch download window
-#. group box title: what the * in the address is replaced with (numbers or letters)
+#. text in the Scheduler window; option (radio button) in the Scheduler window
+#. Scheduler: start every week on the days ticked after it (the other choice is once, on a date)
 #, machine
-	Replace asterisk to	ᏗᏓᏁᏟᏴᏗ ᏗᏓᏁᏟᏴᏗ
+	Repeat on	ᏔᎵᏁ ᎢᏯᏛᏁᏗ, ᎯᎠ ᎢᎦ
 #. text in the Site grabber window (Tasks → Run site grabber)
 #, machine
 	Requests at once:	ᏗᎦᏔᏲᏍᏗ ᏌᏉ ᎢᏳᏩᏂᏌᏛ:
-#. button in the Customize URL List window (View → Customize URL List); text in the toolbar and its Customize toolbar window (View → Toolbar)
+#. button in the Choose columns window (View → Choose columns); text in the toolbar and its Customize toolbar window (View → Toolbar)
 #. button: puts the columns back as they first were (their order, all shown, their widths)
 #. button in Customize toolbar: every button shown again, in its first order
 #, machine
@@ -4031,14 +4228,18 @@
 #. verb: continue the download
 #, machine
 	Resume	ᏙᎴᎢ
-#. text in a download's progress window
-#. label: whether the server lets a stopped download continue (Yes / No)
+#. checkbox in the Options window
+#. Options → Downloads: checkbox; a download resumes even though the server says its file's date changed
 #, machine
-	Resume capability	ᏙᎴᎢ ᎢᎬᏩᏛᏁᏗ
+	Resume even if the file's date on the server changed	ᏔᎵᏁ ᎠᎴᏅᏗ, ᏌᏩ ᎪᏪᎵ ᎤᏤᎵ ᎢᎦ ᎤᏁᏟᏴᏒ ᎢᏳᏃ ᎾᏍᏉ
 #. message or event log entry in the main window
 #. event log entry, past tense: the download resumed (just now)
 #, machine
 	Resumed	ᏙᎴᎢ
+#. text in the Scheduler window
+#. Scheduler: checkbox before a number box: how many times a download that fails is tried again before the queue gives up on it
+#, machine
+	Retries for a file that fails:	ᎪᏪᎵ ᎤᏲ ᏄᎵᏍᏔᏅ ᏔᎵᏁ ᎢᏯᏛᏁᏗ:
 #. button in the Help menu's windows (About, updates, shortcuts, Tell a friend)
 #. button: check for updates again
 #, machine
@@ -4055,6 +4256,10 @@
 #. window title in rssdlg.rs
 #, machine
 	RSS feeds	RSS ᎤᎾᎵᏍᏓᏴᏗ
+#. text in the Scheduler window
+#. Scheduler: how many of the queue's downloads run together; {files} is a number box (with up/down arrows), drawn where it stands in the translation
+#, machine
+	Run {files} downloads at once	{files} ᏓᎤᏂᎶᏗ ᏌᏉ ᎢᏳᏩᎫᏗ ᎠᎴᏅᏗ
 #. text in countries.rs
 #. a country's name (where a download's server is)
 #, machine
@@ -4133,10 +4338,6 @@
 #. tab title: where downloads are saved
 #, machine
 	Save to	ᏕᏣᏍᏆᏂᎪᏙᏗ
-#. group box title in the Options window
-#. the trailing ... means it is still going on: keep it
-#, machine
-	Save To...	ᏕᏣᏍᏆᏂᎪᏙᏗ...
 #. text in a download's progress window; text in a download's Properties window
 #, machine
 	Save To:	ᏕᏣᏍᏆᏂᎪᏙᏗ:
@@ -4146,6 +4347,11 @@
 #. Site grabber: label of the folder the files go to
 #, machine
 	Save to:	ᎢᏗᎦᎴᏴᏔᏅᎯ:
+#. text in the Options window
+#. Options → Save to: over the chosen category's folder (and the folder picker's title); {category} is its name
+#. {category} = a category name such as "Music" (keep the braces as they are)
+#, machine
+	Save {category} files to:	{category} ᏗᎪᏪᎵ ᎠᏍᏆᏂᎪᏗ ᎾᎿ:
 #. text in a download's progress window
 #. status shown in green beside the Rename box once the new name is saved
 #, machine
@@ -4154,6 +4360,10 @@
 #. label before the folder the torrent is saved in
 #, machine
 	Saved in	ᏕᏣᏍᏆᏂᎪᏙᏗ
+#. text in a dialog box
+#. Download complete: label before the saved file's path
+#, machine
+	Saved to	ᎤᏍᏆᏂᎪᏛ ᎾᎿ
 #. text in the Scheduler window
 #. noun: tab title; when the queue starts and stops
 #, machine
@@ -4173,7 +4383,8 @@
 #. title of the folder picker
 #, machine
 	Select a folder	ᎦᏟ &
-#. button in playlistdlg.rs; button in the Site grabber window (Tasks → Run site grabber); button in the Add torrent window; text in torrentfiles.rs
+#. text in the Link grabber window; button in playlistdlg.rs; button in the Site grabber window (Tasks → Run site grabber); button in the Add torrent window; text in torrentfiles.rs
+#. Link grabber button: tick every link
 #. button in Download video for a playlist: tick every video
 #. Site grabber button: tick every file the filter shows
 #, machine
@@ -4184,7 +4395,8 @@
 #. what a keyboard shortcut does in the Help menu's windows (About, updates, shortcuts, Tell a friend)
 #, machine
 	Select every download up to this one	ᏂᎦᏗᏳ ᏗᎦᏃᏍᏓᏁᏗ ᏘᏅᎦ ᎯᎠᏃ ᎢᏴᏛ
-#. button in playlistdlg.rs; button in the Site grabber window (Tasks → Run site grabber); button in the Add torrent window
+#. text in the Link grabber window; button in playlistdlg.rs; button in the Site grabber window (Tasks → Run site grabber); button in the Add torrent window
+#. Link grabber button: untick every link
 #. button in Download video for a playlist: untick every video
 #. Site grabber button: untick every file the filter shows
 #, machine
@@ -4195,9 +4407,6 @@
 #. what a keyboard shortcut does in the Help menu's windows (About, updates, shortcuts, Tell a friend)
 #, machine
 	Select or unselect the download with the dotted outline	ᏗᎦᏃᏍᏓᏁᏗ ᏘᏅᎦ ᎤᏍᎪᏍᏛ ᎤᏓᎷᎸᎢ
-#. group box title in the Options window
-#, machine
-	Select sounds for Dannex Download Manager events	ᏚᏃᏴᎬ ᏘᏅᎦ Dannex Download Manager ᏚᏓᎴᏅᏔᏅᎢ
 #. what a keyboard shortcut does in the Help menu's windows (About, updates, shortcuts, Tell a friend)
 #, machine
 	Select the downloads in the box	ᏗᎦᏃᏍᏓᏁᏗ ᏘᏅᎦ ᎤᏍᎪᏍᏛ ᎤᏓᎷᎸᎢ
@@ -4261,9 +4470,6 @@
 #. why "Use the proxy" is greyed in Torrent settings
 #, machine
 	Set a socks5:// proxy in Options → Proxy / Socks first	ᎢᎬᏱ ᏕᎦᏅᏍᏓᏗᏍᎩ socks5:// ᎯᎠ ᏗᏓᏚᎪᏗ ᎯᎠ ᏗᏓᏚᎪᏗ → ᏗᏓᏚᎪᏗ / Socks
-#. checkbox in the Options window
-#, machine
-	Set file creation date as provided by the server	ᏗᏟᎶᏍᏔᏅᎯ ᎤᏓᎴᏅᏔᏅᎯ ᎢᎪᎯᏓᏍᏗ ᏗᎦᏃᏍᏓᏁᎯ ᎤᏓᏁᎸᎯ
 #. button in extension.rs; button in the Options window
 #. button in the browser extension's window: register DDM's helper with the browsers
 #. button in Test browser integration: register DDM's helper with the browsers
@@ -4328,9 +4534,6 @@
 #. & marks the keyboard shortcut letter: keep one & before a letter of the translation
 #, machine
 	Show &categories	ᎬᏂᎨᏒᎢ &ᏗᎦᏃᏍᏓᏁᏗ
-#. text in the Options window
-#, machine
-	Show a dialog and ask what to do.	ᎧᏃᎮᏗ ᎬᏂᎨᏒᎢ ᎠᎴ ᎤᏛᏛᏗ ᎢᏳᏍᏗ ᎢᏯᏛᏁᏗ.
 #. checkbox in the Options window
 #, machine
 	Show a download button over videos in browsers	ᎬᏂᎨᏒ ᎢᎬᏁᏗ ᏗᏓᏃᏍᏙᏗ ปุ่ม ᏗᏓᏟᎶᏍᏗ ᎦᎸᎳᏗᏢ ᏗᏓᏟᎶᏍᏗ ᏗᏕᎶᏆᏍᏗ ᏗᎦᏃᏍᏙᏗ
@@ -4344,29 +4547,30 @@
 #. text in a download's progress window
 #, machine
 	Show details >>	ᎬᏂᎨᏒᎢ ᎢᎬᏱᏗᏢ >>
-#. checkbox in the Options window; checkbox in a download's progress window
+#. text in the Options window
+#. Options → Downloads: checkbox; the Download File Info window asks first, for each download added
 #, machine
-	Show download complete dialog	ᎬᏂᎨᏒᎢ ᏗᎦᏃᏍᏓᏁᏗ ᎤᏍᏆᏛᎯ ᎧᏃᎮᏗ
+	Show Download File Info first	ᎢᎬᏱ “ᏓᎤᏂᎶᏗ ᎪᏪᎵ ᎤᎬᏩᎵ” ᎠᎾᏄᎪᏫᏍᏗ
 #. text in extension.rs
 #. button in the browser extension's window: open the tutorial that adds the extension
 #, machine
 	Show me how	ᎢᎪᏪᎵᏍᎩ
-#. checkbox in the Options window
+#. text in a download's progress window
+#. checkbox (Options → Downloads, the progress window's When done tab): show the Download complete window when a file finishes
 #, machine
-	Show queue selection panel on closing batch download dialogs	ᎠᏂᏍᏓᏢᎢ ᏗᎪᏢᏍᏗ ᎦᏟᏗ ᎬᏂᎨᏒᎢ ᎢᏳᏃ ᏗᏓᏟᎶᏍᏔᏅᎯ ᏗᏗᏍᎪᏗ ᎦᏟᏗ ᏱᏚᏍᏚᏁᎢ
-#. checkbox in the Options window
+	Show the Download complete window	“ᏓᎤᏂᎶᏗ ᎤᏍᏆᏛ” ᏫᏂᏙ ᎠᎾᏄᎪᏫᏍᏗ
+#. text in the Options window
+#. Options → Downloads: an address already in the list added again: its finished file is shown (Download complete), an unfinished one resumed
 #, machine
-	Show queue selection panel on pressing "Download Later" button	ᎠᏂᏍᏓᏢᎢ ᏗᎪᏢᏍᏗ ᎦᏟᏗ ᎬᏂᎨᏒᎢ ᎢᏳᏃ "ᎣᏂᏗᏢ ᏗᏗᏍᎪᏗ" ปุ่ม ᏱᏚᎵᏍᏔᏁᎢ
-#. checkbox in the Options window
+	Show the finished file, or resume the unfinished one	ᎤᏍᏆᏛ ᎪᏪᎵ ᎠᎾᏄᎪᏫᏍᏗ, ᎠᎴ ᎾᏍᏆᏛᎾ ᏔᎵᏁ ᎠᎴᏅᏗ
+#. text in the Site grabber window (Tasks → Run site grabber)
+#. link in the empty download list: shows the latest grabber project's downloads
 #, machine
-	Show start download dialog	ᏗᏗᏍᎪᏗ ᎦᏟᏗ ᎬᏂᎨᏒᎢ
+	Show the grabber's downloads	ᎦᎳᏆ ᏓᎤᏂᎶᏗ ᎠᎾᏄᎪᏫᏍᏗ
 #. text in the Options window
 #. Options → General → Customize DDM menu items: over the commands to tick
 #, machine
 	Show these commands in the browsers' right-click menu:	ᎯᎠ ᏗᏁᏤᎸ ᎾᏄᎪᏫᏍᏗ ᎠᎦᏙᎥᎯᏍᏗ ᎠᎦᏘᏏ ᎠᏍᏓᎷᎩ ᎢᎬᎾᏗ ᎾᎿ:
-#. checkbox in the Options window; checkbox in the Scheduler window
-#, machine
-	Show warning before stopping downloads	ᎤᎾᏰᎯᏍᏗ ᎧᏃᎮᏍᎩ ᎬᏂᎨᏒᎢ ᎢᎬᏱ ᏗᏗᏍᎪᏗ ᏱᏚᎵᏍᏔᏁᎢ
 #. text in a download's progress window
 #, machine
 	Shown while the torrent is downloading.	ᎬᏂᎨᏒᎢ ᎢᏳᏃ ᎦᏟᏗ ᏱᏗᏗᏍᎪᏗᏍᎪᎢ.
@@ -4418,6 +4622,10 @@
 #. title of the folder picker of Site grabber
 #, machine
 	Site grabber folder	ᎦᏙᎯ ᎠᏂᏴᏍᎩ ᏗᎪᏪᎵ ᎦᏁᎸ
+#. text in the Site grabber window (Tasks → Run site grabber)
+#. in the empty download list, under its title, while Site grabber projects keep their downloads apart
+#, machine
+	Site grabber's downloads show under Grabber projects, in the Categories pane.	ᏌᏱᏘ ᎦᎳᏆ ᏓᎤᏂᎶᏗ “ᎦᎳᏆ ᏆᏤᎩ” ᎭᏫᏂ ᎾᏄᎪᎪ, ᎧᏖᎪᎵ ᎭᏫᏂ.
 #. checkbox in the Find window
 #, machine
 	Site name/Download link/Parent web page/Referer	ᎦᏟᏗ ᏚᏙᎥ/ᏗᏗᏍᎪᏗ ᏗᏕᎪᏗ/ᎤᎾᏙᏢᏒ ᎤᎾᏙᏢᏒ ᎦᏟᏗ/ᏗᏓᏁᏟᏴᏍᎩ
@@ -4438,6 +4646,10 @@
 #. text in helpers.rs
 #, machine
 	Sites send their best quality as separate video and audio. ffmpeg puts them together into one file that plays anywhere.	ᏂᏚᎾᏓᏁᎸᎢ ᏓᏓᏁᏟᏴᏍᎪᎢ ᎤᏟᏍᏗ ᏗᏟᎶᏍᏔᏅᎯ ᎠᎴ ᏗᎧᏃᎩᏍᏗ. ffmpeg ᏓᏓᏁᏟᏴᏍᎪᎢ ᎢᏧᎳ ᏌᏉ ᏗᏓᏂᏱᏍᎩ ᏗᏟᎶᏍᏔᏅᎯ ᏂᎦᎥ ᎢᏗᎬᏔᏅᎯ.
+#. page title in the Options window
+#. Options → Sites Logins: the page's title
+#, machine
+	Sites that need a login	ᏌᏱᏘ ᎶᎩᏂ ᏧᏚᎵᏍᎩ
 #. text in the Link grabber window; text in a download's progress window; text in the Scheduler window; text in the Site grabber window (Tasks → Run site grabber); text in the Add torrent window
 #. column title: the file's size
 #. column title: file size
@@ -4466,6 +4678,18 @@
 #. a country's name (where a download's server is)
 #, machine
 	Slovenia	ᏍᎶᏪᏂᎠ
+#. text in the Site grabber window (Tasks → Run site grabber)
+#. Site grabber: label of the box that shows only the files found smaller than this many kilobytes
+#, machine
+	Smaller than (KB):	ᎤᏟ ᎤᏍᏗ (KB):
+#. text in the Options window
+#. Options → Proxy / Socks → Advanced / Socks...: a kind of proxy (SOCKS version 4); a name: usually kept
+#, machine
+	SOCKS 4	SOCKS 4
+#. text in the Options window
+#. Options → Proxy / Socks → Advanced / Socks...: a kind of proxy (SOCKS version 5); a name: usually kept
+#, machine
+	SOCKS 5	SOCKS 5
 #. text in countries.rs
 #. a country's name (where a download's server is)
 #, machine
@@ -4496,6 +4720,10 @@
 #. tab title: sound settings
 #, machine
 	Sounds	ᎧᏃᎩᏍᏗ
+#. group box title in the Options window
+#. Options → Sounds: group box over the events and the sound each plays
+#, machine
+	Sounds Dannex Download Manager plays	Dannex Download Manager ᎤᏤᎵ ᎧᏁᎬ
 #. link (opens a web page) in the Help menu's windows (About, updates, shortcuts, Tell a friend)
 #, machine
 	Source code	ᎦᏟᏗ ᏗᎪᏢᏍᏗ
@@ -4524,7 +4752,7 @@
 #. a country's name (where a download's server is)
 #, machine
 	Spain	ᏍᏇᏂ
-#. text in a download's progress window; text in the tray icon's menu
+#. checkbox in the Options window; text in a download's progress window; text in the tray icon's menu
 #. tab title: the tool that limits the download speed
 #, machine
 	Speed Limiter	ᎠᎵᏍᎪᏗ ᎦᏟᏗ
@@ -4549,18 +4777,21 @@
 #. Site grabber: label of the address of the page it starts from
 #, machine
 	Start address:	ᎤᎴᏅᏗ ᏅᏃᎯ:
+#. text in the Scheduler window
+#. Scheduler: checkbox before the queue's start time (a time box follows)
+#, machine
+	Start at	ᎠᎴᏅᏗ ᎾᎯᏳ
+#. text in the Options window
+#. Options → General: checkbox; DDM starts when the computer starts (the user signs in)
+#, machine
+	Start Dannex Download Manager with the computer	Dannex Download Manager ᎠᎴᏅᏗ ᎧᎻᏳᏓ ᎤᎴᏅᎲ ᎢᏳᏃ
 #. button in a dialog box
 #, machine
 	Start Download	ᏗᏗᏍᎪᏗ ᎤᎾᎴᏅᏗ
-#. text in the Scheduler window; checkbox in the Scheduler window
-#, machine
-	Start download at	ᏗᏗᏍᎪᏗ ᎤᎾᎴᏅᏗ
-#. checkbox in the Scheduler window
-#, machine
-	Start download on Dannex Download Manager startup	ᏗᏗᏍᎪᏗ ᎤᎾᎴᏅᏗ Dannex Download Manager ᎤᎾᎴᏅᏗ
 #. checkbox in the Options window
+#. Options → Downloads: checkbox; the file starts coming in while Download File Info waits for an answer
 #, machine
-	Start downloading immediately while displaying "Download File Info" dialog	ᏗᏗᏍᎪᏗ ᎤᎾᎴᏅᏗ ᎢᎬᏱ ᎢᏳᏃ "ᏗᏗᏍᎪᏗ ᎦᏟᏗ ᎧᏃᎮᏍᎩ" ᎦᏟᏗ ᏱᎬᏂᎨᏒᎢ
+	Start fetching while Download File Info is open	“ᏓᎤᏂᎶᏗ ᎪᏪᎵ ᎤᎬᏩᎵ” ᎠᏍᏚᎢᏛ ᎢᏳᏃ, ᏓᎤᏂᎶᏗ ᎠᎴᏅᏗ
 #. text in the tray icon's menu
 #, machine
 	Start main download queue	ᎤᎾᎴᏅᏗ ᎤᎾᏙᏢᏒ ᏗᏗᏍᎪᏗ ᎦᏟᏗ
@@ -4568,13 +4799,13 @@
 #. remote control page (on a phone): "When" choice: start the download at once
 #, machine
 	Start now	ᎪᎯ ᎨᏒ ᎭᎴᏅᏓ
-#. text in a download's progress window
-#, machine
-	Start positions and download progress by connections	ᎤᎾᎴᏅᏗ ᎦᏟᏗ ᎠᎴ ᏗᏗᏍᎪᏗ ᎦᏟᏗ ᏗᏕᎪᏗ
 #. checkbox in a dialog box; checkbox in the Site grabber window (Tasks → Run site grabber)
 #. Site grabber: check box: start the queue once the files are added
 #, machine
 	Start the queue now	ᎤᎾᎴᏅᏗ ᎦᏟᏗ ᎪᎯ
+#. checkbox in the Scheduler window
+#, machine
+	Start when Dannex Download Manager starts	Dannex Download Manager ᎤᎴᏅᎲ ᎢᏳᏃ ᎠᎴᏅᏗ
 #. message or event log entry in the main window
 #. {queue} = a queue name such as "Main queue" (keep the braces as they are)
 #, machine
@@ -4593,7 +4824,7 @@
 #, machine
 	Started with the computer, it starts minimized: no notification area shows its icon here	ᎢᎬᏱ ᎤᎾᎴᏅᎲᎯ, ᎤᏍᏗᎨᏴ ᎢᎬᏱ ᎤᎾᎴᏅᎲᎯ: ᎥᏝ ᎪᎯ ᎢᎦᎨᏛ ᎢᎬᏱ ᎤᎾᎴᏅᎲᎯ ᏱᎩ
 #. text in the Options window
-#. tooltip of "Launch Dannex Download Manager on startup": started with the computer, DDM's window stays hidden, its icon in the notification area (system tray)
+#. tooltip of "Start Dannex Download Manager with the computer": started with the computer, DDM's window stays hidden, its icon in the notification area (system tray)
 #, machine
 	Started with the computer, it waits in the notification area	ᎢᎬᏱ ᎤᎾᎴᏅᎲᎯ, ᎢᎦᎨᏛ ᎢᎬᏱ ᎤᎾᎴᏅᎲᎯ
 #. message or event log entry in the main window
@@ -4625,9 +4856,10 @@
 #. Site grabber button: stop exploring (what was found stays)
 #, machine
 	Stop	ᎤᏃᎴ
-#. text in the Scheduler window; checkbox in the Scheduler window
+#. text in the Scheduler window
+#. Scheduler: checkbox before the time the queue is stopped if it still runs (a time box follows)
 #, machine
-	Stop download at	ᏗᏗᏍᎪᏗ ᎤᎾᎴᏅᏗ
+	Stop at	ᎠᏲᎯᏍᏗ ᎾᎯᏳ
 #. text in playlistdlg.rs
 #. button in Download video: stop listing a playlist's videos (those listed stay)
 #, machine
@@ -4643,6 +4875,10 @@
 #. Torrent settings, under "Keep sharing": stop sharing a finished torrent once its share ratio (sent ÷ received) reaches the number in the box after it
 #, machine
 	Stop sharing at a share ratio of	ᎠᏯᏙᎮᏗ ᎤᏂᎴᏫᏍᏗ ᎠᏯᏙᎮᏗ ᏗᏎᏍᏗ ᎯᎠ ᎢᎦᎢ
+#. text in a download's progress window
+#. tooltip of the close box (×) of a running download's progress window: it stops the download (which can be resumed later) and closes the window
+#, machine
+	Stop the download and close (Resume continues it)	ᏓᎤᏂᎶᏗ ᎠᏲᎯᏍᏗ ᎠᎴ ᎠᏍᏚᏗ (“ᏔᎵᏁ ᎠᎴᏅᏗ” ᏔᎵᏁ ᎦᎸᏫᏍᏓᏁᏗ)
 #. checkbox in the Add torrent window
 #. Torrent settings: stop listening when nothing needs the torrent engine
 #, machine
@@ -4651,7 +4887,7 @@
 #. {queue} = a queue name such as "Main queue" (keep the braces as they are)
 #, machine
 	Stop {queue}	ᎤᎾᎴᏅᏗ {queue}
-#. value in a column's filter list in the download list; text in the download list (sizes, speeds, status); text in remote.rs
+#. value in a column's filter list in the download list; text in the download list (sizes, speeds, status); text in a download's Properties window; text in remote.rs
 #. a download's status (state it is in, not a command)
 #. a download's status (state it is in, not a command): stopped by the user
 #, machine
@@ -4712,6 +4948,11 @@
 #. {site} = a web site's name such as "example.com" (keep the braces as they are)
 #, machine
 	Subtitles in {language} couldn't be downloaded: {site} refused (too many requests).	{language} ᏗᎪᏪᎵ ᎥᏝ ᏱᏗᎦᏃᎩᏛ: {site} ᎤᏓᏱᎸ (ᎤᏣᏘ ᎤᏔᏲᏒ).
+#. text in the download list (sizes, speeds, status)
+#. after a video download: {language} = a language's name, {site} = a web site's name (youtube.com); the site refuses its machine-translated subtitles to programs like DDM
+#. {site} = a web site's name such as "example.com" (keep the braces as they are)
+#, machine
+	Subtitles in {language} couldn't be downloaded: {site} refused its automatic translation.	{language} ᎪᏪᎸ ᎦᏬᏂᎯᏍᏗ ᎥᏝ ᏰᎵ ᏓᎤᏂᎶᏗ ᏱᎨᏎ: {site} ᎥᏝ ᏳᏁᎳᏕ ᎤᏤᎵ ᎤᏩᏒ ᎠᏁᏟᏴᏛ.
 #. text in countries.rs
 #. a country's name (where a download's server is)
 #, machine
@@ -4719,6 +4960,10 @@
 #. text in the Options window; text in the dates and times (the Scheduler window, the download list, Statistics)
 #, machine
 	Sunday	ᎤᎾᏙᏓᏆᏍᎬ
+#. link (opens a web page) in the Help menu's windows (About, updates, shortcuts, Tell a friend); link (opens a web page) in the Options window
+#. Options: link at the bottom to Dannex's donation page (GitHub Sponsors); keep the short name DDM as it is
+#, machine
+	Support DDM	DDM ᎠᏍᏕᎸᏗ
 #. text in countries.rs
 #. a country's name (where a download's server is)
 #, machine
@@ -4754,6 +4999,10 @@
 #. a country's name (where a download's server is)
 #, machine
 	Syria	ᏏᎵᎠ
+#. text in the Options window
+#. Options → Downloads → Customize "Download progress" dialog: over the check boxes of the progress window's optional tabs
+#, machine
+	Tabs the window shows:	ᏫᏂᏙ ᎠᎾᏄᎪᏫᏍᎬ ᏓᏈ:
 #. text in countries.rs
 #. a country's name (where a download's server is)
 #, machine
@@ -4762,6 +5011,18 @@
 #. a country's name (where a download's server is)
 #, machine
 	Tajikistan	ᏔᏥᎩᏍᏔᏂ
+#. text in the Options window
+#. Options → General: group box over the list of web browsers whose downloads DDM takes
+#, machine
+	Take downloads from these browsers:	ᎯᎠ ᏇᎶᏌ ᏅᏓᏳᏓᎴᏅᎯ ᏓᎤᏂᎶᏗ ᎠᏓᏂᎸᎢᏍᏗ:
+#. text in the Options window
+#. Options → General: checkbox; downloads started in web browsers are handed to DDM (off: the browsers keep them all)
+#, machine
+	Take downloads from web browsers	ᏇᎶᏌ ᏅᏓᏳᏓᎴᏅᎯ ᏓᎤᏂᎶᏗ ᎠᏓᏂᎸᎢᏍᏗ
+#. text in the Options window
+#. Options → File types: over the list of file extensions DDM takes from the browsers
+#, machine
+	Take these file types from the browsers:	ᎯᎠ ᎪᏪᎵ ᏄᏍᏛ ᏇᎶᏌ ᏅᏓᏳᏓᎴᏅᎯ ᎠᏓᏂᎸᎢᏍᏗ:
 #. text in countries.rs
 #. a country's name (where a download's server is)
 #, machine
@@ -4777,9 +5038,14 @@
 #. Site grabber: label of the template drop-down (All images, Documents…)
 #, machine
 	Template:	ᎤᏟᎶᏍᏙᏗ:
-#. group box title in the Options window
+#. text in the Options window
+#. title of the folder dialog of Options → Save to → Temporary directory → Browse
 #, machine
 	Temporary directory	ᎠᎪᏗᏱ ᏗᏟᎶᏍᏔᏅᎯ
+#. group box title in the Options window
+#. Options → Save to: group box: the folder where unfinished downloads keep their part files
+#, machine
+	Temporary folder	ᎤᏍᏗ ᎢᎪᎯᏛ ᏬᎵᏓ
 #. button in the Options window
 #. button: asks the chosen DNS for an address, to see it works
 #, machine
@@ -4911,7 +5177,7 @@
 	The download list could not be saved: {error}. Changes are kept while DDM runs.	ᎠᏗᏰᏍᏗ ᏗᏓᏟᎶᏍᏗ ᏂᎨᏒᎾ ᎢᏗᎬᏔᏅᎯ: {error}. ᏗᎦᏁᏟᏴᏍᏗ DDM ᎢᏗᎬᏔᏅᎯ ᎢᏗᎬᏔᏅᎯ.
 #. text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
 #, machine
-	The download manager you already know, rebuilt to be faster. Free and open source under the GNU GPL, version 3 or later. Videos are found by yt-dlp; torrents run on librqbit.	ᎾᏍᎩ ᏗᎦᏁᏟᏴᏍᏗ ᏗᎦᏘᏯ ᏂᎯ ᎿᏉ ᎯᎦᏔᎭ, ᎤᎵᏍᏔᏅᎯ ᎤᏟ ᎢᏯᎵᏍᏗᏱ. ᎬᏩᎾᏝᎢ ᎠᎴ ᎤᏍᏚᎢᏛ GNU GPL ᎤᎾᏙᏢᏒ ᎭᏫᏂᏗᏢ, 3 ᎠᎴ ᎤᏟ ᎢᎦᎢ. ᏗᏟᎶᏍᏔᏅᎯ yt-dlp ᎤᎾᏙᏢᏒ ᎤᎾᏕᎶᎥᏍᏗ; torrents librqbit ᎤᎾᏙᏢᏒ ᎤᎾᏕᎶᎥᏍᏗ.
+	The download manager you already know, rebuilt to be faster. Free and open source under the GNU GPL, version 3 or later.	ᏓᎤᏂᎶᏗ ᏆᎪᎳᎻ, ᎿᏉ ᏣᎦᏙᎥᎯ, ᎢᏤ ᏄᏩᏁᎸ ᎤᏟ ᏞᎩᏳ ᎢᏳᎵᏍᏙᏗ. ᎥᏝ ᎠᏕᎸ ᏳᏚᎵᎭ ᎠᎴ ᎤᏍᏚᎢᏛ ᎪᏪᎸ ᎨᏒ, GNU GPL ᎭᏫᏂ, ᏪᏥᏂ 3 ᎠᎴ ᎣᏂ.
 #. text in a dialog box
 #, machine
 	The download queue is done.	ᎾᏍᎩ ᏗᎦᏁᏟᏴᏍᏗ ᏓᎪᏔᏅᎢ ᎤᎵᏍᏆᏗᏒ.
@@ -4950,9 +5216,6 @@
 #. {algorithm} = a checksum algorithm such as "SHA-256" (keep the braces as they are)
 #, machine
 	The file matches ({algorithm})	ᎾᏍᎩ ᏗᏟᎶᏍᏔᏅᎯ ᏚᏓᎾᏫᏛ ({algorithm})
-#. text in a dialog box
-#, machine
-	The file saved as	ᎾᏍᎩ ᏗᏟᎶᏍᏔᏅᎯ ᎤᏍᏆᏂᎪᏔᏅᎯ ᎾᏍᎩᏯ
 #. text in the Site grabber window (Tasks → Run site grabber)
 #, machine
 	The file types and settings you choose on the next pages.	ᎪᏪᎵ ᎢᏳᏍᏗ ᎠᎴ ᏄᏍᏛ ᏣᏑᏰᏍᏗ ᏐᎢ ᏗᎪᏪᎸᎢ ᎾᎿ.
@@ -4994,13 +5257,17 @@
 #. {error} = an error message (keep the braces as they are)
 #, machine
 	The list could not be saved: {error}	ᎾᏍᎩ ᏗᎦᏁᏟᏴᏍᏗ ᎥᏝ ᏰᎵ ᏱᎦᎴᏅᏍᎦ: {error}
+#. text in the Options window
+#. Options → General → Add browser: why OK is greyed: the name typed is one the browsers list has already
+#, machine
+	The list has a browser of that name already.	ᎾᏍᎩ ᏚᏙᎥ ᏇᎶᏌ ᎿᏉ ᎵᏍᏘ ᎭᏫᏂ ᎡᎭ.
 #. text in whereis.rs
 #, machine
 	the local network	ᎠᎦᏙᎵᏍᏗ ᎠᎹᏰᏟ
 #. text in the Site grabber window (Tasks → Run site grabber)
-#. Site grabber: where its login goes
+#. Site grabber: where its login and cookies go
 #, machine
-	The login goes to the start address's site only. Sites Logins in Options are used too.	ᎠᏴᎯᏍᏗ ᎤᎴᏅᏗ ᏅᏃᎯ ᎦᏙᎯ ᎤᏩᏒ ᏭᎶᎯᏍᏗ. ᎦᏁᏍᏗ ᎾᎿ ᎦᏙᎯ ᎠᏴᎯᏍᏗ ᎾᏍᏉ ᎬᏙᏗ.
+	The login and cookies go to the start address's site only. Sites Logins in Options are used too.	ᎶᎩᏂ ᎠᎴ ᎫᎩ ᎢᎬᏱᏱ ᎠᏗᎵᏏ ᏌᏱᏘ ᎤᏩᏒ ᏫᎦᎷᎪ. ᎣᏆᏏᏂ “ᏌᏱᏘ ᎶᎩᏂ” ᎾᏍᏉ ᎬᏙᏗ.
 #. text in a download's progress window
 #. reason shown on the Rename box when the entered name exceeds the length limit
 #, machine
@@ -5012,7 +5279,7 @@
 #. text in the Site grabber window (Tasks → Run site grabber)
 #. Site grabber: what the Whole site template collects
 #, machine
-	The pages themselves, three links deep, with their pictures, styles, scripts and media, to read the site offline.	ᏗᎪᏪᎸᎢ ᎤᏅᏒ, ᏦᎢ ᏗᏍᏓᏱᏛ ᎢᏴᏛ, ᏚᏟᎶᏍᏔᏅ, ᏗᏄᏍᏛ, ᏗᎵᏍᏔᏴᏗ ᎠᎴ ᎧᏁᎬ ᎢᏳᏩᏂᏌᏛ, ᎦᏙᎯ ᎪᎵᏰᏍᏗ ᎥᏝ ᎤᏓᏡᎬ ᏱᎩ.
+	The pages, three links deep, with their pictures, styles, scripts and media, saved in the site's folders with their links changed to open the saved copies: the site reads offline.	ᏇᏥ, ᏦᎢ ᎵᏂᎩ ᎭᏫᏂ, ᏚᏟᎶᏍᏔᏅ, ᏍᏓᏱᎵ, ᏍᎩᎵᏈ ᎠᎴ ᎻᏗᏯ ᎢᏧᎳᎭ, ᏌᏱᏘ ᏬᎵᏓ ᎭᏫᏂ ᎠᏍᏆᏂᎪᏛ, ᎵᏂᎩ ᎤᏁᏟᏴᏒ ᎧᏈ ᎠᏍᏚᎢᏍᏗ: ᏌᏱᏘ ᎣᏩᎳᏱᏂ ᏰᎵ ᎪᏪᎵᏍᏗ.
 #. text in extracting archives (a download's log, the Archive password window)
 #. why an archive wasn't extracted (after "Couldn't extract {name}: ")
 #, machine
@@ -5020,6 +5287,17 @@
 #. text in errors.rs
 #, machine
 	the path is too long for Windows: {path}	ᏅᏃ ᎤᏟ ᎦᏅᎯᏓ Windows ᎤᏍᏆᎸᎡ: {path}
+#. text in the Add torrent window
+#. a magnet link's lookup, after 30 seconds: peers answered but none sent the file list
+#, machine
+	The peers that answered haven't sent the file list: they may not have it yet. Few people may share this torrent.	ᏈᎳ ᎤᏂᏁᏤ ᎥᏝ ᏗᎪᏪᎵ ᎵᏍᏘ ᏳᏂᏅᏒ: ᎠᏏ ᎥᏝ ᏯᏂᎭ. ᎢᎸᏍᎩᏉ ᏴᏫ ᎯᎠ ᏙᎴᏂᏘ ᏯᏂᏁᏗᏍᎪ.
+#. text in the Add torrent window
+#. a magnet link's lookup ran out of time: the peers that answered had no file list
+#, machine
+	The peers that answered may not have the file list yet. Look up again later, when more people share this torrent.	ᏈᎳ ᎤᏂᏁᏤ ᎠᏏ ᎥᏝ ᏗᎪᏪᎵ ᎵᏍᏘ ᏯᏂᎭ. ᎣᏂ ᏔᎵᏁ ᎠᏲᎮᏍᏗ, ᎤᏟ ᎤᏂᏣᏘ ᏴᏫ ᎯᎠ ᏙᎴᏂᏘ ᎠᏂᏁᏗᏍᎬ ᎢᏳᏃ.
+#. text in the Options window
+#, machine
+	The proxy's kind, now {kind}: HTTP, HTTPS or SOCKS	ᏉᎩᏏ ᏄᏍᏛ, ᎪᎯ {kind}: HTTP, HTTPS ᎠᎴ SOCKS
 #. text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
 #. why updates could not be checked: the newest release on the site has no number
 #, machine
@@ -5086,6 +5364,10 @@
 #. text in errors.rs
 #, machine
 	the server sent an unexpected part of the file ({detail})	ᎤᎾᏓᏅᏏᏍᎩ ᎤᏓᎴᎩ ᎠᏑᏴᏔ ᎤᏙᏢᏒ ᎤᏓᏅᏒ ({detail})
+#. text in the Options window
+#. Options → Add an account: under "Sign in in the browser", before it is pressed: what happens then
+#, machine
+	The service's page opens in your browser, and a code shows here: type it there and allow DDM.	ᏒᏫᏏ ᏇᏥ ᏣᏤᎵ ᏇᎶᏌ ᎭᏫᏂ ᎠᏍᏚᎢᏍᎪ, ᎠᎴ ᎪᏗ ᎠᏂ ᎾᏄᎪᎪ: ᎾᎿ ᎪᏪᎶᏗ ᎠᎴ DDM ᎠᏁᎳᏗᏍᏗ.
 #. text in the Download video window
 #. the Download video window: the site asked for a sign-in although the browser's extension passed the page's cookies
 #, machine
@@ -5153,9 +5435,6 @@
 #. text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
 #, machine
 	The update is open in your system's package installer.	ᎠᏓᏁᏟᏴᏍᏗ ᎤᎵᏍᏚᎢᏛ ᎢᎩᎾᎵᏍᏓᏁᏗ ᎤᎾᏗᏔᎾᏍᏗ ᏗᏟᎶᏍᏔᏅᎢ.
-#. text in a download's Properties window
-#, machine
-	The web page from which this file was obtained:	ᎾᏍᎩ ᎤᎾᏙᏢᏒ ᏗᏟᎶᏍᏔᏅᎯ ᎾᏍᎩ ᎯᎠ ᏗᏟᎶᏍᏔᏅᎯ ᎤᎾᏕᎶᎥᏍᏗ:
 #. message or event log entry in the main window
 #. the kind of file View → Theme → Add a theme file lists: DDM's themes (TOML, JSON), Base16 schemes (YAML) and pywal's colors.json
 #, machine
@@ -5176,8 +5455,9 @@
 #, machine
 	There is already a queue with this name	ᎠᏏᏴᏫ ᎤᎾᏓᏟᏌᏅᎯ ᎾᏍᎩ ᏚᏙᎥ ᎪᏪᎸᎢ
 #. text in a download's progress window
+#. progress window's When done tab: a note above the checkboxes it greys while "Show the Download complete window" is ticked
 #, machine
-	These settings are unavailable when "Show download complete dialog" is turned on	ᎯᎠ ᎢᏯᏓᏛᏁᏗ ᎥᏝ ᏱᏚᎾᏙᏢᏒ ᎾᏍᎩ ᎢᏳᎵᏍᏙᏗ "Show download complete dialog" ᎤᎾᏙᏢᏒ ᎢᏳᎵᏍᏙᏗ
+	These apply only while "Show the Download complete window" is off	“ᏓᎤᏂᎶᏗ ᎤᏍᏆᏛ ᏫᏂᏙ ᎠᎾᏄᎪᏫᏍᏗ” ᎠᏲᎯᏒ ᎢᏳᏃ ᎤᏩᏒ ᎯᎠ ᎦᎸᏫᏍᏓᏁᎭ
 #. text in helpers.rs
 #, machine
 	They keep downloading if you close this window.	ᏓᏓᏂᏱᏍᎬᎢ ᎢᏳᏃ ᎯᎠ ᏗᏓᏂᏱᏍᎩ ᏗᏟᎶᏍᏔᏅᎯ ᏕᎭᏔᏍᎪᎢ.
@@ -5195,8 +5475,8 @@
 #. Options → Remote → Pair a device: the code ran out (10 minutes, or 5 wrong tries)
 #, machine
 	This code can't be used any more.	ᎪᎯ ᏗᎪᏪᎵ ᎥᏝ ᎢᏗᏢᏗᏍᏗ ᎢᎬᏱ.
-#. text in the Customize URL List window (View → Customize URL List)
-#. tooltip of File Name's greyed check box in Customize URL List: that column can't be hidden
+#. text in the Choose columns window (View → Choose columns)
+#. tooltip of File Name's greyed check box in Choose columns: that column can't be hidden
 #, machine
 	This column is always shown	ᎯᎠ ᏗᏓᏍᏆᎶᏍᏗ ᏂᎪᎯᎸ ᎬᏂᎨᏒ
 #. text in whereis.rs
@@ -5312,7 +5592,7 @@
 	this site lets only browsers through; use "Download with the browser"	ᎯᎠ ᏗᏓᏂᏴᏗᏉ; “ᏗᏓᏂᏴᏗ ᎬᏗ ᎠᏯᏙᎯᏍᏗ” ᎬᏗ
 #. text in a download's progress window
 #, machine
-	This system has no dial-up connections to hang up	ᎾᏍᎩ ᎢᏗᎬᏔᏅᎯ ᏂᎨᏒᎾ ᏗᏓᏟᎶᏍᏗ ᏗᏓᏟᎶᏍᏗ
+	This system has no dial-up connections to end	ᎯᎠ ᏏᏍᏖᎻ ᎭᏫᏂ ᎥᏝ ᏓᏯᎵ-ᎠᏈ ᎧᏁᏏᏂ ᏱᎩ ᎠᏍᏆᏗᏍᏗ
 #. text in errors.rs
 #. {name} = a file name (keep the braces as they are)
 #, machine
@@ -5360,15 +5640,15 @@
 #, machine
 	Thursday	ᏅᎩᏁᎢᎦ
 #. text in the Scheduler window
-#. tooltip on the Scheduler's "Wake the computer to run this queue" while "Start download at" is off
+#. tooltip on the Scheduler's "Wake the computer to run this queue" while "Start at" is off
 #, machine
-	Tick "Start download at" first: the computer is woken for the start time	ᎢᎬᏱ ᎤᎾᎴᏅᏗᏱ ᎤᎾᏓᎾᏅᏓᏗᏍᏗ ᎢᎬᏁᏗ: ᎤᏓᎾᏅᏓᏗᏍᏗ ᎤᎾᎴᏗ ᎨᏒᎢ ᎤᎾᎴᏅᏗᏱ ᎢᏳᎵᏍᏙᏗᏱ
+	Tick "Start at" first: the computer is woken for the start time	ᎢᎬᏱ “ᎠᎴᏅᏗ ᎾᎯᏳ” ᎠᏑᏰᏍᏗ: ᎧᎻᏳᏓ ᎠᏰᎦᏍᏗ ᎠᎴᏅᏗ ᎢᎪᎯᏛ ᎢᏳᏃ
 #. tooltip (why a control is greyed) in the toolbar and its Customize toolbar window (View → Toolbar)
 #. tooltip of Customize toolbar's greyed OK button
 #, machine
 	Tick at least one button to show	ᏌᏉ ᎠᏓᏂᏴᏗ ᎯᏑᏯ ᎾᏄᎪᏫᏍᏗ
-#. text in the Customize URL List window (View → Customize URL List)
-#. Customize URL List: the line above the download list's columns, each with a check box
+#. text in the Choose columns window (View → Choose columns)
+#. Choose columns: the line above the download list's columns, each with a check box
 #, machine
 	Tick the columns to show, and put them in order:	ᏗᏓᏍᏆᎶᏍᏗ ᎯᏑᏯ ᎾᏄᎪᏫᏍᏗ, ᎠᎴ ᏄᏍᏛ ᏂᏕᏣᏓᏅᏅ ᏗᏣᎳᏅᏓ:
 #. text in the Site grabber window (Tasks → Run site grabber)
@@ -5507,9 +5787,6 @@
 #. title of the message when shutting down / sleep / hibernate failed
 #, machine
 	Turn off computer	ᎢᏗᎬᏔᏅᎯ ᎤᏃᎴ
-#. checkbox in a download's progress window; checkbox in the Scheduler window
-#, machine
-	Turn off computer when done	ᎠᎾᏗᏍᏓ ᎢᏗᏴᏍᏗ ᎦᎷᎩ ᎿᏉ ᎤᏍᏆᏛ
 #. button in a dialog box
 #, machine
 	Turn off now	ᎠᎾᏗᏍᏓ ᎿᏉ
@@ -5537,6 +5814,9 @@
 #. why Options → Remote → Pair a device... is greyed
 #, machine
 	Turn on the remote control first.	ᎢᎬᏱ ᎢᏅᎯᏓ ᏗᏟᎶᏍᏔᏅ ᎭᎴᏅᏓ.
+#. text in a dialog box
+#, machine
+	Turn the limiter on whenever Dannex Download Manager starts	Dannex Download Manager ᎤᎴᏅᎲ ᎢᏳᏃ, ᏂᎪᎯᎸ ᎵᎻᏘ ᎠᎴᏅᏗ
 #. text in countries.rs
 #. a country's name (where a download's server is)
 #, machine
@@ -5545,6 +5825,7 @@
 #, machine
 	Two free helpers make it work. Get them now, and saving a video is one click away when you find one.	ᏔᎵ ᏂᏚᎾᏓᏁᎸᎾ ᏓᏓᏁᏟᏴᏍᎪᎢ. ᎪᎯ ᎭᏓᏂᏱᏍᎩ, ᎠᎴ ᏗᏓᏂᏱᏍᎩ ᏗᏟᎶᏍᏔᏅᎯ ᏌᏉ ᎭᏓᏂᏱᏍᎩ ᎢᏳᏃ ᎭᏩᏛᏍᏗ.
 #. text in the Site grabber window (Tasks → Run site grabber)
+#. column title: Site grabber: a file's type (its extension: JPG, PDF…)
 #, machine
 	Type	ᎢᏳᏍᏗ
 #. text in rssdlg.rs
@@ -5588,7 +5869,8 @@
 #. tooltip of the greyed Find button
 #, machine
 	Type what to find, and tick at least one place to look	ᎪᏪᎶᏗ ᏂᎦᎥ ᎢᎬᏁᏗ, ᎠᎴ ᎢᎸᏍᎩ ᎢᎬᏁᏗ ᎭᎦᏔᎲᏍᏗ
-#. text in a download's Properties window
+#. text in the Options window; text in a download's Properties window; text in the Site grabber window (Tasks → Run site grabber)
+#. Site grabber: label of the drop-down that shows the files found of one type only
 #, machine
 	Type:	ᎢᏯᏓᏛᏁᏗ:
 #. text in countries.rs
@@ -5603,10 +5885,6 @@
 #. a country's name (where a download's server is)
 #, machine
 	Ukraine	ᏳᎨᎢᏂ
-#. text in the Link grabber window
-#. Link grabber button (IDM's): untick every link
-#, machine
-	Uncheck all	ᏂᎦᏗᏳ ᏕᎭᎴᎯ
 #. item in the Categories tree in the main window; text in remote.rs
 #. adjective: the downloads that are not complete yet
 #. remote control page (on a phone): tab: downloads not finished yet
@@ -5629,6 +5907,7 @@
 #, machine
 	United States Minor Outlying Islands	ᎤᎾᎵᎪᏒᎯ ᏍᏓᏗᎢ ᏧᎾᏍᏗ ᏙᏱᏗᏢ ᏚᎦᏚᏛᎢ
 #. text in a download's Properties window
+#. the web page is not known
 #, machine
 	Unknown	ᏄᏬᎵᏍᏔᏅᎾ
 #. text in a dialog box; text in a download's progress window; text in whereis.rs
@@ -5661,40 +5940,37 @@
 #, machine
 	Uruguay	ᏳᎷᏆᎢ
 #. text in the Options window
+#. Options → Proxy / Socks: choice: the proxy comes from a configuration script (a PAC file) at an address
 #, machine
-	Use advanced browser integration	ᎬᏔᏅᎢ ᎦᎸᎳᏗᏢ ᎢᏗᏴᏍᏗ ᎦᎷᎩ ᏗᏙᎳᏤᏗ
+	Use a configuration script	ᎧᏂᏈᎩᏳᎴᏏᏂ ᏍᎩᎵᏈ ᎬᏙᏗ
 #. button in helpers.rs
 #. Video helpers: button: pick a program (yt-dlp or ffmpeg) already on the computer
 #. the trailing ... means it opens a window: keep it
 #, machine
 	Use another program...	ᏅᏩᏓᎴ ᎢᎬᎾᎯᏍᏗᏍᎩ ᎭᏚᎢᏍᏓ...
-#. text in the Batch download window; checkbox in the Batch download window; text in a dialog box; checkbox in a dialog box
-#, machine
-	Use authorization	ᎬᏔᏅᎢ ᏗᎵᏍᎪᎸᏓᏁᏗ
-#. text in the Options window
-#, machine
-	Use automatic configuration script	ᎬᏔᏅᎢ ᎦᏟᏐᏗ ᏗᏙᎳᏤᏗ ᏗᎪᏪᎵ
 #. button in helpers.rs
 #. Video helpers: button: go back to the copy DDM downloads and checks itself
 #, machine
 	Use DDM's own copy	DDM ᎤᏤᎵᎦ ᎭᏚᎢᏍᏓ
-#. checkbox in the Options window
+#. label in the Options window
+#. Options → Proxy / Socks: over the http and https checkboxes: which addresses go through the proxy
 #, machine
-	Use FTP in PASV mode	ᎬᏔᏅᎢ FTP PASV ᎢᏯᏓᏛᏁᏗ
+	Use it for:	ᎾᏍᎩ ᎬᏙᏗ:
 #. text in the Batch download window
 #. why Batch download's OK is greyed
 #, machine
 	Use one * only	ᎪᏪᎶᏗ ᏌᏉ * ᎢᎬᏁᏗ
-#. text in the Options window
-#. \\n starts a new line: break lines where they fit the translation
+#. checkbox in the Options window
+#. Options → Proxy / Socks: checkbox; FTP downloads use passive mode (the computer opens the data connection)
 #, machine
-	Use proxy/socks from a browser's request if there are download errors /\nfor the downloads intercepted from the browser	ᎬᏔᏅᎢ proxy/socks ᎢᏗᏴᏍᏗ ᎦᎷᎩ ᎤᏔᏲᎯᏍᏗ ᎢᏳᏃ ᎢᏗᏴᏍᏗ ᎤᎵᏓᏍᏔᏅᎯ ᏱᎩ /\nᎢᏗᏴᏍᏗ ᎦᎷᎩ ᏗᏙᎳᏤᏗ ᏗᎦᎷᎩ
-#. checkbox in a download's progress window
-#, machine
-	Use Speed Limiter	ᎬᏔᏅᎢ ᎢᎬᎾᎵᏍᏗ ᏗᎦᏟᏗ
+	Use passive mode for FTP	FTP ᏆᏏᏫ ᏄᏍᏛ ᎬᏙᏗ
 #. text in the Options window
 #, machine
 	Use system settings	ᎬᏔᏅᎢ ᎢᏗᏴᏍᏗ ᎦᎷᎩ ᏗᏙᎳᏤᏗ
+#. text in the Options window
+#. Options → Proxy / Socks: a checkbox's caption, wrapped to the page: the proxy the browser used is used for the downloads it hands over, and when a download fails
+#, machine
+	Use the browser's proxy for the downloads it hands over, and when a download fails	ᏇᎶᏌ ᏉᎩᏏ ᎬᏙᏗ, ᏇᎶᏌ ᎤᏁᎸ ᏓᎤᏂᎶᏗ ᎤᎬᏩᎵ, ᎠᎴ ᏓᎤᏂᎶᏗ ᎤᏲ ᏄᎵᏍᏔᏅ ᎢᏳᏃ
 #. checkbox in the Add torrent window
 #. Torrent settings: use the SOCKS5 proxy set in Options → Proxy / Socks
 #, machine
@@ -5706,13 +5982,19 @@
 #. text in a dialog box
 #, machine
 	Use them for this torrent? What matches it is kept, the rest replaced.	ᏗᏙᏓᎸᏍᏗ ᎯᎠ ᎢᏗᏟᏴᏔᏅᎯ? ᎾᏍᎩ ᎢᏳᏍᏗ ᏗᏙᏓᎸᏍᏗ ᎨᏒ ᏗᎦᏘᏍᏗ ᎨᏒ, ᏅᏩᏓᎴ ᏗᏙᏓᎸᏍᏗ ᎨᏒ ᏗᏓᏁᏟᏴᏍᏗ ᎨᏒ.
-#. label in the Options window
+#. text in the Options window
+#. Options → Proxy / Socks: choice: the proxy's address, port and login typed below
 #, machine
-	Use this proxy for the following protocols:	ᎬᏔᏅᎢ ᎯᎠ proxy ᎯᎠ ᎢᏗᏴᏍᏗ ᏗᏙᎳᏤᏗ:
+	Use this proxy server	ᎯᎠ ᏉᎩᏏ ᏌᏩ ᎬᏙᏗ
 #. text in rssdlg.rs
 #. RSS feeds window, Download rules: the rule is on
 #, machine
 	Use this rule	ᎢᏯᏛᏁᏗ ᎢᏯᏛᏁᏗ
+#. text in the Options window
+#. Options → Virus checking: button that fills in an antivirus program found on this computer; {name} is its name ("Microsoft Defender")
+#. {name} = a file name (keep the braces as they are)
+#, machine
+	Use {name}	{name} ᎬᏙᏗ
 #. text in the Options window
 #, machine
 	Used by the list of downloads and the Scheduler.	ᎠᏂᏔᎳᏕᎩ ᎤᎾᏓᏟᏌᏅᎢ ᎠᎴ ᎢᏳᏟᎶᏛ ᎢᏗᎬᏁᎯ ᏗᎬᏔᏅᎯ.
@@ -5720,22 +6002,20 @@
 #. column title: the user name
 #, machine
 	User	ᎬᏔᏅᎢ
-#. text in the Site grabber window (Tasks → Run site grabber)
+#. label in the Options window
+#, machine
+	User name	ᎬᏙᎯ ᏚᏙᎥ
+#. text in a download's Properties window; text in the Site grabber window (Tasks → Run site grabber)
 #. Site grabber: label of the site's user name
 #, machine
 	User name:	ᏣᏙᎥ:
-#. page title in the Options window
-#, machine
-	User names and passwords for servers/sites	ᎬᏔᏅᎢ ᏚᏙᎥᎢ ᎠᎴ ᏗᏍᎦᎶᏗ ᏗᏙᎳᏤᏗ/ᏗᏙᎳᏤᏗ
 #. text in the Options window
+#. Options → Downloads: over the User-Agent (the browser's name and version servers are told) sent for downloads added by hand
 #, machine
-	User-Agent for manually added downloads:	ᎬᏔᏅᎢ-ᎠᏓᏁᎶᏗ ᏗᏙᎳᏤᏗ ᏗᎦᎷᎩ ᏗᏙᎳᏤᏗ:
+	User-Agent for downloads you add yourself:	User-Agent, ᏓᎤᏂᎶᏗ ᏂᎯ ᏨᏁᏉᏤᎸ ᎤᎬᏩᎵ:
 #. text in the Options window
 #, machine
 	User:	ᎬᏔᏅᎢ:
-#. label in the Options window
-#, machine
-	UserName	ᎬᏔᏅᎢ ᏚᏙᎥᎢ
 #. text in countries.rs
 #. a country's name (where a download's server is)
 #, machine
@@ -5802,9 +6082,32 @@
 #. a country's name (where a download's server is)
 #, machine
 	Virgin Islands (U.S.)	ᏫᏥᏂ ᏚᎦᏚᏛᎢ (Ᏻ.Ꮝ.)
-#. text in the Options window
+#. message or event log entry in the main window
+#. title of the message when the antivirus program reported a problem with a finished download
 #, machine
-	Virus checking settings	ᎤᏕᏯᏙᏗ ᏗᎦᏁᎶᏗ ᏗᏙᎳᏤᏗ
+	Virus check	ᏩᏱᎳᏏ ᎠᏲᎮᏍᏗ
+#. text in viruscheck.rs
+#. a download's log and Download complete: the antivirus program ({program}) set in Options couldn't be started; {error} is the system's message
+#. {error} = an error message (keep the braces as they are)
+#, machine
+	Virus check: {program} couldn't be started: {error}	ᏩᏱᎳᏏ ᎠᏲᎮᏍᏗ: {program} ᎥᏝ ᏰᎵ ᏳᎴᏅᎮ: {error}
+#. text in viruscheck.rs
+#. a download's log and Download complete: the antivirus program ({program}) took more than 30 minutes and was stopped
+#, machine
+	Virus check: {program} didn't finish within 30 minutes	ᏩᏱᎳᏏ ᎠᏲᎮᏍᏗ: {program} ᎥᏝ ᏳᏍᏆᏕ 30 ᎢᏯᏔᏬᏍᏔᏅ ᎭᏫᏂ
+#. text in viruscheck.rs
+#. a download's log: the antivirus program ({program}, its file name) checked the finished file and found nothing
+#, machine
+	Virus check: {program} found nothing	ᏩᏱᎳᏏ ᎠᏲᎮᏍᏗ: {program} ᎥᏝ ᎪᎱᏍᏗ ᏳᏩᏛᎮ
+#. text in viruscheck.rs
+#. a download's log and Download complete: the antivirus program ({program}) reported a problem with the finished file (a threat, or an error of its own); {code} is its exit code
+#, machine
+	Virus check: {program} reported a problem (exit code {code})	ᏩᏱᎳᏏ ᎠᏲᎮᏍᏗ: {program} ᎤᏲ ᎤᏃᏁᎴ (ᎤᏍᏆᏗᏍᏗ ᎪᏗ {code})
+#. text in the Options window; window title in the Options window
+#. Options → Downloads: label before Edit...: checking finished downloads with an antivirus program
+#. window title: Options → Downloads → Virus checking settings → Edit...
+#, machine
+	Virus checking	ᏩᏱᎳᏏ ᎠᏲᎮᏍᏗ
 #. text in extracting archives (a download's log, the Archive password window)
 #. why an archive wasn't extracted (after "Couldn't extract {name}: "); {n} is the volume's number
 #. {n} = a number (keep the braces as they are)
@@ -5845,6 +6148,10 @@
 #. a country's name (where a download's server is)
 #, machine
 	Wallis and Futuna	ᏩᎵᏍ ᎠᎴ ᏭᏚᎾ
+#. checkbox in the Options window; text in the Scheduler window
+#. Scheduler → Download limits: checkbox; a message says so when the limit stops the downloads, and when they go on
+#, machine
+	Warn me before downloads are stopped	ᏓᎤᏂᎶᏗ ᎤᏲᎯᏍᏗ ᎢᎬᏱ, ᎠᏴ ᏍᎩᏃᏁᎸᎭ
 #. text in the Scheduler window
 #. Wednesday, as short as a calendar's column head (two letters in English)
 #, machine
@@ -5853,6 +6160,10 @@
 #. where a download comes from: Web (web or FTP server) or Torrent (BitTorrent)
 #, machine
 	Web	WEB
+#. text in a download's Properties window
+#. File Properties: label over the address of the web page the download came from
+#, machine
+	Web page it came from:	ᏇᏥ ᏅᏓᏳᏓᎴᏅᎯ:
 #. text in the Site grabber window (Tasks → Run site grabber)
 #. Site grabber: a file type to collect: the pages themselves
 #, machine
@@ -5888,6 +6199,26 @@
 #, machine
 	When	ᎢᏳ
 #. text in the Options window
+#. Options → Downloads → Customize "Download progress" dialog: over three choices of how a download's progress window opens
+#, machine
+	When a download starts or resumes, open its progress window:	ᏓᎤᏂᎶᏗ ᎤᎴᏅᎲ ᎠᎴ ᏔᎵᏁ ᎤᎴᏅᎲ ᎢᏳᏃ, ᎤᏤᎵ ᎢᎦᎢ ᎤᏍᏆᏛ ᏫᏂᏙ ᎠᏍᏚᎢᏍᏗ:
+#. text in the Options window
+#. Options → Downloads: over the drop-down choosing what happens when an address already in the list is added again
+#, machine
+	When an address is already in the list:	ᎠᏗᎵᏏ ᎿᏉ ᎵᏍᏘ ᎭᏫᏂ ᎡᎭ ᎢᏳᏃ:
+#. checkbox in the Options window; text in a download's progress window
+#. tab title: what happens when the download finishes
+#, machine
+	When done	ᎤᏍᏆᏛ ᎢᏳᏃ
+#. checkbox in the Scheduler window
+#. Scheduler: checkbox above a file's path: opened when the queue is done (a sound, a script, a program)
+#, machine
+	When done, open this file:	ᎤᏍᏆᏛ ᎢᏳᏃ, ᎯᎠ ᎪᏪᎵ ᎠᏍᏚᎢᏍᏗ:
+#. text in a download's progress window
+#. checkbox (progress window's When done tab, the Scheduler), followed by a drop-down: Shut down, Sleep or Hibernate
+#, machine
+	When done, turn off the computer	ᎤᏍᏆᏛ ᎢᏳᏃ, ᎧᎻᏳᏓ ᎠᏍᏚᏗ
+#. text in the Options window
 #. Options → General → Download panels: before the list of corners the button shows in first (dragged elsewhere on a site, it stays there on that site)
 #, machine
 	Where it shows first:	ᎭᏢ ᎢᎬᏱ ᎬᏂᎨᏒ:
@@ -5899,9 +6230,6 @@
 #. Site grabber template: the pages and what they need, to read the site without a connection
 #, machine
 	Whole site for offline reading	ᏂᎦᏛ ᎦᏙᎯ ᎪᎵᏰᏍᏗ ᎥᏝ ᎤᏓᏡᎬ ᏱᎩ
-#. text in the Batch download window
-#, machine
-	Wildcard size	Wildcard ᎤᏍᎪᏂᏗ
 #. text in the Scheduler window
 #. the Scheduler, under "Wake the computer to run this queue" (Windows): "Allow wake timers" is on when plugged in, off on battery
 #, machine
@@ -5952,9 +6280,6 @@
 #. {name} = a file name (keep the braces as they are)
 #, machine
 	Wrong password for {name}. Type it again:	ᎤᎾᏙᏢᏒᎢ ᎤᎵᎪᏒᎢ {name} ᎢᏳᏍᏗ. ᏔᎵᏁ ᎪᏪᎸᎢ:
-#. text in the main window (menus, toolbar, Categories pane)
-#, machine
-	x	x
 #. text in the Options window
 #. a date's order: year first (2026-10-30)
 #, machine
@@ -5970,6 +6295,10 @@
 #. the first start's helpers window: download yt-dlp and ffmpeg (the recommended answer)
 #, machine
 	Yes, download them (recommended)	ᎥᎥ, ᏕᎭᏓᏂᏱᏍᎩ (ᎤᎾᏛᏅᎢᏍᏓᏁᎸ)
+#. text in the Site grabber window (Tasks → Run site grabber)
+#. Site grabber, while it explores: closing the window doesn't stop it
+#, machine
+	You can close this window: exploring goes on. The project shows under Grabber projects in Categories; open it there to come back here.	ᎯᎠ ᏫᏂᏙ ᏰᎵ ᏣᏍᏚᏗ: ᎠᏲᎮᏍᎬ ᎠᏏ ᎦᎸᏫᏍᏓᏁᎭ. ᏆᏤᎩ “ᎦᎳᏆ ᏆᏤᎩ” ᎭᏫᏂ ᎾᏄᎪᎪ, ᎧᏖᎪᎵ ᎭᏫᏂ; ᎾᎿ ᎠᏍᏚᎢᏍᏗ ᎠᏂ ᏔᎵᏁ ᏣᎷᎯᏍᏗ.
 #. text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
 #. {version} = a version number (keep the braces as they are)
 #, machine
@@ -6105,6 +6434,14 @@
 #. {version} = a version number (keep the braces as they are)
 #, machine
 	{browser}: the extension {version} connected	{browser}: ᏗᏓᏂᏴᏗ ᏗᏕᎬᏔᏅᎢ {version} ᏚᎾᏙᏢᏒᎢ
+#. text in extension.rs
+#. {version} = a version number (keep the braces as they are)
+#, machine
+	{browser}: the extension {version} from the Chrome Web Store connected	{browser}: Chrome Web Store ᏅᏓᏳᏓᎴᏅᎯ ᎡᏍᏕᏂᏌᏂ {version} ᎤᏚᏓᎸ
+#. text in extension.rs
+#. {version} = a version number (keep the braces as they are)
+#, machine
+	{browser}: the extension {version} loaded from DDM's folder connected	{browser}: DDM ᏬᎵᏓ ᏅᏓᏳᏓᎴᏅᎯ ᎡᏍᏕᏂᏌᏂ {version} ᎤᏚᏓᎸ
 #. text in whereis.rs
 #. the tooltip of where a download's server is: {cdn} is a content delivery network's name (Cloudflare…)
 #, machine
@@ -6127,6 +6464,10 @@
 #. {size} = a file size such as "4.2 MB" (keep the braces as they are)
 #, machine
 	{done} of {size}	{done} ᎤᎾᏓᏟᏍᏔᏅ {size}
+#. text in the Site grabber window (Tasks → Run site grabber)
+#. Site grabber, above the files found when the last run stopped early; {end} says how ("Stopped at the most pages to explore.")
+#, machine
+	{end} Continue explores further.	{end} “ᎠᏍᏓᏩᏗᏍᏗ” ᎤᏟ ᎢᏴ ᎠᏲᎮᏍᎦ.
 #. text in deferred_rename.rs
 #. appended to an OS error when a case-only rename could not move the temporary file back to its original name; {error} = first OS error, {path} = temporary path left on disk, {rollback_error} = second OS error
 #. {error} = an error message (keep the braces as they are)
@@ -6180,6 +6521,10 @@
 #. in the Subtitles list of Download video: {language} = a language's name; the site made these subtitles automatically (speech recognition)
 #, machine
 	{language}, automatic	{language}, ᎪᏪᎵ ᎤᏩᏒ
+#. text in the Download video window
+#. in the Subtitles list of Download video: {language} = a language's name; the site's machine translation of the automatic subtitles into it (YouTube may refuse it; the original ones are then saved instead)
+#, machine
+	{language}, automatic translation	{language}, ᎤᏩᏒ ᎠᏁᏟᏴᏛ
 #. text in a download's progress window
 #. {live} = peers connected now; {known} = peers heard of
 #, machine
@@ -6197,6 +6542,11 @@
 #. {name} = a file name; {size} = a file size such as "4.2 MB" (keep the braces as they are)
 #, machine
 	{name}  ({files}, {size})	{name}  ({files}, {size})
+#. text in the Site grabber window (Tasks → Run site grabber)
+#. a grabber project in the Categories tree and the Tasks menu while it explores its site; {name} is the project's name
+#. {name} = a file name (keep the braces as they are)
+#, machine
+	{name} (exploring)	{name} (ᎠᏲᎮᏍᎦ)
 #. text in helpers.rs
 #. {name} = yt-dlp or ffmpeg; {error} = why
 #. {name} = a file name; {error} = an error message (keep the braces as they are)
@@ -6227,6 +6577,11 @@
 #. {n} = a number (keep the braces as they are)
 #, machine
 	{n} (auto)	{n} (ᎤᏩᏒ)
+#. text in a dialog box
+#. Download complete: how many other downloads finished, whose boxes wait behind this one
+#. {n} = a number (keep the braces as they are)
+#, machine
+	{n} more download complete	{n} ᏅᏩᏓᎴ ᏓᎤᏂᎶᏗ ᎤᏍᏆᏛ
 #. text in playlistdlg.rs; text in the Site grabber window (Tasks → Run site grabber)
 #. in Download video for a playlist: how many videos are ticked, of how many
 #. Site grabber: how many files are ticked, of how many found
@@ -6305,6 +6660,16 @@
 #. a debrid service's error in its own words (English); {service} its name
 #, machine
 	{service}: {message}	{service}: {message}
+#. text in the download list (sizes, speeds, status)
+#. after a video download: {site} = a web site's name (youtube.com), {language} = a language's name; the site refused its machine translation of the subtitles into that language, so the subtitles it translates from, in {original} (a language's name, like "Indonesian (Original)"), were saved instead
+#. {site} = a web site's name such as "example.com" (keep the braces as they are)
+#, machine
+	{site} refused its automatic translation into {language}: the subtitles in {original} were saved instead.	{site} ᎥᏝ ᏳᏁᎳᏕ {language} ᎠᏁᏟᏴᏛ: {original} ᎪᏪᎸ ᎦᏬᏂᎯᏍᏗ ᎠᏍᏆᏂᎪᏛ ᎾᏍᎩ ᏭᏓᏁᏟᏴᏛ.
+#. text in a download's Properties window
+#. File Properties → Server, for a video or a gallery: {site} the site's name ("youtube.com"), {tool} the program that looks the page up ("yt-dlp", "gallery-dl"; names, not translated)
+#. {site} = a web site's name such as "example.com" (keep the braces as they are)
+#, machine
+	{site}, through {tool}	{site}, {tool} ᎬᏗ
 #. text in a download's Properties window
 #. {size} = a file size such as "4.2 MB"; {bytes} = a number of bytes (keep the braces as they are)
 #, machine
@@ -6370,7 +6735,7 @@ column	Peers	ᎢᏗᎾᏓᏍᏓᏴᏗ
 #. column title: one letter for Queue (the column is narrow)
 #, machine
 column	Q	Q
-#. column title in the main window; column title in the Customize URL List window (View → Customize URL List); column title in the download list
+#. column title in the main window; column title in the Choose columns window (View → Choose columns); column title in the download list
 #. tooltip of the narrow "Q" column's title
 #, machine
 column	Queue	ᏓᎪᏪᎵ
@@ -6405,29 +6770,54 @@ column	Upload speed	ᏗᎦᏅᏍᎪᏂᏙᎲ ᏗᏟᎶᏍᏗ
 #, machine
 extension	A list of videos: choose them in Dannex Download Manager	ᏗᎪᏪᎵ ᏗᎪᏪᎵ: ᎾᏍᎩ ᏗᎪᏪᎵ ᎾᎿ Dannex Download Manager
 #. text in the browser extension
+#. the status page (an extension page that says whether the browser reaches Dannex Download Manager and how to fix it): the app is newer than this extension; keep the name Dannex Download Manager as it is
+#. {version} = a version number (keep the braces as they are)
+#, machine
+extension	A newer version of this extension came with Dannex Download Manager {version}.	ᎯᎠ ᎡᏍᏕᏂᏌᏂ ᎢᏤ ᏪᏥᏂ Dannex Download Manager {version} ᎢᏧᎳᎭ ᎤᎷᏨ.
+#. text in the browser extension
+#. the status page (an extension page that says whether the browser reaches Dannex Download Manager and how to fix it): after the app is newer than this extension, in Firefox; keep the name Dannex Download Manager as it is
+#, machine
+extension	Add the new one from Dannex Download Manager's folder, as you added this one.	ᎢᏤ ᎠᏁᏉᏤᏗ Dannex Download Manager ᏬᎵᏓ ᏅᏓᏳᏓᎴᏅᎯ, ᎯᎠ ᏥᏁᏉᏤᎸ ᎾᏍᎩᏯ.
+#. text in the browser extension
 #. shown briefly on the download button over a video after a quality was picked: the download was added to the app's download queue, to start later
 #, machine
 extension	Added to the queue	ᏚᎾᏓᏁᎸᎢ ᏗᎪᏪᎵ
 #. text in the browser extension
-#. the Alt key's name, in the popup's hint about the keys held while clicking a link; as the keyboard shows it
+#. link on the extension's status page, under the download button: every file of the latest release, on GitHub
 #, machine
-extension	Alt	Alt
+extension	All downloads	ᏂᎦᏛ ᏓᎤᏂᎶᏗ
 #. text in the browser extension
-#. choice under Send downloads to: an DDM running on another computer of the network, such as a home server; keep the name Dannex Download Manager as it is
+#. button on the status page (an extension page that says whether the browser reaches Dannex Download Manager and how to fix it): asks the browser to let the extension read every site again
 #, machine
-extension	Another Dannex Download Manager (a server)	ᏅᏩᏓᎴ Dannex Download Manager (ᎤᎾᏗᏱᏍᎩ)
+extension	Allow on all sites	ᏂᎦᏛ ᏌᏱᏘ ᎠᏁᎳᏗᏍᏗ
+#. text in the browser extension
+#. a small line under the steps on the extension's status page; Options, General and Test browser integration are names in the app
+#, machine
+extension	Already installed? In Dannex Download Manager, open Options → General → Test browser integration.	ᎿᏉᏍᎪ ᎢᏂᏍᏓᎵ ᏄᏩᏁᎸ? Dannex Download Manager ᎭᏫᏂ, ᎣᏆᏏᏂ → ᏤᏁᎳ → ᏇᎶᏌ ᎢᏂᏖᏇᏏᏂ ᎠᏲᎮᏍᏗ ᎠᏍᏚᎢᏍᏗ.
+#. text in the browser extension
+#. first line of the toolbar button's tooltip, and a line on the options page: the browser has this extension twice (the Chrome Web Store's and one loaded by hand); this copy does nothing
+#, machine
+extension	Another copy of this extension is installed	ᏅᏩᏓᎴ ᎧᏈ ᎯᎠ ᎡᏍᏕᏂᏌᏂ ᎢᏂᏍᏓᎵ ᏄᏩᏁᎸ
 #. text in the browser extension
 #. tab above the list of qualities in the menu under the download button over a video: the choices that are sound only (MP3, Opus and the like); short, one word
 #, machine
 extension	Audio	ᎦᏬᏂᎯᏍᏗ
 #. text in the browser extension
+#. a row in the menu of qualities under the download button over a video, shown at once from what the page itself says, before the app's own list: only the sound, converted to that type; the same words as the app's "Audio only {type}"
+#, machine
+extension	Audio only {type}	ᎧᏁᎬ ᎤᏩᏒ {type}
+#. text in the browser extension
+#. a row in the menu of qualities under the download button over a video, shown at once from what the page itself says, before the app's own list: only the sound, the site's own file as it is (not converted); the same words as the app's "Audio only, original {type}"
+#, machine
+extension	Audio only, original {type}	ᎧᏁᎬ ᎤᏩᏒ, ᎢᎬᏱᏱ {type}
+#. text in the browser extension
 #. the name this browser gets in the other DDM's list of paired devices
 #, machine
 extension	Browser extension	ᎤᏃᎴ-ᎠᏂᏃᏔᏅᎯ ᎤᏅᎯᏓᏍᏗ
 #. text in the browser extension
-#. small link at the foot of the toolbar button's popup to the project Dannex Download Manager is built on; keep the name Mister Download Manager as it is
+#. why a download stayed with the browser: the app's setting 'Use advanced browser integration' is off; keep the setting's name as the app shows it
 #, machine
-extension	Built on Mister Download Manager	Mister Download Manager ᎦᏚᎢ ᎤᏬᏢᏅ
+extension	Browser integration is turned off in Dannex Download Manager's Options → General.	ᏇᎶᏌ ᎢᏂᏖᏇᏏᏂ ᎠᏲᎯᏒ Dannex Download Manager ᎣᏆᏏᏂ → ᏤᏁᎳ ᎭᏫᏂ.
 #. text in the browser extension
 #. menu command of the download button over a video: opens its settings in Dannex Download Manager
 #. the trailing ... means it is still going on: keep it
@@ -6438,88 +6828,73 @@ extension	Button settings...	ปุ่ม ᏗᏓᏟᎶᏍᏗ ᏗᏙᏢᏍᏔᏅ�
 #, machine
 extension	Can't tell which video this is: open its own page and try there	ᎥᏝ ᏲᏒᎦ ᎦᏙ ᎤᏍᏗ ᏫᏗᎣ ᎾᏍᎩ: ᎤᏩᏒ ᎤᏤᎵ ᎪᏪᎵ ᎠᏍᏚᎢᏍᏗ ᎠᎴ ᎾᎿ ᏂᏑᎵᎪᎦ
 #. text in the browser extension
-#. state of a download in the toolbar button's popup: finished; short
+#. button on the status page (an extension page that says whether the browser reaches Dannex Download Manager and how to fix it): asks the store for a newer version of the extension now
 #, machine
-extension	Complete	ᎤᏍᏆᏛ
+extension	Check for updates	ᎠᏆᏕᏘ ᎠᏲᎮᏍᏗ
 #. text in the browser extension
-#. the toolbar button's status when the browser reaches the app; keep the name Dannex Download Manager as it is
+#. last line of the toolbar button's tooltip when a click opens the status page
 #, machine
-extension	Connected to Dannex Download Manager	ᏚᎾᏙᏢᏒᎢ Dannex Download Manager
+extension	Click for details.	ᎧᎵᎩ ᎤᏟ ᎠᎦᏙᎥᎯᏍᏗ.
 #. text in the browser extension
-#. the toolbar button's status when the browser reaches the app, with the app's version number; keep the name Dannex Download Manager as it is
-#. {version} = a version number (keep the braces as they are)
+#. second line of the toolbar button's tooltip while something is wrong: a click opens the extension's status page
 #, machine
-extension	Connected to Dannex Download Manager {version}	ᏚᎾᏙᏢᏒᎢ Dannex Download Manager {version}
+extension	Click to see what to do.	ᎧᎵᎩ, ᎦᏙ ᎢᏯᏛᏁᏗ ᎠᎪᏩᏛᏗ.
 #. text in the browser extension
 #. in the menu under the download button over a video: finding the video's qualities failed; the app's own explanation follows on the next line
 #, machine
 extension	Could not look it up	ᎥᏝ ᎢᏗᏴᏔᏅᎢ
 #. text in the browser extension
-#. the Ctrl key's name, in the popup's hint about the keys held while clicking a link; as the keyboard shows it (e.g. Strg in German)
+#. pairing failed: the other DDM didn't answer
 #, machine
-extension	Ctrl	Ctrl
+extension	Couldn't reach it. Open its address in this browser, continue past the security warning, then try again.	ᎥᏝ ᏰᎵ ᏫᎦᎷᏥ ᏱᎨᏎ. ᎤᏤᎵ ᎠᏗᎵᏏ ᎯᎠ ᏇᎶᏌ ᎭᏫᏂ ᎠᏍᏚᎢᏍᏗ, ᏏᎩᏳᎵᏘ ᎤᏁᏨ ᎠᎶᎯᏍᏗ, ᎿᏉ ᏔᎵᏁ ᎢᏯᏛᏁᏗ.
 #. text in the browser extension
-#. in the toolbar button's popup, under Downloads, when the app didn't answer in time (it is asked again every second); keep the name Dannex Download Manager as it is
+#. headline of the extension's status page, and the first line of its toolbar button's tooltip: the browser tried to start the app for a download and gave up waiting; keep the name Dannex Download Manager as it is
 #, machine
-extension	Dannex Download Manager didn't answer. Trying again…	Dannex Download Manager ᎥᏝ ᏳᏁᏤ. ᏔᎵᏁ ᎠᏔᏲᎯᎭ…
-#. text in the browser extension
-#. status when the app was started for a download but didn't answer in time; keep the name Dannex Download Manager as it is
-#, machine
-extension	Dannex Download Manager didn't start in time	Dannex Download Manager ᎥᏝ ᏗᏓᏂᏴᏗ ᏗᏕᎬᏔᏅᎢ ᏱᏚᎾᏙᏢᏒᎢ
-#. text in the browser extension
-#. in the toolbar button's popup when the app was reached but refused what was handed to it (an address it doesn't download); keep the name Dannex Download Manager as it is
-#, machine
-extension	Dannex Download Manager didn't take it.	Dannex Download Manager ᎥᏝ ᏳᏓᏂᎸᏨ.
-#. text in the browser extension
-#. status when the app refuses this copy of the extension (another copy is installed, or it came from another store); keep the name Dannex Download Manager as it is
-#, machine
-extension	Dannex Download Manager doesn't accept this copy of the extension	Dannex Download Manager ᎥᏝ ᏗᏓᏂᏴᏗ ᏗᏕᎬᏔᏅᎢ ᎯᎠ ᏗᏓᏂᏴᏗ ᏗᏕᎬᏔᏅᎢ ᏗᏓᏂᏴᏗ ᏗᏕᎬᏔᏅᎢ
-#. text in the browser extension
-#. tooltip of the link Built on Mister Download Manager; keep the names Dannex Download Manager, Mister Download Manager and Ahmed Nefzaoui as they are; GPL is the software license's name
-#, machine
-extension	Dannex Download Manager is built on Mister Download Manager, free software (GPL) by Ahmed Nefzaoui	Dannex Download Manager Mister Download Manager ᎦᏚᎢ ᎤᏬᏢᏅ, ᎠᏎᏉ ᏗᎪᏪᎵ (GPL), Ahmed Nefzaoui ᎤᏬᏢᏅᎯ
+extension	Dannex Download Manager didn't start	Dannex Download Manager ᎥᏝ ᏳᎴᏅᎮ
 #. text in the browser extension
 #. in the menu under the download button over a video: the app is already looking up other videos and can't look this one up now; keep the name Dannex Download Manager as it is
 #, machine
 extension	Dannex Download Manager is busy with other videos	Dannex Download Manager ᏚᎸᏫᏍᏓᏁᎭ ᏅᏩᏓᎴ ᏗᎪᏪᎵ
 #. text in the browser extension
+#. headline of the extension's status page when everything works; keep the name Dannex Download Manager as it is
+#, machine
+extension	Dannex Download Manager is installed	Dannex Download Manager ᎢᏂᏍᏓᎵ ᏄᏩᏁᎸ
+#. text in the browser extension
+#. tooltip of the extension's toolbar button while it is turned off (downloads stay in the browser); keep the name Dannex Download Manager as it is
+#, machine
+extension	Dannex Download Manager is off. Click to turn it on.	Dannex Download Manager ᎠᏲᎯᏒ. ᎧᎵᎩ ᎠᎴᏅᏗ.
+#. text in the browser extension
+#. tooltip of the extension's toolbar button while it sends downloads to the app; keep the name Dannex Download Manager as it is
+#, machine
+extension	Dannex Download Manager is on. Click to turn it off.	Dannex Download Manager ᎦᎸᏫᏍᏓᏁᎭ. ᎧᎵᎩ ᎠᏲᎯᏍᏗ.
+#. text in the browser extension
+#. headline of the extension's status page, and the first line of its toolbar button's tooltip: the browser can't find the app on this computer; keep the name Dannex Download Manager as it is
+#, machine
+extension	Dannex Download Manager isn't installed	Dannex Download Manager ᎥᏝ ᎢᏂᏍᏓᎵ ᏱᏄᏩᏁᎸ
+#. text in the browser extension
 #. shown briefly on the download button when the app could not be reached; keep the name Dannex Download Manager as it is
 #, machine
 extension	Dannex Download Manager isn't installed or didn't start	Dannex Download Manager ᎥᏝ ᏗᏓᏂᏴᏗ ᏗᏕᎬᏔᏅᎢ ᏱᏚᎾᏙᏢᏒᎢ ᎥᏝ ᏗᏓᏂᏴᏗ ᏗᏕᎬᏔᏅᎢ ᏱᏚᎾᏙᏢᏒᎢ
 #. text in the browser extension
-#. status when the browser can't find the app's connection; keep the name Dannex Download Manager as it is
+#. in the menu of the download button over a video: the app has no yt-dlp (the program that finds videos), which its Download video window offers to install; keep yt-dlp as it is, and Open in DDM… as the menu's own item says it
 #, machine
-extension	Dannex Download Manager isn't installed, or its browser integration isn't set up	Dannex Download Manager ᎥᏝ ᏗᏓᏂᏴᏗ ᏗᏕᎬᏔᏅᎢ ᏱᏚᎾᏙᏢᏒᎢ, ᎥᏝ ᏗᏓᏂᏴᏗ ᏗᏕᎬᏔᏅᎢ ᏗᏓᏂᏴᏗ ᏗᏕᎬᏔᏅᎢ ᏱᏚᎾᏙᏢᏒᎢ
+extension	Dannex Download Manager needs yt-dlp for this video. Open in DDM… to install it.	Dannex Download Manager yt-dlp ᎤᏚᎵᎭ ᎯᎠ ᏈᏗᏲ ᎤᎬᏩᎵ. “DDM ᎭᏫᏂ ᎠᏍᏚᎢᏍᏗ…” ᎠᏑᏰᏍᏗ, ᎢᏂᏍᏓᎵ ᎢᏯᏛᏁᏗ.
 #. text in the browser extension
-#. in the toolbar button's popup, under Downloads, when the app isn't running (it is started when the browser hands it a download); keep the name Dannex Download Manager as it is
+#. choice on the extension's options page, under Send downloads to: a Dannex Download Manager on another computer (a home server); keep the name Dannex Download Manager as it is
 #, machine
-extension	Dannex Download Manager isn't running. It starts by itself for a download.	Dannex Download Manager ᎥᏝ ᏳᎴᏅ. ᎤᏩᏒ ᎤᎴᏅᏗ ᎠᏯᏙᎯᏍᏗ ᎤᏚᎵᏍᎬ.
+extension	Dannex Download Manager on another computer	Dannex Download Manager ᏅᏩᏓᎴ ᎧᎻᏳᏓ ᎭᏫᏂ
 #. text in the browser extension
-#. in the menu under the download button over a video: the app needs the yt-dlp tool (a program's name, keep it as it is) to find this video's qualities, and it isn't installed; keep the name Dannex Download Manager as it is
+#. a step on the status page (an extension page that says whether the browser reaches Dannex Download Manager and how to fix it) on a system the app doesn't run on; keep the name Dannex Download Manager as it is
 #, machine
-extension	Dannex Download Manager needs yt-dlp for this video	Dannex Download Manager ᎤᏚᎵᎭ yt-dlp ᎯᎠ ᏗᎪᏪᎵ
-#. text in the browser extension
-#. tooltip of the switch Send downloads through this browser's proxy or VPN extension; keep the name Dannex Download Manager as it is
-#, machine
-extension	Dannex Download Manager then downloads through the same proxy as this browser. The browser asks you once to allow it; turning this off takes that back.	Dannex Download Manager ᎿᏉ ᏚᎾᏕᎦᏍᎪ ᎾᏍᎩᏉ ᎢᏳᏍᏗ ᏗᏟᎶᏍᏔᏅᎯ ᎢᏗᏢ ᎾᏍᎩ ᎯᎠ ᎢᏗᏢ ᎢᏯᏛᏁᎯ ᏥᏚᏓᏁᎶᏔᏅ. ᎯᎠ ᎢᏗᏢ ᎢᏯᏛᏁᎯ ᏌᏉ ᎢᏳᏩᎫᏗ ᎨᏣᏛᏛᎲᏍᎪ ᎾᏍᎩ ᎯᎠ ᏂᎯ ᎢᏣᏁᎳᏗᏍᏗᏱ; ᎯᎠ ᎢᏳᏍᏗ ᎢᏣᏓᏅᏍᎬᎾ ᏂᏨᏁᎲᎾ ᎾᏍᎩ ետᏗᎭ.
-#. text in the browser extension
-#. tooltip of the switch Send downloads through this browser's proxy or VPN extension in Chrome, Edge and the other Chromium browsers (they ask for no permission at the switch); keep the name Dannex Download Manager as it is
-#, machine
-extension	Dannex Download Manager then downloads through the same proxy as this browser. While this is off, the extension doesn't read the browser's proxy.	Dannex Download Manager ᎿᏉ ᏕᎦᏅᏗᎭ ᎾᏍᎩᏯᏉ ᎯᎠ ᏗᏓᏟᎶᏍᏗ ᎤᏤᎵ ᏗᏓᏟᎶᏍᏗ ᎢᏗᎬᏔᏅᎯ. ᎯᎠ ᎢᎬᏁᎸᎯ ᏂᎨᏒᎾ ᏥᎨᏐᎢ, ᎯᎠ ᏗᏓᏟᎶᏍᏗ ᎥᏝ ᏯᏓᏁᏟᏴᏍᎦ ᎯᎠ ᏗᏓᏟᎶᏍᏗ ᎤᏤᎵ ᏗᏓᏟᎶᏍᏗ.
+extension	Dannex Download Manager runs on Windows, Mac and Linux computers. Install it on one, and add this extension to a browser there.	Dannex Download Manager Windows, Mac ᎠᎴ Linux ᎧᎻᏳᏓ ᎭᏫᏂ ᏚᎸᏫᏍᏓᏁᎭ. ᏌᏉ ᎭᏫᏂ ᎢᏂᏍᏓᎵ, ᎠᎴ ᎾᎿ ᏇᎶᏌ ᎯᎠ ᎡᏍᏕᏂᏌᏂ ᎠᏁᏉᏤᏗ.
 #. text in the browser extension
 #. the extension's name in the browser's list of extensions and on its toolbar button; keep DDM Integration Module as it is (DDM is the short name of Dannex Download Manager)
 #, machine
 extension	DDM Integration Module	DDM Integration Module
 #. text in the browser extension
-#. tooltip of the toolbar button while the app downloads; the number is how many downloads are running (the button's badge shows it too); keep the name Dannex Download Manager as it is
-#. {count} = a number (keep the braces as they are)
+#. item in the right-click menu of the extension's toolbar button: leave this site's downloads to the browser from now on
 #, machine
-extension	DDM is downloading: {count}	DDM ᎠᏯᏙᎯᏍᎦ: {count}
-#. text in the browser extension
-#. button beside the box for a link at the top of the toolbar button's popup: hand the link typed or pasted there to the app; verb; short
-#. button beside a video, sound or stream in the toolbar button's popup: download it with the app; verb; short
-#, machine
-extension	Download	ᎠᏠᏯᏍᏗ
+extension	Don't take downloads from this site	ᎯᎠ ᏌᏱᏘ ᏅᏓᏳᏓᎴᏅᎯ ᏓᎤᏂᎶᏗ ᎥᏝ ᎠᏓᏂᎸᎢᏍᏗ
 #. text in the browser extension
 #. command in the browser's right-click menu on a page: download the pictures of the whole page (they open in the app's list to tick); keep the name Dannex Download Manager as it is
 #, machine
@@ -6533,9 +6908,17 @@ extension	Download all links with DDM	ᏗᏓᏂᏴᏗ ᏗᏕᎬᏔᏅᎢ ᏂᎦ�
 #, machine
 extension	Download all videos and audio with DDM	ᏂᎦᏛ ᎠᏁᏙᎲ ᏚᏟᎶᏍᏔᏅ ᎠᎴ ᎧᏁᎬ ᎠᏯᏙᎯᏍᏗ DDM ᎬᏗ
 #. text in the browser extension
+#. button on the status page (an extension page that says whether the browser reaches Dannex Download Manager and how to fix it): opens the app's download page for this computer's system; keep the name Dannex Download Manager as it is
+#, machine
+extension	Download Dannex Download Manager	Dannex Download Manager ᏓᎤᏂᎶᏗ
+#. text in the browser extension
 #. command in the browser's right-click menu on selected text: download the links in the selection; keep the name Dannex Download Manager as it is
 #, machine
 extension	Download selected links with DDM	ᏗᏓᏂᏴᏗ ᏗᏕᎬᏔᏅᎢ ᏗᏓᏂᏴᏗ ᏗᏕᎬᏔᏅᎢ DDM
+#. text in the browser extension
+#. label of a switch on the extension's options page, under More: the app downloads through the same proxy as this browser (one a VPN or proxy extension set)
+#, machine
+extension	Download through this browser's VPN or proxy	ᎯᎠ ᏇᎶᏌ ᎤᏤᎵ VPN ᎠᎴ ᏉᎩᏏ ᎬᏗ ᏓᎤᏂᎶᏗ
 #. text in the browser extension
 #. the button over a video on a web page that downloads it; verb; short (it sits on the video)
 #, machine
@@ -6545,18 +6928,29 @@ extension	Download video	ᏗᏓᏃᏍᏙᏗ ᏗᏓᏟᎶᏍᏗ
 #, machine
 extension	Download with DDM	ᏗᏓᏃᏍᏙᏗ DDM ᎢᎬᏁᏗ
 #. text in the browser extension
-#. heading in the toolbar button's popup over the list of the app's downloads (the running ones first, then the latest)
+#. the status page (an extension page that says whether the browser reaches Dannex Download Manager and how to fix it): the browser doesn't run the extension in private (incognito) windows
 #, machine
-extension	Downloads	ᏗᏯᏙᎯᏍᏗ
+extension	Downloads from private windows stay in the browser, because this extension isn't allowed there.	ᎤᏍᎦᎳᏛ ᏫᏂᏙ ᏅᏓᏳᏓᎴᏅᎯ ᏓᎤᏂᎶᏗ ᏇᎶᏌ ᎤᏍᏆᏂᎪᏕ, ᏅᏗᎦᎵᏍᏙᏗᎭ ᎯᎠ ᎡᏍᏕᏂᏌᏂ ᎥᏝ ᎾᎿ ᏳᏁᎳᏛ.
 #. text in the browser extension
-#. shown in the toolbar button's popup after the site was excluded
-#. {site} = a web site's name such as "example.com" (keep the braces as they are)
+#. headline of the extension's status page while downloads go to a Dannex Download Manager on another computer (a home server); keep the name Dannex Download Manager as it is
 #, machine
-extension	Downloads from {site} stay with the browser	ᏗᏓᏂᏴᏗ ᏗᏕᎬᏔᏅᎢ {site} ᏗᏓᏂᏴᏗ ᏗᏕᎬᏔᏅᎢ ᏗᏓᏂᏴᏗ ᏗᏕᎬᏔᏅᎢ
+extension	Downloads go to another Dannex Download Manager	ᏓᎤᏂᎶᏗ ᏅᏩᏓᎴ Dannex Download Manager ᏫᎦᎷᎪ
+#. text in the browser extension
+#. tooltip of the extension's toolbar button while downloads go to another computer's Dannex Download Manager; $address$ is its web address; keep the name Dannex Download Manager as it is
+#, machine
+extension	Downloads go to the Dannex Download Manager at {address}. Click to turn it off.	ᏓᎤᏂᎶᏗ {address} ᎡᎭ Dannex Download Manager ᏫᎦᎷᎪ. ᎧᎵᎩ ᎠᏲᎯᏍᏗ.
 #. text in the browser extension
 #. the toolbar button's status while downloads go to another DDM
 #, machine
 extension	Downloads go to {address}	ᎠᎾᏗᏒᏍᎬᎢ {address} ᏩᏂᎷᎪᎢ
+#. text in the browser extension
+#. the status page (an extension page that says whether the browser reaches Dannex Download Manager and how to fix it): connected and on; keep the name Dannex Download Manager as it is
+#, machine
+extension	Downloads you start in this browser go to Dannex Download Manager.	ᎯᎠ ᏇᎶᏌ ᎭᏫᏂ ᏣᎴᏅᎲ ᏓᎤᏂᎶᏗ Dannex Download Manager ᏫᎦᎷᎪ.
+#. text in the browser extension
+#. on the extension's status page under its headline: $address$ is the other computer's web address; keep the name Dannex Download Manager as it is
+#, machine
+extension	Downloads you start in this browser go to the Dannex Download Manager at {address}.	ᎯᎠ ᏇᎶᏌ ᎭᏫᏂ ᏣᎴᏅᎲ ᏓᎤᏂᎶᏗ {address} ᎡᎭ Dannex Download Manager ᏫᎦᎷᎪ.
 #. text in the browser extension
 #. tooltip of the download button over a video: it can be dragged to another place on the video's edge
 #, machine
@@ -6566,15 +6960,45 @@ extension	Drag to move it along the video's edge	ᎠᏌᎳᏗᏍᏗ ᎤᏓᎷᎪ
 #, machine
 extension	Enter its https:// address.	https:// ᎤᏃᎴ-ᎠᏂᏃᏔᏅᎯ ᎤᏃᎴᏍᏙᏗ ᎰᏪᎸᎦ.
 #. text in the browser extension
-#. state of a download in the toolbar button's popup: it stopped on an error (the app's reason follows); short
+#. the status page (an extension page that says whether the browser reaches Dannex Download Manager and how to fix it) in Firefox, for an add-on loaded with Load Temporary Add-on
 #, machine
-extension	Failed	ᎤᏲ ᏄᎵᏍᏔᏅ
+extension	Firefox will remove this add-on when it closes, because it was added as a temporary add-on.	Firefox ᎯᎠ ᎠᏓ-ᎣᏂ ᏓᏄᎪᏫᏏ ᎤᏍᏚᏛ ᎢᏳᏃ, ᏅᏗᎦᎵᏍᏙᏗᎭ ᎤᏍᏗ ᎢᎪᎯᏛ ᎠᏓ-ᎣᏂ ᎾᏍᎩᏯ ᎤᏁᏉᏨ.
+#. text in the browser extension
+#. note on the extension's options page, for sending downloads to another computer's Dannex Download Manager: the browser warns about its own certificate once; Options, Remote and Pair a device are names in that app
+#, machine
+extension	First open its address in this browser and continue past the security warning. Then enter the code from its Options → Remote → Pair a device.	ᎢᎬᏱ ᎤᏤᎵ ᎠᏗᎵᏏ ᎯᎠ ᏇᎶᏌ ᎭᏫᏂ ᎠᏍᏚᎢᏍᏗ ᎠᎴ ᏏᎩᏳᎵᏘ ᎤᏁᏨ ᎠᎶᎯᏍᏗ. ᎿᏉ ᎪᏗ ᎪᏪᎶᏗ, ᎤᏤᎵ ᎣᏆᏏᏂ → ᎵᎼᏘ → ᏗᏯᏏ ᎠᏓᏚᏓᎵᏍᏗ ᏅᏓᏳᏓᎴᏅᎯ.
+#. text in the browser extension
+#. beside the download button on the status page (an extension page that says whether the browser reaches Dannex Download Manager and how to fix it), on Linux
+#, machine
+extension	For Linux (AppImage, .deb or .rpm).	Linux ᎤᎬᏩᎵ (AppImage, .deb ᎠᎴ .rpm).
+#. text in the browser extension
+#. beside the download button on the status page (an extension page that says whether the browser reaches Dannex Download Manager and how to fix it), on a Mac
+#, machine
+extension	For Mac (a .dmg disk image).	Mac ᎤᎬᏩᎵ (.dmg ᏗᏍᎩ ᎢᎻᏥ).
+#. text in the browser extension
+#. beside the download button on the status page (an extension page that says whether the browser reaches Dannex Download Manager and how to fix it), on Windows
+#, machine
+extension	For Windows 10 and 11.	Windows 10 ᎠᎴ 11 ᎤᎬᏩᎵ.
+#. text in the browser extension
+#. beside the download button on the status page (an extension page that says whether the browser reaches Dannex Download Manager and how to fix it), on a system the app doesn't run on (a phone, a Chromebook)
+#, machine
+extension	For Windows, Mac and Linux computers.	Windows, Mac ᎠᎴ Linux ᎧᎻᏳᏓ ᎤᎬᏩᎵ.
+#. text in the browser extension
+#. item of the right-click menu of the extension's toolbar button, only in the copy loaded by hand from the app's folder: opens the extension's page in the Chrome Web Store; keep Chrome Web Store as Google names it in this language
+#. the trailing ... means it is still going on: keep it
+#, machine
+extension	Get automatic updates from the Chrome Web Store...	Chrome Web Store ᏅᏓᏳᏓᎴᏅᎯ ᎤᏩᏒ ᎠᏆᏕᏘ ᎠᏓᏂᎸᎢᏍᏗ...
+#. text in the browser extension
+#. shown once on the status and options pages of the copy loaded by hand from the app's folder, when the extension is in the Chrome Web Store; keep DDM Integration Module as it is
+#, machine
+extension	Get automatic updates: add this extension from the Chrome Web Store, then remove this copy.	ᎤᏩᏒ ᎠᏆᏕᏘ ᎠᏓᏂᎸᎢᏍᏗ: ᎯᎠ ᎡᏍᏕᏂᏌᏂ Chrome Web Store ᏅᏓᏳᏓᎴᏅᎯ ᎠᏁᏉᏤᏗ, ᎿᏉ ᎯᎠ ᎧᏈ ᎠᏄᎪᏫᏍᏗ.
 #. text in the browser extension
 #. the extension's description in the browser's list of extensions; keep the name Dannex Download Manager as it is
 #, machine
 extension	Hands downloads from the browser to Dannex Download Manager.	ᏗᏓᏃᏍᏙᏗ ᏗᎦᏃᏍᏙᏗ ᏗᏓᏃᏍᏙᏗ ᏗᏓᏃᏍᏙᏗ Dannex Download Manager ᎢᎬᏁᏗ.
 #. text in the browser extension
-#. link in the toolbar button's popup to the help page
+#. link at the bottom of the extension's status and options pages: opens the help page
+#. item in the right-click menu of the extension's toolbar button: opens its status page (how things stand, what to do, the help page)
 #, machine
 extension	Help	ᎠᎵᏍᏕᎸᏙᏗ
 #. text in the browser extension
@@ -6582,54 +7006,50 @@ extension	Help	ᎠᎵᏍᏕᎸᏙᏗ
 #, machine
 extension	Hide on this video	ᎦᏙᎬᎢ ᎯᎠ ᏗᏓᏟᎶᏍᏗ ᎦᎸᎳᏗᏢ
 #. text in the browser extension
-#. hint in the toolbar button's popup; Alt is the keyboard key
+#. on the status page (an extension page that says whether the browser reaches Dannex Download Manager and how to fix it) after: Update Dannex Download Manager to use everything this extension offers; keep the name Dannex Download Manager as it is
+#. the trailing ... means it is still going on: keep it
 #, machine
-extension	Hold Alt while clicking a link to let the browser download it.	Alt ᏗᏓᏂᏴᏗ ᏗᏕᎬᏔᏅᎢ ᏗᏓᏂᏴᏗ ᏗᏕᎬᏔᏅᎢ ᏗᏓᏂᏴᏗ ᏗᏕᎬᏔᏅᎢ ᏗᏓᏂᏴᏗ ᏗᏕᎬᏔᏅᎢ.
+extension	In Dannex Download Manager, choose Help → Check for updates...	Dannex Download Manager ᎭᏫᏂ, ᎯᎠ ᎠᏑᏰᏍᏗ: ᎠᏍᏕᎸᏗ → ᎠᏆᏕᏘ ᎠᏲᎮᏍᏗ...
 #. text in the browser extension
-#. hint in the toolbar button's popup: the keys chosen in the app's Options → General → Keys... that have the app download any clicked link, whatever its file type; keep the name Dannex Download Manager as it is
+#. a step on the status page (an extension page that says whether the browser reaches Dannex Download Manager and how to fix it), on Linux; keep the name Dannex Download Manager as it is
 #, machine
-extension	Hold {keys} while clicking a link to download it with Dannex Download Manager, whatever its type.	{keys} ᎯᏂᏴ ᎠᏍᏓᏱᏛ ᏕᎭᏍᏓᎷᎩᏍᎬ, Dannex Download Manager ᎬᏗ ᎠᏯᏙᎯᏍᏗ ᏂᎦᎥ ᎢᏳᏍᏗ ᏱᎩ.
-#. text in the browser extension
-#. hint in the toolbar button's popup: the keys chosen in the app's Options → General → Keys... that leave a clicked link to the browser
-#, machine
-extension	Hold {keys} while clicking a link to let the browser download it.	{keys} ᎯᏂᏴ ᎠᏍᏓᏱᏛ ᏕᎭᏍᏓᎷᎩᏍᎬ, ᎠᎦᏙᎥᎯᏍᏗ ᎤᏯᏙᎯᏍᏗ.
-#. text in the browser extension
-#. link under a connection problem in the toolbar button's popup, to the help page's section for it
-#, machine
-extension	How to fix it	ᎢᏳᏍᏗ ᎢᏯᏛᏁᏗ
+extension	Install the .deb or .rpm (or run the AppImage), then start Dannex Download Manager once.	.deb ᎠᎴ .rpm ᎢᏂᏍᏓᎵ (ᎠᎴ AppImage ᎠᎴᏅᏗ), ᎿᏉ Dannex Download Manager ᏌᏉ ᎢᏳᏩᎫᏗ ᎠᎴᏅᏗ.
 #. text in the browser extension
 #. pairing failed for another reason
 #, machine
 extension	It didn't work. Try again.	ᎥᏝ ᏳᎵᏍᏔᏁᎢ. ᏔᎵᏁ ᎢᏣᏢᏓᎳ.
 #. text in the browser extension
-#. pairing failed: the other DDM shows no pairing code; Pair a device is its button
-#, machine
-extension	It shows no code now: click Pair a device there first.	ᎥᏝ ᎪᏪᎵ ᏳᎾᏄᎪᏥᎭ ᎪᎯ ᎢᏳᎢ: ᎢᎬᏱ ᎾᎿ ᎢᏣᏢᏓᎳ ᎪᏪᎵ ᎢᏣᏛᏅᎢᏍᏓ.
-#. text in the browser extension
 #. why a download stayed with the browser: the file is smaller than the app's minimum size setting
 #, machine
-extension	It's smaller than the minimum size in Options → File types.	ᎠᏍᎦᏅᏗᏳ ᎤᏍᏗᎩᏓ ᎡᏍᎦᏂ ᎤᏍᏗᎩᏓ ᎦᏟᎶᏍᏗ ᎨᏒᎢ ᎾᎿ ᎪᎯᏍᏗ → ᏗᏓᏟᎶᏍᏗ ᎢᏳᏍᏗ ᎢᏯᏓᏛᏁᏗ.
+extension	It's smaller than the smallest file Dannex Download Manager takes (Options → File types).	ᎤᏣᏘ ᎤᏍᏗ, Dannex Download Manager ᎤᏓᏂᎸᎢᏍᏗ (ᎣᏆᏏᏂ → ᎪᏪᎵ ᏄᏍᏛ).
+#. text in the browser extension
+#. on the extension's status page while its switch is off: every download stays with the browser
+#, machine
+extension	It's turned off, so downloads stay in this browser.	ᎠᏲᎯᏒ, ᎾᏍᎩ ᎢᏳᏍᏗ ᏓᎤᏂᎶᏗ ᎯᎠ ᏇᎶᏌ ᎤᏍᏆᏂᎪᏗ.
 #. text in the browser extension
 #. why a download stayed with the browser: its address matches the app's list of addresses not to take
 #, machine
-extension	Its address is in Options → File types, addresses left to the browser.	ᎤᏤᎵᎦ ᏗᎦᏛᏗ ᎨᏒ ᎾᎿ ᎪᎯᏍᏗ → ᏗᏓᏟᎶᏍᏗ ᎢᏳᏍᏗ ᎢᏯᏓᏛᏁᏗ, ᏗᎦᏛᏗ ᎨᏒ ᏗᏕᎪᏗ ᎨᏒᎢ.
-#. text in the browser extension
-#. why a download stayed with the browser: its web site is on the app's list of sites not to take downloads from
-#, machine
-extension	Its site is in Options → File types, sites left to the browser.	ᎤᏤᎵᎦ ᏗᎦᏛᏗ ᎨᏒ ᎾᎿ ᎪᎯᏍᏗ → ᏗᏓᏟᎶᏍᏗ ᎢᏳᏍᏗ ᎢᏯᏓᏛᏁᏗ, ᏗᎦᏛᏗ ᎨᏒ ᏗᏕᎪᏗ ᎨᏒᎢ.
+extension	Its address is on Dannex Download Manager's list of addresses to leave alone (Options → File types).	ᎤᏤᎵ ᎠᏗᎵᏏ Dannex Download Manager ᎤᏤᎵ ᎵᏍᏘ ᎭᏫᏂ ᎡᎭ, ᎠᏗᎵᏏ ᎥᏝ ᏧᏓᏂᎸᎢᏍᏗ (ᎣᏆᏏᏂ → ᎪᏪᎵ ᏄᏍᏛ).
 #. text in the browser extension
 #. why a download stayed with the browser: its file type isn't on the app's list; Options and File types are the app's window and its page, as the app names them
 #, machine
-extension	Its type isn't in Options → File types.	ᎤᏤᎵᎦ ᎢᏳᏍᏗ ᎢᏯᏓᏛᏁᏗ ᎨᏒ ᎾᎿ ᎪᎯᏍᏗ → ᏗᏓᏟᎶᏍᏗ ᎢᏳᏍᏗ ᎢᏯᏓᏛᏁᏗ.
+extension	Its file type isn't on Dannex Download Manager's list (Options → File types).	ᎤᏤᎵ ᎪᏪᎵ ᏄᏍᏛ ᎥᏝ Dannex Download Manager ᎤᏤᎵ ᎵᏍᏘ ᎭᏫᏂ ᏱᎡᎭ (ᎣᏆᏏᏂ → ᎪᏪᎵ ᏄᏍᏛ).
 #. text in the browser extension
-#. in the toolbar button's popup: the last download the extension let the browser keep instead of handing it to the app; followed by why (one of the declined_* texts)
-#. {name} = a file name (keep the braces as they are)
+#. why a download stayed with the browser: its web site is on the app's list of sites not to take downloads from
 #, machine
-extension	Left to the browser: {name}	ᏗᏕᎪᏗ ᎨᏒᎢ: {name}
+extension	Its site is on Dannex Download Manager's list of sites to leave alone (Options → File types).	ᎤᏤᎵ ᏌᏱᏘ Dannex Download Manager ᎤᏤᎵ ᎵᏍᏘ ᎭᏫᏂ ᎡᎭ, ᏌᏱᏘ ᎥᏝ ᏧᏓᏂᎸᎢᏍᏗ (ᎣᏆᏏᏂ → ᎪᏪᎵ ᏄᏍᏛ).
 #. text in the browser extension
-#. beside a stream in the toolbar button's popup: it is a live broadcast (no fixed length); short
+#. a step on the status page (an extension page that says whether the browser reaches Dannex Download Manager and how to fix it); keep the name Dannex Download Manager as it is
 #, machine
-extension	Live	ᎬᏃᏛ
+extension	Keep this page open. It changes by itself when Dannex Download Manager is ready.	ᎯᎠ ᏇᏥ ᎠᏍᏚᎢᏛ ᎠᏍᏆᏂᎪᏗ. Dannex Download Manager ᎤᏛᏅᎢᏍᏔᏅ ᎢᏳᏃ ᎤᏩᏒ ᎤᏁᏟᏴᏍᏗ.
+#. text in the browser extension
+#. link on the extension's status page under a note: opens the help page's section about it
+#, machine
+extension	Learn more	ᎤᏟ ᎠᎦᏙᎥᎯᏍᏗ
+#. text in the browser extension
+#. title of the status page (an extension page that says whether the browser reaches Dannex Download Manager and how to fix it) while it asks for the first time; keep the name Dannex Download Manager as it is
+#, machine
+extension	Looking for Dannex Download Manager…	Dannex Download Manager ᎠᏲᎮᏍᎦ…
 #. text in the browser extension
 #. in the menu that opens from the download button over a video, while the app finds which qualities (resolutions, formats) the video can be downloaded in
 #, machine
@@ -6639,9 +7059,9 @@ extension	Looking up the qualities…	ᎦᏙᎨᏍᏗ ᎢᏳᏍᏗ ᎨᏒᎢ…
 #, machine
 extension	Looking up took too long	ᏗᎪᏪᎵ ᎦᏅᎯᏓ ᎨᏒᎢ
 #. text in the browser extension
-#. heading in the toolbar button's popup over the list of the videos, sounds and streams the current web page has loaded
+#. the extension's options page: a section that opens on a click, holding the less used settings
 #, machine
-extension	Media on this page	ᎠᏰᎵ ᎢᏗᏓᏛᏗ ᎯᎠ ᎢᏗᏓᏛᏗ
+extension	More	ᎤᏟ
 #. text in the browser extension
 #. the small arrow next to the Download video button that opens its menu (read aloud by screen readers)
 #, machine
@@ -6652,34 +7072,25 @@ extension	More options	ᎤᏟ ᎢᎦᎢ ᏗᏓᏙᏢᏍᏔᏅᎢ
 #, machine
 extension	Never on {site}	ᏞᏍᏗ ᎢᎸᎯᏳ {site} ᎦᎸᎳᏗᏢ
 #. text in the browser extension
-#. button in the toolbar button's popup: leave this web site's downloads to the browser from now on
-#. {site} = a web site's name such as "example.com" (keep the braces as they are)
+#. the status page (an extension page that says whether the browser reaches Dannex Download Manager and how to fix it): after Check for updates found nothing new
 #, machine
-extension	Never take downloads from {site}	ᎥᏝ ᏗᏓᏂᏴᏗ ᏗᏕᎬᏔᏅᎢ ᏗᏓᏂᏴᏗ ᏗᏕᎬᏔᏅᎢ {site}
-#. text in the browser extension
-#. in the toolbar button's popup when the app's list of downloads is empty
-#, machine
-extension	No downloads yet.	ᎠᏏ ᎥᏝ ᏗᏯᏙᎯᏍᏗ.
-#. text in the browser extension
-#. shown in the toolbar button's popup when the current web page hasn't loaded any video, sound or stream yet
-#, machine
-extension	No video or sound found on this page yet. Play it, then open this again.	ᎥᏝ ᏗᎧᏃᎩᏍᏗ ᎠᎴ ᏗᎧᏃᎩᏍᏗ ᎯᎠ ᎢᏗᏓᏛᏗ. ᎢᏴᏓᏛᏗ, ᎿᏉ ᎯᎠ ᏔᎵᏁ ᎤᏍᏚᎢᏓ.
+extension	No newer version yet. The browser checks again by itself.	ᎠᏏ ᎥᏝ ᎢᏤ ᏪᏥᏂ. ᏇᎶᏌ ᎤᏩᏒ ᏔᎵᏁ ᎠᏲᎮᏍᎪ.
 #. text in the browser extension
 #. in the menu under the download button over a video: the app found no quality of the video it could download
 #, machine
 extension	No video to download here	ᎥᏝ ᏗᎪᏪᎵ ᏗᎪᏪᎵ ᎾᎿ
 #. text in the browser extension
-#. pairing failed: the other DDM didn't answer
+#. a step on the status page (an extension page that says whether the browser reaches Dannex Download Manager and how to fix it)
 #, machine
-extension	Not reached. Open its address once in this browser and accept its certificate, then try again.	ᎥᏝ ᏳᎾᎷᏤᎢ. ᎢᎬᏱ ᎾᏍᎩ ᎤᏃᎴᏍᏙᏗ ᎢᏣᏍᏚᎢᏓ ᎯᎠ ᎤᏃᎴ-ᎠᏂᏃᏔᏅᎯ ᎠᎴ ᎢᏣᏓᏂᎸᎦ ᎤᏤᎵᎦ ᎪᏪᎵ ᎤᏃᎯᏳᏓᏁᎯ, ᎿᏉᏃ ᏔᎵᏁ ᎢᏣᏢᏓᎳ.
+extension	Nothing after a minute? Restart the browser.	ᏌᏉ ᎢᏯᏔᏬᏍᏔᏅ ᎣᏂ ᎥᏝ ᎪᎱᏍᏗ? ᏇᎶᏌ ᏔᎵᏁ ᎠᎴᏅᏗ.
 #. text in the browser extension
-#. button in the toolbar button's popup; keep the name Dannex Download Manager as it is
+#. the badge on the extension's toolbar button while it takes no downloads (turned off); at most 4 characters, capitals if the language has them
 #, machine
-extension	Open DDM	ᎤᏍᏚᎢᏛ DDM
+extension	OFF	ᎥᏝ
 #. text in the browser extension
-#. button (an icon, read aloud and shown as a tooltip) on a finished download in the toolbar button's popup: show the file in its folder, as the app's command of that name
+#. button on the extension's status page when the app's own Options take no downloads from this browser: opens them in the app; keep the name Dannex Download Manager as it is
 #, machine
-extension	Open folder	ᏗᎪᏪᎵ ᎦᏁᎸ ᎤᏍᏚᎢᏍᏗ
+extension	Open Dannex Download Manager's Options	Dannex Download Manager ᎣᏆᏏᏂ ᎠᏍᏚᎢᏍᏗ
 #. text in the browser extension
 #. last command of the menu of qualities under the download button over a video: opens the app's Download video window for this video instead; keep the name Dannex Download Manager as it is
 #, machine
@@ -6689,18 +7100,21 @@ extension	Open in DDM…	ᎤᎵᏍᏚᎢᏍᏗ DDM ᎢᏯᏛᏁᏗ…
 #, machine
 extension	Open it	ᎢᏣᏍᏚᎢᏓ
 #. text in the browser extension
-#. help under the pairing boxes; Options, Remote and Pair a device are the app's window, tab and button; keep dannexdownloadmanager-cli pair as it is
+#. a step on the status page (an extension page that says whether the browser reaches Dannex Download Manager and how to fix it), on a Mac; keep the name Dannex Download Manager as it is
 #, machine
-extension	Open its address once and accept its certificate, then enter a code from its Options, Remote, Pair a device (or dannexdownloadmanager-cli pair).	ᎢᎬᏱ ᎾᏍᎩ ᎤᏃᎴᏍᏙᏗ ᎢᏣᏍᏚᎢᏓ ᎠᎴ ᎢᏣᏓᏂᎸᎦ ᎤᏤᎵᎦ ᎪᏪᎵ ᎤᏃᎯᏳᏓᏁᎯ, ᎿᏉᏃ ᎢᏣᎰᏪᎸᎦ ᎪᏪᎵ ᎾᎿ ᎤᏤᎵᎦ ᎢᏯᏓᏅᏖᏗ, ᎢᏅᎯᏳ, ᎢᏣᏢᏓᎳ ᎪᏪᎵ (ᎠᎴ dannexdownloadmanager-cli pair).
+extension	Open the .dmg, drag Dannex Download Manager to Applications, and start it once.	.dmg ᎠᏍᏚᎢᏍᏗ, Dannex Download Manager ᎠᏯᏅᏗ ᎠᎴ Applications ᏩᏴᏗ, ᎠᎴ ᏌᏉ ᎢᏳᏩᎫᏗ ᎠᎴᏅᏗ.
+#. text in the browser extension
+#. button: opens the extension's page in the Chrome Web Store; keep Chrome Web Store as Google names it in this language
+#, machine
+extension	Open the Chrome Web Store	Chrome Web Store ᎠᏍᏚᎢᏍᏗ
+#. text in the browser extension
+#. button: opens the browser's own page for this extension (its details: site access, private windows, Remove)
+#, machine
+extension	Open the extensions page	ᎡᏍᏕᏂᏌᏂ ᏇᏥ ᎠᏍᏚᎢᏍᏗ
 #. text in the browser extension
 #. shown briefly on the download button over a video in a feed (a social site's home page, a timeline) when nothing in the feed gives that video's own address, so nothing was sent: the user should open the post the video belongs to and click the button on that page; short
 #, machine
 extension	Open the post, then use the button there	ᎤᎵᏍᏚᎢᏒᎢ ᏗᎪᏪᎵ, ᎿᏉ ᎢᏗᏴᏔᏅᎢ ᎾᎿ
-#. text in the browser extension
-#. button in the toolbar button's popup: open the app's Options
-#. the trailing ... means it is still going on: keep it
-#, machine
-extension	Options...	ᏗᏓᏂᏴᏗ ᏗᏕᎬᏔᏅᎢ...
 #. text in the browser extension
 #. button: pair this browser with the other DDM using the code
 #, machine
@@ -6710,121 +7124,146 @@ extension	Pair	ᎢᏣᏢᏓᎳ
 #, machine
 extension	Pairing code	ᎢᏣᏢᏓᎳ ᎪᏪᎵ
 #. text in the browser extension
-#. placeholder of the box at the top of the toolbar button's popup where a download's address is pasted
-#, machine
-extension	Paste a link to download	ᎠᏍᏓᏱᏛ ᎠᏂ ᎯᏍᏓᏱᏏ ᎠᏯᏙᎯᏍᏗ
-#. text in the browser extension
-#. button (an icon, read aloud and shown as a tooltip) on a running download in the toolbar button's popup; verb
-#, machine
-extension	Pause	ᏞᎩ ᎤᏲᎯᏍᏗ
-#. text in the browser extension
-#. button beside the heading Downloads in the toolbar button's popup: pause every running download; short
-#, machine
-extension	Pause all	ᏂᎦᏛ ᏞᎩ ᎤᏲᎯᏍᏗ
-#. text in the browser extension
-#. state of a download in the toolbar button's popup: stopped before it finished; short
-#, machine
-extension	Paused	ᏞᎩ ᎤᏲᎯᏍᏔᏅ
-#. text in the browser extension
-#. status when the user switched off taking downloads in the toolbar button's popup
-#, machine
-extension	Paused: downloads stay with the browser	ᎠᏅᏅᏗ: ᎠᎾᏓᏛᏗᏍᎩ ᎾᎿᏉ ᎤᎾᏕᎳᎰᏒᎢ
-#. text in the browser extension
-#. Option in the browser extension media list: put the page title before the original file name when downloading a detected media file
-#, machine
-extension	Prefix media file names with the page title	ᎢᏗᏓᏟᎶᏍᏗ ᏚᏙᎥ ᎢᎬᏱᏗᏢ ᏗᎪᏪᎶᏗ
-#. text in the browser extension
-#. shown instead of the Download button beside a copy-protected (DRM) stream in the toolbar button's popup: it can't be downloaded; short
-#, machine
-extension	Protected	ᎤᎦᏘᏗᏍᏗ
-#. text in the browser extension
 #. shown briefly on the download button when the video is copy-protected (DRM) and no tool can download it
 #, machine
 extension	Protected video: it can't be saved	ᎤᏍᏆᏂᎪᏛ ᎠᏛᎾᏗ: ᎥᏝ ᏰᎵ ᏱᏗᏍᏆᏂᎪᏗ
 #. text in the browser extension
-#. state of a download in the toolbar button's popup: waiting in a queue to start; short
+#. button on the status page (an extension page that says whether the browser reaches Dannex Download Manager and how to fix it): loads the extension again from its folder
 #, machine
-extension	Queued	ᎠᎦᏘᏯ
+extension	Reload the extension	ᎡᏍᏕᏂᏌᏂ ᏔᎵᏁ ᎠᏍᏚᎢᏍᏗ
 #. text in the browser extension
-#. button (an icon, read aloud and shown as a tooltip) on a paused, waiting or failed download in the toolbar button's popup: start it again; verb
+#. the status page (an extension page that says whether the browser reaches Dannex Download Manager and how to fix it): after the app is newer than this extension, for the copy loaded by hand; keep the name Dannex Download Manager as it is
 #, machine
-extension	Resume	ᏔᎵᏁ ᎤᎴᏅᏗ
+extension	Reload the extension to use it.	ᎡᏍᏕᏂᏌᏂ ᏔᎵᏁ ᎠᏍᏚᎢᏍᏗ, ᎬᏙᏗ ᎢᏳᎵᏍᏙᏗ.
 #. text in the browser extension
-#. switch in the toolbar button's popup: on, the app downloads through the same proxy the browser uses (one a VPN or proxy extension sets); the browser then asks once to allow reading it
+#. title of the status page (an extension page that says whether the browser reaches Dannex Download Manager and how to fix it) when the extension is installed twice in one browser and this copy stands aside
+#. button: removes this copy of the extension from the browser (the browser asks first)
 #, machine
-extension	Send downloads through this browser's proxy or VPN extension	ᏕᎦᏅᏍᏓᏗᏍᎬ ᎯᎠ ᎢᏗᏢ ᎢᏯᏛᏁᎯ ᏗᏟᎶᏍᏔᏅᎯ ᎢᏗᏢ ᎠᎴ ᎠᏙᏢᎢ ᎢᏗᏢ ᎢᏯᏛᏁᎯ ᎢᏗᏢ ᏫᏗᎦᏅᏍᏓᏗᏍᎬ
+extension	Remove this copy	ᎯᎠ ᎧᏈ ᎠᏄᎪᏫᏍᏗ
 #. text in the browser extension
-#. heading in the toolbar button's popup, above the choice of where downloads go
+#. a step on the status page (an extension page that says whether the browser reaches Dannex Download Manager and how to fix it), on Windows; Set up browser integration is the setup's own option
+#, machine
+extension	Run the setup you downloaded.	ᏂᎯ ᏓᎤᏂᎶᏗ ᏎᏓᏈ ᎠᎴᏅᏗ.
+#. text in the browser extension
+#. the status page (an extension page that says whether the browser reaches Dannex Download Manager and how to fix it): the connection to the app failed; keep the name Dannex Download Manager as it is
+#, machine
+extension	Security software is the usual cause. Allow Dannex Download Manager in your antivirus program, or install it again.	ᏂᎪᎯᎸ ᏏᎩᏳᎵᏘ ᏆᎪᎳᎻ ᎾᏍᎩ ᎢᏳᏍᏗ ᎦᎵᏍᏙᏗᎭ. Dannex Download Manager ᎠᏁᎳᏗᏍᏗ ᏣᏤᎵ ᏩᏱᎳᏏ ᏆᎪᎳᎻ ᎭᏫᏂ, ᎠᎴ ᏔᎵᏁ ᎢᏂᏍᏓᎵ.
+#. text in the browser extension
+#. link on the extension's options page, after a line saying what is wrong: opens the extension's status page
+#, machine
+extension	See what to do	ᎦᏙ ᎢᏯᏛᏁᏗ ᎠᎪᏩᏛᏗ
+#. text in the browser extension
+#. heading on the extension's options page, under More: where downloads go (this computer, or another computer's Dannex Download Manager)
 #, machine
 extension	Send downloads to	ᎠᎾᏗᏒᏍᎬᎢ ᏩᏂᎷᎪᎢ
+#. text in the browser extension
+#. label of the on/off switch on the extension's status and options pages (the same as a click on its toolbar button): when on, downloads started in this browser go to the app; keep the name Dannex Download Manager as it is
+#, machine
+extension	Send downloads to Dannex Download Manager	ᏓᎤᏂᎶᏗ Dannex Download Manager ᎠᏅᏍᏗ
 #. text in the browser extension
 #. shown briefly on the download button after it was clicked; keep the name Dannex Download Manager as it is
 #, machine
 extension	Sent to DDM	ᎦᎴᏅᏔᏅᎢ DDM ᎢᎬᏁᏗ
 #. text in the browser extension
-#. the Shift key's name, in the popup's hint about the keys held while clicking a link; as the keyboard shows it (e.g. Umschalt in German)
+#. headline of the extension's status page, and the first line of its toolbar button's tooltip: the browser started the app's small helper, but it stopped at once (usually security software); keep the name Dannex Download Manager as it is
 #, machine
-extension	Shift	Shift
+extension	Something is blocking Dannex Download Manager	ᎪᎱᏍᏗ Dannex Download Manager ᎠᏍᏚᏗᏍᎦ
 #. text in the browser extension
-#. check box in the toolbar button's popup: on, downloads go to the app; off, the browser keeps them
+#. read out by screen readers in the menu of qualities under the download button over a video, after the user picked a quality while the app is still looking the video up: the download starts by itself once the app has finished; keep the short name DDM as it is
 #, machine
-extension	Take downloads from this browser	ᎯᎠ ᎠᎾᏓᏛᏗᏍᎩ ᎯᎠ ᎾᎿᏉ ᎤᎾᏕᎳᎰᏒᎢ
+extension	Starting as soon as DDM is ready…	DDM ᎤᏛᏅᎢᏍᏔᏅ ᎢᏳᏃ ᎦᎴᏅᏗ…
 #. text in the browser extension
-#. shown under the box for a link in the toolbar button's popup when what was typed isn't an address the app downloads
+#. link at the bottom of the extension's status and options pages, beside Help: opens the maintainer's page for donations (GitHub Sponsors) in a new tab; keep DDM as it is (the short name of Dannex Download Manager)
 #, machine
-extension	That isn't a web or FTP address.	ᎾᏍᎩ ᎥᏝ ᎦᏙᎯ ᎠᎴ FTP ᏅᏃᎯ ᏱᎩ.
+extension	Support DDM	DDM ᎠᏍᏕᎸᏗ
 #. text in the browser extension
-#. in the toolbar button's popup, on a site where the Chrome Web Store's copy of the extension shows no download button; Help is the link at the bottom of the popup
+#. in the menu of qualities under the download button over a video: the user picked a quality from the list the page gave, and the app's own look-up of the video doesn't offer it, so nothing was downloaded; the app's list is shown under it
 #, machine
-extension	The Chrome Web Store's rules keep this copy of the add-on away from this site's videos. Help says what you can do.	Chrome Web Store ᏗᎧᎿᏩᏛᏍᏗ ᎯᎠ ᎤᏁᏉᏤᏗ ᎠᏂ ᏩᏈᏌᏘ ᏫᏗᎣ ᎤᏁᎳᏅᏗ ᎥᏝ ᏱᏙᎬᏩᏚᎵᏍᎦ. Help ᎾᏍᎩ ᎦᏙ ᏰᎵ ᏱᏣᏛᏁᎭ ᎠᏎᏍᏗ.
+extension	That quality isn't available: choose another	ᎾᏍᎩ ᏄᏍᏛ ᎥᏝ ᏰᎵ: ᏅᏩᏓᎴ ᎠᏑᏰᏍᏗ
 #. text in the browser extension
-#. status when the connection to the app broke off (often security software blocking it); keep the name Dannex Download Manager as it is
+#. the status page (an extension page that says whether the browser reaches Dannex Download Manager and how to fix it): the app didn't start in time; keep the name Dannex Download Manager as it is
 #, machine
-extension	The connection to Dannex Download Manager failed	ᎤᎾᏕᎳᎰᏒᎢ Dannex Download Manager ᎤᏲᏒᎢ
+extension	The browser tried to start it, but it took too long. Start Dannex Download Manager yourself, then try again.	ᏇᎶᏌ ᎤᎴᏅᏗ ᎤᏓᏬᎯᎴ, ᎠᏎᏃ ᎤᏣᏘ ᎢᎪᎯᏛ ᎤᏁᎸ. Dannex Download Manager ᏂᎯ ᎠᎴᏅᏗ, ᎿᏉ ᏔᎵᏁ ᎢᏯᏛᏁᏗ.
+#. text in the browser extension
+#. the status page (an extension page that says whether the browser reaches Dannex Download Manager and how to fix it): after the app is newer than this extension, for the copy from the Chrome Web Store; Check for updates is the button's name
+#, machine
+extension	The browser updates it by itself within a few hours, or now with Check for updates.	ᏇᎶᏌ ᎤᏩᏒ ᎠᏆᏕᏘ ᎢᏯᏛᏁᏗ ᎢᎸᏍᎩ ᎢᏳᏟᎶᏛ ᎭᏫᏂ, ᎠᎴ ᎪᎯ “ᎠᏆᏕᏘ ᎠᏲᎮᏍᏗ” ᎬᏗ.
+#. text in the browser extension
+#. the status page (an extension page that says whether the browser reaches Dannex Download Manager and how to fix it): two copies of the extension in one browser; keep DDM Integration Module as it is
+#, machine
+extension	The copy from the Chrome Web Store is installed in this browser too, and it keeps itself up to date. This copy isn't needed.	Chrome Web Store ᏅᏓᏳᏓᎴᏅᎯ ᎧᏈ ᎯᎠ ᏇᎶᏌ ᎭᏫᏂ ᎾᏍᏉ ᎢᏂᏍᏓᎵ ᏄᏩᏁᎸ, ᎠᎴ ᎤᏩᏒ ᎢᏤ ᎢᎬᏁᎭ. ᎯᎠ ᎧᏈ ᎥᏝ ᏱᏚᎵᏍᎪ.
 #. text in the browser extension
 #. shown briefly on the download button over a video when the app's settings keep the button off on this web site
 #, machine
 extension	The download button is off on this site	ᎠᎾᏓᏛᏗᏍᎩ ปุ่ม ᎯᎠ ᎾᎿᏉ ᎤᎾᏕᎳᎰᏒᎢ
 #. text in the browser extension
-#. why a download stayed with the browser: the user limited the extension's access to web sites in the browser, so it can't pass the sign-in on
+#. headline of the extension's status page, and the first line of its toolbar button's tooltip: a download carried too much sign-in data (cookies) to hand over, so the browser kept it; keep the name Dannex Download Manager as it is
 #, machine
-extension	The extension isn't allowed to read this site (the browser's site access).	ᏗᏓᏟᎶᏍᏗ ᎨᏒ ᎥᏝ ᎤᎵᏍᎪᎸᏔᏅᎯ ᏱᎩ ᎯᎠ ᏗᎦᏛᏗ ᎨᏒ ᎤᎾᏕᎶᏆᏍᏗ (ᏗᏓᏟᎶᏍᏗ ᎤᏤᎵᎦ ᏗᎦᏛᏗ ᎨᏒ ᎤᎾᏕᎶᏆᏍᏗ).
+extension	The last download couldn't go to Dannex Download Manager	ᎣᏂᏱ ᏓᎤᏂᎶᏗ ᎥᏝ ᏰᎵ Dannex Download Manager ᏫᎦᎷᏥ ᏱᎨᏎ
 #. text in the browser extension
-#. in the toolbar button's popup when the last download the browser kept came from a private window (its name isn't kept); followed by why (one of the declined_* texts)
+#. on the extension's status page under its headline: a download carried too many cookies to hand over; keep the name Dannex Download Manager as it is
 #, machine
-extension	The last download was left to the browser.	ᎤᎵᏍᏆᎸᏗ ᏗᎦᏛᏗ ᎨᏒ ᏗᏕᎪᏗ ᎨᏒᎢ.
+extension	The site sent more sign-in data than Dannex Download Manager accepts, so the browser kept the download. Signing out of the site and back in usually fixes it.	ᏌᏱᏘ ᎤᏟ ᎤᏣᏘ ᎶᎩᏂ ᏗᎪᏪᎵ ᎤᏅᏒ Dannex Download Manager ᎠᏓᏂᎸᎢᏍᎬ ᎡᏍᎦᏉ, ᎾᏍᎩ ᎢᏳᏍᏗ ᏇᎶᏌ ᏓᎤᏂᎶᏗ ᎤᏍᏆᏂᎪᏕ. ᏌᏱᏘ ᏅᏓᏳᏓᎴᏅᎯ ᎠᏂᎩᏍᏗ ᎠᎴ ᏔᎵᏁ ᎶᎩᏂ, ᏂᎪᎯᎸ ᎣᏏᏳ ᏂᎦᎵᏍᏗᎭ.
 #. text in the browser extension
-#. in the toolbar button's popup, under Media on this page, when the video or sound chosen is no longer among what the page loaded (the tab went to another page)
+#. pairing failed: the other DDM shows no pairing code; Pair a device is its button
 #, machine
-extension	The page doesn't have it any more. Open this list again.	ᎪᏪᎸᎢ ᎥᏝ ᎿᏉ ᏳᏁᎭ. ᏔᎵᏁ ᎯᎠ ᏗᎪᏪᎶᏙᏗ ᎯᏍᏚᎢᏒ.
+extension	There's no code to enter yet: click Pair a device there first.	ᎠᏏ ᎥᏝ ᎪᏗ ᏯᎭ ᎪᏪᎶᏗ: ᎢᎬᏱ ᎾᎿ “ᏗᏯᏏ ᎠᏓᏚᏓᎵᏍᏗ” ᎧᎵᎩ.
 #. text in the browser extension
 #. why a download stayed with the browser: the app's Options don't capture downloads from this browser (its box is unticked in the list of browsers)
 #, machine
-extension	This browser isn't ticked in Options → General.	ᎯᎠ ᏗᏓᏟᎶᏍᏗ ᎨᏒ ᎥᏝ ᎤᎵᏍᎪᎸᏔᏅᎯ ᏱᎩ ᎾᎿ ᎪᎯᏍᏗ → ᎦᎸᎳᏗᏢ.
+extension	This browser isn't ticked in Dannex Download Manager's Options → General.	ᎯᎠ ᏇᎶᏌ ᎥᏝ ᏳᏑᏰᏛ Dannex Download Manager ᎣᏆᏏᏂ → ᏤᏁᎳ ᎭᏫᏂ.
 #. text in the browser extension
-#. choice under Send downloads to: the Dannex Download Manager on this computer
+#. choice on the extension's options page, under Send downloads to: this computer's Dannex Download Manager
 #, machine
 extension	This computer	ᎯᎠ ᎢᏗᎾᏓᏟᏃᏅᎯ
 #. text in the browser extension
-#. status when a download carried too much data (very large cookies) to give to the app
+#. the status page (an extension page that says whether the browser reaches Dannex Download Manager and how to fix it): the user limited the extension's site access in the browser
 #, machine
-extension	This download's details were too large to hand over	ᎯᎠ ᎠᎾᏓᏛᏗᏍᎩ ᎤᎾᏕᎳᎰᏒᎢ ᎤᏟᎯᎨᎢ ᎤᎾᏕᎳᎰᏒᎢ
+extension	This extension is allowed on some sites only, so downloads from other sites stay in the browser.	ᎯᎠ ᎡᏍᏕᏂᏌᏂ ᎢᎸᏍᎩ ᏌᏱᏘ ᎤᏩᏒ ᎤᏁᎳᏛ, ᎾᏍᎩ ᎢᏳᏍᏗ ᏅᏩᏓᎴ ᏌᏱᏘ ᏓᎤᏂᎶᏗ ᏇᎶᏌ ᎤᏍᏆᏂᎪᏗ.
 #. text in the browser extension
-#. in the toolbar button's popup, when the page's player plays from a stream built in the page (a blob:): the list of the page's media has nothing to show; Download video is the name of the button over videos
+#. why a download stayed with the browser: the user limited the extension's access to web sites in the browser, so it can't pass the sign-in on
 #, machine
-extension	This page's player streams its video in pieces, so there's no file to list. Point at the video and use its Download video button.	ᎯᎠ ᎪᏪᎵ ᏫᏗᎣ ᏗᎪᏢᏔᏅ ᎠᏰᎵ ᎢᏯᏛᏁᎵ ᎠᏁᎭ, ᎾᏍᎩᏃ ᎥᏝ ᎠᏍᏆᏂᎪᏙᏗ ᏱᎩ ᎪᏪᎵ. ᏫᏗᎣ ᏂᏗᎦᎶᏍᏗ ᎠᎴ ᎤᏤᎵ Download video ᎠᏍᏗᏰᏗ ᎠᏂᏴᏫ.
+extension	This extension isn't allowed on that site.	ᎯᎠ ᎡᏍᏕᏂᏌᏂ ᎥᏝ ᎾᏍᎩ ᏌᏱᏘ ᏳᏁᎳᏛ.
 #. text in the browser extension
-#. in the toolbar button's popup, under Downloads, when the app is too old to list its downloads there; keep the name Dannex Download Manager as it is
+#. the status page (an extension page that says whether the browser reaches Dannex Download Manager and how to fix it): the app isn't installed or its browser integration isn't set up; keep the name Dannex Download Manager as it is
 #, machine
-extension	Update Dannex Download Manager to see its downloads here.	Dannex Download Manager ᎢᏤ ᎢᏯᏛᏁᏗ ᏗᏯᏙᎯᏍᏗ ᎠᏂ ᎬᏂᎨᏒ ᎢᏳᎵᏍᏙᏗ.
+extension	This extension works with Dannex Download Manager, a free download manager for your computer. Install it, and this page updates by itself.	ᎯᎠ ᎡᏍᏕᏂᏌᏂ Dannex Download Manager ᎢᏧᎳᎭ ᏚᎸᏫᏍᏓᏁᎭ, ᎥᏝ ᎠᏕᎸ ᏳᏚᎵᎭ ᏓᎤᏂᎶᏗ ᏆᎪᎳᎻ ᏣᏤᎵ ᎧᎻᏳᏓ ᎤᎬᏩᎵ. ᎢᏂᏍᏓᎵ, ᎠᎴ ᎯᎠ ᏇᏥ ᎤᏩᏒ ᎢᏤ ᏅᏛᏁᎵ.
 #. text in the browser extension
-#. status when the app is older than the extension; keep the name Dannex Download Manager as it is
+#. the status page (an extension page that says whether the browser reaches Dannex Download Manager and how to fix it): the app refuses this copy of the extension; keep the name Dannex Download Manager as it is
 #, machine
-extension	Update Dannex Download Manager to use everything this extension offers	ᎤᎾᏕᎳᎰᏒᎢ Dannex Download Manager ᎤᎾᏕᎳᎰᏒᎢ ᎯᎠ ᎾᎿᏉ ᎤᎾᏕᎳᎰᏒᎢ
+extension	This version of Dannex Download Manager is too old for this extension. Install the latest one.	ᎯᎠ Dannex Download Manager ᏪᏥᏂ ᎤᏣᏘ ᎤᏪᏘ ᎯᎠ ᎡᏍᏕᏂᏌᏂ ᎤᎬᏩᎵ. ᎤᏟ ᎢᏤ ᎢᏂᏍᏓᎵ.
 #. text in the browser extension
-#. why a download stayed with the browser: the app's setting 'Use advanced browser integration' is off; keep the setting's name as the app shows it
+#. the status page (an extension page that says whether the browser reaches Dannex Download Manager and how to fix it), in Firefox, after the text on private windows; Allow, Run in Private Windows and Add-ons and themes are Firefox's own names: use those Firefox shows in this language
 #, machine
-extension	Use advanced browser integration is off in Options → General.	ᎦᎸᎳᏗᏢ ᏗᏓᏟᎶᏍᏗ ᎨᏒ ᎤᎵᏍᎪᎸᏔᏅᎯ ᎥᏝ ᏱᎩ ᎾᎿ ᎪᎯᏍᏗ → ᎦᎸᎳᏗᏢ.
+extension	To change that, choose Allow beside Run in Private Windows on its page in Add-ons and themes.	ᎾᏍᎩ ᎠᏁᏟᏴᏍᏗ, “Add-ons and themes” ᎭᏫᏂ ᎤᏤᎵ ᏇᏥ, “Run in Private Windows” ᎾᎥ “Allow” ᎠᏑᏰᏍᏗ.
+#. text in the browser extension
+#. the status page (an extension page that says whether the browser reaches Dannex Download Manager and how to fix it), in Chrome, Edge and the like, after the text on private windows; Allow in Incognito is Chrome's own switch: use the name Chrome shows in this language
+#, machine
+extension	To change that, turn on Allow in Incognito on its details page.	ᎾᏍᎩ ᎠᏁᏟᏴᏍᏗ, ᎤᏤᎵ ᏇᏥ ᎭᏫᏂ “Allow in Incognito” ᎠᎴᏅᏗ.
+#. text in the browser extension
+#. button on the status page (an extension page that says whether the browser reaches Dannex Download Manager and how to fix it): asks the app again now
+#, machine
+extension	Try again	ᏔᎵᏁ ᎢᏯᏛᏁᏗ
+#. text in the browser extension
+#. note under the VPN or proxy switch on the extension's options page (Firefox, which asks for a permission)
+#, machine
+extension	Turn this on if you use a VPN or proxy extension in this browser. The browser asks you once to allow it.	ᎢᏳᏃ VPN ᎠᎴ ᏉᎩᏏ ᎡᏍᏕᏂᏌᏂ ᎯᎠ ᏇᎶᏌ ᎭᏫᏂ ᏣᎬᏙᏗᏍᎬ, ᎯᎠ ᎠᎴᏅᏗ. ᏇᎶᏌ ᏌᏉ ᎢᏳᏩᎫᏗ ᏓᏣᏛᏛᏂ ᎠᏁᎳᏗᏍᏗ.
+#. text in the browser extension
+#. note under the VPN or proxy switch on the extension's options page (Chrome, Edge and other Chromium browsers)
+#, machine
+extension	Turn this on if you use a VPN or proxy extension in this browser. While it's off, the extension doesn't look at the browser's proxy.	ᎢᏳᏃ VPN ᎠᎴ ᏉᎩᏏ ᎡᏍᏕᏂᏌᏂ ᎯᎠ ᏇᎶᏌ ᎭᏫᏂ ᏣᎬᏙᏗᏍᎬ, ᎯᎠ ᎠᎴᏅᏗ. ᎠᏲᎯᏒ ᎢᏳᏃ, ᎡᏍᏕᏂᏌᏂ ᎥᏝ ᏇᎶᏌ ᏉᎩᏏ ᏯᎦᏔᎰ.
+#. text in the browser extension
+#. headline of the extension's status page, and a line of its toolbar button's tooltip: the app's own Options take no downloads from this browser; keep the name Dannex Download Manager as it is
+#, machine
+extension	Turned off in Dannex Download Manager	Dannex Download Manager ᎭᏫᏂ ᎠᏲᎯᏒ
+#. text in the browser extension
+#. headline of the extension's status page, and the first line of its toolbar button's tooltip: the app on this computer is too old for this extension; keep the name Dannex Download Manager as it is
+#, machine
+extension	Update Dannex Download Manager	Dannex Download Manager ᎠᏆᏕᏘ
+#. text in the browser extension
+#. on the extension's status and options pages and in its toolbar button's tooltip: the app is older than the extension; downloads still work; keep the name Dannex Download Manager as it is
+#, machine
+extension	Update Dannex Download Manager to get everything this extension can do.	Dannex Download Manager ᎠᏆᏕᏘ, ᏂᎦᏛ ᎯᎠ ᎡᏍᏕᏂᏌᏂ ᏰᎵ ᎢᎬᏛᏁᏗ ᎠᏓᏂᎸᎢᏍᏗ.
 #. text in the browser extension
 #. tab above the list of qualities in the menu under the download button over a video: the choices that include picture (video with sound); short, one word
 #, machine
@@ -6834,6 +7273,10 @@ extension	Video	ᏗᎪᏪᎵ
 #, machine
 extension	Wait a moment, then try again.	ᎣᏍᏓ ᎢᏣᎦᏘᏓ, ᎿᏉᏃ ᏔᎵᏁ ᎢᏣᏢᏓᎳ.
 #. text in the browser extension
+#. note under the on/off switch on the extension's options page: a click on the extension's toolbar button turns it off and on too
+#, machine
+extension	When it's off, downloads stay in the browser. Clicking the extension's button does the same.	ᎠᏲᎯᏒ ᎢᏳᏃ, ᏓᎤᏂᎶᏗ ᏇᎶᏌ ᎤᏍᏆᏂᎪᏗ. ᎡᏍᏕᏂᏌᏂ ᏆᏗᏂ ᎧᎵᎩ ᎾᏍᏉ ᎾᏍᎩᏯ ᎢᎬᏁᎭ.
+#. text in the browser extension
 #. pairing failed: the code was wrong
 #, machine
 extension	Wrong code.	ᎤᎾᏓᎴ ᎪᏪᎵ.
@@ -6842,14 +7285,14 @@ extension	Wrong code.	ᎤᎾᏓᎴ ᎪᏪᎵ.
 #, machine
 extension	You chose Download with the browser for it in Dannex Download Manager.	Dannex Download Manager ᎾᎿ “ᏗᏓᏂᏴᏗ ᎬᏗ ᎠᏯᏙᎯᏍᏗ” ᏣᏑᏰᏒ.
 #. text in the browser extension
-#. a download's progress in the toolbar button's popup: how much is downloaded of the file's size
+#. on the extension's status page: the last download the browser kept (its name isn't known, e.g. from a private window); a sentence saying why follows
 #, machine
-extension	{done} of {total}	{done} / {total}
+extension	Your last download stayed in the browser.	ᏣᏤᎵ ᎣᏂᏱ ᏓᎤᏂᎶᏗ ᏇᎶᏌ ᎤᏍᏆᏂᎪᏕ.
 #. text in the browser extension
-#. a running download's time left in the toolbar button's popup
-#. {time} = a time of day (keep the braces as they are)
+#. on the extension's status page: the last download the browser kept instead of handing it to Dannex Download Manager, with its file name; a sentence saying why follows
+#. {name} = a file name (keep the braces as they are)
 #, machine
-extension	{time} left	ᎠᏏ {time}
+extension	Your last download stayed in the browser: {name}	ᏣᏤᎵ ᎣᏂᏱ ᏓᎤᏂᎶᏗ ᏇᎶᏌ ᎤᏍᏆᏂᎪᏕ: {name}
 #. key name or combination in the Help menu's windows (About, updates, shortcuts, Tell a friend)
 #. translate key names as the keyboard shows them (e.g. Strg for Ctrl)
 #, machine
@@ -6977,6 +7420,12 @@ menu	&Bold file names	&ᎤᎵᏂᎩᏛ ᏗᎪᏪᎵ ᏚᏙᎥ
 #. & marks the keyboard shortcut letter: keep one & before a letter of the translation
 #, machine
 menu	&Classic	&ᎦᎸᏉᏗ
+#. menu command in the main window
+#. list header's right-click menu: opens the window choosing which columns show and in what order
+#. & marks the keyboard shortcut letter: keep one & before a letter of the translation
+#. the trailing ... means it opens a window: keep it
+#, machine
+menu	&Columns...	&ᎧᎳᎻ...
 #. menu command in standard windows
 #. & marks the keyboard shortcut letter: keep one & before a letter of the translation
 #, machine
@@ -7052,11 +7501,6 @@ menu	&Normal	&ᎤᏠᏱ
 #. & marks the keyboard shortcut letter: keep one & before a letter of the translation
 #, machine
 menu	&Options	&ᎢᏯᏛᏁᏗ
-#. menu command in the main window
-#. Help menu: opens the open-source project Dannex is built on
-#. & marks the keyboard shortcut letter: keep one & before a letter of the translation
-#, machine
-menu	&Original project	&ᎢᎬᏱ ᏚᎸᏫᏍᏓᏁᎸ
 #. menu command in standard windows
 #. & marks the keyboard shortcut letter: keep one & before a letter of the translation
 #, machine
@@ -7178,6 +7622,18 @@ menu	Aqua	Aqua
 #, machine
 menu	Arrange files	ᏗᏟᏍᏔᏅᎯ ᏗᏓᏟᏍᏔᏅᎯ
 #. menu command in the main window
+#. Tasks → Export: save the list's addresses as a text file, one per line
+#. & marks the keyboard shortcut letter: keep one & before a letter of the translation
+#. the trailing ... means it opens a window: keep it
+#, machine
+menu	As a &text file...	&ᎪᏪᎸ ᎪᏪᎵ ᎾᏍᎩᏯ...
+#. menu command in the main window
+#. Tasks → Export: save the list as an IDM list file (.ef2), which IDM imports; keep "IDM" and ".ef2"
+#. & marks the keyboard shortcut letter: keep one & before a letter of the translation
+#. the trailing ... means it opens a window: keep it
+#, machine
+menu	As an &IDM list (.ef2)...	&IDM ᎵᏍᏘ (.ef2) ᎾᏍᎩᏯ...
+#. menu command in the main window
 #. View → Theme: a style theme's name (KDE Plasma's look, the Linux desktop), a name: keep "Breeze" as written
 #, machine
 menu	Breeze	Breeze
@@ -7237,20 +7693,25 @@ menu	By Transfer &Rate	Ꮧ&ᏓᏟᏍᏔᏅᎯ ᎢᏗᏁᏟᏴᏍᏗ
 #. & marks the keyboard shortcut letter: keep one & before a letter of the translation
 #. the trailing ... means it opens a window: keep it
 #, machine
-menu	C&ustomize URL List...	Ꮥ&ᎪᏢᏒᏅ URL ᎤᎾᏓᏟᎶᏍᏔᏅ...
+menu	Check for &updates...	Ꮧ&ᏓᏟᏍᏔᏅᎯ ᎢᏗᏁᏟᏴᏍᏗ...
 #. menu command in the main window
+#. View menu: opens the window choosing which columns the download list shows, and their order
 #. & marks the keyboard shortcut letter: keep one & before a letter of the translation
 #. the trailing ... means it opens a window: keep it
 #, machine
-menu	Check for &updates...	Ꮧ&ᏓᏟᏍᏔᏅᎯ ᎢᏗᏁᏟᏴᏍᏗ...
+menu	Choose c&olumns...	ᎧᎳᎻ ᎠᏑᏰ&ᏍᏗ...
 #. menu command in the main window
-#. View → Theme: DDM's own look, the default (IDM's layout, Windows 11's controls)
+#. View → Theme: DDM's own look, the default (the classic download manager's layout, Windows 11's controls)
 #, machine
 menu	Classic	ᏗᏕᏲᎲᏍᎩ
 #. menu command in the main window
 #. & marks the keyboard shortcut letter: keep one & before a letter of the translation
 #, machine
 menu	Clear all &filters	Ꮧ&ᏓᏟᏍᏔᏅᎯ ᎢᏗᏁᏟᏴᏍᏗ
+#. menu command in the Site grabber window (Tasks → Run site grabber)
+#. right-click on a grabber project: explore further, from where its last run stopped
+#, machine
+menu	Continue exploring	ᎠᏲᎮᏍᎬ ᎠᏍᏓᏩᏗᏍᏗ
 #. menu command in the main window
 #, machine
 menu	Copy magnet link	ᏗᎦᏙᎯ ᎤᏤᎵᏛ ᏗᎦᏛᏗ
@@ -7261,9 +7722,6 @@ menu	Create new queue	ᏗᏓᏟᏍᏔᏅᎯ ᎢᏗᏁᏟᏴᏍᏗ
 #. & marks the keyboard shortcut letter: keep one & before a letter of the translation
 #, machine
 menu	Cu&t	Ꭴ&ᏍᏙᏗ
-#. menu command in the main window
-#, machine
-menu	Dark Mode support	ᏗᏓᏟᏍᏔᏅᎯ ᎢᏗᏁᏟᏴᏍᏗ
 #. menu command in the main window
 #. & marks the keyboard shortcut letter: keep one & before a letter of the translation
 #, machine
@@ -7333,11 +7791,6 @@ menu	Emerald	Emerald
 #. verb: unpack the downloaded archive (zip, 7z, rar) into its folder
 #, machine
 menu	Extract	ᏗᎦᎴᏴᏔᏅᎯ
-#. menu command in the Site grabber window (Tasks → Run site grabber)
-#. right-click on a grabber project: the files its last run found, to download
-#. the trailing ... means it opens a window: keep it
-#, machine
-menu	Files found...	ᏗᎪᏪᎵ ᎤᏩᏛᎲ...
 #. menu command in the main window
 #. right-click → Torrent submenu: open the selected torrent's file list
 #. the trailing ... means it opens a window: keep it
@@ -7354,19 +7807,36 @@ menu	Find Next (F3)	ᏗᏓᏟᏍᏔᏅᎯ ᎢᏗᏁᏟᏴᏍᏗ (F3)
 #, machine
 menu	First and last pieces first	ᎢᎬᏱᏱ ᎠᎴ ᎤᎵᏍᏆᎸᏗ ᎦᏰᏛᎢ ᎢᎬᏱ
 #. menu command in the main window
+#. list header's right-click menu: makes every shown column as wide as its title and its cells need
+#. & marks the keyboard shortcut letter: keep one & before a letter of the translation
+#, machine
+menu	Fit columns to con&tent	ᎧᎳᎻ ᎪᏪᎸ ᎾᏍᎩᏯ ᎢᏯ&ᏛᏁᏗ
+#. menu command in the main window
+#. View menu: a check item; dark mode on while the system (Windows, the desktop) is set to dark
+#. & marks the keyboard shortcut letter: keep one & before a letter of the translation
+#, machine
+menu	Follow the system's &dark mode	ᏏᏍᏖᎻ ᎤᎵᏏᎬ &ᏄᏍᏛ ᎠᏍᏓᏩᏗᏍᏗ
+#. menu command in the main window
 #. noun: the list's font (submenu)
 #, machine
 menu	Font	ᏗᏓᏟᏍᏔᏅᎯ ᎢᏗᏁᏟᏴᏍᏗ
 #. menu command in the main window
+#. Tasks → Import: read the addresses in a text file (or a web page saved as a file)
 #. & marks the keyboard shortcut letter: keep one & before a letter of the translation
 #. the trailing ... means it opens a window: keep it
 #, machine
-menu	From &IDM export file...	&IDM ᏗᎦᎴᏴᏔᏅᎢ...
+menu	From a &text file...	&ᎪᏪᎸ ᎪᏪᎵ ᏅᏓᏳᏓᎴᏅᎯ...
 #. menu command in the main window
+#. Tasks → Import: read an IDM list file (.ef2, as IDM exports it); keep "IDM" and ".ef2"
 #. & marks the keyboard shortcut letter: keep one & before a letter of the translation
 #. the trailing ... means it opens a window: keep it
 #, machine
-menu	From &text file...	Ꮧ&ᏓᏟᏍᏔᏅᎯ ᎢᏗᏁᏟᏴᏍᏗ...
+menu	From an &IDM list (.ef2)...	&IDM ᎵᏍᏘ (.ef2) ᏅᏓᏳᏓᎴᏅᎯ...
+#. menu command in the main window
+#. Tasks menu: the latest Site grabber projects, each opening its window
+#. & marks the keyboard shortcut letter: keep one & before a letter of the translation
+#, machine
+menu	Grabber pro&jects	ᎦᎳᏆ &ᏆᏤᎩ
 #. menu command in the main window
 #. & marks the keyboard shortcut letter: keep one & before a letter of the translation
 #, machine
@@ -7420,9 +7890,10 @@ menu	No graphics card here has a driver for it	ᎥᏝ ᎪᏪᎵ ᏗᏟᎶᏍᏙ�
 #. menu command in the main window
 #, machine
 menu	On Double click	ᏗᏓᏟᏍᏔᏅᎯ ᎢᏗᏁᏟᏴᏍᏗ
-#. menu command in the main window
+#. menu command in the main window; menu command in the Site grabber window (Tasks → Run site grabber)
 #. verb: opens the downloaded file
 #. what double-clicking a download does — verb: open the file
+#. right-click on a grabber project: its window (its exploring, or the files it found)
 #, machine
 menu	Open	ᎤᏍᏚᎢᏍᏗ
 #. menu command in the main window
@@ -7433,6 +7904,10 @@ menu	Open &torrent file...	ᎤᏍᏚᎢᏍ &torrent ᎢᏗᏢ...
 #. menu command in the main window
 #, machine
 menu	Open folder	ᎤᏍᏚᎢᏍᏗ ᏗᏟᎶᏍᏔᏅ
+#. menu command in the Site grabber window (Tasks → Run site grabber)
+#. right-click on a grabber project whose pages work offline: open its saved start page in the browser
+#, machine
+menu	Open offline copy	ᎣᏩᎳᏱᏂ ᎧᏈ ᎠᏍᏚᎢᏍᏗ
 #. menu command in the main window
 #. View → Theme: opens the folder where theme files go (TOML or JSON)
 #, machine
@@ -7535,6 +8010,10 @@ menu	Show DDM	ᎬᏂᎨᏒ ᎢᎬᏁᏗ DDM
 #, machine
 menu	Show download s&peed in the tray tooltip	ᎠᏯᏙᎯᏍᏗ ᎤᏍᏆᏂᎩᏗ ᎨᏒ ᎾᏄᎪᏫᏍᏗ ᎤᏍᏗ ᎤᏟᎶᏍᏔᏅ &ᎦᏚᎢ
 #. menu command in the main window
+#. right-click menu of a download: opens its progress window (or brings it back from the notification area)
+#, machine
+menu	Show progress	ᎢᎦᎢ ᎤᏍᏆᏛ ᎠᎾᏄᎪᏫᏍᏗ
+#. menu command in the main window
 #. View → Tray icon: a check item; every running download's progress as one bar on DDM's taskbar button (Windows)
 #. & marks the keyboard shortcut letter: keep one & before a letter of the translation
 #, machine
@@ -7569,6 +8048,11 @@ menu	Stop	ᎤᎵᏍᏛ
 #, machine
 menu	Stop Download	ᎠᏠᏯᏍᏗ ᎤᎵᏍᏛ
 #. menu command in the main window
+#. Help menu: opens Dannex's donation page (GitHub Sponsors) in the browser; keep the short name DDM as it is
+#. & marks the keyboard shortcut letter: keep one & before a letter of the translation
+#, machine
+menu	Su&pport DDM	DDM ᎠᏍᏕ&ᎸᏗ
+#. menu command in the main window
 #. & marks the keyboard shortcut letter: keep one & before a letter of the translation
 #, machine
 menu	Tell a &friend	Ꭿ&ᎵᏥᏙᏅᏗ ᎢᎦᎵᎢ
@@ -7580,16 +8064,6 @@ menu	The graphics card was lost twice in 10 minutes	ᎪᏪᎵ ᏗᏟᎶᏍᏙᏗ
 #. View menu: submenu choosing DDM's look (colours, sizes, icons): Classic, Native…
 #, machine
 menu	Theme	ᏗᏟᎶᏍᏔᏅᎢ
-#. menu command in the main window
-#. & marks the keyboard shortcut letter: keep one & before a letter of the translation
-#. the trailing ... means it opens a window: keep it
-#, machine
-menu	To &IDM export file...	Ꮎ &IDM ᎦᎴᏴᏔᏅᎯ...
-#. menu command in the main window
-#. & marks the keyboard shortcut letter: keep one & before a letter of the translation
-#. the trailing ... means it opens a window: keep it
-#, machine
-menu	To &text file...	Ꮧ&ᎪᏪᎵ ᎢᏗᏓᏟᎶᏍᏔᏅ...
 #. menu command in the main window
 #. noun: the toolbar (submenu of View with its settings)
 #, machine
