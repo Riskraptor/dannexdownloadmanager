@@ -914,6 +914,10 @@
    "source": "Download image galleries with gallery-dl",
    "text": "gallery-dl로 이미지 갤러리 다운로드"
   },
+  "0d6d6fd7630a14c1": {
+   "source": "<g1>A new icon, Comet</g1>, everywhere: the app, the tray, the extension, the setup and the website.",
+   "text": "앱, 트레이, 확장 프로그램, 설치 프로그램, 웹사이트 등 모든 곳에 적용된 <g1>새 아이콘 Comet</g1>."
+  },
   "0d7f42041638ea02": {
    "source": "Portable: the <x1/> folder next to <x2/>.",
    "text": "포터블 버전: <x1/> 폴더는 <x2/> 옆에 있습니다."
@@ -1121,6 +1125,10 @@
   "110ed064f2b04424": {
    "source": "Time left",
    "text": "남은 시간"
+  },
+  "110f6923f841ef40": {
+   "source": "<g1>Fast:</g1> every download is fetched in several parts at once, re-balanced until the last byte, and resumes after a crash, a restart or a dropped connection without starting over.",
+   "text": "<g1>빠름:</g1> 모든 다운로드를 여러 부분으로 나누어 동시에 받고 마지막 바이트까지 다시 분배하며, 충돌, 재시작, 연결 끊김 후에도 처음부터 다시 시작하지 않고 이어받습니다."
   },
   "1118f34ca5d1ce1f": {
    "source": "<g1>Put them into the video</g1> puts them inside the file instead, as tracks you switch on in the player. It needs ffmpeg, and an MP4 or MKV video.",
@@ -1377,6 +1385,10 @@
   "14f32a5e9d5c1528": {
    "source": "<g1>Crash reports</g1><g2>Dannex Download Manager</g2>",
    "text": "<g1>충돌 보고서</g1><g2>Dannex Download Manager</g2>"
+  },
+  "14fa22b906ffd970": {
+   "source": "A fast, open-source download manager with parallel connections, crash-safe resume, browser capture, torrents and video in one clean list.",
+   "text": "병렬 연결, 충돌에도 안전한 이어받기, 브라우저 캡처, 토렌트, 비디오를 하나의 깔끔한 목록에 담은 빠른 오픈 소스 다운로드 관리자입니다."
   },
   "150f2a29232af59e": {
    "source": "The main window in the Adwaita theme",
@@ -2210,6 +2222,10 @@
    "source": "<g1>Your IP address.</g1> Everyone sharing the same torrent sees it, as do its trackers and the DHT (the network peers use to find each other). That's how BitTorrent works, and no setting in DDM changes it. To hide your address, use a VPN on your whole computer.",
    "text": "<g1>귀하의 IP 주소.</g1> 동일한 토렌트를 공유하는 모든 사람과 트래커 및 DHT(피어가 서로를 찾는 데 사용하는 네트워크)가 이를 볼 수 있습니다. 이것이 BitTorrent의 작동 방식이며 DDM의 어떤 설정도 이를 변경하지 않습니다. 주소를 숨기려면 전체 컴퓨터에서 VPN을 사용하십시오."
   },
+  "227b1f953bdd694f": {
+   "source": "Fast downloads, powerful control. Free, open source and written from scratch in Rust.",
+   "text": "빠른 다운로드, 강력한 제어. 무료 오픈 소스이며 Rust로 처음부터 새로 작성했습니다."
+  },
   "22954adcadefc7ba": {
    "source": "Click a download link in the browser: Download File Info opens in DDM.",
    "text": "브라우저에서 다운로드 링크를 클릭하면 DDM에서 파일 정보 다운로드가 열립니다."
@@ -2481,6 +2497,10 @@
   "267d1780c2b3aa22": {
    "source": "The server, <x1/>, sits next to the app on Windows, macOS and Linux (on Linux use the <x2/>, <x3/> or <x4/>: the AppImage doesn't expose it). You turn on the automation API once with <x5/>, then tell your assistant where the server is. The assistant starts it by itself from then on. The <g6>set-up guide</g6> has the path for each kind of install and the exact entry for Claude Desktop, Claude Code, Cursor and VS Code.",
    "text": "서버 <x1/>는 Windows, macOS, Linux에서 앱 옆에 있습니다(Linux에서는 <x2/>, <x3/> 또는 <x4/>를 사용하세요. AppImage는 노출하지 않습니다). <x5/>를 사용하여 자동화 API를 한 번 켠 다음, 비서에게 서버 위치를 알려줍니다. 그 이후부터는 비서가 스스로 서버를 시작합니다. <g6>설정 가이드</g6>에는 각 설치 유형별 경로와 Claude Desktop, Claude Code, Cursor, VS Code에 대한 정확한 항목이 나와 있습니다."
+  },
+  "26a8a80c5fad9f57": {
+   "source": "<g1>Calm when many arrive at once:</g1> a queue's downloads run without opening windows, and downloads that finish together share one <g2>Download complete</g2> window (\"3 more downloads complete\").",
+   "text": "<g1>한꺼번에 많이 들어와도 차분하게:</g1> 대기열의 다운로드는 창을 열지 않고 진행되며, 함께 끝난 다운로드는 <g2>다운로드 완료</g2> 창 하나에 모아 표시됩니다(\"다운로드 3개 더 완료\")."
   },
   "26ba7b194ff67f19": {
    "source": "Some sites' bot checks (Cloudflare's challenge, Akamai's edge) let only a browser through, even after DDM asked once more the way your browser connects. DDM then says <g1>this site lets only browsers through</g1> and offers <g2>Download with the browser</g2>: a button in the download's progress window, and an item in its right-click menu in the list. It's still there after DDM restarts.",
@@ -2886,6 +2906,10 @@
    "source": "<g1>The other links of one page</g1> form a package named after the page.",
    "text": "<g1>한 페이지에 있는 나머지 링크</g1>는 페이지 이름으로 된 하나의 패키지로 묶입니다."
   },
+  "2cd663e3c54ab10a": {
+   "source": "Fast, free and open-source download manager for Windows, macOS and Linux. Parallel connections, crash-safe resume, torrents, video from web pages, browser integration and 86 languages.",
+   "text": "Windows, macOS, Linux용 빠른 무료 오픈 소스 다운로드 관리자입니다. 병렬 연결, 충돌에도 안전한 이어받기, 토렌트, 웹 페이지의 비디오, 브라우저 통합, 86개 언어를 지원합니다."
+  },
   "2ce984608b61ca9b": {
    "source": "<g1>Browse</g1> — open its folder in Explorer.",
    "text": "<g1>찾아보기</g1> — 탐색기에서 해당 폴더를 엽니다."
@@ -2929,6 +2953,10 @@
   "2d91701284b91b0a": {
    "source": "Source code",
    "text": "소스 코드"
+  },
+  "2d995f162e7cf2ed": {
+   "source": "In your browser",
+   "text": "브라우저에서"
   },
   "2d9d101be2d0f3be": {
    "source": "FTP and FTPS (<x1/>) go through the same planner, workers and state: a segment is <x2/> + <x3/> on a control session instead of a ranged <x4/>, <x5/> and <x6/> stand in for the headers, and sessions are pooled per download and reused between segments.",
@@ -3418,6 +3446,10 @@
    "source": "Right-click the list's blank space for <g1>Add new download</g1>, <g2>Select all</g2>, <g3>Arrange files</g3>, <g4>Clear all filters</g4> and <g5>Delete All Completed</g5>.",
    "text": "목록의 빈 공간을 마우스 오른쪽 버튼으로 클릭하면 <g1>새 다운로드 추가</g1>, <g2>모두 선택</g2>, <g3>파일 정렬</g3>, <g4>모든 필터 지우기</g4>, <g5>완료된 항목 모두 삭제</g5>를 사용할 수 있습니다."
   },
+  "369983e69928fc01": {
+   "source": "<g1>{v1}</g1> <g2>20.9 MB</g2>",
+   "text": "<g1>{v1}</g1> <g2>20.9 MB</g2>"
+  },
   "36a1df60e5ee30b9": {
    "source": "<g1><x2/></g1> — what <g3>View → Theme</g3> lists; the file's name when there is none.",
    "text": "<g1><x2/></g1> — <g3>보기 → 테마</g3>에 표시되는 이름입니다. 이름이 없으면 파일 이름이 사용됩니다."
@@ -3445,6 +3477,10 @@
   "3724a83fa3a38087": {
    "source": "<g1>Download Later</g1> — add it to a queue without starting. See below.",
    "text": "<g1>나중에 다운로드</g1> — 다운로드를 시작하지 않고 대기열에 추가합니다. 아래를 참조하세요."
+  },
+  "3727118233cdf55d": {
+   "source": "Right-click <g1>Download with DDM</g1>, for any link, magnet links included, and <g2>Download all links, images or videos and audio</g2> of a page.",
+   "text": "모든 링크(마그넷 링크 포함)에 쓸 수 있는 오른쪽 클릭 메뉴 <g1>DDM으로 다운로드</g1>, 그리고 페이지의 <g2>모든 링크, 이미지 또는 비디오와 오디오 다운로드</g2>."
   },
   "3731ebb25637b8d0": {
    "source": "The page then says <g1>On</g1> and shows the address to open, such as <x2/>.",
@@ -5454,6 +5490,10 @@
    "source": "If your antivirus quarantined DDM, restore it and add an exception for its folder. If it flags something other than the setup or DDM's own programs, or a copy from anywhere else, don't run it, and please <g1>tell us</g1>.",
    "text": "백신 프로그램이 DDM을 격리했다면, 복원하고 해당 폴더에 예외를 추가하세요. 설치 파일이나 DDM 자체 프로그램이 아닌 다른 파일, 또는 다른 곳에서 받은 파일에 대해 위험을 표시한다면 실행하지 마시고 <g1>저희에게 알려주세요</g1>."
   },
+  "569ad7719d07f2f2": {
+   "source": "The first official release of Dannex Download Manager: a free, open-source download manager for Windows (with Linux and an experimental macOS version), laid out the way Internet Download Manager users expect, and faster.",
+   "text": "Dannex Download Manager의 첫 공식 릴리스입니다. Windows용 무료 오픈 소스 다운로드 관리자(Linux 버전과 실험적인 macOS 버전 포함)로, Internet Download Manager 사용자에게 익숙한 화면 배치에 속도는 더 빠릅니다."
+  },
   "569b5b4f390246d8": {
    "source": "Command line and automation",
    "text": "명령줄 및 자동화"
@@ -6042,6 +6082,10 @@
    "source": "HTTPS downloads fail with \"no certificates\" (Linux)",
    "text": "HTTPS 다운로드가 \"인증서 없음\" 오류로 실패합니다 (Linux)"
   },
+  "5faf94f57d338d2e": {
+   "source": "Dannex Download Manager: a fast, free download manager",
+   "text": "Dannex Download Manager: 빠른 무료 다운로드 관리자"
+  },
   "5fcf0291ca3b8d9c": {
    "source": "Counts, sizes, speeds and percentages will be written the way the chosen language writes them (German <x1/> and <x2/>, French <x3/>), whatever the Windows region; a region in the same language keeps its own way. English stays as it is. Buttons will grow to fit their translated text in every window, so a longer German or Russian label is no longer cut short. Dates keep following your region, or your own choice in <g4>Options → Regional</g4>.",
    "text": "선택한 언어의 표기 방식에 따라 개수, 크기, 속도, 백분율이 표시됩니다(독일어 <x1/> 및 <x2/>, 프랑스어 <x3/>). Windows 지역 설정과 관계없이 동일한 언어의 지역 설정은 자체 방식을 유지합니다. 영어는 그대로 유지됩니다. 모든 창에서 버튼은 번역된 텍스트에 맞게 크기가 조정되므로, 더 긴 독일어 또는 러시아어 레이블이 잘리는 일이 없습니다. 날짜는 지역 설정 또는 <g4>옵션 → 지역</g4>에서 직접 선택한 설정을 따릅니다."
@@ -6246,6 +6290,10 @@
    "source": "<g1>Categories</g1><g2>Dannex Download Manager</g2>",
    "text": "<g1>범주</g1><g2>Dannex Download Manager</g2>"
   },
+  "62b2e43b5e031e17": {
+   "source": "<g1>Download File Info, the way you know it:</g1> the file starts arriving while you choose where it goes, and it joins the list only once you click <g2>Start Download</g2> or <g3>Download Later</g3>; <g4>Cancel</g4> leaves nothing behind.",
+   "text": "<g1>익숙한 그대로의 파일 정보 다운로드:</g1> 저장 위치를 고르는 동안 파일 받기가 시작되며, <g2>다운로드 시작</g2> 또는 <g3>나중에 다운로드</g3>를 클릭해야만 목록에 추가됩니다. <g4>취소</g4>하면 아무것도 남지 않습니다."
+  },
   "62b391cabe3b0674": {
    "source": "Drag a link from your browser onto it: it lights up with an amber frame while something it can take is over it. Let go, and DDM adds the link as if you had used <g1>Add URL</g1>.",
    "text": "브라우저에서 링크를 그 위로 끌어 옵니다. 받을 수 있는 항목이 위에 있는 동안 호박색 테두리로 빛납니다. 놓으면 DDM은 <g1>URL 추가</g1>를 사용한 것처럼 링크를 추가합니다."
@@ -6273,6 +6321,10 @@
   "631b9914f6507aef": {
    "source": "<g1>Testing it.</g1> <x2/> runs a real freeze, panic and crash (<x3/>) and checks each report's signature. To try it in the app, start DDM with <x4/>, then run <x5/> (a deadlock; or <x6/>, 12 s of a busy window thread, <x7/>, <x8/>, <x9/>). <x10/> does that in a copy of the app off the screens, its window visible and minimized.",
    "text": "<g1>테스트.</g1> <x2/>는 실제 멈춤, 패닉, 충돌(<x3/>)을 일으키고 각 보고서의 시그니처를 확인합니다. 앱에서 테스트하려면 <x4/>로 DDM을 시작한 다음 <x5/>(교착 상태, 또는 <x6/>, 창 스레드가 12초 동안 바쁘게 동작하는 상황, <x7/>, <x8/>, <x9/>)를 실행합니다. <x10/>는 화면에 표시되지 않는 앱 복사본에서 이 테스트를 수행하며, 창은 표시된 채 최소화됩니다."
+  },
+  "6340aeee835f4991": {
+   "source": "<g1>Videos</g1> from thousands of sites with yt-dlp, with playlists, subtitles (embedded or beside the file) and the sound alone; <g2>image galleries</g2> with gallery-dl, through DDM's own downloader.",
+   "text": "yt-dlp를 이용한 수천 개 사이트의 <g1>동영상</g1>(재생 목록, 자막(포함 또는 파일 옆), 소리만 받기 지원), 그리고 DDM 자체 다운로더를 통해 gallery-dl로 받는 <g2>이미지 갤러리</g2>."
   },
   "635f40f1db7e086a": {
    "source": "Pause running downloads, or start (resume) stopped, queued or failed ones, in the running app.",
@@ -7050,6 +7102,10 @@
    "source": "A server at a medium round trip (60 to 150 ms)",
    "text": "중간 왕복 시간(60~150ms)의 서버"
   },
+  "70be5377fd1f31fb": {
+   "source": "<g1>Site Grabber:</g1> a whole site or part of one, to read offline, in projects you can always come back to under <g2>Grabber projects</g2>.",
+   "text": "<g1>사이트 그래버:</g1> 사이트 전체나 일부를 오프라인으로 읽을 수 있도록 받으며, 프로젝트는 언제든 <g2>그래버 프로젝트</g2>에서 다시 열 수 있습니다."
+  },
   "70d42911cc360e5b": {
    "source": "On Linux",
    "text": "Linux에서"
@@ -7198,6 +7254,10 @@
    "source": "<g1>Up</g1> / <g2>Down</g2>, <g3>Left</g3> / <g4>Right</g4>",
    "text": "<g1>위</g1> / <g2>아래</g2>, <g3>왼쪽</g3> / <g4>오른쪽</g4>"
   },
+  "72fcb0d3a8812fe4": {
+   "source": "<g1>Help → Support DDM</g1> opens Dannex's page on GitHub Sponsors.",
+   "text": "<g1>도움말 → DDM 후원</g1>을 누르면 GitHub Sponsors의 Dannex 페이지가 열립니다."
+  },
   "72ff8f6b37364fc1": {
    "source": "is where files land: each category has its folder inside (<x1/>, <x2/>, <x3/>…). Mount a network share there to download straight onto it.",
    "text": "파일이 저장되는 위치입니다: 각 카테고리에는 그 안에 자체 폴더가 있습니다(<x1/>, <x2/>, <x3/>…). 네트워크 공유를 여기에 마운트하여 직접 다운로드할 수 있습니다."
@@ -7341,6 +7401,10 @@
   "756eb85314856d65": {
    "source": "A download resumes where it stopped: after you stop it, after the connection drops, or after Windows or DDM crashes. DDM saves how far each part has got as it goes.",
    "text": "다운로드가 중지된 지점부터 다시 시작됩니다. 직접 중지했거나, 연결이 끊겼거나, Windows 또는 DDM이 충돌한 경우에도 이어받을 수 있습니다. DDM은 각 부분의 진행 상황을 다운로드 중에 저장합니다."
+  },
+  "7575c799ddabcc55": {
+   "source": "In Safari the toolbar button's click works the same way, but Safari gives an extension's button no right-click menu: open <g1>Safari → Settings → Extensions → DDM Integration Module → Settings</g1> for the options page.",
+   "text": "Safari에서도 도구 모음 버튼 클릭은 같은 방식으로 작동하지만, Safari는 확장 프로그램 버튼에 오른쪽 클릭 메뉴를 제공하지 않습니다. 옵션 페이지를 열려면 <g1>Safari → 설정 → 확장 프로그램 → DDM Integration Module → 설정</g1>을 여십시오."
   },
   "7599425ea536d1d0": {
    "source": "Options on its Archives page: Extract archives when their download completes, Then move the archives to the Recycle Bin, where an archive's files go, the 7-Zip found, and Link grabber's look-ups",
@@ -7554,6 +7618,10 @@
    "source": "Add Dannex Download Manager to your browser: each browser found, with a button to add the extension to it",
    "text": "브라우저에 Dannex Download Manager 추가: 찾은 각 브라우저와 확장 프로그램을 추가하는 단추"
   },
+  "7935eef577c848b4": {
+   "source": "Dannex Download Manager — fast, free download manager",
+   "text": "Dannex Download Manager — 빠른 무료 다운로드 관리자"
+  },
   "793dc38942ce9ab9": {
    "source": "A control is greyed only while it can't apply: a box under a choice that is off, a button with nothing selected.",
    "text": "컨트롤은 적용할 수 없는 동안에만 회색이 됩니다. 꺼진 선택 항목 아래의 상자, 선택한 항목이 없을 때의 단추 등입니다."
@@ -7741,6 +7809,10 @@
   "7bda8095d8381906": {
    "source": "Other programs can ask the running app for its downloads, as JSON, and pause, start, remove or delete them. They connect to a port on this computer only, with a secret token that changes at every start and that only your own programs can read. The API is off until you turn it on with <x1/>, and <x2/>, <x3/>, <x4/>, <x5/> and <x6/> use it from the command line.",
    "text": "다른 프로그램은 실행 중인 앱에 JSON 형식으로 다운로드 정보를 요청하고, 다운로드를 일시 중지, 시작, 제거 또는 삭제할 수 있습니다. 이들은 이 컴퓨터의 포트에만 연결되며, 시작할 때마다 변경되고 사용자 프로그램만 읽을 수 있는 비밀 토큰을 사용합니다. API는 <x1/>을 사용하여 켜기 전까지는 꺼져 있으며, <x2/>, <x3/>, <x4/>, <x5/> 및 <x6/>은 명령줄에서 이를 사용합니다."
+  },
+  "7be69af9eb37f63f": {
+   "source": "Fast downloads. Powerful control. Free forever.",
+   "text": "빠른 다운로드. 강력한 제어. 영원히 무료."
   },
   "7beb76c0e99ab62c": {
    "source": "<g1>Videos that need you signed in</g1>: <g2>Options → Sites Logins → Cookies for video sites</g2> lets yt-dlp read a browser's cookies, for pasted links. Chrome, Edge and Brave lock theirs on Windows, and the window says so; Firefox works, and so does the button over the video.",
@@ -9418,6 +9490,10 @@
    "source": "Select the downloads in the box",
    "text": "상자에 있는 다운로드 선택"
   },
+  "97eba27f9800113f": {
+   "source": "<g1>Queues and the Scheduler</g1> start and stop on their own, can wake the computer, and turn it off when done. <g2>Speed Limiter</g2>, categories with their own folders, and duplicate handling.",
+   "text": "<g1>대기열과 예약 관리자</g1>는 스스로 시작하고 멈추며, 컴퓨터를 절전 모드에서 깨우고 작업이 끝나면 끌 수 있습니다. <g2>속도 제한</g2>, 자체 폴더가 있는 범주, 중복 처리도 제공합니다."
+  },
   "97ec4888f860947d": {
    "source": "What other people can see",
    "text": "다른 사람들이 볼 수 있는 것"
@@ -9517,6 +9593,10 @@
   "99605902518653e2": {
    "source": "The same programs without an installer. It keeps its data in <x1/>, like an installed copy.",
    "text": "설치 프로그램이 없는 동일한 프로그램입니다. 설치된 버전과 마찬가지로 <x1/>에 데이터를 보관합니다."
+  },
+  "9970aef0a32e17f8": {
+   "source": "<g1>The DDM Integration Module</g1> for Chrome, Edge, Brave, Opera, Vivaldi and Firefox hands your downloads to DDM with their sign-in. One click on its toolbar button turns it off or on; when DDM isn't installed, its page says so and turns green by itself once it is.",
+   "text": "Chrome, Edge, Brave, Opera, Vivaldi, Firefox용 <g1>DDM Integration Module</g1>은 다운로드를 로그인 정보와 함께 DDM에 넘깁니다. 도구 모음 버튼을 한 번 클릭하면 꺼지거나 켜집니다. DDM이 설치되어 있지 않으면 페이지에 그렇게 표시되고, 설치되면 저절로 초록색으로 바뀝니다."
   },
   "997cc2f8f3474ae1": {
    "source": "Windows<g1><g2>3</g2></g1>",
@@ -9869,6 +9949,10 @@
   "9ee01014043d0097": {
    "source": "Yes. It's open source under the GNU GPL, version 3. No trial, no paid edition, no registration key, no nag screen, no ads. <g1>More</g1>",
    "text": "예. GNU GPL 버전 3에 따라 오픈 소스입니다. 평가판, 유료 버전, 등록 키, 알림 화면, 광고가 없습니다. <g1>더 보기</g1>"
+  },
+  "9eec233a8d803458": {
+   "source": "Day and dark mode and themes, 86 languages including right to left, keyboard and screen-reader access, a portable version, a phone remote and a server mode.",
+   "text": "라이트 모드와 다크 모드, 테마, 오른쪽에서 왼쪽으로 쓰는 언어를 포함한 86개 언어, 키보드 및 화면 읽기 프로그램 지원, 포터블 버전, 휴대폰 리모컨, 서버 모드."
   },
   "9efdcb6a62e4c3f8": {
    "source": "File Properties with the download's address",
@@ -10354,6 +10438,10 @@
    "source": "Apple Silicon: Macs with an M1 chip or later",
    "text": "Apple Silicon: M1 칩 이상이 탑재된 Mac"
   },
+  "a6c548e5567b0826": {
+   "source": "<g1>File Properties</g1> on double-click, with the page each download came from; <g2>Show progress</g2> brings back a hidden progress window; <g3>Columns...</g3> shows, hides and orders the list's columns.",
+   "text": "두 번 클릭하면 열리며 각 다운로드를 받은 페이지를 보여 주는 <g1>파일 속성</g1>, 숨긴 진행률 창을 다시 표시하는 <g2>진행률 표시</g2>, 목록의 열을 표시하거나 숨기고 순서를 바꾸는 <g3>열...</g3>."
+  },
   "a6ce09b9c1c7e4cf": {
    "source": "Internet Download Manager 6.42",
    "text": "Internet Download Manager 6.42"
@@ -10389,6 +10477,10 @@
   "a7652898da3cfeeb": {
    "source": "Uninstall on Linux",
    "text": "Linux에서 제거"
+  },
+  "a765d4ba9fb57a00": {
+   "source": "Something is blocking DDM",
+   "text": "무언가가 DDM을 차단하고 있음"
   },
   "a76dca28c6aae7b3": {
    "source": "Many sites publish a checksum next to a download. Paste it into DDM and it tells you in plain words whether the file you got is the one they meant.",
@@ -12178,6 +12270,10 @@
    "source": "Was DDM installed with the setup, with <g1>Set up browser integration</g1> ticked? A portable copy can't take browser downloads. Run the setup again to add it.",
    "text": "DDM이 <g1>브라우저 통합 설정</g1>을 선택하여 설치 프로그램으로 설치되었습니까? 휴대용 버전은 브라우저 다운로드를 가져올 수 없습니다. 설치 프로그램을 다시 실행하여 추가하세요."
   },
+  "c619dd0d87a7bf20": {
+   "source": "<g1>Virus checking</g1> after each download with the antivirus you choose (one click for Microsoft Defender), and a <g2>temporary folder</g2> of your choice for files still downloading.",
+   "text": "선택한 백신 프로그램으로 다운로드마다 실행하는 <g1>바이러스 검사</g1>(Microsoft Defender는 클릭 한 번), 그리고 다운로드 중인 파일을 위해 직접 고르는 <g2>임시 폴더</g2>."
+  },
   "c62198270f0107d2": {
    "source": "What it sets",
    "text": "설정 내용"
@@ -13834,6 +13930,10 @@
    "source": "Chrome, Firefox, Edge and more",
    "text": "Chrome, Firefox, Edge 등"
   },
+  "e06cb012b324e259": {
+   "source": "Video, galleries, torrents and sites",
+   "text": "비디오, 갤러리, 토렌트, 사이트"
+  },
   "e0ad26c06dcee181": {
    "source": "1 the start time, 2 once or on some days, 3 a stop time if you want one.",
    "text": "1 시작 시각, 2 한 번 또는 특정 요일, 3 원한다면 중지 시각."
@@ -13969,6 +14069,10 @@
   "e2b96614efaa036c": {
    "source": "The drop target's edge at rest",
    "text": "정지 상태의 드롭 대상 가장자리"
+  },
+  "e2c3ea2afe1c4e19": {
+   "source": "Minimize keeps DDM on the taskbar; closing it keeps it running in the notification area.",
+   "text": "최소화하면 DDM이 작업 표시줄에 남고, 닫으면 알림 영역에서 계속 실행됩니다."
   },
   "e2d3a15847aa0c81": {
    "source": "Point at the button: its tooltip says which of these it is, and what a click does.",
@@ -14494,6 +14598,10 @@
    "source": "<g1>Ctrl+M</g1> or <g2>F2</g2>",
    "text": "<g1>Ctrl+M</g1> 또는 <g2>F2</g2>"
   },
+  "eb60a779982bcd66": {
+   "source": "Chrome, Edge and Brave run an extension in private (incognito) windows only when you allow it, and Firefox asks too. Until then, downloads from private windows stay with the browser. To allow it: on the browser's extensions page, open <g1>Details</g1> and turn on <g2>Allow in Incognito</g2>; in Firefox, <g3>Add-ons and themes</g3> → the extension → <g4>Allow</g4> beside <g5>Run in Private Windows</g5>. Downloads from a private window use that window's cookies, and DDM doesn't keep them in its list once they're done.",
+   "text": "Chrome, Edge, Brave는 허용한 경우에만 비공개(시크릿) 창에서 확장 프로그램을 실행하며, Firefox도 허용 여부를 묻습니다. 그전까지는 비공개 창의 다운로드가 브라우저에 그대로 남습니다. 허용하려면 브라우저의 확장 프로그램 페이지에서 <g1>세부정보</g1>를 열고 <g2>시크릿 모드에서 허용</g2>을 켜십시오. Firefox에서는 <g3>부가 기능 및 테마</g3> → 해당 확장 프로그램 → <g5>사생활 보호 창에서 실행</g5> (Run in Private Windows) 옆의 <g4>허용</g4>을 선택하십시오. 비공개 창의 다운로드는 그 창의 쿠키를 사용하며, DDM은 완료된 다운로드를 목록에 남기지 않습니다."
+  },
   "eb712f80554a3646": {
    "source": "A window in DDM may be waiting for you (a question, <g1>Add torrent</g1>); answer it and ask again.",
    "text": "DDM의 창이 응답을 기다리고 있을 수 있습니다(질문, <g1>토렌트 추가</g1>). 응답하고 다시 요청하세요."
@@ -14854,6 +14962,10 @@
    "source": "Make everything larger / smaller, in every window (<g1>View → Interface size</g1>, 100 % to 200 %)",
    "text": "모든 창에서 전체 인터페이스를 확대/축소합니다(<g1>보기 → 인터페이스 크기</g1>, 100%~200%)."
   },
+  "f14a2209d8262597": {
+   "source": "Dannex Download Manager — fast, free and open source",
+   "text": "Dannex Download Manager — 빠르고 무료이며 오픈 소스"
+  },
   "f15210a203cd6290": {
    "source": "<g1>DDM can't be reached</g1>: the button is grey with a red <g2>!</g2>. A click opens the extension's status page instead of switching anything: in a sentence or two it says what is wrong and the one thing to do, offers DDM's download for your system when DDM isn't installed, and turns into <g3>Dannex Download Manager is installed</g3> by itself once DDM answers. See <g4>The browser and DDM aren't connected</g4> for every case.",
    "text": "<g1>DDM에 연결할 수 없음</g1>: 단추는 빨간 <g2>!</g2>이 있는 회색입니다. 클릭하면 아무것도 전환하지 않고 확장 프로그램의 상태 페이지가 열립니다. 이 페이지는 무엇이 잘못되었고 해야 할 한 가지를 한두 문장으로 알려 주고, DDM이 설치되어 있지 않으면 사용 중인 시스템용 DDM 다운로드를 제공하며, DDM이 응답하면 저절로 <g3>Dannex Download Manager 설치됨</g3>으로 바뀝니다. 모든 경우는 <g4>브라우저와 DDM이 연결되어 있지 않음</g4>을 참조하세요."
@@ -15146,6 +15258,10 @@
    "source": "Dannex Download Manager: <g1>its source code</g1> and <g2>our benchmark</g2> against IDM 6.42. We haven't benchmarked the others yet; until we do, this page makes no speed claim about them.",
    "text": "Dannex Download Manager: <g1>소스 코드</g1> 및 IDM 6.42와 비교한 <g2>벤치마크 결과</g2>. 다른 제품은 아직 벤치마크하지 않았으므로, 이 페이지에서는 해당 제품의 속도를 주장하지 않습니다."
   },
+  "f7591c001d6f9531": {
+   "source": "<g1>Torrents and magnet links</g1>, with sequential order, RSS feeds and sharing limits; the Add torrent window says what it is waiting for.",
+   "text": "순차 다운로드, RSS 피드, 공유 제한을 지원하는 <g1>토렌트와 마그넷 링크</g1>. 토렌트 추가 창에는 무엇을 기다리고 있는지 표시됩니다."
+  },
   "f7656bbc30b4c552": {
    "source": "<g1>Network adapter</g1><g2>Every connection DDM opens goes out through the adapter you pick, and stops when it disconnects.</g2>",
    "text": "<g1>네트워크 어댑터</g1><g2>DDM이 여는 모든 연결은 선택한 어댑터를 통해 이루어지며, 연결이 끊어지면 중지됩니다.</g2>"
@@ -15414,6 +15530,10 @@
    "source": "Delivery",
    "text": "지원"
   },
+  "fba54406a7ebc6eb": {
+   "source": "Parallel downloads, crash-safe resume, torrents and video from millions of sites, browser integration and more.",
+   "text": "병렬 다운로드, 충돌에도 안전한 이어받기, 토렌트와 수백만 개 사이트의 비디오, 브라우저 통합 등을 제공합니다."
+  },
   "fbb161a5ca59215d": {
    "source": "Click <g1>Load unpacked</g1> and choose the <x2/> folder.",
    "text": "<g1>압축 해제된 확장 프로그램 로드</g1>를 클릭하고 <x2/> 폴더를 선택합니다."
@@ -15454,6 +15574,10 @@
    "source": "<g1>Limits.</g1> A loopback link has no real distance or packet loss; the faults stand in for them. Results are from one machine. Run it yourself: <x2/>, then <x3/>.",
    "text": "<g1>제한 사항.</g1> 루프백 연결에는 실제 거리나 패킷 손실이 없습니다. 시나리오의 오류 조건으로 이를 재현했습니다. 결과는 한 대의 컴퓨터에서 얻었습니다. 직접 실행해 보세요: <x2/>, <x3/>."
   },
+  "fc27eae7fbac2219": {
+   "source": "<g1>A Download video button</g1> over videos, whose qualities show at once on YouTube.",
+   "text": "비디오 위에 나타나는 <g1>비디오 다운로드 버튼</g1>. YouTube에서는 화질 목록이 바로 표시됩니다."
+  },
   "fc2924c84dfb0d12": {
    "source": "The extension and DDM tell each other their versions at each connection, and every pair keeps working:",
    "text": "확장 프로그램과 DDM은 연결할 때마다 서로의 버전을 알려 주며, 모든 조합이 계속 작동합니다."
@@ -15477,6 +15601,10 @@
   "fc67345a4f529039": {
    "source": "Choose whether to install for you only or for everyone on the computer. For you only needs no administrator rights and goes to <x1/>. For everyone goes to <x2/>.",
    "text": "본인만 설치할지 또는 컴퓨터의 모든 사용자를 위해 설치할지 선택하세요. 본인만 설치하는 경우 관리자 권한이 필요 없으며 <x1/>에 설치됩니다. 모든 사용자를 위해 설치하는 경우 <x2/>에 설치됩니다."
+  },
+  "fc7fe0579b9363e9": {
+   "source": "One egui window painted to fixed pixel coordinates, plus one immediate viewport per dialog. <x1/> holds the state (downloads, queues, settings, the list's selection) and turns menu, toolbar, key and IPC commands into actions. Each dialog is its own module and returns an <x2/> (open, closed, done with a value). A window that comes up by itself (Download complete, a message DDM tells, a question while DDM isn't the program in front) shows above the others without taking the keyboard from the program being typed in (<x3/>, <x4/>); those the person asked for take it. Windows handed over one after another (Download File Info, Add torrent, Download video) and Download complete boxes show one at a time, in one place, the next when one closes. Windows-only calls are confined to <x5/> and their Linux and macOS counterparts to <x6/> (starting with the session, the browsers' host, sounds, show in folder, the crash handler); every other file is safe, portable Rust. Fonts come from the system: Windows' Fonts folder, macOS's system fonts, fontconfig on Linux (<x7/>). On Windows, Latin, Greek and Cyrillic text is drawn by DirectWrite (<x8/>, through egui's glyph rasterizer hook): View → Text → Smooth in its natural mode, anti-aliased at the size asked for and placed at quarter pixels with the font's own advances; Classic (the default) in GDI-classic mode, so each letter's hinted shape and whole-pixel width come together. Other scripts are shaped and drawn by egui.",
+   "text": "고정된 픽셀 좌표에 그려지는 egui 창 하나와 대화 상자마다 하나씩 있는 즉시 뷰포트(immediate viewport)로 구성됩니다. <x1/>은(는) 상태(다운로드, 대기열, 설정, 목록의 선택 항목)를 보관하고 메뉴, 도구 모음, 키, IPC 명령을 동작으로 바꿉니다. 각 대화 상자는 별도의 모듈이며 <x2/>을(를) 반환합니다(열림, 닫힘, 값과 함께 완료). 스스로 나타나는 창(다운로드 완료, DDM이 알리는 메시지, DDM이 앞에 있는 프로그램이 아닐 때의 질문)은 입력 중인 프로그램에서 키보드를 빼앗지 않고 다른 창 위에 표시됩니다(<x3/>, <x4/>). 사용자가 직접 요청한 창은 키보드를 가져옵니다. 연달아 전달된 창(파일 정보 다운로드, 토렌트 추가, 비디오 다운로드)과 다운로드 완료 상자는 한 번에 하나씩 같은 위치에 표시되며, 하나가 닫히면 다음 창이 표시됩니다. Windows 전용 호출은 <x5/>에만, 이에 대응하는 Linux 및 macOS 코드는 <x6/>에만 있습니다(세션과 함께 시작, 브라우저 호스트, 소리, 폴더에서 보기, 충돌 처리기). 그 밖의 모든 파일은 안전하고 이식 가능한 Rust입니다. 글꼴은 시스템에서 가져옵니다. Windows의 Fonts 폴더, macOS의 시스템 글꼴, Linux의 fontconfig(<x7/>)입니다. Windows에서는 라틴 문자, 그리스 문자, 키릴 문자를 DirectWrite가 그립니다(<x8/>, egui의 글리프 래스터라이저 후크를 통해). 보기 → 텍스트 → 부드럽게는 자연 모드로, 요청한 크기에서 앤티앨리어싱하고 글꼴 자체의 전진 폭에 따라 1/4픽셀 단위로 배치합니다. 클래식(기본값)은 Windows의 GDI-classic 모드로, 각 글자의 힌팅된 모양과 정수 픽셀 너비가 함께 맞아떨어집니다. 그 밖의 문자 체계는 egui가 셰이핑하고 그립니다."
   },
   "fc80e6d7a3cc65b1": {
    "source": "Link grabber",

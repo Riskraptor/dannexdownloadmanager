@@ -1390,6 +1390,10 @@
    "source": "<g1>Crash reports</g1><g2>Dannex Download Manager</g2>",
    "text": "<g1>تقارير الأعطال</g1><g2>Dannex Download Manager</g2>"
   },
+  "14fa22b906ffd970": {
+   "source": "A fast, open-source download manager with parallel connections, crash-safe resume, browser capture, torrents and video in one clean list.",
+   "text": "مدير تنزيل سريع ومفتوح المصدر، فيه اتصالات متوازية ومتابعة آمنة بعد الأعطال والتقاط التنزيلات من المستعرض والتورنت والفيديو في قائمة واحدة مرتبة."
+  },
   "150f2a29232af59e": {
    "source": "The main window in the Adwaita theme",
    "text": "النافذة الرئيسية في مظهر Adwaita"
@@ -2218,6 +2222,10 @@
    "source": "<g1>Your IP address.</g1> Everyone sharing the same torrent sees it, as do its trackers and the DHT (the network peers use to find each other). That's how BitTorrent works, and no setting in DDM changes it. To hide your address, use a VPN on your whole computer.",
    "text": "<g1>عنوان IP الخاص بك.</g1> يراه كل من يشارك نفس التورنت، وكذلك المتتبعات وشبكة DHT (الشبكة التي يستخدمها الأقران للعثور على بعضهم البعض). هذه هي طريقة عمل BitTorrent، ولا يغيرها أي إعداد في DDM. لإخفاء عنوانك، استخدم VPN على جهاز الكمبيوتر بأكمله."
   },
+  "227b1f953bdd694f": {
+   "source": "Fast downloads, powerful control. Free, open source and written from scratch in Rust.",
+   "text": "تنزيلات سريعة وتحكم قوي. مجاني ومفتوح المصدر ومكتوب من الصفر بلغة Rust."
+  },
   "22954adcadefc7ba": {
    "source": "Click a download link in the browser: Download File Info opens in DDM.",
    "text": "انقر على رابط تنزيل في المستعرض: تفتح نافذة «معلومات ملف التنزيل» في DDM."
@@ -2897,6 +2905,10 @@
   "2cc56bc5771aeae6": {
    "source": "<g1>The other links of one page</g1> form a package named after the page.",
    "text": "<g1>الروابط الأخرى لصفحة واحدة</g1> تشكل حزمة تحمل اسم الصفحة."
+  },
+  "2cd663e3c54ab10a": {
+   "source": "Fast, free and open-source download manager for Windows, macOS and Linux. Parallel connections, crash-safe resume, torrents, video from web pages, browser integration and 86 languages.",
+   "text": "مدير تنزيل سريع ومجاني ومفتوح المصدر لأنظمة Windows وmacOS وLinux. اتصالات متوازية، ومتابعة آمنة بعد الأعطال، وتورنت، وفيديو من صفحات الويب، والربط بالمستعرض، و86 لغة."
   },
   "2ce984608b61ca9b": {
    "source": "<g1>Browse</g1> — open its folder in Explorer.",
@@ -6070,6 +6082,10 @@
    "source": "HTTPS downloads fail with \"no certificates\" (Linux)",
    "text": "فشل تنزيلات HTTPS مع رسالة \"لا توجد شهادات\" (Linux)"
   },
+  "5faf94f57d338d2e": {
+   "source": "Dannex Download Manager: a fast, free download manager",
+   "text": "Dannex Download Manager: مدير تنزيل سريع ومجاني"
+  },
   "5fcf0291ca3b8d9c": {
    "source": "Counts, sizes, speeds and percentages will be written the way the chosen language writes them (German <x1/> and <x2/>, French <x3/>), whatever the Windows region; a region in the same language keeps its own way. English stays as it is. Buttons will grow to fit their translated text in every window, so a longer German or Russian label is no longer cut short. Dates keep following your region, or your own choice in <g4>Options → Regional</g4>.",
    "text": "ستكتب الأعداد والأحجام والسرعات والنسب المئوية بالطريقة التي تكتبها بها اللغة المختارة (الألمانية <x1/> و<x2/>، الفرنسية <x3/>)، بغض النظر عن منطقة Windows؛ المنطقة بنفس اللغة تحتفظ بطريقتها الخاصة. تبقى الإنجليزية كما هي. ستكبر الأزرار لتناسب نصها المترجم في كل نافذة، لذلك لن يتم اختصار تسمية ألمانية أو روسية أطول. تظل التواريخ تتبع منطقتك، أو اختيارك الخاص في <g4>الخيارات → إقليمي</g4>."
@@ -7602,6 +7618,10 @@
    "source": "Add Dannex Download Manager to your browser: each browser found, with a button to add the extension to it",
    "text": "أضف Dannex Download Manager إلى مستعرضك: كل مستعرض عثر عليه، مع زر لإضافة الملحق إليه"
   },
+  "7935eef577c848b4": {
+   "source": "Dannex Download Manager — fast, free download manager",
+   "text": "Dannex Download Manager — مدير تنزيل سريع ومجاني"
+  },
   "793dc38942ce9ab9": {
    "source": "A control is greyed only while it can't apply: a box under a choice that is off, a button with nothing selected.",
    "text": "يكون التحكم رماديا فقط عندما لا يمكن تطبيقه: مربع أسفل خيار غير مفعل، زر لا يوجد شيء محدد فيه."
@@ -7793,6 +7813,10 @@
   "7bda8095d8381906": {
    "source": "Other programs can ask the running app for its downloads, as JSON, and pause, start, remove or delete them. They connect to a port on this computer only, with a secret token that changes at every start and that only your own programs can read. The API is off until you turn it on with <x1/>, and <x2/>, <x3/>, <x4/>, <x5/> and <x6/> use it from the command line.",
    "text": "يمكن للبرامج الأخرى أن تطلب من التطبيق قيد التشغيل تنزيلاته، بصيغة JSON، وإيقافها مؤقتا أو بدئها أو إزالتها أو حذفها. تتصل بمنفذ على هذا الكمبيوتر فقط، برمز سري يتغير مع كل بدء ولا يمكن لبرامجك الخاصة قراءته إلا هي. واجهة برمجة التطبيقات تكون «إيقاف» حتى تقوم بتشغيلها باستخدام <x1/>، وتستخدمها <x2/> و<x3/> و<x4/> و<x5/> و<x6/> من سطر الأوامر."
+  },
+  "7be69af9eb37f63f": {
+   "source": "Fast downloads. Powerful control. Free forever.",
+   "text": "تنزيلات سريعة. تحكم قوي. مجاني إلى الأبد."
   },
   "7beb76c0e99ab62c": {
    "source": "<g1>Videos that need you signed in</g1>: <g2>Options → Sites Logins → Cookies for video sites</g2> lets yt-dlp read a browser's cookies, for pasted links. Chrome, Edge and Brave lock theirs on Windows, and the window says so; Firefox works, and so does the button over the video.",
@@ -14946,6 +14970,10 @@
    "source": "Make everything larger / smaller, in every window (<g1>View → Interface size</g1>, 100 % to 200 %)",
    "text": "تكبير / تصغير كل شيء، في كل نافذة (<g1>عرض → حجم الواجهة</g1>، من 100% إلى 200%)"
   },
+  "f14a2209d8262597": {
+   "source": "Dannex Download Manager — fast, free and open source",
+   "text": "Dannex Download Manager — سريع ومجاني ومفتوح المصدر"
+  },
   "f15210a203cd6290": {
    "source": "<g1>DDM can't be reached</g1>: the button is grey with a red <g2>!</g2>. A click opens the extension's status page instead of switching anything: in a sentence or two it says what is wrong and the one thing to do, offers DDM's download for your system when DDM isn't installed, and turns into <g3>Dannex Download Manager is installed</g3> by itself once DDM answers. See <g4>The browser and DDM aren't connected</g4> for every case.",
    "text": "<g1>لا يمكن الوصول إلى DDM</g1>: الزر رمادي وعليه علامة <g2>!</g2> حمراء. تفتح النقرة صفحة حالة الإضافة بدلا من تبديل أي شيء: في جملة أو اثنتين، توضح الخطأ والشيء الوحيد الذي يجب فعله، وتقدم تنزيل DDM لنظامك عندما لا يكون DDM مثبتا، وتتحول إلى <g3>Dannex Download Manager مثبت</g3> تلقائيا بمجرد استجابة DDM. راجع <g4>المستعرض وDDM غير متصلين</g4> لكل حالة."
@@ -15509,6 +15537,10 @@
   "fb9a90a68f3b2b05": {
    "source": "Delivery",
    "text": "التسليم"
+  },
+  "fba54406a7ebc6eb": {
+   "source": "Parallel downloads, crash-safe resume, torrents and video from millions of sites, browser integration and more.",
+   "text": "تنزيلات متوازية، ومتابعة آمنة بعد الأعطال، وتورنت وفيديو من ملايين المواقع، والربط بالمستعرض، والمزيد."
   },
   "fbb161a5ca59215d": {
    "source": "Click <g1>Load unpacked</g1> and choose the <x2/> folder.",

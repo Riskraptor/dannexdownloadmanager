@@ -555,7 +555,7 @@ def footer() -> str:
       <div class="foot-cols">
         <div class="foot-brand">
           <a class="brand" href="/"><img src="/assets/logo-64.png" width="34" height="34" alt=""><span>{NAME}</span></a>
-          <p class="foot-tag">The download manager you already know, rebuilt to be faster. Free, open source and written from scratch in Rust.</p>
+          <p class="foot-tag">Fast downloads, powerful control. Free, open source and written from scratch in Rust.</p>
           <a class="text-link foot-star" href="{REPO}"><svg aria-hidden="true"><use href="#i-star"/></svg> Star it on GitHub</a>
           {sponsor_foot}
         </div>
@@ -657,7 +657,7 @@ def head(path: str, title: str, desc: str, *, jsonld: list | None = None, og_typ
   <meta property="og:image" content="{SITE}/assets/social.png">
   <meta property="og:image:width" content="1280">
   <meta property="og:image:height" content="640">
-  <meta property="og:image:alt" content="{NAME}: the download manager you already know, rebuilt to be faster">
+  <meta property="og:image:alt" content="{NAME}: a fast, free download manager">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="/favicon.ico" sizes="16x16 32x32 48x48 64x64">
   <link rel="icon" href="/assets/favicon-32.png" type="image/png" sizes="32x32">

@@ -1390,6 +1390,10 @@
    "source": "<g1>Crash reports</g1><g2>Dannex Download Manager</g2>",
    "text": "<g1>گزارش‌های خرابی</g1><g2>Dannex Download Manager</g2>"
   },
+  "14fa22b906ffd970": {
+   "source": "A fast, open-source download manager with parallel connections, crash-safe resume, browser capture, torrents and video in one clean list.",
+   "text": "مدیر بارگیری سریع و متن‌باز با اتصال‌های موازی، ازسرگیری ایمن در برابر خرابی، دریافت از مرورگر، تورنت و ویدیو در یک فهرست مرتب."
+  },
   "150f2a29232af59e": {
    "source": "The main window in the Adwaita theme",
    "text": "پنجره اصلی در پوسته Adwaita"
@@ -2218,6 +2222,10 @@
    "source": "<g1>Your IP address.</g1> Everyone sharing the same torrent sees it, as do its trackers and the DHT (the network peers use to find each other). That's how BitTorrent works, and no setting in DDM changes it. To hide your address, use a VPN on your whole computer.",
    "text": "<g1>آدرس IP شما.</g1> همه کسانی که همان تورنت را به اشتراک می‌گذارند، و همچنین ردیاب‌های آن و DHT (شبکه‌ای که همتایان برای یافتن یکدیگر از آن استفاده می‌کنند)، آدرس شما را می‌بینند. BitTorrent این‌گونه کار می‌کند و هیچ تنظیمی در DDM این موضوع را تغییر نمی‌دهد. برای پنهان کردن آدرس خود، از VPN در سراسر رایانه‌تان استفاده کنید."
   },
+  "227b1f953bdd694f": {
+   "source": "Fast downloads, powerful control. Free, open source and written from scratch in Rust.",
+   "text": "دانلودهای سریع، کنترل قدرتمند. رایگان، متن‌باز و از پایه با Rust نوشته شده است."
+  },
   "22954adcadefc7ba": {
    "source": "Click a download link in the browser: Download File Info opens in DDM.",
    "text": "روی پیوند بارگیری در مرورگر کلیک کنید: «اطلاعات فایل بارگیری‌شده» در DDM باز می‌شود."
@@ -2897,6 +2905,10 @@
   "2cc56bc5771aeae6": {
    "source": "<g1>The other links of one page</g1> form a package named after the page.",
    "text": "<g1>سایر پیوندهای یک صفحه</g1> یک بسته را تشکیل می‌دهند که به نام صفحه نامگذاری شده است."
+  },
+  "2cd663e3c54ab10a": {
+   "source": "Fast, free and open-source download manager for Windows, macOS and Linux. Parallel connections, crash-safe resume, torrents, video from web pages, browser integration and 86 languages.",
+   "text": "مدیر بارگیری سریع، رایگان و متن‌باز برای Windows، macOS و Linux. اتصال‌های موازی، ازسرگیری ایمن در برابر خرابی، تورنت، ویدیو از صفحه‌های وب، یکپارچگی با مرورگر و 86 زبان."
   },
   "2ce984608b61ca9b": {
    "source": "<g1>Browse</g1> — open its folder in Explorer.",
@@ -6070,6 +6082,10 @@
    "source": "HTTPS downloads fail with \"no certificates\" (Linux)",
    "text": "بارگیری‌های HTTPS با خطای «بدون گواهی» شکست می‌خورند (Linux)"
   },
+  "5faf94f57d338d2e": {
+   "source": "Dannex Download Manager: a fast, free download manager",
+   "text": "Dannex Download Manager: مدیر بارگیری سریع و رایگان"
+  },
   "5fcf0291ca3b8d9c": {
    "source": "Counts, sizes, speeds and percentages will be written the way the chosen language writes them (German <x1/> and <x2/>, French <x3/>), whatever the Windows region; a region in the same language keeps its own way. English stays as it is. Buttons will grow to fit their translated text in every window, so a longer German or Russian label is no longer cut short. Dates keep following your region, or your own choice in <g4>Options → Regional</g4>.",
    "text": "تعداد، اندازه‌ها، سرعت‌ها و درصدها به روشی که زبان انتخابی آن‌ها را می‌نویسد (آلمانی <x1/> و <x2/>، فرانسوی <x3/>)، صرف نظر از منطقه Windows، نوشته خواهند شد؛ یک منطقه با همان زبان روش خود را حفظ می‌کند. انگلیسی همان‌طور که هست باقی می‌ماند. دکمه‌ها در هر پنجره برای جا شدن متن ترجمه شده خود بزرگ می‌شوند، بنابراین یک برچسب طولانی‌تر آلمانی یا روسی دیگر کوتاه نمی‌شود. تاریخ‌ها همچنان از منطقه شما، یا انتخاب خودتان در <g4>گزینه‌ها → منطقه‌ای</g4> پیروی می‌کنند."
@@ -7602,6 +7618,10 @@
    "source": "Add Dannex Download Manager to your browser: each browser found, with a button to add the extension to it",
    "text": "افزودن Dannex Download Manager به مرورگر شما: هر مرورگر پیداشده، با دکمه‌ای برای افزودن افزونه به آن"
   },
+  "7935eef577c848b4": {
+   "source": "Dannex Download Manager — fast, free download manager",
+   "text": "Dannex Download Manager — مدیر بارگیری سریع و رایگان"
+  },
   "793dc38942ce9ab9": {
    "source": "A control is greyed only while it can't apply: a box under a choice that is off, a button with nothing selected.",
    "text": "یک کنترل فقط زمانی خاکستری می‌شود که قابل اعمال نباشد: یک کادر زیر گزینه‌ای که خاموش است، یک دکمه که چیزی انتخاب نشده است."
@@ -7793,6 +7813,10 @@
   "7bda8095d8381906": {
    "source": "Other programs can ask the running app for its downloads, as JSON, and pause, start, remove or delete them. They connect to a port on this computer only, with a secret token that changes at every start and that only your own programs can read. The API is off until you turn it on with <x1/>, and <x2/>, <x3/>, <x4/>, <x5/> and <x6/> use it from the command line.",
    "text": "برنامه‌های دیگر می‌توانند از برنامه در حال اجرا بارگیری‌های آن را به صورت JSON درخواست کنند و آن‌ها را متوقف، شروع، حذف یا پاک کنند. آن‌ها فقط به یک پورت در این رایانه متصل می‌شوند، با یک توکن مخفی که در هر شروع تغییر می‌کند و فقط برنامه‌های خود شما می‌توانند آن را بخوانند. API خاموش است تا زمانی که آن را با <x1/> روشن کنید، و <x2/>، <x3/>، <x4/>، <x5/> و <x6/> از آن از خط فرمان استفاده می‌کنند."
+  },
+  "7be69af9eb37f63f": {
+   "source": "Fast downloads. Powerful control. Free forever.",
+   "text": "بارگیری‌های سریع. کنترل قدرتمند. همیشه رایگان."
   },
   "7beb76c0e99ab62c": {
    "source": "<g1>Videos that need you signed in</g1>: <g2>Options → Sites Logins → Cookies for video sites</g2> lets yt-dlp read a browser's cookies, for pasted links. Chrome, Edge and Brave lock theirs on Windows, and the window says so; Firefox works, and so does the button over the video.",
@@ -14946,6 +14970,10 @@
    "source": "Make everything larger / smaller, in every window (<g1>View → Interface size</g1>, 100 % to 200 %)",
    "text": "همه چیز را در هر پنجره بزرگ‌تر / کوچک‌تر کنید (<g1>نما → اندازه رابط</g1>، 100٪ تا 200٪)"
   },
+  "f14a2209d8262597": {
+   "source": "Dannex Download Manager — fast, free and open source",
+   "text": "Dannex Download Manager — سریع، رایگان و متن‌باز"
+  },
   "f15210a203cd6290": {
    "source": "<g1>DDM can't be reached</g1>: the button is grey with a red <g2>!</g2>. A click opens the extension's status page instead of switching anything: in a sentence or two it says what is wrong and the one thing to do, offers DDM's download for your system when DDM isn't installed, and turns into <g3>Dannex Download Manager is installed</g3> by itself once DDM answers. See <g4>The browser and DDM aren't connected</g4> for every case.",
    "text": "<g1>DDM در دسترس نیست</g1>: دکمه خاکستری است و یک <g2>!</g2> قرمز دارد. با کلیک روی آن، به جای تغییر وضعیت، صفحه وضعیت افزونه باز می‌شود: در یک یا دو جمله توضیح می‌دهد که مشکل چیست و چه کاری باید انجام داد، اگر DDM نصب نباشد، لینک دانلود DDM را برای سیستم شما ارائه می‌دهد و به محض پاسخگویی DDM، خودبه‌خود به <g3>Dannex Download Manager نصب شده است</g3> تغییر می‌کند. برای همه موارد، به <g4>مرورگر و DDM متصل نیستند</g4> مراجعه کنید."
@@ -15509,6 +15537,10 @@
   "fb9a90a68f3b2b05": {
    "source": "Delivery",
    "text": "تحویل"
+  },
+  "fba54406a7ebc6eb": {
+   "source": "Parallel downloads, crash-safe resume, torrents and video from millions of sites, browser integration and more.",
+   "text": "بارگیری موازی، ازسرگیری ایمن در برابر خرابی، تورنت و ویدیو از میلیون‌ها سایت، یکپارچگی با مرورگر و امکانات بیشتر."
   },
   "fbb161a5ca59215d": {
    "source": "Click <g1>Load unpacked</g1> and choose the <x2/> folder.",

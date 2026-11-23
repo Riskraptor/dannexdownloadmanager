@@ -918,6 +918,10 @@
    "source": "Download image galleries with gallery-dl",
    "text": "Tải xuống thư viện ảnh bằng gallery-dl"
   },
+  "0d6d6fd7630a14c1": {
+   "source": "<g1>A new icon, Comet</g1>, everywhere: the app, the tray, the extension, the setup and the website.",
+   "text": "<g1>Biểu tượng mới, Comet</g1>, ở khắp nơi: ứng dụng, khay hệ thống, tiện ích mở rộng, trình cài đặt và trang web."
+  },
   "0d7f42041638ea02": {
    "source": "Portable: the <x1/> folder next to <x2/>.",
    "text": "Bản di động: thư mục <x1/> bên cạnh <x2/>."
@@ -1125,6 +1129,10 @@
   "110ed064f2b04424": {
    "source": "Time left",
    "text": "Thời gian còn lại"
+  },
+  "110f6923f841ef40": {
+   "source": "<g1>Fast:</g1> every download is fetched in several parts at once, re-balanced until the last byte, and resumes after a crash, a restart or a dropped connection without starting over.",
+   "text": "<g1>Nhanh:</g1> mỗi tệp tải xuống được lấy về thành nhiều phần cùng lúc, được cân bằng lại đến byte cuối cùng, và tiếp tục sau sự cố, khởi động lại hoặc mất kết nối mà không phải bắt đầu lại từ đầu."
   },
   "1118f34ca5d1ce1f": {
    "source": "<g1>Put them into the video</g1> puts them inside the file instead, as tracks you switch on in the player. It needs ffmpeg, and an MP4 or MKV video.",
@@ -1381,6 +1389,10 @@
   "14f32a5e9d5c1528": {
    "source": "<g1>Crash reports</g1><g2>Dannex Download Manager</g2>",
    "text": "<g1>Báo cáo sự cố</g1><g2>Dannex Download Manager</g2>"
+  },
+  "14fa22b906ffd970": {
+   "source": "A fast, open-source download manager with parallel connections, crash-safe resume, browser capture, torrents and video in one clean list.",
+   "text": "Trình quản lý tải xuống nhanh, mã nguồn mở, với kết nối song song, tiếp tục an toàn sau sự cố, bắt tải xuống từ trình duyệt, torrent và video trong một danh sách gọn gàng."
   },
   "150f2a29232af59e": {
    "source": "The main window in the Adwaita theme",
@@ -2210,6 +2222,10 @@
    "source": "<g1>Your IP address.</g1> Everyone sharing the same torrent sees it, as do its trackers and the DHT (the network peers use to find each other). That's how BitTorrent works, and no setting in DDM changes it. To hide your address, use a VPN on your whole computer.",
    "text": "<g1>Địa chỉ IP của bạn.</g1> Mọi người chia sẻ cùng một torrent đều thấy nó, cũng như các trình theo dõi và DHT (mạng mà những người ngang hàng sử dụng để tìm nhau). Đó là cách BitTorrent hoạt động và không có cài đặt nào trong DDM thay đổi điều đó. Để ẩn địa chỉ của bạn, hãy sử dụng VPN trên toàn bộ máy tính của bạn."
   },
+  "227b1f953bdd694f": {
+   "source": "Fast downloads, powerful control. Free, open source and written from scratch in Rust.",
+   "text": "Tải xuống nhanh, kiểm soát mạnh mẽ. Miễn phí, mã nguồn mở và được viết từ đầu bằng Rust."
+  },
   "22954adcadefc7ba": {
    "source": "Click a download link in the browser: Download File Info opens in DDM.",
    "text": "Nhấp vào liên kết tải xuống trong trình duyệt: Thông tin tệp tải xuống sẽ mở trong DDM."
@@ -2481,6 +2497,10 @@
   "267d1780c2b3aa22": {
    "source": "The server, <x1/>, sits next to the app on Windows, macOS and Linux (on Linux use the <x2/>, <x3/> or <x4/>: the AppImage doesn't expose it). You turn on the automation API once with <x5/>, then tell your assistant where the server is. The assistant starts it by itself from then on. The <g6>set-up guide</g6> has the path for each kind of install and the exact entry for Claude Desktop, Claude Code, Cursor and VS Code.",
    "text": "Máy chủ, <x1/>, nằm cạnh ứng dụng trên Windows, macOS và Linux (trên Linux sử dụng <x2/>, <x3/> hoặc <x4/>: AppImage không hiển thị nó). Bạn bật API tự động hóa một lần bằng <x5/>, sau đó cho trợ lý của bạn biết máy chủ ở đâu. Trợ lý sẽ tự khởi động nó từ đó trở đi. <g6>Hướng dẫn thiết lập</g6> có đường dẫn cho từng loại cài đặt và mục nhập chính xác cho Claude Desktop, Claude Code, Cursor và VS Code."
+  },
+  "26a8a80c5fad9f57": {
+   "source": "<g1>Calm when many arrive at once:</g1> a queue's downloads run without opening windows, and downloads that finish together share one <g2>Download complete</g2> window (\"3 more downloads complete\").",
+   "text": "<g1>Êm ả khi nhiều tệp đến cùng lúc:</g1> các tệp tải xuống trong hàng đợi chạy mà không mở cửa sổ, và các tệp tải xuống hoàn tất cùng lúc dùng chung một cửa sổ <g2>Tải xuống hoàn tất</g2> (“Thêm 3 tệp tải xuống đã hoàn tất”)."
   },
   "26ba7b194ff67f19": {
    "source": "Some sites' bot checks (Cloudflare's challenge, Akamai's edge) let only a browser through, even after DDM asked once more the way your browser connects. DDM then says <g1>this site lets only browsers through</g1> and offers <g2>Download with the browser</g2>: a button in the download's progress window, and an item in its right-click menu in the list. It's still there after DDM restarts.",
@@ -2886,6 +2906,10 @@
    "source": "<g1>The other links of one page</g1> form a package named after the page.",
    "text": "<g1>Các liên kết khác của một trang</g1> tạo thành một gói được đặt tên theo trang đó."
   },
+  "2cd663e3c54ab10a": {
+   "source": "Fast, free and open-source download manager for Windows, macOS and Linux. Parallel connections, crash-safe resume, torrents, video from web pages, browser integration and 86 languages.",
+   "text": "Trình quản lý tải xuống nhanh, miễn phí và mã nguồn mở cho Windows, macOS và Linux. Kết nối song song, tiếp tục an toàn sau sự cố, torrent, video từ trang web, tích hợp trình duyệt và 86 ngôn ngữ."
+  },
   "2ce984608b61ca9b": {
    "source": "<g1>Browse</g1> — open its folder in Explorer.",
    "text": "<g1>Duyệt</g1> — mở thư mục của danh mục trong Explorer."
@@ -2929,6 +2953,10 @@
   "2d91701284b91b0a": {
    "source": "Source code",
    "text": "Mã nguồn"
+  },
+  "2d995f162e7cf2ed": {
+   "source": "In your browser",
+   "text": "Trong trình duyệt của bạn"
   },
   "2d9d101be2d0f3be": {
    "source": "FTP and FTPS (<x1/>) go through the same planner, workers and state: a segment is <x2/> + <x3/> on a control session instead of a ranged <x4/>, <x5/> and <x6/> stand in for the headers, and sessions are pooled per download and reused between segments.",
@@ -3418,6 +3446,10 @@
    "source": "Right-click the list's blank space for <g1>Add new download</g1>, <g2>Select all</g2>, <g3>Arrange files</g3>, <g4>Clear all filters</g4> and <g5>Delete All Completed</g5>.",
    "text": "Nhấp chuột phải vào vùng trống trong danh sách để dùng các lệnh <g1>Thêm tải xuống mới</g1>, <g2>Chọn tất cả</g2>, <g3>Sắp xếp tệp</g3>, <g4>Xóa tất cả bộ lọc</g4> và <g5>Xóa tất cả đã hoàn tất</g5>."
   },
+  "369983e69928fc01": {
+   "source": "<g1>{v1}</g1> <g2>20.9 MB</g2>",
+   "text": "<g1>{v1}</g1> <g2>20.9 MB</g2>"
+  },
   "36a1df60e5ee30b9": {
    "source": "<g1><x2/></g1> — what <g3>View → Theme</g3> lists; the file's name when there is none.",
    "text": "<g1><x2/></g1> — tên hiển thị trong <g3>Xem → Chủ đề</g3>; tên tệp nếu không có."
@@ -3445,6 +3477,10 @@
   "3724a83fa3a38087": {
    "source": "<g1>Download Later</g1> — add it to a queue without starting. See below.",
    "text": "<g1>Tải xuống sau</g1> — thêm vào hàng đợi mà không bắt đầu tải xuống. Xem bên dưới."
+  },
+  "3727118233cdf55d": {
+   "source": "Right-click <g1>Download with DDM</g1>, for any link, magnet links included, and <g2>Download all links, images or videos and audio</g2> of a page.",
+   "text": "Nhấp chuột phải <g1>Tải xuống bằng DDM</g1> cho bất kỳ liên kết nào, kể cả liên kết magnet, và <g2>Tải xuống tất cả liên kết, hình ảnh hoặc video và âm thanh</g2> của một trang."
   },
   "3731ebb25637b8d0": {
    "source": "The page then says <g1>On</g1> and shows the address to open, such as <x2/>.",
@@ -5454,6 +5490,10 @@
    "source": "If your antivirus quarantined DDM, restore it and add an exception for its folder. If it flags something other than the setup or DDM's own programs, or a copy from anywhere else, don't run it, and please <g1>tell us</g1>.",
    "text": "Nếu phần mềm diệt virus của bạn đã cách ly DDM, hãy khôi phục nó và thêm ngoại lệ cho thư mục của nó. Nếu nó gắn cờ thứ gì đó khác ngoài trình cài đặt hoặc các chương trình của DDM, hoặc một bản sao từ bất kỳ nơi nào khác, đừng chạy nó và vui lòng <g1>cho chúng tôi biết</g1>."
   },
+  "569ad7719d07f2f2": {
+   "source": "The first official release of Dannex Download Manager: a free, open-source download manager for Windows (with Linux and an experimental macOS version), laid out the way Internet Download Manager users expect, and faster.",
+   "text": "Bản phát hành chính thức đầu tiên của Dannex Download Manager: trình quản lý tải xuống miễn phí, mã nguồn mở cho Windows (kèm Linux và một phiên bản macOS thử nghiệm), được bố trí đúng như người dùng Internet Download Manager mong đợi, và nhanh hơn."
+  },
   "569b5b4f390246d8": {
    "source": "Command line and automation",
    "text": "Dòng lệnh và tự động hóa"
@@ -6042,6 +6082,10 @@
    "source": "HTTPS downloads fail with \"no certificates\" (Linux)",
    "text": "Tải xuống HTTPS thất bại với lỗi \"không có chứng chỉ\" (Linux)"
   },
+  "5faf94f57d338d2e": {
+   "source": "Dannex Download Manager: a fast, free download manager",
+   "text": "Dannex Download Manager: trình quản lý tải xuống nhanh, miễn phí"
+  },
   "5fcf0291ca3b8d9c": {
    "source": "Counts, sizes, speeds and percentages will be written the way the chosen language writes them (German <x1/> and <x2/>, French <x3/>), whatever the Windows region; a region in the same language keeps its own way. English stays as it is. Buttons will grow to fit their translated text in every window, so a longer German or Russian label is no longer cut short. Dates keep following your region, or your own choice in <g4>Options → Regional</g4>.",
    "text": "Số lượng, kích thước, tốc độ và tỷ lệ phần trăm sẽ được viết theo cách ngôn ngữ đã chọn viết chúng (tiếng Đức <x1/> và <x2/>, tiếng Pháp <x3/>), bất kể vùng Windows; một vùng cùng ngôn ngữ giữ nguyên cách của nó. Tiếng Anh vẫn giữ nguyên. Các nút sẽ tự động mở rộng để vừa với văn bản đã dịch trong mọi cửa sổ, vì vậy một nhãn tiếng Đức hoặc tiếng Nga dài hơn sẽ không còn bị cắt ngắn. Ngày tháng vẫn theo vùng của bạn, hoặc lựa chọn của riêng bạn trong <g4>Tùy chọn → Khu vực</g4>."
@@ -6246,6 +6290,10 @@
    "source": "<g1>Categories</g1><g2>Dannex Download Manager</g2>",
    "text": "<g1>Danh mục</g1><g2>Dannex Download Manager</g2>"
   },
+  "62b2e43b5e031e17": {
+   "source": "<g1>Download File Info, the way you know it:</g1> the file starts arriving while you choose where it goes, and it joins the list only once you click <g2>Start Download</g2> or <g3>Download Later</g3>; <g4>Cancel</g4> leaves nothing behind.",
+   "text": "<g1>Thông tin tệp tải xuống, đúng như bạn đã quen:</g1> tệp bắt đầu tải về trong khi bạn chọn nơi lưu, và chỉ vào danh sách khi bạn bấm <g2>Bắt đầu tải xuống</g2> hoặc <g3>Tải xuống sau</g3>; <g4>Hủy</g4> không để lại gì."
+  },
   "62b391cabe3b0674": {
    "source": "Drag a link from your browser onto it: it lights up with an amber frame while something it can take is over it. Let go, and DDM adds the link as if you had used <g1>Add URL</g1>.",
    "text": "Kéo một liên kết từ trình duyệt của bạn vào đó: nó sáng lên với khung màu hổ phách khi có thứ nó nhận được ở phía trên. Thả ra, và DDM thêm liên kết như thể bạn đã dùng <g1>Thêm URL</g1>."
@@ -6273,6 +6321,10 @@
   "631b9914f6507aef": {
    "source": "<g1>Testing it.</g1> <x2/> runs a real freeze, panic and crash (<x3/>) and checks each report's signature. To try it in the app, start DDM with <x4/>, then run <x5/> (a deadlock; or <x6/>, 12 s of a busy window thread, <x7/>, <x8/>, <x9/>). <x10/> does that in a copy of the app off the screens, its window visible and minimized.",
    "text": "<g1>Kiểm tra.</g1> <x2/> chạy thử tình huống treo, lỗi nghiêm trọng và sự cố thực tế (<x3/>) rồi kiểm tra chữ ký của từng báo cáo. Để thử trong ứng dụng, hãy khởi động DDM với <x4/>, sau đó chạy <x5/> (gây deadlock; hoặc <x6/>, chạy luồng cửa sổ bận trong 12 giây, <x7/>, <x8/>, <x9/>). <x10/> thực hiện việc này trong một bản sao của ứng dụng nằm ngoài màn hình; cửa sổ vẫn hiển thị nhưng được thu nhỏ."
+  },
+  "6340aeee835f4991": {
+   "source": "<g1>Videos</g1> from thousands of sites with yt-dlp, with playlists, subtitles (embedded or beside the file) and the sound alone; <g2>image galleries</g2> with gallery-dl, through DDM's own downloader.",
+   "text": "<g1>Video</g1> từ hàng nghìn trang web bằng yt-dlp, với danh sách phát, phụ đề (nhúng hoặc nằm cạnh tệp) và chỉ riêng âm thanh; <g2>thư viện ảnh</g2> bằng gallery-dl, qua trình tải xuống riêng của DDM."
   },
   "635f40f1db7e086a": {
    "source": "Pause running downloads, or start (resume) stopped, queued or failed ones, in the running app.",
@@ -7050,6 +7102,10 @@
    "source": "A server at a medium round trip (60 to 150 ms)",
    "text": "Máy chủ có thời gian khứ hồi trung bình (60 đến 150 ms)"
   },
+  "70be5377fd1f31fb": {
+   "source": "<g1>Site Grabber:</g1> a whole site or part of one, to read offline, in projects you can always come back to under <g2>Grabber projects</g2>.",
+   "text": "<g1>Trình lấy trang web:</g1> toàn bộ hoặc một phần trang web, để đọc ngoại tuyến, trong các dự án mà bạn luôn có thể quay lại trong <g2>Dự án lấy trang web</g2>."
+  },
   "70d42911cc360e5b": {
    "source": "On Linux",
    "text": "Trên Linux"
@@ -7197,6 +7253,10 @@
   "72f3284ff6dd83fc": {
    "source": "<g1>Up</g1> / <g2>Down</g2>, <g3>Left</g3> / <g4>Right</g4>",
    "text": "<g1>Lên</g1> / <g2>Xuống</g2>, <g3>Trái</g3> / <g4>Phải</g4>"
+  },
+  "72fcb0d3a8812fe4": {
+   "source": "<g1>Help → Support DDM</g1> opens Dannex's page on GitHub Sponsors.",
+   "text": "<g1>Trợ giúp → Ủng hộ DDM</g1> mở trang của Dannex trên GitHub Sponsors."
   },
   "72ff8f6b37364fc1": {
    "source": "is where files land: each category has its folder inside (<x1/>, <x2/>, <x3/>…). Mount a network share there to download straight onto it.",
@@ -7558,6 +7618,10 @@
    "source": "Add Dannex Download Manager to your browser: each browser found, with a button to add the extension to it",
    "text": "Thêm Dannex Download Manager vào trình duyệt của bạn: mỗi trình duyệt tìm thấy, kèm một nút để thêm tiện ích vào trình duyệt đó"
   },
+  "7935eef577c848b4": {
+   "source": "Dannex Download Manager — fast, free download manager",
+   "text": "Dannex Download Manager — trình quản lý tải xuống nhanh, miễn phí"
+  },
   "793dc38942ce9ab9": {
    "source": "A control is greyed only while it can't apply: a box under a choice that is off, a button with nothing selected.",
    "text": "Một điều khiển chỉ bị mờ khi nó không thể áp dụng: một ô nằm dưới lựa chọn đang tắt, một nút khi chưa chọn gì."
@@ -7749,6 +7813,10 @@
   "7bda8095d8381906": {
    "source": "Other programs can ask the running app for its downloads, as JSON, and pause, start, remove or delete them. They connect to a port on this computer only, with a secret token that changes at every start and that only your own programs can read. The API is off until you turn it on with <x1/>, and <x2/>, <x3/>, <x4/>, <x5/> and <x6/> use it from the command line.",
    "text": "Các chương trình khác có thể yêu cầu ứng dụng đang chạy cung cấp các lượt tải xuống của nó, dưới dạng JSON, và tạm dừng, bắt đầu, xóa hoặc loại bỏ chúng. Chúng kết nối với một cổng chỉ trên máy tính này, với một mã thông báo bí mật thay đổi mỗi khi khởi động và chỉ các chương trình của riêng bạn mới có thể đọc được. API bị tắt cho đến khi bạn bật nó bằng <x1/>, và <x2/>, <x3/>, <x4/>, <x5/> và <x6/> sử dụng nó từ dòng lệnh."
+  },
+  "7be69af9eb37f63f": {
+   "source": "Fast downloads. Powerful control. Free forever.",
+   "text": "Tải xuống nhanh. Kiểm soát mạnh mẽ. Miễn phí mãi mãi."
   },
   "7beb76c0e99ab62c": {
    "source": "<g1>Videos that need you signed in</g1>: <g2>Options → Sites Logins → Cookies for video sites</g2> lets yt-dlp read a browser's cookies, for pasted links. Chrome, Edge and Brave lock theirs on Windows, and the window says so; Firefox works, and so does the button over the video.",
@@ -9418,6 +9486,10 @@
    "source": "Select the downloads in the box",
    "text": "Chọn các bản tải xuống trong hộp"
   },
+  "97eba27f9800113f": {
+   "source": "<g1>Queues and the Scheduler</g1> start and stop on their own, can wake the computer, and turn it off when done. <g2>Speed Limiter</g2>, categories with their own folders, and duplicate handling.",
+   "text": "<g1>Hàng đợi và Bộ lập lịch</g1> tự bắt đầu và dừng, có thể đánh thức máy tính và tắt máy khi xong. <g2>Giới hạn tốc độ</g2>, danh mục với thư mục riêng, và xử lý tệp trùng lặp."
+  },
   "97ec4888f860947d": {
    "source": "What other people can see",
    "text": "Những gì người khác có thể thấy"
@@ -9517,6 +9589,10 @@
   "99605902518653e2": {
    "source": "The same programs without an installer. It keeps its data in <x1/>, like an installed copy.",
    "text": "Các chương trình tương tự nhưng không có trình cài đặt. Dữ liệu được lưu trong <x1/>, như bản đã cài đặt."
+  },
+  "9970aef0a32e17f8": {
+   "source": "<g1>The DDM Integration Module</g1> for Chrome, Edge, Brave, Opera, Vivaldi and Firefox hands your downloads to DDM with their sign-in. One click on its toolbar button turns it off or on; when DDM isn't installed, its page says so and turns green by itself once it is.",
+   "text": "<g1>DDM Integration Module</g1> cho Chrome, Edge, Brave, Opera, Vivaldi và Firefox chuyển các tệp tải xuống của bạn sang DDM cùng thông tin đăng nhập của chúng. Một cú nhấp vào nút trên thanh công cụ sẽ tắt hoặc bật tiện ích; khi DDM chưa được cài đặt, trang của tiện ích sẽ cho biết và tự chuyển sang màu xanh lá khi DDM đã được cài."
   },
   "997cc2f8f3474ae1": {
    "source": "Windows<g1><g2>3</g2></g1>",
@@ -9869,6 +9945,10 @@
   "9ee01014043d0097": {
    "source": "Yes. It's open source under the GNU GPL, version 3. No trial, no paid edition, no registration key, no nag screen, no ads. <g1>More</g1>",
    "text": "Có. Đây là phần mềm mã nguồn mở theo GNU GPL phiên bản 3. Không có bản dùng thử hay bản trả phí, không cần khóa đăng ký, không có màn hình nhắc mua và không có quảng cáo. <g1>Xem thêm</g1>"
+  },
+  "9eec233a8d803458": {
+   "source": "Day and dark mode and themes, 86 languages including right to left, keyboard and screen-reader access, a portable version, a phone remote and a server mode.",
+   "text": "Chế độ sáng, tối và chủ đề, 86 ngôn ngữ kể cả ngôn ngữ viết từ phải sang trái, truy cập bằng bàn phím và trình đọc màn hình, bản di động, điều khiển từ xa bằng điện thoại và chế độ máy chủ."
   },
   "9efdcb6a62e4c3f8": {
    "source": "File Properties with the download's address",
@@ -10353,6 +10433,10 @@
   "a6c4a4cee356235a": {
    "source": "Apple Silicon: Macs with an M1 chip or later",
    "text": "Apple Silicon: Máy Mac dùng chip M1 trở lên"
+  },
+  "a6c548e5567b0826": {
+   "source": "<g1>File Properties</g1> on double-click, with the page each download came from; <g2>Show progress</g2> brings back a hidden progress window; <g3>Columns...</g3> shows, hides and orders the list's columns.",
+   "text": "<g1>Thuộc tính tệp</g1> khi nhấp đúp, kèm trang web mà mỗi tệp tải xuống đến từ đó; <g2>Hiển thị tiến trình</g2> đưa cửa sổ tiến trình bị ẩn trở lại; <g3>Cột...</g3> hiển thị, ẩn và sắp xếp thứ tự các cột của danh sách."
   },
   "a6ce09b9c1c7e4cf": {
    "source": "Internet Download Manager 6.42",
@@ -12182,6 +12266,10 @@
    "source": "Was DDM installed with the setup, with <g1>Set up browser integration</g1> ticked? A portable copy can't take browser downloads. Run the setup again to add it.",
    "text": "DDM có được cài đặt bằng trình cài đặt, với <g1>Thiết lập tích hợp trình duyệt</g1> được đánh dấu không? Một bản sao di động không thể nhận các lượt tải xuống của trình duyệt. Chạy lại trình cài đặt để thêm nó."
   },
+  "c619dd0d87a7bf20": {
+   "source": "<g1>Virus checking</g1> after each download with the antivirus you choose (one click for Microsoft Defender), and a <g2>temporary folder</g2> of your choice for files still downloading.",
+   "text": "<g1>Quét vi-rút</g1> sau mỗi lần tải xuống bằng phần mềm diệt vi-rút bạn chọn (một cú nhấp cho Microsoft Defender), và một <g2>thư mục tạm</g2> do bạn chọn cho các tệp đang tải xuống."
+  },
   "c62198270f0107d2": {
    "source": "What it sets",
    "text": "Nó thiết lập gì"
@@ -13842,6 +13930,10 @@
    "source": "Chrome, Firefox, Edge and more",
    "text": "Chrome, Firefox, Edge và nhiều trình duyệt khác"
   },
+  "e06cb012b324e259": {
+   "source": "Video, galleries, torrents and sites",
+   "text": "Video, thư viện ảnh, torrent và trang web"
+  },
   "e0ad26c06dcee181": {
    "source": "1 the start time, 2 once or on some days, 3 a stop time if you want one.",
    "text": "1 giờ bắt đầu, 2 một lần hoặc vào một số ngày, 3 giờ dừng nếu bạn muốn."
@@ -13977,6 +14069,10 @@
   "e2b96614efaa036c": {
    "source": "The drop target's edge at rest",
    "text": "Cạnh vùng thả khi không hoạt động"
+  },
+  "e2c3ea2afe1c4e19": {
+   "source": "Minimize keeps DDM on the taskbar; closing it keeps it running in the notification area.",
+   "text": "Thu nhỏ giữ DDM trên thanh tác vụ; khi đóng, DDM vẫn tiếp tục chạy trong khu vực thông báo."
   },
   "e2d3a15847aa0c81": {
    "source": "Point at the button: its tooltip says which of these it is, and what a click does.",
@@ -14502,6 +14598,10 @@
    "source": "<g1>Ctrl+M</g1> or <g2>F2</g2>",
    "text": "<g1>Ctrl+M</g1> hoặc <g2>F2</g2>"
   },
+  "eb60a779982bcd66": {
+   "source": "Chrome, Edge and Brave run an extension in private (incognito) windows only when you allow it, and Firefox asks too. Until then, downloads from private windows stay with the browser. To allow it: on the browser's extensions page, open <g1>Details</g1> and turn on <g2>Allow in Incognito</g2>; in Firefox, <g3>Add-ons and themes</g3> → the extension → <g4>Allow</g4> beside <g5>Run in Private Windows</g5>. Downloads from a private window use that window's cookies, and DDM doesn't keep them in its list once they're done.",
+   "text": "Chrome, Edge và Brave chỉ chạy tiện ích trong cửa sổ riêng tư (ẩn danh) khi bạn cho phép, và Firefox cũng hỏi như vậy. Trước đó, các tệp tải xuống từ cửa sổ riêng tư vẫn do trình duyệt xử lý. Để cho phép: trên trang tiện ích của trình duyệt, mở <g1>Chi tiết</g1> và bật <g2>Cho phép ở chế độ ẩn danh</g2>; trong Firefox, <g3>Tiện ích và chủ đề</g3> → tiện ích → <g4>Cho phép</g4> bên cạnh <g5>Chạy trong cửa sổ riêng tư</g5> (Run in Private Windows). Các tệp tải xuống từ cửa sổ riêng tư dùng cookie của cửa sổ đó, và DDM không giữ chúng trong danh sách sau khi hoàn tất."
+  },
   "eb712f80554a3646": {
    "source": "A window in DDM may be waiting for you (a question, <g1>Add torrent</g1>); answer it and ask again.",
    "text": "Một cửa sổ trong DDM có thể đang chờ bạn (một câu hỏi, <g1>Thêm torrent</g1>); hãy trả lời và hỏi lại."
@@ -14862,6 +14962,10 @@
    "source": "Make everything larger / smaller, in every window (<g1>View → Interface size</g1>, 100 % to 200 %)",
    "text": "Phóng to / thu nhỏ mọi thứ, trong mọi cửa sổ (<g1>Xem → Kích thước giao diện</g1>, 100 % đến 200 %)"
   },
+  "f14a2209d8262597": {
+   "source": "Dannex Download Manager — fast, free and open source",
+   "text": "Dannex Download Manager — nhanh, miễn phí và mã nguồn mở"
+  },
   "f15210a203cd6290": {
    "source": "<g1>DDM can't be reached</g1>: the button is grey with a red <g2>!</g2>. A click opens the extension's status page instead of switching anything: in a sentence or two it says what is wrong and the one thing to do, offers DDM's download for your system when DDM isn't installed, and turns into <g3>Dannex Download Manager is installed</g3> by itself once DDM answers. See <g4>The browser and DDM aren't connected</g4> for every case.",
    "text": "<g1>Không thể kết nối DDM</g1>: nút màu xám với dấu <g2>!</g2> đỏ. Một cú nhấp mở trang trạng thái của tiện ích mở rộng thay vì chuyển đổi gì đó: trong một hai câu nó nói có gì sai và một việc cần làm, đề xuất bản tải xuống DDM cho hệ thống của bạn khi DDM chưa được cài đặt, và tự chuyển thành <g3>Dannex Download Manager đã được cài đặt</g3> khi DDM trả lời. Xem <g4>Trình duyệt và DDM không được kết nối</g4> cho mọi trường hợp."
@@ -15154,6 +15258,10 @@
    "source": "Dannex Download Manager: <g1>its source code</g1> and <g2>our benchmark</g2> against IDM 6.42. We haven't benchmarked the others yet; until we do, this page makes no speed claim about them.",
    "text": "Dannex Download Manager: <g1>mã nguồn của nó</g1> và <g2>điểm chuẩn của chúng tôi</g2> so với IDM 6.42. Chúng tôi chưa chấm điểm các trình quản lý khác; cho đến khi chúng tôi làm vậy, trang này không đưa ra tuyên bố nào về tốc độ của chúng."
   },
+  "f7591c001d6f9531": {
+   "source": "<g1>Torrents and magnet links</g1>, with sequential order, RSS feeds and sharing limits; the Add torrent window says what it is waiting for.",
+   "text": "<g1>Torrent và liên kết magnet</g1>, với thứ tự tuần tự, nguồn cấp dữ liệu RSS và giới hạn chia sẻ; cửa sổ Thêm torrent cho biết nó đang chờ gì."
+  },
   "f7656bbc30b4c552": {
    "source": "<g1>Network adapter</g1><g2>Every connection DDM opens goes out through the adapter you pick, and stops when it disconnects.</g2>",
    "text": "<g1>Bộ điều hợp mạng</g1><g2>Mọi kết nối DDM mở đều đi qua bộ điều hợp bạn chọn và dừng khi bộ điều hợp bị ngắt kết nối.</g2>"
@@ -15422,6 +15530,10 @@
    "source": "Delivery",
    "text": "Tốc độ tải xuống"
   },
+  "fba54406a7ebc6eb": {
+   "source": "Parallel downloads, crash-safe resume, torrents and video from millions of sites, browser integration and more.",
+   "text": "Tải xuống song song, tiếp tục an toàn sau sự cố, torrent và video từ hàng triệu trang web, tích hợp trình duyệt và nhiều hơn nữa."
+  },
   "fbb161a5ca59215d": {
    "source": "Click <g1>Load unpacked</g1> and choose the <x2/> folder.",
    "text": "Nhấp vào <g1>Tải tiện ích đã giải nén</g1> và chọn thư mục <x2/>."
@@ -15462,6 +15574,10 @@
    "source": "<g1>Limits.</g1> A loopback link has no real distance or packet loss; the faults stand in for them. Results are from one machine. Run it yourself: <x2/>, then <x3/>.",
    "text": "<g1>Giới hạn.</g1> Kết nối loopback không có khoảng cách thực tế hay mất gói; các sự cố giả lập những yếu tố đó. Kết quả được lấy từ một máy. Tự chạy thử: <x2/>, rồi <x3/>."
   },
+  "fc27eae7fbac2219": {
+   "source": "<g1>A Download video button</g1> over videos, whose qualities show at once on YouTube.",
+   "text": "<g1>Nút Tải xuống video</g1> trên video, với các mức chất lượng hiện ngay trên YouTube."
+  },
   "fc2924c84dfb0d12": {
    "source": "The extension and DDM tell each other their versions at each connection, and every pair keeps working:",
    "text": "Tiện ích mở rộng và DDM báo cho nhau phiên bản của mình ở mỗi lần kết nối, và mọi cặp đều tiếp tục hoạt động:"
@@ -15485,6 +15601,10 @@
   "fc67345a4f529039": {
    "source": "Choose whether to install for you only or for everyone on the computer. For you only needs no administrator rights and goes to <x1/>. For everyone goes to <x2/>.",
    "text": "Chọn cài đặt chỉ cho bạn hoặc cho mọi người trên máy tính. Chỉ cho bạn không cần quyền quản trị và đi đến <x1/>. Cho mọi người đi đến <x2/>."
+  },
+  "fc7fe0579b9363e9": {
+   "source": "One egui window painted to fixed pixel coordinates, plus one immediate viewport per dialog. <x1/> holds the state (downloads, queues, settings, the list's selection) and turns menu, toolbar, key and IPC commands into actions. Each dialog is its own module and returns an <x2/> (open, closed, done with a value). A window that comes up by itself (Download complete, a message DDM tells, a question while DDM isn't the program in front) shows above the others without taking the keyboard from the program being typed in (<x3/>, <x4/>); those the person asked for take it. Windows handed over one after another (Download File Info, Add torrent, Download video) and Download complete boxes show one at a time, in one place, the next when one closes. Windows-only calls are confined to <x5/> and their Linux and macOS counterparts to <x6/> (starting with the session, the browsers' host, sounds, show in folder, the crash handler); every other file is safe, portable Rust. Fonts come from the system: Windows' Fonts folder, macOS's system fonts, fontconfig on Linux (<x7/>). On Windows, Latin, Greek and Cyrillic text is drawn by DirectWrite (<x8/>, through egui's glyph rasterizer hook): View → Text → Smooth in its natural mode, anti-aliased at the size asked for and placed at quarter pixels with the font's own advances; Classic (the default) in GDI-classic mode, so each letter's hinted shape and whole-pixel width come together. Other scripts are shaped and drawn by egui.",
+   "text": "Một cửa sổ egui được vẽ theo tọa độ điểm ảnh cố định, cộng với một viewport tức thời cho mỗi hộp thoại. <x1/> giữ trạng thái (các tệp tải xuống, hàng đợi, cài đặt, mục đang chọn trong danh sách) và chuyển các lệnh từ menu, thanh công cụ, phím và IPC thành hành động. Mỗi hộp thoại là một mô-đun riêng và trả về một <x2/> (đang mở, đã đóng, xong kèm một giá trị). Cửa sổ tự hiện lên (Tải xuống hoàn tất, một thông báo của DDM, một câu hỏi khi DDM không phải chương trình ở phía trước) sẽ hiện trên các cửa sổ khác mà không lấy bàn phím khỏi chương trình đang được gõ (<x3/>, <x4/>); những cửa sổ do người dùng yêu cầu thì lấy bàn phím. Các cửa sổ được chuyển đến lần lượt (Thông tin tệp tải xuống, Thêm torrent, Tải xuống video) và các hộp Tải xuống hoàn tất hiện từng cái một, tại một chỗ, cái tiếp theo hiện khi một cái đóng lại. Các lệnh gọi chỉ dành cho Windows được giới hạn trong <x5/>, còn các lệnh tương ứng cho Linux và macOS nằm trong <x6/> (khởi động cùng phiên, host của trình duyệt, âm thanh, hiển thị trong thư mục, trình xử lý sự cố); mọi tệp khác là Rust an toàn, đa nền tảng. Phông chữ lấy từ hệ thống: thư mục Fonts của Windows, phông chữ hệ thống của macOS, fontconfig trên Linux (<x7/>). Trên Windows, chữ Latinh, Hy Lạp và Kirin do DirectWrite vẽ (<x8/>, qua hook trình raster hóa glyph của egui): Xem → Văn bản → Mượt ở chế độ tự nhiên, khử răng cưa ở đúng cỡ chữ yêu cầu và đặt ở vị trí một phần tư điểm ảnh theo khoảng tiến riêng của phông chữ; Cổ điển (mặc định) ở chế độ GDI-classic của Windows, để hình dạng đã hinting và chiều rộng nguyên điểm ảnh của từng chữ khớp với nhau. Các hệ chữ khác do egui tạo hình và vẽ."
   },
   "fc80e6d7a3cc65b1": {
    "source": "Link grabber",

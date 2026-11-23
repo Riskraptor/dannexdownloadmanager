@@ -918,6 +918,10 @@
    "source": "Download image galleries with gallery-dl",
    "text": "Afbeeldingengalerijen downloaden met gallery-dl"
   },
+  "0d6d6fd7630a14c1": {
+   "source": "<g1>A new icon, Comet</g1>, everywhere: the app, the tray, the extension, the setup and the website.",
+   "text": "<g1>Een nieuw pictogram, Comet</g1>, overal: de app, het systeemvak, de extensie, de installatie en de website."
+  },
   "0d7f42041638ea02": {
    "source": "Portable: the <x1/> folder next to <x2/>.",
    "text": "Draagbaar: de <x1/> map naast <x2/>."
@@ -1125,6 +1129,10 @@
   "110ed064f2b04424": {
    "source": "Time left",
    "text": "Resterende tijd"
+  },
+  "110f6923f841ef40": {
+   "source": "<g1>Fast:</g1> every download is fetched in several parts at once, re-balanced until the last byte, and resumes after a crash, a restart or a dropped connection without starting over.",
+   "text": "<g1>Snel:</g1> elke download wordt in meerdere delen tegelijk opgehaald, tot de laatste byte opnieuw verdeeld, en gaat na een crash, een herstart of een verbroken verbinding verder zonder opnieuw te beginnen."
   },
   "1118f34ca5d1ce1f": {
    "source": "<g1>Put them into the video</g1> puts them inside the file instead, as tracks you switch on in the player. It needs ffmpeg, and an MP4 or MKV video.",
@@ -1381,6 +1389,10 @@
   "14f32a5e9d5c1528": {
    "source": "<g1>Crash reports</g1><g2>Dannex Download Manager</g2>",
    "text": "<g1>Crashrapporten</g1><g2>Dannex Download Manager</g2>"
+  },
+  "14fa22b906ffd970": {
+   "source": "A fast, open-source download manager with parallel connections, crash-safe resume, browser capture, torrents and video in one clean list.",
+   "text": "Een snelle opensource-downloadmanager met parallelle verbindingen, crashbestendig hervatten, opvangen vanuit de browser, torrents en video in één overzichtelijke lijst."
   },
   "150f2a29232af59e": {
    "source": "The main window in the Adwaita theme",
@@ -2210,6 +2222,10 @@
    "source": "<g1>Your IP address.</g1> Everyone sharing the same torrent sees it, as do its trackers and the DHT (the network peers use to find each other). That's how BitTorrent works, and no setting in DDM changes it. To hide your address, use a VPN on your whole computer.",
    "text": "<g1>Uw IP-adres.</g1> Iedereen die dezelfde torrent deelt, ziet het, net als de trackers en de DHT (het netwerk dat peers gebruiken om elkaar te vinden). Zo werkt BitTorrent, en geen enkele instelling in DDM verandert dit. Om uw adres te verbergen, gebruikt u een VPN op uw hele computer."
   },
+  "227b1f953bdd694f": {
+   "source": "Fast downloads, powerful control. Free, open source and written from scratch in Rust.",
+   "text": "Snelle downloads, volledige controle. Gratis, open source en vanaf nul geschreven in Rust."
+  },
   "22954adcadefc7ba": {
    "source": "Click a download link in the browser: Download File Info opens in DDM.",
    "text": "Klik op een downloadlink in de browser: Bestandsinfo downloaden opent in DDM."
@@ -2481,6 +2497,10 @@
   "267d1780c2b3aa22": {
    "source": "The server, <x1/>, sits next to the app on Windows, macOS and Linux (on Linux use the <x2/>, <x3/> or <x4/>: the AppImage doesn't expose it). You turn on the automation API once with <x5/>, then tell your assistant where the server is. The assistant starts it by itself from then on. The <g6>set-up guide</g6> has the path for each kind of install and the exact entry for Claude Desktop, Claude Code, Cursor and VS Code.",
    "text": "De server, <x1/>, bevindt zich naast de app op Windows, macOS en Linux (op Linux gebruikt u de <x2/>, <x3/> of <x4/>: de AppImage stelt deze niet beschikbaar). U schakelt de automatiserings-API eenmalig in met <x5/> en vertelt uw assistent vervolgens waar de server zich bevindt. De assistent start deze vanaf dat moment zelf. De <g6>installatiehandleiding</g6> bevat het pad voor elk type installatie en de exacte invoer voor Claude Desktop, Claude Code, Cursor en VS Code."
+  },
+  "26a8a80c5fad9f57": {
+   "source": "<g1>Calm when many arrive at once:</g1> a queue's downloads run without opening windows, and downloads that finish together share one <g2>Download complete</g2> window (\"3 more downloads complete\").",
+   "text": "<g1>Rustig als er veel tegelijk binnenkomen:</g1> de downloads van een wachtrij lopen zonder vensters te openen, en downloads die tegelijk klaar zijn, delen één venster <g2>Download voltooid</g2> (‘Nog 3 downloads voltooid’)."
   },
   "26ba7b194ff67f19": {
    "source": "Some sites' bot checks (Cloudflare's challenge, Akamai's edge) let only a browser through, even after DDM asked once more the way your browser connects. DDM then says <g1>this site lets only browsers through</g1> and offers <g2>Download with the browser</g2>: a button in the download's progress window, and an item in its right-click menu in the list. It's still there after DDM restarts.",
@@ -2886,6 +2906,10 @@
    "source": "<g1>The other links of one page</g1> form a package named after the page.",
    "text": "<g1>De overige koppelingen van één pagina</g1> vormen een pakket met de naam van de pagina."
   },
+  "2cd663e3c54ab10a": {
+   "source": "Fast, free and open-source download manager for Windows, macOS and Linux. Parallel connections, crash-safe resume, torrents, video from web pages, browser integration and 86 languages.",
+   "text": "Snelle, gratis opensource-downloadmanager voor Windows, macOS en Linux. Parallelle verbindingen, crashbestendig hervatten, torrents, video van webpagina's, browserintegratie en 86 talen."
+  },
   "2ce984608b61ca9b": {
    "source": "<g1>Browse</g1> — open its folder in Explorer.",
    "text": "<g1>Bladeren</g1> — open de map in Verkenner."
@@ -2929,6 +2953,10 @@
   "2d91701284b91b0a": {
    "source": "Source code",
    "text": "Broncode"
+  },
+  "2d995f162e7cf2ed": {
+   "source": "In your browser",
+   "text": "In uw browser"
   },
   "2d9d101be2d0f3be": {
    "source": "FTP and FTPS (<x1/>) go through the same planner, workers and state: a segment is <x2/> + <x3/> on a control session instead of a ranged <x4/>, <x5/> and <x6/> stand in for the headers, and sessions are pooled per download and reused between segments.",
@@ -3418,6 +3446,10 @@
    "source": "Right-click the list's blank space for <g1>Add new download</g1>, <g2>Select all</g2>, <g3>Arrange files</g3>, <g4>Clear all filters</g4> and <g5>Delete All Completed</g5>.",
    "text": "Klik met de rechtermuisknop op de lege ruimte van de lijst voor <g1>Nieuwe download toevoegen</g1>, <g2>Alles selecteren</g2>, <g3>Bestanden rangschikken</g3>, <g4>Alle filters wissen</g4> en <g5>Alle voltooide downloads verwijderen</g5>."
   },
+  "369983e69928fc01": {
+   "source": "<g1>{v1}</g1> <g2>20.9 MB</g2>",
+   "text": "<g1>{v1}</g1> <g2>20.9 MB</g2>"
+  },
   "36a1df60e5ee30b9": {
    "source": "<g1><x2/></g1> — what <g3>View → Theme</g3> lists; the file's name when there is none.",
    "text": "<g1><x2/></g1> — wat <g3>Beeld → Thema</g3> weergeeft; de bestandsnaam als er geen is."
@@ -3445,6 +3477,10 @@
   "3724a83fa3a38087": {
    "source": "<g1>Download Later</g1> — add it to a queue without starting. See below.",
    "text": "<g1>Later downloaden</g1> — voeg het toe aan een wachtrij zonder te starten. Zie hieronder."
+  },
+  "3727118233cdf55d": {
+   "source": "Right-click <g1>Download with DDM</g1>, for any link, magnet links included, and <g2>Download all links, images or videos and audio</g2> of a page.",
+   "text": "Rechtsklik op <g1>Downloaden met DDM</g1> voor elke link, ook magnetlinks, en <g2>Alle links, afbeeldingen of video en audio downloaden</g2> van een pagina."
   },
   "3731ebb25637b8d0": {
    "source": "The page then says <g1>On</g1> and shows the address to open, such as <x2/>.",
@@ -5454,6 +5490,10 @@
    "source": "If your antivirus quarantined DDM, restore it and add an exception for its folder. If it flags something other than the setup or DDM's own programs, or a copy from anywhere else, don't run it, and please <g1>tell us</g1>.",
    "text": "Als uw antivirus DDM in quarantaine heeft geplaatst, herstel het dan en voeg een uitzondering toe voor de map. Als het iets anders markeert dan de installatie of de eigen programma's van DDM, of een exemplaar van elders, voer het dan niet uit en <g1>vertel het ons</g1>."
   },
+  "569ad7719d07f2f2": {
+   "source": "The first official release of Dannex Download Manager: a free, open-source download manager for Windows (with Linux and an experimental macOS version), laid out the way Internet Download Manager users expect, and faster.",
+   "text": "De eerste officiële release van Dannex Download Manager: een gratis opensource-downloadmanager voor Windows (met Linux en een experimentele versie voor macOS), ingedeeld zoals gebruikers van Internet Download Manager gewend zijn, en sneller."
+  },
   "569b5b4f390246d8": {
    "source": "Command line and automation",
    "text": "Opdrachtregel en automatisering"
@@ -6042,6 +6082,10 @@
    "source": "HTTPS downloads fail with \"no certificates\" (Linux)",
    "text": "HTTPS-downloads mislukken met \"geen certificaten\" (Linux)"
   },
+  "5faf94f57d338d2e": {
+   "source": "Dannex Download Manager: a fast, free download manager",
+   "text": "Dannex Download Manager: een snelle, gratis downloadmanager"
+  },
   "5fcf0291ca3b8d9c": {
    "source": "Counts, sizes, speeds and percentages will be written the way the chosen language writes them (German <x1/> and <x2/>, French <x3/>), whatever the Windows region; a region in the same language keeps its own way. English stays as it is. Buttons will grow to fit their translated text in every window, so a longer German or Russian label is no longer cut short. Dates keep following your region, or your own choice in <g4>Options → Regional</g4>.",
    "text": "Aantallen, groottes, snelheden en percentages worden geschreven zoals de gekozen taal ze schrijft (Duits <x1/> en <x2/>, Frans <x3/>), ongeacht de Windows-regio; een regio in dezelfde taal behoudt zijn eigen manier. Engels blijft zoals het is. Knoppen worden groter om hun vertaalde tekst in elk venster te passen, zodat een langer Duits of Russisch label niet langer wordt afgekapt. Datums blijven uw regio volgen, of uw eigen keuze in <g4>Opties → Regionaal</g4>."
@@ -6246,6 +6290,10 @@
    "source": "<g1>Categories</g1><g2>Dannex Download Manager</g2>",
    "text": "<g1>Categorieën</g1><g2>Dannex Download Manager</g2>"
   },
+  "62b2e43b5e031e17": {
+   "source": "<g1>Download File Info, the way you know it:</g1> the file starts arriving while you choose where it goes, and it joins the list only once you click <g2>Start Download</g2> or <g3>Download Later</g3>; <g4>Cancel</g4> leaves nothing behind.",
+   "text": "<g1>Bestandsinfo downloaden, zoals u het kent:</g1> het bestand komt al binnen terwijl u kiest waar het heen gaat, en het komt pas in de lijst als u op <g2>Download starten</g2> of <g3>Later downloaden</g3> klikt; <g4>Annuleren</g4> laat niets achter."
+  },
   "62b391cabe3b0674": {
    "source": "Drag a link from your browser onto it: it lights up with an amber frame while something it can take is over it. Let go, and DDM adds the link as if you had used <g1>Add URL</g1>.",
    "text": "Sleep een koppeling uit uw browser erheen: het licht op met een amberkleurig kader zolang er iets boven hangt wat het kan aannemen. Laat los, en DDM voegt de koppeling toe alsof u <g1>URL toevoegen</g1> had gebruikt."
@@ -6273,6 +6321,10 @@
   "631b9914f6507aef": {
    "source": "<g1>Testing it.</g1> <x2/> runs a real freeze, panic and crash (<x3/>) and checks each report's signature. To try it in the app, start DDM with <x4/>, then run <x5/> (a deadlock; or <x6/>, 12 s of a busy window thread, <x7/>, <x8/>, <x9/>). <x10/> does that in a copy of the app off the screens, its window visible and minimized.",
    "text": "<g1>Testen.</g1> <x2/> voert een echte vastloper, paniek en crash (<x3/>) uit en controleert de handtekening van elk rapport. Om het in de app te proberen, start u DDM met <x4/> en voert u vervolgens <x5/> uit (een deadlock; of <x6/>, 12 seconden van een drukke vensterthread, <x7/>, <x8/>, <x9/>). <x10/> doet dat in een kopie van de app buiten beeld, met het venster zichtbaar en geminimaliseerd."
+  },
+  "6340aeee835f4991": {
+   "source": "<g1>Videos</g1> from thousands of sites with yt-dlp, with playlists, subtitles (embedded or beside the file) and the sound alone; <g2>image galleries</g2> with gallery-dl, through DDM's own downloader.",
+   "text": "<g1>Video's</g1> van duizenden sites met yt-dlp, met afspeellijsten, ondertitels (ingesloten of naast het bestand) en alleen het geluid; <g2>afbeeldingsgalerijen</g2> met gallery-dl, via de eigen downloader van DDM."
   },
   "635f40f1db7e086a": {
    "source": "Pause running downloads, or start (resume) stopped, queued or failed ones, in the running app.",
@@ -7050,6 +7102,10 @@
    "source": "A server at a medium round trip (60 to 150 ms)",
    "text": "Een server met een gemiddelde round trip (60 tot 150 ms)"
   },
+  "70be5377fd1f31fb": {
+   "source": "<g1>Site Grabber:</g1> a whole site or part of one, to read offline, in projects you can always come back to under <g2>Grabber projects</g2>.",
+   "text": "<g1>Sitegrabber:</g1> een hele site of een deel ervan, om offline te lezen, in projecten waar u altijd naar kunt terugkeren onder <g2>Grabberprojecten</g2>."
+  },
   "70d42911cc360e5b": {
    "source": "On Linux",
    "text": "Op Linux"
@@ -7197,6 +7253,10 @@
   "72f3284ff6dd83fc": {
    "source": "<g1>Up</g1> / <g2>Down</g2>, <g3>Left</g3> / <g4>Right</g4>",
    "text": "<g1>Pijl omhoog</g1> / <g2>Pijl omlaag</g2>, <g3>Pijl links</g3> / <g4>Pijl rechts</g4>"
+  },
+  "72fcb0d3a8812fe4": {
+   "source": "<g1>Help → Support DDM</g1> opens Dannex's page on GitHub Sponsors.",
+   "text": "<g1>Help → DDM steunen</g1> opent de pagina van Dannex op GitHub Sponsors."
   },
   "72ff8f6b37364fc1": {
    "source": "is where files land: each category has its folder inside (<x1/>, <x2/>, <x3/>…). Mount a network share there to download straight onto it.",
@@ -7558,6 +7618,10 @@
    "source": "Add Dannex Download Manager to your browser: each browser found, with a button to add the extension to it",
    "text": "Voeg Dannex Download Manager toe aan uw browser: elke gevonden browser, met een knop om de extensie eraan toe te voegen"
   },
+  "7935eef577c848b4": {
+   "source": "Dannex Download Manager — fast, free download manager",
+   "text": "Dannex Download Manager — snelle, gratis downloadmanager"
+  },
   "793dc38942ce9ab9": {
    "source": "A control is greyed only while it can't apply: a box under a choice that is off, a button with nothing selected.",
    "text": "Een besturingselement is alleen grijs zolang het niet van toepassing is: een vak onder een keuze die uit staat, een knop zonder selectie."
@@ -7749,6 +7813,10 @@
   "7bda8095d8381906": {
    "source": "Other programs can ask the running app for its downloads, as JSON, and pause, start, remove or delete them. They connect to a port on this computer only, with a secret token that changes at every start and that only your own programs can read. The API is off until you turn it on with <x1/>, and <x2/>, <x3/>, <x4/>, <x5/> and <x6/> use it from the command line.",
    "text": "Andere programma's kunnen de actieve app om zijn downloads vragen, als JSON, en deze pauzeren, starten, verwijderen of wissen. Ze maken alleen verbinding met een poort op deze computer, met een geheim token dat bij elke start verandert en dat alleen uw eigen programma's kunnen lezen. De API is uitgeschakeld totdat u deze inschakelt met <x1/>, en <x2/>, <x3/>, <x4/>, <x5/> en <x6/> gebruiken deze vanaf de opdrachtregel."
+  },
+  "7be69af9eb37f63f": {
+   "source": "Fast downloads. Powerful control. Free forever.",
+   "text": "Snelle downloads. Krachtige controle. Voor altijd gratis."
   },
   "7beb76c0e99ab62c": {
    "source": "<g1>Videos that need you signed in</g1>: <g2>Options → Sites Logins → Cookies for video sites</g2> lets yt-dlp read a browser's cookies, for pasted links. Chrome, Edge and Brave lock theirs on Windows, and the window says so; Firefox works, and so does the button over the video.",
@@ -9418,6 +9486,10 @@
    "source": "Select the downloads in the box",
    "text": "De downloads in het vak selecteren"
   },
+  "97eba27f9800113f": {
+   "source": "<g1>Queues and the Scheduler</g1> start and stop on their own, can wake the computer, and turn it off when done. <g2>Speed Limiter</g2>, categories with their own folders, and duplicate handling.",
+   "text": "<g1>Wachtrijen en de Planner</g1> starten en stoppen vanzelf, kunnen de computer wekken en zetten hem uit als ze klaar zijn. <g2>Snelheidsbegrenzer</g2>, categorieën met eigen mappen, en afhandeling van dubbele downloads."
+  },
   "97ec4888f860947d": {
    "source": "What other people can see",
    "text": "Wat anderen kunnen zien"
@@ -9517,6 +9589,10 @@
   "99605902518653e2": {
    "source": "The same programs without an installer. It keeps its data in <x1/>, like an installed copy.",
    "text": "Dezelfde programma's zonder installatieprogramma. Het bewaart zijn gegevens in <x1/>, net als een geïnstalleerde kopie."
+  },
+  "9970aef0a32e17f8": {
+   "source": "<g1>The DDM Integration Module</g1> for Chrome, Edge, Brave, Opera, Vivaldi and Firefox hands your downloads to DDM with their sign-in. One click on its toolbar button turns it off or on; when DDM isn't installed, its page says so and turns green by itself once it is.",
+   "text": "<g1>De DDM Integration Module</g1> voor Chrome, Edge, Brave, Opera, Vivaldi en Firefox geeft uw downloads door aan DDM, samen met uw aanmeldgegevens. Met één klik op de knop in de werkbalk zet u de module uit of aan; als DDM niet is geïnstalleerd, meldt de pagina van de module dat en wordt ze vanzelf groen zodra het wel is geïnstalleerd."
   },
   "997cc2f8f3474ae1": {
    "source": "Windows<g1><g2>3</g2></g1>",
@@ -9869,6 +9945,10 @@
   "9ee01014043d0097": {
    "source": "Yes. It's open source under the GNU GPL, version 3. No trial, no paid edition, no registration key, no nag screen, no ads. <g1>More</g1>",
    "text": "Ja. Het is open source onder de GNU GPL, versie 3. Geen proefversie, geen betaalde editie, geen registratiesleutel, geen nag screen, geen advertenties. <g1>Meer</g1>"
+  },
+  "9eec233a8d803458": {
+   "source": "Day and dark mode and themes, 86 languages including right to left, keyboard and screen-reader access, a portable version, a phone remote and a server mode.",
+   "text": "Lichte en donkere modus en thema's, 86 talen waaronder talen van rechts naar links, toegang met toetsenbord en schermlezer, een draagbare versie, een afstandsbediening via de telefoon en een servermodus."
   },
   "9efdcb6a62e4c3f8": {
    "source": "File Properties with the download's address",
@@ -10353,6 +10433,10 @@
   "a6c4a4cee356235a": {
    "source": "Apple Silicon: Macs with an M1 chip or later",
    "text": "Apple Silicon: Macs met een M1-chip of nieuwer"
+  },
+  "a6c548e5567b0826": {
+   "source": "<g1>File Properties</g1> on double-click, with the page each download came from; <g2>Show progress</g2> brings back a hidden progress window; <g3>Columns...</g3> shows, hides and orders the list's columns.",
+   "text": "<g1>Bestandseigenschappen</g1> bij dubbelklikken, met de pagina waar elke download vandaan kwam; <g2>Voortgang weergeven</g2> brengt een verborgen voortgangsvenster terug; <g3>Kolommen...</g3> toont, verbergt en ordent de kolommen van de lijst."
   },
   "a6ce09b9c1c7e4cf": {
    "source": "Internet Download Manager 6.42",
@@ -12182,6 +12266,10 @@
    "source": "Was DDM installed with the setup, with <g1>Set up browser integration</g1> ticked? A portable copy can't take browser downloads. Run the setup again to add it.",
    "text": "Is DDM geïnstalleerd met de setup, met <g1>Browserintegratie instellen</g1> aangevinkt? Een draagbare kopie kan geen browserdownloads overnemen. Voer de setup opnieuw uit om dit toe te voegen."
   },
+  "c619dd0d87a7bf20": {
+   "source": "<g1>Virus checking</g1> after each download with the antivirus you choose (one click for Microsoft Defender), and a <g2>temporary folder</g2> of your choice for files still downloading.",
+   "text": "<g1>Viruscontrole</g1> na elke download met de antivirus van uw keuze (één klik voor Microsoft Defender), en een <g2>tijdelijke map</g2> naar keuze voor bestanden die nog worden gedownload."
+  },
   "c62198270f0107d2": {
    "source": "What it sets",
    "text": "Wat het instelt"
@@ -13842,6 +13930,10 @@
    "source": "Chrome, Firefox, Edge and more",
    "text": "Chrome, Firefox, Edge en meer"
   },
+  "e06cb012b324e259": {
+   "source": "Video, galleries, torrents and sites",
+   "text": "Video, galerijen, torrents en sites"
+  },
   "e0ad26c06dcee181": {
    "source": "1 the start time, 2 once or on some days, 3 a stop time if you want one.",
    "text": "1 de starttijd, 2 eenmalig of op sommige dagen, 3 een stoptijd als u die wilt."
@@ -13977,6 +14069,10 @@
   "e2b96614efaa036c": {
    "source": "The drop target's edge at rest",
    "text": "De rand van het doelvlak in rust"
+  },
+  "e2c3ea2afe1c4e19": {
+   "source": "Minimize keeps DDM on the taskbar; closing it keeps it running in the notification area.",
+   "text": "Minimaliseren houdt DDM op de taakbalk; na sluiten blijft DDM actief in het systeemvak."
   },
   "e2d3a15847aa0c81": {
    "source": "Point at the button: its tooltip says which of these it is, and what a click does.",
@@ -14502,6 +14598,10 @@
    "source": "<g1>Ctrl+M</g1> or <g2>F2</g2>",
    "text": "<g1>Ctrl+M</g1> of <g2>F2</g2>"
   },
+  "eb60a779982bcd66": {
+   "source": "Chrome, Edge and Brave run an extension in private (incognito) windows only when you allow it, and Firefox asks too. Until then, downloads from private windows stay with the browser. To allow it: on the browser's extensions page, open <g1>Details</g1> and turn on <g2>Allow in Incognito</g2>; in Firefox, <g3>Add-ons and themes</g3> → the extension → <g4>Allow</g4> beside <g5>Run in Private Windows</g5>. Downloads from a private window use that window's cookies, and DDM doesn't keep them in its list once they're done.",
+   "text": "Chrome, Edge en Brave voeren een extensie alleen in privévensters (incognito) uit als u dat toestaat, en Firefox vraagt het ook. Tot die tijd blijven downloads uit privévensters bij de browser. Zo staat u het toe: open op de extensiepagina van de browser <g1>Details</g1> en zet <g2>Toestaan in incognitomodus</g2> aan; in Firefox: <g3>Add-ons en thema's</g3> → de extensie → <g4>Toestaan</g4> naast <g5>Uitvoeren in privévensters</g5> (Run in Private Windows). Downloads uit een privévenster gebruiken de cookies van dat venster, en DDM bewaart ze niet in de lijst zodra ze klaar zijn."
+  },
   "eb712f80554a3646": {
    "source": "A window in DDM may be waiting for you (a question, <g1>Add torrent</g1>); answer it and ask again.",
    "text": "Een venster in DDM wacht mogelijk op u (een vraag, <g1>Torrent toevoegen</g1>); beantwoord deze en vraag opnieuw."
@@ -14862,6 +14962,10 @@
    "source": "Make everything larger / smaller, in every window (<g1>View → Interface size</g1>, 100 % to 200 %)",
    "text": "Alles groter / kleiner maken, in elk venster (<g1>Beeld → Interfasegrootte</g1>, 100 % tot 200 %)"
   },
+  "f14a2209d8262597": {
+   "source": "Dannex Download Manager — fast, free and open source",
+   "text": "Dannex Download Manager — snel, gratis en opensource"
+  },
   "f15210a203cd6290": {
    "source": "<g1>DDM can't be reached</g1>: the button is grey with a red <g2>!</g2>. A click opens the extension's status page instead of switching anything: in a sentence or two it says what is wrong and the one thing to do, offers DDM's download for your system when DDM isn't installed, and turns into <g3>Dannex Download Manager is installed</g3> by itself once DDM answers. See <g4>The browser and DDM aren't connected</g4> for every case.",
    "text": "<g1>DDM is niet bereikbaar</g1>: de knop is grijs met een rode <g2>!</g2>. Een klik opent de statuspagina van de extensie in plaats van iets om te schakelen: in een of twee zinnen zegt ze wat er mis is en het ene wat u moet doen, biedt ze de download van DDM voor uw systeem aan wanneer DDM niet is geïnstalleerd, en verandert ze vanzelf in <g3>Dannex Download Manager is geïnstalleerd</g3> zodra DDM antwoordt. Zie <g4>De browser en DDM zijn niet verbonden</g4> voor elk geval."
@@ -15154,6 +15258,10 @@
    "source": "Dannex Download Manager: <g1>its source code</g1> and <g2>our benchmark</g2> against IDM 6.42. We haven't benchmarked the others yet; until we do, this page makes no speed claim about them.",
    "text": "Dannex Download Manager: <g1>de broncode</g1> en <g2>onze benchmark</g2> tegen IDM 6.42. We hebben de andere nog niet gebenchmarkt; totdat we dat doen, doet deze pagina geen snelheidsclaims over hen."
   },
+  "f7591c001d6f9531": {
+   "source": "<g1>Torrents and magnet links</g1>, with sequential order, RSS feeds and sharing limits; the Add torrent window says what it is waiting for.",
+   "text": "<g1>Torrents en magnetlinks</g1>, met opeenvolgende volgorde, RSS-feeds en deellimieten; het venster Torrent toevoegen laat zien waarop het wacht."
+  },
   "f7656bbc30b4c552": {
    "source": "<g1>Network adapter</g1><g2>Every connection DDM opens goes out through the adapter you pick, and stops when it disconnects.</g2>",
    "text": "<g1>Netwerkadapter</g1><g2>Elke verbinding die DDM opent, gaat via de adapter die u kiest en stopt wanneer deze wordt verbroken.</g2>"
@@ -15422,6 +15530,10 @@
    "source": "Delivery",
    "text": "Levering"
   },
+  "fba54406a7ebc6eb": {
+   "source": "Parallel downloads, crash-safe resume, torrents and video from millions of sites, browser integration and more.",
+   "text": "Parallelle downloads, crashbestendig hervatten, torrents en video van miljoenen sites, browserintegratie en meer."
+  },
   "fbb161a5ca59215d": {
    "source": "Click <g1>Load unpacked</g1> and choose the <x2/> folder.",
    "text": "Klik op <g1>Uitgepakte extensie laden</g1> en selecteer de map <x2/>."
@@ -15462,6 +15574,10 @@
    "source": "<g1>Limits.</g1> A loopback link has no real distance or packet loss; the faults stand in for them. Results are from one machine. Run it yourself: <x2/>, then <x3/>.",
    "text": "<g1>Limieten.</g1> Een loopback-verbinding heeft geen echte afstand of pakketverlies; de fouten staan daarvoor in de plaats. Resultaten zijn van één machine. Voer het zelf uit: <x2/>, daarna <x3/>."
   },
+  "fc27eae7fbac2219": {
+   "source": "<g1>A Download video button</g1> over videos, whose qualities show at once on YouTube.",
+   "text": "<g1>Een knop Video downloaden</g1> boven video's, met de kwaliteiten op YouTube direct zichtbaar."
+  },
   "fc2924c84dfb0d12": {
    "source": "The extension and DDM tell each other their versions at each connection, and every pair keeps working:",
    "text": "De extensie en DDM delen elkaar bij elke verbinding hun versies mee, en elk paar blijft werken:"
@@ -15485,6 +15601,10 @@
   "fc67345a4f529039": {
    "source": "Choose whether to install for you only or for everyone on the computer. For you only needs no administrator rights and goes to <x1/>. For everyone goes to <x2/>.",
    "text": "Kies of u alleen voor uzelf of voor iedereen op de computer wilt installeren. Alleen voor uzelf vereist geen beheerdersrechten en gaat naar <x1/>. Voor iedereen gaat naar <x2/>."
+  },
+  "fc7fe0579b9363e9": {
+   "source": "One egui window painted to fixed pixel coordinates, plus one immediate viewport per dialog. <x1/> holds the state (downloads, queues, settings, the list's selection) and turns menu, toolbar, key and IPC commands into actions. Each dialog is its own module and returns an <x2/> (open, closed, done with a value). A window that comes up by itself (Download complete, a message DDM tells, a question while DDM isn't the program in front) shows above the others without taking the keyboard from the program being typed in (<x3/>, <x4/>); those the person asked for take it. Windows handed over one after another (Download File Info, Add torrent, Download video) and Download complete boxes show one at a time, in one place, the next when one closes. Windows-only calls are confined to <x5/> and their Linux and macOS counterparts to <x6/> (starting with the session, the browsers' host, sounds, show in folder, the crash handler); every other file is safe, portable Rust. Fonts come from the system: Windows' Fonts folder, macOS's system fonts, fontconfig on Linux (<x7/>). On Windows, Latin, Greek and Cyrillic text is drawn by DirectWrite (<x8/>, through egui's glyph rasterizer hook): View → Text → Smooth in its natural mode, anti-aliased at the size asked for and placed at quarter pixels with the font's own advances; Classic (the default) in GDI-classic mode, so each letter's hinted shape and whole-pixel width come together. Other scripts are shaped and drawn by egui.",
+   "text": "Eén egui-venster, getekend op vaste pixelcoördinaten, plus één immediate viewport per dialoogvenster. <x1/> bevat de status (downloads, wachtrijen, instellingen, de selectie in de lijst) en zet opdrachten uit het menu, de werkbalk, toetsen en IPC om in acties. Elk dialoogvenster is een eigen module en geeft een <x2/> terug (open, gesloten, klaar met een waarde). Een venster dat vanzelf verschijnt (Download voltooid, een melding van DDM, een vraag terwijl DDM niet het actieve programma is) staat boven de andere zonder het toetsenbord af te nemen van het programma waarin wordt getypt (<x3/>, <x4/>); vensters waarom de gebruiker zelf vroeg, krijgen het wel. Vensters die na elkaar worden aangeboden (Bestandsinfo downloaden, Torrent toevoegen, Video downloaden) en vensters van Download voltooid verschijnen één voor één, op één plek; het volgende komt zodra er een sluit. Aanroepen die alleen voor Windows zijn, staan uitsluitend in <x5/> en hun tegenhangers voor Linux en macOS in <x6/> (starten met de sessie, de host voor browsers, geluiden, weergeven in map, de crashhandler); elk ander bestand is veilige, overdraagbare Rust. Lettertypen komen van het systeem: de map Fonts van Windows, de systeemlettertypen van macOS, fontconfig op Linux (<x7/>). Op Windows wordt Latijnse, Griekse en Cyrillische tekst getekend door DirectWrite (<x8/>, via de hook voor de glyph-rasterizer van egui): Beeld → Tekst → Vloeiend in de natuurlijke modus, met anti-aliasing op de gevraagde grootte en geplaatst op kwartpixels met de eigen tekenbreedtes van het lettertype; Klassiek (de standaard) in de GDI-classic-modus van Windows, zodat de gehinte vorm en de breedte in hele pixels van elke letter samengaan. Andere schriften worden door egui gevormd en getekend."
   },
   "fc80e6d7a3cc65b1": {
    "source": "Link grabber",

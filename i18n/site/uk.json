@@ -918,6 +918,10 @@
    "source": "Download image galleries with gallery-dl",
    "text": "Завантажуйте галереї зображень за допомогою gallery-dl"
   },
+  "0d6d6fd7630a14c1": {
+   "source": "<g1>A new icon, Comet</g1>, everywhere: the app, the tray, the extension, the setup and the website.",
+   "text": "<g1>Новий значок Comet</g1> усюди: у програмі, в області сповіщень, у розширенні, в інсталяторі та на вебсайті."
+  },
   "0d7f42041638ea02": {
    "source": "Portable: the <x1/> folder next to <x2/>.",
    "text": "Портативна версія: папка <x1/> поруч із <x2/>."
@@ -1125,6 +1129,10 @@
   "110ed064f2b04424": {
    "source": "Time left",
    "text": "Залишилося часу"
+  },
+  "110f6923f841ef40": {
+   "source": "<g1>Fast:</g1> every download is fetched in several parts at once, re-balanced until the last byte, and resumes after a crash, a restart or a dropped connection without starting over.",
+   "text": "<g1>Швидко:</g1> кожне завантаження отримується кількома частинами одночасно, з перерозподілом до останнього байта, і продовжується після збою, перезапуску чи обриву з'єднання без початку заново."
   },
   "1118f34ca5d1ce1f": {
    "source": "<g1>Put them into the video</g1> puts them inside the file instead, as tracks you switch on in the player. It needs ffmpeg, and an MP4 or MKV video.",
@@ -1381,6 +1389,10 @@
   "14f32a5e9d5c1528": {
    "source": "<g1>Crash reports</g1><g2>Dannex Download Manager</g2>",
    "text": "<g1>Звіти про збої</g1><g2>Dannex Download Manager</g2>"
+  },
+  "14fa22b906ffd970": {
+   "source": "A fast, open-source download manager with parallel connections, crash-safe resume, browser capture, torrents and video in one clean list.",
+   "text": "Швидкий менеджер завантажень із відкритим кодом: паралельні з'єднання, докачування, стійке до збоїв, перехоплення з браузера, торренти й відео в одному охайному списку."
   },
   "150f2a29232af59e": {
    "source": "The main window in the Adwaita theme",
@@ -2210,6 +2222,10 @@
    "source": "<g1>Your IP address.</g1> Everyone sharing the same torrent sees it, as do its trackers and the DHT (the network peers use to find each other). That's how BitTorrent works, and no setting in DDM changes it. To hide your address, use a VPN on your whole computer.",
    "text": "<g1>Ваша IP-адреса.</g1> Її бачать усі, хто ділиться тим самим торрентом, а також його трекери та DHT (мережа, яку піри використовують для пошуку один одного). Так працює BitTorrent, і жодні налаштування в DDM цього не змінюють. Щоб приховати свою адресу, використовуйте VPN на всьому комп'ютері."
   },
+  "227b1f953bdd694f": {
+   "source": "Fast downloads, powerful control. Free, open source and written from scratch in Rust.",
+   "text": "Швидкі завантаження, повний контроль. Безкоштовний, з відкритим кодом і написаний з нуля на Rust."
+  },
   "22954adcadefc7ba": {
    "source": "Click a download link in the browser: Download File Info opens in DDM.",
    "text": "Натисніть посилання для завантаження в браузері: у DDM відкриється вікно «Інформація про файл завантаження»."
@@ -2481,6 +2497,10 @@
   "267d1780c2b3aa22": {
    "source": "The server, <x1/>, sits next to the app on Windows, macOS and Linux (on Linux use the <x2/>, <x3/> or <x4/>: the AppImage doesn't expose it). You turn on the automation API once with <x5/>, then tell your assistant where the server is. The assistant starts it by itself from then on. The <g6>set-up guide</g6> has the path for each kind of install and the exact entry for Claude Desktop, Claude Code, Cursor and VS Code.",
    "text": "Сервер, <x1/>, знаходиться поруч із програмою на Windows, macOS та Linux (на Linux використовуйте <x2/>, <x3/> або <x4/>: AppImage його не надає). Ви вмикаєте API автоматизації один раз за допомогою <x5/>, потім повідомляєте своєму асистенту, де знаходиться сервер. З того часу асистент запускає його самостійно. <g6>Посібник з налаштування</g6> містить шлях для кожного типу встановлення та точний запис для Claude Desktop, Claude Code, Cursor та VS Code."
+  },
+  "26a8a80c5fad9f57": {
+   "source": "<g1>Calm when many arrive at once:</g1> a queue's downloads run without opening windows, and downloads that finish together share one <g2>Download complete</g2> window (\"3 more downloads complete\").",
+   "text": "<g1>Спокійно, навіть коли завантажень багато:</g1> завантаження з черги виконуються без відкриття вікон, а завантаження, що завершилися одночасно, показуються в одному вікні <g2>Завантаження завершено</g2> («Завершено ще 3 завантаження»)."
   },
   "26ba7b194ff67f19": {
    "source": "Some sites' bot checks (Cloudflare's challenge, Akamai's edge) let only a browser through, even after DDM asked once more the way your browser connects. DDM then says <g1>this site lets only browsers through</g1> and offers <g2>Download with the browser</g2>: a button in the download's progress window, and an item in its right-click menu in the list. It's still there after DDM restarts.",
@@ -2886,6 +2906,10 @@
    "source": "<g1>The other links of one page</g1> form a package named after the page.",
    "text": "<g1>Інші посилання однієї сторінки</g1> утворюють пакет, названий на честь сторінки."
   },
+  "2cd663e3c54ab10a": {
+   "source": "Fast, free and open-source download manager for Windows, macOS and Linux. Parallel connections, crash-safe resume, torrents, video from web pages, browser integration and 86 languages.",
+   "text": "Швидкий безкоштовний менеджер завантажень із відкритим кодом для Windows, macOS і Linux. Паралельні з'єднання, докачування, стійке до збоїв, торренти, відео з вебсторінок, інтеграція з браузером і 86 мов."
+  },
   "2ce984608b61ca9b": {
    "source": "<g1>Browse</g1> — open its folder in Explorer.",
    "text": "<g1>Огляд</g1> — відкрити її папку в Провіднику."
@@ -2929,6 +2953,10 @@
   "2d91701284b91b0a": {
    "source": "Source code",
    "text": "Вихідний код"
+  },
+  "2d995f162e7cf2ed": {
+   "source": "In your browser",
+   "text": "У вашому браузері"
   },
   "2d9d101be2d0f3be": {
    "source": "FTP and FTPS (<x1/>) go through the same planner, workers and state: a segment is <x2/> + <x3/> on a control session instead of a ranged <x4/>, <x5/> and <x6/> stand in for the headers, and sessions are pooled per download and reused between segments.",
@@ -3418,6 +3446,10 @@
    "source": "Right-click the list's blank space for <g1>Add new download</g1>, <g2>Select all</g2>, <g3>Arrange files</g3>, <g4>Clear all filters</g4> and <g5>Delete All Completed</g5>.",
    "text": "Клацніть правою кнопкою миші на порожньому місці списку для <g1>Додати нове завантаження</g1>, <g2>Вибрати все</g2>, <g3>Упорядкувати файли</g3>, <g4>Очистити всі фільтри</g4> та <g5>Видалити всі завершені</g5>."
   },
+  "369983e69928fc01": {
+   "source": "<g1>{v1}</g1> <g2>20.9 MB</g2>",
+   "text": "<g1>{v1}</g1> <g2>20.9 MB</g2>"
+  },
   "36a1df60e5ee30b9": {
    "source": "<g1><x2/></g1> — what <g3>View → Theme</g3> lists; the file's name when there is none.",
    "text": "<g1><x2/></g1> — те, що перераховує <g3>Вигляд → Тема</g3>; назва файлу, якщо її немає."
@@ -3445,6 +3477,10 @@
   "3724a83fa3a38087": {
    "source": "<g1>Download Later</g1> — add it to a queue without starting. See below.",
    "text": "<g1>Завантажити пізніше</g1> — додати файл до черги, не починаючи завантаження. Докладніше — нижче."
+  },
+  "3727118233cdf55d": {
+   "source": "Right-click <g1>Download with DDM</g1>, for any link, magnet links included, and <g2>Download all links, images or videos and audio</g2> of a page.",
+   "text": "Пункт контекстного меню <g1>Завантажити за допомогою DDM</g1> для будь-якого посилання, зокрема magnet-посилань, і <g2>Завантажити всі посилання, зображення або відео та аудіо</g2> сторінки."
   },
   "3731ebb25637b8d0": {
    "source": "The page then says <g1>On</g1> and shows the address to open, such as <x2/>.",
@@ -5454,6 +5490,10 @@
    "source": "If your antivirus quarantined DDM, restore it and add an exception for its folder. If it flags something other than the setup or DDM's own programs, or a copy from anywhere else, don't run it, and please <g1>tell us</g1>.",
    "text": "Якщо ваш антивірус помістив DDM у карантин, відновіть його та додайте виняток для його папки. Якщо він позначає щось інше, ніж інсталятор або власні програми DDM, або копію з будь-якого іншого джерела, не запускайте її та, будь ласка, <g1>повідомте нас</g1>."
   },
+  "569ad7719d07f2f2": {
+   "source": "The first official release of Dannex Download Manager: a free, open-source download manager for Windows (with Linux and an experimental macOS version), laid out the way Internet Download Manager users expect, and faster.",
+   "text": "Перший офіційний випуск Dannex Download Manager: безкоштовний менеджер завантажень із відкритим кодом для Windows (а також для Linux і в експериментальній версії для macOS), влаштований так, як звикли користувачі Internet Download Manager, і швидший."
+  },
   "569b5b4f390246d8": {
    "source": "Command line and automation",
    "text": "Командний рядок та автоматизація"
@@ -6042,6 +6082,10 @@
    "source": "HTTPS downloads fail with \"no certificates\" (Linux)",
    "text": "Завантаження HTTPS не вдаються з помилкою «немає сертифікатів» (Linux)"
   },
+  "5faf94f57d338d2e": {
+   "source": "Dannex Download Manager: a fast, free download manager",
+   "text": "Dannex Download Manager: швидкий безкоштовний менеджер завантажень"
+  },
   "5fcf0291ca3b8d9c": {
    "source": "Counts, sizes, speeds and percentages will be written the way the chosen language writes them (German <x1/> and <x2/>, French <x3/>), whatever the Windows region; a region in the same language keeps its own way. English stays as it is. Buttons will grow to fit their translated text in every window, so a longer German or Russian label is no longer cut short. Dates keep following your region, or your own choice in <g4>Options → Regional</g4>.",
    "text": "Кількість, розміри, швидкості та відсотки будуть написані так, як їх пише вибрана мова (німецька <x1/> та <x2/>, французька <x3/>), незалежно від регіону Windows; регіон тією ж мовою зберігає свій власний спосіб. Англійська залишається як є. Кнопки збільшуватимуться, щоб відповідати перекладеному тексту в кожному вікні, тому довший німецький або російський напис більше не обрізається. Дати продовжують відповідати вашому регіону або вашому власному вибору в <g4>Параметри → Регіональні</g4>."
@@ -6246,6 +6290,10 @@
    "source": "<g1>Categories</g1><g2>Dannex Download Manager</g2>",
    "text": "<g1>Категорії</g1><g2>Dannex Download Manager</g2>"
   },
+  "62b2e43b5e031e17": {
+   "source": "<g1>Download File Info, the way you know it:</g1> the file starts arriving while you choose where it goes, and it joins the list only once you click <g2>Start Download</g2> or <g3>Download Later</g3>; <g4>Cancel</g4> leaves nothing behind.",
+   "text": "<g1>Інформація про файл завантаження — як ви звикли:</g1> файл починає надходити, поки ви вибираєте, куди його зберегти, і потрапляє до списку, лише коли ви натиснете <g2>Почати завантаження</g2> або <g3>Завантажити пізніше</g3>; <g4>Скасувати</g4> не залишає нічого."
+  },
   "62b391cabe3b0674": {
    "source": "Drag a link from your browser onto it: it lights up with an amber frame while something it can take is over it. Let go, and DDM adds the link as if you had used <g1>Add URL</g1>.",
    "text": "Перетягніть на нього посилання з браузера: він підсвічується бурштиновою рамкою, поки над ним є те, що він може прийняти. Відпустіть, і DDM додасть посилання так само, як через <g1>Додати URL</g1>."
@@ -6273,6 +6321,10 @@
   "631b9914f6507aef": {
    "source": "<g1>Testing it.</g1> <x2/> runs a real freeze, panic and crash (<x3/>) and checks each report's signature. To try it in the app, start DDM with <x4/>, then run <x5/> (a deadlock; or <x6/>, 12 s of a busy window thread, <x7/>, <x8/>, <x9/>). <x10/> does that in a copy of the app off the screens, its window visible and minimized.",
    "text": "<g1>Тестування.</g1> <x2/> спричиняє справжнє зависання, паніку та аварійне завершення (<x3/>) і перевіряє підпис кожного звіту. Щоб випробувати це в програмі, запустіть DDM із <x4/>, а потім запустіть <x5/> (взаємне блокування; або <x6/> — 12 с зайнятості потоку вікна, <x7/>, <x8/>, <x9/>). <x10/> виконує це в копії програми за межами екрана: вікно видно, але воно згорнуте."
+  },
+  "6340aeee835f4991": {
+   "source": "<g1>Videos</g1> from thousands of sites with yt-dlp, with playlists, subtitles (embedded or beside the file) and the sound alone; <g2>image galleries</g2> with gallery-dl, through DDM's own downloader.",
+   "text": "<g1>Відео</g1> з тисяч сайтів за допомогою yt-dlp, зі списками відтворення, субтитрами (вбудованими або поруч із файлом) і окремо звуком; <g2>галереї зображень</g2> за допомогою gallery-dl через власний завантажувач DDM."
   },
   "635f40f1db7e086a": {
    "source": "Pause running downloads, or start (resume) stopped, queued or failed ones, in the running app.",
@@ -7050,6 +7102,10 @@
    "source": "A server at a medium round trip (60 to 150 ms)",
    "text": "Сервер із середнім часом відгуку (від 60 до 150 мс)"
   },
+  "70be5377fd1f31fb": {
+   "source": "<g1>Site Grabber:</g1> a whole site or part of one, to read offline, in projects you can always come back to under <g2>Grabber projects</g2>.",
+   "text": "<g1>Захоплення сайтів:</g1> увесь сайт або його частина для читання офлайн — у проєктах, до яких завжди можна повернутися в розділі <g2>Проєкти захоплення</g2>."
+  },
   "70d42911cc360e5b": {
    "source": "On Linux",
    "text": "У Linux"
@@ -7197,6 +7253,10 @@
   "72f3284ff6dd83fc": {
    "source": "<g1>Up</g1> / <g2>Down</g2>, <g3>Left</g3> / <g4>Right</g4>",
    "text": "<g1>Вгору</g1> / <g2>Вниз</g2>, <g3>Вліво</g3> / <g4>Вправо</g4>"
+  },
+  "72fcb0d3a8812fe4": {
+   "source": "<g1>Help → Support DDM</g1> opens Dannex's page on GitHub Sponsors.",
+   "text": "<g1>Довідка → Підтримати DDM</g1> відкриває сторінку Dannex на GitHub Sponsors."
   },
   "72ff8f6b37364fc1": {
    "source": "is where files land: each category has its folder inside (<x1/>, <x2/>, <x3/>…). Mount a network share there to download straight onto it.",
@@ -7558,6 +7618,10 @@
    "source": "Add Dannex Download Manager to your browser: each browser found, with a button to add the extension to it",
    "text": "Додати Dannex Download Manager до браузера: кожен знайдений браузер із кнопкою, щоб додати до нього розширення"
   },
+  "7935eef577c848b4": {
+   "source": "Dannex Download Manager — fast, free download manager",
+   "text": "Dannex Download Manager — швидкий безкоштовний менеджер завантажень"
+  },
   "793dc38942ce9ab9": {
    "source": "A control is greyed only while it can't apply: a box under a choice that is off, a button with nothing selected.",
    "text": "Елемент керування стає недоступним лише тоді, коли він не може застосовуватися: прапорець під вимкненим варіантом, кнопка без вибраного елемента."
@@ -7749,6 +7813,10 @@
   "7bda8095d8381906": {
    "source": "Other programs can ask the running app for its downloads, as JSON, and pause, start, remove or delete them. They connect to a port on this computer only, with a secret token that changes at every start and that only your own programs can read. The API is off until you turn it on with <x1/>, and <x2/>, <x3/>, <x4/>, <x5/> and <x6/> use it from the command line.",
    "text": "Інші програми можуть запитувати у запущеної програми її завантаження у форматі JSON, а також призупиняти, запускати, видаляти або видаляти їх. Вони підключаються до порту лише на цьому комп'ютері, з секретним токеном, який змінюється при кожному запуску і який можуть читати лише ваші власні програми. API вимкнено, доки ви не ввімкнете його за допомогою <x1/>, а <x2/>, <x3/>, <x4/>, <x5/> та <x6/> використовують його з командного рядка."
+  },
+  "7be69af9eb37f63f": {
+   "source": "Fast downloads. Powerful control. Free forever.",
+   "text": "Швидкі завантаження. Повний контроль. Безкоштовно назавжди."
   },
   "7beb76c0e99ab62c": {
    "source": "<g1>Videos that need you signed in</g1>: <g2>Options → Sites Logins → Cookies for video sites</g2> lets yt-dlp read a browser's cookies, for pasted links. Chrome, Edge and Brave lock theirs on Windows, and the window says so; Firefox works, and so does the button over the video.",
@@ -9418,6 +9486,10 @@
    "source": "Select the downloads in the box",
    "text": "Вибрати завантаження в полі"
   },
+  "97eba27f9800113f": {
+   "source": "<g1>Queues and the Scheduler</g1> start and stop on their own, can wake the computer, and turn it off when done. <g2>Speed Limiter</g2>, categories with their own folders, and duplicate handling.",
+   "text": "<g1>Черги й Планувальник</g1> самі запускаються і зупиняються, можуть пробуджувати комп'ютер і вимикати його після завершення. <g2>Обмежувач швидкості</g2>, категорії з власними папками та обробка дублікатів."
+  },
   "97ec4888f860947d": {
    "source": "What other people can see",
    "text": "Що можуть бачити інші люди"
@@ -9517,6 +9589,10 @@
   "99605902518653e2": {
    "source": "The same programs without an installer. It keeps its data in <x1/>, like an installed copy.",
    "text": "Ті самі програми без інсталятора. Дані зберігаються в <x1/>, як і у встановленої версії."
+  },
+  "9970aef0a32e17f8": {
+   "source": "<g1>The DDM Integration Module</g1> for Chrome, Edge, Brave, Opera, Vivaldi and Firefox hands your downloads to DDM with their sign-in. One click on its toolbar button turns it off or on; when DDM isn't installed, its page says so and turns green by itself once it is.",
+   "text": "<g1>DDM Integration Module</g1> для Chrome, Edge, Brave, Opera, Vivaldi і Firefox передає ваші завантаження в DDM разом із даними входу. Одне клацання кнопки модуля на панелі інструментів вимикає або вмикає його; якщо DDM не встановлено, його сторінка про це повідомляє і сама стає зеленою, щойно DDM буде встановлено."
   },
   "997cc2f8f3474ae1": {
    "source": "Windows<g1><g2>3</g2></g1>",
@@ -9869,6 +9945,10 @@
   "9ee01014043d0097": {
    "source": "Yes. It's open source under the GNU GPL, version 3. No trial, no paid edition, no registration key, no nag screen, no ads. <g1>More</g1>",
    "text": "Так. Це програма з відкритим вихідним кодом за ліцензією GNU GPL версії 3. Немає пробного періоду, платної версії, реєстраційного ключа, настирливих вікон чи реклами. <g1>Детальніше</g1>"
+  },
+  "9eec233a8d803458": {
+   "source": "Day and dark mode and themes, 86 languages including right to left, keyboard and screen-reader access, a portable version, a phone remote and a server mode.",
+   "text": "Світлий і темний режими та теми, 86 мов, зокрема з письмом справа наліво, доступ із клавіатури й для програм читання з екрана, портативна версія, керування з телефона і режим сервера."
   },
   "9efdcb6a62e4c3f8": {
    "source": "File Properties with the download's address",
@@ -10353,6 +10433,10 @@
   "a6c4a4cee356235a": {
    "source": "Apple Silicon: Macs with an M1 chip or later",
    "text": "Apple Silicon: Mac з чипом M1 або новішим"
+  },
+  "a6c548e5567b0826": {
+   "source": "<g1>File Properties</g1> on double-click, with the page each download came from; <g2>Show progress</g2> brings back a hidden progress window; <g3>Columns...</g3> shows, hides and orders the list's columns.",
+   "text": "<g1>Властивості файлу</g1> подвійним клацанням, зі сторінкою, з якої прийшло кожне завантаження; <g2>Показати хід завантаження</g2> повертає приховане вікно перебігу; <g3>Стовпці...</g3> показує, приховує та впорядковує стовпці списку."
   },
   "a6ce09b9c1c7e4cf": {
    "source": "Internet Download Manager 6.42",
@@ -12182,6 +12266,10 @@
    "source": "Was DDM installed with the setup, with <g1>Set up browser integration</g1> ticked? A portable copy can't take browser downloads. Run the setup again to add it.",
    "text": "Чи був DDM встановлений за допомогою інсталятора, з позначкою <g1>Налаштувати інтеграцію з браузером</g1>? Портативна копія не може перехоплювати завантаження з браузера. Запустіть інсталятор знову, щоб додати її."
   },
+  "c619dd0d87a7bf20": {
+   "source": "<g1>Virus checking</g1> after each download with the antivirus you choose (one click for Microsoft Defender), and a <g2>temporary folder</g2> of your choice for files still downloading.",
+   "text": "<g1>Перевірка на віруси</g1> після кожного завантаження вибраним вами антивірусом (Microsoft Defender — одним клацанням) і <g2>тимчасова папка</g2> на ваш вибір для файлів, які ще завантажуються."
+  },
   "c62198270f0107d2": {
    "source": "What it sets",
    "text": "Що він встановлює"
@@ -13842,6 +13930,10 @@
    "source": "Chrome, Firefox, Edge and more",
    "text": "Chrome, Firefox, Edge та інші"
   },
+  "e06cb012b324e259": {
+   "source": "Video, galleries, torrents and sites",
+   "text": "Відео, галереї, торренти й сайти"
+  },
   "e0ad26c06dcee181": {
    "source": "1 the start time, 2 once or on some days, 3 a stop time if you want one.",
    "text": "1 час запуску, 2 один раз або в певні дні, 3 час зупинки, якщо потрібно."
@@ -13977,6 +14069,10 @@
   "e2b96614efaa036c": {
    "source": "The drop target's edge at rest",
    "text": "Край цілі перетягування в стані спокою"
+  },
+  "e2c3ea2afe1c4e19": {
+   "source": "Minimize keeps DDM on the taskbar; closing it keeps it running in the notification area.",
+   "text": "Кнопка «Згорнути» залишає DDM на панелі завдань; після закриття він продовжує працювати в області сповіщень."
   },
   "e2d3a15847aa0c81": {
    "source": "Point at the button: its tooltip says which of these it is, and what a click does.",
@@ -14502,6 +14598,10 @@
    "source": "<g1>Ctrl+M</g1> or <g2>F2</g2>",
    "text": "<g1>Ctrl+M</g1> або <g2>F2</g2>"
   },
+  "eb60a779982bcd66": {
+   "source": "Chrome, Edge and Brave run an extension in private (incognito) windows only when you allow it, and Firefox asks too. Until then, downloads from private windows stay with the browser. To allow it: on the browser's extensions page, open <g1>Details</g1> and turn on <g2>Allow in Incognito</g2>; in Firefox, <g3>Add-ons and themes</g3> → the extension → <g4>Allow</g4> beside <g5>Run in Private Windows</g5>. Downloads from a private window use that window's cookies, and DDM doesn't keep them in its list once they're done.",
+   "text": "Chrome, Edge і Brave запускають розширення в приватних вікнах (анонімний перегляд) лише тоді, коли ви це дозволите; Firefox теж запитує дозвіл. Доти завантаження з приватних вікон залишаються в браузері. Щоб дозволити: на сторінці розширень браузера відкрийте <g1>Докладніше</g1> і ввімкніть <g2>Дозволити в режимі анонімного перегляду</g2>; у Firefox — <g3>Додатки й теми</g3> → розширення → <g4>Дозволити</g4> поруч із <g5>Запуск у приватних вікнах</g5> (Run in Private Windows). Завантаження з приватного вікна використовують файли cookie цього вікна, і DDM не зберігає їх у своєму списку після завершення."
+  },
   "eb712f80554a3646": {
    "source": "A window in DDM may be waiting for you (a question, <g1>Add torrent</g1>); answer it and ask again.",
    "text": "Вікно в DDM може чекати на вас (запитання, <g1>Додати торрент</g1>); дайте відповідь і запитайте знову."
@@ -14862,6 +14962,10 @@
    "source": "Make everything larger / smaller, in every window (<g1>View → Interface size</g1>, 100 % to 200 %)",
    "text": "Збільшити / зменшити все в кожному вікні (<g1>Вигляд → Розмір інтерфейсу</g1>, від 100 % до 200 %)"
   },
+  "f14a2209d8262597": {
+   "source": "Dannex Download Manager — fast, free and open source",
+   "text": "Dannex Download Manager — швидкий, безкоштовний, з відкритим кодом"
+  },
   "f15210a203cd6290": {
    "source": "<g1>DDM can't be reached</g1>: the button is grey with a red <g2>!</g2>. A click opens the extension's status page instead of switching anything: in a sentence or two it says what is wrong and the one thing to do, offers DDM's download for your system when DDM isn't installed, and turns into <g3>Dannex Download Manager is installed</g3> by itself once DDM answers. See <g4>The browser and DDM aren't connected</g4> for every case.",
    "text": "<g1>DDM недоступний</g1>: кнопка сіра з червоним <g2>!</g2>. Клацання відкриває сторінку стану розширення замість перемикання: в одному-двох реченнях вона повідомляє, що не так і що потрібно зробити, пропонує завантаження DDM для вашої системи, якщо DDM не встановлено, і сама перетворюється на <g3>Dannex Download Manager встановлено</g3>, щойно DDM відповість. Усі випадки див. у розділі <g4>Браузер і DDM не пов’язані</g4>."
@@ -15154,6 +15258,10 @@
    "source": "Dannex Download Manager: <g1>its source code</g1> and <g2>our benchmark</g2> against IDM 6.42. We haven't benchmarked the others yet; until we do, this page makes no speed claim about them.",
    "text": "Dannex Download Manager: <g1>вихідний код</g1> та <g2>наш тест</g2> проти IDM 6.42. Ми ще не тестували інші; доки ми цього не зробимо, ця сторінка не робить жодних заяв щодо їхньої швидкості."
   },
+  "f7591c001d6f9531": {
+   "source": "<g1>Torrents and magnet links</g1>, with sequential order, RSS feeds and sharing limits; the Add torrent window says what it is waiting for.",
+   "text": "<g1>Торренти й magnet-посилання</g1> з послідовним порядком, каналами RSS і обмеженнями роздачі; вікно «Додати торрент» показує, на що воно чекає."
+  },
   "f7656bbc30b4c552": {
    "source": "<g1>Network adapter</g1><g2>Every connection DDM opens goes out through the adapter you pick, and stops when it disconnects.</g2>",
    "text": "<g1>Мережевий адаптер</g1><g2>Кожне з'єднання, яке відкриває DDM, проходить через вибраний вами адаптер і зупиняється при його відключенні.</g2>"
@@ -15422,6 +15530,10 @@
    "source": "Delivery",
    "text": "Доставка"
   },
+  "fba54406a7ebc6eb": {
+   "source": "Parallel downloads, crash-safe resume, torrents and video from millions of sites, browser integration and more.",
+   "text": "Паралельні завантаження, докачування, стійке до збоїв, торренти й відео з мільйонів сайтів, інтеграція з браузером та інше."
+  },
   "fbb161a5ca59215d": {
    "source": "Click <g1>Load unpacked</g1> and choose the <x2/> folder.",
    "text": "Натисніть <g1>Завантажити розпаковане</g1> та виберіть папку <x2/>."
@@ -15462,6 +15574,10 @@
    "source": "<g1>Limits.</g1> A loopback link has no real distance or packet loss; the faults stand in for them. Results are from one machine. Run it yourself: <x2/>, then <x3/>.",
    "text": "<g1>Обмеження.</g1> У з’єднанні через петльовий інтерфейс немає реальної відстані чи втрати пакетів; їх імітують збої. Результати отримано на одному комп’ютері. Запустіть тест самостійно: <x2/>, потім <x3/>."
   },
+  "fc27eae7fbac2219": {
+   "source": "<g1>A Download video button</g1> over videos, whose qualities show at once on YouTube.",
+   "text": "<g1>Кнопка «Завантажити відео»</g1> над відео, якості яких на YouTube видно одразу."
+  },
   "fc2924c84dfb0d12": {
    "source": "The extension and DDM tell each other their versions at each connection, and every pair keeps working:",
    "text": "Розширення та DDM повідомляють одне одному свої версії під час кожного підключення, і будь-яка пара продовжує працювати:"
@@ -15485,6 +15601,10 @@
   "fc67345a4f529039": {
    "source": "Choose whether to install for you only or for everyone on the computer. For you only needs no administrator rights and goes to <x1/>. For everyone goes to <x2/>.",
    "text": "Виберіть, установити програму лише для себе чи для всіх користувачів комп’ютера. Для встановлення лише для себе права адміністратора не потрібні; програма встановиться в <x1/>. Для всіх користувачів програма встановиться в <x2/>."
+  },
+  "fc7fe0579b9363e9": {
+   "source": "One egui window painted to fixed pixel coordinates, plus one immediate viewport per dialog. <x1/> holds the state (downloads, queues, settings, the list's selection) and turns menu, toolbar, key and IPC commands into actions. Each dialog is its own module and returns an <x2/> (open, closed, done with a value). A window that comes up by itself (Download complete, a message DDM tells, a question while DDM isn't the program in front) shows above the others without taking the keyboard from the program being typed in (<x3/>, <x4/>); those the person asked for take it. Windows handed over one after another (Download File Info, Add torrent, Download video) and Download complete boxes show one at a time, in one place, the next when one closes. Windows-only calls are confined to <x5/> and their Linux and macOS counterparts to <x6/> (starting with the session, the browsers' host, sounds, show in folder, the crash handler); every other file is safe, portable Rust. Fonts come from the system: Windows' Fonts folder, macOS's system fonts, fontconfig on Linux (<x7/>). On Windows, Latin, Greek and Cyrillic text is drawn by DirectWrite (<x8/>, through egui's glyph rasterizer hook): View → Text → Smooth in its natural mode, anti-aliased at the size asked for and placed at quarter pixels with the font's own advances; Classic (the default) in GDI-classic mode, so each letter's hinted shape and whole-pixel width come together. Other scripts are shaped and drawn by egui.",
+   "text": "Одне вікно egui, намальоване за фіксованими піксельними координатами, плюс по одному immediate viewport для кожного діалогового вікна. <x1/> зберігає стан (завантаження, черги, параметри, виділення у списку) і перетворює команди меню, панелі інструментів, клавіш та IPC на дії. Кожне діалогове вікно — окремий модуль, який повертає <x2/> (відкрите, закрите, завершене зі значенням). Вікно, що з'являється саме (Завантаження завершено, повідомлення від DDM, запитання, коли DDM не є активною програмою), показується поверх інших, не забираючи клавіатуру в програми, у якій ви друкуєте (<x3/>, <x4/>); вікна, які ви відкрили самі, її отримують. Вікна, що передаються одне за одним (Інформація про файл завантаження, Додати торрент, Завантажити відео), і вікна «Завантаження завершено» показуються по одному, в одному місці: наступне — коли закривається попереднє. Виклики лише для Windows зосереджено в <x5/>, а їхні відповідники для Linux і macOS — в <x6/> (запуск разом із сеансом, хост для браузерів, звуки, показ у папці, обробник збоїв); усі інші файли — безпечний, переносний код на Rust. Шрифти беруться із системи: папка Fonts у Windows, системні шрифти macOS, fontconfig у Linux (<x7/>). У Windows латинський, грецький і кириличний текст малює DirectWrite (<x8/>, через хук растеризатора гліфів egui): Вигляд → Текст → Згладжений — у його природному режимі, зі згладжуванням у запитаному розмірі й розміщенням із точністю до чверті пікселя за власними інтервалами шрифту; Класичний (типово) — у режимі GDI-classic системи Windows, тож хинтована форма кожної літери поєднується з шириною в цілих пікселях. Інші писемності формує і малює egui."
   },
   "fc80e6d7a3cc65b1": {
    "source": "Link grabber",

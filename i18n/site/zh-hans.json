@@ -918,6 +918,10 @@
    "source": "Download image galleries with gallery-dl",
    "text": "使用 gallery-dl 下载图片库"
   },
+  "0d6d6fd7630a14c1": {
+   "source": "<g1>A new icon, Comet</g1>, everywhere: the app, the tray, the extension, the setup and the website.",
+   "text": "<g1>全新图标 Comet</g1>，用于各处：应用、托盘、扩展、安装程序和网站。"
+  },
   "0d7f42041638ea02": {
    "source": "Portable: the <x1/> folder next to <x2/>.",
    "text": "便携版：<x2/>旁边的<x1/>文件夹。"
@@ -1125,6 +1129,10 @@
   "110ed064f2b04424": {
    "source": "Time left",
    "text": "剩余时间"
+  },
+  "110f6923f841ef40": {
+   "source": "<g1>Fast:</g1> every download is fetched in several parts at once, re-balanced until the last byte, and resumes after a crash, a restart or a dropped connection without starting over.",
+   "text": "<g1>快速：</g1>每个下载都同时分成多个部分获取，直到最后一个字节都会重新分配；在崩溃、重启或连接中断后都能继续下载，无需从头开始。"
   },
   "1118f34ca5d1ce1f": {
    "source": "<g1>Put them into the video</g1> puts them inside the file instead, as tracks you switch on in the player. It needs ffmpeg, and an MP4 or MKV video.",
@@ -1381,6 +1389,10 @@
   "14f32a5e9d5c1528": {
    "source": "<g1>Crash reports</g1><g2>Dannex Download Manager</g2>",
    "text": "<g1>崩溃报告</g1><g2>Dannex Download Manager</g2>"
+  },
+  "14fa22b906ffd970": {
+   "source": "A fast, open-source download manager with parallel connections, crash-safe resume, browser capture, torrents and video in one clean list.",
+   "text": "快速、开源的下载管理器：多连接并行下载、崩溃后安全续传、浏览器捕获、种子和视频，全部集中在一个简洁的列表中。"
   },
   "150f2a29232af59e": {
    "source": "The main window in the Adwaita theme",
@@ -2210,6 +2222,10 @@
    "source": "<g1>Your IP address.</g1> Everyone sharing the same torrent sees it, as do its trackers and the DHT (the network peers use to find each other). That's how BitTorrent works, and no setting in DDM changes it. To hide your address, use a VPN on your whole computer.",
    "text": "<g1>您的 IP 地址。</g1>所有共享同一种子的人，以及该种子的跟踪器和 DHT（对等方用来相互查找的网络），都能看到您的 IP 地址。这就是 BitTorrent 的工作方式，DDM 中的任何设置都无法改变这一点。要隐藏您的地址，请在整台计算机上使用 VPN。"
   },
+  "227b1f953bdd694f": {
+   "source": "Fast downloads, powerful control. Free, open source and written from scratch in Rust.",
+   "text": "下载快速，掌控有力。免费、开源，使用 Rust 从零编写。"
+  },
   "22954adcadefc7ba": {
    "source": "Click a download link in the browser: Download File Info opens in DDM.",
    "text": "在浏览器中点击下载链接：DDM 中会打开“下载文件信息”窗口。"
@@ -2481,6 +2497,10 @@
   "267d1780c2b3aa22": {
    "source": "The server, <x1/>, sits next to the app on Windows, macOS and Linux (on Linux use the <x2/>, <x3/> or <x4/>: the AppImage doesn't expose it). You turn on the automation API once with <x5/>, then tell your assistant where the server is. The assistant starts it by itself from then on. The <g6>set-up guide</g6> has the path for each kind of install and the exact entry for Claude Desktop, Claude Code, Cursor and VS Code.",
    "text": "服务器 <x1/> 在 Windows、macOS 和 Linux 上与应用程序并行运行（在 Linux 上使用 <x2/>、<x3/> 或 <x4/>：AppImage 不会暴露它）。您使用 <x5/> 一次性开启自动化 API，然后告诉您的助手服务器在哪里。此后，助手会自行启动它。<g6>设置指南</g6>包含每种安装类型的路径以及 Claude Desktop、Claude Code、Cursor 和 VS Code 的确切条目。"
+  },
+  "26a8a80c5fad9f57": {
+   "source": "<g1>Calm when many arrive at once:</g1> a queue's downloads run without opening windows, and downloads that finish together share one <g2>Download complete</g2> window (\"3 more downloads complete\").",
+   "text": "<g1>大量下载同时到来时也很从容：</g1>队列中的下载运行时不会弹出窗口，同时完成的下载共用一个<g2>下载完成</g2>窗口（“另有 3 个下载已完成”）。"
   },
   "26ba7b194ff67f19": {
    "source": "Some sites' bot checks (Cloudflare's challenge, Akamai's edge) let only a browser through, even after DDM asked once more the way your browser connects. DDM then says <g1>this site lets only browsers through</g1> and offers <g2>Download with the browser</g2>: a button in the download's progress window, and an item in its right-click menu in the list. It's still there after DDM restarts.",
@@ -2886,6 +2906,10 @@
    "source": "<g1>The other links of one page</g1> form a package named after the page.",
    "text": "<g1>同一页面上的其他链接</g1>会组成一个以页面命名的分组。"
   },
+  "2cd663e3c54ab10a": {
+   "source": "Fast, free and open-source download manager for Windows, macOS and Linux. Parallel connections, crash-safe resume, torrents, video from web pages, browser integration and 86 languages.",
+   "text": "适用于 Windows、macOS 和 Linux 的快速、免费、开源下载管理器。多连接并行、崩溃后安全续传、种子、网页视频、浏览器集成，支持 86 种语言。"
+  },
   "2ce984608b61ca9b": {
    "source": "<g1>Browse</g1> — open its folder in Explorer.",
    "text": "<g1>浏览</g1> — 在资源管理器中打开其文件夹。"
@@ -2929,6 +2953,10 @@
   "2d91701284b91b0a": {
    "source": "Source code",
    "text": "源代码"
+  },
+  "2d995f162e7cf2ed": {
+   "source": "In your browser",
+   "text": "在浏览器中"
   },
   "2d9d101be2d0f3be": {
    "source": "FTP and FTPS (<x1/>) go through the same planner, workers and state: a segment is <x2/> + <x3/> on a control session instead of a ranged <x4/>, <x5/> and <x6/> stand in for the headers, and sessions are pooled per download and reused between segments.",
@@ -3418,6 +3446,10 @@
    "source": "Right-click the list's blank space for <g1>Add new download</g1>, <g2>Select all</g2>, <g3>Arrange files</g3>, <g4>Clear all filters</g4> and <g5>Delete All Completed</g5>.",
    "text": "右键点击列表空白处，可选择<g1>添加新下载</g1>、<g2>全选</g2>、<g3>整理文件</g3>、<g4>清除所有筛选器</g4>或<g5>删除所有已完成</g5>。"
   },
+  "369983e69928fc01": {
+   "source": "<g1>{v1}</g1> <g2>20.9 MB</g2>",
+   "text": "<g1>{v1}</g1> <g2>20.9 MB</g2>"
+  },
   "36a1df60e5ee30b9": {
    "source": "<g1><x2/></g1> — what <g3>View → Theme</g3> lists; the file's name when there is none.",
    "text": "<g1><x2/></g1> — <g3>视图 → 主题</g3>中列出的名称；如果没有，则为文件名。"
@@ -3445,6 +3477,10 @@
   "3724a83fa3a38087": {
    "source": "<g1>Download Later</g1> — add it to a queue without starting. See below.",
    "text": "<g1>稍后下载</g1> — 将其添加到队列而不开始。请参阅下文。"
+  },
+  "3727118233cdf55d": {
+   "source": "Right-click <g1>Download with DDM</g1>, for any link, magnet links included, and <g2>Download all links, images or videos and audio</g2> of a page.",
+   "text": "右键菜单中的<g1>使用 DDM 下载</g1>，适用于任何链接（包括磁力链接）；以及针对整个页面的<g2>全部下载链接、图片或视频和音频</g2>。"
   },
   "3731ebb25637b8d0": {
    "source": "The page then says <g1>On</g1> and shows the address to open, such as <x2/>.",
@@ -5454,6 +5490,10 @@
    "source": "If your antivirus quarantined DDM, restore it and add an exception for its folder. If it flags something other than the setup or DDM's own programs, or a copy from anywhere else, don't run it, and please <g1>tell us</g1>.",
    "text": "如果您的杀毒软件隔离了 DDM，请恢复它并为其文件夹添加例外。如果它标记了安装程序或 DDM 自身程序以外的内容，或者来自其他来源的副本，请不要运行它，并<g1>告知我们</g1>。"
   },
+  "569ad7719d07f2f2": {
+   "source": "The first official release of Dannex Download Manager: a free, open-source download manager for Windows (with Linux and an experimental macOS version), laid out the way Internet Download Manager users expect, and faster.",
+   "text": "Dannex Download Manager 的首个正式版本：一款免费、开源的 Windows 下载管理器（另有 Linux 版和实验性的 macOS 版），布局符合 Internet Download Manager 用户的习惯，而且速度更快。"
+  },
   "569b5b4f390246d8": {
    "source": "Command line and automation",
    "text": "命令行和自动化"
@@ -6042,6 +6082,10 @@
    "source": "HTTPS downloads fail with \"no certificates\" (Linux)",
    "text": "HTTPS 下载失败，显示“无证书”（Linux）"
   },
+  "5faf94f57d338d2e": {
+   "source": "Dannex Download Manager: a fast, free download manager",
+   "text": "Dannex Download Manager：快速、免费的下载管理器"
+  },
   "5fcf0291ca3b8d9c": {
    "source": "Counts, sizes, speeds and percentages will be written the way the chosen language writes them (German <x1/> and <x2/>, French <x3/>), whatever the Windows region; a region in the same language keeps its own way. English stays as it is. Buttons will grow to fit their translated text in every window, so a longer German or Russian label is no longer cut short. Dates keep following your region, or your own choice in <g4>Options → Regional</g4>.",
    "text": "无论 Windows 区域设置如何，计数、大小、速度和百分比都将以所选语言的书写方式显示（德语 <x1/> 和 <x2/>，法语 <x3/>）；如果区域设置与语言相同，则保持其自身方式。英语则保持不变。所有窗口中的按钮都会根据翻译后的文本自动调整大小，因此较长的德语或俄语标签将不再被截断。日期仍会遵循您的区域设置，或您在<g4>选项 → 区域</g4>中的选择。"
@@ -6246,6 +6290,10 @@
    "source": "<g1>Categories</g1><g2>Dannex Download Manager</g2>",
    "text": "<g1>类别</g1><g2>Dannex Download Manager</g2>"
   },
+  "62b2e43b5e031e17": {
+   "source": "<g1>Download File Info, the way you know it:</g1> the file starts arriving while you choose where it goes, and it joins the list only once you click <g2>Start Download</g2> or <g3>Download Later</g3>; <g4>Cancel</g4> leaves nothing behind.",
+   "text": "<g1>熟悉的下载文件信息：</g1>在您选择保存位置的同时，文件已开始下载；只有点击<g2>开始下载</g2>或<g3>稍后下载</g3>后，它才会加入列表；点击<g4>取消</g4>则不留下任何内容。"
+  },
   "62b391cabe3b0674": {
    "source": "Drag a link from your browser onto it: it lights up with an amber frame while something it can take is over it. Let go, and DDM adds the link as if you had used <g1>Add URL</g1>.",
    "text": "将浏览器中的链接拖到它上面：当有它可处理的内容在其上方时，它会亮起琥珀色边框。松开后，DDM 会像使用<g1>添加 URL</g1>一样添加该链接。"
@@ -6273,6 +6321,10 @@
   "631b9914f6507aef": {
    "source": "<g1>Testing it.</g1> <x2/> runs a real freeze, panic and crash (<x3/>) and checks each report's signature. To try it in the app, start DDM with <x4/>, then run <x5/> (a deadlock; or <x6/>, 12 s of a busy window thread, <x7/>, <x8/>, <x9/>). <x10/> does that in a copy of the app off the screens, its window visible and minimized.",
    "text": "<g1>测试。</g1> <x2/> 会触发实际的冻结、panic 和崩溃（<x3/>），并检查每份报告的签名。要在应用中测试，请使用 <x4/> 启动 DDM，然后运行 <x5/>（死锁；或者运行 <x6/>，让窗口线程忙碌 12 s；还可以运行 <x7/>、<x8/>、<x9/>）。<x10/> 会在屏幕外的应用副本中执行这些操作，窗口保持可见并处于最小化状态。"
+  },
+  "6340aeee835f4991": {
+   "source": "<g1>Videos</g1> from thousands of sites with yt-dlp, with playlists, subtitles (embedded or beside the file) and the sound alone; <g2>image galleries</g2> with gallery-dl, through DDM's own downloader.",
+   "text": "通过 yt-dlp 从数千个网站下载<g1>视频</g1>，支持播放列表、字幕（嵌入或放在文件旁）和仅下载音频；通过 gallery-dl 下载<g2>图库</g2>，由 DDM 自己的下载器完成。"
   },
   "635f40f1db7e086a": {
    "source": "Pause running downloads, or start (resume) stopped, queued or failed ones, in the running app.",
@@ -7050,6 +7102,10 @@
    "source": "A server at a medium round trip (60 to 150 ms)",
    "text": "往返时间中等（60 到 150 毫秒）的服务器"
   },
+  "70be5377fd1f31fb": {
+   "source": "<g1>Site Grabber:</g1> a whole site or part of one, to read offline, in projects you can always come back to under <g2>Grabber projects</g2>.",
+   "text": "<g1>站点抓取器：</g1>下载整个网站或其中一部分以供离线阅读，保存为项目，随时可在<g2>抓取项目</g2>中重新打开。"
+  },
   "70d42911cc360e5b": {
    "source": "On Linux",
    "text": "在 Linux 上"
@@ -7197,6 +7253,10 @@
   "72f3284ff6dd83fc": {
    "source": "<g1>Up</g1> / <g2>Down</g2>, <g3>Left</g3> / <g4>Right</g4>",
    "text": "<g1>上</g1> / <g2>下</g2>，<g3>左</g3> / <g4>右</g4>"
+  },
+  "72fcb0d3a8812fe4": {
+   "source": "<g1>Help → Support DDM</g1> opens Dannex's page on GitHub Sponsors.",
+   "text": "<g1>帮助 → 支持 DDM</g1> 会打开 Dannex 在 GitHub Sponsors 上的页面。"
   },
   "72ff8f6b37364fc1": {
    "source": "is where files land: each category has its folder inside (<x1/>, <x2/>, <x3/>…). Mount a network share there to download straight onto it.",
@@ -7558,6 +7618,10 @@
    "source": "Add Dannex Download Manager to your browser: each browser found, with a button to add the extension to it",
    "text": "将 Dannex Download Manager 添加到您的浏览器：列出找到的每个浏览器，以及为其添加扩展的按钮"
   },
+  "7935eef577c848b4": {
+   "source": "Dannex Download Manager — fast, free download manager",
+   "text": "Dannex Download Manager — 快速、免费的下载管理器"
+  },
   "793dc38942ce9ab9": {
    "source": "A control is greyed only while it can't apply: a box under a choice that is off, a button with nothing selected.",
    "text": "控件仅在无法应用时才显示为灰色：处于关闭状态的选项下方的框，或未选中任何内容时的按钮。"
@@ -7749,6 +7813,10 @@
   "7bda8095d8381906": {
    "source": "Other programs can ask the running app for its downloads, as JSON, and pause, start, remove or delete them. They connect to a port on this computer only, with a secret token that changes at every start and that only your own programs can read. The API is off until you turn it on with <x1/>, and <x2/>, <x3/>, <x4/>, <x5/> and <x6/> use it from the command line.",
    "text": "其他程序可以向正在运行的应用程序请求其下载任务（以 JSON 格式），并暂停、开始、移除或删除它们。它们仅连接到此计算机上的一个端口，使用每次启动时都会更改的秘密令牌，并且只有您自己的程序才能读取。API 默认关闭，直到您使用 <x1/> 开启它，并且 <x2/>、<x3/>、<x4/>、<x5/> 和 <x6/> 从命令行使用它。"
+  },
+  "7be69af9eb37f63f": {
+   "source": "Fast downloads. Powerful control. Free forever.",
+   "text": "高速下载。强大掌控。永久免费。"
   },
   "7beb76c0e99ab62c": {
    "source": "<g1>Videos that need you signed in</g1>: <g2>Options → Sites Logins → Cookies for video sites</g2> lets yt-dlp read a browser's cookies, for pasted links. Chrome, Edge and Brave lock theirs on Windows, and the window says so; Firefox works, and so does the button over the video.",
@@ -9418,6 +9486,10 @@
    "source": "Select the downloads in the box",
    "text": "选择框中的下载"
   },
+  "97eba27f9800113f": {
+   "source": "<g1>Queues and the Scheduler</g1> start and stop on their own, can wake the computer, and turn it off when done. <g2>Speed Limiter</g2>, categories with their own folders, and duplicate handling.",
+   "text": "<g1>队列和计划程序</g1>可自动启动和停止，能唤醒计算机，并在完成后关机。另有<g2>速度限制器</g2>、拥有各自文件夹的分类，以及重复文件处理。"
+  },
   "97ec4888f860947d": {
    "source": "What other people can see",
    "text": "其他人可以看到什么"
@@ -9517,6 +9589,10 @@
   "99605902518653e2": {
    "source": "The same programs without an installer. It keeps its data in <x1/>, like an installed copy.",
    "text": "不带安装程序的程序。它将数据保存在 <x1/> 中，就像已安装的版本一样。"
+  },
+  "9970aef0a32e17f8": {
+   "source": "<g1>The DDM Integration Module</g1> for Chrome, Edge, Brave, Opera, Vivaldi and Firefox hands your downloads to DDM with their sign-in. One click on its toolbar button turns it off or on; when DDM isn't installed, its page says so and turns green by itself once it is.",
+   "text": "适用于 Chrome、Edge、Brave、Opera、Vivaldi 和 Firefox 的 <g1>DDM Integration Module</g1> 会将下载连同登录信息一起交给 DDM。点击一次其工具栏按钮即可关闭或开启；未安装 DDM 时，它的页面会给出提示，安装后会自动变成绿色。"
   },
   "997cc2f8f3474ae1": {
    "source": "Windows<g1><g2>3</g2></g1>",
@@ -9869,6 +9945,10 @@
   "9ee01014043d0097": {
    "source": "Yes. It's open source under the GNU GPL, version 3. No trial, no paid edition, no registration key, no nag screen, no ads. <g1>More</g1>",
    "text": "是的。它是 GNU GPL v3 许可下的开源软件。没有试用期，没有付费版，没有注册码，没有弹窗，没有广告。<g1>更多</g1>"
+  },
+  "9eec233a8d803458": {
+   "source": "Day and dark mode and themes, 86 languages including right to left, keyboard and screen-reader access, a portable version, a phone remote and a server mode.",
+   "text": "浅色和深色模式及主题，86 种语言（包括从右到左书写的语言），支持键盘和屏幕阅读器，便携版，手机遥控和服务器模式。"
   },
   "9efdcb6a62e4c3f8": {
    "source": "File Properties with the download's address",
@@ -10353,6 +10433,10 @@
   "a6c4a4cee356235a": {
    "source": "Apple Silicon: Macs with an M1 chip or later",
    "text": "Apple Silicon：搭载 M1 芯片或更高版本芯片的 Mac"
+  },
+  "a6c548e5567b0826": {
+   "source": "<g1>File Properties</g1> on double-click, with the page each download came from; <g2>Show progress</g2> brings back a hidden progress window; <g3>Columns...</g3> shows, hides and orders the list's columns.",
+   "text": "双击打开<g1>文件属性</g1>，显示每个下载的来源页面；<g2>显示进度</g2>可重新显示隐藏的进度窗口；<g3>列...</g3>可显示、隐藏列表中的列并调整其顺序。"
   },
   "a6ce09b9c1c7e4cf": {
    "source": "Internet Download Manager 6.42",
@@ -12182,6 +12266,10 @@
    "source": "Was DDM installed with the setup, with <g1>Set up browser integration</g1> ticked? A portable copy can't take browser downloads. Run the setup again to add it.",
    "text": "DDM 是否通过安装程序安装，并勾选了<g1>设置浏览器集成</g1>？便携版无法接管浏览器下载。请重新运行安装程序以添加浏览器集成。"
   },
+  "c619dd0d87a7bf20": {
+   "source": "<g1>Virus checking</g1> after each download with the antivirus you choose (one click for Microsoft Defender), and a <g2>temporary folder</g2> of your choice for files still downloading.",
+   "text": "每次下载后使用您选择的杀毒软件进行<g1>病毒检查</g1>（Microsoft Defender 只需一键设置），并可自选用于存放下载中文件的<g2>临时文件夹</g2>。"
+  },
   "c62198270f0107d2": {
    "source": "What it sets",
    "text": "设置内容"
@@ -13842,6 +13930,10 @@
    "source": "Chrome, Firefox, Edge and more",
    "text": "Chrome、Firefox、Edge 等"
   },
+  "e06cb012b324e259": {
+   "source": "Video, galleries, torrents and sites",
+   "text": "视频、图库、种子和网站"
+  },
   "e0ad26c06dcee181": {
    "source": "1 the start time, 2 once or on some days, 3 a stop time if you want one.",
    "text": "1 开始时间，2 单次或某几天，3 如需要则设置停止时间。"
@@ -13977,6 +14069,10 @@
   "e2b96614efaa036c": {
    "source": "The drop target's edge at rest",
    "text": "放置目标在静止时的边缘"
+  },
+  "e2c3ea2afe1c4e19": {
+   "source": "Minimize keeps DDM on the taskbar; closing it keeps it running in the notification area.",
+   "text": "最小化后 DDM 仍留在任务栏上；关闭后它会继续在通知区域中运行。"
   },
   "e2d3a15847aa0c81": {
    "source": "Point at the button: its tooltip says which of these it is, and what a click does.",
@@ -14502,6 +14598,10 @@
    "source": "<g1>Ctrl+M</g1> or <g2>F2</g2>",
    "text": "<g1>Ctrl+M</g1> 或 <g2>F2</g2>"
   },
+  "eb60a779982bcd66": {
+   "source": "Chrome, Edge and Brave run an extension in private (incognito) windows only when you allow it, and Firefox asks too. Until then, downloads from private windows stay with the browser. To allow it: on the browser's extensions page, open <g1>Details</g1> and turn on <g2>Allow in Incognito</g2>; in Firefox, <g3>Add-ons and themes</g3> → the extension → <g4>Allow</g4> beside <g5>Run in Private Windows</g5>. Downloads from a private window use that window's cookies, and DDM doesn't keep them in its list once they're done.",
+   "text": "Chrome、Edge 和 Brave 只有在您允许后才会在隐私（无痕）窗口中运行扩展，Firefox 也会询问。在此之前，隐私窗口中的下载仍由浏览器处理。允许方法：在浏览器的扩展程序页面打开<g1>详情</g1>，开启<g2>在无痕模式下启用</g2>；在 Firefox 中，依次打开<g3>附加组件和主题</g3> → 该扩展 → 在<g5>在隐私窗口中运行</g5>（Run in Private Windows）旁选择<g4>允许</g4>。隐私窗口中的下载使用该窗口的 Cookie，下载完成后 DDM 不会将其保留在列表中。"
+  },
   "eb712f80554a3646": {
    "source": "A window in DDM may be waiting for you (a question, <g1>Add torrent</g1>); answer it and ask again.",
    "text": "DDM 中可能有窗口正等待您操作（例如问题提示或<g1>添加种子</g1>）；请先处理，然后重试。"
@@ -14862,6 +14962,10 @@
    "source": "Make everything larger / smaller, in every window (<g1>View → Interface size</g1>, 100 % to 200 %)",
    "text": "放大 / 缩小所有窗口中的界面元素（<g1>视图 → 界面大小</g1>，100% 到 200%）"
   },
+  "f14a2209d8262597": {
+   "source": "Dannex Download Manager — fast, free and open source",
+   "text": "Dannex Download Manager — 快速、免费、开源"
+  },
   "f15210a203cd6290": {
    "source": "<g1>DDM can't be reached</g1>: the button is grey with a red <g2>!</g2>. A click opens the extension's status page instead of switching anything: in a sentence or two it says what is wrong and the one thing to do, offers DDM's download for your system when DDM isn't installed, and turns into <g3>Dannex Download Manager is installed</g3> by itself once DDM answers. See <g4>The browser and DDM aren't connected</g4> for every case.",
    "text": "<g1>无法连接 DDM</g1>：按钮为灰色，带红色<g2>!</g2>。单击会打开扩展的状态页，而不是切换任何内容：页面用一两句话说明出了什么问题以及该做的一件事，在 DDM 未安装时提供适合您系统的 DDM 下载，并在 DDM 响应后自动变为<g3>Dannex Download Manager 已安装</g3>。所有情况请参阅<g4>浏览器与 DDM 未连接</g4>。"
@@ -15154,6 +15258,10 @@
    "source": "Dannex Download Manager: <g1>its source code</g1> and <g2>our benchmark</g2> against IDM 6.42. We haven't benchmarked the others yet; until we do, this page makes no speed claim about them.",
    "text": "Dannex Download Manager：<g1>其源代码</g1>和<g2>我们与 IDM 6.42 的基准测试</g2>。我们尚未对其他产品进行基准测试；在此之前，本页面不对其速度做任何声明。"
   },
+  "f7591c001d6f9531": {
+   "source": "<g1>Torrents and magnet links</g1>, with sequential order, RSS feeds and sharing limits; the Add torrent window says what it is waiting for.",
+   "text": "<g1>种子和磁力链接</g1>，支持顺序下载、RSS 源和分享限制；添加种子窗口会说明它正在等待什么。"
+  },
   "f7656bbc30b4c552": {
    "source": "<g1>Network adapter</g1><g2>Every connection DDM opens goes out through the adapter you pick, and stops when it disconnects.</g2>",
    "text": "<g1>网络适配器</g1><g2>DDM 的所有连接都通过您选择的适配器进行，并在适配器断开连接时停止。</g2>"
@@ -15422,6 +15530,10 @@
    "source": "Delivery",
    "text": "送达"
   },
+  "fba54406a7ebc6eb": {
+   "source": "Parallel downloads, crash-safe resume, torrents and video from millions of sites, browser integration and more.",
+   "text": "并行下载、崩溃后安全续传、种子和数百万网站的视频、浏览器集成等。"
+  },
   "fbb161a5ca59215d": {
    "source": "Click <g1>Load unpacked</g1> and choose the <x2/> folder.",
    "text": "点击<g1>加载已解压的扩展</g1>，然后选择<x2/>文件夹。"
@@ -15462,6 +15574,10 @@
    "source": "<g1>Limits.</g1> A loopback link has no real distance or packet loss; the faults stand in for them. Results are from one machine. Run it yourself: <x2/>, then <x3/>.",
    "text": "<g1>限制。</g1> 回环链路没有实际距离或数据包丢失；故障代表它们。结果来自一台机器。您可以自己运行：<x2/>，然后 <x3/>。"
   },
+  "fc27eae7fbac2219": {
+   "source": "<g1>A Download video button</g1> over videos, whose qualities show at once on YouTube.",
+   "text": "视频上方的<g1>下载视频按钮</g1>，在 YouTube 上可立即显示可选画质。"
+  },
   "fc2924c84dfb0d12": {
    "source": "The extension and DDM tell each other their versions at each connection, and every pair keeps working:",
    "text": "扩展与 DDM 在每次连接时会互相告知各自的版本，而且每种组合都能正常工作："
@@ -15485,6 +15601,10 @@
   "fc67345a4f529039": {
    "source": "Choose whether to install for you only or for everyone on the computer. For you only needs no administrator rights and goes to <x1/>. For everyone goes to <x2/>.",
    "text": "选择是仅为您安装还是为计算机上的所有人安装。仅为您安装不需要管理员权限，并会安装到 <x1/>。为所有人安装会安装到 <x2/>。"
+  },
+  "fc7fe0579b9363e9": {
+   "source": "One egui window painted to fixed pixel coordinates, plus one immediate viewport per dialog. <x1/> holds the state (downloads, queues, settings, the list's selection) and turns menu, toolbar, key and IPC commands into actions. Each dialog is its own module and returns an <x2/> (open, closed, done with a value). A window that comes up by itself (Download complete, a message DDM tells, a question while DDM isn't the program in front) shows above the others without taking the keyboard from the program being typed in (<x3/>, <x4/>); those the person asked for take it. Windows handed over one after another (Download File Info, Add torrent, Download video) and Download complete boxes show one at a time, in one place, the next when one closes. Windows-only calls are confined to <x5/> and their Linux and macOS counterparts to <x6/> (starting with the session, the browsers' host, sounds, show in folder, the crash handler); every other file is safe, portable Rust. Fonts come from the system: Windows' Fonts folder, macOS's system fonts, fontconfig on Linux (<x7/>). On Windows, Latin, Greek and Cyrillic text is drawn by DirectWrite (<x8/>, through egui's glyph rasterizer hook): View → Text → Smooth in its natural mode, anti-aliased at the size asked for and placed at quarter pixels with the font's own advances; Classic (the default) in GDI-classic mode, so each letter's hinted shape and whole-pixel width come together. Other scripts are shaped and drawn by egui.",
+   "text": "一个按固定像素坐标绘制的 egui 窗口，外加每个对话框各一个即时视口（immediate viewport）。<x1/> 保存状态（下载、队列、设置、列表中的选择），并把菜单、工具栏、按键和 IPC 命令转换为操作。每个对话框都是独立的模块，返回一个 <x2/>（打开、关闭、带值完成）。自行弹出的窗口（下载完成、DDM 发出的消息、DDM 不在前台时的提问）会显示在其他窗口之上，但不会夺走正在输入的程序的键盘焦点（<x3/>、<x4/>）；用户主动打开的窗口则会获得键盘焦点。接连交来的窗口（下载文件信息、添加种子、下载视频）和下载完成窗口每次只显示一个，位置相同，关闭一个后再显示下一个。仅限 Windows 的调用都集中在 <x5/> 中，它们在 Linux 和 macOS 上的对应实现集中在 <x6/> 中（随会话启动、浏览器的宿主程序、声音、在文件夹中显示、崩溃处理程序）；其余所有文件都是安全、可移植的 Rust。字体来自系统：Windows 的 Fonts 文件夹、macOS 的系统字体、Linux 上的 fontconfig（<x7/>）。在 Windows 上，拉丁文、希腊文和西里尔文由 DirectWrite 绘制（<x8/>，通过 egui 的字形光栅化钩子）：视图 → 文本 → 平滑使用其自然模式，按请求的字号抗锯齿，并按字体自身的步进宽度以四分之一像素定位；经典（默认）使用 Windows 的 GDI-classic 模式，使每个字母经过微调的字形与整像素宽度保持一致。其他文字由 egui 进行字形排布和绘制。"
   },
   "fc80e6d7a3cc65b1": {
    "source": "Link grabber",

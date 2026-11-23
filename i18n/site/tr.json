@@ -1390,6 +1390,10 @@
    "source": "<g1>Crash reports</g1><g2>Dannex Download Manager</g2>",
    "text": "<g1>Çökme raporları</g1><g2>Dannex Download Manager</g2>"
   },
+  "14fa22b906ffd970": {
+   "source": "A fast, open-source download manager with parallel connections, crash-safe resume, browser capture, torrents and video in one clean list.",
+   "text": "Paralel bağlantılar, çökmelere dayanıklı sürdürme, tarayıcıdan yakalama, torrent ve videoyu tek bir sade listede sunan hızlı, açık kaynaklı bir indirme yöneticisi."
+  },
   "150f2a29232af59e": {
    "source": "The main window in the Adwaita theme",
    "text": "Adwaita temasında ana pencere"
@@ -2218,6 +2222,10 @@
    "source": "<g1>Your IP address.</g1> Everyone sharing the same torrent sees it, as do its trackers and the DHT (the network peers use to find each other). That's how BitTorrent works, and no setting in DDM changes it. To hide your address, use a VPN on your whole computer.",
    "text": "<g1>IP adresiniz.</g1> Aynı torrenti paylaşan herkes IP adresinizi görür. Torrentin izleyicileri ve DHT (eşlerin birbirini bulmak için kullandığı ağ) de bu adresi görür. BitTorrent bu şekilde çalışır ve DDM'deki hiçbir ayar bunu değiştirmez. Adresinizi gizlemek için tüm bilgisayarınızda VPN kullanın."
   },
+  "227b1f953bdd694f": {
+   "source": "Fast downloads, powerful control. Free, open source and written from scratch in Rust.",
+   "text": "Hızlı indirmeler, güçlü denetim. Ücretsiz, açık kaynak ve Rust ile sıfırdan yazıldı."
+  },
   "22954adcadefc7ba": {
    "source": "Click a download link in the browser: Download File Info opens in DDM.",
    "text": "Tarayıcıda bir indirme bağlantısına tıklayın: DDM'de Dosya Bilgilerini İndir açılır."
@@ -2897,6 +2905,10 @@
   "2cc56bc5771aeae6": {
    "source": "<g1>The other links of one page</g1> form a package named after the page.",
    "text": "Bir sayfanın <g1>diğer bağlantıları</g1>, sayfanın adını taşıyan bir paket oluşturur."
+  },
+  "2cd663e3c54ab10a": {
+   "source": "Fast, free and open-source download manager for Windows, macOS and Linux. Parallel connections, crash-safe resume, torrents, video from web pages, browser integration and 86 languages.",
+   "text": "Windows, macOS ve Linux için hızlı, ücretsiz ve açık kaynaklı indirme yöneticisi. Paralel bağlantılar, çökmelere dayanıklı sürdürme, torrentler, web sayfalarından video, tarayıcı entegrasyonu ve 86 dil."
   },
   "2ce984608b61ca9b": {
    "source": "<g1>Browse</g1> — open its folder in Explorer.",
@@ -6070,6 +6082,10 @@
    "source": "HTTPS downloads fail with \"no certificates\" (Linux)",
    "text": "HTTPS indirmeleri \"sertifika yok\" hatasıyla başarısız oluyor (Linux)"
   },
+  "5faf94f57d338d2e": {
+   "source": "Dannex Download Manager: a fast, free download manager",
+   "text": "Dannex Download Manager: hızlı, ücretsiz bir indirme yöneticisi"
+  },
   "5fcf0291ca3b8d9c": {
    "source": "Counts, sizes, speeds and percentages will be written the way the chosen language writes them (German <x1/> and <x2/>, French <x3/>), whatever the Windows region; a region in the same language keeps its own way. English stays as it is. Buttons will grow to fit their translated text in every window, so a longer German or Russian label is no longer cut short. Dates keep following your region, or your own choice in <g4>Options → Regional</g4>.",
    "text": "Sayılar, boyutlar, hızlar ve yüzdeler, Windows bölgesinden bağımsız olarak seçilen dilin bunları yazdığı şekilde yazılacaktır (Almanca <x1/> ve <x2/>, Fransızca <x3/>); aynı dildeki bir bölge kendi yolunu korur. İngilizce olduğu gibi kalır. Düğmeler, her pencerede çevrilmiş metinlerine uyacak şekilde büyüyecektir, böylece daha uzun bir Almanca veya Rusça etiket artık kesilmeyecektir. Tarihler bölgenizi veya <g4>Seçenekler → Bölgesel</g4> ayarındaki kendi seçiminizi takip etmeye devam eder."
@@ -7602,6 +7618,10 @@
    "source": "Add Dannex Download Manager to your browser: each browser found, with a button to add the extension to it",
    "text": "Dannex Download Manager uygulamasını tarayıcınıza ekleyin: bulunan her tarayıcı ve uzantıyı ona eklemek için bir düğme"
   },
+  "7935eef577c848b4": {
+   "source": "Dannex Download Manager — fast, free download manager",
+   "text": "Dannex Download Manager — hızlı, ücretsiz indirme yöneticisi"
+  },
   "793dc38942ce9ab9": {
    "source": "A control is greyed only while it can't apply: a box under a choice that is off, a button with nothing selected.",
    "text": "Bir denetim öğesi yalnızca uygulanamadığı sürece gri görünür: kapalı bir seçeneğin altındaki kutu veya hiçbir şey seçili değilken bir düğme."
@@ -7793,6 +7813,10 @@
   "7bda8095d8381906": {
    "source": "Other programs can ask the running app for its downloads, as JSON, and pause, start, remove or delete them. They connect to a port on this computer only, with a secret token that changes at every start and that only your own programs can read. The API is off until you turn it on with <x1/>, and <x2/>, <x3/>, <x4/>, <x5/> and <x6/> use it from the command line.",
    "text": "Diğer programlar, çalışan uygulamadan indirmelerini JSON olarak isteyebilir ve bunları duraklatabilir, başlatabilir, kaldırabilir veya silebilir. Yalnızca bu bilgisayardaki bir bağlantı noktasına, her başlangıçta değişen ve yalnızca kendi programlarınızın okuyabileceği gizli bir belirteçle bağlanırlar. API, <x1/> ile açana kadar kapalıdır ve <x2/>, <x3/>, <x4/>, <x5/> ve <x6/> komut satırından kullanır."
+  },
+  "7be69af9eb37f63f": {
+   "source": "Fast downloads. Powerful control. Free forever.",
+   "text": "Hızlı indirmeler. Güçlü denetim. Her zaman ücretsiz."
   },
   "7beb76c0e99ab62c": {
    "source": "<g1>Videos that need you signed in</g1>: <g2>Options → Sites Logins → Cookies for video sites</g2> lets yt-dlp read a browser's cookies, for pasted links. Chrome, Edge and Brave lock theirs on Windows, and the window says so; Firefox works, and so does the button over the video.",
@@ -14946,6 +14970,10 @@
    "source": "Make everything larger / smaller, in every window (<g1>View → Interface size</g1>, 100 % to 200 %)",
    "text": "Her pencerede her şeyi büyüt / küçült (<g1>Görünüm → Arayüz boyutu</g1>, %100 ila %200)"
   },
+  "f14a2209d8262597": {
+   "source": "Dannex Download Manager — fast, free and open source",
+   "text": "Dannex Download Manager — hızlı, ücretsiz ve açık kaynaklı"
+  },
   "f15210a203cd6290": {
    "source": "<g1>DDM can't be reached</g1>: the button is grey with a red <g2>!</g2>. A click opens the extension's status page instead of switching anything: in a sentence or two it says what is wrong and the one thing to do, offers DDM's download for your system when DDM isn't installed, and turns into <g3>Dannex Download Manager is installed</g3> by itself once DDM answers. See <g4>The browser and DDM aren't connected</g4> for every case.",
    "text": "<g1>DDM'a ulaşılamıyor</g1>: düğme gridir ve kırmızı bir <g2>!</g2> görünür. Tıklamak bir şeyi açıp kapatmak yerine eklentinin durum sayfasını açar. Sayfa bir iki cümleyle neyin yanlış olduğunu ve yapılacak tek şeyi söyler, DDM yüklü değilse sisteminiz için DDM indirmesini sunar ve DDM yanıt verir vermez kendiliğinden <g3>Dannex Download Manager yüklü</g3> durumuna döner. Tüm durumlar için <g4>Tarayıcı ile DDM bağlı değil</g4> bölümüne bakın."
@@ -15509,6 +15537,10 @@
   "fb9a90a68f3b2b05": {
    "source": "Delivery",
    "text": "Teslimat"
+  },
+  "fba54406a7ebc6eb": {
+   "source": "Parallel downloads, crash-safe resume, torrents and video from millions of sites, browser integration and more.",
+   "text": "Paralel indirmeler, çökmelere dayanıklı sürdürme, torrentler ve milyonlarca siteden video, tarayıcı entegrasyonu ve daha fazlası."
   },
   "fbb161a5ca59215d": {
    "source": "Click <g1>Load unpacked</g1> and choose the <x2/> folder.",
