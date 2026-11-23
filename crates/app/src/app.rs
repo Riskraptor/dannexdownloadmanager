@@ -4230,6 +4230,8 @@ impl App {
                 };
                 self.run(Cmd::ToolbarIcons(style), None, ctx);
             }
+            // Downloads → Clean Up Temporary Files, as if chosen: its answer, for screenshots.
+            "clean-up" => self.run(Cmd::CleanUpTemp, None, ctx),
             // A menu of the menu bar open (menu:0 is Tasks), for screenshots; menu:3:draw opens
             // View with its Draw with submenu (#89).
             "menu" => {

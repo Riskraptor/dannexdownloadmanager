@@ -54,7 +54,10 @@ param(
   [switch]$Ui,
   # More settings for the run, as JSON members added to downloads.json's settings
   # ('"video_cookies":"firefox"': Options, Sites Logins, with a browser chosen).
-  [string]$Settings = ""
+  [string]$Settings = "",
+  # PowerShell run once the list is made, before the shots, with $work the run's folder (files
+  # deleted or left behind: '"Remove-Item $work\Downloads\x.pdf"').
+  [string]$Prepare = ""
 )
 $ErrorActionPreference = "Stop"
 # With -Show, its list instead of the built-in one (unless -Only names some of those too). From
@@ -224,6 +227,7 @@ try {
   }
   Start-Sleep 2
   $main = MainTitle $app.Id
+  if ($Prepare) { Invoke-Expression $Prepare }
 
   # Each window opened by name through the app's own command line (/show, mdm_ipc), so no
   # click or key ever goes to the screen. name = /show argument. These are the README's and the
