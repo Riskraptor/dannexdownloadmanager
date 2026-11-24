@@ -1,9 +1,9 @@
 {
   "name": {
-    "message": "DDM Integration Module"
+    "message": "Dannex Download Manager"
   },
   "description": {
-    "message": "Παραδίδει λήψεις από το πρόγραμμα περιήγησης στο Dannex Download Manager."
+    "message": "Στέλνει τα αρχεία, τους συνδέσμους και τα βίντεο που κατεβάζετε στο πρόγραμμα περιήγησης στην εφαρμογή Dannex Download Manager του υπολογιστή σας."
   },
   "menu": {
     "message": "Λήψη με το DDM"
@@ -16,9 +16,6 @@
   },
   "video_hide_here": {
     "message": "Απόκρυψη μόνο σε αυτό το βίντεο"
-  },
-  "video_close": {
-    "message": "Κλείσιμο"
   },
   "video_never_site": {
     "message": "Ποτέ στο $site$",
@@ -188,15 +185,6 @@
       "type": {
         "content": "$1",
         "example": "MP3 320 kbps"
-      }
-    }
-  },
-  "video_audio_original_short": {
-    "message": "Πρωτότυπο $type$",
-    "placeholders": {
-      "type": {
-        "content": "$1",
-        "example": "M4A"
       }
     }
   },

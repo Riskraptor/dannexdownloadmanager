@@ -1,9 +1,9 @@
 {
   "name": {
-    "message": "DDM Integration Module"
+    "message": "Dannex Download Manager"
   },
   "description": {
-    "message": "Menyerahkan unduhan dari browser ke Dannex Download Manager."
+    "message": "Mengirim file, tautan, dan video yang Anda unduh di browser ke aplikasi Dannex Download Manager di komputer Anda."
   },
   "menu": {
     "message": "Unduh dengan DDM"
@@ -16,9 +16,6 @@
   },
   "video_hide_here": {
     "message": "Sembunyikan di video ini"
-  },
-  "video_close": {
-    "message": "Tutup"
   },
   "video_never_site": {
     "message": "Jangan pernah di $site$",
@@ -188,15 +185,6 @@
       "type": {
         "content": "$1",
         "example": "MP3 320 kbps"
-      }
-    }
-  },
-  "video_audio_original_short": {
-    "message": "$type$ asli",
-    "placeholders": {
-      "type": {
-        "content": "$1",
-        "example": "M4A"
       }
     }
   },

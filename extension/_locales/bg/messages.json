@@ -1,9 +1,9 @@
 {
   "name": {
-    "message": "DDM Integration Module"
+    "message": "Dannex Download Manager"
   },
   "description": {
-    "message": "Прехвърля изтеглянията от браузъра към Dannex Download Manager."
+    "message": "Изпраща файловете, връзките и видеоклиповете, които изтегляте в браузъра, към приложението Dannex Download Manager на компютъра ви."
   },
   "menu": {
     "message": "Изтеглете с DDM"
@@ -16,9 +16,6 @@
   },
   "video_hide_here": {
     "message": "Не показвайте на този видеоклип"
-  },
-  "video_close": {
-    "message": "Затваряне"
   },
   "video_never_site": {
     "message": "Никога на $site$",
@@ -188,15 +185,6 @@
       "type": {
         "content": "$1",
         "example": "MP3 320 kbps"
-      }
-    }
-  },
-  "video_audio_original_short": {
-    "message": "Оригинален $type$",
-    "placeholders": {
-      "type": {
-        "content": "$1",
-        "example": "M4A"
       }
     }
   },

@@ -1015,7 +1015,7 @@
 #. page title in the Options window
 #, machine
 	Categories, file types, folders	Κατηγορίες, τύποι αρχείων, φάκελοι
-#. text in a dialog box; text in the Options window; text in remote.rs
+#. text in a dialog box; text in the Options window; text in remote.rs; text in the Download video window
 #. remote control page (on a phone): label of the category choice for a new download
 #, machine
 	Category	Κατηγορία
@@ -1677,14 +1677,14 @@
 #. text in the Options window
 #, machine
 	Download failed	Η λήψη απέτυχε
-#. window title in a dialog box
+#. window title in a dialog box; window title in the Download video window
 #, machine
 	Download File Info	Πληροφορίες αρχείου λήψης
 #. text in the Add torrent window
 #. Add torrent, a checkbox: download the files from their start, to watch a video while it downloads
 #, machine
 	Download in order	Λήψη με σειρά
-#. button in a dialog box
+#. button in a dialog box; button in the Download video window
 #, machine
 	Download Later	Λήψη αργότερα
 #. window title in a dialog box
@@ -4770,7 +4770,7 @@
 #. Options → General: checkbox; DDM starts when the computer starts (the user signs in)
 #, machine
 	Start Dannex Download Manager with the computer	Έναρξη του Dannex Download Manager με τον υπολογιστή
-#. button in a dialog box
+#. button in a dialog box; button in the Download video window
 #, machine
 	Start Download	Έναρξη λήψης
 #. checkbox in the Options window
@@ -5914,7 +5914,7 @@
 #. {error} = an error message (keep the braces as they are)
 #, machine
 	Updates could not be checked: {error}	Δεν ήταν δυνατός ο έλεγχος για ενημερώσεις: {error}
-#. text in a dialog box
+#. text in a dialog box; text in the Download video window
 #, machine
 	URL	URL
 #. text in countries.rs
@@ -6830,6 +6830,10 @@ extension	Could not look it up	Η αναζήτηση απέτυχε
 #, machine
 extension	Couldn't reach it. Open its address in this browser, continue past the security warning, then try again.	Δεν ήταν δυνατή η σύνδεση. Ανοίξτε τη διεύθυνσή του σε αυτό το πρόγραμμα περιήγησης, συνεχίστε μετά την προειδοποίηση ασφαλείας και δοκιμάστε ξανά.
 #. text in the browser extension
+#. the extension's name in the browser's list of extensions and on its toolbar button; keep Dannex Download Manager as it is (the extension has the app's name)
+#, machine
+extension	Dannex Download Manager	Dannex Download Manager
+#. text in the browser extension
 #. headline of the extension's status page, and the first line of its toolbar button's tooltip: the browser tried to start the app for a download and gave up waiting; keep the name Dannex Download Manager as it is
 #, machine
 extension	Dannex Download Manager didn't start	Το Dannex Download Manager δεν ξεκίνησε
@@ -6841,14 +6845,6 @@ extension	Dannex Download Manager is busy with other videos	Το Dannex Download
 #. headline of the extension's status page when everything works; keep the name Dannex Download Manager as it is
 #, machine
 extension	Dannex Download Manager is installed	Το Dannex Download Manager είναι εγκατεστημένο
-#. text in the browser extension
-#. tooltip of the extension's toolbar button while it is turned off (downloads stay in the browser); keep the name Dannex Download Manager as it is
-#, machine
-extension	Dannex Download Manager is off. Click to turn it on.	Το Dannex Download Manager είναι απενεργοποιημένο. Κάντε κλικ για ενεργοποίηση.
-#. text in the browser extension
-#. tooltip of the extension's toolbar button while it sends downloads to the app; keep the name Dannex Download Manager as it is
-#, machine
-extension	Dannex Download Manager is on. Click to turn it off.	Το Dannex Download Manager είναι ενεργό. Κάντε κλικ για απενεργοποίηση.
 #. text in the browser extension
 #. headline of the extension's status page, and the first line of its toolbar button's tooltip: the browser can't find the app on this computer; keep the name Dannex Download Manager as it is
 #, machine
@@ -6869,10 +6865,6 @@ extension	Dannex Download Manager on another computer	Dannex Download Manager σ
 #. a step on the status page (an extension page that says whether the browser reaches Dannex Download Manager and how to fix it) on a system the app doesn't run on; keep the name Dannex Download Manager as it is
 #, machine
 extension	Dannex Download Manager runs on Windows, Mac and Linux computers. Install it on one, and add this extension to a browser there.	Το Dannex Download Manager εκτελείται σε υπολογιστές Windows, Mac και Linux. Εγκαταστήστε το σε έναν και προσθέστε αυτήν την επέκταση σε ένα πρόγραμμα περιήγησης εκεί.
-#. text in the browser extension
-#. the extension's name in the browser's list of extensions and on its toolbar button; keep DDM Integration Module as it is (DDM is the short name of Dannex Download Manager)
-#, machine
-extension	DDM Integration Module	DDM Integration Module
 #. text in the browser extension
 #. item in the right-click menu of the extension's toolbar button: leave this site's downloads to the browser from now on
 #, machine
@@ -6917,10 +6909,6 @@ extension	Downloads from private windows stay in the browser, because this exten
 #. headline of the extension's status page while downloads go to a Dannex Download Manager on another computer (a home server); keep the name Dannex Download Manager as it is
 #, machine
 extension	Downloads go to another Dannex Download Manager	Οι λήψεις πηγαίνουν σε άλλο Dannex Download Manager
-#. text in the browser extension
-#. tooltip of the extension's toolbar button while downloads go to another computer's Dannex Download Manager; $address$ is its web address; keep the name Dannex Download Manager as it is
-#, machine
-extension	Downloads go to the Dannex Download Manager at {address}. Click to turn it off.	Οι λήψεις πηγαίνουν στο Dannex Download Manager στη διεύθυνση {address}. Κάντε κλικ για απενεργοποίηση.
 #. text in the browser extension
 #. the toolbar button's status while downloads go to another DDM
 #, machine
@@ -6971,13 +6959,9 @@ extension	For Windows, Mac and Linux computers.	Για υπολογιστές Wi
 #, machine
 extension	Get automatic updates from the Chrome Web Store...	Λήψη αυτόματων ενημερώσεων από το Chrome Web Store...
 #. text in the browser extension
-#. shown once on the status and options pages of the copy loaded by hand from the app's folder, when the extension is in the Chrome Web Store; keep DDM Integration Module as it is
+#. shown once on the status and options pages of the copy loaded by hand from the app's folder, when the extension is in the Chrome Web Store; keep Dannex Download Manager as it is
 #, machine
 extension	Get automatic updates: add this extension from the Chrome Web Store, then remove this copy.	Λήψη αυτόματων ενημερώσεων: προσθέστε αυτήν την επέκταση από το Chrome Web Store και μετά καταργήστε αυτό το αντίγραφο.
-#. text in the browser extension
-#. the extension's description in the browser's list of extensions; keep the name Dannex Download Manager as it is
-#, machine
-extension	Hands downloads from the browser to Dannex Download Manager.	Παραδίδει λήψεις από το πρόγραμμα περιήγησης στο Dannex Download Manager.
 #. text in the browser extension
 #. link at the bottom of the extension's status and options pages: opens the help page
 #. item in the right-click menu of the extension's toolbar button: opens its status page (how things stand, what to do, the help page)
@@ -7132,6 +7116,7 @@ extension	Run the setup you downloaded.	Εκτελέστε το πρόγραμμ
 extension	Security software is the usual cause. Allow Dannex Download Manager in your antivirus program, or install it again.	Συνήθως η αιτία είναι το λογισμικό ασφαλείας. Επιτρέψτε το Dannex Download Manager στο πρόγραμμα προστασίας από ιούς ή εγκαταστήστε το ξανά.
 #. text in the browser extension
 #. link on the extension's options page, after a line saying what is wrong: opens the extension's status page
+#. a button in the extension's toolbar panel while Dannex Download Manager can't be reached: opens the status page that explains what to do
 #, machine
 extension	See what to do	Δείτε τι να κάνετε
 #. text in the browser extension
@@ -7139,9 +7124,13 @@ extension	See what to do	Δείτε τι να κάνετε
 #, machine
 extension	Send downloads to	Αποστολή λήψεων σε
 #. text in the browser extension
-#. label of the on/off switch on the extension's status and options pages (the same as a click on its toolbar button): when on, downloads started in this browser go to the app; keep the name Dannex Download Manager as it is
+#. label of the on/off switch on the extension's status and options pages and in the panel its toolbar button opens: when on, downloads started in this browser go to the app; keep the name Dannex Download Manager as it is
 #, machine
 extension	Send downloads to Dannex Download Manager	Αποστολή λήψεων στο Dannex Download Manager
+#. text in the browser extension
+#. the extension's description in the browser's list of extensions; keep the name Dannex Download Manager as it is
+#, machine
+extension	Sends the files, links and videos you download in your browser to the Dannex Download Manager app on your computer.	Στέλνει τα αρχεία, τους συνδέσμους και τα βίντεο που κατεβάζετε στο πρόγραμμα περιήγησης στην εφαρμογή Dannex Download Manager του υπολογιστή σας.
 #. text in the browser extension
 #. shown briefly on the download button after it was clicked; keep the name Dannex Download Manager as it is
 #, machine
@@ -7171,7 +7160,7 @@ extension	The browser tried to start it, but it took too long. Start Dannex Down
 #, machine
 extension	The browser updates it by itself within a few hours, or now with Check for updates.	Το πρόγραμμα περιήγησης το ενημερώνει μόνο του μέσα σε λίγες ώρες ή αμέσως με την επιλογή «Έλεγχος για ενημερώσεις».
 #. text in the browser extension
-#. the status page (an extension page that says whether the browser reaches Dannex Download Manager and how to fix it): two copies of the extension in one browser; keep DDM Integration Module as it is
+#. the status page (an extension page that says whether the browser reaches Dannex Download Manager and how to fix it): two copies of the extension in one browser; keep Dannex Download Manager as it is
 #, machine
 extension	The copy from the Chrome Web Store is installed in this browser too, and it keeps itself up to date. This copy isn't needed.	Το αντίγραφο από το Chrome Web Store είναι επίσης εγκατεστημένο σε αυτό το πρόγραμμα περιήγησης και ενημερώνεται μόνο του. Αυτό το αντίγραφο δεν χρειάζεται.
 #. text in the browser extension
@@ -7250,10 +7239,6 @@ extension	Video	Βίντεο
 #. pairing failed: codes tried too fast
 #, machine
 extension	Wait a moment, then try again.	Περιμένετε λίγο, μετά δοκιμάστε ξανά.
-#. text in the browser extension
-#. note under the on/off switch on the extension's options page: a click on the extension's toolbar button turns it off and on too
-#, machine
-extension	When it's off, downloads stay in the browser. Clicking the extension's button does the same.	Όταν είναι απενεργοποιημένο, οι λήψεις παραμένουν στο πρόγραμμα περιήγησης. Το ίδιο κάνει και το κλικ στο κουμπί της επέκτασης.
 #. text in the browser extension
 #. pairing failed: the code was wrong
 #, machine

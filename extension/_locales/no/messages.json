@@ -1,9 +1,9 @@
 {
   "name": {
-    "message": "DDM Integration Module"
+    "message": "Dannex Download Manager"
   },
   "description": {
-    "message": "Sender nedlastinger fra nettleseren til Dannex Download Manager."
+    "message": "Sender filene, lenkene og videoene du laster ned i nettleseren, til appen Dannex Download Manager på datamaskinen din."
   },
   "menu": {
     "message": "Last ned med DDM"
@@ -16,9 +16,6 @@
   },
   "video_hide_here": {
     "message": "Skjul for denne videoen"
-  },
-  "video_close": {
-    "message": "Lukk"
   },
   "video_never_site": {
     "message": "Aldri på $site$",
@@ -188,15 +185,6 @@
       "type": {
         "content": "$1",
         "example": "MP3 320 kbps"
-      }
-    }
-  },
-  "video_audio_original_short": {
-    "message": "Original $type$",
-    "placeholders": {
-      "type": {
-        "content": "$1",
-        "example": "M4A"
       }
     }
   },

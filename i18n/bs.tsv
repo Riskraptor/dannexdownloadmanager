@@ -1015,7 +1015,7 @@
 #. page title in the Options window
 #, machine
 	Categories, file types, folders	Kategorije, vrste datoteka, mape
-#. text in a dialog box; text in the Options window; text in remote.rs
+#. text in a dialog box; text in the Options window; text in remote.rs; text in the Download video window
 #. remote control page (on a phone): label of the category choice for a new download
 #, machine
 	Category	Kategorija
@@ -1685,14 +1685,14 @@
 #. text in the Options window
 #, machine
 	Download failed	Preuzimanje nije uspjelo
-#. window title in a dialog box
+#. window title in a dialog box; window title in the Download video window
 #, machine
 	Download File Info	Informacije o datoteci za preuzimanje
 #. text in the Add torrent window
 #. Add torrent, a checkbox: download the files from their start, to watch a video while it downloads
 #, machine
 	Download in order	Preuzimajte redom
-#. button in a dialog box
+#. button in a dialog box; button in the Download video window
 #, machine
 	Download Later	Preuzmi kasnije
 #. window title in a dialog box
@@ -4778,7 +4778,7 @@
 #. Options → General: checkbox; DDM starts when the computer starts (the user signs in)
 #, machine
 	Start Dannex Download Manager with the computer	Pokretanje programa Dannex Download Manager s računarom
-#. button in a dialog box
+#. button in a dialog box; button in the Download video window
 #, machine
 	Start Download	Pokrenite preuzimanje
 #. checkbox in the Options window
@@ -5922,7 +5922,7 @@
 #. {error} = an error message (keep the braces as they are)
 #, machine
 	Updates could not be checked: {error}	Nije moguće provjeriti ažuriranja: {error}
-#. text in a dialog box
+#. text in a dialog box; text in the Download video window
 #, machine
 	URL	URL
 #. text in countries.rs
@@ -6838,6 +6838,10 @@ extension	Could not look it up	Nije moguće pronaći
 #, machine
 extension	Couldn't reach it. Open its address in this browser, continue past the security warning, then try again.	Nije bilo moguće doći do njega. Otvorite njegovu adresu u ovom pregledniku, nastavite nakon sigurnosnog upozorenja i pokušajte ponovo.
 #. text in the browser extension
+#. the extension's name in the browser's list of extensions and on its toolbar button; keep Dannex Download Manager as it is (the extension has the app's name)
+#, machine
+extension	Dannex Download Manager	Dannex Download Manager
+#. text in the browser extension
 #. headline of the extension's status page, and the first line of its toolbar button's tooltip: the browser tried to start the app for a download and gave up waiting; keep the name Dannex Download Manager as it is
 #, machine
 extension	Dannex Download Manager didn't start	Dannex Download Manager se nije pokrenuo
@@ -6849,14 +6853,6 @@ extension	Dannex Download Manager is busy with other videos	Dannex Download Mana
 #. headline of the extension's status page when everything works; keep the name Dannex Download Manager as it is
 #, machine
 extension	Dannex Download Manager is installed	Dannex Download Manager je instaliran
-#. text in the browser extension
-#. tooltip of the extension's toolbar button while it is turned off (downloads stay in the browser); keep the name Dannex Download Manager as it is
-#, machine
-extension	Dannex Download Manager is off. Click to turn it on.	Dannex Download Manager je isključen. Kliknite da ga uključite.
-#. text in the browser extension
-#. tooltip of the extension's toolbar button while it sends downloads to the app; keep the name Dannex Download Manager as it is
-#, machine
-extension	Dannex Download Manager is on. Click to turn it off.	Dannex Download Manager je uključen. Kliknite da ga isključite.
 #. text in the browser extension
 #. headline of the extension's status page, and the first line of its toolbar button's tooltip: the browser can't find the app on this computer; keep the name Dannex Download Manager as it is
 #, machine
@@ -6877,10 +6873,6 @@ extension	Dannex Download Manager on another computer	Dannex Download Manager na
 #. a step on the status page (an extension page that says whether the browser reaches Dannex Download Manager and how to fix it) on a system the app doesn't run on; keep the name Dannex Download Manager as it is
 #, machine
 extension	Dannex Download Manager runs on Windows, Mac and Linux computers. Install it on one, and add this extension to a browser there.	Dannex Download Manager radi na računarima sa sistemima Windows, Mac i Linux. Instalirajte ga na jednom i dodajte ovo proširenje u preglednik tamo.
-#. text in the browser extension
-#. the extension's name in the browser's list of extensions and on its toolbar button; keep DDM Integration Module as it is (DDM is the short name of Dannex Download Manager)
-#, machine
-extension	DDM Integration Module	DDM Integration Module
 #. text in the browser extension
 #. item in the right-click menu of the extension's toolbar button: leave this site's downloads to the browser from now on
 #, machine
@@ -6925,10 +6917,6 @@ extension	Downloads from private windows stay in the browser, because this exten
 #. headline of the extension's status page while downloads go to a Dannex Download Manager on another computer (a home server); keep the name Dannex Download Manager as it is
 #, machine
 extension	Downloads go to another Dannex Download Manager	Preuzimanja idu u drugi Dannex Download Manager
-#. text in the browser extension
-#. tooltip of the extension's toolbar button while downloads go to another computer's Dannex Download Manager; $address$ is its web address; keep the name Dannex Download Manager as it is
-#, machine
-extension	Downloads go to the Dannex Download Manager at {address}. Click to turn it off.	Preuzimanja idu u Dannex Download Manager na adresi {address}. Kliknite da ga isključite.
 #. text in the browser extension
 #. the toolbar button's status while downloads go to another DDM
 #, machine
@@ -6979,13 +6967,9 @@ extension	For Windows, Mac and Linux computers.	Za računare sa sistemima Window
 #, machine
 extension	Get automatic updates from the Chrome Web Store...	Preuzmite automatska ažuriranja iz Chrome web trgovine...
 #. text in the browser extension
-#. shown once on the status and options pages of the copy loaded by hand from the app's folder, when the extension is in the Chrome Web Store; keep DDM Integration Module as it is
+#. shown once on the status and options pages of the copy loaded by hand from the app's folder, when the extension is in the Chrome Web Store; keep Dannex Download Manager as it is
 #, machine
 extension	Get automatic updates: add this extension from the Chrome Web Store, then remove this copy.	Dobijajte automatska ažuriranja: dodajte ovo proširenje iz Chrome web trgovine, pa uklonite ovu kopiju.
-#. text in the browser extension
-#. the extension's description in the browser's list of extensions; keep the name Dannex Download Manager as it is
-#, machine
-extension	Hands downloads from the browser to Dannex Download Manager.	Preuzimanja iz preglednika prosljeđuje u Dannex Download Manager.
 #. text in the browser extension
 #. link at the bottom of the extension's status and options pages: opens the help page
 #. item in the right-click menu of the extension's toolbar button: opens its status page (how things stand, what to do, the help page)
@@ -7140,6 +7124,7 @@ extension	Run the setup you downloaded.	Pokrenite preuzetu instalaciju.
 extension	Security software is the usual cause. Allow Dannex Download Manager in your antivirus program, or install it again.	Sigurnosni softver je uobičajen uzrok. Dozvolite Dannex Download Manager u svom antivirusnom programu ili ga ponovo instalirajte.
 #. text in the browser extension
 #. link on the extension's options page, after a line saying what is wrong: opens the extension's status page
+#. a button in the extension's toolbar panel while Dannex Download Manager can't be reached: opens the status page that explains what to do
 #, machine
 extension	See what to do	Pogledajte šta uraditi
 #. text in the browser extension
@@ -7147,7 +7132,7 @@ extension	See what to do	Pogledajte šta uraditi
 #, machine
 extension	Send downloads to	Pošalji preuzimanja na
 #. text in the browser extension
-#. label of the on/off switch on the extension's status and options pages (the same as a click on its toolbar button): when on, downloads started in this browser go to the app; keep the name Dannex Download Manager as it is
+#. label of the on/off switch on the extension's status and options pages and in the panel its toolbar button opens: when on, downloads started in this browser go to the app; keep the name Dannex Download Manager as it is
 #, machine
 extension	Send downloads to Dannex Download Manager	Slanje preuzimanja u Dannex Download Manager
 #. text in the browser extension
@@ -7179,7 +7164,7 @@ extension	The browser tried to start it, but it took too long. Start Dannex Down
 #, machine
 extension	The browser updates it by itself within a few hours, or now with Check for updates.	Preglednik ga ažurira sam u roku od nekoliko sati ili odmah pomoću „Provjera ažuriranja“.
 #. text in the browser extension
-#. the status page (an extension page that says whether the browser reaches Dannex Download Manager and how to fix it): two copies of the extension in one browser; keep DDM Integration Module as it is
+#. the status page (an extension page that says whether the browser reaches Dannex Download Manager and how to fix it): two copies of the extension in one browser; keep Dannex Download Manager as it is
 #, machine
 extension	The copy from the Chrome Web Store is installed in this browser too, and it keeps itself up to date. This copy isn't needed.	Kopija iz Chrome web trgovine je instalirana i u ovom pregledniku i sama se održava ažurnom. Ova kopija nije potrebna.
 #. text in the browser extension
@@ -7258,10 +7243,6 @@ extension	Video	Video
 #. pairing failed: codes tried too fast
 #, machine
 extension	Wait a moment, then try again.	Sačekajte trenutak, zatim pokušajte ponovo.
-#. text in the browser extension
-#. note under the on/off switch on the extension's options page: a click on the extension's toolbar button turns it off and on too
-#, machine
-extension	When it's off, downloads stay in the browser. Clicking the extension's button does the same.	Kada je isključeno, preuzimanja ostaju u pregledniku. Klik na dugme proširenja radi isto.
 #. text in the browser extension
 #. pairing failed: the code was wrong
 #, machine

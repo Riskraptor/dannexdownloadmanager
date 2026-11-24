@@ -1,6 +1,6 @@
 # Privacy policy
 
-Dannex Download Manager and its browser extension, the DDM Integration Module, don't collect anything about you: no accounts, no analytics, no telemetry, no ads. This page says exactly what each of them sends, and to whom.
+Dannex Download Manager and its browser extension (which has the same name) don't collect anything about you: no accounts, no analytics, no telemetry, no ads. This page says exactly what each of them sends, and to whom.
 
 _Applies to the app and the extension (Chrome Web Store, Microsoft Edge Add-ons, Firefox add-ons, and the copies that come with the app). Last updated 21 November 2026._
 

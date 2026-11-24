@@ -1,9 +1,9 @@
 {
   "name": {
-    "message": "DDM Integration Module"
+    "message": "Dannex Download Manager"
   },
   "description": {
-    "message": "Entrega as transferências do browser ao Dannex Download Manager."
+    "message": "Envia os ficheiros, ligações e vídeos que transfere no navegador para a aplicação Dannex Download Manager no seu computador."
   },
   "menu": {
     "message": "Transferir com o DDM"

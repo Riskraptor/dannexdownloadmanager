@@ -1015,7 +1015,7 @@
 #. page title in the Options window
 #, machine
 	Categories, file types, folders	Kategorie, typy souborů, složky
-#. text in a dialog box; text in the Options window; text in remote.rs
+#. text in a dialog box; text in the Options window; text in remote.rs; text in the Download video window
 #. remote control page (on a phone): label of the category choice for a new download
 #, machine
 	Category	Kategorie
@@ -1685,14 +1685,14 @@
 #. text in the Options window
 #, machine
 	Download failed	Stahování se nezdařilo
-#. window title in a dialog box
+#. window title in a dialog box; window title in the Download video window
 #, machine
 	Download File Info	Informace o stahovaném souboru
 #. text in the Add torrent window
 #. Add torrent, a checkbox: download the files from their start, to watch a video while it downloads
 #, machine
 	Download in order	Stahovat postupně
-#. button in a dialog box
+#. button in a dialog box; button in the Download video window
 #, machine
 	Download Later	Stáhnout později
 #. window title in a dialog box
@@ -4778,7 +4778,7 @@
 #. Options → General: checkbox; DDM starts when the computer starts (the user signs in)
 #, machine
 	Start Dannex Download Manager with the computer	Spouštět Dannex Download Manager s počítačem
-#. button in a dialog box
+#. button in a dialog box; button in the Download video window
 #, machine
 	Start Download	Spustit stahování
 #. checkbox in the Options window
@@ -5922,7 +5922,7 @@
 #. {error} = an error message (keep the braces as they are)
 #, machine
 	Updates could not be checked: {error}	Aktualizace nelze zkontrolovat: {error}
-#. text in a dialog box
+#. text in a dialog box; text in the Download video window
 #, machine
 	URL	URL
 #. text in countries.rs
@@ -6838,6 +6838,10 @@ extension	Could not look it up	Vyhledání se nezdařilo
 #, machine
 extension	Couldn't reach it. Open its address in this browser, continue past the security warning, then try again.	Nepodařilo se ho kontaktovat. Otevřete jeho adresu v tomto prohlížeči, pokračujte přes bezpečnostní upozornění a zkuste to znovu.
 #. text in the browser extension
+#. the extension's name in the browser's list of extensions and on its toolbar button; keep Dannex Download Manager as it is (the extension has the app's name)
+#, machine
+extension	Dannex Download Manager	Dannex Download Manager
+#. text in the browser extension
 #. headline of the extension's status page, and the first line of its toolbar button's tooltip: the browser tried to start the app for a download and gave up waiting; keep the name Dannex Download Manager as it is
 #, machine
 extension	Dannex Download Manager didn't start	Dannex Download Manager se nespustil
@@ -6849,14 +6853,6 @@ extension	Dannex Download Manager is busy with other videos	Dannex Download Mana
 #. headline of the extension's status page when everything works; keep the name Dannex Download Manager as it is
 #, machine
 extension	Dannex Download Manager is installed	Dannex Download Manager je nainstalován
-#. text in the browser extension
-#. tooltip of the extension's toolbar button while it is turned off (downloads stay in the browser); keep the name Dannex Download Manager as it is
-#, machine
-extension	Dannex Download Manager is off. Click to turn it on.	Dannex Download Manager je vypnutý. Kliknutím ho zapnete.
-#. text in the browser extension
-#. tooltip of the extension's toolbar button while it sends downloads to the app; keep the name Dannex Download Manager as it is
-#, machine
-extension	Dannex Download Manager is on. Click to turn it off.	Dannex Download Manager je zapnutý. Kliknutím ho vypnete.
 #. text in the browser extension
 #. headline of the extension's status page, and the first line of its toolbar button's tooltip: the browser can't find the app on this computer; keep the name Dannex Download Manager as it is
 #, machine
@@ -6877,10 +6873,6 @@ extension	Dannex Download Manager on another computer	Dannex Download Manager v 
 #. a step on the status page (an extension page that says whether the browser reaches Dannex Download Manager and how to fix it) on a system the app doesn't run on; keep the name Dannex Download Manager as it is
 #, machine
 extension	Dannex Download Manager runs on Windows, Mac and Linux computers. Install it on one, and add this extension to a browser there.	Dannex Download Manager funguje v počítačích se systémem Windows, Mac a Linux. Nainstalujte ho do jednoho z nich a tam přidejte toto rozšíření do prohlížeče.
-#. text in the browser extension
-#. the extension's name in the browser's list of extensions and on its toolbar button; keep DDM Integration Module as it is (DDM is the short name of Dannex Download Manager)
-#, machine
-extension	DDM Integration Module	DDM Integration Module
 #. text in the browser extension
 #. item in the right-click menu of the extension's toolbar button: leave this site's downloads to the browser from now on
 #, machine
@@ -6925,10 +6917,6 @@ extension	Downloads from private windows stay in the browser, because this exten
 #. headline of the extension's status page while downloads go to a Dannex Download Manager on another computer (a home server); keep the name Dannex Download Manager as it is
 #, machine
 extension	Downloads go to another Dannex Download Manager	Stahování jdou do jiné aplikace Dannex Download Manager
-#. text in the browser extension
-#. tooltip of the extension's toolbar button while downloads go to another computer's Dannex Download Manager; $address$ is its web address; keep the name Dannex Download Manager as it is
-#, machine
-extension	Downloads go to the Dannex Download Manager at {address}. Click to turn it off.	Stahování jdou do aplikace Dannex Download Manager na adrese {address}. Kliknutím ji vypnete.
 #. text in the browser extension
 #. the toolbar button's status while downloads go to another DDM
 #, machine
@@ -6979,13 +6967,9 @@ extension	For Windows, Mac and Linux computers.	Pro počítače se systémem Win
 #, machine
 extension	Get automatic updates from the Chrome Web Store...	Získávat automatické aktualizace z Internetového obchodu Chrome...
 #. text in the browser extension
-#. shown once on the status and options pages of the copy loaded by hand from the app's folder, when the extension is in the Chrome Web Store; keep DDM Integration Module as it is
+#. shown once on the status and options pages of the copy loaded by hand from the app's folder, when the extension is in the Chrome Web Store; keep Dannex Download Manager as it is
 #, machine
 extension	Get automatic updates: add this extension from the Chrome Web Store, then remove this copy.	Získávejte automatické aktualizace: přidejte toto rozšíření z Internetového obchodu Chrome a pak tuto kopii odeberte.
-#. text in the browser extension
-#. the extension's description in the browser's list of extensions; keep the name Dannex Download Manager as it is
-#, machine
-extension	Hands downloads from the browser to Dannex Download Manager.	Předává stahování z prohlížeče do Dannex Download Manager.
 #. text in the browser extension
 #. link at the bottom of the extension's status and options pages: opens the help page
 #. item in the right-click menu of the extension's toolbar button: opens its status page (how things stand, what to do, the help page)
@@ -7140,6 +7124,7 @@ extension	Run the setup you downloaded.	Spusťte stažený instalátor.
 extension	Security software is the usual cause. Allow Dannex Download Manager in your antivirus program, or install it again.	Běžnou příčinou je bezpečnostní software. Povolte Dannex Download Manager ve svém antivirovém programu nebo ho nainstalujte znovu.
 #. text in the browser extension
 #. link on the extension's options page, after a line saying what is wrong: opens the extension's status page
+#. a button in the extension's toolbar panel while Dannex Download Manager can't be reached: opens the status page that explains what to do
 #, machine
 extension	See what to do	Zobrazit, co dělat
 #. text in the browser extension
@@ -7147,9 +7132,13 @@ extension	See what to do	Zobrazit, co dělat
 #, machine
 extension	Send downloads to	Odeslat stahování do
 #. text in the browser extension
-#. label of the on/off switch on the extension's status and options pages (the same as a click on its toolbar button): when on, downloads started in this browser go to the app; keep the name Dannex Download Manager as it is
+#. label of the on/off switch on the extension's status and options pages and in the panel its toolbar button opens: when on, downloads started in this browser go to the app; keep the name Dannex Download Manager as it is
 #, machine
 extension	Send downloads to Dannex Download Manager	Odesílat stahování do Dannex Download Manager
+#. text in the browser extension
+#. the extension's description in the browser's list of extensions; keep the name Dannex Download Manager as it is
+#, machine
+extension	Sends the files, links and videos you download in your browser to the Dannex Download Manager app on your computer.	Posílá soubory, odkazy a videa, která stahujete v prohlížeči, do aplikace Dannex Download Manager ve vašem počítači.
 #. text in the browser extension
 #. shown briefly on the download button after it was clicked; keep the name Dannex Download Manager as it is
 #, machine
@@ -7179,7 +7168,7 @@ extension	The browser tried to start it, but it took too long. Start Dannex Down
 #, machine
 extension	The browser updates it by itself within a few hours, or now with Check for updates.	Prohlížeč ho aktualizuje sám během několika hodin nebo hned pomocí „Zkontrolovat aktualizace“.
 #. text in the browser extension
-#. the status page (an extension page that says whether the browser reaches Dannex Download Manager and how to fix it): two copies of the extension in one browser; keep DDM Integration Module as it is
+#. the status page (an extension page that says whether the browser reaches Dannex Download Manager and how to fix it): two copies of the extension in one browser; keep Dannex Download Manager as it is
 #, machine
 extension	The copy from the Chrome Web Store is installed in this browser too, and it keeps itself up to date. This copy isn't needed.	Kopie z Internetového obchodu Chrome je nainstalována i v tomto prohlížeči a aktualizuje se sama. Tato kopie není potřeba.
 #. text in the browser extension
@@ -7258,10 +7247,6 @@ extension	Video	Video
 #. pairing failed: codes tried too fast
 #, machine
 extension	Wait a moment, then try again.	Počkejte chvíli a zkuste to znovu.
-#. text in the browser extension
-#. note under the on/off switch on the extension's options page: a click on the extension's toolbar button turns it off and on too
-#, machine
-extension	When it's off, downloads stay in the browser. Clicking the extension's button does the same.	Když je vypnuté, stahování zůstávají v prohlížeči. Totéž udělá kliknutí na tlačítko rozšíření.
 #. text in the browser extension
 #. pairing failed: the code was wrong
 #, machine

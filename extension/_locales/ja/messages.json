@@ -1,9 +1,9 @@
 {
   "name": {
-    "message": "DDM Integration Module"
+    "message": "Dannex Download Manager"
   },
   "description": {
-    "message": "ブラウザーから Dannex Download Manager にダウンロードを渡します。"
+    "message": "ブラウザーでダウンロードするファイル、リンク、動画をコンピューター上の Dannex Download Manager アプリに送ります。"
   },
   "menu": {
     "message": "DDM でダウンロード"

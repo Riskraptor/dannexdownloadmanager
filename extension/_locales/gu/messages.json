@@ -1,9 +1,9 @@
 {
   "name": {
-    "message": "DDM Integration Module"
+    "message": "Dannex Download Manager"
   },
   "description": {
-    "message": "બ્રાઉઝર પરથી Dannex Download Manager પર ડાઉનલોડ્સ આપે છે."
+    "message": "તમે બ્રાઉઝરમાં ડાઉનલોડ કરો છો તે ફાઇલો, લિંક્સ અને વીડિયો તમારા કમ્પ્યુટર પરની Dannex Download Manager ઍપને મોકલે છે."
   },
   "menu": {
     "message": "DDM વડે ડાઉનલોડ કરો"
@@ -16,9 +16,6 @@
   },
   "video_hide_here": {
     "message": "આ વિડિયો માટે છુપાવો"
-  },
-  "video_close": {
-    "message": "બંધ કરો"
   },
   "video_never_site": {
     "message": "$site$ પર ક્યારેય બતાવશો નહીં",
@@ -188,15 +185,6 @@
       "type": {
         "content": "$1",
         "example": "MP3 320 kbps"
-      }
-    }
-  },
-  "video_audio_original_short": {
-    "message": "મૂળ $type$",
-    "placeholders": {
-      "type": {
-        "content": "$1",
-        "example": "M4A"
       }
     }
   },

@@ -30,7 +30,7 @@ A click on the toolbar button turns taking downloads from this browser off and o
 | DDM's Options left the last download to the browser | As above | As above | *Your last download stayed in the browser*, its name, and which option | [More](#options) |
 | Another DDM chosen (**Send downloads to**) | In colour; the tooltip names it | Turns it off and on | **Downloads go to another Dannex Download Manager**, and its address | Nothing |
 
-Safari gives an extension's button no right-click menu: the click works the same, and **Safari → Settings → Extensions → DDM Integration Module → Settings** opens the options page, which says when DDM can't be reached and links to the status page.
+Safari gives an extension's button no right-click menu: the click works the same, and **Safari → Settings → Extensions → Dannex Download Manager → Settings** opens the options page, which says when DDM can't be reached and links to the status page.
 
 ### Older and newer {#versions}
 

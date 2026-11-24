@@ -1,9 +1,9 @@
 {
   "name": {
-    "message": "DDM Integration Module"
+    "message": "Dannex Download Manager"
   },
   "description": {
-    "message": "İndirmeleri tarayıcıdan Dannex Download Manager uygulamasına aktarır."
+    "message": "Tarayıcınızda indirdiğiniz dosyaları, bağlantıları ve videoları bilgisayarınızdaki Dannex Download Manager uygulamasına gönderir."
   },
   "menu": {
     "message": "DDM ile İndir"

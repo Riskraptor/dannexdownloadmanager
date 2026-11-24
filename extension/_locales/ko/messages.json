@@ -1,9 +1,9 @@
 {
   "name": {
-    "message": "DDM Integration Module"
+    "message": "Dannex Download Manager"
   },
   "description": {
-    "message": "브라우저에서 Dannex Download Manager으로 다운로드를 전달합니다."
+    "message": "브라우저에서 다운로드하는 파일, 링크, 동영상을 컴퓨터의 Dannex Download Manager 앱으로 보냅니다."
   },
   "menu": {
     "message": "DDM으로 다운로드"

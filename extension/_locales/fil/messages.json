@@ -1,9 +1,9 @@
 {
   "name": {
-    "message": "DDM Integration Module"
+    "message": "Dannex Download Manager"
   },
   "description": {
-    "message": "Ibinibigay ang mga download mula sa browser sa Dannex Download Manager."
+    "message": "Ipinapadala ang mga file, link at video na dina-download mo sa browser sa Dannex Download Manager app sa iyong computer."
   },
   "menu": {
     "message": "I-download gamit ang DDM"
@@ -16,9 +16,6 @@
   },
   "video_hide_here": {
     "message": "Itago sa video na ito"
-  },
-  "video_close": {
-    "message": "Isara"
   },
   "video_never_site": {
     "message": "Huwag kailanman sa $site$",
@@ -188,15 +185,6 @@
       "type": {
         "content": "$1",
         "example": "MP3 320 kbps"
-      }
-    }
-  },
-  "video_audio_original_short": {
-    "message": "Orihinal na $type$",
-    "placeholders": {
-      "type": {
-        "content": "$1",
-        "example": "M4A"
       }
     }
   },

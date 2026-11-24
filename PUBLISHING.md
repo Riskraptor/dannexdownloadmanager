@@ -52,7 +52,7 @@ Check a release by hand: download `SHA256SUMS.txt` and `SHA256SUMS.txt.sig`, the
 
 ## 3. The browser extension
 
-The extension (the **DDM Integration Module**) is in every release (`…-extension-chromium.zip`,
+The extension (named **Dannex Download Manager**, like the app) is in every release (`…-extension-chromium.zip`,
 `…-extension-firefox.xpi`) and inside the app, which offers it at the
 first start. Until it is in the stores:
 

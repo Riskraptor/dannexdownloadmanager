@@ -1,9 +1,9 @@
 {
   "name": {
-    "message": "DDM Integration Module"
+    "message": "Dannex Download Manager"
   },
   "description": {
-    "message": "将下载从浏览器交给 Dannex Download Manager。"
+    "message": "将你在浏览器中下载的文件、链接和视频发送到电脑上的 Dannex Download Manager 应用。"
   },
   "menu": {
     "message": "使用 DDM 下载"

@@ -1,9 +1,9 @@
 {
   "name": {
-    "message": "DDM Integration Module"
+    "message": "Dannex Download Manager"
   },
   "description": {
-    "message": "Chuyển các bản tải xuống từ trình duyệt sang Dannex Download Manager."
+    "message": "Gửi các tệp, liên kết và video bạn tải xuống trong trình duyệt tới ứng dụng Dannex Download Manager trên máy tính của bạn."
   },
   "menu": {
     "message": "Tải xuống bằng DDM"
@@ -16,9 +16,6 @@
   },
   "video_hide_here": {
     "message": "Ẩn trên video này"
-  },
-  "video_close": {
-    "message": "Đóng"
   },
   "video_never_site": {
     "message": "Không hiển thị trên $site$ nữa",
@@ -188,15 +185,6 @@
       "type": {
         "content": "$1",
         "example": "MP3 320 kbps"
-      }
-    }
-  },
-  "video_audio_original_short": {
-    "message": "$type$ gốc",
-    "placeholders": {
-      "type": {
-        "content": "$1",
-        "example": "M4A"
       }
     }
   },

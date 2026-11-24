@@ -1,9 +1,9 @@
 {
   "name": {
-    "message": "DDM Integration Module"
+    "message": "Dannex Download Manager"
   },
   "description": {
-    "message": "Menyerahkan muat turun daripada pelayar kepada Dannex Download Manager."
+    "message": "Menghantar fail, pautan dan video yang anda muat turun dalam pelayar kepada aplikasi Dannex Download Manager pada komputer anda."
   },
   "menu": {
     "message": "Muat turun dengan DDM"
@@ -16,9 +16,6 @@
   },
   "video_hide_here": {
     "message": "Sembunyikan pada video ini"
-  },
-  "video_close": {
-    "message": "Tutup"
   },
   "video_never_site": {
     "message": "Jangan sekali-kali pada $site$",
@@ -188,15 +185,6 @@
       "type": {
         "content": "$1",
         "example": "MP3 320 kbps"
-      }
-    }
-  },
-  "video_audio_original_short": {
-    "message": "$type$ asal",
-    "placeholders": {
-      "type": {
-        "content": "$1",
-        "example": "M4A"
       }
     }
   },

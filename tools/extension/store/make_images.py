@@ -1,4 +1,4 @@
-"""The browser stores' pictures for the DDM Integration Module, from the app's own windows.
+"""The browser stores' pictures for the Dannex Download Manager extension, from the app's own windows.
 
     python tools/extension/store/make_images.py [<shots folder> [<dark shots folder>]]
 
@@ -81,9 +81,9 @@ def promo(w, h, out, big):
     canvas.alpha_composite(logo(side), (int(w * 0.06), (h - side) // 2))
     d = ImageDraw.Draw(canvas)
     x = int(w * 0.06) + side + int(w * 0.04)
-    d.text((x, h // 2 - (78 if big else 44)), "DDM", font=font(64 if big else 34, True), fill="white")
-    d.text((x, h // 2 - (2 if big else 6)), "Integration Module", font=font(40 if big else 22, True), fill="white")
-    d.text((x, h // 2 + (52 if big else 24)), "Downloads go to Dannex Download Manager",
+    d.text((x, h // 2 - (78 if big else 44)), "Dannex", font=font(64 if big else 34, True), fill="white")
+    d.text((x, h // 2 - (2 if big else 6)), "Download Manager", font=font(40 if big else 22, True), fill="white")
+    d.text((x, h // 2 + (52 if big else 24)), "Browser downloads, saved by the app on your computer",
            font=font(24 if big else 13), fill=HAZE)
     canvas.convert("RGB").save(out, optimize=True)
 

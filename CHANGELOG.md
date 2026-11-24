@@ -5,6 +5,14 @@ Each release's notes on GitHub come from its section here (`## [X.Y.Z]`, see
 
 ## [Unreleased]
 
+## [1.1.2] - 2026-11-24
+
+- The browser extension now has the app's name, **Dannex Download Manager** (it was "DDM
+  Integration Module"), and a clearer description of what it does: it sends the files, links and
+  videos you download in the browser to the Dannex Download Manager app on your computer. Its
+  store pictures show the new name. Nothing else changes: its settings and the app's link to it
+  stay as they are.
+
 ## [1.1.1] - 2026-11-24
 
 - Picking a quality on the button over a video (1080p, say) opens DDM's **Download File Info**

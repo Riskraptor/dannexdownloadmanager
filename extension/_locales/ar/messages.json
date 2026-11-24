@@ -1,9 +1,9 @@
 {
   "name": {
-    "message": "DDM Integration Module"
+    "message": "Dannex Download Manager"
   },
   "description": {
-    "message": "يسلم التنزيلات من المستعرض إلى Dannex Download Manager."
+    "message": "يرسل الملفات والروابط والفيديوهات التي تنزلها في المستعرض إلى تطبيق Dannex Download Manager على الكمبيوتر."
   },
   "menu": {
     "message": "تنزيل باستخدام DDM"
@@ -192,7 +192,7 @@
     }
   },
   "video_audio_original_short": {
-    "message": "الأصلي $type$",
+    "message": "$type$ الأصلي",
     "placeholders": {
       "type": {
         "content": "$1",
