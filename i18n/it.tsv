@@ -835,7 +835,7 @@
 	Categories	Categorie
 #. page title in the Options window
 	Categories, file types, folders	Categorie, tipi di file, cartelle
-#. text in a dialog box; text in the Options window; text in remote.rs
+#. text in a dialog box; text in the Options window; text in remote.rs; text in the Download video window
 #. remote control page (on a phone): label of the category choice for a new download
 	Category	Categoria
 #. text in categories.rs
@@ -1386,12 +1386,12 @@
 	Download complete	Download completato
 #. text in the Options window
 	Download failed	Download non riuscito
-#. window title in a dialog box
+#. window title in a dialog box; window title in the Download video window
 	Download File Info	Informazioni sul file da scaricare
 #. text in the Add torrent window
 #. Add torrent, a checkbox: download the files from their start, to watch a video while it downloads
 	Download in order	Scarica in sequenza
-#. button in a dialog box
+#. button in a dialog box; button in the Download video window
 	Download Later	Scarica più tardi
 #. window title in a dialog box
 	Download later	Scarica più tardi
@@ -3867,7 +3867,7 @@
 #. Options → General: checkbox; DDM starts when the computer starts (the user signs in)
 #, machine
 	Start Dannex Download Manager with the computer	Avvia Dannex Download Manager con il computer
-#. button in a dialog box
+#. button in a dialog box; button in the Download video window
 	Start Download	Avvia download
 #. checkbox in the Options window
 #. Options → Downloads: checkbox; the file starts coming in while Download File Info waits for an answer
@@ -4795,7 +4795,7 @@
 #. text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
 #. {error} = an error message (keep the braces as they are)
 	Updates could not be checked: {error}	Impossibile verificare gli aggiornamenti: {error}
-#. text in a dialog box
+#. text in a dialog box; text in the Download video window
 	URL	URL
 #. text in countries.rs
 #. a country's name (where a download's server is)
@@ -5549,6 +5549,10 @@ extension	Click for details.	Fai clic per i dettagli.
 #, machine
 extension	Click to see what to do.	Fai clic per vedere cosa fare.
 #. text in the browser extension
+#. tooltip of the X button on the download button over a video: hide the button on this video
+#, machine
+extension	Close	Chiudi
+#. text in the browser extension
 #. in the menu under the download button over a video: finding the video's qualities failed; the app's own explanation follows on the next line
 #, machine
 extension	Could not look it up	Impossibile eseguire la ricerca
@@ -5556,6 +5560,9 @@ extension	Could not look it up	Impossibile eseguire la ricerca
 #. pairing failed: the other DDM didn't answer
 #, machine
 extension	Couldn't reach it. Open its address in this browser, continue past the security warning, then try again.	Impossibile raggiungerlo. Apri il suo indirizzo in questo browser, vai oltre l'avviso di sicurezza, poi riprova.
+#. text in the browser extension
+#. the extension's name in the browser's list of extensions and on its toolbar button; keep Dannex Download Manager as it is (the extension has the app's name)
+extension	Dannex Download Manager	Dannex Download Manager
 #. text in the browser extension
 #. headline of the extension's status page, and the first line of its toolbar button's tooltip: the browser tried to start the app for a download and gave up waiting; keep the name Dannex Download Manager as it is
 #, machine
@@ -5595,9 +5602,6 @@ extension	Dannex Download Manager on another computer	Dannex Download Manager su
 #. a step on the status page (an extension page that says whether the browser reaches Dannex Download Manager and how to fix it) on a system the app doesn't run on; keep the name Dannex Download Manager as it is
 #, machine
 extension	Dannex Download Manager runs on Windows, Mac and Linux computers. Install it on one, and add this extension to a browser there.	Dannex Download Manager funziona su computer Windows, Mac e Linux. Installalo su uno di questi e aggiungi questa estensione a un browser di quel computer.
-#. text in the browser extension
-#. the extension's name in the browser's list of extensions and on its toolbar button; keep DDM Integration Module as it is (DDM is the short name of Dannex Download Manager)
-extension	DDM Integration Module	DDM Integration Module
 #. text in the browser extension
 #. item in the right-click menu of the extension's toolbar button: leave this site's downloads to the browser from now on
 #, machine
@@ -5701,12 +5705,9 @@ extension	For Windows, Mac and Linux computers.	Per computer Windows, Mac e Linu
 #, machine
 extension	Get automatic updates from the Chrome Web Store...	Ottieni aggiornamenti automatici dal Chrome Web Store...
 #. text in the browser extension
-#. shown once on the status and options pages of the copy loaded by hand from the app's folder, when the extension is in the Chrome Web Store; keep DDM Integration Module as it is
+#. shown once on the status and options pages of the copy loaded by hand from the app's folder, when the extension is in the Chrome Web Store; keep Dannex Download Manager as it is
 #, machine
 extension	Get automatic updates: add this extension from the Chrome Web Store, then remove this copy.	Ottieni aggiornamenti automatici: aggiungi questa estensione dal Chrome Web Store, poi rimuovi questa copia.
-#. text in the browser extension
-#. the extension's description in the browser's list of extensions; keep the name Dannex Download Manager as it is
-extension	Hands downloads from the browser to Dannex Download Manager.	Passa a Dannex Download Manager i download del browser.
 #. text in the browser extension
 #. link at the bottom of the extension's status and options pages: opens the help page
 #. item in the right-click menu of the extension's toolbar button: opens its status page (how things stand, what to do, the help page)
@@ -5821,6 +5822,10 @@ extension	Open the extensions page	Apri la pagina delle estensioni
 #, machine
 extension	Open the post, then use the button there	Apri il post, poi usa il pulsante lì
 #. text in the browser extension
+#. a row in the Audio tab of the menu of qualities under the download button over a video (the tab already says it is sound only): the site's own sound file as it is (not converted)
+#, machine
+extension	Original {type}	{type} originale
+#. text in the browser extension
 #. button: pair this browser with the other DDM using the code
 extension	Pair	Associa
 #. text in the browser extension
@@ -5863,6 +5868,10 @@ extension	Send downloads to	Invia i download a
 #, machine
 extension	Send downloads to Dannex Download Manager	Invia i download a Dannex Download Manager
 #. text in the browser extension
+#. the extension's description in the browser's list of extensions; keep the name Dannex Download Manager as it is
+#, machine
+extension	Sends the files, links and videos you download in your browser to the Dannex Download Manager app on your computer.	Invia i file, i link e i video che scarichi nel browser all’app Dannex Download Manager sul tuo computer.
+#. text in the browser extension
 #. shown briefly on the download button after it was clicked; keep the name Dannex Download Manager as it is
 extension	Sent to DDM	Inviato a DDM
 #. text in the browser extension
@@ -5894,7 +5903,7 @@ extension	The browser tried to start it, but it took too long. Start Dannex Down
 #, machine
 extension	The browser updates it by itself within a few hours, or now with Check for updates.	Il browser la aggiorna da solo entro poche ore, oppure subito con Verifica aggiornamenti.
 #. text in the browser extension
-#. the status page (an extension page that says whether the browser reaches Dannex Download Manager and how to fix it): two copies of the extension in one browser; keep DDM Integration Module as it is
+#. the status page (an extension page that says whether the browser reaches Dannex Download Manager and how to fix it): two copies of the extension in one browser; keep Dannex Download Manager as it is
 #, machine
 extension	The copy from the Chrome Web Store is installed in this browser too, and it keeps itself up to date. This copy isn't needed.	La copia del Chrome Web Store è installata anche in questo browser e si aggiorna da sola. Questa copia non serve.
 #. text in the browser extension

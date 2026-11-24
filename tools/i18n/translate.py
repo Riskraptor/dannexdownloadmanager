@@ -74,9 +74,8 @@ KEEP = ["Dannex Download Manager", "DDM", "IDM", "Internet Download Manager", "W
         "DNS", "TLS", "TCP", "UDP", "IP", "Cloudflare", "Google", "Quad9", "AdGuard", "NextDNS",
         "IPv4", "IPv6", "ftps://", "OpenGL", "Direct3D", "Adwaita", "Breeze", "Luna", "Aero",
         "Aqua", "Vulkan", "Metal",
-        # The browser extension's name (as its own catalogs keep it in every language) and a
-        # theme's: their notes say keep them as written, which the script check refused.
-        "DDM Integration Module", "Emerald"]
+        # A theme's name: its note says keep it as written, which the script check refused.
+        "Emerald"]
 
 # The script a language's text must contain (a letter of it), from Unicode character names.
 SCRIPT = {

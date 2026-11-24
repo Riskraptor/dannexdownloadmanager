@@ -1,10 +1,10 @@
 {
   "name": {
-    "message": "DDM Integration Module",
-    "description": "the extension's name in the browser's list of extensions and on its toolbar button; keep DDM Integration Module as it is (DDM is the short name of Dannex Download Manager)"
+    "message": "Dannex Download Manager",
+    "description": "the extension's name in the browser's list of extensions and on its toolbar button; keep Dannex Download Manager as it is (the extension has the app's name)"
   },
   "description": {
-    "message": "Hands downloads from the browser to Dannex Download Manager.",
+    "message": "Sends the files, links and videos you download in your browser to the Dannex Download Manager app on your computer.",
     "description": "the extension's description in the browser's list of extensions; keep the name Dannex Download Manager as it is"
   },
   "menu": {
@@ -505,7 +505,7 @@
   },
   "page_duplicate_lead": {
     "message": "The copy from the Chrome Web Store is installed in this browser too, and it keeps itself up to date. This copy isn't needed.",
-    "description": "the status page (an extension page that says whether the browser reaches Dannex Download Manager and how to fix it): two copies of the extension in one browser; keep DDM Integration Module as it is"
+    "description": "the status page (an extension page that says whether the browser reaches Dannex Download Manager and how to fix it): two copies of the extension in one browser; keep Dannex Download Manager as it is"
   },
   "page_remove": {
     "message": "Remove this copy",
@@ -555,7 +555,7 @@
   },
   "page_store": {
     "message": "Get automatic updates: add this extension from the Chrome Web Store, then remove this copy.",
-    "description": "shown once on the status and options pages of the copy loaded by hand from the app's folder, when the extension is in the Chrome Web Store; keep DDM Integration Module as it is"
+    "description": "shown once on the status and options pages of the copy loaded by hand from the app's folder, when the extension is in the Chrome Web Store; keep Dannex Download Manager as it is"
   },
   "page_open_store": {
     "message": "Open the Chrome Web Store",

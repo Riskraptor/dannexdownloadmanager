@@ -1,9 +1,9 @@
 {
   "name": {
-    "message": "DDM Integration Module"
+    "message": "Dannex Download Manager"
   },
   "description": {
-    "message": "Preuzimanja iz preglednika prosljeđuje u Dannex Download Manager."
+    "message": "Šalje datoteke, poveznice i videozapise koje preuzimate u pregledniku aplikaciji Dannex Download Manager na vašem računalu."
   },
   "menu": {
     "message": "Preuzmi pomoću DDM"
@@ -16,9 +16,6 @@
   },
   "video_hide_here": {
     "message": "Sakrij na ovom videozapisu"
-  },
-  "video_close": {
-    "message": "Zatvori"
   },
   "video_never_site": {
     "message": "Nikad na $site$",
@@ -188,15 +185,6 @@
       "type": {
         "content": "$1",
         "example": "MP3 320 kbps"
-      }
-    }
-  },
-  "video_audio_original_short": {
-    "message": "Izvorni $type$",
-    "placeholders": {
-      "type": {
-        "content": "$1",
-        "example": "M4A"
       }
     }
   },

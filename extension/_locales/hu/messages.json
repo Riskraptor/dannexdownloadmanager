@@ -1,9 +1,9 @@
 {
   "name": {
-    "message": "DDM Integration Module"
+    "message": "Dannex Download Manager"
   },
   "description": {
-    "message": "Átadja a letöltéseket a böngészőből a(z) Dannex Download Manager alkalmazásnak."
+    "message": "A böngészőben letöltött fájlokat, hivatkozásokat és videókat a számítógépén lévő Dannex Download Manager alkalmazásnak küldi."
   },
   "menu": {
     "message": "Letöltés a(z) DDM alkalmazással"
@@ -16,9 +16,6 @@
   },
   "video_hide_here": {
     "message": "Elrejtés ennél a videónál"
-  },
-  "video_close": {
-    "message": "Bezárás"
   },
   "video_never_site": {
     "message": "Soha ne jelenjen meg ezen a webhelyen: $site$",
@@ -188,15 +185,6 @@
       "type": {
         "content": "$1",
         "example": "MP3 320 kbps"
-      }
-    }
-  },
-  "video_audio_original_short": {
-    "message": "Eredeti $type$",
-    "placeholders": {
-      "type": {
-        "content": "$1",
-        "example": "M4A"
       }
     }
   },

@@ -1,9 +1,9 @@
 {
   "name": {
-    "message": "DDM Integration Module"
+    "message": "Dannex Download Manager"
   },
   "description": {
-    "message": "ማውረዶችን ከብሮውዘር ወደ Dannex Download Manager ያስተላልፋል።"
+    "message": "በአሳሽዎ ውስጥ የሚያወርዷቸውን ፋይሎች፣ አገናኞች እና ቪዲዮዎች በኮምፒውተርዎ ላይ ወዳለው Dannex Download Manager መተግበሪያ ይልካል።"
   },
   "menu": {
     "message": "በDDM ያውርዱ"
@@ -16,9 +16,6 @@
   },
   "video_hide_here": {
     "message": "በዚህ ቪዲዮ ላይ ደብቁ"
-  },
-  "video_close": {
-    "message": "ዝጋ"
   },
   "video_never_site": {
     "message": "በ$site$ ላይ ዳግም አታሳዩ",
@@ -188,15 +185,6 @@
       "type": {
         "content": "$1",
         "example": "MP3 320 kbps"
-      }
-    }
-  },
-  "video_audio_original_short": {
-    "message": "ኦሪጅናል $type$",
-    "placeholders": {
-      "type": {
-        "content": "$1",
-        "example": "M4A"
       }
     }
   },

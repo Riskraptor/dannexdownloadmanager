@@ -1,9 +1,9 @@
 {
   "name": {
-    "message": "DDM Integration Module"
+    "message": "Dannex Download Manager"
   },
   "description": {
-    "message": "உலாவியிலிருந்து பதிவிறக்கங்களை Dannex Download Managerக்கு அனுப்புகிறது."
+    "message": "உலாவியில் நீங்கள் பதிவிறக்கும் கோப்புகள், இணைப்புகள், வீடியோக்களை உங்கள் கணினியில் உள்ள Dannex Download Manager ஆப்ஸுக்கு அனுப்புகிறது."
   },
   "menu": {
     "message": "DDM மூலம் பதிவிறக்கவும்"
@@ -16,9 +16,6 @@
   },
   "video_hide_here": {
     "message": "இந்த வீடியோவில் மட்டும் மறைக்கவும்"
-  },
-  "video_close": {
-    "message": "மூடு"
   },
   "video_never_site": {
     "message": "$site$ தளத்தில் மீண்டும் காட்ட வேண்டாம்",
@@ -188,15 +185,6 @@
       "type": {
         "content": "$1",
         "example": "MP3 320 kbps"
-      }
-    }
-  },
-  "video_audio_original_short": {
-    "message": "அசல் $type$",
-    "placeholders": {
-      "type": {
-        "content": "$1",
-        "example": "M4A"
       }
     }
   },

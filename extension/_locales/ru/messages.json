@@ -1,9 +1,9 @@
 {
   "name": {
-    "message": "DDM Integration Module"
+    "message": "Dannex Download Manager"
   },
   "description": {
-    "message": "Передает загрузки из браузера в Dannex Download Manager."
+    "message": "Передаёт файлы, ссылки и видео, которые вы скачиваете в браузере, в приложение Dannex Download Manager на вашем компьютере."
   },
   "menu": {
     "message": "Загрузить с помощью DDM"

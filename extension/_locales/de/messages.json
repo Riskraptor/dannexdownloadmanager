@@ -1,9 +1,9 @@
 {
   "name": {
-    "message": "DDM Integration Module"
+    "message": "Dannex Download Manager"
   },
   "description": {
-    "message": "Übergibt Downloads vom Browser an Dannex Download Manager."
+    "message": "Sendet die Dateien, Links und Videos, die Sie im Browser herunterladen, an die App Dannex Download Manager auf Ihrem Computer."
   },
   "menu": {
     "message": "Mit DDM herunterladen"
@@ -192,7 +192,7 @@
     }
   },
   "video_audio_original_short": {
-    "message": "Original $type$",
+    "message": "Original-$type$",
     "placeholders": {
       "type": {
         "content": "$1",

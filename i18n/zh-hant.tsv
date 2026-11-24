@@ -1015,7 +1015,7 @@
 #. page title in the Options window
 #, machine
 	Categories, file types, folders	類別、檔案類型、資料夾
-#. text in a dialog box; text in the Options window; text in remote.rs
+#. text in a dialog box; text in the Options window; text in remote.rs; text in the Download video window
 #. remote control page (on a phone): label of the category choice for a new download
 #, machine
 	Category	類別
@@ -1685,14 +1685,14 @@
 #. text in the Options window
 #, machine
 	Download failed	下載失敗
-#. window title in a dialog box
+#. window title in a dialog box; window title in the Download video window
 #, machine
 	Download File Info	下載檔案資訊
 #. text in the Add torrent window
 #. Add torrent, a checkbox: download the files from their start, to watch a video while it downloads
 #, machine
 	Download in order	依序下載
-#. button in a dialog box
+#. button in a dialog box; button in the Download video window
 #, machine
 	Download Later	稍後下載
 #. window title in a dialog box
@@ -4797,7 +4797,7 @@
 #. Options → General: checkbox; DDM starts when the computer starts (the user signs in)
 #, machine
 	Start Dannex Download Manager with the computer	電腦啟動時啟動 Dannex Download Manager
-#. button in a dialog box
+#. button in a dialog box; button in the Download video window
 #, machine
 	Start Download	開始下載
 #. checkbox in the Options window
@@ -5953,7 +5953,7 @@
 #. {error} = an error message (keep the braces as they are)
 #, machine
 	Updates could not be checked: {error}	無法檢查更新: {error}
-#. text in a dialog box
+#. text in a dialog box; text in the Download video window
 #, machine
 	URL	URL
 #. text in countries.rs
@@ -6866,6 +6866,10 @@ extension	Click for details.	按一下可查看詳細資料。
 #, machine
 extension	Click to see what to do.	按一下可查看處理方式。
 #. text in the browser extension
+#. tooltip of the X button on the download button over a video: hide the button on this video
+#, machine
+extension	Close	關閉
+#. text in the browser extension
 #. in the menu under the download button over a video: finding the video's qualities failed; the app's own explanation follows on the next line
 #, machine
 extension	Could not look it up	無法尋找
@@ -6873,6 +6877,10 @@ extension	Could not look it up	無法尋找
 #. pairing failed: the other DDM didn't answer
 #, machine
 extension	Couldn't reach it. Open its address in this browser, continue past the security warning, then try again.	無法連線。請在此瀏覽器中開啟其位址，略過安全性警告後再試一次。
+#. text in the browser extension
+#. the extension's name in the browser's list of extensions and on its toolbar button; keep Dannex Download Manager as it is (the extension has the app's name)
+#, machine
+extension	Dannex Download Manager	Dannex Download Manager
 #. text in the browser extension
 #. headline of the extension's status page, and the first line of its toolbar button's tooltip: the browser tried to start the app for a download and gave up waiting; keep the name Dannex Download Manager as it is
 #, machine
@@ -6913,10 +6921,6 @@ extension	Dannex Download Manager on another computer	另一部電腦上的 Dann
 #. a step on the status page (an extension page that says whether the browser reaches Dannex Download Manager and how to fix it) on a system the app doesn't run on; keep the name Dannex Download Manager as it is
 #, machine
 extension	Dannex Download Manager runs on Windows, Mac and Linux computers. Install it on one, and add this extension to a browser there.	Dannex Download Manager 可在 Windows、Mac 和 Linux 電腦上執行。請安裝在其中一部電腦，並在該電腦的瀏覽器中新增此擴充功能。
-#. text in the browser extension
-#. the extension's name in the browser's list of extensions and on its toolbar button; keep DDM Integration Module as it is (DDM is the short name of Dannex Download Manager)
-#, machine
-extension	DDM Integration Module	DDM Integration Module
 #. text in the browser extension
 #. item in the right-click menu of the extension's toolbar button: leave this site's downloads to the browser from now on
 #, machine
@@ -7027,13 +7031,9 @@ extension	For Windows, Mac and Linux computers.	適用於 Windows、Mac 和 Linu
 #, machine
 extension	Get automatic updates from the Chrome Web Store...	從 Chrome 線上應用程式商店取得自動更新...
 #. text in the browser extension
-#. shown once on the status and options pages of the copy loaded by hand from the app's folder, when the extension is in the Chrome Web Store; keep DDM Integration Module as it is
+#. shown once on the status and options pages of the copy loaded by hand from the app's folder, when the extension is in the Chrome Web Store; keep Dannex Download Manager as it is
 #, machine
 extension	Get automatic updates: add this extension from the Chrome Web Store, then remove this copy.	取得自動更新：從 Chrome 線上應用程式商店新增此擴充功能，然後移除此副本。
-#. text in the browser extension
-#. the extension's description in the browser's list of extensions; keep the name Dannex Download Manager as it is
-#, machine
-extension	Hands downloads from the browser to Dannex Download Manager.	將瀏覽器中的下載交給 Dannex Download Manager。
 #. text in the browser extension
 #. link at the bottom of the extension's status and options pages: opens the help page
 #. item in the right-click menu of the extension's toolbar button: opens its status page (how things stand, what to do, the help page)
@@ -7154,6 +7154,10 @@ extension	Open the extensions page	開啟擴充功能頁面
 #, machine
 extension	Open the post, then use the button there	開啟貼文，然後使用該處的按鈕
 #. text in the browser extension
+#. a row in the Audio tab of the menu of qualities under the download button over a video (the tab already says it is sound only): the site's own sound file as it is (not converted)
+#, machine
+extension	Original {type}	原始 {type}
+#. text in the browser extension
 #. button: pair this browser with the other DDM using the code
 #, machine
 extension	Pair	配對
@@ -7200,6 +7204,10 @@ extension	Send downloads to	傳送下載項目至
 #, machine
 extension	Send downloads to Dannex Download Manager	將下載交給 Dannex Download Manager
 #. text in the browser extension
+#. the extension's description in the browser's list of extensions; keep the name Dannex Download Manager as it is
+#, machine
+extension	Sends the files, links and videos you download in your browser to the Dannex Download Manager app on your computer.	將你在瀏覽器中下載的檔案、連結和影片傳送到電腦上的 Dannex Download Manager 應用程式。
+#. text in the browser extension
 #. shown briefly on the download button after it was clicked; keep the name Dannex Download Manager as it is
 #, machine
 extension	Sent to DDM	已傳送至 DDM
@@ -7232,7 +7240,7 @@ extension	The browser tried to start it, but it took too long. Start Dannex Down
 #, machine
 extension	The browser updates it by itself within a few hours, or now with Check for updates.	瀏覽器會在數小時內自動更新，或立即使用「檢查更新」。
 #. text in the browser extension
-#. the status page (an extension page that says whether the browser reaches Dannex Download Manager and how to fix it): two copies of the extension in one browser; keep DDM Integration Module as it is
+#. the status page (an extension page that says whether the browser reaches Dannex Download Manager and how to fix it): two copies of the extension in one browser; keep Dannex Download Manager as it is
 #, machine
 extension	The copy from the Chrome Web Store is installed in this browser too, and it keeps itself up to date. This copy isn't needed.	此瀏覽器中也安裝了來自 Chrome 線上應用程式商店的副本，且會自動保持最新。不需要此副本。
 #. text in the browser extension

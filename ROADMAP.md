@@ -74,6 +74,13 @@ The first official release.
 - ✅ The video button's Audio tab names sounds by kind ("Original M4A", "MP3 320 kbps"); no more
   "Invalid filename" errors in the extension's log
 
+## Dannex 1.1.2
+
+### Done
+
+- ✅ The browser extension is named Dannex Download Manager, like the app, with a clearer
+  description in its 51 languages and new store pictures
+
 ## Being worked on
 
 These ship in a later version, when they're ready.

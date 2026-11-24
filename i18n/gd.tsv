@@ -1015,7 +1015,7 @@
 #. page title in the Options window
 #, machine
 	Categories, file types, folders	Roinnean, seòrsaichean faidhlichean, pasganan
-#. text in a dialog box; text in the Options window; text in remote.rs
+#. text in a dialog box; text in the Options window; text in remote.rs; text in the Download video window
 #. remote control page (on a phone): label of the category choice for a new download
 #, machine
 	Category	Roinn
@@ -1685,14 +1685,14 @@
 #. text in the Options window
 #, machine
 	Download failed	Dh’fhàillig an luchdadh a-nuas
-#. window title in a dialog box
+#. window title in a dialog box; window title in the Download video window
 #, machine
 	Download File Info	Fiosrachadh mun fhaidhle a chaidh a luchdadh a-nuas
 #. text in the Add torrent window
 #. Add torrent, a checkbox: download the files from their start, to watch a video while it downloads
 #, machine
 	Download in order	Luchdaich a-nuas ann an òrdugh
-#. button in a dialog box
+#. button in a dialog box; button in the Download video window
 #, machine
 	Download Later	Luchdaich a-nuas nas fhaide air adhart
 #. window title in a dialog box
@@ -4778,7 +4778,7 @@
 #. Options → General: checkbox; DDM starts when the computer starts (the user signs in)
 #, machine
 	Start Dannex Download Manager with the computer	Tòisich Dannex Download Manager leis a’ choimpiutair
-#. button in a dialog box
+#. button in a dialog box; button in the Download video window
 #, machine
 	Start Download	Luchdaich a-nuas
 #. checkbox in the Options window
@@ -5922,7 +5922,7 @@
 #. {error} = an error message (keep the braces as they are)
 #, machine
 	Updates could not be checked: {error}	Cha b' urrainn sgrùdadh a dhèanamh airson ùrachaidhean: {error}
-#. text in a dialog box
+#. text in a dialog box; text in the Download video window
 #, machine
 	URL	URL
 #. text in countries.rs
@@ -6838,6 +6838,10 @@ extension	Could not look it up	Cha b’ urrainn dhuinn a lorg
 #, machine
 extension	Couldn't reach it. Open its address in this browser, continue past the security warning, then try again.	Cha b’ urrainn dhuinn faighinn thuige. Fosgail an seòladh aige sa bhrabhsair seo, lean air seachad air an rabhadh tèarainteachd, agus feuch a-rithist.
 #. text in the browser extension
+#. the extension's name in the browser's list of extensions and on its toolbar button; keep Dannex Download Manager as it is (the extension has the app's name)
+#, machine
+extension	Dannex Download Manager	Dannex Download Manager
+#. text in the browser extension
 #. headline of the extension's status page, and the first line of its toolbar button's tooltip: the browser tried to start the app for a download and gave up waiting; keep the name Dannex Download Manager as it is
 #, machine
 extension	Dannex Download Manager didn't start	Cha do thòisich Dannex Download Manager
@@ -6849,14 +6853,6 @@ extension	Dannex Download Manager is busy with other videos	Tha Dannex Download 
 #. headline of the extension's status page when everything works; keep the name Dannex Download Manager as it is
 #, machine
 extension	Dannex Download Manager is installed	Tha Dannex Download Manager air a stàladh
-#. text in the browser extension
-#. tooltip of the extension's toolbar button while it is turned off (downloads stay in the browser); keep the name Dannex Download Manager as it is
-#, machine
-extension	Dannex Download Manager is off. Click to turn it on.	Tha Dannex Download Manager dheth. Briog airson a chur air.
-#. text in the browser extension
-#. tooltip of the extension's toolbar button while it sends downloads to the app; keep the name Dannex Download Manager as it is
-#, machine
-extension	Dannex Download Manager is on. Click to turn it off.	Tha Dannex Download Manager air. Briog airson a chur dheth.
 #. text in the browser extension
 #. headline of the extension's status page, and the first line of its toolbar button's tooltip: the browser can't find the app on this computer; keep the name Dannex Download Manager as it is
 #, machine
@@ -6877,10 +6873,6 @@ extension	Dannex Download Manager on another computer	Dannex Download Manager ai
 #. a step on the status page (an extension page that says whether the browser reaches Dannex Download Manager and how to fix it) on a system the app doesn't run on; keep the name Dannex Download Manager as it is
 #, machine
 extension	Dannex Download Manager runs on Windows, Mac and Linux computers. Install it on one, and add this extension to a browser there.	Ruithidh Dannex Download Manager air coimpiutairean Windows, Mac agus Linux. Stàlaich air aon dhiubh e, agus cuir an leudachan seo ri brabhsair an sin.
-#. text in the browser extension
-#. the extension's name in the browser's list of extensions and on its toolbar button; keep DDM Integration Module as it is (DDM is the short name of Dannex Download Manager)
-#, machine
-extension	DDM Integration Module	DDM Integration Module
 #. text in the browser extension
 #. item in the right-click menu of the extension's toolbar button: leave this site's downloads to the browser from now on
 #, machine
@@ -6925,10 +6917,6 @@ extension	Downloads from private windows stay in the browser, because this exten
 #. headline of the extension's status page while downloads go to a Dannex Download Manager on another computer (a home server); keep the name Dannex Download Manager as it is
 #, machine
 extension	Downloads go to another Dannex Download Manager	Thèid luchdaidhean a-nuas gu Dannex Download Manager eile
-#. text in the browser extension
-#. tooltip of the extension's toolbar button while downloads go to another computer's Dannex Download Manager; $address$ is its web address; keep the name Dannex Download Manager as it is
-#, machine
-extension	Downloads go to the Dannex Download Manager at {address}. Click to turn it off.	Thèid luchdaidhean a-nuas gu Dannex Download Manager aig {address}. Briog airson a chur dheth.
 #. text in the browser extension
 #. the toolbar button's status while downloads go to another DDM
 #, machine
@@ -6979,13 +6967,9 @@ extension	For Windows, Mac and Linux computers.	Airson coimpiutairean Windows, M
 #, machine
 extension	Get automatic updates from the Chrome Web Store...	Faigh ùrachaidhean fèin-obrachail o Chrome Web Store...
 #. text in the browser extension
-#. shown once on the status and options pages of the copy loaded by hand from the app's folder, when the extension is in the Chrome Web Store; keep DDM Integration Module as it is
+#. shown once on the status and options pages of the copy loaded by hand from the app's folder, when the extension is in the Chrome Web Store; keep Dannex Download Manager as it is
 #, machine
 extension	Get automatic updates: add this extension from the Chrome Web Store, then remove this copy.	Faigh ùrachaidhean fèin-obrachail: cuir an leudachan seo ris o Chrome Web Store, an uairsin thoir air falbh an lethbhreac seo.
-#. text in the browser extension
-#. the extension's description in the browser's list of extensions; keep the name Dannex Download Manager as it is
-#, machine
-extension	Hands downloads from the browser to Dannex Download Manager.	A’ toirt seachad luchdaidhean bhon bhrobhsair gu Dannex Download Manager.
 #. text in the browser extension
 #. link at the bottom of the extension's status and options pages: opens the help page
 #. item in the right-click menu of the extension's toolbar button: opens its status page (how things stand, what to do, the help page)
@@ -7140,6 +7124,7 @@ extension	Run the setup you downloaded.	Ruith an stàlaichear a luchdaich thu a-
 extension	Security software is the usual cause. Allow Dannex Download Manager in your antivirus program, or install it again.	Mar as trice, ’s e bathar-bog tèarainteachd as coireach. Ceadaich Dannex Download Manager sa phrògram an-aghaidh bhìorasan agad, no stàlaich a-rithist e.
 #. text in the browser extension
 #. link on the extension's options page, after a line saying what is wrong: opens the extension's status page
+#. a button in the extension's toolbar panel while Dannex Download Manager can't be reached: opens the status page that explains what to do
 #, machine
 extension	See what to do	Faic dè nì thu
 #. text in the browser extension
@@ -7147,7 +7132,7 @@ extension	See what to do	Faic dè nì thu
 #, machine
 extension	Send downloads to	Cuir luchdaidhean sìos gu
 #. text in the browser extension
-#. label of the on/off switch on the extension's status and options pages (the same as a click on its toolbar button): when on, downloads started in this browser go to the app; keep the name Dannex Download Manager as it is
+#. label of the on/off switch on the extension's status and options pages and in the panel its toolbar button opens: when on, downloads started in this browser go to the app; keep the name Dannex Download Manager as it is
 #, machine
 extension	Send downloads to Dannex Download Manager	Cuir luchdaidhean a-nuas gu Dannex Download Manager
 #. text in the browser extension
@@ -7179,7 +7164,7 @@ extension	The browser tried to start it, but it took too long. Start Dannex Down
 #, machine
 extension	The browser updates it by itself within a few hours, or now with Check for updates.	Ùraichidh am brabhsair e leis fhèin taobh a-staigh beagan uairean a thìde, no a-nis le Thoir sùil airson ùrachaidhean.
 #. text in the browser extension
-#. the status page (an extension page that says whether the browser reaches Dannex Download Manager and how to fix it): two copies of the extension in one browser; keep DDM Integration Module as it is
+#. the status page (an extension page that says whether the browser reaches Dannex Download Manager and how to fix it): two copies of the extension in one browser; keep Dannex Download Manager as it is
 #, machine
 extension	The copy from the Chrome Web Store is installed in this browser too, and it keeps itself up to date. This copy isn't needed.	Tha an lethbhreac o Chrome Web Store air a stàladh sa bhrabhsair seo cuideachd, agus cumaidh e e fhèin ùraichte. Chan eil feum air an lethbhreac seo.
 #. text in the browser extension
@@ -7258,10 +7243,6 @@ extension	Video	Video
 #. pairing failed: codes tried too fast
 #, machine
 extension	Wait a moment, then try again.	Fuirich mionaid, an uair sin feuch ris a-rithist.
-#. text in the browser extension
-#. note under the on/off switch on the extension's options page: a click on the extension's toolbar button turns it off and on too
-#, machine
-extension	When it's off, downloads stay in the browser. Clicking the extension's button does the same.	Nuair a tha e dheth, fanaidh luchdaidhean a-nuas sa bhrabhsair. Nì briogadh air putan an leudachain an aon rud.
 #. text in the browser extension
 #. pairing failed: the code was wrong
 #, machine

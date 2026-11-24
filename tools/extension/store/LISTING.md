@@ -1,7 +1,7 @@
 # The extension's store listings
 
-What to type into each store's form for the **DDM Integration Module**, the same everywhere so
-the listings match. The pictures are in [images/](images/) (`make_images.py` makes them again
+What to type into each store's form for the **Dannex Download Manager** extension, the same
+everywhere so the listings match. The pictures are in [images/](images/) (`make_images.py` makes them again
 from DDM's own windows). The step-by-step of each store is in
 [PUBLISHING.md](../../../PUBLISHING.md).
 
@@ -15,16 +15,19 @@ from DDM's own windows). The step-by-step of each store is in
 
 ## Name and short description
 
-- **Name:** DDM Integration Module (it comes from the extension's own `_locales`, in 51 languages)
+- **Name:** Dannex Download Manager (it comes from the extension's own `_locales`, in 51 languages;
+  the extension has the app's name, it is the app's part in the browser)
 - **Short description / summary** (from the manifest, also translated):
-  Hands downloads from the browser to Dannex Download Manager.
+  Sends the files, links and videos you download in your browser to the Dannex Download Manager
+  app on your computer.
 
 ## Detailed description
 
 ```
-The DDM Integration Module connects your browser to Dannex Download Manager (DDM), a free,
-open-source download manager for Windows, Linux and macOS. It needs DDM installed on your
-computer: get it from https://dannex.kavangi.co.ke/download.html
+This is the browser part of Dannex Download Manager (DDM), a free, open-source download
+manager for Windows, Linux and macOS made by Riskraptor. The extension does nothing alone: it
+works with the DDM app installed on the same computer, which you get from
+https://dannex.kavangi.co.ke/download.html
 
 What it does
 • Downloads you start in the browser go to DDM, which downloads each file over up to 8
@@ -64,8 +67,9 @@ every line can be read at https://github.com/Riskraptor/dannexdownloadmanager
 
 **Single purpose:**
 ```
-Hands the downloads you start in the browser (and links you choose from its right-click menu)
-to Dannex Download Manager, the download manager installed on the same computer.
+Sends the downloads you start in the browser (and the links and videos you choose from its
+right-click menu or its button over videos) to the Dannex Download Manager app installed on the
+same computer, which downloads and saves them.
 ```
 
 **Permission justifications** (the *alarms* permission is gone since the toolbar button stopped
@@ -99,4 +103,22 @@ com.dannexdownloadmanager.host). Without it, the toolbar button opens a page tha
 download hand-off can't be tried. The code is not minified or bundled: the package is the source
 (https://github.com/Riskraptor/dannexdownloadmanager/tree/main/extension).
 data_collection_permissions: none.
+```
+
+## Chrome Web Store: appeal text (the 2026-11 "Yellow Nickel" rejection)
+
+Version 1.1.1 was refused as a duplicate (Spam and placement in the Store). From 1.1.2 the
+extension has its own name and description (above). In the dashboard: upload the new zip, replace
+the listing's text and pictures with these, then **Build > Status > Appeal** with:
+
+```
+This is the only extension of this developer account. It is the browser part of Dannex Download
+Manager, a desktop download manager published by Riskraptor
+(https://dannex.kavangi.co.ke/, source at https://github.com/Riskraptor/dannexdownloadmanager).
+It talks only to that app, through its own native messaging host com.dannexdownloadmanager.host,
+installed with the app; it shows no ads and no notifications, and sends nothing on the user's behalf. Version 1.1.2 renames it from "DDM Integration Module" to "Dannex Download Manager", and
+its description and pictures were rewritten so that it can't be mistaken for another product.
+The app's code started from an open-source project (GPL-3.0), but Dannex is a separate product
+with its own app, name, website and native host; it shares no listing, account or publisher with
+any other store item.
 ```

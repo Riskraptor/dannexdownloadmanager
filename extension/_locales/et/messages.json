@@ -1,9 +1,9 @@
 {
   "name": {
-    "message": "DDM Integration Module"
+    "message": "Dannex Download Manager"
   },
   "description": {
-    "message": "Annab allalaadimised brauserist rakendusele Dannex Download Manager."
+    "message": "Saadab brauseris allalaaditavad failid, lingid ja videod teie arvutis olevale rakendusele Dannex Download Manager."
   },
   "menu": {
     "message": "Laadi alla rakendusega DDM"
@@ -16,9 +16,6 @@
   },
   "video_hide_here": {
     "message": "Peida ainult selle video puhul"
-  },
-  "video_close": {
-    "message": "Sulge"
   },
   "video_never_site": {
     "message": "Mitte kunagi saidil $site$",
@@ -188,15 +185,6 @@
       "type": {
         "content": "$1",
         "example": "MP3 320 kbps"
-      }
-    }
-  },
-  "video_audio_original_short": {
-    "message": "Algne $type$",
-    "placeholders": {
-      "type": {
-        "content": "$1",
-        "example": "M4A"
       }
     }
   },

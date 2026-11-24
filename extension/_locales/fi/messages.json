@@ -1,9 +1,9 @@
 {
   "name": {
-    "message": "DDM Integration Module"
+    "message": "Dannex Download Manager"
   },
   "description": {
-    "message": "Siirtää lataukset selaimesta Dannex Download Manageriin."
+    "message": "Lähettää selaimessa lataamasi tiedostot, linkit ja videot tietokoneesi Dannex Download Manager-sovellukseen."
   },
   "menu": {
     "message": "Lataa DDMilla"
@@ -16,9 +16,6 @@
   },
   "video_hide_here": {
     "message": "Piilota tässä videossa"
-  },
-  "video_close": {
-    "message": "Sulje"
   },
   "video_never_site": {
     "message": "Ei koskaan sivustolla $site$",
@@ -188,15 +185,6 @@
       "type": {
         "content": "$1",
         "example": "MP3 320 kbps"
-      }
-    }
-  },
-  "video_audio_original_short": {
-    "message": "Alkuperäinen $type$",
-    "placeholders": {
-      "type": {
-        "content": "$1",
-        "example": "M4A"
       }
     }
   },

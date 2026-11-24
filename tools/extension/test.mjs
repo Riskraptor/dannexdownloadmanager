@@ -4268,7 +4268,7 @@ const TECHNICAL = /\b(connected|connection|native|host|helper|handshake|origin|n
   assert.ok(!els.already.hidden, "and a line for one already installed");
   assert.ok(els.retry.hidden && els["toggle-row"].hidden, "the download is its one button");
   assert.equal(els.help.href, "https://dannex.kavangi.co.ke/help/browser-help.html#not-installed");
-  assert.equal(els.version.textContent, "DDM Integration Module 0.6.5", "the version small, at the bottom");
+  assert.equal(els.version.textContent, "Dannex Download Manager 0.6.5", "the version small, at the bottom");
   assert.equal(els.support.href, "https://github.com/sponsors/Riskraptor", "Support DDM, beside Help");
   assert.ok(!TECHNICAL.test(shown(els)), shown(els));
   assert.deepEqual(await page.run(), [2000], "asked again in two seconds");
@@ -4448,7 +4448,7 @@ ok("the status page: the download for this computer's system");
   await settle();
   assert.ok(plain.els.take.checked && plain.els.store.hidden && plain.els.status.hidden);
   assert.ok(!(plain.els.more && plain.els.more.open), "More closed");
-  assert.equal(plain.els.version.textContent, "DDM Integration Module 0.6.5");
+  assert.equal(plain.els.version.textContent, "Dannex Download Manager 0.6.5");
   assert.deepEqual([plain.els.help.href, plain.els.support.href], ["https://dannex.kavangi.co.ke/help/browser-help.html", "https://github.com/sponsors/Riskraptor"]);
   // Turned off here: the toolbar button's switch.
   plain.els.take.checked = false;

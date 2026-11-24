@@ -123,7 +123,7 @@ Right-click the button for:
 
 Chrome, Edge, Brave, Opera and Vivaldi add their own **Options** item to that menu; in Firefox it's **Manage Extension** → **Options**. The extension's options page holds only **Send downloads to Dannex Download Manager** (the same switch as the click) and, under **More**, the two things only the extension can do: **Download through this browser's VPN or proxy** (see below) and **Send downloads to**: this computer, or Dannex Download Manager on another computer. When DDM can't be reached, it says so there, with **See what to do** for the status page.
 
-In Safari the toolbar button's click works the same way, but Safari gives an extension's button no right-click menu: open **Safari → Settings → Extensions → DDM Integration Module → Settings** for the options page.
+In Safari the toolbar button's click works the same way, but Safari gives an extension's button no right-click menu: open **Safari → Settings → Extensions → Dannex Download Manager → Settings** for the options page.
 
 ## A VPN or proxy extension
 

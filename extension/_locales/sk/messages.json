@@ -1,9 +1,9 @@
 {
   "name": {
-    "message": "DDM Integration Module"
+    "message": "Dannex Download Manager"
   },
   "description": {
-    "message": "Odovzdá sťahovanie z prehliadača do Dannex Download Manager."
+    "message": "Posiela súbory, odkazy a videá, ktoré sťahujete v prehliadači, do aplikácie Dannex Download Manager vo vašom počítači."
   },
   "menu": {
     "message": "Stiahnuť pomocou DDM"
@@ -16,9 +16,6 @@
   },
   "video_hide_here": {
     "message": "Skryť pri tomto videu"
-  },
-  "video_close": {
-    "message": "Zavrieť"
   },
   "video_never_site": {
     "message": "Nikdy na $site$",
@@ -188,15 +185,6 @@
       "type": {
         "content": "$1",
         "example": "MP3 320 kbps"
-      }
-    }
-  },
-  "video_audio_original_short": {
-    "message": "Pôvodný $type$",
-    "placeholders": {
-      "type": {
-        "content": "$1",
-        "example": "M4A"
       }
     }
   },

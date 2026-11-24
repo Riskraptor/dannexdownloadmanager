@@ -1,9 +1,9 @@
 {
   "name": {
-    "message": "DDM Integration Module"
+    "message": "Dannex Download Manager"
   },
   "description": {
-    "message": "מעביר הורדות מהדפדפן אל Dannex Download Manager."
+    "message": "שולח את הקבצים, הקישורים והסרטונים שאתם מורידים בדפדפן אל היישום Dannex Download Manager במחשב שלכם."
   },
   "menu": {
     "message": "הורד באמצעות DDM"
@@ -16,9 +16,6 @@
   },
   "video_hide_here": {
     "message": "הסתר בסרטון זה"
-  },
-  "video_close": {
-    "message": "סגירה"
   },
   "video_never_site": {
     "message": "לעולם לא ב-$site$",
@@ -188,15 +185,6 @@
       "type": {
         "content": "$1",
         "example": "MP3 320 kbps"
-      }
-    }
-  },
-  "video_audio_original_short": {
-    "message": "מקורי $type$",
-    "placeholders": {
-      "type": {
-        "content": "$1",
-        "example": "M4A"
       }
     }
   },

@@ -1,9 +1,9 @@
 {
   "name": {
-    "message": "DDM Integration Module"
+    "message": "Dannex Download Manager"
   },
   "description": {
-    "message": "Transfereix les baixades del navegador a Dannex Download Manager."
+    "message": "Envia els fitxers, enllaços i vídeos que baixeu al navegador a l’aplicació Dannex Download Manager de l’ordinador."
   },
   "menu": {
     "message": "Baixa amb DDM"
@@ -16,9 +16,6 @@
   },
   "video_hide_here": {
     "message": "Amaga només en aquest vídeo"
-  },
-  "video_close": {
-    "message": "Tanca"
   },
   "video_never_site": {
     "message": "No ho tornis a mostrar a $site$",
@@ -188,15 +185,6 @@
       "type": {
         "content": "$1",
         "example": "MP3 320 kbps"
-      }
-    }
-  },
-  "video_audio_original_short": {
-    "message": "Original $type$",
-    "placeholders": {
-      "type": {
-        "content": "$1",
-        "example": "M4A"
       }
     }
   },
