@@ -410,7 +410,9 @@ impl Config {
 /// wait (#92): the sources asked, the peers they gave, and how many answered.
 #[derive(Default)]
 pub struct Lookup {
-    engine: Arc<librqbit::MetadataProgress>,
+    /// librqbit's counts, one per round of the lookup (`Torrents::metadata`), the last one
+    /// going on.
+    rounds: std::sync::Mutex<Vec<Arc<librqbit::MetadataProgress>>>,
     trackers: AtomicUsize,
     dht_on: AtomicBool,
     dht: OnceLock<librqbit::dht::Dht>,
@@ -438,23 +440,35 @@ pub struct LookupStatus {
 }
 
 impl Lookup {
+    /// The addresses given add up over the rounds; the peers asked, answered and given up on
+    /// are the busiest round's, as a round asks again the peers of the one before.
     pub fn status(&self) -> LookupStatus {
-        let e = &self.engine;
         let n = |c: &AtomicUsize| c.load(Ordering::Relaxed);
-        LookupStatus {
+        let mut s = LookupStatus {
             trackers: n(&self.trackers),
             dht: self.dht_on.load(Ordering::Relaxed),
             dht_nodes: self.dht.get().map_or(0, |d| {
                 let s = d.stats();
                 s.routing_table_size + s.routing_table_size_v6
             }),
-            from_trackers: n(&e.from_trackers),
-            from_dht: n(&e.from_dht),
-            from_lsd: n(&e.from_lsd),
-            peers: n(&e.peers),
-            connected: n(&e.connected),
-            failed: n(&e.failed),
+            ..Default::default()
+        };
+        for e in self.rounds.lock().unwrap().iter() {
+            s.from_trackers += n(&e.from_trackers);
+            s.from_dht += n(&e.from_dht);
+            s.from_lsd += n(&e.from_lsd);
+            s.peers = s.peers.max(n(&e.peers));
+            s.connected = s.connected.max(n(&e.connected));
+            s.failed = s.failed.max(n(&e.failed));
         }
+        s
+    }
+
+    /// A new round's counts, for librqbit to fill.
+    fn next_round(&self) -> Arc<librqbit::MetadataProgress> {
+        let e = Arc::new(librqbit::MetadataProgress::default());
+        self.rounds.lock().unwrap().push(e.clone());
+        e
     }
 }
 
@@ -524,6 +538,14 @@ const CONCURRENT_CHECKS: usize = 8;
 /// torrent's peer slots until it fails: shorter, the live peers are reached sooner. A peer that
 /// answers does in well under a second.
 const PEER_CONNECT_TIMEOUT: Duration = Duration::from_secs(4);
+
+/// How long a round of a magnet's lookup lasts before it starts again (`Torrents::metadata`):
+/// the peers that will answer at all have by then.
+const METADATA_ROUND: Duration = Duration::from_secs(25);
+
+/// How long a connection to a peer may take in a lookup's later rounds: the peers that
+/// answer at once have been asked, the slow ones (a far or busy network) get longer.
+const RETRY_CONNECT_TIMEOUT: Duration = Duration::from_secs(10);
 
 /// Peers per torrent (librqbit's default is 128), connected or being tried.
 const PEER_LIMIT: usize = 200;
@@ -826,7 +848,8 @@ impl Torrents {
         if let Some(d) = dht {
             let _ = lookup.dht.set(d.clone());
         }
-        let (add, magnet) = match src {
+        // A magnet link, or a .torrent's bytes.
+        let add: Result<String, _> = match src {
             // Only the trackers DDM may contact (#40, `trackers`).
             Source::Magnet(m) => {
                 let m = trackers::filter_magnet(m, self.proxied);
@@ -843,21 +866,56 @@ impl Torrents {
                         "off".to_owned()
                     }
                 );
-                (AddTorrent::from_url(m), true)
+                Ok(m)
             }
-            Source::File(b) => (
-                AddTorrent::from_bytes(
-                    trackers::filter_torrent(b, self.proxied).unwrap_or_else(|| b.clone()),
+            Source::File(b) => {
+                Err(trackers::filter_torrent(b, self.proxied).unwrap_or_else(|| b.clone()))
+            }
+        };
+        let magnet = add.is_ok();
+        // librqbit asks each peer once per lookup, and the trackers once: a peer busy, still
+        // getting the file list itself or not reachable yet was never asked again, nor a seed
+        // that came after the first answers, and a lookup with no answer waited the whole
+        // `wait` for nothing. A magnet's lookup starts again each round, asking the trackers
+        // and every peer anew; after the first, slow peers get longer to connect.
+        let mut round = 0u32;
+        let res = loop {
+            let left = wait.saturating_sub(t0.elapsed());
+            let this = if magnet {
+                left.min(METADATA_ROUND)
+            } else {
+                left
+            };
+            let opts = AddTorrentOptions {
+                list_only: true,
+                metadata_progress: Some(lookup.next_round()),
+                peer_opts: (round > 0 && !self.proxied).then(|| PeerConnectionOptions {
+                    connect_timeout: Some(RETRY_CONNECT_TIMEOUT),
+                    ..Default::default()
+                }),
+                ..Default::default()
+            };
+            let res = tokio::time::timeout(
+                this,
+                self.session.add_torrent(
+                    match &add {
+                        Ok(m) => AddTorrent::from_url(m.clone()),
+                        Err(b) => AddTorrent::from_bytes(b.clone()),
+                    },
+                    Some(opts),
                 ),
-                false,
-            ),
+            )
+            .await;
+            if res.is_ok() || t0.elapsed() + Duration::from_secs(1) >= wait {
+                break res;
+            }
+            round += 1;
+            tracing::info!(
+                "torrents: no file list yet after {:.0} s, asking the peers again (round {})",
+                t0.elapsed().as_secs_f64(),
+                round + 1
+            );
         };
-        let opts = AddTorrentOptions {
-            list_only: true,
-            metadata_progress: Some(lookup.engine.clone()),
-            ..Default::default()
-        };
-        let res = tokio::time::timeout(wait, self.session.add_torrent(add, Some(opts))).await;
         if magnet {
             let secs = t0.elapsed().as_secs_f64();
             let summary = lookup_summary(&lookup.status());

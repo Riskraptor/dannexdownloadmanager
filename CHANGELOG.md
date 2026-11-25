@@ -5,6 +5,13 @@ Each release's notes on GitHub come from its section here (`## [X.Y.Z]`, see
 
 ## [Unreleased]
 
+## [1.1.4] - 2026-11-25
+
+- While **Add torrent** waits for a magnet link's file list, DDM asks the trackers and every peer
+  again every 25 seconds (and gives slow peers longer to answer), instead of asking each one only
+  once. A torrent whose seeders come online, or answer late, is no longer stuck on "Getting the file
+  list from peers".
+
 ## [1.1.3] - 2026-11-25
 
 - Torrents start sooner: up to 8 check their files at the same time (a long check no longer holds
