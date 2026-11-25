@@ -1,5 +1,9 @@
 
-# Agent worktrees (local only)
-/.claude/worktrees/
+# AI agent files (local only)
+/.claude/
+/.impeccable/
+/CLAUDE.md
+/DESIGN.md
+/PRODUCT.md
 /target/
 __pycache__/

@@ -12,4 +12,4 @@ xdm.png          Xtreme Download Manager  https://xtremedownloadmanager.com/ (si
 gopeed.png       Gopeed                   https://gopeed.com/ (site icon PNG, 1024 px)
 downitup.png     DOWNitUP                 https://downitup.com/ (site icon PNG, 512 px)
 
-Internet Download Manager's logo is never shown (clean room: PRODUCT.md, DESIGN.md).
+Internet Download Manager's logo is never shown (clean room).
