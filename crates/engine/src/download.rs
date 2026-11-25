@@ -4,15 +4,15 @@
 //! keeps streaming from byte 0 while further connections split the file (notes/ENGINE.md §1).
 //! Range support is learned from the first range answer: 206 confirms it; 200 means the server
 //! ignores ranges, so the file goes back to the probe connection alone.
-//! One HTTP/1.1 client per download, shared by its connections: one pool (keep-alive sockets
-//! reused between segments, TLS sessions resumed) with at most `connections()` requests at a
-//! time, since each worker has one request in flight.
+//! One HTTP client per download, shared by its connections: HTTP/2 is negotiated with HTTPS
+//! servers that offer it and HTTP/1.1 remains the fallback.  The pool has at most
+//! `connections()` requests at a time, since each worker has one request in flight.
 
 use std::collections::HashSet;
 use std::fs::File;
 use std::io;
 use std::path::{Path, PathBuf};
-use std::sync::atomic::{AtomicU8, Ordering};
+use std::sync::atomic::{AtomicU8, AtomicUsize, Ordering};
 use std::sync::{Arc, Mutex};
 use std::time::Duration;
 
@@ -129,6 +129,11 @@ pub struct Options {
     pub group: Option<Arc<Limiter>>,
     /// The finished file must have this hash (else the server's announced one, if any).
     pub checksum: Option<crate::verify::Hash>,
+    /// Other copies of this exact file, normally from a Metalink document.  They are used for
+    /// parallel ranged requests only after a whole-file checksum is known, so an untrusted or
+    /// stale mirror can never silently corrupt the finished file.  Request credentials are
+    /// scoped to each mirror's origin before they are sent.
+    pub mirrors: Vec<Url>,
     /// Reconnect a connection far slower than the others (see `SHED_*`). Beyond IDM's rule.
     pub shed_slow: bool,
     /// Connection caps learned per host, shared by the downloads that use the same table.
@@ -251,6 +256,7 @@ impl Default for Options {
             global: None,
             group: None,
             checksum: None,
+            mirrors: Vec::new(),
             shed_slow: true,
             host_limits: None,
             ignore_mtime: false,
@@ -1381,9 +1387,11 @@ impl Shared {
     }
 }
 
-/// The address ranges are fetched from, with the headers for it. `generation` counts switches.
+/// The address ranges are fetched from, with its own client and headers. `generation` counts
+/// signed-link refreshes of the primary address.
 #[derive(Clone)]
 struct Target {
+    client: Client,
     url: Url,
     headers: HeaderMap,
     /// A POST download's body for this address (None: GET; see `post_for`).
@@ -1396,12 +1404,15 @@ const REFRESH_EVERY: Duration = Duration::from_secs(120);
 
 /// What every connection needs to fetch a segment.
 struct Ctx {
-    /// The download's client: every connection's requests go through its pool.
-    client: Client,
     /// The file's version; each range request's `If-Range` is chosen from them.
     validators: Mutex<Validators>,
     /// Where ranges come from now (after redirects); switched when it expires.
     target: Mutex<Target>,
+    /// Independently configured clients for verified Metalink mirrors.  A client is tied to its
+    /// mirror's DNS, proxy and selected network adapter, rather than accidentally inheriting
+    /// the primary's resolver port or connection pool.
+    mirrors: Vec<Target>,
+    mirror_cursor: AtomicUsize,
     /// The address the user gave and its headers, when it redirected: asked again when the
     /// target expires.
     origin: Option<(Url, HeaderMap)>,
@@ -1506,6 +1517,23 @@ impl Ctx {
         self.target.lock().unwrap().clone()
     }
 
+    /// The next safe source for a ranged request.  A Metalink source is eligible only when the
+    /// download has a whole-file checksum; otherwise the primary remains the sole authority.
+    fn source(&self, primary: &Target) -> Target {
+        if self.mirrors.is_empty()
+            || primary.post.is_some()
+            || self.ftp.is_some()
+            || self.browser.is_some()
+        {
+            return primary.clone();
+        }
+        let next = self.mirror_cursor.fetch_add(1, Ordering::Relaxed);
+        match next % (self.mirrors.len() + 1) {
+            0 => primary.clone(),
+            index => self.mirrors[index - 1].clone(),
+        }
+    }
+
     /// After `generation`'s address answered as a dead link: ask the original address for
     /// today's target (once for all connections, at most every `REFRESH_EVERY`) and switch to
     /// it if it is the same file. True when there is a newer target to retry with.
@@ -1523,7 +1551,7 @@ impl Ctx {
             return false;
         }
         let Some((url, mut headers)) = refresh_final_url(
-            &self.client,
+            &self.target().client,
             origin,
             headers,
             self.opts.post.as_ref(),
@@ -1562,6 +1590,43 @@ impl Ctx {
             self.shared.view.lock().unwrap().resumable = Some(yes);
         }
     }
+}
+
+/// Makes the independent request targets for a verified Metalink's alternate locations.
+///
+/// Each location gets a client built for that location, since its port, proxy path, DNS answer
+/// and adapter route may differ from the primary.  Mirrors do not inherit cookies or HTTP
+/// authentication across origins (`scoped_headers`).  An unsigned mirror list deliberately
+/// stays inactive: a size and an ETag alone are not a content-integrity guarantee.
+fn mirror_targets(
+    opts: &Options,
+    verified: bool,
+    origin: &Url,
+    primary: &Url,
+    headers: &HeaderMap,
+    as_get: &AsGet,
+    seen: &Arc<crate::server::ServerSeen>,
+) -> Vec<Target> {
+    if !verified || opts.post.is_some() {
+        return Vec::new();
+    }
+    let mut known = HashSet::new();
+    opts.mirrors
+        .iter()
+        .filter(|url| matches!(url.scheme(), "http" | "https"))
+        .filter(|url| **url != *origin && **url != *primary)
+        .filter(|url| known.insert(url.to_string()))
+        .filter_map(|url| {
+            let headers = scoped_headers(headers, origin, url);
+            client(opts, url, as_get, seen).ok().map(|client| Target {
+                client,
+                url: url.clone(),
+                headers,
+                post: None,
+                generation: 0,
+            })
+        })
+        .collect()
 }
 
 /// How long an idle keep-alive socket is kept: shorter than most servers' keep-alive, so a
@@ -1738,7 +1803,10 @@ fn client_with(
             &opts.extra_roots,
             route,
         )))
-        .http1_only()
+        // Let HTTPS servers negotiate HTTP/2 by ALPN.  HTTP/1.1 remains the fallback for
+        // older servers and plain HTTP.  An adaptive receive window keeps parallel ranges from
+        // being throttled by HTTP/2's conservative default flow-control window.
+        .http2_adaptive_window(true)
         .user_agent(&opts.user_agent)
         .connect_timeout(opts.connect_timeout)
         .read_timeout(opts.read_timeout)
@@ -1825,7 +1893,7 @@ async fn run_fresh(
             // or logins. The host's link stays the download's origin, asked again (through the
             // service) when the direct link dies.
             unlocked = unlock_origin(&opts, &req.url, Some(shared), cancel).await?;
-            let (target, mut asked) = match &unlocked {
+            let (mut target, mut asked) = match &unlocked {
                 Some(u) => (u.url.clone(), u.headers.clone()),
                 None => (req.url.clone(), req.headers.clone()),
             };
@@ -1850,6 +1918,51 @@ async fn run_fresh(
             };
             let (mut client0, mut first, as_mdm) = ask.at(&mut opts, &target, &asked).await?;
             asked_as_mdm = as_mdm;
+            // A Metalink's alternate locations can rescue a primary that is down before it
+            // sends its first byte.  Do this only for a manifest that supplied a whole-file
+            // checksum: without one, changing hosts would make a failed URL a data-integrity
+            // risk rather than a reliable fallback.
+            if first.is_err()
+                && unlocked.is_none()
+                && opts.post.is_none()
+                && opts.checksum.is_some()
+            {
+                for mirror in opts.mirrors.clone() {
+                    if !matches!(mirror.scheme(), "http" | "https") || mirror == target {
+                        continue;
+                    }
+                    let mirror_headers = scoped_headers(&asked, &target, &mirror);
+                    shared.event(format!(
+                        "{} did not answer; trying Metalink mirror {}",
+                        target.host_str().unwrap_or("?"),
+                        mirror.host_str().unwrap_or("?")
+                    ));
+                    let mut mirror_opts = as_given.clone();
+                    match ask.at(&mut mirror_opts, &mirror, &mirror_headers).await {
+                        Ok((client, Ok(answer), as_mdm)) => {
+                            (target, asked, opts, client0, first, asked_as_mdm) = (
+                                mirror.clone(),
+                                mirror_headers,
+                                mirror_opts,
+                                client,
+                                Ok(answer),
+                                as_mdm,
+                            );
+                            first_at = target.clone();
+                            break;
+                        }
+                        Ok((_, Err(Error::Cancelled), _)) | Err(Error::Cancelled) => {
+                            return Err(Error::Cancelled);
+                        }
+                        Ok((_, Err(error), _)) | Err(error) => {
+                            shared.event(format!(
+                                "Metalink mirror {}: {error}",
+                                mirror.host_str().unwrap_or("?")
+                            ));
+                        }
+                    }
+                }
+            }
             // #630: the link refused, where the browser's own download of it ended is asked
             // once, as the link was (the browser's User-Agent first). The link's refusal is
             // the one told if that fails too.
@@ -2004,15 +2117,26 @@ async fn run_fresh(
         saved.final_get = opts.post.is_some() && post.is_none();
         saved.asked_as_mdm = asked_as_mdm;
         saved.browser_like = browser.is_some();
+        let mirror_sources = mirror_targets(
+            &opts,
+            checksum.is_some(),
+            &req.url,
+            &final_url,
+            &req.headers,
+            &as_get,
+            &shared.seen.get_or_init(Default::default).clone(),
+        );
         let ctx = Arc::new(Ctx {
-            client: client0.clone(),
             validators: Mutex::new(validators),
             target: Mutex::new(Target {
+                client: client0.clone(),
                 url: final_url.clone(),
                 headers: headers.clone(),
                 post: post.clone(),
                 generation: 0,
             }),
+            mirrors: mirror_sources,
+            mirror_cursor: AtomicUsize::new(0),
             // Asked again through DDM's own connection, which the site's bot check refuses: a
             // browser-like download keeps the address it has (#668).
             origin: (req.url != final_url && browser.is_none())
@@ -2258,15 +2382,18 @@ async fn run_fresh_ftp(
         saved.checksum = opts.checksum.clone();
         saved.set_part(&part);
         let ctx = Arc::new(Ctx {
-            // FTP's connections are its own (`ftp`): this client's are none of the server's.
-            client: client(&opts, &req.url, &AsGet::default(), &Default::default())?,
             validators: Mutex::new(validators),
             target: Mutex::new(Target {
+                // FTP's connections are its own (`ftp`): this client is only kept so Target has
+                // one uniform shape with an HTTP target.
+                client: client(&opts, &req.url, &AsGet::default(), &Default::default())?,
                 url,
                 headers: HeaderMap::new(),
                 post: None,
                 generation: 0,
             }),
+            mirrors: Vec::new(),
+            mirror_cursor: AtomicUsize::new(0),
             origin: None,
             refreshed: Default::default(),
             size,
@@ -2484,7 +2611,6 @@ async fn run_resume(
     let checksum = opts.checksum.clone().or_else(|| saved.checksum.clone());
     let web_page_ok = expects_web_page(&dest, saved.content_type.as_deref());
     let ctx = Arc::new(Ctx {
-        client,
         validators: Mutex::new({
             let mut v = saved.validators.clone();
             if opts.ignore_mtime {
@@ -2496,11 +2622,22 @@ async fn run_resume(
         // connection asks first, the others follow its 206.
         wait_for_ranges: post.is_some() && ftp.is_none(),
         target: Mutex::new(Target {
-            url,
-            headers,
+            client: client.clone(),
+            url: url.clone(),
+            headers: headers.clone(),
             post,
             generation: 0,
         }),
+        mirrors: mirror_targets(
+            &opts,
+            opts.checksum.is_some() || saved.checksum.is_some(),
+            &saved.url,
+            &url,
+            &headers,
+            &as_get,
+            &seen,
+        ),
+        mirror_cursor: AtomicUsize::new(0),
         origin,
         refreshed: Default::default(),
         size,
@@ -3656,6 +3793,7 @@ async fn request(ctx: &Ctx, target: &Target, from: u64, to: u64) -> Result<Body,
             Err(e) => Err(e),
         };
     }
+    let target = ctx.source(target);
     let if_range = ctx
         .validators
         .lock()
@@ -3678,7 +3816,7 @@ async fn request(ctx: &Ctx, target: &Target, from: u64, to: u64) -> Result<Body,
         }
         None => {
             let mut req = build(
-                &ctx.client,
+                &target.client,
                 target.url.clone(),
                 target.post.as_ref(),
                 &target.headers,

@@ -5,6 +5,15 @@ Each release's notes on GitHub come from its section here (`## [X.Y.Z]`, see
 
 ## [Unreleased]
 
+## [1.1.5] - 2026-11-25
+
+- **Verified Metalink downloads:** open a `.metalink` or `.meta4` address in **Add URL** and DDM
+  reads its publisher-provided file address, alternate mirrors and strongest checksum. If the
+  first server cannot answer, DDM can continue with a mirror only when that checksum makes the
+  switch safe; credentials never go to another mirror.
+- **HTTP/2 downloads:** HTTPS downloads negotiate HTTP/2 when the server offers it, and keep the
+  existing HTTP/1.1 path as a reliable fallback.
+
 ## [1.1.4] - 2026-11-25
 
 - While **Add torrent** waits for a magnet link's file list, DDM asks the trackers and every peer

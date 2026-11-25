@@ -3398,7 +3398,9 @@ checksum = "2c3e324da4c95177d6291d4c8730197c0d1822f8a9766814a4a44fa5ab797c9c"
 dependencies = [
  "atomic-waker",
  "bytes",
+ "futures-channel",
  "futures-core",
+ "h2",
  "http",
  "http-body",
  "httparse",
@@ -4582,7 +4584,7 @@ dependencies = [
 
 [[package]]
 name = "mdm-app"
-version = "1.1.4"
+version = "1.1.5"
 dependencies = [
  "arboard",
  "base64 0.23.1",
@@ -4645,7 +4647,7 @@ dependencies = [
 
 [[package]]
 name = "mdm-cli"
-version = "1.1.4"
+version = "1.1.5"
 dependencies = [
  "anyhow",
  "clap",
@@ -4664,7 +4666,7 @@ dependencies = [
 
 [[package]]
 name = "mdm-crash"
-version = "1.1.4"
+version = "1.1.5"
 dependencies = [
  "breakpad-symbols",
  "chrono",
@@ -4689,7 +4691,7 @@ dependencies = [
 
 [[package]]
 name = "mdm-debrid"
-version = "1.1.4"
+version = "1.1.5"
 dependencies = [
  "bytes",
  "chrono",
@@ -4709,7 +4711,7 @@ dependencies = [
 
 [[package]]
 name = "mdm-engine"
-version = "1.1.4"
+version = "1.1.5"
 dependencies = [
  "base64 0.23.1",
  "bytes",
@@ -4721,14 +4723,18 @@ dependencies = [
  "hex",
  "hickory-resolver",
  "http",
+ "http-body-util",
  "httpdate",
+ "hyper",
  "hyper-util",
  "md-5",
  "mdm-labserver",
  "network-interface",
  "percent-encoding",
  "proptest",
+ "rcgen",
  "reqwest 0.13.5",
+ "roxmltree",
  "rquickjs",
  "rustix 1.1.6",
  "rustls",
@@ -4757,7 +4763,7 @@ dependencies = [
 
 [[package]]
 name = "mdm-extract"
-version = "1.1.4"
+version = "1.1.5"
 dependencies = [
  "flate2",
  "lzma-rust2",
@@ -4770,7 +4776,7 @@ dependencies = [
 
 [[package]]
 name = "mdm-geo"
-version = "1.1.4"
+version = "1.1.5"
 dependencies = [
  "lzma-rust2",
  "png 0.18.1",
@@ -4779,7 +4785,7 @@ dependencies = [
 
 [[package]]
 name = "mdm-ipc"
-version = "1.1.4"
+version = "1.1.5"
 dependencies = [
  "craft-atomic",
  "dirs 7.0.0",
@@ -4791,7 +4797,7 @@ dependencies = [
 
 [[package]]
 name = "mdm-labserver"
-version = "1.1.4"
+version = "1.1.5"
 dependencies = [
  "anyhow",
  "aws-lc-rs",
@@ -4818,7 +4824,7 @@ dependencies = [
 
 [[package]]
 name = "mdm-mcp"
-version = "1.1.4"
+version = "1.1.5"
 dependencies = [
  "mdm-ipc",
  "rmcp",
@@ -4832,7 +4838,7 @@ dependencies = [
 
 [[package]]
 name = "mdm-nmhost"
-version = "1.1.4"
+version = "1.1.5"
 dependencies = [
  "chrono",
  "mdm-ipc",
@@ -4843,7 +4849,7 @@ dependencies = [
 
 [[package]]
 name = "mdm-remote"
-version = "1.1.4"
+version = "1.1.5"
 dependencies = [
  "aws-lc-rs",
  "axum",
@@ -4864,7 +4870,7 @@ dependencies = [
 
 [[package]]
 name = "mdm-sitegrab"
-version = "1.1.4"
+version = "1.1.5"
 dependencies = [
  "mdm-engine",
  "mdm-labserver",
@@ -4880,7 +4886,7 @@ dependencies = [
 
 [[package]]
 name = "mdm-tools"
-version = "1.1.4"
+version = "1.1.5"
 dependencies = [
  "aws-lc-rs",
  "base64 0.23.1",
@@ -4906,7 +4912,7 @@ dependencies = [
 
 [[package]]
 name = "mdm-torrent"
-version = "1.1.4"
+version = "1.1.5"
 dependencies = [
  "flate2",
  "librqbit",
@@ -7044,6 +7050,7 @@ dependencies = [
  "bytes",
  "futures-core",
  "futures-util",
+ "h2",
  "http",
  "http-body",
  "http-body-util",

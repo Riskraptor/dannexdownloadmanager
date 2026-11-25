@@ -1067,6 +1067,13 @@ pub struct FileInfo {
     request: crate::app::RequestParts,
     probe: Arc<Mutex<Option<Probed>>>,
     info: Option<Result<ProbeInfo, String>>,
+    /// A `.metalink` / `.meta4` URL is read first; its selected file is then probed just like a
+    /// normal address.  The descriptor itself is never put in the downloads list.
+    metalink: Option<Arc<Mutex<Option<MetalinkFile>>>>,
+    metalink_error: Option<String>,
+    /// Alternate locations and the publisher's expected hash from the selected Metalink file.
+    mirrors: Vec<Url>,
+    checksum: Option<mdm_engine::verify::Hash>,
     /// The look's open answer, for the download to read instead of asking again (#28).
     kept: Option<mdm_engine::KeptAnswer>,
     edited: bool,
@@ -1145,22 +1152,28 @@ impl FileInfo {
         let folder = crate::model::category_folder(category, &downloads, &dirs);
         let mut place = SaveAsPlace::new(Some(ctx));
         let save_as = place.name_in(&folder, &name);
-        let (probe, info) = match from_browser {
-            Some(file_name) => (
-                Arc::new(Mutex::new(None)),
-                Some(Ok(ProbeInfo {
-                    final_url: context
-                        .final_url
-                        .as_deref()
-                        .and_then(|u| Url::parse(u).ok())
-                        .unwrap_or_else(|| new.url.clone()),
-                    size: context.size,
-                    file_name,
-                    // The browser had the answer: nothing was asked of the server here.
-                    server: None,
-                })),
-            ),
-            None => (start_probe(rt, ctx, &new.url, &request), None),
+        let metalink =
+            is_metalink_url(&new.url).then(|| start_metalink(rt, ctx, &new.url, &request));
+        let (probe, info) = if metalink.is_some() {
+            (Arc::new(Mutex::new(None)), None)
+        } else {
+            match from_browser {
+                Some(file_name) => (
+                    Arc::new(Mutex::new(None)),
+                    Some(Ok(ProbeInfo {
+                        final_url: context
+                            .final_url
+                            .as_deref()
+                            .and_then(|u| Url::parse(u).ok())
+                            .unwrap_or_else(|| new.url.clone()),
+                        size: context.size,
+                        file_name,
+                        // The browser had the answer: nothing was asked of the server here.
+                        server: None,
+                    })),
+                ),
+                None => (start_probe(rt, ctx, &new.url, &request), None),
+            }
         };
         FileInfo {
             dest_dir: Default::default(),
@@ -1178,6 +1191,10 @@ impl FileInfo {
             remember: false,
             probe,
             info,
+            metalink,
+            metalink_error: None,
+            mirrors: Vec::new(),
+            checksum: None,
             kept: None,
             edited: false,
             downloads,
@@ -1209,6 +1226,66 @@ impl FileInfo {
         self.kept = None;
     }
 
+    /// Takes a completed Metalink read, selects its one advertised file and then looks up that
+    /// file as the normal Download File Info path does.  Browser credentials deliberately do
+    /// not cross from the descriptor to a potentially unrelated mirror.
+    fn follow_metalink(&mut self, ctx: &egui::Context) {
+        let Some(look) = &self.metalink else { return };
+        let Some(result) = look.lock().unwrap().take() else {
+            return;
+        };
+        self.metalink = None;
+        match result {
+            Ok(file) => {
+                let primary = file.urls[0].clone();
+                self.mirrors = file.urls.into_iter().skip(1).collect();
+                self.checksum = file.checksum;
+                self.url = primary.clone();
+                self.url_text = primary.to_string();
+                self.url_bad = false;
+                self.metalink_error = None;
+                self.kept = None;
+                self.info = None;
+                // A manifest's mirrors are independently chosen locations, not a redirect from
+                // the browser page that supplied the descriptor.  Never leak its cookies,
+                // form body or HTTP authorization to them.
+                self.context.cookies = None;
+                self.context.referer = None;
+                self.context.name = None;
+                self.context.size = None;
+                self.context.mime = None;
+                self.context.final_url = None;
+                self.context.post = None;
+                self.context.post_type = None;
+                self.request.headers = Default::default();
+                self.request.opts.unlocker = None;
+                self.request.opts.browser_final = None;
+                self.request.opts.post = None;
+                self.request.opts.expected_type = None;
+                self.request.opts.mirrors = self.mirrors.clone();
+                self.request.opts.checksum = self.checksum.clone();
+                // Metalink locations are direct file URLs; an account that happens to recognise
+                // the descriptor's host must not replace them with a different download.
+                self.direct = true;
+                self.through = None;
+                if let Some(name) = file.name.map(|name| mdm_engine::naming::sanitize(&name))
+                    && !name.is_empty()
+                    && !self.edited
+                {
+                    self.category = Category::of(&name);
+                    let folder =
+                        crate::model::category_folder(self.category, &self.downloads, &self.dirs);
+                    self.save_as = self.place.name_in(&folder, &name);
+                }
+                self.probe = start_probe(&self.rt, ctx, &primary, &self.request);
+            }
+            Err(error) => {
+                self.metalink_error = Some(error.clone());
+                self.info = Some(Err(error));
+            }
+        }
+    }
+
     /// The account that takes the address appeared or changed (the services' host lists are
     /// read when DDM starts, and Options may change them while the dialog is open): looked up
     /// again its way. A download the browser had started keeps the browser's answer, and goes
@@ -1229,6 +1306,11 @@ impl FileInfo {
     /// again; its file name too, unless Save As was edited); anything else holds Start and
     /// Later back.
     fn url_edited(&mut self, ctx: &egui::Context) {
+        // An explicit edit wins over a Metalink read still finishing in the background.
+        self.metalink = None;
+        self.metalink_error = None;
+        self.mirrors.clear();
+        self.checksum = None;
         match crate::model::parse_address(&self.url_text) {
             Ok(url) if mdm_engine::supported(&url) => {
                 self.url_bad = false;
@@ -1298,6 +1380,16 @@ impl FileInfo {
     /// once.
     pub fn take_kept(&mut self) -> Option<mdm_engine::KeptAnswer> {
         self.kept.take()
+    }
+
+    /// The Metalink locations that accompany the primary `url` when the dialog adds it.
+    pub fn mirrors(&self) -> Vec<Url> {
+        self.mirrors.clone()
+    }
+
+    /// The Metalink's expected whole-file hash, automatically checked by the engine.
+    pub fn checksum(&self) -> Option<mdm_engine::verify::Hash> {
+        self.checksum.clone()
     }
 
     /// The address was looked up and answered (name and size known): the moment IDM starts an
@@ -1383,6 +1475,7 @@ impl FileInfo {
         ctx: &egui::Context,
         icons: &mut crate::chrome::ShellIcons,
     ) -> Outcome<Start> {
+        self.follow_metalink(ctx);
         if self.info.is_none()
             && let Some(res) = self.probe.lock().unwrap().take()
         {
@@ -1662,11 +1755,13 @@ impl FileInfo {
                         || dest.file_name().is_none()
                         || folder()
                 };
-                let blocked = if self.url_bad {
-                    Some("Invalid address")
+                let blocked = if let Some(error) = self.metalink_error.clone() {
+                    Some(error)
+                } else if self.url_bad {
+                    Some("Invalid address".to_owned())
                 } else if name_bad {
                     // i18n: why Start Download is greyed in Download File Info
-                    Some(crate::i18n::mark("Type the file's name in Save As"))
+                    Some(crate::i18n::mark("Type the file's name in Save As").to_owned())
                 } else {
                     None
                 };
@@ -1699,7 +1794,8 @@ impl FileInfo {
                     false,
                     Some(9),
                 );
-                let later = winui::why_disabled(later, blocked.is_some(), blocked.unwrap_or(""));
+                let later =
+                    winui::why_disabled(later, blocked.is_some(), blocked.as_deref().unwrap_or(""));
                 let start = winui::button(
                     ui,
                     r(o, start_at.0, 215.0 + dy, start_at.1, 21.0),
@@ -1708,7 +1804,8 @@ impl FileInfo {
                     true,
                     Some(0),
                 );
-                let start = winui::why_disabled(start, blocked.is_some(), blocked.unwrap_or(""));
+                let start =
+                    winui::why_disabled(start, blocked.is_some(), blocked.as_deref().unwrap_or(""));
                 let cancel = winui::button(
                     ui,
                     r(o, cancel_at.0, 215.0 + dy, cancel_at.1, 21.0),
@@ -1853,6 +1950,71 @@ fn cancel_waiting(ctx: &egui::Context, n: usize) -> Outcome<bool> {
 /// answer landing in the slot returned.
 /// A look's result: what it learned, and its open answer when the download can read it.
 type Probed = Result<(ProbeInfo, Option<mdm_engine::KeptAnswer>), String>;
+
+/// A finished descriptor read, held for the interface thread to apply.
+type MetalinkFile = Result<mdm_engine::metalink::File, String>;
+
+/// Whether `url` names a common Metalink v3/v4 document.  The file extension is intentional:
+/// a normal URL remains a normal download even when its server chooses a Metalink MIME type.
+fn is_metalink_url(url: &Url) -> bool {
+    let path = url.path().to_ascii_lowercase();
+    path.ends_with(".metalink") || path.ends_with(".meta4")
+}
+
+/// Reads one remote Metalink before Download File Info starts probing its selected file.
+///
+/// Descriptor data is bounded before XML parsing, uses the same TLS/DNS/proxy route as normal
+/// downloads, and accepts exactly one file.  Multi-file manifests remain safely rejected rather
+/// than silently dropping the other files from the person's queue.
+fn start_metalink(
+    rt: &tokio::runtime::Handle,
+    ctx: &egui::Context,
+    url: &Url,
+    request: &crate::app::RequestParts,
+) -> Arc<Mutex<Option<MetalinkFile>>> {
+    const MAX_METALINK: usize = 1024 * 1024;
+    let slot = Arc::new(Mutex::new(None));
+    let (slot_out, url, ctx) = (slot.clone(), url.clone(), ctx.clone());
+    let (headers, opts) = (request.headers.clone(), request.opts.clone());
+    rt.spawn(async move {
+        let result = async {
+            let client =
+                mdm_engine::http_client(&opts, &url).map_err(|e| crate::errors::describe(&e))?;
+            let response = client
+                .get(url)
+                .headers(headers)
+                .send()
+                .await
+                .map_err(|e| e.to_string())?
+                .error_for_status()
+                .map_err(|e| e.to_string())?;
+            if response
+                .content_length()
+                .is_some_and(|n| n > MAX_METALINK as u64)
+            {
+                return Err("the Metalink is larger than 1 MiB".to_owned());
+            }
+            let source = response.url().clone();
+            let bytes = response.bytes().await.map_err(|e| e.to_string())?;
+            if bytes.len() > MAX_METALINK {
+                return Err("the Metalink is larger than 1 MiB".to_owned());
+            }
+            let xml = std::str::from_utf8(&bytes)
+                .map_err(|_| "the Metalink is not UTF-8 XML".to_owned())?;
+            let mut files = mdm_engine::metalink::parse(xml, &source)?.files;
+            match files.len() {
+                1 => Ok(files.remove(0)),
+                n => Err(format!(
+                    "the Metalink describes {n} files; add a one-file Metalink"
+                )),
+            }
+        }
+        .await;
+        *slot_out.lock().unwrap() = Some(result);
+        ctx.request_repaint();
+    });
+    slot
+}
 
 fn start_probe(
     rt: &tokio::runtime::Handle,
@@ -3701,6 +3863,16 @@ fn ensure_folder_with<T>(
 #[cfg(test)]
 mod tests {
     use super::*;
+
+    #[test]
+    fn add_url_recognizes_metalink_descriptors() {
+        let descriptor = |address| is_metalink_url(&Url::parse(address).unwrap());
+        assert!(descriptor("https://releases.example/app.meta4"));
+        assert!(descriptor(
+            "https://releases.example/app.metalink?channel=stable"
+        ));
+        assert!(!descriptor("https://releases.example/app.zip"));
+    }
 
     /// #440: Download File Info behind the Create folder question ended without a closing pass,
     /// and the next one opened as a new, hidden window that was never told to show: later

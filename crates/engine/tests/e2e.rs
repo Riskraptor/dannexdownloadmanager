@@ -251,6 +251,43 @@ async fn a_known_checksum_is_verified() {
 }
 
 #[tokio::test]
+async fn a_verified_metalink_mirror_rescues_an_unreachable_primary() {
+    let mirror = server("").await;
+    // Reserve then release a loopback port: a connection there is refused immediately, while
+    // the mirror is the lab server.  This exercises first-byte failover rather than a retry of
+    // the primary URL.
+    let dead = tokio::net::TcpListener::bind("127.0.0.1:0").await.unwrap();
+    let dead_port = dead.local_addr().unwrap().port();
+    drop(dead);
+    let dir = tempfile::tempdir().unwrap();
+    let req = Request {
+        url: format!("http://127.0.0.1:{dead_port}/gen/1M/app.bin?seed=83")
+            .parse()
+            .unwrap(),
+        headers: Default::default(),
+        dest: Destination::Dir(dir.path().to_owned()),
+    };
+    let mirror_url = mirror.url("/gen/1M/app.bin?seed=83").parse().unwrap();
+    let opts = Options {
+        mirrors: vec![mirror_url],
+        checksum: Some(sha256_of(83, 1 << 20)),
+        ..fast_opts()
+    };
+    let dl = Download::start(req, opts);
+    let out = dl.wait().await.expect("the mirror completes the download");
+    let mut want = vec![0; 1 << 20];
+    content::fill(83, 0, &mut want);
+    assert_eq!(std::fs::read(&out.path).unwrap(), want);
+    tokio::time::timeout(SETTLE, mirror.settled())
+        .await
+        .expect("the mirror's response closes");
+    assert!(
+        !mirror.log().is_empty(),
+        "the mirror receives the fallback download"
+    );
+}
+
+#[tokio::test]
 async fn a_wrong_checksum_fails_and_keeps_the_data() {
     let s = server("").await;
     let dir = tempfile::tempdir().unwrap();

@@ -3152,6 +3152,10 @@ impl App {
         );
         self.name_guessed(id, fi.name_guessed());
         self.set_direct(id, fi.direct);
+        if let Some(item) = self.item(id) {
+            item.mirrors = fi.mirrors();
+            item.checksum = fi.checksum();
+        }
         self.number_at_start(id);
         self.selection.set(id);
         if matches!(start, Start::Now) {
@@ -4693,16 +4697,19 @@ impl App {
             self.start_remote(id, show);
             return;
         }
-        let Some((url, login, context, own_limit, checksum, direct)) = self.item(id).map(|i| {
-            (
-                i.url.clone(),
-                i.login.clone(),
-                i.context.clone(),
-                i.own_limit,
-                i.checksum.clone(),
-                i.direct,
-            )
-        }) else {
+        let Some((url, login, context, own_limit, checksum, mirrors, direct)) =
+            self.item(id).map(|i| {
+                (
+                    i.url.clone(),
+                    i.login.clone(),
+                    i.context.clone(),
+                    i.own_limit,
+                    i.checksum.clone(),
+                    i.mirrors.clone(),
+                    i.direct,
+                )
+            })
+        else {
             return;
         };
         // The browser's proxy needs its VPN extension's own login (#42): said, never bypassed.
@@ -4723,6 +4730,7 @@ impl App {
         // The file's own remembered limit, else the Speed Limiter's.
         opts.speed_limit = own_limit.or(self.settings.speed_limit());
         opts.checksum = checksum;
+        opts.mirrors = mirrors;
         // What the disk has to say (a resume state there, a place another row holds, its folder
         // there or not) is asked beside the window as the download starts (`StartLook`, #743): a
         // sleeping hard disk, a USB drive or a network folder holds up no frame, and the row

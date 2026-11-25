@@ -9,6 +9,7 @@ pub mod ftp;
 pub mod hosts;
 mod html;
 pub mod limiter;
+pub mod metalink;
 pub mod naming;
 pub mod net;
 pub mod pac;

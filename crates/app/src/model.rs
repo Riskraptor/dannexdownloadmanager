@@ -369,6 +369,10 @@ pub struct Item {
     /// The hash the finished file must have (Verify checksum…; beyond IDM, D-015).
     #[serde(default)]
     pub checksum: Option<mdm_engine::verify::Hash>,
+    /// Alternate, integrity-checked locations from a Metalink document.  The first source stays
+    /// in `url` for compatibility with the list, command line and resume state.
+    #[serde(default, skip_serializing_if = "Vec::is_empty")]
+    pub mirrors: Vec<Url>,
     /// When the download was added ("Added" column), as `Last Try Date` is written. Downloads
     /// added before the column existed have none.
     #[serde(default)]
@@ -920,6 +924,7 @@ impl Item {
             error: None,
             resumable: None,
             checksum: None,
+            mirrors: Vec::new(),
             added: Some(now_stamp()),
             own_limit: None,
             video: None,
