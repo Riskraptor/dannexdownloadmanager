@@ -2760,7 +2760,7 @@ function samplePage(html) {
   ok("the qualities the page names: read as yt-dlp would, listed as DDM lists them, else nothing");
 }
 
-// No other download manager's name in what ships (the clean-room rule, CLAUDE.md).
+// No other download manager's name in what ships (the clean-room rule).
 {
   for (const file of readdirSync(new URL("../../extension/", import.meta.url))) {
     if (!/\.(js|html|css|json)$/.test(file)) continue;
