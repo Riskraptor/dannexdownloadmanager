@@ -4582,7 +4582,7 @@ dependencies = [
 
 [[package]]
 name = "mdm-app"
-version = "1.1.3"
+version = "1.1.4"
 dependencies = [
  "arboard",
  "base64 0.23.1",
@@ -4645,7 +4645,7 @@ dependencies = [
 
 [[package]]
 name = "mdm-cli"
-version = "1.1.3"
+version = "1.1.4"
 dependencies = [
  "anyhow",
  "clap",
@@ -4664,7 +4664,7 @@ dependencies = [
 
 [[package]]
 name = "mdm-crash"
-version = "1.1.3"
+version = "1.1.4"
 dependencies = [
  "breakpad-symbols",
  "chrono",
@@ -4689,7 +4689,7 @@ dependencies = [
 
 [[package]]
 name = "mdm-debrid"
-version = "1.1.3"
+version = "1.1.4"
 dependencies = [
  "bytes",
  "chrono",
@@ -4709,7 +4709,7 @@ dependencies = [
 
 [[package]]
 name = "mdm-engine"
-version = "1.1.3"
+version = "1.1.4"
 dependencies = [
  "base64 0.23.1",
  "bytes",
@@ -4757,7 +4757,7 @@ dependencies = [
 
 [[package]]
 name = "mdm-extract"
-version = "1.1.3"
+version = "1.1.4"
 dependencies = [
  "flate2",
  "lzma-rust2",
@@ -4770,7 +4770,7 @@ dependencies = [
 
 [[package]]
 name = "mdm-geo"
-version = "1.1.3"
+version = "1.1.4"
 dependencies = [
  "lzma-rust2",
  "png 0.18.1",
@@ -4779,7 +4779,7 @@ dependencies = [
 
 [[package]]
 name = "mdm-ipc"
-version = "1.1.3"
+version = "1.1.4"
 dependencies = [
  "craft-atomic",
  "dirs 7.0.0",
@@ -4791,7 +4791,7 @@ dependencies = [
 
 [[package]]
 name = "mdm-labserver"
-version = "1.1.3"
+version = "1.1.4"
 dependencies = [
  "anyhow",
  "aws-lc-rs",
@@ -4818,7 +4818,7 @@ dependencies = [
 
 [[package]]
 name = "mdm-mcp"
-version = "1.1.3"
+version = "1.1.4"
 dependencies = [
  "mdm-ipc",
  "rmcp",
@@ -4832,7 +4832,7 @@ dependencies = [
 
 [[package]]
 name = "mdm-nmhost"
-version = "1.1.3"
+version = "1.1.4"
 dependencies = [
  "chrono",
  "mdm-ipc",
@@ -4843,7 +4843,7 @@ dependencies = [
 
 [[package]]
 name = "mdm-remote"
-version = "1.1.3"
+version = "1.1.4"
 dependencies = [
  "aws-lc-rs",
  "axum",
@@ -4864,7 +4864,7 @@ dependencies = [
 
 [[package]]
 name = "mdm-sitegrab"
-version = "1.1.3"
+version = "1.1.4"
 dependencies = [
  "mdm-engine",
  "mdm-labserver",
@@ -4880,7 +4880,7 @@ dependencies = [
 
 [[package]]
 name = "mdm-tools"
-version = "1.1.3"
+version = "1.1.4"
 dependencies = [
  "aws-lc-rs",
  "base64 0.23.1",
@@ -4906,7 +4906,7 @@ dependencies = [
 
 [[package]]
 name = "mdm-torrent"
-version = "1.1.3"
+version = "1.1.4"
 dependencies = [
  "flate2",
  "librqbit",

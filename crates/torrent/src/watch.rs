@@ -248,14 +248,15 @@ mod tests {
         entered
             .recv_timeout(Duration::from_secs(5))
             .expect("the reading reached the held lock");
-        // Twenty frames while the lock is held: each takes the last numbers at once (a busy
-        // runner may sleep longer between them; only the frames themselves are timed).
+        // Twenty frames while the lock is held: each takes the last numbers at once. The lock
+        // is held until the test lets it go, so a frame that waited on it would never end; the
+        // bound is wide because a busy runner can pause any thread for a moment.
         for _ in 0..20 {
             let frame = Instant::now();
             let got = w.get("AA").expect("the torrent as last read");
             assert_eq!(got.stats.done, 11, "the reading before the stall");
             assert!(
-                frame.elapsed() < Duration::from_millis(50),
+                frame.elapsed() < Duration::from_secs(1),
                 "a frame waited {:?} on the engine",
                 frame.elapsed()
             );

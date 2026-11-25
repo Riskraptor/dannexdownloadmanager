@@ -90,6 +90,13 @@ The first official release.
 - ✅ Deleting a download never deletes its file unless you tick it (or press Shift+Delete) each time
 - ✅ The video button's menu opens faster; the extension's notes are shorter
 
+## Dannex 1.1.4
+
+### Done
+
+- ✅ A magnet's file list is asked for again every 25 seconds while Add torrent waits, from every
+  tracker and peer, so a seeder that comes online later is still found
+
 ## Being worked on
 
 These ship in a later version, when they're ready.
