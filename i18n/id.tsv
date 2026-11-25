@@ -6814,10 +6814,6 @@ extension	Browser integration is turned off in Dannex Download Manager's Options
 #, machine
 extension	Button settings...	Pengaturan tombol...
 #. text in the browser extension
-#. shown briefly on the download button when nothing on the page says which video the player is playing, so nothing was sent
-#, machine
-extension	Can't tell which video this is: open its own page and try there	Tidak bisa diketahui video mana ini: buka halamannya sendiri dan coba di sana
-#. text in the browser extension
 #. button on the status page (an extension page that says whether the browser reaches Dannex Download Manager and how to fix it): asks the store for a newer version of the extension now
 #, machine
 extension	Check for updates	Periksa pembaruan
@@ -6941,10 +6937,6 @@ extension	Enter its https:// address.	Masukkan alamat https://-nya.
 #. the status page (an extension page that says whether the browser reaches Dannex Download Manager and how to fix it) in Firefox, for an add-on loaded with Load Temporary Add-on
 #, machine
 extension	Firefox will remove this add-on when it closes, because it was added as a temporary add-on.	Firefox akan menghapus add-on ini saat ditutup, karena ditambahkan sebagai add-on sementara.
-#. text in the browser extension
-#. note on the extension's options page, for sending downloads to another computer's Dannex Download Manager: the browser warns about its own certificate once; Options, Remote and Pair a device are names in that app
-#, machine
-extension	First open its address in this browser and continue past the security warning. Then enter the code from its Options → Remote → Pair a device.	Buka alamatnya di browser ini terlebih dahulu dan lanjutkan melewati peringatan keamanan. Lalu masukkan kode dari Opsi → Jarak jauh → Pasangkan perangkat.
 #. text in the browser extension
 #. beside the download button on the status page (an extension page that says whether the browser reaches Dannex Download Manager and how to fix it), on Linux
 #, machine
@@ -7074,6 +7066,10 @@ extension	Open in DDM…	Buka di DDM…
 #, machine
 extension	Open it	Buka
 #. text in the browser extension
+#. note on the extension's options page, for sending downloads to another computer's Dannex Download Manager: the browser warns about its own certificate once; Options, Remote and Pair a device are names in that app
+#, machine
+extension	Open its address here first, then enter the code from its Options → Remote → Pair a device.	Buka dulu alamatnya di sini, lalu masukkan kode dari Opsi → Jarak jauh → Pasangkan perangkat.
+#. text in the browser extension
 #. a step on the status page (an extension page that says whether the browser reaches Dannex Download Manager and how to fix it), on a Mac; keep the name Dannex Download Manager as it is
 #, machine
 extension	Open the .dmg, drag Dannex Download Manager to Applications, and start it once.	Buka .dmg, seret Dannex Download Manager ke Aplikasi, lalu mulai sekali.
@@ -7089,6 +7085,10 @@ extension	Open the extensions page	Buka halaman ekstensi
 #. shown briefly on the download button over a video in a feed (a social site's home page, a timeline) when nothing in the feed gives that video's own address, so nothing was sent: the user should open the post the video belongs to and click the button on that page; short
 #, machine
 extension	Open the post, then use the button there	Buka postingan, lalu gunakan tombol di sana
+#. text in the browser extension
+#. shown briefly on the download button when nothing on the page says which video the player is playing, so nothing was sent
+#, machine
+extension	Open the video's own page and try there	Buka halaman video itu sendiri dan coba di sana
 #. text in the browser extension
 #. button: pair this browser with the other DDM using the code
 #, machine
@@ -7170,7 +7170,7 @@ extension	The browser updates it by itself within a few hours, or now with Check
 #. text in the browser extension
 #. the status page (an extension page that says whether the browser reaches Dannex Download Manager and how to fix it): two copies of the extension in one browser; keep Dannex Download Manager as it is
 #, machine
-extension	The copy from the Chrome Web Store is installed in this browser too, and it keeps itself up to date. This copy isn't needed.	Salinan dari Chrome Web Store juga terpasang di browser ini, dan memperbarui dirinya sendiri. Salinan ini tidak diperlukan.
+extension	The Chrome Web Store copy is installed too and updates itself. You can remove this one.	Salinan dari Chrome Web Store juga terpasang dan memperbarui dirinya sendiri. Anda dapat menghapus yang ini.
 #. text in the browser extension
 #. shown briefly on the download button over a video when the app's settings keep the button off on this web site
 #, machine
@@ -7182,7 +7182,7 @@ extension	The last download couldn't go to Dannex Download Manager	Unduhan terak
 #. text in the browser extension
 #. on the extension's status page under its headline: a download carried too many cookies to hand over; keep the name Dannex Download Manager as it is
 #, machine
-extension	The site sent more sign-in data than Dannex Download Manager accepts, so the browser kept the download. Signing out of the site and back in usually fixes it.	Situs mengirim data masuk lebih banyak daripada yang diterima Dannex Download Manager, sehingga browser menyimpan unduhannya. Keluar dari situs lalu masuk kembali biasanya mengatasinya.
+extension	The site sent too much sign-in data. Sign out of the site and back in, then try again.	Situs mengirim terlalu banyak data masuk. Keluar dari situs dan masuk lagi, lalu coba lagi.
 #. text in the browser extension
 #. pairing failed: the other DDM shows no pairing code; Pair a device is its button
 #, machine
@@ -7206,7 +7206,7 @@ extension	This extension isn't allowed on that site.	Ekstensi ini tidak diizinka
 #. text in the browser extension
 #. the status page (an extension page that says whether the browser reaches Dannex Download Manager and how to fix it): the app isn't installed or its browser integration isn't set up; keep the name Dannex Download Manager as it is
 #, machine
-extension	This extension works with Dannex Download Manager, a free download manager for your computer. Install it, and this page updates by itself.	Ekstensi ini bekerja dengan Dannex Download Manager, download manager gratis untuk komputer Anda. Pasang, dan halaman ini diperbarui sendiri.
+extension	This extension needs the free Dannex Download Manager app. Install it, and this page updates by itself.	Ekstensi ini memerlukan aplikasi gratis Dannex Download Manager. Instal aplikasinya, dan halaman ini akan diperbarui sendiri.
 #. text in the browser extension
 #. the status page (an extension page that says whether the browser reaches Dannex Download Manager and how to fix it): the app refuses this copy of the extension; keep the name Dannex Download Manager as it is
 #, machine
@@ -7220,13 +7220,13 @@ extension	To change that, turn on Allow in Incognito on its details page.	Untuk 
 #, machine
 extension	Try again	Coba lagi
 #. text in the browser extension
-#. note under the VPN or proxy switch on the extension's options page (Firefox, which asks for a permission)
-#, machine
-extension	Turn this on if you use a VPN or proxy extension in this browser. The browser asks you once to allow it.	Aktifkan jika Anda menggunakan ekstensi VPN atau proxy di browser ini. Browser meminta izin Anda sekali.
-#. text in the browser extension
 #. note under the VPN or proxy switch on the extension's options page (Chrome, Edge and other Chromium browsers)
 #, machine
-extension	Turn this on if you use a VPN or proxy extension in this browser. While it's off, the extension doesn't look at the browser's proxy.	Aktifkan jika Anda menggunakan ekstensi VPN atau proxy di browser ini. Selama nonaktif, ekstensi tidak melihat proxy browser.
+extension	Turn this on if you use a VPN or proxy extension in this browser.	Aktifkan ini jika Anda menggunakan ekstensi VPN atau proxy di browser ini.
+#. text in the browser extension
+#. note under the VPN or proxy switch on the extension's options page (Firefox, which asks for a permission)
+#, machine
+extension	Turn this on if you use a VPN or proxy extension. The browser asks once.	Aktifkan ini jika Anda menggunakan ekstensi VPN atau proxy. Browser akan bertanya sekali.
 #. text in the browser extension
 #. headline of the extension's status page, and a line of its toolbar button's tooltip: the app's own Options take no downloads from this browser; keep the name Dannex Download Manager as it is
 #, machine

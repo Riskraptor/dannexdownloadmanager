@@ -48,7 +48,7 @@
     video_failed: "Dannex Download Manager isn't installed or didn't start",
     video_off: "The download button is off on this site",
     video_drm: "Protected video: it can't be saved",
-    video_unnamed: "Can't tell which video this is: open its own page and try there",
+    video_unnamed: "Open the video's own page and try there",
     video_open_post: "Open the post, then use the button there",
     video_drag: "Drag to move it along the video's edge",
     video_looking: "Looking up the qualities…",
@@ -165,16 +165,16 @@
   // How long a lookup is followed, from the click.
   const LOOKUP_MS = 60000;
 
-  // The wait before asking how a lookup is going: 100 ms before the first question. An app that
+  // The wait before asking how a lookup is going: 20 ms before the first question. An app that
   // held the last question while it looked (a newer one, up to ~1.5 s: `took` ms of HELD_MS or
-  // more) is asked again at once (50 ms), so the answer reaches the page as soon as it is ready.
+  // more) is asked again at once (10 ms), so the answer reaches the page as soon as it is ready.
   // One that answers at once (an older one) is asked as seldom as ever: the old backoff's target
   // (1 s, a little longer each time, 2 s at most) less the time the question took, 50 ms at least.
   function pollDelay(n, took) {
     const HELD_MS = 1000;
-    if (n <= 0) return 100;
+    if (n <= 0) return 20;
     const spent = Number.isFinite(took) ? Math.max(0, took) : 0;
-    if (spent >= HELD_MS) return 50;
+    if (spent >= HELD_MS) return 10;
     const target = Math.min(2000, Math.round(1000 * 1.25 ** n));
     return Math.max(50, Math.round(target - spent));
   }
@@ -1456,7 +1456,7 @@ button:focus-visible { outline: 2px solid #2a78d6; outline-offset: -2px; }
       clicked = { key: aheadKey(video, j.asked), at: j.started };
       // The menu opens at once, saying it is looking; an answer that needs none and comes first
       // (no lookups here: the window) shows none.
-      const opening = setTimeout(() => openPicks(j), 100);
+      const opening = setTimeout(() => openPicks(j), 40);
       // Asked ahead already (the pointer rested on the button, or over the video on its page):
       // that answer, as soon as it is there; else asked now.
       const early = await takeAhead(j);

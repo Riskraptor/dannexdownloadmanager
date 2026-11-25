@@ -78,10 +78,10 @@
     "message": "Sťahovať cez VPN alebo proxy tohto prehliadača"
   },
   "popup_proxy_title": {
-    "message": "Zapnite to, ak v tomto prehliadači používate rozšírenie VPN alebo proxy. Prehliadač sa raz opýta, či to povolíte."
+    "message": "Zapnite, ak používate rozšírenie pre VPN alebo proxy. Prehliadač sa raz opýta."
   },
   "popup_proxy_title_chromium": {
-    "message": "Zapnite to, ak v tomto prehliadači používate rozšírenie VPN alebo proxy. Kým je vypnuté, rozšírenie nesleduje proxy prehliadača."
+    "message": "Zapnite, ak v tomto prehliadači používate rozšírenie pre VPN alebo proxy."
   },
   "popup_help": {
     "message": "Pomocník"
@@ -132,7 +132,7 @@
     "message": "Chránené video: nedá sa uložiť"
   },
   "video_unnamed": {
-    "message": "Nedá sa zistiť, o ktoré video ide: otvorte jeho vlastnú stránku a skúste to tam"
+    "message": "Otvorte vlastnú stránku videa a skúste to tam"
   },
   "video_looking": {
     "message": "Vyhľadávanie kvalít…"
@@ -213,7 +213,7 @@
     "message": "Spárovať"
   },
   "popup_remote_help": {
-    "message": "Najprv otvorte jeho adresu v tomto prehliadači a pokračujte cez bezpečnostné upozornenie. Potom zadajte kód z Možnosti → Vzdialené → Spárovať zariadenie."
+    "message": "Najprv tu otvorte jeho adresu a potom zadajte kód z Možnosti → Vzdialené → Spárovať zariadenie."
   },
   "status_remote": {
     "message": "Sťahovania idú na $address$",
@@ -297,7 +297,7 @@
     }
   },
   "page_lead_not_installed": {
-    "message": "Toto rozšírenie funguje s aplikáciou Dannex Download Manager, bezplatným správcom sťahovania pre váš počítač. Nainštalujte ho a táto stránka sa aktualizuje sama."
+    "message": "Toto rozšírenie potrebuje bezplatnú aplikáciu Dannex Download Manager. Nainštalujte ju a táto stránka sa aktualizuje sama."
   },
   "page_lead_not_running": {
     "message": "Prehliadač sa ho pokúsil spustiť, ale trvalo to príliš dlho. Spustite Dannex Download Manager sami a skúste to znova."
@@ -309,7 +309,7 @@
     "message": "Táto verzia aplikácie Dannex Download Manager je pre toto rozšírenie príliš stará. Nainštalujte najnovšiu."
   },
   "page_lead_too_large": {
-    "message": "Web poslal viac prihlasovacích údajov, než Dannex Download Manager prijíma, preto prehliadač sťahovanie ponechal. Zvyčajne to vyrieši odhlásenie z webu a opätovné prihlásenie."
+    "message": "Lokalita poslala príliš veľa prihlasovacích údajov. Odhláste sa z lokality, znova sa prihláste a skúste to znova."
   },
   "page_download": {
     "message": "Stiahnuť Dannex Download Manager"
@@ -360,7 +360,7 @@
     "message": "Odstrániť túto kópiu"
   },
   "page_duplicate_lead": {
-    "message": "Kópia z Internetového obchodu Chrome je nainštalovaná aj v tomto prehliadači a aktualizuje sa sama. Táto kópia nie je potrebná."
+    "message": "Kópia z Internetového obchodu Chrome je tiež nainštalovaná a aktualizuje sa sama. Túto môžete odstrániť."
   },
   "page_remove": {
     "message": "Odstrániť túto kópiu"

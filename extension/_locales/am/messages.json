@@ -78,10 +78,10 @@
     "message": "በዚህ አሳሽ ቪፒኤን ወይም ተኪ በኩል ያውርዱ"
   },
   "popup_proxy_title": {
-    "message": "በዚህ አሳሽ ውስጥ የቪፒኤን ወይም የተኪ ቅጥያ ከተጠቀሙ ይህን ያብሩ። አሳሹ እንዲፈቅዱት አንድ ጊዜ ይጠይቅዎታል።"
+    "message": "የVPN ወይም ተኪ ቅጥያ ከተጠቀሙ ይህን ያብሩ። አሳሹ አንድ ጊዜ ይጠይቃል።"
   },
   "popup_proxy_title_chromium": {
-    "message": "በዚህ አሳሽ ውስጥ የቪፒኤን ወይም የተኪ ቅጥያ ከተጠቀሙ ይህን ያብሩ። ሲጠፋ ቅጥያው የአሳሹን ተኪ አይመለከትም።"
+    "message": "በዚህ አሳሽ ውስጥ የVPN ወይም ተኪ ቅጥያ ከተጠቀሙ ይህን ያብሩ።"
   },
   "popup_help": {
     "message": "እርዳታ"
@@ -132,7 +132,7 @@
     "message": "የተጠበቀ ቪዲዮ፦ ማስቀመጥ አይቻልም"
   },
   "video_unnamed": {
-    "message": "ይህ የትኛው ቪዲዮ እንደሆነ ማወቅ አልተቻለም፦ የራሱን ገጽ ከፍተው እዚያ ይሞክሩ"
+    "message": "የቪዲዮውን የራሱን ገጽ ከፍተው እዚያ ይሞክሩ"
   },
   "video_looking": {
     "message": "ጥራቶችን በመፈለግ ላይ…"
@@ -213,7 +213,7 @@
     "message": "ያጣምሩ"
   },
   "popup_remote_help": {
-    "message": "መጀመሪያ አድራሻውን በዚህ አሳሽ ውስጥ ይክፈቱ እና የደህንነት ማስጠንቀቂያውን አልፈው ይቀጥሉ። ከዚያ ከአማራጮቹ → የርቀት → መሣሪያ አጣምር ኮዱን ያስገቡ።"
+    "message": "መጀመሪያ አድራሻውን እዚህ ይክፈቱ፣ ከዚያ ከአማራጮቹ → የርቀት → መሣሪያ አጣምር ኮዱን ያስገቡ።"
   },
   "status_remote": {
     "message": "ውርዶች ወደ $address$ ይሄዳሉ",
@@ -297,7 +297,7 @@
     }
   },
   "page_lead_not_installed": {
-    "message": "ይህ ቅጥያ ለኮምፒውተርዎ ነፃ የማውረድ አስተዳዳሪ ከሆነው Dannex Download Manager ጋር ይሠራል። ይጫኑት፣ እና ይህ ገጽ በራሱ ይዘምናል።"
+    "message": "ይህ ቅጥያ ነፃውን የDannex Download Manager መተግበሪያ ይፈልጋል። ይጫኑት፣ እና ይህ ገጽ በራሱ ይዘምናል።"
   },
   "page_lead_not_running": {
     "message": "አሳሹ ሊጀምረው ሞከረ፣ ነገር ግን በጣም ረጅም ጊዜ ወሰደ። Dannex Download Managerን ራስዎ ያስጀምሩ፣ ከዚያ እንደገና ይሞክሩ።"
@@ -309,7 +309,7 @@
     "message": "ይህ የDannex Download Manager ስሪት ለዚህ ቅጥያ በጣም ያረጀ ነው። የቅርብ ጊዜውን ይጫኑ።"
   },
   "page_lead_too_large": {
-    "message": "ጣቢያው Dannex Download Manager ከሚቀበለው በላይ የመግቢያ ውሂብ ልኳል፣ ስለዚህ አሳሹ ማውረዱን አቆየ። ከጣቢያው መውጣት እና እንደገና መግባት አብዛኛውን ጊዜ ችግሩን ይፈታል።"
+    "message": "ጣቢያው በጣም ብዙ የመግቢያ ውሂብ ልኳል። ከጣቢያው ወጥተው እንደገና ይግቡ፣ ከዚያ እንደገና ይሞክሩ።"
   },
   "page_download": {
     "message": "Dannex Download Managerን ያውርዱ"
@@ -360,7 +360,7 @@
     "message": "ይህን ቅጂ ያስወግዱ"
   },
   "page_duplicate_lead": {
-    "message": "ከChrome Web Store የመጣው ቅጂ በዚህ አሳሽ ውስጥም ተጭኗል፣ እና ራሱን ወቅታዊ ያደርጋል። ይህ ቅጂ አያስፈልግም።"
+    "message": "የChrome ድር መደብር ቅጂውም ተጭኗል እና ራሱን ያዘምናል። ይህን ማስወገድ ይችላሉ።"
   },
   "page_remove": {
     "message": "ይህን ቅጂ ያስወግዱ"

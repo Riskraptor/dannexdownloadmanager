@@ -78,10 +78,10 @@
     "message": "Mag-download sa pamamagitan ng VPN o proxy ng browser na ito"
   },
   "popup_proxy_title": {
-    "message": "I-on ito kung gumagamit ka ng VPN o proxy extension sa browser na ito. Isang beses kang tatanungin ng browser para payagan ito."
+    "message": "I-on ito kung gumagamit ka ng VPN o proxy extension. Magtatanong ang browser nang isang beses."
   },
   "popup_proxy_title_chromium": {
-    "message": "I-on ito kung gumagamit ka ng VPN o proxy extension sa browser na ito. Kapag naka-off, hindi tinitingnan ng extension ang proxy ng browser."
+    "message": "I-on ito kung gumagamit ka ng VPN o proxy extension sa browser na ito."
   },
   "popup_help": {
     "message": "Tulong"
@@ -132,7 +132,7 @@
     "message": "Protektadong video: hindi ito mase-save"
   },
   "video_unnamed": {
-    "message": "Hindi matukoy kung aling video ito: buksan ang sarili nitong page at subukan doon"
+    "message": "Buksan ang sariling page ng video at subukan doon"
   },
   "video_looking": {
     "message": "Hinahanap ang mga kalidad…"
@@ -213,7 +213,7 @@
     "message": "Ipares"
   },
   "popup_remote_help": {
-    "message": "Buksan muna ang address nito sa browser na ito at magpatuloy sa babala sa seguridad. Pagkatapos ay ilagay ang code mula sa Mga Opsyon → Remote → Ipares ang device nito."
+    "message": "Buksan muna rito ang address nito, pagkatapos ay ilagay ang code mula sa Mga Opsyon → Remote → Ipares ang device nito."
   },
   "status_remote": {
     "message": "Napupunta ang mga download sa $address$",
@@ -297,7 +297,7 @@
     }
   },
   "page_lead_not_installed": {
-    "message": "Gumagana ang extension na ito sa Dannex Download Manager, isang libreng download manager para sa iyong computer. I-install ito, at kusang mag-a-update ang page na ito."
+    "message": "Kailangan ng extension na ito ang libreng app na Dannex Download Manager. I-install ito, at kusang mag-a-update ang page na ito."
   },
   "page_lead_not_running": {
     "message": "Sinubukan itong simulan ng browser, pero masyadong natagalan. Simulan mo mismo ang Dannex Download Manager, pagkatapos ay subukan muli."
@@ -309,7 +309,7 @@
     "message": "Masyadong luma ang bersyong ito ng Dannex Download Manager para sa extension na ito. I-install ang pinakabago."
   },
   "page_lead_too_large": {
-    "message": "Mas maraming sign-in data ang ipinadala ng site kaysa sa tinatanggap ng Dannex Download Manager, kaya itinago ng browser ang download. Karaniwang naaayos ito ng pag-sign out sa site at pag-sign in muli."
+    "message": "Masyadong maraming sign-in data ang ipinadala ng site. Mag-sign out sa site at mag-sign in ulit, pagkatapos ay subukan ulit."
   },
   "page_download": {
     "message": "I-download ang Dannex Download Manager"
@@ -360,7 +360,7 @@
     "message": "Alisin ang kopyang ito"
   },
   "page_duplicate_lead": {
-    "message": "Naka-install din sa browser na ito ang kopya mula sa Chrome Web Store, at kusa itong nag-a-update. Hindi kailangan ang kopyang ito."
+    "message": "Naka-install din ang kopya mula sa Chrome Web Store at kusa itong nag-a-update. Puwede mong alisin ito."
   },
   "page_remove": {
     "message": "Alisin ang kopyang ito"

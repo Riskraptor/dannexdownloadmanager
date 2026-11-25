@@ -6814,10 +6814,6 @@ extension	Browser integration is turned off in Dannex Download Manager's Options
 #, machine
 extension	Button settings...	बटन सेटिंग्स...
 #. text in the browser extension
-#. shown briefly on the download button when nothing on the page says which video the player is playing, so nothing was sent
-#, machine
-extension	Can't tell which video this is: open its own page and try there	पता नहीं चल पा रहा कि यह कौन-सा वीडियो है: इसका अपना पेज खोलकर वहाँ आज़माएँ
-#. text in the browser extension
 #. button on the status page (an extension page that says whether the browser reaches Dannex Download Manager and how to fix it): asks the store for a newer version of the extension now
 #, machine
 extension	Check for updates	अपडेट के लिए जाँच करें
@@ -6941,10 +6937,6 @@ extension	Enter its https:// address.	इसका https:// पता दर्�
 #. the status page (an extension page that says whether the browser reaches Dannex Download Manager and how to fix it) in Firefox, for an add-on loaded with Load Temporary Add-on
 #, machine
 extension	Firefox will remove this add-on when it closes, because it was added as a temporary add-on.	Firefox इस ऐड-ऑन को बंद होने पर हटा देगा, क्योंकि इसे अस्थायी ऐड-ऑन के रूप में जोड़ा गया था।
-#. text in the browser extension
-#. note on the extension's options page, for sending downloads to another computer's Dannex Download Manager: the browser warns about its own certificate once; Options, Remote and Pair a device are names in that app
-#, machine
-extension	First open its address in this browser and continue past the security warning. Then enter the code from its Options → Remote → Pair a device.	पहले इसका पता इस ब्राउज़र में खोलें और सुरक्षा चेतावनी से आगे बढ़ें। फिर इसके विकल्प → रिमोट → डिवाइस पेयर करें से कोड दर्ज करें।
 #. text in the browser extension
 #. beside the download button on the status page (an extension page that says whether the browser reaches Dannex Download Manager and how to fix it), on Linux
 #, machine
@@ -7074,6 +7066,10 @@ extension	Open in DDM…	DDM में खोलें…
 #, machine
 extension	Open it	इसे खोलें
 #. text in the browser extension
+#. note on the extension's options page, for sending downloads to another computer's Dannex Download Manager: the browser warns about its own certificate once; Options, Remote and Pair a device are names in that app
+#, machine
+extension	Open its address here first, then enter the code from its Options → Remote → Pair a device.	पहले यहाँ इसका पता खोलें, फिर इसके विकल्प → रिमोट → डिवाइस पेयर करें से कोड दर्ज करें।
+#. text in the browser extension
 #. a step on the status page (an extension page that says whether the browser reaches Dannex Download Manager and how to fix it), on a Mac; keep the name Dannex Download Manager as it is
 #, machine
 extension	Open the .dmg, drag Dannex Download Manager to Applications, and start it once.	.dmg खोलें, Dannex Download Manager को Applications में खींचें और एक बार शुरू करें।
@@ -7089,6 +7085,10 @@ extension	Open the extensions page	एक्सटेंशन पेज खो�
 #. shown briefly on the download button over a video in a feed (a social site's home page, a timeline) when nothing in the feed gives that video's own address, so nothing was sent: the user should open the post the video belongs to and click the button on that page; short
 #, machine
 extension	Open the post, then use the button there	पोस्ट खोलें, फिर वहां बटन का उपयोग करें
+#. text in the browser extension
+#. shown briefly on the download button when nothing on the page says which video the player is playing, so nothing was sent
+#, machine
+extension	Open the video's own page and try there	वीडियो का अपना पेज खोलें और वहाँ आज़माएँ
 #. text in the browser extension
 #. button: pair this browser with the other DDM using the code
 #, machine
@@ -7170,7 +7170,7 @@ extension	The browser updates it by itself within a few hours, or now with Check
 #. text in the browser extension
 #. the status page (an extension page that says whether the browser reaches Dannex Download Manager and how to fix it): two copies of the extension in one browser; keep Dannex Download Manager as it is
 #, machine
-extension	The copy from the Chrome Web Store is installed in this browser too, and it keeps itself up to date. This copy isn't needed.	Chrome वेब स्टोर वाली प्रति इस ब्राउज़र में भी इंस्टॉल है और खुद को अपडेट रखती है। इस प्रति की आवश्यकता नहीं है।
+extension	The Chrome Web Store copy is installed too and updates itself. You can remove this one.	Chrome वेब स्टोर वाली कॉपी भी इंस्टॉल है और अपने-आप अपडेट होती है। आप इसे हटा सकते हैं।
 #. text in the browser extension
 #. shown briefly on the download button over a video when the app's settings keep the button off on this web site
 #, machine
@@ -7182,7 +7182,7 @@ extension	The last download couldn't go to Dannex Download Manager	पिछल�
 #. text in the browser extension
 #. on the extension's status page under its headline: a download carried too many cookies to hand over; keep the name Dannex Download Manager as it is
 #, machine
-extension	The site sent more sign-in data than Dannex Download Manager accepts, so the browser kept the download. Signing out of the site and back in usually fixes it.	साइट ने Dannex Download Manager की स्वीकार सीमा से अधिक साइन-इन डेटा भेजा, इसलिए ब्राउज़र ने डाउनलोड रख लिया। साइट से साइन आउट करके दोबारा साइन इन करने से आमतौर पर यह ठीक हो जाता है।
+extension	The site sent too much sign-in data. Sign out of the site and back in, then try again.	साइट ने बहुत अधिक साइन-इन डेटा भेजा। साइट से साइन आउट करके फिर से साइन इन करें, फिर दोबारा कोशिश करें।
 #. text in the browser extension
 #. pairing failed: the other DDM shows no pairing code; Pair a device is its button
 #, machine
@@ -7206,7 +7206,7 @@ extension	This extension isn't allowed on that site.	इस एक्सटे�
 #. text in the browser extension
 #. the status page (an extension page that says whether the browser reaches Dannex Download Manager and how to fix it): the app isn't installed or its browser integration isn't set up; keep the name Dannex Download Manager as it is
 #, machine
-extension	This extension works with Dannex Download Manager, a free download manager for your computer. Install it, and this page updates by itself.	यह एक्सटेंशन Dannex Download Manager के साथ काम करता है, जो आपके कंप्यूटर के लिए एक निःशुल्क डाउनलोड मैनेजर है। इसे इंस्टॉल करें, यह पेज अपने आप अपडेट हो जाएगा।
+extension	This extension needs the free Dannex Download Manager app. Install it, and this page updates by itself.	इस एक्सटेंशन को मुफ़्त Dannex Download Manager ऐप की ज़रूरत है। इसे इंस्टॉल करें, और यह पेज अपने-आप अपडेट हो जाएगा।
 #. text in the browser extension
 #. the status page (an extension page that says whether the browser reaches Dannex Download Manager and how to fix it): the app refuses this copy of the extension; keep the name Dannex Download Manager as it is
 #, machine
@@ -7220,13 +7220,13 @@ extension	To change that, turn on Allow in Incognito on its details page.	इस
 #, machine
 extension	Try again	पुनः प्रयास करें
 #. text in the browser extension
-#. note under the VPN or proxy switch on the extension's options page (Firefox, which asks for a permission)
-#, machine
-extension	Turn this on if you use a VPN or proxy extension in this browser. The browser asks you once to allow it.	यदि आप इस ब्राउज़र में VPN या प्रॉक्सी एक्सटेंशन उपयोग करते हैं तो इसे चालू करें। ब्राउज़र आपसे एक बार अनुमति माँगता है।
-#. text in the browser extension
 #. note under the VPN or proxy switch on the extension's options page (Chrome, Edge and other Chromium browsers)
 #, machine
-extension	Turn this on if you use a VPN or proxy extension in this browser. While it's off, the extension doesn't look at the browser's proxy.	यदि आप इस ब्राउज़र में VPN या प्रॉक्सी एक्सटेंशन उपयोग करते हैं तो इसे चालू करें। बंद रहने पर एक्सटेंशन ब्राउज़र का प्रॉक्सी नहीं देखता।
+extension	Turn this on if you use a VPN or proxy extension in this browser.	अगर आप इस ब्राउज़र में VPN या प्रॉक्सी एक्सटेंशन इस्तेमाल करते हैं, तो इसे चालू करें।
+#. text in the browser extension
+#. note under the VPN or proxy switch on the extension's options page (Firefox, which asks for a permission)
+#, machine
+extension	Turn this on if you use a VPN or proxy extension. The browser asks once.	अगर आप VPN या प्रॉक्सी एक्सटेंशन इस्तेमाल करते हैं, तो इसे चालू करें। ब्राउज़र एक बार पूछेगा।
 #. text in the browser extension
 #. headline of the extension's status page, and a line of its toolbar button's tooltip: the app's own Options take no downloads from this browser; keep the name Dannex Download Manager as it is
 #, machine

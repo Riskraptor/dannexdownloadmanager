@@ -81,6 +81,15 @@ The first official release.
 - ✅ The browser extension is named Dannex Download Manager, like the app, with a clearer
   description in its 51 languages and new store pictures
 
+## Dannex 1.1.3
+
+### Done
+
+- ✅ Torrents start sooner: more of them check their files at once, peers that don't answer are
+  dropped after 4 seconds, and up to 200 peers per torrent
+- ✅ Deleting a download never deletes its file unless you tick it (or press Shift+Delete) each time
+- ✅ The video button's menu opens faster; the extension's notes are shorter
+
 ## Being worked on
 
 These ship in a later version, when they're ready.

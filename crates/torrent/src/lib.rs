@@ -18,8 +18,8 @@ pub use librqbit;
 pub use librqbit::PieceOrder;
 use librqbit::api::{Api, TorrentIdOrHash};
 use librqbit::{
-    AddTorrent, AddTorrentOptions, AddTorrentResponse, ConnectionOptions, ListenerOptions, Session,
-    SessionOptions, SessionPersistenceConfig, TorrentStatsState,
+    AddTorrent, AddTorrentOptions, AddTorrentResponse, ConnectionOptions, ListenerOptions,
+    PeerConnectionOptions, Session, SessionOptions, SessionPersistenceConfig, TorrentStatsState,
 };
 
 pub mod blocklist;
@@ -513,6 +513,21 @@ pub struct DetachedTorrent {
     piece_map: Option<Vec<u8>>,
 }
 
+/// Torrents checking their files at once (librqbit's default is 3). A torrent waits for a free
+/// one before it downloads anything: behind three big torrents restored at start and checked
+/// again, a new one stayed "starting" for minutes. Most checks are short (fastresume reads a
+/// sample), so more at once cost little.
+const CONCURRENT_CHECKS: usize = 8;
+
+/// How long a connection to a peer may take (librqbit's default is 10 s). A swarm's address
+/// list is full of peers gone or behind a firewall, and each attempt holds one of the
+/// torrent's peer slots until it fails: shorter, the live peers are reached sooner. A peer that
+/// answers does in well under a second.
+const PEER_CONNECT_TIMEOUT: Duration = Duration::from_secs(4);
+
+/// Peers per torrent (librqbit's default is 128), connected or being tried.
+const PEER_LIMIT: usize = 200;
+
 /// The DHT's first nodes on the internet (#650): the public routers BitTorrent clients use. Any
 /// one that answers is enough; they are asked together, and the rest no more once one has
 /// answered. librqbit's own two alone left the DHT empty where neither answered (a name
@@ -699,10 +714,17 @@ impl Torrents {
         let opts = |port: u16| SessionOptions {
             dht: dht(),
             listen: listening.then(|| listen(port)),
-            connect: cfg.proxy.clone().map(|proxy| ConnectionOptions {
-                proxy_url: Some(proxy),
+            // Through a proxy, its own handshake comes first: librqbit's timeout then.
+            connect: Some(ConnectionOptions {
+                proxy_url: cfg.proxy.clone(),
+                peer_opts: Some(PeerConnectionOptions {
+                    connect_timeout: (!proxied).then_some(PEER_CONNECT_TIMEOUT),
+                    ..Default::default()
+                }),
                 ..Default::default()
             }),
+            concurrent_init_limit: Some(CONCURRENT_CHECKS),
+            peer_limit: Some(PEER_LIMIT),
             blocklist_url: blocklist_url.clone(),
             disable_trackers: cfg.offline,
             // Behind a proxy, UDP trackers are dropped (they would go around it): their client

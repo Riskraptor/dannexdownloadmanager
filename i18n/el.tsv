@@ -6806,10 +6806,6 @@ extension	Browser integration is turned off in Dannex Download Manager's Options
 #, machine
 extension	Button settings...	Ρυθμίσεις κουμπιού...
 #. text in the browser extension
-#. shown briefly on the download button when nothing on the page says which video the player is playing, so nothing was sent
-#, machine
-extension	Can't tell which video this is: open its own page and try there	Δεν είναι σαφές ποιο βίντεο είναι αυτό: ανοίξτε τη δική του σελίδα και δοκιμάστε εκεί
-#. text in the browser extension
 #. button on the status page (an extension page that says whether the browser reaches Dannex Download Manager and how to fix it): asks the store for a newer version of the extension now
 #, machine
 extension	Check for updates	Έλεγχος για ενημερώσεις
@@ -6933,10 +6929,6 @@ extension	Enter its https:// address.	Εισαγάγετε τη διεύθυνσ
 #. the status page (an extension page that says whether the browser reaches Dannex Download Manager and how to fix it) in Firefox, for an add-on loaded with Load Temporary Add-on
 #, machine
 extension	Firefox will remove this add-on when it closes, because it was added as a temporary add-on.	Το Firefox θα καταργήσει αυτό το πρόσθετο όταν κλείσει, επειδή προστέθηκε ως προσωρινό πρόσθετο.
-#. text in the browser extension
-#. note on the extension's options page, for sending downloads to another computer's Dannex Download Manager: the browser warns about its own certificate once; Options, Remote and Pair a device are names in that app
-#, machine
-extension	First open its address in this browser and continue past the security warning. Then enter the code from its Options → Remote → Pair a device.	Ανοίξτε πρώτα τη διεύθυνσή του σε αυτό το πρόγραμμα περιήγησης και συνεχίστε μετά την προειδοποίηση ασφαλείας. Έπειτα εισαγάγετε τον κωδικό από τις Επιλογές → Απομακρυσμένη → Σύζευξη συσκευής.
 #. text in the browser extension
 #. beside the download button on the status page (an extension page that says whether the browser reaches Dannex Download Manager and how to fix it), on Linux
 #, machine
@@ -7066,6 +7058,10 @@ extension	Open in DDM…	Άνοιγμα στο DDM…
 #, machine
 extension	Open it	Άνοιγμα
 #. text in the browser extension
+#. note on the extension's options page, for sending downloads to another computer's Dannex Download Manager: the browser warns about its own certificate once; Options, Remote and Pair a device are names in that app
+#, machine
+extension	Open its address here first, then enter the code from its Options → Remote → Pair a device.	Ανοίξτε πρώτα τη διεύθυνσή του εδώ και, στη συνέχεια, πληκτρολογήστε τον κωδικό από τις Επιλογές → Απομακρυσμένη → Σύζευξη συσκευής.
+#. text in the browser extension
 #. a step on the status page (an extension page that says whether the browser reaches Dannex Download Manager and how to fix it), on a Mac; keep the name Dannex Download Manager as it is
 #, machine
 extension	Open the .dmg, drag Dannex Download Manager to Applications, and start it once.	Ανοίξτε το .dmg, σύρετε το Dannex Download Manager στο φάκελο Εφαρμογές και ξεκινήστε το μία φορά.
@@ -7081,6 +7077,10 @@ extension	Open the extensions page	Άνοιγμα της σελίδας επεκ
 #. shown briefly on the download button over a video in a feed (a social site's home page, a timeline) when nothing in the feed gives that video's own address, so nothing was sent: the user should open the post the video belongs to and click the button on that page; short
 #, machine
 extension	Open the post, then use the button there	Ανοίξτε την ανάρτηση και μετά χρησιμοποιήστε το κουμπί εκεί
+#. text in the browser extension
+#. shown briefly on the download button when nothing on the page says which video the player is playing, so nothing was sent
+#, machine
+extension	Open the video's own page and try there	Ανοίξτε τη σελίδα του ίδιου του βίντεο και δοκιμάστε εκεί
 #. text in the browser extension
 #. button: pair this browser with the other DDM using the code
 #, machine
@@ -7162,7 +7162,7 @@ extension	The browser updates it by itself within a few hours, or now with Check
 #. text in the browser extension
 #. the status page (an extension page that says whether the browser reaches Dannex Download Manager and how to fix it): two copies of the extension in one browser; keep Dannex Download Manager as it is
 #, machine
-extension	The copy from the Chrome Web Store is installed in this browser too, and it keeps itself up to date. This copy isn't needed.	Το αντίγραφο από το Chrome Web Store είναι επίσης εγκατεστημένο σε αυτό το πρόγραμμα περιήγησης και ενημερώνεται μόνο του. Αυτό το αντίγραφο δεν χρειάζεται.
+extension	The Chrome Web Store copy is installed too and updates itself. You can remove this one.	Το αντίγραφο από το Chrome Web Store είναι επίσης εγκατεστημένο και ενημερώνεται μόνο του. Μπορείτε να καταργήσετε αυτό.
 #. text in the browser extension
 #. shown briefly on the download button over a video when the app's settings keep the button off on this web site
 #, machine
@@ -7174,7 +7174,7 @@ extension	The last download couldn't go to Dannex Download Manager	Η τελευ
 #. text in the browser extension
 #. on the extension's status page under its headline: a download carried too many cookies to hand over; keep the name Dannex Download Manager as it is
 #, machine
-extension	The site sent more sign-in data than Dannex Download Manager accepts, so the browser kept the download. Signing out of the site and back in usually fixes it.	Η τοποθεσία έστειλε περισσότερα δεδομένα σύνδεσης από όσα δέχεται το Dannex Download Manager, οπότε το πρόγραμμα περιήγησης κράτησε τη λήψη. Η αποσύνδεση από την τοποθεσία και η νέα σύνδεση συνήθως το διορθώνουν.
+extension	The site sent too much sign-in data. Sign out of the site and back in, then try again.	Η τοποθεσία έστειλε πάρα πολλά δεδομένα σύνδεσης. Αποσυνδεθείτε από την τοποθεσία, συνδεθείτε ξανά και δοκιμάστε πάλι.
 #. text in the browser extension
 #. pairing failed: the other DDM shows no pairing code; Pair a device is its button
 #, machine
@@ -7198,7 +7198,7 @@ extension	This extension isn't allowed on that site.	Αυτή η επέκτασ�
 #. text in the browser extension
 #. the status page (an extension page that says whether the browser reaches Dannex Download Manager and how to fix it): the app isn't installed or its browser integration isn't set up; keep the name Dannex Download Manager as it is
 #, machine
-extension	This extension works with Dannex Download Manager, a free download manager for your computer. Install it, and this page updates by itself.	Αυτή η επέκταση λειτουργεί με το Dannex Download Manager, έναν δωρεάν διαχειριστή λήψεων για τον υπολογιστή σας. Εγκαταστήστε το και αυτή η σελίδα θα ενημερωθεί μόνη της.
+extension	This extension needs the free Dannex Download Manager app. Install it, and this page updates by itself.	Αυτή η επέκταση χρειάζεται τη δωρεάν εφαρμογή Dannex Download Manager. Εγκαταστήστε την και αυτή η σελίδα θα ενημερωθεί μόνη της.
 #. text in the browser extension
 #. the status page (an extension page that says whether the browser reaches Dannex Download Manager and how to fix it): the app refuses this copy of the extension; keep the name Dannex Download Manager as it is
 #, machine
@@ -7212,13 +7212,13 @@ extension	To change that, turn on Allow in Incognito on its details page.	Για
 #, machine
 extension	Try again	Δοκιμάστε ξανά
 #. text in the browser extension
-#. note under the VPN or proxy switch on the extension's options page (Firefox, which asks for a permission)
-#, machine
-extension	Turn this on if you use a VPN or proxy extension in this browser. The browser asks you once to allow it.	Ενεργοποιήστε το αν χρησιμοποιείτε επέκταση VPN ή διακομιστή μεσολάβησης σε αυτό το πρόγραμμα περιήγησης. Το πρόγραμμα περιήγησης σάς ρωτά μία φορά για να το επιτρέψετε.
-#. text in the browser extension
 #. note under the VPN or proxy switch on the extension's options page (Chrome, Edge and other Chromium browsers)
 #, machine
-extension	Turn this on if you use a VPN or proxy extension in this browser. While it's off, the extension doesn't look at the browser's proxy.	Ενεργοποιήστε το αν χρησιμοποιείτε επέκταση VPN ή διακομιστή μεσολάβησης σε αυτό το πρόγραμμα περιήγησης. Όσο είναι απενεργοποιημένο, η επέκταση δεν εξετάζει τον διακομιστή μεσολάβησης του προγράμματος περιήγησης.
+extension	Turn this on if you use a VPN or proxy extension in this browser.	Ενεργοποιήστε το αν χρησιμοποιείτε επέκταση VPN ή διακομιστή μεσολάβησης σε αυτό το πρόγραμμα περιήγησης.
+#. text in the browser extension
+#. note under the VPN or proxy switch on the extension's options page (Firefox, which asks for a permission)
+#, machine
+extension	Turn this on if you use a VPN or proxy extension. The browser asks once.	Ενεργοποιήστε το αν χρησιμοποιείτε επέκταση VPN ή διακομιστή μεσολάβησης. Το πρόγραμμα περιήγησης ρωτά μία φορά.
 #. text in the browser extension
 #. headline of the extension's status page, and a line of its toolbar button's tooltip: the app's own Options take no downloads from this browser; keep the name Dannex Download Manager as it is
 #, machine

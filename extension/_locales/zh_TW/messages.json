@@ -81,10 +81,10 @@
     "message": "透過此瀏覽器的 VPN 或 Proxy 下載"
   },
   "popup_proxy_title": {
-    "message": "若您在此瀏覽器中使用 VPN 或 Proxy 擴充功能，請開啟此選項。瀏覽器會要求您允許一次。"
+    "message": "如果使用 VPN 或 Proxy 擴充功能，請開啟此項。瀏覽器會詢問一次。"
   },
   "popup_proxy_title_chromium": {
-    "message": "若您在此瀏覽器中使用 VPN 或 Proxy 擴充功能，請開啟此選項。關閉時，擴充功能不會查看瀏覽器的 Proxy。"
+    "message": "如果在此瀏覽器中使用 VPN 或 Proxy 擴充功能，請開啟此項。"
   },
   "popup_help": {
     "message": "說明"
@@ -135,7 +135,7 @@
     "message": "受保護的影片：無法儲存"
   },
   "video_unnamed": {
-    "message": "無法判斷這是哪部影片：請開啟該影片本身的頁面再試一次"
+    "message": "請開啟影片本身的頁面，然後在那裡重試"
   },
   "video_looking": {
     "message": "正在尋找畫質…"
@@ -225,7 +225,7 @@
     "message": "配對"
   },
   "popup_remote_help": {
-    "message": "請先在此瀏覽器中開啟其位址，略過安全性警告。然後輸入其「選項」→「遠端」→「配對裝置」中的代碼。"
+    "message": "請先在此處開啟其位址，然後輸入其「選項」→「遠端」→「配對裝置」中的代碼。"
   },
   "status_remote": {
     "message": "下載項目傳送至 $address$",
@@ -327,7 +327,7 @@
     }
   },
   "page_lead_not_installed": {
-    "message": "此擴充功能需搭配 Dannex Download Manager 使用，這是適用於您電腦的免費下載管理員。安裝後，此頁面會自動更新。"
+    "message": "此擴充功能需要免費的 Dannex Download Manager 應用程式。安裝後，此頁面會自動更新。"
   },
   "page_lead_not_running": {
     "message": "瀏覽器嘗試啟動它，但等待時間過長。請自行啟動 Dannex Download Manager，然後再試一次。"
@@ -339,7 +339,7 @@
     "message": "此版本的 Dannex Download Manager 太舊，無法搭配此擴充功能使用。請安裝最新版本。"
   },
   "page_lead_too_large": {
-    "message": "網站傳送的登入資料超過 Dannex Download Manager 可接受的量，因此瀏覽器保留了該下載。登出網站後再重新登入通常可解決。"
+    "message": "該網站傳送的登入資料過多。請登出該網站後重新登入，然後再試一次。"
   },
   "page_download": {
     "message": "下載 Dannex Download Manager"
@@ -390,7 +390,7 @@
     "message": "移除此副本"
   },
   "page_duplicate_lead": {
-    "message": "此瀏覽器中也安裝了來自 Chrome 線上應用程式商店的副本，且會自動保持最新。不需要此副本。"
+    "message": "Chrome 線上應用程式商店中的副本也已安裝，並會自行更新。你可以移除此副本。"
   },
   "page_remove": {
     "message": "移除此副本"

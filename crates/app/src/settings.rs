@@ -92,9 +92,6 @@ pub struct Settings {
     pub double_click_open: bool,
     /// Ask before deleting downloads ("Don't show this again" clears it).
     pub confirm_delete: bool,
-    /// The confirmation's "Also delete the files from disk", as last answered (IDM keeps it):
-    /// its first state next time, and what happens when it no longer asks.
-    pub delete_files_too: bool,
     /// Categories pane frame width (IDM: 143, frame x 6..149); dragged with the splitter.
     pub categories_width: u32,
     /// The main window as last left: position and size (x, y, width, height, in points at 100 %
@@ -446,7 +443,6 @@ impl Default for Settings {
             progress_tab_completion: true,
             double_click_open: false,
             confirm_delete: true,
-            delete_files_too: false,
             categories_width: 143,
             window: None,
             window_maximized: false,

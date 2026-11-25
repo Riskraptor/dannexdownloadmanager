@@ -78,10 +78,10 @@
     "message": "Unduh melalui VPN atau proxy browser ini"
   },
   "popup_proxy_title": {
-    "message": "Aktifkan jika Anda menggunakan ekstensi VPN atau proxy di browser ini. Browser meminta izin Anda sekali."
+    "message": "Aktifkan ini jika Anda menggunakan ekstensi VPN atau proxy. Browser akan bertanya sekali."
   },
   "popup_proxy_title_chromium": {
-    "message": "Aktifkan jika Anda menggunakan ekstensi VPN atau proxy di browser ini. Selama nonaktif, ekstensi tidak melihat proxy browser."
+    "message": "Aktifkan ini jika Anda menggunakan ekstensi VPN atau proxy di browser ini."
   },
   "popup_help": {
     "message": "Bantuan"
@@ -132,7 +132,7 @@
     "message": "Video dilindungi: tidak dapat disimpan"
   },
   "video_unnamed": {
-    "message": "Tidak bisa diketahui video mana ini: buka halamannya sendiri dan coba di sana"
+    "message": "Buka halaman video itu sendiri dan coba di sana"
   },
   "video_looking": {
     "message": "Mencari kualitas…"
@@ -213,7 +213,7 @@
     "message": "Pasangkan"
   },
   "popup_remote_help": {
-    "message": "Buka alamatnya di browser ini terlebih dahulu dan lanjutkan melewati peringatan keamanan. Lalu masukkan kode dari Opsi → Jarak jauh → Pasangkan perangkat."
+    "message": "Buka dulu alamatnya di sini, lalu masukkan kode dari Opsi → Jarak jauh → Pasangkan perangkat."
   },
   "status_remote": {
     "message": "Unduhan masuk ke $address$",
@@ -297,7 +297,7 @@
     }
   },
   "page_lead_not_installed": {
-    "message": "Ekstensi ini bekerja dengan Dannex Download Manager, download manager gratis untuk komputer Anda. Pasang, dan halaman ini diperbarui sendiri."
+    "message": "Ekstensi ini memerlukan aplikasi gratis Dannex Download Manager. Instal aplikasinya, dan halaman ini akan diperbarui sendiri."
   },
   "page_lead_not_running": {
     "message": "Browser mencoba memulainya, tetapi terlalu lama. Mulai Dannex Download Manager sendiri, lalu coba lagi."
@@ -309,7 +309,7 @@
     "message": "Versi Dannex Download Manager ini terlalu lama untuk ekstensi ini. Pasang yang terbaru."
   },
   "page_lead_too_large": {
-    "message": "Situs mengirim data masuk lebih banyak daripada yang diterima Dannex Download Manager, sehingga browser menyimpan unduhannya. Keluar dari situs lalu masuk kembali biasanya mengatasinya."
+    "message": "Situs mengirim terlalu banyak data masuk. Keluar dari situs dan masuk lagi, lalu coba lagi."
   },
   "page_download": {
     "message": "Unduh Dannex Download Manager"
@@ -360,7 +360,7 @@
     "message": "Hapus salinan ini"
   },
   "page_duplicate_lead": {
-    "message": "Salinan dari Chrome Web Store juga terpasang di browser ini, dan memperbarui dirinya sendiri. Salinan ini tidak diperlukan."
+    "message": "Salinan dari Chrome Web Store juga terpasang dan memperbarui dirinya sendiri. Anda dapat menghapus yang ini."
   },
   "page_remove": {
     "message": "Hapus salinan ini"

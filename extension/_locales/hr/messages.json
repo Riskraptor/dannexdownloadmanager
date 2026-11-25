@@ -78,10 +78,10 @@
     "message": "Preuzimanje putem VPN-a ili proxyja ovog preglednika"
   },
   "popup_proxy_title": {
-    "message": "Uključite ovo ako u ovom pregledniku koristite proširenje za VPN ili proxy. Preglednik će jednom zatražiti da to dopustite."
+    "message": "Uključite ovo ako koristite proširenje za VPN ili proxy. Preglednik će pitati jednom."
   },
   "popup_proxy_title_chromium": {
-    "message": "Uključite ovo ako u ovom pregledniku koristite proširenje za VPN ili proxy. Dok je isključeno, proširenje ne gleda proxy preglednika."
+    "message": "Uključite ovo ako u ovom pregledniku koristite proširenje za VPN ili proxy."
   },
   "popup_help": {
     "message": "Pomoć"
@@ -132,7 +132,7 @@
     "message": "Zaštićeni videozapis: ne može se spremiti"
   },
   "video_unnamed": {
-    "message": "Nije moguće utvrditi koji je ovo videozapis: otvorite njegovu stranicu i pokušajte ondje"
+    "message": "Otvorite vlastitu stranicu videozapisa i pokušajte tamo"
   },
   "video_looking": {
     "message": "Traženje kvaliteta…"
@@ -213,7 +213,7 @@
     "message": "Uparivanje"
   },
   "popup_remote_help": {
-    "message": "Prvo otvorite njegovu adresu u ovom pregledniku i nastavite nakon sigurnosnog upozorenja. Zatim unesite kôd iz Mogućnosti → Daljinski → Upari uređaj."
+    "message": "Najprije ovdje otvorite njegovu adresu, a zatim unesite kôd iz Mogućnosti → Daljinski → Upari uređaj."
   },
   "status_remote": {
     "message": "Preuzimanja idu na $address$",
@@ -297,7 +297,7 @@
     }
   },
   "page_lead_not_installed": {
-    "message": "Ovo proširenje radi s programom Dannex Download Manager, besplatnim upraviteljem preuzimanja za vaše računalo. Instalirajte ga i ova se stranica ažurira sama."
+    "message": "Ovo proširenje treba besplatnu aplikaciju Dannex Download Manager. Instalirajte je i ova će se stranica sama ažurirati."
   },
   "page_lead_not_running": {
     "message": "Preglednik ga je pokušao pokrenuti, ali je trajalo predugo. Pokrenite Dannex Download Manager sami, pa pokušajte ponovno."
@@ -309,7 +309,7 @@
     "message": "Ova je verzija programa Dannex Download Manager prestara za ovo proširenje. Instalirajte najnoviju."
   },
   "page_lead_too_large": {
-    "message": "Web-mjesto je poslalo više podataka za prijavu nego što Dannex Download Manager prihvaća pa je preglednik zadržao preuzimanje. Odjava s web-mjesta i ponovna prijava obično to rješavaju."
+    "message": "Web-mjesto poslalo je previše podataka za prijavu. Odjavite se s web-mjesta, ponovno se prijavite i pokušajte ponovno."
   },
   "page_download": {
     "message": "Preuzmi Dannex Download Manager"
@@ -360,7 +360,7 @@
     "message": "Ukloni ovu kopiju"
   },
   "page_duplicate_lead": {
-    "message": "Kopija iz Chrome web-trgovine instalirana je i u ovom pregledniku i sama se održava ažurnom. Ova kopija nije potrebna."
+    "message": "Kopija iz Chrome web-trgovine također je instalirana i sama se ažurira. Ovu možete ukloniti."
   },
   "page_remove": {
     "message": "Ukloni ovu kopiju"

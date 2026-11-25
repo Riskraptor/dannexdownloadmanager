@@ -81,10 +81,10 @@
     "message": "Télécharger via le VPN ou le proxy de ce navigateur"
   },
   "popup_proxy_title": {
-    "message": "Activez cette option si vous utilisez une extension VPN ou proxy dans ce navigateur. Le navigateur vous demande une fois de l’autoriser."
+    "message": "Activez cette option si vous utilisez une extension VPN ou proxy. Le navigateur demande une fois."
   },
   "popup_proxy_title_chromium": {
-    "message": "Activez cette option si vous utilisez une extension VPN ou proxy dans ce navigateur. Tant qu’elle est désactivée, l’extension ne regarde pas le proxy du navigateur."
+    "message": "Activez cette option si vous utilisez une extension VPN ou proxy dans ce navigateur."
   },
   "popup_help": {
     "message": "Aide"
@@ -135,7 +135,7 @@
     "message": "Vidéo protégée : impossible de l’enregistrer"
   },
   "video_unnamed": {
-    "message": "Impossible de savoir de quelle vidéo il s'agit : ouvrez sa propre page et réessayez"
+    "message": "Ouvrez la page de la vidéo elle-même et réessayez là-bas"
   },
   "video_looking": {
     "message": "Recherche des qualités…"
@@ -225,7 +225,7 @@
     "message": "Jumeler"
   },
   "popup_remote_help": {
-    "message": "Ouvrez d’abord son adresse dans ce navigateur et passez l’avertissement de sécurité. Saisissez ensuite le code affiché dans Options → Distant → Associer un appareil."
+    "message": "Ouvrez d’abord son adresse ici, puis saisissez le code indiqué dans Options → Distant → Associer un appareil."
   },
   "status_remote": {
     "message": "Les téléchargements vont vers $address$",
@@ -327,7 +327,7 @@
     }
   },
   "page_lead_not_installed": {
-    "message": "Cette extension fonctionne avec Dannex Download Manager, un gestionnaire de téléchargement gratuit pour votre ordinateur. Installez-le, et cette page se met à jour toute seule."
+    "message": "Cette extension nécessite l’application gratuite Dannex Download Manager. Installez-la, et cette page se mettra à jour d’elle-même."
   },
   "page_lead_not_running": {
     "message": "Le navigateur a essayé de le démarrer, mais cela a pris trop de temps. Démarrez Dannex Download Manager vous-même, puis réessayez."
@@ -339,7 +339,7 @@
     "message": "Cette version de Dannex Download Manager est trop ancienne pour cette extension. Installez la dernière."
   },
   "page_lead_too_large": {
-    "message": "Le site a envoyé plus de données de connexion que Dannex Download Manager n’en accepte, donc le navigateur a gardé le téléchargement. Se déconnecter du site puis s’y reconnecter règle généralement le problème."
+    "message": "Le site a envoyé trop de données de connexion. Déconnectez-vous du site, reconnectez-vous, puis réessayez."
   },
   "page_download": {
     "message": "Télécharger Dannex Download Manager"
@@ -390,7 +390,7 @@
     "message": "Supprimer cette copie"
   },
   "page_duplicate_lead": {
-    "message": "La copie du Chrome Web Store est aussi installée dans ce navigateur et se tient à jour toute seule. Cette copie n’est pas nécessaire."
+    "message": "La copie du Chrome Web Store est aussi installée et se met à jour seule. Vous pouvez supprimer celle-ci."
   },
   "page_remove": {
     "message": "Supprimer cette copie"

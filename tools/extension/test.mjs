@@ -2358,15 +2358,15 @@ function samplePage(html) {
   // less what the last answer took (50 ms at least): an older app (60 ms) is asked as seldom as
   // before, a newer one (holding the answer ~1.5 s) is asked again almost at once early on.
   const pollDelay = make(["pollDelay"], "pollDelay");
-  assert.equal(pollDelay(0, 0), 100);
-  assert.equal(pollDelay(0, 5000), 100);
+  assert.equal(pollDelay(0, 0), 20);
+  assert.equal(pollDelay(0, 5000), 20);
   assert.equal(pollDelay(1, 60), 1190);
-  assert.equal(pollDelay(1, 1500), 50);
-  assert.equal(pollDelay(2, 1500), 50);
+  assert.equal(pollDelay(1, 1500), 10);
+  assert.equal(pollDelay(2, 1500), 10);
   assert.equal(pollDelay(2, 999), 564);
   assert.equal(pollDelay(9, 0), 2000);
-  assert.equal(pollDelay(9, 1500), 50);
-  assert.equal(pollDelay(9, 99999), 50);
+  assert.equal(pollDelay(9, 1500), 10);
+  assert.equal(pollDelay(9, 99999), 10);
   assert.equal(pollDelay(3, undefined), 1953);
   assert.equal(pollDelay(3, NaN), 1953);
   assert.equal(pollDelay(3, -20), 1953);
@@ -2436,7 +2436,7 @@ function samplePage(html) {
   const ready = { state: "ready", token: "t1", choices: [{ label: "720p MP4", ext: "mp4", size: 1 }] };
   let f = await follow(pending, [{ lookup: pending }, { lookup: ready }]);
   assert.deepEqual(f.result, ready);
-  assert.deepEqual(f.asked.map((a) => [a.token, a.at]), [["t1", 100], ["t1", 1350]], "100 ms, then the old backoff (an app that answers at once)");
+  assert.deepEqual(f.asked.map((a) => [a.token, a.at]), [["t1", 20], ["t1", 1270]], "20 ms, then the old backoff (an app that answers at once)");
   // Still looking after a minute: given up then, never asked after it.
   f = await follow(pending, []);
   assert.deepEqual(f.result, { state: "late" });
@@ -2448,7 +2448,7 @@ function samplePage(html) {
   for (let at = 0, n = 0; (at += Math.min(2000, 1000 * 1.25 ** n)) < 60000; n += 1) old += 1;
   f = await follow(pending, [], { took: 60 });
   assert.deepEqual(f.result, { state: "late" });
-  assert.equal(f.asked[0].at, 100);
+  assert.equal(f.asked[0].at, 20);
   assert.ok(f.asked.length <= old, `old host: ${f.asked.length} questions in a minute, the old schedule's ${old}`);
   // A newer app (holds the answer ~1.5 s while it looks): one at a time, asked again almost at once
   // early on, and the answer reaches the page soon after it is ready. A host that is ready at `r`
@@ -2481,7 +2481,7 @@ function samplePage(html) {
   assert.ok(f.asked.length > 20 && f.asked.length <= 40, `new host: ${f.asked.length} questions in a minute`);
   // In between (an answer after 600 ms): the rest of the second.
   f = await follow(pending, [{ lookup: pending }, { lookup: pending }, { lookup: ready }], { took: 600 });
-  assert.deepEqual(f.asked.map((a) => a.at), [100, 1350, 2913]);
+  assert.deepEqual(f.asked.map((a) => a.at), [20, 1270, 2833]);
   assert.deepEqual(f.result, ready);
   // Dropped (the menu closed, the video or the page changed): nothing more, no answer shown.
   f = await follow(pending, [{ lookup: pending }, { lookup: ready }], { alive: (asked) => asked.length < 1 });

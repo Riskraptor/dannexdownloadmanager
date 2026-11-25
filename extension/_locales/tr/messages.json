@@ -81,10 +81,10 @@
     "message": "Bu tarayıcının VPN veya proxy'si üzerinden indir"
   },
   "popup_proxy_title": {
-    "message": "Bu tarayıcıda VPN veya proxy uzantısı kullanıyorsanız bunu açın. Tarayıcı izin vermenizi bir kez ister."
+    "message": "Bir VPN veya proxy uzantısı kullanıyorsanız bunu açın. Tarayıcı bir kez sorar."
   },
   "popup_proxy_title_chromium": {
-    "message": "Bu tarayıcıda VPN veya proxy uzantısı kullanıyorsanız bunu açın. Kapalıyken uzantı tarayıcının proxy'sine bakmaz."
+    "message": "Bu tarayıcıda bir VPN veya proxy uzantısı kullanıyorsanız bunu açın."
   },
   "popup_help": {
     "message": "Yardım"
@@ -135,7 +135,7 @@
     "message": "Korumalı video: kaydedilemez"
   },
   "video_unnamed": {
-    "message": "Bunun hangi video olduğu anlaşılamıyor: videonun kendi sayfasını açıp orada deneyin"
+    "message": "Videonun kendi sayfasını açıp orada deneyin"
   },
   "video_looking": {
     "message": "Kaliteler aranıyor…"
@@ -225,7 +225,7 @@
     "message": "Eşle"
   },
   "popup_remote_help": {
-    "message": "Önce adresini bu tarayıcıda açın ve güvenlik uyarısını geçin. Ardından Seçenekler → Uzaktan → Bir cihazı eşleştir bölümündeki kodu girin."
+    "message": "Önce adresini burada açın. Ardından Seçenekler → Uzaktan → Bir cihazı eşleştir bölümündeki kodu girin."
   },
   "status_remote": {
     "message": "İndirmeler $address$ adresine gidiyor",
@@ -327,7 +327,7 @@
     }
   },
   "page_lead_not_installed": {
-    "message": "Bu uzantı, bilgisayarınız için ücretsiz bir indirme yöneticisi olan Dannex Download Manager ile çalışır. Yükleyin, bu sayfa kendiliğinden güncellenir."
+    "message": "Bu uzantı ücretsiz Dannex Download Manager uygulamasını gerektirir. Uygulamayı yükleyin, bu sayfa kendiliğinden güncellenir."
   },
   "page_lead_not_running": {
     "message": "Tarayıcı başlatmayı denedi ancak çok uzun sürdü. Dannex Download Manager uygulamasını kendiniz başlatın, ardından yeniden deneyin."
@@ -339,7 +339,7 @@
     "message": "Dannex Download Manager uygulamasının bu sürümü bu uzantı için çok eski. En son sürümü yükleyin."
   },
   "page_lead_too_large": {
-    "message": "Site, Dannex Download Manager uygulamasının kabul ettiğinden fazla oturum verisi gönderdi, bu nedenle tarayıcı indirmeyi kendisinde tuttu. Siteden çıkış yapıp yeniden giriş yapmak genellikle sorunu çözer."
+    "message": "Site çok fazla oturum açma verisi gönderdi. Siteden çıkış yapıp tekrar giriş yapın, ardından yeniden deneyin."
   },
   "page_download": {
     "message": "Dannex Download Manager uygulamasını indir"
@@ -390,7 +390,7 @@
     "message": "Bu kopyayı kaldır"
   },
   "page_duplicate_lead": {
-    "message": "Chrome Web Mağazası'ndaki kopya bu tarayıcıda da yüklü ve kendini güncel tutuyor. Bu kopyaya gerek yok."
+    "message": "Chrome Web Mağazası'ndaki kopya da yüklü ve kendini güncelliyor. Bunu kaldırabilirsiniz."
   },
   "page_remove": {
     "message": "Bu kopyayı kaldır"
