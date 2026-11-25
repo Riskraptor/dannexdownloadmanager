@@ -78,10 +78,10 @@
     "message": "Baixa mitjançant la VPN o el servidor intermediari d’aquest navegador"
   },
   "popup_proxy_title": {
-    "message": "Activa-ho si fas servir una extensió de VPN o de servidor intermediari en aquest navegador. El navegador et demana permís una sola vegada."
+    "message": "Activa-ho si utilitzes una extensió de VPN o servidor intermediari. El navegador ho demana una vegada."
   },
   "popup_proxy_title_chromium": {
-    "message": "Activa-ho si fas servir una extensió de VPN o de servidor intermediari en aquest navegador. Mentre estigui desactivat, l’extensió no consulta el servidor intermediari del navegador."
+    "message": "Activa-ho si utilitzes una extensió de VPN o servidor intermediari en aquest navegador."
   },
   "popup_help": {
     "message": "Ajuda"
@@ -132,7 +132,7 @@
     "message": "Vídeo protegit: no es pot desar"
   },
   "video_unnamed": {
-    "message": "No es pot saber quin vídeo és: obriu la seva pàgina i torneu-ho a provar allà"
+    "message": "Obre la pàgina pròpia del vídeo i torna-ho a provar allà"
   },
   "video_looking": {
     "message": "Cercant les qualitats…"
@@ -213,7 +213,7 @@
     "message": "Empllaçar"
   },
   "popup_remote_help": {
-    "message": "Primer obre’n l’adreça en aquest navegador i continua més enllà de l’advertència de seguretat. Després introdueix el codi d’Opcions → Remot → Vincula un dispositiu."
+    "message": "Primer obre'n l'adreça aquí i després introdueix el codi d’Opcions → Remot → Vincula un dispositiu."
   },
   "status_remote": {
     "message": "Les baixades van a $address$",
@@ -297,7 +297,7 @@
     }
   },
   "page_lead_not_installed": {
-    "message": "Aquesta extensió funciona amb Dannex Download Manager, un gestor de baixades gratuït per a l’ordinador. Instal·la’l i aquesta pàgina s’actualitzarà sola."
+    "message": "Aquesta extensió necessita l'aplicació gratuïta Dannex Download Manager. Instal·la-la i aquesta pàgina s'actualitzarà sola."
   },
   "page_lead_not_running": {
     "message": "El navegador ha intentat iniciar-lo, però ha trigat massa. Inicia Dannex Download Manager tu mateix i torna-ho a provar."
@@ -309,7 +309,7 @@
     "message": "Aquesta versió de Dannex Download Manager és massa antiga per a aquesta extensió. Instal·la l’última."
   },
   "page_lead_too_large": {
-    "message": "El lloc ha enviat més dades d’inici de sessió de les que accepta Dannex Download Manager, de manera que el navegador s’ha quedat la baixada. Tancar la sessió al lloc i tornar-la a iniciar sol solucionar-ho."
+    "message": "El lloc ha enviat massa dades d'inici de sessió. Tanca la sessió del lloc, torna a iniciar-la i torna-ho a provar."
   },
   "page_download": {
     "message": "Baixa Dannex Download Manager"
@@ -360,7 +360,7 @@
     "message": "Elimina aquesta còpia"
   },
   "page_duplicate_lead": {
-    "message": "La còpia de Chrome Web Store també està instal·lada en aquest navegador i s’actualitza sola. Aquesta còpia no cal."
+    "message": "La còpia de Chrome Web Store també està instal·lada i s'actualitza sola. Pots suprimir aquesta."
   },
   "page_remove": {
     "message": "Elimina aquesta còpia"

@@ -78,10 +78,10 @@
     "message": "Last ned via VPN eller proxy i denne nettleseren"
   },
   "popup_proxy_title": {
-    "message": "Slå dette på hvis du bruker en VPN- eller proxy-utvidelse i denne nettleseren. Nettleseren ber deg om tillatelse én gang."
+    "message": "Slå på dette hvis du bruker en VPN- eller proxy-utvidelse. Nettleseren spør én gang."
   },
   "popup_proxy_title_chromium": {
-    "message": "Slå dette på hvis du bruker en VPN- eller proxy-utvidelse i denne nettleseren. Når det er av, ser ikke utvidelsen på proxyen til nettleseren."
+    "message": "Slå på dette hvis du bruker en VPN- eller proxy-utvidelse i denne nettleseren."
   },
   "popup_help": {
     "message": "Hjelp"
@@ -132,7 +132,7 @@
     "message": "Beskyttet video: kan ikke lagres"
   },
   "video_unnamed": {
-    "message": "Kan ikke se hvilken video dette er: åpne videoens egen side og prøv der"
+    "message": "Åpne videoens egen side, og prøv der"
   },
   "video_looking": {
     "message": "Finner kvalitetene…"
@@ -213,7 +213,7 @@
     "message": "Par"
   },
   "popup_remote_help": {
-    "message": "Åpne først adressen i denne nettleseren og fortsett forbi sikkerhetsadvarselen. Skriv deretter inn koden fra Alternativer → Fjernkontroll → Par en enhet der."
+    "message": "Åpne først adressen her, og skriv deretter inn koden fra Alternativer → Fjernkontroll → Par en enhet der."
   },
   "status_remote": {
     "message": "Nedlastinger går til $address$",
@@ -297,7 +297,7 @@
     }
   },
   "page_lead_not_installed": {
-    "message": "Denne utvidelsen fungerer sammen med Dannex Download Manager, en gratis nedlastingsbehandler for datamaskinen din. Installer den, så oppdaterer denne siden seg selv."
+    "message": "Denne utvidelsen trenger den gratis appen Dannex Download Manager. Installer den, så oppdateres denne siden av seg selv."
   },
   "page_lead_not_running": {
     "message": "Nettleseren prøvde å starte det, men det tok for lang tid. Start Dannex Download Manager selv og prøv igjen."
@@ -309,7 +309,7 @@
     "message": "Denne versjonen av Dannex Download Manager er for gammel for denne utvidelsen. Installer den nyeste."
   },
   "page_lead_too_large": {
-    "message": "Nettstedet sendte mer påloggingsinformasjon enn Dannex Download Manager godtar, så nettleseren beholdt nedlastingen. Som regel hjelper det å logge ut av nettstedet og inn igjen."
+    "message": "Nettstedet sendte for mye påloggingsdata. Logg av nettstedet og på igjen, og prøv deretter på nytt."
   },
   "page_download": {
     "message": "Last ned Dannex Download Manager"
@@ -360,7 +360,7 @@
     "message": "Fjern denne kopien"
   },
   "page_duplicate_lead": {
-    "message": "Kopien fra Chrome Nettmarked er også installert i denne nettleseren, og den holder seg selv oppdatert. Denne kopien trengs ikke."
+    "message": "Kopien fra Chrome Nettmarked er også installert og oppdaterer seg selv. Du kan fjerne denne."
   },
   "page_remove": {
     "message": "Fjern denne kopien"

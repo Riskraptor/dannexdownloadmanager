@@ -6862,10 +6862,6 @@ extension	Browser integration is turned off in Dannex Download Manager's Options
 #, machine
 extension	Button settings...	Schaltflächeneinstellungen...
 #. text in the browser extension
-#. shown briefly on the download button when nothing on the page says which video the player is playing, so nothing was sent
-#, machine
-extension	Can't tell which video this is: open its own page and try there	Nicht erkennbar, welches Video das ist: Öffnen Sie seine eigene Seite und versuchen Sie es dort
-#. text in the browser extension
 #. button on the status page (an extension page that says whether the browser reaches Dannex Download Manager and how to fix it): asks the store for a newer version of the extension now
 #, machine
 extension	Check for updates	Nach Updates suchen
@@ -7018,10 +7014,6 @@ extension	Extension options	Erweiterungsoptionen
 #, machine
 extension	Firefox will remove this add-on when it closes, because it was added as a temporary add-on.	Firefox entfernt dieses Add-on beim Schließen, weil es als temporäres Add-on hinzugefügt wurde.
 #. text in the browser extension
-#. note on the extension's options page, for sending downloads to another computer's Dannex Download Manager: the browser warns about its own certificate once; Options, Remote and Pair a device are names in that app
-#, machine
-extension	First open its address in this browser and continue past the security warning. Then enter the code from its Options → Remote → Pair a device.	Öffnen Sie zuerst die Adresse in diesem Browser und fahren Sie trotz der Sicherheitswarnung fort. Geben Sie dann den Code aus „Optionen → Fernzugriff → Gerät koppeln“ ein.
-#. text in the browser extension
 #. beside the download button on the status page (an extension page that says whether the browser reaches Dannex Download Manager and how to fix it), on Linux
 #, machine
 extension	For Linux (AppImage, .deb or .rpm).	Für Linux (AppImage, .deb oder .rpm).
@@ -7150,6 +7142,10 @@ extension	Open in DDM…	In DDM öffnen…
 #, machine
 extension	Open it	Öffnen
 #. text in the browser extension
+#. note on the extension's options page, for sending downloads to another computer's Dannex Download Manager: the browser warns about its own certificate once; Options, Remote and Pair a device are names in that app
+#, machine
+extension	Open its address here first, then enter the code from its Options → Remote → Pair a device.	Öffnen Sie zuerst die Adresse hier und geben Sie dann den Code aus „Optionen → Fernzugriff → Gerät koppeln“ ein.
+#. text in the browser extension
 #. a step on the status page (an extension page that says whether the browser reaches Dannex Download Manager and how to fix it), on a Mac; keep the name Dannex Download Manager as it is
 #, machine
 extension	Open the .dmg, drag Dannex Download Manager to Applications, and start it once.	Öffnen Sie die .dmg-Datei, ziehen Sie Dannex Download Manager in „Programme“ und starten Sie es einmal.
@@ -7165,6 +7161,10 @@ extension	Open the extensions page	Erweiterungsseite öffnen
 #. shown briefly on the download button over a video in a feed (a social site's home page, a timeline) when nothing in the feed gives that video's own address, so nothing was sent: the user should open the post the video belongs to and click the button on that page; short
 #, machine
 extension	Open the post, then use the button there	Beitrag öffnen, dann die Schaltfläche dort verwenden
+#. text in the browser extension
+#. shown briefly on the download button when nothing on the page says which video the player is playing, so nothing was sent
+#, machine
+extension	Open the video's own page and try there	Öffnen Sie die eigene Seite des Videos und versuchen Sie es dort
 #. text in the browser extension
 #. a row in the Audio tab of the menu of qualities under the download button over a video (the tab already says it is sound only): the site's own sound file as it is (not converted)
 #, machine
@@ -7254,7 +7254,7 @@ extension	The browser updates it by itself within a few hours, or now with Check
 #. text in the browser extension
 #. the status page (an extension page that says whether the browser reaches Dannex Download Manager and how to fix it): two copies of the extension in one browser; keep Dannex Download Manager as it is
 #, machine
-extension	The copy from the Chrome Web Store is installed in this browser too, and it keeps itself up to date. This copy isn't needed.	Die Kopie aus dem Chrome Web Store ist ebenfalls in diesem Browser installiert und hält sich selbst aktuell. Diese Kopie wird nicht benötigt.
+extension	The Chrome Web Store copy is installed too and updates itself. You can remove this one.	Die Kopie aus dem Chrome Web Store ist ebenfalls installiert und aktualisiert sich selbst. Diese können Sie entfernen.
 #. text in the browser extension
 #. shown briefly on the download button over a video when the app's settings keep the button off on this web site
 #, machine
@@ -7266,7 +7266,7 @@ extension	The last download couldn't go to Dannex Download Manager	Der letzte Do
 #. text in the browser extension
 #. on the extension's status page under its headline: a download carried too many cookies to hand over; keep the name Dannex Download Manager as it is
 #, machine
-extension	The site sent more sign-in data than Dannex Download Manager accepts, so the browser kept the download. Signing out of the site and back in usually fixes it.	Die Website hat mehr Anmeldedaten gesendet, als Dannex Download Manager akzeptiert, daher hat der Browser den Download behalten. Meist hilft es, sich von der Website ab- und wieder anzumelden.
+extension	The site sent too much sign-in data. Sign out of the site and back in, then try again.	Die Website hat zu viele Anmeldedaten gesendet. Melden Sie sich ab und wieder an und versuchen Sie es erneut.
 #. text in the browser extension
 #. pairing failed: the other DDM shows no pairing code; Pair a device is its button
 #, machine
@@ -7290,7 +7290,7 @@ extension	This extension isn't allowed on that site.	Diese Erweiterung ist auf d
 #. text in the browser extension
 #. the status page (an extension page that says whether the browser reaches Dannex Download Manager and how to fix it): the app isn't installed or its browser integration isn't set up; keep the name Dannex Download Manager as it is
 #, machine
-extension	This extension works with Dannex Download Manager, a free download manager for your computer. Install it, and this page updates by itself.	Diese Erweiterung funktioniert mit Dannex Download Manager, einem kostenlosen Download-Manager für Ihren Computer. Installieren Sie es, dann aktualisiert sich diese Seite von selbst.
+extension	This extension needs the free Dannex Download Manager app. Install it, and this page updates by itself.	Diese Erweiterung benötigt die kostenlose App Dannex Download Manager. Installieren Sie sie, und diese Seite aktualisiert sich von selbst.
 #. text in the browser extension
 #. shown in the extension's toolbar panel when the current tab has no links
 #, machine
@@ -7308,13 +7308,13 @@ extension	To change that, turn on Allow in Incognito on its details page.	Um das
 #, machine
 extension	Try again	Erneut versuchen
 #. text in the browser extension
-#. note under the VPN or proxy switch on the extension's options page (Firefox, which asks for a permission)
-#, machine
-extension	Turn this on if you use a VPN or proxy extension in this browser. The browser asks you once to allow it.	Aktivieren Sie dies, wenn Sie in diesem Browser eine VPN- oder Proxy-Erweiterung verwenden. Der Browser bittet einmal um Ihre Erlaubnis.
-#. text in the browser extension
 #. note under the VPN or proxy switch on the extension's options page (Chrome, Edge and other Chromium browsers)
 #, machine
-extension	Turn this on if you use a VPN or proxy extension in this browser. While it's off, the extension doesn't look at the browser's proxy.	Aktivieren Sie dies, wenn Sie in diesem Browser eine VPN- oder Proxy-Erweiterung verwenden. Solange es ausgeschaltet ist, beachtet die Erweiterung den Proxy des Browsers nicht.
+extension	Turn this on if you use a VPN or proxy extension in this browser.	Aktivieren Sie dies, wenn Sie in diesem Browser eine VPN- oder Proxy-Erweiterung verwenden.
+#. text in the browser extension
+#. note under the VPN or proxy switch on the extension's options page (Firefox, which asks for a permission)
+#, machine
+extension	Turn this on if you use a VPN or proxy extension. The browser asks once.	Aktivieren Sie dies, wenn Sie eine VPN- oder Proxy-Erweiterung verwenden. Der Browser fragt einmal nach.
 #. text in the browser extension
 #. headline of the extension's status page, and a line of its toolbar button's tooltip: the app's own Options take no downloads from this browser; keep the name Dannex Download Manager as it is
 #, machine

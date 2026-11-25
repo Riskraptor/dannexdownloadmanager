@@ -81,10 +81,10 @@
     "message": "Über das VPN oder den Proxy dieses Browsers herunterladen"
   },
   "popup_proxy_title": {
-    "message": "Aktivieren Sie dies, wenn Sie in diesem Browser eine VPN- oder Proxy-Erweiterung verwenden. Der Browser bittet einmal um Ihre Erlaubnis."
+    "message": "Aktivieren Sie dies, wenn Sie eine VPN- oder Proxy-Erweiterung verwenden. Der Browser fragt einmal nach."
   },
   "popup_proxy_title_chromium": {
-    "message": "Aktivieren Sie dies, wenn Sie in diesem Browser eine VPN- oder Proxy-Erweiterung verwenden. Solange es ausgeschaltet ist, beachtet die Erweiterung den Proxy des Browsers nicht."
+    "message": "Aktivieren Sie dies, wenn Sie in diesem Browser eine VPN- oder Proxy-Erweiterung verwenden."
   },
   "popup_help": {
     "message": "Hilfe"
@@ -135,7 +135,7 @@
     "message": "Geschütztes Video: kann nicht gespeichert werden"
   },
   "video_unnamed": {
-    "message": "Nicht erkennbar, welches Video das ist: Öffnen Sie seine eigene Seite und versuchen Sie es dort"
+    "message": "Öffnen Sie die eigene Seite des Videos und versuchen Sie es dort"
   },
   "video_looking": {
     "message": "Qualitäten werden gesucht…"
@@ -225,7 +225,7 @@
     "message": "Koppeln"
   },
   "popup_remote_help": {
-    "message": "Öffnen Sie zuerst die Adresse in diesem Browser und fahren Sie trotz der Sicherheitswarnung fort. Geben Sie dann den Code aus „Optionen → Fernzugriff → Gerät koppeln“ ein."
+    "message": "Öffnen Sie zuerst die Adresse hier und geben Sie dann den Code aus „Optionen → Fernzugriff → Gerät koppeln“ ein."
   },
   "status_remote": {
     "message": "Downloads gehen an $address$",
@@ -327,7 +327,7 @@
     }
   },
   "page_lead_not_installed": {
-    "message": "Diese Erweiterung funktioniert mit Dannex Download Manager, einem kostenlosen Download-Manager für Ihren Computer. Installieren Sie es, dann aktualisiert sich diese Seite von selbst."
+    "message": "Diese Erweiterung benötigt die kostenlose App Dannex Download Manager. Installieren Sie sie, und diese Seite aktualisiert sich von selbst."
   },
   "page_lead_not_running": {
     "message": "Der Browser hat versucht, es zu starten, aber es dauerte zu lange. Starten Sie Dannex Download Manager selbst und versuchen Sie es dann erneut."
@@ -339,7 +339,7 @@
     "message": "Diese Version von Dannex Download Manager ist zu alt für diese Erweiterung. Installieren Sie die neueste."
   },
   "page_lead_too_large": {
-    "message": "Die Website hat mehr Anmeldedaten gesendet, als Dannex Download Manager akzeptiert, daher hat der Browser den Download behalten. Meist hilft es, sich von der Website ab- und wieder anzumelden."
+    "message": "Die Website hat zu viele Anmeldedaten gesendet. Melden Sie sich ab und wieder an und versuchen Sie es erneut."
   },
   "page_download": {
     "message": "Dannex Download Manager herunterladen"
@@ -390,7 +390,7 @@
     "message": "Diese Kopie entfernen"
   },
   "page_duplicate_lead": {
-    "message": "Die Kopie aus dem Chrome Web Store ist ebenfalls in diesem Browser installiert und hält sich selbst aktuell. Diese Kopie wird nicht benötigt."
+    "message": "Die Kopie aus dem Chrome Web Store ist ebenfalls installiert und aktualisiert sich selbst. Diese können Sie entfernen."
   },
   "page_remove": {
     "message": "Diese Kopie entfernen"

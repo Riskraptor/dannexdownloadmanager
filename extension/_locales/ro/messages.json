@@ -78,10 +78,10 @@
     "message": "Descărcare prin VPN-ul sau proxy-ul acestui browser"
   },
   "popup_proxy_title": {
-    "message": "Activați această opțiune dacă folosiți o extensie VPN sau proxy în acest browser. Browserul vă cere o singură dată permisiunea."
+    "message": "Activați această opțiune dacă folosiți o extensie VPN sau proxy. Browserul vă întreabă o dată."
   },
   "popup_proxy_title_chromium": {
-    "message": "Activați această opțiune dacă folosiți o extensie VPN sau proxy în acest browser. Cât timp este dezactivată, extensia nu verifică proxy-ul browserului."
+    "message": "Activați această opțiune dacă folosiți o extensie VPN sau proxy în acest browser."
   },
   "popup_help": {
     "message": "Ajutor"
@@ -132,7 +132,7 @@
     "message": "Videoclip protejat: nu poate fi salvat"
   },
   "video_unnamed": {
-    "message": "Nu se poate stabili ce videoclip este: deschideți pagina proprie a videoclipului și încercați acolo"
+    "message": "Deschideți pagina proprie a videoclipului și încercați acolo"
   },
   "video_looking": {
     "message": "Se caută calitățile…"
@@ -213,7 +213,7 @@
     "message": "Asociați"
   },
   "popup_remote_help": {
-    "message": "Deschideți mai întâi adresa lui în acest browser și treceți peste avertismentul de securitate. Apoi introduceți codul din Opțiuni → Telecomandă → Asociați un dispozitiv."
+    "message": "Mai întâi deschideți aici adresa sa, apoi introduceți codul din Opțiuni → Telecomandă → Asociați un dispozitiv."
   },
   "status_remote": {
     "message": "Descărcările merg la $address$",
@@ -297,7 +297,7 @@
     }
   },
   "page_lead_not_installed": {
-    "message": "Această extensie funcționează cu Dannex Download Manager, un manager de descărcări gratuit pentru computerul dvs. Instalați-l, iar această pagină se va actualiza singură."
+    "message": "Această extensie are nevoie de aplicația gratuită Dannex Download Manager. Instalați-o, iar această pagină se va actualiza singură."
   },
   "page_lead_not_running": {
     "message": "Browserul a încercat să îl pornească, dar a durat prea mult. Porniți Dannex Download Manager chiar dvs., apoi încercați din nou."
@@ -309,7 +309,7 @@
     "message": "Această versiune de Dannex Download Manager este prea veche pentru această extensie. Instalați-o pe cea mai recentă."
   },
   "page_lead_too_large": {
-    "message": "Site-ul a trimis mai multe date de autentificare decât acceptă Dannex Download Manager, așa că browserul a păstrat descărcarea. De obicei, problema se rezolvă dacă vă deconectați de la site și vă conectați din nou."
+    "message": "Site-ul a trimis prea multe date de conectare. Deconectați-vă de pe site, conectați-vă din nou și încercați iar."
   },
   "page_download": {
     "message": "Descărcare Dannex Download Manager"
@@ -360,7 +360,7 @@
     "message": "Eliminare copie"
   },
   "page_duplicate_lead": {
-    "message": "Copia din Chrome Web Store este instalată și în acest browser și se actualizează singură. Această copie nu este necesară."
+    "message": "Copia din Magazinul web Chrome este și ea instalată și se actualizează singură. O puteți elimina pe aceasta."
   },
   "page_remove": {
     "message": "Eliminare copie"

@@ -78,10 +78,10 @@
     "message": "Ladda ned via den här webbläsarens VPN eller proxy"
   },
   "popup_proxy_title": {
-    "message": "Slå på det här om du använder ett VPN- eller proxytillägg i den här webbläsaren. Webbläsaren ber dig om tillåtelse en gång."
+    "message": "Aktivera detta om du använder ett VPN- eller proxytillägg. Webbläsaren frågar en gång."
   },
   "popup_proxy_title_chromium": {
-    "message": "Slå på det här om du använder ett VPN- eller proxytillägg i den här webbläsaren. När det är av tittar tillägget inte på webbläsarens proxy."
+    "message": "Aktivera detta om du använder ett VPN- eller proxytillägg i den här webbläsaren."
   },
   "popup_help": {
     "message": "Hjälp"
@@ -132,7 +132,7 @@
     "message": "Skyddad video: den kan inte sparas"
   },
   "video_unnamed": {
-    "message": "Det går inte att avgöra vilken video det här är: öppna videons egen sida och försök där"
+    "message": "Öppna videons egen sida och försök där"
   },
   "video_looking": {
     "message": "Söker efter kvaliteter…"
@@ -213,7 +213,7 @@
     "message": "Koppla"
   },
   "popup_remote_help": {
-    "message": "Öppna först dess adress i den här webbläsaren och fortsätt förbi säkerhetsvarningen. Ange sedan koden från dess Alternativ → Fjärr → Parkoppla en enhet."
+    "message": "Öppna först dess adress här och ange sedan koden från dess Alternativ → Fjärr → Parkoppla en enhet."
   },
   "status_remote": {
     "message": "Nedladdningar går till $address$",
@@ -297,7 +297,7 @@
     }
   },
   "page_lead_not_installed": {
-    "message": "Det här tillägget fungerar tillsammans med Dannex Download Manager, en gratis hämtningshanterare för datorn. Installera det, så uppdateras den här sidan av sig själv."
+    "message": "Det här tillägget behöver den kostnadsfria appen Dannex Download Manager. Installera den, så uppdateras sidan av sig själv."
   },
   "page_lead_not_running": {
     "message": "Webbläsaren försökte starta det, men det tog för lång tid. Starta Dannex Download Manager själv och försök igen."
@@ -309,7 +309,7 @@
     "message": "Den här versionen av Dannex Download Manager är för gammal för det här tillägget. Installera den senaste."
   },
   "page_lead_too_large": {
-    "message": "Webbplatsen skickade mer inloggningsdata än Dannex Download Manager godtar, så webbläsaren behöll hämtningen. Det brukar hjälpa att logga ut från webbplatsen och in igen."
+    "message": "Webbplatsen skickade för mycket inloggningsdata. Logga ut från webbplatsen och in igen och försök sedan igen."
   },
   "page_download": {
     "message": "Ladda ned Dannex Download Manager"
@@ -360,7 +360,7 @@
     "message": "Ta bort den här kopian"
   },
   "page_duplicate_lead": {
-    "message": "Kopian från Chrome Web Store är också installerad i den här webbläsaren och håller sig själv uppdaterad. Den här kopian behövs inte."
+    "message": "Kopian från Chrome Web Store är också installerad och uppdaterar sig själv. Du kan ta bort den här."
   },
   "page_remove": {
     "message": "Ta bort den här kopian"

@@ -106,11 +106,11 @@
     "description": "label of a switch on the extension's options page, under More: the app downloads through the same proxy as this browser (one a VPN or proxy extension set)"
   },
   "popup_proxy_title": {
-    "message": "Turn this on if you use a VPN or proxy extension in this browser. The browser asks you once to allow it.",
+    "message": "Turn this on if you use a VPN or proxy extension. The browser asks once.",
     "description": "note under the VPN or proxy switch on the extension's options page (Firefox, which asks for a permission)"
   },
   "popup_proxy_title_chromium": {
-    "message": "Turn this on if you use a VPN or proxy extension in this browser. While it's off, the extension doesn't look at the browser's proxy.",
+    "message": "Turn this on if you use a VPN or proxy extension in this browser.",
     "description": "note under the VPN or proxy switch on the extension's options page (Chrome, Edge and other Chromium browsers)"
   },
   "popup_help": {
@@ -176,7 +176,7 @@
     "description": "shown briefly on the download button when the video is copy-protected (DRM) and no tool can download it"
   },
   "video_unnamed": {
-    "message": "Can't tell which video this is: open its own page and try there",
+    "message": "Open the video's own page and try there",
     "description": "shown briefly on the download button when nothing on the page says which video the player is playing, so nothing was sent"
   },
   "video_looking": {
@@ -290,7 +290,7 @@
     "description": "button: pair this browser with the other DDM using the code"
   },
   "popup_remote_help": {
-    "message": "First open its address in this browser and continue past the security warning. Then enter the code from its Options → Remote → Pair a device.",
+    "message": "Open its address here first, then enter the code from its Options → Remote → Pair a device.",
     "description": "note on the extension's options page, for sending downloads to another computer's Dannex Download Manager: the browser warns about its own certificate once; Options, Remote and Pair a device are names in that app"
   },
   "status_remote": {
@@ -420,7 +420,7 @@
     }
   },
   "page_lead_not_installed": {
-    "message": "This extension works with Dannex Download Manager, a free download manager for your computer. Install it, and this page updates by itself.",
+    "message": "This extension needs the free Dannex Download Manager app. Install it, and this page updates by itself.",
     "description": "the status page (an extension page that says whether the browser reaches Dannex Download Manager and how to fix it): the app isn't installed or its browser integration isn't set up; keep the name Dannex Download Manager as it is"
   },
   "page_lead_not_running": {
@@ -436,7 +436,7 @@
     "description": "the status page (an extension page that says whether the browser reaches Dannex Download Manager and how to fix it): the app refuses this copy of the extension; keep the name Dannex Download Manager as it is"
   },
   "page_lead_too_large": {
-    "message": "The site sent more sign-in data than Dannex Download Manager accepts, so the browser kept the download. Signing out of the site and back in usually fixes it.",
+    "message": "The site sent too much sign-in data. Sign out of the site and back in, then try again.",
     "description": "on the extension's status page under its headline: a download carried too many cookies to hand over; keep the name Dannex Download Manager as it is"
   },
   "page_download": {
@@ -504,7 +504,7 @@
     "description": "title of the status page (an extension page that says whether the browser reaches Dannex Download Manager and how to fix it) when the extension is installed twice in one browser and this copy stands aside"
   },
   "page_duplicate_lead": {
-    "message": "The copy from the Chrome Web Store is installed in this browser too, and it keeps itself up to date. This copy isn't needed.",
+    "message": "The Chrome Web Store copy is installed too and updates itself. You can remove this one.",
     "description": "the status page (an extension page that says whether the browser reaches Dannex Download Manager and how to fix it): two copies of the extension in one browser; keep Dannex Download Manager as it is"
   },
   "page_remove": {

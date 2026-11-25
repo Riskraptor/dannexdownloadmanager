@@ -5,6 +5,16 @@ Each release's notes on GitHub come from its section here (`## [X.Y.Z]`, see
 
 ## [Unreleased]
 
+## [1.1.3] - 2026-11-25
+
+- Torrents start sooner: up to 8 check their files at the same time (a long check no longer holds
+  the others back), peers that don't answer are given up after 4 seconds instead of waiting, and a
+  torrent can use up to 200 peers, so slow torrents find fast ones sooner.
+- Deleting a download asks with **Also delete the files from disk** unticked every time; DDM no longer
+  remembers it. Shift+Delete still ticks it.
+- The button over a video opens its menu and asks DDM for the qualities sooner.
+- Shorter notes in the browser extension.
+
 ## [1.1.2] - 2026-11-24
 
 - The browser extension now has the app's name, **Dannex Download Manager** (it was "DDM

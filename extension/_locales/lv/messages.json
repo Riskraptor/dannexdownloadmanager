@@ -78,10 +78,10 @@
     "message": "Lejupielādēt, izmantojot šīs pārlūkprogrammas VPN vai starpniekserveri"
   },
   "popup_proxy_title": {
-    "message": "Ieslēdziet to, ja šajā pārlūkprogrammā izmantojat VPN vai starpniekservera paplašinājumu. Pārlūkprogramma vienreiz lūgs jūsu atļauju."
+    "message": "Ieslēdziet šo, ja izmantojat VPN vai starpniekservera paplašinājumu. Pārlūkprogramma vaicās vienreiz."
   },
   "popup_proxy_title_chromium": {
-    "message": "Ieslēdziet to, ja šajā pārlūkprogrammā izmantojat VPN vai starpniekservera paplašinājumu. Kamēr tas ir izslēgts, paplašinājums neskatās pārlūkprogrammas starpniekserveri."
+    "message": "Ieslēdziet šo, ja šajā pārlūkprogrammā izmantojat VPN vai starpniekservera paplašinājumu."
   },
   "popup_help": {
     "message": "Palīdzība"
@@ -132,7 +132,7 @@
     "message": "Aizsargāts video: to nevar saglabāt"
   },
   "video_unnamed": {
-    "message": "Nevar noteikt, kurš video tas ir: atveriet tā lapu un mēģiniet tur"
+    "message": "Atveriet paša video lapu un mēģiniet tur"
   },
   "video_looking": {
     "message": "Meklē kvalitātes…"
@@ -213,7 +213,7 @@
     "message": "Savienot"
   },
   "popup_remote_help": {
-    "message": "Vispirms atveriet tās adresi šajā pārlūkprogrammā un turpiniet, neņemot vērā drošības brīdinājumu. Pēc tam ievadiet kodu no sadaļas Opcijas → Attālināti → Pārī savienot ierīci."
+    "message": "Vispirms šeit atveriet tā adresi, pēc tam ievadiet kodu no sadaļas Opcijas → Attālināti → Pārī savienot ierīci."
   },
   "status_remote": {
     "message": "Lejupielādes tiek sūtītas uz $address$",
@@ -297,7 +297,7 @@
     }
   },
   "page_lead_not_installed": {
-    "message": "Šis paplašinājums darbojas kopā ar Dannex Download Manager — bezmaksas lejupielāžu pārvaldnieku jūsu datoram. Instalējiet to, un šī lapa atjaunināsies pati."
+    "message": "Šim paplašinājumam ir nepieciešama bezmaksas lietotne Dannex Download Manager. Instalējiet to, un šī lapa atjaunināsies pati."
   },
   "page_lead_not_running": {
     "message": "Pārlūkprogramma mēģināja to startēt, taču tas aizņēma pārāk ilgu laiku. Startējiet Dannex Download Manager pats un mēģiniet vēlreiz."
@@ -309,7 +309,7 @@
     "message": "Šī Dannex Download Manager versija ir pārāk veca šim paplašinājumam. Instalējiet jaunāko."
   },
   "page_lead_too_large": {
-    "message": "Vietne nosūtīja vairāk pieteikšanās datu, nekā Dannex Download Manager pieņem, tāpēc pārlūkprogramma paturēja lejupielādi. Parasti palīdz izrakstīšanās no vietnes un atkārtota pieteikšanās."
+    "message": "Vietne nosūtīja pārāk daudz pierakstīšanās datu. Izrakstieties no vietnes, pierakstieties vēlreiz un mēģiniet vēlreiz."
   },
   "page_download": {
     "message": "Lejupielādēt Dannex Download Manager"
@@ -360,7 +360,7 @@
     "message": "Noņemt šo kopiju"
   },
   "page_duplicate_lead": {
-    "message": "Kopija no Chrome interneta veikala ir instalēta arī šajā pārlūkprogrammā un atjaunina sevi pati. Šī kopija nav vajadzīga."
+    "message": "Ir instalēta arī kopija no Chrome interneta veikala, un tā atjauninās pati. Šo varat noņemt."
   },
   "page_remove": {
     "message": "Noņemt šo kopiju"

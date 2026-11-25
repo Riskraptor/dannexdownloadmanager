@@ -78,10 +78,10 @@
     "message": "Laadi alla selle brauseri VPN-i või puhverserveri kaudu"
   },
   "popup_proxy_title": {
-    "message": "Lülita see sisse, kui kasutad selles brauseris VPN-i või puhverserveri laiendit. Brauser küsib selleks üks kord luba."
+    "message": "Lülitage see sisse, kui kasutate VPN-i või puhverserveri laiendust. Brauser küsib ühe korra."
   },
   "popup_proxy_title_chromium": {
-    "message": "Lülita see sisse, kui kasutad selles brauseris VPN-i või puhverserveri laiendit. Kui see on väljas, ei vaata laiend brauseri puhverserverit."
+    "message": "Lülitage see sisse, kui kasutate selles brauseris VPN-i või puhverserveri laiendust."
   },
   "popup_help": {
     "message": "Abi"
@@ -132,7 +132,7 @@
     "message": "Kaitstud videot ei saa salvestada"
   },
   "video_unnamed": {
-    "message": "Ei saa aru, mis video see on: ava video enda leht ja proovi seal"
+    "message": "Avage video enda leht ja proovige seal"
   },
   "video_looking": {
     "message": "Kvaliteetide otsimine…"
@@ -213,7 +213,7 @@
     "message": "Seo"
   },
   "popup_remote_help": {
-    "message": "Ava esmalt selle aadress selles brauseris ja jätka turvahoiatusest mööda. Seejärel sisesta kood jaotisest Suvandid → Kaugjuhtimine → Paarita seade."
+    "message": "Avage esmalt selle aadress siin ja sisestage seejärel kood jaotisest Suvandid → Kaugjuhtimine → Paarita seade."
   },
   "status_remote": {
     "message": "Allalaadimised lähevad asukohta $address$",
@@ -297,7 +297,7 @@
     }
   },
   "page_lead_not_installed": {
-    "message": "See laiend töötab koos rakendusega Dannex Download Manager, mis on tasuta allalaadimishaldur sinu arvutile. Installi see ja see leht uueneb ise."
+    "message": "See laiendus vajab tasuta rakendust Dannex Download Manager. Installige see ja see leht värskendub ise."
   },
   "page_lead_not_running": {
     "message": "Brauser proovis seda käivitada, kuid see võttis liiga kaua aega. Käivita Dannex Download Manager ise ja proovi uuesti."
@@ -309,7 +309,7 @@
     "message": "See rakenduse Dannex Download Manager versioon on selle laiendi jaoks liiga vana. Installi uusim."
   },
   "page_lead_too_large": {
-    "message": "Sait saatis rohkem sisselogimisandmeid, kui Dannex Download Manager vastu võtab, seega jättis brauser allalaadimise endale. Tavaliselt aitab saidilt välja ja uuesti sisse logimine."
+    "message": "Sait saatis liiga palju sisselogimisandmeid. Logige saidilt välja ja uuesti sisse ning proovige uuesti."
   },
   "page_download": {
     "message": "Laadi alla Dannex Download Manager"
@@ -360,7 +360,7 @@
     "message": "Eemalda see koopia"
   },
   "page_duplicate_lead": {
-    "message": "Chrome'i veebipoest pärit koopia on samuti selles brauseris installitud ja uuendab end ise. Seda koopiat pole vaja."
+    "message": "Chrome'i veebipoe koopia on samuti installitud ja värskendab end ise. Selle saate eemaldada."
   },
   "page_remove": {
     "message": "Eemalda see koopia"

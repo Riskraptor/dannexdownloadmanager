@@ -81,10 +81,10 @@
     "message": "Downloaden via de vpn of proxy van deze browser"
   },
   "popup_proxy_title": {
-    "message": "Schakel dit in als u in deze browser een vpn- of proxyextensie gebruikt. De browser vraagt u eenmalig om toestemming."
+    "message": "Schakel dit in als je een VPN- of proxy-extensie gebruikt. De browser vraagt het één keer."
   },
   "popup_proxy_title_chromium": {
-    "message": "Schakel dit in als u in deze browser een vpn- of proxyextensie gebruikt. Zolang het is uitgeschakeld, kijkt de extensie niet naar de proxy van de browser."
+    "message": "Schakel dit in als je een VPN- of proxy-extensie in deze browser gebruikt."
   },
   "popup_help": {
     "message": "Help"
@@ -135,7 +135,7 @@
     "message": "Beveiligde video: kan niet worden opgeslagen"
   },
   "video_unnamed": {
-    "message": "Niet duidelijk welke video dit is: open de eigen pagina van de video en probeer het daar"
+    "message": "Open de eigen pagina van de video en probeer het daar"
   },
   "video_looking": {
     "message": "Kwaliteiten opzoeken…"
@@ -225,7 +225,7 @@
     "message": "Koppelen"
   },
   "popup_remote_help": {
-    "message": "Open eerst het adres in deze browser en ga verder voorbij de beveiligingswaarschuwing. Voer dan de code in uit Opties → Op afstand → Apparaat koppelen."
+    "message": "Open eerst hier het adres en voer daarna de code in uit Opties → Op afstand → Apparaat koppelen."
   },
   "status_remote": {
     "message": "Downloads gaan naar $address$",
@@ -327,7 +327,7 @@
     }
   },
   "page_lead_not_installed": {
-    "message": "Deze extensie werkt met Dannex Download Manager, een gratis downloadmanager voor uw computer. Installeer het en deze pagina wordt vanzelf bijgewerkt."
+    "message": "Deze extensie heeft de gratis app Dannex Download Manager nodig. Installeer die, dan werkt deze pagina zichzelf bij."
   },
   "page_lead_not_running": {
     "message": "De browser probeerde het te starten, maar het duurde te lang. Start Dannex Download Manager zelf en probeer het dan opnieuw."
@@ -339,7 +339,7 @@
     "message": "Deze versie van Dannex Download Manager is te oud voor deze extensie. Installeer de nieuwste."
   },
   "page_lead_too_large": {
-    "message": "De site stuurde meer aanmeldgegevens dan Dannex Download Manager accepteert, dus de browser hield de download. Afmelden bij de site en opnieuw aanmelden lost het meestal op."
+    "message": "De site stuurde te veel aanmeldgegevens. Meld je af bij de site en weer aan, en probeer het opnieuw."
   },
   "page_download": {
     "message": "Dannex Download Manager downloaden"
@@ -390,7 +390,7 @@
     "message": "Deze kopie verwijderen"
   },
   "page_duplicate_lead": {
-    "message": "De kopie uit de Chrome Web Store is ook in deze browser geïnstalleerd en houdt zichzelf up-to-date. Deze kopie is niet nodig."
+    "message": "De kopie uit de Chrome Web Store is ook geïnstalleerd en werkt zichzelf bij. Je kunt deze verwijderen."
   },
   "page_remove": {
     "message": "Deze kopie verwijderen"

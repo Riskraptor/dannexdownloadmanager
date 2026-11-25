@@ -81,10 +81,10 @@
     "message": "通过此浏览器的 VPN 或代理下载"
   },
   "popup_proxy_title": {
-    "message": "如果您在此浏览器中使用 VPN 或代理扩展，请开启此项。浏览器会请求您允许一次。"
+    "message": "如果使用 VPN 或代理扩展，请打开此项。浏览器会询问一次。"
   },
   "popup_proxy_title_chromium": {
-    "message": "如果您在此浏览器中使用 VPN 或代理扩展，请开启此项。关闭时，扩展不会查看浏览器的代理。"
+    "message": "如果在此浏览器中使用 VPN 或代理扩展，请打开此项。"
   },
   "popup_help": {
     "message": "帮助"
@@ -135,7 +135,7 @@
     "message": "受保护视频: 无法保存"
   },
   "video_unnamed": {
-    "message": "无法判断这是哪个视频：请打开该视频自己的页面再试"
+    "message": "请打开视频本身的页面，然后在那里重试"
   },
   "video_looking": {
     "message": "正在查找画质…"
@@ -225,7 +225,7 @@
     "message": "配对"
   },
   "popup_remote_help": {
-    "message": "请先在此浏览器中打开其地址，并忽略安全警告继续访问。然后输入其“选项”→“远程”→“配对设备”中的代码。"
+    "message": "请先在此处打开其地址，然后输入其“选项”→“远程”→“配对设备”中的代码。"
   },
   "status_remote": {
     "message": "下载发送到 $address$",
@@ -327,7 +327,7 @@
     }
   },
   "page_lead_not_installed": {
-    "message": "此扩展配合 Dannex Download Manager 使用，这是一款适用于电脑的免费下载管理器。安装后，此页面会自动更新。"
+    "message": "此扩展需要免费的 Dannex Download Manager 应用。安装后，此页面会自动更新。"
   },
   "page_lead_not_running": {
     "message": "浏览器尝试启动它，但耗时过长。请自行启动 Dannex Download Manager，然后重试。"
@@ -339,7 +339,7 @@
     "message": "此版本的 Dannex Download Manager 对此扩展而言太旧。请安装最新版本。"
   },
   "page_lead_too_large": {
-    "message": "站点发送的登录数据超出了 Dannex Download Manager 的接受范围，因此浏览器保留了该下载。退出站点并重新登录通常可以解决。"
+    "message": "该网站发送的登录数据过多。请退出该网站并重新登录，然后重试。"
   },
   "page_download": {
     "message": "下载 Dannex Download Manager"
@@ -390,7 +390,7 @@
     "message": "移除此副本"
   },
   "page_duplicate_lead": {
-    "message": "此浏览器中也安装了来自 Chrome 应用商店的副本，且会自动保持最新。无需此副本。"
+    "message": "Chrome 应用商店中的副本也已安装，并会自行更新。你可以删除此副本。"
   },
   "page_remove": {
     "message": "移除此副本"

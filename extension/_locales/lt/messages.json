@@ -78,10 +78,10 @@
     "message": "Atsisiųsti per šios naršyklės VPN arba tarpinį serverį"
   },
   "popup_proxy_title": {
-    "message": "Įjunkite tai, jei šioje naršyklėje naudojate VPN arba tarpinio serverio plėtinį. Naršyklė vieną kartą paprašys leidimo."
+    "message": "Įjunkite, jei naudojate VPN arba tarpinio serverio plėtinį. Naršyklė paklaus vieną kartą."
   },
   "popup_proxy_title_chromium": {
-    "message": "Įjunkite tai, jei šioje naršyklėje naudojate VPN arba tarpinio serverio plėtinį. Kol tai išjungta, plėtinys nežiūri naršyklės tarpinio serverio."
+    "message": "Įjunkite, jei šioje naršyklėje naudojate VPN arba tarpinio serverio plėtinį."
   },
   "popup_help": {
     "message": "Žinynas"
@@ -132,7 +132,7 @@
     "message": "Apsaugotas vaizdo įrašas: jo negalima įrašyti"
   },
   "video_unnamed": {
-    "message": "Neaišku, kuris tai vaizdo įrašas: atidarykite jo paties puslapį ir bandykite ten"
+    "message": "Atidarykite paties vaizdo įrašo puslapį ir bandykite ten"
   },
   "video_looking": {
     "message": "Ieškoma kokybių…"
@@ -213,7 +213,7 @@
     "message": "Susieti"
   },
   "popup_remote_help": {
-    "message": "Pirmiausia atidarykite jos adresą šioje naršyklėje ir tęskite nepaisydami saugos įspėjimo. Tada įveskite kodą iš Parinktys → Nuotolinis valdymas → Susieti įrenginį."
+    "message": "Pirmiausia čia atidarykite jo adresą, tada įveskite kodą iš Parinktys → Nuotolinis valdymas → Susieti įrenginį."
   },
   "status_remote": {
     "message": "Atsisiuntimai siunčiami į $address$",
@@ -297,7 +297,7 @@
     }
   },
   "page_lead_not_installed": {
-    "message": "Šis plėtinys veikia kartu su Dannex Download Manager – nemokama atsisiuntimų tvarkytuve jūsų kompiuteriui. Įdiekite ją, ir šis puslapis atsinaujins pats."
+    "message": "Šiam plėtiniui reikia nemokamos programos Dannex Download Manager. Įdiekite ją, ir šis puslapis atsinaujins pats."
   },
   "page_lead_not_running": {
     "message": "Naršyklė bandė ją paleisti, bet tai užtruko per ilgai. Patys paleiskite Dannex Download Manager ir bandykite dar kartą."
@@ -309,7 +309,7 @@
     "message": "Ši Dannex Download Manager versija per sena šiam plėtiniui. Įdiekite naujausią."
   },
   "page_lead_too_large": {
-    "message": "Svetainė atsiuntė daugiau prisijungimo duomenų, nei priima Dannex Download Manager, todėl naršyklė pasiliko atsisiuntimą. Paprastai padeda atsijungimas nuo svetainės ir prisijungimas iš naujo."
+    "message": "Svetainė atsiuntė per daug prisijungimo duomenų. Atsijunkite nuo svetainės, vėl prisijunkite ir bandykite dar kartą."
   },
   "page_download": {
     "message": "Atsisiųsti Dannex Download Manager"
@@ -360,7 +360,7 @@
     "message": "Pašalinti šią kopiją"
   },
   "page_duplicate_lead": {
-    "message": "Kopija iš Chrome internetinės parduotuvės taip pat įdiegta šioje naršyklėje ir pati atsinaujina. Šios kopijos nereikia."
+    "message": "Kopija iš „Chrome“ internetinės parduotuvės taip pat įdiegta ir atsinaujina pati. Šią galite pašalinti."
   },
   "page_remove": {
     "message": "Pašalinti šią kopiją"

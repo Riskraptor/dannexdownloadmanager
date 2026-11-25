@@ -78,10 +78,10 @@
     "message": "Tải xuống qua VPN hoặc proxy của trình duyệt này"
   },
   "popup_proxy_title": {
-    "message": "Hãy bật mục này nếu bạn dùng tiện ích VPN hoặc proxy trong trình duyệt này. Trình duyệt sẽ hỏi bạn cho phép một lần."
+    "message": "Bật mục này nếu bạn dùng tiện ích VPN hoặc proxy. Trình duyệt sẽ hỏi một lần."
   },
   "popup_proxy_title_chromium": {
-    "message": "Hãy bật mục này nếu bạn dùng tiện ích VPN hoặc proxy trong trình duyệt này. Khi tắt, tiện ích không xem proxy của trình duyệt."
+    "message": "Bật mục này nếu bạn dùng tiện ích VPN hoặc proxy trong trình duyệt này."
   },
   "popup_help": {
     "message": "Trợ giúp"
@@ -132,7 +132,7 @@
     "message": "Video được bảo vệ: không thể lưu"
   },
   "video_unnamed": {
-    "message": "Không xác định được đây là video nào: hãy mở trang riêng của video và thử ở đó"
+    "message": "Hãy mở trang riêng của video và thử ở đó"
   },
   "video_looking": {
     "message": "Đang tìm các chất lượng…"
@@ -213,7 +213,7 @@
     "message": "Ghép nối"
   },
   "popup_remote_help": {
-    "message": "Trước tiên hãy mở địa chỉ của nó trong trình duyệt này và tiếp tục qua cảnh báo bảo mật. Sau đó nhập mã trong Tùy chọn → Điều khiển từ xa → Ghép nối thiết bị của nó."
+    "message": "Trước tiên, hãy mở địa chỉ của nó tại đây, rồi nhập mã từ Tùy chọn → Điều khiển từ xa → Ghép nối thiết bị của nó."
   },
   "status_remote": {
     "message": "Tải xuống chuyển đến $address$",
@@ -297,7 +297,7 @@
     }
   },
   "page_lead_not_installed": {
-    "message": "Tiện ích mở rộng này hoạt động với Dannex Download Manager, một trình quản lý tải xuống miễn phí cho máy tính của bạn. Hãy cài đặt, và trang này sẽ tự cập nhật."
+    "message": "Tiện ích này cần ứng dụng miễn phí Dannex Download Manager. Hãy cài đặt ứng dụng, trang này sẽ tự cập nhật."
   },
   "page_lead_not_running": {
     "message": "Trình duyệt đã thử khởi động nhưng mất quá nhiều thời gian. Hãy tự khởi động Dannex Download Manager, rồi thử lại."
@@ -309,7 +309,7 @@
     "message": "Phiên bản Dannex Download Manager này quá cũ so với tiện ích mở rộng. Hãy cài đặt bản mới nhất."
   },
   "page_lead_too_large": {
-    "message": "Trang web gửi nhiều dữ liệu đăng nhập hơn mức Dannex Download Manager chấp nhận, nên trình duyệt giữ lại bản tải xuống. Đăng xuất khỏi trang web rồi đăng nhập lại thường khắc phục được."
+    "message": "Trang web đã gửi quá nhiều dữ liệu đăng nhập. Hãy đăng xuất khỏi trang web rồi đăng nhập lại, sau đó thử lại."
   },
   "page_download": {
     "message": "Tải xuống Dannex Download Manager"
@@ -360,7 +360,7 @@
     "message": "Xóa bản sao này"
   },
   "page_duplicate_lead": {
-    "message": "Bản sao từ Chrome Web Store cũng đã được cài trong trình duyệt này và tự cập nhật. Không cần bản sao này."
+    "message": "Bản từ Cửa hàng Chrome trực tuyến cũng đã được cài đặt và tự cập nhật. Bạn có thể xóa bản này."
   },
   "page_remove": {
     "message": "Xóa bản sao này"

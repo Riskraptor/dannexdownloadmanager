@@ -6850,10 +6850,6 @@ extension	Browser integration is turned off in Dannex Download Manager's Options
 #, machine
 extension	Button settings...	按鈕設定...
 #. text in the browser extension
-#. shown briefly on the download button when nothing on the page says which video the player is playing, so nothing was sent
-#, machine
-extension	Can't tell which video this is: open its own page and try there	無法判斷這是哪部影片：請開啟該影片本身的頁面再試一次
-#. text in the browser extension
 #. button on the status page (an extension page that says whether the browser reaches Dannex Download Manager and how to fix it): asks the store for a newer version of the extension now
 #, machine
 extension	Check for updates	檢查更新
@@ -7006,10 +7002,6 @@ extension	Extension options	擴充功能選項
 #, machine
 extension	Firefox will remove this add-on when it closes, because it was added as a temporary add-on.	Firefox 會在關閉時移除此附加元件，因為它是以暫時附加元件的方式新增。
 #. text in the browser extension
-#. note on the extension's options page, for sending downloads to another computer's Dannex Download Manager: the browser warns about its own certificate once; Options, Remote and Pair a device are names in that app
-#, machine
-extension	First open its address in this browser and continue past the security warning. Then enter the code from its Options → Remote → Pair a device.	請先在此瀏覽器中開啟其位址，略過安全性警告。然後輸入其「選項」→「遠端」→「配對裝置」中的代碼。
-#. text in the browser extension
 #. beside the download button on the status page (an extension page that says whether the browser reaches Dannex Download Manager and how to fix it), on Linux
 #, machine
 extension	For Linux (AppImage, .deb or .rpm).	適用於 Linux (AppImage、.deb 或 .rpm)。
@@ -7138,6 +7130,10 @@ extension	Open in DDM…	在 DDM 中開啟…
 #, machine
 extension	Open it	開啟它
 #. text in the browser extension
+#. note on the extension's options page, for sending downloads to another computer's Dannex Download Manager: the browser warns about its own certificate once; Options, Remote and Pair a device are names in that app
+#, machine
+extension	Open its address here first, then enter the code from its Options → Remote → Pair a device.	請先在此處開啟其位址，然後輸入其「選項」→「遠端」→「配對裝置」中的代碼。
+#. text in the browser extension
 #. a step on the status page (an extension page that says whether the browser reaches Dannex Download Manager and how to fix it), on a Mac; keep the name Dannex Download Manager as it is
 #, machine
 extension	Open the .dmg, drag Dannex Download Manager to Applications, and start it once.	開啟 .dmg，將 Dannex Download Manager 拖曳到「應用程式」，然後啟動一次。
@@ -7153,6 +7149,10 @@ extension	Open the extensions page	開啟擴充功能頁面
 #. shown briefly on the download button over a video in a feed (a social site's home page, a timeline) when nothing in the feed gives that video's own address, so nothing was sent: the user should open the post the video belongs to and click the button on that page; short
 #, machine
 extension	Open the post, then use the button there	開啟貼文，然後使用該處的按鈕
+#. text in the browser extension
+#. shown briefly on the download button when nothing on the page says which video the player is playing, so nothing was sent
+#, machine
+extension	Open the video's own page and try there	請開啟影片本身的頁面，然後在那裡重試
 #. text in the browser extension
 #. a row in the Audio tab of the menu of qualities under the download button over a video (the tab already says it is sound only): the site's own sound file as it is (not converted)
 #, machine
@@ -7242,7 +7242,7 @@ extension	The browser updates it by itself within a few hours, or now with Check
 #. text in the browser extension
 #. the status page (an extension page that says whether the browser reaches Dannex Download Manager and how to fix it): two copies of the extension in one browser; keep Dannex Download Manager as it is
 #, machine
-extension	The copy from the Chrome Web Store is installed in this browser too, and it keeps itself up to date. This copy isn't needed.	此瀏覽器中也安裝了來自 Chrome 線上應用程式商店的副本，且會自動保持最新。不需要此副本。
+extension	The Chrome Web Store copy is installed too and updates itself. You can remove this one.	Chrome 線上應用程式商店中的副本也已安裝，並會自行更新。你可以移除此副本。
 #. text in the browser extension
 #. shown briefly on the download button over a video when the app's settings keep the button off on this web site
 #, machine
@@ -7254,7 +7254,7 @@ extension	The last download couldn't go to Dannex Download Manager	上一個下�
 #. text in the browser extension
 #. on the extension's status page under its headline: a download carried too many cookies to hand over; keep the name Dannex Download Manager as it is
 #, machine
-extension	The site sent more sign-in data than Dannex Download Manager accepts, so the browser kept the download. Signing out of the site and back in usually fixes it.	網站傳送的登入資料超過 Dannex Download Manager 可接受的量，因此瀏覽器保留了該下載。登出網站後再重新登入通常可解決。
+extension	The site sent too much sign-in data. Sign out of the site and back in, then try again.	該網站傳送的登入資料過多。請登出該網站後重新登入，然後再試一次。
 #. text in the browser extension
 #. pairing failed: the other DDM shows no pairing code; Pair a device is its button
 #, machine
@@ -7278,7 +7278,7 @@ extension	This extension isn't allowed on that site.	此擴充功能不允許用
 #. text in the browser extension
 #. the status page (an extension page that says whether the browser reaches Dannex Download Manager and how to fix it): the app isn't installed or its browser integration isn't set up; keep the name Dannex Download Manager as it is
 #, machine
-extension	This extension works with Dannex Download Manager, a free download manager for your computer. Install it, and this page updates by itself.	此擴充功能需搭配 Dannex Download Manager 使用，這是適用於您電腦的免費下載管理員。安裝後，此頁面會自動更新。
+extension	This extension needs the free Dannex Download Manager app. Install it, and this page updates by itself.	此擴充功能需要免費的 Dannex Download Manager 應用程式。安裝後，此頁面會自動更新。
 #. text in the browser extension
 #. shown in the extension's toolbar panel when the current tab has no links
 #, machine
@@ -7296,13 +7296,13 @@ extension	To change that, turn on Allow in Incognito on its details page.	若要
 #, machine
 extension	Try again	再試一次
 #. text in the browser extension
-#. note under the VPN or proxy switch on the extension's options page (Firefox, which asks for a permission)
-#, machine
-extension	Turn this on if you use a VPN or proxy extension in this browser. The browser asks you once to allow it.	若您在此瀏覽器中使用 VPN 或 Proxy 擴充功能，請開啟此選項。瀏覽器會要求您允許一次。
-#. text in the browser extension
 #. note under the VPN or proxy switch on the extension's options page (Chrome, Edge and other Chromium browsers)
 #, machine
-extension	Turn this on if you use a VPN or proxy extension in this browser. While it's off, the extension doesn't look at the browser's proxy.	若您在此瀏覽器中使用 VPN 或 Proxy 擴充功能，請開啟此選項。關閉時，擴充功能不會查看瀏覽器的 Proxy。
+extension	Turn this on if you use a VPN or proxy extension in this browser.	如果在此瀏覽器中使用 VPN 或 Proxy 擴充功能，請開啟此項。
+#. text in the browser extension
+#. note under the VPN or proxy switch on the extension's options page (Firefox, which asks for a permission)
+#, machine
+extension	Turn this on if you use a VPN or proxy extension. The browser asks once.	如果使用 VPN 或 Proxy 擴充功能，請開啟此項。瀏覽器會詢問一次。
 #. text in the browser extension
 #. headline of the extension's status page, and a line of its toolbar button's tooltip: the app's own Options take no downloads from this browser; keep the name Dannex Download Manager as it is
 #, machine

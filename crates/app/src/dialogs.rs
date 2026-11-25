@@ -2695,12 +2695,11 @@ pub struct ConfirmDelete {
     unfinished: bool,
     files: bool,
     dont_show: bool,
-    /// The files box's answer becomes the next one's default (not after Shift+Delete).
-    pub remember: bool,
 }
 
 impl ConfirmDelete {
-    /// `files`: the checkbox's first state (the last answer, or Shift+Delete).
+    /// `files`: the checkbox's first state, ticked only by Shift+Delete: never remembered
+    /// (user, 2026-11-25: deleting files must always be asked for anew).
     pub fn new(ids: Vec<u64>, name: String, unfinished: bool, files: bool) -> Self {
         ConfirmDelete {
             ids,
@@ -2708,7 +2707,6 @@ impl ConfirmDelete {
             unfinished,
             files,
             dont_show: false,
-            remember: true,
         }
     }
 

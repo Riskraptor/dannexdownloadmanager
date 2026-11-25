@@ -78,10 +78,10 @@
     "message": "Lataa tämän selaimen VPN:n tai välityspalvelimen kautta"
   },
   "popup_proxy_title": {
-    "message": "Ota tämä käyttöön, jos käytät tässä selaimessa VPN- tai välityspalvelinlaajennusta. Selain pyytää sinua sallimaan sen kerran."
+    "message": "Ota tämä käyttöön, jos käytät VPN- tai välityspalvelinlaajennusta. Selain kysyy kerran."
   },
   "popup_proxy_title_chromium": {
-    "message": "Ota tämä käyttöön, jos käytät tässä selaimessa VPN- tai välityspalvelinlaajennusta. Kun se on pois päältä, laajennus ei tarkastele selaimen välityspalvelinta."
+    "message": "Ota tämä käyttöön, jos käytät tässä selaimessa VPN- tai välityspalvelinlaajennusta."
   },
   "popup_help": {
     "message": "Ohje"
@@ -132,7 +132,7 @@
     "message": "Suojattua videota ei voi tallentaa"
   },
   "video_unnamed": {
-    "message": "Ei selviä, mikä video tämä on: avaa videon oma sivu ja yritä siellä"
+    "message": "Avaa videon oma sivu ja yritä siellä"
   },
   "video_looking": {
     "message": "Haetaan laatuvaihtoehtoja…"
@@ -213,7 +213,7 @@
     "message": "Laita pariksi"
   },
   "popup_remote_help": {
-    "message": "Avaa ensin sen osoite tässä selaimessa ja jatka suojausvaroituksen ohi. Kirjoita sitten koodi kohdasta Asetukset → Etäkäyttö → Parita laite."
+    "message": "Avaa ensin sen osoite tässä ja anna sitten koodi kohdasta Asetukset → Etäkäyttö → Parita laite."
   },
   "status_remote": {
     "message": "Lataukset menevät osoitteeseen $address$",
@@ -297,7 +297,7 @@
     }
   },
   "page_lead_not_installed": {
-    "message": "Tämä laajennus toimii ohjelman Dannex Download Manager kanssa. Se on ilmainen latausten hallinta tietokoneellesi. Asenna se, niin tämä sivu päivittyy itsestään."
+    "message": "Tämä laajennus tarvitsee ilmaisen Dannex Download Manager-sovelluksen. Asenna se, niin tämä sivu päivittyy itsestään."
   },
   "page_lead_not_running": {
     "message": "Selain yritti käynnistää sen, mutta se kesti liian kauan. Käynnistä Dannex Download Manager itse ja yritä uudelleen."
@@ -309,7 +309,7 @@
     "message": "Tämä ohjelman Dannex Download Manager versio on liian vanha tälle laajennukselle. Asenna uusin."
   },
   "page_lead_too_large": {
-    "message": "Sivusto lähetti enemmän kirjautumistietoja kuin Dannex Download Manager hyväksyy, joten selain piti latauksen itsellään. Yleensä auttaa, kun kirjautuu sivustolta ulos ja takaisin sisään."
+    "message": "Sivusto lähetti liikaa kirjautumistietoja. Kirjaudu ulos sivustolta ja takaisin sisään ja yritä sitten uudelleen."
   },
   "page_download": {
     "message": "Lataa Dannex Download Manager"
@@ -360,7 +360,7 @@
     "message": "Poista tämä kopio"
   },
   "page_duplicate_lead": {
-    "message": "Chrome Web Storesta asennettu kopio on myös asennettu tähän selaimeen, ja se päivittää itsensä. Tätä kopiota ei tarvita."
+    "message": "Chrome Web Storen kopio on myös asennettu, ja se päivittyy itse. Voit poistaa tämän."
   },
   "page_remove": {
     "message": "Poista tämä kopio"

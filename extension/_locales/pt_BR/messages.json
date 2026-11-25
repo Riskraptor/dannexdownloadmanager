@@ -81,10 +81,10 @@
     "message": "Baixar pela VPN ou proxy deste navegador"
   },
   "popup_proxy_title": {
-    "message": "Ative se usar uma extensão de VPN ou proxy neste navegador. O navegador pede permissão uma vez."
+    "message": "Ative isto se você usa uma extensão de VPN ou proxy. O navegador pergunta uma vez."
   },
   "popup_proxy_title_chromium": {
-    "message": "Ative se usar uma extensão de VPN ou proxy neste navegador. Enquanto estiver desativado, a extensão não olha o proxy do navegador."
+    "message": "Ative isto se você usa uma extensão de VPN ou proxy neste navegador."
   },
   "popup_help": {
     "message": "Ajuda"
@@ -135,7 +135,7 @@
     "message": "Vídeo protegido: não pode ser salvo"
   },
   "video_unnamed": {
-    "message": "Não dá para saber qual é este vídeo: abra a página dele e tente lá"
+    "message": "Abra a página do próprio vídeo e tente lá"
   },
   "video_looking": {
     "message": "Buscando as qualidades…"
@@ -225,7 +225,7 @@
     "message": "Emparelhar"
   },
   "popup_remote_help": {
-    "message": "Primeiro abra o endereço dele neste navegador e continue após o aviso de segurança. Depois insira o código de Opções → Remoto → Parear um dispositivo."
+    "message": "Primeiro abra o endereço aqui e depois digite o código de Opções → Remoto → Parear um dispositivo."
   },
   "status_remote": {
     "message": "Os downloads vão para $address$",
@@ -327,7 +327,7 @@
     }
   },
   "page_lead_not_installed": {
-    "message": "Esta extensão funciona com o Dannex Download Manager, um gerenciador de downloads gratuito para o computador. Instale-o e esta página se atualiza sozinha."
+    "message": "Esta extensão precisa do aplicativo gratuito Dannex Download Manager. Instale-o e esta página se atualiza sozinha."
   },
   "page_lead_not_running": {
     "message": "O navegador tentou iniciá-lo, mas demorou demais. Inicie o Dannex Download Manager manualmente e tente novamente."
@@ -339,7 +339,7 @@
     "message": "Esta versão do Dannex Download Manager é antiga demais para esta extensão. Instale a mais recente."
   },
   "page_lead_too_large": {
-    "message": "O site enviou mais dados de login do que o Dannex Download Manager aceita, então o navegador manteve o download. Sair do site e entrar de novo geralmente resolve."
+    "message": "O site enviou dados de login demais. Saia do site, entre de novo e tente outra vez."
   },
   "page_download": {
     "message": "Baixar o Dannex Download Manager"
@@ -390,7 +390,7 @@
     "message": "Remover esta cópia"
   },
   "page_duplicate_lead": {
-    "message": "A cópia da Chrome Web Store também está instalada neste navegador e se mantém atualizada. Esta cópia não é necessária."
+    "message": "A cópia da Chrome Web Store também está instalada e se atualiza sozinha. Você pode remover esta."
   },
   "page_remove": {
     "message": "Remover esta cópia"

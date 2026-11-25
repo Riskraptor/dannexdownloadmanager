@@ -78,10 +78,10 @@
     "message": "Muat turun melalui VPN atau proksi pelayar ini"
   },
   "popup_proxy_title": {
-    "message": "Hidupkan ini jika anda menggunakan sambungan VPN atau proksi dalam pelayar ini. Pelayar meminta anda membenarkannya sekali."
+    "message": "Hidupkan ini jika anda menggunakan sambungan VPN atau proksi. Penyemak imbas akan bertanya sekali."
   },
   "popup_proxy_title_chromium": {
-    "message": "Hidupkan ini jika anda menggunakan sambungan VPN atau proksi dalam pelayar ini. Semasa dimatikan, sambungan tidak melihat proksi pelayar."
+    "message": "Hidupkan ini jika anda menggunakan sambungan VPN atau proksi dalam penyemak imbas ini."
   },
   "popup_help": {
     "message": "Bantuan"
@@ -132,7 +132,7 @@
     "message": "Video dilindungi: tidak boleh disimpan"
   },
   "video_unnamed": {
-    "message": "Tidak dapat dipastikan video yang mana ini: buka halamannya sendiri dan cuba di sana"
+    "message": "Buka halaman video itu sendiri dan cuba di sana"
   },
   "video_looking": {
     "message": "Mencari kualiti…"
@@ -213,7 +213,7 @@
     "message": "Pasangkan"
   },
   "popup_remote_help": {
-    "message": "Mula-mula buka alamatnya dalam pelayar ini dan teruskan melepasi amaran keselamatan. Kemudian masukkan kod daripada Pilihan → Jauh → Pasangkan peranti."
+    "message": "Buka alamatnya di sini dahulu, kemudian masukkan kod daripada Pilihan → Jauh → Pasangkan peranti."
   },
   "status_remote": {
     "message": "Muat turun pergi ke $address$",
@@ -297,7 +297,7 @@
     }
   },
   "page_lead_not_installed": {
-    "message": "Sambungan ini berfungsi dengan Dannex Download Manager, pengurus muat turun percuma untuk komputer anda. Pasangkannya, dan halaman ini dikemas kini sendiri."
+    "message": "Sambungan ini memerlukan apl percuma Dannex Download Manager. Pasangnya, dan halaman ini akan dikemas kini sendiri."
   },
   "page_lead_not_running": {
     "message": "Pelayar cuba memulakannya, tetapi mengambil masa terlalu lama. Mulakan Dannex Download Manager sendiri, kemudian cuba lagi."
@@ -309,7 +309,7 @@
     "message": "Versi Dannex Download Manager ini terlalu lama untuk sambungan ini. Pasang yang terkini."
   },
   "page_lead_too_large": {
-    "message": "Tapak menghantar lebih banyak data log masuk daripada yang diterima Dannex Download Manager, jadi pelayar menyimpan muat turun itu. Log keluar daripada tapak dan log masuk semula biasanya menyelesaikannya."
+    "message": "Laman ini menghantar terlalu banyak data log masuk. Log keluar daripada laman dan log masuk semula, kemudian cuba lagi."
   },
   "page_download": {
     "message": "Muat turun Dannex Download Manager"
@@ -360,7 +360,7 @@
     "message": "Alih keluar salinan ini"
   },
   "page_duplicate_lead": {
-    "message": "Salinan daripada Chrome Web Store turut dipasang dalam pelayar ini, dan ia sentiasa dikemas kini. Salinan ini tidak diperlukan."
+    "message": "Salinan daripada Chrome Web Store juga dipasang dan mengemas kini dirinya sendiri. Anda boleh mengalih keluar yang ini."
   },
   "page_remove": {
     "message": "Alih keluar salinan ini"

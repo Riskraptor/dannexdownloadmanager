@@ -81,10 +81,10 @@
     "message": "Pobieraj przez VPN lub serwer proxy tej przeglądarki"
   },
   "popup_proxy_title": {
-    "message": "Włącz tę opcję, jeśli w tej przeglądarce używasz rozszerzenia VPN lub proxy. Przeglądarka raz poprosi o zezwolenie."
+    "message": "Włącz to, jeśli używasz rozszerzenia VPN lub proxy. Przeglądarka zapyta raz."
   },
   "popup_proxy_title_chromium": {
-    "message": "Włącz tę opcję, jeśli w tej przeglądarce używasz rozszerzenia VPN lub proxy. Gdy jest wyłączona, rozszerzenie nie sprawdza ustawień proxy przeglądarki."
+    "message": "Włącz to, jeśli używasz w tej przeglądarce rozszerzenia VPN lub proxy."
   },
   "popup_help": {
     "message": "Pomoc"
@@ -135,7 +135,7 @@
     "message": "Wideo chronione: nie można go zapisać"
   },
   "video_unnamed": {
-    "message": "Nie można ustalić, który to film: otwórz jego własną stronę i spróbuj tam"
+    "message": "Otwórz własną stronę filmu i spróbuj tam"
   },
   "video_looking": {
     "message": "Wyszukiwanie jakości…"
@@ -225,7 +225,7 @@
     "message": "Paruj"
   },
   "popup_remote_help": {
-    "message": "Najpierw otwórz jego adres w tej przeglądarce i przejdź dalej mimo ostrzeżenia o zabezpieczeniach. Następnie wpisz kod z Opcje → Zdalne → Sparuj urządzenie."
+    "message": "Najpierw otwórz tutaj jego adres, a potem wpisz kod z Opcje → Zdalne → Sparuj urządzenie."
   },
   "status_remote": {
     "message": "Pobieranie do $address$",
@@ -327,7 +327,7 @@
     }
   },
   "page_lead_not_installed": {
-    "message": "To rozszerzenie współpracuje z programem Dannex Download Manager, bezpłatnym menedżerem pobierania na komputer. Zainstaluj program, a ta strona zaktualizuje się sama."
+    "message": "To rozszerzenie wymaga bezpłatnej aplikacji Dannex Download Manager. Zainstaluj ją, a ta strona zaktualizuje się sama."
   },
   "page_lead_not_running": {
     "message": "Przeglądarka próbowała uruchomić program, ale trwało to zbyt długo. Uruchom program Dannex Download Manager samodzielnie, a następnie spróbuj ponownie."
@@ -339,7 +339,7 @@
     "message": "Ta wersja programu Dannex Download Manager jest zbyt stara dla tego rozszerzenia. Zainstaluj najnowszą."
   },
   "page_lead_too_large": {
-    "message": "Witryna wysłała więcej danych logowania, niż akceptuje program Dannex Download Manager, więc przeglądarka zachowała pobieranie. Zwykle pomaga wylogowanie się z witryny i ponowne zalogowanie."
+    "message": "Witryna wysłała zbyt dużo danych logowania. Wyloguj się z witryny, zaloguj ponownie i spróbuj jeszcze raz."
   },
   "page_download": {
     "message": "Pobierz program Dannex Download Manager"
@@ -390,7 +390,7 @@
     "message": "Usuń tę kopię"
   },
   "page_duplicate_lead": {
-    "message": "Kopia ze sklepu Chrome Web Store jest zainstalowana także w tej przeglądarce i sama się aktualizuje. Ta kopia nie jest potrzebna."
+    "message": "Kopia z Chrome Web Store też jest zainstalowana i aktualizuje się sama. Tę możesz usunąć."
   },
   "page_remove": {
     "message": "Usuń tę kopię"

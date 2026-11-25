@@ -78,10 +78,10 @@
     "message": "Letöltés a böngésző VPN-jén vagy proxyján keresztül"
   },
   "popup_proxy_title": {
-    "message": "Kapcsolja be, ha VPN- vagy proxybővítményt használ ebben a böngészőben. A böngésző egyszer engedélyt kér."
+    "message": "Kapcsolja be, ha VPN- vagy proxybővítményt használ. A böngésző egyszer rákérdez."
   },
   "popup_proxy_title_chromium": {
-    "message": "Kapcsolja be, ha VPN- vagy proxybővítményt használ ebben a böngészőben. Amíg ki van kapcsolva, a bővítmény nem veszi figyelembe a böngésző proxyját."
+    "message": "Kapcsolja be, ha ebben a böngészőben VPN- vagy proxybővítményt használ."
   },
   "popup_help": {
     "message": "Súgó"
@@ -132,7 +132,7 @@
     "message": "Védett videó: nem menthető"
   },
   "video_unnamed": {
-    "message": "Nem állapítható meg, melyik videóról van szó: nyissa meg a saját oldalát, és próbálja ott"
+    "message": "Nyissa meg a videó saját oldalát, és próbálja ott"
   },
   "video_looking": {
     "message": "Minőségek keresése…"
@@ -213,7 +213,7 @@
     "message": "Párosítás"
   },
   "popup_remote_help": {
-    "message": "Először nyissa meg a címét ebben a böngészőben, és lépjen tovább a biztonsági figyelmeztetésen. Ezután adja meg a Beállítások → Távoli elérés → Eszköz párosítása oldalon kapott kódot."
+    "message": "Először nyissa meg itt a címét, majd írja be a Beállítások → Távoli elérés → Eszköz párosítása oldalon kapott kódot."
   },
   "status_remote": {
     "message": "A letöltések ide mennek: $address$",
@@ -297,7 +297,7 @@
     }
   },
   "page_lead_not_installed": {
-    "message": "Ez a bővítmény a(z) Dannex Download Manager alkalmazással működik, amely ingyenes letöltéskezelő a számítógépére. Telepítse, és ez az oldal magától frissül."
+    "message": "Ehhez a bővítményhez az ingyenes Dannex Download Manager alkalmazás kell. Telepítse, és ez az oldal magától frissül."
   },
   "page_lead_not_running": {
     "message": "A böngésző megpróbálta elindítani, de túl sokáig tartott. Indítsa el a(z) Dannex Download Manager alkalmazást saját kezűleg, majd próbálja újra."
@@ -309,7 +309,7 @@
     "message": "A(z) Dannex Download Manager ezen verziója túl régi ehhez a bővítményhez. Telepítse a legújabbat."
   },
   "page_lead_too_large": {
-    "message": "A webhely több bejelentkezési adatot küldött, mint amennyit a(z) Dannex Download Manager elfogad, ezért a böngésző megtartotta a letöltést. Általában segít, ha kijelentkezik a webhelyről, majd újra bejelentkezik."
+    "message": "A webhely túl sok bejelentkezési adatot küldött. Jelentkezzen ki a webhelyről, majd be újra, és próbálja újra."
   },
   "page_download": {
     "message": "Dannex Download Manager letöltése"
@@ -360,7 +360,7 @@
     "message": "Ennek a példánynak az eltávolítása"
   },
   "page_duplicate_lead": {
-    "message": "A Chrome Web Store-ból származó példány is telepítve van ebben a böngészőben, és magát frissíti. Erre a példányra nincs szükség."
+    "message": "A Chrome Internetes áruházból származó példány is telepítve van, és magától frissül. Ezt eltávolíthatja."
   },
   "page_remove": {
     "message": "Ennek a példánynak az eltávolítása"
