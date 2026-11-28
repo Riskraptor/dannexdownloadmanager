@@ -28,7 +28,7 @@ use crate::winui;
 use mdm_ipc as ipc;
 
 #[path = "player.rs"]
-mod player;
+pub(crate) mod player;
 /// Site grabber's part of the main window (its projects in the tree, the wizard, the files added).
 mod sitegrab;
 

@@ -6,6 +6,15 @@ changes are in [CHANGELOG.md](CHANGELOG.md). Ideas and bug reports are welcome i
 
 ✅ done · 🔄 being built · 📋 planned · 🔍 looking into it
 
+## Dannex 2.0.1
+
+### Done
+
+- ✅ Play while downloading opens the player instead of closing DDM; it has a button in a running
+  torrent's progress window and is the first item of a playable torrent's right-click menu
+- ✅ Linux .deb and .rpm copies install their update themselves (the system's password prompt, then
+  apt, dnf, zypper or rpm), instead of opening it in an app store that couldn't read it
+
 ## Dannex 2.0.0
 
 The first release.

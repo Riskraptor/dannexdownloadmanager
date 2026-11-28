@@ -194,6 +194,10 @@
    "source": "How releases are made",
    "text": "Як створюються випуски"
   },
+  "028edef59cec72b8": {
+   "source": "<g1>Queues and the Scheduler</g1> start and stop on their own, can wake the computer and turn it off when done; <g2>Speed Limiter</g2>, categories with their own folders, and duplicate handling.",
+   "text": "<g1>Черги та Планувальник</g1> самі запускаються й зупиняються, можуть розбудити комп’ютер і вимкнути його після завершення; також <g2>Обмежувач швидкості</g2>, категорії з власними теками та обробка дублікатів."
+  },
   "02a38777a650e8a4": {
    "source": "<g1><g2></g2></g1> <g3>Video from a page</g3> <g4>Paste a page's address and choose a quality, up to 4K, from YouTube, Vimeo and thousands of other sites.</g4>",
    "text": "<g1><g2></g2></g1> <g3>Відео зі сторінки</g3> <g4>Вставте адресу сторінки та виберіть якість, до 4K, з YouTube, Vimeo та тисяч інших сайтів.</g4>"
@@ -614,6 +618,10 @@
    "source": "Or right-click a queue under <g1>Queues</g1> and choose <g2>Start now</g2> or <g3>Stop</g3>.",
    "text": "Або клацніть правою кнопкою миші чергу в розділі <g1>Черги</g1> та виберіть <g2>Почати зараз</g2> або <g3>Зупинити</g3>."
   },
+  "088d2930fc58d387": {
+   "source": "<g1>Resumes that hold:</g1> after a crash, a restart, a sleeping computer or a dropped connection, a download goes on from where it stopped. When the network comes back, stopped downloads start again by themselves; a server that can no longer send parts of a file sends it again whole.",
+   "text": "<g1>Відновлення, що не підводить:</g1> після збою, перезапуску, сну комп’ютера чи обриву зв’язку завантаження продовжується з того місця, де зупинилося. Коли мережа повертається, зупинені завантаження самі запускаються знову; сервер, який більше не може надсилати частини файлу, надсилає його знову повністю."
+  },
   "088e2c35eed8fdfc": {
    "source": "Download manager for Windows, with macOS and Linux builds — Dannex Download Manager",
    "text": "Менеджер завантажень для Windows, збірки для macOS та Linux — Dannex Download Manager"
@@ -653,6 +661,10 @@
   "08c883b69355c60d": {
    "source": "<g1>Feeds</g1> tab:",
    "text": "Вкладка <g1>Канали</g1>:"
+  },
+  "08ca1e1c5f8354ab": {
+   "source": "<g1>File missing:</g1> a finished download whose file was moved or deleted says so and offers <g2>Redownload</g2> or <g3>Locate...</g3>.",
+   "text": "<g1>Файл відсутній:</g1> завершене завантаження, файл якого перенесли або видалили, повідомляє про це й пропонує <g2>Перезавантажити</g2> або <g3>Указати розташування...</g3>."
   },
   "08d3b61db4ae6f60": {
    "source": "To try changes without touching your own downloads, give the app a separate data folder:",
@@ -1161,6 +1173,10 @@
   "104663281393fdc8": {
    "source": "Can I move my downloads from IDM to Dannex Download Manager?",
    "text": "Чи можу я перенести свої завантаження з IDM до Dannex Download Manager?"
+  },
+  "104c506a97bea92e": {
+   "source": "<g1>The Download video button</g1> over videos, in feeds too (YouTube, TikTok, X and many more): its qualities show at once, with the sizes DDM will download, and the sound alone under <g2>Audio</g2>. A quality opens <g3>Download File Info</g3> for that file straight away.",
+   "text": "<g1>Кнопка Завантажити відео</g1> над відео, і в стрічках також (YouTube, TikTok, X та багато інших): її якості видно одразу, з розмірами, які завантажить DDM, а лише звук — під пунктом <g2>Аудіо</g2>. Вибір якості одразу відкриває <g3>Інформація про файл завантаження</g3> для цього файлу."
   },
   "105119676f5865c6": {
    "source": "As links arrive, DDM asks each server about its file, a few at a time. Each link then shows its real name and size, and whether it is <g1>Online</g1>, <g2>Offline (404)</g2>, <g3>Needs a login</g3> or <g4>Busy, try later</g4>. Offline links come unticked, so you don't queue what isn't there. Links to web pages are hidden by default.",
@@ -2262,6 +2278,10 @@
    "source": "Click <g1>Start Download</g1>.",
    "text": "Натисніть <g1>Почати завантаження</g1>."
   },
+  "205c76c4c97cb9a9": {
+   "source": "<g1>The notification area</g1> lists what is downloading and how far it has got; its menu pauses or resumes everything and sets the speed limit.",
+   "text": "<g1>Область сповіщень</g1> показує, що завантажується і наскільки просунулося; її меню призупиняє чи відновлює все й задає обмеження швидкості."
+  },
   "205fdb98f94e95c5": {
    "source": "<g1>Pause all downloads</g1> stops every running download and queue; <g2>Resume all downloads</g2> starts those again.",
    "text": "<g1>Призупинити всі завантаження</g1> зупиняє кожне активне завантаження й чергу; <g2>Відновити всі завантаження</g2> запускає їх знову."
@@ -3102,6 +3122,10 @@
    "source": "Downloads stay with the browser although DDM is installed",
    "text": "Завантаження залишаються в браузері, хоча DDM встановлено"
   },
+  "2bc66e51d680d2df": {
+   "source": "This version's files on GitHub",
+   "text": "Файли цієї версії на GitHub"
+  },
   "2bd47bf04bbf6444": {
    "source": "Every file, with checksums",
    "text": "Кожен файл із контрольними сумами"
@@ -3493,6 +3517,10 @@
   "3119a32ef52a6c93": {
    "source": "A window's headline (Tahoma Bold): the browser extension's, the helpers'",
    "text": "Заголовок вікна (Tahoma Bold): розширення браузера, помічників"
+  },
+  "31230215ac059219": {
+   "source": "setup.exe · 21.5 MB · Windows 10 and 11, 64-bit",
+   "text": "setup.exe · 21,5 MB · Windows 10 і 11, 64-розрядна"
   },
   "314e4cd4869b95b0": {
    "source": "Help make DDM better",
@@ -4742,6 +4770,10 @@
    "source": "The pictures go into a folder of their own, named after the gallery. Want only a few? Type a number in <g1>Files at most</g1> to take the first ones the site lists, on most sites the newest.",
    "text": "Зображення зберігаються в окрему папку, названу на честь галереї. Хочете лише кілька? Введіть число в <g1>Файлів щонайбільше</g1>, щоб завантажити перші, які перераховані на сайті, на більшості сайтів це найновіші."
   },
+  "42e11323ff58d84e": {
+   "source": "<g1>What's new</g1> shows once after an update, with that version's notes.",
+   "text": "<g1>Що нового</g1> з’являється один раз після оновлення, з примітками до цієї версії."
+  },
   "42fcdc57b1d01537": {
    "source": "A code works once, for ten minutes, and not after five wrong tries: click <g1>New code</g1> for another. To keep the page one tap away, add it to the phone's home screen (the browser's menu: <g2>Add to Home screen</g2>).",
    "text": "Код діє один раз, протягом десяти хвилин, і не діє після п’яти неправильних спроб: натисніть <g1>Новий код</g1> для отримання іншого. Щоб сторінка була доступна одним дотиком, додайте її на головний екран телефону (меню браузера: <g2>Додати на головний екран</g2>)."
@@ -5026,6 +5058,10 @@
    "source": "keeps the list, the settings, the certificate and the paired devices.",
    "text": "зберігає список, налаштування, сертифікат та підключені пристрої."
   },
+  "47859c6cf7ca067f": {
+   "source": "<g1>Virus checking</g1> after each download with the antivirus you choose, and a <g2>temporary folder</g2> of your choice. Unfinished pieces are always cleaned up; <g3>Downloads → Clean Up Temporary Files</g3> says how much it freed.",
+   "text": "<g1>Перевірка на віруси</g1> після кожного завантаження вибраним вами антивірусом і <g2>тимчасова тека</g2> на ваш вибір. Незавершені частини завжди очищаються; <g3>Downloads → Очищення тимчасових файлів</g3> повідомляє, скільки місця звільнено."
+  },
   "479315841001935e": {
    "source": "<g1><x2/></g1>, a separate command-line tool: download files, videos and torrents in a terminal, with progress, without the app.",
    "text": "<g1><x2/></g1> — окремий інструмент командного рядка для завантаження файлів, відео й торрентів у терміналі з відображенням перебігу завантаження, без програми."
@@ -5146,6 +5182,10 @@
    "source": "Right-click a torrent in the list and open <g1>Torrent</g1>:",
    "text": "Клацніть торрент у списку правою кнопкою миші та відкрийте меню <g1>Торрент</g1>:"
   },
+  "49e5c210d1215f38": {
+   "source": "The setup speaks your language and asks only what it needs. Everything for videos and music installs with it; without a connection, it finishes by itself the next time you're online. At the end, one tick adds Dannex Download Manager to your browser.",
+   "text": "Програма встановлення говорить вашою мовою й запитує лише найнеобхідніше. Усе для відео й музики встановлюється разом із нею; без підключення вона завершить це сама, коли ви наступного разу будете в мережі. Наприкінці одна позначка додає Dannex Download Manager до вашого браузера."
+  },
   "49e709cc2e9e3501": {
    "source": "<g1>From browser</g1> — yt-dlp reads the chosen browser's cookies on this computer (Firefox, Chrome, Edge, Brave, Opera, Vivaldi, Chromium, Whale; Safari on macOS) for every video it looks up or downloads, pasted addresses included. When the extension passed the page's own cookies, those are used instead. <g2>Profile (optional)</g2>: a profile's name or folder (<g3>...</g3> chooses one); empty, the one used last. Chrome, Edge and Brave lock their cookies on Windows: Firefox works. See <g4>Sites that want you signed in</g4>.",
    "text": "<g1>З браузера</g1> — yt-dlp читає файли cookie вибраного браузера на цьому комп'ютері (Firefox, Chrome, Edge, Brave, Opera, Vivaldi, Chromium, Whale; Safari на macOS) для кожного відео, яке він шукає або завантажує, включно з вставленими адресами. Якщо розширення передало власні файли cookie сторінки, замість них використовуються саме вони. <g2>Профіль (необов'язково)</g2>: ім'я або папка профілю (<g3>...</g3> вибирає один); якщо порожньо, використовується останній. Chrome, Edge і Brave блокують свої файли cookie у Windows: Firefox працює. Дивіться <g4>Сайти, які вимагають входу</g4>."
@@ -5189,6 +5229,10 @@
   "4a575d95633d11ec": {
    "source": "Free Download Manager",
    "text": "Free Download Manager"
+  },
+  "4a5bf62ffc712204": {
+   "source": "Version {v1} <g1>{v2}</g1>",
+   "text": "Версія {v1} <g1>{v2}</g1>"
   },
   "4a6bad53b6a6ea47": {
    "source": "a file the site refuses to DDM's downloader (one that wants gallery-dl's own sign-in, for example).",
@@ -5489,6 +5533,10 @@
   "4ed0aaa5f83f33db": {
    "source": "macOS <g1>11 and later · experimental</g1>",
    "text": "macOS <g1>11 і новіша · експериментально</g1>"
+  },
+  "4efc06763319b0e3": {
+   "source": "<g1>Videos and music</g1> from thousands of sites, YouTube Music, SoundCloud, Bandcamp and Boomplay among them, with playlists, subtitles and the sound alone; <g2>image galleries</g2> too.",
+   "text": "<g1>Відео й музика</g1> з тисяч сайтів, серед яких YouTube Music, SoundCloud, Bandcamp і Boomplay, зі списками відтворення, субтитрами та лише звуком; <g2>галереї зображень</g2> також."
   },
   "4f07dda13d242d23": {
    "source": "Options on its Connection page: connections per download, per-server exceptions, Download limits and the DNS list",
@@ -6026,6 +6074,10 @@
    "source": "A small file",
    "text": "Невеликий файл"
   },
+  "55b3839ca84cb772": {
+   "source": "<g1>Site Grabber:</g1> a whole site or part of one, to read offline, in projects you can always come back to.",
+   "text": "<g1>Site Grabber:</g1> увесь сайт або його частина, щоб читати офлайн, у проєктах, до яких завжди можна повернутися."
+  },
   "55bb7652c732e417": {
    "source": "The browser and DDM aren't connected",
    "text": "Браузер і DDM не підключені"
@@ -6561,6 +6613,10 @@
   "5db4d7af773861a3": {
    "source": "Click to zoom · drag to move",
    "text": "Натисніть, щоб збільшити · перетягніть, щоб перемістити"
+  },
+  "5db793e96450f840": {
+   "source": "To watch or listen right away, in your browser's own player, click <g1>Play while downloading</g1> in a running torrent's progress window, or right-click the torrent and choose it, the menu's first item. DDM switches the torrent to <g2>Download in order</g2> with its first and last pieces first, and the player reads the file as its pieces arrive; skipping ahead asks DDM for that part first. It plays MP4, WebM and OGV videos and MP3, M4A/AAC, OGG/Opus, WAV and FLAC sound (a torrent's first such file, among the files you chose). The player's address works only on your own computer and only for that file: nothing is shared with other devices.",
+   "text": "Щоб одразу дивитися або слухати у власному відтворювачі браузера, натисніть <g1>Відтворення під час завантаження</g1> у вікні ходу завантаження торрента або клацніть торрент правою кнопкою миші й виберіть цей пункт, перший у меню. DDM перемикає торрент на <g2>Завантажувати по порядку</g2>, спершу беручи перші й останні частини, а відтворювач читає файл у міру надходження його частин; перемотування вперед змушує DDM спершу завантажити потрібну частину. Відтворюються відео MP4, WebM і OGV та звук MP3, M4A/AAC, OGG/Opus, WAV і FLAC (перший такий файл торрента серед вибраних вами). Адреса відтворювача працює лише на вашому комп’ютері й лише для цього файлу: нічого не передається іншим пристроям."
   },
   "5db8bd4bd4cb23a0": {
    "source": "YouTube serves each connection's long requests slowly, so DDM asks for the video in pieces of 10 MB at most, as yt-dlp does, and several at once.",
@@ -7866,6 +7922,10 @@
    "source": "Dannex Download Manager in 86 languages — translations",
    "text": "Dannex Download Manager 86 мовами — переклади"
   },
+  "7040b263bcc44f86": {
+   "source": "<g1>Link Grabber:</g1> a page's links with their names, sites, sizes and types, sorted by any column, filtered by kind with one button each, searched, and grouped so a file linked twice comes once.",
+   "text": "<g1>Link Grabber:</g1> посилання зі сторінки з їхніми назвами, сайтами, розмірами й типами, з сортуванням за будь-яким стовпцем, фільтром за видом однією кнопкою, пошуком і групуванням, щоб файл, на який посилаються двічі, з’являвся один раз."
+  },
   "70424cf3215714b2": {
    "source": "A button's text",
    "text": "Текст кнопки"
@@ -8398,6 +8458,10 @@
    "source": "DDM doesn't accept this copy (DDM older than it)",
    "text": "DDM не приймає цю копію (DDM старіший за неї)"
   },
+  "783cd0abbfbd7643": {
+   "source": "Right-click <g1>Download with DDM</g1> for any link, magnet links included, and <g2>Download all links</g2>, images or videos and audio of a page.",
+   "text": "Клацніть правою кнопкою будь-яке посилання, зокрема magnet, і виберіть <g1>Завантажити за допомогою DDM</g1> та <g2>Завантажити всі посилання</g2>, зображення або відео й аудіо зі сторінки."
+  },
   "784272a0fc664eaa": {
    "source": "Enter",
    "text": "Enter"
@@ -8457,6 +8521,10 @@
   "78dd3467c0624889": {
    "source": "egui's faint background",
    "text": "Тьмяний фон egui"
+  },
+  "78e03ddf9a027109": {
+   "source": "<g1>Metalink files:</g1> open a <x2/> or <x3/> file (<g4>Tasks → Open Metalink file...</g4>) or address, and pick its files in <g5>Add Metalink</g5>. DDM uses the publisher's mirrors, checks every file and fetches again only the parts that fail the check.",
+   "text": "<g1>Файли Metalink:</g1> відкрийте файл <x2/> або <x3/> (<g4>Tasks → Open Metalink file...</g4>) чи адресу й виберіть його файли в <g5>Add Metalink</g5>. DDM використовує дзеркала видавця, перевіряє кожен файл і повторно завантажує лише ті частини, що не пройшли перевірку."
   },
   "78e3e71069ddbb1f": {
    "source": "<g1></g1>86, built in",
@@ -10158,6 +10226,10 @@
    "source": "Some sites, YouTube among them, send each viewer to a nearby video server, sometimes one inside the internet provider's own network. If that server can't be reached from your connection, a browser quietly switches to another one, but yt-dlp on its own would give up. Before each video download DDM checks the servers in the video's links and, if one doesn't answer, switches to the next one the site lists. The download's log says when this happens.",
    "text": "Деякі сайти, серед них YouTube, надсилають кожного глядача на найближчий відеосервер, іноді той, що знаходиться у власній мережі інтернет-провайдера. Якщо цей сервер недоступний з вашого з'єднання, браузер тихо перемикається на інший, але yt-dlp сам по собі здасться. Перед кожним завантаженням відео DDM перевіряє сервери за посиланнями відео і, якщо один не відповідає, перемикається на наступний, який вказано на сайті. Журнал завантаження повідомляє, коли це відбувається."
   },
+  "915c3e2d8a2f80e5": {
+   "source": "Day and dark mode, 86 languages including right to left, keyboard and screen-reader access, a portable version, a phone remote and a server mode.",
+   "text": "Денний і темний режими, 86 мов, зокрема з письмом справа наліво, доступ із клавіатури та екранним диктором, портативна версія, пульт на телефоні й режим сервера."
+  },
   "916757d942e8dd7f": {
    "source": "When you added it.",
    "text": "Коли ви додали його."
@@ -10181,6 +10253,10 @@
   "91d9821e91c26313": {
    "source": "Who makes Dannex Download Manager?",
    "text": "Хто створив Dannex Download Manager?"
+  },
+  "91dd84a3c6fa9e9c": {
+   "source": "<g1>Download File Info, the way you know it:</g1> it opens the moment a download is handed over, the file starts arriving while you choose where it goes, and it joins the list only once you click <g2>Start Download</g2> or <g3>Download Later</g3>; <g4>Cancel</g4> leaves nothing behind.",
+   "text": "<g1>Інформація про файл завантаження, така, як ви її знаєте:</g1> вікно відкривається в ту мить, коли завантаження передано, файл починає надходити, поки ви вибираєте, куди його зберегти, і потрапляє до списку лише після натискання <g2>Почати завантаження</g2> або <g3>Завантажити пізніше</g3>; <g4>Скасувати</g4> нічого не залишає."
   },
   "91e1fe6fec5ba25a": {
    "source": "3.1 s",
@@ -12262,6 +12338,10 @@
    "source": "<g1>Ask for the queue after a batch download</g1> — the same for batch downloads.",
    "text": "<g1>Запитувати про чергу після пакетного завантаження</g1> — те саме для пакетних завантажень."
   },
+  "b092ccfc243af898": {
+   "source": "Music and video protected against copying, such as Spotify's, say so plainly instead of failing.",
+   "text": "Музика й відео, захищені від копіювання, як-от у Spotify, прямо про це повідомляють, а не завершуються помилкою."
+  },
   "b0c0ef4ee0008226": {
    "source": "— FTP secured with TLS from the start of the session (explicit FTPS, <x1/>, usually port 21). Use it when the server says it supports TLS.",
    "text": "— FTP, захищений TLS з початку сесії (явний FTPS, <x1/>, зазвичай порт 21). Використовуйте його, коли сервер заявляє про підтримку TLS."
@@ -12621,6 +12701,10 @@
   "b5af393d53b1864c": {
    "source": "If DDM closes unexpectedly or stops responding, a window opens with a report of what happened. You can read all of it, and send it to the developers on GitHub if you want to.",
    "text": "Якщо DDM неочікувано закривається або перестає відповідати, відкривається вікно зі звітом про те, що сталося. Ви можете прочитати весь звіт і, за бажанням, надіслати його розробникам на GitHub."
+  },
+  "b5c2f1df18e4c68d": {
+   "source": "<g1>Calm when many arrive at once:</g1> a queue's downloads run without opening windows, and downloads that finish together share one <g2>Download complete</g2> window.",
+   "text": "<g1>Спокій, коли їх багато одразу:</g1> завантаження з черги йдуть без відкриття вікон, а завантаження, що завершуються разом, ділять одне вікно <g2>Завантаження завершено</g2>."
   },
   "b5ce8e1194ffd521": {
    "source": "If the address is a video's page (YouTube, Vimeo, TikTok and others), the video window opens instead. See <g1>Video downloads</g1>. A magnet link opens <g2>Add torrent</g2>; see <g3>Torrents</g3>.",
@@ -13502,6 +13586,10 @@
    "source": "A connection that is far slower than the others is dropped and opened again.",
    "text": "З’єднання, яке набагато повільніше за інші, розривається та відкривається знову."
   },
+  "c3b868e39de30cb2": {
+   "source": "<g1>Torrents and magnet links</g1>, with sequential order, RSS feeds, sharing limits and web seeds. <g2>Torrent → Play while downloading</g2> plays a torrent's video or sound in your browser while it arrives, and skipping ahead fetches that part first.",
+   "text": "<g1>Торренти й magnet-посилання</g1> з послідовним порядком, каналами RSS, обмеженнями роздачі та веб-сидами. <g2>Torrent → Відтворення під час завантаження</g2> відтворює відео чи звук торрента у вашому браузері, поки він надходить, а перемотування вперед спершу завантажує потрібну частину."
+  },
   "c3bbc73f092cecb9": {
    "source": "Options on its Sounds page: a sound for each event",
    "text": "Параметри на сторінці «Звуки»: звук для кожної події"
@@ -14102,6 +14190,10 @@
    "source": "3. Choose how many run at once",
    "text": "3. Виберіть кількість одночасних завантажень"
   },
+  "cbaa19f5e519d6cd": {
+   "source": "<g1>The Dannex Download Manager extension</g1>, from the Chrome Web Store for Chrome, Edge, Brave, Opera and Vivaldi, and for Firefox, hands your downloads to DDM with their sign-in. One click on its toolbar button turns it off or on.",
+   "text": "<g1>Розширення Dannex Download Manager</g1>, з Chrome Web Store для Chrome, Edge, Brave, Opera та Vivaldi, а також для Firefox, передає ваші завантаження в DDM разом із вашим входом на сайт. Один клік на його кнопці на панелі інструментів вимикає або вмикає його."
+  },
   "cbb1b076308c99c8": {
    "source": "<g1>Only downloads</g1>: a paired device lists, adds, pauses, starts and removes downloads, and starts and stops queues. It can't change settings, open windows on the computer, or see folders (the list it gets has no paths).",
    "text": "<g1>Лише завантаження</g1>: підключений пристрій перелічує, додає, призупиняє, запускає та видаляє завантаження, а також запускає та зупиняє черги. Він не може змінювати налаштування, відкривати вікна на комп'ютері або переглядати папки (список, який він отримує, не містить шляхів)."
@@ -14401,6 +14493,10 @@
   "d04d5c0494e576d1": {
    "source": "A modern look with several themes, queues and schedulers, and an Android app",
    "text": "Сучасний вигляд з кількома темами, чергами та планувальниками, а також програма для Android"
+  },
+  "d05ed3197dd25138": {
+   "source": "Video, music, galleries, torrents and sites",
+   "text": "Відео, музика, галереї, торренти й сайти"
   },
   "d068a48275a5c381": {
    "source": "If someone already reported the same problem, the window says so (<g1>Already reported as issue #…</g1>). <g2>Open the reported issue</g2> opens it and puts your report on the clipboard, so you can add it as a comment.",
@@ -14837,6 +14933,10 @@
   "d69a06f7c6e1860e": {
    "source": "Dannex Download Manager's queues and Scheduler: start downloads at night, stop them in the morning, stay under a data cap, turn the computer off.",
    "text": "Черги та Планувальник Dannex Download Manager: запускайте завантаження вночі, зупиняйте їх вранці, залишайтеся в межах ліміту даних, вимикайте комп’ютер."
+  },
+  "d6aa0a0a22b370bd": {
+   "source": "<g1>File Properties</g1> on double-click, <g2>Show progress</g2>, and <g3>Columns...</g3> to show, hide and order the list's columns. Minimize keeps DDM on the taskbar; closing it keeps it running in the notification area.",
+   "text": "<g1>Властивості файлу</g1> за подвійним клацанням, <g2>Показати хід завантаження</g2> і <g3>Стовпці...</g3>, щоб показувати, приховувати й упорядковувати стовпці списку. Згортання залишає DDM на панелі завдань; закриття залишає його працювати в області сповіщень."
   },
   "d6cb845d0276e43c": {
    "source": "<g1>Address</g1> — for an unfinished download, you can paste a new address here. See <g2>Resume a broken download</g2>.",
@@ -15890,6 +15990,10 @@
    "source": "The same DDM, without a window",
    "text": "Той самий DDM, без вікна"
   },
+  "e5a11911d8c5a30b": {
+   "source": "Dannex Download Manager {v1}: a free, open-source download manager for Windows (with Linux and an experimental macOS version), laid out the way Internet Download Manager users expect, and faster.",
+   "text": "Dannex Download Manager {v1}: безкоштовний менеджер завантажень із відкритим кодом для Windows (є версія для Linux і експериментальна версія для macOS), з інтерфейсом, якого чекають користувачі Internet Download Manager, і швидший."
+  },
   "e5a7240e9ee9a3e8": {
    "source": "<g1>7z and RAR archives need 7-Zip</g1>, a free program (<g2>7-zip.org</g2>). DDM runs it when it is installed, for split and encrypted archives too. RAR's own extraction code can't be part of a free program like DDM, and 7-Zip extracts 7z best.",
    "text": "<g1>Для архівів 7z та RAR потрібен 7-Zip</g1> — безкоштовна програма (<g2>7-zip.org</g2>). DDM запускає її, якщо вона встановлена, також для розділених та зашифрованих архівів. Власний код розпакування RAR не може бути частиною безкоштовної програми, як DDM, а 7-Zip найкраще розпаковує 7z."
@@ -15921,6 +16025,10 @@
   "e5ed5b1460c13fe3": {
    "source": "The main window in the Native theme",
    "text": "Головне вікно у власній темі"
+  },
+  "e6164e0573a81b4c": {
+   "source": "Your system asks for your password, installs the checked package and starts the new DDM.",
+   "text": "Система запитує пароль, встановлює перевірений пакет і запускає новий DDM."
   },
   "e629533fa65b8d1f": {
    "source": "Extracting archives",
@@ -16097,6 +16205,10 @@
   "e88a839b4e8d456b": {
    "source": "<g1>Command line</g1><g2>IDM's command-line switches, a terminal downloader with JSON output, and a local API for other programs.</g2>",
    "text": "<g1>Командний рядок</g1><g2>Параметри командного рядка IDM, термінальний завантажувач із виведенням JSON та локальний API для інших програм.</g2>"
+  },
+  "e89fc59cd1207558": {
+   "source": "<g1>Themes:</g1> <g2>View → Theme → Choose a theme...</g2> shows each theme as a live picture of the window, with its own accent colour, icons, text size and row height, and themes can be shared as a file.",
+   "text": "<g1>Теми:</g1> <g2>View → Theme → Вибрати тему...</g2> показує кожну тему як живе зображення вікна з власним кольором акценту, значками, розміром тексту й висотою рядків; темами можна ділитися як файлом."
   },
   "e8a02996d2b8ca17": {
    "source": "<g1>A pasted address</g1> (Add URL, Download video from a page, a playlist): choose your browser in <g2>Options → Sites Logins → Cookies for video sites</g2>. yt-dlp then reads that browser's cookies on this computer for every video it looks up or downloads. When the extension passed the page's own cookies, those are used instead: they are that page's and that session's.",
@@ -16333,6 +16445,10 @@
   "ec30751899ba93ca": {
    "source": "<g1>Folders</g1> aren't downloaded yet: a folder's link gets <g2>this is a Google Drive folder, not a file</g2>. Open the folder in the browser and download its files from there.",
    "text": "<g1>Папки</g1> поки що не завантажуються: для посилання на папку з’являється повідомлення <g2>це папка Google Диска, а не файл</g2>. Відкрийте папку в браузері й завантажте файли звідти."
+  },
+  "ec4eb4ee5e5fa1bc": {
+   "source": "Setup",
+   "text": "Встановлення"
   },
   "ec54b48fd7c3fa44": {
    "source": "Dannex Download Manager starts with your computer in the notification area, hides progress windows there in one click, and uses little memory there.",
@@ -16766,6 +16882,10 @@
    "source": "Click <g1>Add URL</g1> on the toolbar, choose <g2>Tasks → Add new download</g2>, or press <g3>Ctrl+N</g3>.",
    "text": "Натисніть <g1>Додати URL</g1> на панелі інструментів, виберіть <g2>Завдання → Додати нове завантаження</g2> або натисніть <g3>Ctrl+N</g3>."
   },
+  "f2ffde3de8176631": {
+   "source": "<g1>Every connection numbered</g1> in the progress window, however many you allow.",
+   "text": "<g1>Кожне з’єднання пронумероване</g1> у вікні ходу завантаження, скільки б їх ви не дозволили."
+  },
   "f313ce0fb2d7fe17": {
    "source": "<g1>Peers</g1> — the computers you are downloading from, with how much you received from and sent to each.",
    "text": "<g1>Піри</g1> — комп'ютери, з яких ви завантажуєте файли, і дані про обсяг отриманих від кожного з них даних та обсяг надісланих їм даних."
@@ -16913,6 +17033,10 @@
   "f575c52354f70221": {
    "source": "Free forever, no ads, no trial",
    "text": "Безкоштовно назавжди, без реклами й пробного періоду"
+  },
+  "f59109bb190b553c": {
+   "source": "<g1>Fast:</g1> every download comes in several parts at once, each over its own connection, and is re-balanced until the last byte. A connection that goes quiet is replaced within seconds, small files start at full speed, and a server that turns DDM away is asked again as a browser would.",
+   "text": "<g1>Швидко:</g1> кожне завантаження йде одразу кількома частинами, кожна через власне з’єднання, і перебалансовується до останнього байта. З’єднання, що замовкло, замінюється за кілька секунд, малі файли стартують на повній швидкості, а сервер, який відхилив DDM, запитується повторно так, як це зробив би браузер."
   },
   "f599b55f9382804e": {
    "source": "Such a part pressed or open",

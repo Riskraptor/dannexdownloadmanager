@@ -686,35 +686,8 @@ impl App {
                 }
             }
             Cmd::PlayTorrent => {
-                let item = target.and_then(|id| self.items.iter().find(|i| i.id == id));
-                if let Some((spec, name, t)) = item.and_then(|i| {
-                    i.torrent
-                        .as_ref()
-                        .map(|s| (s, i.file_name.as_str()))
-                        .zip(self.torrent_host.get())
-                        .map(|((s, n), t)| (s, n, t))
-                }) && let Some((file, file_name)) = player::playable_file(&t, &spec.hash)
-                {
-                    if let Err(e) = t.set_order(
-                        &spec.hash,
-                        mdm_torrent::PieceOrder::InOrder {
-                            first_and_last_first: true,
-                        },
-                    ) {
-                        tracing::warn!(torrent = %name, "could not prioritize playback pieces: {e}");
-                    }
-                    if let Err(e) = player::open(&self.rt, t, spec.hash.clone(), file, file_name) {
-                        tracing::warn!(torrent = %name, "could not open torrent player: {e}");
-                        self.notice = Some((
-                            // i18n: title of the message when a torrent's player couldn't open (Right-click → Torrent → Play while downloading)
-                            crate::i18n::mark("Play while downloading"),
-                            crate::i18n::fmt(
-                                // i18n: message when a torrent's player couldn't open, with why
-                                crate::i18n::t("The player couldn't open: {error}"),
-                                &[("error", &e)],
-                            ),
-                        ));
-                    }
+                if let Some(id) = target {
+                    self.play_torrent(id);
                 }
             }
             Cmd::TorrentCopyMagnet => {

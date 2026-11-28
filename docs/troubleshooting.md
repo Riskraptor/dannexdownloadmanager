@@ -138,7 +138,7 @@ When there is one, **Update now** downloads it, checks it, puts it in place and 
 | Windows, the portable or plain zip | Replaces the programs in their folder (a portable copy's `data` folder is kept). |
 | Mac | Replaces the app in Applications. |
 | Linux, the AppImage or the .tar.gz | Replaces the AppImage, or the programs in their folder. |
-| Linux, the .deb or .rpm | Opens the checked package in your system's package installer, which asks for your password. |
+| Linux, the .deb or .rpm | Your system asks for your password, installs the checked package and starts the new DDM. |
 | Linux, another package manager's package (pacman, ...) | Nothing: the window says so, and your system's updates bring the new version. |
 
 DDM installs an update only when the release's list of checksums is signed by DDM's release key and the file matches it; anything else is refused, and **Download** opens the [Releases](https://github.com/Riskraptor/dannexdownloadmanager/releases) page instead.

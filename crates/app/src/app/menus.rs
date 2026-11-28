@@ -520,13 +520,6 @@ impl App {
                     vec![
                         // i18n: right-click → Torrent submenu: open the selected torrent's file list
                         I("Files...", Cmd::TorrentFiles, true, false),
-                        // i18n: right-click → Torrent submenu: opens a browser media player that reads the torrent while its pieces arrive
-                        I(
-                            "Play while downloading",
-                            Cmd::PlayTorrent,
-                            going && player::has_playable_file(&self.torrent_host, &spec.hash),
-                            false,
-                        ),
                         Sep,
                         // i18n: right-click → Torrent: read every piece of the torrent's files again and check it
                         I(
@@ -558,6 +551,19 @@ impl App {
                     ],
                 ),
             );
+            // A torrent with a video or sound file the browser plays: its player first in the
+            // menu, where it is seen, not in the Torrent submenu (available while it downloads
+            // or shares).
+            if player::has_playable_file(&self.torrent_host, &spec.hash) {
+                entries.splice(
+                    0..0,
+                    [
+                        // i18n: right-click menu, first item for a torrent with a video or sound file: opens a browser media player that reads the torrent while its pieces arrive
+                        I("Play while downloading", Cmd::PlayTorrent, going, false),
+                        Sep,
+                    ],
+                );
+            }
         }
         entries
     }

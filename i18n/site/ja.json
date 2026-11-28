@@ -186,6 +186,10 @@
    "source": "How releases are made",
    "text": "リリースの作成方法"
   },
+  "028edef59cec72b8": {
+   "source": "<g1>Queues and the Scheduler</g1> start and stop on their own, can wake the computer and turn it off when done; <g2>Speed Limiter</g2>, categories with their own folders, and duplicate handling.",
+   "text": "<g1>キューとスケジューラ</g1>は自動で開始と停止を行い、コンピューターを復帰させ、完了後に電源を切ることもできます。そのほか、<g2>速度制限</g2>、フォルダーを個別に持つカテゴリ、重複の処理があります。"
+  },
   "02a3ebd04f6ae293": {
    "source": "Each release lists the <g1>SHA-256</g1> checksum of every file in <x2/>. Check your download against it: see <g3>Download</g3>.",
    "text": "各リリースには、<x2/>内のすべてのファイルの<g1>SHA-256</g1>チェックサムが記載されています。ダウンロードしたファイルと照合してください。<g3>ダウンロード</g3>を参照してください。"
@@ -550,6 +554,10 @@
    "source": "Or right-click a queue under <g1>Queues</g1> and choose <g2>Start now</g2> or <g3>Stop</g3>.",
    "text": "または、<g1>キュー</g1>の下にあるキューを右クリックし、<g2>今すぐ開始</g2>または<g3>停止</g3>を選択します。"
   },
+  "088d2930fc58d387": {
+   "source": "<g1>Resumes that hold:</g1> after a crash, a restart, a sleeping computer or a dropped connection, a download goes on from where it stopped. When the network comes back, stopped downloads start again by themselves; a server that can no longer send parts of a file sends it again whole.",
+   "text": "<g1>確実な再開:</g1> クラッシュ、再起動、スリープ、接続の切断の後でも、ダウンロードは止まった位置から続行されます。ネットワークが戻ると、停止していたダウンロードは自動的に再開します。ファイルの一部をもう送れなくなったサーバーからは、ファイル全体を取得し直します。"
+  },
   "088e2c35eed8fdfc": {
    "source": "Download manager for Windows, with macOS and Linux builds — Dannex Download Manager",
    "text": "Windows 用ダウンロード マネージャー (macOS および Linux ビルドあり) — Dannex Download Manager"
@@ -585,6 +593,10 @@
   "08c883b69355c60d": {
    "source": "<g1>Feeds</g1> tab:",
    "text": "<g1>フィード</g1> タブ:"
+  },
+  "08ca1e1c5f8354ab": {
+   "source": "<g1>File missing:</g1> a finished download whose file was moved or deleted says so and offers <g2>Redownload</g2> or <g3>Locate...</g3>.",
+   "text": "<g1>ファイルが見つかりません:</g1> 完了したダウンロードのファイルが移動または削除された場合は、その旨を表示し、<g2>再ダウンロード</g2>または<g3>場所を指定...</g3>を提示します。"
   },
   "08d3b61db4ae6f60": {
    "source": "To try changes without touching your own downloads, give the app a separate data folder:",
@@ -1049,6 +1061,10 @@
   "104663281393fdc8": {
    "source": "Can I move my downloads from IDM to Dannex Download Manager?",
    "text": "IDM から Dannex Download Manager にダウンロードを移行できますか？"
+  },
+  "104c506a97bea92e": {
+   "source": "<g1>The Download video button</g1> over videos, in feeds too (YouTube, TikTok, X and many more): its qualities show at once, with the sizes DDM will download, and the sound alone under <g2>Audio</g2>. A quality opens <g3>Download File Info</g3> for that file straight away.",
+   "text": "<g1>「動画をダウンロード」ボタン</g1>が動画の上に表示されます (YouTube、TikTok、X など多数のサイトのフィードでも同様です)。画質が一覧ですぐに表示され、DDM がダウンロードするサイズも分かります。音声のみは<g2>オーディオ</g2>の下にあります。画質を選ぶと、そのファイルの<g3>ダウンロード ファイル情報</g3>がすぐに開きます。"
   },
   "105119676f5865c6": {
    "source": "As links arrive, DDM asks each server about its file, a few at a time. Each link then shows its real name and size, and whether it is <g1>Online</g1>, <g2>Offline (404)</g2>, <g3>Needs a login</g3> or <g4>Busy, try later</g4>. Offline links come unticked, so you don't queue what isn't there. Links to web pages are hidden by default.",
@@ -1998,6 +2014,10 @@
    "source": "Click <g1>Start Download</g1>.",
    "text": "<g1>ダウンロード開始</g1>をクリックします。"
   },
+  "205c76c4c97cb9a9": {
+   "source": "<g1>The notification area</g1> lists what is downloading and how far it has got; its menu pauses or resumes everything and sets the speed limit.",
+   "text": "<g1>通知領域</g1>に、ダウンロード中のものとその進行状況が一覧表示されます。メニューから、すべてを一時停止または再開したり、速度制限を設定したりできます。"
+  },
   "205fdb98f94e95c5": {
    "source": "<g1>Pause all downloads</g1> stops every running download and queue; <g2>Resume all downloads</g2> starts those again.",
    "text": "<g1>すべてのダウンロードを一時停止</g1>は、実行中のすべてのダウンロードとキューを止め、<g2>すべてのダウンロードを再開</g2>はそれらをもう一度開始します。"
@@ -2778,6 +2798,10 @@
    "source": "Downloads stay with the browser although DDM is installed",
    "text": "DDM をインストールしていてもダウンロードがブラウザーに残る"
   },
+  "2bc66e51d680d2df": {
+   "source": "This version's files on GitHub",
+   "text": "このバージョンの GitHub 上のファイル"
+  },
   "2bd47bf04bbf6444": {
    "source": "Every file, with checksums",
    "text": "すべてのファイル、チェックサムつき"
@@ -2901,6 +2925,10 @@
   "2d91701284b91b0a": {
    "source": "Source code",
    "text": "ソース コード"
+  },
+  "2d995f162e7cf2ed": {
+   "source": "In your browser",
+   "text": "ブラウザーで"
   },
   "2d9d101be2d0f3be": {
    "source": "FTP and FTPS (<x1/>) go through the same planner, workers and state: a segment is <x2/> + <x3/> on a control session instead of a ranged <x4/>, <x5/> and <x6/> stand in for the headers, and sessions are pooled per download and reused between segments.",
@@ -3137,6 +3165,10 @@
   "3119a32ef52a6c93": {
    "source": "A window's headline (Tahoma Bold): the browser extension's, the helpers'",
    "text": "ウィンドウの見出し (Tahoma Bold): ブラウザー拡張機能、ヘルパー"
+  },
+  "31230215ac059219": {
+   "source": "setup.exe · 21.5 MB · Windows 10 and 11, 64-bit",
+   "text": "setup.exe · 21.5 MB · Windows 10 および 11 (64 ビット)"
   },
   "314e4cd4869b95b0": {
    "source": "Help make DDM better",
@@ -4254,6 +4286,10 @@
    "source": "The pictures go into a folder of their own, named after the gallery. Want only a few? Type a number in <g1>Files at most</g1> to take the first ones the site lists, on most sites the newest.",
    "text": "画像はギャラリー名にちなんだ独自のフォルダーに保存されます。一部だけが必要な場合は、［<g1>最大ファイル数</g1>］に数値を入力すると、ほとんどのサイトでサイトがリストする最初のもの (最新のもの) が取得されます。"
   },
+  "42e11323ff58d84e": {
+   "source": "<g1>What's new</g1> shows once after an update, with that version's notes.",
+   "text": "<g1>新機能</g1>は、更新後に 1 回だけ、そのバージョンのノートとともに表示されます。"
+  },
   "42fcdc57b1d01537": {
    "source": "A code works once, for ten minutes, and not after five wrong tries: click <g1>New code</g1> for another. To keep the page one tap away, add it to the phone's home screen (the browser's menu: <g2>Add to Home screen</g2>).",
    "text": "コードは1回限り、10分間有効で、5回間違えると無効になります。<g1>新しいコード</g1>をクリックして別のコードを取得してください。ページをワンタップで開けるようにするには、スマートフォンのホーム画面に追加します（ブラウザのメニュー：<g2>ホーム画面に追加</g2>）。"
@@ -4502,6 +4538,10 @@
    "source": "keeps the list, the settings, the certificate and the paired devices.",
    "text": "リスト、設定、証明書、ペアリングされたデバイスを保持します。"
   },
+  "47859c6cf7ca067f": {
+   "source": "<g1>Virus checking</g1> after each download with the antivirus you choose, and a <g2>temporary folder</g2> of your choice. Unfinished pieces are always cleaned up; <g3>Downloads → Clean Up Temporary Files</g3> says how much it freed.",
+   "text": "<g1>ウイルス チェック</g1>を、選んだウイルス対策ソフトでダウンロードのたびに行えます。<g2>一時フォルダー</g2>も自由に選べます。未完了のピースは常に削除され、<g3>ダウンロード → 一時ファイルのクリーンアップ</g3>で解放された容量が分かります。"
+  },
   "479315841001935e": {
    "source": "<g1><x2/></g1>, a separate command-line tool: download files, videos and torrents in a terminal, with progress, without the app.",
    "text": "<g1><x2/></g1>。別のコマンドラインツールです。アプリを使わず、ターミナルで進行状況を確認しながらファイル、動画、トレントをダウンロードできます。"
@@ -4598,6 +4638,10 @@
    "source": "Right-click a torrent in the list and open <g1>Torrent</g1>:",
    "text": "リスト内のトレントを右クリックし、<g1>トレント</g1>を開きます。"
   },
+  "49e5c210d1215f38": {
+   "source": "The setup speaks your language and asks only what it needs. Everything for videos and music installs with it; without a connection, it finishes by itself the next time you're online. At the end, one tick adds Dannex Download Manager to your browser.",
+   "text": "セットアップはお使いの言語で表示され、必要なことだけを尋ねます。動画と音楽に必要なものもすべて一緒にインストールされ、接続がない場合は、次にオンラインになったときに自動で完了します。最後にチェック ボックスを 1 つオンにすると、Dannex Download Manager がブラウザーに追加されます。"
+  },
   "49e709cc2e9e3501": {
    "source": "<g1>From browser</g1> — yt-dlp reads the chosen browser's cookies on this computer (Firefox, Chrome, Edge, Brave, Opera, Vivaldi, Chromium, Whale; Safari on macOS) for every video it looks up or downloads, pasted addresses included. When the extension passed the page's own cookies, those are used instead. <g2>Profile (optional)</g2>: a profile's name or folder (<g3>...</g3> chooses one); empty, the one used last. Chrome, Edge and Brave lock their cookies on Windows: Firefox works. See <g4>Sites that want you signed in</g4>.",
    "text": "<g1>ブラウザーから</g1> — yt-dlp は、検索またはダウンロードするすべての動画 (貼り付けられたアドレスを含む) について、このコンピューター上の選択したブラウザー (Firefox、Chrome、Edge、Brave、Opera、Vivaldi、Chromium、Whale、macOS の Safari) の Cookie を読み取ります。拡張機能がページの Cookie を渡した場合、代わりにそれらが使用されます。<g2>プロファイル (オプション)</g2>: プロファイルの名前またはフォルダー (<g3>...</g3> で選択)。空の場合、最後に使用されたものが使用されます。Chrome、Edge、Brave は Windows で Cookie をロックします。Firefox は動作します。<g4>サインインを要求するサイト</g4>を参照してください。"
@@ -4637,6 +4681,10 @@
   "4a575d95633d11ec": {
    "source": "Free Download Manager",
    "text": "Free Download Manager"
+  },
+  "4a5bf62ffc712204": {
+   "source": "Version {v1} <g1>{v2}</g1>",
+   "text": "バージョン {v1} <g1>{v2}</g1>"
   },
   "4a6bad53b6a6ea47": {
    "source": "a file the site refuses to DDM's downloader (one that wants gallery-dl's own sign-in, for example).",
@@ -4901,6 +4949,10 @@
   "4ed0aaa5f83f33db": {
    "source": "macOS <g1>11 and later · experimental</g1>",
    "text": "macOS <g1>11 以降 · 試験的</g1>"
+  },
+  "4efc06763319b0e3": {
+   "source": "<g1>Videos and music</g1> from thousands of sites, YouTube Music, SoundCloud, Bandcamp and Boomplay among them, with playlists, subtitles and the sound alone; <g2>image galleries</g2> too.",
+   "text": "<g1>動画と音楽</g1>を何千ものサイトから取得できます。YouTube Music、SoundCloud、Bandcamp、Boomplay なども含まれ、プレイリスト、字幕、音声のみにも対応します。<g2>画像ギャラリー</g2>にも対応します。"
   },
   "4f07dda13d242d23": {
    "source": "Options on its Connection page: connections per download, per-server exceptions, Download limits and the DNS list",
@@ -5386,6 +5438,10 @@
    "source": "End to end: command to finished file",
    "text": "全体: コマンドからファイルの完成まで"
   },
+  "55b3839ca84cb772": {
+   "source": "<g1>Site Grabber:</g1> a whole site or part of one, to read offline, in projects you can always come back to.",
+   "text": "<g1>サイト グラバー:</g1> サイト全体または一部を、オフラインで読めるように取得します。プロジェクトとして保存されるので、いつでも戻れます。"
+  },
   "55bb7652c732e417": {
    "source": "The browser and DDM aren't connected",
    "text": "ブラウザとDDMが接続されていません"
@@ -5849,6 +5905,10 @@
   "5db4d7af773861a3": {
    "source": "Click to zoom · drag to move",
    "text": "クリックで拡大・ドラッグで移動"
+  },
+  "5db793e96450f840": {
+   "source": "To watch or listen right away, in your browser's own player, click <g1>Play while downloading</g1> in a running torrent's progress window, or right-click the torrent and choose it, the menu's first item. DDM switches the torrent to <g2>Download in order</g2> with its first and last pieces first, and the player reads the file as its pieces arrive; skipping ahead asks DDM for that part first. It plays MP4, WebM and OGV videos and MP3, M4A/AAC, OGG/Opus, WAV and FLAC sound (a torrent's first such file, among the files you chose). The player's address works only on your own computer and only for that file: nothing is shared with other devices.",
+   "text": "すぐに視聴または再生するには、実行中のトレントの進行状況ウィンドウで<g1>ダウンロードしながら再生</g1>をクリックするか、トレントを右クリックして選びます (メニューの先頭の項目です)。ブラウザー内蔵のプレーヤーで再生されます。DDM はトレントを<g2>順番にダウンロード</g2>に切り替え、先頭と末尾のピースを先に取得します。プレーヤーはピースが届くのに合わせてファイルを読み込み、先へ飛ばすと DDM がその部分を先に取得します。再生できるのは、MP4、WebM、OGV の動画と、MP3、M4A/AAC、OGG/Opus、WAV、FLAC の音声です (選択したファイルのうち、トレント内で最初に該当するもの)。プレーヤーのアドレスは自分のコンピューターでのみ、そのファイルに対してのみ機能し、他のデバイスと共有されることはありません。"
   },
   "5db8bd4bd4cb23a0": {
    "source": "YouTube serves each connection's long requests slowly, so DDM asks for the video in pieces of 10 MB at most, as yt-dlp does, and several at once.",
@@ -7014,6 +7074,10 @@
    "source": "Dannex Download Manager in 86 languages — translations",
    "text": "Dannex Download Manager 86言語対応 — 翻訳"
   },
+  "7040b263bcc44f86": {
+   "source": "<g1>Link Grabber:</g1> a page's links with their names, sites, sizes and types, sorted by any column, filtered by kind with one button each, searched, and grouped so a file linked twice comes once.",
+   "text": "<g1>リンク グラバー:</g1> ページ内のリンクを名前、サイト、サイズ、種類とともに一覧にします。任意の列で並べ替え、種類ごとのボタンで絞り込み、検索でき、2 回リンクされているファイルは 1 つにまとめられます。"
+  },
   "70424cf3215714b2": {
    "source": "A button's text",
    "text": "ボタンのテキスト"
@@ -7189,6 +7253,10 @@
   "72f3284ff6dd83fc": {
    "source": "<g1>Up</g1> / <g2>Down</g2>, <g3>Left</g3> / <g4>Right</g4>",
    "text": "<g1>上</g1> / <g2>下</g2>、<g3>左</g3> / <g4>右</g4>"
+  },
+  "72fcb0d3a8812fe4": {
+   "source": "<g1>Help → Support DDM</g1> opens Dannex's page on GitHub Sponsors.",
+   "text": "<g1>ヘルプ → DDM を支援する</g1>で、GitHub Sponsors の Dannex のページが開きます。"
   },
   "72ff8f6b37364fc1": {
    "source": "is where files land: each category has its folder inside (<x1/>, <x2/>, <x3/>…). Mount a network share there to download straight onto it.",
@@ -7486,6 +7554,10 @@
    "source": "DDM doesn't accept this copy (DDM older than it)",
    "text": "DDM がこのコピーを受け付けない (DDM が拡張機能より古い)"
   },
+  "783cd0abbfbd7643": {
+   "source": "Right-click <g1>Download with DDM</g1> for any link, magnet links included, and <g2>Download all links</g2>, images or videos and audio of a page.",
+   "text": "リンクを右クリックして<g1>DDM でダウンロード</g1>を選びます (マグネット リンクも対象です)。また、ページのすべてのリンク、画像、動画と音声は<g2>すべてのリンクをダウンロード</g2>で取得できます。"
+  },
   "784272a0fc664eaa": {
    "source": "Enter",
    "text": "Enter"
@@ -7537,6 +7609,10 @@
   "78dd3467c0624889": {
    "source": "egui's faint background",
    "text": "egui の薄い背景"
+  },
+  "78e03ddf9a027109": {
+   "source": "<g1>Metalink files:</g1> open a <x2/> or <x3/> file (<g4>Tasks → Open Metalink file...</g4>) or address, and pick its files in <g5>Add Metalink</g5>. DDM uses the publisher's mirrors, checks every file and fetches again only the parts that fail the check.",
+   "text": "<g1>Metalink ファイル:</g1> <x2/> ファイルまたは <x3/> ファイル (<g4>タスク → Metalink ファイルを開く...</g4>) あるいはアドレスを開き、<g5>Metalink の追加</g5>でファイルを選びます。DDM は配布元のミラーを使い、すべてのファイルを検証して、検証に失敗した部分だけをもう一度取得します。"
   },
   "78e3e71069ddbb1f": {
    "source": "<g1></g1>86, built in",
@@ -9090,6 +9166,10 @@
    "source": "Some sites, YouTube among them, send each viewer to a nearby video server, sometimes one inside the internet provider's own network. If that server can't be reached from your connection, a browser quietly switches to another one, but yt-dlp on its own would give up. Before each video download DDM checks the servers in the video's links and, if one doesn't answer, switches to the next one the site lists. The download's log says when this happens.",
    "text": "YouTubeなど一部のサイトは、視聴者を近くの動画サーバーに接続します。インターネットプロバイダーのネットワーク内にあるサーバーに接続されることもあります。そのサーバーに接続できない場合、ブラウザーは自動的に別のサーバーに切り替えますが、yt-dlpだけではそこで処理をあきらめます。動画をダウンロードする前に、DDMは動画のリンクに含まれるサーバーを確認します。応答しないサーバーがあれば、サイトが示す次のサーバーに切り替えます。この処理が行われると、ダウンロードのログに記録されます。"
   },
+  "915c3e2d8a2f80e5": {
+   "source": "Day and dark mode, 86 languages including right to left, keyboard and screen-reader access, a portable version, a phone remote and a server mode.",
+   "text": "ライト モードとダーク モード、右から左に書く言語を含む 86 言語、キーボードとスクリーン リーダーでの操作、ポータブル版、スマートフォンのリモコン、サーバー モード。"
+  },
   "916757d942e8dd7f": {
    "source": "When you added it.",
    "text": "追加した日時。"
@@ -9113,6 +9193,10 @@
   "91d9821e91c26313": {
    "source": "Who makes Dannex Download Manager?",
    "text": "Dannex Download Manager は誰が開発していますか?"
+  },
+  "91dd84a3c6fa9e9c": {
+   "source": "<g1>Download File Info, the way you know it:</g1> it opens the moment a download is handed over, the file starts arriving while you choose where it goes, and it joins the list only once you click <g2>Start Download</g2> or <g3>Download Later</g3>; <g4>Cancel</g4> leaves nothing behind.",
+   "text": "<g1>おなじみのダウンロード ファイル情報:</g1> ダウンロードを受け取るとすぐに開き、保存先を選んでいる間にファイルの取得が始まります。<g2>ダウンロード開始</g2>または<g3>後でダウンロード</g3>をクリックして初めて一覧に追加され、<g4>キャンセル</g4>すると何も残りません。"
   },
   "91e1fe6fec5ba25a": {
    "source": "3.1 s",
@@ -10994,6 +11078,10 @@
    "source": "<g1>Ask for the queue after a batch download</g1> — the same for batch downloads.",
    "text": "<g1>一括ダウンロードの後にキューを確認する</g1> — 一括ダウンロードも同様です。"
   },
+  "b092ccfc243af898": {
+   "source": "Music and video protected against copying, such as Spotify's, say so plainly instead of failing.",
+   "text": "Spotify など、コピー防止されている音楽や動画は、失敗せずに、その旨をはっきり表示します。"
+  },
   "b0c0ef4ee0008226": {
    "source": "— FTP secured with TLS from the start of the session (explicit FTPS, <x1/>, usually port 21). Use it when the server says it supports TLS.",
    "text": "— セッション開始時からTLSで保護されたFTP（明示的FTPS、<x1/>、通常ポート21）。サーバーがTLSをサポートしていると表示されている場合に使用します。"
@@ -11325,6 +11413,10 @@
   "b5af393d53b1864c": {
    "source": "If DDM closes unexpectedly or stops responding, a window opens with a report of what happened. You can read all of it, and send it to the developers on GitHub if you want to.",
    "text": "DDM が予期せず終了したり、応答を停止したりすると、何が起こったかのレポートを含むウィンドウが開きます。レポートのすべてを読み、必要であれば GitHub の開発者に送信できます。"
+  },
+  "b5c2f1df18e4c68d": {
+   "source": "<g1>Calm when many arrive at once:</g1> a queue's downloads run without opening windows, and downloads that finish together share one <g2>Download complete</g2> window.",
+   "text": "<g1>大量に届いても落ち着いて処理:</g1> キューのダウンロードはウィンドウを開かずに実行され、同時に完了したダウンロードは 1 つの<g2>ダウンロード完了</g2>ウィンドウにまとめられます。"
   },
   "b5eab626b65184f1": {
    "source": "Firefox",
@@ -12086,6 +12178,10 @@
    "source": "<g1>File types</g1>: Images, Video, Audio, Documents, Archives, Programs, <g2>Web pages</g2> (the pages themselves) and <g3>Styles, scripts, fonts</g3> (what pages need to look right). <g4>Other types</g4> takes extensions of your own, separated by spaces: <x5/>.",
    "text": "<g1>ファイルの種類</g1>: 画像、動画、オーディオ、ドキュメント、アーカイブ、プログラム、<g2>Web ページ</g2> (ページそのもの)、<g3>スタイル、スクリプト、フォント</g3> (ページを正しく表示するために必要なもの)。<g4>その他の種類</g4>には、スペースで区切って独自の拡張子を指定できます: <x5/>。"
   },
+  "c3b868e39de30cb2": {
+   "source": "<g1>Torrents and magnet links</g1>, with sequential order, RSS feeds, sharing limits and web seeds. <g2>Torrent → Play while downloading</g2> plays a torrent's video or sound in your browser while it arrives, and skipping ahead fetches that part first.",
+   "text": "<g1>トレントとマグネット リンク</g1>に対応し、順番ダウンロード、RSS フィード、共有の制限、Web シードも使えます。<g2>トレント → ダウンロードしながら再生</g2>は、トレントの動画や音声を届くそばからブラウザーで再生し、先へ飛ばすとその部分を先に取得します。"
+  },
   "c3bbc73f092cecb9": {
    "source": "Options on its Sounds page: a sound for each event",
    "text": "オプションの「サウンド」ページ: 各イベントのサウンド"
@@ -12618,6 +12714,10 @@
    "source": "3. Choose how many run at once",
    "text": "3. 同時に実行する数を決める"
   },
+  "cbaa19f5e519d6cd": {
+   "source": "<g1>The Dannex Download Manager extension</g1>, from the Chrome Web Store for Chrome, Edge, Brave, Opera and Vivaldi, and for Firefox, hands your downloads to DDM with their sign-in. One click on its toolbar button turns it off or on.",
+   "text": "<g1>Dannex Download Manager 拡張機能</g1>は、Chrome、Edge、Brave、Opera、Vivaldi 用は Chrome ウェブストアから、Firefox 用も提供されており、ダウンロードをサインイン情報ごと DDM に渡します。ツール バーのボタンを 1 回クリックすると、オフとオンを切り替えられます。"
+  },
   "cbb1b076308c99c8": {
    "source": "<g1>Only downloads</g1>: a paired device lists, adds, pauses, starts and removes downloads, and starts and stops queues. It can't change settings, open windows on the computer, or see folders (the list it gets has no paths).",
    "text": "<g1>ダウンロードのみ</g1>: ペアリングされたデバイスは、ダウンロードのリスト表示、追加、一時停止、開始、削除、およびキューの開始と停止を行います。設定の変更、コンピューター上のウィンドウの開閉、フォルダーの表示はできません（取得するリストにはパスがありません）。"
@@ -12889,6 +12989,10 @@
   "d04d5c0494e576d1": {
    "source": "A modern look with several themes, queues and schedulers, and an Android app",
    "text": "複数のテーマ、キュー、スケジューラ、Android アプリを備えた、モダンな外観のソフト"
+  },
+  "d05ed3197dd25138": {
+   "source": "Video, music, galleries, torrents and sites",
+   "text": "動画、音楽、ギャラリー、トレント、サイト"
   },
   "d068a48275a5c381": {
    "source": "If someone already reported the same problem, the window says so (<g1>Already reported as issue #…</g1>). <g2>Open the reported issue</g2> opens it and puts your report on the clipboard, so you can add it as a comment.",
@@ -13281,6 +13385,10 @@
   "d69a06f7c6e1860e": {
    "source": "Dannex Download Manager's queues and Scheduler: start downloads at night, stop them in the morning, stay under a data cap, turn the computer off.",
    "text": "Dannex Download Manager のキューとスケジューラ: 夜間にダウンロードを開始し、朝に停止し、データ上限内に収め、コンピューターの電源を切ります。"
+  },
+  "d6aa0a0a22b370bd": {
+   "source": "<g1>File Properties</g1> on double-click, <g2>Show progress</g2>, and <g3>Columns...</g3> to show, hide and order the list's columns. Minimize keeps DDM on the taskbar; closing it keeps it running in the notification area.",
+   "text": "ダブルクリックで<g1>ファイルのプロパティ</g1>、<g2>進行状況を表示</g2>、一覧の列の表示、非表示、順序を設定する<g3>列...</g3>。最小化すると DDM はタスク バーに残り、閉じると通知領域で実行を続けます。"
   },
   "d6cb845d0276e43c": {
    "source": "<g1>Address</g1> — for an unfinished download, you can paste a new address here. See <g2>Resume a broken download</g2>.",
@@ -14246,6 +14354,10 @@
    "source": "The same DDM, without a window",
    "text": "ウィンドウなしで同じ DDM を実行"
   },
+  "e5a11911d8c5a30b": {
+   "source": "Dannex Download Manager {v1}: a free, open-source download manager for Windows (with Linux and an experimental macOS version), laid out the way Internet Download Manager users expect, and faster.",
+   "text": "Dannex Download Manager {v1}: Windows 向けの無料のオープンソース ダウンロード マネージャー (Linux 版と試験的な macOS 版もあります)。Internet Download Manager のユーザーが使い慣れた配置で、さらに高速です。"
+  },
   "e5a7240e9ee9a3e8": {
    "source": "<g1>7z and RAR archives need 7-Zip</g1>, a free program (<g2>7-zip.org</g2>). DDM runs it when it is installed, for split and encrypted archives too. RAR's own extraction code can't be part of a free program like DDM, and 7-Zip extracts 7z best.",
    "text": "<g1>7zおよびRARアーカイブの展開には7-Zipが必要です</g1>。7-Zipは無料のプログラムです（<g2>7-zip.org</g2>）。インストールされている場合、DDMは分割アーカイブや暗号化されたアーカイブにも7-Zipを使用します。RAR独自の展開コードは、DDMのような無料のプログラムには含められません。また、7zの展開には7-Zipが最適です。"
@@ -14277,6 +14389,10 @@
   "e5ed5b1460c13fe3": {
    "source": "The main window in the Native theme",
    "text": "ネイティブ テーマのメイン ウィンドウ"
+  },
+  "e6164e0573a81b4c": {
+   "source": "Your system asks for your password, installs the checked package and starts the new DDM.",
+   "text": "システムがパスワードを求め、確認済みのパッケージをインストールして新しい DDM を起動します。"
   },
   "e629533fa65b8d1f": {
    "source": "Extracting archives",
@@ -14429,6 +14545,10 @@
   "e88a839b4e8d456b": {
    "source": "<g1>Command line</g1><g2>IDM's command-line switches, a terminal downloader with JSON output, and a local API for other programs.</g2>",
    "text": "<g1>コマンドライン</g1><g2>IDM のコマンドライン スイッチ、JSON 出力付きターミナル ダウンローダー、他のプログラム用のローカル API。</g2>"
+  },
+  "e89fc59cd1207558": {
+   "source": "<g1>Themes:</g1> <g2>View → Theme → Choose a theme...</g2> shows each theme as a live picture of the window, with its own accent colour, icons, text size and row height, and themes can be shared as a file.",
+   "text": "<g1>テーマ:</g1> <g2>表示 → テーマ → テーマの選択...</g2>では、各テーマがウィンドウのライブ画像で表示され、それぞれ独自のアクセント カラー、アイコン、文字サイズ、行の高さを持ちます。テーマはファイルとして共有できます。"
   },
   "e8a02996d2b8ca17": {
    "source": "<g1>A pasted address</g1> (Add URL, Download video from a page, a playlist): choose your browser in <g2>Options → Sites Logins → Cookies for video sites</g2>. yt-dlp then reads that browser's cookies on this computer for every video it looks up or downloads. When the extension passed the page's own cookies, those are used instead: they are that page's and that session's.",
@@ -14649,6 +14769,10 @@
   "ec30751899ba93ca": {
    "source": "<g1>Folders</g1> aren't downloaded yet: a folder's link gets <g2>this is a Google Drive folder, not a file</g2>. Open the folder in the browser and download its files from there.",
    "text": "<g1>フォルダー</g1>はまだダウンロードできません。フォルダーのリンクを開くと、<g2>これは Google Drive のフォルダーであり、ファイルではありません</g2>と表示されます。ブラウザーでフォルダーを開き、そこからファイルをダウンロードしてください。"
+  },
+  "ec4eb4ee5e5fa1bc": {
+   "source": "Setup",
+   "text": "セットアップ"
   },
   "ec54b48fd7c3fa44": {
    "source": "Dannex Download Manager starts with your computer in the notification area, hides progress windows there in one click, and uses little memory there.",
@@ -15018,6 +15142,10 @@
    "source": "Click <g1>Add URL</g1> on the toolbar, choose <g2>Tasks → Add new download</g2>, or press <g3>Ctrl+N</g3>.",
    "text": "ツールバーの<g1>URL を追加</g1>をクリックするか、<g2>タスク → 新しいダウンロードを追加</g2>を選択するか、<g3>Ctrl+N</g3>を押します。"
   },
+  "f2ffde3de8176631": {
+   "source": "<g1>Every connection numbered</g1> in the progress window, however many you allow.",
+   "text": "<g1>すべての接続に番号</g1>を付け、許可した数にかかわらず進行状況ウィンドウに表示します。"
+  },
   "f313ce0fb2d7fe17": {
    "source": "<g1>Peers</g1> — the computers you are downloading from, with how much you received from and sent to each.",
    "text": "<g1>ピア</g1> — ダウンロード元のコンピューターと、それぞれから受信および送信した量。"
@@ -15149,6 +15277,10 @@
   "f56e4e7d42ad5f01": {
    "source": "a video it hands to yt-dlp;",
    "text": "yt-dlp に渡す動画。"
+  },
+  "f59109bb190b553c": {
+   "source": "<g1>Fast:</g1> every download comes in several parts at once, each over its own connection, and is re-balanced until the last byte. A connection that goes quiet is replaced within seconds, small files start at full speed, and a server that turns DDM away is asked again as a browser would.",
+   "text": "<g1>高速:</g1> すべてのダウンロードを複数の部分に分けて同時に行い、それぞれ専用の接続を使い、最後の 1 バイトまで負荷を調整し直します。応答しなくなった接続は数秒以内に置き換えられ、小さいファイルは最初から全速で始まり、DDM を拒否したサーバーにはブラウザーのように再度要求します。"
   },
   "f599b55f9382804e": {
    "source": "Such a part pressed or open",

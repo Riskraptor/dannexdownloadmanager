@@ -84,7 +84,7 @@ A torrent in order isn't faster to finish, and it helps the swarm less: use it f
 
 ### Play while downloading
 
-Right-click a running torrent and choose **Torrent → Play while downloading** to watch or listen right away, in your browser's own player. DDM switches the torrent to **Download in order** with its first and last pieces first, and the player reads the file as its pieces arrive; skipping ahead asks DDM for that part first. It plays MP4, WebM and OGV videos and MP3, M4A/AAC, OGG/Opus, WAV and FLAC sound (a torrent's first such file, among the files you chose). The player's address works only on your own computer and only for that file: nothing is shared with other devices.
+To watch or listen right away, in your browser's own player, click **Play while downloading** in a running torrent's progress window, or right-click the torrent and choose it, the menu's first item. DDM switches the torrent to **Download in order** with its first and last pieces first, and the player reads the file as its pieces arrive; skipping ahead asks DDM for that part first. It plays MP4, WebM and OGV videos and MP3, M4A/AAC, OGG/Opus, WAV and FLAC sound (a torrent's first such file, among the files you chose). The player's address works only on your own computer and only for that file: nothing is shared with other devices.
 
 ## RSS feeds
 

@@ -67,14 +67,8 @@ pub fn open(
     file_name: String,
 ) -> Result<(), String> {
     let mime = mime(&file_name).ok_or_else(|| "this torrent file is not playable".to_owned())?;
-    let listener = std::net::TcpListener::bind(SocketAddr::new(IpAddr::V4(Ipv4Addr::LOCALHOST), 0))
-        .map_err(|e| format!("could not start the player: {e}"))?;
-    listener
-        .set_nonblocking(true)
-        .map_err(|e| format!("could not start the player: {e}"))?;
-    let address = listener
-        .local_addr()
-        .map_err(|e| format!("could not start the player: {e}"))?;
+    let (listener, address) =
+        loopback_listener(rt).map_err(|e| format!("could not start the player: {e}"))?;
     let token = hex::encode(rand::random::<[u8; 24]>());
     let title = std::path::Path::new(&file_name)
         .file_name()
@@ -96,8 +90,6 @@ pub fn open(
         .route("/player/{token}", get(page))
         .route("/media/{token}", get(media))
         .with_state(state);
-    let listener = tokio::net::TcpListener::from_std(listener)
-        .map_err(|e| format!("could not start the player: {e}"))?;
     rt.spawn(async move {
         if let Err(e) = axum::serve(listener, app).await {
             tracing::warn!("torrent player stopped: {e}");
@@ -105,6 +97,20 @@ pub fn open(
     });
     open::that_detached(format!("http://{address}/player/{token}"))
         .map_err(|e| format!("could not open the player: {e}"))
+}
+
+/// A listener on 127.0.0.1 at a free port, registered with `rt`'s reactor. Called from the
+/// window's thread, which runs outside the runtime: Tokio's listener can only be made inside its
+/// context (outside it, `from_std` panics: "there is no reactor running").
+fn loopback_listener(
+    rt: &tokio::runtime::Handle,
+) -> std::io::Result<(tokio::net::TcpListener, SocketAddr)> {
+    let listener =
+        std::net::TcpListener::bind(SocketAddr::new(IpAddr::V4(Ipv4Addr::LOCALHOST), 0))?;
+    listener.set_nonblocking(true)?;
+    let address = listener.local_addr()?;
+    let _in_runtime = rt.enter();
+    Ok((tokio::net::TcpListener::from_std(listener)?, address))
 }
 
 async fn page(State(player): State<Player>, Path(token): Path<String>) -> Response {
@@ -265,5 +271,22 @@ mod tests {
         );
         assert_eq!(super::escape("<a&'\">"), "&lt;a&amp;&#39;&quot;&gt;");
         let _ = header::RANGE;
+    }
+
+    /// The player's listener is made from the window's thread, outside the runtime (2.0.0
+    /// panicked there: "there is no reactor running"), and answers on 127.0.0.1.
+    #[test]
+    fn the_player_listens_when_started_from_the_window_thread() {
+        let rt = tokio::runtime::Builder::new_multi_thread()
+            .worker_threads(1)
+            .enable_all()
+            .build()
+            .unwrap();
+        let (listener, address) = super::loopback_listener(rt.handle()).unwrap();
+        assert!(address.ip().is_loopback() && address.port() != 0);
+        let accepted = rt.spawn(async move { listener.accept().await.map(|(_, from)| from) });
+        let _client = std::net::TcpStream::connect(address).unwrap();
+        let from = rt.block_on(accepted).unwrap().unwrap();
+        assert!(from.ip().is_loopback());
     }
 }

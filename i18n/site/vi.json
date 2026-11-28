@@ -194,6 +194,10 @@
    "source": "How releases are made",
    "text": "Quy trình phát hành"
   },
+  "028edef59cec72b8": {
+   "source": "<g1>Queues and the Scheduler</g1> start and stop on their own, can wake the computer and turn it off when done; <g2>Speed Limiter</g2>, categories with their own folders, and duplicate handling.",
+   "text": "<g1>Hàng đợi và Bộ lập lịch</g1> tự bắt đầu và dừng, có thể đánh thức máy tính và tắt máy khi xong; ngoài ra có <g2>Giới hạn tốc độ</g2>, các danh mục với thư mục riêng, và xử lý lượt tải xuống trùng lặp."
+  },
   "02a38777a650e8a4": {
    "source": "<g1><g2></g2></g1> <g3>Video from a page</g3> <g4>Paste a page's address and choose a quality, up to 4K, from YouTube, Vimeo and thousands of other sites.</g4>",
    "text": "<g1><g2></g2></g1> <g3>Video từ một trang</g3> <g4>Dán địa chỉ của một trang và chọn chất lượng, lên đến 4K, từ YouTube, Vimeo và hàng nghìn trang web khác.</g4>"
@@ -614,6 +618,10 @@
    "source": "Or right-click a queue under <g1>Queues</g1> and choose <g2>Start now</g2> or <g3>Stop</g3>.",
    "text": "Hoặc nhấp chuột phải vào một hàng đợi dưới <g1>Hàng đợi</g1> và chọn <g2>Bắt đầu ngay</g2> hoặc <g3>Dừng</g3>."
   },
+  "088d2930fc58d387": {
+   "source": "<g1>Resumes that hold:</g1> after a crash, a restart, a sleeping computer or a dropped connection, a download goes on from where it stopped. When the network comes back, stopped downloads start again by themselves; a server that can no longer send parts of a file sends it again whole.",
+   "text": "<g1>Tiếp tục tải xuống đáng tin cậy:</g1> sau khi gặp sự cố, khởi động lại, máy tính ngủ hoặc mất kết nối, lượt tải xuống tiếp tục từ chỗ đã dừng. Khi có mạng trở lại, các lượt tải xuống đã dừng tự bắt đầu lại; máy chủ không còn gửi được từng phần của tệp sẽ gửi lại toàn bộ tệp."
+  },
   "088e2c35eed8fdfc": {
    "source": "Download manager for Windows, with macOS and Linux builds — Dannex Download Manager",
    "text": "Trình quản lý tải xuống cho Windows, có bản dựng cho macOS và Linux — Dannex Download Manager"
@@ -653,6 +661,10 @@
   "08c883b69355c60d": {
    "source": "<g1>Feeds</g1> tab:",
    "text": "Thẻ <g1>Nguồn cấp dữ liệu</g1>:"
+  },
+  "08ca1e1c5f8354ab": {
+   "source": "<g1>File missing:</g1> a finished download whose file was moved or deleted says so and offers <g2>Redownload</g2> or <g3>Locate...</g3>.",
+   "text": "<g1>Thiếu tệp:</g1> lượt tải xuống đã hoàn tất mà tệp bị di chuyển hoặc xóa sẽ báo như vậy và đề xuất <g2>Tải xuống lại</g2> hoặc <g3>Định vị...</g3>."
   },
   "08d3b61db4ae6f60": {
    "source": "To try changes without touching your own downloads, give the app a separate data folder:",
@@ -1161,6 +1173,10 @@
   "104663281393fdc8": {
    "source": "Can I move my downloads from IDM to Dannex Download Manager?",
    "text": "Tôi có thể chuyển các bản tải xuống từ IDM sang Dannex Download Manager không?"
+  },
+  "104c506a97bea92e": {
+   "source": "<g1>The Download video button</g1> over videos, in feeds too (YouTube, TikTok, X and many more): its qualities show at once, with the sizes DDM will download, and the sound alone under <g2>Audio</g2>. A quality opens <g3>Download File Info</g3> for that file straight away.",
+   "text": "<g1>Nút Tải xuống video</g1> nằm trên video, cả trong bảng tin (YouTube, TikTok, X và nhiều nơi khác): các chất lượng hiện ngay, kèm dung lượng DDM sẽ tải xuống, còn riêng âm thanh nằm dưới <g2>Âm thanh</g2>. Chọn một chất lượng sẽ mở ngay <g3>Thông tin tệp tải xuống</g3> cho tệp đó."
   },
   "105119676f5865c6": {
    "source": "As links arrive, DDM asks each server about its file, a few at a time. Each link then shows its real name and size, and whether it is <g1>Online</g1>, <g2>Offline (404)</g2>, <g3>Needs a login</g3> or <g4>Busy, try later</g4>. Offline links come unticked, so you don't queue what isn't there. Links to web pages are hidden by default.",
@@ -2262,6 +2278,10 @@
    "source": "Click <g1>Start Download</g1>.",
    "text": "Nhấp vào <g1>Bắt đầu tải xuống</g1>."
   },
+  "205c76c4c97cb9a9": {
+   "source": "<g1>The notification area</g1> lists what is downloading and how far it has got; its menu pauses or resumes everything and sets the speed limit.",
+   "text": "<g1>Vùng thông báo</g1> liệt kê những gì đang tải xuống và đã được bao nhiêu; menu của nó tạm dừng hoặc tiếp tục mọi thứ và đặt giới hạn tốc độ."
+  },
   "205fdb98f94e95c5": {
    "source": "<g1>Pause all downloads</g1> stops every running download and queue; <g2>Resume all downloads</g2> starts those again.",
    "text": "<g1>Tạm dừng tất cả tải xuống</g1> dừng mọi lượt tải xuống và hàng đợi đang chạy; <g2>Tiếp tục tất cả tải xuống</g2> khởi động lại chúng."
@@ -3102,6 +3122,10 @@
    "source": "Downloads stay with the browser although DDM is installed",
    "text": "Bản tải xuống ở lại trình duyệt dù DDM đã được cài đặt"
   },
+  "2bc66e51d680d2df": {
+   "source": "This version's files on GitHub",
+   "text": "Các tệp của phiên bản này trên GitHub"
+  },
   "2bd47bf04bbf6444": {
    "source": "Every file, with checksums",
    "text": "Mọi tệp, kèm mã kiểm tra"
@@ -3493,6 +3517,10 @@
   "3119a32ef52a6c93": {
    "source": "A window's headline (Tahoma Bold): the browser extension's, the helpers'",
    "text": "Tiêu đề cửa sổ (Tahoma Bold): của tiện ích mở rộng trình duyệt, của các công cụ hỗ trợ"
+  },
+  "31230215ac059219": {
+   "source": "setup.exe · 21.5 MB · Windows 10 and 11, 64-bit",
+   "text": "setup.exe · 21.5 MB · Windows 10 và 11, 64 bit"
   },
   "314e4cd4869b95b0": {
    "source": "Help make DDM better",
@@ -4742,6 +4770,10 @@
    "source": "The pictures go into a folder of their own, named after the gallery. Want only a few? Type a number in <g1>Files at most</g1> to take the first ones the site lists, on most sites the newest.",
    "text": "Các ảnh sẽ được lưu vào một thư mục riêng, đặt tên theo thư viện. Bạn chỉ muốn một vài ảnh? Nhập số vào <g1>Số tệp tối đa</g1> để lấy những ảnh đầu tiên mà trang web liệt kê, trên hầu hết các trang là những ảnh mới nhất."
   },
+  "42e11323ff58d84e": {
+   "source": "<g1>What's new</g1> shows once after an update, with that version's notes.",
+   "text": "<g1>Có gì mới</g1> hiện một lần sau khi cập nhật, kèm ghi chú của phiên bản đó."
+  },
   "42fcdc57b1d01537": {
    "source": "A code works once, for ten minutes, and not after five wrong tries: click <g1>New code</g1> for another. To keep the page one tap away, add it to the phone's home screen (the browser's menu: <g2>Add to Home screen</g2>).",
    "text": "Một mã chỉ hoạt động một lần, trong mười phút, và không hoạt động sau năm lần thử sai: nhấp <g1>Mã mới</g1> để lấy mã khác. Để giữ trang chỉ cách một lần chạm, hãy thêm nó vào màn hình chính của điện thoại (menu của trình duyệt: <g2>Thêm vào Màn hình chính</g2>)."
@@ -5026,6 +5058,10 @@
    "source": "keeps the list, the settings, the certificate and the paired devices.",
    "text": "giữ danh sách, cài đặt, chứng chỉ và các thiết bị đã ghép nối."
   },
+  "47859c6cf7ca067f": {
+   "source": "<g1>Virus checking</g1> after each download with the antivirus you choose, and a <g2>temporary folder</g2> of your choice. Unfinished pieces are always cleaned up; <g3>Downloads → Clean Up Temporary Files</g3> says how much it freed.",
+   "text": "<g1>Quét vi-rút</g1> sau mỗi lượt tải xuống bằng phần mềm diệt vi-rút bạn chọn, và <g2>thư mục tạm</g2> tùy ý bạn. Các mảnh chưa hoàn tất luôn được dọn dẹp; <g3>Tải xuống → Dọn dẹp tệp tạm thời</g3> cho biết đã giải phóng được bao nhiêu."
+  },
   "479315841001935e": {
    "source": "<g1><x2/></g1>, a separate command-line tool: download files, videos and torrents in a terminal, with progress, without the app.",
    "text": "<g1><x2/></g1>, một công cụ dòng lệnh riêng biệt: tải xuống tệp, video và torrent trong một thiết bị đầu cuối, có hiển thị tiến độ, mà không cần ứng dụng."
@@ -5146,6 +5182,10 @@
    "source": "Right-click a torrent in the list and open <g1>Torrent</g1>:",
    "text": "Nhấp chuột phải vào torrent trong danh sách rồi mở <g1>Torrent</g1>:"
   },
+  "49e5c210d1215f38": {
+   "source": "The setup speaks your language and asks only what it needs. Everything for videos and music installs with it; without a connection, it finishes by itself the next time you're online. At the end, one tick adds Dannex Download Manager to your browser.",
+   "text": "Trình cài đặt nói ngôn ngữ của bạn và chỉ hỏi những gì cần thiết. Mọi thứ cho video và nhạc được cài cùng; nếu không có kết nối, nó tự hoàn tất vào lần tới bạn trực tuyến. Cuối cùng, một dấu chọn sẽ thêm Dannex Download Manager vào trình duyệt của bạn."
+  },
   "49e709cc2e9e3501": {
    "source": "<g1>From browser</g1> — yt-dlp reads the chosen browser's cookies on this computer (Firefox, Chrome, Edge, Brave, Opera, Vivaldi, Chromium, Whale; Safari on macOS) for every video it looks up or downloads, pasted addresses included. When the extension passed the page's own cookies, those are used instead. <g2>Profile (optional)</g2>: a profile's name or folder (<g3>...</g3> chooses one); empty, the one used last. Chrome, Edge and Brave lock their cookies on Windows: Firefox works. See <g4>Sites that want you signed in</g4>.",
    "text": "<g1>Từ trình duyệt</g1> — yt-dlp đọc cookie của trình duyệt đã chọn trên máy tính này (Firefox, Chrome, Edge, Brave, Opera, Vivaldi, Chromium, Whale; Safari trên macOS) cho mọi video mà nó tìm kiếm hoặc tải xuống, bao gồm cả các địa chỉ đã dán. Khi tiện ích mở rộng đã chuyển cookie của trang, những cookie đó sẽ được sử dụng thay thế. <g2>Hồ sơ (tùy chọn)</g2>: tên hoặc thư mục của hồ sơ (<g3>...</g3> để chọn một); nếu để trống, hồ sơ được sử dụng gần nhất. Chrome, Edge và Brave khóa cookie của chúng trên Windows: Firefox hoạt động. Xem <g4>Các trang web yêu cầu bạn đăng nhập</g4>."
@@ -5189,6 +5229,10 @@
   "4a575d95633d11ec": {
    "source": "Free Download Manager",
    "text": "Free Download Manager"
+  },
+  "4a5bf62ffc712204": {
+   "source": "Version {v1} <g1>{v2}</g1>",
+   "text": "Phiên bản {v1} <g1>{v2}</g1>"
   },
   "4a6bad53b6a6ea47": {
    "source": "a file the site refuses to DDM's downloader (one that wants gallery-dl's own sign-in, for example).",
@@ -5489,6 +5533,10 @@
   "4ed0aaa5f83f33db": {
    "source": "macOS <g1>11 and later · experimental</g1>",
    "text": "macOS <g1>11 trở lên · thử nghiệm</g1>"
+  },
+  "4efc06763319b0e3": {
+   "source": "<g1>Videos and music</g1> from thousands of sites, YouTube Music, SoundCloud, Bandcamp and Boomplay among them, with playlists, subtitles and the sound alone; <g2>image galleries</g2> too.",
+   "text": "<g1>Video và nhạc</g1> từ hàng nghìn trang web, trong đó có YouTube Music, SoundCloud, Bandcamp và Boomplay, kèm danh sách phát, phụ đề và chỉ âm thanh; cũng có <g2>thư viện ảnh</g2>."
   },
   "4f07dda13d242d23": {
    "source": "Options on its Connection page: connections per download, per-server exceptions, Download limits and the DNS list",
@@ -6026,6 +6074,10 @@
    "source": "A small file",
    "text": "Một tệp nhỏ"
   },
+  "55b3839ca84cb772": {
+   "source": "<g1>Site Grabber:</g1> a whole site or part of one, to read offline, in projects you can always come back to.",
+   "text": "<g1>Trình lấy trang web:</g1> cả trang web hoặc một phần của nó, để đọc ngoại tuyến, trong các dự án bạn luôn có thể quay lại."
+  },
   "55bb7652c732e417": {
    "source": "The browser and DDM aren't connected",
    "text": "Trình duyệt và DDM chưa kết nối"
@@ -6561,6 +6613,10 @@
   "5db4d7af773861a3": {
    "source": "Click to zoom · drag to move",
    "text": "Nhấp để phóng to · kéo để di chuyển"
+  },
+  "5db793e96450f840": {
+   "source": "To watch or listen right away, in your browser's own player, click <g1>Play while downloading</g1> in a running torrent's progress window, or right-click the torrent and choose it, the menu's first item. DDM switches the torrent to <g2>Download in order</g2> with its first and last pieces first, and the player reads the file as its pieces arrive; skipping ahead asks DDM for that part first. It plays MP4, WebM and OGV videos and MP3, M4A/AAC, OGG/Opus, WAV and FLAC sound (a torrent's first such file, among the files you chose). The player's address works only on your own computer and only for that file: nothing is shared with other devices.",
+   "text": "Để xem hoặc nghe ngay trong trình phát riêng của trình duyệt, hãy bấm <g1>Phát trong khi tải xuống</g1> trong cửa sổ tiến trình của một torrent đang chạy, hoặc bấm chuột phải vào torrent và chọn mục này, là mục đầu tiên của menu. DDM chuyển torrent sang <g2>Tải xuống theo thứ tự</g2> với mảnh đầu và mảnh cuối trước, và trình phát đọc tệp khi các mảnh đến; tua tới trước sẽ yêu cầu DDM lấy phần đó trước. Trình phát phát video MP4, WebM và OGV cùng âm thanh MP3, M4A/AAC, OGG/Opus, WAV và FLAC (tệp đầu tiên như vậy của torrent, trong số các tệp bạn đã chọn). Địa chỉ của trình phát chỉ hoạt động trên máy tính của bạn và chỉ cho tệp đó: không có gì được chia sẻ với thiết bị khác."
   },
   "5db8bd4bd4cb23a0": {
    "source": "YouTube serves each connection's long requests slowly, so DDM asks for the video in pieces of 10 MB at most, as yt-dlp does, and several at once.",
@@ -7866,6 +7922,10 @@
    "source": "Dannex Download Manager in 86 languages — translations",
    "text": "Dannex Download Manager với 86 ngôn ngữ — bản dịch"
   },
+  "7040b263bcc44f86": {
+   "source": "<g1>Link Grabber:</g1> a page's links with their names, sites, sizes and types, sorted by any column, filtered by kind with one button each, searched, and grouped so a file linked twice comes once.",
+   "text": "<g1>Trình lấy liên kết:</g1> các liên kết của một trang cùng tên, trang web, dung lượng và loại, sắp xếp theo cột bất kỳ, lọc theo loại bằng một nút cho mỗi loại, tìm kiếm được, và gom nhóm để tệp được liên kết hai lần chỉ hiện một lần."
+  },
   "70424cf3215714b2": {
    "source": "A button's text",
    "text": "Văn bản của nút"
@@ -8398,6 +8458,10 @@
    "source": "DDM doesn't accept this copy (DDM older than it)",
    "text": "DDM không chấp nhận bản này (DDM cũ hơn nó)"
   },
+  "783cd0abbfbd7643": {
+   "source": "Right-click <g1>Download with DDM</g1> for any link, magnet links included, and <g2>Download all links</g2>, images or videos and audio of a page.",
+   "text": "Bấm chuột phải vào bất kỳ liên kết nào, kể cả liên kết magnet, rồi chọn <g1>Tải xuống bằng DDM</g1>; cũng có <g2>Tải xuống tất cả liên kết</g2>, hình ảnh hoặc video và âm thanh của một trang."
+  },
   "784272a0fc664eaa": {
    "source": "Enter",
    "text": "Enter"
@@ -8457,6 +8521,10 @@
   "78dd3467c0624889": {
    "source": "egui's faint background",
    "text": "Nền mờ của egui"
+  },
+  "78e03ddf9a027109": {
+   "source": "<g1>Metalink files:</g1> open a <x2/> or <x3/> file (<g4>Tasks → Open Metalink file...</g4>) or address, and pick its files in <g5>Add Metalink</g5>. DDM uses the publisher's mirrors, checks every file and fetches again only the parts that fail the check.",
+   "text": "<g1>Tệp Metalink:</g1> mở tệp <x2/> hoặc <x3/> (<g4>Tác vụ → Mở tệp Metalink...</g4>) hoặc địa chỉ, rồi chọn các tệp của nó trong <g5>Thêm Metalink</g5>. DDM dùng các máy chủ phản chiếu của nhà phát hành, kiểm tra từng tệp và chỉ lấy lại những phần không qua được bước kiểm tra."
   },
   "78e3e71069ddbb1f": {
    "source": "<g1></g1>86, built in",
@@ -10158,6 +10226,10 @@
    "source": "Some sites, YouTube among them, send each viewer to a nearby video server, sometimes one inside the internet provider's own network. If that server can't be reached from your connection, a browser quietly switches to another one, but yt-dlp on its own would give up. Before each video download DDM checks the servers in the video's links and, if one doesn't answer, switches to the next one the site lists. The download's log says when this happens.",
    "text": "Một số trang web, trong đó có YouTube, kết nối người xem với máy chủ video ở gần, đôi khi là máy chủ trong mạng của nhà cung cấp Internet. Nếu không thể kết nối với máy chủ đó, trình duyệt sẽ tự động chuyển sang máy chủ khác, nhưng yt-dlp sẽ dừng. Trước mỗi lượt tải video, DDM kiểm tra các máy chủ trong liên kết của video. Nếu một máy chủ không phản hồi, DDM sẽ chuyển sang máy chủ tiếp theo mà trang web liệt kê. Nhật ký tải xuống sẽ ghi lại việc này."
   },
+  "915c3e2d8a2f80e5": {
+   "source": "Day and dark mode, 86 languages including right to left, keyboard and screen-reader access, a portable version, a phone remote and a server mode.",
+   "text": "Chế độ sáng và tối, 86 ngôn ngữ gồm cả ngôn ngữ viết từ phải sang trái, truy cập bằng bàn phím và trình đọc màn hình, phiên bản di động, điều khiển từ xa bằng điện thoại và chế độ máy chủ."
+  },
   "916757d942e8dd7f": {
    "source": "When you added it.",
    "text": "Thời điểm bạn thêm mục này."
@@ -10181,6 +10253,10 @@
   "91d9821e91c26313": {
    "source": "Who makes Dannex Download Manager?",
    "text": "Ai tạo ra Dannex Download Manager?"
+  },
+  "91dd84a3c6fa9e9c": {
+   "source": "<g1>Download File Info, the way you know it:</g1> it opens the moment a download is handed over, the file starts arriving while you choose where it goes, and it joins the list only once you click <g2>Start Download</g2> or <g3>Download Later</g3>; <g4>Cancel</g4> leaves nothing behind.",
+   "text": "<g1>Thông tin tệp tải xuống, như bạn vẫn biết:</g1> cửa sổ mở ngay khi lượt tải xuống được chuyển giao, tệp bắt đầu về trong lúc bạn chọn nơi lưu, và chỉ được đưa vào danh sách khi bạn bấm <g2>Bắt đầu tải xuống</g2> hoặc <g3>Tải xuống sau</g3>; <g4>Hủy</g4> không để lại gì."
   },
   "91e1fe6fec5ba25a": {
    "source": "3.1 s",
@@ -12262,6 +12338,10 @@
    "source": "<g1>Ask for the queue after a batch download</g1> — the same for batch downloads.",
    "text": "<g1>Hỏi hàng đợi sau khi tải xuống hàng loạt</g1> — tương tự cho tải xuống hàng loạt."
   },
+  "b092ccfc243af898": {
+   "source": "Music and video protected against copying, such as Spotify's, say so plainly instead of failing.",
+   "text": "Nhạc và video được bảo vệ chống sao chép, chẳng hạn của Spotify, sẽ nói rõ điều đó thay vì thất bại."
+  },
   "b0c0ef4ee0008226": {
    "source": "— FTP secured with TLS from the start of the session (explicit FTPS, <x1/>, usually port 21). Use it when the server says it supports TLS.",
    "text": "— FTP được bảo mật bằng TLS ngay từ đầu phiên (FTPS rõ ràng, <x1/>, thường là cổng 21). Sử dụng nó khi máy chủ cho biết nó hỗ trợ TLS."
@@ -12621,6 +12701,10 @@
   "b5af393d53b1864c": {
    "source": "If DDM closes unexpectedly or stops responding, a window opens with a report of what happened. You can read all of it, and send it to the developers on GitHub if you want to.",
    "text": "Nếu DDM đóng đột ngột hoặc ngừng phản hồi, một cửa sổ sẽ mở ra với báo cáo về sự cố. Bạn có thể đọc toàn bộ báo cáo và gửi cho nhà phát triển trên GitHub nếu muốn."
+  },
+  "b5c2f1df18e4c68d": {
+   "source": "<g1>Calm when many arrive at once:</g1> a queue's downloads run without opening windows, and downloads that finish together share one <g2>Download complete</g2> window.",
+   "text": "<g1>Bình tĩnh khi nhiều lượt tải xuống đến cùng lúc:</g1> các lượt tải xuống trong hàng đợi chạy mà không mở cửa sổ, và những lượt hoàn tất cùng lúc dùng chung một cửa sổ <g2>Tải xuống hoàn tất</g2>."
   },
   "b5ce8e1194ffd521": {
    "source": "If the address is a video's page (YouTube, Vimeo, TikTok and others), the video window opens instead. See <g1>Video downloads</g1>. A magnet link opens <g2>Add torrent</g2>; see <g3>Torrents</g3>.",
@@ -13502,6 +13586,10 @@
    "source": "A connection that is far slower than the others is dropped and opened again.",
    "text": "Kết nối chậm hơn nhiều so với các kết nối khác sẽ bị ngắt rồi kết nối lại."
   },
+  "c3b868e39de30cb2": {
+   "source": "<g1>Torrents and magnet links</g1>, with sequential order, RSS feeds, sharing limits and web seeds. <g2>Torrent → Play while downloading</g2> plays a torrent's video or sound in your browser while it arrives, and skipping ahead fetches that part first.",
+   "text": "<g1>Torrent và liên kết magnet</g1>, với thứ tự tuần tự, nguồn cấp dữ liệu RSS, giới hạn chia sẻ và web seed. <g2>Torrent → Phát trong khi tải xuống</g2> phát video hoặc âm thanh của torrent trong trình duyệt khi nó đang về, và tua tới trước sẽ lấy phần đó trước."
+  },
   "c3bbc73f092cecb9": {
    "source": "Options on its Sounds page: a sound for each event",
    "text": "Tùy chọn trên trang Âm thanh: một âm thanh cho mỗi sự kiện"
@@ -14102,6 +14190,10 @@
    "source": "3. Choose how many run at once",
    "text": "3. Chọn số lượng chạy cùng lúc"
   },
+  "cbaa19f5e519d6cd": {
+   "source": "<g1>The Dannex Download Manager extension</g1>, from the Chrome Web Store for Chrome, Edge, Brave, Opera and Vivaldi, and for Firefox, hands your downloads to DDM with their sign-in. One click on its toolbar button turns it off or on.",
+   "text": "<g1>Tiện ích mở rộng Dannex Download Manager</g1>, từ Chrome Web Store cho Chrome, Edge, Brave, Opera và Vivaldi, và cho Firefox, chuyển các lượt tải xuống của bạn cho DDM cùng thông tin đăng nhập. Bấm một lần vào nút trên thanh công cụ của nó để tắt hoặc bật."
+  },
   "cbb1b076308c99c8": {
    "source": "<g1>Only downloads</g1>: a paired device lists, adds, pauses, starts and removes downloads, and starts and stops queues. It can't change settings, open windows on the computer, or see folders (the list it gets has no paths).",
    "text": "<g1>Chỉ tải xuống</g1>: một thiết bị đã ghép nối có thể liệt kê, thêm, tạm dừng, bắt đầu và xóa các lượt tải xuống, cũng như bắt đầu và dừng hàng đợi. Nó không thể thay đổi cài đặt, mở cửa sổ trên máy tính hoặc xem các thư mục (danh sách nó nhận được không có đường dẫn)."
@@ -14401,6 +14493,10 @@
   "d04d5c0494e576d1": {
    "source": "A modern look with several themes, queues and schedulers, and an Android app",
    "text": "Giao diện hiện đại với nhiều chủ đề, hàng đợi và bộ lập lịch, cùng ứng dụng Android"
+  },
+  "d05ed3197dd25138": {
+   "source": "Video, music, galleries, torrents and sites",
+   "text": "Video, nhạc, thư viện ảnh, torrent và trang web"
   },
   "d068a48275a5c381": {
    "source": "If someone already reported the same problem, the window says so (<g1>Already reported as issue #…</g1>). <g2>Open the reported issue</g2> opens it and puts your report on the clipboard, so you can add it as a comment.",
@@ -14837,6 +14933,10 @@
   "d69a06f7c6e1860e": {
    "source": "Dannex Download Manager's queues and Scheduler: start downloads at night, stop them in the morning, stay under a data cap, turn the computer off.",
    "text": "Hàng đợi và Bộ lập lịch của Dannex Download Manager: bắt đầu tải xuống vào ban đêm, dừng vào buổi sáng, duy trì dưới giới hạn dữ liệu, tắt máy tính."
+  },
+  "d6aa0a0a22b370bd": {
+   "source": "<g1>File Properties</g1> on double-click, <g2>Show progress</g2>, and <g3>Columns...</g3> to show, hide and order the list's columns. Minimize keeps DDM on the taskbar; closing it keeps it running in the notification area.",
+   "text": "<g1>Thuộc tính tệp</g1> khi bấm đúp, <g2>Hiển thị tiến trình</g2>, và <g3>Cột...</g3> để hiện, ẩn và sắp xếp các cột của danh sách. Thu nhỏ giữ DDM trên thanh tác vụ; đóng cửa sổ vẫn giữ DDM chạy trong vùng thông báo."
   },
   "d6cb845d0276e43c": {
    "source": "<g1>Address</g1> — for an unfinished download, you can paste a new address here. See <g2>Resume a broken download</g2>.",
@@ -15890,6 +15990,10 @@
    "source": "The same DDM, without a window",
    "text": "DDM quen thuộc, không cần cửa sổ"
   },
+  "e5a11911d8c5a30b": {
+   "source": "Dannex Download Manager {v1}: a free, open-source download manager for Windows (with Linux and an experimental macOS version), laid out the way Internet Download Manager users expect, and faster.",
+   "text": "Dannex Download Manager {v1}: trình quản lý tải xuống miễn phí, mã nguồn mở cho Windows (kèm phiên bản Linux và phiên bản macOS thử nghiệm), bố trí đúng như người dùng Internet Download Manager mong đợi, và nhanh hơn."
+  },
   "e5a7240e9ee9a3e8": {
    "source": "<g1>7z and RAR archives need 7-Zip</g1>, a free program (<g2>7-zip.org</g2>). DDM runs it when it is installed, for split and encrypted archives too. RAR's own extraction code can't be part of a free program like DDM, and 7-Zip extracts 7z best.",
    "text": "<g1>Cần 7-Zip để giải nén tệp lưu trữ 7z và RAR</g1>, một chương trình miễn phí (<g2>7-zip.org</g2>). DDM sẽ chạy chương trình này nếu đã cài đặt, kể cả để giải nén tệp lưu trữ được chia thành nhiều phần và tệp lưu trữ được mã hóa. Không thể tích hợp mã giải nén RAR vào một chương trình miễn phí như DDM, còn 7-Zip là chương trình giải nén 7z tốt nhất."
@@ -15921,6 +16025,10 @@
   "e5ed5b1460c13fe3": {
    "source": "The main window in the Native theme",
    "text": "Cửa sổ chính trong giao diện Theo hệ thống"
+  },
+  "e6164e0573a81b4c": {
+   "source": "Your system asks for your password, installs the checked package and starts the new DDM.",
+   "text": "Hệ thống hỏi mật khẩu của bạn, cài đặt gói đã kiểm tra và khởi động DDM mới."
   },
   "e629533fa65b8d1f": {
    "source": "Extracting archives",
@@ -16097,6 +16205,10 @@
   "e88a839b4e8d456b": {
    "source": "<g1>Command line</g1><g2>IDM's command-line switches, a terminal downloader with JSON output, and a local API for other programs.</g2>",
    "text": "<g1>Dòng lệnh</g1><g2>Các tùy chọn dòng lệnh của IDM, trình tải xuống qua terminal với đầu ra JSON và API cục bộ cho các chương trình khác.</g2>"
+  },
+  "e89fc59cd1207558": {
+   "source": "<g1>Themes:</g1> <g2>View → Theme → Choose a theme...</g2> shows each theme as a live picture of the window, with its own accent colour, icons, text size and row height, and themes can be shared as a file.",
+   "text": "<g1>Chủ đề:</g1> <g2>Xem → Chủ đề → Chọn chủ đề...</g2> hiển thị mỗi chủ đề như một hình ảnh trực tiếp của cửa sổ, với màu nhấn, biểu tượng, cỡ chữ và chiều cao hàng riêng, và chủ đề có thể chia sẻ dưới dạng tệp."
   },
   "e8a02996d2b8ca17": {
    "source": "<g1>A pasted address</g1> (Add URL, Download video from a page, a playlist): choose your browser in <g2>Options → Sites Logins → Cookies for video sites</g2>. yt-dlp then reads that browser's cookies on this computer for every video it looks up or downloads. When the extension passed the page's own cookies, those are used instead: they are that page's and that session's.",
@@ -16333,6 +16445,10 @@
   "ec30751899ba93ca": {
    "source": "<g1>Folders</g1> aren't downloaded yet: a folder's link gets <g2>this is a Google Drive folder, not a file</g2>. Open the folder in the browser and download its files from there.",
    "text": "<g1>Thư mục</g1> hiện chưa thể tải xuống: liên kết đến thư mục sẽ hiện thông báo <g2>đây là thư mục Google Drive, không phải tệp</g2>. Mở thư mục trong trình duyệt và tải các tệp xuống từ đó."
+  },
+  "ec4eb4ee5e5fa1bc": {
+   "source": "Setup",
+   "text": "Trình cài đặt"
   },
   "ec54b48fd7c3fa44": {
    "source": "Dannex Download Manager starts with your computer in the notification area, hides progress windows there in one click, and uses little memory there.",
@@ -16766,6 +16882,10 @@
    "source": "Click <g1>Add URL</g1> on the toolbar, choose <g2>Tasks → Add new download</g2>, or press <g3>Ctrl+N</g3>.",
    "text": "Nhấp vào <g1>Thêm URL</g1> trên thanh công cụ, chọn <g2>Tác vụ → Thêm tải xuống mới</g2> hoặc nhấn <g3>Ctrl+N</g3>."
   },
+  "f2ffde3de8176631": {
+   "source": "<g1>Every connection numbered</g1> in the progress window, however many you allow.",
+   "text": "<g1>Mọi kết nối đều được đánh số</g1> trong cửa sổ tiến trình, dù bạn cho phép bao nhiêu kết nối."
+  },
   "f313ce0fb2d7fe17": {
    "source": "<g1>Peers</g1> — the computers you are downloading from, with how much you received from and sent to each.",
    "text": "<g1>Người ngang hàng</g1> — các máy tính bạn tải xuống từ đó, cùng dung lượng dữ liệu đã nhận từ và gửi đến từng máy."
@@ -16913,6 +17033,10 @@
   "f575c52354f70221": {
    "source": "Free forever, no ads, no trial",
    "text": "Miễn phí vĩnh viễn, không quảng cáo, không dùng thử"
+  },
+  "f59109bb190b553c": {
+   "source": "<g1>Fast:</g1> every download comes in several parts at once, each over its own connection, and is re-balanced until the last byte. A connection that goes quiet is replaced within seconds, small files start at full speed, and a server that turns DDM away is asked again as a browser would.",
+   "text": "<g1>Nhanh:</g1> mỗi lượt tải xuống được chia thành nhiều phần cùng lúc, mỗi phần qua kết nối riêng, và được cân bằng lại cho đến byte cuối cùng. Kết nối im lặng được thay trong vài giây, tệp nhỏ bắt đầu ở tốc độ tối đa, và máy chủ từ chối DDM sẽ được hỏi lại như trình duyệt vẫn làm."
   },
   "f599b55f9382804e": {
    "source": "Such a part pressed or open",

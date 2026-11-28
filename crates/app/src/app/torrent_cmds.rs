@@ -791,6 +791,46 @@ impl App {
             }
         }
     }
+
+    /// Play while downloading (the list's right-click menu, a torrent's progress window): its
+    /// first playable file in the browser's player, the torrent switched to its pieces in order,
+    /// each file's first and last first (what a player needs to start and to know the length).
+    pub(super) fn play_torrent(&mut self, id: u64) {
+        let Some((spec, name)) = self
+            .items
+            .iter()
+            .find(|i| i.id == id)
+            .and_then(|i| i.torrent.clone().map(|s| (s, i.file_name.clone())))
+        else {
+            return;
+        };
+        let Some(t) = self.torrent_host.get() else {
+            return;
+        };
+        let Some((file, file_name)) = player::playable_file(&t, &spec.hash) else {
+            return;
+        };
+        if let Err(e) = t.set_order(
+            &spec.hash,
+            mdm_torrent::PieceOrder::InOrder {
+                first_and_last_first: true,
+            },
+        ) {
+            tracing::warn!(torrent = %name, "could not prioritize playback pieces: {e}");
+        }
+        if let Err(e) = player::open(&self.rt, t, spec.hash.clone(), file, file_name) {
+            tracing::warn!(torrent = %name, "could not open torrent player: {e}");
+            self.notice = Some((
+                // i18n: title of the message when a torrent's player couldn't open (Right-click → Play while downloading)
+                crate::i18n::mark("Play while downloading"),
+                crate::i18n::fmt(
+                    // i18n: message when a torrent's player couldn't open, with why
+                    crate::i18n::t("The player couldn't open: {error}"),
+                    &[("error", &e)],
+                ),
+            ));
+        }
+    }
 }
 
 /// The magnet link a torrent goes to a debrid account with (#44): its hash, name and trackers.

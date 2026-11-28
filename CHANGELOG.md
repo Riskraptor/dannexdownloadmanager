@@ -3,6 +3,16 @@
 Each release's notes on GitHub come from its section here (`## [X.Y.Z]`, see
 `.github/workflows/release.yml`).
 
+## [2.0.1] - 2026-11-28
+
+- **Play while downloading** no longer closes DDM: it opens the torrent's video or sound in your
+  browser's player as it should.
+- **Easier to find:** a running torrent's progress window has a **Play while downloading** button,
+  and it is the first item when you right-click a torrent with a video or sound file.
+- **Updates on Linux (.deb and .rpm):** **Update now** installs the new version itself after your
+  system asks for your password, and starts it. It used to hand the file to the system's app
+  store, which on Ubuntu opened and installed nothing.
+
 ## [2.0.0] - 2026-11-28
 
 Dannex Download Manager 2.0.0: a free, open-source download manager for Windows (with Linux and an

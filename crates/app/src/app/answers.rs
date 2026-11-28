@@ -933,6 +933,8 @@ impl App {
                     self.download_with_browser(id);
                     self.progress.retain(|p| p.id != id);
                 }
+                // The torrent's player (its window stays: the download goes on).
+                progress::Action::Play => self.play_torrent(id),
                 progress::Action::Rename(name) => {
                     if let Some(item) = self.item(id) {
                         item.rename_on_complete = name;

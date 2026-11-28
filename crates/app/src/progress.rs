@@ -308,6 +308,8 @@ pub enum Action {
     /// Download with the browser (#376): a download the site's bot check refused goes to the
     /// browser (crate::handback); the dialog closes.
     WithBrowser,
+    /// A torrent's video or sound in the browser's player while it downloads (crate::player).
+    Play,
     /// Set this download's speed limit (bytes/s, None = off).
     /// This download's limit (None: unlimited); `true`: remember it for the file.
     Limit(Option<u64>, bool),
@@ -751,6 +753,17 @@ impl Progress {
         // window's edge. A download the site's bot check refused (#376) has "Download with the
         // browser" between the details and Resume.
         let with_browser = crate::handback::offered(item);
+        // A running torrent with a video or sound file the browser plays: its player, as the
+        // list's right-click menu has it, in the same place.
+        let playable = !with_browser
+            && item.status == Status::Downloading
+            && item
+                .torrent
+                .as_ref()
+                .zip(self.host.as_ref())
+                .is_some_and(|(spec, host)| {
+                    crate::app::player::has_playable_file(host, &spec.hash)
+                });
         let mut row = vec![
             (
                 winui::widest_label(&p, &["<< Hide details", "Show details >>"]),
@@ -762,9 +775,12 @@ impl Progress {
         ];
         if with_browser {
             row.insert(1, ("Download with the browser", 176.0, 127.0));
+        } else if playable {
+            row.insert(1, ("Play while downloading", 176.0, 127.0));
         }
         let mut placed = winui::button_row(&p, &row, 8.0, 30.0, 200.0);
         let browser_at = with_browser.then(|| placed.remove(1));
+        let play_at = playable.then(|| placed.remove(1));
         let [details_at, pause_at, cancel_at] = placed[..] else {
             unreachable!("three buttons")
         };
@@ -793,6 +809,20 @@ impl Progress {
             .clicked()
         {
             action = Action::WithBrowser;
+        }
+        if let Some(at) = play_at
+            && winui::button(
+                ui,
+                r(lower, at.0, 206.0, at.1, 22.0),
+                // i18n: button of a running torrent's progress window: opens a browser media player that reads its video or sound while the pieces arrive (the same words as the right-click item)
+                "Play while downloading",
+                ButtonKind::Normal,
+                false,
+                None,
+            )
+            .clicked()
+        {
+            action = Action::Play;
         }
         let running = item.status == Status::Downloading;
         let can_resume = matches!(item.status, Status::Stopped | Status::Error);

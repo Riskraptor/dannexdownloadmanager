@@ -3161,8 +3161,9 @@
 #. button in the Options window
 #. verb: plays the sound
 	Play	Play
-#. message or event log entry in the main window
-#. title of the message when a torrent's player couldn't open (Right-click → Torrent → Play while downloading)
+#. message or event log entry in the main window; button in a download's progress window
+#. title of the message when a torrent's player couldn't open (Right-click → Play while downloading)
+#. button of a running torrent's progress window: opens a browser media player that reads its video or sound while the pieces arrive (the same words as the right-click item)
 	Play while downloading	Play while downloading
 #. text in the dates and times (the Scheduler window, the download list, Statistics)
 #. after noon, after a time of day (12-hour clock). Its pair is "AM": write both the same way (this language's own short marks, or both kept as AM and PM)
@@ -6274,7 +6275,7 @@ menu	Open with...	Open with...
 #. View → Draw with: a graphics system's name, usually kept as is
 menu	OpenGL	OpenGL
 #. menu command in the main window
-#. right-click → Torrent submenu: opens a browser media player that reads the torrent while its pieces arrive
+#. right-click menu, first item for a torrent with a video or sound file: opens a browser media player that reads the torrent while its pieces arrive
 menu	Play while downloading	Play while downloading
 #. menu command in the main window
 #. what double-clicking a download does — noun: show its properties

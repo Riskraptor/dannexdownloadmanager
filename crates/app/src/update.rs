@@ -226,14 +226,75 @@ fn apply(install: Install, file: &Path) -> Result<Next, String> {
             cmd.arg("-n").arg(&bundle).args(["--args", UPDATED]);
             Ok(Next::Restart(Box::new(cmd)))
         }
-        // Installing a package needs the administrator: the system's installer asks.
+        // Installing a package needs the administrator: the desktop's own password prompt
+        // (polkit's pkexec) asks, the package tool installs it with what it needs, and the new
+        // copy starts. Without pkexec, or when the prompt is cancelled, the package opens in the
+        // system's installer from Downloads: Ubuntu's App Center (a snap) can't read DDM's hidden
+        // data folder, so opened from there it showed and installed nothing.
         Install::Deb | Install::Rpm => {
-            open::that_detached(file).map_err(|e| e.to_string())?;
+            if let Some(pkexec) = on_path("pkexec")
+                && let Some(argv) = package_command(install, file, &|tool| on_path(tool))
+            {
+                let installed = Command::new(pkexec)
+                    .args(&argv)
+                    .stdin(std::process::Stdio::null())
+                    .status()
+                    .is_ok_and(|s| s.success());
+                if installed {
+                    return restart(&exe);
+                }
+                tracing::warn!("update: the package tool didn't install {}", file.display());
+            }
+            let shown = dirs::download_dir()
+                .and_then(|d| {
+                    let to = d.join(file.file_name()?);
+                    std::fs::copy(file, &to).ok().map(|_| to)
+                })
+                .unwrap_or_else(|| file.to_owned());
+            open::that_detached(&shown).map_err(|e| e.to_string())?;
             Ok(Next::Opened)
         }
         Install::System => Err("installed by the system's package manager: update it there".into()),
         Install::Source => Err("built from source: update it from the repository".into()),
     }
+}
+
+/// The command that installs the package `file` over this copy, run as the administrator
+/// (under pkexec): apt-get (the package's dependencies with it) else dpkg for a .deb; dnf, else
+/// zypper, else rpm for a .rpm. Each given by its full path (`has`: where a tool is). None for
+/// another kind of copy, or with none of the tools.
+fn package_command(
+    install: Install,
+    file: &Path,
+    has: &dyn Fn(&str) -> Option<PathBuf>,
+) -> Option<Vec<std::ffi::OsString>> {
+    let tools: &[(&str, &[&str])] = match install {
+        Install::Deb => &[("apt-get", &["install", "-y"]), ("dpkg", &["-i"])],
+        Install::Rpm => &[
+            ("dnf", &["install", "-y"]),
+            (
+                "zypper",
+                &["--non-interactive", "install", "--allow-unsigned-rpm"],
+            ),
+            ("rpm", &["-U", "--replacepkgs"]),
+        ],
+        _ => return None,
+    };
+    let (path, args) = tools
+        .iter()
+        .find_map(|(tool, args)| has(tool).map(|p| (p, args)))?;
+    let mut argv = vec![path.into_os_string()];
+    argv.extend(args.iter().map(Into::into));
+    // apt-get reads an argument with a slash as a file to install, not a package name.
+    argv.push(std::path::absolute(file).ok()?.into_os_string());
+    Some(argv)
+}
+
+/// `name`'s full path when a folder of PATH has it.
+fn on_path(name: &str) -> Option<PathBuf> {
+    std::env::split_paths(&std::env::var_os("PATH")?)
+        .map(|d| d.join(name))
+        .find(|p| p.is_file())
 }
 
 /// The single-instance lock for a copy started by an update (`/updated`): the old copy may
@@ -273,6 +334,79 @@ pub fn tidy() {
 #[cfg(test)]
 mod tests {
     use super::*;
+
+    /// A .deb or .rpm copy's update is installed by the system's package tool, by its full path,
+    /// the file given whole (apt-get takes a path with a slash as a file).
+    #[test]
+    fn a_package_is_installed_by_the_systems_own_tool() {
+        let deb = Path::new("/home/u/.local/share/dannexdownloadmanager/updates/d.deb");
+        let rpm = Path::new("/home/u/.local/share/dannexdownloadmanager/updates/d.rpm");
+        let only = |tools: &'static [&'static str]| {
+            move |t: &str| {
+                tools
+                    .contains(&t)
+                    .then(|| PathBuf::from(format!("/usr/bin/{t}")))
+            }
+        };
+        let argv = |a: Option<Vec<std::ffi::OsString>>| {
+            a.map(|v| {
+                v.iter()
+                    .map(|s| s.to_string_lossy().replace('\\', "/"))
+                    .collect::<Vec<_>>()
+            })
+        };
+        let file = |p: &Path| {
+            std::path::absolute(p)
+                .unwrap()
+                .to_string_lossy()
+                .replace('\\', "/")
+        };
+        assert_eq!(
+            argv(package_command(
+                Install::Deb,
+                deb,
+                &only(&["apt-get", "dpkg"])
+            )),
+            Some(vec![
+                "/usr/bin/apt-get".into(),
+                "install".into(),
+                "-y".into(),
+                file(deb)
+            ])
+        );
+        assert_eq!(
+            argv(package_command(Install::Deb, deb, &only(&["dpkg"]))),
+            Some(vec!["/usr/bin/dpkg".into(), "-i".into(), file(deb)])
+        );
+        assert_eq!(
+            argv(package_command(Install::Rpm, rpm, &only(&["dnf", "rpm"])))
+                .map(|v| v[..3].to_vec()),
+            Some(vec!["/usr/bin/dnf".into(), "install".into(), "-y".into()])
+        );
+        assert_eq!(
+            argv(package_command(
+                Install::Rpm,
+                rpm,
+                &only(&["zypper", "rpm"])
+            ))
+            .map(|v| v[0].clone()),
+            Some("/usr/bin/zypper".into())
+        );
+        assert_eq!(
+            argv(package_command(Install::Rpm, rpm, &only(&["rpm"]))).map(|v| v[..3].to_vec()),
+            Some(vec![
+                "/usr/bin/rpm".into(),
+                "-U".into(),
+                "--replacepkgs".into()
+            ])
+        );
+        // No tool, or another kind of copy: nothing to run.
+        assert_eq!(package_command(Install::Deb, deb, &only(&[])), None);
+        assert_eq!(
+            package_command(Install::AppImage, deb, &only(&["apt-get"])),
+            None
+        );
+    }
 
     #[test]
     fn only_a_signed_release_with_this_copys_file_updates_it() {

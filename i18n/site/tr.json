@@ -186,6 +186,10 @@
    "source": "How releases are made",
    "text": "Sürümler nasıl hazırlanır"
   },
+  "028edef59cec72b8": {
+   "source": "<g1>Queues and the Scheduler</g1> start and stop on their own, can wake the computer and turn it off when done; <g2>Speed Limiter</g2>, categories with their own folders, and duplicate handling.",
+   "text": "<g1>Sıralar ve Zamanlayıcı</g1> kendiliğinden başlar ve durur, bilgisayarı uyandırabilir ve iş bitince kapatabilir; ayrıca <g2>Hız Sınırlayıcı</g2>, kendi klasörleri olan kategoriler ve yinelenen indirme yönetimi vardır."
+  },
   "02a3ebd04f6ae293": {
    "source": "Each release lists the <g1>SHA-256</g1> checksum of every file in <x2/>. Check your download against it: see <g3>Download</g3>.",
    "text": "Her sürüm, <x2/> içindeki her dosyanın <g1>SHA-256</g1> sağlama toplamını listeler. İndirdiğiniz dosyayı buna göre kontrol edin: <g3>İndir</g3> bölümüne bakın."
@@ -550,6 +554,10 @@
    "source": "Or right-click a queue under <g1>Queues</g1> and choose <g2>Start now</g2> or <g3>Stop</g3>.",
    "text": "Alternatif olarak, <g1>Sıralar</g1> altında bir kuyruğa sağ tıklayın ve <g2>Şimdi başlat</g2> ya da <g3>Durdur</g3>'u seçin."
   },
+  "088d2930fc58d387": {
+   "source": "<g1>Resumes that hold:</g1> after a crash, a restart, a sleeping computer or a dropped connection, a download goes on from where it stopped. When the network comes back, stopped downloads start again by themselves; a server that can no longer send parts of a file sends it again whole.",
+   "text": "<g1>Sağlam devam ettirme:</g1> çökme, yeniden başlatma, uyuyan bilgisayar veya kopan bağlantıdan sonra indirme kaldığı yerden sürer. Ağ geri geldiğinde durmuş indirmeler kendiliğinden yeniden başlar; dosyanın parçalarını artık gönderemeyen bir sunucudan dosya baştan tam olarak indirilir."
+  },
   "088e2c35eed8fdfc": {
    "source": "Download manager for Windows, with macOS and Linux builds — Dannex Download Manager",
    "text": "Windows için indirme yöneticisi, macOS ve Linux sürümleriyle — Dannex Download Manager"
@@ -585,6 +593,10 @@
   "08c883b69355c60d": {
    "source": "<g1>Feeds</g1> tab:",
    "text": "<g1>Akışlar</g1> sekmesi:"
+  },
+  "08ca1e1c5f8354ab": {
+   "source": "<g1>File missing:</g1> a finished download whose file was moved or deleted says so and offers <g2>Redownload</g2> or <g3>Locate...</g3>.",
+   "text": "<g1>Dosya eksik:</g1> dosyası taşınmış veya silinmiş tamamlanmış bir indirme bunu belirtir ve <g2>Yeniden indir</g2> ya da <g3>Konumunu bul...</g3> seçeneklerini sunar."
   },
   "08d3b61db4ae6f60": {
    "source": "To try changes without touching your own downloads, give the app a separate data folder:",
@@ -1049,6 +1061,10 @@
   "104663281393fdc8": {
    "source": "Can I move my downloads from IDM to Dannex Download Manager?",
    "text": "İndirmelerimi IDM'den Dannex Download Manager'a taşıyabilir miyim?"
+  },
+  "104c506a97bea92e": {
+   "source": "<g1>The Download video button</g1> over videos, in feeds too (YouTube, TikTok, X and many more): its qualities show at once, with the sizes DDM will download, and the sound alone under <g2>Audio</g2>. A quality opens <g3>Download File Info</g3> for that file straight away.",
+   "text": "<g1>Videoyu indir düğmesi</g1> videoların üzerinde, akışlarda da görünür (YouTube, TikTok, X ve çok daha fazlası): kaliteler, DDM'nin indireceği boyutlarla birlikte hemen gösterilir, yalnızca ses ise <g2>Ses</g2> altındadır. Bir kalite seçmek o dosya için hemen <g3>Dosya Bilgilerini İndir</g3> penceresini açar."
   },
   "105119676f5865c6": {
    "source": "As links arrive, DDM asks each server about its file, a few at a time. Each link then shows its real name and size, and whether it is <g1>Online</g1>, <g2>Offline (404)</g2>, <g3>Needs a login</g3> or <g4>Busy, try later</g4>. Offline links come unticked, so you don't queue what isn't there. Links to web pages are hidden by default.",
@@ -1998,6 +2014,10 @@
    "source": "Click <g1>Start Download</g1>.",
    "text": "<g1>İndirmeyi Başlat</g1> düğmesine tıklayın."
   },
+  "205c76c4c97cb9a9": {
+   "source": "<g1>The notification area</g1> lists what is downloading and how far it has got; its menu pauses or resumes everything and sets the speed limit.",
+   "text": "<g1>Bildirim alanı</g1> nelerin indirildiğini ve ne kadarının geldiğini listeler; menüsü her şeyi duraklatır veya sürdürür ve hız sınırını ayarlar."
+  },
   "205fdb98f94e95c5": {
    "source": "<g1>Pause all downloads</g1> stops every running download and queue; <g2>Resume all downloads</g2> starts those again.",
    "text": "<g1>Tüm indirmeleri duraklat</g1> çalışan her indirmeyi ve kuyruğu durdurur; <g2>Tüm indirmeleri sürdür</g2> bunları yeniden başlatır."
@@ -2778,6 +2798,10 @@
    "source": "Downloads stay with the browser although DDM is installed",
    "text": "DDM kurulu olduğu hâlde indirmeler tarayıcıda kalıyor"
   },
+  "2bc66e51d680d2df": {
+   "source": "This version's files on GitHub",
+   "text": "Bu sürümün GitHub'daki dosyaları"
+  },
   "2bd47bf04bbf6444": {
    "source": "Every file, with checksums",
    "text": "Her dosya, sağlama toplamlarıyla"
@@ -2901,6 +2925,10 @@
   "2d91701284b91b0a": {
    "source": "Source code",
    "text": "Kaynak kodu"
+  },
+  "2d995f162e7cf2ed": {
+   "source": "In your browser",
+   "text": "Tarayıcınızda"
   },
   "2d9d101be2d0f3be": {
    "source": "FTP and FTPS (<x1/>) go through the same planner, workers and state: a segment is <x2/> + <x3/> on a control session instead of a ranged <x4/>, <x5/> and <x6/> stand in for the headers, and sessions are pooled per download and reused between segments.",
@@ -3137,6 +3165,10 @@
   "3119a32ef52a6c93": {
    "source": "A window's headline (Tahoma Bold): the browser extension's, the helpers'",
    "text": "Bir pencerenin başlığı (Tahoma Bold): tarayıcı uzantısının, yardımcıların"
+  },
+  "31230215ac059219": {
+   "source": "setup.exe · 21.5 MB · Windows 10 and 11, 64-bit",
+   "text": "setup.exe · 21.5 MB · Windows 10 ve 11, 64 bit"
   },
   "314e4cd4869b95b0": {
    "source": "Help make DDM better",
@@ -4254,6 +4286,10 @@
    "source": "The pictures go into a folder of their own, named after the gallery. Want only a few? Type a number in <g1>Files at most</g1> to take the first ones the site lists, on most sites the newest.",
    "text": "Resimler, galeri adını taşıyan kendi klasörlerine gider. Sadece birkaç tane mi istiyorsunuz? Çoğu sitede en yenileri olan, sitenin listelediği ilk resimleri almak için <g1>En fazla dosya</g1> alanına bir sayı yazın."
   },
+  "42e11323ff58d84e": {
+   "source": "<g1>What's new</g1> shows once after an update, with that version's notes.",
+   "text": "<g1>Yenilikler</g1>, bir güncellemeden sonra bir kez, o sürümün notlarıyla birlikte gösterilir."
+  },
   "42fcdc57b1d01537": {
    "source": "A code works once, for ten minutes, and not after five wrong tries: click <g1>New code</g1> for another. To keep the page one tap away, add it to the phone's home screen (the browser's menu: <g2>Add to Home screen</g2>).",
    "text": "Bir kod bir kez, on dakika boyunca ve beş yanlış denemeden sonra çalışmaz: başka bir kod için <g1>Yeni kod</g1>'a tıklayın. Sayfayı tek dokunuşla erişilebilir tutmak için telefonun ana ekranına ekleyin (tarayıcının menüsü: <g2>Ana Ekrana Ekle</g2>)."
@@ -4502,6 +4538,10 @@
    "source": "keeps the list, the settings, the certificate and the paired devices.",
    "text": "listeyi, ayarları, sertifikayı ve eşleştirilmiş cihazları tutar."
   },
+  "47859c6cf7ca067f": {
+   "source": "<g1>Virus checking</g1> after each download with the antivirus you choose, and a <g2>temporary folder</g2> of your choice. Unfinished pieces are always cleaned up; <g3>Downloads → Clean Up Temporary Files</g3> says how much it freed.",
+   "text": "Her indirmeden sonra seçtiğiniz virüsten koruma yazılımıyla <g1>virüs denetimi</g1> ve istediğiniz bir <g2>geçici klasör</g2>. Tamamlanmamış parçalar her zaman temizlenir; <g3>İndirilenler → Geçici Dosyaları Temizle</g3> ne kadar yer açıldığını bildirir."
+  },
   "479315841001935e": {
    "source": "<g1><x2/></g1>, a separate command-line tool: download files, videos and torrents in a terminal, with progress, without the app.",
    "text": "<g1><x2/></g1>, ayrı bir komut satırı aracı: uygulamayı kullanmadan, ilerlemeyi göstererek terminalde dosyaları, videoları ve torrentleri indirin."
@@ -4598,6 +4638,10 @@
    "source": "Right-click a torrent in the list and open <g1>Torrent</g1>:",
    "text": "Listedeki torrente sağ tıklayın ve <g1>Torrent</g1> menüsünü açın:"
   },
+  "49e5c210d1215f38": {
+   "source": "The setup speaks your language and asks only what it needs. Everything for videos and music installs with it; without a connection, it finishes by itself the next time you're online. At the end, one tick adds Dannex Download Manager to your browser.",
+   "text": "Kurulum programı sizin dilinizi konuşur ve yalnızca gerekeni sorar. Video ve müzik için gereken her şey onunla birlikte kurulur; bağlantı yoksa, bir sonraki çevrimiçi olduğunuzda kendiliğinden tamamlanır. Sonunda tek bir işaretle Dannex Download Manager tarayıcınıza eklenir."
+  },
   "49e709cc2e9e3501": {
    "source": "<g1>From browser</g1> — yt-dlp reads the chosen browser's cookies on this computer (Firefox, Chrome, Edge, Brave, Opera, Vivaldi, Chromium, Whale; Safari on macOS) for every video it looks up or downloads, pasted addresses included. When the extension passed the page's own cookies, those are used instead. <g2>Profile (optional)</g2>: a profile's name or folder (<g3>...</g3> chooses one); empty, the one used last. Chrome, Edge and Brave lock their cookies on Windows: Firefox works. See <g4>Sites that want you signed in</g4>.",
    "text": "<g1>Tarayıcıdan</g1> — yt-dlp, bu bilgisayardaki seçilen tarayıcının (Firefox, Chrome, Edge, Brave, Opera, Vivaldi, Chromium, Whale; macOS'ta Safari) çerezlerini, yapıştırılan adresler dahil olmak üzere baktığı veya indirdiği her video için okur. Uzantı sayfanın kendi çerezlerini ilettiğinde, bunlar yerine kullanılır. <g2>Profil (isteğe bağlı)</g2>: bir profilin adı veya klasörü (<g3>...</g3> birini seçer); boşsa, en son kullanılan. Chrome, Edge ve Brave, Windows'ta çerezlerini kilitler: Firefox çalışır. Bkz. <g4>Oturum açmanızı isteyen siteler</g4>."
@@ -4637,6 +4681,10 @@
   "4a575d95633d11ec": {
    "source": "Free Download Manager",
    "text": "Free Download Manager"
+  },
+  "4a5bf62ffc712204": {
+   "source": "Version {v1} <g1>{v2}</g1>",
+   "text": "Sürüm {v1} <g1>{v2}</g1>"
   },
   "4a6bad53b6a6ea47": {
    "source": "a file the site refuses to DDM's downloader (one that wants gallery-dl's own sign-in, for example).",
@@ -4901,6 +4949,10 @@
   "4ed0aaa5f83f33db": {
    "source": "macOS <g1>11 and later · experimental</g1>",
    "text": "macOS <g1>11 ve sonrası · deneysel</g1>"
+  },
+  "4efc06763319b0e3": {
+   "source": "<g1>Videos and music</g1> from thousands of sites, YouTube Music, SoundCloud, Bandcamp and Boomplay among them, with playlists, subtitles and the sound alone; <g2>image galleries</g2> too.",
+   "text": "<g1>Videolar ve müzik</g1>: YouTube Music, SoundCloud, Bandcamp ve Boomplay dahil binlerce siteden, oynatma listeleri, altyazılar ve yalnızca sesle; <g2>resim galerileri</g2> de."
   },
   "4f07dda13d242d23": {
    "source": "Options on its Connection page: connections per download, per-server exceptions, Download limits and the DNS list",
@@ -5386,6 +5438,10 @@
    "source": "End to end: command to finished file",
    "text": "Uçtan uca: komuttan bitmiş dosyaya"
   },
+  "55b3839ca84cb772": {
+   "source": "<g1>Site Grabber:</g1> a whole site or part of one, to read offline, in projects you can always come back to.",
+   "text": "<g1>Site yakalayıcı:</g1> bir sitenin tamamı veya bir bölümü, çevrimdışı okumak için, her zaman geri dönebileceğiniz projeler içinde."
+  },
   "55bb7652c732e417": {
    "source": "The browser and DDM aren't connected",
    "text": "Tarayıcı ve DDM bağlı değil"
@@ -5849,6 +5905,10 @@
   "5db4d7af773861a3": {
    "source": "Click to zoom · drag to move",
    "text": "Yakınlaştırmak için tıklayın · taşımak için sürükleyin"
+  },
+  "5db793e96450f840": {
+   "source": "To watch or listen right away, in your browser's own player, click <g1>Play while downloading</g1> in a running torrent's progress window, or right-click the torrent and choose it, the menu's first item. DDM switches the torrent to <g2>Download in order</g2> with its first and last pieces first, and the player reads the file as its pieces arrive; skipping ahead asks DDM for that part first. It plays MP4, WebM and OGV videos and MP3, M4A/AAC, OGG/Opus, WAV and FLAC sound (a torrent's first such file, among the files you chose). The player's address works only on your own computer and only for that file: nothing is shared with other devices.",
+   "text": "Hemen izlemek veya dinlemek için tarayıcınızın kendi oynatıcısında, çalışan bir torrentin ilerleme penceresinde <g1>İndirirken oynat</g1> düğmesine tıklayın ya da torrente sağ tıklayıp menünün ilk öğesi olan bunu seçin. DDM, torrenti ilk ve son parçalar öncelikli olacak şekilde <g2>Sırayla indir</g2> moduna alır; oynatıcı dosyayı parçalar geldikçe okur, ileri sarma ise DDM'den o bölümü önce ister. MP4, WebM ve OGV videoları ile MP3, M4A/AAC, OGG/Opus, WAV ve FLAC ses dosyaları oynatılır (seçtiğiniz dosyalar arasından torrentteki ilk uygun dosya). Oynatıcının adresi yalnızca kendi bilgisayarınızda ve yalnızca o dosya için çalışır: hiçbir şey başka cihazlarla paylaşılmaz."
   },
   "5db8bd4bd4cb23a0": {
    "source": "YouTube serves each connection's long requests slowly, so DDM asks for the video in pieces of 10 MB at most, as yt-dlp does, and several at once.",
@@ -7014,6 +7074,10 @@
    "source": "Dannex Download Manager in 86 languages — translations",
    "text": "Dannex Download Manager 86 dilde — çeviriler"
   },
+  "7040b263bcc44f86": {
+   "source": "<g1>Link Grabber:</g1> a page's links with their names, sites, sizes and types, sorted by any column, filtered by kind with one button each, searched, and grouped so a file linked twice comes once.",
+   "text": "<g1>Bağlantı yakalayıcı:</g1> bir sayfanın bağlantıları adları, siteleri, boyutları ve türleriyle, istenen sütuna göre sıralı, her tür için tek düğmeyle süzülmüş, aranabilir ve iki kez bağlanan dosya bir kez görünecek biçimde gruplanmış olarak listelenir."
+  },
   "70424cf3215714b2": {
    "source": "A button's text",
    "text": "Düğme metni"
@@ -7189,6 +7253,10 @@
   "72f3284ff6dd83fc": {
    "source": "<g1>Up</g1> / <g2>Down</g2>, <g3>Left</g3> / <g4>Right</g4>",
    "text": "<g1>Yukarı</g1> / <g2>Aşağı</g2>, <g3>Sol</g3> / <g4>Sağ</g4>"
+  },
+  "72fcb0d3a8812fe4": {
+   "source": "<g1>Help → Support DDM</g1> opens Dannex's page on GitHub Sponsors.",
+   "text": "<g1>Yardım → DDM'ı destekle</g1>, Dannex'in GitHub Sponsors sayfasını açar."
   },
   "72ff8f6b37364fc1": {
    "source": "is where files land: each category has its folder inside (<x1/>, <x2/>, <x3/>…). Mount a network share there to download straight onto it.",
@@ -7486,6 +7554,10 @@
    "source": "DDM doesn't accept this copy (DDM older than it)",
    "text": "DDM bu kopyayı kabul etmiyor (DDM bu kopyadan daha eski)"
   },
+  "783cd0abbfbd7643": {
+   "source": "Right-click <g1>Download with DDM</g1> for any link, magnet links included, and <g2>Download all links</g2>, images or videos and audio of a page.",
+   "text": "Herhangi bir bağlantıya (magnet bağlantıları dahil) sağ tıklayıp <g1>DDM ile indir</g1> seçeneğini kullanın; bir sayfanın tüm bağlantılarını, resimlerini veya videoları ile seslerini de <g2>Tüm bağlantıları indir</g2> ile alabilirsiniz."
+  },
   "784272a0fc664eaa": {
    "source": "Enter",
    "text": "Enter"
@@ -7537,6 +7609,10 @@
   "78dd3467c0624889": {
    "source": "egui's faint background",
    "text": "egui'nin soluk arka planı"
+  },
+  "78e03ddf9a027109": {
+   "source": "<g1>Metalink files:</g1> open a <x2/> or <x3/> file (<g4>Tasks → Open Metalink file...</g4>) or address, and pick its files in <g5>Add Metalink</g5>. DDM uses the publisher's mirrors, checks every file and fetches again only the parts that fail the check.",
+   "text": "<g1>Metalink dosyaları:</g1> bir <x2/> veya <x3/> dosyasını (<g4>Görevler → Metalink dosyası aç...</g4>) ya da adresini açın ve dosyalarını <g5>Metalink ekle</g5> penceresinde seçin. DDM yayımcının yansılarını kullanır, her dosyayı denetler ve yalnızca denetimi geçemeyen parçaları yeniden alır."
   },
   "78e3e71069ddbb1f": {
    "source": "<g1></g1>86, built in",
@@ -9094,6 +9170,10 @@
    "source": "Some sites, YouTube among them, send each viewer to a nearby video server, sometimes one inside the internet provider's own network. If that server can't be reached from your connection, a browser quietly switches to another one, but yt-dlp on its own would give up. Before each video download DDM checks the servers in the video's links and, if one doesn't answer, switches to the next one the site lists. The download's log says when this happens.",
    "text": "YouTube da dahil olmak üzere bazı siteler, her izleyiciyi yakındaki bir video sunucusuna, bazen de internet sağlayıcısının kendi ağındaki bir sunucuya yönlendirir. Bu sunucuya bağlantınız üzerinden ulaşılamıyorsa tarayıcı sessizce başka bir sunucuya geçer, ancak yt-dlp tek başına indirmeyi durdurur. DDM, her video indirilmeden önce videonun bağlantılarındaki sunucuları denetler. Bir sunucu yanıt vermezse sitenin listesindeki bir sonraki sunucuya geçer. Bu olduğunda indirme günlüğünde belirtilir."
   },
+  "915c3e2d8a2f80e5": {
+   "source": "Day and dark mode, 86 languages including right to left, keyboard and screen-reader access, a portable version, a phone remote and a server mode.",
+   "text": "Gündüz ve karanlık kip, sağdan sola yazılanlar dahil 86 dil, klavye ve ekran okuyucu erişimi, taşınabilir sürüm, telefondan uzaktan kumanda ve sunucu kipi."
+  },
   "916757d942e8dd7f": {
    "source": "When you added it.",
    "text": "Ne zaman eklediğiniz."
@@ -9117,6 +9197,10 @@
   "91d9821e91c26313": {
    "source": "Who makes Dannex Download Manager?",
    "text": "Dannex Download Manager'ı kim geliştiriyor?"
+  },
+  "91dd84a3c6fa9e9c": {
+   "source": "<g1>Download File Info, the way you know it:</g1> it opens the moment a download is handed over, the file starts arriving while you choose where it goes, and it joins the list only once you click <g2>Start Download</g2> or <g3>Download Later</g3>; <g4>Cancel</g4> leaves nothing behind.",
+   "text": "<g1>Alışık olduğunuz Dosya Bilgilerini İndir penceresi:</g1> indirme verildiği anda açılır, nereye kaydedileceğini seçerken dosya gelmeye başlar ve yalnızca <g2>İndirmeyi Başlat</g2> veya <g3>Daha Sonra İndir</g3> düğmesine tıkladığınızda listeye eklenir; <g4>İptal</g4> geride hiçbir şey bırakmaz."
   },
   "91e1fe6fec5ba25a": {
    "source": "3.1 s",
@@ -10998,6 +11082,10 @@
    "source": "<g1>Ask for the queue after a batch download</g1> — the same for batch downloads.",
    "text": "<g1>Toplu indirmeden sonra kuyruğu sor</g1> — aynısını toplu indirmeler için yapar."
   },
+  "b092ccfc243af898": {
+   "source": "Music and video protected against copying, such as Spotify's, say so plainly instead of failing.",
+   "text": "Spotify gibi hizmetlerdeki kopyalamaya karşı korunan müzik ve videolar, başarısız olmak yerine bunu açıkça belirtir."
+  },
   "b0c0ef4ee0008226": {
    "source": "— FTP secured with TLS from the start of the session (explicit FTPS, <x1/>, usually port 21). Use it when the server says it supports TLS.",
    "text": "— oturumun başından itibaren TLS ile güvence altına alınan FTP (açık FTPS, <x1/>, genellikle 21 numaralı bağlantı noktası). Sunucu TLS'yi desteklediğini belirtiyorsa kullanın."
@@ -11329,6 +11417,10 @@
   "b5af393d53b1864c": {
    "source": "If DDM closes unexpectedly or stops responding, a window opens with a report of what happened. You can read all of it, and send it to the developers on GitHub if you want to.",
    "text": "DDM beklenmedik şekilde kapanırsa veya yanıt vermeyi durdurursa, ne olduğuna dair bir rapor içeren bir pencere açılır. Hepsini okuyabilir ve isterseniz GitHub üzerinden geliştiricilere gönderebilirsiniz."
+  },
+  "b5c2f1df18e4c68d": {
+   "source": "<g1>Calm when many arrive at once:</g1> a queue's downloads run without opening windows, and downloads that finish together share one <g2>Download complete</g2> window.",
+   "text": "<g1>Çok sayıda indirme aynı anda geldiğinde sakin:</g1> sıradaki indirmeler pencere açmadan çalışır, birlikte biten indirmeler tek bir <g2>İndirme tamamlandı</g2> penceresini paylaşır."
   },
   "b5eab626b65184f1": {
    "source": "Firefox",
@@ -12090,6 +12182,10 @@
    "source": "<g1>File types</g1>: Images, Video, Audio, Documents, Archives, Programs, <g2>Web pages</g2> (the pages themselves) and <g3>Styles, scripts, fonts</g3> (what pages need to look right). <g4>Other types</g4> takes extensions of your own, separated by spaces: <x5/>.",
    "text": "<g1>Dosya türleri</g1>: Resimler, Video, Ses, Belgeler, Arşivler, Programlar, <g2>Web sayfaları</g2> (sayfaların kendisi) ve <g3>Stiller, betikler, yazı tipleri</g3> (sayfaların doğru görünmesi için gerekenler). <g4>Diğer türler</g4> kendi uzantılarınızı boşlukla ayırarak alır: <x5/>."
   },
+  "c3b868e39de30cb2": {
+   "source": "<g1>Torrents and magnet links</g1>, with sequential order, RSS feeds, sharing limits and web seeds. <g2>Torrent → Play while downloading</g2> plays a torrent's video or sound in your browser while it arrives, and skipping ahead fetches that part first.",
+   "text": "<g1>Torrentler ve magnet bağlantıları</g1>; sıralı indirme, RSS akışları, paylaşım sınırları ve web seed'leri ile. <g2>Torrent → İndirirken oynat</g2>, torrentin videosunu veya sesini gelirken tarayıcınızda oynatır; ileri sarma o bölümü önce getirir."
+  },
   "c3bbc73f092cecb9": {
    "source": "Options on its Sounds page: a sound for each event",
    "text": "Seçenekler'in Sesler sayfası: her olay için bir ses"
@@ -12622,6 +12718,10 @@
    "source": "3. Choose how many run at once",
    "text": "3. Aynı anda çalışacak indirme sayısını seçin"
   },
+  "cbaa19f5e519d6cd": {
+   "source": "<g1>The Dannex Download Manager extension</g1>, from the Chrome Web Store for Chrome, Edge, Brave, Opera and Vivaldi, and for Firefox, hands your downloads to DDM with their sign-in. One click on its toolbar button turns it off or on.",
+   "text": "<g1>Dannex Download Manager eklentisi</g1>, Chrome, Edge, Brave, Opera ve Vivaldi için Chrome Web Mağazası'ndan, Firefox için ise ayrıca edinilir ve indirmelerinizi oturum bilgileriyle birlikte DDM'ye verir. Araç çubuğu düğmesine bir kez tıklamak onu kapatır veya açar."
+  },
   "cbb1b076308c99c8": {
    "source": "<g1>Only downloads</g1>: a paired device lists, adds, pauses, starts and removes downloads, and starts and stops queues. It can't change settings, open windows on the computer, or see folders (the list it gets has no paths).",
    "text": "<g1>Yalnızca indirmeler</g1>: Eşleştirilmiş bir cihaz indirmeleri listeler, ekler, duraklatır, başlatır ve kaldırır, ayrıca kuyrukları başlatır ve durdurur. Ayarları değiştiremez, bilgisayarda pencere açamaz veya klasörleri göremez (aldığı listede yol bilgisi yoktur)."
@@ -12893,6 +12993,10 @@
   "d04d5c0494e576d1": {
    "source": "A modern look with several themes, queues and schedulers, and an Android app",
    "text": "Çeşitli temalar, kuyruklar ve zamanlayıcılar ile modern bir görünüm ve bir Android uygulaması"
+  },
+  "d05ed3197dd25138": {
+   "source": "Video, music, galleries, torrents and sites",
+   "text": "Video, müzik, galeriler, torrentler ve siteler"
   },
   "d068a48275a5c381": {
    "source": "If someone already reported the same problem, the window says so (<g1>Already reported as issue #…</g1>). <g2>Open the reported issue</g2> opens it and puts your report on the clipboard, so you can add it as a comment.",
@@ -13285,6 +13389,10 @@
   "d69a06f7c6e1860e": {
    "source": "Dannex Download Manager's queues and Scheduler: start downloads at night, stop them in the morning, stay under a data cap, turn the computer off.",
    "text": "Dannex Download Manager'ın sıraları ve Zamanlayıcısı: indirmeleri gece başlatın, sabah durdurun, veri sınırının altında kalın, bilgisayarı kapatın."
+  },
+  "d6aa0a0a22b370bd": {
+   "source": "<g1>File Properties</g1> on double-click, <g2>Show progress</g2>, and <g3>Columns...</g3> to show, hide and order the list's columns. Minimize keeps DDM on the taskbar; closing it keeps it running in the notification area.",
+   "text": "Çift tıklayınca <g1>Dosya özellikleri</g1>, <g2>İlerlemeyi göster</g2> ve listenin sütunlarını göstermek, gizlemek ve sıralamak için <g3>Sütunlar...</g3>. Simge durumuna küçültünce DDM görev çubuğunda kalır; kapatınca bildirim alanında çalışmayı sürdürür."
   },
   "d6cb845d0276e43c": {
    "source": "<g1>Address</g1> — for an unfinished download, you can paste a new address here. See <g2>Resume a broken download</g2>.",
@@ -14250,6 +14358,10 @@
    "source": "The same DDM, without a window",
    "text": "Aynı DDM, penceresiz"
   },
+  "e5a11911d8c5a30b": {
+   "source": "Dannex Download Manager {v1}: a free, open-source download manager for Windows (with Linux and an experimental macOS version), laid out the way Internet Download Manager users expect, and faster.",
+   "text": "Dannex Download Manager {v1}: Windows için ücretsiz, açık kaynaklı bir indirme yöneticisi (Linux ve deneysel bir macOS sürümüyle birlikte). Internet Download Manager kullanıcılarının alışık olduğu düzende ve daha hızlı."
+  },
   "e5a7240e9ee9a3e8": {
    "source": "<g1>7z and RAR archives need 7-Zip</g1>, a free program (<g2>7-zip.org</g2>). DDM runs it when it is installed, for split and encrypted archives too. RAR's own extraction code can't be part of a free program like DDM, and 7-Zip extracts 7z best.",
    "text": "<g1>7z ve RAR arşivleri için 7-Zip gerekir</g1>. 7-Zip ücretsiz bir programdır (<g2>7-zip.org</g2>). DDM, yüklüyse onu bölünmüş ve şifreli arşivler için de çalıştırır. RAR'ın kendi çıkarma kodu, DDM gibi ücretsiz bir programda kullanılamaz ve 7-Zip, 7z arşivlerini en iyi şekilde çıkarır."
@@ -14281,6 +14393,10 @@
   "e5ed5b1460c13fe3": {
    "source": "The main window in the Native theme",
    "text": "Sistem temasında ana pencere"
+  },
+  "e6164e0573a81b4c": {
+   "source": "Your system asks for your password, installs the checked package and starts the new DDM.",
+   "text": "Sisteminiz parolanızı sorar, doğrulanmış paketi kurar ve yeni DDM'yi başlatır."
   },
   "e629533fa65b8d1f": {
    "source": "Extracting archives",
@@ -14433,6 +14549,10 @@
   "e88a839b4e8d456b": {
    "source": "<g1>Command line</g1><g2>IDM's command-line switches, a terminal downloader with JSON output, and a local API for other programs.</g2>",
    "text": "<g1>Komut satırı</g1><g2>IDM'in komut satırı anahtarları, JSON çıktılı bir terminal indirici ve diğer programlar için yerel bir API.</g2>"
+  },
+  "e89fc59cd1207558": {
+   "source": "<g1>Themes:</g1> <g2>View → Theme → Choose a theme...</g2> shows each theme as a live picture of the window, with its own accent colour, icons, text size and row height, and themes can be shared as a file.",
+   "text": "<g1>Temalar:</g1> <g2>Görünüm → Tema → Bir tema seçin...</g2>, her temayı pencerenin canlı bir resmi olarak, kendi vurgu rengi, simgeleri, metin boyutu ve satır yüksekliğiyle gösterir; temalar dosya olarak paylaşılabilir."
   },
   "e8a02996d2b8ca17": {
    "source": "<g1>A pasted address</g1> (Add URL, Download video from a page, a playlist): choose your browser in <g2>Options → Sites Logins → Cookies for video sites</g2>. yt-dlp then reads that browser's cookies on this computer for every video it looks up or downloads. When the extension passed the page's own cookies, those are used instead: they are that page's and that session's.",
@@ -14653,6 +14773,10 @@
   "ec30751899ba93ca": {
    "source": "<g1>Folders</g1> aren't downloaded yet: a folder's link gets <g2>this is a Google Drive folder, not a file</g2>. Open the folder in the browser and download its files from there.",
    "text": "<g1>Klasörler</g1> henüz indirilemiyor: klasör bağlantısı açıldığında <g2>bu bir Google Drive klasörü, dosya değil</g2> yanıtı alınır. Klasörü tarayıcıda açın ve dosyalarını oradan indirin."
+  },
+  "ec4eb4ee5e5fa1bc": {
+   "source": "Setup",
+   "text": "Kurulum"
   },
   "ec54b48fd7c3fa44": {
    "source": "Dannex Download Manager starts with your computer in the notification area, hides progress windows there in one click, and uses little memory there.",
@@ -15022,6 +15146,10 @@
    "source": "Click <g1>Add URL</g1> on the toolbar, choose <g2>Tasks → Add new download</g2>, or press <g3>Ctrl+N</g3>.",
    "text": "Araç çubuğunda <g1>URL Ekle</g1>'ye tıklayın, <g2>Görevler → Yeni indirme ekle</g2> seçeneğini belirleyin veya <g3>Ctrl+N</g3> tuşlarına basın."
   },
+  "f2ffde3de8176631": {
+   "source": "<g1>Every connection numbered</g1> in the progress window, however many you allow.",
+   "text": "İzin verdiğiniz bağlantı sayısı ne olursa olsun, ilerleme penceresinde <g1>her bağlantı numaralandırılır</g1>."
+  },
   "f313ce0fb2d7fe17": {
    "source": "<g1>Peers</g1> — the computers you are downloading from, with how much you received from and sent to each.",
    "text": "<g1>Eşler</g1> — indirme yaptığınız bilgisayarları, her birinden alınan ve her birine gönderilen veri miktarıyla birlikte gösterir."
@@ -15153,6 +15281,10 @@
   "f56e4e7d42ad5f01": {
    "source": "a video it hands to yt-dlp;",
    "text": "yt-dlp'ye devrettiği bir video;"
+  },
+  "f59109bb190b553c": {
+   "source": "<g1>Fast:</g1> every download comes in several parts at once, each over its own connection, and is re-balanced until the last byte. A connection that goes quiet is replaced within seconds, small files start at full speed, and a server that turns DDM away is asked again as a browser would.",
+   "text": "<g1>Hızlı:</g1> her indirme aynı anda birkaç parça hâlinde, her biri kendi bağlantısı üzerinden gelir ve son bayta kadar yeniden dengelenir. Sessizleşen bir bağlantı birkaç saniye içinde değiştirilir, küçük dosyalar tam hızla başlar, DDM'yi geri çeviren bir sunucuya da tarayıcı gibi yeniden istek gönderilir."
   },
   "f599b55f9382804e": {
    "source": "Such a part pressed or open",
