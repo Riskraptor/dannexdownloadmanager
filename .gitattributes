@@ -1,0 +1,13 @@
+# Code is LF on every checkout, whatever the editor or core.autocrlf (a file once converted to
+# CRLF showed as rewritten whole). Rules further down override these for the files they name.
+*.rs text eol=lf
+*.js text eol=lf
+*.mjs text eol=lf
+# Generated files keep the line endings their tools write, on every checkout (CI compares them).
+i18n/*.tsv text eol=lf
+tools/installer/languages.iss text eol=crlf
+tools/installer/languages/*.isl text eol=crlf
+# Test fixtures are compared byte for byte (a signed checksum list): never converted.
+crates/*/tests/fixtures/** -text
+# Scripts that run inside Linux (mdm-lab copies them in from a Windows checkout).
+tools/lab/wsl/*.sh text eol=lf

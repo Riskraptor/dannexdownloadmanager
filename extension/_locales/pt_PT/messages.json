@@ -1,0 +1,488 @@
+{
+  "name": {
+    "message": "Dannex Download Manager"
+  },
+  "description": {
+    "message": "Envia os ficheiros, ligações e vídeos que transfere no navegador para a aplicação Dannex Download Manager no seu computador."
+  },
+  "menu": {
+    "message": "Transferir com o DDM"
+  },
+  "video_download": {
+    "message": "Transferir vídeo"
+  },
+  "video_more": {
+    "message": "Mais opções"
+  },
+  "video_hide_here": {
+    "message": "Ocultar neste vídeo"
+  },
+  "video_close": {
+    "message": "Fechar"
+  },
+  "video_never_site": {
+    "message": "Nunca em $site$",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "video_settings": {
+    "message": "Definições do botão..."
+  },
+  "video_sent": {
+    "message": "Enviado para DDM"
+  },
+  "video_failed": {
+    "message": "Dannex Download Manager não está instalado ou não iniciou"
+  },
+  "video_drag": {
+    "message": "Arraste para o mover ao longo do limite do vídeo"
+  },
+  "menu_selected": {
+    "message": "Descarregar links selecionados com DDM"
+  },
+  "menu_all": {
+    "message": "Descarregar todos os links com DDM"
+  },
+  "menu_images": {
+    "message": "Transferir todas as imagens com o DDM"
+  },
+  "menu_media": {
+    "message": "Transferir todos os vídeos e áudio com o DDM"
+  },
+  "status_not_installed": {
+    "message": "O Dannex Download Manager não está instalado"
+  },
+  "status_installed": {
+    "message": "O Dannex Download Manager está instalado"
+  },
+  "status_forbidden": {
+    "message": "Atualizar o Dannex Download Manager"
+  },
+  "status_not_running": {
+    "message": "O Dannex Download Manager não iniciou"
+  },
+  "status_host_failed": {
+    "message": "Algo está a bloquear o Dannex Download Manager"
+  },
+  "status_too_large": {
+    "message": "A última transferência não pôde ir para o Dannex Download Manager"
+  },
+  "status_update_app": {
+    "message": "Atualize o Dannex Download Manager para aproveitar tudo o que esta extensão pode fazer."
+  },
+  "popup_take": {
+    "message": "Enviar transferências para o Dannex Download Manager"
+  },
+  "popup_proxy": {
+    "message": "Transferir através da VPN ou do proxy deste navegador"
+  },
+  "popup_proxy_title": {
+    "message": "Ative isto se utilizar uma extensão de VPN ou proxy. O browser pergunta uma vez."
+  },
+  "popup_proxy_title_chromium": {
+    "message": "Ative isto se utilizar uma extensão de VPN ou proxy neste browser."
+  },
+  "popup_help": {
+    "message": "Ajuda"
+  },
+  "page_support": {
+    "message": "Apoiar o DDM"
+  },
+  "popup_declined": {
+    "message": "A última transferência ficou no navegador: $name$",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "setup.png"
+      }
+    }
+  },
+  "popup_declined_unnamed": {
+    "message": "A última transferência ficou no navegador."
+  },
+  "declined_file_type": {
+    "message": "O tipo de ficheiro não está na lista do Dannex Download Manager (Opções → Tipos de ficheiro)."
+  },
+  "declined_site": {
+    "message": "O site está na lista de sites cujas transferências o Dannex Download Manager deixa ao navegador (Opções → Tipos de ficheiro)."
+  },
+  "declined_address": {
+    "message": "O endereço está na lista de endereços que o Dannex Download Manager deixa ao navegador (Opções → Tipos de ficheiro)."
+  },
+  "declined_small": {
+    "message": "É mais pequeno do que o menor ficheiro que o Dannex Download Manager assume (Opções → Tipos de ficheiro)."
+  },
+  "declined_browser": {
+    "message": "Este navegador não está selecionado em Opções → Geral do Dannex Download Manager."
+  },
+  "declined_integration_off": {
+    "message": "A integração do navegador está desativada em Opções → Geral do Dannex Download Manager."
+  },
+  "declined_site_access": {
+    "message": "Esta extensão não é permitida nesse site."
+  },
+  "declined_handed_back": {
+    "message": "Escolheu «Transferir com o navegador» para esta transferência no Dannex Download Manager."
+  },
+  "video_off": {
+    "message": "O botão de download está desativado neste site"
+  },
+  "video_drm": {
+    "message": "Vídeo protegido: não pode ser guardado"
+  },
+  "video_drm_audio": {
+    "message": "Áudio protegido: não pode ser guardado"
+  },
+  "video_protected": {
+    "message": "Protegido"
+  },
+  "video_download_audio": {
+    "message": "Transferir áudio"
+  },
+  "video_unnamed": {
+    "message": "Abra a página do próprio vídeo e tente lá"
+  },
+  "video_looking": {
+    "message": "A procurar as qualidades…"
+  },
+  "video_open_mdm": {
+    "message": "Abrir no DDM…"
+  },
+  "video_no_choices": {
+    "message": "Não há nenhum vídeo para transferir aqui"
+  },
+  "video_playlist": {
+    "message": "Uma lista de vídeos: escolha-os no Dannex Download Manager"
+  },
+  "video_no_ytdlp": {
+    "message": "O Dannex Download Manager precisa do yt-dlp para este vídeo. Use Abrir no DDM… para o instalar."
+  },
+  "video_too_long": {
+    "message": "A pesquisa demorou demasiado"
+  },
+  "video_busy": {
+    "message": "O Dannex Download Manager está ocupado com outros vídeos"
+  },
+  "video_queued": {
+    "message": "Adicionado à fila"
+  },
+  "video_failed_lookup": {
+    "message": "Não foi possível pesquisar"
+  },
+  "video_tab_video": {
+    "message": "Vídeo"
+  },
+  "video_tab_audio": {
+    "message": "Áudio"
+  },
+  "video_open_post": {
+    "message": "Abra a publicação e use o botão lá"
+  },
+  "video_audio_original": {
+    "message": "Apenas áudio, original $type$",
+    "placeholders": {
+      "type": {
+        "content": "$1",
+        "example": "M4A"
+      }
+    }
+  },
+  "video_audio_only": {
+    "message": "Apenas áudio $type$",
+    "placeholders": {
+      "type": {
+        "content": "$1",
+        "example": "MP3 320 kbps"
+      }
+    }
+  },
+  "video_audio_original_short": {
+    "message": "$type$ original",
+    "placeholders": {
+      "type": {
+        "content": "$1",
+        "example": "M4A"
+      }
+    }
+  },
+  "video_pick_waiting": {
+    "message": "A iniciar assim que o DDM estiver pronto…"
+  },
+  "video_pick_gone": {
+    "message": "Essa qualidade não está disponível: escolha outra"
+  },
+  "popup_send_to": {
+    "message": "Enviar downloads para"
+  },
+  "popup_send_here": {
+    "message": "Este computador"
+  },
+  "popup_send_remote": {
+    "message": "Dannex Download Manager noutro computador"
+  },
+  "popup_remote_code": {
+    "message": "Código de emparelhamento"
+  },
+  "popup_remote_open": {
+    "message": "Abrir"
+  },
+  "popup_remote_pair": {
+    "message": "Emparelhar"
+  },
+  "popup_remote_help": {
+    "message": "Primeiro abra o endereço aqui e depois introduza o código de Opções → Remoto → Emparelhar um dispositivo."
+  },
+  "status_remote": {
+    "message": "Os downloads vão para $address$",
+    "placeholders": {
+      "address": {
+        "content": "$1",
+        "example": "https://192.168.1.10:8463/"
+      }
+    }
+  },
+  "remote_address": {
+    "message": "Introduza o endereço https://."
+  },
+  "remote_unreachable": {
+    "message": "Não foi possível ligar. Abra o endereço neste navegador, continue depois do aviso de segurança e tente novamente."
+  },
+  "remote_wrong_code": {
+    "message": "Código errado."
+  },
+  "remote_no_code": {
+    "message": "Ainda não há nenhum código para introduzir: clique primeiro em Emparelhar um dispositivo aí."
+  },
+  "remote_too_soon": {
+    "message": "Aguarde um momento e tente novamente."
+  },
+  "remote_failed": {
+    "message": "Não funcionou. Tente novamente."
+  },
+  "remote_device_name": {
+    "message": "Extensão do navegador"
+  },
+  "badge_off": {
+    "message": "OFF"
+  },
+  "tip_on": {
+    "message": "O Dannex Download Manager está ativado."
+  },
+  "tip_off": {
+    "message": "O Dannex Download Manager está desativado."
+  },
+  "tip_remote": {
+    "message": "As transferências vão para o Dannex Download Manager em $address$.",
+    "placeholders": {
+      "address": {
+        "content": "$1",
+        "example": "https://192.168.1.10:8463/"
+      }
+    }
+  },
+  "status_off_in_app": {
+    "message": "Desativado no Dannex Download Manager"
+  },
+  "status_duplicate": {
+    "message": "Está instalada outra cópia desta extensão"
+  },
+  "click_fix": {
+    "message": "Clique para ver o que fazer."
+  },
+  "click_details": {
+    "message": "Clique para ver os detalhes."
+  },
+  "toolbar_exclude": {
+    "message": "Não assumir transferências deste site"
+  },
+  "toolbar_help": {
+    "message": "Ajuda"
+  },
+  "toolbar_store": {
+    "message": "Obter atualizações automáticas da Chrome Web Store..."
+  },
+  "options_take_note": {
+    "message": "Quando está desativada, as transferências ficam no browser. O botão da extensão tem o mesmo interruptor."
+  },
+  "options_what_to_do": {
+    "message": "Ver o que fazer"
+  },
+  "options_more": {
+    "message": "Mais"
+  },
+  "page_checking": {
+    "message": "A procurar o Dannex Download Manager…"
+  },
+  "page_on_lead": {
+    "message": "As transferências que inicia neste navegador vão para o Dannex Download Manager."
+  },
+  "page_off_lead": {
+    "message": "Está desativada, pelo que as transferências ficam neste navegador."
+  },
+  "page_remote_title": {
+    "message": "As transferências vão para outro Dannex Download Manager"
+  },
+  "page_remote_lead": {
+    "message": "As transferências que inicia neste navegador vão para o Dannex Download Manager em $address$.",
+    "placeholders": {
+      "address": {
+        "content": "$1",
+        "example": "https://192.168.1.10:8463/"
+      }
+    }
+  },
+  "page_lead_not_installed": {
+    "message": "Esta extensão precisa da aplicação gratuita Dannex Download Manager. Instale-a e esta página atualiza-se sozinha."
+  },
+  "page_lead_not_running": {
+    "message": "O navegador tentou iniciá-lo, mas demorou demasiado. Inicie o Dannex Download Manager manualmente e tente novamente."
+  },
+  "page_lead_host_failed": {
+    "message": "O software de segurança é a causa habitual. Permita o Dannex Download Manager no seu programa antivírus ou instale-o novamente."
+  },
+  "page_lead_forbidden": {
+    "message": "Esta versão do Dannex Download Manager é demasiado antiga para esta extensão. Instale a mais recente."
+  },
+  "page_lead_too_large": {
+    "message": "O site enviou demasiados dados de início de sessão. Termine sessão no site, inicie sessão novamente e tente outra vez."
+  },
+  "page_download": {
+    "message": "Transferir o Dannex Download Manager"
+  },
+  "page_files_windows": {
+    "message": "Para Windows 10 e 11."
+  },
+  "page_files_macos": {
+    "message": "Para Mac (uma imagem de disco .dmg)."
+  },
+  "page_files_linux": {
+    "message": "Para Linux (AppImage, .deb ou .rpm)."
+  },
+  "page_files_other": {
+    "message": "Para computadores com Windows, Mac e Linux."
+  },
+  "page_all_downloads": {
+    "message": "Todas as transferências"
+  },
+  "page_step_windows": {
+    "message": "Execute o instalador que transferiu."
+  },
+  "page_step_macos": {
+    "message": "Abra o .dmg, arraste o Dannex Download Manager para Aplicações e inicie-o uma vez."
+  },
+  "page_step_linux": {
+    "message": "Instale o .deb ou .rpm (ou execute o AppImage) e inicie o Dannex Download Manager uma vez."
+  },
+  "page_step_other": {
+    "message": "O Dannex Download Manager funciona em computadores com Windows, Mac e Linux. Instale-o num deles e adicione esta extensão a um navegador aí."
+  },
+  "page_step_wait": {
+    "message": "Mantenha esta página aberta. Muda sozinha quando o Dannex Download Manager estiver pronto."
+  },
+  "page_step_restart": {
+    "message": "Nada após um minuto? Reinicie o navegador."
+  },
+  "page_step_installed": {
+    "message": "Já está instalado? No Dannex Download Manager, abra Opções → Geral → Testar integração do navegador."
+  },
+  "page_try_again": {
+    "message": "Tentar novamente"
+  },
+  "page_app_options": {
+    "message": "Abrir as Opções do Dannex Download Manager"
+  },
+  "page_duplicate_title": {
+    "message": "Remover esta cópia"
+  },
+  "page_duplicate_lead": {
+    "message": "A cópia da Chrome Web Store também está instalada e atualiza-se sozinha. Pode remover esta."
+  },
+  "page_remove": {
+    "message": "Remover esta cópia"
+  },
+  "page_extensions": {
+    "message": "Abrir a página de extensões"
+  },
+  "page_update_app_how": {
+    "message": "No Dannex Download Manager, escolha Ajuda → Procurar atualizações..."
+  },
+  "page_behind": {
+    "message": "Chegou uma versão mais recente desta extensão com o Dannex Download Manager $version$.",
+    "placeholders": {
+      "version": {
+        "content": "$1",
+        "example": "0.7.0"
+      }
+    }
+  },
+  "page_behind_store": {
+    "message": "O navegador atualiza-a sozinho dentro de algumas horas, ou agora com Procurar atualizações."
+  },
+  "page_behind_unpacked": {
+    "message": "Recarregue a extensão para a utilizar."
+  },
+  "page_behind_other": {
+    "message": "Adicione a nova a partir da pasta do Dannex Download Manager, tal como adicionou esta."
+  },
+  "page_check_updates": {
+    "message": "Procurar atualizações"
+  },
+  "page_up_to_date": {
+    "message": "Ainda não há versão mais recente. O navegador volta a verificar sozinho."
+  },
+  "page_reload": {
+    "message": "Recarregar a extensão"
+  },
+  "page_store": {
+    "message": "Obtenha atualizações automáticas: adicione esta extensão a partir da Chrome Web Store e remova depois esta cópia."
+  },
+  "page_open_store": {
+    "message": "Abrir a Chrome Web Store"
+  },
+  "page_temporary": {
+    "message": "O Firefox vai remover este suplemento ao fechar, porque foi adicionado como suplemento temporário."
+  },
+  "page_site_access": {
+    "message": "Esta extensão só é permitida em alguns sites, pelo que as transferências de outros sites ficam no navegador."
+  },
+  "page_allow_sites": {
+    "message": "Permitir em todos os sites"
+  },
+  "page_private": {
+    "message": "As transferências de janelas privadas ficam no navegador, porque esta extensão não tem permissão aí."
+  },
+  "page_private_chromium": {
+    "message": "Para alterar isto, ative Permitir no modo de navegação anónima na página de detalhes."
+  },
+  "page_private_firefox": {
+    "message": "Para alterar isto, escolha Permitir junto a Executar em janelas privadas (Private Windows) na página da extensão em Extensões e temas."
+  },
+  "page_learn_more": {
+    "message": "Saber mais"
+  },
+  "popup_video": {
+    "message": "Transferir o vídeo desta página"
+  },
+  "popup_all": {
+    "message": "Transferir todas as ligações desta página"
+  },
+  "popup_no_links": {
+    "message": "Esta página não tem ligações para transferir."
+  },
+  "popup_drm": {
+    "message": "O vídeo ou o som desta página está protegido contra cópia (DRM) e não pode ser transferido."
+  },
+  "popup_status": {
+    "message": "Estado e ajuda"
+  },
+  "popup_options": {
+    "message": "Opções da extensão"
+  },
+  "popup_fix": {
+    "message": "Ver o que fazer"
+  }
+}

@@ -1,0 +1,488 @@
+{
+  "name": {
+    "message": "Dannex Download Manager"
+  },
+  "description": {
+    "message": "आप ब्राउज़र में जो फ़ाइलें, लिंक और वीडियो डाउनलोड करते हैं, उन्हें आपके कंप्यूटर पर Dannex Download Manager ऐप को भेजता है।"
+  },
+  "menu": {
+    "message": "DDM से डाउनलोड करें"
+  },
+  "video_download": {
+    "message": "वीडियो डाउनलोड करें"
+  },
+  "video_more": {
+    "message": "अधिक विकल्प"
+  },
+  "video_hide_here": {
+    "message": "केवल इस वीडियो पर छिपाएँ"
+  },
+  "video_close": {
+    "message": "बंद करें"
+  },
+  "video_never_site": {
+    "message": "$site$ पर फिर कभी नहीं",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "video_settings": {
+    "message": "बटन सेटिंग्स..."
+  },
+  "video_sent": {
+    "message": "DDM को भेजा गया"
+  },
+  "video_failed": {
+    "message": "Dannex Download Manager स्थापित नहीं है या शुरू नहीं हुआ"
+  },
+  "video_drag": {
+    "message": "इसे वीडियो के किनारे पर ले जाने के लिए खींचें"
+  },
+  "menu_selected": {
+    "message": "DDM के साथ चयनित लिंक डाउनलोड करें"
+  },
+  "menu_all": {
+    "message": "DDM के साथ सभी लिंक डाउनलोड करें"
+  },
+  "menu_images": {
+    "message": "DDM के साथ सभी छवियाँ डाउनलोड करें"
+  },
+  "menu_media": {
+    "message": "DDM के साथ सभी वीडियो और ऑडियो डाउनलोड करें"
+  },
+  "status_not_installed": {
+    "message": "Dannex Download Manager इंस्टॉल नहीं है"
+  },
+  "status_installed": {
+    "message": "Dannex Download Manager इंस्टॉल है"
+  },
+  "status_forbidden": {
+    "message": "Dannex Download Manager अपडेट करें"
+  },
+  "status_not_running": {
+    "message": "Dannex Download Manager प्रारंभ नहीं हुआ"
+  },
+  "status_host_failed": {
+    "message": "कुछ Dannex Download Manager को रोक रहा है"
+  },
+  "status_too_large": {
+    "message": "पिछला डाउनलोड Dannex Download Manager तक नहीं जा सका"
+  },
+  "status_update_app": {
+    "message": "इस एक्सटेंशन की सभी सुविधाएँ पाने के लिए Dannex Download Manager अपडेट करें।"
+  },
+  "popup_take": {
+    "message": "डाउनलोड Dannex Download Manager को भेजें"
+  },
+  "popup_proxy": {
+    "message": "इस ब्राउज़र के VPN या प्रॉक्सी से डाउनलोड करें"
+  },
+  "popup_proxy_title": {
+    "message": "अगर आप VPN या प्रॉक्सी एक्सटेंशन इस्तेमाल करते हैं, तो इसे चालू करें। ब्राउज़र एक बार पूछेगा।"
+  },
+  "popup_proxy_title_chromium": {
+    "message": "अगर आप इस ब्राउज़र में VPN या प्रॉक्सी एक्सटेंशन इस्तेमाल करते हैं, तो इसे चालू करें।"
+  },
+  "popup_help": {
+    "message": "सहायता"
+  },
+  "page_support": {
+    "message": "DDM का समर्थन करें"
+  },
+  "popup_declined": {
+    "message": "आपका पिछला डाउनलोड ब्राउज़र में ही रहा: $name$",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "setup.png"
+      }
+    }
+  },
+  "popup_declined_unnamed": {
+    "message": "आपका पिछला डाउनलोड ब्राउज़र में ही रहा।"
+  },
+  "declined_file_type": {
+    "message": "इसका फ़ाइल प्रकार Dannex Download Manager की सूची में नहीं है (विकल्प → फ़ाइल प्रकार)।"
+  },
+  "declined_site": {
+    "message": "इसकी साइट Dannex Download Manager की छोड़े जाने वाली साइटों की सूची में है (विकल्प → फ़ाइल प्रकार)।"
+  },
+  "declined_address": {
+    "message": "इसका पता Dannex Download Manager की छोड़े जाने वाले पतों की सूची में है (विकल्प → फ़ाइल प्रकार)।"
+  },
+  "declined_small": {
+    "message": "यह Dannex Download Manager द्वारा ली जाने वाली सबसे छोटी फ़ाइल से भी छोटी है (विकल्प → फ़ाइल प्रकार)।"
+  },
+  "declined_browser": {
+    "message": "इस ब्राउज़र पर Dannex Download Manager के विकल्प → सामान्य में टिक नहीं है।"
+  },
+  "declined_integration_off": {
+    "message": "Dannex Download Manager के विकल्प → सामान्य में ब्राउज़र एकीकरण बंद है।"
+  },
+  "declined_site_access": {
+    "message": "इस एक्सटेंशन को उस साइट पर अनुमति नहीं है।"
+  },
+  "declined_handed_back": {
+    "message": "आपने Dannex Download Manager में इस डाउनलोड के लिए ब्राउज़र से डाउनलोड करें विकल्प चुना।"
+  },
+  "video_off": {
+    "message": "इस साइट पर डाउनलोड बटन बंद है"
+  },
+  "video_drm": {
+    "message": "सुरक्षित वीडियो: इसे सहेजा नहीं जा सकता"
+  },
+  "video_drm_audio": {
+    "message": "सुरक्षित ऑडियो: इसे सहेजा नहीं जा सकता"
+  },
+  "video_protected": {
+    "message": "सुरक्षित"
+  },
+  "video_download_audio": {
+    "message": "ऑडियो डाउनलोड करें"
+  },
+  "video_unnamed": {
+    "message": "वीडियो का अपना पेज खोलें और वहाँ आज़माएँ"
+  },
+  "video_looking": {
+    "message": "क्वालिटी खोजी जा रही हैं…"
+  },
+  "video_open_mdm": {
+    "message": "DDM में खोलें…"
+  },
+  "video_no_choices": {
+    "message": "यहाँ डाउनलोड करने के लिए कोई वीडियो नहीं है"
+  },
+  "video_playlist": {
+    "message": "वीडियो की सूची: उन्हें Dannex Download Manager में चुनें"
+  },
+  "video_no_ytdlp": {
+    "message": "इस वीडियो के लिए Dannex Download Manager को yt-dlp चाहिए। इंस्टॉल करने के लिए DDM में खोलें… चुनें।"
+  },
+  "video_too_long": {
+    "message": "खोजने में बहुत समय लगा"
+  },
+  "video_busy": {
+    "message": "Dannex Download Manager अन्य वीडियो में व्यस्त है"
+  },
+  "video_queued": {
+    "message": "कतार में जोड़ा गया"
+  },
+  "video_failed_lookup": {
+    "message": "खोज नहीं हो सकी"
+  },
+  "video_tab_video": {
+    "message": "वीडियो"
+  },
+  "video_tab_audio": {
+    "message": "ऑडियो"
+  },
+  "video_open_post": {
+    "message": "पोस्ट खोलें, फिर वहां बटन का उपयोग करें"
+  },
+  "video_audio_original": {
+    "message": "केवल ऑडियो, मूल $type$",
+    "placeholders": {
+      "type": {
+        "content": "$1",
+        "example": "M4A"
+      }
+    }
+  },
+  "video_audio_only": {
+    "message": "केवल ऑडियो $type$",
+    "placeholders": {
+      "type": {
+        "content": "$1",
+        "example": "MP3 320 kbps"
+      }
+    }
+  },
+  "video_audio_original_short": {
+    "message": "मूल $type$",
+    "placeholders": {
+      "type": {
+        "content": "$1",
+        "example": "M4A"
+      }
+    }
+  },
+  "video_pick_waiting": {
+    "message": "DDM के तैयार होते ही शुरू हो रहा है…"
+  },
+  "video_pick_gone": {
+    "message": "वह गुणवत्ता उपलब्ध नहीं है: कोई और चुनें"
+  },
+  "popup_send_to": {
+    "message": "डाउनलोड यहां भेजें"
+  },
+  "popup_send_here": {
+    "message": "यह कंप्यूटर"
+  },
+  "popup_send_remote": {
+    "message": "दूसरे कंप्यूटर पर Dannex Download Manager"
+  },
+  "popup_remote_code": {
+    "message": "युग्मन कोड"
+  },
+  "popup_remote_open": {
+    "message": "इसे खोलें"
+  },
+  "popup_remote_pair": {
+    "message": "युग्मित करें"
+  },
+  "popup_remote_help": {
+    "message": "पहले यहाँ इसका पता खोलें, फिर इसके विकल्प → रिमोट → डिवाइस पेयर करें से कोड दर्ज करें।"
+  },
+  "status_remote": {
+    "message": "डाउनलोड $address$ पर जाते हैं",
+    "placeholders": {
+      "address": {
+        "content": "$1",
+        "example": "https://192.168.1.10:8463/"
+      }
+    }
+  },
+  "remote_address": {
+    "message": "इसका https:// पता दर्ज करें।"
+  },
+  "remote_unreachable": {
+    "message": "संपर्क नहीं हो सका। इसका पता इस ब्राउज़र में खोलें, सुरक्षा चेतावनी से आगे बढ़ें, फिर दोबारा प्रयास करें।"
+  },
+  "remote_wrong_code": {
+    "message": "गलत कोड।"
+  },
+  "remote_no_code": {
+    "message": "अभी दर्ज करने के लिए कोई कोड नहीं है: पहले वहाँ डिवाइस पेयर करें पर क्लिक करें।"
+  },
+  "remote_too_soon": {
+    "message": "थोड़ा प्रतीक्षा करें, फिर पुनः प्रयास करें।"
+  },
+  "remote_failed": {
+    "message": "यह काम नहीं किया। पुनः प्रयास करें।"
+  },
+  "remote_device_name": {
+    "message": "ब्राउज़र एक्सटेंशन"
+  },
+  "badge_off": {
+    "message": "बंद"
+  },
+  "tip_on": {
+    "message": "Dannex Download Manager चालू है।"
+  },
+  "tip_off": {
+    "message": "Dannex Download Manager बंद है।"
+  },
+  "tip_remote": {
+    "message": "डाउनलोड $address$ पर Dannex Download Manager को भेजे जाते हैं।",
+    "placeholders": {
+      "address": {
+        "content": "$1",
+        "example": "https://192.168.1.10:8463/"
+      }
+    }
+  },
+  "status_off_in_app": {
+    "message": "Dannex Download Manager में बंद किया गया"
+  },
+  "status_duplicate": {
+    "message": "इस एक्सटेंशन की एक और प्रति इंस्टॉल है"
+  },
+  "click_fix": {
+    "message": "क्या करना है, यह देखने के लिए क्लिक करें।"
+  },
+  "click_details": {
+    "message": "विवरण के लिए क्लिक करें।"
+  },
+  "toolbar_exclude": {
+    "message": "इस साइट से डाउनलोड न लें"
+  },
+  "toolbar_help": {
+    "message": "सहायता"
+  },
+  "toolbar_store": {
+    "message": "Chrome वेब स्टोर से स्वचालित अपडेट पाएँ..."
+  },
+  "options_take_note": {
+    "message": "बंद होने पर डाउनलोड ब्राउज़र में ही रहते हैं। एक्सटेंशन के बटन में भी यही स्विच है।"
+  },
+  "options_what_to_do": {
+    "message": "क्या करना है, देखें"
+  },
+  "options_more": {
+    "message": "और"
+  },
+  "page_checking": {
+    "message": "Dannex Download Manager खोजा जा रहा है…"
+  },
+  "page_on_lead": {
+    "message": "इस ब्राउज़र में शुरू किए गए डाउनलोड Dannex Download Manager में जाते हैं।"
+  },
+  "page_off_lead": {
+    "message": "यह बंद है, इसलिए डाउनलोड इसी ब्राउज़र में रहते हैं।"
+  },
+  "page_remote_title": {
+    "message": "डाउनलोड किसी दूसरे Dannex Download Manager में जाते हैं"
+  },
+  "page_remote_lead": {
+    "message": "इस ब्राउज़र में शुरू किए गए डाउनलोड $address$ पर Dannex Download Manager में जाते हैं।",
+    "placeholders": {
+      "address": {
+        "content": "$1",
+        "example": "https://192.168.1.10:8463/"
+      }
+    }
+  },
+  "page_lead_not_installed": {
+    "message": "इस एक्सटेंशन को मुफ़्त Dannex Download Manager ऐप की ज़रूरत है। इसे इंस्टॉल करें, और यह पेज अपने-आप अपडेट हो जाएगा।"
+  },
+  "page_lead_not_running": {
+    "message": "ब्राउज़र ने इसे शुरू करने की कोशिश की, पर इसमें बहुत समय लगा। Dannex Download Manager को स्वयं शुरू करें, फिर दोबारा प्रयास करें।"
+  },
+  "page_lead_host_failed": {
+    "message": "आमतौर पर इसका कारण सुरक्षा सॉफ़्टवेयर होता है। अपने एंटीवायरस प्रोग्राम में Dannex Download Manager को अनुमति दें, या इसे फिर से इंस्टॉल करें।"
+  },
+  "page_lead_forbidden": {
+    "message": "Dannex Download Manager का यह संस्करण इस एक्सटेंशन के लिए बहुत पुराना है। नवीनतम संस्करण इंस्टॉल करें।"
+  },
+  "page_lead_too_large": {
+    "message": "साइट ने बहुत अधिक साइन-इन डेटा भेजा। साइट से साइन आउट करके फिर से साइन इन करें, फिर दोबारा कोशिश करें।"
+  },
+  "page_download": {
+    "message": "Dannex Download Manager डाउनलोड करें"
+  },
+  "page_files_windows": {
+    "message": "Windows 10 और 11 के लिए।"
+  },
+  "page_files_macos": {
+    "message": "Mac के लिए (.dmg डिस्क इमेज)।"
+  },
+  "page_files_linux": {
+    "message": "Linux के लिए (AppImage, .deb या .rpm)।"
+  },
+  "page_files_other": {
+    "message": "Windows, Mac और Linux कंप्यूटर के लिए।"
+  },
+  "page_all_downloads": {
+    "message": "सभी डाउनलोड"
+  },
+  "page_step_windows": {
+    "message": "डाउनलोड किया गया सेटअप चलाएँ।"
+  },
+  "page_step_macos": {
+    "message": ".dmg खोलें, Dannex Download Manager को Applications में खींचें और एक बार शुरू करें।"
+  },
+  "page_step_linux": {
+    "message": ".deb या .rpm इंस्टॉल करें (या AppImage चलाएँ), फिर Dannex Download Manager को एक बार शुरू करें।"
+  },
+  "page_step_other": {
+    "message": "Dannex Download Manager Windows, Mac और Linux कंप्यूटर पर चलता है। इसे किसी एक पर इंस्टॉल करें और वहाँ किसी ब्राउज़र में यह एक्सटेंशन जोड़ें।"
+  },
+  "page_step_wait": {
+    "message": "इस पेज को खुला रखें। Dannex Download Manager तैयार होने पर यह अपने आप बदल जाता है।"
+  },
+  "page_step_restart": {
+    "message": "एक मिनट बाद भी कुछ नहीं हुआ? ब्राउज़र पुनः प्रारंभ करें।"
+  },
+  "page_step_installed": {
+    "message": "पहले से इंस्टॉल है? Dannex Download Manager में विकल्प → सामान्य → ब्राउज़र एकीकरण का परीक्षण करें चुनें।"
+  },
+  "page_try_again": {
+    "message": "पुनः प्रयास करें"
+  },
+  "page_app_options": {
+    "message": "Dannex Download Manager के विकल्प खोलें"
+  },
+  "page_duplicate_title": {
+    "message": "यह प्रति हटाएँ"
+  },
+  "page_duplicate_lead": {
+    "message": "Chrome वेब स्टोर वाली कॉपी भी इंस्टॉल है और अपने-आप अपडेट होती है। आप इसे हटा सकते हैं।"
+  },
+  "page_remove": {
+    "message": "यह प्रति हटाएँ"
+  },
+  "page_extensions": {
+    "message": "एक्सटेंशन पेज खोलें"
+  },
+  "page_update_app_how": {
+    "message": "Dannex Download Manager में चुनें: सहायता → अपडेट के लिए जाँच करें..."
+  },
+  "page_behind": {
+    "message": "इस एक्सटेंशन का नया संस्करण Dannex Download Manager $version$ के साथ आया है।",
+    "placeholders": {
+      "version": {
+        "content": "$1",
+        "example": "0.7.0"
+      }
+    }
+  },
+  "page_behind_store": {
+    "message": "ब्राउज़र इसे कुछ घंटों में अपने आप अपडेट कर देता है, या अभी अपडेट के लिए जाँच करें से।"
+  },
+  "page_behind_unpacked": {
+    "message": "उपयोग के लिए एक्सटेंशन रीलोड करें।"
+  },
+  "page_behind_other": {
+    "message": "नया एक्सटेंशन Dannex Download Manager के फ़ोल्डर से जोड़ें, जैसे आपने इसे जोड़ा था।"
+  },
+  "page_check_updates": {
+    "message": "अपडेट के लिए जाँच करें"
+  },
+  "page_up_to_date": {
+    "message": "अभी कोई नया संस्करण नहीं है। ब्राउज़र अपने आप फिर जाँचता है।"
+  },
+  "page_reload": {
+    "message": "एक्सटेंशन रीलोड करें"
+  },
+  "page_store": {
+    "message": "स्वचालित अपडेट पाएँ: इस एक्सटेंशन को Chrome वेब स्टोर से जोड़ें, फिर यह प्रति हटा दें।"
+  },
+  "page_open_store": {
+    "message": "Chrome वेब स्टोर खोलें"
+  },
+  "page_temporary": {
+    "message": "Firefox इस ऐड-ऑन को बंद होने पर हटा देगा, क्योंकि इसे अस्थायी ऐड-ऑन के रूप में जोड़ा गया था।"
+  },
+  "page_site_access": {
+    "message": "इस एक्सटेंशन को केवल कुछ साइटों पर अनुमति है, इसलिए अन्य साइटों के डाउनलोड ब्राउज़र में रहते हैं।"
+  },
+  "page_allow_sites": {
+    "message": "सभी साइटों पर अनुमति दें"
+  },
+  "page_private": {
+    "message": "निजी विंडो के डाउनलोड ब्राउज़र में ही रहते हैं, क्योंकि इस एक्सटेंशन को वहाँ अनुमति नहीं है।"
+  },
+  "page_private_chromium": {
+    "message": "इसे बदलने के लिए, इसके विवरण पेज पर गुप्त मोड में अनुमति दें चालू करें।"
+  },
+  "page_private_firefox": {
+    "message": "इसे बदलने के लिए, ऐड-ऑन और थीम में उसके पृष्ठ पर निजी विंडो में चलाएँ के बगल में अनुमति दें चुनें।"
+  },
+  "page_learn_more": {
+    "message": "और जानें"
+  },
+  "popup_video": {
+    "message": "इस पृष्ठ का वीडियो डाउनलोड करें"
+  },
+  "popup_all": {
+    "message": "इस पृष्ठ के सभी लिंक डाउनलोड करें"
+  },
+  "popup_no_links": {
+    "message": "इस पृष्ठ पर डाउनलोड करने के लिए कोई लिंक नहीं है।"
+  },
+  "popup_drm": {
+    "message": "इस पृष्ठ का वीडियो या ऑडियो कॉपी-सुरक्षित (DRM) है: इसे डाउनलोड नहीं किया जा सकता।"
+  },
+  "popup_status": {
+    "message": "स्थिति और सहायता"
+  },
+  "popup_options": {
+    "message": "एक्सटेंशन विकल्प"
+  },
+  "popup_fix": {
+    "message": "क्या करना है, देखें"
+  }
+}

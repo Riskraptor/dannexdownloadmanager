@@ -1,0 +1,488 @@
+{
+  "name": {
+    "message": "Dannex Download Manager"
+  },
+  "description": {
+    "message": "మీరు బ్రౌజర్‌లో డౌన్‌లోడ్ చేసే ఫైల్‌లు, లింక్‌లు, వీడియోలను మీ కంప్యూటర్‌లోని Dannex Download Manager యాప్‌కు పంపుతుంది."
+  },
+  "menu": {
+    "message": "DDMతో డౌన్‌లోడ్ చేయండి"
+  },
+  "video_download": {
+    "message": "వీడియోను డౌన్‌లోడ్ చేయండి"
+  },
+  "video_more": {
+    "message": "మరిన్ని ఎంపికలు"
+  },
+  "video_hide_here": {
+    "message": "ఈ వీడియోలో దాచు"
+  },
+  "video_close": {
+    "message": "మూసివేయండి"
+  },
+  "video_never_site": {
+    "message": "$site$లో మళ్లీ ఎప్పుడూ వద్దు",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "video_settings": {
+    "message": "బటన్ సెట్టింగ్‌లు..."
+  },
+  "video_sent": {
+    "message": "DDMకు పంపబడింది"
+  },
+  "video_failed": {
+    "message": "Dannex Download Manager ఇన్‌స్టాల్ చేయబడలేదు లేదా ప్రారంభం కాలేదు"
+  },
+  "video_drag": {
+    "message": "వీడియో అంచున తరలించడానికి లాగండి"
+  },
+  "menu_selected": {
+    "message": "DDMతో ఎంచుకున్న లింక్‌లను డౌన్‌లోడ్ చేయండి"
+  },
+  "menu_all": {
+    "message": "DDMతో అన్ని లింక్‌లను డౌన్‌లోడ్ చేయండి"
+  },
+  "menu_images": {
+    "message": "DDMతో అన్ని చిత్రాలను డౌన్‌లోడ్ చేయండి"
+  },
+  "menu_media": {
+    "message": "DDMతో అన్ని వీడియోలు, ఆడియోను డౌన్‌లోడ్ చేయండి"
+  },
+  "status_not_installed": {
+    "message": "Dannex Download Manager ఇన్స్టాల్ చేయబడలేదు"
+  },
+  "status_installed": {
+    "message": "Dannex Download Manager ఇన్స్టాల్ చేయబడింది"
+  },
+  "status_forbidden": {
+    "message": "Dannex Download Managerను నవీకరించండి"
+  },
+  "status_not_running": {
+    "message": "Dannex Download Manager ప్రారంభం కాలేదు"
+  },
+  "status_host_failed": {
+    "message": "ఏదో Dannex Download Managerను అడ్డుకుంటోంది"
+  },
+  "status_too_large": {
+    "message": "చివరి డౌన్లోడ్ Dannex Download Managerకు వెళ్లలేకపోయింది"
+  },
+  "status_update_app": {
+    "message": "ఈ ఎక్స్టెన్షన్ చేయగలిగినదంతా పొందడానికి Dannex Download Managerను నవీకరించండి."
+  },
+  "popup_take": {
+    "message": "డౌన్లోడ్లను Dannex Download Managerకు పంపండి"
+  },
+  "popup_proxy": {
+    "message": "ఈ బ్రౌజర్ VPN లేదా ప్రాక్సీ ద్వారా డౌన్లోడ్ చేయండి"
+  },
+  "popup_proxy_title": {
+    "message": "మీరు VPN లేదా ప్రాక్సీ ఎక్స్‌టెన్షన్ ఉపయోగిస్తే దీన్ని ఆన్ చేయండి. బ్రౌజర్ ఒకసారి అడుగుతుంది."
+  },
+  "popup_proxy_title_chromium": {
+    "message": "మీరు ఈ బ్రౌజర్‌లో VPN లేదా ప్రాక్సీ ఎక్స్‌టెన్షన్ ఉపయోగిస్తే దీన్ని ఆన్ చేయండి."
+  },
+  "popup_help": {
+    "message": "సహాయం"
+  },
+  "page_support": {
+    "message": "DDMకు మద్దతు ఇవ్వండి"
+  },
+  "popup_declined": {
+    "message": "మీ చివరి డౌన్లోడ్ బ్రౌజర్లోనే ఉండిపోయింది: $name$",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "setup.png"
+      }
+    }
+  },
+  "popup_declined_unnamed": {
+    "message": "మీ చివరి డౌన్లోడ్ బ్రౌజర్లోనే ఉండిపోయింది."
+  },
+  "declined_file_type": {
+    "message": "దీని ఫైల్ రకం Dannex Download Manager జాబితాలో లేదు (ఎంపికలు → ఫైల్ రకాలు)."
+  },
+  "declined_site": {
+    "message": "దీని సైట్ Dannex Download Manager వదిలేసే సైట్ల జాబితాలో ఉంది (ఎంపికలు → ఫైల్ రకాలు)."
+  },
+  "declined_address": {
+    "message": "దీని చిరునామా Dannex Download Manager వదిలేసే చిరునామాల జాబితాలో ఉంది (ఎంపికలు → ఫైల్ రకాలు)."
+  },
+  "declined_small": {
+    "message": "ఇది Dannex Download Manager తీసుకునే అతి చిన్న ఫైల్ కంటే చిన్నది (ఎంపికలు → ఫైల్ రకాలు)."
+  },
+  "declined_browser": {
+    "message": "ఈ బ్రౌజర్ Dannex Download Manager ఎంపికలు → సాధారణంలో టిక్ చేయబడలేదు."
+  },
+  "declined_integration_off": {
+    "message": "బ్రౌజర్ ఇంటిగ్రేషన్ Dannex Download Manager ఎంపికలు → సాధారణంలో ఆఫ్ చేయబడింది."
+  },
+  "declined_site_access": {
+    "message": "ఈ ఎక్స్టెన్షన్కు ఆ సైట్లో అనుమతి లేదు."
+  },
+  "declined_handed_back": {
+    "message": "మీరు Dannex Download Managerలో దీని కోసం బ్రౌజర్‌తో డౌన్‌లోడ్ చేయండి ఎంపికను ఎంచుకున్నారు."
+  },
+  "video_off": {
+    "message": "ఈ సైట్‌లో డౌన్‌లోడ్ బటన్ ఆఫ్ చేయబడింది"
+  },
+  "video_drm": {
+    "message": "రక్షిత వీడియో: దీన్ని సేవ్ చేయలేము"
+  },
+  "video_drm_audio": {
+    "message": "రక్షిత ఆడియో: సేవ్ చేయడం సాధ్యం కాదు"
+  },
+  "video_protected": {
+    "message": "రక్షితం"
+  },
+  "video_download_audio": {
+    "message": "ఆడియోను డౌన్‌లోడ్ చేయండి"
+  },
+  "video_unnamed": {
+    "message": "వీడియో సొంత పేజీని తెరిచి అక్కడ ప్రయత్నించండి"
+  },
+  "video_looking": {
+    "message": "నాణ్యతలను వెతుకుతోంది…"
+  },
+  "video_open_mdm": {
+    "message": "DDMలో తెరువు…"
+  },
+  "video_no_choices": {
+    "message": "ఇక్కడ డౌన్‌లోడ్ చేయడానికి వీడియో లేదు"
+  },
+  "video_playlist": {
+    "message": "వీడియోల జాబితా: వాటిని Dannex Download Managerలో ఎంచుకోండి"
+  },
+  "video_no_ytdlp": {
+    "message": "ఈ వీడియో కోసం Dannex Download Managerకు yt-dlp అవసరం. దాన్ని ఇన్స్టాల్ చేయడానికి DDMలో తెరువు… ఎంచుకోండి."
+  },
+  "video_too_long": {
+    "message": "వెతకడానికి చాలా సమయం పట్టింది"
+  },
+  "video_busy": {
+    "message": "Dannex Download Manager ఇతర వీడియోలతో బిజీగా ఉంది"
+  },
+  "video_queued": {
+    "message": "క్యూకి జోడించబడింది"
+  },
+  "video_failed_lookup": {
+    "message": "వెతకడం సాధ్యం కాలేదు"
+  },
+  "video_tab_video": {
+    "message": "వీడియో"
+  },
+  "video_tab_audio": {
+    "message": "ఆడియో"
+  },
+  "video_open_post": {
+    "message": "పోస్ట్‌ను తెరవండి, ఆపై అక్కడ బటన్‌ను ఉపయోగించండి"
+  },
+  "video_audio_original": {
+    "message": "ఆడియో మాత్రమే, అసలు $type$",
+    "placeholders": {
+      "type": {
+        "content": "$1",
+        "example": "M4A"
+      }
+    }
+  },
+  "video_audio_only": {
+    "message": "ఆడియో మాత్రమే $type$",
+    "placeholders": {
+      "type": {
+        "content": "$1",
+        "example": "MP3 320 kbps"
+      }
+    }
+  },
+  "video_audio_original_short": {
+    "message": "అసలు $type$",
+    "placeholders": {
+      "type": {
+        "content": "$1",
+        "example": "M4A"
+      }
+    }
+  },
+  "video_pick_waiting": {
+    "message": "DDM సిద్ధమైన వెంటనే ప్రారంభమవుతుంది…"
+  },
+  "video_pick_gone": {
+    "message": "ఆ నాణ్యత అందుబాటులో లేదు: మరొకటి ఎంచుకోండి"
+  },
+  "popup_send_to": {
+    "message": "డౌన్‌లోడ్‌లను దీనికి పంపండి"
+  },
+  "popup_send_here": {
+    "message": "ఈ కంప్యూటర్"
+  },
+  "popup_send_remote": {
+    "message": "మరొక కంప్యూటర్లో Dannex Download Manager"
+  },
+  "popup_remote_code": {
+    "message": "జత చేసే కోడ్"
+  },
+  "popup_remote_open": {
+    "message": "దీన్ని తెరవండి"
+  },
+  "popup_remote_pair": {
+    "message": "జత చేయి"
+  },
+  "popup_remote_help": {
+    "message": "ముందుగా ఇక్కడ దాని చిరునామాను తెరిచి, ఆపై దాని ఎంపికలు → రిమోట్ → పరికరాన్ని జత చేయి నుండి కోడ్‌ను నమోదు చేయండి."
+  },
+  "status_remote": {
+    "message": "డౌన్‌లోడ్‌లు $address$కి వెళ్తాయి",
+    "placeholders": {
+      "address": {
+        "content": "$1",
+        "example": "https://192.168.1.10:8463/"
+      }
+    }
+  },
+  "remote_address": {
+    "message": "దాని https:// చిరునామాను నమోదు చేయండి."
+  },
+  "remote_unreachable": {
+    "message": "దాన్ని చేరుకోలేకపోయింది. ఈ బ్రౌజర్లో దాని చిరునామాను తెరిచి, భద్రతా హెచ్చరికను దాటి కొనసాగించి, ఆపై మళ్ళీ ప్రయత్నించండి."
+  },
+  "remote_wrong_code": {
+    "message": "తప్పు కోడ్."
+  },
+  "remote_no_code": {
+    "message": "నమోదు చేయడానికి ఇంకా కోడ్ లేదు: ముందుగా అక్కడ పరికరాన్ని జత చేయి క్లిక్ చేయండి."
+  },
+  "remote_too_soon": {
+    "message": "ఒక క్షణం వేచి ఉండి, ఆపై మళ్లీ ప్రయత్నించండి."
+  },
+  "remote_failed": {
+    "message": "ఇది పని చేయలేదు. మళ్లీ ప్రయత్నించండి."
+  },
+  "remote_device_name": {
+    "message": "బ్రౌజర్ పొడిగింపు"
+  },
+  "badge_off": {
+    "message": "ఆఫ్"
+  },
+  "tip_on": {
+    "message": "Dannex Download Manager ఆన్‌లో ఉంది."
+  },
+  "tip_off": {
+    "message": "Dannex Download Manager ఆఫ్‌లో ఉంది."
+  },
+  "tip_remote": {
+    "message": "డౌన్‌లోడ్‌లు $address$ వద్ద ఉన్న Dannex Download Managerకు వెళ్తాయి.",
+    "placeholders": {
+      "address": {
+        "content": "$1",
+        "example": "https://192.168.1.10:8463/"
+      }
+    }
+  },
+  "status_off_in_app": {
+    "message": "Dannex Download Managerలో ఆఫ్ చేయబడింది"
+  },
+  "status_duplicate": {
+    "message": "ఈ ఎక్స్టెన్షన్ మరొక కాపీ ఇన్స్టాల్ చేయబడింది"
+  },
+  "click_fix": {
+    "message": "ఏమి చేయాలో చూడటానికి క్లిక్ చేయండి."
+  },
+  "click_details": {
+    "message": "వివరాల కోసం క్లిక్ చేయండి."
+  },
+  "toolbar_exclude": {
+    "message": "ఈ సైట్ నుండి డౌన్లోడ్లను తీసుకోవద్దు"
+  },
+  "toolbar_help": {
+    "message": "సహాయం"
+  },
+  "toolbar_store": {
+    "message": "Chrome Web Store నుండి స్వయంచాలక నవీకరణలను పొందండి..."
+  },
+  "options_take_note": {
+    "message": "ఇది ఆఫ్‌లో ఉన్నప్పుడు, డౌన్‌లోడ్‌లు బ్రౌజర్‌లోనే ఉంటాయి. ఎక్స్‌టెన్షన్ బటన్‌లో కూడా ఇదే స్విచ్ ఉంది."
+  },
+  "options_what_to_do": {
+    "message": "ఏమి చేయాలో చూడండి"
+  },
+  "options_more": {
+    "message": "మరిన్ని"
+  },
+  "page_checking": {
+    "message": "Dannex Download Manager కోసం వెతుకుతోంది…"
+  },
+  "page_on_lead": {
+    "message": "ఈ బ్రౌజర్లో మీరు ప్రారంభించే డౌన్లోడ్లు Dannex Download Managerకు వెళ్తాయి."
+  },
+  "page_off_lead": {
+    "message": "ఇది ఆఫ్లో ఉంది, కాబట్టి డౌన్లోడ్లు ఈ బ్రౌజర్లోనే ఉంటాయి."
+  },
+  "page_remote_title": {
+    "message": "డౌన్లోడ్లు మరొక Dannex Download Managerకు వెళ్తాయి"
+  },
+  "page_remote_lead": {
+    "message": "ఈ బ్రౌజర్లో మీరు ప్రారంభించే డౌన్లోడ్లు $address$ వద్ద ఉన్న Dannex Download Managerకు వెళ్తాయి.",
+    "placeholders": {
+      "address": {
+        "content": "$1",
+        "example": "https://192.168.1.10:8463/"
+      }
+    }
+  },
+  "page_lead_not_installed": {
+    "message": "ఈ ఎక్స్‌టెన్షన్‌కు ఉచిత Dannex Download Manager యాప్ అవసరం. దాన్ని ఇన్‌స్టాల్ చేయండి, ఈ పేజీ స్వయంగా అప్‌డేట్ అవుతుంది."
+  },
+  "page_lead_not_running": {
+    "message": "బ్రౌజర్ దాన్ని ప్రారంభించడానికి ప్రయత్నించింది, కానీ చాలా సమయం పట్టింది. Dannex Download Managerను మీరే ప్రారంభించి, ఆపై మళ్ళీ ప్రయత్నించండి."
+  },
+  "page_lead_host_failed": {
+    "message": "సాధారణంగా భద్రతా సాఫ్ట్వేర్ కారణం. మీ యాంటీవైరస్ ప్రోగ్రామ్లో Dannex Download Managerను అనుమతించండి, లేదా దాన్ని మళ్ళీ ఇన్స్టాల్ చేయండి."
+  },
+  "page_lead_forbidden": {
+    "message": "Dannex Download Manager యొక్క ఈ వెర్షన్ ఈ ఎక్స్టెన్షన్కు చాలా పాతది. తాజాదాన్ని ఇన్స్టాల్ చేయండి."
+  },
+  "page_lead_too_large": {
+    "message": "సైట్ చాలా ఎక్కువ సైన్-ఇన్ డేటాను పంపింది. సైట్ నుండి సైన్ అవుట్ చేసి మళ్లీ సైన్ ఇన్ చేయండి, ఆపై మళ్లీ ప్రయత్నించండి."
+  },
+  "page_download": {
+    "message": "Dannex Download Managerను డౌన్లోడ్ చేయండి"
+  },
+  "page_files_windows": {
+    "message": "Windows 10 మరియు 11 కోసం."
+  },
+  "page_files_macos": {
+    "message": "Mac కోసం (.dmg డిస్క్ ఇమేజ్)."
+  },
+  "page_files_linux": {
+    "message": "Linux కోసం (AppImage, .deb లేదా .rpm)."
+  },
+  "page_files_other": {
+    "message": "Windows, Mac మరియు Linux కంప్యూటర్ల కోసం."
+  },
+  "page_all_downloads": {
+    "message": "అన్ని డౌన్లోడ్లు"
+  },
+  "page_step_windows": {
+    "message": "మీరు డౌన్లోడ్ చేసిన సెటప్ను నడపండి."
+  },
+  "page_step_macos": {
+    "message": ".dmg ను తెరిచి, Dannex Download Managerను Applications లోకి లాగి, ఒకసారి ప్రారంభించండి."
+  },
+  "page_step_linux": {
+    "message": ".deb లేదా .rpm ను ఇన్స్టాల్ చేయండి (లేదా AppImage ను నడపండి), ఆపై Dannex Download Managerను ఒకసారి ప్రారంభించండి."
+  },
+  "page_step_other": {
+    "message": "Dannex Download Manager Windows, Mac మరియు Linux కంప్యూటర్లలో నడుస్తుంది. వాటిలో ఒకదానిలో దీన్ని ఇన్స్టాల్ చేసి, అక్కడి బ్రౌజర్కు ఈ ఎక్స్టెన్షన్ను జోడించండి."
+  },
+  "page_step_wait": {
+    "message": "ఈ పేజీని తెరిచే ఉంచండి. Dannex Download Manager సిద్ధమైనప్పుడు ఇది దానంతట అదే మారుతుంది."
+  },
+  "page_step_restart": {
+    "message": "ఒక నిమిషం తర్వాత కూడా ఏమీ లేదా? బ్రౌజర్ను పునఃప్రారంభించండి."
+  },
+  "page_step_installed": {
+    "message": "ఇప్పటికే ఇన్స్టాల్ చేశారా? Dannex Download Managerలో ఎంపికలు → సాధారణ → బ్రౌజర్ ఇంటిగ్రేషన్ను పరీక్షించండి తెరవండి."
+  },
+  "page_try_again": {
+    "message": "మళ్ళీ ప్రయత్నించండి"
+  },
+  "page_app_options": {
+    "message": "Dannex Download Manager ఎంపికలను తెరవండి"
+  },
+  "page_duplicate_title": {
+    "message": "ఈ కాపీని తీసివేయండి"
+  },
+  "page_duplicate_lead": {
+    "message": "Chrome వెబ్ స్టోర్ కాపీ కూడా ఇన్‌స్టాల్ చేయబడింది, అది స్వయంగా అప్‌డేట్ అవుతుంది. మీరు దీన్ని తీసివేయవచ్చు."
+  },
+  "page_remove": {
+    "message": "ఈ కాపీని తీసివేయండి"
+  },
+  "page_extensions": {
+    "message": "ఎక్స్టెన్షన్ల పేజీని తెరవండి"
+  },
+  "page_update_app_how": {
+    "message": "Dannex Download Managerలో దీన్ని ఎంచుకోండి: సహాయం → నవీకరణల కోసం తనిఖీ చేయండి..."
+  },
+  "page_behind": {
+    "message": "ఈ ఎక్స్టెన్షన్ కొత్త వెర్షన్ Dannex Download Manager $version$తో వచ్చింది.",
+    "placeholders": {
+      "version": {
+        "content": "$1",
+        "example": "0.7.0"
+      }
+    }
+  },
+  "page_behind_store": {
+    "message": "బ్రౌజర్ కొన్ని గంటల్లో దానంతట అదే నవీకరిస్తుంది, లేదా ఇప్పుడే నవీకరణల కోసం తనిఖీ చేయండి తో."
+  },
+  "page_behind_unpacked": {
+    "message": "వాడటానికి ఎక్స్టెన్షన్ను మళ్ళీ లోడ్ చేయండి."
+  },
+  "page_behind_other": {
+    "message": "మీరు దీన్ని జోడించినట్లే, Dannex Download Manager ఫోల్డర్ నుండి కొత్తదాన్ని జోడించండి."
+  },
+  "page_check_updates": {
+    "message": "నవీకరణల కోసం తనిఖీ చేయండి"
+  },
+  "page_up_to_date": {
+    "message": "ఇంకా కొత్త వెర్షన్ లేదు. బ్రౌజర్ దానంతట అదే మళ్ళీ తనిఖీ చేస్తుంది."
+  },
+  "page_reload": {
+    "message": "ఎక్స్టెన్షన్ను మళ్ళీ లోడ్ చేయండి"
+  },
+  "page_store": {
+    "message": "స్వయంచాలక నవీకరణలను పొందండి: ఈ ఎక్స్టెన్షన్ను Chrome Web Store నుండి జోడించి, ఆపై ఈ కాపీని తీసివేయండి."
+  },
+  "page_open_store": {
+    "message": "Chrome Web Store ను తెరవండి"
+  },
+  "page_temporary": {
+    "message": "ఇది తాత్కాలిక యాడ్-ఆన్గా జోడించబడినందున Firefox మూసివేసినప్పుడు ఈ యాడ్-ఆన్ను తీసివేస్తుంది."
+  },
+  "page_site_access": {
+    "message": "ఈ ఎక్స్టెన్షన్కు కొన్ని సైట్లలో మాత్రమే అనుమతి ఉంది, కాబట్టి ఇతర సైట్ల డౌన్లోడ్లు బ్రౌజర్లోనే ఉంటాయి."
+  },
+  "page_allow_sites": {
+    "message": "అన్ని సైట్లలో అనుమతించండి"
+  },
+  "page_private": {
+    "message": "ప్రైవేట్ విండోల డౌన్లోడ్లు బ్రౌజర్లోనే ఉంటాయి, ఎందుకంటే ఈ ఎక్స్టెన్షన్కు అక్కడ అనుమతి లేదు."
+  },
+  "page_private_chromium": {
+    "message": "దాన్ని మార్చడానికి, దాని వివరాల పేజీలో అజ్ఞాతంలో అనుమతించు ఆన్ చేయండి."
+  },
+  "page_private_firefox": {
+    "message": "దాన్ని మార్చడానికి, యాడ్-ఆన్‌లు మరియు థీమ్‌ల పేజీలో దాని విభాగంలో “ప్రైవేట్ విండోలలో అమలు చేయి” (Run in Private Windows) పక్కన అనుమతించు ఎంచుకోండి."
+  },
+  "page_learn_more": {
+    "message": "మరింత తెలుసుకోండి"
+  },
+  "popup_video": {
+    "message": "ఈ పేజీలోని వీడియోను డౌన్‌లోడ్ చేయండి"
+  },
+  "popup_all": {
+    "message": "ఈ పేజీలోని అన్ని లింక్‌లను డౌన్‌లోడ్ చేయండి"
+  },
+  "popup_no_links": {
+    "message": "ఈ పేజీలో డౌన్‌లోడ్ చేయడానికి లింక్‌లు లేవు."
+  },
+  "popup_drm": {
+    "message": "ఈ పేజీలోని వీడియో లేదా ధ్వని కాపీ-రక్షితం (DRM): దాన్ని డౌన్‌లోడ్ చేయడం సాధ్యం కాదు."
+  },
+  "popup_status": {
+    "message": "స్థితి మరియు సహాయం"
+  },
+  "popup_options": {
+    "message": "ఎక్స్‌టెన్షన్ ఎంపికలు"
+  },
+  "popup_fix": {
+    "message": "ఏమి చేయాలో చూడండి"
+  }
+}

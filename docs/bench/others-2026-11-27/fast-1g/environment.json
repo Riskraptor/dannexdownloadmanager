@@ -1,0 +1,13 @@
+{
+ "date": "2026-11-27T21:54:05",
+ "os": "Windows-11-10.0.26300-SP0",
+ "cpu": "AMD Ryzen AI 7 350 w/ Radeon 860M",
+ "clients": {
+  "ddm": "this change, a release build without LTO (16 codegen units, quicker to build), at 88148be",
+  "ddm-before": "DDM before these changes, its release build (fat LTO)",
+  "curl": "curl 8.23.0 (Windows) libcurl/8.23.0 Schannel zlib/1.3.2 WinIDN WinLDAP"
+ },
+ "skipped": {},
+ "server": "labserver (this repo), 127.0.0.1:8098, generated content",
+ "settings": "DDM and curl as installed; aria2c split/connections as named, min-split-size 1M"
+}

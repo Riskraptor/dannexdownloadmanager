@@ -1,0 +1,488 @@
+{
+  "name": {
+    "message": "Dannex Download Manager"
+  },
+  "description": {
+    "message": "A böngészőben letöltött fájlokat, hivatkozásokat és videókat a számítógépén lévő Dannex Download Manager alkalmazásnak küldi."
+  },
+  "menu": {
+    "message": "Letöltés a(z) DDM alkalmazással"
+  },
+  "video_download": {
+    "message": "Videó letöltése"
+  },
+  "video_more": {
+    "message": "További lehetőségek"
+  },
+  "video_hide_here": {
+    "message": "Elrejtés ennél a videónál"
+  },
+  "video_close": {
+    "message": "Bezárás"
+  },
+  "video_never_site": {
+    "message": "Soha ne jelenjen meg ezen a webhelyen: $site$",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "video_settings": {
+    "message": "Gombbeállítások..."
+  },
+  "video_sent": {
+    "message": "Elküldve a következőnek: DDM"
+  },
+  "video_failed": {
+    "message": "Az Dannex Download Manager nincs telepítve, vagy nem indult el"
+  },
+  "video_drag": {
+    "message": "Húzza a videó szélére a mozgatáshoz"
+  },
+  "menu_selected": {
+    "message": "Kijelölt hivatkozások letöltése az DDM alkalmazással"
+  },
+  "menu_all": {
+    "message": "Összes hivatkozás letöltése az DDM alkalmazással"
+  },
+  "menu_images": {
+    "message": "Összes kép letöltése a DDM alkalmazással"
+  },
+  "menu_media": {
+    "message": "Összes videó és hang letöltése a DDM alkalmazással"
+  },
+  "status_not_installed": {
+    "message": "A(z) Dannex Download Manager nincs telepítve"
+  },
+  "status_installed": {
+    "message": "A(z) Dannex Download Manager telepítve van"
+  },
+  "status_forbidden": {
+    "message": "Dannex Download Manager frissítése"
+  },
+  "status_not_running": {
+    "message": "A(z) Dannex Download Manager nem indult el"
+  },
+  "status_host_failed": {
+    "message": "Valami blokkolja a(z) Dannex Download Manager alkalmazást"
+  },
+  "status_too_large": {
+    "message": "Az utolsó letöltést nem lehetett átadni a(z) Dannex Download Manager alkalmazásnak"
+  },
+  "status_update_app": {
+    "message": "Frissítse a(z) Dannex Download Manager alkalmazást, hogy a bővítmény minden képességét használhassa."
+  },
+  "popup_take": {
+    "message": "Letöltések küldése ide: Dannex Download Manager"
+  },
+  "popup_proxy": {
+    "message": "Letöltés a böngésző VPN-jén vagy proxyján keresztül"
+  },
+  "popup_proxy_title": {
+    "message": "Kapcsolja be, ha VPN- vagy proxybővítményt használ. A böngésző egyszer rákérdez."
+  },
+  "popup_proxy_title_chromium": {
+    "message": "Kapcsolja be, ha ebben a böngészőben VPN- vagy proxybővítményt használ."
+  },
+  "popup_help": {
+    "message": "Súgó"
+  },
+  "page_support": {
+    "message": "A DDM támogatása"
+  },
+  "popup_declined": {
+    "message": "Az utolsó letöltése a böngészőnél maradt: $name$",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "setup.png"
+      }
+    }
+  },
+  "popup_declined_unnamed": {
+    "message": "Az utolsó letöltése a böngészőnél maradt."
+  },
+  "declined_file_type": {
+    "message": "A fájltípusa nem szerepel a(z) Dannex Download Manager listáján (Beállítások → Fájltípusok)."
+  },
+  "declined_site": {
+    "message": "A webhelye szerepel a(z) Dannex Download Manager kihagyandó webhelyeinek listáján (Beállítások → Fájltípusok)."
+  },
+  "declined_address": {
+    "message": "A címe szerepel a(z) Dannex Download Manager kihagyandó címeinek listáján (Beállítások → Fájltípusok)."
+  },
+  "declined_small": {
+    "message": "Kisebb, mint a legkisebb fájl, amelyet a(z) Dannex Download Manager átvesz (Beállítások → Fájltípusok)."
+  },
+  "declined_browser": {
+    "message": "Ez a böngésző nincs bejelölve a(z) Dannex Download Manager Beállítások → Általános oldalán."
+  },
+  "declined_integration_off": {
+    "message": "A böngészőintegráció ki van kapcsolva a(z) Dannex Download Manager Beállítások → Általános oldalán."
+  },
+  "declined_site_access": {
+    "message": "Ez a bővítmény nem engedélyezett azon a webhelyen."
+  },
+  "declined_handed_back": {
+    "message": "A(z) Dannex Download Manager alkalmazásban a Letöltés a böngészővel lehetőséget választotta ehhez a letöltéshez."
+  },
+  "video_off": {
+    "message": "A letöltés gomb ezen a webhelyen ki van kapcsolva"
+  },
+  "video_drm": {
+    "message": "Védett videó: nem menthető"
+  },
+  "video_drm_audio": {
+    "message": "Védett hang: nem menthető"
+  },
+  "video_protected": {
+    "message": "Védett"
+  },
+  "video_download_audio": {
+    "message": "Hang letöltése"
+  },
+  "video_unnamed": {
+    "message": "Nyissa meg a videó saját oldalát, és próbálja ott"
+  },
+  "video_looking": {
+    "message": "Minőségek keresése…"
+  },
+  "video_open_mdm": {
+    "message": "Megnyitás a DDM alkalmazásban…"
+  },
+  "video_no_choices": {
+    "message": "Itt nincs letölthető videó"
+  },
+  "video_playlist": {
+    "message": "Videók listája: válassza ki őket a Dannex Download Manager alkalmazásban"
+  },
+  "video_no_ytdlp": {
+    "message": "A(z) Dannex Download Manager alkalmazásnak szüksége van a yt-dlp programra ehhez a videóhoz. A telepítéséhez válassza a Megnyitás a DDM-ben… parancsot."
+  },
+  "video_too_long": {
+    "message": "A keresés túl sokáig tartott"
+  },
+  "video_busy": {
+    "message": "A Dannex Download Manager alkalmazás más videókkal van elfoglalva"
+  },
+  "video_queued": {
+    "message": "Hozzáadva a sorhoz"
+  },
+  "video_failed_lookup": {
+    "message": "A keresés sikertelen"
+  },
+  "video_tab_video": {
+    "message": "Videó"
+  },
+  "video_tab_audio": {
+    "message": "Hang"
+  },
+  "video_open_post": {
+    "message": "Nyissa meg a bejegyzést, majd használja az ottani gombot"
+  },
+  "video_audio_original": {
+    "message": "Csak hang, eredeti: $type$",
+    "placeholders": {
+      "type": {
+        "content": "$1",
+        "example": "M4A"
+      }
+    }
+  },
+  "video_audio_only": {
+    "message": "Csak hang: $type$",
+    "placeholders": {
+      "type": {
+        "content": "$1",
+        "example": "MP3 320 kbps"
+      }
+    }
+  },
+  "video_audio_original_short": {
+    "message": "Eredeti $type$",
+    "placeholders": {
+      "type": {
+        "content": "$1",
+        "example": "M4A"
+      }
+    }
+  },
+  "video_pick_waiting": {
+    "message": "Indítás, amint a DDM készen áll…"
+  },
+  "video_pick_gone": {
+    "message": "Ez a minőség nem érhető el: válasszon másikat"
+  },
+  "popup_send_to": {
+    "message": "Letöltések küldése ide"
+  },
+  "popup_send_here": {
+    "message": "Ez a számítógép"
+  },
+  "popup_send_remote": {
+    "message": "Dannex Download Manager másik számítógépen"
+  },
+  "popup_remote_code": {
+    "message": "Párosítási kód"
+  },
+  "popup_remote_open": {
+    "message": "Megnyitás"
+  },
+  "popup_remote_pair": {
+    "message": "Párosítás"
+  },
+  "popup_remote_help": {
+    "message": "Először nyissa meg itt a címét, majd írja be a Beállítások → Távoli elérés → Eszköz párosítása oldalon kapott kódot."
+  },
+  "status_remote": {
+    "message": "A letöltések ide mennek: $address$",
+    "placeholders": {
+      "address": {
+        "content": "$1",
+        "example": "https://192.168.1.10:8463/"
+      }
+    }
+  },
+  "remote_address": {
+    "message": "Adja meg a https:// címét."
+  },
+  "remote_unreachable": {
+    "message": "Nem sikerült elérni. Nyissa meg a címét ebben a böngészőben, lépjen tovább a biztonsági figyelmeztetésen, majd próbálja újra."
+  },
+  "remote_wrong_code": {
+    "message": "Hibás kód."
+  },
+  "remote_no_code": {
+    "message": "Még nincs megadható kód: előbb kattintson ott az Eszköz párosítása gombra."
+  },
+  "remote_too_soon": {
+    "message": "Várjon egy pillanatot, majd próbálja újra."
+  },
+  "remote_failed": {
+    "message": "Nem sikerült. Próbálja újra."
+  },
+  "remote_device_name": {
+    "message": "Böngészőbővítmény"
+  },
+  "badge_off": {
+    "message": "KI"
+  },
+  "tip_on": {
+    "message": "A(z) Dannex Download Manager be van kapcsolva."
+  },
+  "tip_off": {
+    "message": "A(z) Dannex Download Manager ki van kapcsolva."
+  },
+  "tip_remote": {
+    "message": "A letöltések a(z) $address$ címen lévő Dannex Download Manager alkalmazásba kerülnek.",
+    "placeholders": {
+      "address": {
+        "content": "$1",
+        "example": "https://192.168.1.10:8463/"
+      }
+    }
+  },
+  "status_off_in_app": {
+    "message": "Kikapcsolva a(z) Dannex Download Manager alkalmazásban"
+  },
+  "status_duplicate": {
+    "message": "A bővítmény másik példánya is telepítve van"
+  },
+  "click_fix": {
+    "message": "Kattintson, hogy lássa, mit tegyen."
+  },
+  "click_details": {
+    "message": "Kattintson a részletekért."
+  },
+  "toolbar_exclude": {
+    "message": "Ne vegye át ennek a webhelynek a letöltéseit"
+  },
+  "toolbar_help": {
+    "message": "Súgó"
+  },
+  "toolbar_store": {
+    "message": "Automatikus frissítések a Chrome Web Store-ból..."
+  },
+  "options_take_note": {
+    "message": "Kikapcsolt állapotban a letöltések a böngészőben maradnak. A bővítmény gombja ugyanezt a kapcsolót tartalmazza."
+  },
+  "options_what_to_do": {
+    "message": "Mit tegyek?"
+  },
+  "options_more": {
+    "message": "Továbbiak"
+  },
+  "page_checking": {
+    "message": "Dannex Download Manager keresése…"
+  },
+  "page_on_lead": {
+    "message": "A böngészőben indított letöltések a(z) Dannex Download Manager alkalmazásba kerülnek."
+  },
+  "page_off_lead": {
+    "message": "Ki van kapcsolva, ezért a letöltések ebben a böngészőben maradnak."
+  },
+  "page_remote_title": {
+    "message": "A letöltések másik Dannex Download Manager alkalmazásba kerülnek"
+  },
+  "page_remote_lead": {
+    "message": "A böngészőben indított letöltések a(z) $address$ címen lévő Dannex Download Manager alkalmazásba kerülnek.",
+    "placeholders": {
+      "address": {
+        "content": "$1",
+        "example": "https://192.168.1.10:8463/"
+      }
+    }
+  },
+  "page_lead_not_installed": {
+    "message": "Ehhez a bővítményhez az ingyenes Dannex Download Manager alkalmazás kell. Telepítse, és ez az oldal magától frissül."
+  },
+  "page_lead_not_running": {
+    "message": "A böngésző megpróbálta elindítani, de túl sokáig tartott. Indítsa el a(z) Dannex Download Manager alkalmazást saját kezűleg, majd próbálja újra."
+  },
+  "page_lead_host_failed": {
+    "message": "Általában biztonsági szoftver az oka. Engedélyezze a(z) Dannex Download Manager alkalmazást a víruskeresőben, vagy telepítse újra."
+  },
+  "page_lead_forbidden": {
+    "message": "A(z) Dannex Download Manager ezen verziója túl régi ehhez a bővítményhez. Telepítse a legújabbat."
+  },
+  "page_lead_too_large": {
+    "message": "A webhely túl sok bejelentkezési adatot küldött. Jelentkezzen ki a webhelyről, majd be újra, és próbálja újra."
+  },
+  "page_download": {
+    "message": "Dannex Download Manager letöltése"
+  },
+  "page_files_windows": {
+    "message": "Windows 10-hez és 11-hez."
+  },
+  "page_files_macos": {
+    "message": "Machez (.dmg lemezkép)."
+  },
+  "page_files_linux": {
+    "message": "Linuxhoz (AppImage, .deb vagy .rpm)."
+  },
+  "page_files_other": {
+    "message": "Windows, Mac és Linux számítógépekhez."
+  },
+  "page_all_downloads": {
+    "message": "Összes letöltés"
+  },
+  "page_step_windows": {
+    "message": "Futtassa a letöltött telepítőt."
+  },
+  "page_step_macos": {
+    "message": "Nyissa meg a .dmg fájlt, húzza a(z) Dannex Download Manager alkalmazást az Alkalmazások mappába, és indítsa el egyszer."
+  },
+  "page_step_linux": {
+    "message": "Telepítse a .deb vagy .rpm csomagot (vagy futtassa az AppImage-et), majd egyszer indítsa el a(z) Dannex Download Manager alkalmazást."
+  },
+  "page_step_other": {
+    "message": "A(z) Dannex Download Manager Windows, Mac és Linux számítógépeken fut. Telepítse az egyikre, és adja hozzá ezt a bővítményt ott egy böngészőhöz."
+  },
+  "page_step_wait": {
+    "message": "Tartsa nyitva ezt az oldalt. Magától frissül, amikor a(z) Dannex Download Manager készen áll."
+  },
+  "page_step_restart": {
+    "message": "Egy perc után sem történik semmi? Indítsa újra a böngészőt."
+  },
+  "page_step_installed": {
+    "message": "Már telepítve van? A(z) Dannex Download Manager alkalmazásban nyissa meg a Beállítások → Általános → Böngészőintegráció tesztelése lehetőséget."
+  },
+  "page_try_again": {
+    "message": "Próbálja újra"
+  },
+  "page_app_options": {
+    "message": "Dannex Download Manager beállításainak megnyitása"
+  },
+  "page_duplicate_title": {
+    "message": "Ennek a példánynak az eltávolítása"
+  },
+  "page_duplicate_lead": {
+    "message": "A Chrome Internetes áruházból származó példány is telepítve van, és magától frissül. Ezt eltávolíthatja."
+  },
+  "page_remove": {
+    "message": "Ennek a példánynak az eltávolítása"
+  },
+  "page_extensions": {
+    "message": "A bővítmények oldalának megnyitása"
+  },
+  "page_update_app_how": {
+    "message": "A(z) Dannex Download Manager alkalmazásban válassza ezt: Súgó → Frissítések keresése..."
+  },
+  "page_behind": {
+    "message": "Ennek a bővítménynek újabb verziója jött a(z) Dannex Download Manager $version$ verzióval.",
+    "placeholders": {
+      "version": {
+        "content": "$1",
+        "example": "0.7.0"
+      }
+    }
+  },
+  "page_behind_store": {
+    "message": "A böngésző néhány órán belül magától frissíti, vagy azonnal a Frissítések keresése gombbal."
+  },
+  "page_behind_unpacked": {
+    "message": "A használatához töltse újra a bővítményt."
+  },
+  "page_behind_other": {
+    "message": "Adja hozzá az újat a(z) Dannex Download Manager mappájából, ahogy ezt is hozzáadta."
+  },
+  "page_check_updates": {
+    "message": "Frissítések keresése"
+  },
+  "page_up_to_date": {
+    "message": "Még nincs újabb verzió. A böngésző magától újra ellenőriz."
+  },
+  "page_reload": {
+    "message": "A bővítmény újratöltése"
+  },
+  "page_store": {
+    "message": "Automatikus frissítések: adja hozzá ezt a bővítményt a Chrome Web Store-ból, majd távolítsa el ezt a példányt."
+  },
+  "page_open_store": {
+    "message": "Chrome Web Store megnyitása"
+  },
+  "page_temporary": {
+    "message": "A Firefox eltávolítja ezt a kiegészítőt, amikor bezáródik, mert ideiglenes kiegészítőként lett hozzáadva."
+  },
+  "page_site_access": {
+    "message": "Ez a bővítmény csak egyes webhelyeken engedélyezett, ezért a többi webhely letöltései a böngészőnél maradnak."
+  },
+  "page_allow_sites": {
+    "message": "Engedélyezés minden webhelyen"
+  },
+  "page_private": {
+    "message": "A privát ablakokból indított letöltések a böngészőnél maradnak, mert a bővítmény ott nem engedélyezett."
+  },
+  "page_private_chromium": {
+    "message": "Ennek módosításához kapcsolja be az Engedélyezés inkognitóban beállítást a részletek oldalon."
+  },
+  "page_private_firefox": {
+    "message": "Ennek módosításához válassza az Engedélyezés lehetőséget a Futtatás privát ablakokban mellett a bővítmény oldalán a Bővítmények és témák részben."
+  },
+  "page_learn_more": {
+    "message": "További információ"
+  },
+  "popup_video": {
+    "message": "Videó letöltése erről az oldalról"
+  },
+  "popup_all": {
+    "message": "Az oldal összes hivatkozásának letöltése"
+  },
+  "popup_no_links": {
+    "message": "Ezen az oldalon nincsenek letölthető hivatkozások."
+  },
+  "popup_drm": {
+    "message": "Az oldal videója vagy hangja másolásvédett (DRM): nem tölthető le."
+  },
+  "popup_status": {
+    "message": "Állapot és súgó"
+  },
+  "popup_options": {
+    "message": "A bővítmény beállításai"
+  },
+  "popup_fix": {
+    "message": "Mit tegyek?"
+  }
+}

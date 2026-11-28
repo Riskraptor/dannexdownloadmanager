@@ -1,0 +1,488 @@
+{
+  "name": {
+    "message": "Dannex Download Manager"
+  },
+  "description": {
+    "message": "ನೀವು ಬ್ರೌಸರ್‌ನಲ್ಲಿ ಡೌನ್‌ಲೋಡ್ ಮಾಡುವ ಫೈಲ್‌ಗಳು, ಲಿಂಕ್‌ಗಳು ಮತ್ತು ವೀಡಿಯೊಗಳನ್ನು ನಿಮ್ಮ ಕಂಪ್ಯೂಟರ್‌ನಲ್ಲಿರುವ Dannex Download Manager ಆ್ಯಪ್‌ಗೆ ಕಳುಹಿಸುತ್ತದೆ."
+  },
+  "menu": {
+    "message": "DDM ನೊಂದಿಗೆ ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ"
+  },
+  "video_download": {
+    "message": "ವೀಡಿಯೊ ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ"
+  },
+  "video_more": {
+    "message": "ಹೆಚ್ಚಿನ ಆಯ್ಕೆಗಳು"
+  },
+  "video_hide_here": {
+    "message": "ಈ ವೀಡಿಯೊದಲ್ಲಿ ಮರೆಮಾಡಿ"
+  },
+  "video_close": {
+    "message": "ಮುಚ್ಚಿ"
+  },
+  "video_never_site": {
+    "message": "$site$ ನಲ್ಲಿ ಎಂದಿಗೂ ಬೇಡ",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "video_settings": {
+    "message": "ಬಟನ್ ಸೆಟ್ಟಿಂಗ್‌ಗಳು..."
+  },
+  "video_sent": {
+    "message": "DDM ಗೆ ಕಳುಹಿಸಲಾಗಿದೆ"
+  },
+  "video_failed": {
+    "message": "Dannex Download Manager ಅನ್ನು ಸ್ಥಾಪಿಸಲಾಗಿಲ್ಲ ಅಥವಾ ಪ್ರಾರಂಭವಾಗಲಿಲ್ಲ"
+  },
+  "video_drag": {
+    "message": "ವೀಡಿಯೊದ ಅಂಚಿನಲ್ಲಿ ಅದನ್ನು ಸರಿಸಲು ಎಳೆಯಿರಿ"
+  },
+  "menu_selected": {
+    "message": "DDM ನೊಂದಿಗೆ ಆಯ್ದ ಲಿಂಕ್‌ಗಳನ್ನು ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ"
+  },
+  "menu_all": {
+    "message": "DDM ನೊಂದಿಗೆ ಎಲ್ಲಾ ಲಿಂಕ್‌ಗಳನ್ನು ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ"
+  },
+  "menu_images": {
+    "message": "DDM ನೊಂದಿಗೆ ಎಲ್ಲಾ ಚಿತ್ರಗಳನ್ನು ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ"
+  },
+  "menu_media": {
+    "message": "DDM ನೊಂದಿಗೆ ಎಲ್ಲಾ ವೀಡಿಯೊಗಳು ಮತ್ತು ಆಡಿಯೊವನ್ನು ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ"
+  },
+  "status_not_installed": {
+    "message": "Dannex Download Manager ಸ್ಥಾಪಿತವಾಗಿಲ್ಲ"
+  },
+  "status_installed": {
+    "message": "Dannex Download Manager ಸ್ಥಾಪಿತವಾಗಿದೆ"
+  },
+  "status_forbidden": {
+    "message": "Dannex Download Manager ಅನ್ನು ನವೀಕರಿಸಿ"
+  },
+  "status_not_running": {
+    "message": "Dannex Download Manager ಪ್ರಾರಂಭವಾಗಲಿಲ್ಲ"
+  },
+  "status_host_failed": {
+    "message": "Dannex Download Manager ಅನ್ನು ಏನೋ ತಡೆಯುತ್ತಿದೆ"
+  },
+  "status_too_large": {
+    "message": "ಕೊನೆಯ ಡೌನ್ಲೋಡ್ ಅನ್ನು Dannex Download Manager ಗೆ ಕಳುಹಿಸಲಾಗಲಿಲ್ಲ"
+  },
+  "status_update_app": {
+    "message": "ಈ ವಿಸ್ತರಣೆ ಮಾಡಬಲ್ಲ ಎಲ್ಲವನ್ನೂ ಪಡೆಯಲು Dannex Download Manager ಅನ್ನು ನವೀಕರಿಸಿ."
+  },
+  "popup_take": {
+    "message": "ಡೌನ್ಲೋಡ್ಗಳನ್ನು Dannex Download Manager ಗೆ ಕಳುಹಿಸಿ"
+  },
+  "popup_proxy": {
+    "message": "ಈ ಬ್ರೌಸರ್ನ VPN ಅಥವಾ ಪ್ರಾಕ್ಸಿ ಮೂಲಕ ಡೌನ್ಲೋಡ್ ಮಾಡಿ"
+  },
+  "popup_proxy_title": {
+    "message": "VPN ಅಥವಾ ಪ್ರಾಕ್ಸಿ ವಿಸ್ತರಣೆ ಬಳಸುತ್ತಿದ್ದರೆ ಇದನ್ನು ಆನ್ ಮಾಡಿ. ಬ್ರೌಸರ್ ಒಮ್ಮೆ ಕೇಳುತ್ತದೆ."
+  },
+  "popup_proxy_title_chromium": {
+    "message": "ಈ ಬ್ರೌಸರ್‌ನಲ್ಲಿ VPN ಅಥವಾ ಪ್ರಾಕ್ಸಿ ವಿಸ್ತರಣೆ ಬಳಸುತ್ತಿದ್ದರೆ ಇದನ್ನು ಆನ್ ಮಾಡಿ."
+  },
+  "popup_help": {
+    "message": "ಸಹಾಯ"
+  },
+  "page_support": {
+    "message": "DDM ಅನ್ನು ಬೆಂಬಲಿಸಿ"
+  },
+  "popup_declined": {
+    "message": "ನಿಮ್ಮ ಕೊನೆಯ ಡೌನ್ಲೋಡ್ ಬ್ರೌಸರ್ನಲ್ಲೇ ಉಳಿಯಿತು: $name$",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "setup.png"
+      }
+    }
+  },
+  "popup_declined_unnamed": {
+    "message": "ನಿಮ್ಮ ಕೊನೆಯ ಡೌನ್ಲೋಡ್ ಬ್ರೌಸರ್ನಲ್ಲೇ ಉಳಿಯಿತು."
+  },
+  "declined_file_type": {
+    "message": "ಇದರ ಫೈಲ್ ಪ್ರಕಾರ Dannex Download Manager ನ ಪಟ್ಟಿಯಲ್ಲಿಲ್ಲ (ಆಯ್ಕೆಗಳು → ಫೈಲ್ ಪ್ರಕಾರಗಳು)."
+  },
+  "declined_site": {
+    "message": "ಇದರ ಸೈಟ್ Dannex Download Manager ನ ಬಿಡಬೇಕಾದ ಸೈಟ್ಗಳ ಪಟ್ಟಿಯಲ್ಲಿದೆ (ಆಯ್ಕೆಗಳು → ಫೈಲ್ ಪ್ರಕಾರಗಳು)."
+  },
+  "declined_address": {
+    "message": "ಇದರ ವಿಳಾಸ Dannex Download Manager ನ ಬಿಡಬೇಕಾದ ವಿಳಾಸಗಳ ಪಟ್ಟಿಯಲ್ಲಿದೆ (ಆಯ್ಕೆಗಳು → ಫೈಲ್ ಪ್ರಕಾರಗಳು)."
+  },
+  "declined_small": {
+    "message": "ಇದು Dannex Download Manager ತೆಗೆದುಕೊಳ್ಳುವ ಚಿಕ್ಕ ಫೈಲ್ಗಿಂತ ಚಿಕ್ಕದಾಗಿದೆ (ಆಯ್ಕೆಗಳು → ಫೈಲ್ ಪ್ರಕಾರಗಳು)."
+  },
+  "declined_browser": {
+    "message": "ಈ ಬ್ರೌಸರ್ಗೆ Dannex Download Manager ನ ಆಯ್ಕೆಗಳು → ಸಾಮಾನ್ಯದಲ್ಲಿ ಟಿಕ್ ಮಾಡಿಲ್ಲ."
+  },
+  "declined_integration_off": {
+    "message": "Dannex Download Manager ನ ಆಯ್ಕೆಗಳು → ಸಾಮಾನ್ಯದಲ್ಲಿ ಬ್ರೌಸರ್ ಏಕೀಕರಣವನ್ನು ಆಫ್ ಮಾಡಲಾಗಿದೆ."
+  },
+  "declined_site_access": {
+    "message": "ಈ ವಿಸ್ತರಣೆಗೆ ಆ ಸೈಟ್ನಲ್ಲಿ ಅನುಮತಿ ಇಲ್ಲ."
+  },
+  "declined_handed_back": {
+    "message": "Dannex Download Manager ನಲ್ಲಿ ಇದಕ್ಕಾಗಿ ನೀವು “ಬ್ರೌಸರ್ ಮೂಲಕ ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ” ಆಯ್ಕೆ ಮಾಡಿದ್ದೀರಿ."
+  },
+  "video_off": {
+    "message": "ಈ ಸೈಟ್‌ನಲ್ಲಿ ಡೌನ್‌ಲೋಡ್ ಬಟನ್ ಆಫ್ ಆಗಿದೆ"
+  },
+  "video_drm": {
+    "message": "ರಕ್ಷಿತ ವೀಡಿಯೊ: ಇದನ್ನು ಉಳಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ"
+  },
+  "video_drm_audio": {
+    "message": "ರಕ್ಷಿತ ಆಡಿಯೊ: ಉಳಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ"
+  },
+  "video_protected": {
+    "message": "ರಕ್ಷಿತ"
+  },
+  "video_download_audio": {
+    "message": "ಆಡಿಯೊ ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ"
+  },
+  "video_unnamed": {
+    "message": "ವೀಡಿಯೊದ ಸ್ವಂತ ಪುಟವನ್ನು ತೆರೆದು ಅಲ್ಲಿ ಪ್ರಯತ್ನಿಸಿ"
+  },
+  "video_looking": {
+    "message": "ಗುಣಮಟ್ಟಗಳನ್ನು ಹುಡುಕಲಾಗುತ್ತಿದೆ…"
+  },
+  "video_open_mdm": {
+    "message": "DDM ನಲ್ಲಿ ತೆರೆಯಿರಿ…"
+  },
+  "video_no_choices": {
+    "message": "ಇಲ್ಲಿ ಡೌನ್‌ಲೋಡ್ ಮಾಡಲು ವೀಡಿಯೊ ಇಲ್ಲ"
+  },
+  "video_playlist": {
+    "message": "ವೀಡಿಯೊಗಳ ಪಟ್ಟಿ: ಅವುಗಳನ್ನು Dannex Download Manager ನಲ್ಲಿ ಆಯ್ಕೆಮಾಡಿ"
+  },
+  "video_no_ytdlp": {
+    "message": "ಈ ವೀಡಿಯೊಗೆ Dannex Download Manager ಗೆ yt-dlp ಬೇಕು. ಅದನ್ನು ಸ್ಥಾಪಿಸಲು DDM ನಲ್ಲಿ ತೆರೆಯಿರಿ… ಆರಿಸಿ."
+  },
+  "video_too_long": {
+    "message": "ಹುಡುಕಲು ತುಂಬಾ ಸಮಯ ತೆಗೆದುಕೊಂಡಿತು"
+  },
+  "video_busy": {
+    "message": "Dannex Download Manager ಇತರ ವೀಡಿಯೊಗಳಲ್ಲಿ ನಿರತವಾಗಿದೆ"
+  },
+  "video_queued": {
+    "message": "ಕ್ಯೂಗೆ ಸೇರಿಸಲಾಗಿದೆ"
+  },
+  "video_failed_lookup": {
+    "message": "ಹುಡುಕಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ"
+  },
+  "video_tab_video": {
+    "message": "ವೀಡಿಯೊ"
+  },
+  "video_tab_audio": {
+    "message": "ಆಡಿಯೊ"
+  },
+  "video_open_post": {
+    "message": "ಪೋಸ್ಟ್ ತೆರೆಯಿರಿ, ನಂತರ ಅಲ್ಲಿರುವ ಬಟನ್ ಬಳಸಿ"
+  },
+  "video_audio_original": {
+    "message": "ಆಡಿಯೊ ಮಾತ್ರ, ಮೂಲ $type$",
+    "placeholders": {
+      "type": {
+        "content": "$1",
+        "example": "M4A"
+      }
+    }
+  },
+  "video_audio_only": {
+    "message": "ಆಡಿಯೊ ಮಾತ್ರ $type$",
+    "placeholders": {
+      "type": {
+        "content": "$1",
+        "example": "MP3 320 kbps"
+      }
+    }
+  },
+  "video_audio_original_short": {
+    "message": "ಮೂಲ $type$",
+    "placeholders": {
+      "type": {
+        "content": "$1",
+        "example": "M4A"
+      }
+    }
+  },
+  "video_pick_waiting": {
+    "message": "DDM ಸಿದ್ಧವಾದ ತಕ್ಷಣ ಪ್ರಾರಂಭವಾಗುತ್ತದೆ…"
+  },
+  "video_pick_gone": {
+    "message": "ಆ ಗುಣಮಟ್ಟ ಲಭ್ಯವಿಲ್ಲ: ಬೇರೆಯದನ್ನು ಆರಿಸಿ"
+  },
+  "popup_send_to": {
+    "message": "ಡೌನ್‌ಲೋಡ್‌ಗಳನ್ನು ಇಲ್ಲಿಗೆ ಕಳುಹಿಸಿ"
+  },
+  "popup_send_here": {
+    "message": "ಈ ಕಂಪ್ಯೂಟರ್"
+  },
+  "popup_send_remote": {
+    "message": "ಇನ್ನೊಂದು ಕಂಪ್ಯೂಟರ್ನಲ್ಲಿರುವ Dannex Download Manager"
+  },
+  "popup_remote_code": {
+    "message": "ಜೋಡಿಸುವ ಕೋಡ್"
+  },
+  "popup_remote_open": {
+    "message": "ಅದನ್ನು ತೆರೆಯಿರಿ"
+  },
+  "popup_remote_pair": {
+    "message": "ಜೋಡಿಸಿ"
+  },
+  "popup_remote_help": {
+    "message": "ಮೊದಲು ಇಲ್ಲಿ ಅದರ ವಿಳಾಸವನ್ನು ತೆರೆಯಿರಿ, ನಂತರ ಅದರ ಆಯ್ಕೆಗಳು → ರಿಮೋಟ್ → ಸಾಧನ ಜೋಡಿಸಿ ನಿಂದ ಕೋಡ್ ನಮೂದಿಸಿ."
+  },
+  "status_remote": {
+    "message": "ಡೌನ್‌ಲೋಡ್‌ಗಳು $address$ ಗೆ ಹೋಗುತ್ತವೆ",
+    "placeholders": {
+      "address": {
+        "content": "$1",
+        "example": "https://192.168.1.10:8463/"
+      }
+    }
+  },
+  "remote_address": {
+    "message": "ಅದರ https:// ವಿಳಾಸವನ್ನು ನಮೂದಿಸಿ."
+  },
+  "remote_unreachable": {
+    "message": "ಅದನ್ನು ತಲುಪಲಾಗಲಿಲ್ಲ. ಈ ಬ್ರೌಸರ್ನಲ್ಲಿ ಅದರ ವಿಳಾಸ ತೆರೆಯಿರಿ, ಭದ್ರತಾ ಎಚ್ಚರಿಕೆಯನ್ನು ದಾಟಿ ಮುಂದುವರಿಯಿರಿ, ನಂತರ ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ."
+  },
+  "remote_wrong_code": {
+    "message": "ತಪ್ಪಾದ ಕೋಡ್."
+  },
+  "remote_no_code": {
+    "message": "ನಮೂದಿಸಲು ಇನ್ನೂ ಕೋಡ್ ಇಲ್ಲ: ಮೊದಲು ಅಲ್ಲಿ ಸಾಧನ ಜೋಡಿಸಿ ಕ್ಲಿಕ್ ಮಾಡಿ."
+  },
+  "remote_too_soon": {
+    "message": "ಒಂದು ಕ್ಷಣ ನಿರೀಕ್ಷಿಸಿ, ನಂತರ ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ."
+  },
+  "remote_failed": {
+    "message": "ಇದು ಕಾರ್ಯನಿರ್ವಹಿಸಲಿಲ್ಲ. ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ."
+  },
+  "remote_device_name": {
+    "message": "ಬ್ರೌಸರ್ ವಿಸ್ತರಣೆ"
+  },
+  "badge_off": {
+    "message": "ಆಫ್"
+  },
+  "tip_on": {
+    "message": "Dannex Download Manager ಆನ್ ಆಗಿದೆ."
+  },
+  "tip_off": {
+    "message": "Dannex Download Manager ಆಫ್ ಆಗಿದೆ."
+  },
+  "tip_remote": {
+    "message": "ಡೌನ್ಲೋಡ್ಗಳು $address$ ನಲ್ಲಿರುವ Dannex Download Manager ಗೆ ಹೋಗುತ್ತವೆ.",
+    "placeholders": {
+      "address": {
+        "content": "$1",
+        "example": "https://192.168.1.10:8463/"
+      }
+    }
+  },
+  "status_off_in_app": {
+    "message": "Dannex Download Manager ನಲ್ಲಿ ಆಫ್ ಮಾಡಲಾಗಿದೆ"
+  },
+  "status_duplicate": {
+    "message": "ಈ ವಿಸ್ತರಣೆಯ ಇನ್ನೊಂದು ಪ್ರತಿಯನ್ನು ಸ್ಥಾಪಿಸಲಾಗಿದೆ"
+  },
+  "click_fix": {
+    "message": "ಏನು ಮಾಡಬೇಕೆಂದು ನೋಡಲು ಕ್ಲಿಕ್ ಮಾಡಿ."
+  },
+  "click_details": {
+    "message": "ವಿವರಗಳಿಗಾಗಿ ಕ್ಲಿಕ್ ಮಾಡಿ."
+  },
+  "toolbar_exclude": {
+    "message": "ಈ ಸೈಟ್ನಿಂದ ಡೌನ್ಲೋಡ್ಗಳನ್ನು ತೆಗೆದುಕೊಳ್ಳಬೇಡಿ"
+  },
+  "toolbar_help": {
+    "message": "ಸಹಾಯ"
+  },
+  "toolbar_store": {
+    "message": "Chrome Web Store ನಿಂದ ಸ್ವಯಂಚಾಲಿತ ನವೀಕರಣಗಳನ್ನು ಪಡೆಯಿರಿ..."
+  },
+  "options_take_note": {
+    "message": "ಇದು ಆಫ್ ಆಗಿರುವಾಗ ಡೌನ್‌ಲೋಡ್ಗಳು ಬ್ರೌಸರ್‌ನಲ್ಲಿಯೇ ಉಳಿಯುತ್ತವೆ. ವಿಸ್ತರಣೆಯ ಬಟನ್‌ನಲ್ಲಿಯೂ ಅದೇ ಸ್ವಿಚ್ ಇದೆ."
+  },
+  "options_what_to_do": {
+    "message": "ಏನು ಮಾಡಬೇಕೆಂದು ನೋಡಿ"
+  },
+  "options_more": {
+    "message": "ಇನ್ನಷ್ಟು"
+  },
+  "page_checking": {
+    "message": "Dannex Download Manager ಅನ್ನು ಹುಡುಕುತ್ತಿದೆ…"
+  },
+  "page_on_lead": {
+    "message": "ಈ ಬ್ರೌಸರ್ನಲ್ಲಿ ನೀವು ಪ್ರಾರಂಭಿಸುವ ಡೌನ್ಲೋಡ್ಗಳು Dannex Download Manager ಗೆ ಹೋಗುತ್ತವೆ."
+  },
+  "page_off_lead": {
+    "message": "ಇದು ಆಫ್ ಆಗಿದೆ, ಆದ್ದರಿಂದ ಡೌನ್ಲೋಡ್ಗಳು ಈ ಬ್ರೌಸರ್ನಲ್ಲೇ ಉಳಿಯುತ್ತವೆ."
+  },
+  "page_remote_title": {
+    "message": "ಡೌನ್ಲೋಡ್ಗಳು ಇನ್ನೊಂದು Dannex Download Manager ಗೆ ಹೋಗುತ್ತವೆ"
+  },
+  "page_remote_lead": {
+    "message": "ಈ ಬ್ರೌಸರ್ನಲ್ಲಿ ನೀವು ಪ್ರಾರಂಭಿಸುವ ಡೌನ್ಲೋಡ್ಗಳು $address$ ನಲ್ಲಿರುವ Dannex Download Manager ಗೆ ಹೋಗುತ್ತವೆ.",
+    "placeholders": {
+      "address": {
+        "content": "$1",
+        "example": "https://192.168.1.10:8463/"
+      }
+    }
+  },
+  "page_lead_not_installed": {
+    "message": "ಈ ವಿಸ್ತರಣೆಗೆ ಉಚಿತ Dannex Download Manager ಆ್ಯಪ್ ಬೇಕು. ಅದನ್ನು ಸ್ಥಾಪಿಸಿ, ಈ ಪುಟ ತಾನಾಗಿಯೇ ಅಪ್‌ಡೇಟ್ ಆಗುತ್ತದೆ."
+  },
+  "page_lead_not_running": {
+    "message": "ಬ್ರೌಸರ್ ಅದನ್ನು ಪ್ರಾರಂಭಿಸಲು ಪ್ರಯತ್ನಿಸಿತು, ಆದರೆ ಬಹಳ ಸಮಯ ತೆಗೆದುಕೊಂಡಿತು. Dannex Download Manager ಅನ್ನು ನೀವೇ ಪ್ರಾರಂಭಿಸಿ, ನಂತರ ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ."
+  },
+  "page_lead_host_failed": {
+    "message": "ಸಾಮಾನ್ಯವಾಗಿ ಭದ್ರತಾ ಸಾಫ್ಟ್ವೇರ್ ಕಾರಣ. ನಿಮ್ಮ ಆ್ಯಂಟಿವೈರಸ್ ಪ್ರೋಗ್ರಾಂನಲ್ಲಿ Dannex Download Manager ಅನ್ನು ಅನುಮತಿಸಿ, ಅಥವಾ ಮತ್ತೆ ಸ್ಥಾಪಿಸಿ."
+  },
+  "page_lead_forbidden": {
+    "message": "Dannex Download Manager ನ ಈ ಆವೃತ್ತಿ ಈ ವಿಸ್ತರಣೆಗೆ ತುಂಬಾ ಹಳೆಯದು. ಇತ್ತೀಚಿನದನ್ನು ಸ್ಥಾಪಿಸಿ."
+  },
+  "page_lead_too_large": {
+    "message": "ಸೈಟ್ ತುಂಬಾ ಹೆಚ್ಚು ಸೈನ್-ಇನ್ ಡೇಟಾ ಕಳುಹಿಸಿದೆ. ಸೈಟ್‌ನಿಂದ ಸೈನ್ ಔಟ್ ಮಾಡಿ ಮತ್ತೆ ಸೈನ್ ಇನ್ ಮಾಡಿ, ನಂತರ ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ."
+  },
+  "page_download": {
+    "message": "Dannex Download Manager ಡೌನ್ಲೋಡ್ ಮಾಡಿ"
+  },
+  "page_files_windows": {
+    "message": "Windows 10 ಮತ್ತು 11 ಗಾಗಿ."
+  },
+  "page_files_macos": {
+    "message": "Mac ಗಾಗಿ (.dmg ಡಿಸ್ಕ್ ಇಮೇಜ್)."
+  },
+  "page_files_linux": {
+    "message": "Linux ಗಾಗಿ (AppImage, .deb ಅಥವಾ .rpm)."
+  },
+  "page_files_other": {
+    "message": "Windows, Mac ಮತ್ತು Linux ಕಂಪ್ಯೂಟರ್ಗಳಿಗಾಗಿ."
+  },
+  "page_all_downloads": {
+    "message": "ಎಲ್ಲಾ ಡೌನ್ಲೋಡ್ಗಳು"
+  },
+  "page_step_windows": {
+    "message": "ನೀವು ಡೌನ್ಲೋಡ್ ಮಾಡಿದ ಸೆಟಪ್ ಅನ್ನು ಚಲಾಯಿಸಿ."
+  },
+  "page_step_macos": {
+    "message": ".dmg ತೆರೆಯಿರಿ, Dannex Download Manager ಅನ್ನು Applications ಗೆ ಎಳೆಯಿರಿ, ಮತ್ತು ಒಮ್ಮೆ ಪ್ರಾರಂಭಿಸಿ."
+  },
+  "page_step_linux": {
+    "message": ".deb ಅಥವಾ .rpm ಸ್ಥಾಪಿಸಿ (ಅಥವಾ AppImage ಚಲಾಯಿಸಿ), ನಂತರ Dannex Download Manager ಅನ್ನು ಒಮ್ಮೆ ಪ್ರಾರಂಭಿಸಿ."
+  },
+  "page_step_other": {
+    "message": "Dannex Download Manager Windows, Mac ಮತ್ತು Linux ಕಂಪ್ಯೂಟರ್ಗಳಲ್ಲಿ ಚಲಿಸುತ್ತದೆ. ಅವುಗಳಲ್ಲಿ ಒಂದರಲ್ಲಿ ಇದನ್ನು ಸ್ಥಾಪಿಸಿ, ಮತ್ತು ಅಲ್ಲಿನ ಬ್ರೌಸರ್ಗೆ ಈ ವಿಸ್ತರಣೆಯನ್ನು ಸೇರಿಸಿ."
+  },
+  "page_step_wait": {
+    "message": "ಈ ಪುಟವನ್ನು ತೆರೆದಿಡಿ. Dannex Download Manager ಸಿದ್ಧವಾದಾಗ ಇದು ತಾನಾಗಿಯೇ ಬದಲಾಗುತ್ತದೆ."
+  },
+  "page_step_restart": {
+    "message": "ಒಂದು ನಿಮಿಷದ ನಂತರವೂ ಏನೂ ಇಲ್ಲವೇ? ಬ್ರೌಸರ್ ಅನ್ನು ಮರುಪ್ರಾರಂಭಿಸಿ."
+  },
+  "page_step_installed": {
+    "message": "ಈಗಾಗಲೇ ಸ್ಥಾಪಿಸಲಾಗಿದೆಯೇ? Dannex Download Manager ನಲ್ಲಿ ಆಯ್ಕೆಗಳು → ಸಾಮಾನ್ಯ → ಬ್ರೌಸರ್ ಏಕೀಕರಣವನ್ನು ಪರೀಕ್ಷಿಸಿ ತೆರೆಯಿರಿ."
+  },
+  "page_try_again": {
+    "message": "ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ"
+  },
+  "page_app_options": {
+    "message": "Dannex Download Manager ನ ಆಯ್ಕೆಗಳನ್ನು ತೆರೆಯಿರಿ"
+  },
+  "page_duplicate_title": {
+    "message": "ಈ ಪ್ರತಿಯನ್ನು ತೆಗೆದುಹಾಕಿ"
+  },
+  "page_duplicate_lead": {
+    "message": "Chrome ವೆಬ್ ಸ್ಟೋರ್‌ನ ಪ್ರತಿಯೂ ಸ್ಥಾಪಿತವಾಗಿದೆ ಮತ್ತು ತಾನಾಗಿಯೇ ಅಪ್‌ಡೇಟ್ ಆಗುತ್ತದೆ. ನೀವು ಇದನ್ನು ತೆಗೆದುಹಾಕಬಹುದು."
+  },
+  "page_remove": {
+    "message": "ಈ ಪ್ರತಿಯನ್ನು ತೆಗೆದುಹಾಕಿ"
+  },
+  "page_extensions": {
+    "message": "ವಿಸ್ತರಣೆಗಳ ಪುಟ ತೆರೆಯಿರಿ"
+  },
+  "page_update_app_how": {
+    "message": "Dannex Download Manager ನಲ್ಲಿ ಇದನ್ನು ಆರಿಸಿ: ಸಹಾಯ → ನವೀಕರಣಗಳನ್ನು ಪರಿಶೀಲಿಸಿ..."
+  },
+  "page_behind": {
+    "message": "ಈ ವಿಸ್ತರಣೆಯ ಹೊಸ ಆವೃತ್ತಿ Dannex Download Manager $version$ ಜೊತೆ ಬಂದಿದೆ.",
+    "placeholders": {
+      "version": {
+        "content": "$1",
+        "example": "0.7.0"
+      }
+    }
+  },
+  "page_behind_store": {
+    "message": "ಬ್ರೌಸರ್ ಕೆಲವು ಗಂಟೆಗಳಲ್ಲಿ ತಾನಾಗಿಯೇ ನವೀಕರಿಸುತ್ತದೆ, ಅಥವಾ ಈಗಲೇ ನವೀಕರಣಗಳನ್ನು ಪರಿಶೀಲಿಸಿ ಮೂಲಕ."
+  },
+  "page_behind_unpacked": {
+    "message": "ಬಳಸಲು ವಿಸ್ತರಣೆಯನ್ನು ಮರುಲೋಡ್ ಮಾಡಿ."
+  },
+  "page_behind_other": {
+    "message": "ನೀವು ಇದನ್ನು ಸೇರಿಸಿದಂತೆ, Dannex Download Manager ನ ಫೋಲ್ಡರ್ನಿಂದ ಹೊಸದನ್ನು ಸೇರಿಸಿ."
+  },
+  "page_check_updates": {
+    "message": "ನವೀಕರಣಗಳನ್ನು ಪರಿಶೀಲಿಸಿ"
+  },
+  "page_up_to_date": {
+    "message": "ಇನ್ನೂ ಹೊಸ ಆವೃತ್ತಿ ಇಲ್ಲ. ಬ್ರೌಸರ್ ತಾನಾಗಿಯೇ ಮತ್ತೆ ಪರಿಶೀಲಿಸುತ್ತದೆ."
+  },
+  "page_reload": {
+    "message": "ವಿಸ್ತರಣೆಯನ್ನು ಮರುಲೋಡ್ ಮಾಡಿ"
+  },
+  "page_store": {
+    "message": "ಸ್ವಯಂಚಾಲಿತ ನವೀಕರಣಗಳನ್ನು ಪಡೆಯಿರಿ: ಈ ವಿಸ್ತರಣೆಯನ್ನು Chrome Web Store ನಿಂದ ಸೇರಿಸಿ, ನಂತರ ಈ ಪ್ರತಿಯನ್ನು ತೆಗೆದುಹಾಕಿ."
+  },
+  "page_open_store": {
+    "message": "Chrome Web Store ತೆರೆಯಿರಿ"
+  },
+  "page_temporary": {
+    "message": "Firefox ಮುಚ್ಚಿದಾಗ ಈ ಆಡ್-ಆನ್ ಅನ್ನು ತೆಗೆದುಹಾಕುತ್ತದೆ, ಏಕೆಂದರೆ ಇದನ್ನು ತಾತ್ಕಾಲಿಕ ಆಡ್-ಆನ್ ಆಗಿ ಸೇರಿಸಲಾಗಿದೆ."
+  },
+  "page_site_access": {
+    "message": "ಈ ವಿಸ್ತರಣೆಗೆ ಕೆಲವು ಸೈಟ್ಗಳಲ್ಲಿ ಮಾತ್ರ ಅನುಮತಿ ಇದೆ, ಆದ್ದರಿಂದ ಇತರ ಸೈಟ್ಗಳ ಡೌನ್ಲೋಡ್ಗಳು ಬ್ರೌಸರ್ನಲ್ಲೇ ಉಳಿಯುತ್ತವೆ."
+  },
+  "page_allow_sites": {
+    "message": "ಎಲ್ಲಾ ಸೈಟ್ಗಳಲ್ಲಿ ಅನುಮತಿಸಿ"
+  },
+  "page_private": {
+    "message": "ಖಾಸಗಿ ವಿಂಡೋಗಳ ಡೌನ್ಲೋಡ್ಗಳು ಬ್ರೌಸರ್ನಲ್ಲೇ ಉಳಿಯುತ್ತವೆ, ಏಕೆಂದರೆ ಈ ವಿಸ್ತರಣೆಗೆ ಅಲ್ಲಿ ಅನುಮತಿ ಇಲ್ಲ."
+  },
+  "page_private_chromium": {
+    "message": "ಅದನ್ನು ಬದಲಾಯಿಸಲು, ಅದರ ವಿವರಗಳ ಪುಟದಲ್ಲಿ ಇನ್ಕಾಗ್ನಿಟೋದಲ್ಲಿ ಅನುಮತಿಸಿ ಆನ್ ಮಾಡಿ."
+  },
+  "page_private_firefox": {
+    "message": "ಅದನ್ನು ಬದಲಾಯಿಸಲು, Add-ons and themes ನಲ್ಲಿರುವ ಅದರ ಪುಟದಲ್ಲಿ Run in Private Windows ಪಕ್ಕದ Allow ಆಯ್ಕೆಮಾಡಿ."
+  },
+  "page_learn_more": {
+    "message": "ಇನ್ನಷ್ಟು ತಿಳಿಯಿರಿ"
+  },
+  "popup_video": {
+    "message": "ಈ ಪುಟದ ವೀಡಿಯೊ ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ"
+  },
+  "popup_all": {
+    "message": "ಈ ಪುಟದ ಎಲ್ಲಾ ಲಿಂಕ್‌ಗಳನ್ನು ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ"
+  },
+  "popup_no_links": {
+    "message": "ಈ ಪುಟದಲ್ಲಿ ಡೌನ್‌ಲೋಡ್ ಮಾಡಲು ಲಿಂಕ್‌ಗಳಿಲ್ಲ."
+  },
+  "popup_drm": {
+    "message": "ಈ ಪುಟದ ವೀಡಿಯೊ ಅಥವಾ ಧ್ವನಿ ನಕಲು-ರಕ್ಷಿತವಾಗಿದೆ (DRM): ಅದನ್ನು ಡೌನ್‌ಲೋಡ್ ಮಾಡಲು ಸಾಧ್ಯವಿಲ್ಲ."
+  },
+  "popup_status": {
+    "message": "ಸ್ಥಿತಿ ಮತ್ತು ಸಹಾಯ"
+  },
+  "popup_options": {
+    "message": "ವಿಸ್ತರಣೆ ಆಯ್ಕೆಗಳು"
+  },
+  "popup_fix": {
+    "message": "ಏನು ಮಾಡಬೇಕೆಂದು ನೋಡಿ"
+  }
+}

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1000" viewBox="0 0 1000 1000">
+<defs>
+<linearGradient id="t" x1="80" y1="40" x2="920" y2="960" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#1E2A66"/><stop offset="0.55" stop-color="#111842"/><stop offset="1" stop-color="#070A1E"/></linearGradient>
+<linearGradient id="gloss" x1="0" y1="40" x2="0" y2="560" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#FFFFFF" stop-opacity="0.12"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/></linearGradient>
+<filter id="soft" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="18"/></filter>
+<clipPath id="clip-tile"><path d="M0,0 H1000 A0,0 0 0 1 1000,0 V1000 A0,0 0 0 1 1000,1000 H0 A0,0 0 0 1 0,1000 V0 A0,0 0 0 1 0,0 Z"/></clipPath>
+<linearGradient id="tail" x1="150" y1="150" x2="630" y2="630" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#B43A8C" stop-opacity="0.0"/><stop offset="0.35" stop-color="#E2466E" stop-opacity="0.55"/><stop offset="0.7" stop-color="#FF6A45" stop-opacity="0.92"/><stop offset="1" stop-color="#FFB23E"/></linearGradient>
+<linearGradient id="side" x1="150" y1="150" x2="630" y2="630" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#B43A8C" stop-opacity="0.0"/><stop offset="0.5" stop-color="#FF6A45" stop-opacity="0.55"/><stop offset="1" stop-color="#FFB23E" stop-opacity="0.95"/></linearGradient>
+<radialGradient id="head" cx="585" cy="585" r="180" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#FFFFFF"/><stop offset="0.5" stop-color="#FFF3D6"/><stop offset="0.85" stop-color="#FFCD6E"/><stop offset="1" stop-color="#FFB23E"/></radialGradient>
+<radialGradient id="halo" cx="630" cy="630" r="390" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#FFB23E" stop-opacity="0.45"/><stop offset="0.4" stop-color="#FF7A45" stop-opacity="0.18"/><stop offset="1" stop-color="#FF6A45" stop-opacity="0"/></radialGradient>
+</defs>
+<path d="M0,0 H1000 A0,0 0 0 1 1000,0 V1000 A0,0 0 0 1 1000,1000 H0 A0,0 0 0 1 0,1000 V0 A0,0 0 0 1 0,0 Z" fill="url(#t)"/>
+<g clip-path="url(#clip-tile)">
+<circle cx="250" cy="690" r="9" fill="#FFFFFF" opacity="0.55"/><circle cx="770" cy="250" r="7" fill="#FFFFFF" opacity="0.45"/><circle cx="380" cy="830" r="5" fill="#FFFFFF" opacity="0.35"/><circle cx="860" cy="430" r="5" fill="#FFFFFF" opacity="0.3"/><circle cx="560" cy="140" r="6" fill="#FFFFFF" opacity="0.4"/>
+<ellipse cx="500" cy="60" rx="760" ry="440" fill="url(#gloss)"/>
+<circle cx="630" cy="630" r="390" fill="url(#halo)"/>
+<path d="M784.15,444.03 L787.8,448.79 L790.1,454.34 L790.89,460.29 L790.1,466.25 L787.8,471.79 L784.15,476.56 L779.39,480.21 L773.84,482.51 L767.89,483.29 L761.93,482.51 L756.39,480.21 L751.62,476.56 L460.69,153.09 Z" fill="url(#side)"/><path d="M476.56,751.62 L480.21,756.39 L482.51,761.93 L483.29,767.89 L482.51,773.84 L480.21,779.39 L476.56,784.15 L471.79,787.8 L466.25,790.1 L460.29,790.89 L454.34,790.1 L448.79,787.8 L444.03,784.15 L220.29,527.89 Z" fill="url(#side)"/>
+<path d="M150,150 L710.01,503.12 L717.44,508.13 L724.57,513.57 L731.36,519.43 L737.78,525.68 L743.83,532.31 L749.46,539.28 L754.67,546.58 L759.43,554.18 L763.73,562.05 L767.55,570.16 L770.88,578.49 L773.7,587 L776.02,595.66 L777.81,604.45 L779.07,613.32 L779.8,622.26 L779.99,631.23 L779.65,640.19 L778.78,649.11 L777.37,657.96 L775.44,666.72 L772.98,675.34 L770.02,683.81 L766.55,692.08 L762.6,700.13 L758.17,707.92 L753.29,715.44 L747.96,722.66 L742.21,729.54 L736.07,736.07 L729.54,742.21 L722.66,747.96 L715.44,753.29 L707.92,758.17 L700.13,762.6 L692.08,766.55 L683.81,770.02 L675.34,772.98 L666.72,775.44 L657.96,777.37 L649.11,778.78 L640.19,779.65 L631.23,779.99 L622.26,779.8 L613.32,779.07 L604.45,777.81 L595.66,776.02 L587,773.7 L578.49,770.88 L570.16,767.55 L562.05,763.73 L554.18,759.43 L546.58,754.67 L539.28,749.46 L532.31,743.83 L525.68,737.78 L519.43,731.36 L513.57,724.57 L508.13,717.44 L503.12,710.01 Z" fill="url(#tail)"/>
+<circle cx="630" cy="630" r="150" fill="url(#head)"/>
+</g>
+</svg>

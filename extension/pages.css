@@ -1,0 +1,313 @@
+/* The extension's two pages (install.html: the status page; options.html), in Dannex's Comet
+   colours: night and the comet's warm head by day, the head and its amber glow on night by night
+   (prefers-color-scheme). Calm, small, readable (WCAG AA in both), and only logical sides (start
+   and end, never left and right), for right-to-left languages. */
+:root {
+  --night: #1e2a66;
+  --night-deep: #070a1e;
+  --head: #fff7e6;
+  --amber: #ffb23e;
+  --ember: #ff6a45;
+  --plum: #b43a8c;
+
+  --bg: #fbf8f2;
+  --surface: #ffffff;
+  --fill: #f4efe4;
+  --text: #111633;
+  --muted: #545a78;
+  --line: #e6dfd0;
+  --line-strong: #cbc2ae;
+  --primary: var(--night);
+  --on-primary: var(--head);
+  --primary-hover: #2a3880;
+  --link: var(--plum);
+  --focus: var(--plum);
+  --switch-off: #c9c2b2;
+  --knob: #ffffff;
+  --mark-ok: var(--night);
+  --mark-ok-glyph: var(--amber);
+  --mark-bad: var(--ember);
+  --mark-warn: var(--amber);
+  --mark-glyph: var(--night);
+  --mark-off: #8a8fa8;
+  --mark-off-glyph: #ffffff;
+  --bad-text: #b23a1e;
+  --warn-edge: #e0971f;
+  --shadow: 0 1px 2px rgba(17, 22, 51, 0.05), 0 10px 30px -12px rgba(17, 22, 51, 0.18);
+  color-scheme: light dark;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: var(--night-deep);
+    --surface: #0f1433;
+    --fill: #161d45;
+    --text: var(--head);
+    --muted: #b7bad3;
+    --line: #232a58;
+    --line-strong: #364079;
+    --primary: var(--amber);
+    --on-primary: var(--night-deep);
+    --primary-hover: #ffc266;
+    --link: var(--amber);
+    --focus: var(--amber);
+    --switch-off: #3a4378;
+    --knob: var(--head);
+    --mark-ok: var(--amber);
+    --mark-ok-glyph: var(--night-deep);
+    --mark-glyph: var(--night-deep);
+    --mark-off: #4c548a;
+    --mark-off-glyph: var(--head);
+    --bad-text: #ff8a6b;
+    --warn-edge: var(--amber);
+    --shadow: none;
+  }
+}
+
+* { box-sizing: border-box; }
+/* The hidden attribute wins over a class's display. */
+[hidden] { display: none !important; }
+
+body.page {
+  max-width: 620px;
+  margin: 0 auto;
+  padding: 36px 24px 28px;
+  background: var(--bg);
+  color: var(--text);
+  font: 15px/1.55 "Segoe UI Variable Text", "Segoe UI", system-ui, -apple-system, "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* The extension's name, small, above everything. */
+.page-head { display: flex; align-items: center; gap: 10px; margin-block-end: 22px; color: var(--muted); }
+.page-head img { flex: none; }
+.page-head h1, .page-head .eyebrow { margin: 0; font-size: 13px; font-weight: 600; letter-spacing: 0.02em; }
+
+/* A part of its own. */
+.card {
+  margin-block-start: 14px;
+  padding: 16px 18px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+}
+.note { margin: 6px 0 0; color: var(--muted); font-size: 13px; }
+.note.bad { color: var(--bad-text); }
+.link { color: var(--link); text-decoration: none; text-underline-offset: 2px; cursor: pointer; }
+.link:hover { text-decoration: underline; }
+
+/* Controls. */
+button, a.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 34px;
+  padding: 6px 16px;
+  border: 1px solid var(--line-strong);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--text);
+  font: inherit;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.15s ease, border-color 0.15s ease;
+}
+button:hover:not(:disabled), a.button:hover { background: var(--fill); }
+button.primary, a.button.primary { background: var(--primary); border-color: var(--primary); color: var(--on-primary); }
+button.primary:hover:not(:disabled), a.button.primary:hover { background: var(--primary-hover); border-color: var(--primary-hover); }
+a.button.big { min-height: 44px; padding: 10px 22px; font-size: 15px; font-weight: 600; }
+button:disabled { cursor: default; opacity: 0.55; }
+button:focus-visible, a:focus-visible, input:focus-visible, summary:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
+}
+.actions { display: flex; flex-wrap: wrap; gap: 8px; margin-block-start: 16px; }
+.actions:empty { display: none; }
+
+/* An on/off switch: the text at the start, the switch at the end. */
+.switch-row { display: flex; align-items: center; justify-content: space-between; gap: 16px; cursor: pointer; }
+.switch-row + .switch-row { margin-block-start: 14px; padding-block-start: 14px; border-block-start: 1px solid var(--line); }
+.switch-text { display: flex; flex-direction: column; min-width: 0; font-weight: 500; }
+.switch-text .note { font-weight: 400; }
+input[role="switch"] {
+  appearance: none;
+  -webkit-appearance: none;
+  flex: none;
+  position: relative;
+  width: 42px;
+  height: 24px;
+  margin: 0;
+  border-radius: 999px;
+  background: var(--switch-off);
+  cursor: pointer;
+}
+input[role="switch"]::before {
+  content: "";
+  position: absolute;
+  inset-block-start: 3px;
+  inset-inline-start: 3px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--knob);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+}
+/* Moved by a click, not by the page drawing the switch as it opens (`ready`, pages.js). */
+.ready input[role="switch"] { transition: background-color 0.18s ease; }
+.ready input[role="switch"]::before { transition: inset-inline-start 0.18s ease; }
+input[role="switch"]:checked { background: var(--primary); }
+input[role="switch"]:checked::before { inset-inline-start: 21px; background: var(--on-primary); }
+input[type="text"], input[type="url"], input[inputmode] {
+  display: block;
+  width: 100%;
+  margin-block-start: 8px;
+  padding: 8px 10px;
+  border: 1px solid var(--line-strong);
+  border-radius: 8px;
+  background: var(--bg);
+  color: inherit;
+  font: inherit;
+  font-size: 14px;
+}
+input[type="radio"] { flex: none; margin: 0; accent-color: var(--primary); }
+
+/* The status page: where things stand, in a mark of its colour and a sentence or two. */
+.hero {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 22px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  box-shadow: var(--shadow);
+}
+.hero h1 { margin: 4px 0 6px; font-size: 21px; line-height: 1.3; font-weight: 600; letter-spacing: -0.01em; }
+.hero .lead { margin: 0; color: var(--muted); }
+.state-mark {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--mark-off);
+  color: var(--mark-off-glyph);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1;
+}
+.hero.ok .state-mark { background: var(--mark-ok); color: var(--mark-ok-glyph); }
+.hero.ok .state-mark::before, .hero.off .state-mark::before { content: "✓"; }
+.hero.bad .state-mark { background: var(--mark-bad); color: var(--mark-glyph); }
+.hero.warn .state-mark { background: var(--mark-warn); color: var(--mark-glyph); }
+.hero.bad .state-mark::before, .hero.warn .state-mark::before { content: "!"; }
+/* Waiting for the first answer: a mark that breathes. */
+.hero.wait .state-mark { animation: breathe 1.6s ease-in-out infinite; }
+@keyframes breathe { 50% { opacity: 0.45; } }
+@media (prefers-reduced-motion: reduce) {
+  .hero.wait .state-mark { animation: none; }
+  .ready input[role="switch"], .ready input[role="switch"]::before, button, a.button { transition: none; }
+}
+
+/* DDM to download, with the steps after it. */
+.get { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; }
+.get .note { flex: 1 1 200px; margin: 0; }
+.get .link { flex-basis: 100%; font-size: 13px; }
+.steps { margin: 16px 0 0; padding-inline-start: 22px; }
+.steps li { margin: 6px 0; padding-inline-start: 4px; }
+.steps li::marker { color: var(--muted); font-weight: 600; }
+.steps + .note { margin-block-start: 10px; }
+
+/* What else is worth knowing: one quiet card each, lightly tinted by what it is. */
+.notes { list-style: none; margin: 16px 0 0; padding: 0; }
+.notes li {
+  margin-block-start: 10px;
+  padding: 12px 16px;
+  background: color-mix(in srgb, var(--warn-edge) 8%, var(--surface));
+  border: 1px solid color-mix(in srgb, var(--warn-edge) 35%, var(--line));
+  border-radius: 10px;
+}
+.notes li.info { background: var(--surface); border-color: var(--line); }
+.notes li.offer { background: color-mix(in srgb, var(--primary) 6%, var(--surface)); border-color: color-mix(in srgb, var(--primary) 30%, var(--line)); }
+.notes p { margin: 0; }
+.notes p + p { margin-block-start: 2px; color: var(--muted); font-size: 14px; }
+.notes .actions { margin-block-start: 10px; }
+.notes .link { display: inline-block; margin-block-start: 6px; font-size: 14px; }
+
+/* The options page. */
+.status-line { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 10px; margin: 12px 0 0; padding-block-start: 12px; border-block-start: 1px solid var(--line); font-size: 14px; }
+.status-line::before { content: ""; flex: none; align-self: center; width: 8px; height: 8px; border-radius: 50%; background: var(--mark-off); }
+.status-line.ok::before { background: var(--mark-ok); }
+.status-line.bad::before { background: var(--mark-bad); }
+.status-line.warn::before { background: var(--mark-warn); }
+.notice p { margin: 0; }
+.more { padding: 0; }
+.more > summary {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 18px;
+  font-weight: 600;
+  cursor: pointer;
+  list-style: none;
+  border-radius: 12px;
+}
+.more > summary::-webkit-details-marker { display: none; }
+/* A chevron pointing to where the text goes (the end side), turned down while open. */
+.more > summary::before {
+  content: "\203A";
+  display: inline-block;
+  width: 10px;
+  color: var(--muted);
+  font-size: 18px;
+  line-height: 1;
+  text-align: center;
+  transition: transform 0.15s ease;
+}
+.more[open] > summary::before { transform: rotate(90deg); }
+[dir="rtl"] .more > summary::before { content: "\2039"; }
+[dir="rtl"] .more[open] > summary::before { transform: rotate(-90deg); }
+.more-body { padding: 0 18px 18px; }
+.more-body > :not([hidden]) ~ :not([hidden]) { margin-block-start: 18px; padding-block-start: 16px; border-block-start: 1px solid var(--line); }
+.send-title { margin: 0; font-weight: 500; }
+.choice { display: flex; align-items: center; gap: 8px; margin-block-start: 8px; cursor: pointer; }
+#remote-form { margin-block-start: 6px; padding-inline-start: 24px; }
+
+/* The toolbar button's panel (popup.html): the status page's mark and switch, small, then a
+   column of things to do. */
+body.popup {
+  width: 340px;
+  margin: 0;
+  padding: 14px;
+  background: var(--bg);
+  color: var(--text);
+  font: 14px/1.45 "Segoe UI Variable Text", "Segoe UI", system-ui, -apple-system, "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+.popup .page-head { margin-block-end: 12px; }
+.popup .hero { gap: 12px; padding: 14px; border-radius: 12px; }
+.popup .hero h1 { margin: 1px 0 2px; font-size: 15px; }
+.popup .hero .lead { font-size: 13px; }
+.popup .hero .lead:empty { display: none; }
+.popup .state-mark { width: 30px; height: 30px; font-size: 15px; }
+.popup .card { margin-block-start: 10px; padding: 12px 14px; }
+.popup .wide { width: 100%; margin-block-start: 10px; }
+.menu { display: flex; flex-direction: column; gap: 6px; margin-block-start: 10px; padding-block-start: 10px; border-block-start: 1px solid var(--line); }
+.menu button { justify-content: flex-start; width: 100%; text-align: start; }
+.menu .note:empty { display: none; }
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+  margin-block-start: 28px;
+  padding-block-start: 12px;
+  border-block-start: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 12px;
+}
+.footer-links { display: flex; flex-wrap: wrap; gap: 4px 16px; min-width: 0; }
+#version { flex: none; font-variant-numeric: tabular-nums; }

@@ -1,0 +1,488 @@
+{
+  "name": {
+    "message": "Dannex Download Manager"
+  },
+  "description": {
+    "message": "Ipinapadala ang mga file, link at video na dina-download mo sa browser sa Dannex Download Manager app sa iyong computer."
+  },
+  "menu": {
+    "message": "I-download gamit ang DDM"
+  },
+  "video_download": {
+    "message": "I-download ang video"
+  },
+  "video_more": {
+    "message": "Higit pang opsyon"
+  },
+  "video_hide_here": {
+    "message": "Itago sa video na ito"
+  },
+  "video_close": {
+    "message": "Isara"
+  },
+  "video_never_site": {
+    "message": "Huwag kailanman sa $site$",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "video_settings": {
+    "message": "Mga setting ng button..."
+  },
+  "video_sent": {
+    "message": "Ipinadala sa DDM"
+  },
+  "video_failed": {
+    "message": "Hindi naka-install ang Dannex Download Manager o hindi nagsimula"
+  },
+  "video_drag": {
+    "message": "I-drag para ilipat ito sa gilid ng video"
+  },
+  "menu_selected": {
+    "message": "I-download ang mga napiling link gamit ang DDM"
+  },
+  "menu_all": {
+    "message": "I-download ang lahat ng link gamit ang DDM"
+  },
+  "menu_images": {
+    "message": "I-download ang lahat ng larawan gamit ang DDM"
+  },
+  "menu_media": {
+    "message": "I-download ang lahat ng video at audio gamit ang DDM"
+  },
+  "status_not_installed": {
+    "message": "Hindi naka-install ang Dannex Download Manager"
+  },
+  "status_installed": {
+    "message": "Naka-install ang Dannex Download Manager"
+  },
+  "status_forbidden": {
+    "message": "I-update ang Dannex Download Manager"
+  },
+  "status_not_running": {
+    "message": "Hindi nagsimula ang Dannex Download Manager"
+  },
+  "status_host_failed": {
+    "message": "May humaharang sa Dannex Download Manager"
+  },
+  "status_too_large": {
+    "message": "Hindi naipadala sa Dannex Download Manager ang huling download"
+  },
+  "status_update_app": {
+    "message": "I-update ang Dannex Download Manager para magamit ang lahat ng kayang gawin ng extension na ito."
+  },
+  "popup_take": {
+    "message": "Ipadala ang mga download sa Dannex Download Manager"
+  },
+  "popup_proxy": {
+    "message": "Mag-download sa pamamagitan ng VPN o proxy ng browser na ito"
+  },
+  "popup_proxy_title": {
+    "message": "I-on ito kung gumagamit ka ng VPN o proxy extension. Magtatanong ang browser nang isang beses."
+  },
+  "popup_proxy_title_chromium": {
+    "message": "I-on ito kung gumagamit ka ng VPN o proxy extension sa browser na ito."
+  },
+  "popup_help": {
+    "message": "Tulong"
+  },
+  "page_support": {
+    "message": "Suportahan ang DDM"
+  },
+  "popup_declined": {
+    "message": "Nanatili sa browser ang huli mong download: $name$",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "setup.png"
+      }
+    }
+  },
+  "popup_declined_unnamed": {
+    "message": "Nanatili sa browser ang huli mong download."
+  },
+  "declined_file_type": {
+    "message": "Wala sa listahan ng Dannex Download Manager ang uri ng file nito (Mga Opsyon → Mga uri ng file)."
+  },
+  "declined_site": {
+    "message": "Nasa listahan ng Dannex Download Manager ng mga site na hindi kukunin ang site nito (Mga Opsyon → Mga uri ng file)."
+  },
+  "declined_address": {
+    "message": "Nasa listahan ng Dannex Download Manager ng mga address na hindi kukunin ang address nito (Mga Opsyon → Mga uri ng file)."
+  },
+  "declined_small": {
+    "message": "Mas maliit ito sa pinakamaliit na file na kinukuha ng Dannex Download Manager (Mga Opsyon → Mga uri ng file)."
+  },
+  "declined_browser": {
+    "message": "Walang tsek ang browser na ito sa Mga Opsyon → General ng Dannex Download Manager."
+  },
+  "declined_integration_off": {
+    "message": "Naka-off ang integrasyon ng browser sa Mga Opsyon → General ng Dannex Download Manager."
+  },
+  "declined_site_access": {
+    "message": "Hindi pinapayagan ang extension na ito sa site na iyon."
+  },
+  "declined_handed_back": {
+    "message": "Pinili mo ang I-download gamit ang browser para dito sa Dannex Download Manager."
+  },
+  "video_off": {
+    "message": "Naka-off ang button ng download sa site na ito"
+  },
+  "video_drm": {
+    "message": "Protektadong video: hindi ito mase-save"
+  },
+  "video_drm_audio": {
+    "message": "Protektadong audio: hindi ito mase-save"
+  },
+  "video_protected": {
+    "message": "Protektado"
+  },
+  "video_download_audio": {
+    "message": "I-download ang audio"
+  },
+  "video_unnamed": {
+    "message": "Buksan ang sariling page ng video at subukan doon"
+  },
+  "video_looking": {
+    "message": "Hinahanap ang mga kalidad…"
+  },
+  "video_open_mdm": {
+    "message": "Buksan sa DDM…"
+  },
+  "video_no_choices": {
+    "message": "Walang video na ida-download dito"
+  },
+  "video_playlist": {
+    "message": "Listahan ng mga video: piliin ang mga ito sa Dannex Download Manager"
+  },
+  "video_no_ytdlp": {
+    "message": "Kailangan ng Dannex Download Manager ang yt-dlp para sa video na ito. Buksan sa DDM… para i-install ito."
+  },
+  "video_too_long": {
+    "message": "Masyadong natagalan ang paghahanap"
+  },
+  "video_busy": {
+    "message": "Abala ang Dannex Download Manager sa ibang mga video"
+  },
+  "video_queued": {
+    "message": "Naidagdag sa queue"
+  },
+  "video_failed_lookup": {
+    "message": "Hindi ito nahanap"
+  },
+  "video_tab_video": {
+    "message": "Video"
+  },
+  "video_tab_audio": {
+    "message": "Audio"
+  },
+  "video_open_post": {
+    "message": "Buksan ang post, pagkatapos ay gamitin ang button doon"
+  },
+  "video_audio_original": {
+    "message": "Audio lang, orihinal na $type$",
+    "placeholders": {
+      "type": {
+        "content": "$1",
+        "example": "M4A"
+      }
+    }
+  },
+  "video_audio_only": {
+    "message": "Audio lang $type$",
+    "placeholders": {
+      "type": {
+        "content": "$1",
+        "example": "MP3 320 kbps"
+      }
+    }
+  },
+  "video_audio_original_short": {
+    "message": "Orihinal na $type$",
+    "placeholders": {
+      "type": {
+        "content": "$1",
+        "example": "M4A"
+      }
+    }
+  },
+  "video_pick_waiting": {
+    "message": "Magsisimula sa sandaling handa na ang DDM…"
+  },
+  "video_pick_gone": {
+    "message": "Hindi available ang kalidad na iyon: pumili ng iba"
+  },
+  "popup_send_to": {
+    "message": "Ipadala ang mga download sa"
+  },
+  "popup_send_here": {
+    "message": "Ang computer na ito"
+  },
+  "popup_send_remote": {
+    "message": "Dannex Download Manager sa ibang computer"
+  },
+  "popup_remote_code": {
+    "message": "Code ng pagpapares"
+  },
+  "popup_remote_open": {
+    "message": "Buksan ito"
+  },
+  "popup_remote_pair": {
+    "message": "Ipares"
+  },
+  "popup_remote_help": {
+    "message": "Buksan muna rito ang address nito, pagkatapos ay ilagay ang code mula sa Mga Opsyon → Remote → Ipares ang device nito."
+  },
+  "status_remote": {
+    "message": "Napupunta ang mga download sa $address$",
+    "placeholders": {
+      "address": {
+        "content": "$1",
+        "example": "https://192.168.1.10:8463/"
+      }
+    }
+  },
+  "remote_address": {
+    "message": "Ilagay ang https:// address nito."
+  },
+  "remote_unreachable": {
+    "message": "Hindi ito maabot. Buksan ang address nito sa browser na ito, magpatuloy sa babala sa seguridad, pagkatapos ay subukan muli."
+  },
+  "remote_wrong_code": {
+    "message": "Maling code."
+  },
+  "remote_no_code": {
+    "message": "Wala pang code na ilalagay: i-click muna roon ang Ipares ang device."
+  },
+  "remote_too_soon": {
+    "message": "Maghintay sandali, pagkatapos ay subukang muli."
+  },
+  "remote_failed": {
+    "message": "Hindi ito gumana. Subukang muli."
+  },
+  "remote_device_name": {
+    "message": "Extension ng browser"
+  },
+  "badge_off": {
+    "message": "OFF"
+  },
+  "tip_on": {
+    "message": "Naka-on ang Dannex Download Manager."
+  },
+  "tip_off": {
+    "message": "Naka-off ang Dannex Download Manager."
+  },
+  "tip_remote": {
+    "message": "Pumupunta ang mga download sa Dannex Download Manager sa $address$.",
+    "placeholders": {
+      "address": {
+        "content": "$1",
+        "example": "https://192.168.1.10:8463/"
+      }
+    }
+  },
+  "status_off_in_app": {
+    "message": "Naka-off sa Dannex Download Manager"
+  },
+  "status_duplicate": {
+    "message": "May naka-install na isa pang kopya ng extension na ito"
+  },
+  "click_fix": {
+    "message": "I-click para makita ang gagawin."
+  },
+  "click_details": {
+    "message": "I-click para sa mga detalye."
+  },
+  "toolbar_exclude": {
+    "message": "Huwag kunin ang mga download mula sa site na ito"
+  },
+  "toolbar_help": {
+    "message": "Tulong"
+  },
+  "toolbar_store": {
+    "message": "Kumuha ng mga awtomatikong update mula sa Chrome Web Store..."
+  },
+  "options_take_note": {
+    "message": "Kapag naka-off, mananatili sa browser ang mga download. May parehong switch ang button ng extension."
+  },
+  "options_what_to_do": {
+    "message": "Tingnan ang gagawin"
+  },
+  "options_more": {
+    "message": "Higit pa"
+  },
+  "page_checking": {
+    "message": "Hinahanap ang Dannex Download Manager…"
+  },
+  "page_on_lead": {
+    "message": "Napupunta sa Dannex Download Manager ang mga download na sinimulan mo sa browser na ito."
+  },
+  "page_off_lead": {
+    "message": "Naka-off ito, kaya nananatili sa browser na ito ang mga download."
+  },
+  "page_remote_title": {
+    "message": "Napupunta ang mga download sa ibang Dannex Download Manager"
+  },
+  "page_remote_lead": {
+    "message": "Napupunta sa Dannex Download Manager sa $address$ ang mga download na sinimulan mo sa browser na ito.",
+    "placeholders": {
+      "address": {
+        "content": "$1",
+        "example": "https://192.168.1.10:8463/"
+      }
+    }
+  },
+  "page_lead_not_installed": {
+    "message": "Kailangan ng extension na ito ang libreng app na Dannex Download Manager. I-install ito, at kusang mag-a-update ang page na ito."
+  },
+  "page_lead_not_running": {
+    "message": "Sinubukan itong simulan ng browser, pero masyadong natagalan. Simulan mo mismo ang Dannex Download Manager, pagkatapos ay subukan muli."
+  },
+  "page_lead_host_failed": {
+    "message": "Karaniwang sanhi ang security software. Payagan ang Dannex Download Manager sa iyong antivirus program, o i-install itong muli."
+  },
+  "page_lead_forbidden": {
+    "message": "Masyadong luma ang bersyong ito ng Dannex Download Manager para sa extension na ito. I-install ang pinakabago."
+  },
+  "page_lead_too_large": {
+    "message": "Masyadong maraming sign-in data ang ipinadala ng site. Mag-sign out sa site at mag-sign in ulit, pagkatapos ay subukan ulit."
+  },
+  "page_download": {
+    "message": "I-download ang Dannex Download Manager"
+  },
+  "page_files_windows": {
+    "message": "Para sa Windows 10 at 11."
+  },
+  "page_files_macos": {
+    "message": "Para sa Mac (isang .dmg disk image)."
+  },
+  "page_files_linux": {
+    "message": "Para sa Linux (AppImage, .deb o .rpm)."
+  },
+  "page_files_other": {
+    "message": "Para sa mga computer na Windows, Mac at Linux."
+  },
+  "page_all_downloads": {
+    "message": "Lahat ng download"
+  },
+  "page_step_windows": {
+    "message": "Patakbuhin ang setup na na-download mo."
+  },
+  "page_step_macos": {
+    "message": "Buksan ang .dmg, i-drag ang Dannex Download Manager sa Applications, at simulan ito nang isang beses."
+  },
+  "page_step_linux": {
+    "message": "I-install ang .deb o .rpm (o patakbuhin ang AppImage), pagkatapos ay simulan ang Dannex Download Manager nang isang beses."
+  },
+  "page_step_other": {
+    "message": "Tumatakbo ang Dannex Download Manager sa mga computer na Windows, Mac at Linux. I-install ito sa isa, at idagdag ang extension na ito sa isang browser doon."
+  },
+  "page_step_wait": {
+    "message": "Panatilihing bukas ang page na ito. Kusa itong magbabago kapag handa na ang Dannex Download Manager."
+  },
+  "page_step_restart": {
+    "message": "Walang nangyari makalipas ang isang minuto? I-restart ang browser."
+  },
+  "page_step_installed": {
+    "message": "Naka-install na? Sa Dannex Download Manager, buksan ang Mga Opsyon → General → Subukan ang integrasyon ng browser."
+  },
+  "page_try_again": {
+    "message": "Subukan muli"
+  },
+  "page_app_options": {
+    "message": "Buksan ang Mga Opsyon ng Dannex Download Manager"
+  },
+  "page_duplicate_title": {
+    "message": "Alisin ang kopyang ito"
+  },
+  "page_duplicate_lead": {
+    "message": "Naka-install din ang kopya mula sa Chrome Web Store at kusa itong nag-a-update. Puwede mong alisin ito."
+  },
+  "page_remove": {
+    "message": "Alisin ang kopyang ito"
+  },
+  "page_extensions": {
+    "message": "Buksan ang page ng mga extension"
+  },
+  "page_update_app_how": {
+    "message": "Sa Dannex Download Manager, piliin ang Tulong → Tingnan kung may update..."
+  },
+  "page_behind": {
+    "message": "May kasamang mas bagong bersyon ng extension na ito ang Dannex Download Manager $version$.",
+    "placeholders": {
+      "version": {
+        "content": "$1",
+        "example": "0.7.0"
+      }
+    }
+  },
+  "page_behind_store": {
+    "message": "Kusa itong ina-update ng browser sa loob ng ilang oras, o ngayon na gamit ang Tingnan kung may update."
+  },
+  "page_behind_unpacked": {
+    "message": "I-reload ang extension para magamit ito."
+  },
+  "page_behind_other": {
+    "message": "Idagdag ang bago mula sa folder ng Dannex Download Manager, tulad ng pagdagdag mo sa isang ito."
+  },
+  "page_check_updates": {
+    "message": "Tingnan kung may update"
+  },
+  "page_up_to_date": {
+    "message": "Wala pang mas bagong bersyon. Kusang titingin muli ang browser."
+  },
+  "page_reload": {
+    "message": "I-reload ang extension"
+  },
+  "page_store": {
+    "message": "Kumuha ng mga awtomatikong update: idagdag ang extension na ito mula sa Chrome Web Store, pagkatapos ay alisin ang kopyang ito."
+  },
+  "page_open_store": {
+    "message": "Buksan ang Chrome Web Store"
+  },
+  "page_temporary": {
+    "message": "Aalisin ng Firefox ang add-on na ito kapag isinara ito, dahil idinagdag ito bilang pansamantalang add-on."
+  },
+  "page_site_access": {
+    "message": "Pinapayagan lang ang extension na ito sa ilang site, kaya nananatili sa browser ang mga download mula sa ibang site."
+  },
+  "page_allow_sites": {
+    "message": "Payagan sa lahat ng site"
+  },
+  "page_private": {
+    "message": "Nananatili sa browser ang mga download mula sa mga pribadong window, dahil hindi pinapayagan doon ang extension na ito."
+  },
+  "page_private_chromium": {
+    "message": "Para baguhin iyon, i-on ang Allow in Incognito sa page ng mga detalye nito."
+  },
+  "page_private_firefox": {
+    "message": "Para baguhin iyon, piliin ang Allow sa tabi ng Run in Private Windows sa page nito sa Add-ons and themes."
+  },
+  "page_learn_more": {
+    "message": "Matuto pa"
+  },
+  "popup_video": {
+    "message": "I-download ang video mula sa page na ito"
+  },
+  "popup_all": {
+    "message": "I-download ang lahat ng link mula sa page na ito"
+  },
+  "popup_no_links": {
+    "message": "Walang link na ida-download sa page na ito."
+  },
+  "popup_drm": {
+    "message": "Protektado laban sa pagkopya (DRM) ang video o tunog ng page na ito: hindi ito maida-download."
+  },
+  "popup_status": {
+    "message": "Status at tulong"
+  },
+  "popup_options": {
+    "message": "Mga opsyon ng extension"
+  },
+  "popup_fix": {
+    "message": "Tingnan ang gagawin"
+  }
+}

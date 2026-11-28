@@ -1,0 +1,124 @@
+# Run DDM on a server
+
+Run Dannex Download Manager on a home server or a NAS (Docker, Unraid, any Linux machine) without
+a window, and send it downloads from your phone or your browser: the server downloads them into
+its own folders, such as a network share.
+
+It is the same DDM as on a desktop: its list, categories, queues, Scheduler, speed limits and
+torrents. You control it with the [remote control's page](remote-control.md) (from any phone or
+computer on your network), the browser extension pointed at it, or its command line.
+
+> **New:** the server mode is new in this version. Please
+> [tell us how it goes](https://github.com/Riskraptor/dannexdownloadmanager/issues).
+
+## With Docker
+
+Build the image from DDM's source (a published image comes later):
+
+```sh
+git clone https://github.com/Riskraptor/dannexdownloadmanager
+cd dannexdownloadmanager
+docker build -t dannexdownloadmanager .
+```
+
+The first build is long (up to an hour on a small server: the whole program is optimised as
+one). The image is small, about 175 MB: Debian's slim base, DDM's two programs and the
+certificates downloads are checked against. It needs no desktop libraries: DDM loads those only
+to open a window, which a server never does.
+
+Then run it, with a folder for its settings and one for the downloads. Make both folders first,
+as the user DDM will run as: a folder Docker makes for you belongs to `root`, and DDM can't use it.
+
+```sh
+mkdir -p /srv/ddm-config /srv/downloads
+docker run -d --name ddm --restart unless-stopped \
+  -p 8463:8463 \
+  -v /srv/ddm-config:/config \
+  -v /srv/downloads:/downloads \
+  --user "$(id -u):$(id -g)" \
+  dannexdownloadmanager
+```
+
+- `/config` keeps the list, the settings, the certificate and the paired devices.
+- `/downloads` is where files land: each category has its folder inside (`Music`, `Video`,
+  `Torrents`…). Mount a network share there to download straight onto it.
+- `--user`: the user that owns those folders (DDM runs as no particular user).
+
+[docker/compose.yml](../docker/compose.yml) does the same with Docker Compose.
+
+## Pair your phone
+
+`docker logs ddm` shows the address to open and, while no device is paired, a pairing code with a
+QR code:
+
+```text
+The remote control listens at: https://172.17.0.2:8463/
+Its certificate's SHA-256 fingerprint: DE:26:7F:…
+No device is paired yet. Open the address (or scan this) and enter the code 1037 1606 …
+```
+
+Inside a container, the address DDM finds is the container's own: give it the one you open, the
+**server's** address with the port you published, as `-e DDM_REMOTE_URL=https://192.168.1.10:8463/`,
+and the log and the QR code show that one. Then pair as
+[Control DDM from your phone](remote-control.md#pair-your-phone) says. For another code, at any
+time:
+
+```sh
+docker exec ddm dannexdownloadmanager-cli pair
+```
+
+To open the page by the server's name (`https://nas.local:8463/`), give DDM that name:
+`-e DDM_REMOTE_HOSTS=nas.local` (several: separated by commas). Other names are refused, so that
+no web page can reach DDM through a name of its own.
+
+## On Unraid
+
+[docker/unraid.xml](../docker/unraid.xml) is a template: copy it to
+`/boot/config/plugins/dockerMan/templates-user/` on the flash drive, then **Docker → Add
+Container** and pick **dannexdownloadmanager**. It maps `/config` to `appdata`, `/downloads` to a
+share, the port 8463, and runs as `nobody:users` (99:100), as Unraid's shares expect. The image
+must be built first (above), on the server or pushed to a registry you use. If the container's
+log says a folder belongs to another user, give it to `nobody:users` once:
+`chown -R 99:100 /mnt/user/appdata/dannexdownloadmanager`.
+
+## Without Docker
+
+On any Linux machine with DDM installed (the `.deb`, `.rpm`, AppImage or `tar.gz`):
+
+```sh
+dannexdownloadmanager --headless --data ~/ddm-server --downloads /srv/downloads
+```
+
+| Flag | Or the variable | What it sets |
+|---|---|---|
+| `--data <folder>` | `DDM_DATA_DIR` | the list, settings, certificate and paired devices |
+| `--downloads <folder>` | `DDM_DOWNLOADS` | where downloads go (each category's folder inside) |
+| `--port <number>` | `DDM_REMOTE_PORT` | the remote control's port (8463) |
+| `--listen <address>` | `DDM_REMOTE_LISTEN` | where it listens: every local network address unless given |
+| `--hosts <names>` | `DDM_REMOTE_HOSTS` | names besides its addresses the page may be opened by |
+| | `DDM_REMOTE_URL` | the page's address as you open it, shown with the pairing code |
+
+The remote control is on in this mode (`DDM_REMOTE=off` turns it off). It stops cleanly, saving
+its list, when the system stops it (`docker stop`, systemd, Ctrl+C). It works on Windows and
+macOS too, the same way.
+
+The command line talks to it as to a desktop DDM, with the same data folder:
+`DDM_DATA_DIR=~/ddm-server dannexdownloadmanager-cli status` (once `api on`), `pair`, and adding
+an address: `dannexdownloadmanager /d https://example.com/file.zip`.
+
+## Send downloads from your browser
+
+In the browser extension's menu, **Send downloads to → Another Dannex Download Manager (a server)**: type the server's address,
+open it once in that browser to accept its certificate, then enter a pairing code (`pair`
+above). Downloads the extension catches, and **Download with DDM** on a link,
+then go to the server instead of this computer. The browser's cookies are not sent to the server:
+a download that needs you to be signed in to a site stays with this computer.
+
+## What a server doesn't do
+
+- Video pages need yt-dlp, which DDM downloads by itself into its data folder once it is online
+  (checked as on a desktop); ffmpeg, for the best qualities, isn't in the image. Image galleries
+  need gallery-dl, which the image doesn't include.
+- Nothing opens a window: a download that would ask a question (a duplicate, files already
+  there) takes the choice set in the settings, or isn't added.
+- Don't publish the port on the internet; reach your home network through a VPN instead.

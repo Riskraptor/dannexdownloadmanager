@@ -1,0 +1,488 @@
+{
+  "name": {
+    "message": "Dannex Download Manager"
+  },
+  "description": {
+    "message": "உலாவியில் நீங்கள் பதிவிறக்கும் கோப்புகள், இணைப்புகள், வீடியோக்களை உங்கள் கணினியில் உள்ள Dannex Download Manager ஆப்ஸுக்கு அனுப்புகிறது."
+  },
+  "menu": {
+    "message": "DDM மூலம் பதிவிறக்கவும்"
+  },
+  "video_download": {
+    "message": "வீடியோவைப் பதிவிறக்கவும்"
+  },
+  "video_more": {
+    "message": "மேலும் விருப்பங்கள்"
+  },
+  "video_hide_here": {
+    "message": "இந்த வீடியோவில் மட்டும் மறைக்கவும்"
+  },
+  "video_close": {
+    "message": "மூடவும்"
+  },
+  "video_never_site": {
+    "message": "$site$ தளத்தில் மீண்டும் காட்ட வேண்டாம்",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "video_settings": {
+    "message": "பொத்தான் அமைப்புகள்..."
+  },
+  "video_sent": {
+    "message": "DDMக்கு அனுப்பப்பட்டது"
+  },
+  "video_failed": {
+    "message": "Dannex Download Manager நிறுவப்படவில்லை அல்லது தொடங்கவில்லை"
+  },
+  "video_drag": {
+    "message": "வீடியோவின் விளிம்பில் நகர்த்த இழுக்கவும்"
+  },
+  "menu_selected": {
+    "message": "DDM மூலம் தேர்ந்தெடுக்கப்பட்ட இணைப்புகளைப் பதிவிறக்கவும்"
+  },
+  "menu_all": {
+    "message": "DDM மூலம் அனைத்து இணைப்புகளையும் பதிவிறக்கவும்"
+  },
+  "menu_images": {
+    "message": "DDM மூலம் அனைத்துப் படங்களையும் பதிவிறக்கவும்"
+  },
+  "menu_media": {
+    "message": "DDM மூலம் அனைத்து வீடியோக்களையும் ஆடியோவையும் பதிவிறக்கவும்"
+  },
+  "status_not_installed": {
+    "message": "Dannex Download Manager நிறுவப்படவில்லை"
+  },
+  "status_installed": {
+    "message": "Dannex Download Manager நிறுவப்பட்டுள்ளது"
+  },
+  "status_forbidden": {
+    "message": "Dannex Download Manager ஐப் புதுப்பி"
+  },
+  "status_not_running": {
+    "message": "Dannex Download Manager தொடங்கவில்லை"
+  },
+  "status_host_failed": {
+    "message": "ஏதோ ஒன்று Dannex Download Manager ஐத் தடுக்கிறது"
+  },
+  "status_too_large": {
+    "message": "கடைசிப் பதிவிறக்கம் Dannex Download Manager க்குச் செல்ல முடியவில்லை"
+  },
+  "status_update_app": {
+    "message": "இந்த நீட்டிப்பு செய்யக்கூடிய அனைத்தையும் பெற Dannex Download Manager ஐப் புதுப்பிக்கவும்."
+  },
+  "popup_take": {
+    "message": "பதிவிறக்கங்களை Dannex Download Manager க்கு அனுப்பு"
+  },
+  "popup_proxy": {
+    "message": "இந்த உலாவியின் VPN அல்லது ப்ராக்ஸி வழியாகப் பதிவிறக்கு"
+  },
+  "popup_proxy_title": {
+    "message": "VPN அல்லது ப்ராக்ஸி நீட்டிப்பைப் பயன்படுத்தினால் இதை இயக்கவும். உலாவி ஒருமுறை கேட்கும்."
+  },
+  "popup_proxy_title_chromium": {
+    "message": "இந்த உலாவியில் VPN அல்லது ப்ராக்ஸி நீட்டிப்பைப் பயன்படுத்தினால் இதை இயக்கவும்."
+  },
+  "popup_help": {
+    "message": "உதவி"
+  },
+  "page_support": {
+    "message": "DDM ஐ ஆதரிக்கவும்"
+  },
+  "popup_declined": {
+    "message": "உங்கள் கடைசிப் பதிவிறக்கம் உலாவியிலேயே இருந்தது: $name$",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "setup.png"
+      }
+    }
+  },
+  "popup_declined_unnamed": {
+    "message": "உங்கள் கடைசிப் பதிவிறக்கம் உலாவியிலேயே இருந்தது."
+  },
+  "declined_file_type": {
+    "message": "அதன் கோப்பு வகை Dannex Download Manager இன் பட்டியலில் இல்லை (விருப்பங்கள் → கோப்பு வகைகள்)."
+  },
+  "declined_site": {
+    "message": "அதன் தளம் Dannex Download Manager இன் விடப்படும் தளங்களின் பட்டியலில் உள்ளது (விருப்பங்கள் → கோப்பு வகைகள்)."
+  },
+  "declined_address": {
+    "message": "அதன் முகவரி Dannex Download Manager இன் விடப்படும் முகவரிகளின் பட்டியலில் உள்ளது (விருப்பங்கள் → கோப்பு வகைகள்)."
+  },
+  "declined_small": {
+    "message": "இது Dannex Download Manager எடுக்கும் மிகச் சிறிய கோப்பை விடச் சிறியது (விருப்பங்கள் → கோப்பு வகைகள்)."
+  },
+  "declined_browser": {
+    "message": "இந்த உலாவி Dannex Download Manager இன் விருப்பங்கள் → பொது என்பதில் தேர்ந்தெடுக்கப்படவில்லை."
+  },
+  "declined_integration_off": {
+    "message": "உலாவி ஒருங்கிணைப்பு Dannex Download Manager இன் விருப்பங்கள் → பொது என்பதில் முடக்கப்பட்டுள்ளது."
+  },
+  "declined_site_access": {
+    "message": "இந்த நீட்டிப்புக்கு அந்தத் தளத்தில் அனுமதி இல்லை."
+  },
+  "declined_handed_back": {
+    "message": "Dannex Download Manager இல் இதற்கு உலாவி மூலம் பதிவிறக்கவும் என்பதைத் தேர்ந்தெடுத்தீர்கள்."
+  },
+  "video_off": {
+    "message": "இந்தத் தளத்தில் பதிவிறக்கப் பொத்தான் முடக்கப்பட்டுள்ளது"
+  },
+  "video_drm": {
+    "message": "பாதுகாக்கப்பட்ட வீடியோ: இதைச் சேமிக்க முடியாது"
+  },
+  "video_drm_audio": {
+    "message": "பாதுகாக்கப்பட்ட ஆடியோ: சேமிக்க முடியாது"
+  },
+  "video_protected": {
+    "message": "பாதுகாக்கப்பட்டது"
+  },
+  "video_download_audio": {
+    "message": "ஆடியோவைப் பதிவிறக்கவும்"
+  },
+  "video_unnamed": {
+    "message": "வீடியோவின் சொந்தப் பக்கத்தைத் திறந்து அங்கே முயலவும்"
+  },
+  "video_looking": {
+    "message": "தரங்களைத் தேடுகிறது…"
+  },
+  "video_open_mdm": {
+    "message": "DDM இல் திறக்கவும்…"
+  },
+  "video_no_choices": {
+    "message": "இங்கே பதிவிறக்க வீடியோ எதுவும் இல்லை"
+  },
+  "video_playlist": {
+    "message": "வீடியோக்களின் பட்டியல்: அவற்றை Dannex Download Manager இல் தேர்ந்தெடுக்கவும்"
+  },
+  "video_no_ytdlp": {
+    "message": "இந்த வீடியோவுக்கு Dannex Download Manager க்கு yt-dlp தேவை. அதை நிறுவ DDM இல் திற… என்பதைத் தேர்ந்தெடுக்கவும்."
+  },
+  "video_too_long": {
+    "message": "தேட மிக அதிக நேரம் ஆனது"
+  },
+  "video_busy": {
+    "message": "Dannex Download Manager பிற வீடியோக்களில் பிஸியாக உள்ளது"
+  },
+  "video_queued": {
+    "message": "வரிசையில் சேர்க்கப்பட்டது"
+  },
+  "video_failed_lookup": {
+    "message": "தேட முடியவில்லை"
+  },
+  "video_tab_video": {
+    "message": "வீடியோ"
+  },
+  "video_tab_audio": {
+    "message": "ஆடியோ"
+  },
+  "video_open_post": {
+    "message": "பதிவைத் திறந்து, அங்குள்ள பொத்தானைப் பயன்படுத்தவும்"
+  },
+  "video_audio_original": {
+    "message": "ஒலி மட்டும், அசல் $type$",
+    "placeholders": {
+      "type": {
+        "content": "$1",
+        "example": "M4A"
+      }
+    }
+  },
+  "video_audio_only": {
+    "message": "ஒலி மட்டும் $type$",
+    "placeholders": {
+      "type": {
+        "content": "$1",
+        "example": "MP3 320 kbps"
+      }
+    }
+  },
+  "video_audio_original_short": {
+    "message": "அசல் $type$",
+    "placeholders": {
+      "type": {
+        "content": "$1",
+        "example": "M4A"
+      }
+    }
+  },
+  "video_pick_waiting": {
+    "message": "DDM தயாரானவுடன் தொடங்குகிறது…"
+  },
+  "video_pick_gone": {
+    "message": "அந்தத் தரம் கிடைக்கவில்லை: வேறொன்றைத் தேர்ந்தெடுக்கவும்"
+  },
+  "popup_send_to": {
+    "message": "பதிவிறக்கங்களை இதற்கு அனுப்பவும்"
+  },
+  "popup_send_here": {
+    "message": "இந்தக் கணினி"
+  },
+  "popup_send_remote": {
+    "message": "மற்றொரு கணினியில் Dannex Download Manager"
+  },
+  "popup_remote_code": {
+    "message": "இணைக்கும் குறியீடு"
+  },
+  "popup_remote_open": {
+    "message": "திறக்கவும்"
+  },
+  "popup_remote_pair": {
+    "message": "இணை"
+  },
+  "popup_remote_help": {
+    "message": "முதலில் இங்கே அதன் முகவரியைத் திறந்து, பின்னர் அதன் விருப்பங்கள் → தொலைநிலை → சாதனத்தை இணை என்பதிலிருந்து குறியீட்டை உள்ளிடவும்."
+  },
+  "status_remote": {
+    "message": "பதிவிறக்கங்கள் $address$ க்குச் செல்கின்றன",
+    "placeholders": {
+      "address": {
+        "content": "$1",
+        "example": "https://192.168.1.10:8463/"
+      }
+    }
+  },
+  "remote_address": {
+    "message": "அதன் https:// முகவரியை உள்ளிடவும்."
+  },
+  "remote_unreachable": {
+    "message": "அதை அடைய முடியவில்லை. இந்த உலாவியில் அதன் முகவரியைத் திறந்து, பாதுகாப்பு எச்சரிக்கையைக் கடந்து தொடரவும், பிறகு மீண்டும் முயலவும்."
+  },
+  "remote_wrong_code": {
+    "message": "தவறான குறியீடு."
+  },
+  "remote_no_code": {
+    "message": "உள்ளிட இன்னும் குறியீடு இல்லை: முதலில் அங்கே சாதனத்தை இணை என்பதைக் கிளிக் செய்யவும்."
+  },
+  "remote_too_soon": {
+    "message": "ஒரு கணம் காத்திருந்து, மீண்டும் முயற்சிக்கவும்."
+  },
+  "remote_failed": {
+    "message": "அது வேலை செய்யவில்லை. மீண்டும் முயற்சிக்கவும்."
+  },
+  "remote_device_name": {
+    "message": "உலாவி நீட்டிப்பு"
+  },
+  "badge_off": {
+    "message": "அணை"
+  },
+  "tip_on": {
+    "message": "Dannex Download Manager இயக்கப்பட்டுள்ளது."
+  },
+  "tip_off": {
+    "message": "Dannex Download Manager அணைக்கப்பட்டுள்ளது."
+  },
+  "tip_remote": {
+    "message": "பதிவிறக்கங்கள் $address$ இல் உள்ள Dannex Download Manager க்குச் செல்கின்றன.",
+    "placeholders": {
+      "address": {
+        "content": "$1",
+        "example": "https://192.168.1.10:8463/"
+      }
+    }
+  },
+  "status_off_in_app": {
+    "message": "Dannex Download Manager இல் முடக்கப்பட்டது"
+  },
+  "status_duplicate": {
+    "message": "இந்த நீட்டிப்பின் மற்றொரு நகல் நிறுவப்பட்டுள்ளது"
+  },
+  "click_fix": {
+    "message": "என்ன செய்வது என்று பார்க்கக் கிளிக் செய்யவும்."
+  },
+  "click_details": {
+    "message": "விவரங்களுக்குக் கிளிக் செய்யவும்."
+  },
+  "toolbar_exclude": {
+    "message": "இந்தத் தளத்திலிருந்து பதிவிறக்கங்களை எடுக்க வேண்டாம்"
+  },
+  "toolbar_help": {
+    "message": "உதவி"
+  },
+  "toolbar_store": {
+    "message": "Chrome Web Store இலிருந்து தானியங்கு புதுப்பிப்புகளைப் பெறு..."
+  },
+  "options_take_note": {
+    "message": "இது அணைக்கப்பட்டிருக்கும்போது, பதிவிறக்கங்கள் உலாவியிலேயே இருக்கும். நீட்டிப்பின் பொத்தானிலும் இதே சுவிட்ச் உள்ளது."
+  },
+  "options_what_to_do": {
+    "message": "என்ன செய்வது எனப் பார்"
+  },
+  "options_more": {
+    "message": "மேலும்"
+  },
+  "page_checking": {
+    "message": "Dannex Download Manager ஐத் தேடுகிறது…"
+  },
+  "page_on_lead": {
+    "message": "இந்த உலாவியில் நீங்கள் தொடங்கும் பதிவிறக்கங்கள் Dannex Download Manager க்குச் செல்கின்றன."
+  },
+  "page_off_lead": {
+    "message": "இது முடக்கப்பட்டுள்ளது, எனவே பதிவிறக்கங்கள் இந்த உலாவியிலேயே இருக்கும்."
+  },
+  "page_remote_title": {
+    "message": "பதிவிறக்கங்கள் மற்றொரு Dannex Download Manager க்குச் செல்கின்றன"
+  },
+  "page_remote_lead": {
+    "message": "இந்த உலாவியில் நீங்கள் தொடங்கும் பதிவிறக்கங்கள் $address$ இல் உள்ள Dannex Download Manager க்குச் செல்கின்றன.",
+    "placeholders": {
+      "address": {
+        "content": "$1",
+        "example": "https://192.168.1.10:8463/"
+      }
+    }
+  },
+  "page_lead_not_installed": {
+    "message": "இந்த நீட்டிப்புக்கு இலவச Dannex Download Manager ஆப்ஸ் தேவை. அதை நிறுவுங்கள், இந்தப் பக்கம் தானாகப் புதுப்பிக்கப்படும்."
+  },
+  "page_lead_not_running": {
+    "message": "உலாவி அதைத் தொடங்க முயன்றது, ஆனால் மிக நீண்ட நேரம் ஆனது. Dannex Download Manager ஐ நீங்களே தொடங்கி, பிறகு மீண்டும் முயலவும்."
+  },
+  "page_lead_host_failed": {
+    "message": "பொதுவாகப் பாதுகாப்பு மென்பொருளே காரணம். உங்கள் வைரஸ் தடுப்பு நிரலில் Dannex Download Manager ஐ அனுமதிக்கவும், அல்லது அதை மீண்டும் நிறுவவும்."
+  },
+  "page_lead_forbidden": {
+    "message": "Dannex Download Manager இன் இந்தப் பதிப்பு இந்த நீட்டிப்புக்கு மிகப் பழையது. சமீபத்தியதை நிறுவவும்."
+  },
+  "page_lead_too_large": {
+    "message": "தளம் மிக அதிகமான உள்நுழைவுத் தரவை அனுப்பியது. தளத்திலிருந்து வெளியேறி மீண்டும் உள்நுழைந்து, மறுபடியும் முயலவும்."
+  },
+  "page_download": {
+    "message": "Dannex Download Manager ஐப் பதிவிறக்கு"
+  },
+  "page_files_windows": {
+    "message": "Windows 10 மற்றும் 11 க்கு."
+  },
+  "page_files_macos": {
+    "message": "Mac க்கு (ஒரு .dmg வட்டுப் படம்)."
+  },
+  "page_files_linux": {
+    "message": "Linux க்கு (AppImage, .deb அல்லது .rpm)."
+  },
+  "page_files_other": {
+    "message": "Windows, Mac மற்றும் Linux கணினிகளுக்கு."
+  },
+  "page_all_downloads": {
+    "message": "அனைத்துப் பதிவிறக்கங்கள்"
+  },
+  "page_step_windows": {
+    "message": "நீங்கள் பதிவிறக்கிய அமைப்பை இயக்கவும்."
+  },
+  "page_step_macos": {
+    "message": ".dmg ஐத் திறந்து, Dannex Download Manager ஐ Applications க்கு இழுத்து, ஒருமுறை தொடங்கவும்."
+  },
+  "page_step_linux": {
+    "message": ".deb அல்லது .rpm ஐ நிறுவவும் (அல்லது AppImage ஐ இயக்கவும்), பிறகு Dannex Download Manager ஐ ஒருமுறை தொடங்கவும்."
+  },
+  "page_step_other": {
+    "message": "Dannex Download Manager Windows, Mac மற்றும் Linux கணினிகளில் இயங்கும். அவற்றில் ஒன்றில் அதை நிறுவி, அங்குள்ள உலாவியில் இந்த நீட்டிப்பைச் சேர்க்கவும்."
+  },
+  "page_step_wait": {
+    "message": "இந்தப் பக்கத்தைத் திறந்தே வைக்கவும். Dannex Download Manager தயாரானதும் இது தானாக மாறும்."
+  },
+  "page_step_restart": {
+    "message": "ஒரு நிமிடத்திற்குப் பிறகும் எதுவும் இல்லையா? உலாவியை மீண்டும் தொடங்கவும்."
+  },
+  "page_step_installed": {
+    "message": "ஏற்கனவே நிறுவியுள்ளீர்களா? Dannex Download Manager இல் விருப்பங்கள் → பொது → உலாவி ஒருங்கிணைப்பைச் சோதி என்பதைத் திறக்கவும்."
+  },
+  "page_try_again": {
+    "message": "மீண்டும் முயலவும்"
+  },
+  "page_app_options": {
+    "message": "Dannex Download Manager இன் விருப்பங்களைத் திற"
+  },
+  "page_duplicate_title": {
+    "message": "இந்த நகலை அகற்று"
+  },
+  "page_duplicate_lead": {
+    "message": "Chrome இணைய அங்காடியின் நகலும் நிறுவப்பட்டுள்ளது, அது தானாகப் புதுப்பிக்கப்படும். இதை நீங்கள் அகற்றலாம்."
+  },
+  "page_remove": {
+    "message": "இந்த நகலை அகற்று"
+  },
+  "page_extensions": {
+    "message": "நீட்டிப்புகள் பக்கத்தைத் திற"
+  },
+  "page_update_app_how": {
+    "message": "Dannex Download Manager இல் இதைத் தேர்ந்தெடுக்கவும்: உதவி → புதுப்பிப்புகளைச் சரிபார்..."
+  },
+  "page_behind": {
+    "message": "இந்த நீட்டிப்பின் புதிய பதிப்பு Dannex Download Manager $version$ உடன் வந்தது.",
+    "placeholders": {
+      "version": {
+        "content": "$1",
+        "example": "0.7.0"
+      }
+    }
+  },
+  "page_behind_store": {
+    "message": "உலாவி சில மணி நேரத்தில் தானாகப் புதுப்பிக்கும், அல்லது இப்போதே புதுப்பிப்புகளைச் சரிபார் மூலம்."
+  },
+  "page_behind_unpacked": {
+    "message": "பயன்படுத்த நீட்டிப்பை மீண்டும் ஏற்றவும்."
+  },
+  "page_behind_other": {
+    "message": "இதை நீங்கள் சேர்த்தது போல, Dannex Download Manager இன் கோப்புறையிலிருந்து புதியதைச் சேர்க்கவும்."
+  },
+  "page_check_updates": {
+    "message": "புதுப்பிப்புகளைச் சரிபார்"
+  },
+  "page_up_to_date": {
+    "message": "புதிய பதிப்பு இன்னும் இல்லை. உலாவி தானாக மீண்டும் சரிபார்க்கும்."
+  },
+  "page_reload": {
+    "message": "நீட்டிப்பை மீண்டும் ஏற்று"
+  },
+  "page_store": {
+    "message": "தானியங்கு புதுப்பிப்புகளைப் பெறவும்: இந்த நீட்டிப்பை Chrome Web Store இலிருந்து சேர்த்து, பிறகு இந்த நகலை அகற்றவும்."
+  },
+  "page_open_store": {
+    "message": "Chrome Web Store ஐத் திற"
+  },
+  "page_temporary": {
+    "message": "இது தற்காலிகக் கூடுதல் இணைப்பாகச் சேர்க்கப்பட்டதால், Firefox மூடப்படும்போது இந்தக் கூடுதல் இணைப்பை நீக்கும்."
+  },
+  "page_site_access": {
+    "message": "இந்த நீட்டிப்புக்குச் சில தளங்களில் மட்டுமே அனுமதி உள்ளது, எனவே பிற தளங்களின் பதிவிறக்கங்கள் உலாவியிலேயே இருக்கும்."
+  },
+  "page_allow_sites": {
+    "message": "அனைத்துத் தளங்களிலும் அனுமதி"
+  },
+  "page_private": {
+    "message": "தனிப்பட்ட சாளரங்களின் பதிவிறக்கங்கள் உலாவியிலேயே இருக்கும், ஏனெனில் இந்த நீட்டிப்புக்கு அங்கே அனுமதி இல்லை."
+  },
+  "page_private_chromium": {
+    "message": "அதை மாற்ற, அதன் விவரப் பக்கத்தில் மறைநிலையில் அனுமதி என்பதை இயக்கவும்."
+  },
+  "page_private_firefox": {
+    "message": "அதை மாற்ற, துணை நிரல்களும் தீம்களும் என்பதில் அதன் பக்கத்தில் “தனிப்பட்ட சாளரங்களில் இயக்கு” (Run in Private Windows) என்பதன் அருகே அனுமதி என்பதைத் தேர்ந்தெடுக்கவும்."
+  },
+  "page_learn_more": {
+    "message": "மேலும் அறிக"
+  },
+  "popup_video": {
+    "message": "இந்தப் பக்கத்திலிருந்து வீடியோவைப் பதிவிறக்கவும்"
+  },
+  "popup_all": {
+    "message": "இந்தப் பக்கத்திலுள்ள அனைத்து இணைப்புகளையும் பதிவிறக்கவும்"
+  },
+  "popup_no_links": {
+    "message": "இந்தப் பக்கத்தில் பதிவிறக்க இணைப்புகள் இல்லை."
+  },
+  "popup_drm": {
+    "message": "இந்தப் பக்கத்தின் வீடியோ அல்லது ஒலி நகலெடுப்பிலிருந்து பாதுகாக்கப்பட்டுள்ளது (DRM): அதைப் பதிவிறக்க முடியாது."
+  },
+  "popup_status": {
+    "message": "நிலை மற்றும் உதவி"
+  },
+  "popup_options": {
+    "message": "நீட்டிப்பு விருப்பங்கள்"
+  },
+  "popup_fix": {
+    "message": "என்ன செய்வது எனப் பார்"
+  }
+}

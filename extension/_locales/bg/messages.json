@@ -1,0 +1,488 @@
+{
+  "name": {
+    "message": "Dannex Download Manager"
+  },
+  "description": {
+    "message": "Изпраща файловете, връзките и видеоклиповете, които изтегляте в браузъра, към приложението Dannex Download Manager на компютъра ви."
+  },
+  "menu": {
+    "message": "Изтеглете с DDM"
+  },
+  "video_download": {
+    "message": "Изтеглете видео"
+  },
+  "video_more": {
+    "message": "Още опции"
+  },
+  "video_hide_here": {
+    "message": "Не показвайте на този видеоклип"
+  },
+  "video_close": {
+    "message": "Затвори"
+  },
+  "video_never_site": {
+    "message": "Никога на $site$",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "video_settings": {
+    "message": "Настройки на бутона..."
+  },
+  "video_sent": {
+    "message": "Изпратено до DDM"
+  },
+  "video_failed": {
+    "message": "Dannex Download Manager не е инсталиран или не е стартиран"
+  },
+  "video_drag": {
+    "message": "Плъзнете, за да го преместите по ръба на видеоклипа"
+  },
+  "menu_selected": {
+    "message": "Изтеглете избрани връзки с DDM"
+  },
+  "menu_all": {
+    "message": "Изтеглете всички връзки с DDM"
+  },
+  "menu_images": {
+    "message": "Изтеглете всички изображения с DDM"
+  },
+  "menu_media": {
+    "message": "Изтеглете всички видеоклипове и аудио с DDM"
+  },
+  "status_not_installed": {
+    "message": "Dannex Download Manager не е инсталиран"
+  },
+  "status_installed": {
+    "message": "Dannex Download Manager е инсталиран"
+  },
+  "status_forbidden": {
+    "message": "Актуализирайте Dannex Download Manager"
+  },
+  "status_not_running": {
+    "message": "Dannex Download Manager не стартира"
+  },
+  "status_host_failed": {
+    "message": "Нещо блокира Dannex Download Manager"
+  },
+  "status_too_large": {
+    "message": "Последното изтегляне не можа да отиде в Dannex Download Manager"
+  },
+  "status_update_app": {
+    "message": "Актуализирайте Dannex Download Manager, за да получите всичко, което може това разширение."
+  },
+  "popup_take": {
+    "message": "Изпращайте изтеглянията към Dannex Download Manager"
+  },
+  "popup_proxy": {
+    "message": "Изтегляне през VPN или прокси на този браузър"
+  },
+  "popup_proxy_title": {
+    "message": "Включете това, ако използвате VPN или прокси разширение. Браузърът ще попита веднъж."
+  },
+  "popup_proxy_title_chromium": {
+    "message": "Включете това, ако използвате VPN или прокси разширение в този браузър."
+  },
+  "popup_help": {
+    "message": "Помощ"
+  },
+  "page_support": {
+    "message": "Подкрепете DDM"
+  },
+  "popup_declined": {
+    "message": "Последното Ви изтегляне остана в браузъра: $name$",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "setup.png"
+      }
+    }
+  },
+  "popup_declined_unnamed": {
+    "message": "Последното Ви изтегляне остана в браузъра."
+  },
+  "declined_file_type": {
+    "message": "Типът на файла му не е в списъка на Dannex Download Manager (Опции → Типове файлове)."
+  },
+  "declined_site": {
+    "message": "Сайтът му е в списъка със сайтове на Dannex Download Manager, които да се пропускат (Опции → Типове файлове)."
+  },
+  "declined_address": {
+    "message": "Адресът му е в списъка с адреси на Dannex Download Manager, които да се пропускат (Опции → Типове файлове)."
+  },
+  "declined_small": {
+    "message": "Файлът е по-малък от най-малкия файл, който Dannex Download Manager поема (Опции → Типове файлове)."
+  },
+  "declined_browser": {
+    "message": "Този браузър не е отметнат в Опции → Общи на Dannex Download Manager."
+  },
+  "declined_integration_off": {
+    "message": "Интеграцията с браузъра е изключена в Опции → Общи на Dannex Download Manager."
+  },
+  "declined_site_access": {
+    "message": "Това разширение не е разрешено на този сайт."
+  },
+  "declined_handed_back": {
+    "message": "Избрахте „Изтеглете с браузъра“ за това изтегляне в Dannex Download Manager."
+  },
+  "video_off": {
+    "message": "Бутонът за изтегляне е изключен за този сайт"
+  },
+  "video_drm": {
+    "message": "Защитено видео: не може да бъде записано"
+  },
+  "video_drm_audio": {
+    "message": "Защитено аудио: не може да се запише"
+  },
+  "video_protected": {
+    "message": "Защитено"
+  },
+  "video_download_audio": {
+    "message": "Изтегляне на аудио"
+  },
+  "video_unnamed": {
+    "message": "Отворете собствената страница на видеото и опитайте там"
+  },
+  "video_looking": {
+    "message": "Търсене на качествата…"
+  },
+  "video_open_mdm": {
+    "message": "Отваряне в DDM…"
+  },
+  "video_no_choices": {
+    "message": "Тук няма видео за изтегляне"
+  },
+  "video_playlist": {
+    "message": "Списък с видеоклипове: изберете ги в Dannex Download Manager"
+  },
+  "video_no_ytdlp": {
+    "message": "Dannex Download Manager се нуждае от yt-dlp за този видеоклип. Отворете в DDM…, за да го инсталирате."
+  },
+  "video_too_long": {
+    "message": "Търсенето отне твърде много време"
+  },
+  "video_busy": {
+    "message": "Dannex Download Manager е зает с други видеоклипове"
+  },
+  "video_queued": {
+    "message": "Добавено към опашката"
+  },
+  "video_failed_lookup": {
+    "message": "Търсенето не успя"
+  },
+  "video_tab_video": {
+    "message": "Видео"
+  },
+  "video_tab_audio": {
+    "message": "Аудио"
+  },
+  "video_open_post": {
+    "message": "Отворете публикацията, след това използвайте бутона там"
+  },
+  "video_audio_original": {
+    "message": "Само звук, оригинален $type$",
+    "placeholders": {
+      "type": {
+        "content": "$1",
+        "example": "M4A"
+      }
+    }
+  },
+  "video_audio_only": {
+    "message": "Само звук $type$",
+    "placeholders": {
+      "type": {
+        "content": "$1",
+        "example": "MP3 320 kbps"
+      }
+    }
+  },
+  "video_audio_original_short": {
+    "message": "Оригинален $type$",
+    "placeholders": {
+      "type": {
+        "content": "$1",
+        "example": "M4A"
+      }
+    }
+  },
+  "video_pick_waiting": {
+    "message": "Стартира веднага щом DDM е готов…"
+  },
+  "video_pick_gone": {
+    "message": "Това качество не е налично: изберете друго"
+  },
+  "popup_send_to": {
+    "message": "Изпращане на изтегляния до"
+  },
+  "popup_send_here": {
+    "message": "Този компютър"
+  },
+  "popup_send_remote": {
+    "message": "Dannex Download Manager на друг компютър"
+  },
+  "popup_remote_code": {
+    "message": "Код за сдвояване"
+  },
+  "popup_remote_open": {
+    "message": "Отворете го"
+  },
+  "popup_remote_pair": {
+    "message": "Сдвояване"
+  },
+  "popup_remote_help": {
+    "message": "Първо отворете адреса му тук, след това въведете кода от Опции → Отдалечен достъп → Сдвояване на устройство там."
+  },
+  "status_remote": {
+    "message": "Изтеглянията отиват на $address$",
+    "placeholders": {
+      "address": {
+        "content": "$1",
+        "example": "https://192.168.1.10:8463/"
+      }
+    }
+  },
+  "remote_address": {
+    "message": "Въведете неговия https:// адрес."
+  },
+  "remote_unreachable": {
+    "message": "Не можа да се стигне до него. Отворете адреса му в този браузър, продължете след предупреждението за сигурност и опитайте отново."
+  },
+  "remote_wrong_code": {
+    "message": "Грешен код."
+  },
+  "remote_no_code": {
+    "message": "Още няма код за въвеждане: първо щракнете „Сдвояване на устройство“ там."
+  },
+  "remote_too_soon": {
+    "message": "Изчакайте малко, след което опитайте отново."
+  },
+  "remote_failed": {
+    "message": "Не се получи. Опитайте отново."
+  },
+  "remote_device_name": {
+    "message": "Разширение на браузъра"
+  },
+  "badge_off": {
+    "message": "ИЗК."
+  },
+  "tip_on": {
+    "message": "Dannex Download Manager е включен."
+  },
+  "tip_off": {
+    "message": "Dannex Download Manager е изключен."
+  },
+  "tip_remote": {
+    "message": "Изтеглянията отиват в Dannex Download Manager на $address$.",
+    "placeholders": {
+      "address": {
+        "content": "$1",
+        "example": "https://192.168.1.10:8463/"
+      }
+    }
+  },
+  "status_off_in_app": {
+    "message": "Изключено в Dannex Download Manager"
+  },
+  "status_duplicate": {
+    "message": "Друго копие на това разширение е инсталирано"
+  },
+  "click_fix": {
+    "message": "Щракнете, за да видите какво да направите."
+  },
+  "click_details": {
+    "message": "Щракнете за подробности."
+  },
+  "toolbar_exclude": {
+    "message": "Не поемайте изтегляния от този сайт"
+  },
+  "toolbar_help": {
+    "message": "Помощ"
+  },
+  "toolbar_store": {
+    "message": "Получавайте автоматични актуализации от Уеб магазина на Chrome..."
+  },
+  "options_take_note": {
+    "message": "Когато е изключено, изтеглянията остават в браузъра. Бутонът на разширението има същия превключвател."
+  },
+  "options_what_to_do": {
+    "message": "Вижте какво да направите"
+  },
+  "options_more": {
+    "message": "Още"
+  },
+  "page_checking": {
+    "message": "Търсене на Dannex Download Manager…"
+  },
+  "page_on_lead": {
+    "message": "Изтеглянията, които стартирате в този браузър, отиват в Dannex Download Manager."
+  },
+  "page_off_lead": {
+    "message": "Изключено е, затова изтеглянията остават в този браузър."
+  },
+  "page_remote_title": {
+    "message": "Изтеглянията отиват в друг Dannex Download Manager"
+  },
+  "page_remote_lead": {
+    "message": "Изтеглянията, които стартирате в този браузър, отиват в Dannex Download Manager на $address$.",
+    "placeholders": {
+      "address": {
+        "content": "$1",
+        "example": "https://192.168.1.10:8463/"
+      }
+    }
+  },
+  "page_lead_not_installed": {
+    "message": "Това разширение изисква безплатното приложение Dannex Download Manager. Инсталирайте го и тази страница ще се обнови сама."
+  },
+  "page_lead_not_running": {
+    "message": "Браузърът се опита да го стартира, но отне твърде много време. Стартирайте Dannex Download Manager сами и опитайте отново."
+  },
+  "page_lead_host_failed": {
+    "message": "Най-често причината е защитният софтуер. Разрешете Dannex Download Manager във Вашата антивирусна програма или го инсталирайте отново."
+  },
+  "page_lead_forbidden": {
+    "message": "Тази версия на Dannex Download Manager е твърде стара за това разширение. Инсталирайте най-новата."
+  },
+  "page_lead_too_large": {
+    "message": "Сайтът изпрати твърде много данни за вход. Излезте от сайта и влезте отново, след това опитайте пак."
+  },
+  "page_download": {
+    "message": "Изтеглете Dannex Download Manager"
+  },
+  "page_files_windows": {
+    "message": "За Windows 10 и 11."
+  },
+  "page_files_macos": {
+    "message": "За Mac (дисков образ .dmg)."
+  },
+  "page_files_linux": {
+    "message": "За Linux (AppImage, .deb или .rpm)."
+  },
+  "page_files_other": {
+    "message": "За компютри с Windows, Mac и Linux."
+  },
+  "page_all_downloads": {
+    "message": "Всички изтегляния"
+  },
+  "page_step_windows": {
+    "message": "Стартирайте изтеглената инсталация."
+  },
+  "page_step_macos": {
+    "message": "Отворете .dmg, плъзнете Dannex Download Manager в „Приложения“ и го стартирайте веднъж."
+  },
+  "page_step_linux": {
+    "message": "Инсталирайте .deb или .rpm (или стартирайте AppImage), след което стартирайте Dannex Download Manager веднъж."
+  },
+  "page_step_other": {
+    "message": "Dannex Download Manager работи на компютри с Windows, Mac и Linux. Инсталирайте го на такъв и добавете това разширение към браузър там."
+  },
+  "page_step_wait": {
+    "message": "Дръжте тази страница отворена. Тя се променя сама, когато Dannex Download Manager е готов."
+  },
+  "page_step_restart": {
+    "message": "Нищо след минута? Рестартирайте браузъра."
+  },
+  "page_step_installed": {
+    "message": "Вече е инсталирано? В Dannex Download Manager отворете Опции → Общи → Проверка на интеграцията с браузъра."
+  },
+  "page_try_again": {
+    "message": "Опитайте отново"
+  },
+  "page_app_options": {
+    "message": "Отворете Опциите на Dannex Download Manager"
+  },
+  "page_duplicate_title": {
+    "message": "Премахнете това копие"
+  },
+  "page_duplicate_lead": {
+    "message": "Копието от уеб магазина на Chrome също е инсталирано и се актуализира само. Можете да премахнете това."
+  },
+  "page_remove": {
+    "message": "Премахнете това копие"
+  },
+  "page_extensions": {
+    "message": "Отворете страницата с разширения"
+  },
+  "page_update_app_how": {
+    "message": "В Dannex Download Manager изберете Помощ → Проверка за актуализации..."
+  },
+  "page_behind": {
+    "message": "Нова версия на това разширение дойде с Dannex Download Manager $version$.",
+    "placeholders": {
+      "version": {
+        "content": "$1",
+        "example": "0.7.0"
+      }
+    }
+  },
+  "page_behind_store": {
+    "message": "Браузърът го актуализира сам до няколко часа или веднага чрез „Проверка за актуализации“."
+  },
+  "page_behind_unpacked": {
+    "message": "Презаредете разширението, за да го използвате."
+  },
+  "page_behind_other": {
+    "message": "Добавете новото от папката на Dannex Download Manager, както добавихте това."
+  },
+  "page_check_updates": {
+    "message": "Проверка за актуализации"
+  },
+  "page_up_to_date": {
+    "message": "Още няма по-нова версия. Браузърът проверява отново сам."
+  },
+  "page_reload": {
+    "message": "Презаредете разширението"
+  },
+  "page_store": {
+    "message": "Получавайте автоматични актуализации: добавете това разширение от Уеб магазина на Chrome, след което премахнете това копие."
+  },
+  "page_open_store": {
+    "message": "Отворете Уеб магазина на Chrome"
+  },
+  "page_temporary": {
+    "message": "Firefox ще премахне тази добавка при затварянето си, защото е добавена като временна добавка."
+  },
+  "page_site_access": {
+    "message": "Това разширение е разрешено само на някои сайтове, затова изтеглянията от други сайтове остават в браузъра."
+  },
+  "page_allow_sites": {
+    "message": "Разрешаване за всички сайтове"
+  },
+  "page_private": {
+    "message": "Изтеглянията от частни прозорци остават в браузъра, защото това разширение не е разрешено там."
+  },
+  "page_private_chromium": {
+    "message": "За да го промените, включете „Разрешаване в режим инкогнито“ на страницата му с подробности."
+  },
+  "page_private_firefox": {
+    "message": "За да промените това, изберете Разрешаване до „Изпълнение в частни прозорци на Windows“ на страницата му в „Добавки и теми“."
+  },
+  "page_learn_more": {
+    "message": "Научете повече"
+  },
+  "popup_video": {
+    "message": "Изтегляне на видео от тази страница"
+  },
+  "popup_all": {
+    "message": "Изтегляне на всички връзки от тази страница"
+  },
+  "popup_no_links": {
+    "message": "На тази страница няма връзки за изтегляне."
+  },
+  "popup_drm": {
+    "message": "Видеото или звукът на тази страница са защитени срещу копиране (DRM): не могат да се изтеглят."
+  },
+  "popup_status": {
+    "message": "Състояние и помощ"
+  },
+  "popup_options": {
+    "message": "Опции на разширението"
+  },
+  "popup_fix": {
+    "message": "Вижте какво да направите"
+  }
+}

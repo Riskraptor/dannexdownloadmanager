@@ -1,0 +1,488 @@
+{
+  "name": {
+    "message": "Dannex Download Manager"
+  },
+  "description": {
+    "message": "Στέλνει τα αρχεία, τους συνδέσμους και τα βίντεο που κατεβάζετε στο πρόγραμμα περιήγησης στην εφαρμογή Dannex Download Manager του υπολογιστή σας."
+  },
+  "menu": {
+    "message": "Λήψη με το DDM"
+  },
+  "video_download": {
+    "message": "Λήψη βίντεο"
+  },
+  "video_more": {
+    "message": "Περισσότερες επιλογές"
+  },
+  "video_hide_here": {
+    "message": "Απόκρυψη μόνο σε αυτό το βίντεο"
+  },
+  "video_close": {
+    "message": "Κλείσιμο"
+  },
+  "video_never_site": {
+    "message": "Ποτέ στο $site$",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "video_settings": {
+    "message": "Ρυθμίσεις κουμπιού..."
+  },
+  "video_sent": {
+    "message": "Στάλθηκε στο DDM"
+  },
+  "video_failed": {
+    "message": "Το Dannex Download Manager δεν είναι εγκατεστημένο ή δεν ξεκίνησε"
+  },
+  "video_drag": {
+    "message": "Σύρετε για να το μετακινήσετε κατά μήκος της άκρης του βίντεο"
+  },
+  "menu_selected": {
+    "message": "Λήψη επιλεγμένων συνδέσμων με το DDM"
+  },
+  "menu_all": {
+    "message": "Λήψη όλων των συνδέσμων με το DDM"
+  },
+  "menu_images": {
+    "message": "Λήψη όλων των εικόνων με το DDM"
+  },
+  "menu_media": {
+    "message": "Λήψη όλων των βίντεο και του ήχου με το DDM"
+  },
+  "status_not_installed": {
+    "message": "Το Dannex Download Manager δεν είναι εγκατεστημένο"
+  },
+  "status_installed": {
+    "message": "Το Dannex Download Manager είναι εγκατεστημένο"
+  },
+  "status_forbidden": {
+    "message": "Ενημέρωση του Dannex Download Manager"
+  },
+  "status_not_running": {
+    "message": "Το Dannex Download Manager δεν ξεκίνησε"
+  },
+  "status_host_failed": {
+    "message": "Κάτι αποκλείει το Dannex Download Manager"
+  },
+  "status_too_large": {
+    "message": "Η τελευταία λήψη δεν μπόρεσε να σταλεί στο Dannex Download Manager"
+  },
+  "status_update_app": {
+    "message": "Ενημερώστε το Dannex Download Manager για να αξιοποιήσετε όλες τις δυνατότητες αυτής της επέκτασης."
+  },
+  "popup_take": {
+    "message": "Αποστολή λήψεων στο Dannex Download Manager"
+  },
+  "popup_proxy": {
+    "message": "Λήψη μέσω του VPN ή του διακομιστή μεσολάβησης αυτού του προγράμματος περιήγησης"
+  },
+  "popup_proxy_title": {
+    "message": "Ενεργοποιήστε το αν χρησιμοποιείτε επέκταση VPN ή διακομιστή μεσολάβησης. Το πρόγραμμα περιήγησης ρωτά μία φορά."
+  },
+  "popup_proxy_title_chromium": {
+    "message": "Ενεργοποιήστε το αν χρησιμοποιείτε επέκταση VPN ή διακομιστή μεσολάβησης σε αυτό το πρόγραμμα περιήγησης."
+  },
+  "popup_help": {
+    "message": "Βοήθεια"
+  },
+  "page_support": {
+    "message": "Υποστήριξη του DDM"
+  },
+  "popup_declined": {
+    "message": "Η τελευταία σας λήψη παρέμεινε στο πρόγραμμα περιήγησης: $name$",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "setup.png"
+      }
+    }
+  },
+  "popup_declined_unnamed": {
+    "message": "Η τελευταία σας λήψη παρέμεινε στο πρόγραμμα περιήγησης."
+  },
+  "declined_file_type": {
+    "message": "Ο τύπος αρχείου του δεν βρίσκεται στη λίστα του Dannex Download Manager (Επιλογές → Τύποι αρχείων)."
+  },
+  "declined_site": {
+    "message": "Η τοποθεσία του βρίσκεται στη λίστα τοποθεσιών που το Dannex Download Manager αφήνει στο πρόγραμμα περιήγησης (Επιλογές → Τύποι αρχείων)."
+  },
+  "declined_address": {
+    "message": "Η διεύθυνσή του βρίσκεται στη λίστα διευθύνσεων που το Dannex Download Manager αφήνει στο πρόγραμμα περιήγησης (Επιλογές → Τύποι αρχείων)."
+  },
+  "declined_small": {
+    "message": "Είναι μικρότερο από το μικρότερο αρχείο που αναλαμβάνει το Dannex Download Manager (Επιλογές → Τύποι αρχείων)."
+  },
+  "declined_browser": {
+    "message": "Αυτό το πρόγραμμα περιήγησης δεν είναι επιλεγμένο στις Επιλογές → Γενικά του Dannex Download Manager."
+  },
+  "declined_integration_off": {
+    "message": "Η ενσωμάτωση προγράμματος περιήγησης είναι απενεργοποιημένη στις Επιλογές → Γενικά του Dannex Download Manager."
+  },
+  "declined_site_access": {
+    "message": "Αυτή η επέκταση δεν επιτρέπεται σε εκείνη την τοποθεσία."
+  },
+  "declined_handed_back": {
+    "message": "Επιλέξατε «Λήψη με το πρόγραμμα περιήγησης» για αυτήν τη λήψη στο Dannex Download Manager."
+  },
+  "video_off": {
+    "message": "Το κουμπί λήψης είναι απενεργοποιημένο σε αυτόν τον ιστότοπο"
+  },
+  "video_drm": {
+    "message": "Προστατευμένο βίντεο: δεν είναι δυνατή η αποθήκευσή του"
+  },
+  "video_drm_audio": {
+    "message": "Προστατευμένος ήχος: δεν είναι δυνατή η αποθήκευσή του"
+  },
+  "video_protected": {
+    "message": "Προστατευμένο"
+  },
+  "video_download_audio": {
+    "message": "Λήψη ήχου"
+  },
+  "video_unnamed": {
+    "message": "Ανοίξτε τη σελίδα του ίδιου του βίντεο και δοκιμάστε εκεί"
+  },
+  "video_looking": {
+    "message": "Αναζήτηση ποιοτήτων…"
+  },
+  "video_open_mdm": {
+    "message": "Άνοιγμα στο DDM…"
+  },
+  "video_no_choices": {
+    "message": "Δεν υπάρχει βίντεο για λήψη εδώ"
+  },
+  "video_playlist": {
+    "message": "Μια λίστα βίντεο: επιλέξτε τα στο Dannex Download Manager"
+  },
+  "video_no_ytdlp": {
+    "message": "Το Dannex Download Manager χρειάζεται το yt-dlp για αυτό το βίντεο. Επιλέξτε «Άνοιγμα στο DDM…» για να το εγκαταστήσετε."
+  },
+  "video_too_long": {
+    "message": "Η αναζήτηση άργησε υπερβολικά"
+  },
+  "video_busy": {
+    "message": "Το Dannex Download Manager είναι απασχολημένο με άλλα βίντεο"
+  },
+  "video_queued": {
+    "message": "Προστέθηκε στην ουρά"
+  },
+  "video_failed_lookup": {
+    "message": "Η αναζήτηση απέτυχε"
+  },
+  "video_tab_video": {
+    "message": "Βίντεο"
+  },
+  "video_tab_audio": {
+    "message": "Ήχος"
+  },
+  "video_open_post": {
+    "message": "Ανοίξτε την ανάρτηση και μετά χρησιμοποιήστε το κουμπί εκεί"
+  },
+  "video_audio_original": {
+    "message": "Μόνο ήχος, αρχικό $type$",
+    "placeholders": {
+      "type": {
+        "content": "$1",
+        "example": "M4A"
+      }
+    }
+  },
+  "video_audio_only": {
+    "message": "Μόνο ήχος $type$",
+    "placeholders": {
+      "type": {
+        "content": "$1",
+        "example": "MP3 320 kbps"
+      }
+    }
+  },
+  "video_audio_original_short": {
+    "message": "Πρωτότυπο $type$",
+    "placeholders": {
+      "type": {
+        "content": "$1",
+        "example": "M4A"
+      }
+    }
+  },
+  "video_pick_waiting": {
+    "message": "Έναρξη μόλις είναι έτοιμο το DDM…"
+  },
+  "video_pick_gone": {
+    "message": "Αυτή η ποιότητα δεν είναι διαθέσιμη: επιλέξτε άλλη"
+  },
+  "popup_send_to": {
+    "message": "Αποστολή λήψεων σε"
+  },
+  "popup_send_here": {
+    "message": "Αυτός ο υπολογιστής"
+  },
+  "popup_send_remote": {
+    "message": "Dannex Download Manager σε άλλον υπολογιστή"
+  },
+  "popup_remote_code": {
+    "message": "Κωδικός σύζευξης"
+  },
+  "popup_remote_open": {
+    "message": "Άνοιγμα"
+  },
+  "popup_remote_pair": {
+    "message": "Σύζευξη"
+  },
+  "popup_remote_help": {
+    "message": "Ανοίξτε πρώτα τη διεύθυνσή του εδώ και, στη συνέχεια, πληκτρολογήστε τον κωδικό από τις Επιλογές → Απομακρυσμένη → Σύζευξη συσκευής."
+  },
+  "status_remote": {
+    "message": "Οι λήψεις μεταβαίνουν στη διεύθυνση $address$",
+    "placeholders": {
+      "address": {
+        "content": "$1",
+        "example": "https://192.168.1.10:8463/"
+      }
+    }
+  },
+  "remote_address": {
+    "message": "Εισαγάγετε τη διεύθυνση https://."
+  },
+  "remote_unreachable": {
+    "message": "Δεν ήταν δυνατή η σύνδεση. Ανοίξτε τη διεύθυνσή του σε αυτό το πρόγραμμα περιήγησης, συνεχίστε μετά την προειδοποίηση ασφαλείας και δοκιμάστε ξανά."
+  },
+  "remote_wrong_code": {
+    "message": "Λανθασμένος κωδικός."
+  },
+  "remote_no_code": {
+    "message": "Δεν υπάρχει ακόμη κωδικός για εισαγωγή: κάντε πρώτα κλικ στο «Σύζευξη συσκευής» εκεί."
+  },
+  "remote_too_soon": {
+    "message": "Περιμένετε λίγο, μετά δοκιμάστε ξανά."
+  },
+  "remote_failed": {
+    "message": "Δεν λειτούργησε. Δοκιμάστε ξανά."
+  },
+  "remote_device_name": {
+    "message": "Επέκταση προγράμματος περιήγησης"
+  },
+  "badge_off": {
+    "message": "ΕΚΤ"
+  },
+  "tip_on": {
+    "message": "Το Dannex Download Manager είναι ενεργό."
+  },
+  "tip_off": {
+    "message": "Το Dannex Download Manager είναι ανενεργό."
+  },
+  "tip_remote": {
+    "message": "Οι λήψεις πηγαίνουν στο Dannex Download Manager στη διεύθυνση $address$.",
+    "placeholders": {
+      "address": {
+        "content": "$1",
+        "example": "https://192.168.1.10:8463/"
+      }
+    }
+  },
+  "status_off_in_app": {
+    "message": "Απενεργοποιημένο στο Dannex Download Manager"
+  },
+  "status_duplicate": {
+    "message": "Έχει εγκατασταθεί άλλο αντίγραφο αυτής της επέκτασης"
+  },
+  "click_fix": {
+    "message": "Κάντε κλικ για να δείτε τι πρέπει να κάνετε."
+  },
+  "click_details": {
+    "message": "Κάντε κλικ για λεπτομέρειες."
+  },
+  "toolbar_exclude": {
+    "message": "Να μην αναλαμβάνονται λήψεις από αυτήν την τοποθεσία"
+  },
+  "toolbar_help": {
+    "message": "Βοήθεια"
+  },
+  "toolbar_store": {
+    "message": "Λήψη αυτόματων ενημερώσεων από το Chrome Web Store..."
+  },
+  "options_take_note": {
+    "message": "Όταν είναι ανενεργή, οι λήψεις παραμένουν στο πρόγραμμα περιήγησης. Το κουμπί της επέκτασης έχει τον ίδιο διακόπτη."
+  },
+  "options_what_to_do": {
+    "message": "Δείτε τι να κάνετε"
+  },
+  "options_more": {
+    "message": "Περισσότερα"
+  },
+  "page_checking": {
+    "message": "Αναζήτηση του Dannex Download Manager…"
+  },
+  "page_on_lead": {
+    "message": "Οι λήψεις που ξεκινάτε σε αυτό το πρόγραμμα περιήγησης πηγαίνουν στο Dannex Download Manager."
+  },
+  "page_off_lead": {
+    "message": "Είναι απενεργοποιημένο, επομένως οι λήψεις παραμένουν σε αυτό το πρόγραμμα περιήγησης."
+  },
+  "page_remote_title": {
+    "message": "Οι λήψεις πηγαίνουν σε άλλο Dannex Download Manager"
+  },
+  "page_remote_lead": {
+    "message": "Οι λήψεις που ξεκινάτε σε αυτό το πρόγραμμα περιήγησης πηγαίνουν στο Dannex Download Manager στη διεύθυνση $address$.",
+    "placeholders": {
+      "address": {
+        "content": "$1",
+        "example": "https://192.168.1.10:8463/"
+      }
+    }
+  },
+  "page_lead_not_installed": {
+    "message": "Αυτή η επέκταση χρειάζεται τη δωρεάν εφαρμογή Dannex Download Manager. Εγκαταστήστε την και αυτή η σελίδα θα ενημερωθεί μόνη της."
+  },
+  "page_lead_not_running": {
+    "message": "Το πρόγραμμα περιήγησης προσπάθησε να το ξεκινήσει, αλλά καθυστέρησε πολύ. Ξεκινήστε το Dannex Download Manager μόνοι σας και δοκιμάστε ξανά."
+  },
+  "page_lead_host_failed": {
+    "message": "Συνήθως η αιτία είναι το λογισμικό ασφαλείας. Επιτρέψτε το Dannex Download Manager στο πρόγραμμα προστασίας από ιούς ή εγκαταστήστε το ξανά."
+  },
+  "page_lead_forbidden": {
+    "message": "Αυτή η έκδοση του Dannex Download Manager είναι πολύ παλιά για αυτήν την επέκταση. Εγκαταστήστε την πιο πρόσφατη."
+  },
+  "page_lead_too_large": {
+    "message": "Η τοποθεσία έστειλε πάρα πολλά δεδομένα σύνδεσης. Αποσυνδεθείτε από την τοποθεσία, συνδεθείτε ξανά και δοκιμάστε πάλι."
+  },
+  "page_download": {
+    "message": "Λήψη του Dannex Download Manager"
+  },
+  "page_files_windows": {
+    "message": "Για Windows 10 και 11."
+  },
+  "page_files_macos": {
+    "message": "Για Mac (εικόνα δίσκου .dmg)."
+  },
+  "page_files_linux": {
+    "message": "Για Linux (AppImage, .deb ή .rpm)."
+  },
+  "page_files_other": {
+    "message": "Για υπολογιστές Windows, Mac και Linux."
+  },
+  "page_all_downloads": {
+    "message": "Όλες οι λήψεις"
+  },
+  "page_step_windows": {
+    "message": "Εκτελέστε το πρόγραμμα εγκατάστασης που λάβατε."
+  },
+  "page_step_macos": {
+    "message": "Ανοίξτε το .dmg, σύρετε το Dannex Download Manager στο φάκελο Εφαρμογές και ξεκινήστε το μία φορά."
+  },
+  "page_step_linux": {
+    "message": "Εγκαταστήστε το .deb ή το .rpm (ή εκτελέστε το AppImage) και μετά ξεκινήστε μία φορά το Dannex Download Manager."
+  },
+  "page_step_other": {
+    "message": "Το Dannex Download Manager εκτελείται σε υπολογιστές Windows, Mac και Linux. Εγκαταστήστε το σε έναν και προσθέστε αυτήν την επέκταση σε ένα πρόγραμμα περιήγησης εκεί."
+  },
+  "page_step_wait": {
+    "message": "Κρατήστε ανοιχτή αυτήν τη σελίδα. Ενημερώνεται μόνη της όταν το Dannex Download Manager είναι έτοιμο."
+  },
+  "page_step_restart": {
+    "message": "Τίποτα μετά από ένα λεπτό; Επανεκκινήστε το πρόγραμμα περιήγησης."
+  },
+  "page_step_installed": {
+    "message": "Είναι ήδη εγκατεστημένο; Στο Dannex Download Manager, ανοίξτε Επιλογές → Γενικά → Δοκιμή ενσωμάτωσης προγράμματος περιήγησης."
+  },
+  "page_try_again": {
+    "message": "Δοκιμάστε ξανά"
+  },
+  "page_app_options": {
+    "message": "Άνοιγμα των Επιλογών του Dannex Download Manager"
+  },
+  "page_duplicate_title": {
+    "message": "Κατάργηση αυτού του αντιγράφου"
+  },
+  "page_duplicate_lead": {
+    "message": "Το αντίγραφο από το Chrome Web Store είναι επίσης εγκατεστημένο και ενημερώνεται μόνο του. Μπορείτε να καταργήσετε αυτό."
+  },
+  "page_remove": {
+    "message": "Κατάργηση αυτού του αντιγράφου"
+  },
+  "page_extensions": {
+    "message": "Άνοιγμα της σελίδας επεκτάσεων"
+  },
+  "page_update_app_how": {
+    "message": "Στο Dannex Download Manager, επιλέξτε Βοήθεια → Έλεγχος για ενημερώσεις..."
+  },
+  "page_behind": {
+    "message": "Μια νεότερη έκδοση αυτής της επέκτασης συνοδεύει το Dannex Download Manager $version$.",
+    "placeholders": {
+      "version": {
+        "content": "$1",
+        "example": "0.7.0"
+      }
+    }
+  },
+  "page_behind_store": {
+    "message": "Το πρόγραμμα περιήγησης το ενημερώνει μόνο του μέσα σε λίγες ώρες ή αμέσως με την επιλογή «Έλεγχος για ενημερώσεις»."
+  },
+  "page_behind_unpacked": {
+    "message": "Επαναφορτώστε την επέκταση για να τη χρησιμοποιήσετε."
+  },
+  "page_behind_other": {
+    "message": "Προσθέστε τη νέα από τον φάκελο του Dannex Download Manager, όπως προσθέσατε αυτήν."
+  },
+  "page_check_updates": {
+    "message": "Έλεγχος για ενημερώσεις"
+  },
+  "page_up_to_date": {
+    "message": "Δεν υπάρχει ακόμη νεότερη έκδοση. Το πρόγραμμα περιήγησης ελέγχει ξανά μόνο του."
+  },
+  "page_reload": {
+    "message": "Επαναφόρτωση της επέκτασης"
+  },
+  "page_store": {
+    "message": "Λήψη αυτόματων ενημερώσεων: προσθέστε αυτήν την επέκταση από το Chrome Web Store και μετά καταργήστε αυτό το αντίγραφο."
+  },
+  "page_open_store": {
+    "message": "Άνοιγμα του Chrome Web Store"
+  },
+  "page_temporary": {
+    "message": "Το Firefox θα καταργήσει αυτό το πρόσθετο όταν κλείσει, επειδή προστέθηκε ως προσωρινό πρόσθετο."
+  },
+  "page_site_access": {
+    "message": "Αυτή η επέκταση επιτρέπεται μόνο σε ορισμένες τοποθεσίες, επομένως οι λήψεις από άλλες τοποθεσίες παραμένουν στο πρόγραμμα περιήγησης."
+  },
+  "page_allow_sites": {
+    "message": "Να επιτρέπεται σε όλες τις τοποθεσίες"
+  },
+  "page_private": {
+    "message": "Οι λήψεις από ιδιωτικά παράθυρα παραμένουν στο πρόγραμμα περιήγησης, επειδή αυτή η επέκταση δεν επιτρέπεται εκεί."
+  },
+  "page_private_chromium": {
+    "message": "Για να το αλλάξετε, ενεργοποιήστε την επιλογή «Να επιτρέπεται στην ανώνυμη περιήγηση» στη σελίδα λεπτομερειών της."
+  },
+  "page_private_firefox": {
+    "message": "Για να το αλλάξετε, επιλέξτε Να επιτρέπεται δίπλα στο «Run in Private Windows» στη σελίδα της στις Προσθήκες και θέματα."
+  },
+  "page_learn_more": {
+    "message": "Μάθετε περισσότερα"
+  },
+  "popup_video": {
+    "message": "Λήψη βίντεο από αυτήν τη σελίδα"
+  },
+  "popup_all": {
+    "message": "Λήψη όλων των συνδέσμων από αυτήν τη σελίδα"
+  },
+  "popup_no_links": {
+    "message": "Αυτή η σελίδα δεν έχει συνδέσμους για λήψη."
+  },
+  "popup_drm": {
+    "message": "Το βίντεο ή ο ήχος αυτής της σελίδας προστατεύεται από αντιγραφή (DRM): δεν είναι δυνατή η λήψη του."
+  },
+  "popup_status": {
+    "message": "Κατάσταση και βοήθεια"
+  },
+  "popup_options": {
+    "message": "Επιλογές επέκτασης"
+  },
+  "popup_fix": {
+    "message": "Δείτε τι να κάνετε"
+  }
+}

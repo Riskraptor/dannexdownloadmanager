@@ -1,0 +1,488 @@
+{
+  "name": {
+    "message": "Dannex Download Manager"
+  },
+  "description": {
+    "message": "فایل‌ها، پیوندها و ویدیوهایی را که در مرورگر بارگیری می‌کنید به برنامه Dannex Download Manager روی رایانه‌تان می‌فرستد."
+  },
+  "menu": {
+    "message": "دانلود با DDM"
+  },
+  "video_download": {
+    "message": "دانلود ویدیو"
+  },
+  "video_more": {
+    "message": "گزینه‌های بیشتر"
+  },
+  "video_hide_here": {
+    "message": "پنهان کردن در این ویدیو"
+  },
+  "video_close": {
+    "message": "بستن"
+  },
+  "video_never_site": {
+    "message": "هرگز در $site$",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "video_settings": {
+    "message": "تنظیمات دکمه..."
+  },
+  "video_sent": {
+    "message": "به DDM ارسال شد"
+  },
+  "video_failed": {
+    "message": "Dannex Download Manager نصب نشده است یا اجرا نشد"
+  },
+  "video_drag": {
+    "message": "برای جابجایی در لبه ویدیو بکشید"
+  },
+  "menu_selected": {
+    "message": "پیوندهای انتخاب شده را با DDM بارگیری کن"
+  },
+  "menu_all": {
+    "message": "همه پیوندها را با DDM بارگیری کن"
+  },
+  "menu_images": {
+    "message": "بارگیری همه تصاویر با DDM"
+  },
+  "menu_media": {
+    "message": "بارگیری همه ویدیوها و صداها با DDM"
+  },
+  "status_not_installed": {
+    "message": "Dannex Download Manager نصب نشده است"
+  },
+  "status_installed": {
+    "message": "Dannex Download Manager نصب شده است"
+  },
+  "status_forbidden": {
+    "message": "به‌روزرسانی Dannex Download Manager"
+  },
+  "status_not_running": {
+    "message": "Dannex Download Manager شروع نشد"
+  },
+  "status_host_failed": {
+    "message": "چیزی جلوی Dannex Download Manager را گرفته است"
+  },
+  "status_too_large": {
+    "message": "آخرین بارگیری به Dannex Download Manager نرسید"
+  },
+  "status_update_app": {
+    "message": "Dannex Download Manager را به‌روز کنید تا از همه امکانات این افزونه استفاده کنید."
+  },
+  "popup_take": {
+    "message": "ارسال بارگیری‌ها به Dannex Download Manager"
+  },
+  "popup_proxy": {
+    "message": "بارگیری از طریق VPN یا پروکسی این مرورگر"
+  },
+  "popup_proxy_title": {
+    "message": "اگر از افزونه VPN یا پروکسی استفاده می‌کنید، این را روشن کنید. مرورگر یک بار می‌پرسد."
+  },
+  "popup_proxy_title_chromium": {
+    "message": "اگر در این مرورگر از افزونه VPN یا پروکسی استفاده می‌کنید، این را روشن کنید."
+  },
+  "popup_help": {
+    "message": "راهنما"
+  },
+  "page_support": {
+    "message": "حمایت از DDM"
+  },
+  "popup_declined": {
+    "message": "آخرین بارگیری شما در مرورگر ماند: $name$",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "setup.png"
+      }
+    }
+  },
+  "popup_declined_unnamed": {
+    "message": "آخرین بارگیری شما در مرورگر ماند."
+  },
+  "declined_file_type": {
+    "message": "نوع فایل آن در فهرست Dannex Download Manager نیست (گزینه‌ها ← انواع فایل)."
+  },
+  "declined_site": {
+    "message": "سایت آن در فهرست سایت‌هایی است که Dannex Download Manager کنار می‌گذارد (گزینه‌ها ← انواع فایل)."
+  },
+  "declined_address": {
+    "message": "نشانی آن در فهرست نشانی‌هایی است که Dannex Download Manager کنار می‌گذارد (گزینه‌ها ← انواع فایل)."
+  },
+  "declined_small": {
+    "message": "از کوچک‌ترین فایلی که Dannex Download Manager می‌گیرد کوچک‌تر است (گزینه‌ها ← انواع فایل)."
+  },
+  "declined_browser": {
+    "message": "این مرورگر در گزینه‌ها ← عمومی در Dannex Download Manager علامت نخورده است."
+  },
+  "declined_integration_off": {
+    "message": "یکپارچه‌سازی مرورگر در گزینه‌ها ← عمومی در Dannex Download Manager خاموش است."
+  },
+  "declined_site_access": {
+    "message": "این افزونه در آن سایت مجاز نیست."
+  },
+  "declined_handed_back": {
+    "message": "در Dannex Download Manager برای این مورد «بارگیری با مرورگر» را انتخاب کردید."
+  },
+  "video_off": {
+    "message": "دکمه بارگیری در این سایت خاموش است"
+  },
+  "video_drm": {
+    "message": "ویدیوی محافظت‌شده: امکان ذخیره آن نیست"
+  },
+  "video_drm_audio": {
+    "message": "صدای محافظت‌شده: ذخیره نمی‌شود"
+  },
+  "video_protected": {
+    "message": "محافظت‌شده"
+  },
+  "video_download_audio": {
+    "message": "بارگیری صدا"
+  },
+  "video_unnamed": {
+    "message": "صفحه خود ویدیو را باز کنید و آنجا امتحان کنید"
+  },
+  "video_looking": {
+    "message": "در حال جست‌وجوی کیفیت‌ها…"
+  },
+  "video_open_mdm": {
+    "message": "باز کردن در DDM…"
+  },
+  "video_no_choices": {
+    "message": "ویدیویی برای دانلود در اینجا نیست"
+  },
+  "video_playlist": {
+    "message": "فهرستی از ویدیوها: آن‌ها را در Dannex Download Manager انتخاب کنید"
+  },
+  "video_no_ytdlp": {
+    "message": "Dannex Download Manager برای این ویدیو به yt-dlp نیاز دارد. برای نصب آن، «باز کردن در DDM…» را بزنید."
+  },
+  "video_too_long": {
+    "message": "جست‌وجو بیش از حد طول کشید"
+  },
+  "video_busy": {
+    "message": "Dannex Download Manager با ویدیوهای دیگر مشغول است"
+  },
+  "video_queued": {
+    "message": "به صف اضافه شد"
+  },
+  "video_failed_lookup": {
+    "message": "جست‌وجو انجام نشد"
+  },
+  "video_tab_video": {
+    "message": "ویدیو"
+  },
+  "video_tab_audio": {
+    "message": "صدا"
+  },
+  "video_open_post": {
+    "message": "پست را باز کنید، سپس از دکمه آنجا استفاده کنید"
+  },
+  "video_audio_original": {
+    "message": "فقط صدا، اصلی $type$",
+    "placeholders": {
+      "type": {
+        "content": "$1",
+        "example": "M4A"
+      }
+    }
+  },
+  "video_audio_only": {
+    "message": "فقط صدا $type$",
+    "placeholders": {
+      "type": {
+        "content": "$1",
+        "example": "MP3 320 kbps"
+      }
+    }
+  },
+  "video_audio_original_short": {
+    "message": "$type$ اصلی",
+    "placeholders": {
+      "type": {
+        "content": "$1",
+        "example": "M4A"
+      }
+    }
+  },
+  "video_pick_waiting": {
+    "message": "به‌محض آماده شدن DDM شروع می‌شود…"
+  },
+  "video_pick_gone": {
+    "message": "این کیفیت در دسترس نیست: کیفیت دیگری انتخاب کنید"
+  },
+  "popup_send_to": {
+    "message": "ارسال دانلودها به"
+  },
+  "popup_send_here": {
+    "message": "این رایانه"
+  },
+  "popup_send_remote": {
+    "message": "Dannex Download Manager روی رایانه دیگر"
+  },
+  "popup_remote_code": {
+    "message": "کد جفت‌سازی"
+  },
+  "popup_remote_open": {
+    "message": "باز کردن آن"
+  },
+  "popup_remote_pair": {
+    "message": "جفت کردن"
+  },
+  "popup_remote_help": {
+    "message": "ابتدا نشانی آن را اینجا باز کنید، سپس کد را از گزینه‌ها ← از راه دور ← جفت کردن دستگاه در آن وارد کنید."
+  },
+  "status_remote": {
+    "message": "دانلودها به $address$ می‌روند",
+    "placeholders": {
+      "address": {
+        "content": "$1",
+        "example": "https://192.168.1.10:8463/"
+      }
+    }
+  },
+  "remote_address": {
+    "message": "آدرس https:// آن را وارد کنید."
+  },
+  "remote_unreachable": {
+    "message": "دسترسی ممکن نبود. نشانی آن را در این مرورگر باز کنید، از هشدار امنیتی بگذرید و دوباره تلاش کنید."
+  },
+  "remote_wrong_code": {
+    "message": "کد اشتباه است."
+  },
+  "remote_no_code": {
+    "message": "هنوز کدی برای وارد کردن نیست: ابتدا آنجا روی «جفت کردن دستگاه» کلیک کنید."
+  },
+  "remote_too_soon": {
+    "message": "لحظه‌ای صبر کنید، سپس دوباره امتحان کنید."
+  },
+  "remote_failed": {
+    "message": "کار نکرد. دوباره امتحان کنید."
+  },
+  "remote_device_name": {
+    "message": "افزونه مرورگر"
+  },
+  "badge_off": {
+    "message": "خاموش"
+  },
+  "tip_on": {
+    "message": "Dannex Download Manager روشن است."
+  },
+  "tip_off": {
+    "message": "Dannex Download Manager خاموش است."
+  },
+  "tip_remote": {
+    "message": "بارگیری‌ها به Dannex Download Manager در $address$ می‌روند.",
+    "placeholders": {
+      "address": {
+        "content": "$1",
+        "example": "https://192.168.1.10:8463/"
+      }
+    }
+  },
+  "status_off_in_app": {
+    "message": "در Dannex Download Manager خاموش است"
+  },
+  "status_duplicate": {
+    "message": "نسخه دیگری از این افزونه نصب شده است"
+  },
+  "click_fix": {
+    "message": "برای دیدن کار لازم کلیک کنید."
+  },
+  "click_details": {
+    "message": "برای جزئیات کلیک کنید."
+  },
+  "toolbar_exclude": {
+    "message": "نگرفتن بارگیری‌ها از این سایت"
+  },
+  "toolbar_help": {
+    "message": "راهنما"
+  },
+  "toolbar_store": {
+    "message": "دریافت به‌روزرسانی خودکار از فروشگاه وب Chrome..."
+  },
+  "options_take_note": {
+    "message": "وقتی خاموش باشد، بارگیری‌ها در مرورگر می‌مانند. دکمه افزونه همین کلید را دارد."
+  },
+  "options_what_to_do": {
+    "message": "ببینید چه کار باید کرد"
+  },
+  "options_more": {
+    "message": "بیشتر"
+  },
+  "page_checking": {
+    "message": "در حال جستجوی Dannex Download Manager…"
+  },
+  "page_on_lead": {
+    "message": "بارگیری‌هایی که در این مرورگر شروع می‌کنید به Dannex Download Manager می‌روند."
+  },
+  "page_off_lead": {
+    "message": "خاموش است، پس بارگیری‌ها در این مرورگر می‌مانند."
+  },
+  "page_remote_title": {
+    "message": "بارگیری‌ها به Dannex Download Manager دیگری می‌روند"
+  },
+  "page_remote_lead": {
+    "message": "بارگیری‌هایی که در این مرورگر شروع می‌کنید به Dannex Download Manager در $address$ می‌روند.",
+    "placeholders": {
+      "address": {
+        "content": "$1",
+        "example": "https://192.168.1.10:8463/"
+      }
+    }
+  },
+  "page_lead_not_installed": {
+    "message": "این افزونه به برنامه رایگان Dannex Download Manager نیاز دارد. آن را نصب کنید تا این صفحه خودش به‌روز شود."
+  },
+  "page_lead_not_running": {
+    "message": "مرورگر سعی کرد آن را شروع کند، اما زمان زیادی طول کشید. خودتان Dannex Download Manager را شروع کنید و دوباره تلاش کنید."
+  },
+  "page_lead_host_failed": {
+    "message": "علت معمول، نرم‌افزار امنیتی است. به Dannex Download Manager در برنامه آنتی‌ویروس خود اجازه دهید، یا دوباره آن را نصب کنید."
+  },
+  "page_lead_forbidden": {
+    "message": "این نسخه از Dannex Download Manager برای این افزونه خیلی قدیمی است. آخرین نسخه را نصب کنید."
+  },
+  "page_lead_too_large": {
+    "message": "سایت داده‌های ورود بیش از حدی فرستاد. از سایت خارج شوید و دوباره وارد شوید، سپس دوباره امتحان کنید."
+  },
+  "page_download": {
+    "message": "بارگیری Dannex Download Manager"
+  },
+  "page_files_windows": {
+    "message": "برای Windows 10 و 11."
+  },
+  "page_files_macos": {
+    "message": "برای Mac (تصویر دیسک .dmg)."
+  },
+  "page_files_linux": {
+    "message": "برای Linux (AppImage، .deb یا .rpm)."
+  },
+  "page_files_other": {
+    "message": "برای رایانه‌های Windows، Mac و Linux."
+  },
+  "page_all_downloads": {
+    "message": "همه بارگیری‌ها"
+  },
+  "page_step_windows": {
+    "message": "برنامه نصبی را که بارگیری کرده‌اید اجرا کنید."
+  },
+  "page_step_macos": {
+    "message": "فایل .dmg را باز کنید، Dannex Download Manager را به پوشه برنامه‌ها بکشید و یک‌بار آن را شروع کنید."
+  },
+  "page_step_linux": {
+    "message": "فایل .deb یا .rpm را نصب کنید (یا AppImage را اجرا کنید)، سپس Dannex Download Manager را یک‌بار شروع کنید."
+  },
+  "page_step_other": {
+    "message": "Dannex Download Manager روی رایانه‌های Windows، Mac و Linux اجرا می‌شود. آن را روی یکی نصب کنید و این افزونه را به مرورگری در آنجا اضافه کنید."
+  },
+  "page_step_wait": {
+    "message": "این صفحه را باز نگه دارید. وقتی Dannex Download Manager آماده شود، خودش تغییر می‌کند."
+  },
+  "page_step_restart": {
+    "message": "پس از یک دقیقه خبری نشد؟ مرورگر را دوباره راه‌اندازی کنید."
+  },
+  "page_step_installed": {
+    "message": "قبلا نصب کرده‌اید؟ در Dannex Download Manager، گزینه‌ها ← عمومی ← آزمایش یکپارچه‌سازی مرورگر را باز کنید."
+  },
+  "page_try_again": {
+    "message": "تلاش دوباره"
+  },
+  "page_app_options": {
+    "message": "باز کردن گزینه‌های Dannex Download Manager"
+  },
+  "page_duplicate_title": {
+    "message": "حذف این نسخه"
+  },
+  "page_duplicate_lead": {
+    "message": "نسخه فروشگاه وب Chrome هم نصب است و خودش به‌روز می‌شود. می‌توانید این یکی را حذف کنید."
+  },
+  "page_remove": {
+    "message": "حذف این نسخه"
+  },
+  "page_extensions": {
+    "message": "باز کردن صفحه افزونه‌ها"
+  },
+  "page_update_app_how": {
+    "message": "در Dannex Download Manager این را انتخاب کنید: راهنما ← بررسی به‌روزرسانی‌ها..."
+  },
+  "page_behind": {
+    "message": "نسخه جدیدتری از این افزونه همراه Dannex Download Manager $version$ آمد.",
+    "placeholders": {
+      "version": {
+        "content": "$1",
+        "example": "0.7.0"
+      }
+    }
+  },
+  "page_behind_store": {
+    "message": "مرورگر طی چند ساعت خودش آن را به‌روز می‌کند، یا همین حالا با «بررسی به‌روزرسانی‌ها»."
+  },
+  "page_behind_unpacked": {
+    "message": "برای استفاده از آن، افزونه را دوباره بارگذاری کنید."
+  },
+  "page_behind_other": {
+    "message": "نسخه جدید را از پوشه Dannex Download Manager اضافه کنید، همان‌طور که این را اضافه کردید."
+  },
+  "page_check_updates": {
+    "message": "بررسی به‌روزرسانی‌ها"
+  },
+  "page_up_to_date": {
+    "message": "هنوز نسخه جدیدتری نیست. مرورگر خودش دوباره بررسی می‌کند."
+  },
+  "page_reload": {
+    "message": "بارگذاری مجدد افزونه"
+  },
+  "page_store": {
+    "message": "دریافت به‌روزرسانی خودکار: این افزونه را از فروشگاه وب Chrome اضافه کنید، سپس این نسخه را حذف کنید."
+  },
+  "page_open_store": {
+    "message": "باز کردن فروشگاه وب Chrome"
+  },
+  "page_temporary": {
+    "message": "Firefox این افزونه را هنگام بسته شدن حذف می‌کند، چون به‌صورت افزونه موقت اضافه شده است."
+  },
+  "page_site_access": {
+    "message": "این افزونه فقط در برخی سایت‌ها مجاز است، پس بارگیری‌های سایت‌های دیگر در مرورگر می‌مانند."
+  },
+  "page_allow_sites": {
+    "message": "اجازه در همه سایت‌ها"
+  },
+  "page_private": {
+    "message": "بارگیری‌های پنجره‌های خصوصی در مرورگر می‌مانند، زیرا این افزونه آنجا مجاز نیست."
+  },
+  "page_private_chromium": {
+    "message": "برای تغییر آن، «اجازه دادن در حالت ناشناس» را در صفحه جزئیات آن روشن کنید."
+  },
+  "page_private_firefox": {
+    "message": "برای تغییر آن، در صفحه افزونه در افزونه‌ها و تم‌ها، گزینه اجازه دادن را کنار «اجرا در پنجره‌های خصوصی» (Run in Private Windows) انتخاب کنید."
+  },
+  "page_learn_more": {
+    "message": "اطلاعات بیشتر"
+  },
+  "popup_video": {
+    "message": "بارگیری ویدیو از این صفحه"
+  },
+  "popup_all": {
+    "message": "بارگیری همه پیوندهای این صفحه"
+  },
+  "popup_no_links": {
+    "message": "این صفحه پیوندی برای بارگیری ندارد."
+  },
+  "popup_drm": {
+    "message": "ویدیو یا صدای این صفحه در برابر کپی محافظت شده است (DRM): بارگیری آن ممکن نیست."
+  },
+  "popup_status": {
+    "message": "وضعیت و راهنما"
+  },
+  "popup_options": {
+    "message": "گزینه‌های افزونه"
+  },
+  "popup_fix": {
+    "message": "ببینید چه کار باید کرد"
+  }
+}

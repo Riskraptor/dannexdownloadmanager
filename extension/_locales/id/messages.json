@@ -1,0 +1,488 @@
+{
+  "name": {
+    "message": "Dannex Download Manager"
+  },
+  "description": {
+    "message": "Mengirim file, tautan, dan video yang Anda unduh di browser ke aplikasi Dannex Download Manager di komputer Anda."
+  },
+  "menu": {
+    "message": "Unduh dengan DDM"
+  },
+  "video_download": {
+    "message": "Unduh video"
+  },
+  "video_more": {
+    "message": "Opsi lainnya"
+  },
+  "video_hide_here": {
+    "message": "Sembunyikan di video ini"
+  },
+  "video_close": {
+    "message": "Tutup"
+  },
+  "video_never_site": {
+    "message": "Jangan pernah di $site$",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "video_settings": {
+    "message": "Pengaturan tombol..."
+  },
+  "video_sent": {
+    "message": "Dikirim ke DDM"
+  },
+  "video_failed": {
+    "message": "Dannex Download Manager tidak terinstal atau tidak dimulai"
+  },
+  "video_drag": {
+    "message": "Seret untuk memindahkannya di sepanjang tepi video"
+  },
+  "menu_selected": {
+    "message": "Unduh tautan yang dipilih dengan DDM"
+  },
+  "menu_all": {
+    "message": "Unduh semua tautan dengan DDM"
+  },
+  "menu_images": {
+    "message": "Unduh semua gambar dengan DDM"
+  },
+  "menu_media": {
+    "message": "Unduh semua video dan audio dengan DDM"
+  },
+  "status_not_installed": {
+    "message": "Dannex Download Manager tidak terpasang"
+  },
+  "status_installed": {
+    "message": "Dannex Download Manager terpasang"
+  },
+  "status_forbidden": {
+    "message": "Perbarui Dannex Download Manager"
+  },
+  "status_not_running": {
+    "message": "Dannex Download Manager tidak dimulai"
+  },
+  "status_host_failed": {
+    "message": "Ada yang memblokir Dannex Download Manager"
+  },
+  "status_too_large": {
+    "message": "Unduhan terakhir tidak dapat dikirim ke Dannex Download Manager"
+  },
+  "status_update_app": {
+    "message": "Perbarui Dannex Download Manager untuk mendapatkan semua kemampuan ekstensi ini."
+  },
+  "popup_take": {
+    "message": "Kirim unduhan ke Dannex Download Manager"
+  },
+  "popup_proxy": {
+    "message": "Unduh melalui VPN atau proxy browser ini"
+  },
+  "popup_proxy_title": {
+    "message": "Aktifkan ini jika Anda menggunakan ekstensi VPN atau proxy. Browser akan bertanya sekali."
+  },
+  "popup_proxy_title_chromium": {
+    "message": "Aktifkan ini jika Anda menggunakan ekstensi VPN atau proxy di browser ini."
+  },
+  "popup_help": {
+    "message": "Bantuan"
+  },
+  "page_support": {
+    "message": "Dukung DDM"
+  },
+  "popup_declined": {
+    "message": "Unduhan terakhir Anda tetap di browser: $name$",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "setup.png"
+      }
+    }
+  },
+  "popup_declined_unnamed": {
+    "message": "Unduhan terakhir Anda tetap di browser."
+  },
+  "declined_file_type": {
+    "message": "Jenis filenya tidak ada dalam daftar Dannex Download Manager (Opsi → Jenis file)."
+  },
+  "declined_site": {
+    "message": "Situsnya ada dalam daftar situs yang diabaikan Dannex Download Manager (Opsi → Jenis file)."
+  },
+  "declined_address": {
+    "message": "Alamatnya ada dalam daftar alamat yang diabaikan Dannex Download Manager (Opsi → Jenis file)."
+  },
+  "declined_small": {
+    "message": "Ukurannya lebih kecil dari file terkecil yang diambil Dannex Download Manager (Opsi → Jenis file)."
+  },
+  "declined_browser": {
+    "message": "Browser ini tidak dicentang di Opsi → Umum Dannex Download Manager."
+  },
+  "declined_integration_off": {
+    "message": "Integrasi browser dimatikan di Opsi → Umum Dannex Download Manager."
+  },
+  "declined_site_access": {
+    "message": "Ekstensi ini tidak diizinkan di situs itu."
+  },
+  "declined_handed_back": {
+    "message": "Anda memilih Unduh dengan browser untuk unduhan ini di Dannex Download Manager."
+  },
+  "video_off": {
+    "message": "Tombol unduh nonaktif di situs ini"
+  },
+  "video_drm": {
+    "message": "Video dilindungi: tidak dapat disimpan"
+  },
+  "video_drm_audio": {
+    "message": "Audio dilindungi: tidak dapat disimpan"
+  },
+  "video_protected": {
+    "message": "Dilindungi"
+  },
+  "video_download_audio": {
+    "message": "Unduh audio"
+  },
+  "video_unnamed": {
+    "message": "Buka halaman video itu sendiri dan coba di sana"
+  },
+  "video_looking": {
+    "message": "Mencari kualitas…"
+  },
+  "video_open_mdm": {
+    "message": "Buka di DDM…"
+  },
+  "video_no_choices": {
+    "message": "Tidak ada video untuk diunduh di sini"
+  },
+  "video_playlist": {
+    "message": "Daftar video: pilih di Dannex Download Manager"
+  },
+  "video_no_ytdlp": {
+    "message": "Dannex Download Manager memerlukan yt-dlp untuk video ini. Buka di DDM… untuk memasangnya."
+  },
+  "video_too_long": {
+    "message": "Pencarian memakan waktu terlalu lama"
+  },
+  "video_busy": {
+    "message": "Dannex Download Manager sedang sibuk dengan video lain"
+  },
+  "video_queued": {
+    "message": "Ditambahkan ke antrean"
+  },
+  "video_failed_lookup": {
+    "message": "Gagal mencarinya"
+  },
+  "video_tab_video": {
+    "message": "Video"
+  },
+  "video_tab_audio": {
+    "message": "Audio"
+  },
+  "video_open_post": {
+    "message": "Buka postingan, lalu gunakan tombol di sana"
+  },
+  "video_audio_original": {
+    "message": "Hanya audio, $type$ asli",
+    "placeholders": {
+      "type": {
+        "content": "$1",
+        "example": "M4A"
+      }
+    }
+  },
+  "video_audio_only": {
+    "message": "Hanya audio $type$",
+    "placeholders": {
+      "type": {
+        "content": "$1",
+        "example": "MP3 320 kbps"
+      }
+    }
+  },
+  "video_audio_original_short": {
+    "message": "$type$ asli",
+    "placeholders": {
+      "type": {
+        "content": "$1",
+        "example": "M4A"
+      }
+    }
+  },
+  "video_pick_waiting": {
+    "message": "Dimulai segera setelah DDM siap…"
+  },
+  "video_pick_gone": {
+    "message": "Kualitas itu tidak tersedia: pilih yang lain"
+  },
+  "popup_send_to": {
+    "message": "Kirim unduhan ke"
+  },
+  "popup_send_here": {
+    "message": "Komputer ini"
+  },
+  "popup_send_remote": {
+    "message": "Dannex Download Manager di komputer lain"
+  },
+  "popup_remote_code": {
+    "message": "Kode pemasangan"
+  },
+  "popup_remote_open": {
+    "message": "Buka"
+  },
+  "popup_remote_pair": {
+    "message": "Pasangkan"
+  },
+  "popup_remote_help": {
+    "message": "Buka dulu alamatnya di sini, lalu masukkan kode dari Opsi → Jarak jauh → Pasangkan perangkat."
+  },
+  "status_remote": {
+    "message": "Unduhan masuk ke $address$",
+    "placeholders": {
+      "address": {
+        "content": "$1",
+        "example": "https://192.168.1.10:8463/"
+      }
+    }
+  },
+  "remote_address": {
+    "message": "Masukkan alamat https://-nya."
+  },
+  "remote_unreachable": {
+    "message": "Tidak dapat dijangkau. Buka alamatnya di browser ini, lanjutkan melewati peringatan keamanan, lalu coba lagi."
+  },
+  "remote_wrong_code": {
+    "message": "Kode salah."
+  },
+  "remote_no_code": {
+    "message": "Belum ada kode untuk dimasukkan: klik Pasangkan perangkat di sana terlebih dahulu."
+  },
+  "remote_too_soon": {
+    "message": "Tunggu sebentar, lalu coba lagi."
+  },
+  "remote_failed": {
+    "message": "Gagal. Coba lagi."
+  },
+  "remote_device_name": {
+    "message": "Ekstensi browser"
+  },
+  "badge_off": {
+    "message": "OFF"
+  },
+  "tip_on": {
+    "message": "Dannex Download Manager aktif."
+  },
+  "tip_off": {
+    "message": "Dannex Download Manager nonaktif."
+  },
+  "tip_remote": {
+    "message": "Unduhan dikirim ke Dannex Download Manager di $address$.",
+    "placeholders": {
+      "address": {
+        "content": "$1",
+        "example": "https://192.168.1.10:8463/"
+      }
+    }
+  },
+  "status_off_in_app": {
+    "message": "Dimatikan di Dannex Download Manager"
+  },
+  "status_duplicate": {
+    "message": "Salinan lain ekstensi ini terpasang"
+  },
+  "click_fix": {
+    "message": "Klik untuk melihat yang perlu dilakukan."
+  },
+  "click_details": {
+    "message": "Klik untuk melihat detail."
+  },
+  "toolbar_exclude": {
+    "message": "Jangan ambil unduhan dari situs ini"
+  },
+  "toolbar_help": {
+    "message": "Bantuan"
+  },
+  "toolbar_store": {
+    "message": "Dapatkan pembaruan otomatis dari Chrome Web Store..."
+  },
+  "options_take_note": {
+    "message": "Saat nonaktif, unduhan tetap di browser. Tombol ekstensi memiliki sakelar yang sama."
+  },
+  "options_what_to_do": {
+    "message": "Lihat yang perlu dilakukan"
+  },
+  "options_more": {
+    "message": "Lainnya"
+  },
+  "page_checking": {
+    "message": "Mencari Dannex Download Manager…"
+  },
+  "page_on_lead": {
+    "message": "Unduhan yang Anda mulai di browser ini masuk ke Dannex Download Manager."
+  },
+  "page_off_lead": {
+    "message": "Ekstensi dimatikan, sehingga unduhan tetap di browser ini."
+  },
+  "page_remote_title": {
+    "message": "Unduhan masuk ke Dannex Download Manager lain"
+  },
+  "page_remote_lead": {
+    "message": "Unduhan yang Anda mulai di browser ini masuk ke Dannex Download Manager di $address$.",
+    "placeholders": {
+      "address": {
+        "content": "$1",
+        "example": "https://192.168.1.10:8463/"
+      }
+    }
+  },
+  "page_lead_not_installed": {
+    "message": "Ekstensi ini memerlukan aplikasi gratis Dannex Download Manager. Instal aplikasinya, dan halaman ini akan diperbarui sendiri."
+  },
+  "page_lead_not_running": {
+    "message": "Browser mencoba memulainya, tetapi terlalu lama. Mulai Dannex Download Manager sendiri, lalu coba lagi."
+  },
+  "page_lead_host_failed": {
+    "message": "Perangkat lunak keamanan biasanya penyebabnya. Izinkan Dannex Download Manager di program antivirus Anda, atau pasang ulang."
+  },
+  "page_lead_forbidden": {
+    "message": "Versi Dannex Download Manager ini terlalu lama untuk ekstensi ini. Pasang yang terbaru."
+  },
+  "page_lead_too_large": {
+    "message": "Situs mengirim terlalu banyak data masuk. Keluar dari situs dan masuk lagi, lalu coba lagi."
+  },
+  "page_download": {
+    "message": "Unduh Dannex Download Manager"
+  },
+  "page_files_windows": {
+    "message": "Untuk Windows 10 dan 11."
+  },
+  "page_files_macos": {
+    "message": "Untuk Mac (image disk .dmg)."
+  },
+  "page_files_linux": {
+    "message": "Untuk Linux (AppImage, .deb, atau .rpm)."
+  },
+  "page_files_other": {
+    "message": "Untuk komputer Windows, Mac, dan Linux."
+  },
+  "page_all_downloads": {
+    "message": "Semua unduhan"
+  },
+  "page_step_windows": {
+    "message": "Jalankan penyiapan yang Anda unduh."
+  },
+  "page_step_macos": {
+    "message": "Buka .dmg, seret Dannex Download Manager ke Aplikasi, lalu mulai sekali."
+  },
+  "page_step_linux": {
+    "message": "Pasang .deb atau .rpm (atau jalankan AppImage), lalu mulai Dannex Download Manager sekali."
+  },
+  "page_step_other": {
+    "message": "Dannex Download Manager berjalan di komputer Windows, Mac, dan Linux. Pasang di salah satunya, lalu tambahkan ekstensi ini ke browser di sana."
+  },
+  "page_step_wait": {
+    "message": "Biarkan halaman ini tetap terbuka. Halaman berubah sendiri saat Dannex Download Manager siap."
+  },
+  "page_step_restart": {
+    "message": "Tidak ada perubahan setelah satu menit? Mulai ulang browser."
+  },
+  "page_step_installed": {
+    "message": "Sudah terpasang? Di Dannex Download Manager, buka Opsi → Umum → Uji integrasi browser."
+  },
+  "page_try_again": {
+    "message": "Coba lagi"
+  },
+  "page_app_options": {
+    "message": "Buka Opsi Dannex Download Manager"
+  },
+  "page_duplicate_title": {
+    "message": "Hapus salinan ini"
+  },
+  "page_duplicate_lead": {
+    "message": "Salinan dari Chrome Web Store juga terpasang dan memperbarui dirinya sendiri. Anda dapat menghapus yang ini."
+  },
+  "page_remove": {
+    "message": "Hapus salinan ini"
+  },
+  "page_extensions": {
+    "message": "Buka halaman ekstensi"
+  },
+  "page_update_app_how": {
+    "message": "Di Dannex Download Manager, pilih Bantuan → Periksa pembaruan..."
+  },
+  "page_behind": {
+    "message": "Versi ekstensi ini yang lebih baru disertakan bersama Dannex Download Manager $version$.",
+    "placeholders": {
+      "version": {
+        "content": "$1",
+        "example": "0.7.0"
+      }
+    }
+  },
+  "page_behind_store": {
+    "message": "Browser memperbaruinya sendiri dalam beberapa jam, atau sekarang dengan Periksa pembaruan."
+  },
+  "page_behind_unpacked": {
+    "message": "Muat ulang ekstensi untuk menggunakannya."
+  },
+  "page_behind_other": {
+    "message": "Tambahkan yang baru dari folder Dannex Download Manager, seperti Anda menambahkan yang ini."
+  },
+  "page_check_updates": {
+    "message": "Periksa pembaruan"
+  },
+  "page_up_to_date": {
+    "message": "Belum ada versi yang lebih baru. Browser akan memeriksa lagi sendiri."
+  },
+  "page_reload": {
+    "message": "Muat ulang ekstensi"
+  },
+  "page_store": {
+    "message": "Dapatkan pembaruan otomatis: tambahkan ekstensi ini dari Chrome Web Store, lalu hapus salinan ini."
+  },
+  "page_open_store": {
+    "message": "Buka Chrome Web Store"
+  },
+  "page_temporary": {
+    "message": "Firefox akan menghapus add-on ini saat ditutup, karena ditambahkan sebagai add-on sementara."
+  },
+  "page_site_access": {
+    "message": "Ekstensi ini hanya diizinkan di beberapa situs, sehingga unduhan dari situs lain tetap di browser."
+  },
+  "page_allow_sites": {
+    "message": "Izinkan di semua situs"
+  },
+  "page_private": {
+    "message": "Unduhan dari jendela pribadi tetap di browser, karena ekstensi ini tidak diizinkan di sana."
+  },
+  "page_private_chromium": {
+    "message": "Untuk mengubahnya, aktifkan Izinkan dalam Mode Samaran di halaman detailnya."
+  },
+  "page_private_firefox": {
+    "message": "Untuk mengubahnya, pilih Izinkan di samping Jalankan di Jendela Pribadi pada halaman ekstensi di Pengaya dan tema."
+  },
+  "page_learn_more": {
+    "message": "Pelajari lebih lanjut"
+  },
+  "popup_video": {
+    "message": "Unduh video dari halaman ini"
+  },
+  "popup_all": {
+    "message": "Unduh semua tautan dari halaman ini"
+  },
+  "popup_no_links": {
+    "message": "Halaman ini tidak memiliki tautan untuk diunduh."
+  },
+  "popup_drm": {
+    "message": "Video atau audio halaman ini dilindungi dari penyalinan (DRM): tidak dapat diunduh."
+  },
+  "popup_status": {
+    "message": "Status dan bantuan"
+  },
+  "popup_options": {
+    "message": "Opsi ekstensi"
+  },
+  "popup_fix": {
+    "message": "Lihat yang perlu dilakukan"
+  }
+}

@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en" class="js-off">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dannex Download Manager — download anything at full speed, free</title>
+  <meta name="description" content="A free, open-source download manager for Windows, Linux and Mac. Files, videos, music and torrents, caught from your browser and fetched over several connections at once. No ads, no trial, no sign-up.">
+  <meta name="theme-color" content="#111842">
+  <meta name="color-scheme" content="light dark">
+  <link rel="canonical" href="{{SITE}}/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Dannex Download Manager">
+  <meta property="og:title" content="Dannex Download Manager — download anything at full speed">
+  <meta property="og:description" content="Files, videos, music and torrents, faster and free. A browser extension in the Chrome Web Store, ten themes, {{LANGS}} languages.">
+  <meta property="og:url" content="{{SITE}}/">
+  <meta property="og:image" content="{{SITE}}/assets/social.png">
+  <meta property="og:image:width" content="1280">
+  <meta property="og:image:height" content="640">
+  <meta property="og:image:alt" content="Dannex Download Manager: a fast, free download manager">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="/favicon.ico" sizes="16x16 32x32 48x48 64x64">
+  <link rel="icon" href="/assets/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="alternate" type="application/atom+xml" title="Dannex Download Manager news" href="/news.xml">
+  <link rel="stylesheet" href="/styles.css">
+  <!--@theme-->
+  <script src="/main.js" defer></script>
+  <script type="application/ld+json">{{SOFTWARE_LD}}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Dannex Download Manager","alternateName":"DDM","url":"{{SITE}}/"}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Dannex Download Manager","alternateName":"DDM","url":"{{SITE}}/","logo":"{{SITE}}/assets/logo-640.png","sameAs":["https://github.com/Riskraptor/dannexdownloadmanager"]}</script>
+</head>
+<body class="home">
+  <!--@header-->
+
+  <main id="main">
+    <!-- The facade: the blade sign, the marquee with the headline on its lit rails, the box
+         office, and the real window as the screen beneath. -->
+    <section class="facade" aria-labelledby="hero-title">
+      <div class="wrap facade-inner">
+        <div class="blade" aria-hidden="true" translate="no"><span>D</span><span>A</span><span>N</span><span>N</span><span>E</span><span>X</span></div>
+        <div class="marquee" data-lights>
+          <h1 class="rails" id="hero-title"><span class="rail">Download anything</span> <span class="rail">at full speed</span></h1>
+        </div>
+        <div class="box-office">
+          <p class="facade-sub">Files, videos, music and torrents, caught from your browser and fetched over several connections at once. Free, with no ads, no trial and no sign-up.</p>
+          <div class="office-act">
+            <!--@split-->
+            <!--@if-cws--><a class="btn btn-store" href="{{CWS}}"><img src="/assets/browsers/chrome.svg" width="22" height="22" alt=""> Add to Chrome</a><!--@else--><a class="btn btn-store" href="/download.html#extension"><img src="/assets/browsers/chrome.svg" width="22" height="22" alt=""> Get the browser extension</a><!--/@if-cws-->
+          </div>
+          <p class="facade-fine">Windows 10 and 11 · <a href="/download.html#linux">Linux</a> · <a href="/download.html#macos">Mac</a> to try · version {{VERSION}}</p>
+          <p class="fine" data-mobile-note hidden>It's a program for your computer: open this page there to download it.</p>
+        </div>
+        <figure class="screen" data-lightbox>
+          <div class="screen-frame">
+            <img class="for-light" src="/assets/screens/main-light.webp" width="930" height="500" fetchpriority="high" alt="Dannex Download Manager's main window: web and torrent downloads in one list, with categories, sizes, progress, speeds and dates.">
+            <img class="for-dark" src="/assets/screens/main-dark.webp" width="930" height="500" alt="Dannex Download Manager's main window in dark mode: web and torrent downloads in one list.">
+            <svg class="comet" viewBox="0 0 400 400" aria-hidden="true"><use href="#comet"/></svg>
+          </div>
+          <figcaption>The real app on Windows 11. Every picture on this site is the app itself, unretouched.</figcaption>
+        </figure>
+      </div>
+      <!--@os-data-->
+    </section>
+
+    <!-- The lobby: what is showing, as one-sheets in their light boxes. -->
+    <section class="lobby" id="whats-on" aria-labelledby="bill-title">
+      <div class="wrap">
+        <header class="sec-head">
+          <h2 id="bill-title">Everything you download, in one place</h2>
+          <p>Files are only the start. Here is what else DDM brings in, shown in the real windows.</p>
+        </header>
+        <div class="posters">
+          <article class="poster poster-lead" aria-labelledby="p-video">
+            <h3 class="poster-title" id="p-video">Video and music from almost any site</h3>
+            <p class="poster-line">A Download button sits on videos and music players. Pick a quality, or just the sound, and it's on its way.</p>
+            <figure class="poster-art" data-lightbox>
+              <img class="for-light" src="/help/images/help/video-qualities.webp" width="625" height="520" loading="lazy" alt="Download video from a page: a page's qualities, a 360p MP4 and the sound alone as M4A, with their sizes.">
+              <img class="for-dark" src="/help/images/help/video-qualities-dark.webp" width="625" height="520" loading="lazy" alt="Download video from a page: a page's qualities, a 360p MP4 and the sound alone as M4A, with their sizes.">
+            </figure>
+            <p class="credits"><span class="credits-role">Works on</span> <b translate="no">YouTube</b> <b translate="no">YouTube Music</b> <b translate="no">Vimeo</b> <b translate="no">SoundCloud</b> <b translate="no">Bandcamp</b> <b translate="no">Mixcloud</b> <span class="credits-role">and thousands of other sites</span></p>
+            <p class="poster-note">TikTok, X and internet radio join them, and music players get a button of their own.</p>
+            <p class="poster-note">Copy-protected music and films, such as Spotify's or Netflix's, can't be saved, and DDM says so.</p>
+            <a class="poster-more" href="/features/video.html">How video downloads work</a>
+          </article>
+
+          <article class="poster" aria-labelledby="p-torrent">
+            <h3 class="poster-title" id="p-torrent">Watch torrents as they arrive</h3>
+            <p class="poster-line">Magnet links and .torrent files join the same list. Choose Play while downloading and the film starts in your browser while the rest comes in.</p>
+            <figure class="poster-art" data-lightbox>
+              <img class="for-light" src="/assets/screens/torrent-light.webp" width="546" height="546" loading="lazy" alt="A torrent's progress window on its Pieces tab: a square for each piece, filled once it's here.">
+              <img class="for-dark" src="/assets/screens/torrent-dark.webp" width="546" height="546" loading="lazy" alt="A torrent's progress window on its Pieces tab: a square for each piece, filled once it's here.">
+            </figure>
+            <p class="credits"><span class="credits-role">Pieces in order</span> <b>skip ahead and that part comes first</b> <span class="credits-role">plays on your computer only</span></p>
+            <a class="poster-more" href="/features/torrents.html">How torrents work in DDM</a>
+          </article>
+
+          <article class="poster" aria-labelledby="p-links">
+            <h3 class="poster-title" id="p-links">Every link on a page, in one list</h3>
+            <p class="poster-line">Right-click a page and choose Download all links. Tick what you want, leave the rest, and it all comes down together.</p>
+            <figure class="poster-art" data-lightbox>
+              <img class="for-light" src="/help/images/help/link-grabber.webp" width="800" height="626" loading="lazy" alt="The Link grabber: a page's links in packages, each with its size and whether it's online, ticked to download.">
+              <img class="for-dark" src="/help/images/help/link-grabber-dark.webp" width="800" height="626" loading="lazy" alt="The Link grabber: a page's links in packages, each with its size and whether it's online, ticked to download.">
+            </figure>
+            <p class="credits"><span class="credits-role">Checked online first</span> <b>grouped into packages</b> <span class="credits-role">archives unpacked when they're done</span></p>
+            <a class="poster-more" href="/features/link-grabber.html">How the Link grabber works</a>
+          </article>
+
+          <article class="poster poster-wide" aria-labelledby="p-themes">
+            <h3 class="poster-title" id="p-themes">{{THEMES}} looks, each light and dark</h3>
+            <p class="poster-line">Change how the whole window looks in one click, everything still where it was. Or write a look of your own in a small text file.</p>
+            <figure class="poster-art theme-fan" data-lightbox>
+              <img class="for-light" src="/help/images/help/site-theme-aqua.webp" width="1162" height="375" loading="lazy" alt="The main window in the Aqua theme.">
+              <img class="for-dark" src="/help/images/help/site-theme-aqua-dark.webp" width="1162" height="375" loading="lazy" alt="The main window in the Aqua theme, dark side.">
+              <img class="for-light" src="/help/images/help/site-theme-metro.webp" width="1162" height="375" loading="lazy" alt="The main window in the Metro theme.">
+              <img class="for-dark" src="/help/images/help/site-theme-metro-dark.webp" width="1162" height="375" loading="lazy" alt="The main window in the Metro theme, dark side.">
+              <img class="for-light" src="/help/images/help/site-theme-luna.webp" width="1162" height="375" loading="lazy" alt="The main window in the Luna theme.">
+              <img class="for-dark" src="/help/images/help/site-theme-luna-dark.webp" width="1162" height="375" loading="lazy" alt="The main window in the Luna theme, dark side.">
+            </figure>
+            <p class="credits"><span class="credits-role">Now showing</span> <b>Classic</b> <b>Native</b> <b>High contrast</b> <b translate="no">Metro</b> <b translate="no">Adwaita</b> <b translate="no">Breeze</b> <b translate="no">Luna</b> <b translate="no">Aero</b> <b translate="no">Aqua</b> <b translate="no">Emerald</b></p>
+            <a class="poster-more" href="/themes.html">See every theme</a>
+          </article>
+        </div>
+
+        <div class="also">
+          <h3 class="also-title">Also on the programme</h3>
+          <ul class="also-list" role="list">
+            <li><a href="/features/scheduler.html"><b>Downloads overnight</b><span>Queues that start at 2 a.m. and switch the computer off when they're done</span></a></li>
+            <li><a href="/features/speed-limiter.html"><b>A speed limit</b><span>Leave room on the line for everything else</span></a></li>
+            <li><a href="/features/import-idm.html"><b>Your IDM list</b><span>Brought over in one step, addresses and all</span></a></li>
+            <li><a href="/features/remote.html"><b>Control from your phone</b><span>Paste a link on your phone and your computer downloads it</span></a></li>
+            <li><a href="/features/languages.html"><b>{{LANGS}} languages</b><span>Every one Windows 11 offers, right to left too</span></a></li>
+            <li><a href="/features/acceleration.html"><b>Resume after a crash</b><span>A dropped line or a restart picks up where it stopped</span></a></li>
+          </ul>
+          <a class="text-link" href="/features/">All {{FEATURES}} features <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- The box office: the extension, in its arched window. -->
+    <section class="arch-sec" id="extension" aria-labelledby="ext-title">
+      <div class="wrap">
+        <div class="arch">
+          <div class="arch-window">
+            <img class="arch-logo" src="/assets/browsers/chrome.svg" width="56" height="56" alt="">
+            <h2 id="ext-title">Add DDM to your browser</h2>
+            <p>The extension hands your browser's downloads to DDM, adds Download with DDM to the right-click menu, and puts the Download button on videos and music.</p>
+            <!--@if-cws--><a class="btn btn-store btn-big" href="{{CWS}}"><img src="/assets/browsers/chrome.svg" width="24" height="24" alt=""> Add to Chrome, free</a>
+            <p class="arch-fine">From the Chrome Web Store, for Chrome, Edge, Brave, Opera and Vivaldi. Firefox: the add-on comes with the app (<a href="/help/browser-integration.html#firefox">how</a>).</p><!--@else--><a class="btn btn-store btn-big" href="/download.html#extension"><img src="/assets/browsers/chrome.svg" width="24" height="24" alt=""> Get the extension</a>
+            <p class="arch-fine">It comes with the app, for Chrome, Edge, Brave, Opera, Vivaldi and Firefox (<a href="/help/guide-catch-browser-downloads.html">how to add it</a>).</p><!--/@if-cws-->
+            <ul class="browser-row" role="list" translate="no">
+              <li><img src="/assets/browsers/chrome.svg" width="26" height="26" alt="">Chrome</li>
+              <li><img src="/assets/browsers/edge.svg" width="26" height="26" alt="">Edge</li>
+              <li><img src="/assets/browsers/brave.svg" width="26" height="26" alt="">Brave</li>
+              <li><img src="/assets/browsers/opera.svg" width="26" height="26" alt="">Opera</li>
+              <li><img src="/assets/browsers/vivaldi.svg" width="26" height="26" alt="">Vivaldi</li>
+              <li><img src="/assets/browsers/firefox.svg" width="26" height="26" alt="">Firefox</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Running times: the benchmarks on a felt letter board, each with its source. -->
+    <section class="speed" id="speed" aria-labelledby="speed-title">
+      <div class="wrap">
+        <header class="sec-head">
+          <h2 id="speed-title">Clocked against IDM 6.42</h2>
+          <p>Both programs on the same PC, the same download from the same test server, in turns. DDM finished first in every test we ran.</p>
+        </header>
+        <div class="boards">
+          <figure class="board">
+            <table>
+              <caption>Against IDM 6.42 · October 2026</caption>
+              <thead><tr><th scope="col">The download</th><th scope="col">DDM</th><th scope="col" translate="no">IDM</th></tr></thead>
+              <tbody>
+                <tr><th scope="row">1 GiB over a fast link</th><td class="ours">1.0 s</td><td>5.5 s</td></tr>
+                <tr><th scope="row">A 256 KiB file</th><td class="ours">0.03 s</td><td>3.1 s</td></tr>
+                <tr><th scope="row">A server that allows 2 connections</th><td class="ours">12.6 s <small>on 2 connections</small></td><td>15.9 s <small>after opening 480</small></td></tr>
+              </tbody>
+            </table>
+            <figcaption>Medians of alternating runs, measured on the server's own log. <a href="/benchmark.html">Every run and the raw data</a></figcaption>
+          </figure>
+          <figure class="board board-new">
+            <table>
+              <caption>The new engine against the one before it · November 2026</caption>
+              <thead><tr><th scope="col">The download</th><th scope="col">Now</th><th scope="col">Before</th></tr></thead>
+              <tbody>
+                <tr><th scope="row">32 MiB with stalling connections</th><td class="ours">3.8 s</td><td>13.6 s</td></tr>
+                <tr><th scope="row">8 MiB from an HTTP/2 server</th><td class="ours">1.3 s</td><td>8.2 s</td></tr>
+                <tr><th scope="row">A 256 KiB file, from the command line</th><td class="ours">0.14 s</td><td>0.61 s</td></tr>
+              </tbody>
+            </table>
+            <figcaption>Lab server, medians of three runs. Not every test got faster: <a href="{{REPO}}/blob/main/docs/bench/speed-2026-11-27.md">the full report</a> says which.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Admission: what it costs (nothing), on the price board, and coming from IDM. -->
+    <section class="admission" id="free" aria-labelledby="free-title">
+      <div class="wrap admission-inner">
+        <header class="sec-head">
+          <h2 id="free-title">Free, with nothing to pay later</h2>
+          <p>No trial that runs out, no paid edition, no licence key. The code is open for anyone to read, and every download is built from it in public.</p>
+          <p class="from-idm"><b>Coming from IDM?</b> The windows and menus are where you expect them, and your IDM list comes over in one step. <a href="/idm-alternative.html">Switching from IDM</a></p>
+        </header>
+        <figure class="board board-price">
+          <table>
+            <caption>Admission</caption>
+            <tbody>
+              <tr><th scope="row">Price</th><td>Free</td></tr>
+              <tr><th scope="row">Ads</th><td>None</td></tr>
+              <tr><th scope="row">Trial</th><td>None, it never runs out</td></tr>
+              <tr><th scope="row">Sign-up</th><td>None</td></tr>
+              <tr><th scope="row">Tracking</th><td>None in the app</td></tr>
+              <tr><th scope="row">Source code</th><td><a href="{{REPO}}">Open, on GitHub</a></td></tr>
+              <tr><th scope="row">Languages</th><td>{{LANGS}}, right to left too</td></tr>
+            </tbody>
+          </table>
+          <figcaption>Licence: GNU GPL 3.0. Every file is built by GitHub Actions and listed with its <a href="/download.html#check-your-download">SHA-256 checksum</a>.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- The last showing: the marquee again, the box office, the credits. -->
+    <section class="finale" aria-labelledby="final-title">
+      <div class="wrap finale-inner">
+        <div class="marquee marquee-small" data-lights>
+          <h2 class="rails" id="final-title"><span class="rail">Try it tonight</span> <span class="rail">It's free</span></h2>
+        </div>
+        <div class="booth">
+          <div class="booth-window">
+            <!--@split-->
+            <p class="booth-fine">Version {{VERSION}} · Windows 10 and 11, Linux, and Mac to try · free, nothing to sign</p>
+          </div>
+        </div>
+        <ul class="finale-links" role="list">
+          <li><a href="/help/getting-started.html">Installing it</a></li>
+          <li><a href="/help/guide-first-download.html">Your first download</a></li>
+          <li><a href="/faq/">Questions people ask</a></li>
+          <li><a href="{{REPO}}/issues/new?template=bug.yml">Report a problem</a></li>
+        </ul>
+        <!--@crew-->
+      </div>
+    </section>
+  </main>
+
+  <!--@footer-->
+</body>
+</html>

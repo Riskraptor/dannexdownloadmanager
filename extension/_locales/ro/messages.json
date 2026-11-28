@@ -1,0 +1,488 @@
+{
+  "name": {
+    "message": "Dannex Download Manager"
+  },
+  "description": {
+    "message": "Trimite fișierele, linkurile și videoclipurile pe care le descărcați în browser către aplicația Dannex Download Manager de pe computer."
+  },
+  "menu": {
+    "message": "Descărcați cu DDM"
+  },
+  "video_download": {
+    "message": "Descărcați videoclipul"
+  },
+  "video_more": {
+    "message": "Mai multe opțiuni"
+  },
+  "video_hide_here": {
+    "message": "Ascundeți pe acest videoclip"
+  },
+  "video_close": {
+    "message": "Închidere"
+  },
+  "video_never_site": {
+    "message": "Niciodată pe $site$",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "video_settings": {
+    "message": "Setări buton..."
+  },
+  "video_sent": {
+    "message": "Trimis la DDM"
+  },
+  "video_failed": {
+    "message": "Dannex Download Manager nu este instalat sau nu a pornit"
+  },
+  "video_drag": {
+    "message": "Trageți pentru a-l muta de-a lungul marginii videoclipului"
+  },
+  "menu_selected": {
+    "message": "Descărcați linkurile selectate cu DDM"
+  },
+  "menu_all": {
+    "message": "Descărcați toate linkurile cu DDM"
+  },
+  "menu_images": {
+    "message": "Descărcați toate imaginile cu DDM"
+  },
+  "menu_media": {
+    "message": "Descărcați toate videoclipurile și fișierele audio cu DDM"
+  },
+  "status_not_installed": {
+    "message": "Dannex Download Manager nu este instalat"
+  },
+  "status_installed": {
+    "message": "Dannex Download Manager este instalat"
+  },
+  "status_forbidden": {
+    "message": "Actualizare Dannex Download Manager"
+  },
+  "status_not_running": {
+    "message": "Dannex Download Manager nu a pornit"
+  },
+  "status_host_failed": {
+    "message": "Ceva blochează Dannex Download Manager"
+  },
+  "status_too_large": {
+    "message": "Ultima descărcare nu a putut merge către Dannex Download Manager"
+  },
+  "status_update_app": {
+    "message": "Actualizați Dannex Download Manager pentru a beneficia de tot ce poate face această extensie."
+  },
+  "popup_take": {
+    "message": "Trimitere descărcări către Dannex Download Manager"
+  },
+  "popup_proxy": {
+    "message": "Descărcare prin VPN-ul sau proxy-ul acestui browser"
+  },
+  "popup_proxy_title": {
+    "message": "Activați această opțiune dacă folosiți o extensie VPN sau proxy. Browserul vă întreabă o dată."
+  },
+  "popup_proxy_title_chromium": {
+    "message": "Activați această opțiune dacă folosiți o extensie VPN sau proxy în acest browser."
+  },
+  "popup_help": {
+    "message": "Ajutor"
+  },
+  "page_support": {
+    "message": "Susțineți DDM"
+  },
+  "popup_declined": {
+    "message": "Ultima dvs. descărcare a rămas în browser: $name$",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "setup.png"
+      }
+    }
+  },
+  "popup_declined_unnamed": {
+    "message": "Ultima dvs. descărcare a rămas în browser."
+  },
+  "declined_file_type": {
+    "message": "Tipul lui de fișier nu se află în lista Dannex Download Manager (Opțiuni → Tipuri de fișiere)."
+  },
+  "declined_site": {
+    "message": "Site-ul lui se află în lista de site-uri pe care Dannex Download Manager le lasă deoparte (Opțiuni → Tipuri de fișiere)."
+  },
+  "declined_address": {
+    "message": "Adresa lui se află în lista de adrese pe care Dannex Download Manager le lasă deoparte (Opțiuni → Tipuri de fișiere)."
+  },
+  "declined_small": {
+    "message": "Este mai mic decât cel mai mic fișier preluat de Dannex Download Manager (Opțiuni → Tipuri de fișiere)."
+  },
+  "declined_browser": {
+    "message": "Acest browser nu este bifat în Opțiuni → General din Dannex Download Manager."
+  },
+  "declined_integration_off": {
+    "message": "Integrarea cu browserul este dezactivată în Opțiuni → General din Dannex Download Manager."
+  },
+  "declined_site_access": {
+    "message": "Această extensie nu este permisă pe acel site."
+  },
+  "declined_handed_back": {
+    "message": "Ați ales „Descărcare cu browserul” pentru acest fișier în Dannex Download Manager."
+  },
+  "video_off": {
+    "message": "Butonul de descărcare este dezactivat pe acest site"
+  },
+  "video_drm": {
+    "message": "Videoclip protejat: nu poate fi salvat"
+  },
+  "video_drm_audio": {
+    "message": "Audio protejat: nu poate fi salvat"
+  },
+  "video_protected": {
+    "message": "Protejat"
+  },
+  "video_download_audio": {
+    "message": "Descărcare audio"
+  },
+  "video_unnamed": {
+    "message": "Deschideți pagina proprie a videoclipului și încercați acolo"
+  },
+  "video_looking": {
+    "message": "Se caută calitățile…"
+  },
+  "video_open_mdm": {
+    "message": "Deschideți în DDM…"
+  },
+  "video_no_choices": {
+    "message": "Nu există niciun videoclip de descărcat aici"
+  },
+  "video_playlist": {
+    "message": "O listă de videoclipuri: alegeți-le în Dannex Download Manager"
+  },
+  "video_no_ytdlp": {
+    "message": "Dannex Download Manager are nevoie de yt-dlp pentru acest videoclip. Deschideți în DDM… pentru a-l instala."
+  },
+  "video_too_long": {
+    "message": "Căutarea a durat prea mult"
+  },
+  "video_busy": {
+    "message": "Dannex Download Manager este ocupat cu alte videoclipuri"
+  },
+  "video_queued": {
+    "message": "Adăugat la coadă"
+  },
+  "video_failed_lookup": {
+    "message": "Căutarea nu a reușit"
+  },
+  "video_tab_video": {
+    "message": "Video"
+  },
+  "video_tab_audio": {
+    "message": "Audio"
+  },
+  "video_open_post": {
+    "message": "Deschideți postarea, apoi utilizați butonul de acolo"
+  },
+  "video_audio_original": {
+    "message": "Doar audio, original $type$",
+    "placeholders": {
+      "type": {
+        "content": "$1",
+        "example": "M4A"
+      }
+    }
+  },
+  "video_audio_only": {
+    "message": "Doar audio $type$",
+    "placeholders": {
+      "type": {
+        "content": "$1",
+        "example": "MP3 320 kbps"
+      }
+    }
+  },
+  "video_audio_original_short": {
+    "message": "$type$ original",
+    "placeholders": {
+      "type": {
+        "content": "$1",
+        "example": "M4A"
+      }
+    }
+  },
+  "video_pick_waiting": {
+    "message": "Pornește imediat ce DDM este gata…"
+  },
+  "video_pick_gone": {
+    "message": "Calitatea aceasta nu este disponibilă: alegeți alta"
+  },
+  "popup_send_to": {
+    "message": "Trimite descărcările la"
+  },
+  "popup_send_here": {
+    "message": "Acest computer"
+  },
+  "popup_send_remote": {
+    "message": "Dannex Download Manager pe alt computer"
+  },
+  "popup_remote_code": {
+    "message": "Cod de asociere"
+  },
+  "popup_remote_open": {
+    "message": "Deschideți-l"
+  },
+  "popup_remote_pair": {
+    "message": "Asociați"
+  },
+  "popup_remote_help": {
+    "message": "Mai întâi deschideți aici adresa sa, apoi introduceți codul din Opțiuni → Telecomandă → Asociați un dispozitiv."
+  },
+  "status_remote": {
+    "message": "Descărcările merg la $address$",
+    "placeholders": {
+      "address": {
+        "content": "$1",
+        "example": "https://192.168.1.10:8463/"
+      }
+    }
+  },
+  "remote_address": {
+    "message": "Introduceți adresa https://."
+  },
+  "remote_unreachable": {
+    "message": "Nu a putut fi contactat. Deschideți adresa lui în acest browser, treceți peste avertismentul de securitate, apoi încercați din nou."
+  },
+  "remote_wrong_code": {
+    "message": "Cod greșit."
+  },
+  "remote_no_code": {
+    "message": "Încă nu există niciun cod de introdus: faceți mai întâi clic acolo pe Asociați un dispozitiv."
+  },
+  "remote_too_soon": {
+    "message": "Așteptați un moment, apoi încercați din nou."
+  },
+  "remote_failed": {
+    "message": "Nu a funcționat. Încercați din nou."
+  },
+  "remote_device_name": {
+    "message": "Extensie de browser"
+  },
+  "badge_off": {
+    "message": "OFF"
+  },
+  "tip_on": {
+    "message": "Dannex Download Manager este activat."
+  },
+  "tip_off": {
+    "message": "Dannex Download Manager este dezactivat."
+  },
+  "tip_remote": {
+    "message": "Descărcările sunt trimise către Dannex Download Manager de la $address$.",
+    "placeholders": {
+      "address": {
+        "content": "$1",
+        "example": "https://192.168.1.10:8463/"
+      }
+    }
+  },
+  "status_off_in_app": {
+    "message": "Dezactivat în Dannex Download Manager"
+  },
+  "status_duplicate": {
+    "message": "Este instalată o altă copie a acestei extensii"
+  },
+  "click_fix": {
+    "message": "Faceți clic pentru a vedea ce aveți de făcut."
+  },
+  "click_details": {
+    "message": "Faceți clic pentru detalii."
+  },
+  "toolbar_exclude": {
+    "message": "Nu se preiau descărcări de pe acest site"
+  },
+  "toolbar_help": {
+    "message": "Ajutor"
+  },
+  "toolbar_store": {
+    "message": "Obținere actualizări automate din Chrome Web Store..."
+  },
+  "options_take_note": {
+    "message": "Când este dezactivată, descărcările rămân în browser. Butonul extensiei are același comutator."
+  },
+  "options_what_to_do": {
+    "message": "Vedeți ce aveți de făcut"
+  },
+  "options_more": {
+    "message": "Mai mult"
+  },
+  "page_checking": {
+    "message": "Se caută Dannex Download Manager…"
+  },
+  "page_on_lead": {
+    "message": "Descărcările pe care le porniți în acest browser merg către Dannex Download Manager."
+  },
+  "page_off_lead": {
+    "message": "Este dezactivată, așa că descărcările rămân în acest browser."
+  },
+  "page_remote_title": {
+    "message": "Descărcările merg către alt Dannex Download Manager"
+  },
+  "page_remote_lead": {
+    "message": "Descărcările pe care le porniți în acest browser merg către Dannex Download Manager de la $address$.",
+    "placeholders": {
+      "address": {
+        "content": "$1",
+        "example": "https://192.168.1.10:8463/"
+      }
+    }
+  },
+  "page_lead_not_installed": {
+    "message": "Această extensie are nevoie de aplicația gratuită Dannex Download Manager. Instalați-o, iar această pagină se va actualiza singură."
+  },
+  "page_lead_not_running": {
+    "message": "Browserul a încercat să îl pornească, dar a durat prea mult. Porniți Dannex Download Manager chiar dvs., apoi încercați din nou."
+  },
+  "page_lead_host_failed": {
+    "message": "De obicei, cauza este software-ul de securitate. Permiteți Dannex Download Manager în programul antivirus sau reinstalați-l."
+  },
+  "page_lead_forbidden": {
+    "message": "Această versiune de Dannex Download Manager este prea veche pentru această extensie. Instalați-o pe cea mai recentă."
+  },
+  "page_lead_too_large": {
+    "message": "Site-ul a trimis prea multe date de conectare. Deconectați-vă de pe site, conectați-vă din nou și încercați iar."
+  },
+  "page_download": {
+    "message": "Descărcare Dannex Download Manager"
+  },
+  "page_files_windows": {
+    "message": "Pentru Windows 10 și 11."
+  },
+  "page_files_macos": {
+    "message": "Pentru Mac (o imagine de disc .dmg)."
+  },
+  "page_files_linux": {
+    "message": "Pentru Linux (AppImage, .deb sau .rpm)."
+  },
+  "page_files_other": {
+    "message": "Pentru computere cu Windows, Mac și Linux."
+  },
+  "page_all_downloads": {
+    "message": "Toate descărcările"
+  },
+  "page_step_windows": {
+    "message": "Rulați programul de instalare descărcat."
+  },
+  "page_step_macos": {
+    "message": "Deschideți fișierul .dmg, trageți Dannex Download Manager în Applications și porniți-l o dată."
+  },
+  "page_step_linux": {
+    "message": "Instalați fișierul .deb sau .rpm (sau rulați AppImage), apoi porniți Dannex Download Manager o dată."
+  },
+  "page_step_other": {
+    "message": "Dannex Download Manager rulează pe computere cu Windows, Mac și Linux. Instalați-l pe unul dintre ele și adăugați această extensie într-un browser de acolo."
+  },
+  "page_step_wait": {
+    "message": "Lăsați această pagină deschisă. Se schimbă singură când Dannex Download Manager este gata."
+  },
+  "page_step_restart": {
+    "message": "Nimic după un minut? Reporniți browserul."
+  },
+  "page_step_installed": {
+    "message": "Este deja instalat? În Dannex Download Manager, deschideți Opțiuni → General → Testați integrarea browserului."
+  },
+  "page_try_again": {
+    "message": "Încercați din nou"
+  },
+  "page_app_options": {
+    "message": "Deschidere Opțiuni Dannex Download Manager"
+  },
+  "page_duplicate_title": {
+    "message": "Eliminare copie"
+  },
+  "page_duplicate_lead": {
+    "message": "Copia din Magazinul web Chrome este și ea instalată și se actualizează singură. O puteți elimina pe aceasta."
+  },
+  "page_remove": {
+    "message": "Eliminare copie"
+  },
+  "page_extensions": {
+    "message": "Deschidere pagină de extensii"
+  },
+  "page_update_app_how": {
+    "message": "În Dannex Download Manager, alegeți Ajutor → Căutați actualizări..."
+  },
+  "page_behind": {
+    "message": "O versiune mai nouă a acestei extensii a venit odată cu Dannex Download Manager $version$.",
+    "placeholders": {
+      "version": {
+        "content": "$1",
+        "example": "0.7.0"
+      }
+    }
+  },
+  "page_behind_store": {
+    "message": "Browserul o actualizează singur în câteva ore sau chiar acum cu Căutare actualizări."
+  },
+  "page_behind_unpacked": {
+    "message": "Reîncărcați extensia pentru a o folosi."
+  },
+  "page_behind_other": {
+    "message": "Adăugați-o pe cea nouă din folderul Dannex Download Manager, așa cum ați adăugat-o pe aceasta."
+  },
+  "page_check_updates": {
+    "message": "Căutare actualizări"
+  },
+  "page_up_to_date": {
+    "message": "Încă nu există o versiune mai nouă. Browserul verifică din nou singur."
+  },
+  "page_reload": {
+    "message": "Reîncărcare extensie"
+  },
+  "page_store": {
+    "message": "Obținere actualizări automate: adăugați această extensie din Chrome Web Store, apoi eliminați această copie."
+  },
+  "page_open_store": {
+    "message": "Deschidere Chrome Web Store"
+  },
+  "page_temporary": {
+    "message": "Firefox va elimina acest supliment la închidere, deoarece a fost adăugat ca supliment temporar."
+  },
+  "page_site_access": {
+    "message": "Această extensie este permisă doar pe unele site-uri, așa că descărcările de pe alte site-uri rămân în browser."
+  },
+  "page_allow_sites": {
+    "message": "Permitere pe toate site-urile"
+  },
+  "page_private": {
+    "message": "Descărcările din ferestrele private rămân în browser, deoarece această extensie nu are permisiunea acolo."
+  },
+  "page_private_chromium": {
+    "message": "Pentru a schimba asta, activați Permite în modul incognito pe pagina ei de detalii."
+  },
+  "page_private_firefox": {
+    "message": "Pentru a schimba acest lucru, alegeți Permitere lângă Rulare în ferestre private (Private Windows) pe pagina sa din Extensii și teme."
+  },
+  "page_learn_more": {
+    "message": "Aflați mai multe"
+  },
+  "popup_video": {
+    "message": "Descărcarea videoclipului din această pagină"
+  },
+  "popup_all": {
+    "message": "Descărcarea tuturor linkurilor din această pagină"
+  },
+  "popup_no_links": {
+    "message": "Această pagină nu are linkuri de descărcat."
+  },
+  "popup_drm": {
+    "message": "Videoclipul sau sunetul din această pagină este protejat la copiere (DRM) și nu poate fi descărcat."
+  },
+  "popup_status": {
+    "message": "Stare și ajutor"
+  },
+  "popup_options": {
+    "message": "Opțiunile extensiei"
+  },
+  "popup_fix": {
+    "message": "Vedeți ce aveți de făcut"
+  }
+}

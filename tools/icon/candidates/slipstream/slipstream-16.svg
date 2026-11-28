@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+<defs>
+<linearGradient id="t" x1="0" y1="0" x2="16" y2="16" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#4C8DFF"/><stop offset="0.5" stop-color="#1F63D6"/><stop offset="1" stop-color="#1240A8"/></linearGradient>
+</defs>
+<path d="M3.5,0 H12.5 A3.5,3.5 0 0 1 16,3.5 V12.5 A3.5,3.5 0 0 1 12.5,16 H3.5 A3.5,3.5 0 0 1 0,12.5 V3.5 A3.5,3.5 0 0 1 3.5,0 Z" fill="url(#t)"/><path d="M6,3 H11 A3,3 0 0 1 14,6 V10 A3,3 0 0 1 11,13 H6 Z M8,6 H11 A1,1 0 0 1 12,7 V9 A1,1 0 0 1 11,10 H8 Z" fill-rule="evenodd" fill="#FFFFFF"/><path d="M6.5,3 L6.5,6 L2,4.5 Z M6.5,7 L6.5,9 L0.5,8 Z M6.5,10 L6.5,13 L3,11.5 Z" fill="#FFFFFF"/>
+</svg>

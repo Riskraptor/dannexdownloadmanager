@@ -1,0 +1,488 @@
+{
+  "name": {
+    "message": "Dannex Download Manager"
+  },
+  "description": {
+    "message": "يرسل الملفات والروابط والفيديوهات التي تنزلها في المستعرض إلى تطبيق Dannex Download Manager على الكمبيوتر."
+  },
+  "menu": {
+    "message": "تنزيل باستخدام DDM"
+  },
+  "video_download": {
+    "message": "تنزيل الفيديو"
+  },
+  "video_more": {
+    "message": "المزيد من الخيارات"
+  },
+  "video_hide_here": {
+    "message": "إخفاء على هذا الفيديو"
+  },
+  "video_close": {
+    "message": "إغلاق"
+  },
+  "video_never_site": {
+    "message": "عدم الإظهار مطلقا في $site$",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "video_settings": {
+    "message": "إعدادات الزر..."
+  },
+  "video_sent": {
+    "message": "تم الإرسال إلى DDM"
+  },
+  "video_failed": {
+    "message": "لم يتم تثبيت Dannex Download Manager أو لم يبدأ"
+  },
+  "video_drag": {
+    "message": "اسحب لتحريكه على طول حافة الفيديو"
+  },
+  "menu_selected": {
+    "message": "تنزيل الروابط المحددة باستخدام DDM"
+  },
+  "menu_all": {
+    "message": "تنزيل جميع الروابط باستخدام DDM"
+  },
+  "menu_images": {
+    "message": "تنزيل جميع الصور باستخدام DDM"
+  },
+  "menu_media": {
+    "message": "تنزيل جميع مقاطع الفيديو والصوت باستخدام DDM"
+  },
+  "status_not_installed": {
+    "message": "Dannex Download Manager غير مثبت"
+  },
+  "status_installed": {
+    "message": "Dannex Download Manager مثبت"
+  },
+  "status_forbidden": {
+    "message": "تحديث Dannex Download Manager"
+  },
+  "status_not_running": {
+    "message": "لم يبدأ Dannex Download Manager"
+  },
+  "status_host_failed": {
+    "message": "شيء ما يحجب Dannex Download Manager"
+  },
+  "status_too_large": {
+    "message": "تعذر إرسال آخر تنزيل إلى Dannex Download Manager"
+  },
+  "status_update_app": {
+    "message": "حدث Dannex Download Manager للحصول على كل ما يقدمه هذا الملحق."
+  },
+  "popup_take": {
+    "message": "إرسال التنزيلات إلى Dannex Download Manager"
+  },
+  "popup_proxy": {
+    "message": "التنزيل عبر VPN أو وكيل هذا المستعرض"
+  },
+  "popup_proxy_title": {
+    "message": "شغل هذا الخيار إذا كنت تستخدم ملحق VPN أو وكيل. سيسألك المستعرض مرة واحدة."
+  },
+  "popup_proxy_title_chromium": {
+    "message": "شغل هذا الخيار إذا كنت تستخدم ملحق VPN أو وكيل في هذا المستعرض."
+  },
+  "popup_help": {
+    "message": "تعليمات"
+  },
+  "page_support": {
+    "message": "دعم DDM"
+  },
+  "popup_declined": {
+    "message": "بقي آخر تنزيل لك في المستعرض: $name$",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "setup.png"
+      }
+    }
+  },
+  "popup_declined_unnamed": {
+    "message": "بقي آخر تنزيل لك في المستعرض."
+  },
+  "declined_file_type": {
+    "message": "نوع ملفه ليس في قائمة Dannex Download Manager (الخيارات ← أنواع الملفات)."
+  },
+  "declined_site": {
+    "message": "موقعه ضمن قائمة المواقع التي يتركها Dannex Download Manager (الخيارات ← أنواع الملفات)."
+  },
+  "declined_address": {
+    "message": "عنوانه ضمن قائمة العناوين التي يتركها Dannex Download Manager (الخيارات ← أنواع الملفات)."
+  },
+  "declined_small": {
+    "message": "حجمه أصغر من أصغر ملف يأخذه Dannex Download Manager (الخيارات ← أنواع الملفات)."
+  },
+  "declined_browser": {
+    "message": "هذا المستعرض غير محدد في «الخيارات ← عام» في Dannex Download Manager."
+  },
+  "declined_integration_off": {
+    "message": "الربط بالمستعرض متوقف في «الخيارات ← عام» في Dannex Download Manager."
+  },
+  "declined_site_access": {
+    "message": "هذا الملحق غير مسموح به على ذلك الموقع."
+  },
+  "declined_handed_back": {
+    "message": "اخترت «تنزيل عبر المستعرض» لهذا التنزيل في Dannex Download Manager."
+  },
+  "video_off": {
+    "message": "زر التنزيل معطل في هذا الموقع"
+  },
+  "video_drm": {
+    "message": "فيديو محمي: لا يمكن حفظه"
+  },
+  "video_drm_audio": {
+    "message": "صوت محمي: لا يمكن حفظه"
+  },
+  "video_protected": {
+    "message": "محمي"
+  },
+  "video_download_audio": {
+    "message": "تنزيل الصوت"
+  },
+  "video_unnamed": {
+    "message": "افتح صفحة الفيديو نفسها وحاول هناك"
+  },
+  "video_looking": {
+    "message": "يجري البحث عن الجودات…"
+  },
+  "video_open_mdm": {
+    "message": "فتح في DDM…"
+  },
+  "video_no_choices": {
+    "message": "لا يوجد فيديو للتنزيل هنا"
+  },
+  "video_playlist": {
+    "message": "قائمة فيديوهات: اختر منها في Dannex Download Manager"
+  },
+  "video_no_ytdlp": {
+    "message": "يحتاج Dannex Download Manager إلى yt-dlp لهذا الفيديو. افتح في DDM… لتثبيته."
+  },
+  "video_too_long": {
+    "message": "استغرق البحث وقتا طويلا"
+  },
+  "video_busy": {
+    "message": "Dannex Download Manager مشغول بفيديوهات أخرى"
+  },
+  "video_queued": {
+    "message": "تمت الإضافة إلى قائمة الانتظار"
+  },
+  "video_failed_lookup": {
+    "message": "تعذر البحث"
+  },
+  "video_tab_video": {
+    "message": "فيديو"
+  },
+  "video_tab_audio": {
+    "message": "صوت"
+  },
+  "video_open_post": {
+    "message": "افتح المنشور، ثم استخدم الزر هناك"
+  },
+  "video_audio_original": {
+    "message": "الصوت فقط، الأصلي $type$",
+    "placeholders": {
+      "type": {
+        "content": "$1",
+        "example": "M4A"
+      }
+    }
+  },
+  "video_audio_only": {
+    "message": "الصوت فقط $type$",
+    "placeholders": {
+      "type": {
+        "content": "$1",
+        "example": "MP3 320 kbps"
+      }
+    }
+  },
+  "video_audio_original_short": {
+    "message": "$type$ الأصلي",
+    "placeholders": {
+      "type": {
+        "content": "$1",
+        "example": "M4A"
+      }
+    }
+  },
+  "video_pick_waiting": {
+    "message": "سيبدأ فور جاهزية DDM…"
+  },
+  "video_pick_gone": {
+    "message": "هذه الجودة غير متاحة: اختر أخرى"
+  },
+  "popup_send_to": {
+    "message": "إرسال التنزيلات إلى"
+  },
+  "popup_send_here": {
+    "message": "هذا الكمبيوتر"
+  },
+  "popup_send_remote": {
+    "message": "Dannex Download Manager على كمبيوتر آخر"
+  },
+  "popup_remote_code": {
+    "message": "رمز الإقران"
+  },
+  "popup_remote_open": {
+    "message": "افتحه"
+  },
+  "popup_remote_pair": {
+    "message": "إقران"
+  },
+  "popup_remote_help": {
+    "message": "افتح عنوانه هنا أولا، ثم أدخل الرمز من الخيارات ← التحكم عن بعد ← إقران جهاز فيه."
+  },
+  "status_remote": {
+    "message": "تنتقل التنزيلات إلى $address$",
+    "placeholders": {
+      "address": {
+        "content": "$1",
+        "example": "https://192.168.1.10:8463/"
+      }
+    }
+  },
+  "remote_address": {
+    "message": "أدخل عنوان https:// الخاص به."
+  },
+  "remote_unreachable": {
+    "message": "تعذر الوصول إليه. افتح عنوانه في هذا المستعرض، وتابع بعد تحذير الأمان، ثم حاول مرة أخرى."
+  },
+  "remote_wrong_code": {
+    "message": "رمز خاطئ."
+  },
+  "remote_no_code": {
+    "message": "لا يوجد رمز لإدخاله بعد: انقر «إقران جهاز» هناك أولا."
+  },
+  "remote_too_soon": {
+    "message": "انتظر لحظة، ثم حاول مرة أخرى."
+  },
+  "remote_failed": {
+    "message": "لم ينجح الأمر. حاول مرة أخرى."
+  },
+  "remote_device_name": {
+    "message": "ملحق المتصفح"
+  },
+  "badge_off": {
+    "message": "معطل"
+  },
+  "tip_on": {
+    "message": "Dannex Download Manager قيد التشغيل."
+  },
+  "tip_off": {
+    "message": "Dannex Download Manager متوقف عن التشغيل."
+  },
+  "tip_remote": {
+    "message": "تذهب التنزيلات إلى Dannex Download Manager على $address$.",
+    "placeholders": {
+      "address": {
+        "content": "$1",
+        "example": "https://192.168.1.10:8463/"
+      }
+    }
+  },
+  "status_off_in_app": {
+    "message": "متوقف في Dannex Download Manager"
+  },
+  "status_duplicate": {
+    "message": "توجد نسخة أخرى من هذا الملحق مثبتة"
+  },
+  "click_fix": {
+    "message": "انقر لمعرفة ما يجب فعله."
+  },
+  "click_details": {
+    "message": "انقر لمعرفة التفاصيل."
+  },
+  "toolbar_exclude": {
+    "message": "عدم أخذ التنزيلات من هذا الموقع"
+  },
+  "toolbar_help": {
+    "message": "تعليمات"
+  },
+  "toolbar_store": {
+    "message": "الحصول على تحديثات تلقائية من سوق Chrome الإلكتروني..."
+  },
+  "options_take_note": {
+    "message": "عند إيقاف تشغيله، تبقى التنزيلات في المستعرض. يحتوي زر الملحق على المفتاح نفسه."
+  },
+  "options_what_to_do": {
+    "message": "اعرف ما يجب فعله"
+  },
+  "options_more": {
+    "message": "المزيد"
+  },
+  "page_checking": {
+    "message": "قيد البحث عن Dannex Download Manager…"
+  },
+  "page_on_lead": {
+    "message": "التنزيلات التي تبدؤها في هذا المستعرض تذهب إلى Dannex Download Manager."
+  },
+  "page_off_lead": {
+    "message": "متوقف، لذا تبقى التنزيلات في هذا المستعرض."
+  },
+  "page_remote_title": {
+    "message": "تذهب التنزيلات إلى Dannex Download Manager آخر"
+  },
+  "page_remote_lead": {
+    "message": "التنزيلات التي تبدؤها في هذا المستعرض تذهب إلى Dannex Download Manager على $address$.",
+    "placeholders": {
+      "address": {
+        "content": "$1",
+        "example": "https://192.168.1.10:8463/"
+      }
+    }
+  },
+  "page_lead_not_installed": {
+    "message": "يحتاج هذا الملحق إلى تطبيق Dannex Download Manager المجاني. ثبته، وستتحدث هذه الصفحة تلقائيا."
+  },
+  "page_lead_not_running": {
+    "message": "حاول المستعرض تشغيله، لكن الأمر استغرق وقتا طويلا. شغل Dannex Download Manager بنفسك، ثم حاول مرة أخرى."
+  },
+  "page_lead_host_failed": {
+    "message": "السبب المعتاد هو برنامج الأمان. اسمح بـ Dannex Download Manager في برنامج مكافحة الفيروسات، أو ثبته مجددا."
+  },
+  "page_lead_forbidden": {
+    "message": "هذا الإصدار من Dannex Download Manager قديم جدا لهذا الملحق. ثبت أحدث إصدار."
+  },
+  "page_lead_too_large": {
+    "message": "أرسل الموقع بيانات تسجيل دخول كثيرة جدا. سجل الخروج من الموقع ثم سجل الدخول مجددا، وحاول مرة أخرى."
+  },
+  "page_download": {
+    "message": "تنزيل Dannex Download Manager"
+  },
+  "page_files_windows": {
+    "message": "لنظام Windows 10 و11."
+  },
+  "page_files_macos": {
+    "message": "لنظام Mac (صورة قرص .dmg)."
+  },
+  "page_files_linux": {
+    "message": "لنظام Linux (AppImage أو .deb أو .rpm)."
+  },
+  "page_files_other": {
+    "message": "لأجهزة كمبيوتر Windows وMac وLinux."
+  },
+  "page_all_downloads": {
+    "message": "كل التنزيلات"
+  },
+  "page_step_windows": {
+    "message": "شغل ملف الإعداد الذي نزلته."
+  },
+  "page_step_macos": {
+    "message": "افتح ملف .dmg، واسحب Dannex Download Manager إلى التطبيقات، ثم ابدأه مرة واحدة."
+  },
+  "page_step_linux": {
+    "message": "ثبت ملف .deb أو .rpm (أو شغل AppImage)، ثم ابدأ Dannex Download Manager مرة واحدة."
+  },
+  "page_step_other": {
+    "message": "يعمل Dannex Download Manager على أجهزة كمبيوتر Windows وMac وLinux. ثبته على أحدها وأضف هذا الملحق إلى مستعرض هناك."
+  },
+  "page_step_wait": {
+    "message": "أبق هذه الصفحة مفتوحة. تتغير من تلقاء نفسها عندما يصبح Dannex Download Manager جاهزا."
+  },
+  "page_step_restart": {
+    "message": "لا شيء بعد دقيقة؟ أعد تشغيل المستعرض."
+  },
+  "page_step_installed": {
+    "message": "هل هو مثبت بالفعل؟ في Dannex Download Manager، افتح الخيارات ← عام ← اختبار الربط بالمستعرض."
+  },
+  "page_try_again": {
+    "message": "حاول مرة أخرى"
+  },
+  "page_app_options": {
+    "message": "فتح خيارات Dannex Download Manager"
+  },
+  "page_duplicate_title": {
+    "message": "إزالة هذه النسخة"
+  },
+  "page_duplicate_lead": {
+    "message": "نسخة سوق Chrome الإلكتروني مثبتة أيضا وتحدث نفسها. يمكنك إزالة هذه النسخة."
+  },
+  "page_remove": {
+    "message": "إزالة هذه النسخة"
+  },
+  "page_extensions": {
+    "message": "فتح صفحة الملحقات"
+  },
+  "page_update_app_how": {
+    "message": "في Dannex Download Manager، اختر تعليمات ← التحقق من وجود تحديثات..."
+  },
+  "page_behind": {
+    "message": "جاء إصدار أحدث من هذا الملحق مع Dannex Download Manager $version$.",
+    "placeholders": {
+      "version": {
+        "content": "$1",
+        "example": "0.7.0"
+      }
+    }
+  },
+  "page_behind_store": {
+    "message": "يحدثه المستعرض من تلقاء نفسه خلال ساعات قليلة، أو الآن عبر «التحقق من وجود تحديثات»."
+  },
+  "page_behind_unpacked": {
+    "message": "أعد تحميل الملحق لاستخدامه."
+  },
+  "page_behind_other": {
+    "message": "أضف الإصدار الجديد من مجلد Dannex Download Manager، كما أضفت هذا."
+  },
+  "page_check_updates": {
+    "message": "التحقق من وجود تحديثات"
+  },
+  "page_up_to_date": {
+    "message": "لا يوجد إصدار أحدث بعد. يتحقق المستعرض مرة أخرى من تلقاء نفسه."
+  },
+  "page_reload": {
+    "message": "إعادة تحميل الملحق"
+  },
+  "page_store": {
+    "message": "الحصول على تحديثات تلقائية: أضف هذا الملحق من سوق Chrome الإلكتروني، ثم أزل هذه النسخة."
+  },
+  "page_open_store": {
+    "message": "فتح سوق Chrome الإلكتروني"
+  },
+  "page_temporary": {
+    "message": "سيزيل Firefox هذه الإضافة عند إغلاقه، لأنها أضيفت إضافة مؤقتة."
+  },
+  "page_site_access": {
+    "message": "هذا الملحق مسموح به على بعض المواقع فقط، لذا تبقى التنزيلات من المواقع الأخرى في المستعرض."
+  },
+  "page_allow_sites": {
+    "message": "السماح على كل المواقع"
+  },
+  "page_private": {
+    "message": "تبقى التنزيلات من النوافذ الخاصة في المستعرض، لأن هذا الملحق غير مسموح به هناك."
+  },
+  "page_private_chromium": {
+    "message": "لتغيير ذلك، فعل «السماح في وضع التصفح المتخفي» في صفحة تفاصيله."
+  },
+  "page_private_firefox": {
+    "message": "لتغيير ذلك، اختر «السماح» بجانب «التشغيل في نوافذ Windows الخاصة» في صفحته ضمن «الوظائف الإضافية والسمات»."
+  },
+  "page_learn_more": {
+    "message": "اعرف المزيد"
+  },
+  "popup_video": {
+    "message": "تنزيل الفيديو من هذه الصفحة"
+  },
+  "popup_all": {
+    "message": "تنزيل كل الارتباطات من هذه الصفحة"
+  },
+  "popup_no_links": {
+    "message": "لا تحتوي هذه الصفحة على ارتباطات للتنزيل."
+  },
+  "popup_drm": {
+    "message": "فيديو هذه الصفحة أو صوتها محمي من النسخ (DRM): لا يمكن تنزيله."
+  },
+  "popup_status": {
+    "message": "الحالة والتعليمات"
+  },
+  "popup_options": {
+    "message": "خيارات الملحق"
+  },
+  "popup_fix": {
+    "message": "اعرف ما يجب فعله"
+  }
+}

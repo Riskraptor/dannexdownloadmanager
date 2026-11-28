@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en" class="js-off">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Download Dannex Download Manager {{VERSION}} — free for Windows, Linux and Mac</title>
+  <meta name="description" content="Download Dannex Download Manager {{VERSION}} free: one click for Windows, plus Linux packages, a Mac version to try and the browser extension. No ads, nothing bundled.">
+  <meta name="theme-color" content="#111842">
+  <meta name="color-scheme" content="light dark">
+  <link rel="canonical" href="{{SITE}}/download.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Dannex Download Manager">
+  <meta property="og:title" content="Download Dannex Download Manager {{VERSION}}">
+  <meta property="og:description" content="Free for Windows and Linux, with a Mac version to try. One installer, then the browser extension.">
+  <meta property="og:url" content="{{SITE}}/download.html">
+  <meta property="og:image" content="{{SITE}}/assets/social.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="/favicon.ico" sizes="16x16 32x32 48x48 64x64">
+  <link rel="icon" href="/assets/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="stylesheet" href="/styles.css">
+  <!--@theme-->
+  <script src="/main.js" defer></script>
+  <script type="application/ld+json">{{SOFTWARE_LD}}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"{{SITE}}/"},{"@type":"ListItem","position":2,"name":"Download","item":"{{SITE}}/download.html"}]}</script>
+</head>
+<body>
+  <!--@header-->
+  <main id="main">
+    <!-- The box office: one window, one ticket, for the visitor's own system. -->
+    <section class="page-head office-head">
+      <div class="wrap">
+        <ol class="crumbs" aria-label="Breadcrumb"><li><a href="/">Home</a></li><li aria-current="page">Download</li></ol>
+        <h1>Get DDM, free</h1>
+        <p class="lede">One click, about a minute to install. No ads, no sign-up, nothing bundled.</p>
+        <div class="ticket-window">
+          <a class="btn btn-go btn-huge" href="{{FILE_SETUP}}" data-os-cta>
+            <svg class="os-ico" aria-hidden="true"><use href="#os-windows" data-os-cta-icon/></svg>
+            <span data-os-label>Download for Windows</span>
+          </a>
+          <p class="ticket-meta" data-os-meta>setup.exe · {{SETUP_SIZE}} · Windows 10 and 11, 64-bit</p>
+          <p class="ticket-ver">Version {{VERSION}} · <a href="/news.html">what's new</a> · <a href="#all-files">other systems and files</a></p>
+          <p class="fine" data-mobile-note hidden>It's a program for your computer: open this page there to download it.</p>
+        </div>
+      </div>
+      <!--@os-data-->
+    </section>
+
+    <section class="sec then" aria-labelledby="then-title">
+      <div class="wrap">
+        <h2 id="then-title" class="sr-only">Then</h2>
+        <ol class="three" role="list">
+          <li><b>Run it</b><span>Windows may ask whether to allow it: the installer isn't code-signed yet, so choose <b>More info</b>, then <b>Run anyway</b>.</span></li>
+          <li><b>Pick your language</b><span>Keep <b>Set up browser integration</b> ticked, and DDM is ready.</span></li>
+          <li><b>Add the extension</b><span><!--@if-cws--><a href="{{CWS}}">Add to Chrome</a> (Edge, Brave, Opera and Vivaldi too), then <!--@else-->It comes with the app (<a href="/help/guide-catch-browser-downloads.html">how</a>), then <!--/@if-cws--><a href="/help/guide-first-download.html">download your first file</a>.</span></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Every file, as a timetable: system, file, what it's for. -->
+    <section class="sec" id="all-files" aria-labelledby="files-title">
+      <div class="wrap">
+        <header class="sec-head">
+          <h2 id="files-title">Every system, every file</h2>
+          <p>Each file is built from the public source by GitHub Actions and listed with its checksum.</p>
+        </header>
+        <div class="timetable">
+          <section class="tt-group" id="windows" aria-labelledby="tt-win">
+            <h3 id="tt-win"><svg class="os-ico" aria-hidden="true"><use href="#os-windows"/></svg>Windows <small>10 and 11, 64-bit</small></h3>
+            <ul role="list">
+              <li><a href="{{FILE_SETUP}}">Installer <small translate="no">setup.exe</small></a><span>Installs DDM, connects your browsers, asks your language. Start here.</span></li>
+              <li><a href="{{FILE_PORTABLE}}">Portable <small translate="no">portable.zip</small></a><span>Unzip anywhere, a USB stick too; everything stays in its folder.</span></li>
+              <li><a href="{{FILE_ZIP}}">Programs only <small translate="no">x64.zip</small></a><span>The programs without an installer.</span></li>
+            </ul>
+          </section>
+          <section class="tt-group" id="linux" aria-labelledby="tt-linux">
+            <h3 id="tt-linux"><svg class="os-ico" aria-hidden="true"><use href="#os-linux"/></svg>Linux <small>x86-64</small></h3>
+            <ul role="list">
+              <li><a href="{{FILE_APPIMAGE}}">AppImage <small translate="no">.AppImage</small></a><span>Any distribution: make it executable and run it.</span></li>
+              <li><a href="{{FILE_DEB}}">Debian, Ubuntu, Mint <small translate="no">.deb</small></a><span><code>sudo apt install ./&lt;file&gt;.deb</code></span></li>
+              <li><a href="{{FILE_RPM}}">Fedora, openSUSE <small translate="no">.rpm</small></a><span><code>sudo dnf install ./&lt;file&gt;.rpm</code></span></li>
+              <li><a href="{{FILE_TAR}}">Archive <small translate="no">.tar.gz</small></a><span>The programs, to unpack anywhere.</span></li>
+            </ul>
+          </section>
+          <section class="tt-group" id="macos" aria-labelledby="tt-mac">
+            <h3 id="tt-mac"><svg class="os-ico" aria-hidden="true"><use href="#os-macos"/></svg>macOS <small>11 and later · experimental</small></h3>
+            <ul role="list">
+              <li><a href="{{FILE_DMG_ARM64}}">Apple Silicon <small translate="no">arm64.dmg</small></a><span>Macs with an M1 chip or later.</span></li>
+              <li><a href="{{FILE_DMG_INTEL}}">Intel <small translate="no">x86_64.dmg</small></a><span>Macs with an Intel processor.</span></li>
+              <li><b>First start</b><span>Not notarized by Apple yet: right-click the app and choose Open (macOS 15 and later: System Settings → Privacy &amp; Security → Open Anyway).</span></li>
+            </ul>
+          </section>
+          <section class="tt-group" id="extension" aria-labelledby="tt-ext">
+            <h3 id="tt-ext"><img src="/assets/browsers/chrome.svg" width="20" height="20" alt="">Browser extension</h3>
+            <ul role="list">
+<!--@if-cws-->              <li><a href="{{CWS}}">Chrome Web Store</a><span>For Chrome, Edge, Brave, Opera and Vivaldi, kept up to date by the browser. Edge first asks to allow extensions from other stores.</span></li>
+<!--/@if-cws-->              <li><a href="{{FILE_CHROMIUM}}">For Chromium browsers, by hand <small translate="no">.zip</small></a><span>Unzip, then Load unpacked on the browser's extensions page, with Developer mode on.</span></li>
+              <li><a href="{{FILE_FIREFOX}}">For Firefox <small translate="no">.xpi</small></a><span>Until it's on addons.mozilla.org: Developer Edition, Nightly or ESR take it, or any Firefox until it closes (<a href="/help/browser-integration.html#firefox">the steps</a>).</span></li>
+            </ul>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <div class="wrap narrow prose page-body">
+      <h2 id="linux-mac">On Linux or a Mac</h2>
+      <p><b>Linux</b>: the <b>.deb</b> and <b>.rpm</b> bring what DDM needs. DDM connects itself to your browsers at each start; then add the extension from your browser's store. Checked on GNOME, KDE Plasma, Xfce and Cinnamon. <a href="/help/getting-started.html#on-linux">More in the help</a>.</p>
+      <p><b>macOS</b>: open the <b>.dmg</b> and drag Dannex Download Manager to Applications, then right-click it and choose <b>Open</b> the first time. The Mac version is experimental: tell us what doesn't work.</p>
+
+      <h2>What you need</h2>
+      <ul>
+        <li><b>Windows 10 or 11</b>, 64-bit, and about 100 MB of disk space.</li>
+        <li><b>Linux</b> on x86-64 with a desktop session, X11 or Wayland.</li>
+        <li><b>macOS 11</b> or later, on Apple Silicon or Intel (experimental).</li>
+        <li>For video pages, DDM downloads yt-dlp (and ffmpeg if you want merged qualities) the first time you need them.</li>
+      </ul>
+
+      <h2 id="check-your-download">Check your download</h2>
+      <p>Every release lists the SHA-256 checksum of each file in <a href="{{FILE_SUMS}}">SHA256SUMS.txt</a>. On Windows, compare it with <code>certutil -hashfile file SHA256</code>; on macOS and Linux with <code>shasum -a 256 file</code>. The build logs are on <a href="{{REPO}}/actions">GitHub</a>.</p>
+
+      <h2>Older versions and the source code</h2>
+      <p>Every release, with its notes and files, is on <a href="{{REPO}}/releases">GitHub Releases</a>. The source code is at <a href="{{REPO}}">github.com/Riskraptor/dannexdownloadmanager</a> under the GNU GPL, version 3; <a href="/contributing.html#getting-set-up">building it yourself</a> takes one <code>cargo build</code>.</p>
+
+      <div class="cta-band"><p>Something not working? We'd like to know.</p><a class="btn btn-line" href="{{REPO}}/issues">Report a problem</a></div>
+    </div>
+  </main>
+  <!--@footer-->
+</body>
+</html>

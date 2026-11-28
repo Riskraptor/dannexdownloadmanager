@@ -1,0 +1,488 @@
+{
+  "name": {
+    "message": "Dannex Download Manager"
+  },
+  "description": {
+    "message": "Sender filene, lenkene og videoene du laster ned i nettleseren, til appen Dannex Download Manager på datamaskinen din."
+  },
+  "menu": {
+    "message": "Last ned med DDM"
+  },
+  "video_download": {
+    "message": "Last ned video"
+  },
+  "video_more": {
+    "message": "Flere alternativer"
+  },
+  "video_hide_here": {
+    "message": "Skjul for denne videoen"
+  },
+  "video_close": {
+    "message": "Lukk"
+  },
+  "video_never_site": {
+    "message": "Aldri på $site$",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "video_settings": {
+    "message": "Knappeinnstillinger ..."
+  },
+  "video_sent": {
+    "message": "Sendt til DDM"
+  },
+  "video_failed": {
+    "message": "Dannex Download Manager er ikke installert eller startet ikke"
+  },
+  "video_drag": {
+    "message": "Dra for å flytte den langs videokanten"
+  },
+  "menu_selected": {
+    "message": "Last ned valgte koblinger med DDM"
+  },
+  "menu_all": {
+    "message": "Last ned alle koblinger med DDM"
+  },
+  "menu_images": {
+    "message": "Last ned alle bilder med DDM"
+  },
+  "menu_media": {
+    "message": "Last ned alle videoer og all lyd med DDM"
+  },
+  "status_not_installed": {
+    "message": "Dannex Download Manager er ikke installert"
+  },
+  "status_installed": {
+    "message": "Dannex Download Manager er installert"
+  },
+  "status_forbidden": {
+    "message": "Oppdater Dannex Download Manager"
+  },
+  "status_not_running": {
+    "message": "Dannex Download Manager startet ikke"
+  },
+  "status_host_failed": {
+    "message": "Noe blokkerer Dannex Download Manager"
+  },
+  "status_too_large": {
+    "message": "Den siste nedlastingen kunne ikke sendes til Dannex Download Manager"
+  },
+  "status_update_app": {
+    "message": "Oppdater Dannex Download Manager for å få alt denne utvidelsen kan."
+  },
+  "popup_take": {
+    "message": "Send nedlastinger til Dannex Download Manager"
+  },
+  "popup_proxy": {
+    "message": "Last ned via VPN eller proxy i denne nettleseren"
+  },
+  "popup_proxy_title": {
+    "message": "Slå på dette hvis du bruker en VPN- eller proxy-utvidelse. Nettleseren spør én gang."
+  },
+  "popup_proxy_title_chromium": {
+    "message": "Slå på dette hvis du bruker en VPN- eller proxy-utvidelse i denne nettleseren."
+  },
+  "popup_help": {
+    "message": "Hjelp"
+  },
+  "page_support": {
+    "message": "Støtt DDM"
+  },
+  "popup_declined": {
+    "message": "Den siste nedlastingen din ble i nettleseren: $name$",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "setup.png"
+      }
+    }
+  },
+  "popup_declined_unnamed": {
+    "message": "Den siste nedlastingen din ble i nettleseren."
+  },
+  "declined_file_type": {
+    "message": "Filtypen står ikke i listen til Dannex Download Manager (Alternativer → Filtyper)."
+  },
+  "declined_site": {
+    "message": "Nettstedet står i listen til Dannex Download Manager over nettsteder som skal få være i fred (Alternativer → Filtyper)."
+  },
+  "declined_address": {
+    "message": "Adressen står i listen til Dannex Download Manager over adresser som skal få være i fred (Alternativer → Filtyper)."
+  },
+  "declined_small": {
+    "message": "Den er mindre enn den minste filen Dannex Download Manager overtar (Alternativer → Filtyper)."
+  },
+  "declined_browser": {
+    "message": "Denne nettleseren er ikke avmerket i Alternativer → Generelt i Dannex Download Manager."
+  },
+  "declined_integration_off": {
+    "message": "Nettleserintegrasjon er slått av i Alternativer → Generelt i Dannex Download Manager."
+  },
+  "declined_site_access": {
+    "message": "Denne utvidelsen er ikke tillatt på det nettstedet."
+  },
+  "declined_handed_back": {
+    "message": "Du valgte Last ned med nettleseren for denne nedlastingen i Dannex Download Manager."
+  },
+  "video_off": {
+    "message": "Nedlastingsknappen er av på dette nettstedet"
+  },
+  "video_drm": {
+    "message": "Beskyttet video: kan ikke lagres"
+  },
+  "video_drm_audio": {
+    "message": "Beskyttet lyd: kan ikke lagres"
+  },
+  "video_protected": {
+    "message": "Beskyttet"
+  },
+  "video_download_audio": {
+    "message": "Last ned lyd"
+  },
+  "video_unnamed": {
+    "message": "Åpne videoens egen side, og prøv der"
+  },
+  "video_looking": {
+    "message": "Finner kvalitetene…"
+  },
+  "video_open_mdm": {
+    "message": "Åpne i DDM…"
+  },
+  "video_no_choices": {
+    "message": "Ingen video å laste ned her"
+  },
+  "video_playlist": {
+    "message": "En liste med videoer: velg dem i Dannex Download Manager"
+  },
+  "video_no_ytdlp": {
+    "message": "Dannex Download Manager trenger yt-dlp for denne videoen. Åpne i DDM… for å installere det."
+  },
+  "video_too_long": {
+    "message": "Oppslaget tok for lang tid"
+  },
+  "video_busy": {
+    "message": "Dannex Download Manager er opptatt med andre videoer"
+  },
+  "video_queued": {
+    "message": "Lagt til i køen"
+  },
+  "video_failed_lookup": {
+    "message": "Kunne ikke slå det opp"
+  },
+  "video_tab_video": {
+    "message": "Video"
+  },
+  "video_tab_audio": {
+    "message": "Lyd"
+  },
+  "video_open_post": {
+    "message": "Åpne innlegget, og bruk deretter knappen der"
+  },
+  "video_audio_original": {
+    "message": "Bare lyd, original $type$",
+    "placeholders": {
+      "type": {
+        "content": "$1",
+        "example": "M4A"
+      }
+    }
+  },
+  "video_audio_only": {
+    "message": "Bare lyd $type$",
+    "placeholders": {
+      "type": {
+        "content": "$1",
+        "example": "MP3 320 kbps"
+      }
+    }
+  },
+  "video_audio_original_short": {
+    "message": "Original $type$",
+    "placeholders": {
+      "type": {
+        "content": "$1",
+        "example": "M4A"
+      }
+    }
+  },
+  "video_pick_waiting": {
+    "message": "Starter så snart DDM er klar…"
+  },
+  "video_pick_gone": {
+    "message": "Den kvaliteten er ikke tilgjengelig: Velg en annen"
+  },
+  "popup_send_to": {
+    "message": "Send nedlastinger til"
+  },
+  "popup_send_here": {
+    "message": "Denne datamaskinen"
+  },
+  "popup_send_remote": {
+    "message": "Dannex Download Manager på en annen datamaskin"
+  },
+  "popup_remote_code": {
+    "message": "Paringskode"
+  },
+  "popup_remote_open": {
+    "message": "Åpne den"
+  },
+  "popup_remote_pair": {
+    "message": "Par"
+  },
+  "popup_remote_help": {
+    "message": "Åpne først adressen her, og skriv deretter inn koden fra Alternativer → Fjernkontroll → Par en enhet der."
+  },
+  "status_remote": {
+    "message": "Nedlastinger går til $address$",
+    "placeholders": {
+      "address": {
+        "content": "$1",
+        "example": "https://192.168.1.10:8463/"
+      }
+    }
+  },
+  "remote_address": {
+    "message": "Skriv inn https://-adressen."
+  },
+  "remote_unreachable": {
+    "message": "Fikk ikke kontakt. Åpne adressen i denne nettleseren, fortsett forbi sikkerhetsadvarselen og prøv igjen."
+  },
+  "remote_wrong_code": {
+    "message": "Feil kode."
+  },
+  "remote_no_code": {
+    "message": "Det er ingen kode å skrive inn ennå: Klikk Par en enhet der først."
+  },
+  "remote_too_soon": {
+    "message": "Vent et øyeblikk, og prøv deretter igjen."
+  },
+  "remote_failed": {
+    "message": "Det fungerte ikke. Prøv igjen."
+  },
+  "remote_device_name": {
+    "message": "Nettleserutvidelse"
+  },
+  "badge_off": {
+    "message": "AV"
+  },
+  "tip_on": {
+    "message": "Dannex Download Manager er på."
+  },
+  "tip_off": {
+    "message": "Dannex Download Manager er av."
+  },
+  "tip_remote": {
+    "message": "Nedlastinger går til Dannex Download Manager på $address$.",
+    "placeholders": {
+      "address": {
+        "content": "$1",
+        "example": "https://192.168.1.10:8463/"
+      }
+    }
+  },
+  "status_off_in_app": {
+    "message": "Slått av i Dannex Download Manager"
+  },
+  "status_duplicate": {
+    "message": "En annen kopi av denne utvidelsen er installert"
+  },
+  "click_fix": {
+    "message": "Klikk for å se hva du kan gjøre."
+  },
+  "click_details": {
+    "message": "Klikk for detaljer."
+  },
+  "toolbar_exclude": {
+    "message": "Ikke ta nedlastinger fra dette nettstedet"
+  },
+  "toolbar_help": {
+    "message": "Hjelp"
+  },
+  "toolbar_store": {
+    "message": "Få automatiske oppdateringer fra Chrome Nettmarked..."
+  },
+  "options_take_note": {
+    "message": "Når den er av, blir nedlastingene i nettleseren. Utvidelsens knapp har den samme bryteren."
+  },
+  "options_what_to_do": {
+    "message": "Se hva du kan gjøre"
+  },
+  "options_more": {
+    "message": "Mer"
+  },
+  "page_checking": {
+    "message": "Leter etter Dannex Download Manager…"
+  },
+  "page_on_lead": {
+    "message": "Nedlastinger du starter i denne nettleseren, går til Dannex Download Manager."
+  },
+  "page_off_lead": {
+    "message": "Den er slått av, så nedlastinger blir i denne nettleseren."
+  },
+  "page_remote_title": {
+    "message": "Nedlastinger går til en annen Dannex Download Manager"
+  },
+  "page_remote_lead": {
+    "message": "Nedlastinger du starter i denne nettleseren, går til Dannex Download Manager på $address$.",
+    "placeholders": {
+      "address": {
+        "content": "$1",
+        "example": "https://192.168.1.10:8463/"
+      }
+    }
+  },
+  "page_lead_not_installed": {
+    "message": "Denne utvidelsen trenger den gratis appen Dannex Download Manager. Installer den, så oppdateres denne siden av seg selv."
+  },
+  "page_lead_not_running": {
+    "message": "Nettleseren prøvde å starte det, men det tok for lang tid. Start Dannex Download Manager selv og prøv igjen."
+  },
+  "page_lead_host_failed": {
+    "message": "Sikkerhetsprogramvare er vanligvis årsaken. Tillat Dannex Download Manager i antivirusprogrammet ditt, eller installer det på nytt."
+  },
+  "page_lead_forbidden": {
+    "message": "Denne versjonen av Dannex Download Manager er for gammel for denne utvidelsen. Installer den nyeste."
+  },
+  "page_lead_too_large": {
+    "message": "Nettstedet sendte for mye påloggingsdata. Logg av nettstedet og på igjen, og prøv deretter på nytt."
+  },
+  "page_download": {
+    "message": "Last ned Dannex Download Manager"
+  },
+  "page_files_windows": {
+    "message": "For Windows 10 og 11."
+  },
+  "page_files_macos": {
+    "message": "For Mac (et .dmg-diskavbilde)."
+  },
+  "page_files_linux": {
+    "message": "For Linux (AppImage, .deb eller .rpm)."
+  },
+  "page_files_other": {
+    "message": "For Windows-, Mac- og Linux-datamaskiner."
+  },
+  "page_all_downloads": {
+    "message": "Alle nedlastinger"
+  },
+  "page_step_windows": {
+    "message": "Kjør installasjonsprogrammet du lastet ned."
+  },
+  "page_step_macos": {
+    "message": "Åpne .dmg-filen, dra Dannex Download Manager til Programmer, og start det én gang."
+  },
+  "page_step_linux": {
+    "message": "Installer .deb- eller .rpm-filen (eller kjør AppImage), og start deretter Dannex Download Manager én gang."
+  },
+  "page_step_other": {
+    "message": "Dannex Download Manager kjører på Windows-, Mac- og Linux-datamaskiner. Installer det på en av dem, og legg til denne utvidelsen i en nettleser der."
+  },
+  "page_step_wait": {
+    "message": "La denne siden stå åpen. Den endrer seg selv når Dannex Download Manager er klar."
+  },
+  "page_step_restart": {
+    "message": "Skjer det ingenting etter ett minutt? Start nettleseren på nytt."
+  },
+  "page_step_installed": {
+    "message": "Allerede installert? Åpne Alternativer → Generelt → Test nettleserintegrasjon i Dannex Download Manager."
+  },
+  "page_try_again": {
+    "message": "Prøv igjen"
+  },
+  "page_app_options": {
+    "message": "Åpne Alternativer i Dannex Download Manager"
+  },
+  "page_duplicate_title": {
+    "message": "Fjern denne kopien"
+  },
+  "page_duplicate_lead": {
+    "message": "Kopien fra Chrome Nettmarked er også installert og oppdaterer seg selv. Du kan fjerne denne."
+  },
+  "page_remove": {
+    "message": "Fjern denne kopien"
+  },
+  "page_extensions": {
+    "message": "Åpne utvidelsessiden"
+  },
+  "page_update_app_how": {
+    "message": "I Dannex Download Manager: Velg Hjelp → Se etter oppdateringer..."
+  },
+  "page_behind": {
+    "message": "En nyere versjon av denne utvidelsen fulgte med Dannex Download Manager $version$.",
+    "placeholders": {
+      "version": {
+        "content": "$1",
+        "example": "0.7.0"
+      }
+    }
+  },
+  "page_behind_store": {
+    "message": "Nettleseren oppdaterer den av seg selv i løpet av noen timer, eller nå med Se etter oppdateringer."
+  },
+  "page_behind_unpacked": {
+    "message": "Last utvidelsen på nytt for å bruke den."
+  },
+  "page_behind_other": {
+    "message": "Legg til den nye fra mappen til Dannex Download Manager, slik du la til denne."
+  },
+  "page_check_updates": {
+    "message": "Se etter oppdateringer"
+  },
+  "page_up_to_date": {
+    "message": "Ingen nyere versjon ennå. Nettleseren sjekker igjen av seg selv."
+  },
+  "page_reload": {
+    "message": "Last utvidelsen på nytt"
+  },
+  "page_store": {
+    "message": "Få automatiske oppdateringer: Legg til denne utvidelsen fra Chrome Nettmarked, og fjern deretter denne kopien."
+  },
+  "page_open_store": {
+    "message": "Åpne Chrome Nettmarked"
+  },
+  "page_temporary": {
+    "message": "Firefox fjerner dette tillegget når det lukkes, fordi det ble lagt til som et midlertidig tillegg."
+  },
+  "page_site_access": {
+    "message": "Denne utvidelsen er bare tillatt på noen nettsteder, så nedlastinger fra andre nettsteder blir i nettleseren."
+  },
+  "page_allow_sites": {
+    "message": "Tillat på alle nettsteder"
+  },
+  "page_private": {
+    "message": "Nedlastinger fra private vinduer blir i nettleseren, fordi denne utvidelsen ikke er tillatt der."
+  },
+  "page_private_chromium": {
+    "message": "For å endre det slår du på Tillat i inkognito på detaljsiden."
+  },
+  "page_private_firefox": {
+    "message": "Hvis du vil endre det, velger du Allow ved siden av «Run in Private Windows» på utvidelsens side under Tillegg og temaer."
+  },
+  "page_learn_more": {
+    "message": "Les mer"
+  },
+  "popup_video": {
+    "message": "Last ned video fra denne siden"
+  },
+  "popup_all": {
+    "message": "Last ned alle koblinger fra denne siden"
+  },
+  "popup_no_links": {
+    "message": "Denne siden har ingen koblinger å laste ned."
+  },
+  "popup_drm": {
+    "message": "Videoen eller lyden på denne siden er kopibeskyttet (DRM): den kan ikke lastes ned."
+  },
+  "popup_status": {
+    "message": "Status og hjelp"
+  },
+  "popup_options": {
+    "message": "Alternativer for utvidelsen"
+  },
+  "popup_fix": {
+    "message": "Se hva du kan gjøre"
+  }
+}

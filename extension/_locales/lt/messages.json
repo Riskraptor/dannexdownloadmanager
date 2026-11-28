@@ -1,0 +1,488 @@
+{
+  "name": {
+    "message": "Dannex Download Manager"
+  },
+  "description": {
+    "message": "Naršyklėje atsisiunčiamus failus, nuorodas ir vaizdo įrašus siunčia į jūsų kompiuteryje esančią programą Dannex Download Manager."
+  },
+  "menu": {
+    "message": "Atsisiųsti naudojant „DDM“"
+  },
+  "video_download": {
+    "message": "Atsisiųsti vaizdo įrašą"
+  },
+  "video_more": {
+    "message": "Daugiau parinkčių"
+  },
+  "video_hide_here": {
+    "message": "Slėpti šiame vaizdo įraše"
+  },
+  "video_close": {
+    "message": "Uždaryti"
+  },
+  "video_never_site": {
+    "message": "Niekada $site$",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "video_settings": {
+    "message": "Mygtuko parametrai..."
+  },
+  "video_sent": {
+    "message": "Išsiųsta į DDM"
+  },
+  "video_failed": {
+    "message": "Dannex Download Manager neįdiegta arba nepasileido"
+  },
+  "video_drag": {
+    "message": "Vilkite, kad perkeltumėte jį palei vaizdo įrašo kraštą"
+  },
+  "menu_selected": {
+    "message": "Atsisiųsti pasirinktas nuorodas su DDM"
+  },
+  "menu_all": {
+    "message": "Atsisiųsti visas nuorodas su DDM"
+  },
+  "menu_images": {
+    "message": "Atsisiųsti visus paveikslėlius su DDM"
+  },
+  "menu_media": {
+    "message": "Atsisiųsti visus vaizdo ir garso įrašus su DDM"
+  },
+  "status_not_installed": {
+    "message": "Dannex Download Manager neįdiegta"
+  },
+  "status_installed": {
+    "message": "Dannex Download Manager įdiegta"
+  },
+  "status_forbidden": {
+    "message": "Atnaujinti Dannex Download Manager"
+  },
+  "status_not_running": {
+    "message": "Dannex Download Manager nebuvo paleista"
+  },
+  "status_host_failed": {
+    "message": "Kažkas blokuoja Dannex Download Manager"
+  },
+  "status_too_large": {
+    "message": "Paskutinio atsisiuntimo nepavyko išsiųsti į Dannex Download Manager"
+  },
+  "status_update_app": {
+    "message": "Atnaujinkite Dannex Download Manager, kad gautumėte viską, ką gali šis plėtinys."
+  },
+  "popup_take": {
+    "message": "Siųsti atsisiuntimus į Dannex Download Manager"
+  },
+  "popup_proxy": {
+    "message": "Atsisiųsti per šios naršyklės VPN arba tarpinį serverį"
+  },
+  "popup_proxy_title": {
+    "message": "Įjunkite, jei naudojate VPN arba tarpinio serverio plėtinį. Naršyklė paklaus vieną kartą."
+  },
+  "popup_proxy_title_chromium": {
+    "message": "Įjunkite, jei šioje naršyklėje naudojate VPN arba tarpinio serverio plėtinį."
+  },
+  "popup_help": {
+    "message": "Žinynas"
+  },
+  "page_support": {
+    "message": "Paremti DDM"
+  },
+  "popup_declined": {
+    "message": "Jūsų paskutinis atsisiuntimas liko naršyklėje: $name$",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "setup.png"
+      }
+    }
+  },
+  "popup_declined_unnamed": {
+    "message": "Jūsų paskutinis atsisiuntimas liko naršyklėje."
+  },
+  "declined_file_type": {
+    "message": "Jo failo tipo nėra Dannex Download Manager sąraše (Parinktys → Failų tipai)."
+  },
+  "declined_site": {
+    "message": "Jo svetainė yra Dannex Download Manager sąraše svetainių, kurių nereikia liesti (Parinktys → Failų tipai)."
+  },
+  "declined_address": {
+    "message": "Jo adresas yra Dannex Download Manager sąraše adresų, kurių nereikia liesti (Parinktys → Failų tipai)."
+  },
+  "declined_small": {
+    "message": "Jis mažesnis už mažiausią failą, kurį perima Dannex Download Manager (Parinktys → Failų tipai)."
+  },
+  "declined_browser": {
+    "message": "Ši naršyklė nepažymėta programos Dannex Download Manager skiltyje Parinktys → Bendra."
+  },
+  "declined_integration_off": {
+    "message": "Naršyklės integracija išjungta programos Dannex Download Manager skiltyje Parinktys → Bendra."
+  },
+  "declined_site_access": {
+    "message": "Šis plėtinys toje svetainėje neleidžiamas."
+  },
+  "declined_handed_back": {
+    "message": "Šiam atsisiuntimui Dannex Download Manager programoje pasirinkote Atsisiųsti naršykle."
+  },
+  "video_off": {
+    "message": "Atsisiuntimo mygtukas šioje svetainėje išjungtas"
+  },
+  "video_drm": {
+    "message": "Apsaugotas vaizdo įrašas: jo negalima įrašyti"
+  },
+  "video_drm_audio": {
+    "message": "Apsaugotas garso įrašas: jo negalima išsaugoti"
+  },
+  "video_protected": {
+    "message": "Apsaugota"
+  },
+  "video_download_audio": {
+    "message": "Atsisiųsti garso įrašą"
+  },
+  "video_unnamed": {
+    "message": "Atidarykite paties vaizdo įrašo puslapį ir bandykite ten"
+  },
+  "video_looking": {
+    "message": "Ieškoma kokybių…"
+  },
+  "video_open_mdm": {
+    "message": "Atidaryti programoje DDM…"
+  },
+  "video_no_choices": {
+    "message": "Čia nėra vaizdo įrašo, kurį būtų galima atsisiųsti"
+  },
+  "video_playlist": {
+    "message": "Vaizdo įrašų sąrašas: pasirinkite juos programoje Dannex Download Manager"
+  },
+  "video_no_ytdlp": {
+    "message": "Dannex Download Manager šiam vaizdo įrašui reikia yt-dlp. Norėdami jį įdiegti, pasirinkite Atidaryti programoje DDM…."
+  },
+  "video_too_long": {
+    "message": "Paieška užtruko per ilgai"
+  },
+  "video_busy": {
+    "message": "Dannex Download Manager užsiėmusi kitais vaizdo įrašais"
+  },
+  "video_queued": {
+    "message": "Pridėta į eilę"
+  },
+  "video_failed_lookup": {
+    "message": "Nepavyko surasti"
+  },
+  "video_tab_video": {
+    "message": "Vaizdas"
+  },
+  "video_tab_audio": {
+    "message": "Garsas"
+  },
+  "video_open_post": {
+    "message": "Atidarykite įrašą, tada naudokite ten esantį mygtuką"
+  },
+  "video_audio_original": {
+    "message": "Tik garsas, originalus $type$",
+    "placeholders": {
+      "type": {
+        "content": "$1",
+        "example": "M4A"
+      }
+    }
+  },
+  "video_audio_only": {
+    "message": "Tik garsas $type$",
+    "placeholders": {
+      "type": {
+        "content": "$1",
+        "example": "MP3 320 kbps"
+      }
+    }
+  },
+  "video_audio_original_short": {
+    "message": "Originalus $type$",
+    "placeholders": {
+      "type": {
+        "content": "$1",
+        "example": "M4A"
+      }
+    }
+  },
+  "video_pick_waiting": {
+    "message": "Prasidės, kai tik DDM bus paruoštas…"
+  },
+  "video_pick_gone": {
+    "message": "Ši kokybė nepasiekiama: pasirinkite kitą"
+  },
+  "popup_send_to": {
+    "message": "Siųsti atsisiuntimus į"
+  },
+  "popup_send_here": {
+    "message": "Šis kompiuteris"
+  },
+  "popup_send_remote": {
+    "message": "Dannex Download Manager kitame kompiuteryje"
+  },
+  "popup_remote_code": {
+    "message": "Susiejimo kodas"
+  },
+  "popup_remote_open": {
+    "message": "Atidaryti"
+  },
+  "popup_remote_pair": {
+    "message": "Susieti"
+  },
+  "popup_remote_help": {
+    "message": "Pirmiausia čia atidarykite jo adresą, tada įveskite kodą iš Parinktys → Nuotolinis valdymas → Susieti įrenginį."
+  },
+  "status_remote": {
+    "message": "Atsisiuntimai siunčiami į $address$",
+    "placeholders": {
+      "address": {
+        "content": "$1",
+        "example": "https://192.168.1.10:8463/"
+      }
+    }
+  },
+  "remote_address": {
+    "message": "Įveskite jo https:// adresą."
+  },
+  "remote_unreachable": {
+    "message": "Nepavyko prisijungti. Atidarykite jos adresą šioje naršyklėje, tęskite nepaisydami saugos įspėjimo ir bandykite dar kartą."
+  },
+  "remote_wrong_code": {
+    "message": "Neteisingas kodas."
+  },
+  "remote_no_code": {
+    "message": "Kodo, kurį reikėtų įvesti, dar nėra: pirmiausia spustelėkite ten Susieti įrenginį."
+  },
+  "remote_too_soon": {
+    "message": "Palaukite, tada bandykite dar kartą."
+  },
+  "remote_failed": {
+    "message": "Nepavyko. Bandykite dar kartą."
+  },
+  "remote_device_name": {
+    "message": "Naršyklės plėtinys"
+  },
+  "badge_off": {
+    "message": "IŠJ"
+  },
+  "tip_on": {
+    "message": "Programa Dannex Download Manager įjungta."
+  },
+  "tip_off": {
+    "message": "Programa Dannex Download Manager išjungta."
+  },
+  "tip_remote": {
+    "message": "Atsisiuntimai siunčiami į programą Dannex Download Manager adresu $address$.",
+    "placeholders": {
+      "address": {
+        "content": "$1",
+        "example": "https://192.168.1.10:8463/"
+      }
+    }
+  },
+  "status_off_in_app": {
+    "message": "Išjungta programoje Dannex Download Manager"
+  },
+  "status_duplicate": {
+    "message": "Įdiegta kita šio plėtinio kopija"
+  },
+  "click_fix": {
+    "message": "Spustelėkite, kad pamatytumėte, ką daryti."
+  },
+  "click_details": {
+    "message": "Spustelėkite, jei norite pamatyti išsamią informaciją."
+  },
+  "toolbar_exclude": {
+    "message": "Neperimti atsisiuntimų iš šios svetainės"
+  },
+  "toolbar_help": {
+    "message": "Žinynas"
+  },
+  "toolbar_store": {
+    "message": "Gauti automatinius naujinimus iš Chrome internetinės parduotuvės..."
+  },
+  "options_take_note": {
+    "message": "Kai išjungta, atsisiuntimai lieka naršyklėje. Plėtinio mygtukas turi tą patį jungiklį."
+  },
+  "options_what_to_do": {
+    "message": "Žiūrėti, ką daryti"
+  },
+  "options_more": {
+    "message": "Daugiau"
+  },
+  "page_checking": {
+    "message": "Ieškoma Dannex Download Manager…"
+  },
+  "page_on_lead": {
+    "message": "Šioje naršyklėje pradėti atsisiuntimai siunčiami į Dannex Download Manager."
+  },
+  "page_off_lead": {
+    "message": "Jis išjungtas, todėl atsisiuntimai lieka šioje naršyklėje."
+  },
+  "page_remote_title": {
+    "message": "Atsisiuntimai siunčiami į kitą Dannex Download Manager"
+  },
+  "page_remote_lead": {
+    "message": "Šioje naršyklėje pradėti atsisiuntimai siunčiami į Dannex Download Manager adresu $address$.",
+    "placeholders": {
+      "address": {
+        "content": "$1",
+        "example": "https://192.168.1.10:8463/"
+      }
+    }
+  },
+  "page_lead_not_installed": {
+    "message": "Šiam plėtiniui reikia nemokamos programos Dannex Download Manager. Įdiekite ją, ir šis puslapis atsinaujins pats."
+  },
+  "page_lead_not_running": {
+    "message": "Naršyklė bandė ją paleisti, bet tai užtruko per ilgai. Patys paleiskite Dannex Download Manager ir bandykite dar kartą."
+  },
+  "page_lead_host_failed": {
+    "message": "Dažniausia priežastis yra saugos programinė įranga. Leiskite Dannex Download Manager savo antivirusinėje programoje arba įdiekite ją iš naujo."
+  },
+  "page_lead_forbidden": {
+    "message": "Ši Dannex Download Manager versija per sena šiam plėtiniui. Įdiekite naujausią."
+  },
+  "page_lead_too_large": {
+    "message": "Svetainė atsiuntė per daug prisijungimo duomenų. Atsijunkite nuo svetainės, vėl prisijunkite ir bandykite dar kartą."
+  },
+  "page_download": {
+    "message": "Atsisiųsti Dannex Download Manager"
+  },
+  "page_files_windows": {
+    "message": "„Windows 10“ ir 11."
+  },
+  "page_files_macos": {
+    "message": "Mac (.dmg disko vaizdas)."
+  },
+  "page_files_linux": {
+    "message": "Linux (AppImage, .deb arba .rpm)."
+  },
+  "page_files_other": {
+    "message": "Windows, Mac ir Linux kompiuteriams."
+  },
+  "page_all_downloads": {
+    "message": "Visi atsisiuntimai"
+  },
+  "page_step_windows": {
+    "message": "Paleiskite atsisiųstą diegimo programą."
+  },
+  "page_step_macos": {
+    "message": "Atidarykite .dmg failą, nuvilkite Dannex Download Manager į Programų aplanką ir vieną kartą paleiskite."
+  },
+  "page_step_linux": {
+    "message": "Įdiekite .deb arba .rpm paketą (arba paleiskite AppImage), tada vieną kartą paleiskite Dannex Download Manager."
+  },
+  "page_step_other": {
+    "message": "Dannex Download Manager veikia Windows, Mac ir Linux kompiuteriuose. Įdiekite ją viename iš jų ir ten pridėkite šį plėtinį prie naršyklės."
+  },
+  "page_step_wait": {
+    "message": "Palikite šį puslapį atidarytą. Jis pasikeis pats, kai Dannex Download Manager bus paruošta."
+  },
+  "page_step_restart": {
+    "message": "Po minutės nieko? Paleiskite naršyklę iš naujo."
+  },
+  "page_step_installed": {
+    "message": "Jau įdiegta? Programoje Dannex Download Manager atidarykite Parinktys → Bendra → Naršyklės integracijos tikrinimas."
+  },
+  "page_try_again": {
+    "message": "Bandyti dar kartą"
+  },
+  "page_app_options": {
+    "message": "Atidaryti Dannex Download Manager parinktis"
+  },
+  "page_duplicate_title": {
+    "message": "Pašalinti šią kopiją"
+  },
+  "page_duplicate_lead": {
+    "message": "Kopija iš „Chrome“ internetinės parduotuvės taip pat įdiegta ir atsinaujina pati. Šią galite pašalinti."
+  },
+  "page_remove": {
+    "message": "Pašalinti šią kopiją"
+  },
+  "page_extensions": {
+    "message": "Atidaryti plėtinių puslapį"
+  },
+  "page_update_app_how": {
+    "message": "Programoje Dannex Download Manager pasirinkite Žinynas → Tikrinti, ar yra naujinimų..."
+  },
+  "page_behind": {
+    "message": "Naujesnė šio plėtinio versija pateikta kartu su Dannex Download Manager $version$.",
+    "placeholders": {
+      "version": {
+        "content": "$1",
+        "example": "0.7.0"
+      }
+    }
+  },
+  "page_behind_store": {
+    "message": "Naršyklė pati jį naujina per kelias valandas arba iškart naudojant Tikrinti, ar yra naujinimų."
+  },
+  "page_behind_unpacked": {
+    "message": "Įkelkite plėtinį iš naujo, kad jį naudotumėte."
+  },
+  "page_behind_other": {
+    "message": "Pridėkite naująjį iš Dannex Download Manager aplanko, kaip pridėjote šį."
+  },
+  "page_check_updates": {
+    "message": "Tikrinti, ar yra naujinimų"
+  },
+  "page_up_to_date": {
+    "message": "Naujesnės versijos dar nėra. Naršyklė pati patikrins dar kartą."
+  },
+  "page_reload": {
+    "message": "Įkelti plėtinį iš naujo"
+  },
+  "page_store": {
+    "message": "Gauti automatinius naujinimus: pridėkite šį plėtinį iš Chrome internetinės parduotuvės, tada pašalinkite šią kopiją."
+  },
+  "page_open_store": {
+    "message": "Atidaryti Chrome internetinę parduotuvę"
+  },
+  "page_temporary": {
+    "message": "Firefox pašalins šį priedą jį uždarius, nes jis buvo pridėtas kaip laikinas priedas."
+  },
+  "page_site_access": {
+    "message": "Šis plėtinys leidžiamas tik kai kuriose svetainėse, todėl atsisiuntimai iš kitų svetainių lieka naršyklėje."
+  },
+  "page_allow_sites": {
+    "message": "Leisti visose svetainėse"
+  },
+  "page_private": {
+    "message": "Atsisiuntimai iš privačių langų lieka naršyklėje, nes šis plėtinys ten neleidžiamas."
+  },
+  "page_private_chromium": {
+    "message": "Jei norite tai pakeisti, jo išsamios informacijos puslapyje įjunkite Leisti incognito režimu."
+  },
+  "page_private_firefox": {
+    "message": "Norėdami tai pakeisti, pasirinkite Leisti šalia Vykdyti privačiuosiuose languose jo puslapyje Priedai ir temos."
+  },
+  "page_learn_more": {
+    "message": "Sužinoti daugiau"
+  },
+  "popup_video": {
+    "message": "Atsisiųsti vaizdo įrašą iš šio puslapio"
+  },
+  "popup_all": {
+    "message": "Atsisiųsti visas šio puslapio nuorodas"
+  },
+  "popup_no_links": {
+    "message": "Šiame puslapyje nėra atsisiunčiamų nuorodų."
+  },
+  "popup_drm": {
+    "message": "Šio puslapio vaizdo ar garso įrašas apsaugotas nuo kopijavimo (DRM): jo atsisiųsti negalima."
+  },
+  "popup_status": {
+    "message": "Būsena ir žinynas"
+  },
+  "popup_options": {
+    "message": "Plėtinio parinktys"
+  },
+  "popup_fix": {
+    "message": "Žiūrėti, ką daryti"
+  }
+}

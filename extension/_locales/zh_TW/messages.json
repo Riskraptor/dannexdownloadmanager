@@ -1,0 +1,488 @@
+{
+  "name": {
+    "message": "Dannex Download Manager"
+  },
+  "description": {
+    "message": "將你在瀏覽器中下載的檔案、連結和影片傳送到電腦上的 Dannex Download Manager 應用程式。"
+  },
+  "menu": {
+    "message": "使用 DDM 下載"
+  },
+  "video_download": {
+    "message": "下載影片"
+  },
+  "video_more": {
+    "message": "更多選項"
+  },
+  "video_hide_here": {
+    "message": "僅在此影片上隱藏"
+  },
+  "video_close": {
+    "message": "關閉"
+  },
+  "video_never_site": {
+    "message": "永遠不要在 $site$ 上顯示",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "video_settings": {
+    "message": "按鈕設定..."
+  },
+  "video_sent": {
+    "message": "已傳送至 DDM"
+  },
+  "video_failed": {
+    "message": "Dannex Download Manager 未安裝或未啟動"
+  },
+  "video_drag": {
+    "message": "拖曳以沿著影片邊緣移動"
+  },
+  "menu_selected": {
+    "message": "使用 DDM 下載選取的連結"
+  },
+  "menu_all": {
+    "message": "使用 DDM 下載所有連結"
+  },
+  "menu_images": {
+    "message": "使用 DDM 下載所有影像"
+  },
+  "menu_media": {
+    "message": "使用 DDM 下載所有影片和音訊"
+  },
+  "status_not_installed": {
+    "message": "未安裝 Dannex Download Manager"
+  },
+  "status_installed": {
+    "message": "已安裝 Dannex Download Manager"
+  },
+  "status_forbidden": {
+    "message": "更新 Dannex Download Manager"
+  },
+  "status_not_running": {
+    "message": "Dannex Download Manager 未啟動"
+  },
+  "status_host_failed": {
+    "message": "有程式正在封鎖 Dannex Download Manager"
+  },
+  "status_too_large": {
+    "message": "上一個下載無法交給 Dannex Download Manager"
+  },
+  "status_update_app": {
+    "message": "更新 Dannex Download Manager 即可使用此擴充功能的所有功能。"
+  },
+  "popup_take": {
+    "message": "將下載交給 Dannex Download Manager"
+  },
+  "popup_proxy": {
+    "message": "透過此瀏覽器的 VPN 或 Proxy 下載"
+  },
+  "popup_proxy_title": {
+    "message": "如果使用 VPN 或 Proxy 擴充功能，請開啟此項。瀏覽器會詢問一次。"
+  },
+  "popup_proxy_title_chromium": {
+    "message": "如果在此瀏覽器中使用 VPN 或 Proxy 擴充功能，請開啟此項。"
+  },
+  "popup_help": {
+    "message": "說明"
+  },
+  "page_support": {
+    "message": "支持 DDM"
+  },
+  "popup_declined": {
+    "message": "您的上一個下載留在瀏覽器中：$name$",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "setup.png"
+      }
+    }
+  },
+  "popup_declined_unnamed": {
+    "message": "您的上一個下載留在瀏覽器中。"
+  },
+  "declined_file_type": {
+    "message": "其檔案類型不在 Dannex Download Manager 的清單中 (「選項」→「檔案類型」)。"
+  },
+  "declined_site": {
+    "message": "其網站在 Dannex Download Manager 的略過網站清單中 (「選項」→「檔案類型」)。"
+  },
+  "declined_address": {
+    "message": "其位址在 Dannex Download Manager 的略過位址清單中 (「選項」→「檔案類型」)。"
+  },
+  "declined_small": {
+    "message": "檔案小於 Dannex Download Manager 接管的最小檔案 (「選項」→「檔案類型」)。"
+  },
+  "declined_browser": {
+    "message": "Dannex Download Manager 的「選項」→「一般」中未勾選此瀏覽器。"
+  },
+  "declined_integration_off": {
+    "message": "Dannex Download Manager 的「選項」→「一般」中已關閉瀏覽器整合。"
+  },
+  "declined_site_access": {
+    "message": "此擴充功能不允許用於該網站。"
+  },
+  "declined_handed_back": {
+    "message": "您已在 Dannex Download Manager 中為此項目選擇了使用瀏覽器下載。"
+  },
+  "video_off": {
+    "message": "此網站的下載按鈕已關閉"
+  },
+  "video_drm": {
+    "message": "受保護的影片：無法儲存"
+  },
+  "video_drm_audio": {
+    "message": "受保護的音訊：無法儲存"
+  },
+  "video_protected": {
+    "message": "受保護"
+  },
+  "video_download_audio": {
+    "message": "下載音訊"
+  },
+  "video_unnamed": {
+    "message": "請開啟影片本身的頁面，然後在那裡重試"
+  },
+  "video_looking": {
+    "message": "正在尋找畫質…"
+  },
+  "video_open_mdm": {
+    "message": "在 DDM 中開啟…"
+  },
+  "video_no_choices": {
+    "message": "此處沒有可下載的影片"
+  },
+  "video_playlist": {
+    "message": "影片清單：請在 Dannex Download Manager 中選擇"
+  },
+  "video_no_ytdlp": {
+    "message": "Dannex Download Manager 需要 yt-dlp 才能處理此影片。請按一下「在 DDM 中開啟…」來安裝。"
+  },
+  "video_too_long": {
+    "message": "尋找耗時過久"
+  },
+  "video_busy": {
+    "message": "Dannex Download Manager 正忙於處理其他影片"
+  },
+  "video_queued": {
+    "message": "已新增至佇列"
+  },
+  "video_failed_lookup": {
+    "message": "無法尋找"
+  },
+  "video_tab_video": {
+    "message": "影片"
+  },
+  "video_tab_audio": {
+    "message": "音訊"
+  },
+  "video_open_post": {
+    "message": "開啟貼文，然後使用該處的按鈕"
+  },
+  "video_audio_original": {
+    "message": "僅音訊，原始 $type$",
+    "placeholders": {
+      "type": {
+        "content": "$1",
+        "example": "M4A"
+      }
+    }
+  },
+  "video_audio_only": {
+    "message": "僅音訊 $type$",
+    "placeholders": {
+      "type": {
+        "content": "$1",
+        "example": "MP3 320 kbps"
+      }
+    }
+  },
+  "video_audio_original_short": {
+    "message": "原始 $type$",
+    "placeholders": {
+      "type": {
+        "content": "$1",
+        "example": "M4A"
+      }
+    }
+  },
+  "video_pick_waiting": {
+    "message": "DDM 就緒後會立即開始…"
+  },
+  "video_pick_gone": {
+    "message": "沒有此畫質：請選擇其他畫質"
+  },
+  "popup_send_to": {
+    "message": "傳送下載項目至"
+  },
+  "popup_send_here": {
+    "message": "這部電腦"
+  },
+  "popup_send_remote": {
+    "message": "另一部電腦上的 Dannex Download Manager"
+  },
+  "popup_remote_code": {
+    "message": "配對代碼"
+  },
+  "popup_remote_open": {
+    "message": "開啟它"
+  },
+  "popup_remote_pair": {
+    "message": "配對"
+  },
+  "popup_remote_help": {
+    "message": "請先在此處開啟其位址，然後輸入其「選項」→「遠端」→「配對裝置」中的代碼。"
+  },
+  "status_remote": {
+    "message": "下載項目傳送至 $address$",
+    "placeholders": {
+      "address": {
+        "content": "$1",
+        "example": "https://192.168.1.10:8463/"
+      }
+    }
+  },
+  "remote_address": {
+    "message": "輸入其 https:// 位址。"
+  },
+  "remote_unreachable": {
+    "message": "無法連線。請在此瀏覽器中開啟其位址，略過安全性警告後再試一次。"
+  },
+  "remote_wrong_code": {
+    "message": "代碼錯誤。"
+  },
+  "remote_no_code": {
+    "message": "尚無可輸入的代碼：請先在該處按一下「配對裝置」。"
+  },
+  "remote_too_soon": {
+    "message": "請稍候片刻，然後再試一次。"
+  },
+  "remote_failed": {
+    "message": "失敗。請再試一次。"
+  },
+  "remote_device_name": {
+    "message": "瀏覽器擴充功能"
+  },
+  "badge_off": {
+    "message": "關閉"
+  },
+  "tip_on": {
+    "message": "Dannex Download Manager 已開啟。"
+  },
+  "tip_off": {
+    "message": "Dannex Download Manager 已關閉。"
+  },
+  "tip_remote": {
+    "message": "下載會傳送到位於 $address$ 的 Dannex Download Manager。",
+    "placeholders": {
+      "address": {
+        "content": "$1",
+        "example": "https://192.168.1.10:8463/"
+      }
+    }
+  },
+  "status_off_in_app": {
+    "message": "已在 Dannex Download Manager 中關閉"
+  },
+  "status_duplicate": {
+    "message": "已安裝此擴充功能的另一個副本"
+  },
+  "click_fix": {
+    "message": "按一下可查看處理方式。"
+  },
+  "click_details": {
+    "message": "按一下可查看詳細資料。"
+  },
+  "toolbar_exclude": {
+    "message": "不接管此網站的下載"
+  },
+  "toolbar_help": {
+    "message": "說明"
+  },
+  "toolbar_store": {
+    "message": "從 Chrome 線上應用程式商店取得自動更新..."
+  },
+  "options_take_note": {
+    "message": "關閉時，下載會保留在瀏覽器中。擴充功能的按鈕有相同的開關。"
+  },
+  "options_what_to_do": {
+    "message": "查看處理方式"
+  },
+  "options_more": {
+    "message": "更多"
+  },
+  "page_checking": {
+    "message": "正在尋找 Dannex Download Manager…"
+  },
+  "page_on_lead": {
+    "message": "您在此瀏覽器中開始的下載會交給 Dannex Download Manager。"
+  },
+  "page_off_lead": {
+    "message": "已關閉，因此下載會留在此瀏覽器中。"
+  },
+  "page_remote_title": {
+    "message": "下載會交給另一個 Dannex Download Manager"
+  },
+  "page_remote_lead": {
+    "message": "您在此瀏覽器中開始的下載會交給位於 $address$ 的 Dannex Download Manager。",
+    "placeholders": {
+      "address": {
+        "content": "$1",
+        "example": "https://192.168.1.10:8463/"
+      }
+    }
+  },
+  "page_lead_not_installed": {
+    "message": "此擴充功能需要免費的 Dannex Download Manager 應用程式。安裝後，此頁面會自動更新。"
+  },
+  "page_lead_not_running": {
+    "message": "瀏覽器嘗試啟動它，但等待時間過長。請自行啟動 Dannex Download Manager，然後再試一次。"
+  },
+  "page_lead_host_failed": {
+    "message": "通常是安全性軟體造成的。請在防毒程式中允許 Dannex Download Manager，或重新安裝。"
+  },
+  "page_lead_forbidden": {
+    "message": "此版本的 Dannex Download Manager 太舊，無法搭配此擴充功能使用。請安裝最新版本。"
+  },
+  "page_lead_too_large": {
+    "message": "該網站傳送的登入資料過多。請登出該網站後重新登入，然後再試一次。"
+  },
+  "page_download": {
+    "message": "下載 Dannex Download Manager"
+  },
+  "page_files_windows": {
+    "message": "適用於 Windows 10 和 11。"
+  },
+  "page_files_macos": {
+    "message": "適用於 Mac (.dmg 磁碟映像)。"
+  },
+  "page_files_linux": {
+    "message": "適用於 Linux (AppImage、.deb 或 .rpm)。"
+  },
+  "page_files_other": {
+    "message": "適用於 Windows、Mac 和 Linux 電腦。"
+  },
+  "page_all_downloads": {
+    "message": "所有下載"
+  },
+  "page_step_windows": {
+    "message": "執行您下載的安裝程式。"
+  },
+  "page_step_macos": {
+    "message": "開啟 .dmg，將 Dannex Download Manager 拖曳到「應用程式」，然後啟動一次。"
+  },
+  "page_step_linux": {
+    "message": "安裝 .deb 或 .rpm (或執行 AppImage)，然後啟動 Dannex Download Manager 一次。"
+  },
+  "page_step_other": {
+    "message": "Dannex Download Manager 可在 Windows、Mac 和 Linux 電腦上執行。請安裝在其中一部電腦，並在該電腦的瀏覽器中新增此擴充功能。"
+  },
+  "page_step_wait": {
+    "message": "請保持此頁面開啟。Dannex Download Manager 就緒時，頁面會自動更新。"
+  },
+  "page_step_restart": {
+    "message": "一分鐘後仍沒有反應？請重新啟動瀏覽器。"
+  },
+  "page_step_installed": {
+    "message": "已安裝？請在 Dannex Download Manager 中開啟「選項」→「一般」→「測試瀏覽器整合」。"
+  },
+  "page_try_again": {
+    "message": "再試一次"
+  },
+  "page_app_options": {
+    "message": "開啟 Dannex Download Manager 的「選項」"
+  },
+  "page_duplicate_title": {
+    "message": "移除此副本"
+  },
+  "page_duplicate_lead": {
+    "message": "Chrome 線上應用程式商店中的副本也已安裝，並會自行更新。你可以移除此副本。"
+  },
+  "page_remove": {
+    "message": "移除此副本"
+  },
+  "page_extensions": {
+    "message": "開啟擴充功能頁面"
+  },
+  "page_update_app_how": {
+    "message": "在 Dannex Download Manager 中，選擇說明 → 檢查更新..."
+  },
+  "page_behind": {
+    "message": "Dannex Download Manager $version$ 隨附了此擴充功能的較新版本。",
+    "placeholders": {
+      "version": {
+        "content": "$1",
+        "example": "0.7.0"
+      }
+    }
+  },
+  "page_behind_store": {
+    "message": "瀏覽器會在數小時內自動更新，或立即使用「檢查更新」。"
+  },
+  "page_behind_unpacked": {
+    "message": "請重新載入擴充功能以使用。"
+  },
+  "page_behind_other": {
+    "message": "請從 Dannex Download Manager 的資料夾新增新版本，方式與新增此版本時相同。"
+  },
+  "page_check_updates": {
+    "message": "檢查更新"
+  },
+  "page_up_to_date": {
+    "message": "目前沒有較新的版本。瀏覽器會自動再次檢查。"
+  },
+  "page_reload": {
+    "message": "重新載入擴充功能"
+  },
+  "page_store": {
+    "message": "取得自動更新：從 Chrome 線上應用程式商店新增此擴充功能，然後移除此副本。"
+  },
+  "page_open_store": {
+    "message": "開啟 Chrome 線上應用程式商店"
+  },
+  "page_temporary": {
+    "message": "Firefox 會在關閉時移除此附加元件，因為它是以暫時附加元件的方式新增。"
+  },
+  "page_site_access": {
+    "message": "此擴充功能僅允許用於部分網站，因此其他網站的下載會留在瀏覽器中。"
+  },
+  "page_allow_sites": {
+    "message": "允許存取所有網站"
+  },
+  "page_private": {
+    "message": "來自私人視窗的下載會留在瀏覽器中，因為此擴充功能不允許在該處執行。"
+  },
+  "page_private_chromium": {
+    "message": "若要變更，請在其詳細資料頁面開啟「允許在無痕模式下執行」。"
+  },
+  "page_private_firefox": {
+    "message": "若要變更，請在「附加元件和佈景主題」頁面中，選擇「在隱私視窗中執行 (Run in Private Windows)」旁的「允許」。"
+  },
+  "page_learn_more": {
+    "message": "深入了解"
+  },
+  "popup_video": {
+    "message": "下載此頁面上的影片"
+  },
+  "popup_all": {
+    "message": "下載此頁面上的所有連結"
+  },
+  "popup_no_links": {
+    "message": "此頁面沒有可下載的連結。"
+  },
+  "popup_drm": {
+    "message": "此頁面的影片或音訊受著作權保護 (DRM)，無法下載。"
+  },
+  "popup_status": {
+    "message": "狀態與說明"
+  },
+  "popup_options": {
+    "message": "擴充功能選項"
+  },
+  "popup_fix": {
+    "message": "查看處理方式"
+  }
+}

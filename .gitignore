@@ -1,0 +1,9 @@
+
+# AI agent files (local only)
+/.claude/
+/.impeccable/
+/CLAUDE.md
+/DESIGN.md
+/PRODUCT.md
+/target/
+__pycache__/

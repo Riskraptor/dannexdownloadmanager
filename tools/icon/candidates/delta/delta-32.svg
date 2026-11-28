@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+<defs>
+<linearGradient id="t" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#8A63FF"/><stop offset="0.5" stop-color="#5B2EE6"/><stop offset="1" stop-color="#3A12B0"/></linearGradient>
+<clipPath id="d-c"><path d="M5.24,9.87 A1.2,1.2 0 0 1 6.24,8 L25.76,8 A1.2,1.2 0 0 1 26.76,9.87 L17.4,23.9 A1.68,1.68 0 0 1 14.6,23.9 Z"/></clipPath><mask id="d-m" maskUnits="userSpaceOnUse" x="2.04" y="6.04" width="27.92" height="21.92"><rect x="2.04" y="6.04" width="27.92" height="21.92" fill="#fff"/><path d="M11.55,6.04 L12.45,6.04 L16,26 Z" fill="#000"/><path d="M19.55,6.04 L20.45,6.04 L16,26 Z" fill="#000"/></mask>
+</defs>
+<path d="M8,1 H24 A7,7 0 0 1 31,8 V24 A7,7 0 0 1 24,31 H8 A7,7 0 0 1 1,24 V8 A7,7 0 0 1 8,1 Z" fill="url(#t)"/><g clip-path="url(#d-c)" mask="url(#d-m)"><path d="M2.04,6.04 L12,6.04 L12,8 L16,26 L16,27.96 L2.04,27.96 Z" fill="#E6DCFF"/><path d="M12,6.04 L20,6.04 L20,8 L16,26 L12,8 Z" fill="#FFFFFF"/><path d="M20,6.04 L29.96,6.04 L29.96,27.96 L16,27.96 L16,26 L20,8 Z" fill="#C7B4FF"/></g>
+</svg>
