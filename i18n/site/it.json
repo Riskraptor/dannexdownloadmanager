@@ -3750,6 +3750,10 @@
    "source": "A page whose video the window can't find: play the video in your browser, then use the extension's button over it, or right-click the video → <g1>Download with DDM</g1>: either sends the stream the page loaded (<g2>Videos a page plays</g2>).",
    "text": "Una pagina il cui video la finestra non riesce a trovare: riproduci il video nel browser, poi usa il pulsante dell'estensione sopra di esso, oppure fai clic destro sul video → <g1>Scarica con DDM</g1>: entrambi inviano lo stream caricato dalla pagina (<g2>Video riprodotti da una pagina</g2>)."
   },
+  "35466d02254da657": {
+   "source": "<g1>Play while downloading</g1> no longer closes DDM: it opens the torrent's video or sound in your browser's player as it should.",
+   "text": "<g1>Riproduci durante il download</g1> non chiude più DDM: apre il video o l'audio del torrent nel lettore del browser, come deve."
+  },
   "35694583fe0f1379": {
    "source": "In the same window, tick <g1>Limit all downloads together to</g1> and set the speed. This caps DDM as a whole, however many files are downloading, torrents included. When torrents and other downloads run at the same time, each side gets at least half of the speed, and more when the other side needs less: a torrent going slowly leaves the rest to the other downloads, and the other way round. It applies whenever it is ticked, whether the per-file limiter is on or off.",
    "text": "Nella stessa finestra, seleziona <g1>Limita il totale di tutti i download a</g1> e imposta la velocità. Questo limita la velocità complessiva di DDM, indipendentemente dal numero di file in download, inclusi i torrent. Quando torrent e altri download sono in corso contemporaneamente, ciascun gruppo riceve almeno metà della velocità e può riceverne di più quando l'altro ne usa meno: se un torrent procede lentamente, la velocità restante va agli altri download, e viceversa. Il limite si applica ogni volta che l'opzione è selezionata, sia che il limitatore per file sia attivo o meno."
@@ -5817,6 +5821,10 @@
   "52568481c8f45946": {
    "source": "Classic",
    "text": "Classico"
+  },
+  "526c46252e66507b": {
+   "source": "<g1>Updates on Linux (.deb and .rpm):</g1> <g2>Update now</g2> installs the new version itself after your system asks for your password, and starts it. It used to hand the file to the system's app store, which on Ubuntu opened and installed nothing.",
+   "text": "<g1>Aggiornamenti su Linux (.deb e .rpm):</g1> <g2>Aggiorna ora</g2> installa da solo la nuova versione dopo che il sistema ti ha chiesto la password, e la avvia. Prima passava il file all'app store del sistema, che su Ubuntu non apriva e non installava nulla."
   },
   "52ceae361fb11f6c": {
    "source": "A list's, a table's or a box's outline",
@@ -11346,6 +11354,10 @@
    "source": "Keep some speed for everything else",
    "text": "Mantenere un po' di velocità per tutto il resto"
   },
+  "a1904953bccc8225": {
+   "source": "<g1>On Linux with the .deb or .rpm, from {v1} this one time:</g1> if <g2>Update now</g2> opens your app store and nothing changes, download the {v2} package from https://dannex.kavangi.co.ke/download.html and open it from your Downloads folder. Later updates install themselves.",
+   "text": "<g1>Su Linux con .deb o .rpm, dalla {v1}, solo questa volta:</g1> se <g2>Aggiorna ora</g2> apre l'app store e non cambia nulla, scarica il pacchetto {v2} da https://dannex.kavangi.co.ke/download.html e aprilo dalla cartella Download. Gli aggiornamenti successivi si installano da soli."
+  },
   "a1929a4367eebbb2": {
    "source": "Turn it on",
    "text": "Attivalo"
@@ -12053,6 +12065,10 @@
   "ac3ae05271f8b980": {
    "source": "What's new — Dannex Download Manager version history",
    "text": "Novità | Cronologia delle versioni di Dannex Download Manager"
+  },
+  "ac43945464c62c80": {
+   "source": "<g1>Easier to find:</g1> a running torrent's progress window has a <g2>Play while downloading</g2> button, and it is the first item when you right-click a torrent with a video or sound file.",
+   "text": "<g1>Più facile da trovare:</g1> la finestra di avanzamento di un torrent in corso ha un pulsante <g2>Riproduci durante il download</g2>, ed è la prima voce quando fai clic destro su un torrent con un file video o audio."
   },
   "ac4b27cd07db9df5": {
    "source": "shows every option. A command that fails (the app isn't running, it answers with an error, a download breaks) exits with code 1. For example:",

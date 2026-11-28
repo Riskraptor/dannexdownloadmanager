@@ -3378,6 +3378,10 @@
    "source": "A page whose video the window can't find: play the video in your browser, then use the extension's button over it, or right-click the video → <g1>Download with DDM</g1>: either sends the stream the page loaded (<g2>Videos a page plays</g2>).",
    "text": "窗口找不到视频的页面：请在浏览器中播放该视频，然后使用扩展在其上的按钮，或右键单击视频 → <g1>使用 DDM 下载</g1>：两者都会发送页面加载的流（<g2>页面播放的视频</g2>）。"
   },
+  "35466d02254da657": {
+   "source": "<g1>Play while downloading</g1> no longer closes DDM: it opens the torrent's video or sound in your browser's player as it should.",
+   "text": "<g1>边下载边播放</g1>不再会关闭 DDM：它会按预期在你的浏览器播放器中打开种子里的视频或音频。"
+  },
   "35694583fe0f1379": {
    "source": "In the same window, tick <g1>Limit all downloads together to</g1> and set the speed. This caps DDM as a whole, however many files are downloading, torrents included. When torrents and other downloads run at the same time, each side gets at least half of the speed, and more when the other side needs less: a torrent going slowly leaves the rest to the other downloads, and the other way round. It applies whenever it is ticked, whether the per-file limiter is on or off.",
    "text": "在同一窗口中，勾选<g1>将所有下载总计限制为</g1>并设置速度。无论有多少个文件正在下载，这都会限制 DDM 的总速度，包括种子。当种子和其他下载同时运行时，双方至少各自获得一半的速度；如果一方需要的速度较少，另一方就能获得更多：种子速度较慢时，剩余速度会分配给其他下载，反之亦然。只要勾选此选项，无论是否启用单个文件的限速器，限制都会生效。"
@@ -5189,6 +5193,10 @@
   "52568481c8f45946": {
    "source": "Classic",
    "text": "经典"
+  },
+  "526c46252e66507b": {
+   "source": "<g1>Updates on Linux (.deb and .rpm):</g1> <g2>Update now</g2> installs the new version itself after your system asks for your password, and starts it. It used to hand the file to the system's app store, which on Ubuntu opened and installed nothing.",
+   "text": "<g1>Linux 上的更新（.deb 和 .rpm）：</g1>系统要求输入密码后，<g2>立即更新</g2>会自行安装新版本并启动它。以前它会把文件交给系统的应用商店，而在 Ubuntu 上应用商店打开后什么也没安装。"
   },
   "52ceae361fb11f6c": {
    "source": "A list's, a table's or a box's outline",
@@ -10158,6 +10166,10 @@
    "source": "Keep some speed for everything else",
    "text": "为其他任务保留一些速度"
   },
+  "a1904953bccc8225": {
+   "source": "<g1>On Linux with the .deb or .rpm, from {v1} this one time:</g1> if <g2>Update now</g2> opens your app store and nothing changes, download the {v2} package from https://dannex.kavangi.co.ke/download.html and open it from your Downloads folder. Later updates install themselves.",
+   "text": "<g1>在使用 .deb 或 .rpm 的 Linux 上，从 {v1} 更新，仅此一次：</g1>如果<g2>立即更新</g2>打开了应用商店却没有任何变化，请从 https://dannex.kavangi.co.ke/download.html 下载 {v2} 安装包，并在“下载”文件夹中打开它。以后的更新会自行安装。"
+  },
   "a1929a4367eebbb2": {
    "source": "Turn it on",
    "text": "开启"
@@ -10805,6 +10817,10 @@
   "ac1acb5254f1187e": {
    "source": "What video a page holds (YouTube, Vimeo, ...), and the qualities to choose from.",
    "text": "查看网页中包含的视频（YouTube、Vimeo 等）以及可选画质。"
+  },
+  "ac43945464c62c80": {
+   "source": "<g1>Easier to find:</g1> a running torrent's progress window has a <g2>Play while downloading</g2> button, and it is the first item when you right-click a torrent with a video or sound file.",
+   "text": "<g1>更容易找到：</g1>正在运行的种子的进度窗口里有一个<g2>边下载边播放</g2>按钮；右键点击含视频或音频文件的种子时，它是第一项。"
   },
   "ac4b27cd07db9df5": {
    "source": "shows every option. A command that fails (the app isn't running, it answers with an error, a download breaks) exits with code 1. For example:",

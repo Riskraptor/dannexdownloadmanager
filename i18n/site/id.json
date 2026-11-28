@@ -3750,6 +3750,10 @@
    "source": "A page whose video the window can't find: play the video in your browser, then use the extension's button over it, or right-click the video → <g1>Download with DDM</g1>: either sends the stream the page loaded (<g2>Videos a page plays</g2>).",
    "text": "Halaman yang videonya tidak dapat ditemukan jendela: putar video di browser Anda, lalu gunakan tombol ekstensi di atasnya, atau klik kanan video → <g1>Unduh dengan DDM</g1>: keduanya mengirim aliran yang dimuat halaman (<g2>Video yang diputar halaman</g2>)."
   },
+  "35466d02254da657": {
+   "source": "<g1>Play while downloading</g1> no longer closes DDM: it opens the torrent's video or sound in your browser's player as it should.",
+   "text": "<g1>Putar saat mengunduh</g1> tidak lagi menutup DDM: video atau suara torrent dibuka di pemutar peramban Anda, sebagaimana mestinya."
+  },
   "35694583fe0f1379": {
    "source": "In the same window, tick <g1>Limit all downloads together to</g1> and set the speed. This caps DDM as a whole, however many files are downloading, torrents included. When torrents and other downloads run at the same time, each side gets at least half of the speed, and more when the other side needs less: a torrent going slowly leaves the rest to the other downloads, and the other way round. It applies whenever it is ticked, whether the per-file limiter is on or off.",
    "text": "Di jendela yang sama, centang <g1>Batasi semua unduhan bersama-sama hingga</g1> dan atur kecepatannya. Ini membatasi DDM secara keseluruhan, tidak peduli berapa banyak berkas yang diunduh, termasuk torrent. Ketika torrent dan unduhan lain berjalan bersamaan, masing-masing pihak mendapatkan setidaknya setengah dari kecepatan, dan lebih banyak jika pihak lain membutuhkan lebih sedikit: torrent yang berjalan lambat menyisakan sisanya untuk unduhan lain, dan sebaliknya. Ini berlaku kapan pun dicentang, baik pembatas per berkas aktif atau tidak."
@@ -5817,6 +5821,10 @@
   "52568481c8f45946": {
    "source": "Classic",
    "text": "Klasik"
+  },
+  "526c46252e66507b": {
+   "source": "<g1>Updates on Linux (.deb and .rpm):</g1> <g2>Update now</g2> installs the new version itself after your system asks for your password, and starts it. It used to hand the file to the system's app store, which on Ubuntu opened and installed nothing.",
+   "text": "<g1>Pembaruan di Linux (.deb dan .rpm):</g1> <g2>Perbarui sekarang</g2> memasang versi baru sendiri setelah sistem meminta kata sandi Anda, lalu menjalankannya. Sebelumnya file diserahkan ke toko aplikasi sistem, yang di Ubuntu tidak membuka atau memasang apa pun."
   },
   "52ceae361fb11f6c": {
    "source": "A list's, a table's or a box's outline",
@@ -11346,6 +11354,10 @@
    "source": "Keep some speed for everything else",
    "text": "Sisakan kecepatan untuk keperluan lain"
   },
+  "a1904953bccc8225": {
+   "source": "<g1>On Linux with the .deb or .rpm, from {v1} this one time:</g1> if <g2>Update now</g2> opens your app store and nothing changes, download the {v2} package from https://dannex.kavangi.co.ke/download.html and open it from your Downloads folder. Later updates install themselves.",
+   "text": "<g1>Di Linux dengan .deb atau .rpm, dari {v1}, sekali ini saja:</g1> jika <g2>Perbarui sekarang</g2> membuka toko aplikasi dan tidak ada yang berubah, unduh paket {v2} dari https://dannex.kavangi.co.ke/download.html dan buka dari folder Unduhan. Pembaruan berikutnya terpasang sendiri."
+  },
   "a1929a4367eebbb2": {
    "source": "Turn it on",
    "text": "Nyalakan"
@@ -12053,6 +12065,10 @@
   "ac3ae05271f8b980": {
    "source": "What's new — Dannex Download Manager version history",
    "text": "Yang baru — riwayat versi Dannex Download Manager"
+  },
+  "ac43945464c62c80": {
+   "source": "<g1>Easier to find:</g1> a running torrent's progress window has a <g2>Play while downloading</g2> button, and it is the first item when you right-click a torrent with a video or sound file.",
+   "text": "<g1>Lebih mudah ditemukan:</g1> jendela kemajuan torrent yang sedang berjalan punya tombol <g2>Putar saat mengunduh</g2>, dan itu menjadi item pertama saat Anda mengeklik kanan torrent yang berisi file video atau suara."
   },
   "ac4b27cd07db9df5": {
    "source": "shows every option. A command that fails (the app isn't running, it answers with an error, a download breaks) exits with code 1. For example:",

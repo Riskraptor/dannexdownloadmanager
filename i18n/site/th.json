@@ -3750,6 +3750,10 @@
    "source": "A page whose video the window can't find: play the video in your browser, then use the extension's button over it, or right-click the video → <g1>Download with DDM</g1>: either sends the stream the page loaded (<g2>Videos a page plays</g2>).",
    "text": "หน้าที่หน้าต่างหาวิดีโอไม่พบ: เล่นวิดีโอในเบราว์เซอร์ แล้วใช้ปุ่มของส่วนขยายบนวิดีโอ หรือคลิกขวาที่วิดีโอ → <g1>ดาวน์โหลดด้วย DDM</g1> ทั้งสองวิธีจะส่งสตรีมที่หน้านั้นโหลดไป (<g2>Videos a page plays</g2>)"
   },
+  "35466d02254da657": {
+   "source": "<g1>Play while downloading</g1> no longer closes DDM: it opens the torrent's video or sound in your browser's player as it should.",
+   "text": "<g1>เล่นขณะดาวน์โหลด</g1> ไม่ปิด DDM อีกต่อไป แต่จะเปิดวิดีโอหรือเสียงของทอร์เรนต์ในเครื่องเล่นของเบราว์เซอร์ตามที่ควรเป็น"
+  },
   "35694583fe0f1379": {
    "source": "In the same window, tick <g1>Limit all downloads together to</g1> and set the speed. This caps DDM as a whole, however many files are downloading, torrents included. When torrents and other downloads run at the same time, each side gets at least half of the speed, and more when the other side needs less: a torrent going slowly leaves the rest to the other downloads, and the other way round. It applies whenever it is ticked, whether the per-file limiter is on or off.",
    "text": "ในหน้าต่างเดียวกัน ให้เลือก <g1>จำกัดการดาวน์โหลดทั้งหมดรวมกันที่</g1> แล้วตั้งค่าความเร็ว การตั้งค่านี้จะจำกัดความเร็วโดยรวมของ DDM ไม่ว่าจะกำลังดาวน์โหลดกี่ไฟล์ รวมถึงทอร์เรนต์ด้วย เมื่อทอร์เรนต์และการดาวน์โหลดอื่นทำงานพร้อมกัน แต่ละฝ่ายจะได้ความเร็วอย่างน้อยครึ่งหนึ่ง และจะได้มากขึ้นเมื่ออีกฝ่ายต้องการน้อยลง: หากทอร์เรนต์ดาวน์โหลดช้า ความเร็วส่วนที่เหลือจะไปยังการดาวน์โหลดอื่น และในทางกลับกัน การตั้งค่านี้จะมีผลเมื่อเลือกไว้ ไม่ว่าตัวจำกัดความเร็วต่อไฟล์จะเปิดหรือปิดอยู่ก็ตาม"
@@ -5817,6 +5821,10 @@
   "52568481c8f45946": {
    "source": "Classic",
    "text": "คลาสสิก"
+  },
+  "526c46252e66507b": {
+   "source": "<g1>Updates on Linux (.deb and .rpm):</g1> <g2>Update now</g2> installs the new version itself after your system asks for your password, and starts it. It used to hand the file to the system's app store, which on Ubuntu opened and installed nothing.",
+   "text": "<g1>การอัปเดตบน Linux (.deb และ .rpm):</g1> <g2>อัปเดตเดี๋ยวนี้</g2> จะติดตั้งเวอร์ชันใหม่เองหลังจากระบบขอรหัสผ่าน แล้วเปิดใช้งานทันที ก่อนหน้านี้จะส่งไฟล์ให้แอปสโตร์ของระบบ ซึ่งบน Ubuntu ไม่เปิดและไม่ติดตั้งอะไรเลย"
   },
   "52ceae361fb11f6c": {
    "source": "A list's, a table's or a box's outline",
@@ -11350,6 +11358,10 @@
    "source": "Keep some speed for everything else",
    "text": "คงความเร็วไว้สำหรับสิ่งอื่น ๆ"
   },
+  "a1904953bccc8225": {
+   "source": "<g1>On Linux with the .deb or .rpm, from {v1} this one time:</g1> if <g2>Update now</g2> opens your app store and nothing changes, download the {v2} package from https://dannex.kavangi.co.ke/download.html and open it from your Downloads folder. Later updates install themselves.",
+   "text": "<g1>บน Linux ที่ใช้ .deb หรือ .rpm จาก {v1} เฉพาะครั้งนี้ครั้งเดียว:</g1> หาก <g2>อัปเดตเดี๋ยวนี้</g2> เปิดแอปสโตร์แล้วไม่มีอะไรเปลี่ยนแปลง ให้ดาวน์โหลดแพ็กเกจ {v2} จาก https://dannex.kavangi.co.ke/download.html แล้วเปิดจากโฟลเดอร์ดาวน์โหลด การอัปเดตครั้งต่อไปจะติดตั้งเอง"
+  },
   "a1929a4367eebbb2": {
    "source": "Turn it on",
    "text": "เปิดใช้งาน"
@@ -12057,6 +12069,10 @@
   "ac3ae05271f8b980": {
    "source": "What's new — Dannex Download Manager version history",
    "text": "มีอะไรใหม่ — ประวัติเวอร์ชันของ Dannex Download Manager"
+  },
+  "ac43945464c62c80": {
+   "source": "<g1>Easier to find:</g1> a running torrent's progress window has a <g2>Play while downloading</g2> button, and it is the first item when you right-click a torrent with a video or sound file.",
+   "text": "<g1>หาได้ง่ายขึ้น:</g1> หน้าต่างความคืบหน้าของทอร์เรนต์ที่กำลังทำงานมีปุ่ม <g2>เล่นขณะดาวน์โหลด</g2> และเป็นรายการแรกเมื่อคลิกขวาที่ทอร์เรนต์ที่มีไฟล์วิดีโอหรือไฟล์เสียง"
   },
   "ac4b27cd07db9df5": {
    "source": "shows every option. A command that fails (the app isn't running, it answers with an error, a download breaks) exits with code 1. For example:",

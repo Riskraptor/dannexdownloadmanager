@@ -3378,6 +3378,10 @@
    "source": "A page whose video the window can't find: play the video in your browser, then use the extension's button over it, or right-click the video → <g1>Download with DDM</g1>: either sends the stream the page loaded (<g2>Videos a page plays</g2>).",
    "text": "Une page dont la fenêtre ne trouve pas la vidéo : lisez la vidéo dans votre navigateur, puis utilisez le bouton de l’extension dessus, ou faites un clic droit sur la vidéo → <g1>Télécharger avec DDM</g1> : l’un ou l’autre envoie le flux que la page a chargé (<g2>Vidéos lues par une page</g2>)."
   },
+  "35466d02254da657": {
+   "source": "<g1>Play while downloading</g1> no longer closes DDM: it opens the torrent's video or sound in your browser's player as it should.",
+   "text": "<g1>Lecture pendant le téléchargement</g1> ne ferme plus DDM : il ouvre la vidéo ou le son du torrent dans le lecteur de votre navigateur, comme il se doit."
+  },
   "35694583fe0f1379": {
    "source": "In the same window, tick <g1>Limit all downloads together to</g1> and set the speed. This caps DDM as a whole, however many files are downloading, torrents included. When torrents and other downloads run at the same time, each side gets at least half of the speed, and more when the other side needs less: a torrent going slowly leaves the rest to the other downloads, and the other way round. It applies whenever it is ticked, whether the per-file limiter is on or off.",
    "text": "Dans la même fenêtre, cochez <g1>Limiter tous les téléchargements ensemble à</g1> et définissez la vitesse. Cela limite DDM dans son ensemble, quel que soit le nombre de fichiers en cours de téléchargement, y compris les torrents. Lorsque les torrents et les autres téléchargements s’exécutent en même temps, chaque côté reçoit au moins la moitié de la vitesse, et plus lorsque l’autre côté a moins besoin : un torrent qui va lentement laisse le reste aux autres téléchargements, et vice versa. Cela s’applique dès que la case est cochée, que le limiteur par fichier soit activé ou désactivé."
@@ -5189,6 +5193,10 @@
   "52568481c8f45946": {
    "source": "Classic",
    "text": "Classique"
+  },
+  "526c46252e66507b": {
+   "source": "<g1>Updates on Linux (.deb and .rpm):</g1> <g2>Update now</g2> installs the new version itself after your system asks for your password, and starts it. It used to hand the file to the system's app store, which on Ubuntu opened and installed nothing.",
+   "text": "<g1>Mises à jour sous Linux (.deb et .rpm) :</g1> <g2>Mettre à jour maintenant</g2> installe lui-même la nouvelle version une fois que le système vous a demandé votre mot de passe, puis la lance. Avant, il confiait le fichier à la logithèque du système, qui sous Ubuntu s’ouvrait sans rien installer."
   },
   "52ceae361fb11f6c": {
    "source": "A list's, a table's or a box's outline",
@@ -10158,6 +10166,10 @@
    "source": "Keep some speed for everything else",
    "text": "Garder de la bande passante pour le reste"
   },
+  "a1904953bccc8225": {
+   "source": "<g1>On Linux with the .deb or .rpm, from {v1} this one time:</g1> if <g2>Update now</g2> opens your app store and nothing changes, download the {v2} package from https://dannex.kavangi.co.ke/download.html and open it from your Downloads folder. Later updates install themselves.",
+   "text": "<g1>Sous Linux avec le .deb ou le .rpm, depuis la {v1}, cette fois seulement :</g1> si <g2>Mettre à jour maintenant</g2> ouvre votre logithèque et que rien ne change, téléchargez le paquet {v2} depuis https://dannex.kavangi.co.ke/download.html et ouvrez-le depuis votre dossier Téléchargements. Les mises à jour suivantes s’installent toutes seules."
+  },
   "a1929a4367eebbb2": {
    "source": "Turn it on",
    "text": "L'activer"
@@ -10805,6 +10817,10 @@
   "ac1acb5254f1187e": {
    "source": "What video a page holds (YouTube, Vimeo, ...), and the qualities to choose from.",
    "text": "Vidéo présente sur une page (YouTube, Vimeo, ...) et qualités disponibles."
+  },
+  "ac43945464c62c80": {
+   "source": "<g1>Easier to find:</g1> a running torrent's progress window has a <g2>Play while downloading</g2> button, and it is the first item when you right-click a torrent with a video or sound file.",
+   "text": "<g1>Plus facile à trouver :</g1> la fenêtre de progression d’un torrent en cours a un bouton <g2>Lecture pendant le téléchargement</g2>, et c’est le premier élément quand vous faites un clic droit sur un torrent contenant un fichier vidéo ou audio."
   },
   "ac4b27cd07db9df5": {
    "source": "shows every option. A command that fails (the app isn't running, it answers with an error, a download breaks) exits with code 1. For example:",

@@ -3378,6 +3378,10 @@
    "source": "A page whose video the window can't find: play the video in your browser, then use the extension's button over it, or right-click the video → <g1>Download with DDM</g1>: either sends the stream the page loaded (<g2>Videos a page plays</g2>).",
    "text": "ウィンドウが動画を見つけられないページ: ブラウザーで動画を再生してから、その上の拡張機能のボタンを使うか、動画を右クリック → <g1>DDM でダウンロード</g1> を選びます。どちらも、ページが読み込んだストリームを送信します (<g2>ページが再生する動画</g2>)。"
   },
+  "35466d02254da657": {
+   "source": "<g1>Play while downloading</g1> no longer closes DDM: it opens the torrent's video or sound in your browser's player as it should.",
+   "text": "<g1>ダウンロードしながら再生</g1>で DDM が閉じることはなくなりました。トレントの動画や音声が、本来どおりブラウザーのプレーヤーで開きます。"
+  },
   "35694583fe0f1379": {
    "source": "In the same window, tick <g1>Limit all downloads together to</g1> and set the speed. This caps DDM as a whole, however many files are downloading, torrents included. When torrents and other downloads run at the same time, each side gets at least half of the speed, and more when the other side needs less: a torrent going slowly leaves the rest to the other downloads, and the other way round. It applies whenever it is ticked, whether the per-file limiter is on or off.",
    "text": "同じウィンドウで、<g1>すべてのダウンロードを合計で制限する</g1>にチェックを入れ、速度を設定します。これにより、ダウンロード中のファイル数に関わらず、トレントを含めDDM全体の速度が制限されます。トレントと他のダウンロードが同時に実行される場合、それぞれが少なくとも半分の速度を得て、もう一方がより少ない速度を必要とする場合はそれ以上になります。例えば、トレントの進行が遅い場合、残りの速度は他のダウンロードに割り当てられ、その逆も同様です。この設定は、ファイルごとの制限がオンかオフかに関わらず、チェックが入っている間は常に適用されます。"
@@ -5189,6 +5193,10 @@
   "52568481c8f45946": {
    "source": "Classic",
    "text": "クラシック"
+  },
+  "526c46252e66507b": {
+   "source": "<g1>Updates on Linux (.deb and .rpm):</g1> <g2>Update now</g2> installs the new version itself after your system asks for your password, and starts it. It used to hand the file to the system's app store, which on Ubuntu opened and installed nothing.",
+   "text": "<g1>Linux での更新 (.deb と .rpm):</g1> システムがパスワードを求めたあと、<g2>今すぐ更新</g2>が新しいバージョンを自分でインストールし、起動します。以前はファイルをシステムのアプリストアに渡していましたが、Ubuntu ではアプリストアが開くだけで何もインストールされませんでした。"
   },
   "52ceae361fb11f6c": {
    "source": "A list's, a table's or a box's outline",
@@ -10158,6 +10166,10 @@
    "source": "Keep some speed for everything else",
    "text": "他の作業のために速度を確保する"
   },
+  "a1904953bccc8225": {
+   "source": "<g1>On Linux with the .deb or .rpm, from {v1} this one time:</g1> if <g2>Update now</g2> opens your app store and nothing changes, download the {v2} package from https://dannex.kavangi.co.ke/download.html and open it from your Downloads folder. Later updates install themselves.",
+   "text": "<g1>.deb または .rpm を使う Linux で {v1} から更新する場合、今回だけ:</g1> <g2>今すぐ更新</g2>でアプリストアが開いても何も変わらないときは、https://dannex.kavangi.co.ke/download.html から {v2} のパッケージをダウンロードし、「ダウンロード」フォルダーから開いてください。以降の更新は自動でインストールされます。"
+  },
   "a1929a4367eebbb2": {
    "source": "Turn it on",
    "text": "オンにする"
@@ -10805,6 +10817,10 @@
   "ac1acb5254f1187e": {
    "source": "What video a page holds (YouTube, Vimeo, ...), and the qualities to choose from.",
    "text": "ページに含まれるビデオ（YouTube、Vimeoなど）と、選択できる品質。"
+  },
+  "ac43945464c62c80": {
+   "source": "<g1>Easier to find:</g1> a running torrent's progress window has a <g2>Play while downloading</g2> button, and it is the first item when you right-click a torrent with a video or sound file.",
+   "text": "<g1>見つけやすくなりました。</g1>実行中のトレントの進行状況ウィンドウに<g2>ダウンロードしながら再生</g2>ボタンがあります。動画や音声のファイルを含むトレントを右クリックすると、最初の項目として表示されます。"
   },
   "ac4b27cd07db9df5": {
    "source": "shows every option. A command that fails (the app isn't running, it answers with an error, a download breaks) exits with code 1. For example:",

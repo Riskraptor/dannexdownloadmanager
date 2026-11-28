@@ -3750,6 +3750,10 @@
    "source": "A page whose video the window can't find: play the video in your browser, then use the extension's button over it, or right-click the video → <g1>Download with DDM</g1>: either sends the stream the page loaded (<g2>Videos a page plays</g2>).",
    "text": "Een pagina waarvan het venster de video niet kan vinden: speel de video af in uw browser en gebruik dan de knop van de extensie erboven, of klik met de rechtermuisknop op de video → <g1>Downloaden met DDM</g1>: beide verzenden de stream die de pagina heeft geladen (<g2>Video's die een pagina afspeelt</g2>)."
   },
+  "35466d02254da657": {
+   "source": "<g1>Play while downloading</g1> no longer closes DDM: it opens the torrent's video or sound in your browser's player as it should.",
+   "text": "<g1>Afspelen tijdens downloaden</g1> sluit DDM niet meer af: het opent de video of het geluid van de torrent in de speler van uw browser, zoals het hoort."
+  },
   "35694583fe0f1379": {
    "source": "In the same window, tick <g1>Limit all downloads together to</g1> and set the speed. This caps DDM as a whole, however many files are downloading, torrents included. When torrents and other downloads run at the same time, each side gets at least half of the speed, and more when the other side needs less: a torrent going slowly leaves the rest to the other downloads, and the other way round. It applies whenever it is ticked, whether the per-file limiter is on or off.",
    "text": "Vink in hetzelfde venster <g1>Alle downloads samen beperken tot</g1> aan en stel de snelheid in. Hiermee wordt de snelheid voor DDM als geheel beperkt, ongeacht hoeveel bestanden er worden gedownload, inclusief torrents. Wanneer torrents en andere downloads tegelijk actief zijn, krijgt elke groep ten minste de helft van de snelheid, en meer als de andere groep minder nodig heeft: als een torrent langzaam downloadt, blijft er meer snelheid over voor de andere downloads, en andersom. De instelling geldt zolang het selectievakje is aangevinkt, ongeacht of de snelheidsbegrenzer per bestand aanstaat."
@@ -5817,6 +5821,10 @@
   "52568481c8f45946": {
    "source": "Classic",
    "text": "Klassiek"
+  },
+  "526c46252e66507b": {
+   "source": "<g1>Updates on Linux (.deb and .rpm):</g1> <g2>Update now</g2> installs the new version itself after your system asks for your password, and starts it. It used to hand the file to the system's app store, which on Ubuntu opened and installed nothing.",
+   "text": "<g1>Updates op Linux (.deb en .rpm):</g1> <g2>Nu bijwerken</g2> installeert de nieuwe versie zelf nadat uw systeem om uw wachtwoord heeft gevraagd, en start die. Eerder gaf het bestand door aan de appstore van het systeem, die op Ubuntu niets opende of installeerde."
   },
   "52ceae361fb11f6c": {
    "source": "A list's, a table's or a box's outline",
@@ -11346,6 +11354,10 @@
    "source": "Keep some speed for everything else",
    "text": "Wat snelheid overhouden voor de rest"
   },
+  "a1904953bccc8225": {
+   "source": "<g1>On Linux with the .deb or .rpm, from {v1} this one time:</g1> if <g2>Update now</g2> opens your app store and nothing changes, download the {v2} package from https://dannex.kavangi.co.ke/download.html and open it from your Downloads folder. Later updates install themselves.",
+   "text": "<g1>Op Linux met .deb of .rpm, vanaf {v1}, eenmalig:</g1> als <g2>Nu bijwerken</g2> uw appstore opent en er niets verandert, download dan het pakket {v2} van https://dannex.kavangi.co.ke/download.html en open het vanuit uw map Downloads. Latere updates installeren zichzelf."
+  },
   "a1929a4367eebbb2": {
    "source": "Turn it on",
    "text": "Inschakelen"
@@ -12053,6 +12065,10 @@
   "ac3ae05271f8b980": {
    "source": "What's new — Dannex Download Manager version history",
    "text": "Wat is er nieuw — Versiegeschiedenis van Dannex Download Manager"
+  },
+  "ac43945464c62c80": {
+   "source": "<g1>Easier to find:</g1> a running torrent's progress window has a <g2>Play while downloading</g2> button, and it is the first item when you right-click a torrent with a video or sound file.",
+   "text": "<g1>Makkelijker te vinden:</g1> het voortgangsvenster van een lopende torrent heeft een knop <g2>Afspelen tijdens downloaden</g2>, en het is het eerste item als u met de rechtermuisknop op een torrent met een video- of geluidsbestand klikt."
   },
   "ac4b27cd07db9df5": {
    "source": "shows every option. A command that fails (the app isn't running, it answers with an error, a download breaks) exits with code 1. For example:",

@@ -3750,6 +3750,10 @@
    "source": "A page whose video the window can't find: play the video in your browser, then use the extension's button over it, or right-click the video → <g1>Download with DDM</g1>: either sends the stream the page loaded (<g2>Videos a page plays</g2>).",
    "text": "একটি পৃষ্ঠা যার ভিডিও উইন্ডো খুঁজে পায় না: আপনার ব্রাউজারে ভিডিওটি চালান, তারপর এর উপর এক্সটেনশনের বোতামটি ব্যবহার করুন, অথবা ভিডিওতে ডান-ক্লিক করুন → <g1>DDM দিয়ে ডাউনলোড করুন</g1>: উভয়ই পৃষ্ঠা লোড করা স্ট্রিম পাঠায় (<g2>একটি পৃষ্ঠা যে ভিডিওগুলি চালায়</g2>)।"
   },
+  "35466d02254da657": {
+   "source": "<g1>Play while downloading</g1> no longer closes DDM: it opens the torrent's video or sound in your browser's player as it should.",
+   "text": "<g1>ডাউনলোড চলাকালীন চালান</g1> আর DDM বন্ধ করে না: এটি টরেন্টের ভিডিও বা শব্দ আপনার ব্রাউজারের প্লেয়ারে খোলে, যেমনটি হওয়া উচিত।"
+  },
   "35694583fe0f1379": {
    "source": "In the same window, tick <g1>Limit all downloads together to</g1> and set the speed. This caps DDM as a whole, however many files are downloading, torrents included. When torrents and other downloads run at the same time, each side gets at least half of the speed, and more when the other side needs less: a torrent going slowly leaves the rest to the other downloads, and the other way round. It applies whenever it is ticked, whether the per-file limiter is on or off.",
    "text": "একই উইন্ডোতে, <g1>একসাথে সব ডাউনলোড সীমিত করুন</g1> নির্বাচন করে গতি নির্ধারণ করুন। এতে DDM-এর সব ডাউনলোডের গতি একসাথে সীমিত হয়—কতগুলো ফাইল ডাউনলোড হচ্ছে, এমনকি টরেন্টসহ, তা বিবেচ্য নয়। টরেন্ট ও অন্যান্য ডাউনলোড একই সময়ে চললে, উভয় পক্ষই অন্তত অর্ধেক গতি পায়। অন্য পক্ষের কম গতির প্রয়োজন হলে তারা আরও বেশি পায়: কোনো টরেন্ট ধীরে চললে বাকি গতি অন্যান্য ডাউনলোড পায়, আর অন্য ডাউনলোড ধীরে চললে টরেন্ট পায়। এই বিকল্পটি নির্বাচন করা থাকলে, ফাইলভিত্তিক স্পিড লিমিটার চালু থাকুক বা বন্ধ, এটি কার্যকর হবে।"
@@ -5817,6 +5821,10 @@
   "52568481c8f45946": {
    "source": "Classic",
    "text": "ক্লাসিক"
+  },
+  "526c46252e66507b": {
+   "source": "<g1>Updates on Linux (.deb and .rpm):</g1> <g2>Update now</g2> installs the new version itself after your system asks for your password, and starts it. It used to hand the file to the system's app store, which on Ubuntu opened and installed nothing.",
+   "text": "<g1>Linux-এ আপডেট (.deb ও .rpm):</g1> আপনার সিস্টেম পাসওয়ার্ড চাওয়ার পর <g2>এখনই আপডেট করুন</g2> নতুন সংস্করণ নিজেই ইনস্টল করে এবং চালু করে। আগে এটি ফাইলটি সিস্টেমের অ্যাপ স্টোরে দিয়ে দিত, যা Ubuntu-তে কিছুই খুলত না, ইনস্টলও করত না।"
   },
   "52ceae361fb11f6c": {
    "source": "A list's, a table's or a box's outline",
@@ -11350,6 +11358,10 @@
    "source": "Keep some speed for everything else",
    "text": "অন্য সবকিছুর জন্য কিছু গতি রাখুন"
   },
+  "a1904953bccc8225": {
+   "source": "<g1>On Linux with the .deb or .rpm, from {v1} this one time:</g1> if <g2>Update now</g2> opens your app store and nothing changes, download the {v2} package from https://dannex.kavangi.co.ke/download.html and open it from your Downloads folder. Later updates install themselves.",
+   "text": "<g1>.deb বা .rpm দিয়ে Linux-এ, {v1} থেকে, শুধু এই একবার:</g1> যদি <g2>এখনই আপডেট করুন</g2> আপনার অ্যাপ স্টোর খোলে আর কিছু না বদলায়, তাহলে https://dannex.kavangi.co.ke/download.html থেকে {v2} প্যাকেজ ডাউনলোড করুন এবং আপনার ডাউনলোড ফোল্ডার থেকে খুলুন। পরের আপডেটগুলো নিজেই ইনস্টল হবে।"
+  },
   "a1929a4367eebbb2": {
    "source": "Turn it on",
    "text": "এটি চালু করুন"
@@ -12057,6 +12069,10 @@
   "ac3ae05271f8b980": {
    "source": "What's new — Dannex Download Manager version history",
    "text": "নতুন কী — Dannex Download Manager-এর সংস্করণের ইতিহাস"
+  },
+  "ac43945464c62c80": {
+   "source": "<g1>Easier to find:</g1> a running torrent's progress window has a <g2>Play while downloading</g2> button, and it is the first item when you right-click a torrent with a video or sound file.",
+   "text": "<g1>খুঁজে পাওয়া সহজ:</g1> চলমান টরেন্টের অগ্রগতির উইন্ডোতে <g2>ডাউনলোড চলাকালীন চালান</g2> বোতাম আছে, আর ভিডিও বা শব্দের ফাইলসহ কোনো টরেন্টে ডান-ক্লিক করলে এটি প্রথম আইটেম হিসেবে দেখা যায়।"
   },
   "ac4b27cd07db9df5": {
    "source": "shows every option. A command that fails (the app isn't running, it answers with an error, a download breaks) exits with code 1. For example:",

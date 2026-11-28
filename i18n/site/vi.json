@@ -3750,6 +3750,10 @@
    "source": "A page whose video the window can't find: play the video in your browser, then use the extension's button over it, or right-click the video → <g1>Download with DDM</g1>: either sends the stream the page loaded (<g2>Videos a page plays</g2>).",
    "text": "Trang có video mà cửa sổ không tìm thấy: hãy phát video trong trình duyệt, rồi dùng nút của tiện ích mở rộng trên đó, hoặc nhấp chuột phải vào video → <g1>Tải xuống bằng DDM</g1>: cả hai gửi luồng mà trang đã tải (<g2>Video mà trang phát</g2>)."
   },
+  "35466d02254da657": {
+   "source": "<g1>Play while downloading</g1> no longer closes DDM: it opens the torrent's video or sound in your browser's player as it should.",
+   "text": "<g1>Phát trong khi tải xuống</g1> không còn đóng DDM nữa: nó mở video hoặc âm thanh của torrent trong trình phát của trình duyệt, đúng như mong đợi."
+  },
   "35694583fe0f1379": {
    "source": "In the same window, tick <g1>Limit all downloads together to</g1> and set the speed. This caps DDM as a whole, however many files are downloading, torrents included. When torrents and other downloads run at the same time, each side gets at least half of the speed, and more when the other side needs less: a torrent going slowly leaves the rest to the other downloads, and the other way round. It applies whenever it is ticked, whether the per-file limiter is on or off.",
    "text": "Trong cùng một cửa sổ, đánh dấu vào <g1>Giới hạn tất cả các lượt tải xuống cùng nhau thành</g1> và đặt tốc độ. Điều này giới hạn toàn bộ DDM, bất kể có bao nhiêu tệp đang tải xuống, bao gồm cả torrent. Khi torrent và các lượt tải xuống khác chạy cùng lúc, mỗi bên sẽ nhận được ít nhất một nửa tốc độ, và nhiều hơn khi bên kia cần ít hơn: một torrent chạy chậm sẽ nhường phần còn lại cho các lượt tải xuống khác, và ngược lại. Nó được áp dụng bất cứ khi nào được đánh dấu, cho dù bộ giới hạn theo từng tệp có bật hay tắt."
@@ -5817,6 +5821,10 @@
   "52568481c8f45946": {
    "source": "Classic",
    "text": "Cổ điển"
+  },
+  "526c46252e66507b": {
+   "source": "<g1>Updates on Linux (.deb and .rpm):</g1> <g2>Update now</g2> installs the new version itself after your system asks for your password, and starts it. It used to hand the file to the system's app store, which on Ubuntu opened and installed nothing.",
+   "text": "<g1>Cập nhật trên Linux (.deb và .rpm):</g1> <g2>Cập nhật ngay</g2> tự cài phiên bản mới sau khi hệ thống hỏi mật khẩu của bạn, rồi khởi chạy nó. Trước đây nó chuyển tệp cho cửa hàng ứng dụng của hệ thống, và trên Ubuntu cửa hàng này không mở hay cài gì cả."
   },
   "52ceae361fb11f6c": {
    "source": "A list's, a table's or a box's outline",
@@ -11346,6 +11354,10 @@
    "source": "Keep some speed for everything else",
    "text": "Giữ một phần tốc độ cho mọi thứ khác"
   },
+  "a1904953bccc8225": {
+   "source": "<g1>On Linux with the .deb or .rpm, from {v1} this one time:</g1> if <g2>Update now</g2> opens your app store and nothing changes, download the {v2} package from https://dannex.kavangi.co.ke/download.html and open it from your Downloads folder. Later updates install themselves.",
+   "text": "<g1>Trên Linux với .deb hoặc .rpm, từ {v1}, chỉ lần này:</g1> nếu <g2>Cập nhật ngay</g2> mở cửa hàng ứng dụng mà không có gì thay đổi, hãy tải gói {v2} từ https://dannex.kavangi.co.ke/download.html và mở nó từ thư mục Tải xuống. Các lần cập nhật sau sẽ tự cài."
+  },
   "a1929a4367eebbb2": {
    "source": "Turn it on",
    "text": "Bật nó lên"
@@ -12053,6 +12065,10 @@
   "ac3ae05271f8b980": {
    "source": "What's new — Dannex Download Manager version history",
    "text": "Có gì mới — Lịch sử phiên bản Dannex Download Manager"
+  },
+  "ac43945464c62c80": {
+   "source": "<g1>Easier to find:</g1> a running torrent's progress window has a <g2>Play while downloading</g2> button, and it is the first item when you right-click a torrent with a video or sound file.",
+   "text": "<g1>Dễ tìm hơn:</g1> cửa sổ tiến trình của torrent đang chạy có nút <g2>Phát trong khi tải xuống</g2>, và đó là mục đầu tiên khi bạn nhấp chuột phải vào torrent có tệp video hoặc âm thanh."
   },
   "ac4b27cd07db9df5": {
    "source": "shows every option. A command that fails (the app isn't running, it answers with an error, a download breaks) exits with code 1. For example:",

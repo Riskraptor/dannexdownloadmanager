@@ -3750,6 +3750,10 @@
    "source": "A page whose video the window can't find: play the video in your browser, then use the extension's button over it, or right-click the video → <g1>Download with DDM</g1>: either sends the stream the page loaded (<g2>Videos a page plays</g2>).",
    "text": "ऐसा पेज जिसका वीडियो विंडो नहीं खोज पाती: वीडियो अपने ब्राउज़र में चलाएँ, फिर उसके ऊपर एक्सटेंशन का बटन उपयोग करें, या वीडियो पर राइट-क्लिक करें → <g1>DDM के साथ डाउनलोड करें</g1>: दोनों वही स्ट्रीम भेजते हैं जो पेज ने लोड की (<g2>पेज द्वारा चलाए गए वीडियो</g2>)।"
   },
+  "35466d02254da657": {
+   "source": "<g1>Play while downloading</g1> no longer closes DDM: it opens the torrent's video or sound in your browser's player as it should.",
+   "text": "<g1>डाउनलोड के दौरान चलाएँ</g1> अब DDM को बंद नहीं करता: यह टॉरेंट का वीडियो या ऑडियो आपके ब्राउज़र के प्लेयर में खोलता है, जैसा उसे करना चाहिए।"
+  },
   "35694583fe0f1379": {
    "source": "In the same window, tick <g1>Limit all downloads together to</g1> and set the speed. This caps DDM as a whole, however many files are downloading, torrents included. When torrents and other downloads run at the same time, each side gets at least half of the speed, and more when the other side needs less: a torrent going slowly leaves the rest to the other downloads, and the other way round. It applies whenever it is ticked, whether the per-file limiter is on or off.",
    "text": "उसी विंडो में, <g1>सभी डाउनलोड को एक साथ सीमित करें</g1> पर टिक करें और गति सेट करें। यह DDM को पूरी तरह से सीमित करता है, चाहे कितनी भी फ़ाइलें डाउनलोड हो रही हों, जिसमें टोरेंट भी शामिल हैं। जब टोरेंट और अन्य डाउनलोड एक ही समय में चलते हैं, तो प्रत्येक पक्ष को कम से कम आधी गति मिलती है, और जब दूसरे पक्ष को कम की आवश्यकता होती है तो अधिक मिलती है: एक टोरेंट धीरे चलने पर बाकी को अन्य डाउनलोड के लिए छोड़ देता है, और इसका उल्टा भी। यह तब लागू होता है जब इस पर टिक किया जाता है, चाहे प्रति-फ़ाइल लिमिटर चालू हो या बंद।"
@@ -5817,6 +5821,10 @@
   "52568481c8f45946": {
    "source": "Classic",
    "text": "क्लासिक"
+  },
+  "526c46252e66507b": {
+   "source": "<g1>Updates on Linux (.deb and .rpm):</g1> <g2>Update now</g2> installs the new version itself after your system asks for your password, and starts it. It used to hand the file to the system's app store, which on Ubuntu opened and installed nothing.",
+   "text": "<g1>Linux पर अपडेट (.deb और .rpm):</g1> आपके सिस्टम के पासवर्ड माँगने के बाद <g2>अभी अपडेट करें</g2> नया संस्करण खुद इंस्टॉल करता है और उसे शुरू कर देता है। पहले यह फ़ाइल को सिस्टम के ऐप स्टोर को सौंप देता था, जो Ubuntu पर न कुछ खोलता था और न इंस्टॉल करता था।"
   },
   "52ceae361fb11f6c": {
    "source": "A list's, a table's or a box's outline",
@@ -11346,6 +11354,10 @@
    "source": "Keep some speed for everything else",
    "text": "बाकी सब के लिए कुछ गति बनाए रखें"
   },
+  "a1904953bccc8225": {
+   "source": "<g1>On Linux with the .deb or .rpm, from {v1} this one time:</g1> if <g2>Update now</g2> opens your app store and nothing changes, download the {v2} package from https://dannex.kavangi.co.ke/download.html and open it from your Downloads folder. Later updates install themselves.",
+   "text": "<g1>Linux पर .deb या .rpm के साथ, {v1} से, बस इस एक बार:</g1> अगर <g2>अभी अपडेट करें</g2> आपका ऐप स्टोर खोलता है और कुछ नहीं बदलता, तो https://dannex.kavangi.co.ke/download.html से {v2} पैकेज डाउनलोड करें और उसे अपने डाउनलोड फ़ोल्डर से खोलें। आगे के अपडेट अपने-आप इंस्टॉल हो जाएँगे।"
+  },
   "a1929a4367eebbb2": {
    "source": "Turn it on",
    "text": "इसे चालू करें"
@@ -12053,6 +12065,10 @@
   "ac3ae05271f8b980": {
    "source": "What's new — Dannex Download Manager version history",
    "text": "नया क्या है — Dannex Download Manager संस्करण इतिहास"
+  },
+  "ac43945464c62c80": {
+   "source": "<g1>Easier to find:</g1> a running torrent's progress window has a <g2>Play while downloading</g2> button, and it is the first item when you right-click a torrent with a video or sound file.",
+   "text": "<g1>ढूँढना आसान:</g1> चल रहे टॉरेंट की प्रगति विंडो में <g2>डाउनलोड के दौरान चलाएँ</g2> बटन है, और वीडियो या ऑडियो फ़ाइल वाले टॉरेंट पर राइट-क्लिक करने पर यह सबसे पहला आइटम होता है।"
   },
   "ac4b27cd07db9df5": {
    "source": "shows every option. A command that fails (the app isn't running, it answers with an error, a download breaks) exits with code 1. For example:",

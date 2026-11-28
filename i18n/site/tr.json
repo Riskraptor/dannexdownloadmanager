@@ -3378,6 +3378,10 @@
    "source": "A page whose video the window can't find: play the video in your browser, then use the extension's button over it, or right-click the video → <g1>Download with DDM</g1>: either sends the stream the page loaded (<g2>Videos a page plays</g2>).",
    "text": "Videosunu pencerenin bulamadığı bir sayfa: videoyu tarayıcınızda oynatın, ardından videonun üzerindeki eklenti düğmesini kullanın ya da videoya sağ tıklayıp <g1>DDM ile indir</g1> seçeneğini seçin. İkisi de sayfanın yüklediği akışı gönderir (<g2>Bir sayfanın oynattığı videolar</g2>)."
   },
+  "35466d02254da657": {
+   "source": "<g1>Play while downloading</g1> no longer closes DDM: it opens the torrent's video or sound in your browser's player as it should.",
+   "text": "<g1>İndirirken oynat</g1> artık DDM'yi kapatmıyor: torrentin videosunu veya sesini olması gerektiği gibi tarayıcınızın oynatıcısında açıyor."
+  },
   "35694583fe0f1379": {
    "source": "In the same window, tick <g1>Limit all downloads together to</g1> and set the speed. This caps DDM as a whole, however many files are downloading, torrents included. When torrents and other downloads run at the same time, each side gets at least half of the speed, and more when the other side needs less: a torrent going slowly leaves the rest to the other downloads, and the other way round. It applies whenever it is ticked, whether the per-file limiter is on or off.",
    "text": "Aynı pencerede, <g1>Tüm indirmeleri birlikte şuna sınırla</g1> seçeneğini işaretleyin ve hızı ayarlayın. Bu, kaç dosya indirilirse indirilsin, torrentler dahil, DDM'nin genel hızını sınırlar. Torrentler ve diğer indirmeler aynı anda çalıştığında, her taraf hızın en az yarısını alır ve diğer taraf daha az ihtiyaç duyduğunda daha fazlasını alır: yavaş giden bir torrent, kalan hızı diğer indirmelere bırakır ve tersi de geçerlidir. Bu seçenek işaretlendiği sürece, dosya başına sınırlayıcı açık veya kapalı olsa bile uygulanır."
@@ -5189,6 +5193,10 @@
   "52568481c8f45946": {
    "source": "Classic",
    "text": "Klasik"
+  },
+  "526c46252e66507b": {
+   "source": "<g1>Updates on Linux (.deb and .rpm):</g1> <g2>Update now</g2> installs the new version itself after your system asks for your password, and starts it. It used to hand the file to the system's app store, which on Ubuntu opened and installed nothing.",
+   "text": "<g1>Linux'ta güncellemeler (.deb ve .rpm):</g1> Sistem parolanızı istedikten sonra <g2>Şimdi güncelle</g2> yeni sürümü kendisi kurar ve başlatır. Eskiden dosyayı sistemin uygulama mağazasına devrediyordu; Ubuntu'da mağaza açılıyor ama hiçbir şey kurulmuyordu."
   },
   "52ceae361fb11f6c": {
    "source": "A list's, a table's or a box's outline",
@@ -10162,6 +10170,10 @@
    "source": "Keep some speed for everything else",
    "text": "Diğer her şey için biraz hız bırakın"
   },
+  "a1904953bccc8225": {
+   "source": "<g1>On Linux with the .deb or .rpm, from {v1} this one time:</g1> if <g2>Update now</g2> opens your app store and nothing changes, download the {v2} package from https://dannex.kavangi.co.ke/download.html and open it from your Downloads folder. Later updates install themselves.",
+   "text": "<g1>.deb veya .rpm kullanan Linux'ta {v1}'dan geçerken yalnızca bu seferlik:</g1> <g2>Şimdi güncelle</g2> uygulama mağazanızı açıyor ve hiçbir şey değişmiyorsa {v2} paketini https://dannex.kavangi.co.ke/download.html adresinden indirin ve İndirilenler klasörünüzden açın. Sonraki güncellemeler kendiliğinden kurulur."
+  },
   "a1929a4367eebbb2": {
    "source": "Turn it on",
    "text": "Açın"
@@ -10809,6 +10821,10 @@
   "ac1acb5254f1187e": {
    "source": "What video a page holds (YouTube, Vimeo, ...), and the qualities to choose from.",
    "text": "Bir sayfada hangi videonun bulunduğunu (YouTube, Vimeo vb.) ve seçilebilecek görüntü kalitelerini gösterir."
+  },
+  "ac43945464c62c80": {
+   "source": "<g1>Easier to find:</g1> a running torrent's progress window has a <g2>Play while downloading</g2> button, and it is the first item when you right-click a torrent with a video or sound file.",
+   "text": "<g1>Bulması daha kolay:</g1> çalışan bir torrentin ilerleme penceresinde <g2>İndirirken oynat</g2> düğmesi var; video veya ses dosyası içeren bir torrente sağ tıkladığınızda da ilk öğe odur."
   },
   "ac4b27cd07db9df5": {
    "source": "shows every option. A command that fails (the app isn't running, it answers with an error, a download breaks) exits with code 1. For example:",

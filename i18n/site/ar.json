@@ -3378,6 +3378,10 @@
    "source": "A page whose video the window can't find: play the video in your browser, then use the extension's button over it, or right-click the video → <g1>Download with DDM</g1>: either sends the stream the page loaded (<g2>Videos a page plays</g2>).",
    "text": "صفحة لا تستطيع النافذة العثور على الفيديو الخاص بها: ابدأ تشغيل الفيديو في مستعرضك، ثم استخدم زر الإضافة فوقه، أو انقر بزر الماوس الأيمن على الفيديو ← <g1>تنزيل باستخدام DDM</g1>: كلاهما يرسل البث الذي حملته الصفحة (<g2>الفيديوهات التي تشغلها الصفحة</g2>)."
   },
+  "35466d02254da657": {
+   "source": "<g1>Play while downloading</g1> no longer closes DDM: it opens the torrent's video or sound in your browser's player as it should.",
+   "text": "<g1>التشغيل أثناء التنزيل</g1> لم يعد يغلق DDM: بل يفتح فيديو التورنت أو صوته في مشغل مستعرضك كما ينبغي."
+  },
   "35694583fe0f1379": {
    "source": "In the same window, tick <g1>Limit all downloads together to</g1> and set the speed. This caps DDM as a whole, however many files are downloading, torrents included. When torrents and other downloads run at the same time, each side gets at least half of the speed, and more when the other side needs less: a torrent going slowly leaves the rest to the other downloads, and the other way round. It applies whenever it is ticked, whether the per-file limiter is on or off.",
    "text": "في النافذة نفسها، ضع علامة في مربع <g1>تحديد جميع التنزيلات معا إلى</g1> واضبط السرعة. يحد هذا من سرعة DDM ككل، مهما كان عدد الملفات الجاري تنزيلها، بما فيها ملفات التورنت. عندما تعمل التنزيلات العادية والتورنت في الوقت نفسه، يحصل كل نوع على نصف السرعة على الأقل، وقد يحصل على أكثر إذا احتاج النوع الآخر إلى أقل. فإذا كان التورنت بطيئا، تتاح السرعة المتبقية للتنزيلات الأخرى، والعكس صحيح. يسري هذا التحديد كلما كان الخيار محددا، سواء أكان محدد السرعة لكل ملف مفعلا أم لا."
@@ -5189,6 +5193,10 @@
   "52568481c8f45946": {
    "source": "Classic",
    "text": "كلاسيكي"
+  },
+  "526c46252e66507b": {
+   "source": "<g1>Updates on Linux (.deb and .rpm):</g1> <g2>Update now</g2> installs the new version itself after your system asks for your password, and starts it. It used to hand the file to the system's app store, which on Ubuntu opened and installed nothing.",
+   "text": "<g1>التحديثات على Linux (.deb و.rpm):</g1> <g2>تحديث الآن</g2> يثبت الإصدار الجديد بنفسه بعد أن يطلب النظام كلمة مرورك، ثم يشغله. كان سابقا يسلم الملف إلى متجر تطبيقات النظام، الذي كان يفتح في Ubuntu دون أن يثبت شيئا."
   },
   "52ceae361fb11f6c": {
    "source": "A list's, a table's or a box's outline",
@@ -10162,6 +10170,10 @@
    "source": "Keep some speed for everything else",
    "text": "الاحتفاظ ببعض السرعة لكل شيء آخر"
   },
+  "a1904953bccc8225": {
+   "source": "<g1>On Linux with the .deb or .rpm, from {v1} this one time:</g1> if <g2>Update now</g2> opens your app store and nothing changes, download the {v2} package from https://dannex.kavangi.co.ke/download.html and open it from your Downloads folder. Later updates install themselves.",
+   "text": "<g1>على Linux مع .deb أو .rpm، ابتداء من {v1}، لمرة واحدة فقط:</g1> إذا فتح <g2>تحديث الآن</g2> متجر التطبيقات ولم يتغير شيء، فنزل حزمة {v2} من https://dannex.kavangi.co.ke/download.html وافتحها من مجلد التنزيلات. التحديثات اللاحقة تثبت من تلقاء نفسها."
+  },
   "a1929a4367eebbb2": {
    "source": "Turn it on",
    "text": "تشغيله"
@@ -10809,6 +10821,10 @@
   "ac1acb5254f1187e": {
    "source": "What video a page holds (YouTube, Vimeo, ...), and the qualities to choose from.",
    "text": "اعرض الفيديوهات الموجودة في صفحة (مثل YouTube أو Vimeo أو غيرهما) والجودات المتاحة للاختيار."
+  },
+  "ac43945464c62c80": {
+   "source": "<g1>Easier to find:</g1> a running torrent's progress window has a <g2>Play while downloading</g2> button, and it is the first item when you right-click a torrent with a video or sound file.",
+   "text": "<g1>أسهل في العثور عليه:</g1> في نافذة تقدم أي تورنت قيد التنزيل زر <g2>التشغيل أثناء التنزيل</g2>، وهو أول عنصر عند النقر بزر الماوس الأيمن على تورنت يحتوي على ملف فيديو أو صوت."
   },
   "ac4b27cd07db9df5": {
    "source": "shows every option. A command that fails (the app isn't running, it answers with an error, a download breaks) exits with code 1. For example:",

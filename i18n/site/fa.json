@@ -3750,6 +3750,10 @@
    "source": "A page whose video the window can't find: play the video in your browser, then use the extension's button over it, or right-click the video → <g1>Download with DDM</g1>: either sends the stream the page loaded (<g2>Videos a page plays</g2>).",
    "text": "صفحه‌ای که پنجره نمی‌تواند ویدئوی آن را پیدا کند: ویدئو را در مرورگر خود پخش کنید، سپس از دکمه افزونه روی آن استفاده کنید، یا روی ویدئو راست‌کلیک کنید ← <g1>بارگیری با DDM</g1>: هر دو جریان بارگذاری‌شده توسط صفحه را ارسال می‌کنند (<g2>ویدئوهایی که یک صفحه پخش می‌کند</g2>)."
   },
+  "35466d02254da657": {
+   "source": "<g1>Play while downloading</g1> no longer closes DDM: it opens the torrent's video or sound in your browser's player as it should.",
+   "text": "<g1>پخش هنگام بارگیری</g1> دیگر DDM را نمی‌بندد: ویدیو یا صدای تورنت را همان‌طور که باید در پخش‌کننده مرورگر شما باز می‌کند."
+  },
   "35694583fe0f1379": {
    "source": "In the same window, tick <g1>Limit all downloads together to</g1> and set the speed. This caps DDM as a whole, however many files are downloading, torrents included. When torrents and other downloads run at the same time, each side gets at least half of the speed, and more when the other side needs less: a torrent going slowly leaves the rest to the other downloads, and the other way round. It applies whenever it is ticked, whether the per-file limiter is on or off.",
    "text": "در همین پنجره، <g1>محدود کردن همه دانلودها با هم به</g1> را علامت بزنید و سرعت را تنظیم کنید. این کار سرعت کل DDM را محدود می‌کند، صرف‌نظر از تعداد فایل‌های در حال بارگیری، از جمله تورنت‌ها. وقتی تورنت‌ها و بارگیری‌های دیگر هم‌زمان اجرا می‌شوند، هر کدام دست‌کم نیمی از سرعت را دریافت می‌کنند و اگر دیگری به سرعت کمتری نیاز داشته باشد، سهم بیشتری می‌گیرند: اگر سرعت یک تورنت کم باشد، بقیه سرعت به بارگیری‌های دیگر می‌رسد و برعکس. این محدودیت هر زمان که گزینه علامت خورده باشد اعمال می‌شود، چه محدودکننده سرعت هر فایل روشن باشد و چه خاموش."
@@ -5817,6 +5821,10 @@
   "52568481c8f45946": {
    "source": "Classic",
    "text": "کلاسیک"
+  },
+  "526c46252e66507b": {
+   "source": "<g1>Updates on Linux (.deb and .rpm):</g1> <g2>Update now</g2> installs the new version itself after your system asks for your password, and starts it. It used to hand the file to the system's app store, which on Ubuntu opened and installed nothing.",
+   "text": "<g1>به‌روزرسانی در Linux (.deb و .rpm):</g1> <g2>اکنون به‌روزرسانی کن</g2> پس از آنکه سیستم گذرواژه شما را بخواهد، نسخه جدید را خودش نصب می‌کند و اجرایش می‌کند. پیش‌تر فایل را به فروشگاه برنامه سیستم می‌سپرد، که در Ubuntu چیزی باز یا نصب نمی‌کرد."
   },
   "52ceae361fb11f6c": {
    "source": "A list's, a table's or a box's outline",
@@ -11350,6 +11358,10 @@
    "source": "Keep some speed for everything else",
    "text": "حفظ مقداری سرعت برای بقیه کارها"
   },
+  "a1904953bccc8225": {
+   "source": "<g1>On Linux with the .deb or .rpm, from {v1} this one time:</g1> if <g2>Update now</g2> opens your app store and nothing changes, download the {v2} package from https://dannex.kavangi.co.ke/download.html and open it from your Downloads folder. Later updates install themselves.",
+   "text": "<g1>در Linux با .deb یا .rpm، از نسخه {v1}، فقط همین یک بار:</g1> اگر <g2>اکنون به‌روزرسانی کن</g2> فروشگاه برنامه را باز کرد و چیزی تغییر نکرد، بسته {v2} را از https://dannex.kavangi.co.ke/download.html بارگیری کنید و از پوشه بارگیری‌ها باز کنید. به‌روزرسانی‌های بعدی خودکار نصب می‌شوند."
+  },
   "a1929a4367eebbb2": {
    "source": "Turn it on",
    "text": "روشن کردن آن"
@@ -12057,6 +12069,10 @@
   "ac3ae05271f8b980": {
    "source": "What's new — Dannex Download Manager version history",
    "text": "تازه‌های Dannex Download Manager — تاریخچه نسخه‌ها"
+  },
+  "ac43945464c62c80": {
+   "source": "<g1>Easier to find:</g1> a running torrent's progress window has a <g2>Play while downloading</g2> button, and it is the first item when you right-click a torrent with a video or sound file.",
+   "text": "<g1>پیدا کردنش آسان‌تر شد:</g1> پنجره پیشرفت یک تورنت در حال اجرا دکمه <g2>پخش هنگام بارگیری</g2> دارد، و وقتی روی تورنتی با فایل ویدیویی یا صوتی راست‌کلیک می‌کنید، این نخستین گزینه است."
   },
   "ac4b27cd07db9df5": {
    "source": "shows every option. A command that fails (the app isn't running, it answers with an error, a download breaks) exits with code 1. For example:",

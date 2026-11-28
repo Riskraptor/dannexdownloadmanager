@@ -3378,6 +3378,10 @@
    "source": "A page whose video the window can't find: play the video in your browser, then use the extension's button over it, or right-click the video → <g1>Download with DDM</g1>: either sends the stream the page loaded (<g2>Videos a page plays</g2>).",
    "text": "Страница, видео которой окно найти не может: воспроизведите видео в браузере, затем используйте кнопку расширения над ним или щёлкните видео правой кнопкой мыши → <g1>Загрузить с помощью DDM</g1>: любой из способов отправляет поток, который загрузила страница (<g2>Видео, которые воспроизводит страница</g2>)."
   },
+  "35466d02254da657": {
+   "source": "<g1>Play while downloading</g1> no longer closes DDM: it opens the torrent's video or sound in your browser's player as it should.",
+   "text": "<g1>Воспроизводить во время загрузки</g1> больше не закрывает DDM: он открывает видео или звук торрента в плеере вашего браузера, как и должно быть."
+  },
   "35694583fe0f1379": {
    "source": "In the same window, tick <g1>Limit all downloads together to</g1> and set the speed. This caps DDM as a whole, however many files are downloading, torrents included. When torrents and other downloads run at the same time, each side gets at least half of the speed, and more when the other side needs less: a torrent going slowly leaves the rest to the other downloads, and the other way round. It applies whenever it is ticked, whether the per-file limiter is on or off.",
    "text": "В том же окне установите флажок <g1>Ограничить все загрузки вместе до</g1> и задайте скорость. Это ограничивает DDM в целом, независимо от того, сколько файлов загружается, включая торренты. Когда торренты и другие загрузки выполняются одновременно, каждая сторона получает как минимум половину скорости, и больше, когда другая сторона нуждается в меньшем: медленно идущий торрент оставляет остальное другим загрузкам, и наоборот. Это применяется всегда, когда флажок установлен, независимо от того, включен или выключен ограничитель для каждого файла."
@@ -5189,6 +5193,10 @@
   "52568481c8f45946": {
    "source": "Classic",
    "text": "Классическая"
+  },
+  "526c46252e66507b": {
+   "source": "<g1>Updates on Linux (.deb and .rpm):</g1> <g2>Update now</g2> installs the new version itself after your system asks for your password, and starts it. It used to hand the file to the system's app store, which on Ubuntu opened and installed nothing.",
+   "text": "<g1>Обновления в Linux (.deb и .rpm):</g1> <g2>Обновить сейчас</g2> сам устанавливает новую версию после того, как система запросит ваш пароль, и запускает её. Раньше он передавал файл магазину приложений системы, который в Ubuntu открывался и ничего не устанавливал."
   },
   "52ceae361fb11f6c": {
    "source": "A list's, a table's or a box's outline",
@@ -10158,6 +10166,10 @@
    "source": "Keep some speed for everything else",
    "text": "Сохранить часть скорости для других задач"
   },
+  "a1904953bccc8225": {
+   "source": "<g1>On Linux with the .deb or .rpm, from {v1} this one time:</g1> if <g2>Update now</g2> opens your app store and nothing changes, download the {v2} package from https://dannex.kavangi.co.ke/download.html and open it from your Downloads folder. Later updates install themselves.",
+   "text": "<g1>В Linux с .deb или .rpm, начиная с {v1}, только в этот раз:</g1> если <g2>Обновить сейчас</g2> открывает магазин приложений и ничего не меняется, скачайте пакет {v2} по адресу https://dannex.kavangi.co.ke/download.html и откройте его из папки «Загрузки». Следующие обновления устанавливаются сами."
+  },
   "a1929a4367eebbb2": {
    "source": "Turn it on",
    "text": "Включить"
@@ -10805,6 +10817,10 @@
   "ac1acb5254f1187e": {
    "source": "What video a page holds (YouTube, Vimeo, ...), and the qualities to choose from.",
    "text": "Какое видео содержит страница (YouTube, Vimeo, ...), и доступные качества."
+  },
+  "ac43945464c62c80": {
+   "source": "<g1>Easier to find:</g1> a running torrent's progress window has a <g2>Play while downloading</g2> button, and it is the first item when you right-click a torrent with a video or sound file.",
+   "text": "<g1>Легче найти:</g1> в окне хода выполнения запущенного торрента есть кнопка <g2>Воспроизводить во время загрузки</g2>, а в контекстном меню торрента с видео- или аудиофайлом она стоит первой."
   },
   "ac4b27cd07db9df5": {
    "source": "shows every option. A command that fails (the app isn't running, it answers with an error, a download breaks) exits with code 1. For example:",

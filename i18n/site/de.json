@@ -3378,6 +3378,10 @@
    "source": "A page whose video the window can't find: play the video in your browser, then use the extension's button over it, or right-click the video → <g1>Download with DDM</g1>: either sends the stream the page loaded (<g2>Videos a page plays</g2>).",
    "text": "Eine Seite, deren Video das Fenster nicht finden kann: Spielen Sie das Video in Ihrem Browser ab und verwenden Sie dann die Schaltfläche der Erweiterung darüber, oder klicken Sie mit der rechten Maustaste auf das Video → <g1>Mit DDM herunterladen</g1>: Beides sendet den Stream, den die Seite geladen hat (<g2>Videos, die eine Seite abspielt</g2>)."
   },
+  "35466d02254da657": {
+   "source": "<g1>Play while downloading</g1> no longer closes DDM: it opens the torrent's video or sound in your browser's player as it should.",
+   "text": "<g1>Während des Downloads wiedergeben</g1> schließt DDM nicht mehr: Es öffnet das Video oder den Ton des Torrents wie vorgesehen im Player Ihres Browsers."
+  },
   "35694583fe0f1379": {
    "source": "In the same window, tick <g1>Limit all downloads together to</g1> and set the speed. This caps DDM as a whole, however many files are downloading, torrents included. When torrents and other downloads run at the same time, each side gets at least half of the speed, and more when the other side needs less: a torrent going slowly leaves the rest to the other downloads, and the other way round. It applies whenever it is ticked, whether the per-file limiter is on or off.",
    "text": "Aktivieren Sie im selben Fenster <g1>Alle Downloads zusammen begrenzen auf</g1> und stellen Sie die Geschwindigkeit ein. Dadurch wird die Geschwindigkeit für DDM insgesamt begrenzt, unabhängig davon, wie viele Dateien heruntergeladen werden, einschließlich Torrents. Wenn Torrents und andere Downloads gleichzeitig laufen, erhält jede Seite mindestens die Hälfte der Geschwindigkeit und mehr, wenn die andere Seite weniger benötigt: Läuft ein Torrent langsam, bleibt der Rest für die anderen Downloads übrig – und umgekehrt. Die Begrenzung gilt immer, wenn sie aktiviert ist, unabhängig davon, ob der Geschwindigkeitsbegrenzer für einzelne Dateien aktiviert ist oder nicht."
@@ -5189,6 +5193,10 @@
   "52568481c8f45946": {
    "source": "Classic",
    "text": "Klassisch"
+  },
+  "526c46252e66507b": {
+   "source": "<g1>Updates on Linux (.deb and .rpm):</g1> <g2>Update now</g2> installs the new version itself after your system asks for your password, and starts it. It used to hand the file to the system's app store, which on Ubuntu opened and installed nothing.",
+   "text": "<g1>Updates unter Linux (.deb und .rpm):</g1> <g2>Jetzt aktualisieren</g2> installiert die neue Version selbst, nachdem das System nach Ihrem Passwort gefragt hat, und startet sie. Früher wurde die Datei an den App-Store des Systems übergeben, der sich unter Ubuntu öffnete und nichts installierte."
   },
   "52ceae361fb11f6c": {
    "source": "A list's, a table's or a box's outline",
@@ -10158,6 +10166,10 @@
    "source": "Keep some speed for everything else",
    "text": "Etwas Geschwindigkeit für alles andere übrig lassen"
   },
+  "a1904953bccc8225": {
+   "source": "<g1>On Linux with the .deb or .rpm, from {v1} this one time:</g1> if <g2>Update now</g2> opens your app store and nothing changes, download the {v2} package from https://dannex.kavangi.co.ke/download.html and open it from your Downloads folder. Later updates install themselves.",
+   "text": "<g1>Unter Linux mit .deb oder .rpm, ab {v1}, nur dieses eine Mal:</g1> Wenn <g2>Jetzt aktualisieren</g2> Ihren App-Store öffnet und sich nichts ändert, laden Sie das Paket {v2} von https://dannex.kavangi.co.ke/download.html herunter und öffnen Sie es aus Ihrem Ordner „Downloads“. Spätere Updates installieren sich selbst."
+  },
   "a1929a4367eebbb2": {
    "source": "Turn it on",
    "text": "Einschalten"
@@ -10805,6 +10817,10 @@
   "ac1acb5254f1187e": {
    "source": "What video a page holds (YouTube, Vimeo, ...), and the qualities to choose from.",
    "text": "Welche Videos eine Seite enthält (YouTube, Vimeo usw.) und welche Qualitätsstufen verfügbar sind."
+  },
+  "ac43945464c62c80": {
+   "source": "<g1>Easier to find:</g1> a running torrent's progress window has a <g2>Play while downloading</g2> button, and it is the first item when you right-click a torrent with a video or sound file.",
+   "text": "<g1>Leichter zu finden:</g1> Das Fortschrittsfenster eines laufenden Torrents hat eine Schaltfläche <g2>Während des Downloads wiedergeben</g2>, und sie ist der erste Eintrag, wenn Sie mit der rechten Maustaste auf einen Torrent mit einer Video- oder Audiodatei klicken."
   },
   "ac4b27cd07db9df5": {
    "source": "shows every option. A command that fails (the app isn't running, it answers with an error, a download breaks) exits with code 1. For example:",

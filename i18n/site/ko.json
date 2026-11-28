@@ -3378,6 +3378,10 @@
    "source": "A page whose video the window can't find: play the video in your browser, then use the extension's button over it, or right-click the video → <g1>Download with DDM</g1>: either sends the stream the page loaded (<g2>Videos a page plays</g2>).",
    "text": "창이 비디오를 찾지 못하는 페이지: 브라우저에서 비디오를 재생한 다음 그 위의 확장 프로그램 단추를 사용하거나, 비디오를 마우스 오른쪽 단추로 클릭 → <g1>DDM으로 다운로드</g1>를 선택합니다. 어느 쪽이든 페이지가 로드한 스트림을 보냅니다(<g2>페이지가 재생하는 비디오</g2>)."
   },
+  "35466d02254da657": {
+   "source": "<g1>Play while downloading</g1> no longer closes DDM: it opens the torrent's video or sound in your browser's player as it should.",
+   "text": "<g1>다운로드하면서 재생</g1>을 눌러도 더 이상 DDM이 닫히지 않습니다. 토렌트의 동영상이나 소리를 브라우저 플레이어에서 제대로 엽니다."
+  },
   "35694583fe0f1379": {
    "source": "In the same window, tick <g1>Limit all downloads together to</g1> and set the speed. This caps DDM as a whole, however many files are downloading, torrents included. When torrents and other downloads run at the same time, each side gets at least half of the speed, and more when the other side needs less: a torrent going slowly leaves the rest to the other downloads, and the other way round. It applies whenever it is ticked, whether the per-file limiter is on or off.",
    "text": "같은 창에서 <g1>모든 다운로드 제한</g1>을 선택하고 속도를 설정하세요. 이렇게 하면 다운로드 중인 파일 수와 토렌트 여부에 관계없이 DDM 전체의 속도가 제한됩니다. 토렌트와 다른 다운로드가 동시에 실행될 때, 각 측은 최소 절반의 속도를 얻고, 다른 측이 덜 필요할 때는 더 많은 속도를 얻습니다. 예를 들어, 토렌트가 느리게 진행되면 나머지 대역폭은 다른 다운로드에 할당되고 그 반대도 마찬가지입니다. 이 설정은 파일별 제한기가 켜져 있든 꺼져 있든 상관없이 선택되어 있는 동안 항상 적용됩니다."
@@ -5189,6 +5193,10 @@
   "52568481c8f45946": {
    "source": "Classic",
    "text": "클래식"
+  },
+  "526c46252e66507b": {
+   "source": "<g1>Updates on Linux (.deb and .rpm):</g1> <g2>Update now</g2> installs the new version itself after your system asks for your password, and starts it. It used to hand the file to the system's app store, which on Ubuntu opened and installed nothing.",
+   "text": "<g1>Linux에서의 업데이트(.deb 및 .rpm):</g1> 시스템에서 암호를 요청하면 <g2>지금 업데이트</g2>가 새 버전을 직접 설치하고 실행합니다. 이전에는 파일을 시스템 앱 스토어에 넘겼는데, Ubuntu에서는 앱 스토어가 열리기만 하고 아무것도 설치되지 않았습니다."
   },
   "52ceae361fb11f6c": {
    "source": "A list's, a table's or a box's outline",
@@ -9542,6 +9550,10 @@
    "source": "Unzip it where you want DDM to live, for example <x1/> on a USB stick.",
    "text": "DDM을 사용할 위치(예: USB 메모리의 <x1/>)에 압축을 풉니다."
   },
+  "97cdced9f0afdf93": {
+   "source": "<g1>On Linux with the .deb or .rpm, from 2.0.0 this one time:</g1> if <g2>Update now</g2> opens your app store and nothing changes, download the 2.0.1 package from https://dannex.kavangi.co.ke/download.html and open it from your Downloads folder. Later updates install themselves.",
+   "text": "<g1>.deb 또는 .rpm을 쓰는 Linux에서 2.0.0부터 이번 한 번만:</g1> <g2>지금 업데이트</g2>를 눌러 앱 스토어가 열렸는데 아무것도 바뀌지 않으면 https://dannex.kavangi.co.ke/download.html 에서 2.0.1 패키지를 다운로드하여 다운로드 폴더에서 여십시오. 이후 업데이트는 자동으로 설치됩니다."
+  },
   "97d4c226a7b02d09": {
    "source": "Help and more",
    "text": "도움말 및 기타"
@@ -10801,6 +10813,10 @@
   "ac1acb5254f1187e": {
    "source": "What video a page holds (YouTube, Vimeo, ...), and the qualities to choose from.",
    "text": "페이지에 있는 동영상(YouTube, Vimeo 등)과 선택할 수 있는 화질을 표시합니다."
+  },
+  "ac43945464c62c80": {
+   "source": "<g1>Easier to find:</g1> a running torrent's progress window has a <g2>Play while downloading</g2> button, and it is the first item when you right-click a torrent with a video or sound file.",
+   "text": "<g1>더 쉽게 찾을 수 있습니다.</g1> 실행 중인 토렌트의 진행 창에 <g2>다운로드하면서 재생</g2> 버튼이 있으며, 동영상이나 소리 파일이 있는 토렌트를 마우스 오른쪽 버튼으로 클릭하면 첫 번째 항목으로 나타납니다."
   },
   "ac4b27cd07db9df5": {
    "source": "shows every option. A command that fails (the app isn't running, it answers with an error, a download breaks) exits with code 1. For example:",
