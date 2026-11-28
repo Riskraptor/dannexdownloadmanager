@@ -13,6 +13,10 @@ Each release's notes on GitHub come from its section here (`## [X.Y.Z]`, see
   system asks for your password, and starts it. It used to hand the file to the system's app
   store, which on Ubuntu opened and installed nothing.
 
+**On Linux with the .deb or .rpm, from 2.0.0 this one time:** if **Update now** opens your app store
+and nothing changes, download the 2.0.1 package from https://dannex.kavangi.co.ke/download.html and
+open it from your Downloads folder. Later updates install themselves.
+
 ## [2.0.0] - 2026-11-28
 
 Dannex Download Manager 2.0.0: a free, open-source download manager for Windows (with Linux and an
