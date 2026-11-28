@@ -61,6 +61,10 @@ These ship in a later version, when they're ready.
 
 ### Planned
 
+- 📋 **Major:** the setup closes a running DDM by itself. Today, running the downloaded setup
+  while DDM is open leaves DDM running (its request to quit doesn't reach it), so a silent setup
+  stops and an interactive one asks to close DDM and retry. Updating from inside DDM (Help →
+  Check for updates) isn't affected
 - 📋 Linux, what's left:
   screen readers (Orca) reading DDM's windows; browsers installed as a Flatpak (Firefox from
   Flathub may reach DDM through the desktop, as the Snap does: to check); native Wayland windows
